@@ -34,7 +34,7 @@
     {
       "name": "device pixel ratio",
       "href": "https://www.w3.org/TR/window-management/#screen-device-pixel-ratio",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#screen\" id=\"ref-for-screen⑦\">screen</a> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"screen\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"screen-device-pixel-ratio\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">device pixel ratio</dfn>, similar to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>'s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio\" id=\"ref-for-dom-window-devicepixelratio\">devicePixelRatio</a></code>, which is the result of the following algorithm:",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#screen\" id=\"ref-for-screen⑦\">screen</a> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"screen\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"screen-device-pixel-ratio\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">device pixel ratio</dfn>, similar to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio\" id=\"ref-for-dom-window-devicepixelratio\">devicePixelRatio</a></code>, which is the result of the following algorithm:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -55,7 +55,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management\">window-management</a></code>\", return false and abort these steps.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management\">window-management</a></code>\", return false and abort these steps.</p>"
         },
         {
           "html": "<p>Return true if the device has more than one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#screen\" id=\"ref-for-screen③⑨\">screen</a>, and false otherwise.</p>"
@@ -72,7 +72,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management①\">window-management</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management①\">window-management</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and abort these steps.</p>"
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
@@ -104,14 +104,171 @@
       ]
     },
     {
+      "name": "request a window display state change",
+      "href": "https://www.w3.org/TR/window-management/#request-a-window-display-state-change",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-a-window-display-state-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request a window display state change</dfn> to a target display state <var>targetState</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use②\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management②\">window-management</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated Document</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-installed-web-application\" id=\"ref-for-dfn-installed-web-application\">installed web application</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>permissionState</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use①\">request permission to use</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#permissiondef-window-management\" id=\"ref-for-permissiondef-window-management①\">window-management</a></code>\".</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a> using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#window-placement-task-source\" id=\"ref-for-window-placement-task-source②\">window placement task source</a> to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>permissionState</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied①\">denied</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑤\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">Consume user activation</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>state</var> be the window’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state\" id=\"ref-for-display-state\">display state</a>.</p>"
+                },
+                {
+                  "html": "<p>If any of the following are true, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined and abort these steps:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>targetState</var> is \"minimized\" and <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-minimized\" id=\"ref-for-display-state-minimized\">minimized</a>.</p>\n           </li><li data-md=\"\">\n            <p><var>targetState</var> is \"maximized\" and <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-maximized\" id=\"ref-for-display-state-maximized\">maximized</a>.</p>\n           </li><li data-md=\"\">\n            <p><var>targetState</var> is \"restored\" and <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-normal\" id=\"ref-for-display-state-normal\">normal</a>.</p>\n          </li></ul>"
+                },
+                {
+                  "html": "<p>If <var>targetState</var> is \"minimized\" or \"maximized\":</p>",
+                  "ignored": [
+                    "Request the user agent to change the window’s display state to targetState."
+                  ]
+                },
+                {
+                  "html": "Else if <var>targetState</var> is \"restored\":",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-minimized\" id=\"ref-for-display-state-minimized①\">minimized</a>, request the user agent to unminimize the window, restoring it to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state\" id=\"ref-for-display-state①\">display state</a> prior to being minimized.</p>"
+                    },
+                    {
+                      "html": "<p>Else if <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-fullscreen\" id=\"ref-for-display-state-fullscreen\">fullscreen</a>, request the user agent to exit fullscreen, restoring the window to its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state\" id=\"ref-for-display-state②\">display state</a> prior to entering fullscreen.</p>"
+                    },
+                    {
+                      "html": "<p>Else if <var>state</var> is <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-maximized\" id=\"ref-for-display-state-maximized①\">maximized</a>, request the user agent to unmaximize the window, restoring it to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#display-state-normal\" id=\"ref-for-display-state-normal①\">normal</a> display state.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>If the operation succeeds, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with undefined.</p>"
+                },
+                {
+                  "html": "<p>If the operation fails, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑥\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and abort these steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/minimize()",
+      "href": "https://www.w3.org/TR/window-management/#dom-window-minimize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-minimize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>minimize()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#request-a-window-display-state-change\" id=\"ref-for-request-a-window-display-state-change\">request a window display state change</a> algorithm with \"minimized\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/maximize()",
+      "href": "https://www.w3.org/TR/window-management/#dom-window-maximize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-maximize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>maximize()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#request-a-window-display-state-change\" id=\"ref-for-request-a-window-display-state-change①\">request a window display state change</a> algorithm with \"maximized\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/restore()",
+      "href": "https://www.w3.org/TR/window-management/#dom-window-restore",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-restore\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>restore()</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#request-a-window-display-state-change\" id=\"ref-for-request-a-window-display-state-change②\">request a window display state change</a> algorithm with \"restored\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "Window/setResizable(resizable)",
+      "href": "https://www.w3.org/TR/window-management/#dom-window-setresizable",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-setresizable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>setResizable(<var>resizable</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window④\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use③\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature③\">policy-controlled feature</a> named \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-permissionpolicy-window-management\" id=\"ref-for-dom-permissionpolicy-window-management③\">window-management</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑦\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window⑤\">associated Document</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/appmanifest/#dfn-installed-web-application\" id=\"ref-for-dfn-installed-web-application①\">installed web application</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑧\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>permissionState</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use②\">request permission to use</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#permissiondef-window-management\" id=\"ref-for-permissiondef-window-management②\">window-management</a></code>\".</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a> using the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#window-placement-task-source\" id=\"ref-for-window-placement-task-source⑦\">window placement task source</a> to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>permissionState</var> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied②\">denied</a></code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑨\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p>Request the user agent to set the resizable state of the window to <var>resizable</var>.</p>"
+                },
+                {
+                  "html": "<p>If the operation succeeds, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with undefined.</p>"
+                },
+                {
+                  "html": "<p>If the operation fails, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①⓪\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> and abort these steps.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
       "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-open\" id=\"ref-for-dom-open③\">Window.open()</a></code> method steps, and the steps of methods invoked therein, are updated to optionally:",
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Waive the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a> state requirement when the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a> is greater than or equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot\">[[targetScreenFullscreen]]</a></code>, and less than <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot①\">[[targetScreenFullscreen]]</a></code> plus the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#transient-activation-duration\" id=\"ref-for-transient-activation-duration\">transient activation duration</a>.</p>"
+          "html": "<p>Waive the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a> state requirement when the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object</a> is greater than or equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot\">[[targetScreenFullscreen]]</a></code>, and less than <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot①\">[[targetScreenFullscreen]]</a></code> plus the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/#transient-activation-duration\" id=\"ref-for-transient-activation-duration\">transient activation duration</a>.</p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot②\">[[targetScreenFullscreen]]</a></code> to negative infinity immediately after following the steps to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation①\">consume user activation</a>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot②\">[[targetScreenFullscreen]]</a></code> to negative infinity immediately after following the steps to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation②\">consume user activation</a>.</p>"
         }
       ]
     },
@@ -166,10 +323,10 @@
       "rationale": "take",
       "steps": [
         {
-          "html": "<p>Take <code>options</code>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-fullscreenoptions-screen\" id=\"ref-for-dom-fullscreenoptions-screen②\">screen</a></code>\"] into account when moving and resizing <code>pendingDoc</code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s viewport. The viewport may be moved to the specified <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#screen\" id=\"ref-for-screen⑥⑦\">screen</a> as part of this modified method step.</p>"
+          "html": "<p>Take <code>options</code>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-fullscreenoptions-screen\" id=\"ref-for-dom-fullscreenoptions-screen②\">screen</a></code>\"] into account when moving and resizing  <code>pendingDoc</code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s viewport. The viewport may be moved to the specified <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/window-management/#screen\" id=\"ref-for-screen⑥⑦\">screen</a> as part of this modified method step.</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot③\">[[targetScreenFullscreen]]</a></code> internal slot to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> if <code>options</code>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-fullscreenoptions-screen\" id=\"ref-for-dom-fullscreenoptions-screen③\">screen</a></code>\"] specifies a recognized <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#screendetailed\" id=\"ref-for-screendetailed①③\">ScreenDetailed</a></code> object with a value of true for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-screen-isextended\" id=\"ref-for-dom-screen-isextended⑤\">isExtended</a></code>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-window-targetscreenfullscreen-slot\" id=\"ref-for-dom-window-targetscreenfullscreen-slot③\">[[targetScreenFullscreen]]</a></code> internal slot to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> if <code>options</code>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-fullscreenoptions-screen\" id=\"ref-for-dom-fullscreenoptions-screen③\">screen</a></code>\"] specifies a recognized <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#screendetailed\" id=\"ref-for-screendetailed①③\">ScreenDetailed</a></code> object with a value of true for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/window-management/#dom-screen-isextended\" id=\"ref-for-dom-screen-isextended⑤\">isExtended</a></code>.</p>"
         }
       ]
     }

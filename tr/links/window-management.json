@@ -14,8 +14,7 @@
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
-          "page-zoom",
-          "web-exposed-screen-information"
+          "page-zoom"
         ]
       },
       "https://drafts.csswg.org/cssom-view/": {},
@@ -34,12 +33,18 @@
           "privacy--security"
         ]
       },
+      "https://github.com/w3c/window-management/blob/main/EXPLAINER_additional_windowing_controls.md": {
+        "anchors": [
+          "security--privacy-considerations"
+        ]
+      },
       "https://github.com/w3c/window-management/blob/main/EXPLAINER_initiating_multi_screen_experiences.md": {
         "anchors": [
           "security-considerations"
         ]
       },
       "https://github.com/w3c/window-management/blob/main/security_and_privacy.md": {},
+      "https://github.com/w3c/window-management/blob/main/security_and_privacy_additional_windowing_controls.md": {},
       "https://github.com/w3c/window-management/blob/main/security_and_privacy_initiating_multi_screen_experiences.md": {},
       "https://github.com/w3c/window-management/issues": {},
       "https://github.com/w3c/window-management/issues/114": {},
@@ -56,21 +61,13 @@
       "https://webidl.spec.whatwg.org/": {},
       "https://webscreens.github.io/form-factors/": {},
       "https://www.w3.org/2004/01/pp-impl/74168/status": {},
-      "https://www.w3.org/2023/Process-20231103/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/appmanifest/": {},
+      "https://www.w3.org/TR/css-conditional-3/": {},
       "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
+          "web-exposed-screen-information",
           "the-screen-interface"
         ]
       },
@@ -85,7 +82,18 @@
       "https://www.w3.org/TR/permissions/": {},
       "https://www.w3.org/TR/screen-orientation/": {},
       "https://www.w3.org/community/webscreens/": {},
-      "https://www.w3.org/groups/wg/secondscreen": {}
+      "https://www.w3.org/groups/wg/secondscreen": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -98,14 +106,6 @@
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "px"
-        ]
-      },
-      "https://drafts.csswg.org/cssom-view-1/": {
-        "anchors": [
-          "web-exposed-screen-area",
-          "web-exposed-available-screen-area",
-          "dom-window-screenleft",
-          "dom-window-screentop"
         ]
       },
       "https://fullscreen.spec.whatwg.org/": {
@@ -123,7 +123,8 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "top-level-browsing-context",
-          "nav-document"
+          "nav-document",
+          "browsing-context"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -138,8 +139,8 @@
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
-          "consume-user-activation",
-          "transient-activation"
+          "transient-activation",
+          "consume-user-activation"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -176,6 +177,7 @@
           "idl-boolean",
           "this",
           "idl-promise",
+          "idl-undefined",
           "a-new-promise",
           "reject",
           "notallowederror",
@@ -188,15 +190,29 @@
           "idl-DOMString"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "anchors": [
+          "dfn-installed-web-application",
+          "dfn-application-context"
+        ]
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-media"
+        ]
+      },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
           "screen",
           "dom-window-moveto",
           "dom-window-devicepixelratio",
+          "web-exposed-screen-area",
+          "web-exposed-available-screen-area",
           "dom-window-screen",
           "dom-window-screenx",
+          "dom-window-screenleft",
           "dom-window-screeny",
+          "dom-window-screentop",
           "dom-window-moveby",
           "dom-window-resizeto",
           "dom-window-resizeby"
@@ -209,7 +225,7 @@
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
-          "dom-domhighrestimestamp",
+          "typedefdef-domhighrestimestamp",
           "dfn-current-high-resolution-time"
         ]
       },
@@ -226,7 +242,8 @@
           "dfn-default-powerful-feature",
           "dfn-name"
         ]
-      }
+      },
+      "https://www.w3.org/policies/patent-policy/20200915/": {}
     }
   }
 }
