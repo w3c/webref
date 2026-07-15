@@ -3139,6 +3139,18 @@
           "html": "<p>If <var>T</var> is a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#runtime-sized\" id=\"ref-for-runtime-sized\">runtime-sized</a> array, or contains a runtime-sized array, replace\nthat <code>array&lt;E&gt;</code> with <code>array&lt;E, 1&gt;</code>.</p>"
         },
         {
+          "html": "If <var>T</var> is a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#runtime-sized\" id=\"ref-for-runtime-sized①\">runtime-sized</a> buffer, then",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "<p>Find all <code>bufferView</code> and <code>bufferArrayView</code> built-in function calls where the buffer\nvariable is the originating variable for the pointer argument.\nLet the template parameter be <var>RT</var>.</p>"
+            },
+            {
+              "html": "<p>Return the maximum value of <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#mintypesize\" id=\"ref-for-mintypesize\">MinTypeSize</a>(<var>RT</var>) among all the calls.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#sizeof\" id=\"ref-for-sizeof②\">SizeOf</a>(<var>T</var>).</p>"
         }
       ]

@@ -549,5 +549,25 @@
       "href": "https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list",
       "type": "type"
     }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "i",
+      "prose": "To match attribute values ASCII case-insensitively regardless of document language rules, the attribute selector may include the identifier i before the closing bracket (]). When this flag is present, UAs must match the attribute’s value ASCII case-insensitively (i.e. [a-z] and [A-Z] are considered equivalent).",
+      "href": "https://drafts.csswg.org/selectors-4/#valdef-attribute-selector-i",
+      "type": "value",
+      "value": "i",
+      "for": "attribute selector"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "s",
+      "prose": "Alternately, the attribute selector may include the identifier s before the closing bracket (]); in this case the UA must match the value case-sensitively, with “identical to” semantics [INFRA], regardless of document language rules.",
+      "href": "https://drafts.csswg.org/selectors-4/#valdef-attribute-selector-s",
+      "type": "value",
+      "value": "s",
+      "for": "attribute selector"
+    }
   ]
 }
