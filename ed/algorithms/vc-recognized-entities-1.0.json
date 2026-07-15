@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "title": "Recognized Entities v1.0",
+    "url": "https://w3c.github.io/vc-recognized-entities/"
+  },
+  "algorithms": [
+    {
+      "html": "To perform <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-credential-based-discovery\" class=\"internalDFN\" id=\"ref-for-dfn-credential-based-discovery-2\">credential-based discovery</a> on a <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\n(<var>credential</var>) against a configured set of recognized <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a>\n(<var>recognizedIssuers</var>) and an optional set of <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-holders\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders\">holder</a>-provided\n<a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credentials</a> (<var>providedDocuments</var>), a <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifier\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> runs\nthe following algorithm. The algorithm returns a list representing the\nrecognition chain on success, or an error if no recognized <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> can be\nreached.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>current</var> be <var>credential</var> and let <var>chain</var> be an\nempty list."
+        },
+        {
+          "html": "Let <var>maxDepth</var> be the maximum recognition chain depth the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifier\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>\nis configured to traverse. If the length of <var>chain</var> exceeds\n<var>maxDepth</var>, return an error."
+        },
+        {
+          "html": "Let <var>issuer</var> be the value of the <code>issuer</code> property of\n<var>current</var>, and let <var>issuerId</var> be its identifier."
+        },
+        {
+          "html": "If <var>issuerId</var> is a member of <var>recognizedIssuers</var>, append\n<var>current</var> to <var>chain</var> and return <var>chain</var>; discovery has\nsucceeded."
+        },
+        {
+          "html": "If <var>issuer</var> does not contain a <code>recognizedIn</code> property, return an error;\nthe recognition hierarchy cannot be traversed any further."
+        },
+        {
+          "html": "Let <var>listReference</var> be the value of the <code>recognizedIn</code> property and let\n<var>listId</var> be its <code>id</code>."
+        },
+        {
+          "html": "Let <var>list</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-11\">recognized entity credential</a> identified by\n<var>listId</var>, obtained from <var>providedDocuments</var> if present and\nsufficiently fresh, or otherwise retrieved from <var>listId</var>."
+        },
+        {
+          "html": "Verify the proof on <var>list</var>, confirm that it is currently valid, and\nconfirm that <var>issuerId</var> appears as the <code>id</code> of a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-7\">recognized entity</a>\nin the <code>credentialSubject</code> of <var>list</var>. If any check fails, return an\nerror."
+        },
+        {
+          "html": "Append <var>current</var> to <var>chain</var>, set <var>current</var> to\n<var>list</var>, and return to step 2 to evaluate the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> of the list."
+        }
+      ]
+    }
+  ]
+}
