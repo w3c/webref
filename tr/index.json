@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-07-15T01:38:18.687Z",
+  "date": "2026-07-16T01:49:25.950Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -18,9 +18,6 @@
       "compression",
       "console",
       "cookiestore",
-      "partitioned-cookies",
-      "client-hint-reliability",
-      "idempotency-key-header",
       "layered-cookies",
       "no-vary-search",
       "rfc6265bis",
@@ -50,6 +47,7 @@
       "fetch",
       "fido-client-to-authenticator-protocol-v2.1",
       "fido-client-to-authenticator-protocol-v2.2",
+      "fido-client-to-authenticator-protocol-v2.3",
       "fs",
       "fullscreen",
       "html",
@@ -59,6 +57,7 @@
       "webxr-plane-detection",
       "raw-camera-access",
       "real-world-meshing",
+      "webxr-webgpu-binding",
       "infra",
       "mimesniff",
       "notifications",
@@ -154,7 +153,6 @@
       "at-driver",
       "css-aam",
       "shacl12-cs",
-      "shacl12-profiling",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -197,6 +195,7 @@
       "web-bluetooth-scanning",
       "webidl",
       "prompt-api",
+      "proofreader-api",
       "translation-api",
       "webmcp",
       "writing-assistance-apis",
@@ -212,7 +211,9 @@
       "connection-allowlists",
       "container-timing",
       "content-index",
+      "cpu-performance",
       "crash-reporting",
+      "cross-origin-storage",
       "csp-next",
       "css-parser-api",
       "datacue",
@@ -620,6 +621,7 @@
       "service-workers",
       "shacl12-core",
       "shacl12-node-expr",
+      "shacl12-profiling",
       "shacl12-rules",
       "shacl12-sparql",
       "shacl12-ui",
@@ -666,10 +668,13 @@
       "vc-di-ecdsa",
       "vc-di-eddsa-1.1",
       "vc-di-eddsa",
+      "vc-di-quantum-resistant-1.0",
+      "vc-forgery-defense-1.0",
       "vc-jose-cose",
       "vc-json-schema",
       "vc-recognized-entities-1.0",
       "vc-render-method",
+      "vcalm-1.0",
       "vibration",
       "virtual-keyboard",
       "vocab-dcat-3",
@@ -770,10 +775,10 @@
     ]
   },
   "stats": {
-    "crawled": 415,
+    "crawled": 419,
     "errors": 0
   },
-  "crawler": "reffy-21.0.4",
+  "crawler": "reffy-21.0.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -819,7 +824,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "15 July 2026",
+      "date": "16 July 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1851,11 +1856,11 @@
       ],
       "crawled": "https://www.w3.org/TR/cbor-ld-10/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Jul 2026 16:28:25 GMT"
+        "lastModified": "Wed, 15 Jul 2026 19:36:56 GMT"
       },
       "generator": "respec",
-      "date": "08 July 2026",
-      "revision": "a8ed441a5e5bd9c1927594136dd3d64800b1d787",
+      "date": "15 July 2026",
+      "revision": "843fb52c1844cf600be8917c7021aaa652f4ac37",
       "algorithms": "algorithms/cbor-ld-10.json",
       "links": "links/cbor-ld-10.json",
       "refs": "refs/cbor-ld-10.json",
@@ -2151,6 +2156,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/compositing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/compositing-1/",
         "https://drafts.csswg.org/compositing-1/",
@@ -4162,11 +4173,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jun 2026 16:29:14 GMT"
+        "lastModified": "Wed, 15 Jul 2026 12:56:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 June 2026",
-      "revision": "8829a2dba606e04519a87a7e2e6c9b58ec0afa05",
+      "date": "15 July 2026",
+      "revision": "324e9d7e0fb1477bc7584d21c6862c00b1b742ae",
       "algorithms": "algorithms/css-color-4.json",
       "links": "links/css-color-4.json",
       "refs": "refs/css-color-4.json",
@@ -5641,8 +5652,8 @@
       "series": {
         "shortname": "css-gaps",
         "currentSpecification": "css-gaps-1",
-        "title": "CSS Gap Decorations Module",
-        "shortTitle": "CSS Gap Decorations",
+        "title": "CSS Gaps",
+        "shortTitle": "CSS Gaps",
         "releaseUrl": "https://www.w3.org/TR/css-gaps/",
         "nightlyUrl": "https://drafts.csswg.org/css-gaps/"
       },
@@ -5672,7 +5683,7 @@
       },
       "title": "CSS Gaps Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Gap Decorations 1",
+      "shortTitle": "CSS Gaps 1",
       "categories": [
         "browser"
       ],
@@ -6627,6 +6638,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-masking"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-masking-1/",
         "https://drafts.csswg.org/css-masking-1/"
@@ -11048,11 +11065,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Jul 2026 08:41:14 GMT"
+        "lastModified": "Wed, 15 Jul 2026 18:41:11 GMT"
       },
       "generator": "respec",
-      "date": "09 July 2026",
-      "revision": "900fd3f6ff3981d2e5499bc433162afd83edc31c",
+      "date": "15 July 2026",
+      "revision": "e650a1006aa081f9dfae2f18c3763109ff4dd355",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -12537,6 +12554,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/fill-stroke"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/fill-stroke-3/",
         "https://drafts.csswg.org/fill-stroke-3/"
@@ -12600,6 +12623,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/filter-effects"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/filter-effects-1/",
         "https://drafts.csswg.org/filter-effects-1/"
@@ -12911,6 +12940,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/geometry"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/geometry-1/",
         "https://drafts.csswg.org/geometry-1/",
@@ -15651,6 +15686,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/motion"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/motion-1/",
         "https://drafts.csswg.org/motion-1/"
@@ -17186,13 +17227,15 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/pointerevents3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://www.w3.org/TR/pointerevents3/",
+        "url": "https://w3c.github.io/pointerevents/",
         "status": "Editor's Draft",
         "alternateUrls": [],
+        "repository": "https://github.com/w3c/pointerevents",
+        "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Pointer Events",
@@ -17202,8 +17245,15 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "pointerevents"
+        ]
+      },
       "versions": [
-        "https://www.w3.org/TR/pointerevents3/"
+        "https://www.w3.org/TR/pointerevents3/",
+        "https://w3c.github.io/pointerevents/"
       ],
       "crawled": "https://www.w3.org/TR/pointerevents3/",
       "crawlCacheInfo": {
@@ -19491,7 +19541,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-node-expr/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19524,6 +19574,62 @@
       "dfns": "dfns/shacl12-node-expr.json",
       "headings": "headings/shacl12-node-expr.json",
       "ids": "ids/shacl12-node-expr.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-profiling/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-profiling",
+      "series": {
+        "shortname": "shacl-profiling",
+        "currentSpecification": "shacl12-profiling",
+        "title": "SHACL Profiling",
+        "shortTitle": "SHACL Profiling",
+        "releaseUrl": "https://www.w3.org/TR/shacl-profiling/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-profiling/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-profiling/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-profiling/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-profiling/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Profiling",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Profiling",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-profiling/",
+        "https://w3c.github.io/data-shapes/shacl12-profiling/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-profiling/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 29 Jun 2026 15:14:20 GMT"
+      },
+      "generator": "respec",
+      "date": "02 July 2026",
+      "algorithms": "algorithms/shacl12-profiling.json",
+      "links": "links/shacl12-profiling.json",
+      "refs": "refs/shacl12-profiling.json",
+      "dfns": "dfns/shacl12-profiling.json",
+      "headings": "headings/shacl12-profiling.json",
+      "ids": "ids/shacl12-profiling.json",
       "cddl": []
     },
     {
@@ -19629,11 +19735,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Jul 2026 10:48:28 GMT"
+        "lastModified": "Wed, 15 Jul 2026 02:17:46 GMT"
       },
       "generator": "respec",
-      "date": "09 July 2026",
-      "revision": "a12c72be9fcda18a93d0b952807608315f47b50e",
+      "date": "15 July 2026",
+      "revision": "3160a7c6f4ea0aeb6592461cf41a4969d2ee1abc",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
@@ -21694,11 +21800,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-barcodes-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jun 2026 17:10:17 GMT"
+        "lastModified": "Wed, 15 Jul 2026 19:09:19 GMT"
       },
       "generator": "respec",
-      "date": "23 June 2026",
-      "revision": "262a3db1366521ad98a6e935c25bd0763e33c881",
+      "date": "15 July 2026",
+      "revision": "a087758a40f1b8383f107da6c1afd683e9bd20fb",
       "algorithms": "algorithms/vc-barcodes-1.0.json",
       "links": "links/vc-barcodes-1.0.json",
       "refs": "refs/vc-barcodes-1.0.json",
@@ -22316,6 +22422,119 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-quantum-resistant-1.0",
+      "series": {
+        "shortname": "vc-di-quantum-resistant",
+        "currentSpecification": "vc-di-quantum-resistant-1.0",
+        "title": "Quantum-Resistant Cryptosuites v1.0",
+        "shortTitle": "Quantum-Resistant Cryptosuites v1.0",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-quantum-resistant/",
+        "nightlyUrl": "https://w3c.github.io/vc-di-quantum-resistant/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-quantum-resistant/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-quantum-resistant",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Quantum-Resistant Cryptosuites v1.0",
+      "source": "w3c",
+      "shortTitle": "Quantum-Resistant Cryptosuites v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/",
+        "https://w3c.github.io/vc-di-quantum-resistant/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 06 Jun 2026 15:21:50 GMT"
+      },
+      "generator": "respec",
+      "date": "16 June 2026",
+      "algorithms": "algorithms/vc-di-quantum-resistant-1.0.json",
+      "links": "links/vc-di-quantum-resistant-1.0.json",
+      "refs": "refs/vc-di-quantum-resistant-1.0.json",
+      "dfns": "dfns/vc-di-quantum-resistant-1.0.json",
+      "headings": "headings/vc-di-quantum-resistant-1.0.json",
+      "ids": "ids/vc-di-quantum-resistant-1.0.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-forgery-defense-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-forgery-defense-1.0",
+      "series": {
+        "shortname": "vc-forgery-defense",
+        "currentSpecification": "vc-forgery-defense-1.0",
+        "title": "Verifiable Credential Forgery Defense",
+        "shortTitle": "Verifiable Credential Forgery Defense",
+        "releaseUrl": "https://www.w3.org/TR/vc-forgery-defense/",
+        "nightlyUrl": "https://w3c.github.io/vc-forgery-defense/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-forgery-defense-1.0/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-forgery-defense/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-forgery-defense",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Forgery Defense v1.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Forgery Defense v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-forgery-defense-1.0/",
+        "https://w3c.github.io/vc-forgery-defense/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-forgery-defense-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 14 Jul 2026 14:30:59 GMT"
+      },
+      "generator": "respec",
+      "date": "14 July 2026",
+      "revision": "0f4a196f0fabb7d8ef1a14cf8a56e2e2cd7369ad",
+      "algorithms": "algorithms/vc-forgery-defense-1.0.json",
+      "links": "links/vc-forgery-defense-1.0.json",
+      "refs": "refs/vc-forgery-defense-1.0.json",
+      "dfns": "dfns/vc-forgery-defense-1.0.json",
+      "headings": "headings/vc-forgery-defense-1.0.json",
+      "ids": "ids/vc-forgery-defense-1.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-jose-cose/",
       "seriesComposition": "full",
       "shortname": "vc-jose-cose",
@@ -22538,6 +22757,63 @@
       "dfns": "dfns/vc-render-method.json",
       "headings": "headings/vc-render-method.json",
       "ids": "ids/vc-render-method.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vcalm-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vcalm-1.0",
+      "series": {
+        "shortname": "vcalm",
+        "currentSpecification": "vcalm-1.0",
+        "title": "VCALM",
+        "shortTitle": "VCALM",
+        "releaseUrl": "https://www.w3.org/TR/vcalm/",
+        "nightlyUrl": "https://w3c.github.io/vcalm/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vcalm-1.0/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vcalm/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vcalm",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "VCALM v1.0",
+      "source": "w3c",
+      "shortTitle": "VCALM v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vcalm-1.0/",
+        "https://w3c.github.io/vcalm/"
+      ],
+      "crawled": "https://www.w3.org/TR/vcalm-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 14 Jul 2026 19:37:54 GMT"
+      },
+      "generator": "respec",
+      "date": "14 July 2026",
+      "revision": "e44237ea24151ee1f8ec248bab107375949b035b",
+      "algorithms": "algorithms/vcalm-1.0.json",
+      "links": "links/vcalm-1.0.json",
+      "refs": "refs/vcalm-1.0.json",
+      "dfns": "dfns/vcalm-1.0.json",
+      "headings": "headings/vcalm-1.0.json",
+      "ids": "ids/vcalm-1.0.json",
       "cddl": []
     },
     {

@@ -1,0 +1,945 @@
+{
+  "spec": {
+    "title": "VCALM v1.0",
+    "url": "https://www.w3.org/TR/vcalm-1.0/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#title",
+      "level": 1,
+      "title": "VCALM v1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#subtitle",
+      "level": 2,
+      "title": "A Verifiable Credential API for Lifecycle Management"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "design-goals-and-rationale",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#design-goals-and-rationale",
+      "level": 3,
+      "title": "Design Goals and Rationale",
+      "alternateIds": [
+        "x1-1-design-goals-and-rationale"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "http-api-design-guidelines",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#http-api-design-guidelines",
+      "level": 4,
+      "title": "HTTP API Design Guidelines"
+    },
+    {
+      "id": "architecture-overview",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#architecture-overview",
+      "level": 3,
+      "title": "Architecture Overview",
+      "alternateIds": [
+        "x1-2-architecture-overview"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-4-terminology"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "architecture",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#architecture",
+      "level": 2,
+      "title": "Architecture",
+      "alternateIds": [
+        "x2-architecture"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "coordinators",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#coordinators",
+      "level": 3,
+      "title": "Coordinators",
+      "alternateIds": [
+        "x2-1-coordinators"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "services",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#services",
+      "level": 3,
+      "title": "Services",
+      "alternateIds": [
+        "x2-2-services"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "instances",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#instances",
+      "level": 3,
+      "title": "Instances",
+      "alternateIds": [
+        "x2-3-instances"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "configurations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#configurations",
+      "level": 3,
+      "title": "Configurations",
+      "alternateIds": [
+        "x2-4-configurations"
+      ],
+      "number": "2.4"
+    },
+    {
+      "id": "base-url",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#base-url",
+      "level": 4,
+      "title": "Base URL"
+    },
+    {
+      "id": "authorization",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#authorization",
+      "level": 4,
+      "title": "Authorization"
+    },
+    {
+      "id": "forbidden-authorization",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#forbidden-authorization",
+      "level": 5,
+      "title": "Forbidden Authorization"
+    },
+    {
+      "id": "authorization-capabilities",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#authorization-capabilities",
+      "level": 5,
+      "title": "Authorization Capabilities"
+    },
+    {
+      "id": "allow-a-client-controller-to-update-or-retrieve-the-configuration-of-a-particular-workflow-instance-a-zcap-with-this-subset-is-expected-to-be-distributed-to-an-administrator",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#allow-a-client-controller-to-update-or-retrieve-the-configuration-of-a-particular-workflow-instance-a-zcap-with-this-subset-is-expected-to-be-distributed-to-an-administrator",
+      "level": 5,
+      "title": "Allow a client controller to update or retrieve the configuration of a particular workflow instance (a ZCAP with this subset is expected to be distributed to an administrator)"
+    },
+    {
+      "id": "allow-a-client-controller-to-create-exchanges-or-retrieve-the-state-of-any-exchange-from-a-particular-workflow-instance-a-zcap-with-this-subset-is-expected-to-be-distributed-to-a-coordinator",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#allow-a-client-controller-to-create-exchanges-or-retrieve-the-state-of-any-exchange-from-a-particular-workflow-instance-a-zcap-with-this-subset-is-expected-to-be-distributed-to-a-coordinator",
+      "level": 5,
+      "title": "Allow a client controller to create exchanges or retrieve the state of any exchange from a particular workflow instance (a ZCAP with this subset is expected to be distributed to a coordinator)"
+    },
+    {
+      "id": "allow-a-client-controller-to-access-the-api-endpoint-for-credential-issuance-on-the-issuer-instance-identified-in-the-zcap-a-zcap-with-this-subset-is-expected-to-be-distributed-to-an-issuer-coordinator-or-a-workflow-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#allow-a-client-controller-to-access-the-api-endpoint-for-credential-issuance-on-the-issuer-instance-identified-in-the-zcap-a-zcap-with-this-subset-is-expected-to-be-distributed-to-an-issuer-coordinator-or-a-workflow-service",
+      "level": 5,
+      "title": "Allow a client controller to access the API endpoint for credential issuance on the issuer instance identified in the ZCAP (a ZCAP with this subset is expected to be distributed to an issuer coordinator or a workflow service)"
+    },
+    {
+      "id": "oauth-2-0",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#oauth-2-0",
+      "level": 5,
+      "title": "OAuth 2.0"
+    },
+    {
+      "id": "options",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#options",
+      "level": 4,
+      "title": "Options"
+    },
+    {
+      "id": "content-serialization",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#content-serialization",
+      "level": 4,
+      "title": "Content Serialization"
+    },
+    {
+      "id": "credential-and-presentation-objects-in-api-descriptions",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#credential-and-presentation-objects-in-api-descriptions",
+      "level": 4,
+      "title": "Credential and Presentation Objects in API Descriptions"
+    },
+    {
+      "id": "payload-sizes-0",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#payload-sizes-0",
+      "level": 4,
+      "title": "Payload Sizes"
+    },
+    {
+      "id": "http-api",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#http-api",
+      "level": 2,
+      "title": "HTTP API",
+      "alternateIds": [
+        "x3-http-api"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "component-overview",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#component-overview",
+      "level": 3,
+      "title": "Component Overview",
+      "alternateIds": [
+        "x3-1-component-overview"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "issuer-coordinator",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#issuer-coordinator",
+      "level": 4,
+      "title": "Issuer Coordinator"
+    },
+    {
+      "id": "issuer-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#issuer-service",
+      "level": 4,
+      "title": "Issuer Service"
+    },
+    {
+      "id": "verifier-coordinator",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verifier-coordinator",
+      "level": 4,
+      "title": "Verifier Coordinator"
+    },
+    {
+      "id": "verifier-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verifier-service",
+      "level": 4,
+      "title": "Verifier Service"
+    },
+    {
+      "id": "holder-coordinator",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#holder-coordinator",
+      "level": 4,
+      "title": "Holder Coordinator"
+    },
+    {
+      "id": "holder-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#holder-service",
+      "level": 4,
+      "title": "Holder Service"
+    },
+    {
+      "id": "status-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#status-service",
+      "level": 4,
+      "title": "Status Service"
+    },
+    {
+      "id": "workflow-service",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#workflow-service",
+      "level": 4,
+      "title": "Workflow Service"
+    },
+    {
+      "id": "issuing",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#issuing",
+      "level": 3,
+      "title": "Issuing",
+      "alternateIds": [
+        "x3-2-issuing"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "issue-credential",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#issue-credential",
+      "level": 4,
+      "title": "Issue Credential",
+      "alternateIds": [
+        "x3-2-1-issue-credential"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "get-a-specific-credential",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-a-specific-credential",
+      "level": 4,
+      "title": "Get a Specific Credential",
+      "alternateIds": [
+        "x3-2-2-get-a-specific-credential"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "delete-a-specific-credential",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#delete-a-specific-credential",
+      "level": 4,
+      "title": "Delete a Specific Credential",
+      "alternateIds": [
+        "x3-2-3-delete-a-specific-credential"
+      ],
+      "number": "3.2.3"
+    },
+    {
+      "id": "verifying",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verifying",
+      "level": 3,
+      "title": "Verifying",
+      "alternateIds": [
+        "x3-3-verifying"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "verify-credential",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verify-credential",
+      "level": 4,
+      "title": "Verify Credential",
+      "alternateIds": [
+        "x3-3-1-verify-credential"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "verify-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verify-presentation",
+      "level": 4,
+      "title": "Verify Presentation",
+      "alternateIds": [
+        "x3-3-2-verify-presentation"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "create-challenge",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-challenge",
+      "level": 4,
+      "title": "Create Challenge",
+      "alternateIds": [
+        "x3-3-3-create-challenge"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "requesting-a-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#requesting-a-presentation",
+      "level": 3,
+      "title": "Requesting a Presentation",
+      "alternateIds": [
+        "x3-4-requesting-a-presentation"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "verifiable-presentation-request",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verifiable-presentation-request",
+      "level": 4,
+      "title": "Verifiable Presentation Request",
+      "alternateIds": [
+        "x3-4-1-verifiable-presentation-request"
+      ],
+      "number": "3.4.1"
+    },
+    {
+      "id": "query-by-example",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#query-by-example",
+      "level": 4,
+      "title": "Query By Example",
+      "alternateIds": [
+        "x3-4-2-query-by-example"
+      ],
+      "number": "3.4.2"
+    },
+    {
+      "id": "did-authentication",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#did-authentication",
+      "level": 4,
+      "title": "DID Authentication",
+      "alternateIds": [
+        "x3-4-3-did-authentication"
+      ],
+      "number": "3.4.3"
+    },
+    {
+      "id": "the-did-authentication-query-format",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#the-did-authentication-query-format",
+      "level": 5,
+      "title": "The DID Authentication Query Format",
+      "alternateIds": [
+        "x3-4-3-1-the-did-authentication-query-format"
+      ],
+      "number": "3.4.3.1"
+    },
+    {
+      "id": "the-did-authentication-response-format",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#the-did-authentication-response-format",
+      "level": 5,
+      "title": "The DID Authentication Response Format",
+      "alternateIds": [
+        "x3-4-3-2-the-did-authentication-response-format"
+      ],
+      "number": "3.4.3.2"
+    },
+    {
+      "id": "authorization-capability-request",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#authorization-capability-request",
+      "level": 4,
+      "title": "Authorization Capability Request",
+      "alternateIds": [
+        "x3-4-4-authorization-capability-request"
+      ],
+      "number": "3.4.4"
+    },
+    {
+      "id": "logical-operations-in-queries",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#logical-operations-in-queries",
+      "level": 4,
+      "title": "Logical Operations in Queries",
+      "alternateIds": [
+        "x3-4-5-logical-operations-in-queries"
+      ],
+      "number": "3.4.5"
+    },
+    {
+      "id": "top-level-queries-and-operation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#top-level-queries-and-operation",
+      "level": 5,
+      "title": "Top-Level Queries (\"AND\" Operation)",
+      "alternateIds": [
+        "x3-4-5-1-top-level-queries-and-operation"
+      ],
+      "number": "3.4.5.1"
+    },
+    {
+      "id": "nested-queries-or-operation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#nested-queries-or-operation",
+      "level": 5,
+      "title": "Nested Queries (\"OR\" Operation)",
+      "alternateIds": [
+        "x3-4-5-2-nested-queries-or-operation"
+      ],
+      "number": "3.4.5.2"
+    },
+    {
+      "id": "presenting",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#presenting",
+      "level": 3,
+      "title": "Presenting",
+      "alternateIds": [
+        "x3-5-presenting"
+      ],
+      "number": "3.5"
+    },
+    {
+      "id": "derive-credential",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#derive-credential",
+      "level": 4,
+      "title": "Derive Credential",
+      "alternateIds": [
+        "x3-5-1-derive-credential"
+      ],
+      "number": "3.5.1"
+    },
+    {
+      "id": "create-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-presentation",
+      "level": 4,
+      "title": "Create Presentation",
+      "alternateIds": [
+        "x3-5-2-create-presentation"
+      ],
+      "number": "3.5.2"
+    },
+    {
+      "id": "get-presentations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-presentations",
+      "level": 4,
+      "title": "Get Presentations",
+      "alternateIds": [
+        "x3-5-3-get-presentations"
+      ],
+      "number": "3.5.3"
+    },
+    {
+      "id": "get-a-specific-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-a-specific-presentation",
+      "level": 4,
+      "title": "Get a Specific Presentation",
+      "alternateIds": [
+        "x3-5-4-get-a-specific-presentation"
+      ],
+      "number": "3.5.4"
+    },
+    {
+      "id": "delete-a-specific-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#delete-a-specific-presentation",
+      "level": 4,
+      "title": "Delete a Specific Presentation",
+      "alternateIds": [
+        "x3-5-5-delete-a-specific-presentation"
+      ],
+      "number": "3.5.5"
+    },
+    {
+      "id": "workflows-and-exchanges",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#workflows-and-exchanges",
+      "level": 3,
+      "title": "Workflows and Exchanges",
+      "alternateIds": [
+        "x3-6-workflows-and-exchanges"
+      ],
+      "number": "3.6"
+    },
+    {
+      "id": "create-workflow",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-workflow",
+      "level": 4,
+      "title": "Create Workflow",
+      "alternateIds": [
+        "x3-6-1-create-workflow"
+      ],
+      "number": "3.6.1"
+    },
+    {
+      "id": "get-workflow-configuration",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-workflow-configuration",
+      "level": 4,
+      "title": "Get Workflow Configuration",
+      "alternateIds": [
+        "x3-6-2-get-workflow-configuration"
+      ],
+      "number": "3.6.2"
+    },
+    {
+      "id": "create-exchange",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-exchange",
+      "level": 4,
+      "title": "Create Exchange",
+      "alternateIds": [
+        "x3-6-3-create-exchange"
+      ],
+      "number": "3.6.3"
+    },
+    {
+      "id": "get-exchange-protocols",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-exchange-protocols",
+      "level": 4,
+      "title": "Get Exchange Protocols",
+      "alternateIds": [
+        "x3-6-4-get-exchange-protocols"
+      ],
+      "number": "3.6.4"
+    },
+    {
+      "id": "participate-in-an-exchange",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#participate-in-an-exchange",
+      "level": 4,
+      "title": "Participate in an Exchange",
+      "alternateIds": [
+        "x3-6-5-participate-in-an-exchange"
+      ],
+      "number": "3.6.5"
+    },
+    {
+      "id": "get-exchange-state",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-exchange-state",
+      "level": 4,
+      "title": "Get Exchange State",
+      "alternateIds": [
+        "x3-6-6-get-exchange-state"
+      ],
+      "number": "3.6.6"
+    },
+    {
+      "id": "exchange-step-callbacks",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#exchange-step-callbacks",
+      "level": 4,
+      "title": "Exchange Step Callbacks",
+      "alternateIds": [
+        "x3-6-7-exchange-step-callbacks"
+      ],
+      "number": "3.6.7"
+    },
+    {
+      "id": "exchange-examples",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#exchange-examples",
+      "level": 4,
+      "title": "Exchange Examples",
+      "alternateIds": [
+        "x3-6-8-exchange-examples"
+      ],
+      "number": "3.6.8"
+    },
+    {
+      "id": "initiating-interactions",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#initiating-interactions",
+      "level": 3,
+      "title": "Initiating Interactions",
+      "alternateIds": [
+        "x3-7-initiating-interactions"
+      ],
+      "number": "3.7"
+    },
+    {
+      "id": "interaction-url-format",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#interaction-url-format",
+      "level": 4,
+      "title": "Interaction URL Format",
+      "alternateIds": [
+        "x3-7-1-interaction-url-format"
+      ],
+      "number": "3.7.1"
+    },
+    {
+      "id": "interaction-qr-code-format",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#interaction-qr-code-format",
+      "level": 4,
+      "title": "Interaction QR Code Format",
+      "alternateIds": [
+        "x3-7-2-interaction-qr-code-format"
+      ],
+      "number": "3.7.2"
+    },
+    {
+      "id": "interaction-scheme-format",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#interaction-scheme-format",
+      "level": 4,
+      "title": "Interaction Scheme Format",
+      "alternateIds": [
+        "x3-7-3-interaction-scheme-format"
+      ],
+      "number": "3.7.3"
+    },
+    {
+      "id": "interaction-protocols-response",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#interaction-protocols-response",
+      "level": 4,
+      "title": "Interaction Protocols Response",
+      "alternateIds": [
+        "x3-7-4-interaction-protocols-response"
+      ],
+      "number": "3.7.4"
+    },
+    {
+      "id": "inviterequest-interaction-protocol",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#inviterequest-interaction-protocol",
+      "level": 4,
+      "title": "inviteRequest Interaction Protocol",
+      "alternateIds": [
+        "x3-7-5-inviterequest-interaction-protocol"
+      ],
+      "number": "3.7.5"
+    },
+    {
+      "id": "vcapi-interaction-protocol",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#vcapi-interaction-protocol",
+      "level": 4,
+      "title": "vcapi Interaction Protocol",
+      "alternateIds": [
+        "x3-7-6-vcapi-interaction-protocol"
+      ],
+      "number": "3.7.6"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#error-handling",
+      "level": 3,
+      "title": "Error Handling",
+      "alternateIds": [
+        "x3-8-error-handling"
+      ],
+      "number": "3.8"
+    },
+    {
+      "id": "verification-errors-vs-warnings",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verification-errors-vs-warnings",
+      "level": 4,
+      "title": "Verification Errors vs. Warnings",
+      "alternateIds": [
+        "x3-8-1-verification-errors-vs-warnings"
+      ],
+      "number": "3.8.1"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "a-privacy-considerations"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "delegation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#delegation",
+      "level": 3,
+      "title": "Delegation",
+      "alternateIds": [
+        "a-1-delegation"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "phoning-home-considered-harmful",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#phoning-home-considered-harmful",
+      "level": 3,
+      "title": "\"Phoning Home\" Considered Harmful",
+      "alternateIds": [
+        "a-2-phoning-home-considered-harmful"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "b-security-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "unknown-proof-types",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#unknown-proof-types",
+      "level": 3,
+      "title": "Unknown Proof Types",
+      "alternateIds": [
+        "b-1-unknown-proof-types"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "use-of-https-for-interaction-urls",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#use-of-https-for-interaction-urls",
+      "level": 3,
+      "title": "Use of HTTPS for Interaction URLs",
+      "alternateIds": [
+        "b-2-use-of-https-for-interaction-urls"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "deletion",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#deletion",
+      "level": 3,
+      "title": "Deletion",
+      "alternateIds": [
+        "b-3-deletion"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "payload-sizes",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#payload-sizes",
+      "level": 3,
+      "title": "Payload Sizes",
+      "alternateIds": [
+        "b-4-payload-sizes"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "additional-validation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#additional-validation",
+      "level": 3,
+      "title": "Additional Validation",
+      "alternateIds": [
+        "b-5-additional-validation"
+      ],
+      "number": "B.5"
+    },
+    {
+      "id": "secure-coding-practices",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#secure-coding-practices",
+      "level": 3,
+      "title": "Secure Coding Practices",
+      "alternateIds": [
+        "b-6-secure-coding-practices"
+      ],
+      "number": "B.6"
+    },
+    {
+      "id": "other-security-considerations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#other-security-considerations",
+      "level": 3,
+      "title": "Other Security Considerations",
+      "alternateIds": [
+        "b-7-other-security-considerations"
+      ],
+      "number": "B.7"
+    },
+    {
+      "id": "status-list-management",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#status-list-management",
+      "level": 2,
+      "title": "Status List Management",
+      "alternateIds": [
+        "c-status-list-management"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "create-status-list",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-status-list",
+      "level": 3,
+      "title": "Create Status List",
+      "alternateIds": [
+        "c-1-create-status-list"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "get-status-list",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-status-list",
+      "level": 3,
+      "title": "Get Status List",
+      "alternateIds": [
+        "c-2-get-status-list"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "update-status",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#update-status",
+      "level": 3,
+      "title": "Update Status",
+      "alternateIds": [
+        "c-3-update-status"
+      ],
+      "number": "C.3"
+    },
+    {
+      "id": "workflow-step-and-template-examples",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#workflow-step-and-template-examples",
+      "level": 2,
+      "title": "Workflow Step and Template Examples",
+      "alternateIds": [
+        "d-workflow-step-and-template-examples"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "minimum-viable-step-and-credential-templates",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#minimum-viable-step-and-credential-templates",
+      "level": 3,
+      "title": "Minimum Viable Step and Credential Templates",
+      "alternateIds": [
+        "d-1-minimum-viable-step-and-credential-templates"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "complex-examples",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#complex-examples",
+      "level": 3,
+      "title": "Complex Examples",
+      "alternateIds": [
+        "d-2-complex-examples"
+      ],
+      "number": "D.2"
+    },
+    {
+      "id": "relationship-to-other-specifications",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#relationship-to-other-specifications",
+      "level": 2,
+      "title": "Relationship to Other Specifications",
+      "alternateIds": [
+        "e-relationship-to-other-specifications"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "f-iana-considerations"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "uri-scheme-registration",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#uri-scheme-registration",
+      "level": 3,
+      "title": "URI Scheme Registration",
+      "alternateIds": [
+        "f-1-uri-scheme-registration"
+      ],
+      "number": "F.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "g-acknowledgements"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "h-references"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "h-1-normative-references"
+      ],
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "h-2-informative-references"
+      ],
+      "number": "H.2"
+    }
+  ]
+}

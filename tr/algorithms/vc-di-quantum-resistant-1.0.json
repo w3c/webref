@@ -1,0 +1,790 @@
+{
+  "spec": {
+    "title": "Quantum-Resistant Cryptosuites v1.0",
+    "url": "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/"
+  },
+  "algorithms": [
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>), <em>canonical proof configuration</em>\n(<var>canonicalProofConfig</var>), and <em>hash name</em> (<var>hashName</var>). A single\n<em>hash data</em> value represented as a series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>hashName</var> is <code>SHA-256</code>,\nlet <var>transformedDocumentHash</var> be the result of applying the\nSHA-256 (SHA-2 with 256-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\nrespective <var>transformedDocument</var>.\nRespective <var>transformedDocumentHash</var> will be exactly 32 bytes\nin size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-384</code>,\nlet <var>transformedDocumentHash</var> be the result of applying the\nSHA-384 (SHA-2 with 384-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\nrespective <var>transformedDocument</var>.\nRespective <var>transformedDocumentHash</var> will be exactly 48 bytes\nin size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-512</code>,\nlet <var>transformedDocumentHash</var> be the result of applying the\nSHA-512 (SHA-2 with 512-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\nrespective <var>transformedDocument</var>.\nRespective <var>transformedDocumentHash</var> will be exactly 64 bytes\nin size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-256</code>,\nlet <var>proofConfigHash</var> be the result of applying the\nSHA-256 (SHA-2 with 256-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n<var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\nwill be exactly 32 bytes in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-384</code>,\nlet <var>proofConfigHash</var> be the result of applying the\nSHA-384 (SHA-2 with 384-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n<var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\nwill be exactly 48 bytes in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-512</code>,\nlet <var>proofConfigHash</var> be the result of applying the\nSHA-512 (SHA-2 with 512-bit output)\ncryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n<var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\nwill be exactly 64 bytes in size."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of joining <var>proofConfigHash</var> (the\nfirst hash) with <var>transformedDocumentHash</var> (the second hash)."
+        },
+        {
+          "html": "Return <var>hashData</var> as the <em>hash data</em>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are <em>proof options</em>\n(<var>options</var>), a <em>cryptosuite identifier</em> (<var>cryptosuite</var>), the\n<em>canonicalization scheme </em> (<var>canonScheme</var>) and <em>hash name</em>\n(<var>hashName</var>). The\n<em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier\nfor the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MUST</em> contain the cryptosuite\nidentifier (<var>cryptosuite</var>). A <em>proof configuration</em>\nobject is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proofConfig</var> be a clone of the <var>options</var> object."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>type</var> is not set to <code>DataIntegrityProof</code>,\n<var>proofConfig</var>.<var>cryptosuite</var> is not set to the <em>cryptosuite</em>,\nor both, an <code>INVALID_PROOF_CONFIGURATION</code> error <em class=\"rfc2119\">MUST</em> be raised."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>created</var> is set to a value that is not a\nvalid [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-xmlschema11-2\" title=\"W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes\">XMLSCHEMA11-2</a></cite>] datetime, an <code>INVALID_PROOF_DATETIME</code> error <em class=\"rfc2119\">MUST</em> be\nraised."
+        },
+        {
+          "html": "Set <var>proofConfig</var>.|@context| to <var>unsecuredDocument</var>.|@context|."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>rdfc</code>,\nlet <var>canonicalProofConfig</var> be the result of applying the\nUniversal RDF Dataset Canonicalization Algorithm\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] to the <var>proofConfig</var>, with hashing parameter set to <var>hashName</var>."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>jcs</code>,\nlet <var>canonicalProofConfig</var> be the result of applying the\nJSON Canonicalization Scheme [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc8785\" title=\"JSON Canonicalization Scheme (JCS)\">RFC8785</a></cite>] to the <var>proofConfig</var>."
+        },
+        {
+          "html": "Return <var>canonicalProofConfig</var>."
+        }
+      ]
+    },
+    {
+      "html": "Required inputs to this algorithm are an\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">\nunsecured data document</a> (<var>unsecuredDocument</var>),\ntransformation options (<var>options</var>), a cryptosuite identifier (<var>cryptosuite</var>),\nthe <em>canonicalization scheme </em> (<var>canonScheme</var>) and <em>hash name</em>\n(<var>hashName</var>). The\ntransformation options <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and a cryptosuite\nidentifier (<var>cryptosuite</var>). A <em>transformed data document</em> is\nproduced as output. Whenever this algorithm encodes strings, it <em class=\"rfc2119\">MUST</em> use UTF-8\nencoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>options</var>.<var>type</var> is not set to the string <code>DataIntegrityProof</code>,\n<var>options</var>.<var>cryptosuite</var> is not set to the <em>cryptosuite</em>\nvalue, or both, then a <code>PROOF_TRANSFORMATION_ERROR</code> <em class=\"rfc2119\">MUST</em> be\nraised."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>rdfc</code>,\nlet <var>canonicalDocument</var> be the result of applying the\nUniversal RDF Dataset Canonicalization Algorithm\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] to the <var>unsecuredDocument</var>\nwith hashing parameter set to <var>hashName</var>."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>jcs</code>,\nlet <var>canonicalDocument</var> be the result of applying the\nJSON Canonicalization Scheme [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc8785\" title=\"JSON Canonicalization Scheme (JCS)\">RFC8785</a></cite>] to the <var>unsecuredDocument</var>."
+        },
+        {
+          "html": "Set <var>output</var> to the value of <var>canonicalDocument</var>."
+        },
+        {
+          "html": "Return <var>canonicalDocument</var> as the <em>transformed data document</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to serialize a digital signature from\na set of cryptographic hash data. This\nalgorithm is designed to be used in conjunction with the algorithms defined\nin <a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\nSection 4: Algorithms</a> of the Data Integrity specification\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]. Required inputs are\ncryptographic hash data (<var>hashData</var>), <em>proof options</em> (<var>options</var>), and\na <em>signature function</em> (<var>sigFunc</var>). The\n<em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">cryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MAY</em> contain a cryptosuite\nidentifier (<var>cryptosuite</var>). A single <em>digital proof</em> value\nrepresented as series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>privateKeyBytes</var> be the result of retrieving the\nprivate key bytes (or a signing interface enabling the use of the private key\nbytes) associated with the verification method identified by the\n<var>options</var>.<var>verificationMethod</var> value."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of applying the <var>sigFunc</var>, with <var>hashData</var> as\nthe data\nto be signed using the private key specified by <var>privateKeyBytes</var>.\n<var>proofBytes</var> will have a length as indicated by the cryptosuite."
+        },
+        {
+          "html": "Return <var>proofBytes</var> as the <em>digital proof</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a digital signature from\na set of cryptographic hash data. This\nalgorithm is designed to be used in conjunction with the algorithms defined\nin <a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">Section 4: Algorithms</a>\nof the Data Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]\nspecification. Required inputs are\ncryptographic hash data (<var>hashData</var>), a digital signature (<var>proofBytes</var>),\nproof options (<var>options</var>), and a <em>verification function</em> (<var>verifyFunc</var>).\nA <em>verification result</em>\nrepresented as a boolean value is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>publicKeyBytes</var> be the result of retrieving the\npublic key bytes associated with the\n<var>options</var>.<var>verificationMethod</var> value as described in\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\"> Section\n4: Retrieve Verification Method</a> of the\nData Integrity specification [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]."
+        },
+        {
+          "html": "Let <var>verificationResult</var> be the result of applying the <var>verifyFunc</var>,\nusing the public key specified by <var>publicKeyBytes</var>, with <var>hashData</var>\nas the data to be verified against the\n<var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>verificationResult</var> as the <em>verification result</em>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm is used to configure a cryptographic suite to be used by the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#add-proof\">Add Proof</a> and\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#verify-proof\">Verify Proof</a>\nfunctions in <cite><a data-matched-text=\"[[[VC-DATA-INTEGRITY]]]\" href=\"https://www.w3.org/TR/vc-data-integrity/\">Verifiable Credential Data Integrity 1.0</a></cite>. The algorithm takes an options object\n(<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>) as input and returns a <a data-link-type=\"dfn\" data-lt=\"data integrity cryptographic suite instance\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance\">cryptosuite instance</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>cryptosuite</var>).",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>cryptosuite</var> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a>."
+        },
+        {
+          "html": "If <var>options</var>.<var>type</var> does not equal <code>DataIntegrityProof</code>, return <var>cryptosuite</var>."
+        },
+        {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is <code>mldsa44-rdfc-2024</code> or <code>mldsa44-jcs-2024</code> then:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#create-proof-ml-dsa\" data-matched-text=\"[[[#create-proof-ml-dsa]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.3.1 </bdi>Create Proof (ML-DSA)</a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#verify-proof-ml-dsa\" data-matched-text=\"[[[#verify-proof-ml-dsa]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.3.2 </bdi>Verify Proof (ML-DSA)</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is <code>slhdsa128-rdfc-2024</code> or <code>slhdsa128-jcs-2024</code> then:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#create-proof-slh-dsa\" data-matched-text=\"[[[#create-proof-slh-dsa]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.1 </bdi>Create Proof (SLH-DSA)</a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#verify-proof-slh-dsa\" data-matched-text=\"[[[#verify-proof-slh-dsa]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.4.2 </bdi>Verify Proof (SLH-DSA)</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is <code>falcon512-rdfc-2024</code> or <code>falcon512-jcs-2024</code>\nthen:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#create-proof-falcon\" data-matched-text=\"[[[#create-proof-falcon]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.5.1 </bdi>Create Proof (FALCON)</a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#verify-proof-falcon\" data-matched-text=\"[[[#verify-proof-falcon]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.5.2 </bdi>Verify Proof (FALCON)</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is <code>sqisign1-rdfc-2024</code> or  <code>sqisign1-jcs-2024</code> then:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#create-proof-sqisign\" data-matched-text=\"[[[#create-proof-sqisign]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.6.1 </bdi>Create Proof (SQIsign)</a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyProof</var> to the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#verify-proof-sqisign\" data-matched-text=\"[[[#verify-proof-sqisign]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.6.2 </bdi>Verify Proof (SQIsign)</a>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>cryptosuite</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> and an ML-DSA cryptosuite chosen from\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#MLSuitesTable\" data-matched-text=\"[[[#MLSuitesTable]]]\" class=\"table-ref\" title=\"Supported ML-DSA Cryptosuites.\">Table <bdi class=\"\">5</bdi></a>. The choice of cryptosuite sets the values of <var>canonScheme</var>,\n<var>hashName</var>, <var>sigFunc</var>, and <var>verifyFunc</var> per <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#MLSuitesTable\" data-matched-text=\"[[[#MLSuitesTable]]]\" class=\"table-ref\" title=\"Supported ML-DSA Cryptosuites.\">Table <bdi class=\"\">5</bdi></a>, which are used\nin the algorithm below. Additional required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with\n<var>options</var>, the <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var>\npassed as parameters."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>, <var>options</var>, the\n<var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofSerializationAlg\" data-matched-text=\"[[[#ProofSerializationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.4 </bdi>Proof Serialization</a> with <var>hashData</var>, <var>options</var>, and\n<var>sigFunc</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nbase64-url-encoded Multibase encoding</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "name": "verification result",
+      "href": "https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result",
+      "html": "The following algorithm specifies how to verify a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a>. Required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>securedDocument</var>). This algorithm returns\na <dfn id=\"dfn-verification-result\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">verification result</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> whose\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\nthe <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proofOptions</var> be a copy of <var>securedDocument</var>.<var>proof</var> with <code>proofValue</code>\nremoved."
+        },
+        {
+          "html": "Set <var>cryptosuiteName</var> to <var>securedDocument</var>.<var>proof</var>.<var>cryptosuite</var>,\nwhich must be one of those listed in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#MLSuitesTable\" data-matched-text=\"[[[#MLSuitesTable]]]\" class=\"table-ref\" title=\"Supported ML-DSA Cryptosuites.\">Table <bdi class=\"\">5</bdi></a>.\nFrom <var>cryptosuiteName</var>, set the values of <var>canonScheme</var>, <var>hashName</var>,\nand <var>verifyFunc</var>, as found in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#MLSuitesTable\" data-matched-text=\"[[[#MLSuitesTable]]]\" class=\"table-ref\" title=\"Supported ML-DSA Cryptosuites.\">Table <bdi class=\"\">5</bdi></a>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase decoded base64-url\nvalue</a> in <var>securedDocument</var>.<var>proof</var>.<var>proofValue</var>."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>,\nand <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> <var>proofOptions</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with <var>options</var>, <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">verified</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofVerificationAlg\" data-matched-text=\"[[[#ProofVerificationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.5 </bdi>Proof Verification</a> with <var>hashData</var>,\n<var>proofBytes</var>, <var>proofConfig</var>, and <var>verifyFunc</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-1\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-2\">verified</a></dt>\n                <dd><var data-type=\"boolean\">verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-1\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var data-type=\"boolean\">verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a></dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> and an SLH-DSA cryptosuite chosen from\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SLHSuiteTable\" data-matched-text=\"[[[#SLHSuiteTable]]]\" class=\"table-ref\" title=\"Supported SLH-DSA Cryptosuites.\">Table <bdi class=\"\">7</bdi></a>. The choice of cryptosuite sets the values of <var>canonScheme</var>,\n<var>hashName</var>, <var>sigFunc</var>, and <var>verifyFunc</var> as found in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SLHSuiteTable\" data-matched-text=\"[[[#SLHSuiteTable]]]\" class=\"table-ref\" title=\"Supported SLH-DSA Cryptosuites.\">Table <bdi class=\"\">7</bdi></a>, for\nuse in the algorithm below. Additional required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with\n<var>options</var>, the <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var>\npassed as parameters."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>, <var>options</var>,\n<var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofSerializationAlg\" data-matched-text=\"[[[#ProofSerializationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.4 </bdi>Proof Serialization</a> with <var>hashData</var>, <var>options</var>, and\n<var>sigFunc</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nbase64-url-encoded Multibase encoding</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a>. Required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>securedDocument</var>). This algorithm returns\na <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-2\">verification result</a>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> whose\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\nthe <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proofOptions</var> be a copy of <var>securedDocument</var>.<var>proof</var> with <code>proofValue</code>\nremoved."
+        },
+        {
+          "html": "Set <var>cryptosuiteName</var> to <var>securedDocument</var>.<var>proof</var>.<var>cypnersuite</var>,\nit must be one of those listed in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SLHSuiteTable\" data-matched-text=\"[[[#SLHSuiteTable]]]\" class=\"table-ref\" title=\"Supported SLH-DSA Cryptosuites.\">Table <bdi class=\"\">7</bdi></a>.\nFrom <var>cryptosuiteName</var> set the values of <var>canonScheme</var>, <var>hashName</var>,\nand <var>verifyFunc</var> per <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SLHSuiteTable\" data-matched-text=\"[[[#SLHSuiteTable]]]\" class=\"table-ref\" title=\"Supported SLH-DSA Cryptosuites.\">Table <bdi class=\"\">7</bdi></a>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase base64-url-decoded\ndecoding</a> of <var>securedDocument</var>.<var>proof</var>.<var>proofValue</var>."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>,\n<var>proofOptions</var>,\n<var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with <var>options</var> <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var> and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">verified</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofVerificationAlg\" data-matched-text=\"[[[#ProofVerificationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.5 </bdi>Proof Verification</a> algorithm with <var>hashData</var>,\n<var>proofBytes</var>, <var>proofConfig</var>, and <var>verifyFunc</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-3\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-5\">verified</a></dt>\n                <dd><var data-type=\"boolean\">verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-3\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var data-type=\"boolean\">verified</var> is <code>true</code>, otherwise\n<a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> and a FALCON cryptosuite chosen from\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#FALCONSuitesTable\" data-matched-text=\"[[[#FALCONSuitesTable]]]\" class=\"table-ref\" title=\"Supported FALCON Cryptosuites.\">Table <bdi class=\"\">9</bdi></a>. The choice of cryptosuite sets the values of <var>canonScheme</var>,\n<var>hashName</var>, <var>sigFunc</var>, and <var>verifyFunc</var> per <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#FALCONSuitesTable\" data-matched-text=\"[[[#FALCONSuitesTable]]]\" class=\"table-ref\" title=\"Supported FALCON Cryptosuites.\">Table <bdi class=\"\">9</bdi></a>, which are used\nin the algorithm below. Additional required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with\n<var>options</var>, the <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var>\npassed as parameters."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>, <var>options</var>, the\n<var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofSerializationAlg\" data-matched-text=\"[[[#ProofSerializationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.4 </bdi>Proof Serialization</a> with <var>hashData</var>, <var>options</var>, and\n<var>sigFunc</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nbase64-url-encoded Multibase encoding</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a>. Required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>securedDocument</var>). This algorithm returns\na <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-4\">verification result</a>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> whose\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\nthe <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proofOptions</var> be a copy of <var>securedDocument</var>.<var>proof</var> with <code>proofValue</code>\nremoved."
+        },
+        {
+          "html": "Set <var>cryptosuiteName</var> to <var>securedDocument</var>.<var>proof</var>.<var>cryptosuite</var>,\nwhich must be one of those listed in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#FALCONSuitesTable\" data-matched-text=\"[[[#FALCONSuitesTable]]]\" class=\"table-ref\" title=\"Supported FALCON Cryptosuites.\">Table <bdi class=\"\">9</bdi></a>.\nFrom <var>cryptosuiteName</var>, set the values of <var>canonScheme</var>, <var>hashName</var>,\nand <var>verifyFunc</var>, as found in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#FALCONSuitesTable\" data-matched-text=\"[[[#FALCONSuitesTable]]]\" class=\"table-ref\" title=\"Supported FALCON Cryptosuites.\">Table <bdi class=\"\">9</bdi></a>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase decoded base64-url\nvalue</a> in <var>securedDocument</var>.<var>proof</var>.<var>proofValue</var>."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>,\nand <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> <var>proofOptions</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with <var>options</var>, <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">verified</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofVerificationAlg\" data-matched-text=\"[[[#ProofVerificationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.5 </bdi>Proof Verification</a> with <var>hashData</var>,\n<var>proofBytes</var>, <var>proofConfig</var>, and <var>verifyFunc</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-5\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-8\">verified</a></dt>\n                <dd><var data-type=\"boolean\">verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-5\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var data-type=\"boolean\">verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a></dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> and a SQIsign cryptosuite chosen from\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SQISuitesTable\" data-matched-text=\"[[[#SQISuitesTable]]]\" class=\"table-ref\" title=\"Supported SQIsign Cryptosuites.\">Table <bdi class=\"\">11</bdi></a>. The choice of cryptosuite sets the values of <var>canonScheme</var>,\n<var>hashName</var>, <var>sigFunc</var>, and <var>verifyFunc</var> per <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SQISuitesTable\" data-matched-text=\"[[[#SQISuitesTable]]]\" class=\"table-ref\" title=\"Supported SQIsign Cryptosuites.\">Table <bdi class=\"\">11</bdi></a>, which are used\nin the algorithm below. Additional required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with\n<var>options</var>, the <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var>\npassed as parameters."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>, <var>options</var>, the\n<var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofSerializationAlg\" data-matched-text=\"[[[#ProofSerializationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.4 </bdi>Proof Serialization</a> with <var>hashData</var>, <var>options</var>, and\n<var>sigFunc</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nbase64-url-encoded Multibase encoding</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a>. Required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document\">secured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>securedDocument</var>). This algorithm returns\na <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-6\">verification result</a>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> whose\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\nthe <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proofOptions</var> be a copy of <var>securedDocument</var>.<var>proof</var> with <code>proofValue</code>\nremoved."
+        },
+        {
+          "html": "Set <var>cryptosuiteName</var> to <var>securedDocument</var>.<var>proof</var>.<var>cryptosuite</var>,\nwhich must be one of those listed in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SQISuitesTable\" data-matched-text=\"[[[#SQISuitesTable]]]\" class=\"table-ref\" title=\"Supported SQIsign Cryptosuites.\">Table <bdi class=\"\">11</bdi></a>.\nFrom <var>cryptosuiteName</var>, set the values of <var>canonScheme</var>, <var>hashName</var>,\nand <var>verifyFunc</var>, as found in <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SQISuitesTable\" data-matched-text=\"[[[#SQISuitesTable]]]\" class=\"table-ref\" title=\"Supported SQIsign Cryptosuites.\">Table <bdi class=\"\">11</bdi></a>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase decoded base64-url\nvalue</a> in <var>securedDocument</var>.<var>proof</var>.<var>proofValue</var>."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>,\nand <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> <var>proofOptions</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with <var>options</var>, <var>cypherSuiteName</var>,\n<var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">verified</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofVerificationAlg\" data-matched-text=\"[[[#ProofVerificationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.5 </bdi>Proof Verification</a> with <var>hashData</var>,\n<var>proofBytes</var>, <var>proofConfig</var>, and <var>verifyFunc</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-7\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-11\">verified</a></dt>\n                <dd><var data-type=\"boolean\">verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-7\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var data-type=\"boolean\">verified</var> is <code>true</code>, otherwise\n<a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a></dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> given\nan <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a>. Required inputs are an\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1.2 </bdi>Proof Configuration</a> with\n<var>options</var> passed as a parameter."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#base-proof-transformation-selective-disclosure\" class=\"sec-ref\"><bdi class=\"secno\">3.7.2 </bdi>Base Proof Transformation Selective Disclosure</a> with\n<var>unsecuredDocument</var>,\n<var>proofConfig</var>, and <var>options</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#base-proof-hashing-selective-disclosure\" data-matched-text=\"[[[#base-proof-hashing-selective-disclosure]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.3 </bdi>Base Proof Hashing Selective Disclosure</a> with <var>transformedData</var> and <var>proofConfig</var>\npassed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#base-proof-serialization-selective-disclosure\" data-matched-text=\"[[[#base-proof-serialization-selective-disclosure]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.4 </bdi>Base Proof Serialization Selective Disclosure</a> with <var>hashData</var> and\n<var>options</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nbase64-url-encoded Multibase value</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "Required inputs to this algorithm are an\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">\nunsecured data document</a> (<var>unsecuredDocument</var>) and\ntransformation options (<var>options</var>). The\ntransformation options <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>), a cryptosuite\nidentifier (<var>cryptosuite</var>), and a verification method\n(<var>verificationMethod</var>). The transformation options <em class=\"rfc2119\">MUST</em> contain an\narray of mandatory JSON pointers (<var>mandatoryPointers</var>) and <em class=\"rfc2119\">MAY</em> contain\nadditional options, such as a JSON-LD document loader. A <em>transformed data\ndocument</em> is produced as output. Whenever this algorithm encodes strings, it\n<em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using a locally generated and exportable HMAC\nkey. The HMAC uses the same hash algorithm used in the signature algorithm,\nwhich is detected via the <var>verificationMethod</var> provided to the\nfunction, i.e., SHA-256 for a security category 1 or 2 signature algorithm.\nPer the recommendations of\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc2104\" title=\"HMAC: Keyed-Hashing for Message Authentication\">RFC2104</a></cite>], the HMAC key <em class=\"rfc2119\">MUST</em> be the same length as the digest size;\nfor SHA-256,\nthis is 256 bits or 32 bytes."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#createhmacidlabelmapfunction\">\nSection 3.4.4 createHmacIdLabelMapFunction</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>],\npassing <var>hmac</var>."
+        },
+        {
+          "html": "Initialize <var>groupDefinitions</var> to a map with an entry with a key of the string\n\"mandatory\" and a value of <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "Initialize <var>groups</var> to the result of calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#canonicalizeandgroup\">Section 3.3.16\ncanonicalizeAndGroup</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>] specification,\npassing <var>labelMapFactoryFunction</var>,\n<var>groupDefinitions</var>, <var>unsecuredDocument</var> as <var>document</var>, and any custom JSON-LD\nAPI options. Note: This step transforms the document into an array of canonical\nN-Quads with pseudorandom blank node identifiers based on <var>hmac</var>, and groups\nthe N-Quad strings according to selections based on JSON pointers."
+        },
+        {
+          "html": "Initialize <var>mandatory</var> to the values in the <var>groups</var>.<var>mandatory</var>.<var>matching</var> map."
+        },
+        {
+          "html": "Initialize <var>nonMandatory</var> to the values in the\n<var>groups</var>.<var>mandatory</var>.<var>nonMatching</var> map."
+        },
+        {
+          "html": "Initialize <var>hmacKey</var> to the result of exporting the HMAC key from <var>hmac</var>."
+        },
+        {
+          "html": "Return an object with <code>mandatoryPointers</code> set to <var>mandatoryPointers</var>,\n<code>mandatory</code> set to <var>mandatory</var>, <code>nonMandatory</code> set to <var>nonMandatory</var>,\nand <code>hmacKey</code> set to <var>hmacKey</var>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>) and <em>canonical proof configuration</em>\n(<var>canonicalProofConfig</var>). A <em>hash data</em> value represented\nas an object is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var> to the result of calling the RDF Dataset Canonicalization\nalgorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on <var>canonicalProofConfig</var> and then cryptographically\nhashing the result using the same hash that is used by the signature algorithm,\ni.e., SHA-256 for a security category 1 or 2 algorithms. Note: This step can\nbe performed in parallel;\nit only needs to be completed before this algorithm terminates as the result is\npart of the return value."
+        },
+        {
+          "html": "Initialize <var>mandatoryHash</var> to the result of calling the the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#hashmandatorynquads\">Section 3.3.17\nhashMandatoryNQuads</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>] specification,\npassing <var>transformedDocument</var>.<var>mandatory</var>."
+        },
+        {
+          "html": "Initialize <var>hashData</var> as a deep copy of <var>transformedDocument</var> and\nadd <var>proofHash</var> as <code>proofHash</code> and <var>mandatoryHash</var> as <code>mandatoryHash</code> to that\nobject."
+        },
+        {
+          "html": "Initialize <var>salts</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> create a cryptographically secure random number of\nbyte length half the size of the hash length, e.g., for security category 1 or 2\nusing SHA-256 the length of each salt would be 16 bytes."
+        },
+        {
+          "html": "Initialize <var>saltedHashes</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> compute the appropriate hash (SHA-256 for security\ncategory 1 or 2 signature algorithms) over the concatenation of each <var>salt</var> and\nits corresponding <var>nonMandatory</var> item. Add this hash value to the <var>saltedHashes</var>\narray."
+        },
+        {
+          "html": "Add <var>salts</var> as <code>salts</code> and <var>saltedHashes</var> as  <code>saltedHashes</code> to  the <var>hashData</var>\nobject."
+        },
+        {
+          "html": "Return <var>hashData</var> as <em>hash data</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a base proof; called by an\nissuer of an Quantum-Safe-SD-protected Verifiable Credential.\nThe base proof is to be\ngiven only to the holder, who is responsible for generating a derived proof from\nit, exposing only selectively disclosed details in the proof to a verifier. This\nalgorithm is designed to be used in conjunction with the algorithms defined\nin the Data Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>] specification,\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\nSection 4: Algorithms</a>. Required inputs are\ncryptographic hash data (<var>hashData</var>) and\n<em>proof options</em> (<var>options</var>). The\n<em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MAY</em> contain a cryptosuite\nidentifier (<var>cryptosuite</var>). A single <em>digital proof</em> value\nrepresented as series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>salts</var>,\n<var>saltedHashes</var>,\nand <var>hmacKey</var> to the values associated with their property names\n<var>hashData</var>."
+        },
+        {
+          "html": "Initialize <var>toSign</var> the hash of the concatenation of <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>,\nand <var>saltedHashes</var> where the order of the concatenation <em class=\"rfc2119\">MUST</em> be followed. The\ncryptographic hash algorithm is that specified for signature algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#HashSigTable\" data-matched-text=\"[[[#HashSigTable]]]\" class=\"table-ref\" title=\"Hashes for Signatures.\">Table <bdi class=\"\">3</bdi></a>, e.g., SHA-256 for a security category 1 or 2 algorithms."
+        },
+        {
+          "html": "Initialize <var>signature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
+        },
+        {
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the Quantum-Safe-SD\nbase proof header bytes 0xd9, 0x5d, and 0x10."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>signature</var>, <var>hmacKey</var>, <var>salts</var>, <var>saltedHashes</var>, and <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Initialize <var>baseProof</var> to a string with the Multibase\nbase64url-no-pad-encoding of <var>proofValue</var> as described in the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nMultibase section</a> of <cite><a data-matched-text=\"[[[CID]]]\" href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite>. That is, return a string\nstarting with \"<code>u</code>\" and ending with the base64url-no-pad-encoded value of\n<var>proofValue</var>."
+        },
+        {
+          "html": "Return <var>baseProof</var> as <em>base proof</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a selective disclosure derived proof; called by\na holder of an Quantum-Safe-SD protected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>.\nThe derived proof is to be given to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>. The inputs include a\nJSON-LD document (<var>document</var>), Quantum-Safe-SD base proof\n(<var>proof</var>), an array of JSON pointers to use to selectively disclose\nstatements (<var>selectivePointers</var>), and any custom JSON-LD API options,\nsuch as a document loader. A single <em>selectively revealed document</em>\nvalue, represented as an object, is produced as output.",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "Initialize <var>signature</var>, <var>salts</var>, <var>saltedHashes</var>, <var>labelMap</var>,\n<var>mandatoryIndexes</var>, <var>selectiveIndexes</var> and <var>revealDocument</var> to the values\nassociated with their\nproperty names in the object returned when calling the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#Derived-Create-Disclosure-Data\" data-matched-text=\"[[[#Derived-Create-Disclosure-Data]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.6 </bdi>Derived Proof: Create Disclosure Data</a>, passing the <var>document</var>, <var>proof</var>,\n<var>selectivePointers</var>, and any custom JSON-LD API options, such as a document\nloader."
+        },
+        {
+          "html": "Initialize <var>newProof</var> to a shallow copy of <var>proof</var>."
+        },
+        {
+          "html": "Replace <var>proofValue</var> in <var>newProof</var> with the result of calling the algorithm\nin Section <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SD-Derived-Serialize-Proof\" data-matched-text=\"[[[#SD-Derived-Serialize-Proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.8 </bdi>Serialize Derived Proof Value</a>, passing\n<var>signature</var>, <var>publicKey</var>, <var>signatures</var>, <var>labelMap</var>, and <var>mandatoryIndexes</var>."
+        },
+        {
+          "html": "Set the value of the \"proof\" property in <var>revealDocument</var> to <var>newProof</var>."
+        },
+        {
+          "html": "Return <var>revealDocument</var> as the <em>selectively revealed document</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates data to be used to generate a derived proof. The\ninputs include a JSON-LD document (<var>document</var>), an Quantum-Safe-SD base proof\n(<var>proof</var>), an array of JSON pointers to use to selectively disclose\nstatements (<var>selectivePointers</var>), and any custom JSON-LD API options,\nsuch as a document loader). A single object, <em>disclosure data</em>, is\nproduced as output, which contains the \"signature\", \"salts\",\n\"saltedHashes\", \"labelMap\", \"mandatoryIndexes\", \"selectiveIndexes\" and\n\"revealDocument\" fields.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>signature</var>, <var>hmacKey</var>, <var>salts</var>, <var>saltedHashes</var>, and\n<var>mandatoryPointers</var> to the values of the associated properties in the object\nreturned when calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#Derived-Parse-Base-Proof\" data-matched-text=\"[[[#Derived-Parse-Base-Proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.7 </bdi>Derived Proof: Parse Base</a>, passing the <var>proofValue</var> from <var>proof</var>."
+        },
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using <var>hmacKey</var>. The HMAC uses the same hash\nalgorithm used in the signature algorithm, i.e., SHA-256 for a security category\n1 or 2 algorithm."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#createhmacidlabelmapfunction\">\nSection 3.4.4 createHmacIdLabelMapFunction</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>],\npassing <var>hmac</var>."
+        },
+        {
+          "html": "Initialize <var>combinedPointers</var> to the concatenation of <var>mandatoryPointers</var>\nand <var>selectivePointers</var>."
+        },
+        {
+          "html": "Initialize <var>groupDefinitions</var> to a map with the following entries: key of\nthe string <code>\"mandatory\"</code> and value of <var>mandatoryPointers</var>, key of the string\n<code>\"selective\"</code> and value of <var>selectivePointers</var>, and key of the string <code>\"combined\"</code>\nand value of <var>combinedPointers</var>."
+        },
+        {
+          "html": "Initialize <var>groups</var> and <var>labelMap</var> to their associated values in the result\nof calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#canonicalizeandgroup\">Section 3.3.16\ncanonicalizeAndGroup</a> of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>] specification,\npassing <var>document</var>,\n<var>labelMapFactoryFunction</var>, <var>groupDefinitions</var>, and any custom\nJSON-LD API options as parameters. Note: This step transforms the document into\nan array of canonical N-Quad strings with pseudorandom blank node identifiers\nbased on <var>hmac</var>, and groups the N-Quad strings according to selections based on\nJSON pointers."
+        },
+        {
+          "html": "Compute the mandatory indexes. Initialize <var>relativeIndex</var> to zero."
+        },
+        {
+          "html": "Initialize <var>mandatoryIndexes</var> to an empty array."
+        },
+        {
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>combined</var>.<var>matching</var>, convert\nthe absolute index of any <em>mandatory</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>groups</var>.<var>mandatory</var>.<var>matching</var> has <var>absoluteIndex</var> as a key, then append\n<var>relativeIndex</var> to <var>mandatoryIndexes</var>."
+            },
+            {
+              "html": "Increment <var>relativeIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "Compute the selective indexes. Initialize <var>relativeIndex</var> to zero."
+        },
+        {
+          "html": "Initialize <var>selectiveIndexes</var> to an empty array."
+        },
+        {
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>combined</var>.<var>matching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>groups</var>.<var>selective</var>.<var>matching</var> has <var>absoluteIndex</var> as a key, then append\n<var>relativeIndex</var> to <var>selectiveIndexes</var>."
+            },
+            {
+              "html": "Increment <var>relativeIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>revealDocument</var> to the result of the calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#selectjsonld\">3.4.13 selectJsonLd\n</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>],\npassing <var>document</var>, and <var>combinedPointers</var> as <var>pointers</var>."
+        },
+        {
+          "html": "Run the RDF Dataset Canonicalization Algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on\nthe joined |combinedGroup.deskolemizedNQuads|, passing any custom\noptions, and get the canonical bnode identifier map, <var>canonicalIdMap</var>.\nNote: This map includes the canonical blank node identifiers that a verifier\nwill produce when they canonicalize the reveal document."
+        },
+        {
+          "html": "Initialize <var>verifierLabelMap</var> to an empty map. This map will map\nthe canonical blank node identifiers the verifier will produce when they\ncanonicalize the revealed document to the blank node identifiers that were\noriginally signed in the base proof."
+        },
+        {
+          "html": "For each key (<var>inputLabel</var>) and value (<var>verifierLabel</var>) in <var>canonicalIdMap</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry to <var>verifierLabelMap</var> using <var>verifierLabel</var> as the key and the\nvalue associated with <var>inputLabel</var> as a key in <var>labelMap</var> as the value."
+            }
+          ]
+        },
+        {
+          "html": "Return an object with properties matching <var>signature</var>, <var>salts</var>,\n<var>saltedHashes</var>, <code>verifierLabelMap</code> for <var>labelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>, and <var>revealDocument</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of an Quantum Safe selective\ndisclosure base proof value. The required inputs are a proof value\n(<var>proofValue</var>). A single object <em>parsed base proof</em>, containing\nfive elements, using the names <code>signature</code>, <code>hmacKey</code>, <code>salts</code>\n<code>saltedHashes</code>, and <code>mandatoryPointers</code>, is produced  as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is\na multibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the Quantum-Safe-SD base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x10</code>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte Quantum-Safe-SD base proof header. Confirm that\nthe result is an array of five elements."
+        },
+        {
+          "html": "Return an object with properties set to the five elements, using the names\n<code>signature</code>, <code>hmacKey</code>, <code>salts</code>, <code>saltedHashes</code>, and <code>mandatoryPointers</code>,\nrespectively."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm serializes a Quantum-Safe-SD derived proof value.\nThe required inputs are a base signature (<var>signature</var>), an array of salts\n(<var>salts</var>), an array of salted  hashes (<var>saltedHashes</var>), a label map\n(<var>labelMap</var>), an array of mandatory indexes (<var>mandatoryIndexes</var>). and an array\nof selective indexes (<var>selectiveIndexes</var>). A single <em>derived proof</em>\nvalue, serialized as a byte string, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>compressedLabelMap</var> to the result of calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#compresslabelmap\">Section 3.5.5\ncompressLabelMap</a>  of  [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>], passing <var>labelMap</var> as the parameter."
+        },
+        {
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the Quantum-Safe-SD\ndisclosure proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>salts</var>, <var>saltedHashes</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Return the <em>derived proof</em> as a string with the\nbase64url-no-pad-encoding of <var>proofValue</var> as described in the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nMultibase section</a> of <cite><a data-matched-text=\"[[[CID]]]\" href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite>. That is, return a string\nstarting with \"<code>u</code>\" and ending with the base64url-no-pad-encoded value of\n<var>proofValue</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm attempts verification of an Quantum-Safe-SD derived\nproof. This algorithm is called by a verifier of an Quantum-Safe-SD protected\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. The inputs include a JSON-LD document\n(<var>document</var>), a Quantum-Safe-SD disclosure proof (<var>proof</var>), and any\ncustom JSON-LD API options, such as a document loader. This algorithm returns\na <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-8\">verification result</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
+        },
+        {
+          "html": "Initialize <var>signature</var>, <var>proofHash</var>, <var>salts</var>, <var>saltedHashes</var>,\n<var>nonMandatory</var>, <var>mandatoryHash</var>, and <var>selectiveIndexes</var> to the values associated\nwith their property names in the object returned when calling the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#createverifydata\" data-matched-text=\"[[[#createverifydata]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.10 </bdi>Create Verify Data</a>, passing the <var>document</var>, <var>proof</var>, and any\ncustom JSON-LD API options, such as a document loader."
+        },
+        {
+          "html": "If the length of <var>salts</var> does not match the length of <var>saltedHashes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match\nthe salted hashes count."
+        },
+        {
+          "html": "The values of the elements of the <var>selectiveIndexes</var> array must be between 0 and\nthe length of the <var>salts</var> array minus one. If not,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the selective indexes are out of bounds."
+        },
+        {
+          "html": "Initialize <var>toVerify</var> to the byte  concatenation of the values: <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>, and <var>saltedHashes</var> in that order with the array values\nthemselves concatenated together."
+        },
+        {
+          "html": "Initialize <var>verified</var> to true."
+        },
+        {
+          "html": "Initialize <var>verificationCheck</var> be the result of applying the verification\nalgorithm of the appropriate Quantum Safe signature algorithms as indicated by\nthe \"cryptosuite\" property and <a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#SDCryptosuiteTable\" data-matched-text=\"[[[#SDCryptosuiteTable]]]\" class=\"table-ref\" title=\"Cryptosuites.\">Table <bdi class=\"\">12</bdi></a>,\nwith <var>toVerify</var> as the data to be verified against the <var>signature</var>.\nIf <var>verificationCheck</var> is\n<code>false</code>, set <var>verified</var> to false."
+        },
+        {
+          "html": "For every entry (<var>nq</var>, <var>index</var>) in <var>nonMandatory</var>, verify the salted hash\nfor every selectively disclosed (non-mandatory) statement:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <var>computedHash</var> be the  hash of the concatenation of\n<var>salts</var>[<var>selectiveIndexes</var>[index]] and <var>nq</var>."
+            },
+            {
+              "html": "Initialize <var>verificationCheck</var> to the result of comparing the <var>computedHash</var>\nwith the value of  <var>saltedHashes</var>[<var>selectedIndexes</var>[index]]."
+            },
+            {
+              "html": "If <var>verificationCheck</var> is <code>false</code>, set <var>verified</var> to false."
+            }
+          ]
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-9\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verified\" class=\"internalDFN\" id=\"ref-for-dfn-verified-12\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#dfn-verifieddocument\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-8\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var>verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates the data needed to perform verification of an\nQuantum-Safe-SD protected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. The inputs include a JSON-LD\ndocument (<var>document</var>), an Quantum-Safe-SD disclosure proof (<var>proof</var>),\nand any custom JSON-LD API options, such as a document loader. A single\n<em>verify data</em> object value is produced as output containing the following\nfields: \"signature\", \"proofHash\", \"salts\", \"saltedHashes\", \"nonMandatory\",\n\"mandatoryHash\", and \"selectiveIndexes\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var> to the result of perform RDF Dataset Canonicalization\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on the proof options. The hash used is the same as the one used in\nthe signature algorithm, i.e., SHA-256 for security category 1 or 2 algorithms.\nNote: This step can be\nperformed in parallel; it only needs to be completed before this algorithm needs\nto use the <var>proofHash</var> value."
+        },
+        {
+          "html": "Initialize <var>signature</var>, <var>salts</var>, <var>saltedHashes</var>, <var>labelMap</var>, <var>mandatoryIndexes</var>,\nand <var>selectiveIndexes</var> to the values associated with their property names in the\nobject returned when calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#parsederivedproofvalue\" data-matched-text=\"[[[#parsederivedproofvalue]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.7.11 </bdi>Parse Derived Proof Value</a>, passing <var>proofValue</var> from <var>proof</var>."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#createlabelmapfunction\">Section\n  3.4.3 createLabelMapFunction</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>]."
+        },
+        {
+          "html": "Initialize <var>nquads</var> to the result of calling the algorithm of\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#labelreplacementcanonicalizejsonld\">\nSection 3.4.2 labelReplacementCanonicalizeJsonLd</a>  of  [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>],\npassing <var>document</var>,\n<var>labelMapFactoryFunction</var>, and any custom\nJSON-LD API options. Note: This step transforms the document into an array of\ncanonical N-Quads with pseudorandom blank node identifiers based on <var>labelMap</var>."
+        },
+        {
+          "html": "Initialize <var>mandatory</var> to an empty array."
+        },
+        {
+          "html": "Initialize <var>nonMandatory</var> to an empty array."
+        },
+        {
+          "html": "For each entry (<var>index</var>, <var>nq</var>) in <var>nquads</var>, separate the N-Quads into mandatory\nand non-mandatory categories:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>mandatoryIndexes</var> includes <var>index</var>, add <var>nq</var> to <var>mandatory</var>."
+            },
+            {
+              "html": "Otherwise, add <var>nq</var> to <var>nonMandatory</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>mandatoryHash</var> to the result of calling the algorithm of\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#hashmandatorynquads\">Section 3.4.17\nhashMandatoryNQuads</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>], passing <var>mandatory</var>."
+        },
+        {
+          "html": "Return an object with properties matching <var>signature</var>, <var>proofHash</var>,\n<var>salts</var>, <var>saltedHashes</var>, <var>nonMandatory</var>, <var>mandatoryHash</var>, and\n<var>selectiveIndexes</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of the derived proof value.\nThe required input is a derived proof value (<var>proofValue</var>).\nA single <em>derived proof value</em> value object is produced as output, which\ncontains a set to six elements, using the names \"signature\", \"salts\",\n\"saltedHashes\", \"labelMap\", \"mandatoryIndexes\", and \"selectiveIndexes\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is a\nmultibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the Quantum-Safe-SD disclosure proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte Quantum-Safe-SD disclosure proof header. If the\nresult is not an array of the following six elements —\na byte array of length corresponding to the signature  size;\nan array of byte arrays, each of length appropriate to the <em>salt size</em>;\nan array of byte arrays, each of length corresponding to the hash size;\na map of integers to byte arrays, each of length 32;\nan array of integers; and another array of integers — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Replace the fourth element in <var>components</var> using the result of calling the\nalgorithm in\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#decompresslabelmap\">Section 3.5.6\ndecompressLabelMap</a> of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-di-quantum-resistant-1.0/#bib-vc-di-ecdsa\" title=\"Data Integrity ECDSA Cryptosuites v1.0\">VC-DI-ECDSA</a></cite>], passing the existing\nfourth element of <var>components</var> as <var>compressedLabelMap</var>."
+        },
+        {
+          "html": "Return <em>derived proof value</em> as an object with properties set to the five\nelements, using the names \"signature\", \"salts\", \"saltedHashes\",\n\"labelMap\", \"mandatoryIndexes\",  and \"selectiveIndexes\" respectively."
+        }
+      ]
+    }
+  ]
+}

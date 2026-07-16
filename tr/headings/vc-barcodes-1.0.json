@@ -126,6 +126,16 @@
       "number": "2.1"
     },
     {
+      "id": "machinereadablezone",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#machinereadablezone",
+      "level": 4,
+      "title": "MachineReadableZone",
+      "alternateIds": [
+        "x2-1-1-machinereadablezone"
+      ],
+      "number": "2.1.1"
+    },
+    {
       "id": "tersebitstringstatuslistentry",
       "href": "https://www.w3.org/TR/vc-barcodes-1.0/#tersebitstringstatuslistentry",
       "level": 3,
@@ -166,24 +176,14 @@
       "number": "3.1"
     },
     {
-      "id": "cbor-ld-compression-tables",
-      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#cbor-ld-compression-tables",
-      "level": 4,
-      "title": "CBOR-LD Compression Tables",
-      "alternateIds": [
-        "x3-1-1-cbor-ld-compression-tables"
-      ],
-      "number": "3.1.1"
-    },
-    {
       "id": "encode-vc-to-qr-code",
       "href": "https://www.w3.org/TR/vc-barcodes-1.0/#encode-vc-to-qr-code",
       "level": 4,
       "title": "Encode VC to QR Code",
       "alternateIds": [
-        "x3-1-2-encode-vc-to-qr-code"
+        "x3-1-1-encode-vc-to-qr-code"
       ],
-      "number": "3.1.2"
+      "number": "3.1.1"
     },
     {
       "id": "decode-qr-code-to-vc",
@@ -191,9 +191,9 @@
       "level": 4,
       "title": "Decode QR Code to VC",
       "alternateIds": [
-        "x3-1-3-decode-qr-code-to-vc"
+        "x3-1-2-decode-qr-code-to-vc"
       ],
-      "number": "3.1.3"
+      "number": "3.1.2"
     },
     {
       "id": "opticalbarcodecredential-algorithms",
@@ -234,6 +234,26 @@
         "x3-2-3-convert-status-list-entries"
       ],
       "number": "3.2.3"
+    },
+    {
+      "id": "terse-to-bitstring",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#terse-to-bitstring",
+      "level": 5,
+      "title": "TerseBitstringStatusListEntry to BitstringStatusListEntry",
+      "alternateIds": [
+        "x3-2-3-1-tersebitstringstatuslistentry-to-bitstringstatuslistentry"
+      ],
+      "number": "3.2.3.1"
+    },
+    {
+      "id": "bitstring-to-terse",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#bitstring-to-terse",
+      "level": 5,
+      "title": "BitstringStatusListEntry to TerseBitstringStatusListEntry",
+      "alternateIds": [
+        "x3-2-3-2-bitstringstatuslistentry-to-tersebitstringstatuslistentry"
+      ],
+      "number": "3.2.3.2"
     },
     {
       "id": "ecdsa-xi-2023",
@@ -286,21 +306,12 @@
       "number": "3.2.4.4"
     },
     {
-      "id": "aamvadriverslicensescannableinformation-credentials",
-      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#aamvadriverslicensescannableinformation-credentials",
+      "id": "mrz-component-extraction",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#mrz-component-extraction",
       "level": 6,
-      "title": "AamvaDriversLicenseScannableInformation Credentials",
+      "title": "Component extraction: MachineReadableZone",
       "alternateIds": [
-        "aamvadriverslicensescannableinformation-credentials-0"
-      ]
-    },
-    {
-      "id": "machinereadablezone-credentials",
-      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#machinereadablezone-credentials",
-      "level": 6,
-      "title": "MachineReadableZone Credentials",
-      "alternateIds": [
-        "machinereadablezone-credentials-0"
+        "component-extraction-machinereadablezone"
       ]
     },
     {
@@ -364,14 +375,74 @@
       "number": "5"
     },
     {
+      "id": "aamva",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#aamva",
+      "level": 2,
+      "title": "AAMVA Driver License and Identification Documents",
+      "alternateIds": [
+        "a-aamva-driver-license-and-identification-documents"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "aamvadriverslicensescannableinformation",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#aamvadriverslicensescannableinformation",
+      "level": 3,
+      "title": "AamvaDriversLicenseScannableInformation",
+      "alternateIds": [
+        "a-1-aamvadriverslicensescannableinformation"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "aamva-component-extraction",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#aamva-component-extraction",
+      "level": 3,
+      "title": "Component Extraction",
+      "alternateIds": [
+        "a-2-component-extraction"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "iso-idl",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#iso-idl",
+      "level": 2,
+      "title": "ISO-Compliant Driving Licences",
+      "alternateIds": [
+        "b-iso-compliant-driving-licences"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "isodrivinglicencemachinereadableinformation",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#isodrivinglicencemachinereadableinformation",
+      "level": 3,
+      "title": "IsoDrivingLicenceMachineReadableInformation",
+      "alternateIds": [
+        "b-1-isodrivinglicencemachinereadableinformation"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "iso-idl-component-extraction",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#iso-idl-component-extraction",
+      "level": 3,
+      "title": "Component Extraction",
+      "alternateIds": [
+        "b-2-component-extraction"
+      ],
+      "number": "B.2"
+    },
+    {
       "id": "test-vectors",
       "href": "https://www.w3.org/TR/vc-barcodes-1.0/#test-vectors",
       "level": 2,
       "title": "Test Vectors",
       "alternateIds": [
-        "x6-test-vectors"
+        "c-test-vectors"
       ],
-      "number": "6"
+      "number": "C"
     },
     {
       "id": "creating-vcbs",
@@ -379,9 +450,9 @@
       "level": 3,
       "title": "Creating VCBs",
       "alternateIds": [
-        "x6-1-creating-vcbs"
+        "c-1-creating-vcbs"
       ],
-      "number": "6.1"
+      "number": "C.1"
     },
     {
       "id": "utopia-driver-s-license",
@@ -389,9 +460,9 @@
       "level": 4,
       "title": "Utopia Driver's License",
       "alternateIds": [
-        "x6-1-1-utopia-driver-s-license"
+        "c-1-1-utopia-driver-s-license"
       ],
-      "number": "6.1.1"
+      "number": "C.1.1"
     },
     {
       "id": "creating-opticaldatabytes",
@@ -399,9 +470,9 @@
       "level": 5,
       "title": "Creating opticalDataBytes",
       "alternateIds": [
-        "x6-1-1-1-creating-opticaldatabytes"
+        "c-1-1-1-creating-opticaldatabytes"
       ],
-      "number": "6.1.1.1"
+      "number": "C.1.1.1"
     },
     {
       "id": "example-vc",
@@ -409,9 +480,9 @@
       "level": 5,
       "title": "Example VC",
       "alternateIds": [
-        "x6-1-1-2-example-vc"
+        "c-1-1-2-example-vc"
       ],
-      "number": "6.1.1.2"
+      "number": "C.1.1.2"
     },
     {
       "id": "cbor-ld-compression-and-encoding",
@@ -419,9 +490,9 @@
       "level": 5,
       "title": "CBOR-LD Compression and Encoding",
       "alternateIds": [
-        "x6-1-1-3-cbor-ld-compression-and-encoding"
+        "c-1-1-3-cbor-ld-compression-and-encoding"
       ],
-      "number": "6.1.1.3"
+      "number": "C.1.1.3"
     },
     {
       "id": "utopia-employment-authorization-document",
@@ -429,9 +500,9 @@
       "level": 4,
       "title": "Utopia Employment Authorization Document",
       "alternateIds": [
-        "x6-1-2-utopia-employment-authorization-document"
+        "c-1-2-utopia-employment-authorization-document"
       ],
-      "number": "6.1.2"
+      "number": "C.1.2"
     },
     {
       "id": "creating-opticaldatabytes-0",
@@ -439,9 +510,9 @@
       "level": 5,
       "title": "Creating opticalDataBytes",
       "alternateIds": [
-        "x6-1-2-1-creating-opticaldatabytes"
+        "c-1-2-1-creating-opticaldatabytes"
       ],
-      "number": "6.1.2.1"
+      "number": "C.1.2.1"
     },
     {
       "id": "example-vc-0",
@@ -449,9 +520,9 @@
       "level": 5,
       "title": "Example VC",
       "alternateIds": [
-        "x6-1-2-2-example-vc"
+        "c-1-2-2-example-vc"
       ],
-      "number": "6.1.2.2"
+      "number": "C.1.2.2"
     },
     {
       "id": "cbor-ld-compression-and-encoding-0",
@@ -459,9 +530,9 @@
       "level": 5,
       "title": "CBOR-LD Compression and Encoding",
       "alternateIds": [
-        "x6-1-2-3-cbor-ld-compression-and-encoding"
+        "c-1-2-3-cbor-ld-compression-and-encoding"
       ],
-      "number": "6.1.2.3"
+      "number": "C.1.2.3"
     },
     {
       "id": "employment-authorization-document",
@@ -469,9 +540,9 @@
       "level": 5,
       "title": "Employment Authorization Document",
       "alternateIds": [
-        "x6-1-2-4-employment-authorization-document"
+        "c-1-2-4-employment-authorization-document"
       ],
-      "number": "6.1.2.4"
+      "number": "C.1.2.4"
     },
     {
       "id": "verifying-vcbs",
@@ -479,9 +550,9 @@
       "level": 3,
       "title": "Verifying VCBs",
       "alternateIds": [
-        "x6-2-verifying-vcbs"
+        "c-2-verifying-vcbs"
       ],
-      "number": "6.2"
+      "number": "C.2"
     },
     {
       "id": "utopia-driver-s-license-0",
@@ -489,9 +560,9 @@
       "level": 4,
       "title": "Utopia Driver's License",
       "alternateIds": [
-        "x6-2-1-utopia-driver-s-license"
+        "c-2-1-utopia-driver-s-license"
       ],
-      "number": "6.2.1"
+      "number": "C.2.1"
     },
     {
       "id": "decoding-and-decompressing",
@@ -499,9 +570,9 @@
       "level": 5,
       "title": "Decoding and Decompressing",
       "alternateIds": [
-        "x6-2-1-1-decoding-and-decompressing"
+        "c-2-1-1-decoding-and-decompressing"
       ],
-      "number": "6.2.1.1"
+      "number": "C.2.1.1"
     },
     {
       "id": "verifying",
@@ -509,9 +580,9 @@
       "level": 5,
       "title": "Verifying",
       "alternateIds": [
-        "x6-2-1-2-verifying"
+        "c-2-1-2-verifying"
       ],
-      "number": "6.2.1.2"
+      "number": "C.2.1.2"
     },
     {
       "id": "status-checking",
@@ -519,9 +590,9 @@
       "level": 5,
       "title": "Status Checking",
       "alternateIds": [
-        "x6-2-1-3-status-checking"
+        "c-2-1-3-status-checking"
       ],
-      "number": "6.2.1.3"
+      "number": "C.2.1.3"
     },
     {
       "id": "utopia-employment-authorization-document-0",
@@ -529,9 +600,9 @@
       "level": 4,
       "title": "Utopia Employment Authorization Document",
       "alternateIds": [
-        "x6-2-2-utopia-employment-authorization-document"
+        "c-2-2-utopia-employment-authorization-document"
       ],
-      "number": "6.2.2"
+      "number": "C.2.2"
     },
     {
       "id": "decoding-and-decompressing-0",
@@ -539,9 +610,9 @@
       "level": 5,
       "title": "Decoding and Decompressing",
       "alternateIds": [
-        "x6-2-2-1-decoding-and-decompressing"
+        "c-2-2-1-decoding-and-decompressing"
       ],
-      "number": "6.2.2.1"
+      "number": "C.2.2.1"
     },
     {
       "id": "verifying-0",
@@ -549,9 +620,9 @@
       "level": 5,
       "title": "Verifying",
       "alternateIds": [
-        "x6-2-2-2-verifying"
+        "c-2-2-2-verifying"
       ],
-      "number": "6.2.2.2"
+      "number": "C.2.2.2"
     },
     {
       "id": "implementation-notes",
@@ -559,9 +630,9 @@
       "level": 3,
       "title": "Implementation Notes",
       "alternateIds": [
-        "x6-3-implementation-notes"
+        "c-3-implementation-notes"
       ],
-      "number": "6.3"
+      "number": "C.3"
     },
     {
       "id": "cbor-ld",
@@ -569,9 +640,9 @@
       "level": 4,
       "title": "CBOR-LD",
       "alternateIds": [
-        "x6-3-1-cbor-ld"
+        "c-3-1-cbor-ld"
       ],
-      "number": "6.3.1"
+      "number": "C.3.1"
     },
     {
       "id": "legacy-cbor-ld-encoded-credentials",
@@ -579,9 +650,9 @@
       "level": 3,
       "title": "Legacy CBOR-LD encoded credentials",
       "alternateIds": [
-        "x6-4-legacy-cbor-ld-encoded-credentials"
+        "c-4-legacy-cbor-ld-encoded-credentials"
       ],
-      "number": "6.4"
+      "number": "C.4"
     },
     {
       "id": "cbor-ld-version-6-x",
@@ -589,9 +660,9 @@
       "level": 4,
       "title": "CBOR-LD Version 6.X",
       "alternateIds": [
-        "x6-4-1-cbor-ld-version-6-x"
+        "c-4-1-cbor-ld-version-6-x"
       ],
-      "number": "6.4.1"
+      "number": "C.4.1"
     },
     {
       "id": "utopia-driver-s-license-1",
@@ -599,9 +670,9 @@
       "level": 5,
       "title": "Utopia Driver's License",
       "alternateIds": [
-        "x6-4-1-1-utopia-driver-s-license"
+        "c-4-1-1-utopia-driver-s-license"
       ],
-      "number": "6.4.1.1"
+      "number": "C.4.1.1"
     },
     {
       "id": "utopia-employment-authorization-document-1",
@@ -609,9 +680,9 @@
       "level": 5,
       "title": "Utopia Employment Authorization Document",
       "alternateIds": [
-        "x6-4-1-2-utopia-employment-authorization-document"
+        "c-4-1-2-utopia-employment-authorization-document"
       ],
-      "number": "6.4.1.2"
+      "number": "C.4.1.2"
     },
     {
       "id": "cbor-ld-version-7-x",
@@ -619,9 +690,9 @@
       "level": 4,
       "title": "CBOR-LD Version 7.X",
       "alternateIds": [
-        "x6-4-2-cbor-ld-version-7-x"
+        "c-4-2-cbor-ld-version-7-x"
       ],
-      "number": "6.4.2"
+      "number": "C.4.2"
     },
     {
       "id": "utopia-driver-s-license-2",
@@ -629,9 +700,9 @@
       "level": 5,
       "title": "Utopia Driver's License",
       "alternateIds": [
-        "x6-4-2-1-utopia-driver-s-license"
+        "c-4-2-1-utopia-driver-s-license"
       ],
-      "number": "6.4.2.1"
+      "number": "C.4.2.1"
     },
     {
       "id": "utopia-employment-authorization-document-2",
@@ -639,9 +710,9 @@
       "level": 5,
       "title": "Utopia Employment Authorization Document",
       "alternateIds": [
-        "x6-4-2-2-utopia-employment-authorization-document"
+        "c-4-2-2-utopia-employment-authorization-document"
       ],
-      "number": "6.4.2.2"
+      "number": "C.4.2.2"
     },
     {
       "id": "revision-history",
@@ -649,9 +720,9 @@
       "level": 2,
       "title": "Revision History",
       "alternateIds": [
-        "x7-revision-history"
+        "d-revision-history"
       ],
-      "number": "7"
+      "number": "D"
     },
     {
       "id": "references",
@@ -659,9 +730,9 @@
       "level": 2,
       "title": "References",
       "alternateIds": [
-        "a-references"
+        "e-references"
       ],
-      "number": "A"
+      "number": "E"
     },
     {
       "id": "normative-references",
@@ -669,9 +740,19 @@
       "level": 3,
       "title": "Normative references",
       "alternateIds": [
-        "a-1-normative-references"
+        "e-1-normative-references"
       ],
-      "number": "A.1"
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-barcodes-1.0/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "e-2-informative-references"
+      ],
+      "number": "E.2"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Profiling",
+    "url": "https://www.w3.org/TR/shacl12-profiling/"
+  },
+  "algorithms": [
+    {
+      "html": "There are multiple reasons one might want to identify groups of <a href=\"https://www.w3.org/TR/shacl12-profiling/#dfn-shacl-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shacl-element-2\">SHACL elements</a> and to know the relations between groups and individual SHACL elements.\n      These reasons include wanting to understand the purpose(s) of a group, how a change in one group affects another group, and how to create a new group.\n      Three Use Cases have been articulated for this:",
+      "rationale": "find",
+      "steps": [
+        {
+          "html": "Identify groups of <a href=\"https://www.w3.org/TR/shacl12-profiling/#dfn-shacl-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shacl-element-3\">SHACL elements</a>"
+        },
+        {
+          "html": "Find all the <a href=\"https://www.w3.org/TR/shacl12-profiling/#dfn-shacl-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shacl-element-4\">SHACL elements</a> that a group depends on"
+        },
+        {
+          "html": "Find all the groups of <a href=\"https://www.w3.org/TR/shacl12-profiling/#dfn-shacl-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shacl-element-5\">SHACL elements</a> that a group depends on"
+        }
+      ]
+    },
+    {
+      "html": "When making profiles of SHACL 1.2, it is important to identify and present the profile as per the currently known\n      profiles of SHACL 1.2 — the Specification Profiles and the Union Profile — so they can be used effectively, including\n      by others. Creators of profiles of SHACL 1.2 <em class=\"rfc2119\">SHOULD</em>:",
+      "rationale": "define",
+      "steps": [
+        {
+          "html": "Identify the profile with an IRI"
+        },
+        {
+          "html": "Define the profile as profiles of SHACL 1.2 as defined in this specification\n        <ul>\n          <li>See <a href=\"https://www.w3.org/TR/shacl12-profiling/#profiles\">Appendix A</a></li>\n        </ul>"
+        },
+        {
+          "html": "Share the profile with the SHACL user community\n        <ul>\n          <li>See the <a href=\"https://github.com/w3c/shacl-resources\">SHACL\n          Resources Repository</a> for information on SHACL community resource\n          sharing</li>\n        </ul>"
+        }
+      ]
+    }
+  ]
+}
