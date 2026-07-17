@@ -37,6 +37,63 @@
       ]
     },
     {
+      "name": "animation-delay-start",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay-start",
+      "value": "<time>#",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "<time>",
+          "prose": "The <time> defines how long of a delay there is between the start of the animation (when the animation is applied to the element via these properties) and when it begins executing. A delay of 0s (the initial value) means that the animation will execute as soon as it is applied. A negative delay is valid. Similar to a delay of 0s, it means that the animation executes immediately, but is automatically progressed by the absolute value of the delay, as if the animation had started the specified time in the past, and so it appears to start partway through its active duration. If an animation’s keyframes have an implied starting value, the values are taken from the time the animation starts, not some time in the past.",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-delay-start-time",
+          "type": "value",
+          "value": "<time>"
+        }
+      ],
+      "styleDeclaration": [
+        "animation-delay-start",
+        "animationDelayStart"
+      ]
+    },
+    {
+      "name": "animation-delay-end",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay-end",
+      "value": "<time [0s,∞]>#",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "animation-delay-end",
+        "animationDelayEnd"
+      ]
+    },
+    {
+      "name": "animation-delay",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay",
+      "value": "[ <'animation-delay-start'> <'animation-delay-end'>? ]#",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "animation-delay",
+        "animationDelay"
+      ]
+    },
+    {
       "name": "animation-composition",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-composition",
       "value": "<single-animation-composition>#",
@@ -123,7 +180,7 @@
     },
     {
       "name": "<single-animation>",
-      "value": "<'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
+      "value": "<'animation-duration'> || <easing-function> || <'animation-delay-start'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation",
       "type": "type"
     }
