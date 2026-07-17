@@ -3450,7 +3450,28 @@
     },
     {
       "name": "animation-delay",
-      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-delay",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "animation-delay",
+        "animationDelay"
+      ],
+      "longhands": [
+        "animation-delay-start",
+        "animation-delay-end"
+      ],
+      "syntax": "[ <'animation-delay-start'> <'animation-delay-end'>? ]#",
+      "extended": []
+    },
+    {
+      "name": "animation-delay-end",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay-end",
       "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -3459,8 +3480,25 @@
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
-        "animation-delay",
-        "animationDelay"
+        "animation-delay-end",
+        "animationDelayEnd"
+      ],
+      "syntax": "<time [0s,∞]>#",
+      "extended": []
+    },
+    {
+      "name": "animation-delay-start",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-delay-start",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "animation-delay-start",
+        "animationDelayStart"
       ],
       "syntax": "<time>#",
       "extended": []
@@ -20611,7 +20649,7 @@
     {
       "name": "single-animation",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation",
-      "syntax": "<'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
+      "syntax": "<'animation-duration'> || <easing-function> || <'animation-delay-start'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
       "extended": []
     },
     {

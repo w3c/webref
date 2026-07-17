@@ -224,36 +224,6 @@
       ]
     },
     {
-      "html": "Interpolation between two <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color②①\">&lt;color&gt;</a> values\n\ttakes place by executing the following steps:",
-      "rationale": "prepare",
-      "steps": [
-        {
-          "html": "checking the two colors for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#analogous-components\" id=\"ref-for-analogous-components\">analogous components</a>\n\t\t\tand <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#analogous-set\" id=\"ref-for-analogous-set\">analogous sets</a>\n\t\t\twhich will be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"carried-forward\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">carried forward</dfn>"
-        },
-        {
-          "html": "prepare both colors for conversion.\n\t\t\tthis changes any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①⑤\">powerless</a> components to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①⑤\">missing</a> values"
-        },
-        {
-          "html": "converting them both to a given color space\n\t\t\twhich will be referred to as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"interpolation-color-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">interpolation color space</dfn> below."
-        },
-        {
-          "html": "(if required) re-inserting <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#carried-forward\" id=\"ref-for-carried-forward\">carried forward</a> values in the converted colors"
-        },
-        {
-          "html": "(if required) fixing up the hues, depending on the selected <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-hue-interpolation-method\" id=\"ref-for-typedef-hue-interpolation-method\">&lt;hue-interpolation-method&gt;</a>"
-        },
-        {
-          "html": "changing the color components to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#premultiplied\" id=\"ref-for-premultiplied\">premultiplied</a> form"
-        },
-        {
-          "html": "linearly interpolating each component of the computed value of the color separately"
-        },
-        {
-          "html": "undoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#premultiplied\" id=\"ref-for-premultiplied①\">premultiplication</a>"
-        }
-      ]
-    },
-    {
       "name": "to gamut map a color by binary search with local MINDE",
       "href": "https://drafts.csswg.org/css-color-4/#binary-search-gamut-map-with-local-minde",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"binary-search-gamut-map-with-local-minde\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Binary Search Gamut Map with Local MINDE</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of a destination color space <var>destination</var>:",
