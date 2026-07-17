@@ -51,7 +51,7 @@
     {
       "name": "process an image resource from JSON",
       "href": "https://w3c.github.io/image-resource/#dfn-process-an-image-resource-from-json",
-      "html": "To <dfn data-export=\"\" id=\"dfn-process-an-image-resource-from-json\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process an image resource from JSON</dfn>, given\n        a JSON Object <var data-type=\"object\">input</var> and a <a data-link-type=\"dfn|abstract-op\" class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found-1\">URL</a> <var data-type=\"URL\">base</var>. It returns an\n        <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>.",
+      "html": "To <dfn data-export=\"\" id=\"dfn-process-an-image-resource-from-json\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process an image resource from JSON</dfn>, given\n        a JSON Object <var data-type=\"object\">input</var> and a <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">base</var>. It returns an\n        <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>.",
       "rationale": "if",
       "steps": [
         {
@@ -127,7 +127,7 @@
               "html": "Set <var>request</var> to a new <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request\" href=\"https://fetch.spec.whatwg.org/#concept-request\">Request</a>."
             },
             {
-              "html": "Set <a data-link-type=\"dfn|abstract-op\" data-link-for=\"request\" data-xref-for=\"request\" class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found-2\">URL</a> to <var>image</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"image resource\" data-xref-for=\"image resource\" href=\"https://w3c.github.io/image-resource/#dfn-src\" class=\"internalDFN\" id=\"ref-for-dfn-src-2\">src</a>."
+              "html": "Set <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-url\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">URL</a> to <var>image</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"image resource\" data-xref-for=\"image resource\" href=\"https://w3c.github.io/image-resource/#dfn-src\" class=\"internalDFN\" id=\"ref-for-dfn-src-2\">src</a>."
             },
             {
               "html": "Set <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-destination\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\">Destination</a> to \"image\"."

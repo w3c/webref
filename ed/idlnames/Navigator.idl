@@ -45,6 +45,17 @@ partial interface Navigator {
   readonly attribute Bluetooth bluetooth;
 };
 
+// Source: CPU Performance API (https://wicg.github.io/cpu-performance/)
+[
+    SecureContext,
+    Exposed=Window
+] partial interface Navigator {
+    readonly attribute unsigned short cpuPerformance;
+};
+
+// Source: Cross-Origin Storage (https://wicg.github.io/cross-origin-storage/)
+Navigator includes NavigatorCrossOriginStorage;
+
 // Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
 partial interface Navigator {
   Promise<undefined> deprecatedReplaceInURN(

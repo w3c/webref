@@ -1,0 +1,8 @@
+// Source: Proofreader API (https://webmachinelearning.github.io/proofreader-api/)
+dictionary ProofreaderCreateCoreOptions {
+    boolean includeCorrectionTypes = false;
+    boolean includeCorrectionExplanations = false;
+
+    sequence<DOMString> expectedInputLanguages;
+    DOMString correctionExplanationLanguage;
+};

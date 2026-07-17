@@ -1,0 +1,15 @@
+{
+  "name": "XRGPUProjectionLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR/WebGPU Binding Module - Level 1",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+    },
+    "fragment": "dictionary XRGPUProjectionLayerInit {\n  required GPUTextureFormat colorFormat;\n  GPUTextureFormat? depthStencilFormat;\n  GPUTextureUsageFlags textureUsage = 0x10; // GPUTextureUsage.RENDER_ATTACHMENT\n  double scaleFactor = 1.0;\n};",
+    "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dictdef-xrgpuprojectionlayerinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

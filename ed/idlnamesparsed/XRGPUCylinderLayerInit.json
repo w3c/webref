@@ -1,0 +1,29 @@
+{
+  "name": "XRGPUCylinderLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR/WebGPU Binding Module - Level 1",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+    },
+    "fragment": "dictionary XRGPUCylinderLayerInit : XRGPULayerInit {\n  XRRigidTransform? transform;\n  float radius = 2.0;\n  float centralAngle = 0.78539;\n  float aspectRatio = 2.0;\n};",
+    "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dictdef-xrgpucylinderlayerinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRGPULayerInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebXR/WebGPU Binding Module - Level 1",
+        "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+      },
+      "fragment": "dictionary XRGPULayerInit {\n  required GPUTextureFormat colorFormat;\n  GPUTextureFormat? depthStencilFormat;\n  GPUTextureUsageFlags textureUsage = 0x10; // GPUTextureUsage.RENDER_ATTACHMENT\n  required XRSpace space;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n};",
+      "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dictdef-xrgpulayerinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

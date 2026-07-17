@@ -1,0 +1,8 @@
+// Source: Proofreader API (https://webmachinelearning.github.io/proofreader-api/)
+dictionary ProofreadCorrection {
+    unsigned long long startIndex;
+    unsigned long long endIndex;
+    DOMString correction;
+    sequence<CorrectionType> types;
+    DOMString explanation;
+};

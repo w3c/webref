@@ -1,0 +1,17 @@
+// Source: Proofreader API (https://webmachinelearning.github.io/proofreader-api/)
+[Exposed=Window, SecureContext]
+interface Proofreader {
+    static Promise<Proofreader> create(optional ProofreaderCreateOptions options = {});
+    static Promise<Availability> availability(optional ProofreaderCreateCoreOptions options = {});
+
+    Promise<ProofreadResult> proofread(
+        DOMString input,
+        optional ProofreaderProofreadOptions options = {}
+    );
+
+    readonly attribute boolean includeCorrectionTypes;
+    readonly attribute boolean includeCorrectionExplanations;
+
+    readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
+    readonly attribute DOMString? correctionExplanationLanguage;
+};

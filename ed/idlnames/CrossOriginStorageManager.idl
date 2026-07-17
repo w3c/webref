@@ -1,0 +1,7 @@
+// Source: Cross-Origin Storage (https://wicg.github.io/cross-origin-storage/)
+[Exposed=(Window,Worker), SecureContext]
+interface CrossOriginStorageManager {
+  Promise<FileSystemFileHandle> requestFileHandle(
+      CrossOriginStorageRequestFileHandleHash hash,
+      optional CrossOriginStorageRequestFileHandleOptions options = {});
+};

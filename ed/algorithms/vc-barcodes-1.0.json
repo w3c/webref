@@ -56,25 +56,28 @@
           "html": "Set <var>opticalData</var> to the data in the optical barcode to be secured."
         },
         {
-          "html": "Set <var>statusListEntryVerbose</var> to the <code>BitstringStatusListCredential</code>\n(as defined in the <cite><a data-cite=\"VC-BITSTRING-STATUS-LIST\" data-matched-text=\"[[[VC-BITSTRING-STATUS-LIST]]]\" href=\"https://www.w3.org/TR/vc-bitstring-status-list/\">Bitstring Status List v1.0</a></cite> specification) that the issuer\nwishes to add to the <code>OpticalBarcodeCredential</code>."
-        },
-        {
-          "html": "Let <var>statusListEntryTerse</var> be an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>. Set <var>statusListEntryTerse</var>.<var>type</var> to <code>TerseBitstringStatusListEntry</code> and <var>statusListEntryTerse</var>.<var>index</var> to the integer representation of <var>statusListEntryVerbose</var>.<var>statusListIndex</var>."
-        },
-        {
           "html": "Set <var>issuerUrl</var> to the URL the issuer wishes to use for credential verification."
         },
         {
-          "html": "Set <var>unsignedStatus</var> to an <code>OpticalBarcodeCredential</code> with\n<var>unsignedStatus</var>.<var>issuer</var> set to <var>issuerUrl</var> and <var>unsignedStatus</var>.<var>credentialStatus</var>\nset to <var>statusListEntryTerse</var>."
+          "html": "Set <var>unsignedCredential</var> to an <code>OpticalBarcodeCredential</code> with\n<var>unsignedCredential</var>.<var>issuer</var> set to <var>issuerUrl</var>."
         },
         {
-          "html": "Set <var>signedStatusVc</var> to the result of using the algorithm in\n<a href=\"https://w3c.github.io/vc-barcodes/#add-proof-ecdsa-xi-2023\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.1 </bdi>Add Proof (ecdsa-xi-2023)</a> to sign <var>opticalData</var>\nand <var>unsignedStatus</var>."
+          "html": "If credential status is required:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>statusListEntry</var> to the <code>BitstringStatusListEntry</code>\n(as defined in the <cite><a data-cite=\"VC-BITSTRING-STATUS-LIST\" data-matched-text=\"[[[VC-BITSTRING-STATUS-LIST]]]\" href=\"https://www.w3.org/TR/vc-bitstring-status-list/\">Bitstring Status List v1.0</a></cite> specification) that the issuer\nwishes to add to the <code>OpticalBarcodeCredential</code>."
+            },
+            {
+              "html": "Set <var>unsignedCredential</var>.<var>credentialStatus</var> to the result of applying the\nalgorithm in Section <a href=\"https://w3c.github.io/vc-barcodes/#bitstring-to-terse\" data-matched-text=\"[[[#bitstring-to-terse]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.3.2 </bdi><code>BitstringStatusListEntry</code> to <code>TerseBitstringStatusListEntry</code></a> to <var>statusListEntry</var>."
+            }
+          ]
         },
         {
-          "html": "Encode <var>signedStatusVc</var> using CBOR-LD [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-barcodes/#bib-cbor-ld\" title=\"Compact Binary Object Representation for Linked Data v1.0\">CBOR-LD</a></cite>] and add it to the designated area of the <var>opticalData</var>."
+          "html": "Set <var>signedCredential</var> to the result of using the algorithm in\n<a href=\"https://w3c.github.io/vc-barcodes/#add-proof-ecdsa-xi-2023\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.1 </bdi>Add Proof (ecdsa-xi-2023)</a> to sign <var>opticalData</var>\nand <var>unsignedCredential</var>."
         },
         {
-          "html": "Generate the machine-readable credential (MRZ or PDF417)."
+          "html": "Encode <var>signedCredential</var> using CBOR-LD [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-barcodes/#bib-cbor-ld\" title=\"Compact Binary Object Representation for Linked Data v1.0\">CBOR-LD</a></cite>] and add it to the designated area of the <var>opticalData</var>\nin accordance with the processing rules for the desired value of <var>credentialSubject</var>.<var>type</var> and\nthe use case."
         }
       ]
     },
@@ -82,22 +85,34 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>securedDocument</var> to the data in the PDF417 or MRZ."
+          "html": "Set <var>opticalData</var> to the machine-readable data (e.g., the PDF417 or MRZ data)\nscanned from the physical document."
         },
         {
-          "html": "Set <var>verificationResult</var> to the result of applying the algorithm in Section\n<a href=\"https://w3c.github.io/vc-barcodes/#verify-proof-ecdsa-xi-2023\" data-matched-text=\"[[[#verify-proof-ecdsa-xi-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.2 </bdi>Verify Proof (ecdsa-xi-2023)</a>to <var>securedDocument</var>."
+          "html": "Set <var>vcbPayload</var> to the <a data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> payload extracted from\nthe designated area of <var>opticalData</var>."
         },
         {
-          "html": "Set <var>credential</var> to the <code>OpticalBarcodeCredential</code> in <var>securedDocument</var>."
+          "html": "Set <var>cborldBytes</var> to the result of decoding <var>vcbPayload</var> from the character\nencoding associated with the credential type and barcode format\n(see Section <a href=\"https://w3c.github.io/vc-barcodes/#encoding-to-and-from-barcodes\" data-matched-text=\"[[[#encoding-to-and-from-barcodes]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.3 </bdi>Encoding to and from barcodes</a>), removing any multibase\nheader if one is present."
         },
         {
-          "html": "Set <var>statusListEntry</var> to the result of applying the algorithm in Section\n<a href=\"https://w3c.github.io/vc-barcodes/#convert-status-list-entries\" data-matched-text=\"[[[#convert-status-list-entries]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.3 </bdi>Convert Status List Entries</a> to <var>credential</var>."
+          "html": "Set <var>credential</var> to the <code>OpticalBarcodeCredential</code> that results from applying\nCBOR-LD decompression [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-barcodes/#bib-cbor-ld\" title=\"Compact Binary Object Representation for Linked Data v1.0\">CBOR-LD</a></cite>] to <var>cborldBytes</var>, if the payload is\nCBOR-LD compressed; otherwise, set <var>credential</var> to the\n<code>OpticalBarcodeCredential</code> expressed by <var>cborldBytes</var>."
         },
         {
-          "html": "Set <var>statusResult</var> to the result of applying the algorithm in\n<a data-cite=\"VC-BITSTRING-STATUS-LIST#validate-algorithm\" href=\"https://www.w3.org/TR/vc-bitstring-status-list/#validate-algorithm\">\nBitstring Status List v1.0: Validate Algorithm</a> to <var>statusListEntry</var>."
+          "html": "Set <var>verificationResult</var> to the result of applying the algorithm in Section\n<a href=\"https://w3c.github.io/vc-barcodes/#verify-proof-ecdsa-xi-2023\" data-matched-text=\"[[[#verify-proof-ecdsa-xi-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.2 </bdi>Verify Proof (ecdsa-xi-2023)</a> to <var>credential</var> and <var>opticalData</var>."
         },
         {
-          "html": "Return (<var>validationResult</var>, <var>statusResult</var>)."
+          "html": "Set <var>statusResult</var> to null. If <var>credential</var>.<var>credentialStatus</var> is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>statusListEntry</var> to the result of applying the algorithm in Section\n<a href=\"https://w3c.github.io/vc-barcodes/#terse-to-bitstring\" data-matched-text=\"[[[#terse-to-bitstring]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.3.1 </bdi><code>TerseBitstringStatusListEntry</code> to <code>BitstringStatusListEntry</code></a> to <var>credential</var>."
+            },
+            {
+              "html": "Set <var>statusResult</var> to the result of applying the algorithm in\n<a data-cite=\"VC-BITSTRING-STATUS-LIST#validate-algorithm\" href=\"https://www.w3.org/TR/vc-bitstring-status-list/#validate-algorithm\">\nBitstring Status List v1.0: Validate Algorithm</a> to <var>statusListEntry</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return (<var>verificationResult</var>, <var>statusResult</var>)."
         }
       ]
     },
@@ -132,6 +147,33 @@
       ]
     },
     {
+      "html": "The algorithm takes a <code>BitstringStatusListEntry</code> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a>\n<var>statusListEntry</var>), whose <var>statusListCredential</var> value is expected to be a\nURL of the form <var>terseStatusListBaseUrl</var>, '/', <var>statusPurpose</var>, '/',\n<var>listIndex</var>, and an integer <var>listLength</var> containing the number of entries in\neach <code>BitstringStatusListCredential</code> published by the <a data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> as\ninput, and returns a 'TerseBitstringStatusListEntry' object.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var> to be an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+        },
+        {
+          "html": "Set <var>listIndex</var> to the integer representation of the final path segment of\n<var>statusListEntry</var>.<var>statusListCredential</var>."
+        },
+        {
+          "html": "Set <var>terseStatusListBaseUrl</var> to <var>statusListEntry</var>.<var>statusListCredential</var>\nwith the final two path segments (i.e., '/', <var>statusPurpose</var>, '/',\n<var>listIndex</var>) removed."
+        },
+        {
+          "html": "Set <var>result</var>.<var>type</var> to 'TerseBitstringStatusListEntry'."
+        },
+        {
+          "html": "Set <var>result</var>.<var>terseStatusListBaseUrl</var> to <var>terseStatusListBaseUrl</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>terseStatusListIndex</var> to <var>listIndex</var> * <var>listLength</var> + the\ninteger representation of <var>statusListEntry</var>.<var>statusListIndex</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
       "html": "The hashing algorithm is what is defined in the\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#hashing-ecdsa-rdfc-2019\">\nHashing (ecdsa-rdfc-2019)</a> section of the <cite><a data-cite=\"VC-DI-ECDSA\" data-matched-text=\"[[[VC-DI-ECDSA]]]\" href=\"https://www.w3.org/TR/vc-di-ecdsa/\">Data Integrity ECDSA Cryptosuites v1.0</a></cite> with step 3\nreplaced with the following two steps:",
       "rationale": ".algorithm",
       "steps": [
@@ -144,34 +186,14 @@
       ]
     },
     {
+      "html": "The required inputs to this algorithm are the machine-readable optical data\n(<var>opticalData</var>) and the credential subject (<var>credentialSubject</var>). A single\nvalue representing the hashed canonical form of the protected optical data\nis produced as output.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>dataToCanonicalize</var> to an empty array."
+          "html": "Set <var>dataToCanonicalize</var> to the result of extracting the protected\ncomponents of <var>opticalData</var> as an array of strings, according to the\ncomponent extraction rules associated with the type of <var>credentialSubject</var>,\nusing <var>credentialSubject</var>.<code>protectedComponentIndex</code> if it is defined for\nthat type. The component extraction rules for <code>MachineReadableZone</code> are\ngiven in Section <a href=\"https://w3c.github.io/vc-barcodes/#mrz-component-extraction\" data-matched-text=\"[[[#mrz-component-extraction]]]\" class=\"sec-ref\">Component extraction: <code>MachineReadableZone</code></a>; the rules for other types\nare given in the specifications or appendices that define them (e.g.,\nAppendix <a href=\"https://w3c.github.io/vc-barcodes/#aamva-component-extraction\" data-matched-text=\"[[[#aamva-component-extraction]]]\" class=\"sec-ref\"><bdi class=\"secno\">A.2 </bdi>Component Extraction</a> for the type defined in Appendix\n<a href=\"https://w3c.github.io/vc-barcodes/#aamva\" data-matched-text=\"[[[#aamva]]]\" class=\"sec-ref\"><bdi class=\"secno\">A. </bdi>AAMVA Driver License and Identification Documents</a>, and Appendix <a href=\"https://w3c.github.io/vc-barcodes/#iso-idl-component-extraction\" data-matched-text=\"[[[#iso-idl-component-extraction]]]\" class=\"sec-ref\"><bdi class=\"secno\">B.2 </bdi>Component Extraction</a> for the type\ndescribed in Appendix <a href=\"https://w3c.github.io/vc-barcodes/#iso-idl\" data-matched-text=\"[[[#iso-idl]]]\" class=\"sec-ref\"><bdi class=\"secno\">B. </bdi>ISO-Compliant Driving Licences</a>)."
         },
         {
-          "html": "Set <var>bitfieldDecoded</var> to be first 22 bits of the length 24 bitstring resulting from decoding\n  <code>credentialSubject.protectedComponentIndex</code> from multibase-base64url to binary."
-        },
-        {
-          "html": "Set <var>fieldsAlphabetized</var> to be an array containing the 22 AAMVA mandatory PDF417 Element IDs\n  [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-barcodes/#bib-aamva-dl-id-card-design-standard\" title=\"AAMVA DL/ID Card Design Standard (2020)\">aamva-dl-id-card-design-standard</a></cite>] sorted in Unicode code point order (i.e., ['DAC', 'DAD' ... 'DDG'])."
-        },
-        {
-          "html": "For each bit with value <code>1</code> in <var>bitfieldDecoded</var>:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "Set the string <var>fieldName</var> to <var>fieldsAlphabetized</var>[<var>i</var>], where <var>i</var> is the index of the bit in <var>bitfieldDecoded</var>."
-            },
-            {
-              "html": "Set the string <var>fieldData</var> to the data that will be in the PDF417 associated with that field name."
-            },
-            {
-              "html": "Concatenate <var>fieldData</var> to the end of <var>fieldName</var>, concatenate a newline character (<code>\\n</code>, <code>U+000A</code>) to the end,\nand append the result to <var>dataToCanonicalize</var>."
-            }
-          ]
-        },
-        {
-          "html": "Set <var>canonicalizedData</var> to the result of sorting <var>dataToCanonicalize</var> in Unicode code point order and then applying a join operation\nto create a single string from the array."
+          "html": "Set <var>canonicalizedData</var> to the result of sorting <var>dataToCanonicalize</var> into a\ndeterministic list, using the ordering rules associated with the type of\n<var>credentialSubject</var>, and then applying a join operation to create a single\nstring from the array. If the type of <var>credentialSubject</var> does not define\nordering rules, sort <var>dataToCanonicalize</var> in Unicode code point order."
         },
         {
           "html": "Hash <var>canonicalizedData</var> and return the result."
@@ -179,6 +201,7 @@
       ]
     },
     {
+      "html": "For a <var>credentialSubject</var> of type <code>MachineReadableZone</code>, <var>opticalData</var> is\nthe data in the machine-readable zone, and the protected components are\nextracted as follows. The ordering rules for this type are the order in\nwhich the lines appear on the credential.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -197,10 +220,7 @@
           ]
         },
         {
-          "html": "Set <var>canonicalizedData</var> to the result of ordering the elements of <var>dataToCanonicalize</var> to match the order they appear\non the credential and then applying a join operation to create a single string from the array."
-        },
-        {
-          "html": "Hash <var>canonicalizedData</var> and return the result."
+          "html": "Return <var>dataToCanonicalize</var>."
         }
       ]
     },
@@ -210,6 +230,39 @@
       "steps": [
         {
           "html": "If <var>options</var>.<var>type</var> is not set to <code>DataIntegrityProof</code> and\n<var>proofConfig</var>.<var>cryptosuite</var> is not set to <code>ecdsa-xi-2023</code>, an\n<code>INVALID_PROOF_CONFIGURATION</code> error <em class=\"rfc2119\">MUST</em> be raised."
+        }
+      ]
+    },
+    {
+      "html": "For a <var>credentialSubject</var> of type\n<code>AamvaDriversLicenseScannableInformation</code>, <var>opticalData</var> is the data in the\nPDF417 barcode, and the protected components are extracted as follows. The\nordering rules for this type are the default Unicode code point order.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>dataToCanonicalize</var> to an empty array."
+        },
+        {
+          "html": "Set <var>bitfieldDecoded</var> to be first 22 bits of the length 24 bitstring resulting from decoding\n  <var>credentialSubject</var>.<code>protectedComponentIndex</code> from multibase-base64url to binary."
+        },
+        {
+          "html": "Set <var>fieldsAlphabetized</var> to be the deterministic list of components for this type, i.e., an array\n  containing the 22 AAMVA mandatory PDF417 Element IDs\n  [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-barcodes/#bib-aamva-dl-id-card-design-standard\" title=\"AAMVA DL/ID Card Design Standard (2020)\">aamva-dl-id-card-design-standard</a></cite>] sorted in Unicode code point order (i.e., ['DAC', 'DAD' ... 'DDG'])."
+        },
+        {
+          "html": "For each bit with value <code>1</code> in <var>bitfieldDecoded</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the string <var>fieldName</var> to <var>fieldsAlphabetized</var>[<var>i</var>], where <var>i</var> is the index of the bit in <var>bitfieldDecoded</var>."
+            },
+            {
+              "html": "Set the string <var>fieldData</var> to the data that will be in the PDF417 associated with that field name."
+            },
+            {
+              "html": "Concatenate <var>fieldData</var> to the end of <var>fieldName</var>, concatenate a newline character (<code>\\n</code>, <code>U+000A</code>) to the end,\nand append the result to <var>dataToCanonicalize</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>dataToCanonicalize</var>."
         }
       ]
     }

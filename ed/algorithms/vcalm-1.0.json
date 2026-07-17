@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "title": "VCALM v1.0",
+    "url": "https://w3c.github.io/vcalm/"
+  },
+  "algorithms": [
+    {
+      "html": "The <code>read</code> action enables operations that do not create or update resources in\nthe system to be performed on the provided path, or on any path containing the\nprovided path as a prefix, as permitted by <code>invocationTarget</code> and <code>allowedAction</code>\nin the ZCAP. The <code>write</code> action enables operations that create and/or update\nresources in the system to be performed on the provided path, or on any path\nthat contains the provided path as a prefix, as permitted by <code>invocationTarget</code>\nand <code>allowedAction</code> in the ZCAP. To enforce the principle of\nleast privilege, implementers are expected to apply the following best practices:",
+      "rationale": "ensure",
+      "steps": [
+        {
+          "html": "Ensure that ZCAPs identify a specific URL that references resources via the <code>invocationTarget</code> property\nand the client that is authorized to access those resources via the <code>controller</code> property.\nThis enables the ZCAP to be pinned to a particular client and server (along with its resources).\nExample <code>invocationTarget</code> value: <code>https://vcalm-instances.example.com/workflows/a6513552-8e5a-4efa-b36e-1fb2a8e06822</code>.\nExample <code>controller</code> value: <code>did:key:z6MknBxrctS4KsfiBsEaXsfnrnfNYTvDjVpLYYUAN6PX2EfG</code>."
+        },
+        {
+          "html": "Refer to Section <a href=\"https://w3c.github.io/vcalm/#component-overview\" data-matched-text=\"[[[#component-overview]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1 </bdi>Component Overview</a> to determine which <code>invocationTarget</code>\nand <code>allowedAction</code> values to include in ZCAPs distributed to clients,\nbased on the HTTP method\n(e.g., <code>GET</code> -&gt; <code>read</code>, <code>POST</code> -&gt; <code>write</code>) and the expected caller\nof the API endpoint of interest."
+        }
+      ]
+    },
+    {
+      "html": "The <code>read</code> operation enables actions that do not create or update resources in\nthe system to be performed on the provided path, or on any path containing the\nprovided path as a prefix. The <code>write</code> operation enables actions that create\nand/or update resources in the system to be performed on the provided path, or\non any path that contains the provided path as a prefix. To enforce the\nprinciple of least privilege, implementers are expected to apply the following best practices:",
+      "rationale": "ensure",
+      "steps": [
+        {
+          "html": "Ensure that access tokens expressed as JSON Web Tokens (JWT) include an <code>aud</code> (audience)\nclaim that identifies a specific instance for which the access token applies,\nallowing the token to be pinned to a particular instance. For multi-tenant deployments,\nthis is expected to include the component instance of interest.\nExample <code>aud</code> value: <code>https://vcalm-instances.example.com/workflows/a6513552-8e5a-4efa-b36e-1fb2a8e06822</code>."
+        },
+        {
+          "html": "Include the entire API path (excluding the domain and component instance, which are captured in <code>aud</code>)\nin the scopes configured for the OAuth 2.0 issuer (see examples below)."
+        },
+        {
+          "html": "Refer to Section <a href=\"https://w3c.github.io/vcalm/#component-overview\" data-matched-text=\"[[[#component-overview]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.1 </bdi>Component Overview</a> to determine which scopes to include in\naccess tokens distributed to clients, based on the HTTP method\n(e.g., <code>GET</code> -&gt; <code>read</code>, <code>POST</code> -&gt; <code>write</code>) and the expected caller\nof the API endpoint of interest."
+        }
+      ]
+    }
+  ]
+}

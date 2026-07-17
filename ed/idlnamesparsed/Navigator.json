@@ -89,6 +89,20 @@
     },
     {
       "spec": {
+        "title": "CPU Performance API",
+        "url": "https://wicg.github.io/cpu-performance/"
+      },
+      "fragment": "[\n    SecureContext,\n    Exposed=Window\n] partial interface Navigator {\n    readonly attribute unsigned short cpuPerformance;\n};"
+    },
+    {
+      "spec": {
+        "title": "Cross-Origin Storage",
+        "url": "https://wicg.github.io/cross-origin-storage/"
+      },
+      "fragment": "Navigator includes NavigatorCrossOriginStorage;"
+    },
+    {
+      "spec": {
         "title": "Fenced Frame",
         "url": "https://wicg.github.io/fenced-frame/"
       },
@@ -556,6 +570,21 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorStorage {\n  [SameObject] readonly attribute StorageManager storage;\n};",
         "href": "https://storage.spec.whatwg.org/#navigatorstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorCrossOriginStorage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        "fragment": "interface mixin NavigatorCrossOriginStorage {\n  [SameObject, SecureContext] readonly attribute CrossOriginStorageManager crossOriginStorage;\n};",
+        "href": "https://wicg.github.io/cross-origin-storage/#navigatorcrossoriginstorage"
       },
       "extended": [],
       "inheritance": null,

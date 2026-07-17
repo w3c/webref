@@ -47,6 +47,13 @@
     },
     {
       "spec": {
+        "title": "Cross-Origin Storage",
+        "url": "https://wicg.github.io/cross-origin-storage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorCrossOriginStorage;"
+    },
+    {
+      "spec": {
         "title": "Network Information API",
         "url": "https://wicg.github.io/netinfo/"
       },
@@ -231,6 +238,21 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorStorage {\n  [SameObject] readonly attribute StorageManager storage;\n};",
         "href": "https://storage.spec.whatwg.org/#navigatorstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorCrossOriginStorage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        "fragment": "interface mixin NavigatorCrossOriginStorage {\n  [SameObject, SecureContext] readonly attribute CrossOriginStorageManager crossOriginStorage;\n};",
+        "href": "https://wicg.github.io/cross-origin-storage/#navigatorcrossoriginstorage"
       },
       "extended": [],
       "inheritance": null,

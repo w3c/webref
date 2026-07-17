@@ -1,0 +1,4673 @@
+{
+  "spec": {
+    "title": "Client to Authenticator Protocol (CTAP)",
+    "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+  },
+  "dfns": [
+    {
+      "id": "relying-party",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#relying-party",
+      "linkingText": [
+        "Relying Party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "superseded",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#superseded",
+      "linkingText": [
+        "superseded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "relationship-to-other-specifications",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#relationship-to-other-specifications",
+        "title": "Relationship to Other Specifications",
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "credentialid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credentialid",
+      "linkingText": [
+        "credentialID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "references-by-other-specifications",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#references-by-other-specifications",
+        "title": "Data Elements Referenced by Other Specifications",
+        "number": "1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "authenticator-operation",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticator-operation",
+      "linkingText": [
+        "authenticator operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-structure",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#protocol-structure",
+        "title": "Protocol Structure",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "built-in-user-verification-method",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#built-in-user-verification-method",
+      "linkingText": [
+        "Built-in User Verification method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "credential-manager-hosting-device",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credential-manager-hosting-device",
+      "linkingText": [
+        "Credential Manager Hosting Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "evidence-of-user-interaction",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#evidence-of-user-interaction",
+      "linkingText": [
+        "Evidence of user interaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "user-presence",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#user-presence",
+      "linkingText": [
+        "user presence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "user-consent",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#user-consent",
+      "linkingText": [
+        "user consent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "nfc-nfc-userpresent-flag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#nfc-nfc-userpresent-flag",
+      "linkingText": [
+        "NFC userPresent flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "nfc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "nfc-nfc-user-presence-maximum-time-limit",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#nfc-nfc-user-presence-maximum-time-limit",
+      "linkingText": [
+        "NFC user presence maximum time limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "nfc"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pre-flight",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pre-flight",
+      "linkingText": [
+        "pre-flight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "protected-by-some-form-of-user-verification",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#protected-by-some-form-of-user-verification",
+      "linkingText": [
+        "Protected by some form of User Verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "some-form-of-user-verification",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#some-form-of-user-verification",
+      "linkingText": [
+        "Some form of User Verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "user-action-timeout",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#user-action-timeout",
+      "linkingText": [
+        "User action timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-terminology",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-terminology",
+        "title": "Terminology",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "stateful-commands",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#stateful-commands",
+      "linkingText": [
+        "stateful commands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticator-api",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticator-api",
+        "title": "Authenticator API",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "state-initializing-command",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#state-initializing-command",
+      "linkingText": [
+        "state initializing command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticator-api",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticator-api",
+        "title": "Authenticator API",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "makecred-input-parameters",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-input-parameters",
+      "linkingText": [
+        "input parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "makecred-rpid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-rpid",
+      "linkingText": [
+        "rp.id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-pubkeycredparams",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-pubkeycredparams",
+      "linkingText": [
+        "pubKeyCredParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-excludelist",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-excludelist",
+      "linkingText": [
+        "excludeList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-extensions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-options",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-pinuvauthparam",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-pinuvauthparam",
+      "linkingText": [
+        "pinUvAuthParam"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-pinuvauthprotocol",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-pinuvauthprotocol",
+      "linkingText": [
+        "pinUvAuthProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-enterpriseattestation",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-enterpriseattestation",
+      "linkingText": [
+        "enterpriseAttestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "enterprise-attestation-capable",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#enterprise-attestation-capable",
+      "linkingText": [
+        "enterprise attestation capable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-attestationformatspreference",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-attestationformatspreference",
+      "linkingText": [
+        "attestationFormatsPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-option-key",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-option-key",
+      "linkingText": [
+        "Option Key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-rk",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-rk",
+      "linkingText": [
+        "rk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-up",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-up",
+      "linkingText": [
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "makecred-uv",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecred-uv",
+      "linkingText": [
+        "uv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCred"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorMakeCredential",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorMakeCredential",
+        "title": "authenticatorMakeCredential (0x01)",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authenticatormakecredential-response-structure",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatormakecredential-response-structure",
+      "linkingText": [
+        "authenticatorMakeCredential response structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-makeCred-authnr-alg",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-makeCred-authnr-alg",
+        "title": "authenticatorMakeCredential Algorithm",
+        "number": "6.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "makecredentialresponse-epatt",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#makecredentialresponse-epatt",
+      "linkingText": [
+        "epAtt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "makeCredentialResponse"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-makeCred-authnr-alg",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-makeCred-authnr-alg",
+        "title": "authenticatorMakeCredential Algorithm",
+        "number": "6.1.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "discoverable",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#discoverable",
+      "linkingText": [
+        "Discoverable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-discoverable",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-discoverable",
+        "title": "Discoverable credentials",
+        "number": "6.1.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "non-discoverable-credentials",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#non-discoverable-credentials",
+      "linkingText": [
+        "non-discoverable credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-discoverable",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-discoverable",
+        "title": "Discoverable credentials",
+        "number": "6.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "getassert-input-parameters",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-input-parameters",
+      "linkingText": [
+        "input parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "getassert-rpid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-allowlist",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-allowlist",
+      "linkingText": [
+        "allowList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-extensions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-options",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-pinuvauthparam",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-pinuvauthparam",
+      "linkingText": [
+        "pinUvAuthParam"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-pinuvauthprotocol",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-pinuvauthprotocol",
+      "linkingText": [
+        "pinUvAuthProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-option-key",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-option-key",
+      "linkingText": [
+        "Option Key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-up",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-up",
+      "linkingText": [
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-uv",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-uv",
+      "linkingText": [
+        "uv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getassert-rk",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-rk",
+      "linkingText": [
+        "rk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "authenticatorGetAssertion",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetAssertion",
+        "title": "authenticatorGetAssertion (0x02)",
+        "number": "6.2"
+      },
+      "definedIn": "note",
+      "links": []
+    },
+    {
+      "id": "getassert-applicable-credentials-list",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getassert-applicable-credentials-list",
+      "linkingText": [
+        "applicable credentials list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getAssert"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-getAssert-authnr-alg",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-getAssert-authnr-alg",
+        "title": "authenticatorGetAssertion Algorithm",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "authenticatorgetassertion-response-structure",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorgetassertion-response-structure",
+      "linkingText": [
+        "authenticatorGetAssertion response structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-getAssert-authnr-alg",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-getAssert-authnr-alg",
+        "title": "authenticatorGetAssertion Algorithm",
+        "number": "6.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "getinfo-authenticatorgetinfo-response-structure",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-authenticatorgetinfo-response-structure",
+      "linkingText": [
+        "authenticatorGetInfo response structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "getinfo-versions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-versions",
+      "linkingText": [
+        "versions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-extensions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-aaguid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-aaguid",
+      "linkingText": [
+        "aaguid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-options",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-pinuvauthprotocols",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-pinuvauthprotocols",
+      "linkingText": [
+        "pinUvAuthProtocols"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-transports",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-transports",
+      "linkingText": [
+        "transports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-maxserializedlargeblobarray",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-maxserializedlargeblobarray",
+      "linkingText": [
+        "maxSerializedLargeBlobArray"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-forcepinchange",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-forcepinchange",
+      "linkingText": [
+        "forcePINChange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-minpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-minpinlength",
+      "linkingText": [
+        "minPINLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "current-minimum-pin-length",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#current-minimum-pin-length",
+      "linkingText": [
+        "current minimum PIN length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "pre-configured-minimum-pin-length",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pre-configured-minimum-pin-length",
+      "linkingText": [
+        "pre-configured minimum PIN length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "setminpinlength-pre-configured-list-of-rp-ids-authorized-to-receive",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#setminpinlength-pre-configured-list-of-rp-ids-authorized-to-receive",
+      "linkingText": [
+        "pre-configured list of RP IDs authorized to receive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "setMinPINLength"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-maxcredbloblength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-maxcredbloblength",
+      "linkingText": [
+        "maxCredBlobLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-maxrpidsforsetminpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-maxrpidsforsetminpinlength",
+      "linkingText": [
+        "maxRPIDsForSetMinPINLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-preferredplatformuvattempts",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-preferredplatformuvattempts",
+      "linkingText": [
+        "preferredPlatformUvAttempts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-certifications",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-certifications",
+      "linkingText": [
+        "certifications"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-vendorprototypeconfigcommands",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-vendorprototypeconfigcommands",
+      "linkingText": [
+        "vendorPrototypeConfigCommands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-attestationformats",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-attestationformats",
+      "linkingText": [
+        "attestationFormats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-uvcountsincelastpinentry",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-uvcountsincelastpinentry",
+      "linkingText": [
+        "uvCountSinceLastPinEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-longtouchforreset",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-longtouchforreset",
+      "linkingText": [
+        "longTouchForReset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-encidentifier",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-encidentifier",
+      "linkingText": [
+        "encIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "device-identifier",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#device-identifier",
+      "linkingText": [
+        "device identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-transportsforreset",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-transportsforreset",
+      "linkingText": [
+        "transportsForReset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-pincomplexitypolicy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-pincomplexitypolicy",
+      "linkingText": [
+        "pinComplexityPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "current-pin-complexity-policy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#current-pin-complexity-policy",
+      "linkingText": [
+        "current PIN complexity policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "pre-configured-pin-complexity-policy-value",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pre-configured-pin-complexity-policy-value",
+      "linkingText": [
+        "pre-configured PIN complexity policy value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-pincomplexitypolicyurl",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-pincomplexitypolicyurl",
+      "linkingText": [
+        "pinComplexityPolicyURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-maxpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-maxpinlength",
+      "linkingText": [
+        "maxPINLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "maximum-pin-length",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#maximum-pin-length",
+      "linkingText": [
+        "maximum PIN length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-enccredstorestate",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-enccredstorestate",
+      "linkingText": [
+        "encCredStoreState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "credential-store-state",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credential-store-state",
+      "linkingText": [
+        "credential store state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-authenticatorconfigcommands",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-authenticatorconfigcommands",
+      "linkingText": [
+        "authenticatorConfigCommands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "option-id",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#option-id",
+      "linkingText": [
+        "Option ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-rk",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-rk",
+      "linkingText": [
+        "rk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-clientpin",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-clientpin",
+      "linkingText": [
+        "clientPin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-uv",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-uv",
+      "linkingText": [
+        "uv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-pinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-pinuvauthtoken",
+      "linkingText": [
+        "pinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-nomcgapermissionswithclientpin",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-nomcgapermissionswithclientpin",
+      "linkingText": [
+        "noMcGaPermissionsWithClientPin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-largeblobs",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-largeblobs",
+      "linkingText": [
+        "largeBlobs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-ep",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-ep",
+      "linkingText": [
+        "ep"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "enterprise-attestation-is-enabled",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#enterprise-attestation-is-enabled",
+      "linkingText": [
+        "enterprise attestation is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "enterprise-attestation-is-disabled",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#enterprise-attestation-is-disabled",
+      "linkingText": [
+        "enterprise attestation is disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-bioenroll",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-bioenroll",
+      "linkingText": [
+        "bioEnroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-userverificationmgmtpreview",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-userverificationmgmtpreview",
+      "linkingText": [
+        "userVerificationMgmtPreview"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-uvbioenroll",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-uvbioenroll",
+      "linkingText": [
+        "uvBioEnroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-authnrcfg",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-authnrcfg",
+      "linkingText": [
+        "authnrCfg"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-uvacfg",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-uvacfg",
+      "linkingText": [
+        "uvAcfg"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-credmgmt",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-credmgmt",
+      "linkingText": [
+        "credMgmt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-percredmgmtro",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-percredmgmtro",
+      "linkingText": [
+        "perCredMgmtRO"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-credentialmgmtpreview",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-credentialmgmtpreview",
+      "linkingText": [
+        "credentialMgmtPreview"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-setminpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-setminpinlength",
+      "linkingText": [
+        "setMinPINLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-makecreduvnotrqd",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-makecreduvnotrqd",
+      "linkingText": [
+        "makeCredUvNotRqd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "getinfo-alwaysuv",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#getinfo-alwaysuv",
+      "linkingText": [
+        "alwaysUv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "getInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "alwaysuv-feature-is-enabled",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#alwaysuv-feature-is-enabled",
+      "linkingText": [
+        "alwaysUv feature is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "alwaysuv-feature-is-disabled",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#alwaysuv-feature-is-disabled",
+      "linkingText": [
+        "alwaysUv feature is disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorGetInfo",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorGetInfo",
+        "title": "authenticatorGetInfo (0x04)",
+        "number": "6.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "pin-uv-auth-protocol",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pin-uv-auth-protocol",
+      "linkingText": [
+        "PIN/UV auth protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorClientPIN",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorClientPIN",
+        "title": "authenticatorClientPIN (0x06)",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-pinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-pinuvauthtoken",
+      "linkingText": [
+        "pinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorClientPIN",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorClientPIN",
+        "title": "authenticatorClientPIN (0x06)",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-persistentpinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-persistentpinuvauthtoken",
+      "linkingText": [
+        "persistentPinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorClientPIN",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorClientPIN",
+        "title": "authenticatorClientPIN (0x06)",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-state-variables",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-state-variables",
+      "linkingText": [
+        "state variables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-usage-timer",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-usage-timer",
+      "linkingText": [
+        "usage timer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-in-use-flag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-in-use-flag",
+      "linkingText": [
+        "in use flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-not-in-use",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-not-in-use",
+      "linkingText": [
+        "not in use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-in-use",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-in-use",
+      "linkingText": [
+        "in use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-initial-usage-time-limit",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-initial-usage-time-limit",
+      "linkingText": [
+        "initial usage time limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-rolling-timer",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-rolling-timer",
+      "linkingText": [
+        "rolling timer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-user-present-time-limit",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-user-present-time-limit",
+      "linkingText": [
+        "user present time limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-max-usage-time-period",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-max-usage-time-period",
+      "linkingText": [
+        "max usage time period"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-userverified-flag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-userverified-flag",
+      "linkingText": [
+        "userVerified flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puatoken-userpresent-flag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puatoken-userpresent-flag",
+      "linkingText": [
+        "userPresent flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-puat",
+        "title": "pinUvAuthToken State",
+        "number": "6.5.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ppuatoken-state-variables",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#ppuatoken-state-variables",
+      "linkingText": [
+        "state variables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PPUAToken"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-persistent-puat",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-persistent-puat",
+        "title": "PersistentPinUvAuthToken State",
+        "number": "6.5.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pinretries",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinretries",
+      "linkingText": [
+        "pinRetries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-retries",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-retries",
+        "title": "PIN-Entry and User Verification Retries Counters",
+        "number": "6.5.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "uvretries",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#uvretries",
+      "linkingText": [
+        "uvRetries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-retries",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-retries",
+        "title": "PIN-Entry and User Verification Retries Counters",
+        "number": "6.5.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maxuvretries",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#maxuvretries",
+      "linkingText": [
+        "maxUvRetries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-retries",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-retries",
+        "title": "PIN-Entry and User Verification Retries Counters",
+        "number": "6.5.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maxuvattemptsforinternalretries",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#maxuvattemptsforinternalretries",
+      "linkingText": [
+        "maxUvAttemptsForInternalRetries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-retries",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-retries",
+        "title": "PIN-Entry and User Verification Retries Counters",
+        "number": "6.5.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "internalretry",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#internalretry",
+      "linkingText": [
+        "internalRetry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-globalState-retries",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-globalState-retries",
+        "title": "PIN-Entry and User Verification Retries Counters",
+        "number": "6.5.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "performbuiltinuv-internalretry",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#performbuiltinuv-internalretry",
+      "linkingText": [
+        "performBuiltInUv(internalRetry)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-builtinuv",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-builtinuv",
+        "title": "Perform Built-in User Verification Algorithm",
+        "number": "6.5.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-beginusingpinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-beginusingpinuvauthtoken",
+      "linkingText": [
+        "beginUsingPinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-pinuvauthtokenusagetimerobserver",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-pinuvauthtokenusagetimerobserver",
+      "linkingText": [
+        "pinUvAuthTokenUsageTimerObserver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-getuserpresentflagvalue",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-getuserpresentflagvalue",
+      "linkingText": [
+        "getUserPresentFlagValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-getuserverifiedflagvalue",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-getuserverifiedflagvalue",
+      "linkingText": [
+        "getUserVerifiedFlagValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-clearuserpresentflag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-clearuserpresentflag",
+      "linkingText": [
+        "clearUserPresentFlag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-clearuserverifiedflag",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-clearuserverifiedflag",
+      "linkingText": [
+        "clearUserVerifiedFlag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-clearpinuvauthtokenpermissionsexceptlbw",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-clearpinuvauthtokenpermissionsexceptlbw",
+      "linkingText": [
+        "clearPinUvAuthTokenPermissionsExceptLbw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-stopusingpinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-stopusingpinuvauthtoken",
+      "linkingText": [
+        "stopUsingPinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-util-state",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-util-state",
+        "title": "pinUvAuthToken State Maintenance Functions",
+        "number": "6.5.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-initialize",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-initialize",
+      "linkingText": [
+        "initialize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-regenerate",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-regenerate",
+      "linkingText": [
+        "regenerate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-resetpinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-resetpinuvauthtoken",
+      "linkingText": [
+        "resetPinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-resetpersistentpinuvauthtoken",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-resetpersistentpinuvauthtoken",
+      "linkingText": [
+        "resetPersistentPinUvAuthToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-getpublickey",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-getpublickey",
+      "linkingText": [
+        "getPublicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-decapsulate",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-decapsulate",
+      "linkingText": [
+        "decapsulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-decrypt",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-decrypt",
+      "linkingText": [
+        "decrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-verify",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-verify",
+      "linkingText": [
+        "verify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-encapsulate",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-encapsulate",
+      "linkingText": [
+        "encapsulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-encrypt",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-encrypt",
+      "linkingText": [
+        "encrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "pinuvauthprotocol-authenticate",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthprotocol-authenticate",
+      "linkingText": [
+        "authenticate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pinUvAuthProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-puaprot-abstract-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-puaprot-abstract-dfn",
+        "title": "PIN/UV Auth Protocol Abstract Definition",
+        "number": "6.5.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "authenticatorclientpin-pinuvauthprotocol",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorclientpin-pinuvauthprotocol",
+      "linkingText": [
+        "pinUvAuthProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authenticatorClientPIN"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-cmd-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-cmd-dfn",
+        "title": "authenticatorClientPIN (0x06) Command Definition",
+        "number": "6.5.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "perms-param-permissions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#perms-param-permissions",
+      "linkingText": [
+        "permissions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "perms-param"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-cmd-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-cmd-dfn",
+        "title": "authenticatorClientPIN (0x06) Command Definition",
+        "number": "6.5.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authenticatorclientpin-rpid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorclientpin-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authenticatorClientPIN"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authnrClientPin-cmd-dfn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authnrClientPin-cmd-dfn",
+        "title": "authenticatorClientPIN (0x06) Command Definition",
+        "number": "6.5.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "platform-key-agreement-key",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#platform-key-agreement-key",
+      "linkingText": [
+        "platform key-agreement key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingSharedSecret",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingSharedSecret",
+        "title": "Obtaining the Shared Secret",
+        "number": "6.5.5.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "shared-secret",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#shared-secret",
+      "linkingText": [
+        "shared secret"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingSharedSecret",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingSharedSecret",
+        "title": "Obtaining the Shared Secret",
+        "number": "6.5.5.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pincodepointlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pincodepointlength",
+      "linkingText": [
+        "PINCodePointLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "settingNewPin",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#settingNewPin",
+        "title": "Setting a New PIN",
+        "number": "6.5.5.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "currentstoredpin",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#currentstoredpin",
+      "linkingText": [
+        "CurrentStoredPIN"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "settingNewPin",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#settingNewPin",
+        "title": "Setting a New PIN",
+        "number": "6.5.5.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "permissions-rp-id",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#permissions-rp-id",
+      "linkingText": [
+        "permissions RP ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "note",
+      "links": []
+    },
+    {
+      "id": "pinuvauthtoken-permissions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinuvauthtoken-permissions",
+      "linkingText": [
+        "pinUvAuthToken permissions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "mc",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#mc",
+      "linkingText": [
+        "mc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "ga",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#ga",
+      "linkingText": [
+        "ga"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "cm",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#cm",
+      "linkingText": [
+        "cm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "be",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#be",
+      "linkingText": [
+        "be"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "lbw",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#lbw",
+      "linkingText": [
+        "lbw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "acfg",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#acfg",
+      "linkingText": [
+        "acfg"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "pcmr",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pcmr",
+      "linkingText": [
+        "pcmr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "default-permissions",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#default-permissions",
+      "linkingText": [
+        "default permissions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gettingPinUvAuthToken",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#gettingPinUvAuthToken",
+        "title": "Operations to Obtain a pinUvAuthToken",
+        "number": "6.5.5.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puap1keyagmnt-key-agreement-key",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puap1keyagmnt-key-agreement-key",
+      "linkingText": [
+        "Key agreement key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAP1KeyAgmnt"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pinProto1",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinProto1",
+        "title": "PIN/UV Auth Protocol One",
+        "number": "6.5.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "puap1keyagmnt-public-point",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#puap1keyagmnt-public-point",
+      "linkingText": [
+        "public point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PUAP1KeyAgmnt"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pinProto1",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#pinProto1",
+        "title": "PIN/UV Auth Protocol One",
+        "number": "6.5.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "factory-default-state",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#factory-default-state",
+      "linkingText": [
+        "factory default state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorReset",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorReset",
+        "title": "authenticatorReset (0x07)",
+        "number": "6.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "templatefriendlyname",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#templatefriendlyname",
+      "linkingText": [
+        "templateFriendlyName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorBioEnrollment",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorBioEnrollment",
+        "title": "authenticatorBioEnrollment (0x09)",
+        "number": "6.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "maxtemplatefriendlyname",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#maxtemplatefriendlyname",
+      "linkingText": [
+        "maxTemplateFriendlyName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorBioEnrollment",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorBioEnrollment",
+        "title": "authenticatorBioEnrollment (0x09)",
+        "number": "6.7"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "large-blob-array",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#large-blob-array",
+      "linkingText": [
+        "large-blob array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorLargeBlobs",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorLargeBlobs",
+        "title": "authenticatorLargeBlobs (0x0C)",
+        "number": "6.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "serialized-large-blob-array",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#serialized-large-blob-array",
+      "linkingText": [
+        "serialized large-blob array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorLargeBlobs",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorLargeBlobs",
+        "title": "authenticatorLargeBlobs (0x0C)",
+        "number": "6.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "opaque-large-blob-data",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#opaque-large-blob-data",
+      "linkingText": [
+        "opaque large-blob data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorLargeBlobs",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorLargeBlobs",
+        "title": "authenticatorLargeBlobs (0x0C)",
+        "number": "6.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "initial-serialized-large-blob-array",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#initial-serialized-large-blob-array",
+      "linkingText": [
+        "initial serialized large-blob array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorLargeBlobs",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorLargeBlobs",
+        "title": "authenticatorLargeBlobs (0x0C)",
+        "number": "6.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "config",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "largeBlobsRW",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#largeBlobsRW",
+        "title": "Reading and writing serialised data",
+        "number": "6.10.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "large-blob-map",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#large-blob-map",
+      "linkingText": [
+        "large-blob map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "large-blob",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#large-blob",
+        "title": "Large, per-credential blobs",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "largeblobmapconform",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#largeblobmapconform",
+      "linkingText": [
+        "largeBlobMapConform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "large-blob",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#large-blob",
+        "title": "Large, per-credential blobs",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "currently-defined-authenticatorconfig-subcommands",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#currently-defined-authenticatorconfig-subcommands",
+      "linkingText": [
+        "currently defined authenticatorConfig subcommands"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "authenticatorConfig",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authenticatorConfig",
+        "title": "authenticatorConfig (0x0D)",
+        "number": "6.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "authconfig-vendorcommandid",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authconfig-vendorcommandid",
+      "linkingText": [
+        "vendorCommandId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendorPrototype",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#vendorPrototype",
+        "title": "Vendor Prototype Command",
+        "number": "6.11.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authconfig-newminpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authconfig-newminpinlength",
+      "linkingText": [
+        "newMinPINLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setMinPINLength",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#setMinPINLength",
+        "title": "Setting a minimum PIN Length",
+        "number": "6.11.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authconfig-minpinlengthrpids",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authconfig-minpinlengthrpids",
+      "linkingText": [
+        "minPinLengthRPIDs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setMinPINLength",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#setMinPINLength",
+        "title": "Setting a minimum PIN Length",
+        "number": "6.11.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authconfig-forcechangepin",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authconfig-forcechangepin",
+      "linkingText": [
+        "forceChangePin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setMinPINLength",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#setMinPINLength",
+        "title": "Setting a minimum PIN Length",
+        "number": "6.11.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "authconfig-pincomplexitypolicy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#authconfig-pincomplexitypolicy",
+      "linkingText": [
+        "pinComplexityPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setMinPINLength",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#setMinPINLength",
+        "title": "Setting a minimum PIN Length",
+        "number": "6.11.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "enterprise",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#enterprise",
+      "linkingText": [
+        "enterprise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-feature-descriptions-enterp-attstn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-feature-descriptions-enterp-attstn",
+        "title": "Enterprise Attestation",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "enterprise-context",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#enterprise-context",
+      "linkingText": [
+        "enterprise context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-feature-descriptions-enterp-attstn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-feature-descriptions-enterp-attstn",
+        "title": "Enterprise Attestation",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "vendor-facilitated-enterprise-attestation",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#vendor-facilitated-enterprise-attestation",
+      "linkingText": [
+        "Vendor-facilitated enterprise attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-feature-descriptions-enterp-attstn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-feature-descriptions-enterp-attstn",
+        "title": "Enterprise Attestation",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "entpattstn-pre-configured-rp-id-list",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#entpattstn-pre-configured-rp-id-list",
+      "linkingText": [
+        "pre-configured RP ID list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "entpAttstn"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-feature-descriptions-enterp-attstn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-feature-descriptions-enterp-attstn",
+        "title": "Enterprise Attestation",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "platform-managed-enterprise-attestation",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#platform-managed-enterprise-attestation",
+      "linkingText": [
+        "Platform-managed enterprise attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-feature-descriptions-enterp-attstn",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-feature-descriptions-enterp-attstn",
+        "title": "Enterprise Attestation",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ctap2-canonical-cbor-encoding-form",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#ctap2-canonical-cbor-encoding-form",
+      "linkingText": [
+        "CTAP2 canonical CBOR encoding form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "message-encoding",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#message-encoding",
+        "title": "Message Encoding",
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "uint8",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#uint8",
+      "linkingText": [
+        "uint8"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-functions",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#utility-functions",
+        "title": "Utility functions",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "uint32littleendian",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#uint32littleendian",
+      "linkingText": [
+        "uint32LittleEndian"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-functions",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#utility-functions",
+        "title": "Utility functions",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "uint64littleendian",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#uint64littleendian",
+      "linkingText": [
+        "uint64LittleEndian"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utility-functions",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#utility-functions",
+        "title": "Utility functions",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "fido-interfaces",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#fido-interfaces",
+      "linkingText": [
+        "FIDO interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-secure-interaction",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-secure-interaction",
+        "title": "Secure protocol implementation",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "response-status-code",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#response-status-code",
+      "linkingText": [
+        "Response Status Code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "nfc-response-framing",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#nfc-response-framing",
+        "title": "Response",
+        "number": "11.3.5.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "tunnel-service",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#tunnel-service",
+      "linkingText": [
+        "tunnel service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hybrid",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hybrid",
+        "title": "Hybrid transports",
+        "number": "11.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "advertisement-suffix",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#advertisement-suffix",
+      "linkingText": [
+        "advertisement suffix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hybrid-qr-initiated",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#hybrid-qr-initiated",
+        "title": "QR-initiated Transactions",
+        "number": "11.5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "server-psm",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#server-psm",
+      "linkingText": [
+        "server psm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hybrid-ble-channel",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#hybrid-ble-channel",
+        "title": "Bluetooth Low Energy",
+        "number": "11.5.1.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-credentialprotectionpolicy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-credentialprotectionpolicy",
+      "linkingText": [
+        "credentialProtectionPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credProtectFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credProtectFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-enforcecredentialprotectionpolicy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-enforcecredentialprotectionpolicy",
+      "linkingText": [
+        "enforceCredentialProtectionPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credProtectFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credProtectFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "userverificationoptional",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#userverificationoptional",
+      "linkingText": [
+        "userVerificationOptional"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "credProtectFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credProtectFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "userverificationoptionalwithcredentialidlist",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#userverificationoptionalwithcredentialidlist",
+      "linkingText": [
+        "userVerificationOptionalWithCredentialIDList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "credProtectFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credProtectFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "userverificationrequired",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#userverificationrequired",
+      "linkingText": [
+        "userVerificationRequired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "credProtectFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credProtectFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "credprotect-value",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credprotect-value",
+      "linkingText": [
+        "credProtect value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#title",
+        "title": "Client to Authenticator Protocol (CTAP)"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "credblob-value",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credblob-value",
+      "linkingText": [
+        "credBlob value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-credBlob-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-credBlob-extension",
+        "title": "Credential Blob (credBlob)",
+        "number": "12.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-credblob",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-credblob",
+      "linkingText": [
+        "credBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credBlobFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credBlobFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-getcredblob",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-getcredblob",
+      "linkingText": [
+        "getCredBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credBlobFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credBlobFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-credblob",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientoutputs-credblob",
+      "linkingText": [
+        "credBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credBlobFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credBlobFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-getcredblob",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientoutputs-getcredblob",
+      "linkingText": [
+        "getCredBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credBlobFeatureDetection",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#credBlobFeatureDetection",
+        "title": "Feature detection",
+        "number": "12.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "largeblobkey",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#largeblobkey",
+      "linkingText": [
+        "largeBlobKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-largeBlobKey-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-largeBlobKey-extension",
+        "title": "Large Blob Key (largeBlobKey)",
+        "number": "12.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-minpinlength",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-minpinlength",
+      "linkingText": [
+        "minPinLength"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-minpinlength-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-minpinlength-extension",
+        "title": "Minimum PIN Length Extension (minPinLength)",
+        "number": "12.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-pincomplexitypolicy",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-pincomplexitypolicy",
+      "linkingText": [
+        "pinComplexityPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-pincomplexitypolicy-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-pincomplexitypolicy-extension",
+        "title": "PIN Complexity Extension (pinComplexityPolicy)",
+        "number": "12.6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-hmaccreatesecret",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-hmaccreatesecret",
+      "linkingText": [
+        "hmacCreateSecret"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-hmacgetsecretinput",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dictdef-hmacgetsecretinput",
+      "linkingText": [
+        "HMACGetSecretInput"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hmacgetsecretinput-salt1",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-hmacgetsecretinput-salt1",
+      "linkingText": [
+        "salt1"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HMACGetSecretInput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hmacgetsecretinput-salt2",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-hmacgetsecretinput-salt2",
+      "linkingText": [
+        "salt2"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HMACGetSecretInput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-hmacgetsecret",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientinputs-hmacgetsecret",
+      "linkingText": [
+        "hmacGetSecret"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-hmaccreatesecret",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientoutputs-hmaccreatesecret",
+      "linkingText": [
+        "hmacCreateSecret"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-hmacgetsecretoutput",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dictdef-hmacgetsecretoutput",
+      "linkingText": [
+        "HMACGetSecretOutput"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hmacgetsecretoutput-output1",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-hmacgetsecretoutput-output1",
+      "linkingText": [
+        "output1"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HMACGetSecretOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hmacgetsecretoutput-output2",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-hmacgetsecretoutput-output2",
+      "linkingText": [
+        "output2"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HMACGetSecretOutput"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-hmacgetsecret",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#dom-authenticationextensionsclientoutputs-hmacgetsecret",
+      "linkingText": [
+        "hmacGetSecret"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-hmac-secret-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-hmac-secret-extension",
+        "title": "HMAC Secret Extension (hmac-secret)",
+        "number": "12.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "payment-authentication",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#payment-authentication",
+      "linkingText": [
+        "Payment authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-thirdPartyPayment-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-thirdPartyPayment-extension",
+        "title": "Third-Party Payment authentication (thirdPartyPayment)",
+        "number": "12.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "third-party-payment-enabled",
+      "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#third-party-payment-enabled",
+      "linkingText": [
+        "third-party payment enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-thirdPartyPayment-extension",
+        "href": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html#sctn-thirdPartyPayment-extension",
+        "title": "Third-Party Payment authentication (thirdPartyPayment)",
+        "number": "12.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

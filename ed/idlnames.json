@@ -534,6 +534,11 @@
     "parsed": "idlnamesparsed/AudioScheduledSourceNode.json",
     "type": "interface"
   },
+  "AudioSelectionPreferenceEnum": {
+    "fragment": "idlnames/AudioSelectionPreferenceEnum.idl",
+    "parsed": "idlnamesparsed/AudioSelectionPreferenceEnum.json",
+    "type": "enum"
+  },
   "AudioSession": {
     "fragment": "idlnames/AudioSession.idl",
     "parsed": "idlnamesparsed/AudioSession.json",
@@ -2514,6 +2519,11 @@
     "parsed": "idlnamesparsed/CookieStoreManager.json",
     "type": "interface"
   },
+  "CorrectionType": {
+    "fragment": "idlnames/CorrectionType.idl",
+    "parsed": "idlnamesparsed/CorrectionType.json",
+    "type": "enum"
+  },
   "CountQueuingStrategy": {
     "fragment": "idlnames/CountQueuingStrategy.idl",
     "parsed": "idlnamesparsed/CountQueuingStrategy.json",
@@ -2603,6 +2613,21 @@
     "fragment": "idlnames/CropTarget.idl",
     "parsed": "idlnamesparsed/CropTarget.json",
     "type": "interface"
+  },
+  "CrossOriginStorageManager": {
+    "fragment": "idlnames/CrossOriginStorageManager.idl",
+    "parsed": "idlnamesparsed/CrossOriginStorageManager.json",
+    "type": "interface"
+  },
+  "CrossOriginStorageRequestFileHandleHash": {
+    "fragment": "idlnames/CrossOriginStorageRequestFileHandleHash.idl",
+    "parsed": "idlnamesparsed/CrossOriginStorageRequestFileHandleHash.json",
+    "type": "dictionary"
+  },
+  "CrossOriginStorageRequestFileHandleOptions": {
+    "fragment": "idlnames/CrossOriginStorageRequestFileHandleOptions.idl",
+    "parsed": "idlnamesparsed/CrossOriginStorageRequestFileHandleOptions.json",
+    "type": "dictionary"
   },
   "Crypto": {
     "fragment": "idlnames/Crypto.idl",
@@ -7809,6 +7834,11 @@
     "parsed": "idlnamesparsed/NavigatorCookies.json",
     "type": "interface mixin"
   },
+  "NavigatorCrossOriginStorage": {
+    "fragment": "idlnames/NavigatorCrossOriginStorage.idl",
+    "parsed": "idlnamesparsed/NavigatorCrossOriginStorage.json",
+    "type": "interface mixin"
+  },
   "NavigatorDeviceMemory": {
     "fragment": "idlnames/NavigatorDeviceMemory.idl",
     "parsed": "idlnamesparsed/NavigatorDeviceMemory.json",
@@ -9012,6 +9042,36 @@
   "PromptResponseObject": {
     "fragment": "idlnames/PromptResponseObject.idl",
     "parsed": "idlnamesparsed/PromptResponseObject.json",
+    "type": "dictionary"
+  },
+  "ProofreadCorrection": {
+    "fragment": "idlnames/ProofreadCorrection.idl",
+    "parsed": "idlnamesparsed/ProofreadCorrection.json",
+    "type": "dictionary"
+  },
+  "ProofreadResult": {
+    "fragment": "idlnames/ProofreadResult.idl",
+    "parsed": "idlnamesparsed/ProofreadResult.json",
+    "type": "dictionary"
+  },
+  "Proofreader": {
+    "fragment": "idlnames/Proofreader.idl",
+    "parsed": "idlnamesparsed/Proofreader.json",
+    "type": "interface"
+  },
+  "ProofreaderCreateCoreOptions": {
+    "fragment": "idlnames/ProofreaderCreateCoreOptions.idl",
+    "parsed": "idlnamesparsed/ProofreaderCreateCoreOptions.json",
+    "type": "dictionary"
+  },
+  "ProofreaderCreateOptions": {
+    "fragment": "idlnames/ProofreaderCreateOptions.idl",
+    "parsed": "idlnamesparsed/ProofreaderCreateOptions.json",
+    "type": "dictionary"
+  },
+  "ProofreaderProofreadOptions": {
+    "fragment": "idlnames/ProofreaderProofreadOptions.idl",
+    "parsed": "idlnamesparsed/ProofreaderProofreadOptions.json",
     "type": "dictionary"
   },
   "PropertyDefinition": {
@@ -13438,6 +13498,46 @@
     "fragment": "idlnames/XRFrameRequestCallback.idl",
     "parsed": "idlnamesparsed/XRFrameRequestCallback.json",
     "type": "callback"
+  },
+  "XRGPUBinding": {
+    "fragment": "idlnames/XRGPUBinding.idl",
+    "parsed": "idlnamesparsed/XRGPUBinding.json",
+    "type": "interface"
+  },
+  "XRGPUCubeLayerInit": {
+    "fragment": "idlnames/XRGPUCubeLayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPUCubeLayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPUCylinderLayerInit": {
+    "fragment": "idlnames/XRGPUCylinderLayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPUCylinderLayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPUEquirectLayerInit": {
+    "fragment": "idlnames/XRGPUEquirectLayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPUEquirectLayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPULayerInit": {
+    "fragment": "idlnames/XRGPULayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPULayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPUProjectionLayerInit": {
+    "fragment": "idlnames/XRGPUProjectionLayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPUProjectionLayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPUQuadLayerInit": {
+    "fragment": "idlnames/XRGPUQuadLayerInit.idl",
+    "parsed": "idlnamesparsed/XRGPUQuadLayerInit.json",
+    "type": "dictionary"
+  },
+  "XRGPUSubImage": {
+    "fragment": "idlnames/XRGPUSubImage.idl",
+    "parsed": "idlnamesparsed/XRGPUSubImage.json",
+    "type": "interface"
   },
   "XRHand": {
     "fragment": "idlnames/XRHand.idl",

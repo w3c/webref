@@ -1,0 +1,19 @@
+// Source: WebXR/WebGPU Binding Module - Level 1 (https://immersive-web.github.io/webxr-webgpu-binding/)
+[Exposed=(Window), SecureContext]
+interface XRGPUBinding {
+  constructor(XRSession session, GPUDevice device);
+
+  readonly attribute double nativeProjectionScaleFactor;
+  readonly attribute boolean usesDepthValues;
+
+  XRProjectionLayer createProjectionLayer(optional XRGPUProjectionLayerInit init = {});
+  XRQuadLayer createQuadLayer(optional XRGPUQuadLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(optional XRGPUCylinderLayerInit init = {});
+  XREquirectLayer createEquirectLayer(optional XRGPUEquirectLayerInit init = {});
+  XRCubeLayer createCubeLayer(optional XRGPUCubeLayerInit init = {});
+
+  XRGPUSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
+  XRGPUSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
+
+  GPUTextureFormat getPreferredColorFormat();
+};

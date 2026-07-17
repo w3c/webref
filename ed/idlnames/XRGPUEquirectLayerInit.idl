@@ -1,0 +1,8 @@
+// Source: WebXR/WebGPU Binding Module - Level 1 (https://immersive-web.github.io/webxr-webgpu-binding/)
+dictionary XRGPUEquirectLayerInit : XRGPULayerInit {
+  XRRigidTransform? transform;
+  float radius = 0;
+  float centralHorizontalAngle = 6.28318;
+  float upperVerticalAngle = 1.570795;
+  float lowerVerticalAngle = -1.570795;
+};

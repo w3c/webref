@@ -1,0 +1,15 @@
+{
+  "name": "Proofreader",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Proofreader API",
+      "url": "https://webmachinelearning.github.io/proofreader-api/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface Proofreader {\n    static Promise<Proofreader> create(optional ProofreaderCreateOptions options = {});\n    static Promise<Availability> availability(optional ProofreaderCreateCoreOptions options = {});\n\n    Promise<ProofreadResult> proofread(\n        DOMString input,\n        optional ProofreaderProofreadOptions options = {}\n    );\n\n    readonly attribute boolean includeCorrectionTypes;\n    readonly attribute boolean includeCorrectionExplanations;\n\n    readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n    readonly attribute DOMString? correctionExplanationLanguage;\n};",
+    "href": "https://webmachinelearning.github.io/proofreader-api/#proofreader"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

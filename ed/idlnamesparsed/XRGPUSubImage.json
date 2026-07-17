@@ -1,0 +1,29 @@
+{
+  "name": "XRGPUSubImage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR/WebGPU Binding Module - Level 1",
+      "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+    },
+    "fragment": "[Exposed=(Window), SecureContext]\ninterface XRGPUSubImage : XRSubImage {\n  [SameObject] readonly attribute GPUTexture colorTexture;\n  [SameObject] readonly attribute GPUTexture? depthStencilTexture;\n  [SameObject] readonly attribute GPUTexture? motionVectorTexture;\n\n  GPUTextureViewDescriptor getViewDescriptor();\n};",
+    "href": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRSubImage",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[Exposed=Window] interface XRSubImage {\n  [SameObject] readonly attribute XRViewport viewport;\n};",
+      "href": "https://immersive-web.github.io/layers/#xrsubimage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

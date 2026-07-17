@@ -203,8 +203,22 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/mediacapture-screen-share/#dom-monitortypesurfacesenum"
       },
+      "AudioSelectionPreferenceEnum": {
+        "fragment": "enum AudioSelectionPreferenceEnum {\n  \"preferred\"\n};",
+        "type": "enum",
+        "name": "AudioSelectionPreferenceEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "preferred",
+            "href": "https://w3c.github.io/mediacapture-screen-share/#idl-def-AudioSelectionPreferenceEnum.preferred"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-screen-share/#dom-audioselectionpreferenceenum"
+      },
       "DisplayMediaStreamOptions": {
-        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  WindowAudioPreferenceEnum windowAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n};",
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  WindowAudioPreferenceEnum windowAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n  AudioSelectionPreferenceEnum audioSelection;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamOptions",
         "inheritance": null,
@@ -376,6 +390,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-monitortypesurfaces"
+          },
+          {
+            "type": "field",
+            "name": "audioSelection",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSelectionPreferenceEnum"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-audioselection"
           }
         ],
         "extAttrs": [],
@@ -887,7 +917,8 @@
         "SystemAudioPreferenceEnum",
         "WindowAudioPreferenceEnum",
         "SurfaceSwitchingPreferenceEnum",
-        "MonitorTypeSurfacesEnum"
+        "MonitorTypeSurfacesEnum",
+        "AudioSelectionPreferenceEnum"
       ],
       "MediaTrackSupportedConstraints": [],
       "MediaTrackConstraintSet": [
