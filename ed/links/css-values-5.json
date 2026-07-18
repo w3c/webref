@@ -333,6 +333,7 @@
           "component-functions",
           "urls",
           "url-processing",
+          "calc-type-checking",
           "calc-simplification"
         ]
       },
@@ -348,7 +349,8 @@
       "https://drafts.csswg.org/selectors/": {},
       "https://drafts.csswg.org/web-animations-1/": {
         "anchors": [
-          "timelines"
+          "timelines",
+          "animating-properties"
         ]
       },
       "https://drafts.csswg.org/web-animations-2/": {},
@@ -889,6 +891,11 @@
         ]
       },
       "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/CSS2/box.html": {
+        "anchors": [
+          "collapsing-margins"
+        ]
+      },
       "https://www.w3.org/TR/CSS21/about.html": {
         "anchors": [
           "value-defs"
@@ -1139,15 +1146,18 @@
           "valdef-width-auto",
           "propdef-width",
           "propdef-height",
-          "definite",
-          "intrinsic-size",
           "valdef-width-min-content",
+          "funcdef-width-fit-content",
+          "intrinsic-size-contribution",
+          "definite",
           "behave-as-auto",
-          "valdef-width-max-content"
+          "valdef-width-max-content",
+          "sizing-property"
         ]
       },
       "https://drafts.csswg.org/css-sizing-4/": {
         "anchors": [
+          "valdef-width-fit-content",
           "valdef-width-stretch"
         ]
       },
@@ -1296,7 +1306,8 @@
       },
       "https://drafts.csswg.org/web-animations-1/": {
         "anchors": [
-          "not-animatable"
+          "not-animatable",
+          "discrete"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -1359,7 +1370,6 @@
         "anchors": [
           "typedef-boolean-expr",
           "funcdef-mix",
-          "typedef-intrinsic-size-keyword",
           "funcdef-container-progress",
           "funcdef-media-progress"
         ]

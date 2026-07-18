@@ -195,27 +195,53 @@
       ]
     },
     {
-      "name": "calc-size()/canonicalize for interpolation",
-      "href": "https://drafts.csswg.org/css-values-5/#calc-size-canonicalize-for-interpolation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"calc-size()\" data-dfn-type=\"dfn\" data-export=\"\" id=\"calc-size-canonicalize-for-interpolation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">canonicalize for interpolation</dfn>\n\t\ta <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-calc-size\" id=\"ref-for-funcdef-calc-size⑨\">calc-size()</a> function:\n\n\t\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis②\">calc-size basis</a> is a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-calc-size\" id=\"ref-for-funcdef-calc-size①⓪\">calc-size()</a> function itself\n     </dt><dd data-md=\"\">\n      <p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis③\">calc-size basis</a> of the outer function\nis replaced with that of the inner function,\nand the inner function’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation②\">calc-size calculation</a>\nis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation\">substituted</a>\ninto the outer function’s <span id=\"ref-for-calc-size-calculation③\">calc-size calculation</span>.</p>\n     </dd><dt data-md=\"\">Otherwise, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis④\">calc-size basis</a> is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-calc-sum\" id=\"ref-for-typedef-calc-sum②③\">&lt;calc-sum&gt;</a> whose\n<a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①\">type</a> <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-match\" id=\"ref-for-cssnumericvalue-match①\">matches</a> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value①⑥\">&lt;length&gt;</a>\n(no percentage present)\n     </dt><dd data-md=\"\">\n      <p>Replace the basis with <span class=\"css\">any</span>,\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation①\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation④\">calc-size calculation</a>.</p>\n     </dd><dt data-md=\"\">Otherwise, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis⑤\">calc-size basis</a> is any other <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-calc-sum\" id=\"ref-for-typedef-calc-sum②④\">&lt;calc-sum&gt;</a>\n(contains a percentage)\n     </dt><dd data-md=\"\">\n      <p>Replace the basis with <span class=\"css\">100%</span>\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation\" id=\"ref-for-de-percentify-a-calc-size-calculation\">de-percentified</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation②\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation⑤\">calc-size calculation</a>.</p>\n    </dd></dl>\n    <p>(The above is performed recursively, if necessary.)</p>\n    <p>If any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation③\">substitute into a calc-size calculation</a>\n\t\treturns failure,\n\t\tthe entire operation immediately returns failure.</p>",
-      "rationale": ".switch",
+      "name": "calc-size()/simplify",
+      "href": "https://drafts.csswg.org/css-values-5/#calc-size-simplify",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"calc-size()\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calc-size-simplify\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">simplify</dfn>\n\t\ta <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-calc-size\" id=\"ref-for-funcdef-calc-size①⑨\">calc-size()</a> function:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "operation": "switch",
+          "html": "First, simplify the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis⑥\">calc-size basis</a>, recursing as needed:",
+          "rationale": ".switch",
           "steps": [
             {
-              "case": "If the calc-size basis is a calc-size() function itself",
-              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis③\">calc-size basis</a> of the outer function\nis replaced with that of the inner function,\nand the inner function’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation②\">calc-size calculation</a>\nis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation\">substituted</a>\ninto the outer function’s <span id=\"ref-for-calc-size-calculation③\">calc-size calculation</span>.</p>"
-            },
-            {
-              "case": "Otherwise, if the calc-size basis is a <calc-sum> whose type matches <length> (no percentage present)",
-              "html": "<p>Replace the basis with <span class=\"css\">any</span>,\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation①\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation④\">calc-size calculation</a>.</p>"
-            },
-            {
-              "case": "Otherwise, if the calc-size basis is any other <calc-sum> (contains a percentage)",
-              "html": "<p>Replace the basis with <span class=\"css\">100%</span>\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation\" id=\"ref-for-de-percentify-a-calc-size-calculation\">de-percentified</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation②\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation⑤\">calc-size calculation</a>.</p>"
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If the calc-size basis is a calc-size() function itself",
+                  "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis⑧\">calc-size basis</a> of the outer function\nis replaced with that of the inner function,\nand the inner function’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation⑧\">calc-size calculation</a>\nis <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation\">substituted</a>\ninto the outer function’s <span id=\"ref-for-calc-size-calculation⑨\">calc-size calculation</span>.</p>"
+                },
+                {
+                  "case": "Otherwise, if the calc-size basis is a <calc-sum> whose type matches <length> (no percentage present)",
+                  "html": "<p>Replace the basis with <span class=\"css\">any</span>,\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation①\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation①⓪\">calc-size calculation</a>.</p>"
+                },
+                {
+                  "case": "Otherwise, if the calc-size basis is any other <calc-sum> (contains a percentage)",
+                  "html": "<p>Replace the basis with <span class=\"css\">100%</span>\nand the original basis is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation\" id=\"ref-for-de-percentify-a-calc-size-calculation\">de-percentified</a>,\nthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation\" id=\"ref-for-substitute-into-a-calc-size-calculation②\">substituted</a>\ninto the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation①①\">calc-size calculation</a>.</p>"
+                }
+              ]
             }
           ]
+        },
+        {
+          "html": "Next, simplify the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-calculation\" id=\"ref-for-calc-size-calculation①②\">calc-size calculation</a>\n\t\t\t\tas defined in <a href=\"https://drafts.csswg.org/css-values-4/#calc-simplification\"><cite>CSS Values 4</cite> § 10.10.1 Simplification</a>."
+        }
+      ]
+    },
+    {
+      "name": "substitute into a calc-size calculation",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"substitute-into-a-calc-size-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute into a calc-size calculation</dfn> <var>calc</var>\n\t\ta value <var>insertion value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>calc</var> doesn’t have the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size③\">size</a> keyword in it,\ndo nothing.</p>"
+        },
+        {
+          "html": "<p>Otherwise, replace\nevery instance of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size④\">size</a> keyword in <var>calc</var>\nwith <var>insertion value</var>, wrapped in parentheses.</p>"
+        },
+        {
+          "html": "<p>If this substitution would produce a value\nlarger than an UA-defined limit,\nreturn failure.</p>"
         }
       ]
     },
@@ -231,40 +257,27 @@
       ]
     },
     {
-      "name": "substitute into a calc-size calculation",
-      "href": "https://drafts.csswg.org/css-values-5/#substitute-into-a-calc-size-calculation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"substitute-into-a-calc-size-calculation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">substitute into a calc-size calculation</dfn> <var>calc</var>\n\t\ta value <var>insertion value</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>If <var>calc</var> doesn’t have the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size\">size</a> keyword in it,\ndo nothing.</p>"
-        },
-        {
-          "html": "<p>Otherwise, replace every instance of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-size\" id=\"ref-for-valdef-calc-size-size①\">size</a> keyword\nin <var>calc</var>\nwith <var>insertion value</var>,\nwrapped in parentheses.</p>"
-        },
-        {
-          "html": "<p>If this substitution would produce a value\nlarger than an UA-defined limit,\nreturn failure.</p>"
-        }
-      ]
-    },
-    {
-      "html": "Two <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-calc-size\" id=\"ref-for-funcdef-calc-size②⓪\">calc-size()</a> functions can be interpolated if\n\t(after being <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-canonicalize-for-interpolation\" id=\"ref-for-calc-size-canonicalize-for-interpolation\">canonicalized for interpolation</a>):",
+      "html": "Whether two <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#funcdef-calc-size\" id=\"ref-for-funcdef-calc-size②④\">calc-size()</a> functions can be interpolated\n\tdepends on their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis①②\">calc-size basis</a> values\n\t(after being <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-simplify\" id=\"ref-for-calc-size-simplify①\">simplified</a>):",
       "rationale": ".switch",
       "steps": [
         {
           "operation": "switch",
           "steps": [
             {
-              "case": "Either function returned failure from being canonicalized for interpolation",
+              "case": "If either function returned failure from being simplified",
               "html": "<p>The values cannot be interpolated.</p>"
             },
             {
-              "case": "Both calc-size basises are identical",
-              "html": "<p>The result’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis①④\">calc-size basis</a> is the that basis value.</p>"
+              "case": "If they are identical",
+              "html": "<p>The result’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis①③\">calc-size basis</a> is that basis value.</p>"
             },
             {
-              "case": "Either calc-size basis is any",
-              "html": "<p>The result’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis①⑥\">calc-size basis</a> is the non-<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-any\" id=\"ref-for-valdef-calc-size-any③\">any</a> basis.</p>"
+              "case": "If either is any",
+              "html": "<p>The result’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#calc-size-basis\" id=\"ref-for-calc-size-basis①④\">calc-size basis</a> is the non-<a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-5/#valdef-calc-size-any\" id=\"ref-for-valdef-calc-size-any③\">any</a> basis.</p>"
+            },
+            {
+              "case": "Otherwise (if they don’t match and neither side is any)",
+              "html": "<p>The values cannot be interpolated.</p>"
             }
           ]
         }
