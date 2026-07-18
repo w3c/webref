@@ -4355,19 +4355,13 @@
               "html": "<p>If any of the following are true:\n\n    </p>\n        <ul>\n         <li>\n          <p><var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-declarative\" id=\"ref-for-shadowroot-declarative②\">declarative</a> is false; or\n\n     </p>\n         </li><li>\n          <p><var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-mode\" id=\"ref-for-shadowroot-mode⑧\">mode</a> is not <var>mode</var>,\n    </p>\n        </li></ul>\n        <p>then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥②\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②②\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦⑥\">DOMException</a></code>.\n\n   </p>"
             },
             {
-              "html": "Otherwise:",
-              "rationale": "remove",
-              "steps": [
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove\" id=\"ref-for-concept-node-remove①①\">Remove</a> all of <var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child⑤⑥\">children</a>, in\n     <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order②③\">tree order</a>.\n\n     </p>"
-                },
-                {
-                  "html": "<p>Set <var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-declarative\" id=\"ref-for-shadowroot-declarative③\">declarative</a> to false.\n\n     </p>"
-                },
-                {
-                  "html": "<p>Return.\n    </p>"
-                }
-              ]
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove\" id=\"ref-for-concept-node-remove①①\">Remove</a> all of <var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child⑤⑥\">children</a>, in\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order②③\">tree order</a>.\n\n   </p>"
+            },
+            {
+              "html": "<p>Set <var>currentShadowRoot</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-declarative\" id=\"ref-for-shadowroot-declarative③\">declarative</a> to false.\n\n   </p>"
+            },
+            {
+              "html": "<p>Return.\n  </p>"
             }
           ]
         },
