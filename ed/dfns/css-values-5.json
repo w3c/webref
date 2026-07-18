@@ -2557,7 +2557,7 @@
         "href": "https://drafts.csswg.org/css-values-5/#calc-size",
         "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
-      "definedIn": "pre",
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -2577,25 +2577,6 @@
         "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "typedef-size-keyword",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
-      "linkingText": [
-        "<size-keyword>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "calc-size",
-        "href": "https://drafts.csswg.org/css-values-5/#calc-size",
-        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {
@@ -2658,43 +2639,63 @@
       "links": []
     },
     {
-      "id": "calc-size-canonicalize-for-interpolation",
-      "href": "https://drafts.csswg.org/css-values-5/#calc-size-canonicalize-for-interpolation",
+      "id": "typedef-size-keyword",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
       "linkingText": [
-        "canonicalize for interpolation"
+        "<size-keyword>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "calc-size",
+        "href": "https://drafts.csswg.org/css-values-5/#calc-size",
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-calc-size-any",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-any",
+      "linkingText": [
+        "any"
+      ],
+      "localLinkingText": [],
+      "type": "value",
       "for": [
         "calc-size()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "simplifying-calc-size",
-        "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
-        "title": "Simplifying calc-size()",
-        "number": "11.1"
+        "id": "calc-size",
+        "href": "https://drafts.csswg.org/css-values-5/#calc-size",
+        "title": "11. Calculating With Intrinsic Sizes: the calc-size() function"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "de-percentify-a-calc-size-calculation",
-      "href": "https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation",
+      "id": "calc-size-simplify",
+      "href": "https://drafts.csswg.org/css-values-5/#calc-size-simplify",
       "linkingText": [
-        "de-percentify a calc-size calculation"
+        "simplify"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "public",
+      "for": [
+        "calc-size()"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "simplifying-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
         "title": "Simplifying calc-size()",
-        "number": "11.1"
+        "number": "11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -2714,28 +2715,26 @@
         "id": "simplifying-calc-size",
         "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
         "title": "Simplifying calc-size()",
-        "number": "11.1"
+        "number": "11.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "valdef-calc-size-any",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-any",
+      "id": "de-percentify-a-calc-size-calculation",
+      "href": "https://drafts.csswg.org/css-values-5/#de-percentify-a-calc-size-calculation",
       "linkingText": [
-        "any"
+        "de-percentify a calc-size calculation"
       ],
       "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "calc-size()"
-      ],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "resolving-calc-size",
-        "href": "https://drafts.csswg.org/css-values-5/#resolving-calc-size",
-        "title": "Resolving calc-size()",
+        "id": "simplifying-calc-size",
+        "href": "https://drafts.csswg.org/css-values-5/#simplifying-calc-size",
+        "title": "Simplifying calc-size()",
         "number": "11.2"
       },
       "definedIn": "prose",
@@ -2755,7 +2754,7 @@
       "heading": {
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
-        "title": "Interpolating sizing keywords: the interpolate-size property",
+        "title": "Automatically interpolating sizing keywords: the interpolate-size property",
         "number": "11.4"
       },
       "definedIn": "table",
@@ -2777,7 +2776,7 @@
       "heading": {
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
-        "title": "Interpolating sizing keywords: the interpolate-size property",
+        "title": "Automatically interpolating sizing keywords: the interpolate-size property",
         "number": "11.4"
       },
       "definedIn": "dt",
@@ -2799,7 +2798,7 @@
       "heading": {
         "id": "interpolate-size",
         "href": "https://drafts.csswg.org/css-values-5/#interpolate-size",
-        "title": "Interpolating sizing keywords: the interpolate-size property",
+        "title": "Automatically interpolating sizing keywords: the interpolate-size property",
         "number": "11.4"
       },
       "definedIn": "dt",

@@ -18,14 +18,14 @@
       "values": [
         {
           "name": "numeric-only",
-          "prose": "An <intrinsic-size-keyword> cannot be interpolated.",
+          "prose": "A <size-keyword> can only be combined with a compatible <calc-size()>.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-numeric-only",
           "type": "value",
           "value": "numeric-only"
         },
         {
           "name": "allow-keywords",
-          "prose": "Two values can also be interpolated if one of them is an <intrinsic-size-keyword> and the other is a <length-percentage>. This is done by treating the <intrinsic-size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 11.3 Interpolating calc-size(). In other cases, an <intrinsic-size-keyword> still cannot be interpolated.",
+          "prose": "Sizing values can also be combined if one of them is an <size-keyword> and the other is a <length-percentage>. This is done by treating the <size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 11.3 Interpolating calc-size(). In other cases, an <size-keyword> still cannot be interpolated.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-allow-keywords",
           "type": "value",
           "value": "allow-keywords"
@@ -788,20 +788,21 @@
     },
     {
       "name": "calc-size()",
+      "prose": "The calc-size() function allows math to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-size",
       "type": "function",
       "value": "calc-size( <calc-size-basis>, <calc-sum> )",
       "values": [
         {
           "name": "size",
-          "prose": "Within the calc-size calculation, if the calc-size basis is not any, the keyword size is allowed. This keyword is a <length>, and resolves at used value time.",
+          "prose": "The first argument given is the calc-size basis, which represents the size the calc-size() is based on, and the second is the calc-size calculation, which represents the size specified by the calc-size() function. Within the calc-size calculation, if the calc-size basis is not any, the keyword size is allowed. The size keyword is a <length>, and resolves at used value time.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
           "type": "value",
           "value": "size"
         },
         {
           "name": "any",
-          "prose": "(If the calc-size basis is any, the calc-size() is a definite length, equal to its calc-size calculation.)",
+          "prose": "For the purpose of sizing (including for intrinsic size contributions), calc-size() resolves to the result of its calc-size calculation. For all purposes other than actually resolving the size, however, calc-size() acts like its first argument. A value of any, however, acts as a definite size—​equal to its calc-size calculation.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-any",
           "type": "value",
           "value": "any"
