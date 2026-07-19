@@ -36,6 +36,54 @@
           "html": "Append <var>current</var> to <var>chain</var>, set <var>current</var> to\n<var>list</var>, and return to step 2 to evaluate the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> of the list."
         }
       ]
+    },
+    {
+      "html": "To perform <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-identifier-based-discovery\" class=\"internalDFN\" id=\"ref-for-dfn-identifier-based-discovery-1\">identifier-based discovery</a> on a <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\n(<var>credential</var>) for a specific action (<var>action</var>, for example\n<code>issue</code>) against a configured set of recognized <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuers</a>\n(<var>recognizedIssuers</var>), a <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifier\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a> runs the following algorithm. The\nalgorithm returns a result with two boolean outcomes: <var>recognized</var>,\nindicating whether the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> of <var>credential</var> is ultimately\nrecognized by a member of <var>recognizedIssuers</var>, and\n<var>actionRecognized</var>, indicating whether that <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> is recognized to\nperform <var>action</var> and, where a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-action\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-action-2\">recognized action</a> declares an\n<code>outputValidation</code>, whether <var>credential</var> conforms to it. On success the\nresult also includes the recognition chain that established the outcome.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be a structure with <var>recognized</var> set to\n<code>false</code>, <var>actionRecognized</var> set to <code>false</code>, and <var>chain</var> set to\nan empty list."
+        },
+        {
+          "html": "Let <var>issuer</var> be the value of the <code>issuer</code> property of\n<var>credential</var>, and let <var>issuerId</var> be its identifier."
+        },
+        {
+          "html": "Resolve or dereference <var>issuerId</var> to obtain a controlled identifier\ndocument, <var>idDocument</var>. If <var>issuerId</var> cannot be resolved,\nreturn <var>result</var>."
+        },
+        {
+          "html": "Let <var>service</var> be a service in the <code>service</code> array of\n<var>idDocument</var> whose <code>type</code> includes both <code>WhoisService</code> and\n<code>PathService</code>. If no such service is present, return <var>result</var>;\nidentifier-based discovery is not supported for this <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a>."
+        },
+        {
+          "html": "Let <var>endpoint</var> be the <code>serviceEndpoint</code> of <var>service</var> and\nretrieve the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-presentation\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation\">verifiable presentation</a>, <var>presentation</var>, published at\n<var>endpoint</var>. If retrieval fails, return <var>result</var>."
+        },
+        {
+          "html": "Verify the proof on <var>presentation</var> and confirm that it is bound to\n<var>issuerId</var>. If verification fails, return <var>result</var>."
+        },
+        {
+          "html": "Let <var>candidates</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-18\">recognized entity credentials</a> contained in\n<var>presentation</var> in which <var>issuerId</var> appears as the <code>id</code> of a\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-11\">recognized entity</a> in the <code>credentialSubject</code>. If <var>candidates</var> is\nempty, return <var>result</var>."
+        },
+        {
+          "html": "For each <var>list</var> in <var>candidates</var>, verify the proof on\n<var>list</var> and confirm that it is currently valid, discarding any\n<var>list</var> that fails either check."
+        },
+        {
+          "html": "For each valid <var>list</var>, let <var>anchor</var> be the result of\ndetermining whether the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> of <var>list</var> is recognized: if the\n<a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> of <var>list</var> is a member of <var>recognizedIssuers</var>, then\n<var>anchor</var> is a list containing <var>list</var>; otherwise, if the\n<code>issuer</code> object of <var>list</var> contains a <code>recognizedIn</code> property, then\n<var>anchor</var> is the recognition chain returned by performing\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-credential-based-discovery\" class=\"internalDFN\" id=\"ref-for-dfn-credential-based-discovery-6\">credential-based discovery</a> on <var>list</var> against\n<var>recognizedIssuers</var>, or nothing if that process does not succeed."
+        },
+        {
+          "html": "If no valid <var>list</var> produces an <var>anchor</var>, return\n<var>result</var>; the <a data-link-type=\"dfn\" data-cite=\"vc-data-model\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> is not recognized."
+        },
+        {
+          "html": "Otherwise, select a valid <var>list</var> that produced an <var>anchor</var>,\nset <var>result.recognized</var> to <code>true</code>, and set <var>result.chain</var> to\n<var>credential</var> followed by <var>list</var> followed by the elements of\nits <var>anchor</var>."
+        },
+        {
+          "html": "Let <var>entity</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-12\">recognized entity</a> in the <code>credentialSubject</code> of\nthe selected <var>list</var> whose <code>id</code> is <var>issuerId</var>, and let\n<var>actions</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-action\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-action-3\">recognized actions</a> declared by its <code>recognizedTo</code>\nproperty."
+        },
+        {
+          "html": "If any <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-action\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-action-4\">recognized action</a> in <var>actions</var> has an <code>action</code> value equal\nto <var>action</var>, and either that <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-action\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-action-5\">recognized action</a> declares no\n<code>outputValidation</code> or <var>credential</var> conforms to every schema referenced\nby its <code>outputValidation</code>, set <var>result.actionRecognized</var> to <code>true</code>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
     }
   ]
 }
