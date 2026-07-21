@@ -25,7 +25,7 @@
         },
         {
           "name": "allow-keywords",
-          "prose": "Sizing values can also be combined if one of them is an <size-keyword> and the other is a <length-percentage>. This is done by treating the <size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 11.3 Interpolating calc-size(). In other cases, an <size-keyword> still cannot be interpolated.",
+          "prose": "Sizing values can also be combined if one of them is an <size-keyword> and the other is a <length-percentage>. This is done by treating the <size-keyword> keyword as though it is calc-size(keyword, size) and applying the rules in § 11.2 Interpolating calc-size(). In other cases, a <size-keyword> still cannot be interpolated.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-interpolate-size-allow-keywords",
           "type": "value",
           "value": "allow-keywords"
@@ -788,24 +788,45 @@
     },
     {
       "name": "calc-size()",
-      "prose": "The calc-size() function allows math to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
+      "prose": "The calc-size() function allows math and transition/animation to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-size",
       "type": "function",
       "value": "calc-size( <calc-size-basis>, <calc-sum> )",
       "values": [
         {
-          "name": "size",
-          "prose": "The first argument given is the calc-size basis, which represents the size the calc-size() is based on, and the second is the calc-size calculation, which represents the size specified by the calc-size() function. Within the calc-size calculation, if the calc-size basis is not any, the keyword size is allowed. The size keyword is a <length>, and resolves at used value time.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
+          "name": "<size-keyword",
+          "prose": "Indicates that the calc-size() is basing its size off of the specified keyword. Represents any sizing keywords allowed in the context where the function is used. For example, in width, it matches auto, min-content, stretch, etc. Also allows any related sizing functions, like the fit-content() function in width/etc., which is a variation of the fit-content keyword. For all purposes other than actually resolving the size, the calc-size() acts like this keyword. The calc-size calculation will use the corresponding size as the value of its size keyword.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size-keyword",
           "type": "value",
-          "value": "size"
+          "value": "<size-keyword"
+        },
+        {
+          "name": "<calc-sum>",
+          "prose": "Indicates that the calc-size() is basing its size off of the specified calculation. For all purposes other than actually resolving the size, the calc-size() acts like this calculation wrapped in a calc() (including, for example, whether it represents a definite or indefinite size). The calc-size calculation will use the corresponding size as the value of its size keyword.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-calc-sum",
+          "type": "value",
+          "value": "<calc-sum>"
+        },
+        {
+          "name": "<calc-size()>",
+          "prose": "Indicates that the outer calc-size() is basing its size off of this inner calc-size(), and will share the same behavior as it. The calc-size calculation will use the size of the inner calc-size() as its size keyword. The size keyword is allowed, in this case, even if the inner calc-size() uses any. For example, in calc-size(calc-size(min-content, size / 2), size + 10%), the outer calc-size() acts as if its calc-size basis was min-content, and will calculate its own size using the result of the inner calc-size(), equivalent to calc-size(min-content, size / 2 + 10%).",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-calc-size",
+          "type": "value",
+          "value": "<calc-size()>"
         },
         {
           "name": "any",
-          "prose": "For the purpose of sizing (including for intrinsic size contributions), calc-size() resolves to the result of its calc-size calculation. For all purposes other than actually resolving the size, however, calc-size() acts like its first argument. A value of any, however, acts as a definite size—​equal to its calc-size calculation.",
+          "prose": "Indicates that the calc-size() does not depend on any additional information, and thus can be interpolated with any other size. The calc-size() function represents a definite size. The calc-size calculation cannot use the size keyword; it is a syntax error for size to appear in the calc-size calculation.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-any",
           "type": "value",
           "value": "any"
+        },
+        {
+          "name": "size",
+          "prose": "Within the calc-size calculation, the size is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
+          "type": "value",
+          "value": "size"
         }
       ]
     },
@@ -813,13 +834,7 @@
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
       "type": "type",
-      "value": "[ <size-keyword> | <calc-size()> | any | <calc-sum> ]"
-    },
-    {
-      "name": "<size-keyword>",
-      "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
-      "type": "type"
+      "value": "[ <size-keyword> | <calc-sum> | <calc-size()> | any ]"
     }
   ],
   "warnings": [
@@ -842,6 +857,15 @@
       "msg": "Missing definition",
       "name": "interpolate-function()",
       "value": "interpolate-function( [ <progress-source> && [ by <easing-function> ]? && <easing-function>? && <segment-options>? ] , <input-position>{1,2} : <output-value> , [ [ <easing-function> || <segment-options> ]? , <input-position>{1,2} : <output-value> ]#? )"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "size",
+      "prose": "Within the calc-size calculation, the size is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
+      "type": "value",
+      "value": "size",
+      "for": "calc()"
     }
   ]
 }

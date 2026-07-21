@@ -31,7 +31,7 @@
               "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://w3c.github.io/cbor-ld/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.1 </bdi>Initialize Conversion Algorithm</a>."
             },
             {
-              "html": "Set <code>output</code> to the result of passing <code>state</code> and <code>jsonldDocument</code>\nas <code>inputDocument</code> to <a href=\"https://w3c.github.io/cbor-ld/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.2 </bdi>Convert Document Algorithm</a>."
+              "html": "Set <code>output</code> to the result of passing <code>state</code> and <code>jsonldDocument</code>\nas <code>inputDocuments</code> to <a href=\"https://w3c.github.io/cbor-ld/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.2 </bdi>Convert Document Algorithm</a>."
             },
             {
               "html": "Set <code>suffix</code> to the CBOR encoding of <code>output</code>."
@@ -397,7 +397,7 @@
               "html": "Set <code>entryTerm</code> to be a new map."
             },
             {
-              "html": "Set the value of \"term\" in <code>entryTerm</code> to be the value of <code>key</code>. Add <code>termId</code>, <code>plural</code>, and <code>definition</code>\nto <code>entryTerm</code>."
+              "html": "Set the value of \"term\" in <code>entryTerm</code> to be the value of <code>key</code>. Set the value of \"def\" in <code>entryTerm</code> to be the value of <code>definition</code>. Add <code>termId</code>, and <code>plural</code>\nto <code>entryTerm</code>."
             },
             {
               "html": "Create an array <code>entry</code> with two elements, <code>entryTerm</code> and <code>value</code>."
@@ -550,7 +550,7 @@
               "html": "Set <code>entryTerm</code> to be a new map."
             },
             {
-              "html": "Set the value of \"termId\" in <code>entryTerm</code> to be the value of <code>key</code>. Add <code>term</code>, <code>plural</code>, and <code>definition</code>\nto <code>entryTerm</code>."
+              "html": "Set the value of \"termId\" in <code>entryTerm</code> to be the value of <code>key</code>. Set the value of \"def\" in <code>entryTerm</code> to be the value of <code>definition</code>. Add <code>term</code>, and <code>plural</code>\nto <code>entryTerm</code>."
             },
             {
               "html": "Create an array <code>entry</code> with two elements, <code>entryTerm</code> and <code>value</code>."
@@ -619,7 +619,7 @@
               "html": "Set <code>termInfo</code> to be a new map."
             },
             {
-              "html": "Add <code>term</code>, <code>termId</code>, <code>plural</code>, and <code>definition</code> to <code>termInfo</code>."
+              "html": "Set the value of \"def\" in <code>entryTerm</code> to be the value of <code>definition</code>. Add <code>term</code>, <code>termId</code>, and <code>plural</code> to <code>termInfo</code>."
             },
             {
               "html": "If <code>value</code> is not an array, set <code>values</code> to be an array containing as a single element <code>value</code>.\nOtherwise, set <code>values</code> to the value of <code>value</code>."
