@@ -22,6 +22,21 @@
       ]
     },
     {
+      "html": "Some node expression functions — such as <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#FilterShapeExpression\" class=\"sec-ref\"><bdi class=\"secno\">4.2.5 </bdi>Filter Shape Expressions</a> and <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#conformsToShape\" class=\"sec-ref\"><bdi class=\"secno\">4.5.3 </bdi>ConformsToShape Expressions</a> —\n\t\t\t\t\tperform SHACL <a data-cite=\"shacl12-core#dfn-validation\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-validation\" id=\"ref-for-index-term-validation-2\">validation</a> to determine whether a <a data-cite=\"rdf12-concepts#dfn-node\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-node\" id=\"ref-for-index-term-node-5\">node</a> <a data-cite=\"shacl12-core#dfn-conform\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-conform\" id=\"ref-for-index-term-conforms-3\">conforms</a> to a <a data-cite=\"shacl12-core#dfn-shape\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shape\" id=\"ref-for-index-term-shape-4\">shape</a>.\n\t\t\t\t\tThe <a data-cite=\"shacl12-core#dfn-shapes-graph\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shapes-graph\" id=\"ref-for-index-term-shapes-graph-4\">shapes graph</a> used for this <a data-cite=\"shacl12-core#dfn-validation\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-validation\" id=\"ref-for-index-term-validation-3\">validation</a> is not explicitly stated for each function.\n\t\t\t\t\tInstead, it is derived from the context:",
+      "rationale": "/^otherwise(\\,| )/i",
+      "steps": [
+        {
+          "html": "When a node expression is evaluated as part of another SHACL process\n\t\t\t\t\t\t(e.g., computing value nodes using <code>sh:values</code> or target nodes using <code>sh:targetNode</code>),\n\t\t\t\t\t\tthe <a data-cite=\"shacl12-core#dfn-shapes-graph\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shapes-graph\" id=\"ref-for-index-term-shapes-graph-5\">shapes graph</a> is reused from the surrounding SHACL process."
+        },
+        {
+          "html": "Otherwise, the <a data-cite=\"shacl12-core#dfn-shapes-graph\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shapes-graph\" id=\"ref-for-index-term-shapes-graph-6\">shapes graph</a> may be passed into the node expression evaluation process as a parameter."
+        },
+        {
+          "html": "In the absence of such a parameter, the <a data-cite=\"shacl12-core#dfn-focus-graph\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-focus-graph\" id=\"ref-for-index-term-focus-graph-2\">focus graph</a> is used as the <a data-cite=\"shacl12-core#dfn-shapes-graph\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shapes-graph\" id=\"ref-for-index-term-shapes-graph-7\">shapes graph</a>."
+        }
+      ]
+    },
+    {
       "html": "Let <code>var</code> be the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-2\">value</a> of <code>shnex:var</code> in the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-1\">var expression</a>.\n\t\t\t\t\t\t\tThe <a data-cite=\"shacl12-core#dfn-output-nodes\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-16\">output nodes</a> of the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-2\">var expression</a> are computed as follows, in order:",
       "rationale": "if",
       "steps": [
@@ -37,7 +52,7 @@
       ]
     },
     {
-      "html": "Let <code>arg</code> be the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-44\">value</a> of <code>shnex:arg</code> in the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-arg-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-arg-expression-3\">arg expression</a>.\n\t\t\t\t\t\tThe <a data-cite=\"shacl12-core#dfn-output-nodes\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-64\">output nodes</a> of the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-4\">var expression</a> are computed as follows, in order:",
+      "html": "Let <code>arg</code> be the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-45\">value</a> of <code>shnex:arg</code> in the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-arg-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-arg-expression-3\">arg expression</a>.\n\t\t\t\t\t\tThe <a data-cite=\"shacl12-core#dfn-output-nodes\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-66\">output nodes</a> of the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-4\">var expression</a> are computed as follows, in order:",
       "rationale": "if",
       "steps": [
         {
