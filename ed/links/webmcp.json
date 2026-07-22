@@ -11,6 +11,7 @@
       "https://chromium.googlesource.com/chromium/src.git/+/main/third_party/blink/renderer/modules/content_extraction/readme.md": {},
       "https://dom.spec.whatwg.org/": {},
       "https://github.com/webmachinelearning/webmcp/issues/106": {},
+      "https://github.com/webmachinelearning/webmcp/issues/224": {},
       "https://github.com/webmachinelearning/webmcp/issues/73": {},
       "https://github.com/webmachinelearning/webmcp/pull/76": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -45,7 +46,8 @@
         "anchors": [
           "concept-origin",
           "same-origin",
-          "concept-origin-scheme"
+          "concept-origin-scheme",
+          "ascii-serialisation-of-an-origin"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -60,8 +62,8 @@
           "descendant-navigables",
           "nav-document",
           "fully-active",
-          "top-level-traversable",
           "inclusive-descendant-navigables",
+          "top-level-traversable",
           "navigable",
           "top-level-browsing-context",
           "browsing-context-group-set"
@@ -75,7 +77,8 @@
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
         "anchors": [
-          "allowed-to-use"
+          "allowed-to-use",
+          "the-iframe-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -87,7 +90,8 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "concept-document-window"
+          "concept-document-window",
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -106,6 +110,7 @@
           "is-origin-keyed",
           "relevant-settings-object",
           "concept-settings-object-origin",
+          "dom-origin",
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
@@ -132,9 +137,13 @@
           "iteration-continue",
           "map-exists",
           "map-remove",
+          "user-agent",
           "serialize-a-javascript-value-to-a-json-string",
           "list-append",
-          "user-agent",
+          "list-contain",
+          "map-iterate",
+          "list-sort-in-ascending-order",
+          "code-unit-less-than",
           "implementation-defined"
         ]
       },
@@ -176,6 +185,7 @@
           "Exposed",
           "idl-promise",
           "idl-undefined",
+          "idl-sequence",
           "a-promise-rejected-with",
           "invalidstateerror",
           "idl-DOMException",
@@ -189,8 +199,7 @@
           "idl-USVString",
           "idl-object",
           "idl-boolean",
-          "idl-any",
-          "idl-sequence"
+          "idl-any"
         ]
       }
     }
