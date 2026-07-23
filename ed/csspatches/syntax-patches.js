@@ -160,6 +160,11 @@ export default {
     "<integer>": "<number-token>"
   },
 
+  // https://drafts.csswg.org/css-view-transitions-2/#typedef-view-transition-type
+  "css-view-transitions-2": {
+    "<view-transition-type>": "<custom-ident>"
+  },
+
   // https://drafts.csswg.org/css2/#value-def-shape
   "CSS2": {
     "<shape>": "rect(<top>, <right>, <bottom>, <left>)"
