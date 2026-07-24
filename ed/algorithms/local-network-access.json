@@ -28,15 +28,6 @@
       ]
     },
     {
-      "html": "This directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization\">initialization</a> algorithm is as follows. Given\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> (<var>context</var>), a <code>Response</code> (<var>response</var>), and\na <code>policy</code>:",
-      "rationale": "set",
-      "steps": [
-        {
-          "html": "<p>Set <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>’s\n <code>IP address space</code> to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑧\">public</a> if\n <code>policy</code>’s <code>disposition</code> is \"<code>enforce</code>\".</p>"
-        }
-      ]
-    },
-    {
       "html": "Update <a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a> as follows:",
       "rationale": "add",
       "steps": [
@@ -76,7 +67,7 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①\">target IP address space</a> is not\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑨\">public</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①\">target IP address space</a> is not\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑧\">public</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>addressSpace</var> is not equal to\n  then <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space②\">target IP address space</a>, then return\n  a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"

@@ -51,7 +51,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#availability-algorithm\" id=\"ref-for-availability-algorithm\">availability algorithm</a> with <var>options</var> and <var>promise</var>. If it returns an exception, throw it and abort these steps.</p>"
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#availability-algorithm\" id=\"ref-for-availability-algorithm\">availability algorithm</a> with <var>options</var> and <var>promise</var>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -62,19 +62,19 @@
       "name": "SpeechRecognition/install(options)",
       "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognition-install",
       "html": "When invoked, run these steps:",
-      "rationale": "if",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> and abort these steps.</p>"
-        },
-        {
-          "html": "<p>If any <var>lang</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs\">langs</a></code> of <var>options</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> and abort these steps.</p>"
-        },
-        {
-          "html": "<p>If the on-device speech recognition language pack for any <var>lang</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs①\">langs</a></code> of <var>options</var> is unsupported, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise④\">Promise</a></code> with false and skip the rest of these steps.</p>"
-        },
-        {
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, reject <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, abort these steps, returning <var>promise</var>.</p>"
+        },
+        {
+          "html": "<p>If any <var>lang</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs\">langs</a></code> of <var>options</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>, abort these steps, returning <var>promise</var>.</p>"
+        },
+        {
+          "html": "<p>If the on-device speech recognition language pack for any <var>lang</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs①\">langs</a></code> of <var>options</var> is unsupported, resolve <var>promise</var> with false, abort these steps, returning <var>promise</var>.</p>"
         },
         {
           "html": "<p>For each <var>lang</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs②\">langs</a></code> of <var>options</var>, initiate the download of the on-device speech recognition language pack for <var>lang</var> matching the requested <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-quality\" id=\"ref-for-dom-speechrecognitionoptions-quality②\">quality</a></code> level floor.</p>"
@@ -94,13 +94,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object①\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\" id=\"ref-for-current-settings-object①\">current settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is NOT <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, reject <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>langs</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-langs\" id=\"ref-for-dom-speechrecognitionoptions-langs④\">langs</a></code> of <var>options</var>.</p>"
         },
         {
-          "html": "<p>If any <var>lang</var> in <var>langs</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> and abort these steps.</p>"
+          "html": "<p>If any <var>lang</var> in <var>langs</var> is not a valid <a data-link-type=\"biblio\" href=\"https://webaudio.github.io/web-speech-api/#biblio-bcp47\" title=\"Tags for Identifying Languages\">[BCP47]</a> language tag, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> and abort these steps.</p>"
         },
         {
           "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-processlocally\" id=\"ref-for-dom-speechrecognitionoptions-processlocally⑦\">processLocally</a></code> of <var>options</var> is <code>false</code>:",

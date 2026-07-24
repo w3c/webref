@@ -143,14 +143,14 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString containertiming;\n    [CEReactions] attribute DOMString? containertimingIgnore;\n};",
+          "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "containertiming",
+              "name": "containerTiming",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -165,6 +165,12 @@
                   "name": "CEReactions",
                   "rhs": null,
                   "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Reflect",
+                  "rhs": null,
+                  "arguments": []
                 }
               ],
               "special": "",
@@ -173,19 +179,25 @@
             },
             {
               "type": "attribute",
-              "name": "containertimingIgnore",
+              "name": "containerTimingIgnore",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
-                "nullable": true,
+                "nullable": false,
                 "union": false,
-                "idlType": "DOMString"
+                "idlType": "boolean"
               },
               "extAttrs": [
                 {
                   "type": "extended-attribute",
                   "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Reflect",
                   "rhs": null,
                   "arguments": []
                 }

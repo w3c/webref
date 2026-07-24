@@ -9,15 +9,7 @@
     "fragment": "[Exposed=Window]\ninterface SVGFilterElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration filterUnits;\n  readonly attribute SVGAnimatedEnumeration primitiveUnits;\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n};",
     "href": "https://drafts.csswg.org/filter-effects-1/#svgfilterelement"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Filter Effects Module Level 1",
-        "url": "https://www.w3.org/TR/filter-effects-1/"
-      },
-      "fragment": "SVGFilterElement includes SVGURIReference;"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "SVGElement",
     "type": "interface",
@@ -125,7 +117,7 @@
             "title": "Container Timing API",
             "url": "https://wicg.github.io/container-timing/"
           },
-          "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString containertiming;\n    [CEReactions] attribute DOMString? containertimingIgnore;\n};"
+          "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};"
         },
         {
           "spec": {
@@ -500,21 +492,5 @@
       }
     ]
   },
-  "includes": [
-    {
-      "name": "SVGURIReference",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Scalable Vector Graphics (SVG) 2",
-          "url": "https://www.w3.org/TR/SVG2/"
-        },
-        "fragment": "interface mixin SVGURIReference {\n  [SameObject] readonly attribute SVGAnimatedString href;\n};",
-        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGURIReference"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    }
-  ]
+  "includes": []
 }

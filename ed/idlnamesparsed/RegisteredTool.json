@@ -1,0 +1,15 @@
+{
+  "name": "RegisteredTool",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebMCP",
+      "url": "https://webmachinelearning.github.io/webmcp/"
+    },
+    "fragment": "dictionary RegisteredTool {\n  required DOMString name;\n  // `title` can be exposed as a `DOMString` since it was taken in by a\n  // `USVString`, meaning all unmatched surrogate processing has already been\n  // done, and there's no need to do it again on tool exposure.\n  DOMString title;\n  required DOMString description;\n  DOMString inputSchema;\n  required Window window;\n  required USVString origin;\n  ToolAnnotations annotations;\n};",
+    "href": "https://webmachinelearning.github.io/webmcp/#dictdef-registeredtool"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

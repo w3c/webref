@@ -105,7 +105,7 @@
           "title": "Container Timing API",
           "url": "https://wicg.github.io/container-timing/"
         },
-        "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString containertiming;\n    [CEReactions] attribute DOMString? containertimingIgnore;\n};"
+        "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};"
       },
       {
         "spec": {
