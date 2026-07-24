@@ -1,0 +1,73 @@
+From 9fd03c3dd7295130e66cda6e069ec972f537844b Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 24 Jul 2026 09:50:01 +0200
+Subject: [PATCH] Rollback to previous IDL extract
+
+New definition of the `FontFace` interface is invalid and uses non-standard
+extended attributes, see: https://github.com/w3c/csswg-drafts/issues/14209
+---
+ ed/idl/css-font-loading.idl | 38 ++++++++++++++++++-------------------
+ 1 file changed, 18 insertions(+), 20 deletions(-)
+
+diff --git a/ed/idl/css-font-loading.idl b/ed/idl/css-font-loading.idl
+index 5e2f72784a..a5db8f3c49 100644
+--- a/ed/idl/css-font-loading.idl
++++ b/ed/idl/css-font-loading.idl
+@@ -6,8 +6,7 @@
+ dictionary FontFaceDescriptors {
+   CSSOMString style = "normal";
+   CSSOMString weight = "normal";
+-  CSSOMString width;
+-  CSSOMString stretch = "normal"; // alias for width, sets the same attribute
++  CSSOMString stretch = "normal";
+   CSSOMString unicodeRange = "U+0-10FFFF";
+   CSSOMString featureSettings = "normal";
+   CSSOMString variationSettings = "normal";
+@@ -21,27 +20,26 @@ enum FontFaceLoadStatus { "unloaded", "loading", "loaded", "error" };
+ 
+ [Exposed=(Window,Worker)]
+ interface FontFace {
+-  [Throws]
+-  constructor(CSSOMString family,
+-              (CSSOMString or BufferSource) source,
+-              optional FontFaceDescriptors descriptors = {});
+-
+-  [SetterThrows] attribute CSSOMString family;
+-  [SetterThrows] attribute CSSOMString style;
+-  [SetterThrows] attribute CSSOMString weight;
+-  [SetterThrows, BindingAlias="stretch"] attribute CSSOMString width;
+-  [SetterThrows] attribute CSSOMString unicodeRange;
+-  [SetterThrows] attribute CSSOMString variant;
+-  [SetterThrows] attribute CSSOMString featureSettings;
+-  [SetterThrows, Pref="layout.css.font-variations.enabled"] attribute CSSOMString variationSettings;
+-  [SetterThrows] attribute CSSOMString display;
+-  [SetterThrows] attribute CSSOMString ascentOverride;
+-  [SetterThrows] attribute CSSOMString descentOverride;
+-  [SetterThrows] attribute CSSOMString lineGapOverride;
+-  [SetterThrows] attribute CSSOMString sizeAdjust;
++  constructor(CSSOMString family, (CSSOMString or BufferSource) source,
++                optional FontFaceDescriptors descriptors = {});
++  attribute CSSOMString family;
++  attribute CSSOMString style;
++  attribute CSSOMString weight;
++  attribute CSSOMString stretch;
++  attribute CSSOMString unicodeRange;
++  attribute CSSOMString featureSettings;
++  attribute CSSOMString variationSettings;
++  attribute CSSOMString display;
++  attribute CSSOMString ascentOverride;
++  attribute CSSOMString descentOverride;
++  attribute CSSOMString lineGapOverride;
+ 
+   readonly attribute FontFaceLoadStatus status;
+ 
++  Promise<FontFace> load();
++  readonly attribute Promise<FontFace> loaded;
++};
++
+ [Exposed=(Window,Worker)]
+ interface FontFaceFeatures {
+   /* The CSSWG is still discussing what goes in here */
+-- 
+2.55.0
+
