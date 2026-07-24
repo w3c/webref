@@ -31,6 +31,7 @@ More often than not, released versions of specifications are much older than the
 
 The following subfolders in the `curated` branch contain individual machine-readable JSON or text files generated from specifications:
 
+- [`ed/backrefs`](https://github.com/w3c/webref/tree/curated/ed/backrefs): Back references to definitions. For each term a specification defines that is referenced from elsewhere, the list of referencing specifications. One file per defining specification. This is a curated, derived view built from `dfns` and `links` extracts (not a raw crawl extract).
 - [`ed/cddl`](https://github.com/w3c/webref/tree/curated/ed/cddl): CDDL modules. If the specification defines a single CDDL module, one file gets created for the specification. If it defines multiple CDDL modules, one file gets created per CDDL module, plus one file named `[shortname]-all.cddl` with all CDDL definitions.
 - [`ed/css`](https://github.com/w3c/webref/tree/curated/ed/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [`ed/dfns`](https://github.com/w3c/webref/tree/curated/ed/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
