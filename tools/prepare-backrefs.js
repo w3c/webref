@@ -2,12 +2,13 @@
  * Prepare per-spec back-reference extracts.
  *
  * For each definition that a specification owns, list other specifications that
- * link to it. Algorithm follows Webdex's invert-links step: index public dfns
- * by href, expand outbound links with anchors to fragment URLs, match, then
- * group by defining spec.
+ * link to it. Algorithm follows Webdex's invert-links step: index dfns by href,
+ * expand outbound links with anchors to fragment URLs, match, then group by
+ * defining spec.
  *
- * Only terms with at least one external reference are written. Self-references
- * are excluded. Private dfns and argument dfns are skipped (same as Webdex).
+ * All dfns are included (including private and argument definitions). Only
+ * terms with at least one external reference are written. Self-references are
+ * excluded.
  *
  * Output: [folder]/backrefs/[shortname].json and updates index.json.
  *
@@ -31,11 +32,6 @@ function indexDfnHref(linksIndex, href, entry) {
       href.startsWith('https://tc39.es/ecma262/multipage/')) {
     const singlePageUrl = href.replace(/\/multipage\/[^#]+#/, '/#');
     linksIndex.set(singlePageUrl, entry);
-  }
-  else if (href.startsWith('https://html.spec.whatwg.org/#') ||
-           href.startsWith('https://tc39.es/ecma262/#')) {
-    // Single-page form is already indexed; multipage variants appear as
-    // outbound links and are handled when looking up the link URL itself.
   }
 }
 
@@ -97,13 +93,6 @@ async function prepareBackrefs(folder) {
 
   for (const spec of index.results) {
     for (const dfn of (spec.dfns || [])) {
-      if (dfn.access === 'private') {
-        continue;
-      }
-      if (dfn.type === 'argument') {
-        continue;
-      }
-
       const entry = {
         definingShortname: spec.shortname,
         dfn
@@ -123,6 +112,8 @@ async function prepareBackrefs(folder) {
           href: dfn.href,
           linkingText: dfn.linkingText,
           type: dfn.type,
+          for: dfn.for,
+          access: dfn.access,
           referencedBy: new Map()
         });
       }
@@ -169,8 +160,8 @@ async function prepareBackrefs(folder) {
   catch {
   }
 
-  // Clear previous backrefs pointers from index
-  for (const spec of index.results) {
+  // Clear previous backrefs pointers from the crawl index we will persist
+  for (const spec of rawIndex.results) {
     delete spec.backrefs;
   }
 
@@ -186,6 +177,8 @@ async function prepareBackrefs(folder) {
         href: term.href,
         linkingText: term.linkingText,
         type: term.type,
+        for: term.for,
+        access: term.access,
         referencedBy: [...term.referencedBy.values()]
           .sort((a, b) => a.shortname.localeCompare(b.shortname))
       });

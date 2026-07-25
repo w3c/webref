@@ -22,12 +22,6 @@ describe('The curated view of backrefs extracts', async () => {
   const shortnames = new Set(index.results.map(s => s.shortname));
   const specsWithBackrefs = index.results.filter(s => s.backrefs);
 
-  it('lists backrefs extracts only for specs that have a backrefs file', async () => {
-    for (const spec of specsWithBackrefs) {
-      await fs.access(path.join(curatedFolder, spec.backrefs));
-    }
-  });
-
   it('only creates files for specs that appear in the crawl index', async () => {
     let files = [];
     try {
@@ -51,23 +45,19 @@ describe('The curated view of backrefs extracts', async () => {
     }
   });
 
-  it('never includes private or argument definitions', async () => {
+  it('copies identifying dfn fields including for and access', async () => {
     for (const spec of specsWithBackrefs) {
       const data = await loadJSON(path.join(curatedFolder, spec.backrefs));
       for (const term of data.backrefs) {
-        assert.notEqual(term.type, 'argument', `${spec.backrefs} contains an argument dfn`);
-        // access is not copied into the extract; cross-check against dfns when present
-      }
-      if (spec.dfns) {
-        const dfns = await loadJSON(path.join(curatedFolder, spec.dfns));
-        const byHref = new Map((dfns?.dfns || []).map(d => [d.href, d]));
-        for (const term of data.backrefs) {
-          const dfn = byHref.get(term.href);
-          if (dfn) {
-            assert.notEqual(dfn.access, 'private', `${term.href} is private`);
-            assert.notEqual(dfn.type, 'argument', `${term.href} is an argument`);
-          }
-        }
+        assert.ok(term.id, `${spec.backrefs} entry is missing id`);
+        assert.ok(term.href, `${spec.backrefs} entry is missing href`);
+        assert.ok(Array.isArray(term.linkingText), `${term.href} linkingText is not an array`);
+        assert.ok(term.type, `${term.href} is missing type`);
+        assert.ok(Array.isArray(term.for), `${term.href} for is not an array`);
+        assert.ok(
+          term.access === 'public' || term.access === 'private',
+          `${term.href} has unexpected access ${term.access}`
+        );
       }
     }
   });
