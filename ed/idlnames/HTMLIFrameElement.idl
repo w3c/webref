@@ -36,6 +36,11 @@ partial interface HTMLIFrameElement {
   attribute boolean credentialless;
 };
 
+// Source: Connection Allowlists (https://wicg.github.io/connection-allowlists/)
+partial interface HTMLIFrameElement {
+  [CEReactions] attribute DOMString connectionAllowlist;
+};
+
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial interface HTMLIFrameElement {
   [SecureContext] attribute DOMString privateToken;

@@ -113,17 +113,55 @@
         "href": "https://wicg.github.io/connection-allowlists/#dictdef-connectionallowlistviolationreport"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "HTMLIFrameElement": [
+        {
+          "fragment": "partial interface HTMLIFrameElement {\n  [CEReactions] attribute DOMString connectionAllowlist;\n};",
+          "type": "interface",
+          "name": "HTMLIFrameElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "connectionAllowlist",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://wicg.github.io/connection-allowlists/#dom-htmliframeelement-connectionallowlist"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {},
     "dependencies": {
       "ConnectionAllowlistViolationReport": [
         "ReportBody",
         "ConnectionAllowlistDisposition"
-      ]
+      ],
+      "HTMLIFrameElement": []
     },
     "externalDependencies": [
-      "ReportBody"
+      "ReportBody",
+      "HTMLIFrameElement"
     ],
     "hasObsoleteIdl": false
   }

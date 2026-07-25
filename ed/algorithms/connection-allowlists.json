@@ -334,6 +334,92 @@
       ]
     },
     {
+      "name": "origin allowed",
+      "href": "https://wicg.github.io/connection-allowlists/#allows-a-connection-allowlist-from",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a> (<var>response</var>) <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"allows a connection allowlist from|allow a connection allowlist\nfrom\" data-noexport=\"\" id=\"allows-a-connection-allowlist-from\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allows a connection allowlist from</dfn> a navigation <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> (<var>request</var>) if the following\nsteps return true:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>origin</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> `<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/connection-allowlists/#http-headerdef-allow-connection-allowlist-from\" id=\"ref-for-http-headerdef-allow-connection-allowlist-from①\">Allow-Connection-Allowlist-From</a></code>` from\n<var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var> is <code>`*`</code>, return true.</p>"
+        },
+        {
+          "html": "<p>Return true if the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#byte-serializing-a-request-origin\" id=\"ref-for-byte-serializing-a-request-origin\">byte-serializing a request origin</a> with <var>request</var> is <var>origin</var>;\notherwise return false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine the required connection allowlist",
+      "href": "https://wicg.github.io/connection-allowlists/#abstract-opdef-determine-the-required-connection-allowlist",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-determine-the-required-connection-allowlist\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the required connection allowlist</dfn> for a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable\">child navigable</a>\n(<var>navigable</var>):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>container</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"ref-for-nav-container\">container</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parent required</var> be <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container⑦\">policy container</a>’s\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-required-connection-allowlist\" id=\"ref-for-policy-container-required-connection-allowlist①\">required connection allowlist</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>container</var> is an <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element①\">iframe</a></code> element that has a <code>connectionAllowlist</code> content attribute whose\nvalue (<var>attribute value</var>) is not the empty string, and <var>attribute value</var> is a\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist-valid-connectionallowlist-attribute-value\" id=\"ref-for-connection-allowlist-valid-connectionallowlist-attribute-value\">valid connectionAllowlist attribute value</a> given <var>parent required</var>, then\nreturn <var>attribute value</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>parent required</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a serialized connection allowlist requirement",
+      "href": "https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-serialized-connection-allowlist-requirement",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"parse requirement\" data-lt=\"parse a serialized connection allowlist requirement\" id=\"abstract-opdef-parse-a-serialized-connection-allowlist-requirement\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a serialized connection allowlist\nrequirement</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> (<var>value</var>), a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①②\">URL</a> (<var>response-url</var>), and a\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist-disposition\" id=\"ref-for-connection-allowlist-disposition⑨\">disposition</a> (<var>disposition</var>):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be the result of parsing <var>value</var> as a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-introduction\" id=\"ref-for-name-introduction⑦\">structured header</a> <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-list\" id=\"ref-for-name-list⑧\">list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>list</var> is failure, return <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-connection-allowlist-header\" id=\"ref-for-abstract-opdef-parse-a-connection-allowlist-header③\">parsing a Connection Allowlist header</a> given <var>list</var>,\n<var>response-url</var>, and <var>disposition</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "should a navigation response be blocked by connection allowlist embedded enforcement",
+      "href": "https://wicg.github.io/connection-allowlists/#abstract-opdef-should-be-blocked-by-connection-allowlist-embedded-enforcement",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a> (<var>response</var>) to a navigation <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a> (<var>request</var>) for a\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable①\">child navigable</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-should-be-blocked-by-connection-allowlist-embedded-enforcement\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be blocked by Connection Allowlist embedded enforcement</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦\">string</a> or <code>null</code> (<var>requirement</var>), return\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#allowed\" id=\"ref-for-allowed⑧\">allowed</a> or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked⑨\">blocked</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>requirement</var> is <code>null</code>, return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#allowed\" id=\"ref-for-allowed⑨\">allowed</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>required</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-serialized-connection-allowlist-requirement\" id=\"ref-for-abstract-opdef-parse-a-serialized-connection-allowlist-requirement\">parsing a serialized connection allowlist\nrequirement</a> given <var>requirement</var>, <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url⑤\">URL</a>, and\n<a data-link-type=\"grammar\" href=\"https://wicg.github.io/connection-allowlists/#grammardef-connection-allowlist-disposition-enforce\" id=\"ref-for-grammardef-connection-allowlist-disposition-enforce⑥\">enforce</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>required</var> is <code>null</code>, return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#allowed\" id=\"ref-for-allowed①⓪\">allowed</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#allows-a-connection-allowlist-from\" id=\"ref-for-allows-a-connection-allowlist-from\">allows a connection allowlist from</a> <var>request</var>, return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#allowed\" id=\"ref-for-allowed①①\">allowed</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header②\">getting a structured field value</a> named `<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/connection-allowlists/#http-headerdef-connection-allowlist\" id=\"ref-for-http-headerdef-connection-allowlist⑧\">Connection-Allowlist</a></code>`\nas a \"<code>list</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list③\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>asserted</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-connection-allowlist-header\" id=\"ref-for-abstract-opdef-parse-a-connection-allowlist-header④\">parsing a Connection Allowlist header</a> given\n<var>header</var>, <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url⑥\">URL</a>, and\n<a data-link-type=\"grammar\" href=\"https://wicg.github.io/connection-allowlists/#grammardef-connection-allowlist-disposition-enforce\" id=\"ref-for-grammardef-connection-allowlist-disposition-enforce⑦\">enforce</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>asserted</var> is not <code>null</code> and <var>asserted</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist-satisfies\" id=\"ref-for-connection-allowlist-satisfies④\">satisfies</a> <var>required</var>, return\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#allowed\" id=\"ref-for-allowed①②\">allowed</a>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①⓪\">blocked</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "monkey patching main fetch",
       "html": "In Main Fetch, we’ll adjust step 7 as follows:",
       "rationale": ".algorithm",
@@ -349,7 +435,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-host-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-host-be-blocked-by-connection-allowlists\">should host be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked⑨\">blocked</a> when executed\n upon <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a>, <var>environment</var>, and\n <var>allowlists</var>, then return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure④\">failure</a>.</ins>"
+          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-host-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-host-be-blocked-by-connection-allowlists\">should host be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①①\">blocked</a> when executed\n upon <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a>, <var>environment</var>, and\n <var>allowlists</var>, then return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure④\">failure</a>.</ins>"
         }
       ]
     },
@@ -359,7 +445,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-url-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-url-be-blocked-by-connection-allowlists\">should url be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①⓪\">blocked</a> when executed\nupon <var>url</var>, <var>environment</var>, and <var>allowlists</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure⑤\">failure</a>.</ins>"
+          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-url-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-url-be-blocked-by-connection-allowlists\">should url be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①②\">blocked</a> when executed\nupon <var>url</var>, <var>environment</var>, and <var>allowlists</var>,\nthen return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure⑤\">failure</a>.</ins>"
         }
       ]
     },
@@ -372,10 +458,54 @@
           "html": "<p>Parse Integrity-Policy headers with <var>response</var> and <var>result</var>.</p>"
         },
         {
-          "html": "<ins>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑤\">connection allowlists</a> to the result of\n<a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-responses-connection-allowlists\" id=\"ref-for-abstract-opdef-parse-a-responses-connection-allowlists\">parsing a response’s Connection Allowlists</a>\ngiven <var>response</var>.</ins>"
+          "html": "<ins>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑥\">connection allowlists</a> to the result of\n<a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-responses-connection-allowlists\" id=\"ref-for-abstract-opdef-parse-a-responses-connection-allowlists\">parsing a response’s Connection Allowlists</a>\ngiven <var>response</var>.</ins>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To support <a href=\"https://wicg.github.io/connection-allowlists/#embedded-enforcement\">§ 4 Embedded Enforcement</a>, we follow the model that <a data-link-type=\"biblio\" href=\"https://wicg.github.io/connection-allowlists/#biblio-csp-embedded-enforcement\" title=\"Content Security Policy: Embedded Enforcement\">[csp-embedded-enforcement]</a> uses for\nits required CSP, threading the embedder’s requirement from the embedding element through\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params\" id=\"ref-for-target-snapshot-params\">target snapshot params</a> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params\">navigation params</a> to the framed <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">Document</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container①①\">policy container</a>. Concretely, HTML and Fetch are patched as follows:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-required-connection-allowlist\" id=\"ref-for-policy-container-required-connection-allowlist②\">required connection allowlist</a> item is added to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container①②\">policy container</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct③\">struct</a> (defined in <a href=\"https://wicg.github.io/connection-allowlists/#embedded-enforcement-checking\">§ 4.4 Obtaining and enforcing a requirement</a>).</p>"
+        },
+        {
+          "html": "<p>A required connection allowlist item, either <code>null</code> or a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑧\">string</a>, is added to the\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params\" id=\"ref-for-target-snapshot-params①\">target snapshot params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct④\">struct</a>. HTML’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#snapshotting-target-snapshot-params\" id=\"ref-for-snapshotting-target-snapshot-params\">snapshotting target snapshot params</a> algorithm sets it to the result of\n<a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-determine-the-required-connection-allowlist\" id=\"ref-for-abstract-opdef-determine-the-required-connection-allowlist\">determine the required connection allowlist</a> given the target navigable.</p>"
+        },
+        {
+          "html": "<p>A matching item is added to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params①\">navigation params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct⑤\">struct</a>, and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate\">navigate</a>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching\">create navigation params by fetching</a>, and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-from-a-srcdoc-resource\" id=\"ref-for-create-navigation-params-from-a-srcdoc-resource\">create navigation params from a srcdoc resource</a>\nset it from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params\" id=\"ref-for-target-snapshot-params②\">target snapshot params</a> item.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching①\">create navigation params by fetching</a>, after creating the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑥\">request</a>, sets the\n`<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/connection-allowlists/#http-headerdef-sec-required-connection-allowlist\" id=\"ref-for-http-headerdef-sec-required-connection-allowlist②\">Sec-Required-Connection-Allowlist</a></code>` header in the request’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a> to the\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params\" id=\"ref-for-target-snapshot-params③\">target snapshot params</a> item, when that item is not <code>null</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response①\">create a policy container from a fetch response</a> takes the requirement as an additional\nargument, and after populating <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑦\">connection allowlists</a> runs the\n<a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-apply-a-required-connection-allowlist\" id=\"ref-for-abstract-opdef-apply-a-required-connection-allowlist\">apply a required connection allowlist</a> steps below.</p>"
+        }
+      ]
+    },
+    {
+      "name": "apply a required connection allowlist",
+      "href": "https://wicg.github.io/connection-allowlists/#abstract-opdef-apply-a-required-connection-allowlist",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-apply-a-required-connection-allowlist\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply a required connection allowlist</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container\" id=\"ref-for-policy-container①③\">policy container</a>\n(<var>result</var>), a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑨\">string</a> or <code>null</code> (<var>requirement</var>), and a\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑦\">response</a> (<var>response</var>):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>requirement</var> is <code>null</code>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>required</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-parse-a-serialized-connection-allowlist-requirement\" id=\"ref-for-abstract-opdef-parse-a-serialized-connection-allowlist-requirement①\">parsing a serialized connection allowlist\nrequirement</a> given <var>requirement</var>, <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url⑦\">URL</a>, and\n<a data-link-type=\"grammar\" href=\"https://wicg.github.io/connection-allowlists/#grammardef-connection-allowlist-disposition-enforce\" id=\"ref-for-grammardef-connection-allowlist-disposition-enforce⑧\">enforce</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>required</var> is <code>null</code>, return.</p>"
+        },
+        {
+          "html": "<p>If no <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist\" id=\"ref-for-connection-allowlist①⑥\">connection allowlist</a> in <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑧\">connection allowlists</a> whose\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist-disposition\" id=\"ref-for-connection-allowlist-disposition①⓪\">disposition</a> is <a data-link-type=\"grammar\" href=\"https://wicg.github.io/connection-allowlists/#grammardef-connection-allowlist-disposition-enforce\" id=\"ref-for-grammardef-connection-allowlist-disposition-enforce⑨\">enforce</a>\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#connection-allowlist-satisfies\" id=\"ref-for-connection-allowlist-satisfies⑤\">satisfies</a> <var>required</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> <var>required</var> to <var>result</var>’s\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑨\">connection allowlists</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-required-connection-allowlist\" id=\"ref-for-policy-container-required-connection-allowlist③\">required connection allowlist</a> to <var>requirement</var>.</p>"
         }
       ]
     },
@@ -385,7 +515,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-url-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-url-be-blocked-by-connection-allowlists①\">should url be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①①\">blocked</a> when executed\nupon <var>url</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container①\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists⑥\">connection allowlists</a>,\nthen return a  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-smart-card/#transaction-state-promise\" id=\"ref-for-transaction-state-promise\">promise</a> rejected with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">\"SecurityError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</ins>"
+          "html": "<ins>If <a data-link-type=\"abstract-op\" href=\"https://wicg.github.io/connection-allowlists/#abstract-opdef-should-url-be-blocked-by-connection-allowlists\" id=\"ref-for-abstract-opdef-should-url-be-blocked-by-connection-allowlists①\">should url be blocked by Connection Allowlists</a> returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#blocked\" id=\"ref-for-blocked①④\">blocked</a> when executed\nupon <var>url</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container①\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/connection-allowlists/#policy-container-connection-allowlists\" id=\"ref-for-policy-container-connection-allowlists①①\">connection allowlists</a>,\nthen return a  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/web-smart-card/#transaction-state-promise\" id=\"ref-for-transaction-state-promise\">promise</a> rejected with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">\"SecurityError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</ins>"
         }
       ]
     }
