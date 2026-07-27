@@ -5,6 +5,21 @@
   },
   "algorithms": [
     {
+      "html": "Registration requests must be in the form of pull requests raised against the CBOR-LD Registry\nvia a fork of the repository. These requests must include:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "The registry entry ID requested,"
+        },
+        {
+          "html": "The use case for the registry entry,"
+        },
+        {
+          "html": "A <code>.yml</code> file added to the <code>tables</code> directory, with the Registry Entry ID requested as the filename,\nwhich specifies the technical content of the registry entry. If this file does not conform with the\nexpected file format, requests may be rejected without explanation."
+        }
+      ]
+    },
+    {
       "html": "This algorithm takes a map <code>typeTable</code>, an integer <code>registryEntryId</code>, and a JSON-LD\ndocument <code>jsonldDocument</code> as inputs, and returns a hexadecimal string <code>cborldBytes</code>.",
       "rationale": "set",
       "steps": [
