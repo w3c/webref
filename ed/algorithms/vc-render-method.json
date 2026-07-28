@@ -5,6 +5,36 @@
   },
   "algorithms": [
     {
+      "html": "When processing a <code>json-card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n              performed:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Validate the template JSON object against the JSON template schema defined\n                above. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be\n                returned."
+        },
+        {
+          "html": "For each string value in the template object:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If the string value starts with <code>/</code> (indicating it is a JSON pointer),\n                    evaluate it using the JSON Pointer algorithm <cite><a data-cite=\"RFC6901\" data-matched-text=\"[[[RFC6901]]]\" href=\"https://www.rfc-editor.org/info/rfc6901/\">JavaScript Object Notation (JSON) Pointer</a></cite> against the\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-31\">verifiable credential</a> as the target document."
+            },
+            {
+              "html": "If the JSON pointer evaluation succeeds, replace the JSON pointer string with\n                    the resolved value. If the resolved value is not a string, convert it to a\n                    string representation."
+            },
+            {
+              "html": "If the JSON pointer evaluation fails or returns <code>null</code>, the behavior is\n                    implementation-specific. Implementations <em class=\"rfc2119\">MAY</em> use an empty string, leave the\n                    value as <code>null</code>, or signal an error."
+            },
+            {
+              "html": "If the string value does not start with <code>/</code>, treat it as a literal string\n                    and leave it unchanged."
+            }
+          ]
+        },
+        {
+          "html": "Validate the resulting JSON object against the <code>json-card</code> output schema. If\n                validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
+        }
+      ]
+    },
+    {
       "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-18\">host page</a> <em class=\"rfc2119\">MUST</em> create an <code>iframe</code> element to host the HTML template. The\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-19\">host page</a> <em class=\"rfc2119\">MUST</em> set the <code>sandbox</code> attribute on the <code>iframe</code> to\n<code>allow-scripts</code> to prevent navigation and top-level access.",
       "rationale": ".algorithm",
       "steps": [

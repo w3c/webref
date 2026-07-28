@@ -936,6 +936,7 @@ EmulationCommand = (
   emulation.SetForcedColorsModeThemeOverride //
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
+  emulation.SetMediaFeaturesOverride //
   emulation.SetNetworkConditions //
   emulation.SetScreenOrientationOverride //
   emulation.SetScreenSettingsOverride //
@@ -943,19 +944,22 @@ EmulationCommand = (
   emulation.SetScrollbarTypeOverride //
   emulation.SetTimezoneOverride //
   emulation.SetTouchOverride //
-  emulation.SetUserAgentOverride
+  emulation.SetUserAgentOverride //
+  emulation.SetViewportMetaOverride
 )
 
 EmulationResult = (
   emulation.SetForcedColorsModeThemeOverrideResult /
   emulation.SetGeolocationOverrideResult /
   emulation.SetLocaleOverrideResult /
+  emulation.SetMediaFeaturesOverrideResult /
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
-  emulation.SetUserAgentOverrideResult
+  emulation.SetUserAgentOverrideResult /
+  emulation.SetViewportMetaOverrideResult
 )
 
 emulation.SetForcedColorsModeThemeOverride = (
@@ -1015,6 +1019,26 @@ emulation.SetLocaleOverrideParameters = {
 }
 
 emulation.SetLocaleOverrideResult = EmptyResult
+
+emulation.SetMediaFeaturesOverride = (
+  method: "emulation.setMediaFeaturesOverride",
+  params: emulation.SetMediaFeaturesOverrideParameters
+)
+
+emulation.SetMediaFeaturesOverrideParameters = {
+  features: emulation.MediaFeatures / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.MediaFeatures = [emulation.MediaFeature]
+
+emulation.MediaFeature = {
+   name: text
+   value: text
+}
+
+emulation.SetMediaFeaturesOverrideResult = EmptyResult
 
 emulation.SetNetworkConditions = (
   method: "emulation.setNetworkConditions",
@@ -1086,6 +1110,19 @@ emulation.SetUserAgentOverrideParameters = {
 }
 
 emulation.SetUserAgentOverrideResult = EmptyResult
+
+emulation.SetViewportMetaOverride = (
+  method: "emulation.setViewportMetaOverride",
+  params: emulation.SetViewportMetaOverrideParameters
+)
+
+emulation.SetViewportMetaOverrideParameters = {
+  viewportMeta: true / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetViewportMetaOverrideResult = EmptyResult
 
 emulation.SetScriptingEnabled = (
   method: "emulation.setScriptingEnabled",
@@ -3089,6 +3126,7 @@ EmulationCommand = (
   emulation.SetForcedColorsModeThemeOverride //
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
+  emulation.SetMediaFeaturesOverride //
   emulation.SetNetworkConditions //
   emulation.SetScreenOrientationOverride //
   emulation.SetScreenSettingsOverride //
@@ -3096,7 +3134,8 @@ EmulationCommand = (
   emulation.SetScrollbarTypeOverride //
   emulation.SetTimezoneOverride //
   emulation.SetTouchOverride //
-  emulation.SetUserAgentOverride
+  emulation.SetUserAgentOverride //
+  emulation.SetViewportMetaOverride
 )
 
 emulation.SetForcedColorsModeThemeOverride = (
@@ -3149,6 +3188,24 @@ emulation.SetLocaleOverrideParameters = {
   locale: text / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetMediaFeaturesOverride = (
+  method: "emulation.setMediaFeaturesOverride",
+  params: emulation.SetMediaFeaturesOverrideParameters
+)
+
+emulation.SetMediaFeaturesOverrideParameters = {
+  features: emulation.MediaFeatures / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.MediaFeatures = [emulation.MediaFeature]
+
+emulation.MediaFeature = {
+   name: text
+   value: text
 }
 
 emulation.SetNetworkConditions = (
@@ -3210,6 +3267,17 @@ emulation.SetUserAgentOverride = (
 
 emulation.SetUserAgentOverrideParameters = {
   userAgent: text / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetViewportMetaOverride = (
+  method: "emulation.setViewportMetaOverride",
+  params: emulation.SetViewportMetaOverrideParameters
+)
+
+emulation.SetViewportMetaOverrideParameters = {
+  viewportMeta: true / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
@@ -4778,12 +4846,14 @@ EmulationResult = (
   emulation.SetForcedColorsModeThemeOverrideResult /
   emulation.SetGeolocationOverrideResult /
   emulation.SetLocaleOverrideResult /
+  emulation.SetMediaFeaturesOverrideResult /
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
-  emulation.SetUserAgentOverrideResult
+  emulation.SetUserAgentOverrideResult /
+  emulation.SetViewportMetaOverrideResult
 )
 
 emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
@@ -4792,6 +4862,8 @@ emulation.SetGeolocationOverrideResult = EmptyResult
 
 emulation.SetLocaleOverrideResult = EmptyResult
 
+emulation.SetMediaFeaturesOverrideResult = EmptyResult
+
 emulation.SetNetworkConditionsResult = EmptyResult
 
 emulation.SetScreenSettingsOverrideResult = EmptyResult
@@ -4799,6 +4871,8 @@ emulation.SetScreenSettingsOverrideResult = EmptyResult
 emulation.SetScreenOrientationOverrideResult = EmptyResult
 
 emulation.SetUserAgentOverrideResult = EmptyResult
+
+emulation.SetViewportMetaOverrideResult = EmptyResult
 
 emulation.SetScriptingEnabledResult = EmptyResult
 
