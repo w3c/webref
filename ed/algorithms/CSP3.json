@@ -594,19 +594,13 @@
     },
     {
       "html": "Given a <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var>, a list of strings <var>parameterStrings</var>, a string <var>bodyString</var>, a string <var>codeString</var>, an enum (<var>compilationType</var>),\n  a list of ECMAScript language values (<var>parameterArgs</var>), and an ECMAScript language value (<var>bodyArg</var>), this algorithm\n  returns normally if string compilation is allowed, and throws an \"<code>EvalError</code>\"\n  if not:",
-      "rationale": "if",
+      "rationale": "let",
       "steps": [
         {
-          "html": "If <var>compilationType</var> is \"<code>TIMER</code>\", then:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>sourceString</var> be <var>codeString</var>.</p>"
-            }
-          ]
+          "html": "<p>Let <var>sourceString</var> be <var>codeString</var>.</p>"
         },
         {
-          "html": "Else:",
+          "html": "If <var>compilationType</var> is not \"<code>TIMER</code>\", then:",
           "rationale": "let",
           "steps": [
             {
@@ -655,16 +649,19 @@
               ]
             },
             {
-              "html": "<p>Let <var>sourceToValidate</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript②\">TrustedScript</a></code> object created in <var>realm</var>\n  whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript-data\" id=\"ref-for-trustedscript-data②\">data</a> is set to <var>codeString</var> if <var>isTrusted</var> is <code>true</code>, and\n  <var>codeString</var> otherwise.</p>"
-            },
-            {
-              "html": "<p>Let <var>sourceString</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string\">get trusted type compliant string</a> algorithm, with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript③\">TrustedScript</a></code>, <var>realm</var>, <var>sourceToValidate</var>, <var>compilationSink</var>, and <code>'script'</code>.</p>"
-            },
-            {
-              "html": "<p>If the algorithm throws an error, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror\">EvalError</a></code>.</p>"
-            },
-            {
-              "html": "<p>If <var>sourceString</var> is not equal to <var>codeString</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror①\">EvalError</a></code>.</p>"
+              "html": "If <var>isTrusted</var> is <code>false</code>, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>sourceString</var> to the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string\">get trusted type compliant string</a> algorithm, with\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript②\">TrustedScript</a></code>, <var>realm</var>, <var>codeString</var>, <var>compilationSink</var>, and <code>'script'</code>.</p>"
+                },
+                {
+                  "html": "<p>If the algorithm throws an error, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror\">EvalError</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>sourceString</var> is not equal to <var>codeString</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror①\">EvalError</a></code>.</p>"
+                }
+              ]
             }
           ]
         },
