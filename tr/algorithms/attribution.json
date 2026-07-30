@@ -139,7 +139,10 @@
               "html": "<p>Let <var>epoch</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-index\" id=\"ref-for-epoch-index③\">epoch index</a> component of <var>key</var>.</p>"
             },
             {
-              "html": "<p>Decrement <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑥\">global privacy budget store</a>[<var>epoch</var>] by <var>valueDeduction</var>.</p>"
+              "html": "<p>Let <var>currentGlobalValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">getting the value</a>\nof <var>epoch</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑥\">global privacy budget store</a>\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-per-epoch\" id=\"ref-for-global-privacy-budget-per-epoch\">global privacy budget per epoch</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <var>epoch</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑦\">global privacy budget store</a>\nto <var>currentGlobalValue</var> − <var>valueDeduction</var>.</p>"
             },
             {
               "html": "<p>Let <var>deductedImpressionQuotas</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑨\">set</a>.</p>"
@@ -162,10 +165,10 @@
                       "html": "<p>Let <var>impressionQuotaKey</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key③\">privacy budget key</a>\nwhose items are <var>epoch</var> and <var>impressionSite</var>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>currentImpressionQuotaValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">getting the value</a> of <var>impressionQuotaKey</var>\nin the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch\">impression site quota per epoch</a>\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch①\">impression site quota per epoch</a>.</p>"
+                      "html": "<p>Let <var>currentImpressionQuotaValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">getting the value</a> of <var>impressionQuotaKey</var>\nin the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch\">impression site quota per epoch</a>\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch①\">impression site quota per epoch</a>.</p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch②\">impression site quota per epoch</a>[<var>impressionQuotaKey</var>]\nto <var>currentImpressionQuotaValue</var> − <var>valueDeduction</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch②\">impression site quota per epoch</a>[<var>impressionQuotaKey</var>]\nto <var>currentImpressionQuotaValue</var> − <var>valueDeduction</var>.</p>"
                     }
                   ]
                 }
@@ -188,7 +191,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>currentValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">getting the value</a> of <var>key</var>\nfrom <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑦\">privacy budget store</a>,\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#per-site-privacy-budget\" id=\"ref-for-per-site-privacy-budget①\">per-site privacy budget</a>.</p>"
+          "html": "<p>Let <var>currentValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get③\">getting the value</a> of <var>key</var>\nfrom <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑦\">privacy budget store</a>,\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#per-site-privacy-budget\" id=\"ref-for-per-site-privacy-budget①\">per-site privacy budget</a>.</p>"
         },
         {
           "html": "<p>If <var>deduction</var> is greater than <var>currentValue</var>, return false.</p>"
@@ -197,7 +200,7 @@
           "html": "<p>Let <var>epoch</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-index\" id=\"ref-for-epoch-index④\">epoch index</a> component of <var>key</var>.</p>"
         },
         {
-          "html": "<p>Let <var>currentGlobalValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get③\">getting the value</a>\nof <var>epoch</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑦\">global privacy budget store</a>,\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-per-epoch\" id=\"ref-for-global-privacy-budget-per-epoch\">global privacy budget per epoch</a>.</p>"
+          "html": "<p>Let <var>currentGlobalValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get④\">getting the value</a>\nof <var>epoch</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑧\">global privacy budget store</a>,\nwith a default of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-per-epoch\" id=\"ref-for-global-privacy-budget-per-epoch①\">global privacy budget per epoch</a>.</p>"
         },
         {
           "html": "<p>If <var>valueDeduction</var> is greater than <var>currentGlobalValue</var>, return false.</p>"
@@ -213,7 +216,7 @@
               "html": "<p>Let <var>impressionQuotaKey</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key⑤\">privacy budget key</a>\nwhose items are <var>epoch</var> and <var>impressionSite</var>.</p>"
             },
             {
-              "html": "<p>Let <var>currentImpressionQuotaValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get④\">getting the value</a>\nof <var>impressionQuotaKey</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-store\" id=\"ref-for-impression-site-quota-store③\">impression site quota store</a>, with a default of\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch③\">impression site quota per epoch</a>.</p>"
+              "html": "<p>Let <var>currentImpressionQuotaValue</var> be set to the value of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get⑤\">getting the value</a>\nof <var>impressionQuotaKey</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-store\" id=\"ref-for-impression-site-quota-store③\">impression site quota store</a>, with a default of\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-per-epoch\" id=\"ref-for-impression-site-quota-per-epoch③\">impression site quota per epoch</a>.</p>"
             },
             {
               "html": "<p>If <var>valueDeduction</var> is greater than <var>currentImpressionQuotaValue</var>, return false.</p>"
@@ -387,7 +390,7 @@
                       "html": "<p>Let <var>key</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key⑦\">privacy budget key</a> formed\nfrom <var>site</var> and <var>epoch</var>.</p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑨\">privacy budget store</a>[<var>key</var>] to 0.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑨\">privacy budget store</a>[<var>key</var>] to 0.</p>"
                     }
                   ]
                 }
@@ -412,7 +415,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear①\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-site-quota-store\" id=\"ref-for-impression-site-quota-store④\">impression site quota store</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear②\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑧\">global privacy budget store</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear②\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#global-privacy-budget-store\" id=\"ref-for-global-privacy-budget-store⑨\">global privacy budget store</a>.</p>"
             }
           ]
         },
@@ -666,7 +669,7 @@
           "html": "<p>If <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://www.w3.org/TR/attribution/#dom-attribution-aggregationservices\" id=\"ref-for-dom-attribution-aggregationservices⑤\">aggregationServices</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a>\nan <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice③\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-referenceerror\" id=\"ref-for-exceptiondef-referenceerror\">ReferenceError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>aggregationService</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get⑤\">getting the value</a>\nfrom <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#attributionaggregationservices\" id=\"ref-for-attributionaggregationservices①\">AttributionAggregationServices</a></code>,\ngiven <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice④\">aggregationService</a></code>.</p>"
+          "html": "<p>Let <var>aggregationService</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get⑥\">getting the value</a>\nfrom <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#attributionaggregationservices\" id=\"ref-for-attributionaggregationservices①\">AttributionAggregationServices</a></code>,\ngiven <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice④\">aggregationService</a></code>.</p>"
         },
         {
           "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon①\">epsilon</a></code>\nis less than or equal to 0 or is greater than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-epsilon\" id=\"ref-for-maximum-epsilon\">maximum epsilon</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror④\">RangeError</a></code>.</p>"
