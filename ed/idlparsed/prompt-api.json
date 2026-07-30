@@ -1387,7 +1387,7 @@
         "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessagecontent"
       },
       "LanguageModelSamplingMode": {
-        "fragment": "enum LanguageModelSamplingMode { \"most-predictable\", \"predictable\", \"balanced\", \"creative\", \"most-creative\" };",
+        "fragment": "enum LanguageModelSamplingMode { \"most-predictable\", \"predictable\", \"slightly-predictable\", \"balanced\", \"slightly-creative\", \"creative\", \"most-creative\" };",
         "type": "enum",
         "name": "LanguageModelSamplingMode",
         "values": [
@@ -1403,8 +1403,18 @@
           },
           {
             "type": "enum-value",
+            "value": "slightly-predictable",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-slightly-predictable"
+          },
+          {
+            "type": "enum-value",
             "value": "balanced",
             "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-balanced"
+          },
+          {
+            "type": "enum-value",
+            "value": "slightly-creative",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-slightly-creative"
           },
           {
             "type": "enum-value",
