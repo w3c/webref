@@ -2804,7 +2804,19 @@
           "html": "<p>Set the <var>credential</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#backup-state\" id=\"ref-for-backup-state⑧\">backup state</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#credential-properties\" id=\"ref-for-credential-properties⑦\">credential property</a> to <var>backupState</var>.</p>"
         },
         {
-          "html": "<p>Associate a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter②⑤\">signature counter</a> <var>counter</var> to the <var>credential</var> with a starting value equal to the <var>parameters</var>’\n <var>signCount</var> or <code>0</code> if <var>signCount</var> is <code>null</code>.</p>"
+          "html": "<p>Let <var>signCount</var> be the <var>parameters</var>’ <var>signCount</var> property.</p>"
+        },
+        {
+          "html": "<p>If <var>signCount</var> is not defined, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑨\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑧\">invalid argument</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>signCount</var> is set to a 32-bit unsigned integer value\n in the range <code>0</code> to <code>4294967295</code>, inclusive, associate a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter②⑥\">signature counter</a> <var>counter</var>\n to the <var>credential</var> with a starting value equal to <var>signCount</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>signCount</var> is <code>null</code>, do not associate a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter②⑦\">signature counter</a> to the <var>credential</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⓪\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⓪\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>If <var>largeBlob</var> is not <code>null</code>, set the <a data-link-type=\"dfn\" href=\"https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html#authenticatorLargeBlobs\" id=\"ref-for-authenticatorLargeBlobs②\">large, per-credential blob</a> associated to the <var>credential</var> to <var>largeBlob</var>.</p>"
@@ -2822,13 +2834,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②④\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database④\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⑨\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②④\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database④\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⓪\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>credentialsArray</var> be an empty array.</p>"
         },
         {
-          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑦⑧\">Public Key Credential Source</a> <var>credential</var>, managed by the authenticator identified by <var>authenticatorId</var>,\nconstruct a corresponding <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#credential-parameters\" id=\"ref-for-credential-parameters②\">Credential Parameters</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object④\">Object</a> and add it to <var>credentialsArray</var>.</p>"
+          "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑦⑦\">Public Key Credential Source</a> <var>credential</var>, managed by the authenticator identified by <var>authenticatorId</var>,\nconstruct a corresponding <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#credential-parameters\" id=\"ref-for-credential-parameters②\">Credential Parameters</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object④\">Object</a> and add it to <var>credentialsArray</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success③\">success</a> with data containing <var>credentialsArray</var>.</p>"
@@ -2840,16 +2852,16 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②⑥\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑤\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⓪\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⓪\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑨\">invalid argument</a>.</p>"
+          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②⑥\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑤\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②②\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②①\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>authenticator</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②⑦\">Virtual Authenticator</a> identified by <var>authenticatorId</var>.</p>"
         },
         {
-          "html": "<p>If <var>credentialId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧⓪\">Public Key Credential Source</a> managed by <var>authenticator</var>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②①\">WebDriver error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⓪\">invalid argument</a>.</p>"
+          "html": "<p>If <var>credentialId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑦⑨\">Public Key Credential Source</a> managed by <var>authenticator</var>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②③\">WebDriver error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②②\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>Remove the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧①\">Public Key Credential Source</a> identified by <var>credentialId</var> managed by <var>authenticator</var>.</p>"
+          "html": "<p>Remove the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧⓪\">Public Key Credential Source</a> identified by <var>credentialId</var> managed by <var>authenticator</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success④\">success</a>.</p>"
@@ -2861,10 +2873,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②⑨\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑥\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②②\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②①\">invalid argument</a>.</p>"
+          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators②⑨\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑥\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②④\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②③\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>Remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧③\">Public Key Credential Sources</a> managed by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③⓪\">Virtual Authenticator</a> identified by <var>authenticatorId</var>.</p>"
+          "html": "<p>Remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧②\">Public Key Credential Sources</a> managed by the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③⓪\">Virtual Authenticator</a> identified by <var>authenticatorId</var>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤\">success</a>.</p>"
@@ -2876,13 +2888,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>parameters</var> is not a JSON <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object⑥\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②③\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②③\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②②\">invalid argument</a>.</p>"
+          "html": "<p>If <var>parameters</var> is not a JSON <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object⑥\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑤\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑤\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②④\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③③\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑦\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②④\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②③\">invalid argument</a>.</p>"
+          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③③\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑦\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑥\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑥\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑤\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>isUserVerified</var> is not a defined property of <var>parameters</var>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑤\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑤\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②④\">invalid argument</a>.</p>"
+          "html": "<p>If <var>isUserVerified</var> is not a defined property of <var>parameters</var>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑦\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑦\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑥\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>authenticator</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③④\">Virtual Authenticator</a> identified by <var>authenticatorId</var>.</p>"
@@ -2900,16 +2912,16 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>parameters</var> is not a JSON <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object⑧\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑥\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑥\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑤\">invalid argument</a>.</p>"
+          "html": "<p>If <var>parameters</var> is not a JSON <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-object\" id=\"ref-for-dfn-object⑧\">Object</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑧\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑧\">WebDriver error code</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑦\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③⑥\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑧\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑦\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑦\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑥\">invalid argument</a>.</p>"
+          "html": "<p>If <var>authenticatorId</var> does not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticators\" id=\"ref-for-virtual-authenticators③⑥\">Virtual Authenticator</a> stored in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#virtual-authenticator-database\" id=\"ref-for-virtual-authenticator-database⑧\">Virtual Authenticator Database</a>, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑨\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑨\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑧\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>Let <var>credential</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧⑤\">public key credential source</a> managed by <var>authenticator</var> matched by <var>credentialId</var>.</p>"
+          "html": "<p>Let <var>credential</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#public-key-credential-source\" id=\"ref-for-public-key-credential-source⑧④\">public key credential source</a> managed by <var>authenticator</var> matched by <var>credentialId</var>.</p>"
         },
         {
-          "html": "<p>If <var>credential</var> is empty, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②⑧\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②⑧\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑦\">invalid argument</a>.</p>"
+          "html": "<p>If <var>credential</var> is empty, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error③⓪\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code③⓪\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>backupEligibility</var> be the <var>parameters</var>’ <var>backupEligibility</var> property.</p>"
@@ -2922,6 +2934,24 @@
         },
         {
           "html": "<p>If <var>backupState</var> is defined, set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#backup-state\" id=\"ref-for-backup-state①⓪\">backup state</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#credential-properties\" id=\"ref-for-credential-properties①②\">credential property</a> of <var>credential</var> to the value of <var>backupState</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signCount</var> be the <var>parameters</var>’ <var>signCount</var> property.</p>"
+        },
+        {
+          "html": "If <var>signCount</var> is defined:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>signCount</var> is set to a 32-bit unsigned integer value in the range <code>0</code> to\n <code>4294967295</code>, inclusive, set the existing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter③⓪\">signature counter</a> of <var>credential</var>\n to the value of <var>signCount</var>. If the <var>credential</var> has no <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter③①\">signature counter</a>,\n associate one to <var>credential</var> and set it to the value of <var>signCount</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>signCount</var> is <code>null</code>, remove any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webauthn/#signature-counter\" id=\"ref-for-signature-counter③②\">signature counter</a> set to the <var>credential</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error③①\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code③①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③⓪\">invalid argument</a>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦\">success</a>.</p>"

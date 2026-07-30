@@ -80,7 +80,7 @@
       ]
     },
     {
-      "html": "This section describes an approach first developed and documented at\n<a href=\"https://github.com/explainers-by-googlers/Partitioning-visited-links-history\">https://github.com/explainers-by-googlers/Partitioning-visited-links-history</a>,\nthat partitions a user’s browsing history information,\nto allow <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/selectors-4/#visited-pseudo\" id=\"ref-for-visited-pseudo①③\">:visited</a> to only match links\ncorresponding to navigations that the site’s origin could have observed on its own.\nWith this, <span class=\"css\" id=\"ref-for-visited-pseudo①④\">:visited</span> can be treated as a normal pseudo-class,\nwithout any of the complex mitigations described above,\nas it doesn’t expose any information not already theoretically available to the site,\nwhile still preserving as much of the <em>usefulness</em> of <span class=\"css\" id=\"ref-for-visited-pseudo①⑤\">:visited</span> as possible for the user.",
+      "html": "Due to legacy Web-compat constraints,\n\tuser agents expecting to parse Web documents must support the following features:",
       "rationale": "let",
       "steps": [
         {
