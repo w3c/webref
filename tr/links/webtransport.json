@@ -69,16 +69,6 @@
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://datatracker.ietf.org/doc/html/rfc8441": {
-        "anchors": [
-          "section-3"
-        ]
-      },
-      "https://datatracker.ietf.org/doc/html/rfc9221": {
-        "anchors": [
-          "section-3"
-        ]
-      },
       "https://datatracker.ietf.org/doc/html/rfc9308": {
         "anchors": [
           "section-4.4"
@@ -145,22 +135,26 @@
       "https://www.rfc-editor.org/info/rfc5280/": {},
       "https://www.rfc-editor.org/info/rfc7301/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
-      "https://www.rfc-editor.org/info/rfc8422/": {},
-      "https://www.rfc-editor.org/info/rfc8446/": {},
-      "https://www.rfc-editor.org/info/rfc9002/": {},
-      "https://www.rfc-editor.org/info/rfc9308/": {},
-      "https://www.rfc-editor.org/info/rfc9525/": {},
-      "https://www.rfc-editor.org/rfc/rfc8446": {
+      "https://www.rfc-editor.org/info/rfc8441/": {
         "anchors": [
-          "section-7.3"
+          "section-3"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc9000": {
+      "https://www.rfc-editor.org/info/rfc9000/": {
         "anchors": [
           "section-19.11",
           "section-3.2"
         ]
       },
+      "https://www.rfc-editor.org/info/rfc9002/": {},
+      "https://www.rfc-editor.org/info/rfc9221/": {
+        "anchors": [
+          "section-3"
+        ]
+      },
+      "https://www.rfc-editor.org/info/rfc9308/": {},
+      "https://www.rfc-editor.org/info/rfc9525/": {},
+      "https://www.rfc-editor.org/info/rfc9846/": {},
       "https://www.rfc-editor.org/rfc/rfc9002": {
         "anchors": [
           "section-7",
@@ -174,7 +168,11 @@
           "section-3"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc9221": {},
+      "https://www.rfc-editor.org/rfc/rfc9846": {
+        "anchors": [
+          "section-7.3"
+        ]
+      },
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
       "https://www.w3.org/2004/01/pp-impl/125908/status": {},
       "https://www.w3.org/TR/": {},
@@ -190,13 +188,16 @@
       "https://www.w3.org/groups/wg/webtransport": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
+          "sec-Requirements",
           "def-essential",
           "sec-Disclosure"
         ]
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
-          "recs-and-notes"
+          "recs-and-notes",
+          "dfn-wide-review",
+          "allow-new-features"
         ]
       }
     },
@@ -261,13 +262,6 @@
           "concept-body-stream",
           "http-origin",
           "dom-global-fetch"
-        ]
-      },
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "dfn-create-exception",
-          "domexception-name",
-          "domexception-message"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -376,11 +370,6 @@
           "concept-url-fragment"
         ]
       },
-      "https://w3ctag.github.io/privacy-principles/": {
-        "anchors": [
-          "dfn-cross-site-recognition"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
@@ -411,6 +400,7 @@
           "idl-boolean",
           "syntaxerror",
           "notsupportederror",
+          "dfn-create-exception",
           "upon-fulfillment",
           "aborterror",
           "dfn-dictionary-member",
@@ -426,12 +416,19 @@
           "dfn-perform-steps-once-promise-is-settled",
           "idl-DOMException",
           "Clamp",
+          "domexception-name",
+          "domexception-message",
           "dom-domexception-code"
         ]
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
           "websocket"
+        ]
+      },
+      "https://www.w3.org/TR/2025/STMT-privacy-principles-20250515/": {
+        "anchors": [
+          "dfn-cross-site-recognition"
         ]
       },
       "https://www.w3.org/TR/CSP3/": {
