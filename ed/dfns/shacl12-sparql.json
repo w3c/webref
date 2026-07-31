@@ -396,11 +396,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rules-syntax",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-syntax",
-        "title": "General Syntax of SHACL Rules",
+        "id": "rules-definition",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-definition",
+        "title": "General Definition of SHACL Rules",
         "alternateIds": [
-          "x7-2-general-syntax-of-shacl-rules"
+          "x7-2-general-definition-of-shacl-rules"
         ],
         "number": "7.2"
       },
@@ -420,11 +420,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rules-syntax",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-syntax",
-        "title": "General Syntax of SHACL Rules",
+        "id": "rules-definition",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-definition",
+        "title": "General Definition of SHACL Rules",
         "alternateIds": [
-          "x7-2-general-syntax-of-shacl-rules"
+          "x7-2-general-definition-of-shacl-rules"
         ],
         "number": "7.2"
       },
@@ -443,11 +443,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rules-syntax",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-syntax",
-        "title": "General Syntax of SHACL Rules",
+        "id": "rules-definition",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-definition",
+        "title": "General Definition of SHACL Rules",
         "alternateIds": [
-          "x7-2-general-syntax-of-shacl-rules"
+          "x7-2-general-definition-of-shacl-rules"
         ],
         "number": "7.2"
       },
@@ -466,11 +466,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "ruletypes",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#ruletypes",
-        "title": "Types of SHACL Rules",
+        "id": "global-rules",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#global-rules",
+        "title": "Shape Rules and Global Rules (sh:rule)",
         "alternateIds": [
-          "x7-2-1-types-of-shacl-rules"
+          "x7-2-1-shape-rules-and-global-rules-sh-rule"
         ],
         "number": "7.2.1"
       },
@@ -478,9 +478,10 @@
       "links": []
     },
     {
-      "id": "dfn-global-rule",
-      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-global-rule",
+      "id": "dfn-global",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-global",
       "linkingText": [
+        "global",
         "global rule"
       ],
       "localLinkingText": [],
@@ -489,13 +490,37 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "ruletypes",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#ruletypes",
-        "title": "Types of SHACL Rules",
+        "id": "global-rules",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#global-rules",
+        "title": "Shape Rules and Global Rules (sh:rule)",
         "alternateIds": [
-          "x7-2-1-types-of-shacl-rules"
+          "x7-2-1-shape-rules-and-global-rules-sh-rule"
         ],
         "number": "7.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-stratum",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-stratum",
+      "linkingText": [
+        "stratum",
+        "strata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-strata",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rule-strata",
+        "title": "Grouping of Rules into Strata (sh:stratum)",
+        "alternateIds": [
+          "x7-2-4-grouping-of-rules-into-strata-sh-stratum"
+        ],
+        "number": "7.2.4"
       },
       "definedIn": "prose",
       "links": []
@@ -512,13 +537,59 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rules-order",
-        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-order",
-        "title": "sh:order",
+        "id": "rule-order",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rule-order",
+        "title": "Ordering of Rules (sh:order)",
         "alternateIds": [
-          "x7-2-3-sh-order"
+          "x7-2-5-ordering-of-rules-sh-order"
         ],
-        "number": "7.2.3"
+        "number": "7.2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-run-once-rule",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-run-once-rule",
+      "linkingText": [
+        "run-once rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "run-once",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#run-once",
+        "title": "Run-once Rules (sh:runOnce)",
+        "alternateIds": [
+          "x7-2-6-run-once-rules-sh-runonce"
+        ],
+        "number": "7.2.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-iterating-rules",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-iterating-rules",
+      "linkingText": [
+        "iterating rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "run-once",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#run-once",
+        "title": "Run-once Rules (sh:runOnce)",
+        "alternateIds": [
+          "x7-2-6-run-once-rules-sh-runonce"
+        ],
+        "number": "7.2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -619,6 +690,76 @@
       "links": []
     },
     {
+      "id": "dfn-execution",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-execution",
+      "linkingText": [
+        "execution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x7-5-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "7.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-iterate",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-iterate",
+      "linkingText": [
+        "iterate",
+        "iteration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x7-5-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "7.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-execution-of-a-rule-set",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-execution-of-a-rule-set",
+      "linkingText": [
+        "execution of a rule set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x7-5-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "7.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dfn-sparql-rule",
       "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-sparql-rule",
       "linkingText": [
@@ -635,9 +776,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#SPARQLRule",
         "title": "SPARQL Rules",
         "alternateIds": [
-          "x7-6-sparql-rules"
+          "x7-7-sparql-rules"
         ],
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "prose",
       "links": []
