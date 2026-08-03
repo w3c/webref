@@ -6,7 +6,7 @@
       "title": "Container Timing API",
       "url": "https://wicg.github.io/container-timing/"
     },
-    "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute Element? lastPaintedElement;\n    readonly attribute Element? rootElement;\n};",
+    "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute HTMLElement? lastPaintedElement;\n    readonly attribute HTMLElement? rootElement;\n};",
     "href": "https://wicg.github.io/container-timing/#performancecontainertiming"
   },
   "extended": [

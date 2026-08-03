@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "PerformanceContainerTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute Element? lastPaintedElement;\n    readonly attribute Element? rootElement;\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute HTMLElement? lastPaintedElement;\n    readonly attribute HTMLElement? rootElement;\n};",
         "type": "interface",
         "name": "PerformanceContainerTiming",
         "inheritance": "PerformanceEntry",
@@ -92,7 +92,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "Element"
+              "idlType": "HTMLElement"
             },
             "extAttrs": [],
             "special": "",
@@ -108,7 +108,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "Element"
+              "idlType": "HTMLElement"
             },
             "extAttrs": [],
             "special": "",
@@ -141,11 +141,11 @@
           "includes": "PaintTimingMixin"
         }
       ],
-      "Element": [
+      "HTMLElement": [
         {
-          "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};",
+          "fragment": "partial interface HTMLElement {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};",
           "type": "interface",
-          "name": "Element",
+          "name": "HTMLElement",
           "inheritance": null,
           "members": [
             {
@@ -175,7 +175,7 @@
               ],
               "special": "",
               "readonly": false,
-              "href": "https://wicg.github.io/container-timing/#dom-element-containertiming"
+              "href": "https://wicg.github.io/container-timing/#dom-htmlelement-containertiming"
             },
             {
               "type": "attribute",
@@ -204,7 +204,7 @@
               ],
               "special": "",
               "readonly": false,
-              "href": "https://wicg.github.io/container-timing/#dom-element-containertimingignore"
+              "href": "https://wicg.github.io/container-timing/#dom-htmlelement-containertimingignore"
             }
           ],
           "extAttrs": [],
@@ -223,16 +223,16 @@
         "PerformanceEntry",
         "DOMRectReadOnly",
         "DOMHighResTimeStamp",
-        "Element",
+        "HTMLElement",
         "PaintTimingMixin"
       ],
-      "Element": []
+      "HTMLElement": []
     },
     "externalDependencies": [
       "PerformanceEntry",
       "DOMRectReadOnly",
       "DOMHighResTimeStamp",
-      "Element"
+      "HTMLElement"
     ],
     "hasObsoleteIdl": false
   }

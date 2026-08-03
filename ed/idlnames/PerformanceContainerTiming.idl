@@ -5,8 +5,8 @@ interface PerformanceContainerTiming : PerformanceEntry {
     readonly attribute DOMRectReadOnly intersectionRect;
     readonly attribute unsigned long long size;
     readonly attribute DOMHighResTimeStamp firstRenderTime;
-    readonly attribute Element? lastPaintedElement;
-    readonly attribute Element? rootElement;
+    readonly attribute HTMLElement? lastPaintedElement;
+    readonly attribute HTMLElement? rootElement;
 };
 
 // Source: Container Timing API (https://wicg.github.io/container-timing/)

@@ -60,6 +60,13 @@
       },
       {
         "spec": {
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        "fragment": "partial interface HTMLElement {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};"
+      },
+      {
+        "spec": {
           "title": "CSS Object Model (CSSOM) Module Level 1",
           "url": "https://www.w3.org/TR/cssom-1/"
         },
@@ -147,13 +154,6 @@
             "url": "https://w3c.github.io/element-timing/"
           },
           "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString elementTiming;\n};"
-        },
-        {
-          "spec": {
-            "title": "Container Timing API",
-            "url": "https://wicg.github.io/container-timing/"
-          },
-          "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString containerTiming;\n    [CEReactions, Reflect] attribute boolean containerTimingIgnore;\n};"
         },
         {
           "spec": {
