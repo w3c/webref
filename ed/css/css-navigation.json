@@ -1,14 +1,14 @@
 {
   "spec": {
-    "title": "CSS Route and Navigation Matching",
+    "title": "CSS Navigation Matching",
     "url": "https://drafts.csswg.org/css-navigation-1/"
   },
   "properties": [],
   "atrules": [
     {
-      "name": "@route",
-      "prose": "The @route rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
-      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
+      "name": "@location",
+      "prose": "The @location rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-location",
       "descriptors": []
     },
     {
@@ -34,26 +34,26 @@
   ],
   "values": [
     {
-      "name": "<route-location>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
+      "name": "<navigation-location>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
       "type": "type",
-      "value": "<url> | [ <route-name> | <url-pattern()> ]"
+      "value": "<url> | [ <location-name> | <url-pattern()> ]"
     },
     {
-      "name": "<route-name>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
+      "name": "<location-name>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-name",
       "type": "type",
       "value": "<dashed-ident>"
     },
     {
-      "name": "<route-rule>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-rule",
+      "name": "<location-rule>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-rule",
       "type": "type",
-      "value": "@route <dashed-ident> { <declaration-list> }"
+      "value": "@location <dashed-ident> { <declaration-list> }"
     },
     {
-      "name": "<route-descriptor>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-descriptor",
+      "name": "<location-descriptor>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-descriptor",
       "type": "type",
       "value": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>"
     },
@@ -110,19 +110,19 @@
       "name": "<navigation-location-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
       "type": "type",
-      "value": "<navigation-relation> : <route-location>"
+      "value": "<navigation-relation> : <navigation-location>"
     },
     {
       "name": "<navigation-relation>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation",
       "type": "type",
-      "value": "at | with | from | to"
+      "value": "at | from | to"
     },
     {
       "name": "<navigation-location-between-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
       "type": "type",
-      "value": "between : <route-location> and <route-location>"
+      "value": "between : <navigation-location> and <navigation-location>"
     },
     {
       "name": "<navigation-type-test>",

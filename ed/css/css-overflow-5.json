@@ -90,6 +90,38 @@
       ]
     },
     {
+      "name": "scroll-axis-lock",
+      "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-axis-lock",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "scroll container elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The user agent must not lock scrolls on the element to one axis.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-axis-lock-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The user agent may lock scrolls on the element to one axis.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-axis-lock-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-axis-lock",
+        "scrollAxisLock"
+      ]
+    },
+    {
       "name": "continue",
       "newValues": "overflow | paginate | fragments",
       "initial": "auto",

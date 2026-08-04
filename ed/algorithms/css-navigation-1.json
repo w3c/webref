@@ -1,28 +1,28 @@
 {
   "spec": {
-    "title": "CSS Route and Navigation Matching",
+    "title": "CSS Navigation Matching",
     "url": "https://drafts.csswg.org/css-navigation-1/"
   },
   "algorithms": [
     {
-      "name": "route-location/match",
-      "href": "https://drafts.csswg.org/css-navigation-1/#route-location-match",
-      "html": "A <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-route-location\" id=\"ref-for-typedef-route-location②\">&lt;route-location&gt;</a> is defined to\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"route-location\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"route-location-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>-or-null <var>input</var> if <var>input</var> is non-null,\nand the corresponding statement:",
+      "name": "navigation-location/match",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-location-match",
+      "html": "A <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location\" id=\"ref-for-typedef-navigation-location②\">&lt;navigation-location&gt;</a> is defined to\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"navigation-location\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"navigation-location-match\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match</dfn> a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a>-or-null <var>input</var> if <var>input</var> is non-null,\nand the corresponding statement:",
       "rationale": ".switch",
       "steps": [
         {
           "operation": "switch",
           "steps": [
             {
-              "case": "the <route-location> is a <route-name>",
-              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern\">URL pattern</a> represented by the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#at-ruledef-route\" id=\"ref-for-at-ruledef-route\">@route</a> rule referenced by the name <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match\">matching</a> <var>input</var>.</p>"
+              "case": "the <navigation-location> is a <location-name>",
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern\">URL pattern</a> represented by the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#at-ruledef-location\" id=\"ref-for-at-ruledef-location\">@location</a> rule referenced by the name <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match\">matching</a> <var>input</var>.</p>"
             },
             {
-              "case": "the <route-location> is a <url-pattern()>",
+              "case": "the <navigation-location> is a <url-pattern()>",
               "html": "<p>The provided <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern①\">URL pattern</a><a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match①\">matches</a> <var>input</var>.</p>"
             },
             {
-              "case": "the <route-location> is a <url>",
+              "case": "the <navigation-location> is a <url>",
               "html": "<p>The provided <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equals</a> <var>input</var>.</p>"
             }
           ]
@@ -167,10 +167,6 @@
             {
               "case": "at",
               "html": "<p><var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-new-url\" id=\"ref-for-navigation-state-new-url③\">new URL</a> if <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-phase\" id=\"ref-for-navigation-state-phase③\">phase</a> is `committed`; Otherwise <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-old-url\" id=\"ref-for-navigation-state-old-url③\">old URL</a>.</p>"
-            },
-            {
-              "case": "with",
-              "html": "<p><var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-old-url\" id=\"ref-for-navigation-state-old-url④\">old URL</a> if <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-phase\" id=\"ref-for-navigation-state-phase④\">phase</a> is `committed`; Otherwise <var>state</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#navigation-state-new-url\" id=\"ref-for-navigation-state-new-url④\">new URL</a>.</p>"
             }
           ]
         }
