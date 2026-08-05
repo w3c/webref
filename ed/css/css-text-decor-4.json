@@ -262,7 +262,7 @@
     {
       "name": "text-decoration-inset",
       "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-inset",
-      "value": "<length>{1,2} | auto",
+      "value": "<length-percentage>{1,2} | auto",
       "initial": "0",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -272,11 +272,11 @@
       "animationType": "by computed value",
       "values": [
         {
-          "name": "<length>",
-          "prose": "Adjusts the start or end endpoint of the affected line decorations. Positive values move the endpoint inward (trimming), negative values move it outward (extending). The following example offsets an extra thick underline 1em endwards with respect to the text h1 { text-decoration: underline 0.3em rgba(36,148,187,0.25); text-decoration-inset: 1em -1em; }",
-          "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-inset-length",
+          "name": "<length-percentage>",
+          "prose": "Adjusts the start or end endpoint of the affected line decorations. Positive values move the endpoint inward (trimming), negative values move it outward (extending). A percentage value specifies the size of the inset as a percentage of the used font-size. The following example offsets an extra thick underline 1em endwards with respect to the text h1 { text-decoration: underline 0.3em rgba(36,148,187,0.25); text-decoration-inset: 1em -1em; }",
+          "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-inset-length-percentage",
           "type": "value",
-          "value": "<length>"
+          "value": "<length-percentage>"
         },
         {
           "name": "auto",
