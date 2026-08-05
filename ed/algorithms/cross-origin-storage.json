@@ -58,7 +58,7 @@
               "rationale": "run",
               "steps": [
                 {
-                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#complete-a-create-request\" id=\"ref-for-complete-a-create-request\">complete a create request</a> given <var>result</var>, <var>hash</var>, <var>options</var>, <var>global</var>, and\n <var>realm</var>.</p>"
+                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#complete-a-create-request\" id=\"ref-for-complete-a-create-request①\">complete a create request</a> given <var>result</var>, <var>hash</var>, <var>options</var>, <var>global</var>, and\n <var>realm</var>.</p>"
                 }
               ]
             },
@@ -258,6 +258,9 @@
           ]
         },
         {
+          "html": "<p>Increment <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-pending-writer-count\" id=\"ref-for-cos-entry-pending-writer-count\">pending writer count</a> by 1.</p>"
+        },
+        {
           "html": "<p>Let <var>handle</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-new-filesystemfilehandle\" id=\"ref-for-creating-a-new-filesystemfilehandle①\">creating a new <code>FileSystemFileHandle</code></a> <a data-link-type=\"biblio\" href=\"https://wicg.github.io/cross-origin-storage/#biblio-fs\" title=\"File System Standard\">[FS]</a> whose\n <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①\">locator</a> addresses <var>entry</var> within the\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-file-system\" id=\"ref-for-cross-origin-storage-file-system①\">Cross-Origin Storage file system</a>, in <var>realm</var>.</p>"
         },
         {
@@ -314,7 +317,19 @@
           "rationale": "reject",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> the closing operation’s promise with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror①\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>, leaving\n  <var>entry</var> unmodified.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> the closing operation’s promise with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror①\">DataError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">Enqueue the following steps</a> to the\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-queue\" id=\"ref-for-cross-origin-storage-queue①\">Cross-Origin Storage queue</a>:",
+              "rationale": "decrement",
+              "steps": [
+                {
+                  "html": "<p>Decrement <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-pending-writer-count\" id=\"ref-for-cos-entry-pending-writer-count①\">pending writer count</a> by 1.</p>"
+                },
+                {
+                  "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-state\" id=\"ref-for-cos-entry-state③\">state</a> is \"<code>pending</code>\" and <var>entry</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-pending-writer-count\" id=\"ref-for-cos-entry-pending-writer-count②\">pending writer count</a> is 0, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">remove</a> <var>entry</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash⑦\">hash</a> from the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-registry\" id=\"ref-for-cos-registry④\">COS registry</a>.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -322,17 +337,20 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">Enqueue the following steps</a> to the\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-queue\" id=\"ref-for-cross-origin-storage-queue①\">Cross-Origin Storage queue</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps③\">Enqueue the following steps</a> to the\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-queue\" id=\"ref-for-cross-origin-storage-queue②\">Cross-Origin Storage queue</a>:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-bytes\" id=\"ref-for-cos-entry-bytes②\">bytes</a> to <var>bytes</var>.</p>"
             },
             {
-              "html": "<p>Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-state\" id=\"ref-for-cos-entry-state③\">state</a> to \"<code>written</code>\".</p>"
+              "html": "<p>Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-state\" id=\"ref-for-cos-entry-state⑤\">state</a> to \"<code>written</code>\".</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>origin</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑦\">storing origins</a>, if not already present.</p>"
+            },
+            {
+              "html": "<p>Decrement <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-pending-writer-count\" id=\"ref-for-cos-entry-pending-writer-count③\">pending writer count</a> by 1.</p>"
             },
             {
               "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility\" id=\"ref-for-upgrade-resource-visibility\">upgrade resource visibility</a> given <var>entry</var> and the handle’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-requested-origins\" id=\"ref-for-filesystemfilehandle-requested-origins①\">requested origins</a>.</p>"
