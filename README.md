@@ -31,6 +31,7 @@ More often than not, released versions of specifications are much older than the
 
 The following subfolders in the `curated` branch contain individual machine-readable JSON or text files generated from specifications:
 
+- [`ed/backrefs`](https://github.com/w3c/webref/tree/curated/ed/backrefs): Back references to definitions. For each term a specification defines that is referenced from elsewhere, the list of referencing specifications. One file per defining specification. This is a curated, derived view built from `dfns` and `links` extracts (not a raw crawl extract). See [Backrefs extracts](#backrefs-extracts) for the schema and guarantees.
 - [`ed/cddl`](https://github.com/w3c/webref/tree/curated/ed/cddl): CDDL modules. If the specification defines a single CDDL module, one file gets created for the specification. If it defines multiple CDDL modules, one file gets created per CDDL module, plus one file named `[shortname]-all.cddl` with all CDDL definitions.
 - [`ed/css`](https://github.com/w3c/webref/tree/curated/ed/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [`ed/dfns`](https://github.com/w3c/webref/tree/curated/ed/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
@@ -109,6 +110,48 @@ The consolidated `ed/events.json` file, released in the `@webref/events` package
 - All CDDL files pass CDDL analysis by the version of [Strudy](https://github.com/w3c/strudy) referenced in `package.json`. Said differently, all CDDL files can be parsed by the version of [cddlparser](https://github.com/tidoust/cddlparser) referenced by Strudy.
 
 The CDDL extracts are not released in an NPM package for the time being.
+
+### Backrefs extracts
+
+The `ed/backrefs` extracts are a curated, derived view generated from the `dfns` and `links` extracts. They are not released in an NPM package for the time being.
+
+Each file is named after the shortname of a **defining** specification and lists definitions from that specification that are referenced by at least one **other** specification. Self-references are omitted. Definitions with no external references are omitted. All definitions are considered, including private definitions and argument definitions (external references to private terms are useful to detect cross-spec discussions that may still be needed).
+
+Each extract has the following shape:
+
+```json
+{
+  "spec": {
+    "title": "Streams Standard",
+    "url": "https://streams.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "readablestream",
+      "href": "https://streams.spec.whatwg.org/#readablestream",
+      "linkingText": ["ReadableStream"],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Guarantees:
+
+- Every `backrefs[]` entry corresponds to a definition that exists in the defining spec's `dfns` extract (matched by `href`).
+- `id`, `href`, `linkingText`, `type`, `for`, and `access` are copied from that definition so the extract is usable on its own.
+- `referencedBy` is a non-empty list of distinct referencing specifications. The defining specification itself never appears in `referencedBy`.
+- Every `referencedBy[].shortname` identifies a specification present in the crawl `index.json`.
+- HTML and ECMAScript multipage fragment URLs are matched to their single-page equivalents when resolving references.
 
 ## Known consumers
 

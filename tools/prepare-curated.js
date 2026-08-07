@@ -4,7 +4,8 @@
  * Curation means copying raw data to the given folder, applying patches (CSS,
  * elements, events, IDL) when needed and running post-processing modules that
  * need to run on curated data to generate the `idlparsed`, `idlnames` and
- * `idlnamesparsed` folders, and the merged `events.json` and `css.json` files.
+ * `idlnamesparsed` folders, the merged `events.json` and `css.json` files,
+ * and per-spec `backrefs` extracts.
  *
  * The output folder gets created if it does not exist yet. Output folder
  * contents get deleted to start with if folder is not empty.
@@ -30,6 +31,7 @@ import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
 import { amendCssSyntaxes } from './amend-css-syntaxes.js';
 import { addCssLonghands } from './add-css-longhands.js';
 import { curateEvents } from './amend-event-data.js';
+import { prepareBackrefs } from './prepare-backrefs.js';
 import { crawlSpecs } from 'reffy';
 
 
@@ -140,6 +142,11 @@ async function prepareCurated(rawFolder, curatedFolder) {
     post: ['idlparsed', 'idlnames', 'events', 'cssmerge'],
     quiet: true
   });
+  console.log('- done');
+
+  console.log();
+  console.log('Prepare per-spec back-reference extracts');
+  await prepareBackrefs(curatedFolder);
   console.log('- done');
 }
 
