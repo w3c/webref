@@ -269,14 +269,54 @@
       "number": "6.2"
     },
     {
+      "id": "sparql-functions",
+      "href": "https://www.w3.org/TR/shacl12-sparql/#sparql-functions",
+      "level": 2,
+      "title": "Declaring SPARQL Functions based on Node Expressions",
+      "alternateIds": [
+        "x7-declaring-sparql-functions-based-on-node-expressions"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "example-sparql-function-using-general-node-expressions",
+      "href": "https://www.w3.org/TR/shacl12-sparql/#example-sparql-function-using-general-node-expressions",
+      "level": 3,
+      "title": "Example SPARQL Function using general Node Expressions",
+      "alternateIds": [
+        "x7-1-example-sparql-function-using-general-node-expressions"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "example-sparql-functions-using-sparql-based-node-expressions",
+      "href": "https://www.w3.org/TR/shacl12-sparql/#example-sparql-functions-using-sparql-based-node-expressions",
+      "level": 3,
+      "title": "Example SPARQL Functions using SPARQL-based Node Expressions",
+      "alternateIds": [
+        "x7-2-example-sparql-functions-using-sparql-based-node-expressions"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "evaluation-of-custom-sparql-functions",
+      "href": "https://www.w3.org/TR/shacl12-sparql/#evaluation-of-custom-sparql-functions",
+      "level": 3,
+      "title": "Evaluation of Custom SPARQL Functions",
+      "alternateIds": [
+        "x7-3-evaluation-of-custom-sparql-functions"
+      ],
+      "number": "7.3"
+    },
+    {
       "id": "sparql-rules",
       "href": "https://www.w3.org/TR/shacl12-sparql/#sparql-rules",
       "level": 2,
       "title": "SPARQL-based Inference Rules",
       "alternateIds": [
-        "x7-sparql-based-inference-rules"
+        "x8-sparql-based-inference-rules"
       ],
-      "number": "7"
+      "number": "8"
     },
     {
       "id": "rules-examples",
@@ -284,9 +324,9 @@
       "level": 3,
       "title": "Examples of SHACL Rules",
       "alternateIds": [
-        "x7-1-examples-of-shacl-rules"
+        "x8-1-examples-of-shacl-rules"
       ],
-      "number": "7.1"
+      "number": "8.1"
     },
     {
       "id": "rules-definition",
@@ -294,9 +334,9 @@
       "level": 3,
       "title": "General Definition of SHACL Rules",
       "alternateIds": [
-        "x7-2-general-definition-of-shacl-rules"
+        "x8-2-general-definition-of-shacl-rules"
       ],
-      "number": "7.2"
+      "number": "8.2"
     },
     {
       "id": "global-rules",
@@ -304,9 +344,9 @@
       "level": 4,
       "title": "Shape Rules and Global Rules (sh:rule)",
       "alternateIds": [
-        "x7-2-1-shape-rules-and-global-rules-sh-rule"
+        "x8-2-1-shape-rules-and-global-rules-sh-rule"
       ],
-      "number": "7.2.1"
+      "number": "8.2.1"
     },
     {
       "id": "condition",
@@ -314,9 +354,9 @@
       "level": 4,
       "title": "Conditions on Shape Rules (sh:condition)",
       "alternateIds": [
-        "x7-2-2-conditions-on-shape-rules-sh-condition"
+        "x8-2-2-conditions-on-shape-rules-sh-condition"
       ],
-      "number": "7.2.2"
+      "number": "8.2.2"
     },
     {
       "id": "deactivated-rules",
@@ -324,9 +364,9 @@
       "level": 4,
       "title": "Deactivated Rules (sh:deactivated)",
       "alternateIds": [
-        "x7-2-3-deactivated-rules-sh-deactivated"
+        "x8-2-3-deactivated-rules-sh-deactivated"
       ],
-      "number": "7.2.3"
+      "number": "8.2.3"
     },
     {
       "id": "rule-layers",
@@ -334,9 +374,9 @@
       "level": 4,
       "title": "Grouping of Rules into Layers (sh:layer)",
       "alternateIds": [
-        "x7-2-4-grouping-of-rules-into-layers-sh-layer"
+        "x8-2-4-grouping-of-rules-into-layers-sh-layer"
       ],
-      "number": "7.2.4"
+      "number": "8.2.4"
     },
     {
       "id": "rule-order",
@@ -344,9 +384,9 @@
       "level": 4,
       "title": "Ordering of Rules (sh:order)",
       "alternateIds": [
-        "x7-2-5-ordering-of-rules-sh-order"
+        "x8-2-5-ordering-of-rules-sh-order"
       ],
-      "number": "7.2.5"
+      "number": "8.2.5"
     },
     {
       "id": "run-once",
@@ -354,9 +394,19 @@
       "level": 4,
       "title": "Run-once Rules (sh:runOnce)",
       "alternateIds": [
-        "x7-2-6-run-once-rules-sh-runonce"
+        "x8-2-6-run-once-rules-sh-runonce"
       ],
-      "number": "7.2.6"
+      "number": "8.2.6"
+    },
+    {
+      "id": "expectedPredicate",
+      "href": "https://www.w3.org/TR/shacl12-sparql/#expectedPredicate",
+      "level": 4,
+      "title": "Expected Derived Triples (sh:expectedPredicate)",
+      "alternateIds": [
+        "x8-2-7-expected-derived-triples-sh-expectedpredicate"
+      ],
+      "number": "8.2.7"
     },
     {
       "id": "rules-graph",
@@ -364,9 +414,9 @@
       "level": 3,
       "title": "Rules Graph",
       "alternateIds": [
-        "x7-3-rules-graph"
+        "x8-3-rules-graph"
       ],
-      "number": "7.3"
+      "number": "8.3"
     },
     {
       "id": "Rules",
@@ -374,9 +424,9 @@
       "level": 3,
       "title": "The sh:Rules Entailment Regime",
       "alternateIds": [
-        "x7-4-the-sh-rules-entailment-regime"
+        "x8-4-the-sh-rules-entailment-regime"
       ],
-      "number": "7.4"
+      "number": "8.4"
     },
     {
       "id": "tempTriple",
@@ -384,9 +434,9 @@
       "level": 3,
       "title": "Temporary Triples",
       "alternateIds": [
-        "x7-5-temporary-triples"
+        "x8-5-temporary-triples"
       ],
-      "number": "7.5"
+      "number": "8.5"
     },
     {
       "id": "rules-execution",
@@ -394,9 +444,9 @@
       "level": 3,
       "title": "General Execution Instructions for SHACL Rules",
       "alternateIds": [
-        "x7-6-general-execution-instructions-for-shacl-rules"
+        "x8-6-general-execution-instructions-for-shacl-rules"
       ],
-      "number": "7.6"
+      "number": "8.6"
     },
     {
       "id": "sourceRule",
@@ -404,9 +454,9 @@
       "level": 3,
       "title": "Tracking the Rule that has produced a Triple (sh:sourceRule)",
       "alternateIds": [
-        "x7-7-tracking-the-rule-that-has-produced-a-triple-sh-sourcerule"
+        "x8-7-tracking-the-rule-that-has-produced-a-triple-sh-sourcerule"
       ],
-      "number": "7.7"
+      "number": "8.7"
     },
     {
       "id": "rule-variations",
@@ -414,9 +464,9 @@
       "level": 3,
       "title": "Variations of SHACL Rule Implementations",
       "alternateIds": [
-        "x7-8-variations-of-shacl-rule-implementations"
+        "x8-8-variations-of-shacl-rule-implementations"
       ],
-      "number": "7.8"
+      "number": "8.8"
     },
     {
       "id": "SPARQLRule",
@@ -424,9 +474,9 @@
       "level": 3,
       "title": "SPARQL Rules",
       "alternateIds": [
-        "x7-9-sparql-rules"
+        "x8-9-sparql-rules"
       ],
-      "number": "7.9"
+      "number": "8.9"
     },
     {
       "id": "appendix",
