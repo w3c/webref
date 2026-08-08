@@ -102,6 +102,8 @@
           "PatternConstraintComponent",
           "deactivated",
           "implicit-targetClass",
+          "syntax-rule-path-defaultValue",
+          "value-nodes",
           "targetClass",
           "targetSubjectsOf",
           "targetObjectsOf",
@@ -118,7 +120,13 @@
           "security"
         ]
       },
-      "https://www.w3.org/TR/shacl12-node-expr/": {},
+      "https://www.w3.org/TR/shacl12-node-expr/": {
+        "anchors": [
+          "custom-list-parameter-functions",
+          "dfn-output-nodes",
+          "dfn-evaluation-failure"
+        ]
+      },
       "https://www.w3.org/TR/shacl12-rules/": {},
       "https://www.w3.org/TR/shacl12-sparql/": {},
       "https://www.w3.org/TR/sparql12-federated-query/": {
@@ -133,6 +141,9 @@
           "selectproject",
           "QSynTriples",
           "rVARNAME",
+          "extensionFunctions",
+          "ririOrFunction",
+          "sparql-error",
           "sparqlTranslateBasicGraphPatterns",
           "sparqlTranslatePathExpressions",
           "sparqlTranslateGraphPatterns",
@@ -167,6 +178,8 @@
           "dfn-datatype",
           "dfn-predicate",
           "dfn-rdf-triple",
+          "dfn-rdf-graph",
+          "dfn-rdf-node",
           "dfn-object",
           "dfn-reifier"
         ]
