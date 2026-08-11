@@ -5,7 +5,7 @@
   },
   "algorithms": [
     {
-      "html": "When processing a <code>json-card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n              performed:",
+      "html": "When processing a <code>card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n              performed:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "html": "Validate the resulting JSON object against the <code>json-card</code> output schema. If\n                validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
+          "html": "Validate the resulting JSON object against the <code>card</code> output schema. If\n                validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
         }
       ]
     },
@@ -142,18 +142,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "html": "All actions follow the same structure. They are composed of <code>type</code> and\n                <code>payload</code>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<code>type</code> indicates the kind of action being executed, for instance,\n                    <code>RENDER_DOCUMENT</code> means rendering a document. The type of an action is\n                    mandatory."
-        },
-        {
-          "html": "<code>payload</code> indicates optional data associated to the type, for instance,\n                    the content of the document to render."
         }
       ]
     }
