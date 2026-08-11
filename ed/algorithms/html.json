@@ -22537,10 +22537,13 @@
           "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"the-popover-attribute:hide-popover-stack-until-8\">hide popover stack until</a> given <var>document</var>, <var>endpoint</var>,\n   <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint-state\" id=\"the-popover-attribute:attr-popover-hint-state-11\">Hint</a>, <var>focusPreviousElement</var>, and\n   <var>fireEvents</var>.</p>"
         },
         {
-          "html": "<p>If <var>endpointIsHint</var> is true, then return.</p>"
+          "html": "<p>Let <var>autoEndpoint</var> be <var>endpoint</var>.</p>"
         },
         {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"the-popover-attribute:hide-popover-stack-until-9\">hide popover stack until</a> given <var>document</var>, <var>endpoint</var>,\n   <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"the-popover-attribute:attr-popover-auto-state-12\">Auto</a>, <var>focusPreviousElement</var>, and\n   <var>fireEvents</var>.</p>"
+          "html": "<p>If <var>endpointIsHint</var> is true, then set <var>autoEndpoint</var> to\n    <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hint-stack-parent\" id=\"the-popover-attribute:hint-stack-parent-8\">hint stack parent</a>.</p>"
+        },
+        {
+          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"the-popover-attribute:hide-popover-stack-until-9\">hide popover stack until</a> given <var>document</var>,\n   <var>autoEndpoint</var>, <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"the-popover-attribute:attr-popover-auto-state-12\">Auto</a>,\n   <var>focusPreviousElement</var>, and <var>fireEvents</var>.</p>"
         }
       ]
     },
@@ -22893,19 +22896,7 @@
               "html": "<p>If <var>sameTarget</var> is false, then return.</p>"
             },
             {
-              "html": "<p>Let <var>endpointIsHint</var> be true if <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#showing-hint-popover-list\" id=\"popover-light-dismiss:showing-hint-popover-list\">showing hint\n     popover list</a> <a href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"popover-light-dismiss:list-contains\" data-x-internal=\"list-contains\">contains</a> <var>ancestor</var>; otherwise\n     false.</p>"
-            },
-            {
-              "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"popover-light-dismiss:hide-popover-stack-until\">hide popover stack until</a> given <var>document</var>,\n     <var>ancestor</var>, <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint-state\" id=\"popover-light-dismiss:attr-popover-hint-state-2\">Hint</a>, false, and\n     true.</p>"
-            },
-            {
-              "html": "<p>Let <var>autoEndpoint</var> be <var>ancestor</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>endpointIsHint</var> is true, then set <var>autoEndpoint</var> to\n      <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hint-stack-parent\" id=\"popover-light-dismiss:hint-stack-parent\">hint stack parent</a>.</p>"
-            },
-            {
-              "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"popover-light-dismiss:hide-popover-stack-until-2\">hide popover stack until</a> given <var>document</var>,\n     <var>autoEndpoint</var>, <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"popover-light-dismiss:attr-popover-auto-state-2\">Auto</a>, false, and\n     true.</p>"
+              "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popovers-until\" id=\"popover-light-dismiss:hide-popovers-until\">hide popovers until</a> given <var>document</var>, <var>ancestor</var>,\n     false, and true.</p>"
             }
           ]
         }
@@ -22938,7 +22929,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>hintList</var> be <var>popover</var>'s <a id=\"popover-light-dismiss:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#showing-hint-popover-list\" id=\"popover-light-dismiss:showing-hint-popover-list-2\">showing\n   hint popover list</a>.</p>"
+          "html": "<p>Let <var>hintList</var> be <var>popover</var>'s <a id=\"popover-light-dismiss:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#showing-hint-popover-list\" id=\"popover-light-dismiss:showing-hint-popover-list\">showing\n   hint popover list</a>.</p>"
         },
         {
           "html": "<p>Let <var>autoList</var> be <var>popover</var>'s <a id=\"popover-light-dismiss:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#auto-popover-list\" id=\"popover-light-dismiss:auto-popover-list\">showing\n   auto popover list</a>.</p>"
@@ -22971,7 +22962,7 @@
               "html": "<p>Let <var>targetPopover</var> be <var>currentNode</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#target-popover\" id=\"popover-light-dismiss:target-popover\">target\n     popover</a>.</p>"
             },
             {
-              "html": "<p>If <var>targetPopover</var> is not null and <var>targetPopover</var>'s <code id=\"popover-light-dismiss:attr-popover-2\"><a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover\">popover</a></code> attribute is in the <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"popover-light-dismiss:attr-popover-auto-state-3\">Auto</a> state or the <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint-state\" id=\"popover-light-dismiss:attr-popover-hint-state-3\">Hint</a> state, and <var>targetPopover</var>'s\n     <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"popover-light-dismiss:popover-visibility-state\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"popover-light-dismiss:popover-showing-state\">showing</a>,\n     then return <var>targetPopover</var>.</p>"
+              "html": "<p>If <var>targetPopover</var> is not null and <var>targetPopover</var>'s <code id=\"popover-light-dismiss:attr-popover-2\"><a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover\">popover</a></code> attribute is in the <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"popover-light-dismiss:attr-popover-auto-state-2\">Auto</a> state or the <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint-state\" id=\"popover-light-dismiss:attr-popover-hint-state-2\">Hint</a> state, and <var>targetPopover</var>'s\n     <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"popover-light-dismiss:popover-visibility-state\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"popover-light-dismiss:popover-showing-state\">showing</a>,\n     then return <var>targetPopover</var>.</p>"
             },
             {
               "html": "<p>Set <var>currentNode</var> to <var>currentNode</var>'s ancestor in the <a id=\"popover-light-dismiss:flat-tree\" href=\"https://drafts.csswg.org/css-scoping/#flat-tree\" data-x-internal=\"flat-tree\">flat\n     tree</a>.</p>"
