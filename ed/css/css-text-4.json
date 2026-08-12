@@ -1221,20 +1221,6 @@
           "value": "no-autospace"
         },
         {
-          "name": "insert",
-          "prose": "The specified spacing is automatically inserted if there are no space characters of any kind (Unicode general category Z) already there. If neither insert nor replace are specified, the behavior is the same as insert.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-insert",
-          "type": "value",
-          "value": "insert"
-        },
-        {
-          "name": "replace",
-          "prose": "The specified spacing is automatically inserted even if there is already a space (U+0020) at that point; additionally, the space (U+0020) is removed. Other types of space characters (Unicode general category Z) suppress automatic spacing, as for insert.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-replace",
-          "type": "value",
-          "value": "replace"
-        },
-        {
           "name": "ideograph-alpha",
           "prose": "Creates extra spacing between runs of ideographs and non-ideographic letters, see § 8.4.1 Inter-script Spacing.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-ideograph-alpha",
@@ -1256,6 +1242,20 @@
           "value": "punctuation"
         },
         {
+          "name": "insert",
+          "prose": "The specified spacing is automatically inserted if there are no space characters of any kind (Unicode general category Z) already there. This is the default behavior: if neither insert nor replace are specified, insert is assumed.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-insert",
+          "type": "value",
+          "value": "insert"
+        },
+        {
+          "name": "replace",
+          "prose": "The specified spacing is automatically inserted even if there is already a space (U+0020) at that point; additionally, the space (U+0020) is removed. Other types of space characters (Unicode general category Z) suppress automatic spacing, as for insert.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-replace",
+          "type": "value",
+          "value": "replace"
+        },
+        {
           "name": "auto",
           "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-auto",
@@ -1266,218 +1266,6 @@
       "styleDeclaration": [
         "text-autospace",
         "textAutospace"
-      ]
-    },
-    {
-      "name": "text-spacing-trim",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing-trim",
-      "value": "<spacing-trim> | auto",
-      "initial": "normal",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "computedValue": "specified keyword(s)",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "space-all",
-          "prose": "All fullwidth punctuation characters are set with full-width glyphs (spaced).",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-all",
-          "type": "value",
-          "value": "space-all"
-        },
-        {
-          "name": "normal",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs; and collapse spacing between punctuation glyphs as described below.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-normal",
-          "type": "value",
-          "value": "normal"
-        },
-        {
-          "name": "trim-both",
-          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-both",
-          "type": "value",
-          "value": "trim-both"
-        },
-        {
-          "name": "space-first",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line of the block container and each line after a forced line break. Otherwise as normal.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-first",
-          "type": "value",
-          "value": "space-first"
-        },
-        {
-          "name": "trim-start",
-          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line. Otherwise as normal.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-start",
-          "type": "value",
-          "value": "trim-start"
-        },
-        {
-          "name": "trim-all",
-          "prose": "Set fullwidth opening punctuation, fullwidth closing punctuation, and fullwidth middle dot punctuation with half-width glyphs, without regards for the position within the line nor for adjacent characters.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-all",
-          "type": "value",
-          "value": "trim-all"
-        },
-        {
-          "name": "auto",
-          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-both.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
-      "styleDeclaration": [
-        "text-spacing-trim",
-        "textSpacingTrim"
-      ]
-    },
-    {
-      "name": "text-spacing",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing",
-      "value": "none | auto | <spacing-trim> || <autospace>",
-      "initial": "see individual properties",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "computedValue": "specified keyword(s)",
-      "animationType": "discrete",
-      "canonicalOrder": "per grammar",
-      "values": [
-        {
-          "name": "none",
-          "prose": "Turns off all text-spacing features: sets text-spacing-trim to space-all and text-autospace to no-autospace.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "auto",
-          "prose": "Sets both text-spacing-trim and text-autospace to auto.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-auto",
-          "type": "value",
-          "value": "auto"
-        },
-        {
-          "name": "<spacing-trim>",
-          "prose": "Sets text-spacing-trim to the specified value. If no <autospace> value is given, text-autospace is set to its initial value.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-spacing-trim",
-          "type": "value",
-          "value": "<spacing-trim>"
-        },
-        {
-          "name": "<autospace>",
-          "prose": "Sets text-autospace to the specified value. If no <spacing-trim> value is given, text-spacing-trim is set to its initial value.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-autospace",
-          "type": "value",
-          "value": "<autospace>"
-        }
-      ],
-      "styleDeclaration": [
-        "text-spacing",
-        "textSpacing"
-      ]
-    },
-    {
-      "name": "text-indent",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-indent",
-      "value": "[ <length-percentage> ] && hanging? && each-line?",
-      "initial": "0",
-      "appliesTo": "block containers",
-      "inherited": "yes",
-      "percentages": "refers to block container’s own inline-axis inner size",
-      "computedValue": "computed <length-percentage> value, plus any specified keywords",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "<length>",
-          "prose": "Gives the amount of the indent as an absolute length.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-length",
-          "type": "value",
-          "value": "<length>"
-        },
-        {
-          "name": "<percentage>",
-          "prose": "Gives the amount of the indent as a percentage of the block container’s own logical width. Percentages must be treated as 0 for the purpose of calculating intrinsic size contributions, but are always resolved normally when performing layout.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-percentage",
-          "type": "value",
-          "value": "<percentage>"
-        },
-        {
-          "name": "each-line",
-          "prose": "Indentation affects the first line of each block container and each line after a forced line break (but not lines after a soft wrap break).",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-each-line",
-          "type": "value",
-          "value": "each-line"
-        },
-        {
-          "name": "hanging",
-          "prose": "Inverts which lines are affected.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-hanging",
-          "type": "value",
-          "value": "hanging"
-        }
-      ],
-      "styleDeclaration": [
-        "text-indent",
-        "textIndent"
-      ]
-    },
-    {
-      "name": "hanging-punctuation",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-hanging-punctuation",
-      "value": "none | [ first || [ force-end | allow-end ] || last ]",
-      "initial": "none",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "specified keyword(s)",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "none",
-          "prose": "No punctuation character is made to hang.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-none",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "first",
-          "prose": "An opening bracket, quote, or ideographic space at the start of the first formatted line of an element hangs. This applies to all characters in the Unicode categories Ps, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK and the IDEOGRAPHIC SPACE U+3000.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-first",
-          "type": "value",
-          "value": "first"
-        },
-        {
-          "name": "last",
-          "prose": "A closing bracket or quote at the end of the last formatted line of an element hangs. This applies to all characters in the Unicode categories Pe, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-last",
-          "type": "value",
-          "value": "last"
-        },
-        {
-          "name": "force-end",
-          "prose": "A stop or comma at the end of a line hangs.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-force-end",
-          "type": "value",
-          "value": "force-end"
-        },
-        {
-          "name": "allow-end",
-          "prose": "A stop or comma at the end of a line conditionally hangs.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-allow-end",
-          "type": "value",
-          "value": "allow-end"
-        }
-      ],
-      "styleDeclaration": [
-        "hanging-punctuation",
-        "hangingPunctuation"
       ]
     },
     {
@@ -1498,12 +1286,6 @@
       "href": "https://drafts.csswg.org/css-text-4/#typedef-autospace",
       "type": "type",
       "value": "no-autospace | [ ideograph-alpha || ideograph-numeric || punctuation ] || [ insert | replace ]"
-    },
-    {
-      "name": "<spacing-trim>",
-      "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
-      "type": "type",
-      "value": "space-all | normal | space-first | trim-start | trim-both | trim-all"
     }
   ]
 }
