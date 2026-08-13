@@ -461,7 +461,7 @@
     {
       "name": "text-wrap-style",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-style",
-      "value": "auto | balance | stable | pretty | avoid-orphans",
+      "value": "auto | balance | stable | pretty | avoid-short-last-line",
       "initial": "auto",
       "appliesTo": "block containers hat establish an inline formatting context",
       "inherited": "yes",
@@ -493,17 +493,17 @@
         },
         {
           "name": "pretty",
-          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines when making break decisions. Otherwise equivalent to auto. The user agent may among other things attempt to avoid excessively short last lines, similarly to avoid-orphans, but it should also improve the layout in additional ways. The precise set of improvements is user agent dependent, and may include things such as: reducing the variation in length between lines; avoiding typographic rivers; prioritizing different classes of soft wrap opportunities, hyphenation opportunities, or justification opportunities; avoiding hyphenation on too many consecutive lines… The necessary computations may be expensive, especially when applied to large amounts of text. Authors are encouraged to assess the impact on performance when using text-wrap-style: pretty, and possibly use it selectively where it matters most.",
+          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines when making break decisions. Otherwise equivalent to auto. The user agent may among other things attempt to avoid excessively short last lines, similarly to avoid-short-last-line, but it should also improve the layout in additional ways. The precise set of improvements is user agent dependent, and may include things such as: reducing the variation in length between lines; avoiding typographic rivers; prioritizing different classes of soft wrap opportunities, hyphenation opportunities, or justification opportunities; avoiding hyphenation on too many consecutive lines… The necessary computations may be expensive, especially when applied to large amounts of text. Authors are encouraged to assess the impact on performance when using text-wrap-style: pretty, and possibly use it selectively where it matters most.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
           "type": "value",
           "value": "pretty"
         },
         {
-          "name": "avoid-orphans",
-          "prose": "Specifies the UA should avoid excessively short last lines, and is expected to consider more than one line when making break decisions (for example, to avoid \"fixing\" an orphan by making the previous line too short). The user agent may decide against improving the last line when it would make some prior line(s) substantially unbalanced. The user agent should not attempt to improve other aspects of the layout beyond what auto if those improvements come at a significant performance cost. For instance, with the given line length, the following test would be wrapped with a single word on the last line, which could be judged too short. ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. Applying text-wrap-style: avoid-orphans could yield something like this instead, which is arguably more pleasing: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. However, the following fragment is more vexing: Circumnavigating the Mississippi river An attempt to make the last line less short by wrapping the previous line earlier would result in the following: Circumnavigating the Mississippi river While the last line would indeed no longer be short, the penultimate line would be unsightly. In such cases, user agents are expected to prefer the first rendering despite text-wrap-style: avoid-orphans being set.",
-          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-avoid-orphans",
+          "name": "avoid-short-last-line",
+          "prose": "Specifies the UA should avoid excessively short last lines, and is expected to consider more than one line when making break decisions (for example, to avoid \"fixing\" an orphan by making the previous line too short). The user agent may decide against improving the last line when it would make some prior line(s) substantially unbalanced. The user agent should not attempt to improve other aspects of the layout beyond what auto if those improvements come at a significant performance cost. For instance, with the given line length, the following test would be wrapped with a single word on the last line, which could be judged too short. ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. Applying text-wrap-style: avoid-short-last-line could yield something like this instead, which is arguably more pleasing: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. However, the following fragment is more vexing: Circumnavigating the Mississippi river An attempt to make the last line less short by wrapping the previous line earlier would result in the following: Circumnavigating the Mississippi river While the last line would indeed no longer be short, the penultimate line would be unsightly. In such cases, user agents are expected to prefer the first rendering despite text-wrap-style: avoid-short-last-line being set.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-avoid-short-last-line",
           "type": "value",
-          "value": "avoid-orphans"
+          "value": "avoid-short-last-line"
         }
       ],
       "styleDeclaration": [
@@ -729,7 +729,7 @@
     {
       "name": "hyphenate-limit-chars",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-chars",
-      "value": "[ auto | <integer> ]{1,3}",
+      "value": "[ auto | <integer [0,∞]> ]{1,3}",
       "initial": "auto",
       "appliesTo": "text",
       "inherited": "yes",
@@ -754,7 +754,7 @@
     {
       "name": "hyphenate-limit-lines",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-lines",
-      "value": "no-limit | <integer>",
+      "value": "no-limit | <integer [0,∞]>",
       "initial": "no-limit",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -1269,6 +1269,218 @@
       ]
     },
     {
+      "name": "text-spacing-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing-trim",
+      "value": "<spacing-trim> | auto",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "space-all",
+          "prose": "All fullwidth punctuation characters are set with full-width glyphs (spaced).",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-all",
+          "type": "value",
+          "value": "space-all"
+        },
+        {
+          "name": "normal",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs; and collapse spacing between punctuation glyphs as described below.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "trim-both",
+          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-both",
+          "type": "value",
+          "value": "trim-both"
+        },
+        {
+          "name": "space-first",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line of the block container and each line after a forced line break. Otherwise as normal.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-first",
+          "type": "value",
+          "value": "space-first"
+        },
+        {
+          "name": "trim-start",
+          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line. Otherwise as normal.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-start",
+          "type": "value",
+          "value": "trim-start"
+        },
+        {
+          "name": "trim-all",
+          "prose": "Set fullwidth opening punctuation, fullwidth closing punctuation, and fullwidth middle dot punctuation with half-width glyphs, without regards for the position within the line nor for adjacent characters.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-all",
+          "type": "value",
+          "value": "trim-all"
+        },
+        {
+          "name": "auto",
+          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-both.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "text-spacing-trim",
+        "textSpacingTrim"
+      ]
+    },
+    {
+      "name": "text-spacing",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing",
+      "value": "none | auto | <spacing-trim> || <autospace>",
+      "initial": "see individual properties",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword(s)",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Turns off all text-spacing features: sets text-spacing-trim to space-all and text-autospace to no-autospace.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Sets both text-spacing-trim and text-autospace to auto.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<spacing-trim>",
+          "prose": "Sets text-spacing-trim to the specified value. If no <autospace> value is given, text-autospace is set to its initial value.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-spacing-trim",
+          "type": "value",
+          "value": "<spacing-trim>"
+        },
+        {
+          "name": "<autospace>",
+          "prose": "Sets text-autospace to the specified value. If no <spacing-trim> value is given, text-spacing-trim is set to its initial value.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-autospace",
+          "type": "value",
+          "value": "<autospace>"
+        }
+      ],
+      "styleDeclaration": [
+        "text-spacing",
+        "textSpacing"
+      ]
+    },
+    {
+      "name": "text-indent",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-indent",
+      "value": "[ <length-percentage> ] && hanging? && each-line?",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "refers to block container’s own inline-axis inner size",
+      "computedValue": "computed <length-percentage> value, plus any specified keywords",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "Gives the amount of the indent as an absolute length.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "Gives the amount of the indent as a percentage of the block container’s own logical width. Percentages must be treated as 0 for the purpose of calculating intrinsic size contributions, but are always resolved normally when performing layout.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-percentage",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "each-line",
+          "prose": "Indentation affects the first line of each block container and each line after a forced line break (but not lines after a soft wrap break).",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-each-line",
+          "type": "value",
+          "value": "each-line"
+        },
+        {
+          "name": "hanging",
+          "prose": "Inverts which lines are affected.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-text-indent-hanging",
+          "type": "value",
+          "value": "hanging"
+        }
+      ],
+      "styleDeclaration": [
+        "text-indent",
+        "textIndent"
+      ]
+    },
+    {
+      "name": "hanging-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-hanging-punctuation",
+      "value": "none | [ first || [ force-end | allow-end ] || last ]",
+      "initial": "none",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No punctuation character is made to hang.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "first",
+          "prose": "An opening bracket, quote, or ideographic space at the start of the first formatted line of an element hangs. This applies to all characters in the Unicode categories Ps, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK and the IDEOGRAPHIC SPACE U+3000.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-first",
+          "type": "value",
+          "value": "first"
+        },
+        {
+          "name": "last",
+          "prose": "A closing bracket or quote at the end of the last formatted line of an element hangs. This applies to all characters in the Unicode categories Pe, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-last",
+          "type": "value",
+          "value": "last"
+        },
+        {
+          "name": "force-end",
+          "prose": "A stop or comma at the end of a line hangs.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-force-end",
+          "type": "value",
+          "value": "force-end"
+        },
+        {
+          "name": "allow-end",
+          "prose": "A stop or comma at the end of a line conditionally hangs.",
+          "href": "https://drafts.csswg.org/css-text-4/#valdef-hanging-punctuation-allow-end",
+          "type": "value",
+          "value": "allow-end"
+        }
+      ],
+      "styleDeclaration": [
+        "hanging-punctuation",
+        "hangingPunctuation"
+      ]
+    },
+    {
       "name": "word-wrap",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-word-wrap",
       "legacyAliasOf": "overflow-wrap",
@@ -1286,6 +1498,12 @@
       "href": "https://drafts.csswg.org/css-text-4/#typedef-autospace",
       "type": "type",
       "value": "no-autospace | [ ideograph-alpha || ideograph-numeric || punctuation ] || [ insert | replace ]"
+    },
+    {
+      "name": "<spacing-trim>",
+      "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
+      "type": "type",
+      "value": "space-all | normal | space-first | trim-start | trim-both | trim-all"
     }
   ]
 }

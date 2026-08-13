@@ -90,12 +90,12 @@
     {
       "name": "margin-trim",
       "href": "https://drafts.csswg.org/css-box-4/#propdef-margin-trim",
-      "value": "none | [ block || inline ] | [ block-start || inline-start || block-end || inline-end ]",
+      "value": "none | block | [ block-start || block-end ]",
       "initial": "none",
-      "appliesTo": "block containers, multi-column containers, flex containers, grid containers",
+      "appliesTo": "block containers, multi-column containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "a set of zero to four keywords indicating which sides to trim",
+      "computedValue": "a set of zero to two keywords indicating which sides to trim",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -121,32 +121,11 @@
           "value": "block-end"
         },
         {
-          "name": "inline-start",
-          "prose": "Computes to block-start block-end.",
-          "href": "https://drafts.csswg.org/css-box-4/#valdef-margin-trim-inline-start",
-          "type": "value",
-          "value": "inline-start"
-        },
-        {
-          "name": "inline-end",
-          "prose": "Computes to block-start block-end.",
-          "href": "https://drafts.csswg.org/css-box-4/#valdef-margin-trim-inline-end",
-          "type": "value",
-          "value": "inline-end"
-        },
-        {
           "name": "block",
           "prose": "Computes to block-start block-end.",
           "href": "https://drafts.csswg.org/css-box-4/#valdef-margin-trim-block",
           "type": "value",
           "value": "block"
-        },
-        {
-          "name": "inline",
-          "prose": "Computes to inline-start inline-end.",
-          "href": "https://drafts.csswg.org/css-box-4/#valdef-margin-trim-inline",
-          "type": "value",
-          "value": "inline"
         }
       ],
       "styleDeclaration": [
