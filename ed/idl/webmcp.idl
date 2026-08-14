@@ -11,6 +11,7 @@ partial interface Document {
 interface ModelContext : EventTarget {
   Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});
   Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});
+  Promise<DOMString> executeTool(RegisteredTool tool, DOMString inputArguments, optional ModelContextExecuteToolOptions options = {});
 
   attribute EventHandler ontoolchange;
 };
@@ -34,12 +35,16 @@ dictionary ToolAnnotations {
 callback ToolExecuteCallback = Promise<any> (object input);
 
 dictionary ModelContextRegisterToolOptions {
-  AbortSignal signal;
   sequence<USVString> exposedTo;
+  AbortSignal signal;
 };
 
 dictionary ModelContextGetToolOptions {
   sequence<USVString> fromOrigins;
+};
+
+dictionary ModelContextExecuteToolOptions {
+  AbortSignal signal;
 };
 
 dictionary RegisteredTool {
@@ -49,7 +54,7 @@ dictionary RegisteredTool {
   // done, and there's no need to do it again on tool exposure.
   DOMString title;
   required DOMString description;
-  DOMString inputSchema;
+  object inputSchema;
   required Window window;
   required USVString origin;
   ToolAnnotations annotations;
