@@ -610,23 +610,17 @@
               "html": "<p>Let <var>isTrusted</var> be <code>true</code> if <var>bodyArg</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript\">TrustedScript</a></code>, and <code>false</code> otherwise.</p>"
             },
             {
-              "html": "If <var>isTrusted</var> is <code>true</code> then:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>bodyString</var> is not equal to <var>bodyArg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data\">data</a>, set <var>isTrusted</var> to <code>false</code>.</p>"
-                }
-              ]
-            },
-            {
               "html": "If <var>isTrusted</var> is <code>true</code>, then:",
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>parameterArgs</var>’ [list/size=] is equal to [parameterStrings]' <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>bodyString</var> is equal to <var>bodyArg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data\">data</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
+                  "html": "<p class=\"assertion\">Assert: <var>parameterArgs</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is equal to <var>parameterStrings</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to <var>parameterArgs</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -634,10 +628,10 @@
                     },
                     {
                       "html": "If <var>arg</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①\">TrustedScript</a></code>, then:",
-                      "rationale": "if",
+                      "rationale": "assert",
                       "steps": [
                         {
-                          "html": "<p>if <var>parameterStrings</var>[<var>index</var>] is not equal to <var>arg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data①\">data</a>, set <var>isTrusted</var> to <code>false</code>.</p>"
+                          "html": "<p class=\"assertion\">Assert: <var>parameterStrings</var>[<var>index</var>] is equal to <var>arg</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data①\">data</a>.</p>"
                         }
                       ]
                     },
@@ -1935,7 +1929,7 @@
           "html": "<p>If <var>source list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">is empty</a>, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①①\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
+          "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①①\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>expression</var> of <var>source list</var>:",
