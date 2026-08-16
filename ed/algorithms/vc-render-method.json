@@ -5,32 +5,32 @@
   },
   "algorithms": [
     {
-      "html": "When processing a <code>card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n              performed:",
+      "html": "When processing a <code>card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n        performed:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Validate the template JSON object against the JSON template schema defined\n                above. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be\n                returned."
+          "html": "Validate the template JSON object against the JSON template schema defined\n          above. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be\n          returned."
         },
         {
           "html": "For each string value in the template object:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If the string value starts with <code>/</code> (indicating it is a JSON pointer),\n                    evaluate it using the JSON Pointer algorithm <cite><a data-cite=\"RFC6901\" data-matched-text=\"[[[RFC6901]]]\" href=\"https://www.rfc-editor.org/info/rfc6901/\">JavaScript Object Notation (JSON) Pointer</a></cite> against the\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-31\">verifiable credential</a> as the target document."
+              "html": "If the string value starts with <code>/</code> (indicating it is a JSON pointer),\n              evaluate it using the JSON Pointer algorithm <cite><a data-cite=\"RFC6901\" data-matched-text=\"[[[RFC6901]]]\" href=\"https://www.rfc-editor.org/info/rfc6901/\">JavaScript Object Notation (JSON) Pointer</a></cite> against the\n              <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.1\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.1/#dfn-verifiable-credential\">verifiable credential</a> as the target document."
             },
             {
-              "html": "If the JSON pointer evaluation succeeds, replace the JSON pointer string with\n                    the resolved value. If the resolved value is not a string, convert it to a\n                    string representation."
+              "html": "If the JSON pointer evaluation succeeds, replace the JSON pointer string with\n              the resolved value. If the resolved value is not a string, convert it to a\n              string representation."
             },
             {
-              "html": "If the JSON pointer evaluation fails or returns <code>null</code>, the behavior is\n                    implementation-specific. Implementations <em class=\"rfc2119\">MAY</em> use an empty string, leave the\n                    value as <code>null</code>, or signal an error."
+              "html": "If the JSON pointer evaluation fails or returns <code>null</code>, the behavior is\n              implementation-specific. Implementations <em class=\"rfc2119\">MAY</em> use an empty string, leave the\n              value as <code>null</code>, or signal an error."
             },
             {
-              "html": "If the string value does not start with <code>/</code>, treat it as a literal string\n                    and leave it unchanged."
+              "html": "If the string value does not start with <code>/</code>, treat it as a literal string\n              and leave it unchanged."
             }
           ]
         },
         {
-          "html": "Validate the resulting JSON object against the <code>card</code> output schema. If\n                validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
+          "html": "Validate the resulting JSON object against the <code>card</code> output schema. If\n          validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
         }
       ]
     },
@@ -39,7 +39,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <code>vc</code> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-40\">verifiable credential</a> to be rendered."
+          "html": "Let <code>vc</code> be the <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.1\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.1/#dfn-verifiable-credential\">verifiable credential</a> to be rendered."
         },
         {
           "html": "Let <code>renderMethod</code> be the chosen <code>renderMethod</code> property in <code>vc</code> where\n<code>renderMethod.type</code> is <code>TemplateRenderMethod</code> and\n<code>renderMethod.renderSuite</code> is <code>html</code>."
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-21\">host page</a> <em class=\"rfc2119\">MUST</em> create the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-12\">wrapper code</a> by embedding the filtered\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-43\">verifiable credential</a> and the HTML template into the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-13\">wrapper code</a> template\ndefined above.",
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-21\">host page</a> <em class=\"rfc2119\">MUST</em> create the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-12\">wrapper code</a> by embedding the filtered\n<a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.1\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.1/#dfn-verifiable-credential\">verifiable credential</a> and the HTML template into the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-13\">wrapper code</a> template\ndefined above.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -63,7 +63,7 @@
           "html": "Let <code>datablock</code> be an HTML Data Block with a <code>type</code> of <code>application/vc</code>."
         },
         {
-          "html": "Set the contents of <code>datablock</code> to be the filtered <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-44\">verifiable credential</a>\nin stringified JSON format."
+          "html": "Set the contents of <code>datablock</code> to be the filtered <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.1\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.1/#dfn-verifiable-credential\">verifiable credential</a>\nin stringified JSON format."
         },
         {
           "html": "Insert <code>datablock</code> into the <code>&lt;head&gt;</code> of <code>wrapperCode</code>."
