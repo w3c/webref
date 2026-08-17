@@ -1,6 +1,6 @@
-From 513a7389a25030ed557d31185c9034d0b93a3ff9 Mon Sep 17 00:00:00 2001
+From 5426c031cba30028ca08fd522684a14eecf0d4dc Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 17 Jul 2026 11:09:16 +0200
+Date: Mon, 17 Aug 2026 18:37:29 +0200
 Subject: [PATCH] Drop `xrCompatible` option
 
 The option has already been upstreamed to WebGPU. Tracking issue to get the
@@ -11,7 +11,7 @@ https://github.com/immersive-web/webxr-webgpu-binding/issues/35
  1 file changed, 4 deletions(-)
 
 diff --git a/ed/idl/webxr-webgpu-binding.idl b/ed/idl/webxr-webgpu-binding.idl
-index 85a1b6bf0a..03d38d68a7 100644
+index 4b6dd3ff51..3787ece72b 100644
 --- a/ed/idl/webxr-webgpu-binding.idl
 +++ b/ed/idl/webxr-webgpu-binding.idl
 @@ -3,10 +3,6 @@
@@ -23,8 +23,8 @@ index 85a1b6bf0a..03d38d68a7 100644
 -};
 -
  [Exposed=(Window), SecureContext]
- interface XRGPUBinding {
-   constructor(XRSession session, GPUDevice device);
+ interface XRGPUSubImage : XRSubImage {
+   [SameObject] readonly attribute GPUTexture colorTexture;
 -- 
-2.54.0
+2.55.0
 
