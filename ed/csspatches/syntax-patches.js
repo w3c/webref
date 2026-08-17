@@ -101,9 +101,9 @@ export default {
     "<counter-name>": "<custom-ident>"
   },
 
-  // https://drafts.csswg.org/css-navigation-1/#at-ruledef-route
+  // https://drafts.csswg.org/css-navigation-1/#at-ruledef-location
   "css-navigation-1": {
-    "@route": "<route-rule>"
+    "@location": "<location-rule>"
   },
 
   // https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction
