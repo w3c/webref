@@ -162,7 +162,7 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule"
+        "href": "https://drafts.csswg.org/css-fonts-4/#om-fontfeaturevalues"
       },
       "CSSFontFeatureValuesMap": {
         "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesMap {\n  maplike<CSSOMString, sequence<unsigned long>>;\n  undefined set(CSSOMString featureValueName,\n    (unsigned long or sequence<unsigned long>) values);\n};",
@@ -377,13 +377,13 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-fonts-4/#cssfontpalettevaluesrule"
+        "href": "https://drafts.csswg.org/css-fonts-4/#om-fontpalettevalues"
       }
     },
     "idlExtendedNames": {
       "CSSRule": [
         {
-          "fragment": "partial interface CSSRule {\n    const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n  };",
+          "fragment": "partial interface CSSRule {\n  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

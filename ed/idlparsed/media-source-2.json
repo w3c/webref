@@ -31,10 +31,7 @@
           "MediaSourceHandle",
           "SourceBuffer",
           "SourceBufferList",
-          "ManagedSourceBuffer",
-          "AudioTrack",
-          "VideoTrack",
-          "TextTrack"
+          "ManagedSourceBuffer"
         ]
       }
     },
@@ -526,7 +523,7 @@
         "href": "https://w3c.github.io/media-source/#dom-appendmode"
       },
       "SourceBuffer": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n  attribute AppendMode mode;\n  readonly  attribute boolean updating;\n  readonly  attribute TimeRanges buffered;\n  attribute double timestampOffset;\n  readonly  attribute AudioTrackList audioTracks;\n  readonly  attribute VideoTrackList videoTracks;\n  readonly  attribute TextTrackList textTracks;\n  attribute double appendWindowStart;\n  attribute unrestricted double appendWindowEnd;\n\n  attribute EventHandler onupdatestart;\n  attribute EventHandler onupdate;\n  attribute EventHandler onupdateend;\n  attribute EventHandler onerror;\n  attribute EventHandler onabort;\n\n  undefined appendBuffer(BufferSource data);\n  undefined abort();\n  undefined changeType(DOMString type);\n  undefined remove(double start, unrestricted double end);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n  attribute AppendMode mode;\n  readonly  attribute boolean updating;\n  readonly  attribute TimeRanges buffered;\n  attribute double timestampOffset;\n  [Exposed=Window] readonly  attribute AudioTrackList audioTracks;\n  [Exposed=Window] readonly  attribute VideoTrackList videoTracks;\n  [Exposed=Window] readonly  attribute TextTrackList textTracks;\n  attribute double appendWindowStart;\n  attribute unrestricted double appendWindowEnd;\n\n  attribute EventHandler onupdatestart;\n  attribute EventHandler onupdate;\n  attribute EventHandler onupdateend;\n  attribute EventHandler onerror;\n  attribute EventHandler onabort;\n\n  undefined appendBuffer(BufferSource data);\n  undefined abort();\n  undefined changeType(DOMString type);\n  undefined remove(double start, unrestricted double end);\n};",
         "type": "interface",
         "name": "SourceBuffer",
         "inheritance": "EventTarget",
@@ -606,7 +603,17 @@
               "union": false,
               "idlType": "AudioTrackList"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-audiotracks"
@@ -622,7 +629,17 @@
               "union": false,
               "idlType": "VideoTrackList"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-videotracks"
@@ -638,7 +655,17 @@
               "union": false,
               "idlType": "TextTrackList"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/media-source/#dom-sourcebuffer-texttracks"
@@ -1304,7 +1331,7 @@
     "idlExtendedNames": {
       "AudioTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=Window]\npartial interface AudioTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "AudioTrack",
           "inheritance": null,
@@ -1331,15 +1358,8 @@
               "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier-list",
-                "value": [
-                  {
-                    "value": "Window"
-                  },
-                  {
-                    "value": "DedicatedWorker"
-                  }
-                ]
+                "type": "identifier",
+                "value": "Window"
               },
               "arguments": []
             }
@@ -1349,7 +1369,7 @@
       ],
       "VideoTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface VideoTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=Window]\npartial interface VideoTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "VideoTrack",
           "inheritance": null,
@@ -1376,15 +1396,8 @@
               "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier-list",
-                "value": [
-                  {
-                    "value": "Window"
-                  },
-                  {
-                    "value": "DedicatedWorker"
-                  }
-                ]
+                "type": "identifier",
+                "value": "Window"
               },
               "arguments": []
             }
@@ -1394,7 +1407,7 @@
       ],
       "TextTrack": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface TextTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=Window]\npartial interface TextTrack {\n  readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "TextTrack",
           "inheritance": null,
@@ -1421,15 +1434,8 @@
               "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier-list",
-                "value": [
-                  {
-                    "value": "Window"
-                  },
-                  {
-                    "value": "DedicatedWorker"
-                  }
-                ]
+                "type": "identifier",
+                "value": "Window"
               },
               "arguments": []
             }
@@ -1459,10 +1465,7 @@
         "SourceBufferList",
         "ManagedMediaSource",
         "BufferedChangeEvent",
-        "ManagedSourceBuffer",
-        "AudioTrack",
-        "VideoTrack",
-        "TextTrack"
+        "ManagedSourceBuffer"
       ]
     },
     "dependencies": {

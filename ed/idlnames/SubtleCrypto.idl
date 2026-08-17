@@ -42,7 +42,7 @@ interface SubtleCrypto {
   Promise<ArrayBuffer> deriveBits(
     AlgorithmIdentifier algorithm,
     CryptoKey baseKey,
-    optional unsigned long? length = null
+    optional [EnforceRange] unsigned long? length = null
   );
 
   Promise<CryptoKey> importKey(
@@ -110,7 +110,7 @@ partial interface SubtleCrypto {
 
   static boolean supports(DOMString operation,
                    AlgorithmIdentifier algorithm,
-                   optional unsigned long? length = null);
+                   optional [EnforceRange] unsigned long? length = null);
   static boolean supports(DOMString operation,
                    AlgorithmIdentifier algorithm,
                    AlgorithmIdentifier additionalAlgorithm);

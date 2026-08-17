@@ -1,5 +1,5 @@
 // Source: Web Cryptography API Level 2 (https://www.w3.org/TR/webcrypto-2/)
 dictionary HmacKeyAlgorithm : KeyAlgorithm {
   required KeyAlgorithm hash;
-  required unsigned long length;
+  required [EnforceRange] unsigned long length;
 };

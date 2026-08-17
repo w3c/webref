@@ -12,8 +12,14 @@
       "https://drafts.csswg.org/geometry/": {},
       "https://github.com/immersive-web/webxr-webgpu-binding/issues": {},
       "https://gpuweb.github.io/gpuweb/": {},
-      "https://immersive-web.github.io/layers/": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://immersive-web.github.io/layers/": {
+        "anchors": [
+          "spaces"
+        ]
+      },
       "https://immersive-web.github.io/webxr/": {},
+      "https://infra.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
       "https://www.w3.org/groups/wg/immersive-web": {},
@@ -29,7 +35,8 @@
     "autolinks": {
       "https://drafts.csswg.org/geometry-1/": {
         "anchors": [
-          "dompointreadonly"
+          "dompointreadonly",
+          "dom-dompointreadonly-frompoint"
         ]
       },
       "https://gpuweb.github.io/gpuweb/": {
@@ -42,8 +49,29 @@
           "enumdef-gputextureformat",
           "typedefdef-gputextureusageflags",
           "dictdef-gpurequestadapteroptions",
+          "dom-gputexture-destroy",
+          "dom-gputexturedescriptor-dimension",
+          "dom-gputexturedescriptor-format",
+          "dom-gputexturedescriptor-size",
+          "dom-gputexturedescriptor-usage",
+          "dom-gputexturedescriptor-miplevelcount",
+          "dom-gputextureformat-stencil8",
+          "gputexturedescriptor",
+          "dom-gpudevice-createtexture",
+          "typedefdef-gpuextent3d",
+          "dom-gputexturedescriptor-samplecount",
+          "dom-gputexturedimension-2d",
+          "dom-gputexturedescriptor-viewformats",
           "destroyed",
-          "dom-gpuqueue-submit"
+          "dom-gpuqueue-submit",
+          "dom-gpudevice-limits",
+          "dom-gpusupportedlimits-maxtexturedimension2d",
+          "dom-gputextureformat-rgba16float"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-realm"
         ]
       },
       "https://immersive-web.github.io/layers/": {
@@ -56,10 +84,49 @@
           "xrcubelayer",
           "xrsubimage",
           "xrwebglbinding",
-          "feature-descriptor-space-warp",
           "dom-xrsubimage-viewport",
+          "feature-descriptor-space-warp",
+          "dom-xrcompositionlayer-destroy",
+          "dom-xrcompositionlayer-miplevels",
+          "dom-xrcompositionlayer-needsredraw",
+          "destroy-the-resources-for-a-layer",
           "enumdef-xrlayerlayout",
-          "dom-xrprojectionlayer-ignoredepthvalues"
+          "dom-xrlayerlayout-default",
+          "initialize-a-composition-layer",
+          "dom-xrcompositionlayer-layout",
+          "xrcompositionlayer-isstatic",
+          "dom-xrprojectionlayer-texturewidth",
+          "dom-xrprojectionlayer-textureheight",
+          "dom-xrprojectionlayer-texturearraylength",
+          "dom-xrprojectionlayer-ignoredepthvalues",
+          "dom-xrprojectionlayer-fixedfoveation",
+          "dom-xrprojectionlayer-deltapose",
+          "feature-descriptor-layers",
+          "dom-xrlayerlayout-mono",
+          "dom-xrlayerlayout-stereo",
+          "dom-xrlayerlayout-stereo-left-right",
+          "dom-xrlayerlayout-stereo-top-bottom",
+          "setting-the-space-on-a-layer",
+          "dom-xrquadlayer-space",
+          "dom-xrquadlayer-transform",
+          "dom-xrquadlayer-width",
+          "dom-xrquadlayer-height",
+          "dom-xrcylinderlayer-space",
+          "dom-xrcylinderlayer-transform",
+          "dom-xrcylinderlayer-radius",
+          "dom-xrcylinderlayer-centralangle",
+          "dom-xrcylinderlayer-aspectratio",
+          "dom-xrequirectlayer-space",
+          "dom-xrequirectlayer-transform",
+          "dom-xrequirectlayer-radius",
+          "dom-xrequirectlayer-centralhorizontalangle",
+          "dom-xrequirectlayer-upperverticalangle",
+          "dom-xrequirectlayer-lowerverticalangle",
+          "dom-xrcubelayer-space",
+          "dom-xrcubelayer-orientation",
+          "xrcompositionlayer-destroyed",
+          "xrcompositionlayer-session",
+          "dom-xrrenderstate-layers"
         ]
       },
       "https://immersive-web.github.io/webxr/": {
@@ -80,13 +147,29 @@
           "dom-xrsessioninit-requiredfeatures",
           "dom-xrsessioninit-optionalfeatures",
           "dom-xrsession-enabledfeatures",
+          "xr-animation-frame",
+          "xrframe-active",
+          "xrspace",
+          "xrrigidtransform",
           "enumdef-xreye",
           "dom-xrsession-ended",
+          "list-of-views",
+          "dom-xrreferencespacetype-viewer",
+          "xrreferencespace",
+          "xrreferencespace-type",
           "dom-xrframe-session",
-          "xr-animation-frame",
+          "dom-xrsession-renderstate",
+          "dom-xreye-right",
+          "dom-xreye-none",
           "xrview-session",
-          "xrspace",
-          "xrrigidtransform"
+          "xrview-frame",
+          "view-active"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "list-append"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -94,13 +177,15 @@
           "idl-boolean",
           "Exposed",
           "SecureContext",
-          "idl-double",
-          "invalidstateerror",
-          "idl-DOMException",
-          "notsupportederror",
           "SameObject",
+          "notsupportederror",
+          "idl-DOMException",
+          "operationerror",
+          "invalidstateerror",
+          "idl-double",
           "idl-unsigned-long",
-          "idl-float"
+          "idl-float",
+          "exceptiondef-typeerror"
         ]
       }
     }

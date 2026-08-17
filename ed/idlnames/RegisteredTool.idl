@@ -6,7 +6,7 @@ dictionary RegisteredTool {
   // done, and there's no need to do it again on tool exposure.
   DOMString title;
   required DOMString description;
-  DOMString inputSchema;
+  object inputSchema;
   required Window window;
   required USVString origin;
   ToolAnnotations annotations;

@@ -40,11 +40,12 @@ interface LanguageModel : EventTarget {
   // **DEPRECATED**: This attribute is only available in extension contexts.
   attribute EventHandler onquotaoverflow;
 
-  // **EXPERIMENTAL**: Only available in extension and experimental contexts.
+  // **DEPRECATED**: This attribute is only available in extension contexts.
   readonly attribute unsigned long topK;
-  // **EXPERIMENTAL**: Only available in extension and experimental contexts.
+  // **DEPRECATED**: This attribute is only available in extension contexts.
   readonly attribute float temperature;
 
+  // **EXPERIMENTAL**: Only available in experimental contexts.
   readonly attribute LanguageModelSamplingMode samplingMode;
 
   Promise<LanguageModel> clone(optional LanguageModelCloneOptions options = {});

@@ -9,7 +9,7 @@ interface VideoTrack {
 };
 
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source-2/)
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=Window]
 partial interface VideoTrack {
   readonly attribute SourceBuffer? sourceBuffer;
 };

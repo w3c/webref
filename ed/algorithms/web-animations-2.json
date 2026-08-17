@@ -1248,6 +1248,25 @@
       ]
     },
     {
+      "html": "When performing timing calculations\nthe special string value <code>auto</code> is expanded\nto one of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode⑤\">fill modes</a> recognized by the timing model\nas follows:",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "If the animation effect to which the fill mode is being applied is a keyframe effect,",
+              "html": "<p>Use <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-none\" id=\"ref-for-fill-mode-none①\">none</a> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode⑥\">fill mode</a>.</p>"
+            },
+            {
+              "case": "Otherwise,",
+              "html": "<p>Use <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode-both\" id=\"ref-for-fill-mode-both\">both</a> as the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode⑦\">fill mode</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "GroupEffect/GroupEffect(children, timing)",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-groupeffect-groupeffect",
       "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#groupeffect\" id=\"ref-for-groupeffect⑤\">GroupEffect</a></code> object using the following\nprocedure:",
@@ -1275,7 +1294,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑧\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①①⑨\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①①⑨\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor④\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②⓪\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children④\">Insert</a> <var>effects</var> before\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#first-child\" id=\"ref-for-first-child①\">first child</a>.</p>"
@@ -1289,7 +1308,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②⓪\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②①\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②①\">animation effects</a> in <var>effects</var> is an\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#inclusive-ancestor\" id=\"ref-for-inclusive-ancestor⑤\">inclusive ancestor</a> of this <span id=\"ref-for-animation-effect①②②\">animation effect</span>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪\">throw</a> a <span class=\"exceptionname\">HierarchyRequestError</span>\nexception and abort these steps.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#insert-children\" id=\"ref-for-insert-children⑤\">Insert</a> <var>effects</var> before\n<code>null</code>.</p>"
@@ -1322,7 +1341,7 @@
     {
       "name": "next sibling not included",
       "href": "https://drafts.csswg.org/web-animations-2/#next-sibling-not-included",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next sibling not included\" data-noexport=\"\" id=\"next-sibling-not-included\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next sibling of\n<var>effect</var> not included</dfn> in a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②③\">animation\neffects</a>, <var>effects</var> is determined using the following\nsteps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"next sibling not included\" data-noexport=\"\" id=\"next-sibling-not-included\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">next sibling of\n<var>effect</var> not included</dfn> in a set of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②④\">animation\neffects</a>, <var>effects</var> is determined using the following\nsteps:",
       "rationale": "let",
       "steps": [
         {
@@ -1369,7 +1388,7 @@
     {
       "name": "insert children",
       "href": "https://drafts.csswg.org/web-animations-2/#insert-children",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"insert children\" data-noexport=\"\" id=\"insert-children\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insert</dfn> a series of zero or\nmore <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②④\">animation effects</a>, <var>effects</var>, to\n<var>parent</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect①⑤\">child effects</a> before\n<var>reference child</var> perform the following steps for each\n<var>effect</var> in <var>effects</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"insert children\" data-noexport=\"\" id=\"insert-children\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insert</dfn> a series of zero or\nmore <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect\" id=\"ref-for-animation-effect①②⑤\">animation effects</a>, <var>effects</var>, to\n<var>parent</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-2/#child-effect\" id=\"ref-for-child-effect①⑤\">child effects</a> before\n<var>reference child</var> perform the following steps for each\n<var>effect</var> in <var>effects</var>:",
       "rationale": "remove",
       "steps": [
         {

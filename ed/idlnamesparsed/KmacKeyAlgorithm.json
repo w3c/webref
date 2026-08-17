@@ -6,7 +6,7 @@
       "title": "Modern Algorithms in the Web Cryptography API",
       "url": "https://wicg.github.io/webcrypto-modern-algos/"
     },
-    "fragment": "dictionary KmacKeyAlgorithm : KeyAlgorithm {\n  required unsigned long length;\n};",
+    "fragment": "dictionary KmacKeyAlgorithm : KeyAlgorithm {\n  required [EnforceRange] unsigned long length;\n};",
     "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm"
   },
   "extended": [],

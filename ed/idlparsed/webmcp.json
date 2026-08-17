@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n  Promise<DOMString> executeTool(RegisteredTool tool, DOMString inputArguments, optional ModelContextExecuteToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": "EventTarget",
@@ -131,6 +131,82 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-gettools"
+          },
+          {
+            "type": "operation",
+            "name": "executeTool",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tool",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RegisteredTool"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "inputArguments",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ModelContextExecuteToolOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-executetool"
           },
           {
             "type": "attribute",
@@ -368,27 +444,11 @@
         "href": "https://webmachinelearning.github.io/webmcp/#callbackdef-toolexecutecallback"
       },
       "ModelContextRegisterToolOptions": {
-        "fragment": "dictionary ModelContextRegisterToolOptions {\n  AbortSignal signal;\n  sequence<USVString> exposedTo;\n};",
+        "fragment": "dictionary ModelContextRegisterToolOptions {\n  sequence<USVString> exposedTo;\n  AbortSignal signal;\n};",
         "type": "dictionary",
         "name": "ModelContextRegisterToolOptions",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "signal",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AbortSignal"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal"
-          },
           {
             "type": "field",
             "name": "exposedTo",
@@ -413,6 +473,22 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-exposedto"
+          },
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal"
           }
         ],
         "extAttrs": [],
@@ -455,8 +531,35 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextgettooloptions"
       },
+      "ModelContextExecuteToolOptions": {
+        "fragment": "dictionary ModelContextExecuteToolOptions {\n  AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "ModelContextExecuteToolOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextexecutetooloptions-signal"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextexecutetooloptions"
+      },
       "RegisteredTool": {
-        "fragment": "dictionary RegisteredTool {\n  required DOMString name;\n  // `title` can be exposed as a `DOMString` since it was taken in by a\n  // `USVString`, meaning all unmatched surrogate processing has already been\n  // done, and there's no need to do it again on tool exposure.\n  DOMString title;\n  required DOMString description;\n  DOMString inputSchema;\n  required Window window;\n  required USVString origin;\n  ToolAnnotations annotations;\n};",
+        "fragment": "dictionary RegisteredTool {\n  required DOMString name;\n  // `title` can be exposed as a `DOMString` since it was taken in by a\n  // `USVString`, meaning all unmatched surrogate processing has already been\n  // done, and there's no need to do it again on tool exposure.\n  DOMString title;\n  required DOMString description;\n  object inputSchema;\n  required Window window;\n  required USVString origin;\n  ToolAnnotations annotations;\n};",
         "type": "dictionary",
         "name": "RegisteredTool",
         "inheritance": null,
@@ -519,7 +622,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "object"
             },
             "default": null,
             "required": false,
@@ -638,6 +741,7 @@
         "ModelContextRegisterToolOptions",
         "RegisteredTool",
         "ModelContextGetToolOptions",
+        "ModelContextExecuteToolOptions",
         "EventHandler"
       ],
       "ModelContextTool": [
@@ -649,6 +753,9 @@
         "AbortSignal"
       ],
       "ModelContextGetToolOptions": [],
+      "ModelContextExecuteToolOptions": [
+        "AbortSignal"
+      ],
       "RegisteredTool": [
         "Window",
         "ToolAnnotations"

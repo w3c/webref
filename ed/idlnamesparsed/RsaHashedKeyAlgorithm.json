@@ -18,7 +18,7 @@
         "title": "Web Cryptography API Level 2",
         "url": "https://www.w3.org/TR/webcrypto-2/"
       },
-      "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+      "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required [EnforceRange] unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
       "href": "https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm"
     },
     "extended": [],

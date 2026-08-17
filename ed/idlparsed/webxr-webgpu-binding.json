@@ -17,416 +17,6 @@
       }
     },
     "idlNames": {
-      "XRGPUBinding": {
-        "fragment": "[Exposed=(Window), SecureContext]\ninterface XRGPUBinding {\n  constructor(XRSession session, GPUDevice device);\n\n  readonly attribute double nativeProjectionScaleFactor;\n  readonly attribute boolean usesDepthValues;\n\n  XRProjectionLayer createProjectionLayer(optional XRGPUProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRGPUQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRGPUCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XRGPUEquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRGPUCubeLayerInit init = {});\n\n  XRGPUSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRGPUSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n\n  GPUTextureFormat getPreferredColorFormat();\n};",
-        "type": "interface",
-        "name": "XRGPUBinding",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "session",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRSession"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "device",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUDevice"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-xrgpubinding"
-          },
-          {
-            "type": "attribute",
-            "name": "nativeProjectionScaleFactor",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-nativeprojectionscalefactor"
-          },
-          {
-            "type": "attribute",
-            "name": "usesDepthValues",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-usesdepthvalues"
-          },
-          {
-            "type": "operation",
-            "name": "createProjectionLayer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRProjectionLayer"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRGPUProjectionLayerInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createprojectionlayer"
-          },
-          {
-            "type": "operation",
-            "name": "createQuadLayer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRQuadLayer"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRGPUQuadLayerInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createquadlayer"
-          },
-          {
-            "type": "operation",
-            "name": "createCylinderLayer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRCylinderLayer"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRGPUCylinderLayerInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createcylinderlayer"
-          },
-          {
-            "type": "operation",
-            "name": "createEquirectLayer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XREquirectLayer"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRGPUEquirectLayerInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createequirectlayer"
-          },
-          {
-            "type": "operation",
-            "name": "createCubeLayer",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRCubeLayer"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "init",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRGPUCubeLayerInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createcubelayer"
-          },
-          {
-            "type": "operation",
-            "name": "getSubImage",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRGPUSubImage"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "layer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRCompositionLayer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "frame",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRFrame"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eye",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XREye"
-                },
-                "default": {
-                  "type": "string",
-                  "value": "none"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getsubimage"
-          },
-          {
-            "type": "operation",
-            "name": "getViewSubImage",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRGPUSubImage"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "layer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRProjectionLayer"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "view",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRView"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getviewsubimage"
-          },
-          {
-            "type": "operation",
-            "name": "getPreferredColorFormat",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureFormat"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getpreferredcolorformat"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding"
-      },
       "XRGPUSubImage": {
         "fragment": "[Exposed=(Window), SecureContext]\ninterface XRGPUSubImage : XRSubImage {\n  [SameObject] readonly attribute GPUTexture colorTexture;\n  [SameObject] readonly attribute GPUTexture? depthStencilTexture;\n  [SameObject] readonly attribute GPUTexture? motionVectorTexture;\n\n  GPUTextureViewDescriptor getViewDescriptor();\n};",
         "type": "interface",
@@ -1069,37 +659,427 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dictdef-xrgpucubelayerinit"
+      },
+      "XRGPUBinding": {
+        "fragment": "[Exposed=(Window), SecureContext]\ninterface XRGPUBinding {\n  constructor(XRSession session, GPUDevice device);\n\n  readonly attribute double nativeProjectionScaleFactor;\n  readonly attribute boolean usesDepthValues;\n\n  XRProjectionLayer createProjectionLayer(optional XRGPUProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRGPUQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRGPUCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XRGPUEquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRGPUCubeLayerInit init = {});\n\n  XRGPUSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRGPUSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n\n  GPUTextureFormat getPreferredColorFormat();\n};",
+        "type": "interface",
+        "name": "XRGPUBinding",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "session",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRSession"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "device",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUDevice"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-xrgpubinding"
+          },
+          {
+            "type": "attribute",
+            "name": "nativeProjectionScaleFactor",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-nativeprojectionscalefactor"
+          },
+          {
+            "type": "attribute",
+            "name": "usesDepthValues",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-usesdepthvalues"
+          },
+          {
+            "type": "operation",
+            "name": "createProjectionLayer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRProjectionLayer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRGPUProjectionLayerInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createprojectionlayer"
+          },
+          {
+            "type": "operation",
+            "name": "createQuadLayer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRQuadLayer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRGPUQuadLayerInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createquadlayer"
+          },
+          {
+            "type": "operation",
+            "name": "createCylinderLayer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRCylinderLayer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRGPUCylinderLayerInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createcylinderlayer"
+          },
+          {
+            "type": "operation",
+            "name": "createEquirectLayer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XREquirectLayer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRGPUEquirectLayerInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createequirectlayer"
+          },
+          {
+            "type": "operation",
+            "name": "createCubeLayer",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRCubeLayer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRGPUCubeLayerInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-createcubelayer"
+          },
+          {
+            "type": "operation",
+            "name": "getSubImage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRGPUSubImage"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "layer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRCompositionLayer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "frame",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRFrame"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eye",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XREye"
+                },
+                "default": {
+                  "type": "string",
+                  "value": "none"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getsubimage"
+          },
+          {
+            "type": "operation",
+            "name": "getViewSubImage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRGPUSubImage"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "layer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRProjectionLayer"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "view",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRView"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getviewsubimage"
+          },
+          {
+            "type": "operation",
+            "name": "getPreferredColorFormat",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureFormat"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-getpreferredcolorformat"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding"
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "XRGPUBinding",
-        "XRGPUSubImage"
+        "XRGPUSubImage",
+        "XRGPUBinding"
       ]
     },
     "dependencies": {
-      "XRGPUBinding": [
-        "XRSession",
-        "GPUDevice",
-        "XRProjectionLayer",
-        "XRGPUProjectionLayerInit",
-        "XRQuadLayer",
-        "XRGPUQuadLayerInit",
-        "XRCylinderLayer",
-        "XRGPUCylinderLayerInit",
-        "XREquirectLayer",
-        "XRGPUEquirectLayerInit",
-        "XRCubeLayer",
-        "XRGPUCubeLayerInit",
-        "XRGPUSubImage",
-        "XRCompositionLayer",
-        "XRFrame",
-        "XREye",
-        "XRView",
-        "GPUTextureFormat"
-      ],
       "XRGPUSubImage": [
         "XRSubImage",
         "GPUTexture",
@@ -1130,9 +1110,38 @@
       "XRGPUCubeLayerInit": [
         "XRGPULayerInit",
         "DOMPointReadOnly"
+      ],
+      "XRGPUBinding": [
+        "XRSession",
+        "GPUDevice",
+        "XRProjectionLayer",
+        "XRGPUProjectionLayerInit",
+        "XRQuadLayer",
+        "XRGPUQuadLayerInit",
+        "XRCylinderLayer",
+        "XRGPUCylinderLayerInit",
+        "XREquirectLayer",
+        "XRGPUEquirectLayerInit",
+        "XRCubeLayer",
+        "XRGPUCubeLayerInit",
+        "XRGPUSubImage",
+        "XRCompositionLayer",
+        "XRFrame",
+        "XREye",
+        "XRView",
+        "GPUTextureFormat"
       ]
     },
     "externalDependencies": [
+      "XRSubImage",
+      "GPUTexture",
+      "GPUTextureViewDescriptor",
+      "GPUTextureFormat",
+      "GPUTextureUsageFlags",
+      "XRSpace",
+      "XRLayerLayout",
+      "XRRigidTransform",
+      "DOMPointReadOnly",
       "XRSession",
       "GPUDevice",
       "XRProjectionLayer",
@@ -1143,16 +1152,7 @@
       "XRCompositionLayer",
       "XRFrame",
       "XREye",
-      "XRView",
-      "GPUTextureFormat",
-      "XRSubImage",
-      "GPUTexture",
-      "GPUTextureViewDescriptor",
-      "GPUTextureUsageFlags",
-      "XRSpace",
-      "XRLayerLayout",
-      "XRRigidTransform",
-      "DOMPointReadOnly"
+      "XRView"
     ],
     "hasObsoleteIdl": false
   }

@@ -1,5 +1,5 @@
 // Source: Web Cryptography API Level 2 (https://www.w3.org/TR/webcrypto-2/)
 dictionary RsaKeyAlgorithm : KeyAlgorithm {
-  required unsigned long modulusLength;
+  required [EnforceRange] unsigned long modulusLength;
   required BigInteger publicExponent;
 };

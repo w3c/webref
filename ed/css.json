@@ -563,6 +563,14 @@
       "extended": []
     },
     {
+      "name": "@location",
+      "prose": "The @location rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-location",
+      "descriptors": [],
+      "syntax": "<location-rule>",
+      "extended": []
+    },
+    {
       "name": "@macro",
       "href": "https://drafts.csswg.org/css-mixins-1/#macro-rule",
       "descriptors": [],
@@ -977,21 +985,21 @@
           "name": "inherits",
           "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-inherits",
           "for": "@property",
-          "initial": "n/a (see prose)",
+          "initial": "true",
           "syntax": "true | false"
         },
         {
           "name": "initial-value",
           "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-initial-value",
           "for": "@property",
-          "initial": "the guaranteed-invalid value (but see prose)",
+          "initial": "the guaranteed-invalid value",
           "syntax": "<declaration-value>?"
         },
         {
           "name": "syntax",
           "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-syntax",
           "for": "@property",
-          "initial": "n/a (see prose)",
+          "initial": "\"*\"",
           "syntax": "<string>"
         }
       ],
@@ -1024,14 +1032,6 @@
       "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-right-top",
       "descriptors": [],
       "syntax": "@right-top { <declaration-list> };",
-      "extended": []
-    },
-    {
-      "name": "@route",
-      "prose": "The @route rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
-      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
-      "descriptors": [],
-      "syntax": "<route-rule>",
       "extended": []
     },
     {
@@ -4168,7 +4168,7 @@
       "name": "baseline-source",
       "href": "https://drafts.csswg.org/css-inline-3/#propdef-baseline-source",
       "initial": "auto",
-      "appliesTo": "inline-level boxes",
+      "appliesTo": "inline-level boxes that establish an independent formatting context",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified keyword",
@@ -9583,7 +9583,7 @@
         "hyphenate-limit-chars",
         "hyphenateLimitChars"
       ],
-      "syntax": "[ auto | <integer> ]{1,3}",
+      "syntax": "[ auto | <integer [0,∞]> ]{1,3}",
       "extended": []
     },
     {
@@ -9617,7 +9617,7 @@
         "hyphenate-limit-lines",
         "hyphenateLimitLines"
       ],
-      "syntax": "no-limit | <integer>",
+      "syntax": "no-limit | <integer [0,∞]>",
       "extended": []
     },
     {
@@ -10640,17 +10640,17 @@
       "name": "margin-trim",
       "href": "https://drafts.csswg.org/css-box-4/#propdef-margin-trim",
       "initial": "none",
-      "appliesTo": "block containers, multi-column containers, flex containers, grid containers",
+      "appliesTo": "block containers, multi-column containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "a set of zero to four keywords indicating which sides to trim",
+      "computedValue": "a set of zero to two keywords indicating which sides to trim",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
         "margin-trim",
         "marginTrim"
       ],
-      "syntax": "none | [ block || inline ] | [ block-start || inline-start || block-end || inline-end ]",
+      "syntax": "none | block | [ block-start || block-end ]",
       "extended": []
     },
     {
@@ -13671,6 +13671,23 @@
       "extended": []
     },
     {
+      "name": "scroll-axis-lock",
+      "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-axis-lock",
+      "initial": "auto",
+      "appliesTo": "scroll container elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "scroll-axis-lock",
+        "scrollAxisLock"
+      ],
+      "syntax": "auto | none",
+      "extended": []
+    },
+    {
       "name": "scroll-behavior",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-scroll-behavior",
       "initial": "auto",
@@ -15163,7 +15180,7 @@
       "initial": "0",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
+      "percentages": "Depending on the value of box-decoration-break, either refer to the inline size of the decorating box or of each individual box fragment",
       "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
@@ -15171,7 +15188,7 @@
         "text-decoration-inset",
         "textDecorationInset"
       ],
-      "syntax": "<length>{1,2} | auto",
+      "syntax": "<length-percentage>{1,2} | auto",
       "extended": []
     },
     {
@@ -15699,7 +15716,7 @@
         "text-wrap-style",
         "textWrapStyle"
       ],
-      "syntax": "auto | balance | stable | pretty | avoid-orphans",
+      "syntax": "auto | balance | stable | pretty | avoid-short-last-line",
       "extended": []
     },
     {
@@ -19683,6 +19700,24 @@
       "extended": []
     },
     {
+      "name": "location-descriptor",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-descriptor",
+      "syntax": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>",
+      "extended": []
+    },
+    {
+      "name": "location-name",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-name",
+      "syntax": "<dashed-ident>",
+      "extended": []
+    },
+    {
+      "name": "location-rule",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-rule",
+      "syntax": "@location <dashed-ident> { <declaration-list> }",
+      "extended": []
+    },
+    {
       "name": "margin-width",
       "prose": "The properties defined in this section refer to the <margin-width> value type, which may take one of the following values:",
       "href": "https://drafts.csswg.org/css2/#value-def-margin-width",
@@ -19921,15 +19956,21 @@
       "extended": []
     },
     {
+      "name": "navigation-location",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
+      "syntax": "<url> | [ <location-name> | <url-pattern()> ]",
+      "extended": []
+    },
+    {
       "name": "navigation-location-between-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
-      "syntax": "between : <route-location> and <route-location>",
+      "syntax": "between : <navigation-location> and <navigation-location>",
       "extended": []
     },
     {
       "name": "navigation-location-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
-      "syntax": "<navigation-relation> : <route-location>",
+      "syntax": "<navigation-relation> : <navigation-location>",
       "extended": []
     },
     {
@@ -19947,7 +19988,7 @@
     {
       "name": "navigation-relation",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation",
-      "syntax": "at | with | from | to",
+      "syntax": "at | from | to",
       "extended": []
     },
     {
@@ -20464,30 +20505,6 @@
       "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>s dictate how to choose between them:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy",
       "syntax": "nearest | up | down | to-zero | line-width",
-      "extended": []
-    },
-    {
-      "name": "route-descriptor",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-descriptor",
-      "syntax": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>",
-      "extended": []
-    },
-    {
-      "name": "route-location",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
-      "syntax": "<url> | [ <route-name> | <url-pattern()> ]",
-      "extended": []
-    },
-    {
-      "name": "route-name",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
-      "syntax": "<dashed-ident>",
-      "extended": []
-    },
-    {
-      "name": "route-rule",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-rule",
-      "syntax": "@route <dashed-ident> { <declaration-list> }",
       "extended": []
     },
     {

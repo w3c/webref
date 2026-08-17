@@ -148,6 +148,130 @@
         "partial": false,
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
       },
+      "GPUFeatureName": {
+        "fragment": "enum GPUFeatureName {\n    \"core-features-and-limits\",\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n    \"subgroups\",\n    \"texture-formats-tier1\",\n    \"texture-formats-tier2\",\n    \"primitive-index\",\n    \"texture-component-swizzle\",\n    \"subgroup-size-control\",\n};",
+        "type": "enum",
+        "name": "GPUFeatureName",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "core-features-and-limits",
+            "href": "https://gpuweb.github.io/gpuweb/#core-features-and-limits"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth-clip-control",
+            "href": "https://gpuweb.github.io/gpuweb/#depth-clip-control"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth32float-stencil8",
+            "href": "https://gpuweb.github.io/gpuweb/#depth32float-stencil8"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-bc",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-bc"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-bc-sliced-3d",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-bc-sliced-3d"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-etc2",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-etc2"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-astc",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-astc"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-astc-sliced-3d",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-astc-sliced-3d"
+          },
+          {
+            "type": "enum-value",
+            "value": "timestamp-query",
+            "href": "https://gpuweb.github.io/gpuweb/#timestamp-query"
+          },
+          {
+            "type": "enum-value",
+            "value": "indirect-first-instance",
+            "href": "https://gpuweb.github.io/gpuweb/#indirect-first-instance"
+          },
+          {
+            "type": "enum-value",
+            "value": "shader-f16",
+            "href": "https://gpuweb.github.io/gpuweb/#shader-f16"
+          },
+          {
+            "type": "enum-value",
+            "value": "rg11b10ufloat-renderable",
+            "href": "https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable"
+          },
+          {
+            "type": "enum-value",
+            "value": "bgra8unorm-storage",
+            "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage"
+          },
+          {
+            "type": "enum-value",
+            "value": "float32-filterable",
+            "href": "https://gpuweb.github.io/gpuweb/#float32-filterable"
+          },
+          {
+            "type": "enum-value",
+            "value": "float32-blendable",
+            "href": "https://gpuweb.github.io/gpuweb/#float32-blendable"
+          },
+          {
+            "type": "enum-value",
+            "value": "clip-distances",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-clip-distances"
+          },
+          {
+            "type": "enum-value",
+            "value": "dual-source-blending",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-dual-source-blending"
+          },
+          {
+            "type": "enum-value",
+            "value": "subgroups",
+            "href": "https://gpuweb.github.io/gpuweb/#subgroups"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-formats-tier1",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-formats-tier1"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-formats-tier2",
+            "href": "https://gpuweb.github.io/gpuweb/#texture-formats-tier2"
+          },
+          {
+            "type": "enum-value",
+            "value": "primitive-index",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-primitive-index"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-component-swizzle",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-texture-component-swizzle"
+          },
+          {
+            "type": "enum-value",
+            "value": "subgroup-size-control",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-subgroup-size-control"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://gpuweb.github.io/gpuweb/#gpufeaturename"
+      },
       "GPUSupportedLimits": {
         "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxImmediateSize;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersInVertexStage;\n    readonly attribute unsigned long maxStorageBuffersInFragmentStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesInVertexStage;\n    readonly attribute unsigned long maxStorageTexturesInFragmentStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
@@ -1521,130 +1645,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://gpuweb.github.io/gpuweb/#gpudevicedescriptor"
-      },
-      "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"core-features-and-limits\",\n    \"depth-clip-control\",\n    \"depth32float-stencil8\",\n    \"texture-compression-bc\",\n    \"texture-compression-bc-sliced-3d\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"texture-compression-astc-sliced-3d\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n    \"shader-f16\",\n    \"rg11b10ufloat-renderable\",\n    \"bgra8unorm-storage\",\n    \"float32-filterable\",\n    \"float32-blendable\",\n    \"clip-distances\",\n    \"dual-source-blending\",\n    \"subgroups\",\n    \"texture-formats-tier1\",\n    \"texture-formats-tier2\",\n    \"primitive-index\",\n    \"texture-component-swizzle\",\n    \"subgroup-size-control\",\n};",
-        "type": "enum",
-        "name": "GPUFeatureName",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "core-features-and-limits",
-            "href": "https://gpuweb.github.io/gpuweb/#core-features-and-limits"
-          },
-          {
-            "type": "enum-value",
-            "value": "depth-clip-control",
-            "href": "https://gpuweb.github.io/gpuweb/#depth-clip-control"
-          },
-          {
-            "type": "enum-value",
-            "value": "depth32float-stencil8",
-            "href": "https://gpuweb.github.io/gpuweb/#depth32float-stencil8"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-compression-bc",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-bc"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-compression-bc-sliced-3d",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-bc-sliced-3d"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-compression-etc2",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-etc2"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-compression-astc",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-astc"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-compression-astc-sliced-3d",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-compression-astc-sliced-3d"
-          },
-          {
-            "type": "enum-value",
-            "value": "timestamp-query",
-            "href": "https://gpuweb.github.io/gpuweb/#timestamp-query"
-          },
-          {
-            "type": "enum-value",
-            "value": "indirect-first-instance",
-            "href": "https://gpuweb.github.io/gpuweb/#indirect-first-instance"
-          },
-          {
-            "type": "enum-value",
-            "value": "shader-f16",
-            "href": "https://gpuweb.github.io/gpuweb/#shader-f16"
-          },
-          {
-            "type": "enum-value",
-            "value": "rg11b10ufloat-renderable",
-            "href": "https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable"
-          },
-          {
-            "type": "enum-value",
-            "value": "bgra8unorm-storage",
-            "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage"
-          },
-          {
-            "type": "enum-value",
-            "value": "float32-filterable",
-            "href": "https://gpuweb.github.io/gpuweb/#float32-filterable"
-          },
-          {
-            "type": "enum-value",
-            "value": "float32-blendable",
-            "href": "https://gpuweb.github.io/gpuweb/#float32-blendable"
-          },
-          {
-            "type": "enum-value",
-            "value": "clip-distances",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-clip-distances"
-          },
-          {
-            "type": "enum-value",
-            "value": "dual-source-blending",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-dual-source-blending"
-          },
-          {
-            "type": "enum-value",
-            "value": "subgroups",
-            "href": "https://gpuweb.github.io/gpuweb/#subgroups"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-formats-tier1",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-formats-tier1"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-formats-tier2",
-            "href": "https://gpuweb.github.io/gpuweb/#texture-formats-tier2"
-          },
-          {
-            "type": "enum-value",
-            "value": "primitive-index",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-primitive-index"
-          },
-          {
-            "type": "enum-value",
-            "value": "texture-component-swizzle",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-texture-component-swizzle"
-          },
-          {
-            "type": "enum-value",
-            "value": "subgroup-size-control",
-            "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-subgroup-size-control"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://gpuweb.github.io/gpuweb/#gpufeaturename"
       },
       "GPUDevice": {
         "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    [SameObject] readonly attribute GPUAdapterInfo adapterInfo;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",

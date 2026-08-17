@@ -317,19 +317,58 @@
           "html": "<p>\n              If <var>operation</var> is not one of\n              \"<code>encrypt</code>\", \"<code>decrypt</code>\", \"<code>sign</code>\", \"<code>verify</code>\",\n              \"<code>digest</code>\", \"<code>generateKey</code>\", \"<code>deriveKey</code>\", \"<code>deriveBits</code>\",\n              \"<code>importKey</code>\", \"<code>exportKey</code>\", \"<code>wrapKey</code>\", \"<code>unwrapKey</code>\",\n              \"<code>encapsulateKey</code>\", \"<code>encapsulateBits</code>\",\n              \"<code>decapsulateKey</code>\", \"<code>decapsulateBits</code>\" or \"<code>getPublicKey</code>\",\n              return false.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>operation</var> is \"<code>deriveKey</code>\", \"<code>unwrapKey</code>\", \"<code>encapsulateKey</code>\" or \"<code>decapsulateKey</code>\":</dt>\n              <dd>\n                <p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-2\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>importKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>\n              </dd>\n              <dt>If <var>operation</var> is \"<code>wrapKey</code>\":</dt>\n              <dd>\n                <p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-3\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>exportKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>operation</var> is \"<code>deriveKey</code>\" or \"<code>unwrapKey</code>\":</dt>\n              <dd>\n                <p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-2\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>importKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>\n              </dd>\n              <dt>If <var>operation</var> is \"<code>wrapKey</code>\":</dt>\n              <dd>\n                <p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-3\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>exportKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
               "operation": "switch",
               "steps": [
                 {
-                  "case": "If operation is \"deriveKey\", \"unwrapKey\", \"encapsulateKey\" or \"decapsulateKey\":",
+                  "case": "If operation is \"deriveKey\" or \"unwrapKey\":",
                   "html": "<p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-2\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>importKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>"
                 },
                 {
                   "case": "If operation is \"wrapKey\":",
                   "html": "<p>\n                  If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"check support for an algorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-check-support-for-algorithm-3\">checking support for an algorithm</a>\n                  with <code>op</code> set to \"<code>exportKey</code>\"\n                  and <code>alg</code> set to <var>additionalAlgorithm</var>\n                  is false,\n                  return false.\n                </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<dl class=\"switch\">\n              <dt>If <var>operation</var> is \"<code>encapsulateKey</code>\" or \"<code>decapsulateKey</code>\":</dt>\n              <dd>\n                \n              </dd>\n            </dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If operation is \"encapsulateKey\" or \"decapsulateKey\":",
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      Let <var>normalizedAlgorithm</var> be the result of\n                      <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-normalize-an-algorithm\">normalizing an algorithm</a>, with\n                      <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                      \"<code>get shared key length</code>\".\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If an error occurred, return false.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>sharedKeyLength</var> be the result of performing the get shared key length\n                      algorithm specified by <var>normalizedAlgorithm</var> using <var>algorithm</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>normalizedAdditionalAlgorithm</var> be the result of\n                      <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-normalize-an-algorithm\">normalizing an algorithm</a>, with\n                      <code>alg</code> set to <var>additionalAlgorithm</var> and <code>op</code> set to\n                      \"<code>importKey</code>\".\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If an error occurred, return false.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"determine support from operation steps\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-determine-support-from-operation-steps\" class=\"internalDFN\" id=\"ref-for-dfn-determine-support-from-operation-steps-1\">determining support from operation steps</a>\n                      with <code>op</code> set to \"<code>importKey</code>\" and <code>normalizedAlgorithm</code> set to\n                      <var>normalizedAdditionalAlgorithm</var>, and <code>length</code> set to null is false,\n                      return false.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the import key operation specified by <var>normalizedAdditionalAlgorithm</var>\n                      would <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an error for every value of <var>keyData</var> that is\n                      a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> whose length in bits is <var>sharedKeyLength</var> when\n                      <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-6\"><code>raw-secret</code></a>\", return false.\n                    </p>"
+                    }
+                  ]
                 }
               ]
             }
@@ -446,7 +485,18 @@
           ]
         },
         {
-          "html": "<p>\n            If the specified operation or algorithm (or one of its parameter values)\n            is expected to fail (for any key and/or data) for an implementation-specific reason\n            (e.g. known nonconformance to the specification), return false.\n          </p>"
+          "html": "<p>\n            Return the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"determine support from operation steps\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-determine-support-from-operation-steps\" class=\"internalDFN\" id=\"ref-for-dfn-determine-support-from-operation-steps-2\">determining support from operation steps</a>,\n            with <code>op</code> set to <var>op</var>, <code>normalizedAlgorithm</code> set to <var>normalizedAlgorithm</var>,\n            and <code>length</code> set to <var>length</var>.\n          </p>"
+        }
+      ]
+    },
+    {
+      "name": "determine support from operation steps",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-determine-support-from-operation-steps",
+      "html": "The <dfn id=\"dfn-determine-support-from-operation-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">determine support from operation steps</dfn> algorithm\n        determines whether the operation steps for a normalized algorithm indicate support.\n        Its input is an operation name <var>op</var>, an <a data-link-type=\"dictionary\" data-lt=\"Algorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-Algorithm\"><code>Algorithm</code></a> <var>normalizedAlgorithm</var>,\n        and a <var>length</var> parameter. Its output is a boolean.\n        It behaves as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n            If the specified operation or normalized algorithm (or one of its parameter values)\n            is expected to fail (for any key and/or data) for an implementation-specific reason\n            (e.g. known nonconformance to the specification), return false.\n          </p>"
         },
         {
           "html": "<p>\n            If <var>op</var> is \"<code>generateKey</code>\" or \"<code>importKey</code>\", let <var>usages</var> be the empty list.\n          </p>"
@@ -536,6 +586,14 @@
         },
         {
           "html": "<p>\n              Return <var>sharedKey</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>\n              Return 256.\n            </p>"
         }
       ]
     },
@@ -1160,10 +1218,13 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>\n              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-2\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              is present and has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a> greater than 255\n              bytes, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
           "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-2\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-3\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
+          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-3\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-4\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>result</var> be the result of performing the ML-DSA.Sign\n              signing algorithm, as specified in Section 5.2 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-fips-204\" title=\"Module-Lattice-Based Digital Signature Standard\">FIPS-204</a></cite>],\n              with the parameter set indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>,\n              using the ML-DSA private key associated with <var>key</var> as <var>sk</var>,\n              <var>message</var> as <var>M</var> and <var>context</var> as <var>ctx</var>.\n            </p>"
@@ -1180,10 +1241,13 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>\n              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-5\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              is present and has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a> greater than 255\n              bytes, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
           "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-4\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-5\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
+          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-6\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-7\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>result</var> be the result of performing the ML-DSA.Verify\n              verification algorithm, as specified in Section 5.3 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-fips-204\" title=\"Module-Lattice-Based Digital Signature Standard\">FIPS-204</a></cite>],\n              with the parameter set indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>,\n              using the ML-DSA public key associated with <var>key</var> as <var>pk</var>,\n              <var>message</var> as <var>M</var>, <var>signature</var> as <var>σ</var> and <var>context</var> as <var>ctx</var>.\n            </p>"
@@ -1811,10 +1875,13 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>\n              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-8\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              is present and has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a> greater than 255\n              bytes, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
           "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-6\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-7\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
+          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-9\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-10\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>result</var> be the result of performing the <code>slh_sign</code>\n              signing algorithm, as specified in Section 10.2.1 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-fips-205\" title=\"Stateless Hash-Based Digital Signature Standard\">FIPS-205</a></cite>],\n              with the parameter set indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>,\n              using the SLH-DSA private key associated with <var>key</var> as <var>SK</var>,\n              <var>message</var> as <var>M</var> and <var>context</var> as <var>ctx</var>.\n            </p>"
@@ -1834,7 +1901,7 @@
           "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-8\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-9\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
+          "html": "<p>\n              Let <var>context</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-11\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              or the empty octet string if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-12\"><code>context</code></a> member of\n              <var>normalizedAlgorithm</var> is not present.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>result</var> be the result of performing the <code>slh_verify</code>\n              verification algorithm, as specified in Section 10.3 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-fips-205\" title=\"Stateless Hash-Based Digital Signature Standard\">FIPS-205</a></cite>],\n              with the parameter set indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>,\n              using the SLH-DSA public key associated with <var>key</var> as <var>PK</var>,\n              <var>message</var> as <var>M</var>, <var>signature</var> as <var>SIG</var> and <var>context</var> as <var>ctx</var>.\n            </p>"
@@ -2700,7 +2767,7 @@
           "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>key</var> to be <var>extractable</var>.\n            </p>"
         },
         {
-          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be <var>usages</var>.\n            </p>"
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be the <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-normalized-usages\">normalized value</a> of <var>usages</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Return <var>key</var>.\n            </p>"
@@ -2717,7 +2784,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              one of \"<code>encrypt</code>\", \"<code>decrypt</code>\",\n              \"<code>wrapKey</code>\" or \"<code>unwrapKey</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-6\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-7\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-7\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-7\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -2845,7 +2912,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-7\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-8\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-8\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-8\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3026,7 +3093,7 @@
           "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>key</var> to be <var>extractable</var>.\n            </p>"
         },
         {
-          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be <var>usages</var>.\n            </p>"
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be the <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-normalized-usages\">normalized value</a> of <var>usages</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Return <var>key</var>.\n            </p>"
@@ -3043,7 +3110,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              one of \"<code>encrypt</code>\", \"<code>decrypt</code>\",\n              \"<code>wrapKey</code>\" or \"<code>unwrapKey</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-8\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-9\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-9\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-9\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3144,7 +3211,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-9\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-10\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-10\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-10\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3486,7 +3553,7 @@
           "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>key</var> to be <var>extractable</var>.\n            </p>"
         },
         {
-          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be <var>usages</var>.\n            </p>"
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>key</var> to be the <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-normalized-usages\">normalized value</a> of <var>usages</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Return <var>key</var>.\n            </p>"
@@ -3503,7 +3570,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              \"<code>sign</code>\" or \"<code>verify</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-10\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-11\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-11\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-11\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3664,7 +3731,7 @@
           "html": "<p>\n              Let <var>data</var> be an <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-byte-sequence-containing\">byte sequence containing</a> <var>bits</var>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-11\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-12\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-12\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-12\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3836,7 +3903,7 @@
           "html": "<p>Let <var>keyData</var> be the key data to be imported.</p>"
         },
         {
-          "html": "<p>\n              If <var>format</var> is not \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-12\"><code>raw-secret</code></a>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\n            </p>"
+          "html": "<p>\n              If <var>format</var> is not \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-13\"><code>raw-secret</code></a>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\n            </p>"
         },
         {
           "html": "<p>\n              If <var>usages</var> contains a value that is not\n              \"<code>deriveKey</code>\"  or \"<code>deriveBits</code>\", then\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"

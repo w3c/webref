@@ -357,7 +357,7 @@
         "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey"
       },
       "SubtleCrypto": {
-        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<ArrayBuffer> encrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> decrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> sign(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<boolean> verify(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource signature,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> digest(\n    AlgorithmIdentifier algorithm,\n    BufferSource data\n  );\n\n  Promise<(CryptoKey or CryptoKeyPair)> generateKey(\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<CryptoKey> deriveKey(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    AlgorithmIdentifier derivedKeyType,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> deriveBits(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    optional unsigned long? length = null\n  );\n\n  Promise<CryptoKey> importKey(\n    KeyFormat format,\n    (BufferSource or JsonWebKey) keyData,\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<(ArrayBuffer or JsonWebKey)> exportKey(\n    KeyFormat format,\n    CryptoKey key\n  );\n\n  Promise<ArrayBuffer> wrapKey(\n    KeyFormat format,\n    CryptoKey key,\n    CryptoKey wrappingKey,\n    AlgorithmIdentifier wrapAlgorithm\n  );\n  Promise<CryptoKey> unwrapKey(\n    KeyFormat format,\n    BufferSource wrappedKey,\n    CryptoKey unwrappingKey,\n    AlgorithmIdentifier unwrapAlgorithm,\n    AlgorithmIdentifier unwrappedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n};",
+        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<ArrayBuffer> encrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> decrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> sign(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<boolean> verify(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource signature,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> digest(\n    AlgorithmIdentifier algorithm,\n    BufferSource data\n  );\n\n  Promise<(CryptoKey or CryptoKeyPair)> generateKey(\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<CryptoKey> deriveKey(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    AlgorithmIdentifier derivedKeyType,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> deriveBits(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    optional [EnforceRange] unsigned long? length = null\n  );\n\n  Promise<CryptoKey> importKey(\n    KeyFormat format,\n    (BufferSource or JsonWebKey) keyData,\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<(ArrayBuffer or JsonWebKey)> exportKey(\n    KeyFormat format,\n    CryptoKey key\n  );\n\n  Promise<ArrayBuffer> wrapKey(\n    KeyFormat format,\n    CryptoKey key,\n    CryptoKey wrappingKey,\n    AlgorithmIdentifier wrapAlgorithm\n  );\n  Promise<CryptoKey> unwrapKey(\n    KeyFormat format,\n    BufferSource wrappedKey,\n    CryptoKey unwrappingKey,\n    AlgorithmIdentifier unwrapAlgorithm,\n    AlgorithmIdentifier unwrappedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n};",
         "type": "interface",
         "name": "SubtleCrypto",
         "inheritance": null,
@@ -1006,7 +1006,14 @@
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
-                  "extAttrs": [],
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "EnforceRange",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
                   "generic": "",
                   "nullable": true,
                   "union": false,
@@ -2007,7 +2014,7 @@
         "href": "https://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams"
       },
       "RsaKeyAlgorithm": {
-        "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
+        "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required [EnforceRange] unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
         "type": "dictionary",
         "name": "RsaKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2018,7 +2025,14 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,
@@ -2365,7 +2379,7 @@
         "href": "https://w3c.github.io/webcrypto/#dfn-AesCtrParams"
       },
       "AesKeyAlgorithm": {
-        "fragment": "dictionary AesKeyAlgorithm : KeyAlgorithm {\n  required unsigned short length;\n};",
+        "fragment": "dictionary AesKeyAlgorithm : KeyAlgorithm {\n  required [EnforceRange] unsigned short length;\n};",
         "type": "dictionary",
         "name": "AesKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2376,7 +2390,14 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,
@@ -2603,7 +2624,7 @@
         "href": "https://w3c.github.io/webcrypto/#dfn-HmacImportParams"
       },
       "HmacKeyAlgorithm": {
-        "fragment": "dictionary HmacKeyAlgorithm : KeyAlgorithm {\n  required KeyAlgorithm hash;\n  required unsigned long length;\n};",
+        "fragment": "dictionary HmacKeyAlgorithm : KeyAlgorithm {\n  required KeyAlgorithm hash;\n  required [EnforceRange] unsigned long length;\n};",
         "type": "dictionary",
         "name": "HmacKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2630,7 +2651,14 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,

@@ -555,7 +555,7 @@
         "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacImportParams"
       },
       "KmacKeyAlgorithm": {
-        "fragment": "dictionary KmacKeyAlgorithm : KeyAlgorithm {\n  required unsigned long length;\n};",
+        "fragment": "dictionary KmacKeyAlgorithm : KeyAlgorithm {\n  required [EnforceRange] unsigned long length;\n};",
         "type": "dictionary",
         "name": "KmacKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -566,7 +566,14 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,
@@ -786,7 +793,7 @@
     "idlExtendedNames": {
       "SubtleCrypto": [
         {
-          "fragment": "[SecureContext,Exposed=(Window,Worker)]\npartial interface SubtleCrypto {\n  Promise<EncapsulatedKey> encapsulateKey(\n    AlgorithmIdentifier encapsulationAlgorithm,\n    CryptoKey encapsulationKey,\n    AlgorithmIdentifier sharedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<EncapsulatedBits> encapsulateBits(\n    AlgorithmIdentifier encapsulationAlgorithm,\n    CryptoKey encapsulationKey\n  );\n\n  Promise<CryptoKey> decapsulateKey(\n    AlgorithmIdentifier decapsulationAlgorithm,\n    CryptoKey decapsulationKey,\n    BufferSource ciphertext,\n    AlgorithmIdentifier sharedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> decapsulateBits(\n    AlgorithmIdentifier decapsulationAlgorithm,\n    CryptoKey decapsulationKey,\n    BufferSource ciphertext\n  );\n\n  Promise<CryptoKey> getPublicKey(\n    CryptoKey key,\n    sequence<KeyUsage> keyUsages\n  );\n\n  static boolean supports(DOMString operation,\n                   AlgorithmIdentifier algorithm,\n                   optional unsigned long? length = null);\n  static boolean supports(DOMString operation,\n                   AlgorithmIdentifier algorithm,\n                   AlgorithmIdentifier additionalAlgorithm);\n};",
+          "fragment": "[SecureContext,Exposed=(Window,Worker)]\npartial interface SubtleCrypto {\n  Promise<EncapsulatedKey> encapsulateKey(\n    AlgorithmIdentifier encapsulationAlgorithm,\n    CryptoKey encapsulationKey,\n    AlgorithmIdentifier sharedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<EncapsulatedBits> encapsulateBits(\n    AlgorithmIdentifier encapsulationAlgorithm,\n    CryptoKey encapsulationKey\n  );\n\n  Promise<CryptoKey> decapsulateKey(\n    AlgorithmIdentifier decapsulationAlgorithm,\n    CryptoKey decapsulationKey,\n    BufferSource ciphertext,\n    AlgorithmIdentifier sharedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> decapsulateBits(\n    AlgorithmIdentifier decapsulationAlgorithm,\n    CryptoKey decapsulationKey,\n    BufferSource ciphertext\n  );\n\n  Promise<CryptoKey> getPublicKey(\n    CryptoKey key,\n    sequence<KeyUsage> keyUsages\n  );\n\n  static boolean supports(DOMString operation,\n                   AlgorithmIdentifier algorithm,\n                   optional [EnforceRange] unsigned long? length = null);\n  static boolean supports(DOMString operation,\n                   AlgorithmIdentifier algorithm,\n                   AlgorithmIdentifier additionalAlgorithm);\n};",
           "type": "interface",
           "name": "SubtleCrypto",
           "inheritance": null,
@@ -1286,7 +1293,14 @@
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
-                    "extAttrs": [],
+                    "extAttrs": [
+                      {
+                        "type": "extended-attribute",
+                        "name": "EnforceRange",
+                        "rhs": null,
+                        "arguments": []
+                      }
+                    ],
                     "generic": "",
                     "nullable": true,
                     "union": false,
