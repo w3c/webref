@@ -11,7 +11,7 @@ partial interface Document {
 interface ModelContext : EventTarget {
   Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});
   Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});
-  Promise<DOMString> executeTool(RegisteredTool tool, DOMString inputArguments, optional ModelContextExecuteToolOptions options = {});
+  Promise<DOMString> executeTool(RegisteredTool tool, optional object inputObject = {}, optional ModelContextExecuteToolOptions options = {});
 
   attribute EventHandler ontoolchange;
 };
@@ -32,7 +32,7 @@ dictionary ToolAnnotations {
   boolean untrustedContentHint = false;
 };
 
-callback ToolExecuteCallback = Promise<any> (object input);
+callback ToolExecuteCallback = Promise<any> (object inputObject);
 
 dictionary ModelContextRegisterToolOptions {
   sequence<USVString> exposedTo;

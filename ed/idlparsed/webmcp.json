@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n  Promise<DOMString> executeTool(RegisteredTool tool, DOMString inputArguments, optional ModelContextExecuteToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n  Promise<DOMString> executeTool(RegisteredTool tool, optional object inputObject = {}, optional ModelContextExecuteToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": "EventTarget",
@@ -171,7 +171,7 @@
               },
               {
                 "type": "argument",
-                "name": "inputArguments",
+                "name": "inputObject",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -179,10 +179,12 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "object"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               },
               {
@@ -402,7 +404,7 @@
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolannotations"
       },
       "ToolExecuteCallback": {
-        "fragment": "callback ToolExecuteCallback = Promise<any> (object input);",
+        "fragment": "callback ToolExecuteCallback = Promise<any> (object inputObject);",
         "type": "callback",
         "name": "ToolExecuteCallback",
         "idlType": {
@@ -425,7 +427,7 @@
         "arguments": [
           {
             "type": "argument",
-            "name": "input",
+            "name": "inputObject",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
