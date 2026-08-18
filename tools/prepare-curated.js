@@ -137,7 +137,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   await crawlSpecs({
     useCrawl: curatedFolder,
     output: curatedFolder,
-    post: ['idlparsed', 'idlnames', 'events', 'cssmerge'],
+    post: ['idlparsed', 'idlnames', 'events', 'cssmerge', 'backrefs'],
     quiet: true
   });
   console.log('- done');
