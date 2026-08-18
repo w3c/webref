@@ -42,8 +42,9 @@ interface CSSFontFaceRule : CSSRule {
 };
 
 partial interface CSSRule {
-    const unsigned short FONT_FEATURE_VALUES_RULE = 14;
-  };
+  const unsigned short FONT_FEATURE_VALUES_RULE = 14;
+};
+
 [Exposed=Window]
 interface CSSFontFeatureValuesRule : CSSRule {
   attribute CSSOMString fontFamily;
