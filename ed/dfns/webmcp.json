@@ -107,6 +107,28 @@
       "links": []
     },
     {
+      "id": "model-context-local-pending-tool-executions-map",
+      "href": "https://webmachinelearning.github.io/webmcp/#model-context-local-pending-tool-executions-map",
+      "linkingText": [
+        "local pending tool executions map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "model context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-concepts",
+        "href": "https://webmachinelearning.github.io/webmcp/#supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "tool-definition",
       "href": "https://webmachinelearning.github.io/webmcp/#tool-definition",
       "linkingText": [
@@ -268,6 +290,48 @@
       "type": "dfn",
       "for": [
         "tool definition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-concepts",
+        "href": "https://webmachinelearning.github.io/webmcp/#supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "local-pending-tool-execution",
+      "href": "https://webmachinelearning.github.io/webmcp/#local-pending-tool-execution",
+      "linkingText": [
+        "local pending tool execution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-concepts",
+        "href": "https://webmachinelearning.github.io/webmcp/#supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "local-pending-tool-execution-abort-controller",
+      "href": "https://webmachinelearning.github.io/webmcp/#local-pending-tool-execution-abort-controller",
+      "linkingText": [
+        "abort controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "local pending tool execution"
       ],
       "access": "private",
       "informative": false,
@@ -463,6 +527,26 @@
       "for": [
         "traversable navigable"
       ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-tool-executions",
+        "href": "https://webmachinelearning.github.io/webmcp/#pending-tool-executions",
+        "title": "Pending tool executions",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cancel-a-pending-tool-execution",
+      "href": "https://webmachinelearning.github.io/webmcp/#cancel-a-pending-tool-execution",
+      "linkingText": [
+        "cancel a pending tool execution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -937,9 +1021,9 @@
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-dom-modelcontext-executetool①",
+          "id": "ref-for-dom-modelcontext-executetool②",
           "name": "document.modelContext.executeTool(tool, inputObject, options)",
-          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-executetool%E2%91%A0",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-executetool%E2%91%A1",
           "heading": {
             "id": "model-context-container",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
@@ -1270,6 +1354,61 @@
       ]
     },
     {
+      "id": "dictdef-toolexecutecallbackoptions",
+      "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolexecutecallbackoptions",
+      "linkingText": [
+        "ToolExecuteCallbackOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-tool",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-tool",
+        "title": "ModelContextTool Dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-toolexecutecallbackoptions-signal",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-toolexecutecallbackoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ToolExecuteCallbackOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-tool",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-tool",
+        "title": "ModelContextTool Dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-toolexecutecallbackoptions-signal①",
+          "name": "options[\"signal\"]",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-toolexecutecallbackoptions-signal%E2%91%A0",
+          "heading": {
+            "id": "tool-execute-callback-options",
+            "href": "https://webmachinelearning.github.io/webmcp/#tool-execute-callback-options",
+            "title": "ToolExecuteCallbackOptions Dictionary",
+            "number": "4.2.2"
+          }
+        }
+      ]
+    },
+    {
       "id": "callbackdef-toolexecutecallback",
       "href": "https://webmachinelearning.github.io/webmcp/#callbackdef-toolexecutecallback",
       "linkingText": [
@@ -1312,6 +1451,28 @@
       "links": []
     },
     {
+      "id": "dom-toolexecutecallback-options",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-toolexecutecallback-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ToolExecuteCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-tool",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-tool",
+        "title": "ModelContextTool Dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dictdef-modelcontextregistertooloptions",
       "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextregistertooloptions",
       "linkingText": [
@@ -1326,7 +1487,7 @@
         "id": "model-context-register-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
         "title": "ModelContextRegisterToolOptions Dictionary",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": []
@@ -1348,7 +1509,7 @@
         "id": "model-context-register-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
         "title": "ModelContextRegisterToolOptions Dictionary",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": [
@@ -1361,7 +1522,7 @@
             "id": "model-context-register-tool-options",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
             "title": "ModelContextRegisterToolOptions Dictionary",
-            "number": "4.2.2"
+            "number": "4.2.3"
           }
         }
       ]
@@ -1383,7 +1544,7 @@
         "id": "model-context-register-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
         "title": "ModelContextRegisterToolOptions Dictionary",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": [
@@ -1396,7 +1557,7 @@
             "id": "model-context-register-tool-options",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
             "title": "ModelContextRegisterToolOptions Dictionary",
-            "number": "4.2.2"
+            "number": "4.2.3"
           }
         }
       ]
@@ -1416,7 +1577,7 @@
         "id": "model-context-get-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-get-tool-options",
         "title": "ModelContextGetToolOptions Dictionary",
-        "number": "4.2.3"
+        "number": "4.2.4"
       },
       "definedIn": "pre",
       "links": []
@@ -1438,7 +1599,7 @@
         "id": "model-context-get-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-get-tool-options",
         "title": "ModelContextGetToolOptions Dictionary",
-        "number": "4.2.3"
+        "number": "4.2.4"
       },
       "definedIn": "pre",
       "links": [
@@ -1451,7 +1612,7 @@
             "id": "model-context-get-tool-options",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-get-tool-options",
             "title": "ModelContextGetToolOptions Dictionary",
-            "number": "4.2.3"
+            "number": "4.2.4"
           }
         }
       ]
@@ -1471,7 +1632,7 @@
         "id": "model-context-execute-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-execute-tool-options",
         "title": "ModelContextExecuteToolOptions Dictionary",
-        "number": "4.2.4"
+        "number": "4.2.5"
       },
       "definedIn": "pre",
       "links": []
@@ -1493,7 +1654,7 @@
         "id": "model-context-execute-tool-options",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-execute-tool-options",
         "title": "ModelContextExecuteToolOptions Dictionary",
-        "number": "4.2.4"
+        "number": "4.2.5"
       },
       "definedIn": "pre",
       "links": [
@@ -1506,7 +1667,7 @@
             "id": "model-context-execute-tool-options",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-execute-tool-options",
             "title": "ModelContextExecuteToolOptions Dictionary",
-            "number": "4.2.4"
+            "number": "4.2.5"
           }
         }
       ]
@@ -1526,7 +1687,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": []
@@ -1548,7 +1709,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1561,7 +1722,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1583,7 +1744,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1596,7 +1757,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1618,7 +1779,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1631,7 +1792,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1653,7 +1814,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1666,7 +1827,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1688,7 +1849,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1701,7 +1862,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1723,7 +1884,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1736,7 +1897,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]
@@ -1758,7 +1919,7 @@
         "id": "registered-tool",
         "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
         "title": "RegisteredTool Dictionary",
-        "number": "4.2.5"
+        "number": "4.2.6"
       },
       "definedIn": "pre",
       "links": [
@@ -1771,7 +1932,7 @@
             "id": "registered-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#registered-tool",
             "title": "RegisteredTool Dictionary",
-            "number": "4.2.5"
+            "number": "4.2.6"
           }
         }
       ]

@@ -403,8 +403,35 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolannotations"
       },
+      "ToolExecuteCallbackOptions": {
+        "fragment": "dictionary ToolExecuteCallbackOptions {\n  required AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "ToolExecuteCallbackOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolexecutecallbackoptions-signal"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolexecutecallbackoptions"
+      },
       "ToolExecuteCallback": {
-        "fragment": "callback ToolExecuteCallback = Promise<any> (object inputObject);",
+        "fragment": "callback ToolExecuteCallback = Promise<any> (object inputObject, ToolExecuteCallbackOptions options);",
         "type": "callback",
         "name": "ToolExecuteCallback",
         "idlType": {
@@ -436,6 +463,22 @@
               "nullable": false,
               "union": false,
               "idlType": "object"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "options",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ToolExecuteCallbackOptions"
             },
             "default": null,
             "optional": false,
@@ -751,6 +794,9 @@
         "ToolAnnotations"
       ],
       "ToolAnnotations": [],
+      "ToolExecuteCallbackOptions": [
+        "AbortSignal"
+      ],
       "ModelContextRegisterToolOptions": [
         "AbortSignal"
       ],
