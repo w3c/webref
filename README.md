@@ -31,6 +31,7 @@ More often than not, released versions of specifications are much older than the
 
 The following subfolders in the `curated` branch contain individual machine-readable JSON or text files generated from specifications:
 
+- [`ed/backrefs`](https://github.com/w3c/webref/tree/curated/ed/backrefs): Back references to definitions of a specification from other specifications. One file per specification. This is a curated, derived view built from `dfns` and `links` extracts.
 - [`ed/cddl`](https://github.com/w3c/webref/tree/curated/ed/cddl): CDDL modules. If the specification defines a single CDDL module, one file gets created for the specification. If it defines multiple CDDL modules, one file gets created per CDDL module, plus one file named `[shortname]-all.cddl` with all CDDL definitions.
 - [`ed/css`](https://github.com/w3c/webref/tree/curated/ed/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [`ed/dfns`](https://github.com/w3c/webref/tree/curated/ed/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
@@ -73,6 +74,7 @@ Data curation brings the following guarantees.
 
 The consolidated `ed/css.json` file, released in the `@webref/css` package, comes with the following guarantees:
 
+- The file follows the [relevant JSON schema](https://github.com/w3c/reffy/blob/main/schemas/postprocessing/css.json) in the version of Reffy that was used to crawl the specs.
 - All syntax values (the `syntax` keys) can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) set in `peerDependencies` in `package.json`.
 - Feature names (the `name` keys) are unique per type provided that the `for` key is also taken into account for functions and types.
 - CSS features targeted by `for`, `legacyAliasOf`, `longhands` and `resetLonghands` keys are guaranteed to exist in the package.
@@ -81,6 +83,7 @@ The consolidated `ed/css.json` file, released in the `@webref/css` package, come
 
 The consolidated file is generated from curated extracts in the `ed/css` folder. These extracts, released in the `@webref/css` package until version 7, come with the following guarantees:
 
+- All extracts follow the [relevant JSON schema](https://github.com/w3c/reffy/blob/main/schemas/files/extracts/css.json) in the version of Reffy that was used to crawl the specs.
 - All values in CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`.
 - No duplicate definitions of entries in CSS files provided that CSS extracts of [delta specs](https://github.com/w3c/browser-specs/#seriescomposition) are not taken into account (such extracts end with `-n.json`, where `n` is a level number). The term "entries" includes CSS properties, at-rules, selectors, types and functions. Please note that specs may still extend entries defined elsewhere (to define new values for CSS properties, or new selectors for at-rules).
 - CSS extracts contain a base definition of all CSS properties that get extended by other CSS property definitions (those for which `newValues` is set).
@@ -88,6 +91,7 @@ The consolidated file is generated from curated extracts in the `ed/css` folder.
 
 ### Elements extracts
 
+- All extracts follow the [relevant JSON schema](https://github.com/w3c/reffy/blob/main/schemas/files/extracts/elements.json) in the version of Reffy that was used to crawl the specs.
 - All Web IDL interfaces referenced by elements exist in Web IDL extracts.
 - All elements link back to their definition in the spec.
 
@@ -95,6 +99,7 @@ The consolidated file is generated from curated extracts in the `ed/css` folder.
 
 The consolidated `ed/events.json` file, released in the `@webref/events` package, comes with the following guarantees:
 
+- The file follows the [relevant JSON schema](https://github.com/w3c/reffy/blob/main/schemas/postprocessing/events.json) in the version of Reffy that was used to crawl the specs.
 - All events have a `type` attribute that match the name of the event
 - All events have a `interface` attribute to describe the interface used by the Event. The Web IDL interface exists in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represents an actual interface (i.e. not a mixin).
 - All events have a `targets` attribute with a non-empty list of target interfaces on which the event may fire. All Web IDL interfaces in the list exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/events` package is released, and represent an actual interface (i.e. not a mixin).
@@ -109,6 +114,18 @@ The consolidated `ed/events.json` file, released in the `@webref/events` package
 - All CDDL files pass CDDL analysis by the version of [Strudy](https://github.com/w3c/strudy) referenced in `package.json`. Said differently, all CDDL files can be parsed by the version of [cddlparser](https://github.com/tidoust/cddlparser) referenced by Strudy.
 
 The CDDL extracts are not released in an NPM package for the time being.
+
+### Backrefs extracts
+
+- All extracts follow the [relevant JSON schema](https://github.com/w3c/reffy/blob/main/schemas/postprocessing/backrefs.json) in the version of Reffy that was used to crawl the specs.
+- The extracts contain both terms defined as private and public.
+- Every `backrefs[]` entry corresponds to a definition that exists in the defining spec's `dfns` extract (matched by `href`).
+- `id`, `href`, `linkingText`, `type`, `for`, and `access` are copied from that definition so the extract is usable on its own.
+- `referencedBy` is a non-empty list of distinct referencing specifications. The defining specification itself never appears in `referencedBy`.
+- Every `referencedBy[].shortname` identifies a specification present in the crawl (and thus listed in `ed/index.json`).
+
+The backrefs extracts are not released in an NPM package for the time being.
+
 
 ## Known consumers
 
