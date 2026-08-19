@@ -1,0 +1,2786 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 3",
+    "url": "https://drafts.csswg.org/css-images-3/"
+  },
+  "backrefs": [
+    {
+      "id": "typedef-image",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-shapes-2",
+          "title": "CSS Shapes Module Level 2",
+          "url": "https://drafts.csswg.org/css-shapes-2/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "invalid-image",
+      "href": "https://drafts.csswg.org/css-images-3/#invalid-image",
+      "linkingText": [
+        "invalid image",
+        "valid image"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "loading-image",
+      "href": "https://drafts.csswg.org/css-images-3/#loading-image",
+      "linkingText": [
+        "loading image"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "computed-image",
+      "href": "https://drafts.csswg.org/css-images-3/#computed-image",
+      "linkingText": [
+        "computed <image>"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-ambiguous-image-url",
+      "href": "https://drafts.csswg.org/css-images-3/#css-ambiguous-image-url",
+      "linkingText": [
+        "ambiguous image URL"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "gradient-function",
+      "href": "https://drafts.csswg.org/css-images-3/#gradient-function",
+      "linkingText": [
+        "gradient function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "gradient-box",
+      "href": "https://drafts.csswg.org/css-images-3/#gradient-box",
+      "linkingText": [
+        "gradient box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "starting-point",
+      "href": "https://drafts.csswg.org/css-images-3/#starting-point",
+      "linkingText": [
+        "starting point"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "ending-point",
+      "href": "https://drafts.csswg.org/css-images-3/#ending-point",
+      "linkingText": [
+        "ending point"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "gradient-line",
+      "href": "https://drafts.csswg.org/css-images-3/#gradient-line",
+      "linkingText": [
+        "gradient line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-linear-gradient",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-linear-gradient",
+      "linkingText": [
+        "linear-gradient()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-radial-gradient",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-radial-gradient",
+      "linkingText": [
+        "radial-gradient()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "ending-shape",
+      "href": "https://drafts.csswg.org/css-images-3/#ending-shape",
+      "linkingText": [
+        "ending shape"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-radial-size",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-size",
+      "linkingText": [
+        "<radial-size>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-radial-extent",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-extent",
+      "linkingText": [
+        "<radial-extent>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-radial-shape",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-shape",
+      "linkingText": [
+        "<radial-shape>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "radial-gradient-gradient-center",
+      "href": "https://drafts.csswg.org/css-images-3/#radial-gradient-gradient-center",
+      "linkingText": [
+        "gradient center"
+      ],
+      "type": "dfn",
+      "for": [
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-gradient-radial-shape",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-shape",
+      "linkingText": [
+        "<radial-shape>"
+      ],
+      "type": "value",
+      "for": [
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-shape-circle",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-shape-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-shape>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-shape-ellipse",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-shape-ellipse",
+      "linkingText": [
+        "ellipse"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-shape>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-gradient-radial-size",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-size",
+      "linkingText": [
+        "<radial-size>"
+      ],
+      "type": "value",
+      "for": [
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-extent-closest-side",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-closest-side",
+      "linkingText": [
+        "closest-side"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-extent>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-extent-farthest-side",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-farthest-side",
+      "linkingText": [
+        "farthest-side"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-extent>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-extent-closest-corner",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-closest-corner",
+      "linkingText": [
+        "closest-corner"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-extent>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-extent-farthest-corner",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-farthest-corner",
+      "linkingText": [
+        "farthest-corner"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-extent>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-size-length-0",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-size-length-0",
+      "linkingText": [
+        "<length [0,∞]>"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-size>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-radial-size-length-percentage-0-2",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-size-length-percentage-0-2",
+      "linkingText": [
+        "<length-percentage [0,∞]>{2}"
+      ],
+      "type": "value",
+      "for": [
+        "<radial-size>",
+        "radial-gradient()",
+        "repeating-radial-gradient()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "gradient-average-color",
+      "href": "https://drafts.csswg.org/css-images-3/#gradient-average-color",
+      "linkingText": [
+        "gradient-average-color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-stop",
+      "href": "https://drafts.csswg.org/css-images-3/#color-stop",
+      "linkingText": [
+        "color stop"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-transition-hint",
+      "href": "https://drafts.csswg.org/css-images-3/#color-transition-hint",
+      "linkingText": [
+        "color transition hint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-3/#color-stop-list",
+      "linkingText": [
+        "color stop list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "href": "https://drafts.csswg.org/css-images-3/#objects",
+      "linkingText": [
+        "objects"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "natural-dimensions",
+      "href": "https://drafts.csswg.org/css-images-3/#natural-dimensions",
+      "linkingText": [
+        "natural dimension"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "natural-height",
+      "href": "https://drafts.csswg.org/css-images-3/#natural-height",
+      "linkingText": [
+        "natural height"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "natural-width",
+      "href": "https://drafts.csswg.org/css-images-3/#natural-width",
+      "linkingText": [
+        "natural width"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "natural-aspect-ratio",
+      "href": "https://drafts.csswg.org/css-images-3/#natural-aspect-ratio",
+      "linkingText": [
+        "natural aspect ratio"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        }
+      ]
+    },
+    {
+      "id": "natural-size",
+      "href": "https://drafts.csswg.org/css-images-3/#natural-size",
+      "linkingText": [
+        "natural size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "specified-size",
+      "href": "https://drafts.csswg.org/css-images-3/#specified-size",
+      "linkingText": [
+        "specified size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        }
+      ]
+    },
+    {
+      "id": "concrete-object-size",
+      "href": "https://drafts.csswg.org/css-images-3/#concrete-object-size",
+      "linkingText": [
+        "concrete object size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "default-object-size",
+      "href": "https://drafts.csswg.org/css-images-3/#default-object-size",
+      "linkingText": [
+        "default object size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "object-size-negotiation",
+      "href": "https://drafts.csswg.org/css-images-3/#object-size-negotiation",
+      "linkingText": [
+        "object size negotiation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "default-sizing-algorithm",
+      "href": "https://drafts.csswg.org/css-images-3/#default-sizing-algorithm",
+      "linkingText": [
+        "default sizing algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        }
+      ]
+    },
+    {
+      "id": "constraint-rectangle",
+      "href": "https://drafts.csswg.org/css-images-3/#constraint-rectangle",
+      "linkingText": [
+        "constraint rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "contain-constraint",
+      "href": "https://drafts.csswg.org/css-images-3/#contain-constraint",
+      "linkingText": [
+        "contain constraint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "cover-constraint",
+      "href": "https://drafts.csswg.org/css-images-3/#cover-constraint",
+      "linkingText": [
+        "cover constraint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-object-fit",
+      "href": "https://drafts.csswg.org/css-images-3/#propdef-object-fit",
+      "linkingText": [
+        "object-fit"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-object-fit-fill",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-object-fit-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-object-fit-contain",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-object-fit-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-object-fit-cover",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-object-fit-cover",
+      "linkingText": [
+        "cover"
+      ],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-object-fit-none",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-object-fit-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-object-fit-scale-down",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-object-fit-scale-down",
+      "linkingText": [
+        "scale-down"
+      ],
+      "type": "value",
+      "for": [
+        "object-fit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-object-position",
+      "href": "https://drafts.csswg.org/css-images-3/#propdef-object-position",
+      "linkingText": [
+        "object-position"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-image-orientation",
+      "href": "https://drafts.csswg.org/css-images-3/#propdef-image-orientation",
+      "linkingText": [
+        "image-orientation"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-orientation-none",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-orientation-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "image-orientation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-orientation-from-image",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-orientation-from-image",
+      "linkingText": [
+        "from-image"
+      ],
+      "type": "value",
+      "for": [
+        "image-orientation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-orientation-angle",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-orientation-angle",
+      "linkingText": [
+        "<angle>",
+        "flip"
+      ],
+      "type": "value",
+      "for": [
+        "image-orientation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-image-rendering",
+      "href": "https://drafts.csswg.org/css-images-3/#propdef-image-rendering",
+      "linkingText": [
+        "image-rendering"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-rendering-auto",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-rendering-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "image-rendering"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-rendering-smooth",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-rendering-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "type": "value",
+      "for": [
+        "image-rendering"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-rendering-high-quality",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-rendering-high-quality",
+      "linkingText": [
+        "high-quality"
+      ],
+      "type": "value",
+      "for": [
+        "image-rendering"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-rendering-pixelated",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-rendering-pixelated",
+      "linkingText": [
+        "pixelated"
+      ],
+      "type": "value",
+      "for": [
+        "image-rendering"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-image-rendering-crisp-edges",
+      "href": "https://drafts.csswg.org/css-images-3/#valdef-image-rendering-crisp-edges",
+      "linkingText": [
+        "crisp-edges"
+      ],
+      "type": "value",
+      "for": [
+        "image-rendering"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "nearest-neighbor",
+      "href": "https://drafts.csswg.org/css-images-3/#nearest-neighbor",
+      "linkingText": [
+        "nearest neighbor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1158 @@
+{
+  "spec": {
+    "title": "WebGPU Shading Language",
+    "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+  },
+  "backrefs": [
+    {
+      "id": "roundup",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#roundup",
+      "linkingText": [
+        "roundUp"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "shader-module-creation",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-module-creation",
+      "linkingText": [
+        "Shader module creation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-creation",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation",
+      "linkingText": [
+        "Pipeline creation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "shader-execution-end",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-execution-end",
+      "linkingText": [
+        "Shader execution end"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "program-error",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#program-error",
+      "linkingText": [
+        "program error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "uncategorized-error",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#uncategorized-error",
+      "linkingText": [
+        "uncategorized error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "shader-creation-error",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-creation-error",
+      "linkingText": [
+        "shader-creation error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-creation-error",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation-error",
+      "linkingText": [
+        "pipeline-creation error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "line-break",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#line-break",
+      "linkingText": [
+        "line break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-f16",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-f16",
+      "linkingText": [
+        "f16"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-clip_distances",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-clip_distances",
+      "linkingText": [
+        "clip_distances"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-dual_source_blending",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-dual_source_blending",
+      "linkingText": [
+        "dual_source_blending"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-subgroups",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-subgroups",
+      "linkingText": [
+        "subgroups"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-primitive_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-primitive_index",
+      "linkingText": [
+        "primitive_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "extension-subgroup_size_control",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-subgroup_size_control",
+      "linkingText": [
+        "subgroup_size_control"
+      ],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "language-extension",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#language-extension",
+      "linkingText": [
+        "language extension"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "f16",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#f16",
+      "linkingText": [
+        "f16"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "runtime-sized",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#runtime-sized",
+      "linkingText": [
+        "runtime-sized"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "store-type",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#store-type",
+      "linkingText": [
+        "store type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "invalid-memory-reference",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference",
+      "linkingText": [
+        "invalid memory reference"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "channel-formats",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#channel-formats",
+      "linkingText": [
+        "Channel Formats"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "type-sampled-texture",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-sampled-texture",
+      "linkingText": [
+        "sampled texture"
+      ],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "type-depth-texture",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-depth-texture",
+      "linkingText": [
+        "depth texture"
+      ],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-overridable",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable",
+      "linkingText": [
+        "pipeline-overridable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-overridable-constant-default-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-default-value",
+      "linkingText": [
+        "pipeline-overridable constant default value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-constant-id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id",
+      "linkingText": [
+        "pipeline constant ID"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "pipeline-overridable-constant-identifier-string",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-identifier-string",
+      "linkingText": [
+        "pipeline-overridable constant identifier string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "attribute-binding",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-binding",
+      "linkingText": [
+        "binding"
+      ],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "attribute-group",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-group",
+      "linkingText": [
+        "group"
+      ],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "functions-in-a-shader-stage",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#functions-in-a-shader-stage",
+      "linkingText": [
+        "functions in a shader stage"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interface-of-a-shader",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interface-of-a-shader",
+      "linkingText": [
+        "interface of a shader"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "shader-stage-input",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-stage-input",
+      "linkingText": [
+        "shader stage input"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "shader-stage-output",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-stage-output",
+      "linkingText": [
+        "shader stage output"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-output-value",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-output-value",
+      "linkingText": [
+        "built-in output value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values",
+      "linkingText": [
+        "built-in values"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-clip_distances",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-clip_distances",
+      "linkingText": [
+        "clip_distances"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-frag_depth",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-frag_depth",
+      "linkingText": [
+        "frag_depth"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-global_invocation_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-global_invocation_id",
+      "linkingText": [
+        "global_invocation_id"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-global_invocation_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-global_invocation_index",
+      "linkingText": [
+        "global_invocation_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-instance_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-instance_index",
+      "linkingText": [
+        "instance_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-local_invocation_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_id",
+      "linkingText": [
+        "local_invocation_id"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-local_invocation_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_index",
+      "linkingText": [
+        "local_invocation_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-num_workgroups",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-num_workgroups",
+      "linkingText": [
+        "num_workgroups"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-position",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-position",
+      "linkingText": [
+        "position"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-primitive_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-primitive_index",
+      "linkingText": [
+        "primitive_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-sample_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_index",
+      "linkingText": [
+        "sample_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-sample_mask",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_mask",
+      "linkingText": [
+        "sample_mask"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-vertex_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-vertex_index",
+      "linkingText": [
+        "vertex_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-workgroup_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-workgroup_id",
+      "linkingText": [
+        "workgroup_id"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "built-in-values-workgroup_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-workgroup_index",
+      "linkingText": [
+        "workgroup_index"
+      ],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "use-dual-source-blending",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#use-dual-source-blending",
+      "linkingText": [
+        "use dual source blending"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-type",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type",
+      "linkingText": [
+        "interpolation type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-type-perspective",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type-perspective",
+      "linkingText": [
+        "perspective"
+      ],
+      "type": "dfn",
+      "for": [
+        "interpolation type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-type-linear",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type-linear",
+      "linkingText": [
+        "linear"
+      ],
+      "type": "dfn",
+      "for": [
+        "interpolation type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-type-flat",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type-flat",
+      "linkingText": [
+        "flat"
+      ],
+      "type": "dfn",
+      "for": [
+        "interpolation type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-sampling",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-sampling",
+      "linkingText": [
+        "interpolation sampling"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-sampling-sample",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-sampling-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "type": "dfn",
+      "for": [
+        "interpolation sampling"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-sampling-either",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation-sampling-either",
+      "linkingText": [
+        "either"
+      ],
+      "type": "dfn",
+      "for": [
+        "interpolation sampling"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "address-spaces-workgroup",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#address-spaces-workgroup",
+      "linkingText": [
+        "workgroup"
+      ],
+      "type": "dfn",
+      "for": [
+        "address spaces"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "sizeof",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#sizeof",
+      "linkingText": [
+        "SizeOf"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "accessible-slots",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#accessible-slots",
+      "linkingText": [
+        "AccessibleSlots"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "64-bit-integer",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#64-bit-integer",
+      "linkingText": [
+        "64-bit integer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "subgroup-size",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#subgroup-size",
+      "linkingText": [
+        "subgroup size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "mintypesize",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#mintypesize",
+      "linkingText": [
+        "MinTypeSize"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    }
+  ]
+}

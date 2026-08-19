@@ -1,0 +1,561 @@
+{
+  "spec": {
+    "title": "File API",
+    "url": "https://w3c.github.io/FileAPI/"
+  },
+  "backrefs": [
+    {
+      "id": "UnixEpoch",
+      "href": "https://w3c.github.io/FileAPI/#UnixEpoch",
+      "linkingText": [
+        "Unix Epoch"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "slice-blob",
+      "href": "https://w3c.github.io/FileAPI/#slice-blob",
+      "linkingText": [
+        "slice blob"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "snapshot-state",
+      "href": "https://w3c.github.io/FileAPI/#snapshot-state",
+      "linkingText": [
+        "snapshot state"
+      ],
+      "type": "dfn",
+      "for": [
+        "Blob"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-Blob",
+      "href": "https://w3c.github.io/FileAPI/#dfn-Blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "local-font-access",
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "contact-picker",
+          "title": "Contact Picker API",
+          "url": "https://w3c.github.io/contact-picker/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "blob-get-stream",
+      "href": "https://w3c.github.io/FileAPI/#blob-get-stream",
+      "linkingText": [
+        "get stream"
+      ],
+      "type": "dfn",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-size",
+      "href": "https://w3c.github.io/FileAPI/#dfn-size",
+      "linkingText": [
+        "size"
+      ],
+      "type": "attribute",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://w3c.github.io/FileAPI/#dfn-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "attribute",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "local-font-access",
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "contact-picker",
+          "title": "Contact Picker API",
+          "url": "https://w3c.github.io/contact-picker/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-file",
+      "href": "https://w3c.github.io/FileAPI/#dfn-file",
+      "linkingText": [
+        "File"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "entries-api",
+          "title": "File and Directory Entries API",
+          "url": "https://wicg.github.io/entries-api/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/FileAPI/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "attribute",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "entries-api",
+          "title": "File and Directory Entries API",
+          "url": "https://wicg.github.io/entries-api/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-lastModified",
+      "href": "https://w3c.github.io/FileAPI/#dfn-lastModified",
+      "linkingText": [
+        "lastModified"
+      ],
+      "type": "attribute",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        }
+      ]
+    },
+    {
+      "id": "fileReadingTaskSource",
+      "href": "https://w3c.github.io/FileAPI/#fileReadingTaskSource",
+      "linkingText": [
+        "file reading task source"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "entries-api",
+          "title": "File and Directory Entries API",
+          "url": "https://wicg.github.io/entries-api/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-filereader",
+      "href": "https://w3c.github.io/FileAPI/#dfn-filereader",
+      "linkingText": [
+        "FileReader"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "entries-api",
+          "title": "File and Directory Entries API",
+          "url": "https://wicg.github.io/entries-api/"
+        }
+      ]
+    },
+    {
+      "id": "readOperation",
+      "href": "https://w3c.github.io/FileAPI/#readOperation",
+      "linkingText": [
+        "read operation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "BlobURLStore",
+      "href": "https://w3c.github.io/FileAPI/#BlobURLStore",
+      "linkingText": [
+        "blob URL store"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "blob-url-entry",
+      "href": "https://w3c.github.io/FileAPI/#blob-url-entry",
+      "linkingText": [
+        "blob URL entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "blob-url-entry-environment",
+      "href": "https://w3c.github.io/FileAPI/#blob-url-entry-environment",
+      "linkingText": [
+        "environment"
+      ],
+      "type": "dfn",
+      "for": [
+        "blob URL entry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "blob-url",
+      "href": "https://w3c.github.io/FileAPI/#blob-url",
+      "linkingText": [
+        "blob URL",
+        "object URL"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "blob-url-obtain-object",
+      "href": "https://w3c.github.io/FileAPI/#blob-url-obtain-object",
+      "linkingText": [
+        "obtain a blob object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "blob-url-resolve",
+      "href": "https://w3c.github.io/FileAPI/#blob-url-resolve",
+      "linkingText": [
+        "resolve a blob URL"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "spec": {
+    "title": "CSS Conditional Rules Module Level 3",
+    "url": "https://drafts.csswg.org/css-conditional-3/"
+  },
+  "backrefs": [
+    {
+      "id": "conditional-group-rule",
+      "href": "https://drafts.csswg.org/css-conditional-3/#conditional-group-rule",
+      "linkingText": [
+        "conditional group rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-conditional-4",
+          "title": "CSS Conditional Rules Module Level 4",
+          "url": "https://drafts.csswg.org/css-conditional-4/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "at-ruledef-media",
+      "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-media",
+      "linkingText": [
+        "@media"
+      ],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-env-1",
+          "title": "CSS Environment Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-env-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "at-ruledef-supports",
+      "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports",
+      "linkingText": [
+        "@supports"
+      ],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-conditional-4",
+          "title": "CSS Conditional Rules Module Level 4",
+          "url": "https://drafts.csswg.org/css-conditional-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "css-feature-queries",
+      "href": "https://drafts.csswg.org/css-conditional-3/#css-feature-queries",
+      "linkingText": [
+        "CSS feature queries"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supports-queries",
+      "href": "https://drafts.csswg.org/css-conditional-3/#supports-queries",
+      "linkingText": [
+        "supports queries"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-conditional-4",
+          "title": "CSS Conditional Rules Module Level 4",
+          "url": "https://drafts.csswg.org/css-conditional-4/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-supports-condition",
+      "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-condition",
+      "linkingText": [
+        "<supports-condition>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-support",
+      "href": "https://drafts.csswg.org/css-conditional-3/#dfn-support",
+      "linkingText": [
+        "support"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cssmediarule",
+      "href": "https://drafts.csswg.org/css-conditional-3/#cssmediarule",
+      "linkingText": [
+        "CSSMediaRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "csssupportsrule",
+      "href": "https://drafts.csswg.org/css-conditional-3/#csssupportsrule",
+      "linkingText": [
+        "CSSSupportsRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-css-supports",
+      "href": "https://drafts.csswg.org/css-conditional-3/#dom-css-supports",
+      "linkingText": [
+        "supports(property, value)"
+      ],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-css-supports-conditiontext",
+      "href": "https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext",
+      "linkingText": [
+        "supports(conditionText)"
+      ],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    }
+  ]
+}

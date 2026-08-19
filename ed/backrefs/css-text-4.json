@@ -1,0 +1,1405 @@
+{
+  "spec": {
+    "title": "CSS Text Module Level 4",
+    "url": "https://drafts.csswg.org/css-text-4/"
+  },
+  "backrefs": [
+    {
+      "id": "content-language",
+      "href": "https://drafts.csswg.org/css-text-4/#content-language",
+      "linkingText": [
+        "content language"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "character",
+      "href": "https://drafts.csswg.org/css-text-4/#character",
+      "linkingText": [
+        "character"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        }
+      ]
+    },
+    {
+      "id": "typographic-character-unit",
+      "href": "https://drafts.csswg.org/css-text-4/#typographic-character-unit",
+      "linkingText": [
+        "typographic character unit",
+        "typographic character"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "typographic-letter-unit",
+      "href": "https://drafts.csswg.org/css-text-4/#typographic-letter-unit",
+      "linkingText": [
+        "typographic letter unit"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-transform",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-transform",
+      "linkingText": [
+        "text-transform"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-white-space",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-white-space",
+      "linkingText": [
+        "white-space"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-white-space-pre",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-pre",
+      "linkingText": [
+        "pre"
+      ],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-white-space-pre-line",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-pre-line",
+      "linkingText": [
+        "pre-line"
+      ],
+      "type": "value",
+      "for": [
+        "white-space"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "segment-break",
+      "href": "https://drafts.csswg.org/css-text-4/#segment-break",
+      "linkingText": [
+        "segment break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-white-space-collapse",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-white-space-collapse",
+      "linkingText": [
+        "white-space-collapse"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        }
+      ]
+    },
+    {
+      "id": "preserved-white-space",
+      "href": "https://drafts.csswg.org/css-text-4/#preserved-white-space",
+      "linkingText": [
+        "preserved white space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-white-space-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-white-space-trim",
+      "linkingText": [
+        "white-space-trim"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        }
+      ]
+    },
+    {
+      "id": "white-space",
+      "href": "https://drafts.csswg.org/css-text-4/#white-space",
+      "linkingText": [
+        "white space",
+        "white space characters",
+        "document white space",
+        "document white space characters"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "other-space-separators",
+      "href": "https://drafts.csswg.org/css-text-4/#other-space-separators",
+      "linkingText": [
+        "other space separators"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "collapsible-white-space",
+      "href": "https://drafts.csswg.org/css-text-4/#collapsible-white-space",
+      "linkingText": [
+        "collapsible white space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-tab-size",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-tab-size",
+      "linkingText": [
+        "tab-size"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "line-break",
+      "href": "https://drafts.csswg.org/css-text-4/#line-break",
+      "linkingText": [
+        "line break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        }
+      ]
+    },
+    {
+      "id": "forced-line-break",
+      "href": "https://drafts.csswg.org/css-text-4/#forced-line-break",
+      "linkingText": [
+        "forced line break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        }
+      ]
+    },
+    {
+      "id": "soft-wrap-opportunity",
+      "href": "https://drafts.csswg.org/css-text-4/#soft-wrap-opportunity",
+      "linkingText": [
+        "soft wrap opportunity"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-wrap-mode",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-mode",
+      "linkingText": [
+        "text-wrap-mode"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-wrap-style",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-style",
+      "linkingText": [
+        "text-wrap-style"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-wrap-style-balance",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance",
+      "linkingText": [
+        "balance"
+      ],
+      "type": "value",
+      "for": [
+        "text-wrap-style"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-wrap",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap",
+      "linkingText": [
+        "text-wrap"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-word-break",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-break",
+      "linkingText": [
+        "word-break"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-word-break-keep-all",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-break-keep-all",
+      "linkingText": [
+        "keep-all"
+      ],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-hyphenate-character",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-character",
+      "linkingText": [
+        "hyphenate-character"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-overflow-wrap",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-overflow-wrap",
+      "linkingText": [
+        "overflow-wrap"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-wrap-break-word",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-overflow-wrap-break-word",
+      "linkingText": [
+        "break-word"
+      ],
+      "type": "value",
+      "for": [
+        "overflow-wrap"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-start",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-start",
+      "linkingText": [
+        "start"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-end",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-end",
+      "linkingText": [
+        "end"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-left",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-right",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-right",
+      "linkingText": [
+        "right"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-center",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-text-align-justify",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-justify",
+      "linkingText": [
+        "justify"
+      ],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-justify",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-justify",
+      "linkingText": [
+        "text-justify"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "justification-opportunity",
+      "href": "https://drafts.csswg.org/css-text-4/#justification-opportunity",
+      "linkingText": [
+        "justification opportunity"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-word-spacing",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-spacing",
+      "linkingText": [
+        "word-spacing"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "word-separator",
+      "href": "https://drafts.csswg.org/css-text-4/#word-separator",
+      "linkingText": [
+        "word-separator character",
+        "word separator"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-letter-spacing",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-letter-spacing",
+      "linkingText": [
+        "letter-spacing"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "href": "https://drafts.csswg.org/css-text-4/#tracking",
+      "linkingText": [
+        "tracking"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-line-padding",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-line-padding",
+      "linkingText": [
+        "line-padding"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-autospace",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-autospace",
+      "linkingText": [
+        "text-autospace"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-spacing-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing-trim",
+      "linkingText": [
+        "text-spacing-trim"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "fullwidth-opening-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#fullwidth-opening-punctuation",
+      "linkingText": [
+        "fullwidth opening punctuation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "fullwidth-closing-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#fullwidth-closing-punctuation",
+      "linkingText": [
+        "fullwidth closing punctuation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "fullwidth-middle-dot-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#fullwidth-middle-dot-punctuation",
+      "linkingText": [
+        "fullwidth middle dot punctuation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-spacing",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing",
+      "linkingText": [
+        "text-spacing"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-indent",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-indent",
+      "linkingText": [
+        "text-indent"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "hang",
+      "href": "https://drafts.csswg.org/css-text-4/#hang",
+      "linkingText": [
+        "hang",
+        "hanging glyph"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "conditionally-hang",
+      "href": "https://drafts.csswg.org/css-text-4/#conditionally-hang",
+      "linkingText": [
+        "conditionally hang"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-hanging-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-hanging-punctuation",
+      "linkingText": [
+        "hanging-punctuation"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "unicode-general-category",
+      "href": "https://drafts.csswg.org/css-text-4/#unicode-general-category",
+      "linkingText": [
+        "Unicode General Category",
+        "Unicode category",
+        "General Category"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "unicode-script",
+      "href": "https://drafts.csswg.org/css-text-4/#unicode-script",
+      "linkingText": [
+        "Unicode Script",
+        "Extended script property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    }
+  ]
+}

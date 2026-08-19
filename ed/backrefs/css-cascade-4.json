@@ -1,0 +1,1304 @@
+{
+  "spec": {
+    "title": "CSS Cascading and Inheritance Module Level 4",
+    "url": "https://drafts.csswg.org/css-cascade-4/"
+  },
+  "backrefs": [
+    {
+      "id": "css-property",
+      "href": "https://drafts.csswg.org/css-cascade-4/#css-property",
+      "linkingText": [
+        "property"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "at-ruledef-import",
+      "href": "https://drafts.csswg.org/css-cascade-4/#at-ruledef-import",
+      "linkingText": [
+        "@import"
+      ],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "import-conditions",
+      "href": "https://drafts.csswg.org/css-cascade-4/#import-conditions",
+      "linkingText": [
+        "Import conditions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "fetch-an-import",
+      "href": "https://drafts.csswg.org/css-cascade-4/#fetch-an-import",
+      "linkingText": [
+        "fetch an @import"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "shorthand-property",
+      "href": "https://drafts.csswg.org/css-cascade-4/#shorthand-property",
+      "linkingText": [
+        "shorthand property",
+        "shorthand"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "longhand",
+      "href": "https://drafts.csswg.org/css-cascade-4/#longhand",
+      "linkingText": [
+        "longhand",
+        "longhand property",
+        "sub-property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "reset-only-sub-property",
+      "href": "https://drafts.csswg.org/css-cascade-4/#reset-only-sub-property",
+      "linkingText": [
+        "reset-only sub-property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "legacy-name-alias",
+      "href": "https://drafts.csswg.org/css-cascade-4/#legacy-name-alias",
+      "linkingText": [
+        "legacy name alias"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "legacy-shorthand",
+      "href": "https://drafts.csswg.org/css-cascade-4/#legacy-shorthand",
+      "linkingText": [
+        "legacy shorthand"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-all",
+      "href": "https://drafts.csswg.org/css-cascade-4/#propdef-all",
+      "linkingText": [
+        "all"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "declared-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#declared-value",
+      "linkingText": [
+        "declared value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "css-legacy-value-alias",
+      "href": "https://drafts.csswg.org/css-cascade-4/#css-legacy-value-alias",
+      "linkingText": [
+        "legacy value alias"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascaded-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascaded-value",
+      "linkingText": [
+        "cascaded value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "specified-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#specified-value",
+      "linkingText": [
+        "specified value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "computed-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#computed-value",
+      "linkingText": [
+        "computed value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "used-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#used-value",
+      "linkingText": [
+        "used value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "apply",
+      "href": "https://drafts.csswg.org/css-cascade-4/#apply",
+      "linkingText": [
+        "apply to"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "actual-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#actual-value",
+      "linkingText": [
+        "actual value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade",
+      "linkingText": [
+        "cascade"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "encapsulation-contexts",
+      "href": "https://drafts.csswg.org/css-cascade-4/#encapsulation-contexts",
+      "linkingText": [
+        "encapsulation contexts"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "output-of-the-cascade",
+      "href": "https://drafts.csswg.org/css-cascade-4/#output-of-the-cascade",
+      "linkingText": [
+        "output of the cascade"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "origin",
+      "href": "https://drafts.csswg.org/css-cascade-4/#origin",
+      "linkingText": [
+        "cascade origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-origin-author",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-origin-author",
+      "linkingText": [
+        "author origin",
+        "author style sheet",
+        "author-origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-origin-user",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-origin-user",
+      "linkingText": [
+        "user origin",
+        "user style sheet",
+        "user-origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-origin-ua",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-origin-ua",
+      "linkingText": [
+        "user-agent origin",
+        "UA origin",
+        "user-agent style sheet",
+        "UA style sheet",
+        "UA-origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-origin-animation",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-origin-animation",
+      "linkingText": [
+        "Animation Origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-origin-transition",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-origin-transition",
+      "linkingText": [
+        "Transition Origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "important",
+      "href": "https://drafts.csswg.org/css-cascade-4/#important",
+      "linkingText": [
+        "important"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "normal",
+      "href": "https://drafts.csswg.org/css-cascade-4/#normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "author-presentational-hint-origin",
+      "href": "https://drafts.csswg.org/css-cascade-4/#author-presentational-hint-origin",
+      "linkingText": [
+        "author presentational hint origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "initial-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#initial-value",
+      "linkingText": [
+        "initial value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "css-inheritance",
+      "href": "https://drafts.csswg.org/css-cascade-4/#css-inheritance",
+      "linkingText": [
+        "inheritance",
+        "inherit"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "inherited-value",
+      "href": "https://drafts.csswg.org/css-cascade-4/#inherited-value",
+      "linkingText": [
+        "inherited value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "inherited-property",
+      "href": "https://drafts.csswg.org/css-cascade-4/#inherited-property",
+      "linkingText": [
+        "inherited property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "cascade-dependent-keyword",
+      "href": "https://drafts.csswg.org/css-cascade-4/#cascade-dependent-keyword",
+      "linkingText": [
+        "cascade-dependent keyword"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-all-initial",
+      "href": "https://drafts.csswg.org/css-cascade-4/#valdef-all-initial",
+      "linkingText": [
+        "initial"
+      ],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-all-inherit",
+      "href": "https://drafts.csswg.org/css-cascade-4/#valdef-all-inherit",
+      "linkingText": [
+        "inherit"
+      ],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-all-unset",
+      "href": "https://drafts.csswg.org/css-cascade-4/#valdef-all-unset",
+      "linkingText": [
+        "unset"
+      ],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-all-revert",
+      "href": "https://drafts.csswg.org/css-cascade-4/#valdef-all-revert",
+      "linkingText": [
+        "revert"
+      ],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        }
+      ]
+    }
+  ]
+}

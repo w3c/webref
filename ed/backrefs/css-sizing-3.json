@@ -1,0 +1,2811 @@
+{
+  "spec": {
+    "title": "CSS Box Sizing Module Level 3",
+    "url": "https://drafts.csswg.org/css-sizing-3/"
+  },
+  "backrefs": [
+    {
+      "id": "size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#size",
+      "linkingText": [
+        "size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        }
+      ]
+    },
+    {
+      "id": "inner-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#inner-size",
+      "linkingText": [
+        "inner size",
+        "inner width",
+        "inner height",
+        "inner block size",
+        "inner inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "outer-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#outer-size",
+      "linkingText": [
+        "outer size",
+        "outer width",
+        "outer height",
+        "outer block size",
+        "outer inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "definite",
+      "href": "https://drafts.csswg.org/css-sizing-3/#definite",
+      "linkingText": [
+        "definite",
+        "definite size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "indefinite",
+      "href": "https://drafts.csswg.org/css-sizing-3/#indefinite",
+      "linkingText": [
+        "indefinite",
+        "indefinite size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "available",
+      "href": "https://drafts.csswg.org/css-sizing-3/#available",
+      "linkingText": [
+        "available space",
+        "available inline space",
+        "available block space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "stretch-fit",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit",
+      "linkingText": [
+        "stretch fit"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "fallback",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fallback",
+      "linkingText": [
+        "fallback",
+        "fallback size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "stretch-fit-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-size",
+      "linkingText": [
+        "stretch-fit size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "stretch-fit-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-inline-size",
+      "linkingText": [
+        "stretch-fit inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        }
+      ]
+    },
+    {
+      "id": "stretch-fit-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-block-size",
+      "linkingText": [
+        "stretch-fit block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content",
+      "linkingText": [
+        "max-content",
+        "max-content size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "max-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-inline-size",
+      "linkingText": [
+        "max-content inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "max-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-block-size",
+      "linkingText": [
+        "max-content block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content",
+      "linkingText": [
+        "min-content",
+        "min-content size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "min-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-inline-size",
+      "linkingText": [
+        "min-content inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "min-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-block-size",
+      "linkingText": [
+        "min-content block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "fit-content-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-size",
+      "linkingText": [
+        "fit-content size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "fit-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-inline-size",
+      "linkingText": [
+        "fit-content inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fit-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-block-size",
+      "linkingText": [
+        "fit-content block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "intrinsic-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-size",
+      "linkingText": [
+        "intrinsic size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "max-content-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-contribution",
+      "linkingText": [
+        "max-content contribution",
+        "max-content inline-size contribution",
+        "max-content block-size contribution"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "min-content-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-contribution",
+      "linkingText": [
+        "min-content contribution",
+        "min-content inline-size contribution",
+        "min-content block-size contribution"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "intrinsic-size-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-size-contribution",
+      "linkingText": [
+        "intrinsic size contribution"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "constraints",
+      "href": "https://drafts.csswg.org/css-sizing-3/#constraints",
+      "linkingText": [
+        "intrinsic size constraint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "max-content-constraint",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-constraint",
+      "linkingText": [
+        "max-content constraint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "min-content-constraint",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-constraint",
+      "linkingText": [
+        "min-content constraint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "preferred-aspect-ratio",
+      "href": "https://drafts.csswg.org/css-sizing-3/#preferred-aspect-ratio",
+      "linkingText": [
+        "preferred aspect ratio"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "sizing-property",
+      "href": "https://drafts.csswg.org/css-sizing-3/#sizing-property",
+      "linkingText": [
+        "sizing property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "preferred-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#preferred-size-properties",
+      "linkingText": [
+        "preferred size property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "preferred-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#preferred-size",
+      "linkingText": [
+        "preferred size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#width",
+      "linkingText": [
+        "width",
+        "preferred width"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#height",
+      "linkingText": [
+        "height",
+        "preferred height"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "min-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-size-properties",
+      "linkingText": [
+        "min size property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-min-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
+      "linkingText": [
+        "min-width"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-min-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-height",
+      "linkingText": [
+        "min-height"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "min-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-width",
+      "linkingText": [
+        "min width",
+        "minimum width",
+        "min size",
+        "minimum size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "min-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-height",
+      "linkingText": [
+        "min height",
+        "minimum height"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "max-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-size-properties",
+      "linkingText": [
+        "max size property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-max-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
+      "linkingText": [
+        "max-width"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-max-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-height",
+      "linkingText": [
+        "max-height"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "max-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-width",
+      "linkingText": [
+        "max width",
+        "maximum width",
+        "max size",
+        "maximum size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "max-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-height",
+      "linkingText": [
+        "max height",
+        "maximum height"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-width-auto",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "width",
+        "height",
+        "min-width",
+        "min-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-size-adjust-1",
+          "title": "CSS Mobile Text Size Adjustment Module Level 1",
+          "url": "https://drafts.csswg.org/css-size-adjust-1/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "automatic-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-size",
+      "linkingText": [
+        "automatic size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        }
+      ]
+    },
+    {
+      "id": "automatic-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-block-size",
+      "linkingText": [
+        "automatic block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "automatic-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-inline-size",
+      "linkingText": [
+        "automatic inline size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "automatic-minimum-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size",
+      "linkingText": [
+        "automatic minimum size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-max-width-none",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-max-width-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "max-width",
+        "max-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-width-min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-width-max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-width-fit-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+      "linkingText": [
+        "fit-content()"
+      ],
+      "type": "function",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "behave-as-auto",
+      "href": "https://drafts.csswg.org/css-sizing-3/#behave-as-auto",
+      "linkingText": [
+        "behave as auto",
+        "behaves as auto",
+        "behaving as auto"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-box-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing",
+      "linkingText": [
+        "box-sizing"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-sizing-content-box",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-sizing-border-box",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-column-width-min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-column-width-max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-column-width-fit-content-length-percentage",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-fit-content-length-percentage",
+      "linkingText": [
+        "fit-content(<length-percentage>)"
+      ],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "extrinsic-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#extrinsic-sizing",
+      "linkingText": [
+        "Extrinsic sizing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "intrinsic-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-sizing",
+      "linkingText": [
+        "Intrinsic sizing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "cyclic-percentage-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#cyclic-percentage-size",
+      "linkingText": [
+        "cyclic percentage size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    }
+  ]
+}

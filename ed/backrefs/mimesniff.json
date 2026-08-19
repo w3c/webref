@@ -1,0 +1,779 @@
+{
+  "spec": {
+    "title": "MIME Sniffing Standard",
+    "url": "https://mimesniff.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#mime-type",
+      "linkingText": [
+        "MIME type",
+        "MIME type record"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "eme-stream-registry",
+          "title": "Encrypted Media Extensions Stream Format Registry",
+          "url": "https://w3c.github.io/encrypted-media/format-registry/stream/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "input-events-2",
+          "title": "Input Events Level 2",
+          "url": "https://w3c.github.io/input-events/"
+        },
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "mse-byte-stream-format-registry",
+          "title": "Media Source Extensions Byte Stream Format Registry",
+          "url": "https://w3c.github.io/mse-byte-stream-format-registry/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "href": "https://mimesniff.spec.whatwg.org/#type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "MIME type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "encrypted-media-2",
+          "title": "Encrypted Media Extensions",
+          "url": "https://w3c.github.io/encrypted-media/"
+        }
+      ]
+    },
+    {
+      "id": "subtype",
+      "href": "https://mimesniff.spec.whatwg.org/#subtype",
+      "linkingText": [
+        "subtype"
+      ],
+      "type": "dfn",
+      "for": [
+        "MIME type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "eme-stream-registry",
+          "title": "Encrypted Media Extensions Stream Format Registry",
+          "url": "https://w3c.github.io/encrypted-media/format-registry/stream/"
+        },
+        {
+          "shortname": "mse-byte-stream-format-registry",
+          "title": "Media Source Extensions Byte Stream Format Registry",
+          "url": "https://w3c.github.io/mse-byte-stream-format-registry/"
+        }
+      ]
+    },
+    {
+      "id": "parameters",
+      "href": "https://mimesniff.spec.whatwg.org/#parameters",
+      "linkingText": [
+        "parameters"
+      ],
+      "type": "dfn",
+      "for": [
+        "MIME type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "document-isolation-policy",
+          "title": "Document-Isolation-Policy",
+          "url": "https://wicg.github.io/document-isolation-policy/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "mime-type-essence",
+      "href": "https://mimesniff.spec.whatwg.org/#mime-type-essence",
+      "linkingText": [
+        "essence"
+      ],
+      "type": "dfn",
+      "for": [
+        "MIME type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "supported-by-the-user-agent",
+      "href": "https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent",
+      "linkingText": [
+        "supported by the user agent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "minimize-a-supported-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#minimize-a-supported-mime-type",
+      "linkingText": [
+        "minimize a supported MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "valid-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#valid-mime-type",
+      "linkingText": [
+        "valid MIME type string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "valid-mime-type-with-no-parameters",
+      "href": "https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters",
+      "linkingText": [
+        "valid MIME type string with no parameters"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-a-mime-type",
+      "linkingText": [
+        "parse a MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "encrypted-media-2",
+          "title": "Encrypted Media Extensions",
+          "url": "https://w3c.github.io/encrypted-media/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-mime-type-from-bytes",
+      "href": "https://mimesniff.spec.whatwg.org/#parse-a-mime-type-from-bytes",
+      "linkingText": [
+        "parse a MIME type from bytes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#serialize-a-mime-type",
+      "linkingText": [
+        "serialize a MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-mime-type-to-bytes",
+      "href": "https://mimesniff.spec.whatwg.org/#serialize-a-mime-type-to-bytes",
+      "linkingText": [
+        "serialize a MIME type to bytes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "image-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#image-mime-type",
+      "linkingText": [
+        "image MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "contact-picker",
+          "title": "Contact Picker API",
+          "url": "https://w3c.github.io/contact-picker/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        }
+      ]
+    },
+    {
+      "id": "audio-or-video-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type",
+      "linkingText": [
+        "audio or video MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "font-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#font-mime-type",
+      "linkingText": [
+        "font MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "xml-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#xml-mime-type",
+      "linkingText": [
+        "XML MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "html-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#html-mime-type",
+      "linkingText": [
+        "HTML MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "javascript-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#javascript-mime-type",
+      "linkingText": [
+        "JavaScript MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "javascript-mime-type-essence-match",
+      "href": "https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match",
+      "linkingText": [
+        "JavaScript MIME type essence match"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "json-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#json-mime-type",
+      "linkingText": [
+        "JSON MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        }
+      ]
+    },
+    {
+      "id": "computed-mime-type",
+      "href": "https://mimesniff.spec.whatwg.org/#computed-mime-type",
+      "linkingText": [
+        "computed MIME type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "image-type-pattern-matching-algorithm",
+      "href": "https://mimesniff.spec.whatwg.org/#image-type-pattern-matching-algorithm",
+      "linkingText": [
+        "image type pattern matching algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "rules-for-text-or-binary",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary",
+      "linkingText": [
+        "rules for distinguishing if a resource is text or binary"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "rules-for-sniffing-images-specifically",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically",
+      "linkingText": [
+        "rules for sniffing images specifically"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        }
+      ]
+    },
+    {
+      "id": "rules-for-sniffing-audio-and-video-specifically",
+      "href": "https://mimesniff.spec.whatwg.org/#rules-for-sniffing-audio-and-video-specifically",
+      "linkingText": [
+        "rules for sniffing audio and video specifically"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

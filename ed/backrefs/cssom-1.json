@@ -1,0 +1,3122 @@
+{
+  "spec": {
+    "title": "CSS Object Model (CSSOM) Module Level 1",
+    "url": "https://drafts.csswg.org/cssom-1/"
+  },
+  "backrefs": [
+    {
+      "id": "set",
+      "href": "https://drafts.csswg.org/cssom-1/#set",
+      "linkingText": [
+        "set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "unset",
+      "href": "https://drafts.csswg.org/cssom-1/#unset",
+      "linkingText": [
+        "unset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-styling-language",
+      "href": "https://drafts.csswg.org/cssom-1/#supported-styling-language",
+      "linkingText": [
+        "supported styling language"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-css-property",
+      "href": "https://drafts.csswg.org/cssom-1/#supported-css-property",
+      "linkingText": [
+        "supported CSS property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "escape-a-character",
+      "href": "https://drafts.csswg.org/cssom-1/#escape-a-character",
+      "linkingText": [
+        "escape a character"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "escape-a-character-as-code-point",
+      "href": "https://drafts.csswg.org/cssom-1/#escape-a-character-as-code-point",
+      "linkingText": [
+        "escape a character as code point",
+        "escaped as code point"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-an-identifier",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-an-identifier",
+      "linkingText": [
+        "serialize an identifier"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "css-serialize-a-function",
+      "href": "https://drafts.csswg.org/cssom-1/#css-serialize-a-function",
+      "linkingText": [
+        "serialize a function"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-string",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-string",
+      "linkingText": [
+        "serialize a string",
+        "serialize as a string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-url",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-url",
+      "linkingText": [
+        "serialize a URL"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-local",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-local",
+      "linkingText": [
+        "serialize a LOCAL"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-comma-separated-list",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-comma-separated-list",
+      "linkingText": [
+        "serialize a comma-separated list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-whitespace-separated-list",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-whitespace-separated-list",
+      "linkingText": [
+        "serialize a whitespace-separated list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cssomstring",
+      "href": "https://drafts.csswg.org/cssom-1/#cssomstring",
+      "linkingText": [
+        "CSSOMString"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-font-loading-3",
+          "title": "CSS Font Loading Module Level 3",
+          "url": "https://drafts.csswg.org/css-font-loading-3/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-media-query-list",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-media-query-list",
+      "linkingText": [
+        "parse a media query list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-media-query",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-media-query",
+      "linkingText": [
+        "parse a media query"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-media-query-list",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-media-query-list",
+      "linkingText": [
+        "serialize a media query list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-media-query",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-media-query",
+      "linkingText": [
+        "serialize a media query"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-media-feature-value",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-media-feature-value",
+      "linkingText": [
+        "serialize a media feature value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "compare-media-queries",
+      "href": "https://drafts.csswg.org/cssom-1/#compare-media-queries",
+      "linkingText": [
+        "compare media queries"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "medialist-collection-of-media-queries",
+      "href": "https://drafts.csswg.org/cssom-1/#medialist-collection-of-media-queries",
+      "linkingText": [
+        "collection of media queries"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "medialist",
+      "href": "https://drafts.csswg.org/cssom-1/#medialist",
+      "linkingText": [
+        "MediaList"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        }
+      ]
+    },
+    {
+      "id": "MediaList-stringification-behavior",
+      "href": "https://drafts.csswg.org/cssom-1/#MediaList-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "create-a-medialist-object",
+      "href": "https://drafts.csswg.org/cssom-1/#create-a-medialist-object",
+      "linkingText": [
+        "create a MediaList object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "dom-medialist-mediatext",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-medialist-mediatext",
+      "linkingText": [
+        "mediaText"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-group-of-selectors",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors",
+      "linkingText": [
+        "parse a group of selectors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-group-of-selectors",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors",
+      "linkingText": [
+        "serialize a group of selectors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-selector",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-selector",
+      "linkingText": [
+        "serialize a selector"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-simple-selector",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-simple-selector",
+      "linkingText": [
+        "serialize a simple selector"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#css-style-sheet",
+      "linkingText": [
+        "CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "create-a-constructed-cssstylesheet",
+      "href": "https://drafts.csswg.org/cssom-1/#create-a-constructed-cssstylesheet",
+      "linkingText": [
+        "create a constructed CSSStyleSheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-type",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-location",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location",
+      "linkingText": [
+        "location"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-parent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-owner-node",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-owner-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule",
+      "linkingText": [
+        "owner CSS rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-media",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media",
+      "linkingText": [
+        "media"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-title",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title",
+      "linkingText": [
+        "title"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-alternate-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag",
+      "linkingText": [
+        "alternate flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-disabled-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag",
+      "linkingText": [
+        "disabled flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-css-rules",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-css-rules",
+      "linkingText": [
+        "CSS rules"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-origin-clean-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag",
+      "linkingText": [
+        "origin-clean flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-constructed-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-constructed-flag",
+      "linkingText": [
+        "constructed flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-disallow-modification-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disallow-modification-flag",
+      "linkingText": [
+        "disallow modification flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-constructor-document",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-constructor-document",
+      "linkingText": [
+        "constructor document"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-style-sheet-stylesheet-base-url",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-stylesheet-base-url",
+      "linkingText": [
+        "stylesheet base URL"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)",
+        "insertRule(rule)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstylesheet-replace",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-replace",
+      "linkingText": [
+        "replace(text)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        }
+      ]
+    },
+    {
+      "id": "synchronously-replace-the-rules-of-a-cssstylesheet",
+      "href": "https://drafts.csswg.org/cssom-1/#synchronously-replace-the-rules-of-a-cssstylesheet",
+      "linkingText": [
+        "synchronously replace the rules of a CSSStyleSheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "documentorshadowroot-document-or-shadow-root-css-style-sheets",
+      "href": "https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets",
+      "linkingText": [
+        "document or shadow root CSS style sheets"
+      ],
+      "type": "dfn",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-font-loading-3",
+          "title": "CSS Font Loading Module Level 3",
+          "url": "https://drafts.csswg.org/css-font-loading-3/"
+        }
+      ]
+    },
+    {
+      "id": "documentorshadowroot-final-css-style-sheets",
+      "href": "https://drafts.csswg.org/cssom-1/#documentorshadowroot-final-css-style-sheets",
+      "linkingText": [
+        "final CSS style sheets"
+      ],
+      "type": "dfn",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        }
+      ]
+    },
+    {
+      "id": "create-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#create-a-css-style-sheet",
+      "linkingText": [
+        "create a CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "add-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#add-a-css-style-sheet",
+      "linkingText": [
+        "add a CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "remove-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#remove-a-css-style-sheet",
+      "linkingText": [
+        "remove a CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "persistent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#persistent-css-style-sheet",
+      "linkingText": [
+        "persistent CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom-1/#css-style-sheet-set",
+      "linkingText": [
+        "CSS style sheet set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom-1/#css-style-sheet-set-name",
+      "linkingText": [
+        "CSS style sheet set name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "enabled-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom-1/#enabled-css-style-sheet-set",
+      "linkingText": [
+        "enabled CSS style sheet set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "enable-a-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom-1/#enable-a-css-style-sheet-set",
+      "linkingText": [
+        "enable a CSS style sheet set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "select-a-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom-1/#select-a-css-style-sheet-set",
+      "linkingText": [
+        "select a CSS style sheet set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "last-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom-1/#last-css-style-sheet-set-name",
+      "linkingText": [
+        "last CSS style sheet set name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "preferred-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom-1/#preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "preferred CSS style sheet set name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "change-the-preferred-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom-1/#change-the-preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "change the preferred CSS style sheet set name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fetch-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#fetch-a-css-style-sheet",
+      "linkingText": [
+        "fetch a CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "associated-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#associated-css-style-sheet",
+      "linkingText": [
+        "associated CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "prolog",
+      "href": "https://drafts.csswg.org/cssom-1/#prolog",
+      "linkingText": [
+        "prolog"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#css-rule",
+      "linkingText": [
+        "CSS rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-rule-type",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-rule-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-rule-text",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-rule-text",
+      "linkingText": [
+        "text"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-rule-parent-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-rule-parent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-rule-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        }
+      ]
+    },
+    {
+      "id": "concept-css-rule-child-css-rules",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules",
+      "linkingText": [
+        "child CSS rules"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-css-rule",
+      "linkingText": [
+        "parse a CSS rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-rule",
+      "linkingText": [
+        "serialize a CSS rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "insert-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#insert-a-css-rule",
+      "linkingText": [
+        "insert a CSS rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "remove-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#remove-a-css-rule",
+      "linkingText": [
+        "remove a CSS rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cssrulelist",
+      "href": "https://drafts.csswg.org/cssom-1/#cssrulelist",
+      "linkingText": [
+        "CSSRuleList"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssrule",
+      "href": "https://drafts.csswg.org/cssom-1/#cssrule",
+      "linkingText": [
+        "CSSRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssrule-parentstylesheet",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssrule-parentstylesheet",
+      "linkingText": [
+        "parentStyleSheet"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssstylerule",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstylerule",
+      "linkingText": [
+        "CSSStyleRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstylerule-style",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstylerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSStyleRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "concept-declarations-specified-order",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order",
+      "linkingText": [
+        "specified order"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssimportrule-stylesheet",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssimportrule-stylesheet",
+      "linkingText": [
+        "styleSheet"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssgroupingrule",
+      "href": "https://drafts.csswg.org/cssom-1/#cssgroupingrule",
+      "linkingText": [
+        "CSSGroupingRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssgroupingrule-cssrules",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssgroupingrule-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)",
+        "insertRule(rule)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-list-of-css-page-selectors",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-list-of-css-page-selectors",
+      "linkingText": [
+        "parse a list of CSS page selectors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-list-of-css-page-selectors",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-list-of-css-page-selectors",
+      "linkingText": [
+        "serialize a list of CSS page selectors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration",
+      "linkingText": [
+        "CSS declaration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration-property-name",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration-property-name",
+      "linkingText": [
+        "property name"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration-value",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration-value",
+      "linkingText": [
+        "value"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration-important-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration-important-flag",
+      "linkingText": [
+        "important flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration-case-sensitive-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag",
+      "linkingText": [
+        "case-sensitive flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom-1/#css-declaration-block",
+      "linkingText": [
+        "CSS declaration block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-2",
+          "title": "CSS Shapes Module Level 2",
+          "url": "https://drafts.csswg.org/css-shapes-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-computed-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag",
+      "linkingText": [
+        "computed flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-readonly-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag",
+      "linkingText": [
+        "readonly flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-declarations",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations",
+      "linkingText": [
+        "declarations"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-parent-css-rule",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-owner-node",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration-updating-flag",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration-updating-flag",
+      "linkingText": [
+        "updating flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block",
+      "linkingText": [
+        "parse a CSS declaration block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-css-declaration",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration",
+      "linkingText": [
+        "serialize a CSS declaration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block",
+      "linkingText": [
+        "serialize a CSS declaration block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "update-style-attribute-for",
+      "href": "https://drafts.csswg.org/cssom-1/#update-style-attribute-for",
+      "linkingText": [
+        "update style attribute for"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "concept-shorthands-preferred-order",
+      "href": "https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order",
+      "linkingText": [
+        "preferred order"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyledeclaration",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyledeclaration",
+      "linkingText": [
+        "CSSStyleDeclaration"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssstyleproperties",
+      "href": "https://drafts.csswg.org/cssom-1/#cssstyleproperties",
+      "linkingText": [
+        "CSSStyleProperties"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstyledeclaration-csstext",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertyvalue",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-getpropertyvalue",
+      "linkingText": [
+        "getPropertyValue(property)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-setproperty",
+      "linkingText": [
+        "setProperty(property, value, priority)",
+        "setProperty(property, value)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "set-a-css-declaration",
+      "href": "https://drafts.csswg.org/cssom-1/#set-a-css-declaration",
+      "linkingText": [
+        "set a CSS declaration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstyledeclaration-removeproperty",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-removeproperty",
+      "linkingText": [
+        "removeProperty(property)"
+      ],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "css-property-to-idl-attribute",
+      "href": "https://drafts.csswg.org/cssom-1/#css-property-to-idl-attribute",
+      "linkingText": [
+        "CSS property to IDL attribute"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "idl-attribute-to-css-property",
+      "href": "https://drafts.csswg.org/cssom-1/#idl-attribute-to-css-property",
+      "linkingText": [
+        "IDL attribute to CSS property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "parse-a-css-value",
+      "href": "https://drafts.csswg.org/cssom-1/#parse-a-css-value",
+      "linkingText": [
+        "parse a CSS value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-css-value",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-value",
+      "linkingText": [
+        "serialize a CSS value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "serialize-a-css-component-value",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-component-value",
+      "linkingText": [
+        "serialize a CSS component value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "elementcssinlinestyle",
+      "href": "https://drafts.csswg.org/cssom-1/#elementcssinlinestyle",
+      "linkingText": [
+        "ElementCSSInlineStyle"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-getcomputedstyle",
+      "href": "https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle",
+      "linkingText": [
+        "getComputedStyle(elt, pseudoElt)",
+        "getComputedStyle(elt)"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "namespacedef-css",
+      "href": "https://drafts.csswg.org/cssom-1/#namespacedef-css",
+      "linkingText": [
+        "CSS"
+      ],
+      "type": "namespace",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-parser-api",
+          "title": "CSS Parser API",
+          "url": "https://wicg.github.io/css-parser-api/"
+        },
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "resolved-value",
+      "href": "https://drafts.csswg.org/cssom-1/#resolved-value",
+      "linkingText": [
+        "resolved value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-6",
+          "title": "CSS Color Module Level 6",
+          "url": "https://drafts.csswg.org/css-color-6/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "resolved-value-special-case-property-like-color",
+      "href": "https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property-like-color",
+      "linkingText": [
+        "resolved value special case property like color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "resolved-value-special-case-property-like-height",
+      "href": "https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property-like-height",
+      "linkingText": [
+        "resolved value special case property like height"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "resolved-value-special-case-property-like-top",
+      "href": "https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property-like-top",
+      "linkingText": [
+        "resolved value special case property like top"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "resolved-value-special-case-property",
+      "href": "https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property",
+      "linkingText": [
+        "resolved value special case property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "http-default-style",
+      "href": "https://drafts.csswg.org/cssom-1/#http-default-style",
+      "linkingText": [
+        "http-default-style"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

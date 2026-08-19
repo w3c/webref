@@ -1,0 +1,712 @@
+{
+  "spec": {
+    "title": "CSS Inline Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-inline-3/"
+  },
+  "backrefs": [
+    {
+      "id": "root-inline-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#root-inline-box",
+      "linkingText": [
+        "root inline box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "line-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#line-box",
+      "linkingText": [
+        "line box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "central-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#central-baseline",
+      "linkingText": [
+        "central baseline",
+        "ideographic central baseline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "ascent-metric",
+      "href": "https://drafts.csswg.org/css-inline-3/#ascent-metric",
+      "linkingText": [
+        "ascent metric"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        }
+      ]
+    },
+    {
+      "id": "descent-metric",
+      "href": "https://drafts.csswg.org/css-inline-3/#descent-metric",
+      "linkingText": [
+        "descent metric"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        }
+      ]
+    },
+    {
+      "id": "line-gap-metric",
+      "href": "https://drafts.csswg.org/css-inline-3/#line-gap-metric",
+      "linkingText": [
+        "line gap metric"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-fonts-5",
+          "title": "CSS Fonts Module Level 5",
+          "url": "https://drafts.csswg.org/css-fonts-5/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-dominant-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-dominant-baseline",
+      "linkingText": [
+        "dominant-baseline"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-vertical-align",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-vertical-align",
+      "linkingText": [
+        "vertical-align"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-baseline-source",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-baseline-source",
+      "linkingText": [
+        "baseline-source"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-baseline-source-auto",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-source-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "baseline-source",
+        "vertical-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-alignment-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-alignment-baseline",
+      "linkingText": [
+        "alignment-baseline"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-baseline-shift",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-baseline-shift",
+      "linkingText": [
+        "baseline-shift"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "line-relative-shift-values",
+      "href": "https://drafts.csswg.org/css-inline-3/#line-relative-shift-values",
+      "linkingText": [
+        "line-relative shift values"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-baseline-shift-sub",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-sub",
+      "linkingText": [
+        "sub"
+      ],
+      "type": "value",
+      "for": [
+        "baseline-shift",
+        "vertical-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-baseline-shift-super",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-super",
+      "linkingText": [
+        "super"
+      ],
+      "type": "value",
+      "for": [
+        "baseline-shift",
+        "vertical-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-baseline-shift-top",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-top",
+      "linkingText": [
+        "top"
+      ],
+      "type": "value",
+      "for": [
+        "baseline-shift",
+        "vertical-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-baseline-shift-bottom",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "type": "value",
+      "for": [
+        "baseline-shift",
+        "vertical-align"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-line-height-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "line-height"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box",
+      "linkingText": [
+        "text-box"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-box-trim",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box-trim",
+      "linkingText": [
+        "text-box-trim"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-box-edge",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-text-box-edge",
+      "linkingText": [
+        "text-box-edge"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-initial-letter",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letter",
+      "linkingText": [
+        "initial-letter"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-5",
+          "title": "CSS Text Module Level 5",
+          "url": "https://drafts.csswg.org/css-text-5/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "initial-letter",
+      "href": "https://drafts.csswg.org/css-inline-3/#initial-letter",
+      "linkingText": [
+        "initial letter",
+        "initial letter box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-initial-letter-align",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letter-align",
+      "linkingText": [
+        "initial-letter-align"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-initial-letter-wrap",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letter-wrap",
+      "linkingText": [
+        "initial-letter-wrap"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    }
+  ]
+}

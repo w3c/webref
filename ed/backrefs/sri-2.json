@@ -1,0 +1,120 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "backrefs": [
+    {
+      "id": "valid-sri-hash-algorithm-token",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#valid-sri-hash-algorithm-token",
+      "linkingText": [
+        "valid SRI hash algorithm token"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        }
+      ]
+    },
+    {
+      "id": "parse-metadata",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-metadata",
+      "linkingText": [
+        "parse metadata"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "does-response-match-metadatalist",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#does-response-match-metadatalist",
+      "linkingText": [
+        "Do bytes match metadataList?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        }
+      ]
+    },
+    {
+      "id": "integrity-policy",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#integrity-policy",
+      "linkingText": [
+        "integrity policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "parse-integrity-policy-headers",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#parse-integrity-policy-headers",
+      "linkingText": [
+        "parse Integrity-Policy headers"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "should-request-be-blocked-by-integrity-policy",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/#should-request-be-blocked-by-integrity-policy",
+      "linkingText": [
+        "should request be blocked by integrity policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    }
+  ]
+}

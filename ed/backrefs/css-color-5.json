@@ -1,0 +1,1624 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://drafts.csswg.org/css-color-5/"
+  },
+  "backrefs": [
+    {
+      "id": "typedef-color",
+      "href": "https://drafts.csswg.org/css-color-5/#typedef-color",
+      "linkingText": [
+        "<color>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-color-6",
+          "title": "CSS Color Module Level 6",
+          "url": "https://drafts.csswg.org/css-color-6/"
+        },
+        {
+          "shortname": "css-extensions-1",
+          "title": "CSS Extensions Module Level 1",
+          "url": "https://drafts.csswg.org/css-extensions-1/"
+        },
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-color",
+      "href": "https://drafts.csswg.org/css-color-5/#absolute-color",
+      "linkingText": [
+        "absolute color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        }
+      ]
+    },
+    {
+      "id": "resolve-to-srgb",
+      "href": "https://drafts.csswg.org/css-color-5/#resolve-to-srgb",
+      "linkingText": [
+        "resolve to sRGB"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "support-legacy-color-syntax",
+      "href": "https://drafts.csswg.org/css-color-5/#support-legacy-color-syntax",
+      "linkingText": [
+        "support legacy color syntax"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-color-mix",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-mix",
+      "linkingText": [
+        "color-mix()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "calculate-a-color-mix",
+      "href": "https://drafts.csswg.org/css-color-5/#calculate-a-color-mix",
+      "linkingText": [
+        "calculate a color-mix()"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "relative-color",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-color",
+      "linkingText": [
+        "relative color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "origin-color",
+      "href": "https://drafts.csswg.org/css-color-5/#origin-color",
+      "linkingText": [
+        "origin color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        }
+      ]
+    },
+    {
+      "id": "relative-color-processing-space",
+      "href": "https://drafts.csswg.org/css-color-5/#relative-color-processing-space",
+      "linkingText": [
+        "relative color processing space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "conversion-if-required",
+      "href": "https://drafts.csswg.org/css-color-5/#conversion-if-required",
+      "linkingText": [
+        "Conversion, if required"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "originally-specified-color-space",
+      "href": "https://drafts.csswg.org/css-color-5/#originally-specified-color-space",
+      "linkingText": [
+        "originally specified color space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "component-keyword",
+      "href": "https://drafts.csswg.org/css-color-5/#component-keyword",
+      "linkingText": [
+        "component keyword"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-rgb-r",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-r",
+      "linkingText": [
+        "r"
+      ],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-rgb-g",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-g",
+      "linkingText": [
+        "g"
+      ],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-rgb-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-b",
+      "linkingText": [
+        "b"
+      ],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-rgb-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "rgb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hsl-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-h",
+      "linkingText": [
+        "h"
+      ],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hsl-s",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-s",
+      "linkingText": [
+        "s"
+      ],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hsl-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-l",
+      "linkingText": [
+        "l"
+      ],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hsl-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "hsl()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-hwb",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-hwb",
+      "linkingText": [
+        "hwb()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hwb-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-h",
+      "linkingText": [
+        "h"
+      ],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hwb-w",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-w",
+      "linkingText": [
+        "w"
+      ],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hwb-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-b",
+      "linkingText": [
+        "b"
+      ],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-hwb-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "hwb()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-lab",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
+      "linkingText": [
+        "lab()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lab-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-l",
+      "linkingText": [
+        "l"
+      ],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lab-a",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-a",
+      "linkingText": [
+        "a"
+      ],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-extensions-1",
+          "title": "CSS Extensions Module Level 1",
+          "url": "https://drafts.csswg.org/css-extensions-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lab-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-b",
+      "linkingText": [
+        "b"
+      ],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lab-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "lab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-oklab",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklab",
+      "linkingText": [
+        "oklab()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklab-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-l",
+      "linkingText": [
+        "l"
+      ],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklab-a",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-a",
+      "linkingText": [
+        "a"
+      ],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklab-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-b",
+      "linkingText": [
+        "b"
+      ],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklab-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "oklab()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-lch",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lch",
+      "linkingText": [
+        "lch()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lch-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-l",
+      "linkingText": [
+        "l"
+      ],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lch-c",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-c",
+      "linkingText": [
+        "c"
+      ],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lch-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-h",
+      "linkingText": [
+        "h"
+      ],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-lch-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "lch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-oklch",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklch",
+      "linkingText": [
+        "oklch()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklch-l",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-l",
+      "linkingText": [
+        "l"
+      ],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklch-c",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-c",
+      "linkingText": [
+        "c"
+      ],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklch-h",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-h",
+      "linkingText": [
+        "h"
+      ],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-oklch-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "oklch()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-alpha",
+      "linkingText": [
+        "alpha()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-alpha-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "alpha()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-color",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-color",
+      "linkingText": [
+        "color()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-color-hdr-1",
+          "title": "CSS Color HDR Module Level 1",
+          "url": "https://drafts.csswg.org/css-color-hdr-1/"
+        }
+      ]
+    },
+    {
+      "id": "invalid-color",
+      "href": "https://drafts.csswg.org/css-color-5/#invalid-color",
+      "linkingText": [
+        "invalid color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valid-color",
+      "href": "https://drafts.csswg.org/css-color-5/#valid-color",
+      "linkingText": [
+        "valid color"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "out-of-gamut",
+      "href": "https://drafts.csswg.org/css-color-5/#out-of-gamut",
+      "linkingText": [
+        "out of gamut"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-r",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-r",
+      "linkingText": [
+        "r"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-g",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-g",
+      "linkingText": [
+        "g"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-b",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-b",
+      "linkingText": [
+        "b"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-x",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-y",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-z",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-z",
+      "linkingText": [
+        "z"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-alpha",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "at-ruledef-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#at-ruledef-profile",
+      "linkingText": [
+        "@color-profile"
+      ],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "css-color-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#css-color-profile",
+      "linkingText": [
+        "CSS color profile"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fetch-an-external-color-profile",
+      "href": "https://drafts.csswg.org/css-color-5/#fetch-an-external-color-profile",
+      "linkingText": [
+        "fetch an external color profile"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "gamut-map",
+      "href": "https://drafts.csswg.org/css-color-5/#gamut-map",
+      "linkingText": [
+        "gamut-map"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-relative-colorimetric",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-relative-colorimetric",
+      "linkingText": [
+        "relative-colorimetric"
+      ],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "linkingText": [
+        "absolute-colorimetric"
+      ],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-perceptual",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-perceptual",
+      "linkingText": [
+        "perceptual"
+      ],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-saturation",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "naively-convert-from-cmyk-to-rgba",
+      "href": "https://drafts.csswg.org/css-color-5/#naively-convert-from-cmyk-to-rgba",
+      "linkingText": [
+        "naively convert from CMYK to RGBA",
+        "naively converted to RGBA"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "naively-convert-from-rgba-to-cmyk",
+      "href": "https://drafts.csswg.org/css-color-5/#naively-convert-from-rgba-to-cmyk",
+      "linkingText": [
+        "naively convert from RGBA to CMYK",
+        "naively converted to CMYK"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-light-dark-none",
+      "href": "https://drafts.csswg.org/css-color-5/#valdef-light-dark-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "light-dark()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-interpolation-method",
+      "href": "https://drafts.csswg.org/css-color-5/#color-interpolation-method",
+      "linkingText": [
+        "<color-interpolation-method>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "effective-percentage",
+      "href": "https://drafts.csswg.org/css-color-5/#effective-percentage",
+      "linkingText": [
+        "effective percentage"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

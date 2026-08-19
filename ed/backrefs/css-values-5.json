@@ -1,0 +1,711 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 5",
+    "url": "https://drafts.csswg.org/css-values-5/"
+  },
+  "backrefs": [
+    {
+      "id": "free-form-productions",
+      "href": "https://drafts.csswg.org/css-values-5/#free-form-productions",
+      "linkingText": [
+        "free-form productions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-syntax",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax",
+      "linkingText": [
+        "<syntax>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-syntax-component",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-component",
+      "linkingText": [
+        "<syntax-component>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-syntax-combinator",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-syntax-combinator",
+      "linkingText": [
+        "<syntax-combinator>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-position",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-position",
+      "linkingText": [
+        "<position>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-top",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-top",
+      "linkingText": [
+        "top"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-right",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-bottom",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-left",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-y-start",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-y-start",
+      "linkingText": [
+        "y-start"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-y-end",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-y-end",
+      "linkingText": [
+        "y-end"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-x-start",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-x-start",
+      "linkingText": [
+        "x-start"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-x-end",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-x-end",
+      "linkingText": [
+        "x-end"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-center",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-position-center",
+      "linkingText": [
+        "center"
+      ],
+      "type": "value",
+      "for": [
+        "<position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "mix-item",
+      "href": "https://drafts.csswg.org/css-values-5/#mix-item",
+      "linkingText": [
+        "mix item"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        }
+      ]
+    },
+    {
+      "id": "normalize-mix-percentages",
+      "href": "https://drafts.csswg.org/css-values-5/#normalize-mix-percentages",
+      "linkingText": [
+        "normalize mix percentages"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-if",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-if",
+      "linkingText": [
+        "if()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-if-test",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-if-test",
+      "linkingText": [
+        "<if-test>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-toggle",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-toggle",
+      "linkingText": [
+        "toggle()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-inherit",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-inherit",
+      "linkingText": [
+        "inherit()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-attr",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
+      "linkingText": [
+        "attr()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-gcpm-4",
+          "title": "CSS Generated Content for Paged Media Module Level 4",
+          "url": "https://drafts.csswg.org/css-gcpm-4/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-gcpm-3",
+          "title": "CSS Generated Content for Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-gcpm-3/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-calc-size",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-size",
+      "linkingText": [
+        "calc-size()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "arbitrary-substitution-function",
+      "href": "https://drafts.csswg.org/css-values-5/#arbitrary-substitution-function",
+      "linkingText": [
+        "arbitrary substitution function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "replace-an-arbitrary-substitution-function",
+      "href": "https://drafts.csswg.org/css-values-5/#replace-an-arbitrary-substitution-function",
+      "linkingText": [
+        "replace an arbitrary substitution function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "substitute-arbitrary-substitution-function",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function",
+      "linkingText": [
+        "substitute arbitrary substitution function",
+        "arbitrary substitution"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "substitution-context",
+      "href": "https://drafts.csswg.org/css-values-5/#substitution-context",
+      "linkingText": [
+        "substitution context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "guarded",
+      "href": "https://drafts.csswg.org/css-values-5/#guarded",
+      "linkingText": [
+        "guarded"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        }
+      ]
+    },
+    {
+      "id": "cyclic-substitution-contexts",
+      "href": "https://drafts.csswg.org/css-values-5/#cyclic-substitution-contexts",
+      "linkingText": [
+        "cyclic substitution contexts"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "argument-grammar",
+      "href": "https://drafts.csswg.org/css-values-5/#argument-grammar",
+      "linkingText": [
+        "argument grammar"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-env-1",
+          "title": "CSS Environment Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-env-1/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "property-replacement",
+      "href": "https://drafts.csswg.org/css-values-5/#property-replacement",
+      "linkingText": [
+        "property replacement",
+        "replace substitution functions",
+        "replace substitution functions in a property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    },
+    {
+      "id": "invalid-at-computed-value-time",
+      "href": "https://drafts.csswg.org/css-values-5/#invalid-at-computed-value-time",
+      "linkingText": [
+        "invalid at computed-value time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-values-1",
+          "title": "CSS Conditional Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-conditional-values-1/"
+        },
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        }
+      ]
+    }
+  ]
+}

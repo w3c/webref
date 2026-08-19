@@ -1,0 +1,724 @@
+{
+  "spec": {
+    "title": "Writing Assistance APIs",
+    "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+  },
+  "backrefs": [
+    {
+      "id": "callbackdef-createmonitorcallback",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#callbackdef-createmonitorcallback",
+      "linkingText": [
+        "CreateMonitorCallback"
+      ],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-availability",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability",
+      "linkingText": [
+        "Availability"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        },
+        {
+          "shortname": "text-detection-api",
+          "title": "Accelerated Text Detection in Images",
+          "url": "https://wicg.github.io/shape-detection-api/text.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-availability-unavailable",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable",
+      "linkingText": [
+        "\"unavailable\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "Availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-availability-downloadable",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable",
+      "linkingText": [
+        "\"downloadable\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "Availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-availability-downloading",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading",
+      "linkingText": [
+        "\"downloading\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "Availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-availability-available",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available",
+      "linkingText": [
+        "\"available\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "Availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "destroyablemodel",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel",
+      "linkingText": [
+        "DestroyableModel"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "destroyablemodel-destruction-abort-controller",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel-destruction-abort-controller",
+      "linkingText": [
+        "destruction abort controller"
+      ],
+      "type": "dfn",
+      "for": [
+        "DestroyableModel"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "create-an-ai-model-object",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#create-an-ai-model-object",
+      "linkingText": [
+        "create an AI model object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "get-an-aggregated-ai-model-result",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#get-an-aggregated-ai-model-result",
+      "linkingText": [
+        "get an aggregated AI model result"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "get-a-streaming-ai-model-result",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#get-a-streaming-ai-model-result",
+      "linkingText": [
+        "get a streaming AI model result"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "measure-ai-model-input-usage",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#measure-ai-model-input-usage",
+      "linkingText": [
+        "measure AI model input usage"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "validate-and-canonicalize-language-tags",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags",
+      "linkingText": [
+        "validate and canonicalize language tags"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "compute-ai-model-availability",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#compute-ai-model-availability",
+      "linkingText": [
+        "compute AI model availability"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "availability-minimum-availability",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#availability-minimum-availability",
+      "linkingText": [
+        "minimum availability"
+      ],
+      "type": "dfn",
+      "for": [
+        "Availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        }
+      ]
+    },
+    {
+      "id": "model-availability-currently-supports",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports",
+      "linkingText": [
+        "currently supports",
+        "currently supported",
+        "can support",
+        "supports"
+      ],
+      "type": "dfn",
+      "for": [
+        "model availability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "language-availabilities-partition",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#language-availabilities-partition",
+      "linkingText": [
+        "language availabilities partition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        }
+      ]
+    },
+    {
+      "id": "get-the-language-availabilities-partition",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#get-the-language-availabilities-partition",
+      "linkingText": [
+        "get the language availabilities partition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "compute-language-availability",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#compute-language-availability",
+      "linkingText": [
+        "compute language availability"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "error-information",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#error-information",
+      "linkingText": [
+        "error information"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "domexception-error-information",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information",
+      "linkingText": [
+        "DOMException error information"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "domexception-error-information-name",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "dfn",
+      "for": [
+        "DOMException error information"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "domexception-error-information-details",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details",
+      "linkingText": [
+        "details"
+      ],
+      "type": "dfn",
+      "for": [
+        "DOMException error information"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "quota-exceeded-error-information",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information",
+      "linkingText": [
+        "quota exceeded error information"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "quota-exceeded-error-information-requested",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-requested",
+      "linkingText": [
+        "requested"
+      ],
+      "type": "dfn",
+      "for": [
+        "quota exceeded error information"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "quota-exceeded-error-information-quota",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "type": "dfn",
+      "for": [
+        "quota exceeded error information"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "convert-error-information-into-an-exception-object",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#convert-error-information-into-an-exception-object",
+      "linkingText": [
+        "convert error information into an exception object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    },
+    {
+      "id": "ai-task-source",
+      "href": "https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source",
+      "linkingText": [
+        "AI task source"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        }
+      ]
+    }
+  ]
+}

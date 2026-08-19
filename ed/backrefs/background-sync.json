@@ -1,0 +1,100 @@
+{
+  "spec": {
+    "title": "Web Background Synchronization",
+    "url": "https://wicg.github.io/background-sync/spec/"
+  },
+  "backrefs": [
+    {
+      "id": "online",
+      "href": "https://wicg.github.io/background-sync/spec/#online",
+      "linkingText": [
+        "online"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "syncmanager",
+      "href": "https://wicg.github.io/background-sync/spec/#syncmanager",
+      "linkingText": [
+        "SyncManager"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-syncmanager-register",
+      "href": "https://wicg.github.io/background-sync/spec/#dom-syncmanager-register",
+      "linkingText": [
+        "register(tag)"
+      ],
+      "type": "method",
+      "for": [
+        "SyncManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "syncevent",
+      "href": "https://wicg.github.io/background-sync/spec/#syncevent",
+      "linkingText": [
+        "SyncEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "fire-a-sync-event",
+      "href": "https://wicg.github.io/background-sync/spec/#fire-a-sync-event",
+      "linkingText": [
+        "fire a sync event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    }
+  ]
+}

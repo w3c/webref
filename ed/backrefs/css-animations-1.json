@@ -1,0 +1,1546 @@
+{
+  "spec": {
+    "title": "CSS Animations Module Level 1",
+    "url": "https://drafts.csswg.org/css-animations-1/"
+  },
+  "backrefs": [
+    {
+      "id": "at-ruledef-keyframes",
+      "href": "https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes",
+      "linkingText": [
+        "@keyframes"
+      ],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-keyframes-name",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-keyframes-name",
+      "linkingText": [
+        "<keyframes-name>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-keyframe-block",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-keyframe-block",
+      "linkingText": [
+        "<keyframe-block>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-keyframe-selector",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-keyframe-selector",
+      "linkingText": [
+        "<keyframe-selector>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-name",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-name",
+      "linkingText": [
+        "animation-name"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-name-none",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-name-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "animation-name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-name-keyframes-name",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-name-keyframes-name",
+      "linkingText": [
+        "<keyframes-name>"
+      ],
+      "type": "value",
+      "for": [
+        "animation-name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-duration",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-duration",
+      "linkingText": [
+        "animation-duration"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-timing-function",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-timing-function",
+      "linkingText": [
+        "animation-timing-function"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "active-duration",
+      "href": "https://drafts.csswg.org/css-animations-1/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-iteration-count",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-iteration-count",
+      "linkingText": [
+        "animation-iteration-count"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-single-animation-iteration-count",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation-iteration-count",
+      "linkingText": [
+        "<single-animation-iteration-count>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-iteration-count-infinite",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-iteration-count-infinite",
+      "linkingText": [
+        "infinite"
+      ],
+      "type": "value",
+      "for": [
+        "animation-iteration-count"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-direction",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-direction",
+      "linkingText": [
+        "animation-direction"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-single-animation-direction",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation-direction",
+      "linkingText": [
+        "<single-animation-direction>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-direction-normal",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-direction-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-direction-reverse",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-direction-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-direction-alternate",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-direction-alternate",
+      "linkingText": [
+        "alternate"
+      ],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-direction-alternate-reverse",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-direction-alternate-reverse",
+      "linkingText": [
+        "alternate-reverse"
+      ],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-play-state",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-play-state",
+      "linkingText": [
+        "animation-play-state"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-single-animation-play-state",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation-play-state",
+      "linkingText": [
+        "<single-animation-play-state>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-play-state-running",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-play-state-running",
+      "linkingText": [
+        "running"
+      ],
+      "type": "value",
+      "for": [
+        "animation-play-state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-play-state-paused",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-play-state-paused",
+      "linkingText": [
+        "paused"
+      ],
+      "type": "value",
+      "for": [
+        "animation-play-state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-delay",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-delay",
+      "linkingText": [
+        "animation-delay"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation-fill-mode",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-fill-mode",
+      "linkingText": [
+        "animation-fill-mode"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-single-animation-fill-mode",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation-fill-mode",
+      "linkingText": [
+        "<single-animation-fill-mode>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-fill-mode-none",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-fill-mode-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-fill-mode-forwards",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-fill-mode-forwards",
+      "linkingText": [
+        "forwards"
+      ],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-fill-mode-backwards",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-fill-mode-backwards",
+      "linkingText": [
+        "backwards"
+      ],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-animation-fill-mode-both",
+      "href": "https://drafts.csswg.org/css-animations-1/#valdef-animation-fill-mode-both",
+      "linkingText": [
+        "both"
+      ],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-animation",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "animationevent",
+      "href": "https://drafts.csswg.org/css-animations-1/#animationevent",
+      "linkingText": [
+        "AnimationEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-animationeventinit",
+      "href": "https://drafts.csswg.org/css-animations-1/#dictdef-animationeventinit",
+      "linkingText": [
+        "AnimationEventInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animationevent-elapsedtime",
+      "href": "https://drafts.csswg.org/css-animations-1/#dom-animationevent-elapsedtime",
+      "linkingText": [
+        "elapsedTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "AnimationEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-globaleventhandlers-animationstart",
+      "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationstart",
+      "linkingText": [
+        "animationstart"
+      ],
+      "type": "event",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-globaleventhandlers-animationend",
+      "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationend",
+      "linkingText": [
+        "animationend"
+      ],
+      "type": "event",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-globaleventhandlers-animationiteration",
+      "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationiteration",
+      "linkingText": [
+        "animationiteration"
+      ],
+      "type": "event",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-globaleventhandlers-animationcancel",
+      "href": "https://drafts.csswg.org/css-animations-1/#eventdef-globaleventhandlers-animationcancel",
+      "linkingText": [
+        "animationcancel"
+      ],
+      "type": "event",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "csskeyframerule",
+      "href": "https://drafts.csswg.org/css-animations-1/#csskeyframerule",
+      "linkingText": [
+        "CSSKeyframeRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-csskeyframerule-keytext",
+      "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframerule-keytext",
+      "linkingText": [
+        "keyText"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframeRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "csskeyframesrule",
+      "href": "https://drafts.csswg.org/css-animations-1/#csskeyframesrule",
+      "linkingText": [
+        "CSSKeyframesRule"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-csskeyframesrule-name",
+      "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-csskeyframesrule-cssrules",
+      "href": "https://drafts.csswg.org/css-animations-1/#dom-csskeyframesrule-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "spec": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://w3c.github.io/encrypted-media/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-cdm",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-cdm",
+      "linkingText": [
+        "CDM",
+        "Content Decryption Module (CDM)"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-key-system",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-key-system",
+      "linkingText": [
+        "Key System"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-navigator-requestmediakeysystemaccess",
+      "href": "https://w3c.github.io/encrypted-media/#dom-navigator-requestmediakeysystemaccess",
+      "linkingText": [
+        "requestMediaKeySystemAccess()",
+        "requestMediaKeySystemAccess(keySystem, supportedConfigurations)"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-supported-configuration",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-get-supported-configuration",
+      "linkingText": [
+        "Get Supported Configuration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration",
+      "linkingText": [
+        "MediaKeySystemConfiguration"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysrequirement",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement",
+      "linkingText": [
+        "MediaKeysRequirement"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-initdatatypes",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes",
+      "linkingText": [
+        "initDataTypes"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-audiocapabilities",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities",
+      "linkingText": [
+        "audioCapabilities"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "linkingText": [
+        "distinctiveIdentifier"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-persistentstate",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate",
+      "linkingText": [
+        "persistentState"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-sessiontypes",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes",
+      "linkingText": [
+        "sessionTypes"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability",
+      "linkingText": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-contenttype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-encryptionscheme",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme",
+      "linkingText": [
+        "encryptionScheme"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-robustness",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-robustness",
+      "linkingText": [
+        "robustness"
+      ],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemaccess",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess",
+      "linkingText": [
+        "MediaKeySystemAccess"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeysystemaccess-keysystem",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-keysystem",
+      "linkingText": [
+        "keySystem"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaKeySystemAccess"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediakeys",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys",
+      "linkingText": [
+        "MediaKeys"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    }
+  ]
+}

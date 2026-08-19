@@ -1,0 +1,3025 @@
+{
+  "spec": {
+    "title": "CSS Box Alignment Module Level 3",
+    "url": "https://drafts.csswg.org/css-align-3/"
+  },
+  "backrefs": [
+    {
+      "id": "box-alignment-properties",
+      "href": "https://drafts.csswg.org/css-align-3/#box-alignment-properties",
+      "linkingText": [
+        "box alignment properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "alignment-subject",
+      "href": "https://drafts.csswg.org/css-align-3/#alignment-subject",
+      "linkingText": [
+        "alignment subject"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "alignment-container",
+      "href": "https://drafts.csswg.org/css-align-3/#alignment-container",
+      "linkingText": [
+        "alignment container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "fallback-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#fallback-alignment",
+      "linkingText": [
+        "fallback alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "positional-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#positional-alignment",
+      "linkingText": [
+        "positional alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-center",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-center",
+      "linkingText": [
+        "center"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>",
+        "justify-self",
+        "align-self",
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-start",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-start",
+      "linkingText": [
+        "start"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>",
+        "justify-self",
+        "align-self",
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-end",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-end",
+      "linkingText": [
+        "end"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>",
+        "justify-self",
+        "align-self",
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-self-start",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-self-start",
+      "linkingText": [
+        "self-start"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "justify-self",
+        "align-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-self-end",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-self-end",
+      "linkingText": [
+        "self-end"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "justify-self",
+        "align-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-flex-start",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>",
+        "justify-self",
+        "align-self",
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-self-position-flex-end",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-self-position-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>",
+        "justify-self",
+        "align-self",
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-content-left",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-content-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "justify-self",
+        "justify-items"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-content-right",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-content-right",
+      "linkingText": [
+        "right"
+      ],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "justify-self",
+        "justify-items"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-self-position",
+      "href": "https://drafts.csswg.org/css-align-3/#typedef-self-position",
+      "linkingText": [
+        "<self-position>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-content-position",
+      "href": "https://drafts.csswg.org/css-align-3/#typedef-content-position",
+      "linkingText": [
+        "<content-position>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-line-grid-1",
+          "title": "CSS Line Grid Module Level 1",
+          "url": "https://drafts.csswg.org/css-line-grid-1/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-alignment",
+      "linkingText": [
+        "Baseline alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-alignment-preference",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-alignment-preference",
+      "linkingText": [
+        "baseline alignment preference"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-baseline",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-first-baseline",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-first-baseline",
+      "linkingText": [
+        "first baseline",
+        "first"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "first-baseline-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#first-baseline-alignment",
+      "linkingText": [
+        "first-baseline alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-last-baseline",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-last-baseline",
+      "linkingText": [
+        "last baseline",
+        "last"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "last-baseline-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#last-baseline-alignment",
+      "linkingText": [
+        "last-baseline alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "distributed-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#distributed-alignment",
+      "linkingText": [
+        "distributed alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-content-space-between",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-content-space-around",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-content-space-evenly",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-content-space-evenly",
+      "linkingText": [
+        "space-evenly"
+      ],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-content-stretch",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-content-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-font-loading-3",
+          "title": "CSS Font Loading Module Level 3",
+          "url": "https://drafts.csswg.org/css-font-loading-3/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "overflow-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#overflow-alignment",
+      "linkingText": [
+        "overflow alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-overflow-position",
+      "href": "https://drafts.csswg.org/css-align-3/#typedef-overflow-position",
+      "linkingText": [
+        "<overflow-position>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-position-safe",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-overflow-position-safe",
+      "linkingText": [
+        "safe"
+      ],
+      "type": "value",
+      "for": [
+        "<overflow-position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-position-unsafe",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-overflow-position-unsafe",
+      "linkingText": [
+        "unsafe"
+      ],
+      "type": "value",
+      "for": [
+        "<overflow-position>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "content-distribute",
+      "href": "https://drafts.csswg.org/css-align-3/#content-distribute",
+      "linkingText": [
+        "content distribution",
+        "content-distribution"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "content-distribution-properties",
+      "href": "https://drafts.csswg.org/css-align-3/#content-distribution-properties",
+      "linkingText": [
+        "content-distribution properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-align-content",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-align-content",
+      "linkingText": [
+        "align-content"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-justify-content",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-justify-content",
+      "linkingText": [
+        "justify-content"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-content-normal",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-place-content",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-place-content",
+      "linkingText": [
+        "place-content"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-content-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-content-alignment",
+      "linkingText": [
+        "baseline content-alignment",
+        "first-baseline content-alignment",
+        "last-baseline content-alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "coordinated-self-alignment-preference",
+      "href": "https://drafts.csswg.org/css-align-3/#coordinated-self-alignment-preference",
+      "linkingText": [
+        "coordinated self-alignment preference"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "self-align",
+      "href": "https://drafts.csswg.org/css-align-3/#self-align",
+      "linkingText": [
+        "Self-alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "self-alignment-properties",
+      "href": "https://drafts.csswg.org/css-align-3/#self-alignment-properties",
+      "linkingText": [
+        "self-alignment properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-justify-self",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-justify-self",
+      "linkingText": [
+        "justify-self"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-auto",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-normal",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-self-stretch",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-align-self",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-align-self",
+      "linkingText": [
+        "align-self"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-self-auto",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-self-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-self-normal",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-self-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-align-self-stretch",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-place-self",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-place-self",
+      "linkingText": [
+        "place-self"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-self-alignment",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-self-alignment",
+      "linkingText": [
+        "baseline self-alignment",
+        "first-baseline self-alignment",
+        "last-baseline self-alignment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-justify-items",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-justify-items",
+      "linkingText": [
+        "justify-items"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-justify-items-legacy",
+      "href": "https://drafts.csswg.org/css-align-3/#valdef-justify-items-legacy",
+      "linkingText": [
+        "legacy"
+      ],
+      "type": "value",
+      "for": [
+        "justify-items"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-align-items",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-align-items",
+      "linkingText": [
+        "align-items"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-place-items",
+      "href": "https://drafts.csswg.org/css-align-3/#propdef-place-items",
+      "linkingText": [
+        "place-items"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-set",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-set",
+      "linkingText": [
+        "baseline set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "first-baseline-set",
+      "href": "https://drafts.csswg.org/css-align-3/#first-baseline-set",
+      "linkingText": [
+        "first baseline set",
+        "first baselines"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "last-baseline-set",
+      "href": "https://drafts.csswg.org/css-align-3/#last-baseline-set",
+      "linkingText": [
+        "last baseline set",
+        "last baselines"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "alignment-baseline",
+      "href": "https://drafts.csswg.org/css-align-3/#alignment-baseline",
+      "linkingText": [
+        "alignment baseline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "generate-baselines",
+      "href": "https://drafts.csswg.org/css-align-3/#generate-baselines",
+      "linkingText": [
+        "generate baselines"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "synthesize-baseline",
+      "href": "https://drafts.csswg.org/css-align-3/#synthesize-baseline",
+      "linkingText": [
+        "synthesize baseline",
+        "synthesized baseline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "baseline-sharing-group",
+      "href": "https://drafts.csswg.org/css-align-3/#baseline-sharing-group",
+      "linkingText": [
+        "baseline-sharing group"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "shared-alignment-context",
+      "href": "https://drafts.csswg.org/css-align-3/#shared-alignment-context",
+      "linkingText": [
+        "shared alignment context",
+        "alignment context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "compatible-baseline-alignment-preferences",
+      "href": "https://drafts.csswg.org/css-align-3/#compatible-baseline-alignment-preferences",
+      "linkingText": [
+        "compatible baseline alignment preferences"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "static-position-rectangle",
+      "href": "https://drafts.csswg.org/css-align-3/#static-position-rectangle",
+      "linkingText": [
+        "static-position rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

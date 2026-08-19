@@ -1,0 +1,234 @@
+{
+  "spec": {
+    "title": "Long Animation Frames API",
+    "url": "https://w3c.github.io/long-animation-frames/"
+  },
+  "backrefs": [
+    {
+      "id": "performancelonganimationframetiming",
+      "href": "https://w3c.github.io/long-animation-frames/#performancelonganimationframetiming",
+      "linkingText": [
+        "PerformanceLongAnimationFrameTiming"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "current-frame-timing-info",
+      "href": "https://w3c.github.io/long-animation-frames/#current-frame-timing-info",
+      "linkingText": [
+        "current frame timing info"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "record-task-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-task-start-time",
+      "linkingText": [
+        "record task start time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-task-end-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-task-end-time",
+      "linkingText": [
+        "record task end time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        }
+      ]
+    },
+    {
+      "id": "record-rendering-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-rendering-time",
+      "linkingText": [
+        "record rendering time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "queue-a-long-animation-frame-entry",
+      "href": "https://w3c.github.io/long-animation-frames/#queue-a-long-animation-frame-entry",
+      "linkingText": [
+        "queue a long animation frame entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "record-timing-info-for-timer-handler",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-timer-handler",
+      "linkingText": [
+        "record timing info for timer handler"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-timing-info-for-event-listener",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-event-listener",
+      "linkingText": [
+        "record timing info for event listener"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "record-classic-script-creation-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-classic-script-creation-time",
+      "linkingText": [
+        "record classic script creation time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-classic-script-execution-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-classic-script-execution-start-time",
+      "linkingText": [
+        "record classic script execution start time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-module-script-execution-start-time",
+      "href": "https://w3c.github.io/long-animation-frames/#record-module-script-execution-start-time",
+      "linkingText": [
+        "record module script execution start time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-timing-info-for-microtask-checkpoint",
+      "href": "https://w3c.github.io/long-animation-frames/#record-timing-info-for-microtask-checkpoint",
+      "linkingText": [
+        "record timing info for microtask checkpoint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "record-pause-duration",
+      "href": "https://w3c.github.io/long-animation-frames/#record-pause-duration",
+      "linkingText": [
+        "record pause duration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

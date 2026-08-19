@@ -1,0 +1,234 @@
+{
+  "spec": {
+    "title": "The Storage Access API",
+    "url": "https://privacycg.github.io/storage-access/"
+  },
+  "backrefs": [
+    {
+      "id": "unpartitioned-data",
+      "href": "https://privacycg.github.io/storage-access/#unpartitioned-data",
+      "linkingText": [
+        "Unpartitioned data"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "first-party-site-context",
+      "href": "https://privacycg.github.io/storage-access/#first-party-site-context",
+      "linkingText": [
+        "first-party-site context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "third-party-context",
+      "href": "https://privacycg.github.io/storage-access/#third-party-context",
+      "linkingText": [
+        "third party context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access",
+      "href": "https://privacycg.github.io/storage-access/#determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access",
+      "linkingText": [
+        "determine whether the user agent explicitly allows unpartitioned cookie access"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "environment-has-storage-access",
+      "href": "https://privacycg.github.io/storage-access/#environment-has-storage-access",
+      "linkingText": [
+        "has storage access"
+      ],
+      "type": "dfn",
+      "for": [
+        "environment"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "source-snapshot-params-environment-id",
+      "href": "https://privacycg.github.io/storage-access/#source-snapshot-params-environment-id",
+      "linkingText": [
+        "environment id"
+      ],
+      "type": "dfn",
+      "for": [
+        "source snapshot params"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "storage-access-eligibility",
+      "href": "https://privacycg.github.io/storage-access/#storage-access-eligibility",
+      "linkingText": [
+        "storage access eligibility"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "storage-access-eligibility-eligible",
+      "href": "https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible",
+      "linkingText": [
+        "eligible"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage access eligibility"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "request-eligible-for-storage-access",
+      "href": "https://privacycg.github.io/storage-access/#request-eligible-for-storage-access",
+      "linkingText": [
+        "eligible for storage-access"
+      ],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-document-hasstorageaccess",
+      "href": "https://privacycg.github.io/storage-access/#dom-document-hasstorageaccess",
+      "linkingText": [
+        "hasStorageAccess()"
+      ],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-document-requeststorageaccess",
+      "href": "https://privacycg.github.io/storage-access/#dom-document-requeststorageaccess",
+      "linkingText": [
+        "requestStorageAccess()"
+      ],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "first-party-sets",
+          "title": "User Agent Interaction with Related Website Sets",
+          "url": "https://wicg.github.io/first-party-sets/"
+        }
+      ]
+    },
+    {
+      "id": "permissiondef-storage-access",
+      "href": "https://privacycg.github.io/storage-access/#permissiondef-storage-access",
+      "linkingText": [
+        "storage-access"
+      ],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        }
+      ]
+    }
+  ]
+}

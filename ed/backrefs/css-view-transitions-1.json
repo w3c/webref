@@ -1,0 +1,1227 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions-1/"
+  },
+  "backrefs": [
+    {
+      "id": "view-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transitions",
+      "linkingText": [
+        "view transitions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name",
+      "linkingText": [
+        "view-transition-name"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name",
+      "linkingText": [
+        "view transition name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-view-transition-name-none",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "view-transition-name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-scoped-view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-scoped-view-transition-name",
+      "linkingText": [
+        "document-scoped view transition name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "pseudo-element-root",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#pseudo-element-root",
+      "linkingText": [
+        "pseudo-element root"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "pseudo-element-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#pseudo-element-tree",
+      "linkingText": [
+        "pseudo-element tree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "view-transition-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-tree",
+      "linkingText": [
+        "view transition tree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-pseudo-elements",
+      "linkingText": [
+        "view transition pseudo-elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "named-view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#named-view-transition-pseudo-elements",
+      "linkingText": [
+        "named view transition pseudo-elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition",
+      "linkingText": [
+        "::view-transition"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-view-transition-group",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group",
+      "linkingText": [
+        "::view-transition-group()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-view-transition-image-pair",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair",
+      "linkingText": [
+        "::view-transition-image-pair()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-view-transition-old",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old",
+      "linkingText": [
+        "::view-transition-old()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-view-transition-new",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new",
+      "linkingText": [
+        "::view-transition-new()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "snapshot-containing-block",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block",
+      "linkingText": [
+        "snapshot containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "snapshot-containing-block-origin",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-origin",
+      "linkingText": [
+        "snapshot containing block origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "snapshot-containing-block-size",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#snapshot-containing-block-size",
+      "linkingText": [
+        "snapshot containing block size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "view-transition-layer",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-layer",
+      "linkingText": [
+        "view transition layer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "global-view-transition-user-agent-style-sheet",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#global-view-transition-user-agent-style-sheet",
+      "linkingText": [
+        "global view transition user agent style sheet"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-named-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-named-elements",
+      "linkingText": [
+        "named elements"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-phase",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-phase",
+      "linkingText": [
+        "phase"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback",
+      "linkingText": [
+        "update callback"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-ready-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-ready-promise",
+      "linkingText": [
+        "ready promise"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-update-callback-done-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-update-callback-done-promise",
+      "linkingText": [
+        "update callback done promise"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-finished-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-finished-promise",
+      "linkingText": [
+        "finished promise"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-transition-root-pseudo-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-transition-root-pseudo-element",
+      "linkingText": [
+        "transition root pseudo-element"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewtransition-initial-snapshot-containing-block-size",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition-initial-snapshot-containing-block-size",
+      "linkingText": [
+        "initial snapshot containing block size"
+      ],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-active-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-active-view-transition",
+      "linkingText": [
+        "active view transition"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-rendering-suppression-for-view-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-rendering-suppression-for-view-transitions",
+      "linkingText": [
+        "rendering suppression for view transitions"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-dynamic-view-transition-style-sheet",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-dynamic-view-transition-style-sheet",
+      "linkingText": [
+        "dynamic view transition style sheet"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-show-view-transition-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-show-view-transition-tree",
+      "linkingText": [
+        "show view transition tree"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-update-callback-queue",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#document-update-callback-queue",
+      "linkingText": [
+        "update callback queue"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-in-a-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-in-a-view-transition",
+      "linkingText": [
+        "captured in a view transition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element",
+      "linkingText": [
+        "captured element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-image",
+      "linkingText": [
+        "old image"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-width",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-width",
+      "linkingText": [
+        "old width"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-height",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-height",
+      "linkingText": [
+        "old height"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-transform",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-transform",
+      "linkingText": [
+        "old transform"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-writing-mode",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-writing-mode",
+      "linkingText": [
+        "old writing-mode"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-direction",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-direction",
+      "linkingText": [
+        "old direction"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-text-orientation",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-text-orientation",
+      "linkingText": [
+        "old text-orientation"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-mix-blend-mode",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-mix-blend-mode",
+      "linkingText": [
+        "old mix-blend-mode"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-backdrop-filter",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-backdrop-filter",
+      "linkingText": [
+        "old backdrop-filter"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-old-color-scheme",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-old-color-scheme",
+      "linkingText": [
+        "old color-scheme"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-new-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-new-element",
+      "linkingText": [
+        "new element"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-style-definitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-style-definitions",
+      "linkingText": [
+        "style definitions"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-group-keyframes",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-keyframes",
+      "linkingText": [
+        "group keyframes"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-group-animation-name-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-animation-name-rule",
+      "linkingText": [
+        "group animation name rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-group-styles-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-group-styles-rule",
+      "linkingText": [
+        "group styles rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-image-pair-isolation-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-pair-isolation-rule",
+      "linkingText": [
+        "image pair isolation rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "captured-element-image-animation-name-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-element-image-animation-name-rule",
+      "linkingText": [
+        "image animation name rule"
+      ],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "perform-pending-transition-operations",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#perform-pending-transition-operations",
+      "linkingText": [
+        "perform pending transition operations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "setup-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#setup-view-transition",
+      "linkingText": [
+        "setup view transition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "activate-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#activate-view-transition",
+      "linkingText": [
+        "activate view transition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "capture-the-old-state",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-old-state",
+      "linkingText": [
+        "capture the old state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "capture-the-new-state",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-new-state",
+      "linkingText": [
+        "capture the new state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "setup-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#setup-transition-pseudo-elements",
+      "linkingText": [
+        "setup transition pseudo-elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "call-the-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#call-the-update-callback",
+      "linkingText": [
+        "call the update callback"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "schedule-the-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#schedule-the-update-callback",
+      "linkingText": [
+        "schedule the update callback"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "flush-the-update-callback-queue",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#flush-the-update-callback-queue",
+      "linkingText": [
+        "flush the update callback queue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "skip-the-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#skip-the-view-transition",
+      "linkingText": [
+        "skip the view transition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "view-transition-page-visibility-change-steps",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-page-visibility-change-steps",
+      "linkingText": [
+        "view transition page-visibility change steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "capture-the-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-image",
+      "linkingText": [
+        "capture the image",
+        "capturing the image"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "capture-rendering-characteristics",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-rendering-characteristics",
+      "linkingText": [
+        "capture rendering characteristics"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "handle-transition-frame",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#handle-transition-frame",
+      "linkingText": [
+        "handle transition frame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "update-pseudo-element-styles",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#update-pseudo-element-styles",
+      "linkingText": [
+        "update pseudo-element styles"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "clear-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#clear-view-transition",
+      "linkingText": [
+        "clear view transition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

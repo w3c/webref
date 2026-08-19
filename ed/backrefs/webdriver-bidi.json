@@ -1,0 +1,954 @@
+{
+  "spec": {
+    "title": "WebDriver BiDi",
+    "url": "https://w3c.github.io/webdriver-bidi/"
+  },
+  "backrefs": [
+    {
+      "id": "resume",
+      "href": "https://w3c.github.io/webdriver-bidi/#resume",
+      "linkingText": [
+        "resume"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "cddl-module-local-end-definition",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-module-local-end-definition",
+      "linkingText": [
+        "Local end definition",
+        "local end definition",
+        "local-cddl"
+      ],
+      "type": "cddl-module",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "event",
+      "href": "https://w3c.github.io/webdriver-bidi/#event",
+      "linkingText": [
+        "event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "set-of-sessions-for-which-an-event-is-enabled",
+      "href": "https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled",
+      "linkingText": [
+        "set of sessions for which an event is enabled"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "get-related-navigables",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-related-navigables",
+      "linkingText": [
+        "get related navigables"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "get-valid-top-level-traversables-by-ids",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-valid-top-level-traversables-by-ids",
+      "linkingText": [
+        "get valid top-level traversables by ids"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "emit-an-event",
+      "href": "https://w3c.github.io/webdriver-bidi/#emit-an-event",
+      "linkingText": [
+        "emit an event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "supports-bidi-only-sessions",
+      "href": "https://w3c.github.io/webdriver-bidi/#supports-bidi-only-sessions",
+      "linkingText": [
+        "supports BiDi-only sessions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "at-driver",
+          "title": "AT Driver",
+          "url": "https://w3c.github.io/at-driver/"
+        }
+      ]
+    },
+    {
+      "id": "user-context",
+      "href": "https://w3c.github.io/webdriver-bidi/#user-context",
+      "linkingText": [
+        "user context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "associated-user-context",
+      "href": "https://w3c.github.io/webdriver-bidi/#associated-user-context",
+      "linkingText": [
+        "associated user context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "get-valid-user-contexts",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-valid-user-contexts",
+      "linkingText": [
+        "get valid user contexts"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "modules-session",
+      "href": "https://w3c.github.io/webdriver-bidi/#modules-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "download-behavior-struct-allowed",
+      "href": "https://w3c.github.io/webdriver-bidi/#download-behavior-struct-allowed",
+      "linkingText": [
+        "allowed"
+      ],
+      "type": "dfn",
+      "for": [
+        "download-behavior-struct"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "download-behavior-struct-destination-folder",
+      "href": "https://w3c.github.io/webdriver-bidi/#download-behavior-struct-destination-folder",
+      "linkingText": [
+        "destinationFolder"
+      ],
+      "type": "dfn",
+      "for": [
+        "download-behavior-struct"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigation-status",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status",
+      "linkingText": [
+        "WebDriver BiDi navigation status"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-id",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-id",
+      "linkingText": [
+        "id"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebDriver BiDi navigation status"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-status",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-status",
+      "linkingText": [
+        "status"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebDriver BiDi navigation status"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-canceled",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-canceled",
+      "linkingText": [
+        "canceled"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-pending",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-complete",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-url",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-url",
+      "linkingText": [
+        "url"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebDriver BiDi navigation status"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-suggested-filename",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-suggested-filename",
+      "linkingText": [
+        "suggestedFilename"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebDriver BiDi navigation status"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigation-status-downloaded-filepath",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigation-status-downloaded-filepath",
+      "linkingText": [
+        "downloadedFilepath"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebDriver BiDi navigation status"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "navigable-id",
+      "href": "https://w3c.github.io/webdriver-bidi/#navigable-id",
+      "linkingText": [
+        "navigable id"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "get-a-navigable",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-a-navigable",
+      "linkingText": [
+        "get a navigable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigable-created",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigable-created",
+      "linkingText": [
+        "WebDriver BiDi navigable created"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigable-destroyed",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigable-destroyed",
+      "linkingText": [
+        "WebDriver BiDi navigable destroyed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigation-started",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started",
+      "linkingText": [
+        "WebDriver BiDi navigation started"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-fragment-navigated",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated",
+      "linkingText": [
+        "WebDriver BiDi fragment navigated"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-history-updated",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-history-updated",
+      "linkingText": [
+        "WebDriver BiDi history updated"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-dom-content-loaded",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded",
+      "linkingText": [
+        "WebDriver BiDi DOM content loaded"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-load-complete",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete",
+      "linkingText": [
+        "WebDriver BiDi load complete"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-download-will-begin",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-will-begin",
+      "linkingText": [
+        "WebDriver BiDi download will begin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-download-end",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-end",
+      "linkingText": [
+        "WebDriver BiDi download end"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigation-aborted",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted",
+      "linkingText": [
+        "WebDriver BiDi navigation aborted"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigation-committed",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-committed",
+      "linkingText": [
+        "WebDriver BiDi navigation committed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-navigation-failed",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed",
+      "linkingText": [
+        "WebDriver BiDi navigation failed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-user-prompt-closed",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-user-prompt-closed",
+      "linkingText": [
+        "WebDriver BiDi user prompt closed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-user-prompt-opened",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-user-prompt-opened",
+      "linkingText": [
+        "WebDriver BiDi user prompt opened"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-emulated-language",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-emulated-language",
+      "linkingText": [
+        "WebDriver BiDi emulated language"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-emulated-available-screen-area",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-emulated-available-screen-area",
+      "linkingText": [
+        "WebDriver BiDi emulated available screen area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-emulated-total-screen-area",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-emulated-total-screen-area",
+      "linkingText": [
+        "WebDriver BiDi emulated total screen area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-emulated-user-agent",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-emulated-user-agent",
+      "linkingText": [
+        "WebDriver BiDi emulated User-Agent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-scripting-is-enabled",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-scripting-is-enabled",
+      "linkingText": [
+        "WebDriver BiDi scripting is enabled"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-clone-network-request-body",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-clone-network-request-body",
+      "linkingText": [
+        "WebDriver BiDi clone network request body"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-clone-network-response-body",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-clone-network-response-body",
+      "linkingText": [
+        "WebDriver BiDi clone network response body"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-network-is-offline",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-network-is-offline",
+      "linkingText": [
+        "WebDriver BiDi network is offline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-before-request-sent",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-before-request-sent",
+      "linkingText": [
+        "WebDriver BiDi before request sent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-fetch-error",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fetch-error",
+      "linkingText": [
+        "WebDriver BiDi fetch error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-response-completed",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-response-completed",
+      "linkingText": [
+        "WebDriver BiDi response completed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-response-started",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-response-started",
+      "linkingText": [
+        "WebDriver BiDi response started"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "commands-scriptevaluate",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-scriptevaluate",
+      "linkingText": [
+        "script.evaluate"
+      ],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "webdriver-bidi-file-dialog-opened",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-file-dialog-opened",
+      "linkingText": [
+        "WebDriver BiDi file dialog opened"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

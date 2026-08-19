@@ -1,0 +1,3988 @@
+{
+  "spec": {
+    "title": "URL Standard",
+    "url": "https://url.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "serialize-an-integer",
+      "href": "https://url.spec.whatwg.org/#serialize-an-integer",
+      "linkingText": [
+        "serialize an integer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "percent-encode",
+      "href": "https://url.spec.whatwg.org/#percent-encode",
+      "linkingText": [
+        "percent-encode"
+      ],
+      "type": "dfn",
+      "for": [
+        "byte"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        }
+      ]
+    },
+    {
+      "id": "percent-decode",
+      "href": "https://url.spec.whatwg.org/#percent-decode",
+      "linkingText": [
+        "percent-decode"
+      ],
+      "type": "dfn",
+      "for": [
+        "byte sequence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        }
+      ]
+    },
+    {
+      "id": "string-percent-decode",
+      "href": "https://url.spec.whatwg.org/#string-percent-decode",
+      "linkingText": [
+        "percent-decode"
+      ],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "fragment-percent-encode-set",
+      "href": "https://url.spec.whatwg.org/#fragment-percent-encode-set",
+      "linkingText": [
+        "fragment percent-encode set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        }
+      ]
+    },
+    {
+      "id": "component-percent-encode-set",
+      "href": "https://url.spec.whatwg.org/#component-percent-encode-set",
+      "linkingText": [
+        "component percent-encode set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "string-percent-encode-after-encoding",
+      "href": "https://url.spec.whatwg.org/#string-percent-encode-after-encoding",
+      "linkingText": [
+        "percent-encode after encoding"
+      ],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "string-utf-8-percent-encode",
+      "href": "https://url.spec.whatwg.org/#string-utf-8-percent-encode",
+      "linkingText": [
+        "UTF-8 percent-encode"
+      ],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "concept-host",
+      "href": "https://url.spec.whatwg.org/#concept-host",
+      "linkingText": [
+        "host"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "infra",
+          "title": "Infra Standard",
+          "url": "https://infra.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "selection-api",
+          "title": "Selection API",
+          "url": "https://w3c.github.io/selection-api/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "concept-domain",
+      "href": "https://url.spec.whatwg.org/#concept-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "domain-label",
+      "href": "https://url.spec.whatwg.org/#domain-label",
+      "linkingText": [
+        "domain label"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "ip-address",
+      "href": "https://url.spec.whatwg.org/#ip-address",
+      "linkingText": [
+        "IP address"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "mixed-content",
+          "title": "Mixed Content",
+          "url": "https://w3c.github.io/webappsec-mixed-content/"
+        },
+        {
+          "shortname": "network-error-logging",
+          "title": "Network Error Logging",
+          "url": "https://w3c.github.io/network-error-logging/"
+        }
+      ]
+    },
+    {
+      "id": "concept-ipv4",
+      "href": "https://url.spec.whatwg.org/#concept-ipv4",
+      "linkingText": [
+        "IPv4 address"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "concept-ipv6",
+      "href": "https://url.spec.whatwg.org/#concept-ipv6",
+      "linkingText": [
+        "IPv6 address"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "opaque-host",
+      "href": "https://url.spec.whatwg.org/#opaque-host",
+      "linkingText": [
+        "opaque host"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "empty-host",
+      "href": "https://url.spec.whatwg.org/#empty-host",
+      "linkingText": [
+        "empty host"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "host-public-suffix",
+      "href": "https://url.spec.whatwg.org/#host-public-suffix",
+      "linkingText": [
+        "public suffix"
+      ],
+      "type": "dfn",
+      "for": [
+        "host"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "host-registrable-domain",
+      "href": "https://url.spec.whatwg.org/#host-registrable-domain",
+      "linkingText": [
+        "registrable domain"
+      ],
+      "type": "dfn",
+      "for": [
+        "host"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "payment-request",
+          "title": "Payment Request API",
+          "url": "https://w3c.github.io/payment-request/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "concept-domain-to-ascii",
+      "href": "https://url.spec.whatwg.org/#concept-domain-to-ascii",
+      "linkingText": [
+        "domain parser"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "valid-domain",
+      "href": "https://url.spec.whatwg.org/#valid-domain",
+      "linkingText": [
+        "valid domain"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "valid-domain-string",
+      "href": "https://url.spec.whatwg.org/#valid-domain-string",
+      "linkingText": [
+        "valid domain string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "concept-host-parser",
+      "href": "https://url.spec.whatwg.org/#concept-host-parser",
+      "linkingText": [
+        "host parser",
+        "host parsing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        }
+      ]
+    },
+    {
+      "id": "ends-in-a-number-checker",
+      "href": "https://url.spec.whatwg.org/#ends-in-a-number-checker",
+      "linkingText": [
+        "ends in a number checker"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        }
+      ]
+    },
+    {
+      "id": "concept-host-serializer",
+      "href": "https://url.spec.whatwg.org/#concept-host-serializer",
+      "linkingText": [
+        "host serializer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        }
+      ]
+    },
+    {
+      "id": "concept-host-equals",
+      "href": "https://url.spec.whatwg.org/#concept-host-equals",
+      "linkingText": [
+        "equal"
+      ],
+      "type": "dfn",
+      "for": [
+        "host"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url",
+      "href": "https://url.spec.whatwg.org/#concept-url",
+      "linkingText": [
+        "URL",
+        "URL record"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        },
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "ecma-426",
+          "title": "Source map format specification",
+          "url": "https://tc39.es/ecma426/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "anonymous-iframe",
+          "title": "Iframe credentialless",
+          "url": "https://wicg.github.io/anonymous-iframe/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "document-isolation-policy",
+          "title": "Document-Isolation-Policy",
+          "url": "https://wicg.github.io/document-isolation-policy/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "web-app-launch",
+          "title": "Web App Launch Handler API",
+          "url": "https://wicg.github.io/web-app-launch/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "IFT",
+          "title": "Incremental Font Transfer",
+          "url": "https://w3c.github.io/IFT/Overview.html"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "presentation-api",
+          "title": "Presentation API",
+          "url": "https://w3c.github.io/presentation-api/"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-contexts",
+          "title": "Secure Contexts",
+          "url": "https://w3c.github.io/webappsec-secure-contexts/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        },
+        {
+          "shortname": "upgrade-insecure-requests",
+          "title": "Upgrade Insecure Requests",
+          "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vc-render-method",
+          "title": "Verifiable Credential Rendering Methods v1.0",
+          "url": "https://w3c.github.io/vc-render-method/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-scheme",
+      "href": "https://url.spec.whatwg.org/#concept-url-scheme",
+      "linkingText": [
+        "scheme"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "ecma-426",
+          "title": "Source map format specification",
+          "url": "https://tc39.es/ecma426/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "document-isolation-policy",
+          "title": "Document-Isolation-Policy",
+          "url": "https://wicg.github.io/document-isolation-policy/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "first-party-sets",
+          "title": "User Agent Interaction with Related Website Sets",
+          "url": "https://wicg.github.io/first-party-sets/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "paymentlink",
+          "title": "Facilitated Payment Link Type in HTML",
+          "url": "https://wicg.github.io/paymentlink/"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "sms-one-time-codes",
+          "title": "Origin-bound one-time codes delivered via SMS",
+          "url": "https://wicg.github.io/sms-one-time-codes/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "beacon",
+          "title": "Beacon",
+          "url": "https://w3c.github.io/beacon/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "mixed-content",
+          "title": "Mixed Content",
+          "url": "https://w3c.github.io/webappsec-mixed-content/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "passkey-endpoints-1",
+          "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+          "url": "https://w3c.github.io/webappsec-passkey-endpoints/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-contexts",
+          "title": "Secure Contexts",
+          "url": "https://w3c.github.io/webappsec-secure-contexts/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        },
+        {
+          "shortname": "upgrade-insecure-requests",
+          "title": "Upgrade Insecure Requests",
+          "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+        },
+        {
+          "shortname": "vc-data-model-2.0",
+          "title": "Verifiable Credentials Data Model v2.0",
+          "url": "https://www.w3.org/TR/vc-data-model-2.0/"
+        },
+        {
+          "shortname": "vc-data-model-2.1",
+          "title": "Verifiable Credentials Data Model v2.1",
+          "url": "https://w3c.github.io/vc-data-model/"
+        },
+        {
+          "shortname": "vc-json-schema",
+          "title": "Verifiable Credentials JSON Schema Specification",
+          "url": "https://w3c.github.io/vc-json-schema/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-username",
+      "href": "https://url.spec.whatwg.org/#concept-url-username",
+      "linkingText": [
+        "username"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-password",
+      "href": "https://url.spec.whatwg.org/#concept-url-password",
+      "linkingText": [
+        "password"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-host",
+      "href": "https://url.spec.whatwg.org/#concept-url-host",
+      "linkingText": [
+        "host"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "clear-site-data",
+          "title": "Clear Site Data",
+          "url": "https://w3c.github.io/webappsec-clear-site-data/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "mixed-content",
+          "title": "Mixed Content",
+          "url": "https://w3c.github.io/webappsec-mixed-content/"
+        },
+        {
+          "shortname": "passkey-endpoints-1",
+          "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+          "url": "https://w3c.github.io/webappsec-passkey-endpoints/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "upgrade-insecure-requests",
+          "title": "Upgrade Insecure Requests",
+          "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-port",
+      "href": "https://url.spec.whatwg.org/#concept-url-port",
+      "linkingText": [
+        "port"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "passkey-endpoints-1",
+          "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+          "url": "https://w3c.github.io/webappsec-passkey-endpoints/"
+        },
+        {
+          "shortname": "upgrade-insecure-requests",
+          "title": "Upgrade Insecure Requests",
+          "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-path",
+      "href": "https://url.spec.whatwg.org/#concept-url-path",
+      "linkingText": [
+        "path"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "network-error-logging",
+          "title": "Network Error Logging",
+          "url": "https://w3c.github.io/network-error-logging/"
+        },
+        {
+          "shortname": "passkey-endpoints-1",
+          "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+          "url": "https://w3c.github.io/webappsec-passkey-endpoints/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "upgrade-insecure-requests",
+          "title": "Upgrade Insecure Requests",
+          "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-query",
+      "href": "https://url.spec.whatwg.org/#concept-url-query",
+      "linkingText": [
+        "query"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "network-error-logging",
+          "title": "Network Error Logging",
+          "url": "https://w3c.github.io/network-error-logging/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-fragment",
+      "href": "https://url.spec.whatwg.org/#concept-url-fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-link-params-1",
+          "title": "CSS Linked Parameters Module Level 1",
+          "url": "https://drafts.csswg.org/css-link-params-1/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "network-error-logging",
+          "title": "Network Error Logging",
+          "url": "https://w3c.github.io/network-error-logging/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-blob-entry",
+      "href": "https://url.spec.whatwg.org/#concept-url-blob-entry",
+      "linkingText": [
+        "blob URL entry"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "double-dot-path-segment",
+      "href": "https://url.spec.whatwg.org/#double-dot-path-segment",
+      "linkingText": [
+        "double-dot URL path segment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        }
+      ]
+    },
+    {
+      "id": "special-scheme",
+      "href": "https://url.spec.whatwg.org/#special-scheme",
+      "linkingText": [
+        "special scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "default-port",
+      "href": "https://url.spec.whatwg.org/#default-port",
+      "linkingText": [
+        "default port"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "is-special",
+      "href": "https://url.spec.whatwg.org/#is-special",
+      "linkingText": [
+        "is special"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "include-credentials",
+      "href": "https://url.spec.whatwg.org/#include-credentials",
+      "linkingText": [
+        "include credentials",
+        "includes credentials"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "url-opaque-path",
+      "href": "https://url.spec.whatwg.org/#url-opaque-path",
+      "linkingText": [
+        "opaque path"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "cannot-have-a-username-password-port",
+      "href": "https://url.spec.whatwg.org/#cannot-have-a-username-password-port",
+      "linkingText": [
+        "cannot have a username/password/port"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "concept-base-url",
+      "href": "https://url.spec.whatwg.org/#concept-base-url",
+      "linkingText": [
+        "base URL"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        },
+        {
+          "shortname": "IFT",
+          "title": "Incremental Font Transfer",
+          "url": "https://w3c.github.io/IFT/Overview.html"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "valid-url-string",
+      "href": "https://url.spec.whatwg.org/#valid-url-string",
+      "linkingText": [
+        "valid URL string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "document-isolation-policy",
+          "title": "Document-Isolation-Policy",
+          "url": "https://wicg.github.io/document-isolation-policy/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-url-with-fragment-string",
+      "href": "https://url.spec.whatwg.org/#absolute-url-with-fragment-string",
+      "linkingText": [
+        "absolute-URL-with-fragment string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-url-string",
+      "href": "https://url.spec.whatwg.org/#absolute-url-string",
+      "linkingText": [
+        "absolute-URL string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        },
+        {
+          "shortname": "vc-data-model-2.0",
+          "title": "Verifiable Credentials Data Model v2.0",
+          "url": "https://www.w3.org/TR/vc-data-model-2.0/"
+        },
+        {
+          "shortname": "vc-data-model-2.1",
+          "title": "Verifiable Credentials Data Model v2.1",
+          "url": "https://w3c.github.io/vc-data-model/"
+        }
+      ]
+    },
+    {
+      "id": "url-scheme-string",
+      "href": "https://url.spec.whatwg.org/#url-scheme-string",
+      "linkingText": [
+        "URL-scheme string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        }
+      ]
+    },
+    {
+      "id": "relative-url-with-fragment-string",
+      "href": "https://url.spec.whatwg.org/#relative-url-with-fragment-string",
+      "linkingText": [
+        "relative-URL-with-fragment string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        }
+      ]
+    },
+    {
+      "id": "relative-url-string",
+      "href": "https://url.spec.whatwg.org/#relative-url-string",
+      "linkingText": [
+        "relative-URL string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "IFT",
+          "title": "Incremental Font Transfer",
+          "url": "https://w3c.github.io/IFT/Overview.html"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        }
+      ]
+    },
+    {
+      "id": "path-absolute-url-string",
+      "href": "https://url.spec.whatwg.org/#path-absolute-url-string",
+      "linkingText": [
+        "path-absolute-URL string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "path-relative-scheme-less-url-string",
+      "href": "https://url.spec.whatwg.org/#path-relative-scheme-less-url-string",
+      "linkingText": [
+        "path-relative-scheme-less-URL string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        }
+      ]
+    },
+    {
+      "id": "url-query-string",
+      "href": "https://url.spec.whatwg.org/#url-query-string",
+      "linkingText": [
+        "URL-query string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        }
+      ]
+    },
+    {
+      "id": "url-fragment-string",
+      "href": "https://url.spec.whatwg.org/#url-fragment-string",
+      "linkingText": [
+        "URL-fragment string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        }
+      ]
+    },
+    {
+      "id": "url-code-points",
+      "href": "https://url.spec.whatwg.org/#url-code-points",
+      "linkingText": [
+        "URL code point"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-parser",
+      "href": "https://url.spec.whatwg.org/#concept-url-parser",
+      "linkingText": [
+        "URL parser"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-access",
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "webmcp",
+          "title": "WebMCP",
+          "url": "https://webmachinelearning.github.io/webmcp/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "beacon",
+          "title": "Beacon",
+          "url": "https://w3c.github.io/beacon/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "epub-rs-33",
+          "title": "EPUB Reading Systems 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/rs/"
+        },
+        {
+          "shortname": "epub-rs-34",
+          "title": "EPUB Reading Systems 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/rs/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "image-resource",
+          "title": "Image Resource",
+          "url": "https://w3c.github.io/image-resource/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        },
+        {
+          "shortname": "web-based-payment-handler",
+          "title": "Web-based Payment Handler API",
+          "url": "https://w3c.github.io/web-based-payment-handler/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "concept-basic-url-parser",
+      "href": "https://url.spec.whatwg.org/#concept-basic-url-parser",
+      "linkingText": [
+        "basic URL parser"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "first-party-sets",
+          "title": "User Agent Interaction with Related Website Sets",
+          "url": "https://wicg.github.io/first-party-sets/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "payment-request",
+          "title": "Payment Request API",
+          "url": "https://w3c.github.io/payment-request/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "basic-url-parser-url",
+      "href": "https://url.spec.whatwg.org/#basic-url-parser-url",
+      "linkingText": [
+        "url"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "basic-url-parser-state-override",
+      "href": "https://url.spec.whatwg.org/#basic-url-parser-state-override",
+      "linkingText": [
+        "state override"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "scheme-start-state",
+      "href": "https://url.spec.whatwg.org/#scheme-start-state",
+      "linkingText": [
+        "scheme start state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "host-state",
+      "href": "https://url.spec.whatwg.org/#host-state",
+      "linkingText": [
+        "host state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "hostname-state",
+      "href": "https://url.spec.whatwg.org/#hostname-state",
+      "linkingText": [
+        "hostname state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "port-state",
+      "href": "https://url.spec.whatwg.org/#port-state",
+      "linkingText": [
+        "port state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "path-start-state",
+      "href": "https://url.spec.whatwg.org/#path-start-state",
+      "linkingText": [
+        "path start state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "cannot-be-a-base-url-path-state",
+      "href": "https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state",
+      "linkingText": [
+        "opaque path state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "query-state",
+      "href": "https://url.spec.whatwg.org/#query-state",
+      "linkingText": [
+        "query state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "fragment-state",
+      "href": "https://url.spec.whatwg.org/#fragment-state",
+      "linkingText": [
+        "fragment state"
+      ],
+      "type": "dfn",
+      "for": [
+        "basic URL parser"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "set-the-username",
+      "href": "https://url.spec.whatwg.org/#set-the-username",
+      "linkingText": [
+        "set the username"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "set-the-password",
+      "href": "https://url.spec.whatwg.org/#set-the-password",
+      "linkingText": [
+        "set the password"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-serializer",
+      "href": "https://url.spec.whatwg.org/#concept-url-serializer",
+      "linkingText": [
+        "URL serializer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "epub-33",
+          "title": "EPUB 3.3",
+          "url": "https://w3c.github.io/epub-specs/epub33/core/"
+        },
+        {
+          "shortname": "epub-34",
+          "title": "EPUB 3.4",
+          "url": "https://w3c.github.io/epub-specs/epub34/authoring/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "mathml-core",
+          "title": "MathML Core",
+          "url": "https://w3c.github.io/mathml-core/"
+        },
+        {
+          "shortname": "network-error-logging",
+          "title": "Network Error Logging",
+          "url": "https://w3c.github.io/network-error-logging/"
+        },
+        {
+          "shortname": "pub-manifest",
+          "title": "Publication Manifest",
+          "url": "https://w3c.github.io/pub-manifest/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "url-serializer-exclude-fragment",
+      "href": "https://url.spec.whatwg.org/#url-serializer-exclude-fragment",
+      "linkingText": [
+        "exclude fragment"
+      ],
+      "type": "dfn",
+      "for": [
+        "URL serializer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        }
+      ]
+    },
+    {
+      "id": "url-path-serializer",
+      "href": "https://url.spec.whatwg.org/#url-path-serializer",
+      "linkingText": [
+        "URL path serializer",
+        "URL path serializing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-equals",
+      "href": "https://url.spec.whatwg.org/#concept-url-equals",
+      "linkingText": [
+        "equal"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "payment-method-id",
+          "title": "Payment Method Identifiers",
+          "url": "https://w3c.github.io/payment-method-id/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "url-equals-exclude-fragments",
+      "href": "https://url.spec.whatwg.org/#url-equals-exclude-fragments",
+      "linkingText": [
+        "exclude fragments"
+      ],
+      "type": "dfn",
+      "for": [
+        "url/equals"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        }
+      ]
+    },
+    {
+      "id": "concept-url-origin",
+      "href": "https://url.spec.whatwg.org/#concept-url-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "storage-access",
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        {
+          "shortname": "storage",
+          "title": "Storage Standard",
+          "url": "https://storage.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "webmcp",
+          "title": "WebMCP",
+          "url": "https://webmachinelearning.github.io/webmcp/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "anonymous-iframe",
+          "title": "Iframe credentialless",
+          "url": "https://wicg.github.io/anonymous-iframe/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "first-party-sets",
+          "title": "User Agent Interaction with Related Website Sets",
+          "url": "https://wicg.github.io/first-party-sets/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "managed-configuration",
+          "title": "Managed Configuration API",
+          "url": "https://wicg.github.io/WebApiDevice/managed_config/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "appmanifest",
+          "title": "Web Application Manifest",
+          "url": "https://w3c.github.io/manifest/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "clear-site-data",
+          "title": "Clear Site Data",
+          "url": "https://w3c.github.io/webappsec-clear-site-data/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "fetch-metadata",
+          "title": "Fetch Metadata Request Headers",
+          "url": "https://w3c.github.io/webappsec-fetch-metadata/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "referrer-policy",
+          "title": "Referrer Policy",
+          "url": "https://w3c.github.io/webappsec-referrer-policy/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-contexts",
+          "title": "Secure Contexts",
+          "url": "https://w3c.github.io/webappsec-secure-contexts/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "web-based-payment-handler",
+          "title": "Web-based Payment Handler API",
+          "url": "https://w3c.github.io/web-based-payment-handler/"
+        }
+      ]
+    },
+    {
+      "id": "concept-urlencoded",
+      "href": "https://url.spec.whatwg.org/#concept-urlencoded",
+      "linkingText": [
+        "application/x-www-form-urlencoded"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        }
+      ]
+    },
+    {
+      "id": "concept-urlencoded-parser",
+      "href": "https://url.spec.whatwg.org/#concept-urlencoded-parser",
+      "linkingText": [
+        "urlencoded parser"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-urlencoded-serializer",
+      "href": "https://url.spec.whatwg.org/#concept-urlencoded-serializer",
+      "linkingText": [
+        "urlencoded serializer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        }
+      ]
+    },
+    {
+      "id": "url",
+      "href": "https://url.spec.whatwg.org/#url",
+      "linkingText": [
+        "URL"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        },
+        {
+          "shortname": "get-installed-related-apps",
+          "title": "Get Installed Related Apps API",
+          "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+        },
+        {
+          "shortname": "webusb",
+          "title": "WebUSB API",
+          "url": "https://wicg.github.io/webusb/"
+        },
+        {
+          "shortname": "change-password-url",
+          "title": "A Well-Known URL for Changing Passwords",
+          "url": "https://w3c.github.io/webappsec-change-password-url/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "media-source-2",
+          "title": "Media Source Extensions™",
+          "url": "https://w3c.github.io/media-source/"
+        },
+        {
+          "shortname": "passkey-endpoints-1",
+          "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+          "url": "https://w3c.github.io/webappsec-passkey-endpoints/"
+        },
+        {
+          "shortname": "remote-playback",
+          "title": "Remote Playback API",
+          "url": "https://w3c.github.io/remote-playback/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-url",
+      "href": "https://url.spec.whatwg.org/#dom-url-url",
+      "linkingText": [
+        "URL(url, base)",
+        "constructor(url, base)",
+        "URL(url)",
+        "constructor(url)"
+      ],
+      "type": "constructor",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "private-click-measurement",
+          "title": "Private Click Measurement",
+          "url": "https://privacycg.github.io/private-click-measurement/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-origin",
+      "href": "https://url.spec.whatwg.org/#dom-url-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "get-installed-related-apps",
+          "title": "Get Installed Related Apps API",
+          "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-protocol",
+      "href": "https://url.spec.whatwg.org/#dom-url-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "urlpattern",
+          "title": "URL Pattern Standard",
+          "url": "https://urlpattern.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-username",
+      "href": "https://url.spec.whatwg.org/#dom-url-username",
+      "linkingText": [
+        "username"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-password",
+      "href": "https://url.spec.whatwg.org/#dom-url-password",
+      "linkingText": [
+        "password"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-host",
+      "href": "https://url.spec.whatwg.org/#dom-url-host",
+      "linkingText": [
+        "host"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "dom-url-port",
+      "href": "https://url.spec.whatwg.org/#dom-url-port",
+      "linkingText": [
+        "port"
+      ],
+      "type": "attribute",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "urlsearchparams",
+      "href": "https://url.spec.whatwg.org/#urlsearchparams",
+      "linkingText": [
+        "URLSearchParams"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-urlsearchparams-list",
+      "href": "https://url.spec.whatwg.org/#concept-urlsearchparams-list",
+      "linkingText": [
+        "list"
+      ],
+      "type": "dfn",
+      "for": [
+        "URLSearchParams"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-urlsearchparams-delete",
+      "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-delete",
+      "linkingText": [
+        "delete(name, value)",
+        "delete(name)"
+      ],
+      "type": "method",
+      "for": [
+        "URLSearchParams"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-urlsearchparams-has",
+      "href": "https://url.spec.whatwg.org/#dom-urlsearchparams-has",
+      "linkingText": [
+        "has(name, value)",
+        "has(name)"
+      ],
+      "type": "method",
+      "for": [
+        "URLSearchParams"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    }
+  ]
+}

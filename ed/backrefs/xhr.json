@@ -1,0 +1,418 @@
+{
+  "spec": {
+    "title": "XMLHttpRequest Standard",
+    "url": "https://xhr.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "xmlhttprequesteventtarget",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget",
+      "linkingText": [
+        "XMLHttpRequestEventTarget"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "xmlhttprequestupload",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequestupload",
+      "linkingText": [
+        "XMLHttpRequestUpload"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "xmlhttprequest",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequest",
+      "linkingText": [
+        "XMLHttpRequest"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "mixed-content",
+          "title": "Mixed Content",
+          "url": "https://w3c.github.io/webappsec-mixed-content/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-xmlhttprequest-state",
+      "href": "https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state",
+      "linkingText": [
+        "state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        }
+      ]
+    },
+    {
+      "id": "send-flag",
+      "href": "https://xhr.spec.whatwg.org/#send-flag",
+      "linkingText": [
+        "send() invoked"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        }
+      ]
+    },
+    {
+      "id": "handler-xhr-onreadystatechange",
+      "href": "https://xhr.spec.whatwg.org/#handler-xhr-onreadystatechange",
+      "linkingText": [
+        "onreadystatechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "promises-guide",
+          "title": "Writing Promise-Using Specifications",
+          "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+        }
+      ]
+    },
+    {
+      "id": "dom-xmlhttprequest-readystate",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xmlhttprequest-send",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-send",
+      "linkingText": [
+        "send(body)",
+        "send()"
+      ],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "promises-guide",
+          "title": "Writing Promise-Using Specifications",
+          "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xmlhttprequest-responsexml",
+      "href": "https://xhr.spec.whatwg.org/#dom-xmlhttprequest-responsexml",
+      "linkingText": [
+        "responseXML"
+      ],
+      "type": "attribute",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "formdata",
+      "href": "https://xhr.spec.whatwg.org/#formdata",
+      "linkingText": [
+        "FormData"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "concept-formdata-entry-list",
+      "href": "https://xhr.spec.whatwg.org/#concept-formdata-entry-list",
+      "linkingText": [
+        "entry list"
+      ],
+      "type": "dfn",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-formdata-get",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-get",
+      "linkingText": [
+        "get(name)"
+      ],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-formdata-has",
+      "href": "https://xhr.spec.whatwg.org/#dom-formdata-has",
+      "linkingText": [
+        "has(name)"
+      ],
+      "type": "method",
+      "for": [
+        "FormData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "progressevent",
+      "href": "https://xhr.spec.whatwg.org/#progressevent",
+      "linkingText": [
+        "ProgressEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        }
+      ]
+    },
+    {
+      "id": "dom-progressevent-lengthcomputable",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-lengthcomputable",
+      "linkingText": [
+        "lengthComputable"
+      ],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        }
+      ]
+    },
+    {
+      "id": "dom-progressevent-loaded",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-loaded",
+      "linkingText": [
+        "loaded"
+      ],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-progressevent-total",
+      "href": "https://xhr.spec.whatwg.org/#dom-progressevent-total",
+      "linkingText": [
+        "total"
+      ],
+      "type": "attribute",
+      "for": [
+        "ProgressEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    }
+  ]
+}

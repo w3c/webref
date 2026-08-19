@@ -1,0 +1,784 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://w3c.github.io/mathml-core/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-math",
+      "href": "https://w3c.github.io/mathml-core/#dfn-math",
+      "linkingText": [
+        "math"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mathcolor",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mathcolor",
+      "linkingText": [
+        "mathcolor"
+      ],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mathbackground",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mathbackground",
+      "linkingText": [
+        "mathbackground"
+      ],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mathsize",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mathsize",
+      "linkingText": [
+        "mathsize"
+      ],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-displaystyle",
+      "href": "https://w3c.github.io/mathml-core/#dfn-displaystyle",
+      "linkingText": [
+        "displaystyle"
+      ],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-scriptlevel",
+      "href": "https://w3c.github.io/mathml-core/#dfn-scriptlevel",
+      "linkingText": [
+        "scriptlevel"
+      ],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mathmlelement",
+      "href": "https://w3c.github.io/mathml-core/#dom-mathmlelement",
+      "linkingText": [
+        "MathMLElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-fence",
+      "href": "https://w3c.github.io/mathml-core/#dfn-fence",
+      "linkingText": [
+        "fence"
+      ],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-separator",
+      "href": "https://w3c.github.io/mathml-core/#dfn-separator",
+      "linkingText": [
+        "separator"
+      ],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-form",
+      "href": "https://w3c.github.io/mathml-core/#dfn-form",
+      "linkingText": [
+        "form"
+      ],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-stretchy",
+      "href": "https://w3c.github.io/mathml-core/#dfn-stretchy",
+      "linkingText": [
+        "stretchy"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-symmetric",
+      "href": "https://w3c.github.io/mathml-core/#dfn-symmetric",
+      "linkingText": [
+        "symmetric"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-largeop",
+      "href": "https://w3c.github.io/mathml-core/#dfn-largeop",
+      "linkingText": [
+        "largeop"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-movablelimits",
+      "href": "https://w3c.github.io/mathml-core/#dfn-movablelimits",
+      "linkingText": [
+        "movablelimits"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-lspace",
+      "href": "https://w3c.github.io/mathml-core/#dfn-lspace",
+      "linkingText": [
+        "lspace"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-rspace",
+      "href": "https://w3c.github.io/mathml-core/#dfn-rspace",
+      "linkingText": [
+        "rspace"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-minsize",
+      "href": "https://w3c.github.io/mathml-core/#dfn-minsize",
+      "linkingText": [
+        "minsize"
+      ],
+      "type": "dfn",
+      "for": [
+        "embellished operator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-maxsize",
+      "href": "https://w3c.github.io/mathml-core/#dfn-maxsize",
+      "linkingText": [
+        "maxsize"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mspace",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mspace",
+      "linkingText": [
+        "mspace"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mrow",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mrow",
+      "linkingText": [
+        "mrow"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mfrac",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mfrac",
+      "linkingText": [
+        "mfrac"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-msqrt",
+      "href": "https://w3c.github.io/mathml-core/#dfn-msqrt",
+      "linkingText": [
+        "msqrt"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mroot",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mroot",
+      "linkingText": [
+        "mroot"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mstyle",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mstyle",
+      "linkingText": [
+        "mstyle"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mpadded",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mpadded",
+      "linkingText": [
+        "mpadded"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mphantom",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mphantom",
+      "linkingText": [
+        "mphantom"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-msub",
+      "href": "https://w3c.github.io/mathml-core/#dfn-msub",
+      "linkingText": [
+        "msub"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-msup",
+      "href": "https://w3c.github.io/mathml-core/#dfn-msup",
+      "linkingText": [
+        "msup"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-msubsup",
+      "href": "https://w3c.github.io/mathml-core/#dfn-msubsup",
+      "linkingText": [
+        "msubsup"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-munder",
+      "href": "https://w3c.github.io/mathml-core/#dfn-munder",
+      "linkingText": [
+        "munder"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mover",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mover",
+      "linkingText": [
+        "mover"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-munderover",
+      "href": "https://w3c.github.io/mathml-core/#dfn-munderover",
+      "linkingText": [
+        "munderover"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-accent",
+      "href": "https://w3c.github.io/mathml-core/#dfn-accent",
+      "linkingText": [
+        "accent"
+      ],
+      "type": "element-attr",
+      "for": [
+        "munderover",
+        "mover",
+        "munder"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-accentunder",
+      "href": "https://w3c.github.io/mathml-core/#dfn-accentunder",
+      "linkingText": [
+        "accentunder"
+      ],
+      "type": "element-attr",
+      "for": [
+        "munderover",
+        "mover",
+        "munder"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mmultiscripts",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mmultiscripts",
+      "linkingText": [
+        "mmultiscripts"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mprescripts",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mprescripts",
+      "linkingText": [
+        "mprescripts"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mtable",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mtable",
+      "linkingText": [
+        "mtable"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mtr",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mtr",
+      "linkingText": [
+        "mtr"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mtd",
+      "href": "https://w3c.github.io/mathml-core/#dfn-mtd",
+      "linkingText": [
+        "mtd"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-columnspan",
+      "href": "https://w3c.github.io/mathml-core/#dfn-columnspan",
+      "linkingText": [
+        "columnspan"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-rowspan",
+      "href": "https://w3c.github.io/mathml-core/#dfn-rowspan",
+      "linkingText": [
+        "rowspan"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-a",
+      "href": "https://w3c.github.io/mathml-core/#dfn-a",
+      "linkingText": [
+        "a"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-semantics",
+      "href": "https://w3c.github.io/mathml-core/#dfn-semantics",
+      "linkingText": [
+        "semantics"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-annotation-xml",
+      "href": "https://w3c.github.io/mathml-core/#dfn-annotation-xml",
+      "linkingText": [
+        "annotation-xml"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

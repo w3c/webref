@@ -1,0 +1,584 @@
+{
+  "spec": {
+    "title": "Reporting API",
+    "url": "https://w3c.github.io/reporting/"
+  },
+  "backrefs": [
+    {
+      "id": "endpoint",
+      "href": "https://w3c.github.io/reporting/#endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "crash-reporting",
+          "title": "Crash Reporting",
+          "url": "https://wicg.github.io/crash-reporting/"
+        },
+        {
+          "shortname": "deprecation-reporting",
+          "title": "Deprecation Reporting",
+          "url": "https://wicg.github.io/deprecation-reporting/"
+        },
+        {
+          "shortname": "document-policy",
+          "title": "Document Policy",
+          "url": "https://wicg.github.io/document-policy/"
+        },
+        {
+          "shortname": "intervention-reporting",
+          "title": "Intervention Reporting",
+          "url": "https://wicg.github.io/intervention-reporting/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "dom-endpoint-name",
+      "href": "https://w3c.github.io/reporting/#dom-endpoint-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-endpoint-url",
+      "href": "https://w3c.github.io/reporting/#dom-endpoint-url",
+      "linkingText": [
+        "url"
+      ],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-endpoint-failures",
+      "href": "https://w3c.github.io/reporting/#dom-endpoint-failures",
+      "linkingText": [
+        "failures"
+      ],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "report-type",
+      "href": "https://w3c.github.io/reporting/#report-type",
+      "linkingText": [
+        "report type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "crash-reporting",
+          "title": "Crash Reporting",
+          "url": "https://wicg.github.io/crash-reporting/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "deprecation-reporting",
+          "title": "Deprecation Reporting",
+          "url": "https://wicg.github.io/deprecation-reporting/"
+        },
+        {
+          "shortname": "intervention-reporting",
+          "title": "Intervention Reporting",
+          "url": "https://wicg.github.io/intervention-reporting/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "visible-to-reportingobservers",
+      "href": "https://w3c.github.io/reporting/#visible-to-reportingobservers",
+      "linkingText": [
+        "visible to ReportingObservers"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "href": "https://w3c.github.io/reporting/#report",
+      "linkingText": [
+        "report"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "crash-reporting",
+          "title": "Crash Reporting",
+          "url": "https://wicg.github.io/crash-reporting/"
+        },
+        {
+          "shortname": "deprecation-reporting",
+          "title": "Deprecation Reporting",
+          "url": "https://wicg.github.io/deprecation-reporting/"
+        },
+        {
+          "shortname": "intervention-reporting",
+          "title": "Intervention Reporting",
+          "url": "https://wicg.github.io/intervention-reporting/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "report-body",
+      "href": "https://w3c.github.io/reporting/#report-body",
+      "linkingText": [
+        "body"
+      ],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "crash-reporting",
+          "title": "Crash Reporting",
+          "url": "https://wicg.github.io/crash-reporting/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "deprecation-reporting",
+          "title": "Deprecation Reporting",
+          "url": "https://wicg.github.io/deprecation-reporting/"
+        },
+        {
+          "shortname": "intervention-reporting",
+          "title": "Intervention Reporting",
+          "url": "https://wicg.github.io/intervention-reporting/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "report-url",
+      "href": "https://w3c.github.io/reporting/#report-url",
+      "linkingText": [
+        "url"
+      ],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "report-destination",
+      "href": "https://w3c.github.io/reporting/#report-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "report-attempts",
+      "href": "https://w3c.github.io/reporting/#report-attempts",
+      "linkingText": [
+        "attempts"
+      ],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        }
+      ]
+    },
+    {
+      "id": "windoworworkerglobalscope-reports",
+      "href": "https://w3c.github.io/reporting/#windoworworkerglobalscope-reports",
+      "linkingText": [
+        "reports"
+      ],
+      "type": "dfn",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "network-reporting",
+          "title": "Network Reporting API",
+          "url": "https://w3c.github.io/reporting/network-reporting.html"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "reporting-endpoints",
+      "href": "https://w3c.github.io/reporting/#reporting-endpoints",
+      "linkingText": [
+        "Reporting-Endpoints"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        }
+      ]
+    },
+    {
+      "id": "generate-and-queue-a-report",
+      "href": "https://w3c.github.io/reporting/#generate-and-queue-a-report",
+      "linkingText": [
+        "generate and queue a report"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "document-isolation-policy",
+          "title": "Document-Isolation-Policy",
+          "url": "https://wicg.github.io/document-isolation-policy/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        },
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "generate-and-queue-a-report-context",
+      "href": "https://w3c.github.io/reporting/#generate-and-queue-a-report-context",
+      "linkingText": [
+        "context"
+      ],
+      "type": "dfn",
+      "for": [
+        "generate and queue a report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "generate-and-queue-a-report-type",
+      "href": "https://w3c.github.io/reporting/#generate-and-queue-a-report-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "generate and queue a report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "generate-and-queue-a-report-destination",
+      "href": "https://w3c.github.io/reporting/#generate-and-queue-a-report-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "type": "dfn",
+      "for": [
+        "generate and queue a report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "generate-and-queue-a-report-data",
+      "href": "https://w3c.github.io/reporting/#generate-and-queue-a-report-data",
+      "linkingText": [
+        "data"
+      ],
+      "type": "dfn",
+      "for": [
+        "generate and queue a report"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "strip-url-for-use-in-reports",
+      "href": "https://w3c.github.io/reporting/#strip-url-for-use-in-reports",
+      "linkingText": [
+        "strip URL for use in reports"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "reportingobserver",
+      "href": "https://w3c.github.io/reporting/#reportingobserver",
+      "linkingText": [
+        "ReportingObserver"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "reportbody",
+      "href": "https://w3c.github.io/reporting/#reportbody",
+      "linkingText": [
+        "ReportBody"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "crash-reporting",
+          "title": "Crash Reporting",
+          "url": "https://wicg.github.io/crash-reporting/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "deprecation-reporting",
+          "title": "Deprecation Reporting",
+          "url": "https://wicg.github.io/deprecation-reporting/"
+        },
+        {
+          "shortname": "intervention-reporting",
+          "title": "Intervention Reporting",
+          "url": "https://wicg.github.io/intervention-reporting/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        },
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "spec": {
+    "title": "WebAssembly JavaScript Interface",
+    "url": "https://webassembly.github.io/spec/js-api/"
+  },
+  "backrefs": [
+    {
+      "id": "dictdef-webassemblyinstantiatedsource",
+      "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblyinstantiatedsource",
+      "linkingText": [
+        "WebAssemblyInstantiatedSource"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-webassemblycompileoptions",
+      "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblycompileoptions",
+      "linkingText": [
+        "WebAssemblyCompileOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "namespacedef-webassembly",
+      "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly",
+      "linkingText": [
+        "WebAssembly"
+      ],
+      "type": "namespace",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        }
+      ]
+    },
+    {
+      "id": "compile-a-webassembly-module",
+      "href": "https://webassembly.github.io/spec/js-api/#compile-a-webassembly-module",
+      "linkingText": [
+        "compile a WebAssembly module"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "asynchronously-compile-a-webassembly-module",
+      "href": "https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module",
+      "linkingText": [
+        "asynchronously compile a WebAssembly module"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-webassembly-compile",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-compile",
+      "linkingText": [
+        "compile(bytes, options)",
+        "compile(bytes)"
+      ],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "instantiate-a-promise-of-a-module",
+      "href": "https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module",
+      "linkingText": [
+        "instantiate a promise of a module"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-webassembly-instantiate",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate",
+      "linkingText": [
+        "instantiate(bytes, importObject, options)",
+        "instantiate(bytes, importObject)",
+        "instantiate(bytes)"
+      ],
+      "type": "method",
+      "for": [
+        "WebAssembly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "module",
+      "href": "https://webassembly.github.io/spec/js-api/#module",
+      "linkingText": [
+        "Module"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-module-module",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-module-module",
+      "linkingText": [
+        "Module(bytes, options)",
+        "constructor(bytes, options)",
+        "Module(bytes)",
+        "constructor(bytes)"
+      ],
+      "type": "constructor",
+      "for": [
+        "Module"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "href": "https://webassembly.github.io/spec/js-api/#memory",
+      "linkingText": [
+        "Memory"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        }
+      ]
+    },
+    {
+      "id": "dom-memory-buffer",
+      "href": "https://webassembly.github.io/spec/js-api/#dom-memory-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "type": "attribute",
+      "for": [
+        "Memory"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "exported-function",
+      "href": "https://webassembly.github.io/spec/js-api/#exported-function",
+      "linkingText": [
+        "Exported Function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    },
+    {
+      "id": "exceptiondef-compileerror",
+      "href": "https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror",
+      "linkingText": [
+        "CompileError"
+      ],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "wasm-web-api-2",
+          "title": "WebAssembly Web API",
+          "url": "https://webassembly.github.io/spec/web-api/"
+        }
+      ]
+    }
+  ]
+}

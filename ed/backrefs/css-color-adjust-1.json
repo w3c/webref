@@ -1,0 +1,674 @@
+{
+  "spec": {
+    "title": "CSS Color Adjustment Module Level 1",
+    "url": "https://drafts.csswg.org/css-color-adjust-1/"
+  },
+  "backrefs": [
+    {
+      "id": "preferred-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#preferred-color-scheme",
+      "linkingText": [
+        "preferred color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme",
+      "linkingText": [
+        "color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        }
+      ]
+    },
+    {
+      "id": "light-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#light-color-scheme",
+      "linkingText": [
+        "light color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "dark-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#dark-color-scheme",
+      "linkingText": [
+        "dark color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "page-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#page-color-scheme",
+      "linkingText": [
+        "page color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "mediaqueries-5",
+          "title": "Media Queries Level 5",
+          "url": "https://drafts.csswg.org/mediaqueries-5/"
+        }
+      ]
+    },
+    {
+      "id": "color-scheme-default",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-default",
+      "linkingText": [
+        "default"
+      ],
+      "type": "dfn",
+      "for": [
+        "color scheme"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "element-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#element-color-scheme",
+      "linkingText": [
+        "element color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        }
+      ]
+    },
+    {
+      "id": "pages-supported-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#pages-supported-color-scheme",
+      "linkingText": [
+        "page's supported color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#propdef-color-scheme",
+      "linkingText": [
+        "color-scheme"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-scheme-normal",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-scheme-light",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-light",
+      "linkingText": [
+        "light"
+      ],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-scheme-dark",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-dark",
+      "linkingText": [
+        "dark"
+      ],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-5",
+          "title": "CSS Color Module Level 5",
+          "url": "https://drafts.csswg.org/css-color-5/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-scheme-only",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-only",
+      "linkingText": [
+        "only"
+      ],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-scheme-preference",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-preference",
+      "linkingText": [
+        "color scheme preference"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-scheme-overriding-preference",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-overriding-preference",
+      "linkingText": [
+        "overriding preference"
+      ],
+      "type": "dfn",
+      "for": [
+        "color scheme"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "color-scheme-support",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-support",
+      "linkingText": [
+        "color scheme support"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "used-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#used-color-scheme",
+      "linkingText": [
+        "used color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "override-the-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#override-the-color-scheme",
+      "linkingText": [
+        "override the color scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "forced-colors-mode",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#forced-colors-mode",
+      "linkingText": [
+        "Forced colors mode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-forced-color-adjust",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#propdef-forced-color-adjust",
+      "linkingText": [
+        "forced-color-adjust"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-forced-color-adjust-auto",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-forced-color-adjust-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "forced-color-adjust"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-forced-color-adjust-none",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-forced-color-adjust-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "forced-color-adjust"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-forced-color-adjust-preserve-parent-color",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-forced-color-adjust-preserve-parent-color",
+      "linkingText": [
+        "preserve-parent-color"
+      ],
+      "type": "value",
+      "for": [
+        "forced-color-adjust"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-print-color-adjust",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#propdef-print-color-adjust",
+      "linkingText": [
+        "print-color-adjust"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-print-color-adjust-economy",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-print-color-adjust-economy",
+      "linkingText": [
+        "economy"
+      ],
+      "type": "value",
+      "for": [
+        "print-color-adjust"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-print-color-adjust-exact",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-print-color-adjust-exact",
+      "linkingText": [
+        "exact"
+      ],
+      "type": "value",
+      "for": [
+        "print-color-adjust"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-color-adjust",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#propdef-color-adjust",
+      "linkingText": [
+        "color-adjust"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "emulated-forced-colors-theme-data",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#emulated-forced-colors-theme-data",
+      "linkingText": [
+        "emulated forced colors theme data"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-forcedcolorsmodeautomationtheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#enumdef-forcedcolorsmodeautomationtheme",
+      "linkingText": [
+        "ForcedColorsModeAutomationTheme"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "set-emulated-forced-colors-theme-data",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#set-emulated-forced-colors-theme-data",
+      "linkingText": [
+        "set emulated forced colors theme data"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "get-emulated-forced-colors-theme-data",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#get-emulated-forced-colors-theme-data",
+      "linkingText": [
+        "get emulated forced colors theme data"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "forced-colors-mode-emulation-color-palettes",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#forced-colors-mode-emulation-color-palettes",
+      "linkingText": [
+        "forced colors mode emulation color palettes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

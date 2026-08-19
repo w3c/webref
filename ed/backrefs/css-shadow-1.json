@@ -1,0 +1,423 @@
+{
+  "spec": {
+    "title": "CSS Shadow Module Level 1",
+    "url": "https://drafts.csswg.org/css-shadow-1/"
+  },
+  "backrefs": [
+    {
+      "id": "tree-context",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-context",
+      "linkingText": [
+        "tree context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-cascade-6",
+          "title": "CSS Cascading and Inheritance Module Level 6",
+          "url": "https://drafts.csswg.org/css-cascade-6/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-host",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host",
+      "linkingText": [
+        ":host"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-host-function",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-function",
+      "linkingText": [
+        ":host()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-host-context",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-context",
+      "linkingText": [
+        ":host-context()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-slotted",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-slotted",
+      "linkingText": [
+        "::slotted()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "flat-tree",
+      "href": "https://drafts.csswg.org/css-shadow-1/#flat-tree",
+      "linkingText": [
+        "flat tree",
+        "flattened element tree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-ui-4",
+          "title": "CSS Basic User Interface Module Level 4",
+          "url": "https://drafts.csswg.org/css-ui-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "css-tree-scoped-name",
+      "href": "https://drafts.csswg.org/css-shadow-1/#css-tree-scoped-name",
+      "linkingText": [
+        "tree-scoped name"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-anchor-position-2",
+          "title": "CSS Anchor Positioning Module Level 2",
+          "url": "https://drafts.csswg.org/css-anchor-position-2/"
+        },
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "tree-scoped-name-loosely-matched",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-loosely-matched",
+      "linkingText": [
+        "loosely matched",
+        "loosely-matched"
+      ],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name",
+        "tree-scoped reference"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "tree-scoped-name-strictly-matched",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-strictly-matched",
+      "linkingText": [
+        "strictly matched",
+        "strictly-matched"
+      ],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name",
+        "tree-scoped reference"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        }
+      ]
+    },
+    {
+      "id": "css-tree-scoped-reference",
+      "href": "https://drafts.csswg.org/css-shadow-1/#css-tree-scoped-reference",
+      "linkingText": [
+        "tree-scoped reference"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-mixins-1",
+          "title": "CSS Custom Functions and Mixins Module Level 1",
+          "url": "https://drafts.csswg.org/css-mixins-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-part",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-part",
+      "linkingText": [
+        "::part()"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    }
+  ]
+}

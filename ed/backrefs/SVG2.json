@@ -1,0 +1,2971 @@
+{
+  "spec": {
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "url": "https://w3c.github.io/svgwg/svg2-draft/"
+  },
+  "backrefs": [
+    {
+      "id": "TermRenderedElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/render.html#TermRenderedElement",
+      "linkingText": [
+        "rendered element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "TermNonRenderedElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/render.html#TermNonRenderedElement",
+      "linkingText": [
+        "non-rendered element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "TermRenderableElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/render.html#TermRenderableElement",
+      "linkingText": [
+        "renderable element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGElement",
+      "linkingText": [
+        "SVGElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGGraphicsElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGraphicsElement",
+      "linkingText": [
+        "SVGGraphicsElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "resize-observer-1",
+          "title": "Resize Observer Module Level 1",
+          "url": "https://drafts.csswg.org/resize-observer-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedBoolean",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedBoolean",
+      "linkingText": [
+        "SVGAnimatedBoolean"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedEnumeration",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedEnumeration",
+      "linkingText": [
+        "SVGAnimatedEnumeration"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedInteger",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedInteger",
+      "linkingText": [
+        "SVGAnimatedInteger"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedNumber",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedNumber",
+      "linkingText": [
+        "SVGAnimatedNumber"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedLength",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedLength",
+      "linkingText": [
+        "SVGAnimatedLength"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedString",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedString",
+      "linkingText": [
+        "SVGAnimatedString"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedNumberList",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAnimatedNumberList",
+      "linkingText": [
+        "SVGAnimatedNumberList"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGUnitTypes",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGUnitTypes",
+      "linkingText": [
+        "SVGUnitTypes"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "__svg__SVGFitToViewBox__viewBox",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox",
+      "linkingText": [
+        "viewBox"
+      ],
+      "type": "attribute",
+      "for": [
+        "SVGFitToViewBox"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGURIReference",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGURIReference",
+      "linkingText": [
+        "SVGURIReference"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "graphics-element",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#graphics-element",
+      "linkingText": [
+        "graphics element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "graphics-referencing-element",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#graphics-referencing-element",
+      "linkingText": [
+        "graphics referencing element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-svg",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg",
+      "linkingText": [
+        "svg"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-image-animation-1",
+          "title": "CSS Image Animation Module Level 1",
+          "url": "https://drafts.csswg.org/css-image-animation-1/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        }
+      ]
+    },
+    {
+      "id": "container-element",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#container-element",
+      "linkingText": [
+        "container element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-2",
+          "title": "Filter Effects Module Level 2",
+          "url": "https://drafts.csswg.org/filter-effects-2/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-g",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-g",
+      "linkingText": [
+        "g"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-defs",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-defs",
+      "linkingText": [
+        "defs"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-symbol",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-symbol",
+      "linkingText": [
+        "symbol"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-use",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-use",
+      "linkingText": [
+        "use"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-switch",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-switch",
+      "linkingText": [
+        "switch"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermDescriptiveElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#TermDescriptiveElement",
+      "linkingText": [
+        "descriptive element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-title",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-title",
+      "linkingText": [
+        "title"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-desc",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-desc",
+      "linkingText": [
+        "desc"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-metadata",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-style",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#elementdef-style",
+      "linkingText": [
+        "style"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermPresentationAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#TermPresentationAttribute",
+      "linkingText": [
+        "presentation attributes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "CxProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CxProperty",
+      "linkingText": [
+        "cx"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "CyProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CyProperty",
+      "linkingText": [
+        "cy"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "RProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RProperty",
+      "linkingText": [
+        "r"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "RxProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty",
+      "linkingText": [
+        "rx"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "RyProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty",
+      "linkingText": [
+        "ry"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "XProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+      "linkingText": [
+        "x"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "YProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+      "linkingText": [
+        "y"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermSVGViewport",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermSVGViewport",
+      "linkingText": [
+        "SVG viewports"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        }
+      ]
+    },
+    {
+      "id": "TermViewportCoordinateSystem",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermViewportCoordinateSystem",
+      "linkingText": [
+        "viewport coordinate system"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermUserCoordinateSystem",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermUserCoordinateSystem",
+      "linkingText": [
+        "user coordinate system"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        }
+      ]
+    },
+    {
+      "id": "TermCanvas",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermCanvas",
+      "linkingText": [
+        "canvas"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "TermViewBox",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermViewBox",
+      "linkingText": [
+        "viewBox"
+      ],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-5",
+          "title": "CSS Images Module Level 5",
+          "url": "https://drafts.csswg.org/css-images-5/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        }
+      ]
+    },
+    {
+      "id": "bounding-box",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#bounding-box",
+      "linkingText": [
+        "bounding box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermObjectBoundingBox",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermObjectBoundingBox",
+      "linkingText": [
+        "object bounding box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "TermStrokeBoundingBox",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#TermStrokeBoundingBox",
+      "linkingText": [
+        "stroke bounding box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "VectorEffectProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#VectorEffectProperty",
+      "linkingText": [
+        "vector-effect"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedTransformList",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGAnimatedTransformList",
+      "linkingText": [
+        "SVGAnimatedTransformList"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGAnimatedPreserveAspectRatio",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGAnimatedPreserveAspectRatio",
+      "linkingText": [
+        "SVGAnimatedPreserveAspectRatio"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "__svg__SVGAnimatedPreserveAspectRatio__baseVal",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGAnimatedPreserveAspectRatio__baseVal",
+      "linkingText": [
+        "baseVal"
+      ],
+      "type": "attribute",
+      "for": [
+        "SVGAnimatedPreserveAspectRatio"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "__svg__SVGAnimatedPreserveAspectRatio__animVal",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGAnimatedPreserveAspectRatio__animVal",
+      "linkingText": [
+        "animVal"
+      ],
+      "type": "attribute",
+      "for": [
+        "SVGAnimatedPreserveAspectRatio"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermEquivalentPath",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#TermEquivalentPath",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-path",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#elementdef-path",
+      "linkingText": [
+        "path"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "DProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#DProperty",
+      "linkingText": [
+        "d"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermPathDirection",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#TermPathDirection",
+      "linkingText": [
+        "direction of a path"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "basic-shape",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#basic-shape",
+      "linkingText": [
+        "basic shape"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermShapeElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#TermShapeElement",
+      "linkingText": [
+        "shape elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-rect",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-rect",
+      "linkingText": [
+        "rect"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-circle",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-ellipse",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-ellipse",
+      "linkingText": [
+        "ellipse"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-line",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-line",
+      "linkingText": [
+        "line"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "LineElementX1Attribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementX1Attribute",
+      "linkingText": [
+        "x1"
+      ],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "LineElementY1Attribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementY1Attribute",
+      "linkingText": [
+        "y1"
+      ],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "LineElementX2Attribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementX2Attribute",
+      "linkingText": [
+        "x2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "LineElementY2Attribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementY2Attribute",
+      "linkingText": [
+        "y2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-polyline",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-polyline",
+      "linkingText": [
+        "polyline"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-polygon",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-polygon",
+      "linkingText": [
+        "polygon"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermTextContentElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TermTextContentElement",
+      "linkingText": [
+        "text content element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "TermTextContentChildElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TermTextContentChildElement",
+      "linkingText": [
+        "text content child element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "TermCurrentTextPosition",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition",
+      "linkingText": [
+        "current text position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-text",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text",
+      "linkingText": [
+        "text"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-tspan",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-tspan",
+      "linkingText": [
+        "tspan"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "TextElementDXAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDXAttribute",
+      "linkingText": [
+        "dx"
+      ],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextElementDYAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDYAttribute",
+      "linkingText": [
+        "dy"
+      ],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextElementRotateAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementRotateAttribute",
+      "linkingText": [
+        "rotate"
+      ],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextElementTextLengthAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute",
+      "linkingText": [
+        "textLength"
+      ],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextElementLengthAdjustAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+      "linkingText": [
+        "lengthAdjust"
+      ],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-textPath",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-textPath",
+      "linkingText": [
+        "textPath"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "TextPathElementStartOffsetAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementStartOffsetAttribute",
+      "linkingText": [
+        "startOffset"
+      ],
+      "type": "element-attr",
+      "for": [
+        "textPath"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextPathElementMethodAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementMethodAttribute",
+      "linkingText": [
+        "method"
+      ],
+      "type": "element-attr",
+      "for": [
+        "textPath"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextPathElementSpacingAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementSpacingAttribute",
+      "linkingText": [
+        "spacing"
+      ],
+      "type": "element-attr",
+      "for": [
+        "textPath"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextPathElementSideAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementSideAttribute",
+      "linkingText": [
+        "side"
+      ],
+      "type": "element-attr",
+      "for": [
+        "textPath"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextPathElementPathAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementPathAttribute",
+      "linkingText": [
+        "path"
+      ],
+      "type": "element-attr",
+      "for": [
+        "textPath"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "TextAnchorProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextAnchorProperty",
+      "linkingText": [
+        "text-anchor"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-image",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#elementdef-image",
+      "linkingText": [
+        "image"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-image-animation-1",
+          "title": "CSS Image Animation Module Level 1",
+          "url": "https://drafts.csswg.org/css-image-animation-1/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-foreignObject",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#elementdef-foreignObject",
+      "linkingText": [
+        "foreignObject"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGImageElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#InterfaceSVGImageElement",
+      "linkingText": [
+        "SVGImageElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "TermPaintServerElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TermPaintServerElement",
+      "linkingText": [
+        "paint server element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "FillProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+      "linkingText": [
+        "fill"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "FillRuleProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillRuleProperty",
+      "linkingText": [
+        "fill-rule"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-shapes-1",
+          "title": "CSS Shapes Module Level 1",
+          "url": "https://drafts.csswg.org/css-shapes-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "FillOpacityProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillOpacityProperty",
+      "linkingText": [
+        "fill-opacity"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeProperty",
+      "linkingText": [
+        "stroke"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeOpacityProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeOpacityProperty",
+      "linkingText": [
+        "stroke-opacity"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeWidthProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeWidthProperty",
+      "linkingText": [
+        "stroke-width"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeLinecapProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeLinecapProperty",
+      "linkingText": [
+        "stroke-linecap"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeLinejoinProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeLinejoinProperty",
+      "linkingText": [
+        "stroke-linejoin"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeMiterlimitProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeMiterlimitProperty",
+      "linkingText": [
+        "stroke-miterlimit"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeDasharrayProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeDasharrayProperty",
+      "linkingText": [
+        "stroke-dasharray"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StrokeDashoffsetProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeDashoffsetProperty",
+      "linkingText": [
+        "stroke-dashoffset"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-marker",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#elementdef-marker",
+      "linkingText": [
+        "marker"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerUnitsAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerUnitsAttribute",
+      "linkingText": [
+        "markerUnits"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerWidthAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerWidthAttribute",
+      "linkingText": [
+        "markerWidth"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerHeightAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerHeightAttribute",
+      "linkingText": [
+        "markerHeight"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerElementRefXAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerElementRefXAttribute",
+      "linkingText": [
+        "refX"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerElementRefYAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerElementRefYAttribute",
+      "linkingText": [
+        "refY"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "OrientAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#OrientAttribute",
+      "linkingText": [
+        "orient"
+      ],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerStartProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerStartProperty",
+      "linkingText": [
+        "marker-start"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerMidProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerMidProperty",
+      "linkingText": [
+        "marker-mid"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerEndProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerEndProperty",
+      "linkingText": [
+        "marker-end"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "MarkerProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+      "linkingText": [
+        "marker"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "PaintOrderProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrderProperty",
+      "linkingText": [
+        "paint-order"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "ColorInterpolationProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ColorInterpolationProperty",
+      "linkingText": [
+        "color-interpolation"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "ShapeRenderingProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ShapeRenderingProperty",
+      "linkingText": [
+        "shape-rendering"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "TextRenderingProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TextRenderingProperty",
+      "linkingText": [
+        "text-rendering"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-linearGradient",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-linearGradient",
+      "linkingText": [
+        "linearGradient"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-radialGradient",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-radialGradient",
+      "linkingText": [
+        "radialGradient"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        }
+      ]
+    },
+    {
+      "id": "StopColorProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#StopColorProperty",
+      "linkingText": [
+        "stop-color"
+      ],
+      "type": "property",
+      "for": [
+        "stop"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "StopOpacityProperty",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#StopOpacityProperty",
+      "linkingText": [
+        "stop-opacity"
+      ],
+      "type": "property",
+      "for": [
+        "stop"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-pattern",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-pattern",
+      "linkingText": [
+        "pattern"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-script",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#elementdef-script",
+      "linkingText": [
+        "script"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "InterfaceSVGScriptElement",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#InterfaceSVGScriptElement",
+      "linkingText": [
+        "SVGScriptElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-a",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#elementdef-a",
+      "linkingText": [
+        "a"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "AElementHrefAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "AElementHreflangAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementHreflangAttribute",
+      "linkingText": [
+        "hreflang"
+      ],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "AElementTypeAttribute",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-view",
+      "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#elementdef-view",
+      "linkingText": [
+        "view"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    }
+  ]
+}

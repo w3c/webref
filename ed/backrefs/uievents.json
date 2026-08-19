@@ -1,0 +1,443 @@
+{
+  "spec": {
+    "title": "UI Events",
+    "url": "https://w3c.github.io/uievents/"
+  },
+  "backrefs": [
+    {
+      "id": "uievent",
+      "href": "https://w3c.github.io/uievents/#uievent",
+      "linkingText": [
+        "UIEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "dom-uievent-view",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-view",
+      "linkingText": [
+        "view"
+      ],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-uievent-detail",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-uieventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-uieventinit",
+      "linkingText": [
+        "UIEventInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        }
+      ]
+    },
+    {
+      "id": "focusevent",
+      "href": "https://w3c.github.io/uievents/#focusevent",
+      "linkingText": [
+        "FocusEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-focusevent-relatedtarget",
+      "href": "https://w3c.github.io/uievents/#dom-focusevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "type": "attribute",
+      "for": [
+        "FocusEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "inputevent",
+      "href": "https://w3c.github.io/uievents/#inputevent",
+      "linkingText": [
+        "InputEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-inputevent-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-inputevent-inputtype",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-inputtype",
+      "linkingText": [
+        "inputType"
+      ],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "beforeinput",
+      "href": "https://w3c.github.io/uievents/#beforeinput",
+      "linkingText": [
+        "beforeinput"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "input-events-2",
+          "title": "Input Events Level 2",
+          "url": "https://w3c.github.io/input-events/"
+        }
+      ]
+    },
+    {
+      "id": "keyboardevent",
+      "href": "https://w3c.github.io/uievents/#keyboardevent",
+      "linkingText": [
+        "KeyboardEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-keyboardevent-key",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-key",
+      "linkingText": [
+        "key"
+      ],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-keyboardevent-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "keydown",
+      "href": "https://w3c.github.io/uievents/#keydown",
+      "linkingText": [
+        "keydown"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "keyup",
+      "href": "https://w3c.github.io/uievents/#keyup",
+      "linkingText": [
+        "keyup"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "compositionevent",
+      "href": "https://w3c.github.io/uievents/#compositionevent",
+      "linkingText": [
+        "CompositionEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-keyboardevent-keycode",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keycode",
+      "linkingText": [
+        "keyCode"
+      ],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "keypress",
+      "href": "https://w3c.github.io/uievents/#keypress",
+      "linkingText": [
+        "keypress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "textevent",
+      "href": "https://w3c.github.io/uievents/#textevent",
+      "linkingText": [
+        "TextEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "activation-trigger",
+      "href": "https://w3c.github.io/uievents/#activation-trigger",
+      "linkingText": [
+        "activation trigger"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "default-action",
+      "href": "https://w3c.github.io/uievents/#default-action",
+      "linkingText": [
+        "default action"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        }
+      ]
+    },
+    {
+      "id": "event-target",
+      "href": "https://w3c.github.io/uievents/#event-target",
+      "linkingText": [
+        "event target"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        }
+      ]
+    }
+  ]
+}

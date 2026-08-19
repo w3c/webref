@@ -1,0 +1,121 @@
+{
+  "spec": {
+    "title": "Web Locks API",
+    "url": "https://w3c.github.io/web-locks/"
+  },
+  "backrefs": [
+    {
+      "id": "lock-concept",
+      "href": "https://w3c.github.io/web-locks/#lock-concept",
+      "linkingText": [
+        "lock-concept"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "lock-request",
+      "href": "https://w3c.github.io/web-locks/#lock-request",
+      "linkingText": [
+        "lock request"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "lockmanager",
+      "href": "https://w3c.github.io/web-locks/#lockmanager",
+      "linkingText": [
+        "LockManager"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-lockmanager-request",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request",
+      "linkingText": [
+        "request(name, callback)"
+      ],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-request-name-options-callback",
+      "linkingText": [
+        "request(name, options, callback)"
+      ],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-lockmanager-query",
+      "href": "https://w3c.github.io/web-locks/#dom-lockmanager-query",
+      "linkingText": [
+        "query()"
+      ],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    }
+  ]
+}

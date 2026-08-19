@@ -1,0 +1,435 @@
+{
+  "spec": {
+    "title": "Performance Timeline",
+    "url": "https://w3c.github.io/performance-timeline/"
+  },
+  "backrefs": [
+    {
+      "id": "performance-entry-buffer",
+      "href": "https://w3c.github.io/performance-timeline/#performance-entry-buffer",
+      "linkingText": [
+        "performance entry buffer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        }
+      ]
+    },
+    {
+      "id": "performanceentry",
+      "href": "https://w3c.github.io/performance-timeline/#performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        },
+        {
+          "shortname": "user-timing",
+          "title": "User Timing",
+          "url": "https://w3c.github.io/user-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceentry-name",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceentry-entrytype",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+      "linkingText": [
+        "entryType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceentry-starttime",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceentry-duration",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceobserver-supportedentrytypes",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes",
+      "linkingText": [
+        "supportedEntryTypes"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performanceobserverinit-buffered",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered",
+      "linkingText": [
+        "buffered"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-queue-a-performanceentry",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry",
+      "linkingText": [
+        "queue a PerformanceEntry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-performance-timeline-task-source",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source",
+      "linkingText": [
+        "performance timeline task source"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    }
+  ]
+}

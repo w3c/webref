@@ -1,0 +1,1035 @@
+{
+  "spec": {
+    "title": "WebXR Layers API Level 1",
+    "url": "https://immersive-web.github.io/layers/"
+  },
+  "backrefs": [
+    {
+      "id": "feature-descriptor-layers",
+      "href": "https://immersive-web.github.io/layers/#feature-descriptor-layers",
+      "linkingText": [
+        "layers"
+      ],
+      "type": "dfn",
+      "for": [
+        "feature descriptor"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-xrlayerlayout",
+      "href": "https://immersive-web.github.io/layers/#enumdef-xrlayerlayout",
+      "linkingText": [
+        "XRLayerLayout"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrlayerlayout-default",
+      "href": "https://immersive-web.github.io/layers/#dom-xrlayerlayout-default",
+      "linkingText": [
+        "\"default\"",
+        "default"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrlayerlayout-mono",
+      "href": "https://immersive-web.github.io/layers/#dom-xrlayerlayout-mono",
+      "linkingText": [
+        "\"mono\"",
+        "mono"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo",
+      "href": "https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo",
+      "linkingText": [
+        "\"stereo\"",
+        "stereo"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo-left-right",
+      "href": "https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo-left-right",
+      "linkingText": [
+        "\"stereo-left-right\"",
+        "stereo-left-right"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo-top-bottom",
+      "href": "https://immersive-web.github.io/layers/#dom-xrlayerlayout-stereo-top-bottom",
+      "linkingText": [
+        "\"stereo-top-bottom\"",
+        "stereo-top-bottom"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcompositionlayer",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer",
+      "linkingText": [
+        "XRCompositionLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcompositionlayer-destroy",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "type": "method",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcompositionlayer-layout",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcompositionlayer-needsredraw",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-needsredraw",
+      "linkingText": [
+        "needsRedraw"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcompositionlayer-miplevels",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcompositionlayer-miplevels",
+      "linkingText": [
+        "mipLevels"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcompositionlayer-destroyed",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer-destroyed",
+      "linkingText": [
+        "destroyed"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "destroy-the-resources-for-a-layer",
+      "href": "https://immersive-web.github.io/layers/#destroy-the-resources-for-a-layer",
+      "linkingText": [
+        "destroy the resources for a layer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "initialize-a-composition-layer",
+      "href": "https://immersive-web.github.io/layers/#initialize-a-composition-layer",
+      "linkingText": [
+        "initialize a composition layer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcompositionlayer-session",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "setting-the-space-on-a-layer",
+      "href": "https://immersive-web.github.io/layers/#setting-the-space-on-a-layer",
+      "linkingText": [
+        "setting the space on a layer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcompositionlayer-isstatic",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer-isstatic",
+      "linkingText": [
+        "isStatic"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrprojectionlayer",
+      "href": "https://immersive-web.github.io/layers/#xrprojectionlayer",
+      "linkingText": [
+        "XRProjectionLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-texturewidth",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-texturewidth",
+      "linkingText": [
+        "textureWidth"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-textureheight",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-textureheight",
+      "linkingText": [
+        "textureHeight"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-texturearraylength",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-texturearraylength",
+      "linkingText": [
+        "textureArrayLength"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-fixedfoveation",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-fixedfoveation",
+      "linkingText": [
+        "fixedFoveation"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-ignoredepthvalues",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-ignoredepthvalues",
+      "linkingText": [
+        "ignoreDepthValues"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrprojectionlayer-deltapose",
+      "href": "https://immersive-web.github.io/layers/#dom-xrprojectionlayer-deltapose",
+      "linkingText": [
+        "deltaPose"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrquadlayer",
+      "href": "https://immersive-web.github.io/layers/#xrquadlayer",
+      "linkingText": [
+        "XRQuadLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrquadlayer-transform",
+      "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrquadlayer-space",
+      "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrquadlayer-width",
+      "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrquadlayer-height",
+      "href": "https://immersive-web.github.io/layers/#dom-xrquadlayer-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcylinderlayer",
+      "href": "https://immersive-web.github.io/layers/#xrcylinderlayer",
+      "linkingText": [
+        "XRCylinderLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcylinderlayer-transform",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcylinderlayer-space",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcylinderlayer-radius",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcylinderlayer-centralangle",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-centralangle",
+      "linkingText": [
+        "centralAngle"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcylinderlayer-aspectratio",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcylinderlayer-aspectratio",
+      "linkingText": [
+        "aspectRatio"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrequirectlayer",
+      "href": "https://immersive-web.github.io/layers/#xrequirectlayer",
+      "linkingText": [
+        "XREquirectLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-space",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-transform",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-radius",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-centralhorizontalangle",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-centralhorizontalangle",
+      "linkingText": [
+        "centralHorizontalAngle"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-upperverticalangle",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-upperverticalangle",
+      "linkingText": [
+        "upperVerticalAngle"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrequirectlayer-lowerverticalangle",
+      "href": "https://immersive-web.github.io/layers/#dom-xrequirectlayer-lowerverticalangle",
+      "linkingText": [
+        "lowerVerticalAngle"
+      ],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrcubelayer",
+      "href": "https://immersive-web.github.io/layers/#xrcubelayer",
+      "linkingText": [
+        "XRCubeLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcubelayer-orientation",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcubelayer-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCubeLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrcubelayer-space",
+      "href": "https://immersive-web.github.io/layers/#dom-xrcubelayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRCubeLayer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrsubimage",
+      "href": "https://immersive-web.github.io/layers/#xrsubimage",
+      "linkingText": [
+        "XRSubImage"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsubimage-viewport",
+      "href": "https://immersive-web.github.io/layers/#dom-xrsubimage-viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRSubImage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-xrtexturetype",
+      "href": "https://immersive-web.github.io/layers/#enumdef-xrtexturetype",
+      "linkingText": [
+        "XRTextureType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        }
+      ]
+    },
+    {
+      "id": "opaque-texture",
+      "href": "https://immersive-web.github.io/layers/#opaque-texture",
+      "linkingText": [
+        "opaque texture"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "raw-camera-access",
+          "title": "WebXR Raw Camera Access Module",
+          "url": "https://immersive-web.github.io/raw-camera-access/"
+        }
+      ]
+    },
+    {
+      "id": "xrwebglbinding",
+      "href": "https://immersive-web.github.io/layers/#xrwebglbinding",
+      "linkingText": [
+        "XRWebGLBinding"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        }
+      ]
+    },
+    {
+      "id": "xrwebglbinding-context",
+      "href": "https://immersive-web.github.io/layers/#xrwebglbinding-context",
+      "linkingText": [
+        "context"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "raw-camera-access",
+          "title": "WebXR Raw Camera Access Module",
+          "url": "https://immersive-web.github.io/raw-camera-access/"
+        }
+      ]
+    },
+    {
+      "id": "xrwebglbinding-session",
+      "href": "https://immersive-web.github.io/layers/#xrwebglbinding-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "raw-camera-access",
+          "title": "WebXR Raw Camera Access Module",
+          "url": "https://immersive-web.github.io/raw-camera-access/"
+        }
+      ]
+    },
+    {
+      "id": "feature-descriptor-space-warp",
+      "href": "https://immersive-web.github.io/layers/#feature-descriptor-space-warp",
+      "linkingText": [
+        "space-warp"
+      ],
+      "type": "dfn",
+      "for": [
+        "feature descriptor"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrenderstate-layers",
+      "href": "https://immersive-web.github.io/layers/#dom-xrrenderstate-layers",
+      "linkingText": [
+        "layers"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRRenderState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    }
+  ]
+}

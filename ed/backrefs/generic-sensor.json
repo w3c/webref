@@ -1,0 +1,1057 @@
+{
+  "spec": {
+    "title": "Generic Sensor API",
+    "url": "https://w3c.github.io/sensors/"
+  },
+  "backrefs": [
+    {
+      "id": "limit-max-frequency",
+      "href": "https://w3c.github.io/sensors/#limit-max-frequency",
+      "linkingText": [
+        "Limit maximum sampling frequency"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "reduce-accuracy",
+      "href": "https://w3c.github.io/sensors/#reduce-accuracy",
+      "linkingText": [
+        "Reduce accuracy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "sensor-reading",
+      "href": "https://w3c.github.io/sensors/#sensor-reading",
+      "linkingText": [
+        "sensor reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "local-coordinate-system",
+      "href": "https://w3c.github.io/sensors/#local-coordinate-system",
+      "linkingText": [
+        "local coordinate system"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "low-level",
+      "href": "https://w3c.github.io/sensors/#low-level",
+      "linkingText": [
+        "low-level"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "sensor-fusion",
+      "href": "https://w3c.github.io/sensors/#sensor-fusion",
+      "linkingText": [
+        "sensor fusion"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "default-sensor",
+      "href": "https://w3c.github.io/sensors/#default-sensor",
+      "linkingText": [
+        "default sensor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        }
+      ]
+    },
+    {
+      "id": "sampling-frequency",
+      "href": "https://w3c.github.io/sensors/#sampling-frequency",
+      "linkingText": [
+        "sampling frequency"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "sensor-type",
+      "href": "https://w3c.github.io/sensors/#sensor-type",
+      "linkingText": [
+        "sensor type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "sensor-permission-names",
+      "href": "https://w3c.github.io/sensors/#sensor-permission-names",
+      "linkingText": [
+        "sensor permission names"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "sensor-feature-names",
+      "href": "https://w3c.github.io/sensors/#sensor-feature-names",
+      "linkingText": [
+        "sensor feature names"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "threshold-check-algorithm",
+      "href": "https://w3c.github.io/sensors/#threshold-check-algorithm",
+      "linkingText": [
+        "threshold check algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "reading-quantization-algorithm",
+      "href": "https://w3c.github.io/sensors/#reading-quantization-algorithm",
+      "linkingText": [
+        "reading quantization algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "latest-reading",
+      "href": "https://w3c.github.io/sensors/#latest-reading",
+      "linkingText": [
+        "latest reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "sensor",
+      "href": "https://w3c.github.io/sensors/#sensor",
+      "linkingText": [
+        "Sensor"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "dom-sensor-start",
+      "href": "https://w3c.github.io/sensors/#dom-sensor-start",
+      "linkingText": [
+        "start()"
+      ],
+      "type": "method",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "dom-sensor-stop",
+      "href": "https://w3c.github.io/sensors/#dom-sensor-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "type": "method",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-sensor-onerror",
+      "href": "https://w3c.github.io/sensors/#dom-sensor-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-sensoroptions",
+      "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions",
+      "linkingText": [
+        "SensorOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "dom-sensor-state-slot",
+      "href": "https://w3c.github.io/sensors/#dom-sensor-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "initialize-a-sensor-object",
+      "href": "https://w3c.github.io/sensors/#initialize-a-sensor-object",
+      "linkingText": [
+        "Initialize a sensor object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "check-sensor-policy-controlled-features",
+      "href": "https://w3c.github.io/sensors/#check-sensor-policy-controlled-features",
+      "linkingText": [
+        "Check sensor policy-controlled features"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "generic-sensor-permission-revocation-algorithm",
+      "href": "https://w3c.github.io/sensors/#generic-sensor-permission-revocation-algorithm",
+      "linkingText": [
+        "Generic Sensor permission revocation algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "update-latest-reading",
+      "href": "https://w3c.github.io/sensors/#update-latest-reading",
+      "linkingText": [
+        "Update latest reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        }
+      ]
+    },
+    {
+      "id": "get-value-from-latest-reading",
+      "href": "https://w3c.github.io/sensors/#get-value-from-latest-reading",
+      "linkingText": [
+        "Get value from latest reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "request-sensor-access",
+      "href": "https://w3c.github.io/sensors/#request-sensor-access",
+      "linkingText": [
+        "Request sensor access"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "virtual-sensor-can-provide-readings-flag",
+      "href": "https://w3c.github.io/sensors/#virtual-sensor-can-provide-readings-flag",
+      "linkingText": [
+        "can provide readings flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "virtual sensor"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        }
+      ]
+    },
+    {
+      "id": "virtual-sensor-type",
+      "href": "https://w3c.github.io/sensors/#virtual-sensor-type",
+      "linkingText": [
+        "virtual sensor type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "per-type-virtual-sensor-metadata",
+      "href": "https://w3c.github.io/sensors/#per-type-virtual-sensor-metadata",
+      "linkingText": [
+        "per-type virtual sensor metadata"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "virtual-sensor-metadata",
+      "href": "https://w3c.github.io/sensors/#virtual-sensor-metadata",
+      "linkingText": [
+        "virtual sensor metadata"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "virtual-sensor-metadata-reading-parsing-algorithm",
+      "href": "https://w3c.github.io/sensors/#virtual-sensor-metadata-reading-parsing-algorithm",
+      "linkingText": [
+        "reading parsing algorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "virtual sensor metadata"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "virtual-sensor-mapping",
+      "href": "https://w3c.github.io/sensors/#virtual-sensor-mapping",
+      "linkingText": [
+        "virtual sensor mapping"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        }
+      ]
+    },
+    {
+      "id": "parse-single-value-number-reading",
+      "href": "https://w3c.github.io/sensors/#parse-single-value-number-reading",
+      "linkingText": [
+        "Parse single-value number reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "parse-xyz-reading",
+      "href": "https://w3c.github.io/sensors/#parse-xyz-reading",
+      "linkingText": [
+        "Parse XYZ reading"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        }
+      ]
+    },
+    {
+      "id": "extension-sensor-interface",
+      "href": "https://w3c.github.io/sensors/#extension-sensor-interface",
+      "linkingText": [
+        "extension sensor interface"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        }
+      ]
+    },
+    {
+      "id": "supported-sensor-options",
+      "href": "https://w3c.github.io/sensors/#supported-sensor-options",
+      "linkingText": [
+        "supported sensor options"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        }
+      ]
+    }
+  ]
+}

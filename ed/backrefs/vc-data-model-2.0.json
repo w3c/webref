@@ -1,0 +1,644 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.0",
+    "url": "https://www.w3.org/TR/vc-data-model-2.0/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-claims",
+      "linkingText": [
+        "claims",
+        "claim"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "digital-credentials",
+          "title": "Digital Credentials",
+          "url": "https://w3c-fedid.github.io/digital-credentials/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-credential",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential",
+      "linkingText": [
+        "credential",
+        "credentials"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-holders",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-holders",
+      "linkingText": [
+        "holders",
+        "holder's",
+        "holders'",
+        "holder"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "digital-credentials",
+          "title": "Digital Credentials",
+          "url": "https://w3c-fedid.github.io/digital-credentials/"
+        },
+        {
+          "shortname": "vc-barcodes-1.0",
+          "title": "Verifiable Credential Barcodes v1.0",
+          "url": "https://w3c.github.io/vc-barcodes/"
+        },
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-issuers",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers",
+      "linkingText": [
+        "issuers",
+        "issuer's",
+        "issuer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cid-1.0",
+          "title": "Controlled Identifiers v1.1",
+          "url": "https://w3c.github.io/cid/"
+        },
+        {
+          "shortname": "digital-credentials",
+          "title": "Digital Credentials",
+          "url": "https://w3c-fedid.github.io/digital-credentials/"
+        },
+        {
+          "shortname": "vc-barcodes-1.0",
+          "title": "Verifiable Credential Barcodes v1.0",
+          "url": "https://w3c.github.io/vc-barcodes/"
+        },
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-forgery-defense-1.0",
+          "title": "Verifiable Credential Forgery Defense v1.0",
+          "url": "https://w3c.github.io/vc-forgery-defense/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-presentation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-presentation",
+      "linkingText": [
+        "presentation",
+        "presentations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-selective-disclosure",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-selective-disclosure",
+      "linkingText": [
+        "selective disclosure"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-di-eddsa-1.1",
+          "title": "Data Integrity EdDSA Cryptosuites v1.1",
+          "url": "https://w3c.github.io/vc-di-eddsa/"
+        },
+        {
+          "shortname": "vc-di-eddsa",
+          "title": "Data Integrity EdDSA Cryptosuites v1.0",
+          "url": "https://www.w3.org/TR/vc-di-eddsa/"
+        },
+        {
+          "shortname": "vc-di-quantum-resistant-1.0",
+          "title": "Quantum-Resistant Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-quantum-resistant/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unlinkable-disclosure",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-unlinkable-disclosure",
+      "linkingText": [
+        "unlinkable disclosure"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-di-ecdsa-1.1",
+          "title": "Data Integrity ECDSA Cryptosuites v1.1",
+          "url": "https://w3c.github.io/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-ecdsa",
+          "title": "Data Integrity ECDSA Cryptosuites v1.0",
+          "url": "https://www.w3.org/TR/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-eddsa-1.1",
+          "title": "Data Integrity EdDSA Cryptosuites v1.1",
+          "url": "https://w3c.github.io/vc-di-eddsa/"
+        },
+        {
+          "shortname": "vc-di-eddsa",
+          "title": "Data Integrity EdDSA Cryptosuites v1.0",
+          "url": "https://www.w3.org/TR/vc-di-eddsa/"
+        },
+        {
+          "shortname": "vc-di-quantum-resistant-1.0",
+          "title": "Quantum-Resistant Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-quantum-resistant/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject's",
+        "subject"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "digital-credentials",
+          "title": "Digital Credentials",
+          "url": "https://w3c-fedid.github.io/digital-credentials/"
+        },
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-verifiable-credential",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential",
+      "linkingText": [
+        "verifiable credential"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cid-1.0",
+          "title": "Controlled Identifiers v1.1",
+          "url": "https://w3c.github.io/cid/"
+        },
+        {
+          "shortname": "did-1.1",
+          "title": "Decentralized Identifiers (DIDs) v1.1",
+          "url": "https://w3c.github.io/did/"
+        },
+        {
+          "shortname": "vc-barcodes-1.0",
+          "title": "Verifiable Credential Barcodes v1.0",
+          "url": "https://w3c.github.io/vc-barcodes/"
+        },
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-di-bbs",
+          "title": "Data Integrity BBS Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-bbs/"
+        },
+        {
+          "shortname": "vc-di-ecdsa-1.1",
+          "title": "Data Integrity ECDSA Cryptosuites v1.1",
+          "url": "https://w3c.github.io/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-ecdsa",
+          "title": "Data Integrity ECDSA Cryptosuites v1.0",
+          "url": "https://www.w3.org/TR/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-quantum-resistant-1.0",
+          "title": "Quantum-Resistant Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-quantum-resistant/"
+        },
+        {
+          "shortname": "vc-forgery-defense-1.0",
+          "title": "Verifiable Credential Forgery Defense v1.0",
+          "url": "https://w3c.github.io/vc-forgery-defense/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-verifiable-data-registries",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-data-registries",
+      "linkingText": [
+        "verifiable data registries",
+        "verifiable data registry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cid-1.0",
+          "title": "Controlled Identifiers v1.1",
+          "url": "https://w3c.github.io/cid/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-verifiable-presentation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-presentation",
+      "linkingText": [
+        "verifiable presentation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-data-integrity",
+          "title": "Verifiable Credential Data Integrity 1.0",
+          "url": "https://www.w3.org/TR/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-verify",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-verify",
+      "linkingText": [
+        "verify",
+        "verified",
+        "verifying",
+        "verifiable",
+        "verifiability",
+        "verification"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vc-json-schema",
+          "title": "Verifiable Credentials JSON Schema Specification",
+          "url": "https://w3c.github.io/vc-json-schema/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-verifier",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier",
+      "linkingText": [
+        "verifier",
+        "verifiers",
+        "verifier's",
+        "credential verifiers",
+        "credential verifier's"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cid-1.0",
+          "title": "Controlled Identifiers v1.1",
+          "url": "https://w3c.github.io/cid/"
+        },
+        {
+          "shortname": "digital-credentials",
+          "title": "Digital Credentials",
+          "url": "https://w3c-fedid.github.io/digital-credentials/"
+        },
+        {
+          "shortname": "vc-barcodes-1.0",
+          "title": "Verifiable Credential Barcodes v1.0",
+          "url": "https://w3c.github.io/vc-barcodes/"
+        },
+        {
+          "shortname": "vc-bitstring-status-list",
+          "title": "Bitstring Status List v1.1",
+          "url": "https://w3c.github.io/vc-bitstring-status-list/"
+        },
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        },
+        {
+          "shortname": "vc-data-integrity-1.1",
+          "title": "Verifiable Credential Data Integrity 1.1",
+          "url": "https://w3c.github.io/vc-data-integrity/"
+        },
+        {
+          "shortname": "vc-di-bbs",
+          "title": "Data Integrity BBS Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-bbs/"
+        },
+        {
+          "shortname": "vc-di-ecdsa-1.1",
+          "title": "Data Integrity ECDSA Cryptosuites v1.1",
+          "url": "https://w3c.github.io/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-ecdsa",
+          "title": "Data Integrity ECDSA Cryptosuites v1.0",
+          "url": "https://www.w3.org/TR/vc-di-ecdsa/"
+        },
+        {
+          "shortname": "vc-di-quantum-resistant-1.0",
+          "title": "Quantum-Resistant Cryptosuites v1.0",
+          "url": "https://w3c.github.io/vc-di-quantum-resistant/"
+        },
+        {
+          "shortname": "vc-forgery-defense-1.0",
+          "title": "Verifiable Credential Forgery Defense v1.0",
+          "url": "https://w3c.github.io/vc-forgery-defense/"
+        },
+        {
+          "shortname": "vc-jose-cose",
+          "title": "Securing Verifiable Credentials using JOSE and COSE",
+          "url": "https://w3c.github.io/vc-jose-cose/"
+        },
+        {
+          "shortname": "vc-recognized-entities-1.0",
+          "title": "Recognized Entities v1.0",
+          "url": "https://w3c.github.io/vc-recognized-entities/"
+        },
+        {
+          "shortname": "vcalm-1.0",
+          "title": "VCALM v1.0",
+          "url": "https://w3c.github.io/vcalm/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#dfn-type",
+      "linkingText": [
+        "type",
+        "types"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "shacl12-sparql",
+          "title": "SHACL 1.2 SPARQL Extensions",
+          "url": "https://w3c.github.io/data-shapes/shacl12-sparql/"
+        },
+        {
+          "shortname": "vc-json-schema",
+          "title": "Verifiable Credentials JSON Schema Specification",
+          "url": "https://w3c.github.io/vc-json-schema/"
+        }
+      ]
+    },
+    {
+      "id": "defn-evidence",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#defn-evidence",
+      "linkingText": [
+        "evidence"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "vc-confidence-method",
+          "title": "Verifiable Credential Confidence Methods v1.0",
+          "url": "https://w3c.github.io/vc-confidence-method/"
+        }
+      ]
+    }
+  ]
+}

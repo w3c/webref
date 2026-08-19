@@ -1,0 +1,1734 @@
+{
+  "spec": {
+    "title": "WebDriver",
+    "url": "https://w3c.github.io/webdriver/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-webdriver-active-flag",
+      "href": "https://w3c.github.io/webdriver/#dfn-webdriver-active-flag",
+      "linkingText": [
+        "webdriver-active flag"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-local-ends",
+      "href": "https://w3c.github.io/webdriver/#dfn-local-ends",
+      "linkingText": [
+        "local ends",
+        "local",
+        "Local end"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-remote-ends",
+      "href": "https://w3c.github.io/webdriver/#dfn-remote-ends",
+      "linkingText": [
+        "remote ends",
+        "remote",
+        "Remote end"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-intermediary-nodes",
+      "href": "https://w3c.github.io/webdriver/#dfn-intermediary-nodes",
+      "linkingText": [
+        "intermediary nodes",
+        "Intermediary node"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "at-driver",
+          "title": "AT Driver",
+          "url": "https://w3c.github.io/at-driver/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-endpoint-node",
+      "href": "https://w3c.github.io/webdriver/#dfn-endpoint-node",
+      "linkingText": [
+        "Endpoint node"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-readiness-state",
+      "href": "https://w3c.github.io/webdriver/#dfn-readiness-state",
+      "linkingText": [
+        "readiness state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-success",
+      "href": "https://w3c.github.io/webdriver/#dfn-success",
+      "linkingText": [
+        "success"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-error",
+      "href": "https://w3c.github.io/webdriver/#dfn-error",
+      "linkingText": [
+        "error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-try",
+      "href": "https://w3c.github.io/webdriver/#dfn-try",
+      "linkingText": [
+        "try",
+        "trying"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-getting-properties",
+      "href": "https://w3c.github.io/webdriver/#dfn-getting-properties",
+      "linkingText": [
+        "getting properties",
+        "getting the property",
+        "getting a property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-getting-the-property-with-default",
+      "href": "https://w3c.github.io/webdriver/#dfn-getting-the-property-with-default",
+      "linkingText": [
+        "getting the property with default",
+        "getting a property with default"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-set-a-property",
+      "href": "https://w3c.github.io/webdriver/#dfn-set-a-property",
+      "linkingText": [
+        "set a property",
+        "Setting a property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-remote-end-steps",
+      "href": "https://w3c.github.io/webdriver/#dfn-remote-end-steps",
+      "linkingText": [
+        "remote end steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-error-code",
+      "href": "https://w3c.github.io/webdriver/#dfn-error-code",
+      "linkingText": [
+        "error code"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-invalid-argument",
+      "href": "https://w3c.github.io/webdriver/#dfn-invalid-argument",
+      "linkingText": [
+        "invalid argument"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-invalid-element-state",
+      "href": "https://w3c.github.io/webdriver/#dfn-invalid-element-state",
+      "linkingText": [
+        "invalid element state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-invalid-selector",
+      "href": "https://w3c.github.io/webdriver/#dfn-invalid-selector",
+      "linkingText": [
+        "invalid selector"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-invalid-session-id",
+      "href": "https://w3c.github.io/webdriver/#dfn-invalid-session-id",
+      "linkingText": [
+        "invalid session id"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-no-such-alert",
+      "href": "https://w3c.github.io/webdriver/#dfn-no-such-alert",
+      "linkingText": [
+        "no such alert"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-no-such-element",
+      "href": "https://w3c.github.io/webdriver/#dfn-no-such-element",
+      "linkingText": [
+        "no such element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-no-such-frame",
+      "href": "https://w3c.github.io/webdriver/#dfn-no-such-frame",
+      "linkingText": [
+        "no such frame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-no-such-window",
+      "href": "https://w3c.github.io/webdriver/#dfn-no-such-window",
+      "linkingText": [
+        "no such window"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-session-not-created",
+      "href": "https://w3c.github.io/webdriver/#dfn-session-not-created",
+      "linkingText": [
+        "session not created"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unable-to-capture-screen",
+      "href": "https://w3c.github.io/webdriver/#dfn-unable-to-capture-screen",
+      "linkingText": [
+        "unable to capture screen"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unknown-command",
+      "href": "https://w3c.github.io/webdriver/#dfn-unknown-command",
+      "linkingText": [
+        "unknown command"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unknown-error",
+      "href": "https://w3c.github.io/webdriver/#dfn-unknown-error",
+      "linkingText": [
+        "unknown error"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unsupported-operation",
+      "href": "https://w3c.github.io/webdriver/#dfn-unsupported-operation",
+      "linkingText": [
+        "unsupported operation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-extension-commands",
+      "href": "https://w3c.github.io/webdriver/#dfn-extension-commands",
+      "linkingText": [
+        "extension commands"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-extension-command-uri-template",
+      "href": "https://w3c.github.io/webdriver/#dfn-extension-command-uri-template",
+      "linkingText": [
+        "extension command URI Template"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-additional-webdriver-capability",
+      "href": "https://w3c.github.io/webdriver/#dfn-additional-webdriver-capability",
+      "linkingText": [
+        "additional WebDriver capability",
+        "additional WebDriver capabilities"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-additional-capability-deserialization-algorithm",
+      "href": "https://w3c.github.io/webdriver/#dfn-additional-capability-deserialization-algorithm",
+      "linkingText": [
+        "additional capability deserialization algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-matched-capability-serialization-algorithm",
+      "href": "https://w3c.github.io/webdriver/#dfn-matched-capability-serialization-algorithm",
+      "linkingText": [
+        "matched capability serialization algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-webdriver-new-session-algorithms",
+      "href": "https://w3c.github.io/webdriver/#dfn-webdriver-new-session-algorithms",
+      "linkingText": [
+        "WebDriver new session algorithms"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-extension-capability",
+      "href": "https://w3c.github.io/webdriver/#dfn-extension-capability",
+      "linkingText": [
+        "extension capability",
+        "extension capabilities"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-proxy-configuration",
+      "href": "https://w3c.github.io/webdriver/#dfn-proxy-configuration",
+      "linkingText": [
+        "proxy configuration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-capabilities-processing",
+      "href": "https://w3c.github.io/webdriver/#dfn-capabilities-processing",
+      "linkingText": [
+        "capabilities processing",
+        "process capabilities"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-validate-capabilities",
+      "href": "https://w3c.github.io/webdriver/#dfn-validate-capabilities",
+      "linkingText": [
+        "validate capabilities"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-matching-capabilities",
+      "href": "https://w3c.github.io/webdriver/#dfn-matching-capabilities",
+      "linkingText": [
+        "matching capabilities"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-webdriver-session",
+      "href": "https://w3c.github.io/webdriver/#dfn-webdriver-session",
+      "linkingText": [
+        "WebDriver session",
+        "session"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-session-id",
+      "href": "https://w3c.github.io/webdriver/#dfn-session-id",
+      "linkingText": [
+        "session ID"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-http-session",
+      "href": "https://w3c.github.io/webdriver/#dfn-http-session",
+      "linkingText": [
+        "HTTP session"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-active-sessions",
+      "href": "https://w3c.github.io/webdriver/#dfn-active-sessions",
+      "linkingText": [
+        "active sessions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-current-browsing-context",
+      "href": "https://w3c.github.io/webdriver/#dfn-current-browsing-context",
+      "linkingText": [
+        "current browsing context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-current-top-level-browsing-context",
+      "href": "https://w3c.github.io/webdriver/#dfn-current-top-level-browsing-context",
+      "linkingText": [
+        "current top-level browsing context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-accept-insecure-tls",
+      "href": "https://w3c.github.io/webdriver/#dfn-accept-insecure-tls",
+      "linkingText": [
+        "accept insecure TLS"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-create-a-session",
+      "href": "https://w3c.github.io/webdriver/#dfn-create-a-session",
+      "linkingText": [
+        "create a session"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-no-longer-open",
+      "href": "https://w3c.github.io/webdriver/#dfn-no-longer-open",
+      "linkingText": [
+        "no longer open"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-window-handles",
+      "href": "https://w3c.github.io/webdriver/#dfn-window-handles",
+      "linkingText": [
+        "window handles",
+        "window handle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-a-node",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-a-node",
+      "linkingText": [
+        "get a node"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-or-create-a-node-reference",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-or-create-a-node-reference",
+      "linkingText": [
+        "get or create a node reference"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-table-for-cookie-conversion",
+      "href": "https://w3c.github.io/webdriver/#dfn-table-for-cookie-conversion",
+      "linkingText": [
+        "table for cookie conversion"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-name",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-name",
+      "linkingText": [
+        "Cookie name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-value",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-value",
+      "linkingText": [
+        "Cookie value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-path",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-path",
+      "linkingText": [
+        "Cookie path"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-domain",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-domain",
+      "linkingText": [
+        "Cookie domain"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-secure-only",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-secure-only",
+      "linkingText": [
+        "Cookie secure only"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-http-only",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-http-only",
+      "linkingText": [
+        "Cookie HTTP only"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-expiry-time",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-expiry-time",
+      "linkingText": [
+        "Cookie expiry time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-cookie-same-site",
+      "href": "https://w3c.github.io/webdriver/#dfn-cookie-same-site",
+      "linkingText": [
+        "Cookie same site"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-creating-a-cookie",
+      "href": "https://w3c.github.io/webdriver/#dfn-creating-a-cookie",
+      "linkingText": [
+        "creating a cookie",
+        "create a cookie"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-actions-options",
+      "href": "https://w3c.github.io/webdriver/#dfn-actions-options",
+      "linkingText": [
+        "actions options"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-is-element-origin",
+      "href": "https://w3c.github.io/webdriver/#dfn-is-element-origin",
+      "linkingText": [
+        "is element origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-element-origin",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-element-origin",
+      "linkingText": [
+        "get element origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-input-cancel-list",
+      "href": "https://w3c.github.io/webdriver/#dfn-input-cancel-list",
+      "linkingText": [
+        "input cancel list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-the-input-state",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-the-input-state",
+      "linkingText": [
+        "get the input state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-reset-the-input-state",
+      "href": "https://w3c.github.io/webdriver/#dfn-reset-the-input-state",
+      "linkingText": [
+        "reset the input state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-extract-an-action-sequence",
+      "href": "https://w3c.github.io/webdriver/#dfn-extract-an-action-sequence",
+      "linkingText": [
+        "extract an action sequence"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-dispatch-actions",
+      "href": "https://w3c.github.io/webdriver/#dfn-dispatch-actions",
+      "linkingText": [
+        "dispatch actions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-dispatch-tick-actions",
+      "href": "https://w3c.github.io/webdriver/#dfn-dispatch-tick-actions",
+      "linkingText": [
+        "dispatch tick actions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-user-prompt-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-user-prompt-handler",
+      "linkingText": [
+        "user prompt handler"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-handler",
+      "linkingText": [
+        "handler"
+      ],
+      "type": "dfn",
+      "for": [
+        "prompt handler configuration"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-get-the-prompt-handler",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-the-prompt-handler",
+      "linkingText": [
+        "get the prompt handler"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-handle-any-user-prompts",
+      "href": "https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts",
+      "linkingText": [
+        "handle any user prompts"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-parse-a-page-range",
+      "href": "https://w3c.github.io/webdriver/#dfn-parse-a-page-range",
+      "linkingText": [
+        "parse a page range"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    }
+  ]
+}

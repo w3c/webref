@@ -1,0 +1,1499 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-position-3/"
+  },
+  "backrefs": [
+    {
+      "id": "propdef-position",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-position",
+      "linkingText": [
+        "position"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-gcpm-3",
+          "title": "CSS Generated Content for Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-gcpm-3/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css3-exclusions",
+          "title": "CSS Exclusions Module Level 1",
+          "url": "https://drafts.csswg.org/css-exclusions-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "positioning-scheme",
+      "href": "https://drafts.csswg.org/css-position-3/#positioning-scheme",
+      "linkingText": [
+        "positioning scheme"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "positioned-box",
+      "href": "https://drafts.csswg.org/css-position-3/#positioned-box",
+      "linkingText": [
+        "positioned box",
+        "positioned"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-positioning-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block",
+      "linkingText": [
+        "absolute positioning containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-static",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-position-static",
+      "linkingText": [
+        "static"
+      ],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-relative",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-position-relative",
+      "linkingText": [
+        "relative"
+      ],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "relative-position",
+      "href": "https://drafts.csswg.org/css-position-3/#relative-position",
+      "linkingText": [
+        "relative position",
+        "relatively position",
+        "relatively-positioned",
+        "relatively positioned box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-sticky",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-position-sticky",
+      "linkingText": [
+        "sticky"
+      ],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        }
+      ]
+    },
+    {
+      "id": "sticky-position",
+      "href": "https://drafts.csswg.org/css-position-3/#sticky-position",
+      "linkingText": [
+        "sticky position",
+        "sticky-positioned",
+        "sticky-positioned box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-absolute",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-position-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-position",
+      "href": "https://drafts.csswg.org/css-position-3/#absolute-position",
+      "linkingText": [
+        "absolute position",
+        "absolutely position",
+        "absolutely-positioned",
+        "absolutely positioned box",
+        "absolutely positioned element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-position-fixed",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-position-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "quirks",
+          "title": "Quirks Mode Standard",
+          "url": "https://quirks.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css3-exclusions",
+          "title": "CSS Exclusions Module Level 1",
+          "url": "https://drafts.csswg.org/css-exclusions-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "fixed-position",
+      "href": "https://drafts.csswg.org/css-position-3/#fixed-position",
+      "linkingText": [
+        "fixed position",
+        "fixed-positioned",
+        "fixed-positioned box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        }
+      ]
+    },
+    {
+      "id": "fixed-positioning-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block",
+      "linkingText": [
+        "fixed positioning containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "initial-fixed-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#initial-fixed-containing-block",
+      "linkingText": [
+        "initial fixed containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "original-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#original-containing-block",
+      "linkingText": [
+        "original containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "inset-properties",
+      "href": "https://drafts.csswg.org/css-position-3/#inset-properties",
+      "linkingText": [
+        "inset properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-top",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-top",
+      "linkingText": [
+        "top"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-right",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-right",
+      "linkingText": [
+        "right"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-bottom",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-left",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-animations-1",
+          "title": "CSS Animations Module Level 1",
+          "url": "https://drafts.csswg.org/css-animations-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-easing-2",
+          "title": "CSS Easing Functions Module Level 2",
+          "url": "https://drafts.csswg.org/css-easing-2/"
+        },
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "motion-1",
+          "title": "Motion Path Module Level 1",
+          "url": "https://drafts.csswg.org/motion-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-block-start",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block-start",
+      "linkingText": [
+        "inset-block-start"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-inline-start",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline-start",
+      "linkingText": [
+        "inset-inline-start"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-block-end",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block-end",
+      "linkingText": [
+        "inset-block-end"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-inline-end",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline-end",
+      "linkingText": [
+        "inset-inline-end"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-top-length",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end",
+        "inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-top-percentage",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end",
+        "inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-top-auto",
+      "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end",
+        "inset-block",
+        "inset-inline",
+        "inset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-block",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block",
+      "linkingText": [
+        "inset-block"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset-inline",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline",
+      "linkingText": [
+        "inset-inline"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-inset",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "sticky-view-rectangle",
+      "href": "https://drafts.csswg.org/css-position-3/#sticky-view-rectangle",
+      "linkingText": [
+        "sticky view rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "position-box",
+      "href": "https://drafts.csswg.org/css-position-3/#position-box",
+      "linkingText": [
+        "position box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "inset-modified-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#inset-modified-containing-block",
+      "linkingText": [
+        "inset-modified containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-position-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#absolute-position-containing-block",
+      "linkingText": [
+        "absolute-position containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "weaker-inset",
+      "href": "https://drafts.csswg.org/css-position-3/#weaker-inset",
+      "linkingText": [
+        "weaker inset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "stronger-inset",
+      "href": "https://drafts.csswg.org/css-position-3/#stronger-inset",
+      "linkingText": [
+        "stronger inset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "static-position",
+      "href": "https://drafts.csswg.org/css-position-3/#static-position",
+      "linkingText": [
+        "static position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "static-position-rectangle",
+      "href": "https://drafts.csswg.org/css-position-3/#static-position-rectangle",
+      "linkingText": [
+        "static-position rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "static-position-containing-block",
+      "href": "https://drafts.csswg.org/css-position-3/#static-position-containing-block",
+      "linkingText": [
+        "static-position containing block"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "absolute-positioning-layout",
+      "href": "https://drafts.csswg.org/css-position-3/#absolute-positioning-layout",
+      "linkingText": [
+        "absolute positioning layout",
+        "absolute positioning layout model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "spec": {
+    "title": "Permissions Policy",
+    "url": "https://w3c.github.io/webappsec-permissions-policy/"
+  },
+  "backrefs": [
+    {
+      "id": "policy-controlled-feature",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature",
+      "linkingText": [
+        "policy-controlled feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fullscreen",
+          "title": "Fullscreen API Standard",
+          "url": "https://fullscreen.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "storage-access",
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "web-bluetooth-scanning",
+          "title": "Web Bluetooth Scanning",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+        },
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        },
+        {
+          "shortname": "webmcp",
+          "title": "WebMCP",
+          "url": "https://webmachinelearning.github.io/webmcp/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "digital-goods",
+          "title": "Digital Goods API",
+          "url": "https://wicg.github.io/digital-goods/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "idle-detection",
+          "title": "Idle Detection API",
+          "url": "https://wicg.github.io/idle-detection/"
+        },
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "keyboard-map",
+          "title": "Keyboard Map",
+          "url": "https://wicg.github.io/keyboard-map/"
+        },
+        {
+          "shortname": "local-font-access",
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "user-preference-media-features-headers",
+          "title": "User Preference Media Features Client Hints Headers",
+          "url": "https://wicg.github.io/user-preference-media-features-headers/"
+        },
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "web-smart-card",
+          "title": "Web Smart Card API",
+          "url": "https://wicg.github.io/web-smart-card/"
+        },
+        {
+          "shortname": "device-attributes",
+          "title": "Device Attributes API",
+          "url": "https://wicg.github.io/WebApiDevice/device_attributes/"
+        },
+        {
+          "shortname": "webusb",
+          "title": "WebUSB API",
+          "url": "https://wicg.github.io/webusb/"
+        },
+        {
+          "shortname": "accelerometer",
+          "title": "Accelerometer",
+          "url": "https://w3c.github.io/accelerometer/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "gyroscope",
+          "title": "Gyroscope",
+          "url": "https://w3c.github.io/gyroscope/"
+        },
+        {
+          "shortname": "magnetometer",
+          "title": "Magnetometer",
+          "url": "https://w3c.github.io/magnetometer/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "picture-in-picture",
+          "title": "Picture-in-Picture",
+          "url": "https://w3c.github.io/picture-in-picture/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "supported-features",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#supported-features",
+      "linkingText": [
+        "supported features"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "capability-delegation",
+          "title": "Capability Delegation",
+          "url": "https://wicg.github.io/capability-delegation/spec.html"
+        }
+      ]
+    },
+    {
+      "id": "inherited-policy-for-a-feature",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#inherited-policy-for-a-feature",
+      "linkingText": [
+        "inherited policy for a feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "container-policy",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#container-policy",
+      "linkingText": [
+        "container policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fullscreen",
+          "title": "Fullscreen API Standard",
+          "url": "https://fullscreen.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "allowlist",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#allowlist",
+      "linkingText": [
+        "allowlist",
+        "allowlists"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "policy-controlled-feature-default-allowlist",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature-default-allowlist",
+      "linkingText": [
+        "default allowlist",
+        "default allowlists"
+      ],
+      "type": "dfn",
+      "for": [
+        "policy-controlled feature"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fullscreen",
+          "title": "Fullscreen API Standard",
+          "url": "https://fullscreen.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-access",
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        },
+        {
+          "shortname": "webmcp",
+          "title": "WebMCP",
+          "url": "https://webmachinelearning.github.io/webmcp/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "idle-detection",
+          "title": "Idle Detection API",
+          "url": "https://wicg.github.io/idle-detection/"
+        },
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "local-font-access",
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "ua-client-hints",
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        {
+          "shortname": "user-preference-media-features-headers",
+          "title": "User Preference Media Features Client Hints Headers",
+          "url": "https://wicg.github.io/user-preference-media-features-headers/"
+        },
+        {
+          "shortname": "web-smart-card",
+          "title": "Web Smart Card API",
+          "url": "https://wicg.github.io/web-smart-card/"
+        },
+        {
+          "shortname": "webusb",
+          "title": "WebUSB API",
+          "url": "https://wicg.github.io/webusb/"
+        },
+        {
+          "shortname": "ambient-light",
+          "title": "Ambient Light Sensor",
+          "url": "https://w3c.github.io/ambient-light/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "picture-in-picture",
+          "title": "Picture-in-Picture",
+          "url": "https://w3c.github.io/picture-in-picture/"
+        },
+        {
+          "shortname": "proximity",
+          "title": "Proximity Sensor",
+          "url": "https://w3c.github.io/proximity/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "default-allowlist",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlist",
+      "linkingText": [
+        "*"
+      ],
+      "type": "dfn",
+      "for": [
+        "default allowlist"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "digital-goods",
+          "title": "Digital Goods API",
+          "url": "https://wicg.github.io/digital-goods/"
+        },
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "keyboard-map",
+          "title": "Keyboard Map",
+          "url": "https://wicg.github.io/keyboard-map/"
+        },
+        {
+          "shortname": "page-lifecycle",
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        },
+        {
+          "shortname": "web-otp",
+          "title": "WebOTP API",
+          "url": "https://wicg.github.io/web-otp/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        }
+      ]
+    },
+    {
+      "id": "default-allowlist-self",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlist-self",
+      "linkingText": [
+        "'self'"
+      ],
+      "type": "dfn",
+      "for": [
+        "default allowlist"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "proofreader-api",
+          "title": "Proofreader API",
+          "url": "https://webmachinelearning.github.io/proofreader-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        },
+        {
+          "shortname": "webmcp",
+          "title": "WebMCP",
+          "url": "https://webmachinelearning.github.io/webmcp/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "orientation-event",
+          "title": "Device Orientation and Motion",
+          "url": "https://w3c.github.io/deviceorientation/"
+        }
+      ]
+    },
+    {
+      "id": "permissions-policy-header",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header",
+      "linkingText": [
+        "Permissions-Policy"
+      ],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fullscreen",
+          "title": "Fullscreen API Standard",
+          "url": "https://fullscreen.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "responsive-image-client-hints",
+          "title": "Responsive Image Client Hints",
+          "url": "https://wicg.github.io/responsive-image-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "process-policy-attributes",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#process-policy-attributes",
+      "linkingText": [
+        "Process permissions policy attributes"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "create-for-navigable",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#create-for-navigable",
+      "linkingText": [
+        "Create a Permissions Policy for a navigable"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "create-from-response",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#create-from-response",
+      "linkingText": [
+        "Create a Permissions Policy for a navigable from response"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "define-inherited-policy-in-container",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#define-inherited-policy-in-container",
+      "linkingText": [
+        "Define an inherited policy for feature in container at origin"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "is-feature-enabled",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#is-feature-enabled",
+      "linkingText": [
+        "Is feature enabled in document for origin?"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "should-request-be-allowed-to-use-feature",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#should-request-be-allowed-to-use-feature",
+      "linkingText": [
+        "Should request be allowed to use feature?"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "storage-access",
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        }
+      ]
+    }
+  ]
+}

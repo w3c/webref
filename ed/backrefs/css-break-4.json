@@ -1,0 +1,838 @@
+{
+  "spec": {
+    "title": "CSS Fragmentation Module Level 4",
+    "url": "https://drafts.csswg.org/css-break-4/"
+  },
+  "backrefs": [
+    {
+      "id": "fragmentation-container",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-container",
+      "linkingText": [
+        "fragmentation container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-page-floats-3",
+          "title": "CSS Page Floats Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-floats-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "fragmentainer",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentainer",
+      "linkingText": [
+        "fragmentainer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-context",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-context",
+      "linkingText": [
+        "fragmentation context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-page-floats-3",
+          "title": "CSS Page Floats Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-floats-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "fragmented-flow",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmented-flow",
+      "linkingText": [
+        "fragmented flow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "fragmentation",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation",
+      "linkingText": [
+        "fragmentation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "box-fragment",
+      "href": "https://drafts.csswg.org/css-break-4/#box-fragment",
+      "linkingText": [
+        "box fragment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "fragment",
+      "href": "https://drafts.csswg.org/css-break-4/#fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-break",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-break",
+      "linkingText": [
+        "fragmentation break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "href": "https://drafts.csswg.org/css-break-4/#break",
+      "linkingText": [
+        "break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-break-after",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-break-after",
+      "linkingText": [
+        "break-after"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-auto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-avoid",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-always",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-always",
+      "linkingText": [
+        "always"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-page",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-page",
+      "linkingText": [
+        "page"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-left",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-right",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-right",
+      "linkingText": [
+        "right"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-recto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-recto",
+      "linkingText": [
+        "recto"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-verso",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-verso",
+      "linkingText": [
+        "verso"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-avoid-region",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid-region",
+      "linkingText": [
+        "avoid-region"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-break-before-region",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-region",
+      "linkingText": [
+        "region"
+      ],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-widows",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-widows",
+      "linkingText": [
+        "widows"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "region-break",
+      "href": "https://drafts.csswg.org/css-break-4/#region-break",
+      "linkingText": [
+        "region break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "forced-break",
+      "href": "https://drafts.csswg.org/css-break-4/#forced-break",
+      "linkingText": [
+        "forced break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        }
+      ]
+    },
+    {
+      "id": "unforced-break",
+      "href": "https://drafts.csswg.org/css-break-4/#unforced-break",
+      "linkingText": [
+        "unforced break"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin-break",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-margin-break",
+      "linkingText": [
+        "margin-break"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-box-decoration-break",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-box-decoration-break",
+      "linkingText": [
+        "box-decoration-break"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "fill-stroke-3",
+          "title": "CSS Fill and Stroke Module Level 3",
+          "url": "https://drafts.csswg.org/fill-stroke-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-decoration-break-clone",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-box-decoration-break-clone",
+      "linkingText": [
+        "clone"
+      ],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-decoration-break-slice",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-box-decoration-break-slice",
+      "linkingText": [
+        "slice"
+      ],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    }
+  ]
+}

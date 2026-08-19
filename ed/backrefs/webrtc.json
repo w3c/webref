@@ -1,0 +1,383 @@
+{
+  "spec": {
+    "title": "WebRTC: Real-Time Communication in Browsers",
+    "url": "https://w3c.github.io/webrtc-pc/"
+  },
+  "backrefs": [
+    {
+      "id": "dom-peerconnection",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection",
+      "linkingText": [
+        "constructor()",
+        "constructor(configuration)"
+      ],
+      "type": "constructor",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcpeerconnection",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection",
+      "linkingText": [
+        "RTCPeerConnection"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-in-parallel-steps-to-create-an-offer",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-offer",
+      "linkingText": [
+        "in-parallel steps to create an offer"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-offerer-s-system-state",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state",
+      "linkingText": [
+        "offerer's system state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-final-steps-to-create-an-offer",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-final-steps-to-create-an-offer",
+      "linkingText": [
+        "final steps to create an offer"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-in-parallel-steps-to-create-an-answer",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-in-parallel-steps-to-create-an-answer",
+      "linkingText": [
+        "in-parallel steps to create an answer"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-answerer-s-system-state",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-answerer-s-system-state",
+      "linkingText": [
+        "answerer's system state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-final-steps-to-create-an-answer",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-final-steps-to-create-an-answer",
+      "linkingText": [
+        "final steps to create an answer"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-administratively-prohibited",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-administratively-prohibited",
+      "linkingText": [
+        "administratively prohibited"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-check-if-negotiation-is-needed",
+      "href": "https://w3c.github.io/webrtc-pc/#dfn-check-if-negotiation-is-needed",
+      "linkingText": [
+        "check if negotiation is needed"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtpsender",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender",
+      "linkingText": [
+        "RTCRtpSender"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtpsender-getcapabilities",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-getcapabilities",
+      "linkingText": [
+        "getCapabilities()",
+        "getCapabilities(kind)"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtpsender-setparameters",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setparameters",
+      "linkingText": [
+        "setParameters()",
+        "setParameters(parameters)",
+        "setParameters(parameters, setParameterOptions)"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "media-capabilities",
+          "title": "Media Capabilities",
+          "url": "https://w3c.github.io/media-capabilities/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-active",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters-active",
+      "linkingText": [
+        "active"
+      ],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtpreceiver",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver",
+      "linkingText": [
+        "RTCRtpReceiver"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcrtptransceiver",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver",
+      "linkingText": [
+        "RTCRtpTransceiver"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcdatachannel",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel",
+      "linkingText": [
+        "RTCDataChannel"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcdtmfsender",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender",
+      "linkingText": [
+        "RTCDTMFSender"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+      "href": "https://w3c.github.io/webrtc-pc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+      "linkingText": [
+        "getStats()",
+        "getStats(selector)"
+      ],
+      "type": "method",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-rtcerrordetailtype",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrordetailtype",
+      "linkingText": [
+        "RTCErrorDetailType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-identity",
+          "title": "Identity for WebRTC 1.0",
+          "url": "https://w3c.github.io/webrtc-identity/"
+        }
+      ]
+    }
+  ]
+}

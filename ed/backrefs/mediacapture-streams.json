@@ -1,0 +1,1062 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams",
+    "url": "https://w3c.github.io/mediacapture-main/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-source",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-source",
+      "linkingText": [
+        "source"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-automation",
+          "title": "Media Capture Automation",
+          "url": "https://w3c.github.io/mediacapture-automation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-track-set",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-track-set",
+      "linkingText": [
+        "track set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastream",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-create-a-mediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-create-a-mediastreamtrack",
+      "linkingText": [
+        "create a MediaStreamTrack"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "track-muted",
+      "href": "https://w3c.github.io/mediacapture-main/#track-muted",
+      "linkingText": [
+        "Muted"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "audio-session",
+          "title": "Audio Session",
+          "url": "https://w3c.github.io/audio-session/"
+        },
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "set-track-muted",
+      "href": "https://w3c.github.io/mediacapture-main/#set-track-muted",
+      "linkingText": [
+        "set a track's muted state"
+      ],
+      "type": "abstract-op",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "audio-session",
+          "title": "Audio Session",
+          "url": "https://w3c.github.io/audio-session/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        }
+      ]
+    },
+    {
+      "id": "track-enabled",
+      "href": "https://w3c.github.io/mediacapture-main/#track-enabled",
+      "linkingText": [
+        "track enabled state",
+        "enabled"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "ends-nostop",
+      "href": "https://w3c.github.io/mediacapture-main/#ends-nostop",
+      "linkingText": [
+        "track ended by the User agent",
+        "ends for any reason other than the stop() method being invoked"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "audio-session",
+          "title": "Audio Session",
+          "url": "https://w3c.github.io/audio-session/"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-kind",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-enabled",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-enabled",
+      "linkingText": [
+        "enabled"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-muted",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-muted",
+      "linkingText": [
+        "muted"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-onmute",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-onmute",
+      "linkingText": [
+        "onmute"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-onunmute",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-onunmute",
+      "linkingText": [
+        "onunmute"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-readystate",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-clone",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-stop",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-getcapabilities",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getcapabilities",
+      "linkingText": [
+        "getCapabilities()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-getconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getconstraints",
+      "linkingText": [
+        "getConstraints()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-getsettings",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-getsettings",
+      "linkingText": [
+        "getSettings()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediastreamtrack-applyconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-applyconstraints",
+      "linkingText": [
+        "applyConstraints()",
+        "applyConstraints(constraints)"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "idl-def-MediaStreamTrackState.live",
+      "href": "https://w3c.github.io/mediacapture-main/#idl-def-MediaStreamTrackState.live",
+      "linkingText": [
+        "live"
+      ],
+      "type": "enum-value",
+      "for": [
+        "MediaStreamTrackState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "idl-def-MediaStreamTrackState.ended",
+      "href": "https://w3c.github.io/mediacapture-main/#idl-def-MediaStreamTrackState.ended",
+      "linkingText": [
+        "ended"
+      ],
+      "type": "enum-value",
+      "for": [
+        "MediaStreamTrackState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksupportedconstraints",
+      "linkingText": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediatrackcapabilities",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackcapabilities",
+      "linkingText": [
+        "MediaTrackCapabilities"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediatrackconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraints",
+      "linkingText": [
+        "MediaTrackConstraints"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediatrackconstraintset",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset",
+      "linkingText": [
+        "MediaTrackConstraintSet"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediatracksettings",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediatracksettings",
+      "linkingText": [
+        "MediaTrackSettings"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoresizemodeenum",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-videoresizemodeenum",
+      "linkingText": [
+        "VideoResizeModeEnum"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "idl-def-VideoResizeModeEnum.none",
+      "href": "https://w3c.github.io/mediacapture-main/#idl-def-VideoResizeModeEnum.none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "enum-value",
+      "for": [
+        "VideoResizeModeEnum"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "idl-def-VideoResizeModeEnum.cropandscale",
+      "href": "https://w3c.github.io/mediacapture-main/#idl-def-VideoResizeModeEnum.cropandscale",
+      "linkingText": [
+        "crop-and-scale"
+      ],
+      "type": "enum-value",
+      "for": [
+        "VideoResizeModeEnum"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-overconstrainederror",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-overconstrainederror",
+      "linkingText": [
+        "OverconstrainedError"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "event-mediastream-addtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack",
+      "linkingText": [
+        "addtrack"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "event-mediastream-removetrack",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack",
+      "linkingText": [
+        "removetrack"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "event-mediastreamtrack-mute",
+      "href": "https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-mute",
+      "linkingText": [
+        "mute"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-fromelement",
+          "title": "Media Capture from DOM Elements",
+          "url": "https://w3c.github.io/mediacapture-fromelement/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediadevices",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices",
+      "linkingText": [
+        "MediaDevices"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-device-change-notification-steps",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-device-change-notification-steps",
+      "linkingText": [
+        "device change notification steps"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediadevices-enumeratedevices",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices",
+      "linkingText": [
+        "enumerateDevices()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediadevices-getsupportedconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getsupportedconstraints",
+      "linkingText": [
+        "getSupportedConstraints()"
+      ],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mediadevices-getusermedia",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia",
+      "linkingText": [
+        "getUserMedia()",
+        "getUserMedia(constraints)"
+      ],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "audio-context-playout-stats",
+          "title": "Playout Statistics API for WebAudio",
+          "url": "https://wicg.github.io/audio-context-playout-stats/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-navigator-getusermedia",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-navigator-getusermedia",
+      "linkingText": [
+        "getUserMedia()",
+        "getUserMedia(constraints, successCallback, errorCallback)"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dfn-fitness-distance",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-fitness-distance",
+      "linkingText": [
+        "fitness distance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-constrainulong",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-constrainulong",
+      "linkingText": [
+        "ConstrainULong"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-constraindouble",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-constraindouble",
+      "linkingText": [
+        "ConstrainDouble"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-constrainboolean",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-constrainboolean",
+      "linkingText": [
+        "ConstrainBoolean"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-constraindomstring",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-constraindomstring",
+      "linkingText": [
+        "ConstrainDOMString"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-camera",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-camera",
+      "linkingText": [
+        "\"camera\""
+      ],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cameradevicepermissiondescriptor-pantiltzoom",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-cameradevicepermissiondescriptor-pantiltzoom",
+      "linkingText": [
+        "panTiltZoom"
+      ],
+      "type": "dict-member",
+      "for": [
+        "CameraDevicePermissionDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "image-capture",
+          "title": "MediaStream Image Capture",
+          "url": "https://w3c.github.io/mediacapture-image/"
+        }
+      ]
+    }
+  ]
+}

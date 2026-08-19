@@ -1,0 +1,763 @@
+{
+  "spec": {
+    "title": "Notifications API Standard",
+    "url": "https://notifications.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "concept-notification",
+      "href": "https://notifications.spec.whatwg.org/#concept-notification",
+      "linkingText": [
+        "notification"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "background-sync",
+          "title": "Web Background Synchronization",
+          "url": "https://wicg.github.io/background-sync/spec/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-registration",
+      "href": "https://notifications.spec.whatwg.org/#service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "type": "dfn",
+      "for": [
+        "notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "notification-navigation-url",
+      "href": "https://notifications.spec.whatwg.org/#notification-navigation-url",
+      "linkingText": [
+        "navigation URL"
+      ],
+      "type": "dfn",
+      "for": [
+        "notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "href": "https://notifications.spec.whatwg.org/#actions",
+      "linkingText": [
+        "actions"
+      ],
+      "type": "dfn",
+      "for": [
+        "notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "href": "https://notifications.spec.whatwg.org/#action",
+      "linkingText": [
+        "notification action"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "notification-action-navigation-url",
+      "href": "https://notifications.spec.whatwg.org/#notification-action-navigation-url",
+      "linkingText": [
+        "navigation URL"
+      ],
+      "type": "dfn",
+      "for": [
+        "notification action"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "create-a-notification",
+      "href": "https://notifications.spec.whatwg.org/#create-a-notification",
+      "linkingText": [
+        "create a notification"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "permissiondef-notifications",
+      "href": "https://notifications.spec.whatwg.org/#permissiondef-notifications",
+      "linkingText": [
+        "notifications"
+      ],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "permissions-registry",
+          "title": "Permissions Registry",
+          "url": "https://w3c.github.io/permissions-registry/"
+        },
+        {
+          "shortname": "badging",
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        {
+          "shortname": "permissions",
+          "title": "Permissions",
+          "url": "https://w3c.github.io/permissions/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "get-the-notifications-permission-state",
+      "href": "https://notifications.spec.whatwg.org/#get-the-notifications-permission-state",
+      "linkingText": [
+        "get the notifications permission state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "notification-show-steps",
+      "href": "https://notifications.spec.whatwg.org/#notification-show-steps",
+      "linkingText": [
+        "notification show steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "notification",
+      "href": "https://notifications.spec.whatwg.org/#notification",
+      "linkingText": [
+        "Notification"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "badging",
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-notificationoptions",
+      "href": "https://notifications.spec.whatwg.org/#dictdef-notificationoptions",
+      "linkingText": [
+        "NotificationOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-dir",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-dir",
+      "linkingText": [
+        "dir"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-lang",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-body",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-body",
+      "linkingText": [
+        "body"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-navigate",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-navigate",
+      "linkingText": [
+        "navigate"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-tag",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-image",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-image",
+      "linkingText": [
+        "image"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-icon",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-icon",
+      "linkingText": [
+        "icon"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-badge",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-badge",
+      "linkingText": [
+        "badge"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-vibrate",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-vibrate",
+      "linkingText": [
+        "vibrate"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-timestamp",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-renotify",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-renotify",
+      "linkingText": [
+        "renotify"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-silent",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-silent",
+      "linkingText": [
+        "silent"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-requireinteraction",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-requireinteraction",
+      "linkingText": [
+        "requireInteraction"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-data",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-data",
+      "linkingText": [
+        "data"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationoptions-actions",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationoptions-actions",
+      "linkingText": [
+        "actions"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-notificationaction",
+      "href": "https://notifications.spec.whatwg.org/#dictdef-notificationaction",
+      "linkingText": [
+        "NotificationAction"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationaction-action",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-action",
+      "linkingText": [
+        "action"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationAction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationaction-title",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-title",
+      "linkingText": [
+        "title"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationAction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationaction-navigate",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-navigate",
+      "linkingText": [
+        "navigate"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationAction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notificationaction-icon",
+      "href": "https://notifications.spec.whatwg.org/#dom-notificationaction-icon",
+      "linkingText": [
+        "icon"
+      ],
+      "type": "dict-member",
+      "for": [
+        "NotificationAction"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-notification-notification",
+      "href": "https://notifications.spec.whatwg.org/#dom-notification-notification",
+      "linkingText": [
+        "Notification(title, options)",
+        "constructor(title, options)",
+        "Notification(title)",
+        "constructor(title)"
+      ],
+      "type": "constructor",
+      "for": [
+        "Notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-notification-permission",
+      "href": "https://notifications.spec.whatwg.org/#dom-notification-permission",
+      "linkingText": [
+        "permission"
+      ],
+      "type": "attribute",
+      "for": [
+        "Notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-notification-requestpermission",
+      "href": "https://notifications.spec.whatwg.org/#dom-notification-requestpermission",
+      "linkingText": [
+        "requestPermission(deprecatedCallback)",
+        "requestPermission()"
+      ],
+      "type": "method",
+      "for": [
+        "Notification"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "promises-guide",
+          "title": "Writing Promise-Using Specifications",
+          "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+        },
+        {
+          "shortname": "badging",
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        }
+      ]
+    },
+    {
+      "id": "notificationevent",
+      "href": "https://notifications.spec.whatwg.org/#notificationevent",
+      "linkingText": [
+        "NotificationEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-registration-has-shownotification-been-successfully-invoked",
+      "href": "https://notifications.spec.whatwg.org/#service-worker-registration-has-shownotification-been-successfully-invoked",
+      "linkingText": [
+        "has showNotification() been successfully invoked"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onnotificationclick",
+      "href": "https://notifications.spec.whatwg.org/#dom-serviceworkerglobalscope-onnotificationclick",
+      "linkingText": [
+        "onnotificationclick"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onnotificationclose",
+      "href": "https://notifications.spec.whatwg.org/#dom-serviceworkerglobalscope-onnotificationclose",
+      "linkingText": [
+        "onnotificationclose"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    }
+  ]
+}

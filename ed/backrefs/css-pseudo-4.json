@@ -1,0 +1,720 @@
+{
+  "spec": {
+    "title": "CSS Pseudo-Elements Module Level 4",
+    "url": "https://drafts.csswg.org/css-pseudo-4/"
+  },
+  "backrefs": [
+    {
+      "id": "selectordef-first-line",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line",
+      "linkingText": [
+        "::first-line"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "first-formatted-line",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-formatted-line",
+      "linkingText": [
+        "first formatted line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-first-letter",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter",
+      "linkingText": [
+        "::first-letter"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-box-3",
+          "title": "CSS Box Model Module Level 3",
+          "url": "https://drafts.csswg.org/css-box-3/"
+        },
+        {
+          "shortname": "css-box-4",
+          "title": "CSS Box Model Module Level 4",
+          "url": "https://drafts.csswg.org/css-box-4/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "highlight-pseudo-element",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-pseudo-element",
+      "linkingText": [
+        "highlight pseudo-element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-selection",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection",
+      "linkingText": [
+        "::selection"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-spelling-error",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-spelling-error",
+      "linkingText": [
+        "::spelling-error"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-grammar-error",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-grammar-error",
+      "linkingText": [
+        "::grammar-error"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "paired-default-highlight-colors",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#paired-default-highlight-colors",
+      "linkingText": [
+        "paired default highlight colors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "highlight-overlay",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-overlay",
+      "linkingText": [
+        "highlight overlay"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "tree-abiding",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#tree-abiding",
+      "linkingText": [
+        "Tree-abiding pseudo-elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "fully-styleable",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#fully-styleable",
+      "linkingText": [
+        "fully styleable pseudo-elements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-before",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-before",
+      "linkingText": [
+        "::before"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-after",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-after",
+      "linkingText": [
+        "::after"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-forms-1",
+          "title": "CSS Form Control Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-forms-1/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-nesting-1",
+          "title": "CSS Nesting Module Level 1",
+          "url": "https://drafts.csswg.org/css-nesting-1/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-marker",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-marker",
+      "linkingText": [
+        "::marker"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "selectors-4",
+          "title": "Selectors Level 4",
+          "url": "https://drafts.csswg.org/selectors-4/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-placeholder",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-placeholder",
+      "linkingText": [
+        "::placeholder"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        }
+      ]
+    },
+    {
+      "id": "element-backed",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#element-backed",
+      "linkingText": [
+        "element-backed",
+        "element-backed pseudo-element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "selectordef-file-selector-button",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-file-selector-button",
+      "linkingText": [
+        "::file-selector-button"
+      ],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        }
+      ]
+    },
+    {
+      "id": "csspseudoelement",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement",
+      "linkingText": [
+        "CSSPseudoElement"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    }
+  ]
+}

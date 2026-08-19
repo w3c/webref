@@ -1,0 +1,500 @@
+{
+  "spec": {
+    "title": "Web Audio API 1.1",
+    "url": "https://webaudio.github.io/web-audio-api/"
+  },
+  "backrefs": [
+    {
+      "id": "dom-baseaudiocontext-control-thread-state-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot",
+      "linkingText": [
+        "[[control thread state]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-audiocontextstate",
+      "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiocontextstate",
+      "linkingText": [
+        "AudioContextState"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "autoplay-detection",
+          "title": "Autoplay Policy Detection",
+          "url": "https://w3c.github.io/autoplay/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontextstate-suspended",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended",
+      "linkingText": [
+        "\"suspended\"",
+        "suspended"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioContextState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "autoplay-detection",
+          "title": "Autoplay Policy Detection",
+          "url": "https://w3c.github.io/autoplay/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontextstate-running",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running",
+      "linkingText": [
+        "\"running\"",
+        "running"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioContextState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "audio-session",
+          "title": "Audio Session",
+          "url": "https://w3c.github.io/audio-session/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontextstate-interrupted",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted",
+      "linkingText": [
+        "\"interrupted\"",
+        "interrupted"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioContextState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-baseaudiocontext-state",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state",
+      "linkingText": [
+        "state"
+      ],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        }
+      ]
+    },
+    {
+      "id": "AudioContext",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+      "linkingText": [
+        "AudioContext"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "audio-context-playout-stats",
+          "title": "Playout Statistics API for WebAudio",
+          "url": "https://wicg.github.io/audio-context-playout-stats/"
+        },
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "audio-session",
+          "title": "Audio Session",
+          "url": "https://w3c.github.io/audio-session/"
+        },
+        {
+          "shortname": "autoplay-detection",
+          "title": "Autoplay Policy Detection",
+          "url": "https://w3c.github.io/autoplay/"
+        }
+      ]
+    },
+    {
+      "id": "allowed-to-start",
+      "href": "https://webaudio.github.io/web-audio-api/#allowed-to-start",
+      "linkingText": [
+        "allowed to start"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "autoplay-detection",
+          "title": "Autoplay Policy Detection",
+          "url": "https://w3c.github.io/autoplay/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-pending-resume-promises-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-pending-resume-promises-slot",
+      "linkingText": [
+        "[[pending resume promises]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-audiocontext",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-audiocontext",
+      "linkingText": [
+        "AudioContext(contextOptions)",
+        "constructor(contextOptions)",
+        "AudioContext()",
+        "constructor()"
+      ],
+      "type": "constructor",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-outputlatency",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-outputlatency",
+      "linkingText": [
+        "outputLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "audio-context-playout-stats",
+          "title": "Playout Statistics API for WebAudio",
+          "url": "https://wicg.github.io/audio-context-playout-stats/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-resume",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "type": "method",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "AudioBuffer",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioBuffer",
+      "linkingText": [
+        "AudioBuffer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "AudioScheduledSourceNode",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode",
+      "linkingText": [
+        "AudioScheduledSourceNode"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audioscheduledsourcenode-start",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-start",
+      "linkingText": [
+        "start(when)",
+        "start()"
+      ],
+      "type": "method",
+      "for": [
+        "AudioScheduledSourceNode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "AudioBufferSourceNode",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioBufferSourceNode",
+      "linkingText": [
+        "AudioBufferSourceNode"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiobuffersourcenode-start",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-start",
+      "linkingText": [
+        "start(when, offset, duration)",
+        "start(when, offset)",
+        "start(when)",
+        "start()"
+      ],
+      "type": "method",
+      "for": [
+        "AudioBufferSourceNode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "ScriptProcessorNode",
+      "href": "https://webaudio.github.io/web-audio-api/#ScriptProcessorNode",
+      "linkingText": [
+        "ScriptProcessorNode"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "AudioWorklet",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioWorklet",
+      "linkingText": [
+        "AudioWorklet"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "mediasession",
+          "title": "Media Session",
+          "url": "https://w3c.github.io/mediasession/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "AudioWorkletGlobalScope",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope",
+      "linkingText": [
+        "AudioWorkletGlobalScope"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "queuing",
+      "href": "https://webaudio.github.io/web-audio-api/#queuing",
+      "linkingText": [
+        "queue a control message"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-interruption-start",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-start",
+      "linkingText": [
+        "interruption-start"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiocontext-interruption-end",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-end",
+      "linkingText": [
+        "interruption-end"
+      ],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "iframe-media-pausing",
+          "title": "Iframe Media Pausing",
+          "url": "https://wicg.github.io/iframe-media-pausing/"
+        }
+      ]
+    }
+  ]
+}

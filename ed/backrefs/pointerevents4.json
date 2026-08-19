@@ -1,0 +1,598 @@
+{
+  "spec": {
+    "title": "Pointer Events",
+    "url": "https://w3c.github.io/pointerevents/"
+  },
+  "backrefs": [
+    {
+      "id": "dom-mouseevent",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent",
+      "linkingText": [
+        "MouseEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-getmodifierstate",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent-getmodifierstate",
+      "linkingText": [
+        "getModifierState()",
+        "getModifierState(keyArg)"
+      ],
+      "type": "method",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-screenx",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-screeny",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-button",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent-button",
+      "linkingText": [
+        "button"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-relatedtarget",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseeventinit",
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseeventinit",
+      "linkingText": [
+        "MouseEventInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-auxclick",
+      "href": "https://w3c.github.io/pointerevents/#dfn-auxclick",
+      "linkingText": [
+        "auxclick"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-click",
+      "href": "https://w3c.github.io/pointerevents/#dfn-click",
+      "linkingText": [
+        "click"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-contextmenu",
+      "href": "https://w3c.github.io/pointerevents/#dfn-contextmenu",
+      "linkingText": [
+        "contextmenu"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-dblclick",
+      "href": "https://w3c.github.io/pointerevents/#dfn-dblclick",
+      "linkingText": [
+        "dblclick"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mousedown",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mousedown",
+      "linkingText": [
+        "mousedown"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mouseenter",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mouseenter",
+      "linkingText": [
+        "mouseenter"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mouseleave",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mouseleave",
+      "linkingText": [
+        "mouseleave"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mousemove",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mousemove",
+      "linkingText": [
+        "mousemove"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mouseout",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mouseout",
+      "linkingText": [
+        "mouseout"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mouseover",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mouseover",
+      "linkingText": [
+        "mouseover"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-mouseup",
+      "href": "https://w3c.github.io/pointerevents/#dfn-mouseup",
+      "linkingText": [
+        "mouseup"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-pointerevent-pointerid",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid",
+      "linkingText": [
+        "pointerId"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-pointerevent-pointertype",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointertype",
+      "linkingText": [
+        "pointerType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-pointerevent-getpredictedevents",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-getpredictedevents",
+      "linkingText": [
+        "getPredictedEvents()"
+      ],
+      "type": "method",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ink-enhancement",
+          "title": "Ink API",
+          "url": "https://wicg.github.io/ink-enhancement/"
+        }
+      ]
+    },
+    {
+      "id": "dom-pointerevent",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent",
+      "linkingText": [
+        "PointerEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "ink-enhancement",
+          "title": "Ink API",
+          "url": "https://wicg.github.io/ink-enhancement/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-fire-a-pointer-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event",
+      "linkingText": [
+        "fire a pointer event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-wheelevent",
+      "href": "https://w3c.github.io/pointerevents/#dom-wheelevent",
+      "linkingText": [
+        "WheelEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-wheelevent-deltax",
+      "href": "https://w3c.github.io/pointerevents/#dom-wheelevent-deltax",
+      "linkingText": [
+        "deltaX"
+      ],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-wheelevent-deltay",
+      "href": "https://w3c.github.io/pointerevents/#dom-wheelevent-deltay",
+      "linkingText": [
+        "deltaY"
+      ],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-wheelevent-deltaz",
+      "href": "https://w3c.github.io/pointerevents/#dom-wheelevent-deltaz",
+      "linkingText": [
+        "deltaZ"
+      ],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dom-wheelevent-deltamode",
+      "href": "https://w3c.github.io/pointerevents/#dom-wheelevent-deltamode",
+      "linkingText": [
+        "deltaMode"
+      ],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "uievents",
+          "title": "UI Events",
+          "url": "https://w3c.github.io/uievents/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-wheel",
+      "href": "https://w3c.github.io/pointerevents/#dfn-wheel",
+      "linkingText": [
+        "wheel"
+      ],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-pointer-capture",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointer-capture",
+      "linkingText": [
+        "Pointer capture"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    }
+  ]
+}

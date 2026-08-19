@@ -1,0 +1,898 @@
+{
+  "spec": {
+    "title": "CSS Lists and Counters Module Level 3",
+    "url": "https://drafts.csswg.org/css-lists-3/"
+  },
+  "backrefs": [
+    {
+      "id": "list-item",
+      "href": "https://drafts.csswg.org/css-lists-3/#list-item",
+      "linkingText": [
+        "list item"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        }
+      ]
+    },
+    {
+      "id": "marker",
+      "href": "https://drafts.csswg.org/css-lists-3/#marker",
+      "linkingText": [
+        "marker",
+        "marker box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-list-style-image",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-list-style-image",
+      "linkingText": [
+        "list-style-image"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "marker-image",
+      "href": "https://drafts.csswg.org/css-lists-3/#marker-image",
+      "linkingText": [
+        "marker image"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-list-style-image-none",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-list-style-image-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "list-style-image"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "CSS2",
+          "title": "Cascading Style Sheets (CSS) Level 2",
+          "url": "https://drafts.csswg.org/css2/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-list-style-type",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-list-style-type",
+      "linkingText": [
+        "list-style-type"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "marker-string",
+      "href": "https://drafts.csswg.org/css-lists-3/#marker-string",
+      "linkingText": [
+        "marker string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-list-style-type-none",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-list-style-type-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "list-style-type"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        },
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-list-style-position",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-list-style-position",
+      "linkingText": [
+        "list-style-position"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-cascade-3",
+          "title": "CSS Cascading and Inheritance Level 3",
+          "url": "https://drafts.csswg.org/css-cascade-3/"
+        },
+        {
+          "shortname": "css-cascade-4",
+          "title": "CSS Cascading and Inheritance Module Level 4",
+          "url": "https://drafts.csswg.org/css-cascade-4/"
+        },
+        {
+          "shortname": "css-cascade-5",
+          "title": "CSS Cascading and Inheritance Module Level 5",
+          "url": "https://drafts.csswg.org/css-cascade-5/"
+        },
+        {
+          "shortname": "css-pseudo-4",
+          "title": "CSS Pseudo-Elements Module Level 4",
+          "url": "https://drafts.csswg.org/css-pseudo-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-list-style-position-inside",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-list-style-position-inside",
+      "linkingText": [
+        "inside"
+      ],
+      "type": "value",
+      "for": [
+        "list-style-position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "list-style-position-outside",
+      "href": "https://drafts.csswg.org/css-lists-3/#list-style-position-outside",
+      "linkingText": [
+        "outside"
+      ],
+      "type": "value",
+      "for": [
+        "list-style-position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css3-exclusions",
+          "title": "CSS Exclusions Module Level 1",
+          "url": "https://drafts.csswg.org/css-exclusions-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-list-style",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-list-style",
+      "linkingText": [
+        "list-style"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-marker-side",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-marker-side",
+      "linkingText": [
+        "marker-side"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-marker-side-match-self",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-marker-side-match-self",
+      "linkingText": [
+        "match-self"
+      ],
+      "type": "value",
+      "for": [
+        "marker-side"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-marker-side-match-parent",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-marker-side-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "type": "value",
+      "for": [
+        "marker-side"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "href": "https://drafts.csswg.org/css-lists-3/#counter",
+      "linkingText": [
+        "counter"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-anchor-position-2",
+          "title": "CSS Anchor Positioning Module Level 2",
+          "url": "https://drafts.csswg.org/css-anchor-position-2/"
+        }
+      ]
+    },
+    {
+      "id": "css-counter-name",
+      "href": "https://drafts.csswg.org/css-lists-3/#css-counter-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS counter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-counter-creator",
+      "href": "https://drafts.csswg.org/css-lists-3/#css-counter-creator",
+      "linkingText": [
+        "creator"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS counter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-counter-reversed",
+      "href": "https://drafts.csswg.org/css-lists-3/#css-counter-reversed",
+      "linkingText": [
+        "reversed"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS counter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-counter-value",
+      "href": "https://drafts.csswg.org/css-lists-3/#css-counter-value",
+      "linkingText": [
+        "value"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS counter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "counter-properties",
+      "href": "https://drafts.csswg.org/css-lists-3/#counter-properties",
+      "linkingText": [
+        "counter properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-counter-reset",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-counter-reset",
+      "linkingText": [
+        "counter-reset"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-reset-none",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-reset-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "counter-reset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-reset-counter-name-integer",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-reset-counter-name-integer",
+      "linkingText": [
+        "<counter-name> <integer>?"
+      ],
+      "type": "value",
+      "for": [
+        "counter-reset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-reset-reversed-counter-name-integer",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-reset-reversed-counter-name-integer",
+      "linkingText": [
+        "<reversed-counter-name> <integer>?"
+      ],
+      "type": "value",
+      "for": [
+        "counter-reset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-counter-increment",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-counter-increment",
+      "linkingText": [
+        "counter-increment"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-counter-set",
+      "href": "https://drafts.csswg.org/css-lists-3/#propdef-counter-set",
+      "linkingText": [
+        "counter-set"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-set-none",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-set-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "counter-set",
+        "counter-increment"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-set-counter-name-integer",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-set-counter-name-integer",
+      "linkingText": [
+        "<counter-name> <integer>?"
+      ],
+      "type": "value",
+      "for": [
+        "counter-set",
+        "counter-increment"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "counter-scope",
+      "href": "https://drafts.csswg.org/css-lists-3/#counter-scope",
+      "linkingText": [
+        "counter scope"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "css-counters-set",
+      "href": "https://drafts.csswg.org/css-lists-3/#css-counters-set",
+      "linkingText": [
+        "CSS counters set"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "innermost",
+      "href": "https://drafts.csswg.org/css-lists-3/#innermost",
+      "linkingText": [
+        "innermost"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "inherit-counters",
+      "href": "https://drafts.csswg.org/css-lists-3/#inherit-counters",
+      "linkingText": [
+        "inherit counters"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "instantiate-counter",
+      "href": "https://drafts.csswg.org/css-lists-3/#instantiate-counter",
+      "linkingText": [
+        "instantiate counter"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-counter-increment-list-item",
+      "href": "https://drafts.csswg.org/css-lists-3/#valdef-counter-increment-list-item",
+      "linkingText": [
+        "list-item"
+      ],
+      "type": "value",
+      "for": [
+        "counter-increment",
+        "counter-set",
+        "counter-reset",
+        "counter()",
+        "counters()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-counter",
+      "href": "https://drafts.csswg.org/css-lists-3/#funcdef-counter",
+      "linkingText": [
+        "counter()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-gcpm-3",
+          "title": "CSS Generated Content for Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-gcpm-3/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-counters",
+      "href": "https://drafts.csswg.org/css-lists-3/#funcdef-counters",
+      "linkingText": [
+        "counters()"
+      ],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-counter-styles-3",
+          "title": "CSS Counter Styles Module Level 3",
+          "url": "https://drafts.csswg.org/css-counter-styles-3/"
+        },
+        {
+          "shortname": "css-gcpm-3",
+          "title": "CSS Generated Content for Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-gcpm-3/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-counter",
+      "href": "https://drafts.csswg.org/css-lists-3/#typedef-counter",
+      "linkingText": [
+        "<counter>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-gcpm-4",
+          "title": "CSS Generated Content for Paged Media Module Level 4",
+          "url": "https://drafts.csswg.org/css-gcpm-4/"
+        },
+        {
+          "shortname": "css-content-3",
+          "title": "CSS Generated Content Module Level 3",
+          "url": "https://drafts.csswg.org/css-content-3/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "spec": {
+    "title": "Resize Observer Module Level 1",
+    "url": "https://drafts.csswg.org/resize-observer-1/"
+  },
+  "backrefs": [
+    {
+      "id": "resizeobserver",
+      "href": "https://drafts.csswg.org/resize-observer-1/#resizeobserver",
+      "linkingText": [
+        "ResizeObserver"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "content-rect",
+      "href": "https://drafts.csswg.org/resize-observer-1/#content-rect",
+      "linkingText": [
+        "content rect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "gather-active-resize-observations-at-depth",
+      "href": "https://drafts.csswg.org/resize-observer-1/#gather-active-resize-observations-at-depth",
+      "linkingText": [
+        "gather active resize observations at depth",
+        "gather active resize observations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "has-active-resize-observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#has-active-resize-observations",
+      "linkingText": [
+        "has active resize observations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "has-skipped-resize-observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#has-skipped-resize-observations",
+      "linkingText": [
+        "has skipped resize observations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "create-and-populate-a-resizeobserverentry",
+      "href": "https://drafts.csswg.org/resize-observer-1/#create-and-populate-a-resizeobserverentry",
+      "linkingText": [
+        "create and populate a ResizeObserverEntry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "broadcast-active-resize-observations",
+      "href": "https://drafts.csswg.org/resize-observer-1/#broadcast-active-resize-observations",
+      "linkingText": [
+        "broadcast active resize observations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "deliver-resize-loop-error-notification",
+      "href": "https://drafts.csswg.org/resize-observer-1/#deliver-resize-loop-error-notification",
+      "linkingText": [
+        "deliver resize loop error notification"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "calculate-depth-for-node",
+      "href": "https://drafts.csswg.org/resize-observer-1/#calculate-depth-for-node",
+      "linkingText": [
+        "calculate depth for node"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "calculate-box-size",
+      "href": "https://drafts.csswg.org/resize-observer-1/#calculate-box-size",
+      "linkingText": [
+        "calculate box size"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "spec": {
+    "title": "Storage Standard",
+    "url": "https://storage.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "storage-endpoint",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint",
+      "linkingText": [
+        "storage endpoint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "storage-endpoint-identifier",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "storage-endpoint-types",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-types",
+      "linkingText": [
+        "types"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "storage-endpoint-quota",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "storage-key",
+      "href": "https://storage.spec.whatwg.org/#storage-key",
+      "linkingText": [
+        "storage key"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "anonymous-iframe",
+          "title": "Iframe credentialless",
+          "url": "https://wicg.github.io/anonymous-iframe/"
+        },
+        {
+          "shortname": "attribution",
+          "title": "Attribution Level 1",
+          "url": "https://w3c.github.io/attribution/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "storage-key-origin",
+      "href": "https://storage.spec.whatwg.org/#storage-key-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage key"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-storage-key",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-storage-key",
+      "linkingText": [
+        "obtain a storage key"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-storage-key-for-non-storage-purposes",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-storage-key-for-non-storage-purposes",
+      "linkingText": [
+        "obtain a storage key for non-storage purposes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "anonymous-iframe",
+          "title": "Iframe credentialless",
+          "url": "https://wicg.github.io/anonymous-iframe/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        }
+      ]
+    },
+    {
+      "id": "storage-key-equal",
+      "href": "https://storage.spec.whatwg.org/#storage-key-equal",
+      "linkingText": [
+        "equal"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage key"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "storage-shed",
+      "href": "https://storage.spec.whatwg.org/#storage-shed",
+      "linkingText": [
+        "storage shed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        }
+      ]
+    },
+    {
+      "id": "legacy-clone-a-traversable-storage-shed",
+      "href": "https://storage.spec.whatwg.org/#legacy-clone-a-traversable-storage-shed",
+      "linkingText": [
+        "legacy-clone a traversable storage shed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#storage-shelf",
+      "linkingText": [
+        "storage shelf",
+        "storage shelves"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "anonymous-iframe",
+          "title": "Iframe credentialless",
+          "url": "https://wicg.github.io/anonymous-iframe/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "bucket-map",
+      "href": "https://storage.spec.whatwg.org/#bucket-map",
+      "linkingText": [
+        "bucket map"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-local-storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-local-storage-shelf",
+      "linkingText": [
+        "obtain a local storage shelf"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "storage-bucket",
+      "href": "https://storage.spec.whatwg.org/#storage-bucket",
+      "linkingText": [
+        "storage bucket"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        {
+          "shortname": "IndexedDB-3",
+          "title": "Indexed Database API 3.0",
+          "url": "https://w3c.github.io/IndexedDB/"
+        },
+        {
+          "shortname": "web-locks",
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        }
+      ]
+    },
+    {
+      "id": "bucket-mode",
+      "href": "https://storage.spec.whatwg.org/#bucket-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "type": "dfn",
+      "for": [
+        "local storage bucket"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "storage-bottle",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle",
+      "linkingText": [
+        "storage bottle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        {
+          "shortname": "web-locks",
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        }
+      ]
+    },
+    {
+      "id": "storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle-map",
+      "linkingText": [
+        "map"
+      ],
+      "type": "dfn",
+      "for": [
+        "storage bottle"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-local-storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-local-storage-bottle-map",
+      "linkingText": [
+        "obtain a local storage bottle map"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "web-locks",
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-session-storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-session-storage-bottle-map",
+      "linkingText": [
+        "obtain a session storage bottle map"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "storage-proxy-map",
+      "href": "https://storage.spec.whatwg.org/#storage-proxy-map",
+      "linkingText": [
+        "storage proxy map"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "queue-a-storage-task",
+      "href": "https://storage.spec.whatwg.org/#queue-a-storage-task",
+      "linkingText": [
+        "queue a storage task"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "storage-quota",
+      "href": "https://storage.spec.whatwg.org/#storage-quota",
+      "linkingText": [
+        "storage quota"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "dom-navigatorstorage-storage",
+      "href": "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "type": "attribute",
+      "for": [
+        "NavigatorStorage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "storagemanager",
+      "href": "https://storage.spec.whatwg.org/#storagemanager",
+      "linkingText": [
+        "StorageManager"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-storageestimate",
+      "href": "https://storage.spec.whatwg.org/#dictdef-storageestimate",
+      "linkingText": [
+        "StorageEstimate"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "dom-storageestimate-usage",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "dom-storageestimate-quota",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "dom-storagemanager-persist",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-storagemanager-estimate",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-estimate",
+      "linkingText": [
+        "estimate()"
+      ],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    }
+  ]
+}

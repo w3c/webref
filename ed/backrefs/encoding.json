@@ -1,0 +1,1250 @@
+{
+  "spec": {
+    "title": "Encoding Standard",
+    "url": "https://encoding.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "concept-stream",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream",
+      "linkingText": [
+        "I/O queue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "end-of-stream",
+      "href": "https://encoding.spec.whatwg.org/#end-of-stream",
+      "linkingText": [
+        "End-of-queue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-stream-read",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream-read",
+      "linkingText": [
+        "read"
+      ],
+      "type": "dfn",
+      "for": [
+        "I/O queue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "encoding",
+      "href": "https://encoding.spec.whatwg.org/#encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "name",
+      "href": "https://encoding.spec.whatwg.org/#name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "href": "https://encoding.spec.whatwg.org/#label",
+      "linkingText": [
+        "label"
+      ],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "decoder",
+      "href": "https://encoding.spec.whatwg.org/#decoder",
+      "linkingText": [
+        "decoder"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "encoder",
+      "href": "https://encoding.spec.whatwg.org/#encoder",
+      "linkingText": [
+        "encoder"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        }
+      ]
+    },
+    {
+      "id": "concept-encoding-get",
+      "href": "https://encoding.spec.whatwg.org/#concept-encoding-get",
+      "linkingText": [
+        "get an encoding",
+        "getting an encoding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "get-an-output-encoding",
+      "href": "https://encoding.spec.whatwg.org/#get-an-output-encoding",
+      "linkingText": [
+        "get an output encoding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "utf-8-decode",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode",
+      "linkingText": [
+        "UTF-8 decode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "infra",
+          "title": "Infra Standard",
+          "url": "https://infra.spec.whatwg.org/"
+        },
+        {
+          "shortname": "ecma-426",
+          "title": "Source map format specification",
+          "url": "https://tc39.es/ecma426/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "png-3",
+          "title": "Portable Network Graphics (PNG) Specification (Fourth Edition)",
+          "url": "https://w3c.github.io/png/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "utf-8-decode-without-bom",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom",
+      "linkingText": [
+        "UTF-8 decode without BOM"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "no-vary-search",
+          "title": "The No-Vary-Search HTTP Caching Extension",
+          "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        }
+      ]
+    },
+    {
+      "id": "utf-8-decode-without-bom-or-fail",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail",
+      "linkingText": [
+        "UTF-8 decode without BOM or fail"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-content-security-policy",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/content-security-policy/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-esm-integration",
+          "title": "WebAssembly JavaScript Interface: ESM Integration",
+          "url": "https://webassembly.github.io/esm-integration/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-exception-handling",
+          "title": "WebAssembly JavaScript Interface: Exception Handling",
+          "url": "https://webassembly.github.io/exception-handling/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-js-promise-integration",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/js-promise-integration/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-js-string-builtins",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/js-string-builtins/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-js-types",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/js-types/js-api/"
+        },
+        {
+          "shortname": "wasm-js-api-2-fork-threads",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/threads/js-api/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "wasm-js-api-2",
+          "title": "WebAssembly JavaScript Interface",
+          "url": "https://webassembly.github.io/spec/js-api/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "utf-8-encode",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-encode",
+      "linkingText": [
+        "UTF-8 encode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "infra",
+          "title": "Infra Standard",
+          "url": "https://infra.spec.whatwg.org/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-nfc",
+          "title": "Web NFC",
+          "url": "https://w3c-cg.github.io/web-nfc/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "web-bluetooth",
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        {
+          "shortname": "websockets",
+          "title": "WebSockets Standard",
+          "url": "https://websockets.spec.whatwg.org/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "clipboard-apis",
+          "title": "Clipboard API and events",
+          "url": "https://w3c.github.io/clipboard-apis/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "png-3",
+          "title": "Portable Network Graphics (PNG) Specification (Fourth Edition)",
+          "url": "https://w3c.github.io/png/"
+        },
+        {
+          "shortname": "push-api",
+          "title": "Push API",
+          "url": "https://w3c.github.io/push-api/"
+        },
+        {
+          "shortname": "webauthn-3",
+          "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+          "url": "https://w3c.github.io/webauthn/"
+        },
+        {
+          "shortname": "webcrypto-2",
+          "title": "Web Cryptography API Level 2",
+          "url": "https://w3c.github.io/webcrypto/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "decode",
+      "href": "https://encoding.spec.whatwg.org/#decode",
+      "linkingText": [
+        "decode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "bom-sniff",
+      "href": "https://encoding.spec.whatwg.org/#bom-sniff",
+      "linkingText": [
+        "BOM sniff"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "encode",
+      "href": "https://encoding.spec.whatwg.org/#encode",
+      "linkingText": [
+        "encode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "get-an-encoder",
+      "href": "https://encoding.spec.whatwg.org/#get-an-encoder",
+      "linkingText": [
+        "get an encoder",
+        "getting an encoder"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "encode-or-fail",
+      "href": "https://encoding.spec.whatwg.org/#encode-or-fail",
+      "linkingText": [
+        "encode or fail"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "textdecoder",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder",
+      "linkingText": [
+        "TextDecoder"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encrypted-media-2",
+          "title": "Encrypted Media Extensions",
+          "url": "https://w3c.github.io/encrypted-media/"
+        }
+      ]
+    },
+    {
+      "id": "textencoder",
+      "href": "https://encoding.spec.whatwg.org/#textencoder",
+      "linkingText": [
+        "TextEncoder"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "eme-initdata-keyids",
+          "title": "\"keyids\" Initialization Data Format",
+          "url": "https://w3c.github.io/encrypted-media/format-registry/initdata/keyids.html"
+        },
+        {
+          "shortname": "encrypted-media-2",
+          "title": "Encrypted Media Extensions",
+          "url": "https://w3c.github.io/encrypted-media/"
+        }
+      ]
+    },
+    {
+      "id": "textdecoderstream",
+      "href": "https://encoding.spec.whatwg.org/#textdecoderstream",
+      "linkingText": [
+        "TextDecoderStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "set-up-a-text-decoder-stream",
+      "href": "https://encoding.spec.whatwg.org/#set-up-a-text-decoder-stream",
+      "linkingText": [
+        "set up a text decoder stream"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        }
+      ]
+    },
+    {
+      "id": "textencoderstream",
+      "href": "https://encoding.spec.whatwg.org/#textencoderstream",
+      "linkingText": [
+        "TextEncoderStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "utf-8",
+      "href": "https://encoding.spec.whatwg.org/#utf-8",
+      "linkingText": [
+        "UTF-8"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        },
+        {
+          "shortname": "web-share-target",
+          "title": "Web Share Target API",
+          "url": "https://w3c.github.io/web-share-target/"
+        },
+        {
+          "shortname": "first-party-sets",
+          "title": "User Agent Interaction with Related Website Sets",
+          "url": "https://wicg.github.io/first-party-sets/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "web-share",
+          "title": "Web Share API",
+          "url": "https://w3c.github.io/web-share/"
+        },
+        {
+          "shortname": "xhr",
+          "title": "XMLHttpRequest Standard",
+          "url": "https://xhr.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "iso-8859-2",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-2",
+      "linkingText": [
+        "ISO-8859-2"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "iso-8859-7",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-7",
+      "linkingText": [
+        "ISO-8859-7"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "iso-8859-8",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-8",
+      "linkingText": [
+        "ISO-8859-8"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-874",
+      "href": "https://encoding.spec.whatwg.org/#windows-874",
+      "linkingText": [
+        "windows-874"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1250",
+      "href": "https://encoding.spec.whatwg.org/#windows-1250",
+      "linkingText": [
+        "windows-1250"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1251",
+      "href": "https://encoding.spec.whatwg.org/#windows-1251",
+      "linkingText": [
+        "windows-1251"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1252",
+      "href": "https://encoding.spec.whatwg.org/#windows-1252",
+      "linkingText": [
+        "windows-1252"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1254",
+      "href": "https://encoding.spec.whatwg.org/#windows-1254",
+      "linkingText": [
+        "windows-1254"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1255",
+      "href": "https://encoding.spec.whatwg.org/#windows-1255",
+      "linkingText": [
+        "windows-1255"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1256",
+      "href": "https://encoding.spec.whatwg.org/#windows-1256",
+      "linkingText": [
+        "windows-1256"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1257",
+      "href": "https://encoding.spec.whatwg.org/#windows-1257",
+      "linkingText": [
+        "windows-1257"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "windows-1258",
+      "href": "https://encoding.spec.whatwg.org/#windows-1258",
+      "linkingText": [
+        "windows-1258"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "gbk",
+      "href": "https://encoding.spec.whatwg.org/#gbk",
+      "linkingText": [
+        "GBK"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "big5",
+      "href": "https://encoding.spec.whatwg.org/#big5",
+      "linkingText": [
+        "Big5"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "iso-2022-jp",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp",
+      "linkingText": [
+        "ISO-2022-JP"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "iso-2022-jp-encoder",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder",
+      "linkingText": [
+        "ISO-2022-JP encoder"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "shift_jis",
+      "href": "https://encoding.spec.whatwg.org/#shift_jis",
+      "linkingText": [
+        "Shift_JIS"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "url",
+          "title": "URL Standard",
+          "url": "https://url.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "euc-kr",
+      "href": "https://encoding.spec.whatwg.org/#euc-kr",
+      "linkingText": [
+        "EUC-KR"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "utf-16be-le",
+      "href": "https://encoding.spec.whatwg.org/#utf-16be-le",
+      "linkingText": [
+        "UTF-16BE/LE"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "utf-16be",
+      "href": "https://encoding.spec.whatwg.org/#utf-16be",
+      "linkingText": [
+        "UTF-16BE"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "utf-16le",
+      "href": "https://encoding.spec.whatwg.org/#utf-16le",
+      "linkingText": [
+        "UTF-16LE"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "x-user-defined",
+      "href": "https://encoding.spec.whatwg.org/#x-user-defined",
+      "linkingText": [
+        "x-user-defined"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

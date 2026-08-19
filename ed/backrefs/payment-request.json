@@ -1,0 +1,433 @@
+{
+  "spec": {
+    "title": "Payment Request API",
+    "url": "https://w3c.github.io/payment-request/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-payment-method",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-method",
+      "linkingText": [
+        "payment method"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-additional-data-type",
+      "href": "https://w3c.github.io/payment-request/#dfn-additional-data-type",
+      "linkingText": [
+        "additional data type"
+      ],
+      "type": "dfn",
+      "for": [
+        "Payment Method"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-steps-to-validate-payment-method-data",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-to-validate-payment-method-data",
+      "linkingText": [
+        "Steps to validate payment method data"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-steps-to-check-if-a-payment-can-be-made",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made",
+      "linkingText": [
+        "Steps to check if a payment can be made"
+      ],
+      "type": "dfn",
+      "for": [
+        "Payment Handler"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-steps-to-respond-to-a-payment-request",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request",
+      "linkingText": [
+        "Steps to respond to a payment request"
+      ],
+      "type": "dfn",
+      "for": [
+        "Payment Handler"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentrequest",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest",
+      "linkingText": [
+        "PaymentRequest"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentrequest-constructor",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(methodData, details)",
+        "constructor(methodData, details, options)"
+      ],
+      "type": "constructor",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-paymentrequest-paymentrequest",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentrequest-paymentrequest",
+      "linkingText": [
+        "PaymentRequest.PaymentRequest()",
+        "PaymentRequest(methodData, details, options)"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentrequest-show",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-show",
+      "linkingText": [
+        "show()",
+        "show(detailsPromise)"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "capability-delegation",
+          "title": "Capability Delegation",
+          "url": "https://wicg.github.io/capability-delegation/spec.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentrequest-canmakepayment",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-canmakepayment",
+      "linkingText": [
+        "canMakePayment()"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-serializedmethoddata",
+      "href": "https://w3c.github.io/payment-request/#dfn-serializedmethoddata",
+      "linkingText": [
+        "[[serializedMethodData]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "payment-method-manifest",
+          "title": "Payment Method Manifest",
+          "url": "https://w3c.github.io/payment-method-manifest/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-details",
+      "href": "https://w3c.github.io/payment-request/#dfn-details",
+      "linkingText": [
+        "[[details]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://w3c.github.io/payment-request/#dfn-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentcurrencyamount",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount",
+      "linkingText": [
+        "PaymentCurrencyAmount"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentcurrencyamount-currency",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-currency",
+      "linkingText": [
+        "currency"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentcurrencyamount-value",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-value",
+      "linkingText": [
+        "value"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-paymentdetailsinit-total",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit-total",
+      "linkingText": [
+        "total"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-payment",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment",
+      "linkingText": [
+        "\"payment\""
+      ],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "paymentlink",
+          "title": "Facilitated Payment Link Type in HTML",
+          "url": "https://wicg.github.io/paymentlink/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-user-accepts-the-payment-request-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request-algorithm",
+      "linkingText": [
+        "user accepts the payment request algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-user-aborts-the-payment-request-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-user-aborts-the-payment-request-algorithm",
+      "linkingText": [
+        "user aborts the payment request algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    }
+  ]
+}

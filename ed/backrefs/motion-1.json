@@ -1,0 +1,700 @@
+{
+  "spec": {
+    "title": "Motion Path Module Level 1",
+    "url": "https://drafts.csswg.org/motion-1/"
+  },
+  "backrefs": [
+    {
+      "id": "offset-transform",
+      "href": "https://drafts.csswg.org/motion-1/#offset-transform",
+      "linkingText": [
+        "offset transform"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "offset-position",
+      "href": "https://drafts.csswg.org/motion-1/#offset-position",
+      "linkingText": [
+        "offset position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset-path",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-path",
+      "linkingText": [
+        "offset-path"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "offset-path",
+      "href": "https://drafts.csswg.org/motion-1/#offset-path",
+      "linkingText": [
+        "offset path"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-path-none",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-path-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "offset-path"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-path-offset-path--coord-box",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-path-offset-path--coord-box",
+      "linkingText": [
+        "<offset-path> || <coord-box>"
+      ],
+      "type": "value",
+      "for": [
+        "offset-path"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-path-ray",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-path-ray",
+      "linkingText": [
+        "<ray()>"
+      ],
+      "type": "value",
+      "for": [
+        "offset-path"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-ray-ray-size",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-ray-ray-size",
+      "linkingText": [
+        "<ray-size>"
+      ],
+      "type": "value",
+      "for": [
+        "ray()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "size-closest-side",
+      "href": "https://drafts.csswg.org/motion-1/#size-closest-side",
+      "linkingText": [
+        "closest-side"
+      ],
+      "type": "value",
+      "for": [
+        "<ray-size>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "size-closest-corner",
+      "href": "https://drafts.csswg.org/motion-1/#size-closest-corner",
+      "linkingText": [
+        "closest-corner"
+      ],
+      "type": "value",
+      "for": [
+        "<ray-size>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "size-farthest-side",
+      "href": "https://drafts.csswg.org/motion-1/#size-farthest-side",
+      "linkingText": [
+        "farthest-side"
+      ],
+      "type": "value",
+      "for": [
+        "<ray-size>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "size-farthest-corner",
+      "href": "https://drafts.csswg.org/motion-1/#size-farthest-corner",
+      "linkingText": [
+        "farthest-corner"
+      ],
+      "type": "value",
+      "for": [
+        "<ray-size>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "size-sides",
+      "href": "https://drafts.csswg.org/motion-1/#size-sides",
+      "linkingText": [
+        "sides"
+      ],
+      "type": "value",
+      "for": [
+        "<ray-size>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-ray-contain",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-ray-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "type": "value",
+      "for": [
+        "ray()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-ray-at-position",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-ray-at-position",
+      "linkingText": [
+        "at <position>"
+      ],
+      "type": "value",
+      "for": [
+        "ray()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "ray-origin",
+      "href": "https://drafts.csswg.org/motion-1/#ray-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [
+        "ray()"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset-distance",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-distance",
+      "linkingText": [
+        "offset-distance"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "used-offset-distance",
+      "href": "https://drafts.csswg.org/motion-1/#used-offset-distance",
+      "linkingText": [
+        "used offset distance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "offset-distance",
+      "href": "https://drafts.csswg.org/motion-1/#offset-distance",
+      "linkingText": [
+        "offset distance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "total-length",
+      "href": "https://drafts.csswg.org/motion-1/#total-length",
+      "linkingText": [
+        "total length"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset-position",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-position",
+      "linkingText": [
+        "offset-position"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "offset-starting-position",
+      "href": "https://drafts.csswg.org/motion-1/#offset-starting-position",
+      "linkingText": [
+        "offset starting position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-position-normal",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-position-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "value",
+      "for": [
+        "offset-position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-position-auto",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-position-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "offset-position"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset-anchor",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-anchor",
+      "linkingText": [
+        "offset-anchor"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "offset-anchor-point",
+      "href": "https://drafts.csswg.org/motion-1/#offset-anchor-point",
+      "linkingText": [
+        "offset anchor point"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-anchor-auto",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-anchor-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "offset-anchor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset-rotate",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-rotate",
+      "linkingText": [
+        "offset-rotate"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-rotate-auto",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-rotate-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "offset-rotate"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-offset-rotate-reverse",
+      "href": "https://drafts.csswg.org/motion-1/#valdef-offset-rotate-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "type": "value",
+      "for": [
+        "offset-rotate"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-offset",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "basic-shape-equivalent-path",
+      "href": "https://drafts.csswg.org/motion-1/#basic-shape-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "type": "dfn",
+      "for": [
+        "<basic-shape>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "rect-equivalent-path",
+      "href": "https://drafts.csswg.org/motion-1/#rect-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "type": "dfn",
+      "for": [
+        "rect()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "inset-equivalent-path",
+      "href": "https://drafts.csswg.org/motion-1/#inset-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "type": "dfn",
+      "for": [
+        "inset()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "xywh-equivalent-path",
+      "href": "https://drafts.csswg.org/motion-1/#xywh-equivalent-path",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "type": "dfn",
+      "for": [
+        "xywh()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

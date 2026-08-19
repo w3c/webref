@@ -1,0 +1,393 @@
+{
+  "spec": {
+    "title": "Paint Timing",
+    "url": "https://w3c.github.io/paint-timing/"
+  },
+  "backrefs": [
+    {
+      "id": "timing-eligible",
+      "href": "https://w3c.github.io/paint-timing/#timing-eligible",
+      "linkingText": [
+        "timing-eligible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "painttimingmixin",
+      "href": "https://w3c.github.io/paint-timing/#painttimingmixin",
+      "linkingText": [
+        "PaintTimingMixin"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "dom-painttimingmixin-painttime",
+      "href": "https://w3c.github.io/paint-timing/#dom-painttimingmixin-painttime",
+      "linkingText": [
+        "paintTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaintTimingMixin"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-painttimingmixin-presentationtime",
+      "href": "https://w3c.github.io/paint-timing/#dom-painttimingmixin-presentationtime",
+      "linkingText": [
+        "presentationTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaintTimingMixin"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        }
+      ]
+    },
+    {
+      "id": "painttimingmixin-paint-timing-info",
+      "href": "https://w3c.github.io/paint-timing/#painttimingmixin-paint-timing-info",
+      "linkingText": [
+        "paint timing info"
+      ],
+      "type": "dfn",
+      "for": [
+        "PaintTimingMixin"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "paint-timing-info",
+      "href": "https://w3c.github.io/paint-timing/#paint-timing-info",
+      "linkingText": [
+        "paint timing info"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "default-paint-timestamp",
+      "href": "https://w3c.github.io/paint-timing/#default-paint-timestamp",
+      "linkingText": [
+        "default paint timestamp"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "pending-image-record",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record",
+      "linkingText": [
+        "pending image record"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "pending-image-record-element",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-element",
+      "linkingText": [
+        "element"
+      ],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "pending-image-record-request",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-request",
+      "linkingText": [
+        "request"
+      ],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "pending-image-record-loadtime",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-loadtime",
+      "linkingText": [
+        "loadTime"
+      ],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "set-of-owned-text-nodes",
+      "href": "https://w3c.github.io/paint-timing/#set-of-owned-text-nodes",
+      "linkingText": [
+        "set of owned text nodes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "mark-paint-timing",
+      "href": "https://w3c.github.io/paint-timing/#mark-paint-timing",
+      "linkingText": [
+        "Mark paint timing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "exposed-for-paint-timing",
+      "href": "https://w3c.github.io/paint-timing/#exposed-for-paint-timing",
+      "linkingText": [
+        "Exposed for paint timing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    }
+  ]
+}

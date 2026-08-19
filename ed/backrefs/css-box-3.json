@@ -1,0 +1,742 @@
+{
+  "spec": {
+    "title": "CSS Box Model Module Level 3",
+    "url": "https://drafts.csswg.org/css-box-3/"
+  },
+  "backrefs": [
+    {
+      "id": "content-area",
+      "href": "https://drafts.csswg.org/css-box-3/#content-area",
+      "linkingText": [
+        "content area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "resize-observer-1",
+          "title": "Resize Observer Module Level 1",
+          "url": "https://drafts.csswg.org/resize-observer-1/"
+        }
+      ]
+    },
+    {
+      "id": "padding-area",
+      "href": "https://drafts.csswg.org/css-box-3/#padding-area",
+      "linkingText": [
+        "padding area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "border-area",
+      "href": "https://drafts.csswg.org/css-box-3/#border-area",
+      "linkingText": [
+        "border area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "margin-area",
+      "href": "https://drafts.csswg.org/css-box-3/#margin-area",
+      "linkingText": [
+        "margin area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "box-box-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#box-box-edge",
+      "linkingText": [
+        "box edge",
+        "edge"
+      ],
+      "type": "dfn",
+      "for": [
+        "box"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "content-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#content-edge",
+      "linkingText": [
+        "content edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "inner-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#inner-edge",
+      "linkingText": [
+        "inner edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "content-box",
+      "href": "https://drafts.csswg.org/css-box-3/#content-box",
+      "linkingText": [
+        "content box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "padding-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#padding-edge",
+      "linkingText": [
+        "padding edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "padding-box",
+      "href": "https://drafts.csswg.org/css-box-3/#padding-box",
+      "linkingText": [
+        "padding box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "border-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#border-edge",
+      "linkingText": [
+        "border edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "border-box",
+      "href": "https://drafts.csswg.org/css-box-3/#border-box",
+      "linkingText": [
+        "border box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "margin-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#margin-edge",
+      "linkingText": [
+        "margin edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "outer-edge",
+      "href": "https://drafts.csswg.org/css-box-3/#outer-edge",
+      "linkingText": [
+        "outer edge"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "margin-box",
+      "href": "https://drafts.csswg.org/css-box-3/#margin-box",
+      "linkingText": [
+        "margin box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-inline-3",
+          "title": "CSS Inline Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-inline-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-content-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<visual-box>",
+        "<layout-box>",
+        "<shape-box>",
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-padding-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<visual-box>",
+        "<layout-box>",
+        "<shape-box>",
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-border-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<visual-box>",
+        "<layout-box>",
+        "<shape-box>",
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-margin-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-margin-box",
+      "linkingText": [
+        "margin-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<layout-box>",
+        "<shape-box>",
+        "<geometry-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-fill-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-stroke-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-box-view-box",
+      "href": "https://drafts.csswg.org/css-box-3/#valdef-box-view-box",
+      "linkingText": [
+        "view-box"
+      ],
+      "type": "value",
+      "for": [
+        "<box>",
+        "<geometry-box>",
+        "<coord-box>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "svg-viewport-origin-box",
+      "href": "https://drafts.csswg.org/css-box-3/#svg-viewport-origin-box",
+      "linkingText": [
+        "SVG viewport origin box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "margin",
+      "href": "https://drafts.csswg.org/css-box-3/#margin",
+      "linkingText": [
+        "margin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "margin-properties",
+      "href": "https://drafts.csswg.org/css-box-3/#margin-properties",
+      "linkingText": [
+        "margin properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin-top",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-margin-top",
+      "linkingText": [
+        "margin-top"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin-right",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-margin-right",
+      "linkingText": [
+        "margin-right"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin-bottom",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-margin-bottom",
+      "linkingText": [
+        "margin-bottom"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin-left",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-margin-left",
+      "linkingText": [
+        "margin-left"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-margin",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-margin",
+      "linkingText": [
+        "margin"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "padding",
+      "href": "https://drafts.csswg.org/css-box-3/#padding",
+      "linkingText": [
+        "Padding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "padding-properties",
+      "href": "https://drafts.csswg.org/css-box-3/#padding-properties",
+      "linkingText": [
+        "padding properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-padding-top",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-padding-top",
+      "linkingText": [
+        "padding-top"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-padding-right",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-padding-right",
+      "linkingText": [
+        "padding-right"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-padding-bottom",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-padding-bottom",
+      "linkingText": [
+        "padding-bottom"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-padding-left",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-padding-left",
+      "linkingText": [
+        "padding-left"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-padding",
+      "href": "https://drafts.csswg.org/css-box-3/#propdef-padding",
+      "linkingText": [
+        "padding"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "border",
+      "href": "https://drafts.csswg.org/css-box-3/#border",
+      "linkingText": [
+        "border"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "border-properties",
+      "href": "https://drafts.csswg.org/css-box-3/#border-properties",
+      "linkingText": [
+        "border properties"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

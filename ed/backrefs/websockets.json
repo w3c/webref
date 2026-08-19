@@ -1,0 +1,195 @@
+{
+  "spec": {
+    "title": "WebSockets Standard",
+    "url": "https://websockets.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "concept-websocket-connection-obtain",
+      "href": "https://websockets.spec.whatwg.org/#concept-websocket-connection-obtain",
+      "linkingText": [
+        "obtain a WebSocket connection"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "concept-websocket-establish",
+      "href": "https://websockets.spec.whatwg.org/#concept-websocket-establish",
+      "linkingText": [
+        "establish a WebSocket connection"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-binarytype",
+      "href": "https://websockets.spec.whatwg.org/#enumdef-binarytype",
+      "linkingText": [
+        "BinaryType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "presentation-api",
+          "title": "Presentation API",
+          "url": "https://w3c.github.io/presentation-api/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "websocket",
+      "href": "https://websockets.spec.whatwg.org/#websocket",
+      "linkingText": [
+        "WebSocket"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "dom-websocket-bufferedamount",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-bufferedamount",
+      "linkingText": [
+        "bufferedAmount"
+      ],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-websocket-binarytype",
+      "href": "https://websockets.spec.whatwg.org/#dom-websocket-binarytype",
+      "linkingText": [
+        "binaryType"
+      ],
+      "type": "attribute",
+      "for": [
+        "WebSocket"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "dom-binarytype-arraybuffer",
+      "href": "https://websockets.spec.whatwg.org/#dom-binarytype-arraybuffer",
+      "linkingText": [
+        "\"arraybuffer\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "BinaryType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc",
+          "title": "WebRTC: Real-Time Communication in Browsers",
+          "url": "https://w3c.github.io/webrtc-pc/"
+        }
+      ]
+    },
+    {
+      "id": "make-disappear",
+      "href": "https://websockets.spec.whatwg.org/#make-disappear",
+      "linkingText": [
+        "make disappear"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    }
+  ]
+}

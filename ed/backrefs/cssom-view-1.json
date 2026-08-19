@@ -1,0 +1,1651 @@
+{
+  "spec": {
+    "title": "CSSOM View Module Level 1",
+    "url": "https://drafts.csswg.org/cssom-view-1/"
+  },
+  "backrefs": [
+    {
+      "id": "potentially-scrollable",
+      "href": "https://drafts.csswg.org/cssom-view-1/#potentially-scrollable",
+      "linkingText": [
+        "potentially scrollable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "scrolling-box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scrolling-box",
+      "linkingText": [
+        "scrolling box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "overflow-directions",
+      "href": "https://drafts.csswg.org/cssom-view-1/#overflow-directions",
+      "linkingText": [
+        "overflow directions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "scrolling-area",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scrolling-area",
+      "linkingText": [
+        "scrolling area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "scrolling-area-origin",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scrolling-area-origin",
+      "linkingText": [
+        "scrolling area origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "beginning-edges",
+      "href": "https://drafts.csswg.org/cssom-view-1/#beginning-edges",
+      "linkingText": [
+        "beginning edges"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "ending-edges",
+      "href": "https://drafts.csswg.org/cssom-view-1/#ending-edges",
+      "linkingText": [
+        "ending edges"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "svg-layout-box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#svg-layout-box",
+      "linkingText": [
+        "SVG layout box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "transforms",
+      "href": "https://drafts.csswg.org/cssom-view-1/#transforms",
+      "linkingText": [
+        "transforms"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "page-zoom",
+      "href": "https://drafts.csswg.org/cssom-view-1/#page-zoom",
+      "linkingText": [
+        "page zoom"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "web-exposed-screen-area",
+      "href": "https://drafts.csswg.org/cssom-view-1/#web-exposed-screen-area",
+      "linkingText": [
+        "Web-exposed screen area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "web-exposed-available-screen-area",
+      "href": "https://drafts.csswg.org/cssom-view-1/#web-exposed-available-screen-area",
+      "linkingText": [
+        "Web-exposed available screen area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "perform-a-scroll",
+      "href": "https://drafts.csswg.org/cssom-view-1/#perform-a-scroll",
+      "linkingText": [
+        "perform a scroll"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "viewport-perform-a-scroll",
+      "href": "https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll",
+      "linkingText": [
+        "perform a scroll"
+      ],
+      "type": "dfn",
+      "for": [
+        "viewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-completed",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scroll-completed",
+      "linkingText": [
+        "scroll completed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        }
+      ]
+    },
+    {
+      "id": "concept-smooth-scroll",
+      "href": "https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll",
+      "linkingText": [
+        "smooth scroll"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        }
+      ]
+    },
+    {
+      "id": "smooth-scroll-completed",
+      "href": "https://drafts.csswg.org/cssom-view-1/#smooth-scroll-completed",
+      "linkingText": [
+        "smooth scroll completed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "smooth-scroll-aborted",
+      "href": "https://drafts.csswg.org/cssom-view-1/#smooth-scroll-aborted",
+      "linkingText": [
+        "smooth scroll aborted"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "concept-instant-scroll",
+      "href": "https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll",
+      "linkingText": [
+        "instant scroll"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-to-the-beginning-of-the-document",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scroll-to-the-beginning-of-the-document",
+      "linkingText": [
+        "scroll to the beginning of the document"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "normalize-non-finite-values",
+      "href": "https://drafts.csswg.org/cssom-view-1/#normalize-non-finite-values",
+      "linkingText": [
+        "normalize non-finite values"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-screen",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screen",
+      "linkingText": [
+        "screen"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-moveto",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-moveto",
+      "linkingText": [
+        "moveTo(x, y)"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "document-picture-in-picture",
+          "title": "Document Picture-in-Picture Specification",
+          "url": "https://wicg.github.io/document-picture-in-picture/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-moveby",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-moveby",
+      "linkingText": [
+        "moveBy(x, y)"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "document-picture-in-picture",
+          "title": "Document Picture-in-Picture Specification",
+          "url": "https://wicg.github.io/document-picture-in-picture/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-resizeto",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-resizeto",
+      "linkingText": [
+        "resizeTo(width, height)"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "document-picture-in-picture",
+          "title": "Document Picture-in-Picture Specification",
+          "url": "https://wicg.github.io/document-picture-in-picture/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-resizeby",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-resizeby",
+      "linkingText": [
+        "resizeBy(x, y)"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "document-picture-in-picture",
+          "title": "Document Picture-in-Picture Specification",
+          "url": "https://wicg.github.io/document-picture-in-picture/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-innerwidth",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth",
+      "linkingText": [
+        "innerWidth"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "responsive-image-client-hints",
+          "title": "Responsive Image Client Hints",
+          "url": "https://wicg.github.io/responsive-image-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-innerheight",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight",
+      "linkingText": [
+        "innerHeight"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "responsive-image-client-hints",
+          "title": "Responsive Image Client Hints",
+          "url": "https://wicg.github.io/responsive-image-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-scrollto",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollto",
+      "linkingText": [
+        "scrollTo(x, y)",
+        "scrollTo(options)",
+        "scrollTo()"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-scrollby",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-scrollby",
+      "linkingText": [
+        "scrollBy(x, y)",
+        "scrollBy(options)",
+        "scrollBy()"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-screenx",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-screenleft",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screenleft",
+      "linkingText": [
+        "screenLeft"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-screeny",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-screentop",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-screentop",
+      "linkingText": [
+        "screenTop"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-window-devicepixelratio",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio",
+      "linkingText": [
+        "devicePixelRatio"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "responsive-image-client-hints",
+          "title": "Responsive Image Client Hints",
+          "url": "https://wicg.github.io/responsive-image-client-hints/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "determine-the-device-pixel-ratio",
+      "href": "https://drafts.csswg.org/cssom-view-1/#determine-the-device-pixel-ratio",
+      "linkingText": [
+        "determine the device pixel ratio"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "set-up-browsing-context-features",
+      "href": "https://drafts.csswg.org/cssom-view-1/#set-up-browsing-context-features",
+      "linkingText": [
+        "set up browsing context features"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        }
+      ]
+    },
+    {
+      "id": "supported-open-feature-name",
+      "href": "https://drafts.csswg.org/cssom-view-1/#supported-open-feature-name",
+      "linkingText": [
+        "supported open() feature name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-open-feature-name-width",
+      "href": "https://drafts.csswg.org/cssom-view-1/#supported-open-feature-name-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-open-feature-name-height",
+      "href": "https://drafts.csswg.org/cssom-view-1/#supported-open-feature-name-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-open-feature-name-left",
+      "href": "https://drafts.csswg.org/cssom-view-1/#supported-open-feature-name-left",
+      "linkingText": [
+        "left"
+      ],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "supported-open-feature-name-top",
+      "href": "https://drafts.csswg.org/cssom-view-1/#supported-open-feature-name-top",
+      "linkingText": [
+        "top"
+      ],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "mediaquerylist-media-query-list",
+      "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylist-media-query-list",
+      "linkingText": [
+        "media query list"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "mediaquerylist-document",
+      "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylist-document",
+      "linkingText": [
+        "document"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "mediaquerylist-media",
+      "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylist-media",
+      "linkingText": [
+        "media"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "mediaquerylist-matches-state",
+      "href": "https://drafts.csswg.org/cssom-view-1/#mediaquerylist-matches-state",
+      "linkingText": [
+        "matches state"
+      ],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "evaluate-media-queries-and-report-changes",
+      "href": "https://drafts.csswg.org/cssom-view-1/#evaluate-media-queries-and-report-changes",
+      "linkingText": [
+        "evaluate media queries and report changes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "screen",
+      "href": "https://drafts.csswg.org/cssom-view-1/#screen",
+      "linkingText": [
+        "Screen"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dom-document-scrollingelement",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-document-scrollingelement",
+      "linkingText": [
+        "scrollingElement"
+      ],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "caret-position",
+      "href": "https://drafts.csswg.org/cssom-view-1/#caret-position",
+      "linkingText": [
+        "caret position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "caret-node",
+      "href": "https://drafts.csswg.org/cssom-view-1/#caret-node",
+      "linkingText": [
+        "caret node"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "caret-offset",
+      "href": "https://drafts.csswg.org/cssom-view-1/#caret-offset",
+      "linkingText": [
+        "caret offset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-getclientrects",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-getclientrects",
+      "linkingText": [
+        "getClientRects()"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-getboundingclientrect",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect",
+      "linkingText": [
+        "getBoundingClientRect()"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        }
+      ]
+    },
+    {
+      "id": "element-get-the-bounding-box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#element-get-the-bounding-box",
+      "linkingText": [
+        "get the bounding box"
+      ],
+      "type": "dfn",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-scrollintoview",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview",
+      "linkingText": [
+        "scrollIntoView(arg)",
+        "scrollIntoView()"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-scrolltop",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrolltop",
+      "linkingText": [
+        "scrollTop"
+      ],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-scrollleft",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollleft",
+      "linkingText": [
+        "scrollLeft"
+      ],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-element-clientwidth",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth",
+      "linkingText": [
+        "clientWidth"
+      ],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "responsive-image-client-hints",
+          "title": "Responsive Image Client Hints",
+          "url": "https://wicg.github.io/responsive-image-client-hints/"
+        }
+      ]
+    },
+    {
+      "id": "determine-the-scroll-into-view-position",
+      "href": "https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position",
+      "linkingText": [
+        "determine the scroll-into-view position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-a-target-into-view",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view",
+      "linkingText": [
+        "scroll a target into view"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "scroll-to-text-fragment",
+          "title": "URL Fragment Text Directives",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-an-element",
+      "href": "https://drafts.csswg.org/cssom-view-1/#scroll-an-element",
+      "linkingText": [
+        "scroll an element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-htmlelement-offsettop",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsettop",
+      "linkingText": [
+        "offsetTop"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dom-range-getclientrects",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-range-getclientrects",
+      "linkingText": [
+        "getClientRects()"
+      ],
+      "type": "method",
+      "for": [
+        "Range"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-range-getboundingclientrect",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-range-getboundingclientrect",
+      "linkingText": [
+        "getBoundingClientRect()"
+      ],
+      "type": "method",
+      "for": [
+        "Range"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-offsetx",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-offsetx",
+      "linkingText": [
+        "offsetX"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-mouseevent-offsety",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-mouseevent-offsety",
+      "linkingText": [
+        "offsetY"
+      ],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "get-the-complete-transform",
+      "href": "https://drafts.csswg.org/cssom-view-1/#get-the-complete-transform",
+      "linkingText": [
+        "get the complete transform"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "adjust-a-point-to-the-border-box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#adjust-a-point-to-the-border-box",
+      "linkingText": [
+        "adjust a point to the border box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "adjust-a-point-from-the-border-box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#adjust-a-point-from-the-border-box",
+      "linkingText": [
+        "adjust a point from the border box"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-run-the-resize-steps",
+      "href": "https://drafts.csswg.org/cssom-view-1/#document-run-the-resize-steps",
+      "linkingText": [
+        "run the resize steps"
+      ],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-pending-scroll-events",
+      "href": "https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events",
+      "linkingText": [
+        "pending scroll events"
+      ],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        }
+      ]
+    },
+    {
+      "id": "document-run-the-scroll-steps",
+      "href": "https://drafts.csswg.org/cssom-view-1/#document-run-the-scroll-steps",
+      "linkingText": [
+        "run the scroll steps"
+      ],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-window-resize",
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-window-resize",
+      "linkingText": [
+        "resize"
+      ],
+      "type": "event",
+      "for": [
+        "Window",
+        "VisualViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "resize-observer-1",
+          "title": "Resize Observer Module Level 1",
+          "url": "https://drafts.csswg.org/resize-observer-1/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-document-scroll",
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll",
+      "linkingText": [
+        "scroll"
+      ],
+      "type": "event",
+      "for": [
+        "Document",
+        "Element",
+        "VisualViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-document-scrollend",
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend",
+      "linkingText": [
+        "scrollend"
+      ],
+      "type": "event",
+      "for": [
+        "Document",
+        "Element",
+        "VisualViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        }
+      ]
+    },
+    {
+      "id": "run-snapshot-post-layout-state-steps",
+      "href": "https://drafts.csswg.org/cssom-view-1/#run-snapshot-post-layout-state-steps",
+      "linkingText": [
+        "run snapshot post-layout state steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

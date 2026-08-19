@@ -1,0 +1,4201 @@
+{
+  "spec": {
+    "title": "Web Animations Module Level 1",
+    "url": "https://drafts.csswg.org/web-animations-1/"
+  },
+  "backrefs": [
+    {
+      "id": "web-animations-model",
+      "href": "https://drafts.csswg.org/web-animations-1/#web-animations-model",
+      "linkingText": [
+        "Web Animations model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "web-animations-api",
+      "href": "https://drafts.csswg.org/web-animations-1/#web-animations-api",
+      "linkingText": [
+        "Web Animations API"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "timing-model-dfn",
+      "href": "https://drafts.csswg.org/web-animations-1/#timing-model-dfn",
+      "linkingText": [
+        "timing model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-model-dfn",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-model-dfn",
+      "linkingText": [
+        "animation model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "web-animations-timing-model",
+      "href": "https://drafts.csswg.org/web-animations-1/#web-animations-timing-model",
+      "linkingText": [
+        "Web Animations timing model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "timing-nodes",
+      "href": "https://drafts.csswg.org/web-animations-1/#timing-nodes",
+      "linkingText": [
+        "timing nodes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "time-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#time-value",
+      "linkingText": [
+        "time value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "unresolved",
+      "href": "https://drafts.csswg.org/web-animations-1/#unresolved",
+      "linkingText": [
+        "unresolved"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "timeline-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-current-time",
+      "linkingText": [
+        "current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "timeline"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "inactive-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#inactive-timeline",
+      "linkingText": [
+        "inactive timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "active-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-timeline",
+      "linkingText": [
+        "active timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "monotonically-increasing-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline",
+      "linkingText": [
+        "monotonically increasing timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "timeline-time-to-origin-relative-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-time-to-origin-relative-time",
+      "linkingText": [
+        "timeline time to origin-relative time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "timeline-associated-with-a-document",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-associated-with-a-document",
+      "linkingText": [
+        "timeline associated with a document"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-timeline",
+      "linkingText": [
+        "document timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "origin-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#origin-time",
+      "linkingText": [
+        "origin time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-default-document-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-default-document-timeline",
+      "linkingText": [
+        "default document timeline"
+      ],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "update-animations-and-send-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-animations-and-send-events",
+      "linkingText": [
+        "update animations and send events"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-frame",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-frame",
+      "linkingText": [
+        "animation frame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "concept-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#concept-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "animation-associated-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-associated-effect",
+      "linkingText": [
+        "associated effect"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "playback-control",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-control",
+      "linkingText": [
+        "playback control"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-current-time",
+      "linkingText": [
+        "current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-document-for-timing",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-document-for-timing",
+      "linkingText": [
+        "document for timing"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-start-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "animation-hold-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-hold-time",
+      "linkingText": [
+        "hold time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "global-animation-list",
+      "href": "https://drafts.csswg.org/web-animations-1/#global-animation-list",
+      "linkingText": [
+        "global animation list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-set-the-timeline-of-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-set-the-timeline-of-an-animation",
+      "linkingText": [
+        "set the timeline of an animation"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-set-the-associated-effect-of-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-set-the-associated-effect-of-an-animation",
+      "linkingText": [
+        "set the associated effect of an animation"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "seek",
+      "href": "https://drafts.csswg.org/web-animations-1/#seek",
+      "linkingText": [
+        "seek"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-silently-set-the-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-silently-set-the-current-time",
+      "linkingText": [
+        "silently set the current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-set-the-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-set-the-current-time",
+      "linkingText": [
+        "set the current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "set-the-start-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-start-time",
+      "linkingText": [
+        "set the start time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "ready",
+      "href": "https://drafts.csswg.org/web-animations-1/#ready",
+      "linkingText": [
+        "ready"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "current-ready-promise",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-ready-promise",
+      "linkingText": [
+        "current ready promise"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "play-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-an-animation",
+      "linkingText": [
+        "play an animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "pending-play-task",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-play-task",
+      "linkingText": [
+        "pending play task"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "pause-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
+      "linkingText": [
+        "pause an animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "pending-pause-task",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-pause-task",
+      "linkingText": [
+        "pending pause task"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "current-finished-promise",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-finished-promise",
+      "linkingText": [
+        "current finished promise"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "associated-effect-end",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-effect-end",
+      "linkingText": [
+        "associated effect end"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "previous-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#previous-current-time",
+      "linkingText": [
+        "previous current time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "update-an-animations-finished-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state",
+      "linkingText": [
+        "update an animation’s finished state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "finish-notification-steps",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-notification-steps",
+      "linkingText": [
+        "finish notification steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "finish-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-an-animation",
+      "linkingText": [
+        "finish an animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cancel-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#cancel-an-animation",
+      "linkingText": [
+        "cancel an animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-reset-an-animations-pending-tasks",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-reset-an-animations-pending-tasks",
+      "linkingText": [
+        "reset an animation’s pending tasks"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "set-the-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-playback-rate",
+      "linkingText": [
+        "set the playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "pending-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-playback-rate",
+      "linkingText": [
+        "pending playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "effective-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#effective-playback-rate",
+      "linkingText": [
+        "effective playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "apply-any-pending-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate",
+      "linkingText": [
+        "apply any pending playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "seamlessly-update-the-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#seamlessly-update-the-playback-rate",
+      "linkingText": [
+        "seamlessly update the playback rate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "reverse-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#reverse-an-animation",
+      "linkingText": [
+        "reverse an animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-play-state",
+      "linkingText": [
+        "play state"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "play-state-idle",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-state-idle",
+      "linkingText": [
+        "idle"
+      ],
+      "type": "dfn",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "play-state-paused",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-state-paused",
+      "linkingText": [
+        "paused"
+      ],
+      "type": "dfn",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "play-state-finished",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-state-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "type": "dfn",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "play-state-running",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-state-running",
+      "linkingText": [
+        "running"
+      ],
+      "type": "dfn",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-events",
+      "linkingText": [
+        "Animation events"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "pending-animation-event-queue",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-animation-event-queue",
+      "linkingText": [
+        "pending animation event queue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "scheduled-event-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#scheduled-event-time",
+      "linkingText": [
+        "scheduled event time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-time-to-timeline-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-time-to-timeline-time",
+      "linkingText": [
+        "animation time to timeline time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-time-to-origin-relative-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-time-to-origin-relative-time",
+      "linkingText": [
+        "animation time to origin-relative time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-playback-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-playback-events",
+      "linkingText": [
+        "animation playback events"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "finish-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-event",
+      "linkingText": [
+        "finish event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "cancel-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#cancel-event",
+      "linkingText": [
+        "cancel event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "remove-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#remove-event",
+      "linkingText": [
+        "remove event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect",
+      "linkingText": [
+        "animation effect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-associated-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-associated-animation",
+      "linkingText": [
+        "associated animation"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "associated-with-a-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-with-a-timeline",
+      "linkingText": [
+        "associated with a timeline"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "local-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#local-time",
+      "linkingText": [
+        "local time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "time-spaces",
+      "href": "https://drafts.csswg.org/web-animations-1/#time-spaces",
+      "linkingText": [
+        "time spaces"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "local-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#local-time-space",
+      "linkingText": [
+        "local time space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "active-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-time-space",
+      "linkingText": [
+        "active time space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-time-space",
+      "linkingText": [
+        "iteration time space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-time",
+      "linkingText": [
+        "iteration time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "document-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-time-space",
+      "linkingText": [
+        "document time space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "active-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-interval",
+      "linkingText": [
+        "active interval"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "start-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#start-delay",
+      "linkingText": [
+        "start delay"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "active-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "end-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#end-delay",
+      "linkingText": [
+        "end delay"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-end-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "animation-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-direction",
+      "linkingText": [
+        "animation direction"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "before-active-boundary-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#before-active-boundary-time",
+      "linkingText": [
+        "before-active boundary time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "active-after-boundary-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-after-boundary-time",
+      "linkingText": [
+        "active-after boundary time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "endpoint-inclusive-active-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#endpoint-inclusive-active-interval",
+      "linkingText": [
+        "endpoint-inclusive active interval"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-before-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-before-phase",
+      "linkingText": [
+        "before phase"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-after-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-after-phase",
+      "linkingText": [
+        "after phase"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-active-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-active-phase",
+      "linkingText": [
+        "active phase"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-idle-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-idle-phase",
+      "linkingText": [
+        "idle phase"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "in-play",
+      "href": "https://drafts.csswg.org/web-animations-1/#in-play",
+      "linkingText": [
+        "in play"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "href": "https://drafts.csswg.org/web-animations-1/#current",
+      "linkingText": [
+        "current"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "in-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#in-effect",
+      "linkingText": [
+        "in effect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-relevant",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-relevant",
+      "linkingText": [
+        "relevant"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "relevant-animations",
+      "href": "https://drafts.csswg.org/web-animations-1/#relevant-animations",
+      "linkingText": [
+        "relevant animations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "relevant-animations-for-a-subtree",
+      "href": "https://drafts.csswg.org/web-animations-1/#relevant-animations-for-a-subtree",
+      "linkingText": [
+        "relevant animations for a subtree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fill-mode",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode",
+      "linkingText": [
+        "fill mode"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "fill-mode-none",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "fill-mode-forwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-forwards",
+      "linkingText": [
+        "forwards"
+      ],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fill-mode-backwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-backwards",
+      "linkingText": [
+        "backwards"
+      ],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fill-mode-both",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-both",
+      "linkingText": [
+        "both"
+      ],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-interval",
+      "linkingText": [
+        "iteration interval"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-duration",
+      "linkingText": [
+        "iteration duration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-count",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-count",
+      "linkingText": [
+        "iteration count"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-start",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-start",
+      "linkingText": [
+        "iteration start"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "playback-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction",
+      "linkingText": [
+        "playback direction"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "playback-direction-normal",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "playback-direction-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "playback-direction-alternate",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-alternate",
+      "linkingText": [
+        "alternate"
+      ],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "playback-direction-alternate-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-alternate-reverse",
+      "linkingText": [
+        "alternate-reverse"
+      ],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-effect-effect-easing-function",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-effect-easing-function",
+      "linkingText": [
+        "effect easing function"
+      ],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "active-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-time",
+      "linkingText": [
+        "active time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "overall-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#overall-progress",
+      "linkingText": [
+        "overall progress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "simple-iteration-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#simple-iteration-progress",
+      "linkingText": [
+        "simple iteration progress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "current-iteration-index",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-iteration-index",
+      "linkingText": [
+        "current iteration index",
+        "iteration index"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "directed-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#directed-progress",
+      "linkingText": [
+        "directed progress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "transformed-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#transformed-progress",
+      "linkingText": [
+        "transformed progress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "iteration-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-progress",
+      "linkingText": [
+        "iteration progress"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "web-animations-animation-model",
+      "href": "https://drafts.csswg.org/web-animations-1/#web-animations-animation-model",
+      "linkingText": [
+        "Web Animations animation model"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "target-property",
+      "href": "https://drafts.csswg.org/web-animations-1/#target-property",
+      "linkingText": [
+        "target property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "effect-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-value",
+      "linkingText": [
+        "effect value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "concept-animatable",
+      "href": "https://drafts.csswg.org/web-animations-1/#concept-animatable",
+      "linkingText": [
+        "animatable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-type",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-type",
+      "linkingText": [
+        "Animation type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        }
+      ]
+    },
+    {
+      "id": "not-animatable",
+      "href": "https://drafts.csswg.org/web-animations-1/#not-animatable",
+      "linkingText": [
+        "not animatable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-variables-2",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 2",
+          "url": "https://drafts.csswg.org/css-variables-2/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-variables-1",
+          "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+          "url": "https://drafts.csswg.org/css-variables-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "discrete",
+      "href": "https://drafts.csswg.org/web-animations-1/#discrete",
+      "linkingText": [
+        "discrete"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "by-computed-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#by-computed-value",
+      "linkingText": [
+        "by computed value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "repeatable-list",
+      "href": "https://drafts.csswg.org/web-animations-1/#repeatable-list",
+      "linkingText": [
+        "repeatable list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-effect",
+      "linkingText": [
+        "keyframe effect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe-effect-effect-target",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-effect-effect-target",
+      "linkingText": [
+        "effect target"
+      ],
+      "type": "dfn",
+      "for": [
+        "keyframe effect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "effect-target-target-element",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-target-target-element",
+      "linkingText": [
+        "target element"
+      ],
+      "type": "dfn",
+      "for": [
+        "effect target"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "effect-target-target-pseudo-selector",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-target-target-pseudo-selector",
+      "linkingText": [
+        "target pseudo-selector"
+      ],
+      "type": "dfn",
+      "for": [
+        "effect target"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe",
+      "linkingText": [
+        "keyframe"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-offset",
+      "linkingText": [
+        "keyframe offset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "loosely-sorted-by-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#loosely-sorted-by-offset",
+      "linkingText": [
+        "loosely sorted by offset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe-specific-easing-function",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-specific-easing-function",
+      "linkingText": [
+        "keyframe-specific easing function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "keyframe-specific-composite-operation",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-specific-composite-operation",
+      "linkingText": [
+        "keyframe-specific composite operation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "compute-a-property-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#compute-a-property-value",
+      "linkingText": [
+        "compute a property value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "computed-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframes",
+      "linkingText": [
+        "computed keyframes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "computed-keyframe-offsets",
+      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframe-offsets",
+      "linkingText": [
+        "computed keyframe offsets"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "compute-missing-keyframe-offsets",
+      "href": "https://drafts.csswg.org/web-animations-1/#compute-missing-keyframe-offsets",
+      "linkingText": [
+        "compute missing keyframe offsets"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "offsetk",
+      "href": "https://drafts.csswg.org/web-animations-1/#offsetk",
+      "linkingText": [
+        "offsetk"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "neutral-value-for-composition",
+      "href": "https://drafts.csswg.org/web-animations-1/#neutral-value-for-composition",
+      "linkingText": [
+        "neutral value for composition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite",
+      "linkingText": [
+        "composite",
+        "composition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-class",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-class",
+      "linkingText": [
+        "animation class"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "effect-stack",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-stack",
+      "linkingText": [
+        "effect stack"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animation-composite-order",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-composite-order",
+      "linkingText": [
+        "animation composite order"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "underlying-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#underlying-value",
+      "linkingText": [
+        "underlying value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "composited-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#composited-value",
+      "linkingText": [
+        "composited value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "composite-operation",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation",
+      "linkingText": [
+        "composite operation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "composite-operation-replace",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-replace",
+      "linkingText": [
+        "composite operation replace"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "composite-operation-add",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-add",
+      "linkingText": [
+        "composite operation add"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "composite-operation-accumulate",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-accumulate",
+      "linkingText": [
+        "composite operation accumulate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#replace-state",
+      "linkingText": [
+        "replace state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "active-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-replace-state",
+      "linkingText": [
+        "active replace state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "removed-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#removed-replace-state",
+      "linkingText": [
+        "removed replace state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "persisted-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#persisted-replace-state",
+      "linkingText": [
+        "persisted replace state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "replaceable-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#replaceable-animation",
+      "linkingText": [
+        "replaceable animation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "remove-replaced-animations",
+      "href": "https://drafts.csswg.org/web-animations-1/#remove-replaced-animations",
+      "linkingText": [
+        "remove replaced animations"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animationtimeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline",
+      "linkingText": [
+        "AnimationTimeline"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animationtimeline-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationtimeline-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "documenttimeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#documenttimeline",
+      "linkingText": [
+        "DocumentTimeline"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation",
+      "linkingText": [
+        "Animation"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "pointer-animations-1",
+          "title": "Pointer-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/pointer-animations-1/"
+        },
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-playstate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playstate",
+      "linkingText": [
+        "playState"
+      ],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-cancel",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-finish",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finish",
+      "linkingText": [
+        "finish()"
+      ],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-play",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-play",
+      "linkingText": [
+        "play()"
+      ],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-pause",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "animation-triggers-1",
+          "title": "Animation Triggers",
+          "url": "https://drafts.csswg.org/animation-triggers-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animation-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-reverse",
+      "linkingText": [
+        "reverse()"
+      ],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "commit-computed-styles",
+      "href": "https://drafts.csswg.org/web-animations-1/#commit-computed-styles",
+      "linkingText": [
+        "commit computed styles"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "animationeffect",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationeffect",
+      "linkingText": [
+        "AnimationEffect"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animationeffect-updatetiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
+      "linkingText": [
+        "updateTiming(timing)",
+        "updateTiming()"
+      ],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        },
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animationeffect-updatetiming-timing-timing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming-timing-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/updateTiming(timing)"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-effecttiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming",
+      "linkingText": [
+        "EffectTiming"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-optionaleffecttiming-fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-effecttiming-fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "update-the-timing-properties-of-an-animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect",
+      "linkingText": [
+        "update the timing properties of an animation effect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "web-animations-2",
+          "title": "Web Animations Module Level 2",
+          "url": "https://drafts.csswg.org/web-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-computedeffecttiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-computedeffecttiming",
+      "linkingText": [
+        "ComputedEffectTiming"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animation-worklet-1",
+          "title": "CSS Animation Worklet API",
+          "url": "https://drafts.css-houdini.org/css-animationworklet-1/"
+        }
+      ]
+    },
+    {
+      "id": "keyframeeffect",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-keyframeeffect-getkeyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes",
+      "linkingText": [
+        "getKeyframes()"
+      ],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes",
+      "linkingText": [
+        "setKeyframes(keyframes)"
+      ],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        }
+      ]
+    },
+    {
+      "id": "animation-property-name-to-idl-attribute-name",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-property-name-to-idl-attribute-name",
+      "linkingText": [
+        "animation property name to IDL attribute name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "idl-attribute-name-to-animation-property-name",
+      "href": "https://drafts.csswg.org/web-animations-1/#idl-attribute-name-to-animation-property-name",
+      "linkingText": [
+        "IDL attribute name to animation property name"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "check-the-completion-record",
+      "href": "https://drafts.csswg.org/web-animations-1/#check-the-completion-record",
+      "linkingText": [
+        "check the completion record"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "process-a-keyframe-like-object",
+      "href": "https://drafts.csswg.org/web-animations-1/#process-a-keyframe-like-object",
+      "linkingText": [
+        "process a keyframe-like object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "process-a-keyframes-argument",
+      "href": "https://drafts.csswg.org/web-animations-1/#process-a-keyframes-argument",
+      "linkingText": [
+        "process a keyframes argument"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "dom-animatable-getanimations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations",
+      "linkingText": [
+        "getAnimations(options)",
+        "getAnimations()"
+      ],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-animations-2",
+          "title": "CSS Animations Module Level 2",
+          "url": "https://drafts.csswg.org/css-animations-2/"
+        },
+        {
+          "shortname": "css-transitions-2",
+          "title": "CSS Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "conforming-scripted-web-animations-user-agent",
+      "href": "https://drafts.csswg.org/web-animations-1/#conforming-scripted-web-animations-user-agent",
+      "linkingText": [
+        "conforming scripted Web Animations user agent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "combining-shadow-lists",
+      "href": "https://drafts.csswg.org/web-animations-1/#combining-shadow-lists",
+      "linkingText": [
+        "combining shadow lists"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1573 @@
+{
+  "spec": {
+    "title": "Service Workers Nightly",
+    "url": "https://w3c.github.io/ServiceWorker/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-service-worker",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker",
+      "linkingText": [
+        "service worker"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-script-url",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-script-url",
+      "linkingText": [
+        "script url"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-global-object",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-script-resource",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-script-resource",
+      "linkingText": [
+        "script resource"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-has-ever-been-evaluated-flag",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-has-ever-been-evaluated-flag",
+      "linkingText": [
+        "has ever been evaluated flag"
+      ],
+      "type": "dfn",
+      "for": [
+        "script resource"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-set-of-event-types-to-handle",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-set-of-event-types-to-handle",
+      "linkingText": [
+        "set of event types to handle"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-set-of-extended-events",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-set-of-extended-events",
+      "linkingText": [
+        "set of extended events"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-events",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-events",
+      "linkingText": [
+        "service worker events"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info",
+      "linkingText": [
+        "service worker timing info"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-start-time",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-fetch-event-dispatch-time",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-fetch-event-dispatch-time",
+      "linkingText": [
+        "fetch event dispatch time"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-worker-router-evaluation-start",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-router-evaluation-start",
+      "linkingText": [
+        "worker router evaluation start"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-worker-cache-lookup-start",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-cache-lookup-start",
+      "linkingText": [
+        "worker cache lookup start"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-worker-matched-router-source",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-matched-router-source",
+      "linkingText": [
+        "worker matched router source"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-timing-info-worker-final-router-source",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-final-router-source",
+      "linkingText": [
+        "worker final router source"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-registration",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        },
+        {
+          "shortname": "clear-site-data",
+          "title": "Clear Site Data",
+          "url": "https://w3c.github.io/webappsec-clear-site-data/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-scope-url",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-scope-url",
+      "linkingText": [
+        "scope url"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "clear-site-data",
+          "title": "Clear Site Data",
+          "url": "https://w3c.github.io/webappsec-clear-site-data/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-active-worker",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-active-worker",
+      "linkingText": [
+        "active worker"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-registration-task-queue",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration-task-queue",
+      "linkingText": [
+        "task queues"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "speech-api",
+          "title": "Web Speech API",
+          "url": "https://webaudio.github.io/web-speech-api/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-registration-unregistered",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration-unregistered",
+      "linkingText": [
+        "unregistered"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-client",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-client",
+      "linkingText": [
+        "service worker client"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "page-lifecycle",
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        },
+        {
+          "shortname": "webusb",
+          "title": "WebUSB API",
+          "url": "https://wicg.github.io/webusb/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-client-origin",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-client-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-control",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-control",
+      "linkingText": [
+        "controlling",
+        "controls",
+        "controlled"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "serviceworker",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworker",
+      "linkingText": [
+        "ServiceWorker"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "CSP3",
+          "title": "Content Security Policy Level 3",
+          "url": "https://w3c.github.io/webappsec-csp/"
+        },
+        {
+          "shortname": "hr-time-3",
+          "title": "High Resolution Time",
+          "url": "https://w3c.github.io/hr-time/"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworker-postmessage",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage",
+      "linkingText": [
+        "postMessage(message, transfer)"
+      ],
+      "type": "method",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworker-postmessage-message-options",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworker-postmessage-message-options",
+      "linkingText": [
+        "postMessage(message, options)",
+        "postMessage(message)"
+      ],
+      "type": "method",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "serviceworkerregistration",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkerregistration",
+      "linkingText": [
+        "ServiceWorkerRegistration"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkerregistration-navigationpreload",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload",
+      "linkingText": [
+        "navigationPreload"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkerregistration-update",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-update",
+      "linkingText": [
+        "update()"
+      ],
+      "type": "method",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkerregistration-unregister",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-unregister",
+      "linkingText": [
+        "unregister()"
+      ],
+      "type": "method",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "clear-site-data",
+          "title": "Clear Site Data",
+          "url": "https://w3c.github.io/webappsec-clear-site-data/"
+        }
+      ]
+    },
+    {
+      "id": "serviceworkercontainer",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkercontainer",
+      "linkingText": [
+        "ServiceWorkerContainer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "serviceworkercontainer-service-worker-client",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkercontainer-service-worker-client",
+      "linkingText": [
+        "service worker client"
+      ],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-client-message-queue",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-client-message-queue",
+      "linkingText": [
+        "client message queue"
+      ],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-serviceworkercontainer-register",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-serviceworkercontainer-register",
+      "linkingText": [
+        "register(scriptURL, options)",
+        "register(scriptURL)"
+      ],
+      "type": "method",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    },
+    {
+      "id": "serviceworkerglobalscope",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope",
+      "linkingText": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "performance-measure-memory",
+          "title": "Measure Memory API",
+          "url": "https://wicg.github.io/performance-measure-memory/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        },
+        {
+          "shortname": "webusb",
+          "title": "WebUSB API",
+          "url": "https://wicg.github.io/webusb/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        },
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "serviceworkerglobalscope-service-worker",
+      "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-service-worker",
+      "linkingText": [
+        "service worker"
+      ],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "client",
+      "href": "https://w3c.github.io/ServiceWorker/#client",
+      "linkingText": [
+        "Client"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "page-lifecycle",
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        },
+        {
+          "shortname": "web-locks",
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        }
+      ]
+    },
+    {
+      "id": "windowclient",
+      "href": "https://w3c.github.io/ServiceWorker/#windowclient",
+      "linkingText": [
+        "WindowClient"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-service-worker-client-frame-type",
+      "href": "https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type",
+      "linkingText": [
+        "frame type"
+      ],
+      "type": "dfn",
+      "for": [
+        "Client"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dom-client-id",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-client-id",
+      "linkingText": [
+        "id"
+      ],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "web-locks",
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        }
+      ]
+    },
+    {
+      "id": "dom-windowclient-navigate",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-windowclient-navigate",
+      "linkingText": [
+        "navigate(url)"
+      ],
+      "type": "method",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        }
+      ]
+    },
+    {
+      "id": "dom-clients-get",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-clients-get",
+      "linkingText": [
+        "get(id)"
+      ],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-clients-matchall",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-clients-matchall",
+      "linkingText": [
+        "matchAll(options)",
+        "matchAll()"
+      ],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-clients-openwindow",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-clients-openwindow",
+      "linkingText": [
+        "openWindow(url)"
+      ],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "page-lifecycle",
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        }
+      ]
+    },
+    {
+      "id": "extendableevent",
+      "href": "https://w3c.github.io/ServiceWorker/#extendableevent",
+      "linkingText": [
+        "ExtendableEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-extendableeventinit",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-extendableeventinit",
+      "linkingText": [
+        "ExtendableEventInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "extendableevent-extend-lifetime-promises",
+      "href": "https://w3c.github.io/ServiceWorker/#extendableevent-extend-lifetime-promises",
+      "linkingText": [
+        "extend lifetime promises"
+      ],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "extendableevent-active",
+      "href": "https://w3c.github.io/ServiceWorker/#extendableevent-active",
+      "linkingText": [
+        "active"
+      ],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        }
+      ]
+    },
+    {
+      "id": "dom-extendableevent-waituntil",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-extendableevent-waituntil",
+      "linkingText": [
+        "waitUntil(f)"
+      ],
+      "type": "method",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        }
+      ]
+    },
+    {
+      "id": "fetchevent",
+      "href": "https://w3c.github.io/ServiceWorker/#fetchevent",
+      "linkingText": [
+        "FetchEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-fetchevent-request",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-fetchevent-request",
+      "linkingText": [
+        "request"
+      ],
+      "type": "attribute",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-fetchevent-preloadresponse",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse",
+      "linkingText": [
+        "preloadResponse"
+      ],
+      "type": "attribute",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-fetchevent-resultingclientid",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-fetchevent-resultingclientid",
+      "linkingText": [
+        "resultingClientId"
+      ],
+      "type": "attribute",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-fetchevent-respondwith",
+      "href": "https://w3c.github.io/ServiceWorker/#dom-fetchevent-respondwith",
+      "linkingText": [
+        "respondWith(r)"
+      ],
+      "type": "method",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "service-worker-global-scope-fetch-event",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-global-scope-fetch-event",
+      "linkingText": [
+        "fetch"
+      ],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "streams",
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "global-caches-attribute",
+      "href": "https://w3c.github.io/ServiceWorker/#global-caches-attribute",
+      "linkingText": [
+        "caches"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        }
+      ]
+    },
+    {
+      "id": "cache",
+      "href": "https://w3c.github.io/ServiceWorker/#cache",
+      "linkingText": [
+        "Cache"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-cachequeryoptions",
+      "href": "https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions",
+      "linkingText": [
+        "CacheQueryOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        }
+      ]
+    },
+    {
+      "id": "cachestorage",
+      "href": "https://w3c.github.io/ServiceWorker/#cachestorage",
+      "linkingText": [
+        "CacheStorage"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "soft-update",
+      "href": "https://w3c.github.io/ServiceWorker/#soft-update",
+      "linkingText": [
+        "Soft Update"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "local-network-access",
+          "title": "Local Network Access",
+          "url": "https://wicg.github.io/local-network-access/"
+        }
+      ]
+    },
+    {
+      "id": "handle-fetch",
+      "href": "https://w3c.github.io/ServiceWorker/#handle-fetch",
+      "linkingText": [
+        "Handle Fetch"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        }
+      ]
+    },
+    {
+      "id": "create-fetch-event-and-dispatch",
+      "href": "https://w3c.github.io/ServiceWorker/#create-fetch-event-and-dispatch",
+      "linkingText": [
+        "Create Fetch Event and Dispatch"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "fire-functional-event",
+      "href": "https://w3c.github.io/ServiceWorker/#fire-functional-event",
+      "linkingText": [
+        "Fire Functional Event",
+        "Fire a functional event"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "background-sync",
+          "title": "Web Background Synchronization",
+          "url": "https://wicg.github.io/background-sync/spec/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "match-service-worker-registration",
+      "href": "https://w3c.github.io/ServiceWorker/#match-service-worker-registration",
+      "linkingText": [
+        "Match Service Worker Registration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "content-index",
+          "title": "Content Index",
+          "url": "https://wicg.github.io/content-index/spec/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "request-matches-cached-item",
+      "href": "https://w3c.github.io/ServiceWorker/#request-matches-cached-item",
+      "linkingText": [
+        "Request Matches Cached Item"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        }
+      ]
+    }
+  ]
+}

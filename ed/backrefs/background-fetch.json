@@ -1,0 +1,90 @@
+{
+  "spec": {
+    "title": "Background Fetch",
+    "url": "https://wicg.github.io/background-fetch/"
+  },
+  "backrefs": [
+    {
+      "id": "background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch",
+      "linkingText": [
+        "background fetch"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "extract-content-range-values",
+      "href": "https://wicg.github.io/background-fetch/#extract-content-range-values",
+      "linkingText": [
+        "extract content-range values",
+        "extracting content-range values"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "backgroundfetchmanager",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchmanager",
+      "linkingText": [
+        "BackgroundFetchManager"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "periodic-background-sync",
+          "title": "Web Periodic Background Synchronization",
+          "url": "https://wicg.github.io/periodic-background-sync/"
+        }
+      ]
+    },
+    {
+      "id": "dom-backgroundfetchmanager-fetch",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch",
+      "linkingText": [
+        "fetch(id, requests, options)",
+        "fetch(id, requests)"
+      ],
+      "type": "method",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        }
+      ]
+    }
+  ]
+}

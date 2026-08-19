@@ -1,0 +1,289 @@
+{
+  "spec": {
+    "title": "CSS Scroll Anchoring Module Level 1",
+    "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+  },
+  "backrefs": [
+    {
+      "id": "scroll-anchoring-anchor-node",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#scroll-anchoring-anchor-node",
+      "linkingText": [
+        "anchor node"
+      ],
+      "type": "dfn",
+      "for": [
+        "scroll-anchoring"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "anchor-viable-candidate",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-viable-candidate",
+      "linkingText": [
+        "viable candidate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "anchor-priority-candidates",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#anchor-priority-candidates",
+      "linkingText": [
+        "anchor priority candidate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        }
+      ]
+    },
+    {
+      "id": "anchoring-algorithm",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#anchoring-algorithm",
+      "linkingText": [
+        "anchor node selection algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "candidate-examination",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#candidate-examination",
+      "linkingText": [
+        "candidate examination algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "excluded-subtree",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#excluded-subtree",
+      "linkingText": [
+        "excluded subtree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fully-visible",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#fully-visible",
+      "linkingText": [
+        "fully visible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "fully-clipped",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#fully-clipped",
+      "linkingText": [
+        "fully clipped"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "partially-visible",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#partially-visible",
+      "linkingText": [
+        "partially visible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-anchoring-bounding-rect",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#scroll-anchoring-bounding-rect",
+      "linkingText": [
+        "scroll anchoring bounding rect"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "suppression-window",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#suppression-window",
+      "linkingText": [
+        "suppression window"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "suppression-trigger",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#suppression-trigger",
+      "linkingText": [
+        "suppression trigger"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-overflow-anchor",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#propdef-overflow-anchor",
+      "linkingText": [
+        "overflow-anchor"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-anchor-auto",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#valdef-overflow-anchor-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "overflow-anchor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-anchor-none",
+      "href": "https://drafts.csswg.org/css-scroll-anchoring-1/#valdef-overflow-anchor-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "overflow-anchor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    }
+  ]
+}

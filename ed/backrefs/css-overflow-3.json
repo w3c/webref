@@ -1,0 +1,1478 @@
+{
+  "spec": {
+    "title": "CSS Overflow Module Level 3",
+    "url": "https://drafts.csswg.org/css-overflow-3/"
+  },
+  "backrefs": [
+    {
+      "id": "overflow",
+      "href": "https://drafts.csswg.org/css-overflow-3/#overflow",
+      "linkingText": [
+        "overflow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "ink-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-3/#ink-overflow",
+      "linkingText": [
+        "ink overflow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-fonts-4",
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://drafts.csswg.org/css-fonts-4/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "ink-overflow-region",
+      "href": "https://drafts.csswg.org/css-overflow-3/#ink-overflow-region",
+      "linkingText": [
+        "ink overflow region",
+        "ink overflow area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "ink-overflow-rectangle",
+      "href": "https://drafts.csswg.org/css-overflow-3/#ink-overflow-rectangle",
+      "linkingText": [
+        "ink overflow rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollable-overflow",
+      "linkingText": [
+        "scrollable overflow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-text-3",
+          "title": "CSS Text Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-3/"
+        },
+        {
+          "shortname": "css-text-4",
+          "title": "CSS Text Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-overflow-region",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-region",
+      "linkingText": [
+        "scrollable overflow region",
+        "scrollable overflow area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-text-decor-3",
+          "title": "CSS Text Decoration Module Level 3",
+          "url": "https://drafts.csswg.org/css-text-decor-3/"
+        },
+        {
+          "shortname": "css-text-decor-4",
+          "title": "CSS Text Decoration Module Level 4",
+          "url": "https://drafts.csswg.org/css-text-decor-4/"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-overflow-rectangle",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-rectangle",
+      "linkingText": [
+        "scrollable overflow rectangle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scroll-container",
+      "linkingText": [
+        "scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-anchoring-1",
+          "title": "CSS Scroll Anchoring Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-anchoring-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "scrollport",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollport",
+      "linkingText": [
+        "scrollport"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "initial-scroll-position",
+      "href": "https://drafts.csswg.org/css-overflow-3/#initial-scroll-position",
+      "linkingText": [
+        "initial scroll position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-scroll-snap-2",
+          "title": "CSS Scroll Snap Module Level 2",
+          "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-position",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scroll-position",
+      "linkingText": [
+        "scroll position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-offset",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scroll-offset",
+      "linkingText": [
+        "scroll offset"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "scroll-origin",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scroll-origin",
+      "linkingText": [
+        "scroll origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "unreachable-scrollable-overflow-region",
+      "href": "https://drafts.csswg.org/css-overflow-3/#unreachable-scrollable-overflow-region",
+      "linkingText": [
+        "unreachable scrollable overflow region"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-axis",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollable-axis",
+      "linkingText": [
+        "scrollable axis"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "single-axis-scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#single-axis-scroll-container",
+      "linkingText": [
+        "single-axis scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-5",
+          "title": "CSS Conditional Rules Module Level 5",
+          "url": "https://drafts.csswg.org/css-conditional-5/"
+        },
+        {
+          "shortname": "css-overscroll-1",
+          "title": "CSS Overscroll Behavior Module Level 1",
+          "url": "https://drafts.csswg.org/css-overscroll-1/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "block-axis-scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#block-axis-scroll-container",
+      "linkingText": [
+        "block-axis scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "inline-axis-scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#inline-axis-scroll-container",
+      "linkingText": [
+        "inline-axis scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "x-axis-scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#x-axis-scroll-container",
+      "linkingText": [
+        "x-axis scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "y-axis-scroll-container",
+      "href": "https://drafts.csswg.org/css-overflow-3/#y-axis-scroll-container",
+      "linkingText": [
+        "y-axis scroll container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-overflow-x",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-x",
+      "linkingText": [
+        "overflow-x"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-overflow-y",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-y",
+      "linkingText": [
+        "overflow-y"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow",
+      "linkingText": [
+        "overflow"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-overflow-5",
+          "title": "CSS Overflow Module Level 5",
+          "url": "https://drafts.csswg.org/css-overflow-5/"
+        },
+        {
+          "shortname": "css-position-4",
+          "title": "CSS Positioned Layout Module Level 4",
+          "url": "https://drafts.csswg.org/css-position-4/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-visible",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "type": "value",
+      "for": [
+        "overflow",
+        "overflow-x",
+        "overflow-y"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-lists-3",
+          "title": "CSS Lists and Counters Module Level 3",
+          "url": "https://drafts.csswg.org/css-lists-3/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-hidden",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "type": "value",
+      "for": [
+        "overflow",
+        "overflow-x",
+        "overflow-y"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-nav-1",
+          "title": "CSS Spatial Navigation Module Level 1",
+          "url": "https://drafts.csswg.org/css-spatial-nav-1/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "webvtt1",
+          "title": "WebVTT: The Web Video Text Tracks Format",
+          "url": "https://w3c.github.io/webvtt/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-clip",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip",
+      "linkingText": [
+        "clip"
+      ],
+      "type": "value",
+      "for": [
+        "overflow",
+        "overflow-x",
+        "overflow-y"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-ui-3",
+          "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+          "url": "https://drafts.csswg.org/css-ui-3/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-scroll",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-scroll",
+      "linkingText": [
+        "scroll"
+      ],
+      "type": "value",
+      "for": [
+        "overflow",
+        "overflow-x",
+        "overflow-y"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-overflow-auto",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "overflow",
+        "overflow-x",
+        "overflow-y"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-transforms-1",
+          "title": "CSS Transforms Module Level 1",
+          "url": "https://drafts.csswg.org/css-transforms-1/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-overflow-value",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-value",
+      "linkingText": [
+        "scrollable overflow value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "non-scrollable-overflow-value",
+      "href": "https://drafts.csswg.org/css-overflow-3/#non-scrollable-overflow-value",
+      "linkingText": [
+        "non-scrollable overflow value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-flexbox-2",
+          "title": "CSS Flexible Box Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-flexbox-2/"
+        },
+        {
+          "shortname": "css-flexbox-1",
+          "title": "CSS Flexible Box Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-flexbox-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-scroll-behavior",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-scroll-behavior",
+      "linkingText": [
+        "scroll-behavior"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-scroll-snap-1",
+          "title": "CSS Scroll Snap Module Level 1",
+          "url": "https://drafts.csswg.org/css-scroll-snap-1/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-scroll-behavior-auto",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-scroll-behavior-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "scroll-behavior"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-scroll-behavior-smooth",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-scroll-behavior-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "type": "value",
+      "for": [
+        "scroll-behavior"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "scrollbar-gutter",
+      "href": "https://drafts.csswg.org/css-overflow-3/#scrollbar-gutter",
+      "linkingText": [
+        "scrollbar gutter"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-scrollbar-gutter",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-scrollbar-gutter",
+      "linkingText": [
+        "scrollbar-gutter"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "overlay-scrollbars",
+      "href": "https://drafts.csswg.org/css-overflow-3/#overlay-scrollbars",
+      "linkingText": [
+        "overlay scrollbars"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        },
+        {
+          "shortname": "css-scrollbars-1",
+          "title": "CSS Scrollbars Styling Module Level 1",
+          "url": "https://drafts.csswg.org/css-scrollbars-1/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "classic-scrollbars",
+      "href": "https://drafts.csswg.org/css-overflow-3/#classic-scrollbars",
+      "linkingText": [
+        "classic scrollbars"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-scrollbar-gutter-auto",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-scrollbar-gutter-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "scrollbar-gutter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-scrollbar-gutter-stable",
+      "href": "https://drafts.csswg.org/css-overflow-3/#valdef-scrollbar-gutter-stable",
+      "linkingText": [
+        "stable"
+      ],
+      "type": "value",
+      "for": [
+        "scrollbar-gutter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-overflow-4",
+          "title": "CSS Overflow Module Level 4",
+          "url": "https://drafts.csswg.org/css-overflow-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-text-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-text-overflow",
+      "linkingText": [
+        "text-overflow"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    }
+  ]
+}

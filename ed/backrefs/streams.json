@@ -1,0 +1,2704 @@
+{
+  "spec": {
+    "title": "Streams Standard",
+    "url": "https://streams.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "chunk",
+      "href": "https://streams.spec.whatwg.org/#chunk",
+      "linkingText": [
+        "chunk"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readable-stream",
+      "href": "https://streams.spec.whatwg.org/#readable-stream",
+      "linkingText": [
+        "readable stream"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readable-byte-stream",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream",
+      "linkingText": [
+        "readable byte stream"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writable-stream",
+      "href": "https://streams.spec.whatwg.org/#writable-stream",
+      "linkingText": [
+        "writable stream"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "identity-transform-stream",
+      "href": "https://streams.spec.whatwg.org/#identity-transform-stream",
+      "linkingText": [
+        "identity transform stream"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "internal-queues",
+      "href": "https://streams.spec.whatwg.org/#internal-queues",
+      "linkingText": [
+        "internal queues"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        }
+      ]
+    },
+    {
+      "id": "desired-size-to-fill-a-streams-internal-queue",
+      "href": "https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue",
+      "linkingText": [
+        "desired size to fill a stream's internal queue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        }
+      ]
+    },
+    {
+      "id": "default-reader",
+      "href": "https://streams.spec.whatwg.org/#default-reader",
+      "linkingText": [
+        "default reader"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "byob-reader",
+      "href": "https://streams.spec.whatwg.org/#byob-reader",
+      "linkingText": [
+        "BYOB reader"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "href": "https://streams.spec.whatwg.org/#lock",
+      "linkingText": [
+        "lock",
+        "locked to a reader",
+        "locked to a writer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream",
+      "href": "https://streams.spec.whatwg.org/#readablestream",
+      "linkingText": [
+        "ReadableStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "prompt-api",
+          "title": "Prompt API",
+          "url": "https://webmachinelearning.github.io/prompt-api/"
+        },
+        {
+          "shortname": "translation-api",
+          "title": "Translator and Language Detector APIs",
+          "url": "https://webmachinelearning.github.io/translation-api/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "css-parser-api",
+          "title": "CSS Parser API",
+          "url": "https://wicg.github.io/css-parser-api/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "promises-guide",
+          "title": "Writing Promise-Using Specifications",
+          "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-controller",
+      "href": "https://streams.spec.whatwg.org/#readablestream-controller",
+      "linkingText": [
+        "[[controller]]"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-readablestreamtype",
+      "href": "https://streams.spec.whatwg.org/#enumdef-readablestreamtype",
+      "linkingText": [
+        "ReadableStreamType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "rs-cancel",
+      "href": "https://streams.spec.whatwg.org/#rs-cancel",
+      "linkingText": [
+        "cancel(reason)",
+        "cancel()"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "rs-get-reader",
+      "href": "https://streams.spec.whatwg.org/#rs-get-reader",
+      "linkingText": [
+        "getReader(options)",
+        "getReader()"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "rs-pipe-through",
+      "href": "https://streams.spec.whatwg.org/#rs-pipe-through",
+      "linkingText": [
+        "pipeThrough(transform, options)",
+        "pipeThrough(transform)"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "rs-pipe-to",
+      "href": "https://streams.spec.whatwg.org/#rs-pipe-to",
+      "linkingText": [
+        "pipeTo(destination, options)",
+        "pipeTo(destination)"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "generic-reader-cancel",
+      "href": "https://streams.spec.whatwg.org/#generic-reader-cancel",
+      "linkingText": [
+        "cancel(reason)",
+        "cancel()"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStreamGenericReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestreamdefaultreader",
+      "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader",
+      "linkingText": [
+        "ReadableStreamDefaultReader"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "read-request",
+      "href": "https://streams.spec.whatwg.org/#read-request",
+      "linkingText": [
+        "read request"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "read-request-chunk-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-chunk-steps",
+      "linkingText": [
+        "chunk steps"
+      ],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "read-request-close-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-close-steps",
+      "linkingText": [
+        "close steps"
+      ],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "read-request-error-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-error-steps",
+      "linkingText": [
+        "error steps"
+      ],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "default-reader-read",
+      "href": "https://streams.spec.whatwg.org/#default-reader-read",
+      "linkingText": [
+        "read()"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "default-reader-release-lock",
+      "href": "https://streams.spec.whatwg.org/#default-reader-release-lock",
+      "linkingText": [
+        "releaseLock()"
+      ],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "dom-readablestreambyobreaderreadoptions-min",
+      "href": "https://streams.spec.whatwg.org/#dom-readablestreambyobreaderreadoptions-min",
+      "linkingText": [
+        "min"
+      ],
+      "type": "dict-member",
+      "for": [
+        "ReadableStreamBYOBReaderReadOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readable-stream-pipe-to",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-pipe-to",
+      "linkingText": [
+        "ReadableStreamPipeTo"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "readable-stream-default-controller-close",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-close",
+      "linkingText": [
+        "ReadableStreamDefaultControllerClose"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream",
+      "href": "https://streams.spec.whatwg.org/#writablestream",
+      "linkingText": [
+        "WritableStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-inflightwriterequest",
+      "href": "https://streams.spec.whatwg.org/#writablestream-inflightwriterequest",
+      "linkingText": [
+        "[[inFlightWriteRequest]]"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-writerequests",
+      "href": "https://streams.spec.whatwg.org/#writablestream-writerequests",
+      "linkingText": [
+        "[[writeRequests]]"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "ws-abort",
+      "href": "https://streams.spec.whatwg.org/#ws-abort",
+      "linkingText": [
+        "abort(reason)",
+        "abort()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "ws-close",
+      "href": "https://streams.spec.whatwg.org/#ws-close",
+      "linkingText": [
+        "close()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "ws-get-writer",
+      "href": "https://streams.spec.whatwg.org/#ws-get-writer",
+      "linkingText": [
+        "getWriter()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "writablestreamdefaultwriter",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter",
+      "linkingText": [
+        "WritableStreamDefaultWriter"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestreamdefaultwriter-stream",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter-stream",
+      "linkingText": [
+        "[[stream]]"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "default-writer-closed",
+      "href": "https://streams.spec.whatwg.org/#default-writer-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "type": "attribute",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webidl",
+          "title": "Web IDL Standard",
+          "url": "https://webidl.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "default-writer-ready",
+      "href": "https://streams.spec.whatwg.org/#default-writer-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "type": "attribute",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "default-writer-abort",
+      "href": "https://streams.spec.whatwg.org/#default-writer-abort",
+      "linkingText": [
+        "abort(reason)",
+        "abort()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "default-writer-close",
+      "href": "https://streams.spec.whatwg.org/#default-writer-close",
+      "linkingText": [
+        "close()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "promises-guide",
+          "title": "Writing Promise-Using Specifications",
+          "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "default-writer-write",
+      "href": "https://streams.spec.whatwg.org/#default-writer-write",
+      "linkingText": [
+        "write(chunk)",
+        "write()"
+      ],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "transformstream",
+      "href": "https://streams.spec.whatwg.org/#transformstream",
+      "linkingText": [
+        "TransformStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up",
+      "linkingText": [
+        "set up"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-pullalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-pullalgorithm",
+      "linkingText": [
+        "pullAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-cancelalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-cancelalgorithm",
+      "linkingText": [
+        "cancelAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-highwatermark",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-highwatermark",
+      "linkingText": [
+        "highWaterMark"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-sizealgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-sizealgorithm",
+      "linkingText": [
+        "sizeAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support",
+      "linkingText": [
+        "set up with byte reading support"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support-pullalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-pullalgorithm",
+      "linkingText": [
+        "pullAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+      "linkingText": [
+        "cancelAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support-highwatermark",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-highwatermark",
+      "linkingText": [
+        "highWaterMark"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-desired-size-to-fill-up-to-the-high-water-mark",
+      "href": "https://streams.spec.whatwg.org/#readablestream-desired-size-to-fill-up-to-the-high-water-mark",
+      "linkingText": [
+        "desired size to fill up to the high water mark"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-need-more-data",
+      "href": "https://streams.spec.whatwg.org/#readablestream-need-more-data",
+      "linkingText": [
+        "need more data",
+        "needs more data"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-close",
+      "href": "https://streams.spec.whatwg.org/#readablestream-close",
+      "linkingText": [
+        "close"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-error",
+      "href": "https://streams.spec.whatwg.org/#readablestream-error",
+      "linkingText": [
+        "error"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-enqueue",
+      "href": "https://streams.spec.whatwg.org/#readablestream-enqueue",
+      "linkingText": [
+        "enqueue"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-current-byob-request-view",
+      "href": "https://streams.spec.whatwg.org/#readablestream-current-byob-request-view",
+      "linkingText": [
+        "current BYOB request view"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-pull-from-bytes",
+      "href": "https://streams.spec.whatwg.org/#readablestream-pull-from-bytes",
+      "linkingText": [
+        "pull from bytes"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-get-a-reader",
+      "href": "https://streams.spec.whatwg.org/#readablestream-get-a-reader",
+      "linkingText": [
+        "get a reader",
+        "getting a reader"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "readablestreamdefaultreader-read-a-chunk",
+      "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-a-chunk",
+      "linkingText": [
+        "read a chunk",
+        "reading a chunk"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestreamdefaultreader-read-all-bytes",
+      "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader-read-all-bytes",
+      "linkingText": [
+        "read all bytes",
+        "reading all bytes"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestreamdefaultreader-cancel",
+      "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader-cancel",
+      "linkingText": [
+        "cancel"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-cancel",
+      "href": "https://streams.spec.whatwg.org/#readablestream-cancel",
+      "linkingText": [
+        "cancel"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-tee",
+      "href": "https://streams.spec.whatwg.org/#readablestream-tee",
+      "linkingText": [
+        "tee",
+        "teeing"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-readable",
+      "href": "https://streams.spec.whatwg.org/#readablestream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-closed",
+      "href": "https://streams.spec.whatwg.org/#readablestream-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-errored",
+      "href": "https://streams.spec.whatwg.org/#readablestream-errored",
+      "linkingText": [
+        "errored"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "background-fetch",
+          "title": "Background Fetch",
+          "url": "https://wicg.github.io/background-fetch/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-locked",
+      "href": "https://streams.spec.whatwg.org/#readablestream-locked",
+      "linkingText": [
+        "locked"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "is-readable-stream-disturbed",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-disturbed",
+      "linkingText": [
+        "disturbed"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up",
+      "linkingText": [
+        "set up"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up-writealgorithm",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm",
+      "linkingText": [
+        "writeAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up-closealgorithm",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm",
+      "linkingText": [
+        "closeAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up-abortalgorithm",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm",
+      "linkingText": [
+        "abortAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up-highwatermark",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up-highwatermark",
+      "linkingText": [
+        "highWaterMark"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-set-up-sizealgorithm",
+      "href": "https://streams.spec.whatwg.org/#writablestream-set-up-sizealgorithm",
+      "linkingText": [
+        "sizeAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-error",
+      "href": "https://streams.spec.whatwg.org/#writablestream-error",
+      "linkingText": [
+        "error",
+        "erroring"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-signal",
+      "href": "https://streams.spec.whatwg.org/#writablestream-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-get-a-writer",
+      "href": "https://streams.spec.whatwg.org/#writablestream-get-a-writer",
+      "linkingText": [
+        "get a writer",
+        "getting a writer"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "writablestreamdefaultwriter-set-up",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter-set-up",
+      "linkingText": [
+        "set up"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestreamdefaultwriter-write-a-chunk",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter-write-a-chunk",
+      "linkingText": [
+        "write a chunk",
+        "writing a chunk"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestreamdefaultwriter-release",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter-release",
+      "linkingText": [
+        "release"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fs",
+          "title": "File System Standard",
+          "url": "https://fs.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-close",
+      "href": "https://streams.spec.whatwg.org/#writablestream-close",
+      "linkingText": [
+        "close",
+        "closing"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "writablestream-abort",
+      "href": "https://streams.spec.whatwg.org/#writablestream-abort",
+      "linkingText": [
+        "abort",
+        "aborting"
+      ],
+      "type": "dfn",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "direct-sockets",
+          "title": "Direct Sockets API",
+          "url": "https://wicg.github.io/direct-sockets/"
+        },
+        {
+          "shortname": "serial",
+          "title": "Web Serial API",
+          "url": "https://wicg.github.io/serial/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "transformstream-set-up",
+      "href": "https://streams.spec.whatwg.org/#transformstream-set-up",
+      "linkingText": [
+        "set up",
+        "setting up"
+      ],
+      "type": "dfn",
+      "for": [
+        "TransformStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "transformstream-set-up-transformalgorithm",
+      "href": "https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm",
+      "linkingText": [
+        "transformAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "TransformStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "transformstream-set-up-flushalgorithm",
+      "href": "https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm",
+      "linkingText": [
+        "flushAlgorithm"
+      ],
+      "type": "dfn",
+      "for": [
+        "TransformStream/set up"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "transformstream-enqueue",
+      "href": "https://streams.spec.whatwg.org/#transformstream-enqueue",
+      "linkingText": [
+        "enqueue"
+      ],
+      "type": "dfn",
+      "for": [
+        "TransformStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "generictransformstream",
+      "href": "https://streams.spec.whatwg.org/#generictransformstream",
+      "linkingText": [
+        "GenericTransformStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "generictransformstream-transform",
+      "href": "https://streams.spec.whatwg.org/#generictransformstream-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "type": "dfn",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compression",
+          "title": "Compression Standard",
+          "url": "https://compression.spec.whatwg.org/"
+        },
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-anchor-position-1",
+          "title": "CSS Anchor Positioning Module Level 1",
+          "url": "https://drafts.csswg.org/css-anchor-position-1/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        }
+      ]
+    },
+    {
+      "id": "dom-generictransformstream-readable",
+      "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dom-generictransformstream-writable",
+      "href": "https://streams.spec.whatwg.org/#dom-generictransformstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "encoding",
+          "title": "Encoding Standard",
+          "url": "https://encoding.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-pipe-through",
+      "href": "https://streams.spec.whatwg.org/#readablestream-pipe-through",
+      "linkingText": [
+        "pipe through",
+        "piped through",
+        "piping through"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "FileAPI",
+          "title": "File API",
+          "url": "https://w3c.github.io/FileAPI/"
+        }
+      ]
+    },
+    {
+      "id": "readablestream-create-a-proxy",
+      "href": "https://streams.spec.whatwg.org/#readablestream-create-a-proxy",
+      "linkingText": [
+        "create a proxy",
+        "creating a proxy"
+      ],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    }
+  ]
+}

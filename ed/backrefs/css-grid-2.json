@@ -1,0 +1,1008 @@
+{
+  "spec": {
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
+  },
+  "backrefs": [
+    {
+      "id": "grid-layout",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-layout",
+      "linkingText": [
+        "grid layout"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "grid-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-column",
+      "linkingText": [
+        "grid column"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "grid-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-row",
+      "linkingText": [
+        "grid row"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "grid-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-track",
+      "linkingText": [
+        "Grid track"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-area",
+      "linkingText": [
+        "grid area"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "parent-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#parent-grid",
+      "linkingText": [
+        "parent grid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "subgrid",
+      "href": "https://drafts.csswg.org/css-grid-2/#subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "grid-container",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-container",
+      "linkingText": [
+        "grid container"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-sizing-4",
+          "title": "CSS Box Sizing Module Level 4",
+          "url": "https://drafts.csswg.org/css-sizing-4/"
+        }
+      ]
+    },
+    {
+      "id": "grid-formatting-context",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-formatting-context",
+      "linkingText": [
+        "grid formatting context"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "grid-item",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-item",
+      "linkingText": [
+        "grid item"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        }
+      ]
+    },
+    {
+      "id": "explicit-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid",
+      "linkingText": [
+        "explicit grid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-template-columns",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns",
+      "linkingText": [
+        "grid-template-columns"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-template-rows",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows",
+      "linkingText": [
+        "grid-template-rows"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-grid-template-rows-none",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-none",
+      "linkingText": [
+        "none"
+      ],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-grid-template-rows-subgrid",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-track-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-size",
+      "linkingText": [
+        "<track-size>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-line-names",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-names",
+      "linkingText": [
+        "<line-names>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-grid-template-columns-max-content",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-ruby-1",
+          "title": "CSS Ruby Annotation Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-ruby-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-repeat-auto-fill",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+      "linkingText": [
+        "auto-fill"
+      ],
+      "type": "value",
+      "for": [
+        "repeat()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-repeat-auto-fit",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+      "linkingText": [
+        "auto-fit"
+      ],
+      "type": "value",
+      "for": [
+        "repeat()"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "collapsed-grid-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#collapsed-grid-track",
+      "linkingText": [
+        "collapsed grid track"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-flex",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-flex",
+      "linkingText": [
+        "<flex>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-4",
+          "title": "CSS Images Module Level 4",
+          "url": "https://drafts.csswg.org/css-images-4/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-flex-fr",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
+      "linkingText": [
+        "fr",
+        "fr unit"
+      ],
+      "type": "value",
+      "for": [
+        "<flex>"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-template-areas",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-areas",
+      "linkingText": [
+        "grid-template-areas"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-template",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template",
+      "linkingText": [
+        "grid-template"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "implicit-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicit-grid",
+      "linkingText": [
+        "implicit grid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-auto-columns",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-columns",
+      "linkingText": [
+        "grid-auto-columns"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-auto-rows",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-rows",
+      "linkingText": [
+        "grid-auto-rows"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "auto-placement",
+      "href": "https://drafts.csswg.org/css-grid-2/#auto-placement",
+      "linkingText": [
+        "auto-placement",
+        "automatic placement"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-auto-flow",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow",
+      "linkingText": [
+        "grid-auto-flow"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-grid-auto-flow-dense",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-dense",
+      "linkingText": [
+        "dense"
+      ],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "definite-grid-position",
+      "href": "https://drafts.csswg.org/css-grid-2/#definite-grid-position",
+      "linkingText": [
+        "definite grid position",
+        "definite row position",
+        "definite column position",
+        "definite position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "automatic-grid-position",
+      "href": "https://drafts.csswg.org/css-grid-2/#automatic-grid-position",
+      "linkingText": [
+        "automatic grid position",
+        "automatic row position",
+        "automatic column position",
+        "automatic position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "grid-placement-property",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-property",
+      "linkingText": [
+        "grid-placement property"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
+        },
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-row-start",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row-start",
+      "linkingText": [
+        "grid-row-start"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-column-start",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column-start",
+      "linkingText": [
+        "grid-column-start"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-row-end",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row-end",
+      "linkingText": [
+        "grid-row-end"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-column-end",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column-end",
+      "linkingText": [
+        "grid-column-end"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row",
+      "linkingText": [
+        "grid-row"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column",
+      "linkingText": [
+        "grid-column"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-area",
+      "linkingText": [
+        "grid-area"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        }
+      ]
+    },
+    {
+      "id": "collapsed-gutter",
+      "href": "https://drafts.csswg.org/css-grid-2/#collapsed-gutter",
+      "linkingText": [
+        "collapsed gutter"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-gaps-1",
+          "title": "CSS Gaps Module Level 1",
+          "url": "https://drafts.csswg.org/css-gaps-1/"
+        }
+      ]
+    },
+    {
+      "id": "min-track-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#min-track-sizing-function",
+      "linkingText": [
+        "min track sizing function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    },
+    {
+      "id": "max-track-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#max-track-sizing-function",
+      "linkingText": [
+        "max track sizing function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-grid-3",
+          "title": "CSS Grid Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-grid-3/"
+        }
+      ]
+    }
+  ]
+}

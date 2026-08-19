@@ -1,0 +1,870 @@
+{
+  "spec": {
+    "title": "Media Queries Level 5",
+    "url": "https://drafts.csswg.org/mediaqueries-5/"
+  },
+  "backrefs": [
+    {
+      "id": "media-query",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#media-query",
+      "linkingText": [
+        "media query"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "media-query-list",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#media-query-list",
+      "linkingText": [
+        "media query list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-media-not",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-not",
+      "linkingText": [
+        "not"
+      ],
+      "type": "value",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "media-type",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#media-type",
+      "linkingText": [
+        "media type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-media-aural",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural",
+      "linkingText": [
+        "aural"
+      ],
+      "type": "value",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-speech-1",
+          "title": "CSS Speech Module Level 1",
+          "url": "https://drafts.csswg.org/css-speech-1/"
+        },
+        {
+          "shortname": "CSS2",
+          "title": "Cascading Style Sheets (CSS) Level 2",
+          "url": "https://drafts.csswg.org/css2/"
+        }
+      ]
+    },
+    {
+      "id": "media-feature",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#media-feature",
+      "linkingText": [
+        "media feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-media-query-list",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list",
+      "linkingText": [
+        "<media-query-list>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-media-condition",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition",
+      "linkingText": [
+        "<media-condition>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-media-feature",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-feature",
+      "linkingText": [
+        "<media-feature>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-general-enclosed",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+      "linkingText": [
+        "<general-enclosed>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-navigation-1",
+          "title": "CSS Navigation Matching",
+          "url": "https://drafts.csswg.org/css-navigation-1/"
+        },
+        {
+          "shortname": "css-anchor-position-2",
+          "title": "CSS Anchor Positioning Module Level 2",
+          "url": "https://drafts.csswg.org/css-anchor-position-2/"
+        },
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-contain-3",
+          "title": "CSS Containment Module Level 3",
+          "url": "https://drafts.csswg.org/css-contain-3/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-width",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-height",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-aspect-ratio",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio",
+      "linkingText": [
+        "aspect-ratio"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-orientation",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "continuous-media",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#continuous-media",
+      "linkingText": [
+        "continuous media"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        }
+      ]
+    },
+    {
+      "id": "paged-media",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#paged-media",
+      "linkingText": [
+        "paged media"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        },
+        {
+          "shortname": "css-break-3",
+          "title": "CSS Fragmentation Module Level 3",
+          "url": "https://drafts.csswg.org/css-break-3/"
+        },
+        {
+          "shortname": "css-break-4",
+          "title": "CSS Fragmentation Module Level 4",
+          "url": "https://drafts.csswg.org/css-break-4/"
+        },
+        {
+          "shortname": "css-display-3",
+          "title": "CSS Display Module Level 3",
+          "url": "https://drafts.csswg.org/css-display-3/"
+        },
+        {
+          "shortname": "css-display-4",
+          "title": "CSS Display Module Level 4",
+          "url": "https://drafts.csswg.org/css-display-4/"
+        },
+        {
+          "shortname": "css-line-grid-1",
+          "title": "CSS Line Grid Module Level 1",
+          "url": "https://drafts.csswg.org/css-line-grid-1/"
+        },
+        {
+          "shortname": "css-multicol-1",
+          "title": "CSS Multi-column Layout Module Level 1",
+          "url": "https://drafts.csswg.org/css-multicol-1/"
+        },
+        {
+          "shortname": "css-multicol-2",
+          "title": "CSS Multi-column Layout Module Level 2",
+          "url": "https://drafts.csswg.org/css-multicol-2/"
+        },
+        {
+          "shortname": "css-overflow-3",
+          "title": "CSS Overflow Module Level 3",
+          "url": "https://drafts.csswg.org/css-overflow-3/"
+        },
+        {
+          "shortname": "css-page-3",
+          "title": "CSS Paged Media Module Level 3",
+          "url": "https://drafts.csswg.org/css-page-3/"
+        },
+        {
+          "shortname": "css-position-3",
+          "title": "CSS Positioned Layout Module Level 3",
+          "url": "https://drafts.csswg.org/css-position-3/"
+        },
+        {
+          "shortname": "css-regions-1",
+          "title": "CSS Regions Module Level 1",
+          "url": "https://drafts.csswg.org/css-regions-1/"
+        },
+        {
+          "shortname": "css-values-3",
+          "title": "CSS Values and Units Module Level 3",
+          "url": "https://drafts.csswg.org/css-values-3/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "css-writing-modes-3",
+          "title": "CSS Writing Modes Module Level 3",
+          "url": "https://drafts.csswg.org/css-writing-modes-3/"
+        },
+        {
+          "shortname": "css-writing-modes-4",
+          "title": "CSS Writing Modes Module Level 4",
+          "url": "https://drafts.csswg.org/css-writing-modes-4/"
+        },
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-media-display-mode-picture-in-picture",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+      "linkingText": [
+        "picture-in-picture"
+      ],
+      "type": "value",
+      "for": [
+        "@media/display-mode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "document-picture-in-picture",
+          "title": "Document Picture-in-Picture Specification",
+          "url": "https://wicg.github.io/document-picture-in-picture/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-resolution",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-resolution",
+      "linkingText": [
+        "resolution"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-scan",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scan",
+      "linkingText": [
+        "scan"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-grid",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-mq-boolean",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean",
+      "linkingText": [
+        "<mq-boolean>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-color",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color",
+      "linkingText": [
+        "color"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-color-index",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-index",
+      "linkingText": [
+        "color-index"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-monochrome",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-monochrome",
+      "linkingText": [
+        "monochrome"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-dynamic-range",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-dynamic-range",
+      "linkingText": [
+        "dynamic-range"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-media-dynamic-range-high",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-dynamic-range-high",
+      "linkingText": [
+        "high"
+      ],
+      "type": "value",
+      "for": [
+        "@media/dynamic-range"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "contrast-ratio",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#contrast-ratio",
+      "linkingText": [
+        "contrast ratio"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        }
+      ]
+    },
+    {
+      "id": "valdef-custom-media-true",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-true",
+      "linkingText": [
+        "true"
+      ],
+      "type": "value",
+      "for": [
+        "@custom-media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-values-1",
+          "title": "CSS Conditional Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-conditional-values-1/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-custom-media-false",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false",
+      "linkingText": [
+        "false"
+      ],
+      "type": "value",
+      "for": [
+        "@custom-media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-values-1",
+          "title": "CSS Conditional Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-conditional-values-1/"
+        },
+        {
+          "shortname": "css-round-display-1",
+          "title": "CSS Round Display Module Level 1",
+          "url": "https://drafts.csswg.org/css-round-display-1/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "filter-effects-1",
+          "title": "Filter Effects Module Level 1",
+          "url": "https://drafts.csswg.org/filter-effects-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-prefers-reduced-motion",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion",
+      "linkingText": [
+        "prefers-reduced-motion"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-image-animation-1",
+          "title": "CSS Image Animation Module Level 1",
+          "url": "https://drafts.csswg.org/css-image-animation-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-forced-colors",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors",
+      "linkingText": [
+        "forced-colors"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-device-width",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-width",
+      "linkingText": [
+        "device-width"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-device-height",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-height",
+      "linkingText": [
+        "device-height"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    },
+    {
+      "id": "descdef-media-device-aspect-ratio",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-aspect-ratio",
+      "linkingText": [
+        "device-aspect-ratio"
+      ],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-1",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-1/"
+        }
+      ]
+    }
+  ]
+}

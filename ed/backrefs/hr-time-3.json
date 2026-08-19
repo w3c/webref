@@ -1,0 +1,890 @@
+{
+  "spec": {
+    "title": "High Resolution Time",
+    "url": "https://w3c.github.io/hr-time/"
+  },
+  "backrefs": [
+    {
+      "id": "dfn-wall-clock",
+      "href": "https://w3c.github.io/hr-time/#dfn-wall-clock",
+      "linkingText": [
+        "wall clock"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "wall-clock-unsafe-current-time",
+      "href": "https://w3c.github.io/hr-time/#wall-clock-unsafe-current-time",
+      "linkingText": [
+        "unsafe current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "wall clock"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-monotonic-clock",
+      "href": "https://w3c.github.io/hr-time/#dfn-monotonic-clock",
+      "linkingText": [
+        "monotonic clock"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        }
+      ]
+    },
+    {
+      "id": "monotonic-clock-unsafe-current-time",
+      "href": "https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time",
+      "linkingText": [
+        "unsafe current time"
+      ],
+      "type": "dfn",
+      "for": [
+        "monotonic clock"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "writing-assistance-apis",
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-moment",
+      "href": "https://w3c.github.io/hr-time/#dfn-moment",
+      "linkingText": [
+        "moment",
+        "coarsened moment"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "infra",
+          "title": "Infra Standard",
+          "url": "https://infra.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        {
+          "shortname": "dbsc-1",
+          "title": "Device Bound Session Credentials",
+          "url": "https://w3c.github.io/webappsec-dbsc/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-duration",
+      "href": "https://w3c.github.io/hr-time/#dfn-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "infra",
+          "title": "Infra Standard",
+          "url": "https://infra.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "trust-token-api",
+          "title": "Private State Token API",
+          "url": "https://wicg.github.io/trust-token-api/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "server-timing",
+          "title": "Server Timing",
+          "url": "https://w3c.github.io/server-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-duration-from",
+      "href": "https://w3c.github.io/hr-time/#dfn-duration-from",
+      "linkingText": [
+        "duration from"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-current-wall-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-current-wall-time",
+      "linkingText": [
+        "current coarsened wall time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-eso-current-wall-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-eso-current-wall-time",
+      "linkingText": [
+        "current wall time"
+      ],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unix-epoch",
+      "href": "https://w3c.github.io/hr-time/#dfn-unix-epoch",
+      "linkingText": [
+        "Unix epoch"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "get-time-origin-timestamp",
+      "href": "https://w3c.github.io/hr-time/#get-time-origin-timestamp",
+      "linkingText": [
+        "get time origin timestamp"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-coarsen-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-coarsen-time",
+      "linkingText": [
+        "coarsen time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "longtasks-1",
+          "title": "Long Tasks API",
+          "url": "https://w3c.github.io/longtasks/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-relative-high-resolution-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-relative-high-resolution-time",
+      "linkingText": [
+        "relative high resolution time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-relative-high-resolution-coarse-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-relative-high-resolution-coarse-time",
+      "linkingText": [
+        "relative high resolution coarse time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "autofill-event",
+          "title": "Autofill Event",
+          "url": "https://wicg.github.io/autofill-event/"
+        },
+        {
+          "shortname": "capability-delegation",
+          "title": "Capability Delegation",
+          "url": "https://wicg.github.io/capability-delegation/spec.html"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "soft-navigations",
+          "title": "Soft Navigations and Interaction Contentful Paint",
+          "url": "https://wicg.github.io/soft-navigations/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-coarsened-shared-current-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-coarsened-shared-current-time",
+      "linkingText": [
+        "coarsened shared current time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "dfn-unsafe-shared-current-time",
+      "href": "https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time",
+      "linkingText": [
+        "unsafe shared current time"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "long-animation-frames",
+          "title": "Long Animation Frames API",
+          "url": "https://w3c.github.io/long-animation-frames/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domhighrestimestamp",
+      "href": "https://w3c.github.io/hr-time/#dom-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "dom",
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "capability-delegation",
+          "title": "Capability Delegation",
+          "url": "https://wicg.github.io/capability-delegation/spec.html"
+        },
+        {
+          "shortname": "handwriting-recognition",
+          "title": "Handwriting Recognition API",
+          "url": "https://wicg.github.io/handwriting-recognition/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        {
+          "shortname": "video-rvfc",
+          "title": "HTMLVideoElement.requestVideoFrameCallback()",
+          "url": "https://wicg.github.io/video-rvfc/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-domhighrestimestamp",
+      "href": "https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cookiestore",
+          "title": "Cookie Store API Standard",
+          "url": "https://cookiestore.spec.whatwg.org/"
+        },
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "autofill-event",
+          "title": "Autofill Event",
+          "url": "https://wicg.github.io/autofill-event/"
+        },
+        {
+          "shortname": "client-hints-infrastructure",
+          "title": "Client Hints Infrastructure",
+          "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "web-smart-card",
+          "title": "Web Smart Card API",
+          "url": "https://wicg.github.io/web-smart-card/"
+        },
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "generic-sensor",
+          "title": "Generic Sensor API",
+          "url": "https://w3c.github.io/sensors/"
+        },
+        {
+          "shortname": "mediastream-recording",
+          "title": "MediaStream Recording",
+          "url": "https://w3c.github.io/mediacapture-record/"
+        },
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "paint-timing",
+          "title": "Paint Timing",
+          "url": "https://w3c.github.io/paint-timing/"
+        },
+        {
+          "shortname": "performance-timeline",
+          "title": "Performance Timeline",
+          "url": "https://w3c.github.io/performance-timeline/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        },
+        {
+          "shortname": "server-timing",
+          "title": "Server Timing",
+          "url": "https://w3c.github.io/server-timing/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        },
+        {
+          "shortname": "user-timing",
+          "title": "User Timing",
+          "url": "https://w3c.github.io/user-timing/"
+        },
+        {
+          "shortname": "web-animations-1",
+          "title": "Web Animations Module Level 1",
+          "url": "https://drafts.csswg.org/web-animations-1/"
+        },
+        {
+          "shortname": "webaudio-1.0",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webaudio-1.1",
+          "title": "Web Audio API 1.1",
+          "url": "https://webaudio.github.io/web-audio-api/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        },
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        },
+        {
+          "shortname": "window-management",
+          "title": "Window Management",
+          "url": "https://w3c.github.io/window-management/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-epochtimestamp",
+      "href": "https://w3c.github.io/hr-time/#typedefdef-epochtimestamp",
+      "linkingText": [
+        "EpochTimeStamp"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "notifications",
+          "title": "Notifications API Standard",
+          "url": "https://notifications.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "sec-performance",
+      "href": "https://w3c.github.io/hr-time/#sec-performance",
+      "linkingText": [
+        "The Performance interface"
+      ],
+      "type": "dfn",
+      "for": [
+        "Performance"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "performance-measure-memory",
+          "title": "Measure Memory API",
+          "url": "https://wicg.github.io/performance-measure-memory/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://w3c.github.io/hr-time/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "type": "dfn",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "href": "https://w3c.github.io/hr-time/#performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "performance-timeline",
+          "title": "Performance Timeline",
+          "url": "https://w3c.github.io/performance-timeline/"
+        },
+        {
+          "shortname": "resource-timing",
+          "title": "Resource Timing",
+          "url": "https://w3c.github.io/resource-timing/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performance-now",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-now",
+      "linkingText": [
+        "now()"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "design-principles",
+          "title": "Web Platform Design Principles",
+          "url": "https://w3ctag.github.io/design-principles/"
+        },
+        {
+          "shortname": "event-timing",
+          "title": "Event Timing API",
+          "url": "https://w3c.github.io/event-timing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-performance-timeorigin",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-timeorigin",
+      "linkingText": [
+        "timeOrigin"
+      ],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "navigation-timing-2",
+          "title": "Navigation Timing Level 2",
+          "url": "https://w3c.github.io/navigation-timing/"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "the-performance-attr",
+      "href": "https://w3c.github.io/hr-time/#the-performance-attr",
+      "linkingText": [
+        "performance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "user-timing",
+          "title": "User Timing",
+          "url": "https://w3c.github.io/user-timing/"
+        }
+      ]
+    }
+  ]
+}

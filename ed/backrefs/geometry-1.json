@@ -1,0 +1,923 @@
+{
+  "spec": {
+    "title": "Geometry Interfaces Module Level 1",
+    "url": "https://drafts.csswg.org/geometry-1/"
+  },
+  "backrefs": [
+    {
+      "id": "dompointreadonly",
+      "href": "https://drafts.csswg.org/geometry-1/#dompointreadonly",
+      "linkingText": [
+        "DOMPointReadOnly"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dompoint",
+      "href": "https://drafts.csswg.org/geometry-1/#dompoint",
+      "linkingText": [
+        "DOMPoint"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-dompointinit",
+      "href": "https://drafts.csswg.org/geometry-1/#dictdef-dompointinit",
+      "linkingText": [
+        "DOMPointInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dompointreadonly-frompoint",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-frompoint",
+      "linkingText": [
+        "fromPoint(other)",
+        "fromPoint()"
+      ],
+      "type": "method",
+      "for": [
+        "DOMPointReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dompointreadonly-x",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dompointreadonly-y",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dompointreadonly-z",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-z",
+      "linkingText": [
+        "z"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dompointreadonly-w",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-w",
+      "linkingText": [
+        "w"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "rectangle-x-coordinate",
+      "href": "https://drafts.csswg.org/geometry-1/#rectangle-x-coordinate",
+      "linkingText": [
+        "x coordinate"
+      ],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "rectangle-y-coordinate",
+      "href": "https://drafts.csswg.org/geometry-1/#rectangle-y-coordinate",
+      "linkingText": [
+        "y coordinate"
+      ],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "rectangle-width-dimension",
+      "href": "https://drafts.csswg.org/geometry-1/#rectangle-width-dimension",
+      "linkingText": [
+        "width dimension"
+      ],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "rectangle-height-dimension",
+      "href": "https://drafts.csswg.org/geometry-1/#rectangle-height-dimension",
+      "linkingText": [
+        "height dimension"
+      ],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "domrectreadonly",
+      "href": "https://drafts.csswg.org/geometry-1/#domrectreadonly",
+      "linkingText": [
+        "DOMRectReadOnly"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "element-timing",
+          "title": "Element Timing API",
+          "url": "https://w3c.github.io/element-timing/"
+        },
+        {
+          "shortname": "container-timing",
+          "title": "Container Timing API",
+          "url": "https://wicg.github.io/container-timing/"
+        },
+        {
+          "shortname": "geolocation-element",
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        {
+          "shortname": "shape-detection-api",
+          "title": "Accelerated Shape Detection in Images",
+          "url": "https://wicg.github.io/shape-detection-api/"
+        },
+        {
+          "shortname": "text-detection-api",
+          "title": "Accelerated Text Detection in Images",
+          "url": "https://wicg.github.io/shape-detection-api/text.html"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "resize-observer-1",
+          "title": "Resize Observer Module Level 1",
+          "url": "https://drafts.csswg.org/resize-observer-1/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectreadonly-x",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectreadonly-y",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectreadonly-width",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectreadonly-height",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "url": "https://w3c.github.io/largest-contentful-paint/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "domrect",
+      "href": "https://drafts.csswg.org/geometry-1/#domrect",
+      "linkingText": [
+        "DOMRect"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-highlight-api-1",
+          "title": "CSS Custom Highlight API Module Level 1",
+          "url": "https://drafts.csswg.org/css-highlight-api-1/"
+        },
+        {
+          "shortname": "css-viewport-1",
+          "title": "CSS Viewport Module Level 1",
+          "url": "https://drafts.csswg.org/css-viewport/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrect-x",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrect-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrect-y",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrect-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrect-width",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrect-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrect-height",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrect-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-domrectinit",
+      "href": "https://drafts.csswg.org/geometry-1/#dictdef-domrectinit",
+      "linkingText": [
+        "DOMRectInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "intersection-observer",
+          "title": "Intersection Observer",
+          "url": "https://w3c.github.io/IntersectionObserver/"
+        },
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectinit-x",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectinit-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectinit-y",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectinit-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectinit-width",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domrectinit-height",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domrectinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs",
+          "title": "WebCodecs",
+          "url": "https://w3c.github.io/webcodecs/"
+        }
+      ]
+    },
+    {
+      "id": "domrectlist",
+      "href": "https://drafts.csswg.org/geometry-1/#domrectlist",
+      "linkingText": [
+        "DOMRectList"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "domquad",
+      "href": "https://drafts.csswg.org/geometry-1/#domquad",
+      "linkingText": [
+        "DOMQuad"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-domquadinit",
+      "href": "https://drafts.csswg.org/geometry-1/#dictdef-domquadinit",
+      "linkingText": [
+        "DOMQuadInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domquad-fromrect",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domquad-fromrect",
+      "linkingText": [
+        "fromRect(other)",
+        "fromRect()"
+      ],
+      "type": "method",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-domquad-p1",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-domquad-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        }
+      ]
+    },
+    {
+      "id": "matrix",
+      "href": "https://drafts.csswg.org/geometry-1/#matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "dommatrixreadonly",
+      "href": "https://drafts.csswg.org/geometry-1/#dommatrixreadonly",
+      "linkingText": [
+        "DOMMatrixReadOnly"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "webkitcssmatrix",
+      "href": "https://drafts.csswg.org/geometry-1/#webkitcssmatrix",
+      "linkingText": [
+        "WebKitCSSMatrix"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dommatrix",
+      "href": "https://drafts.csswg.org/geometry-1/#dommatrix",
+      "linkingText": [
+        "DOMMatrix"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "cssom-view-1",
+          "title": "CSSOM View Module Level 1",
+          "url": "https://drafts.csswg.org/cssom-view-1/"
+        },
+        {
+          "shortname": "orientation-sensor",
+          "title": "Orientation Sensor",
+          "url": "https://w3c.github.io/orientation-sensor/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-dommatrix2dinit",
+      "href": "https://drafts.csswg.org/geometry-1/#dictdef-dommatrix2dinit",
+      "linkingText": [
+        "DOMMatrix2DInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "dom-dommatrixreadonly-is2d",
+      "href": "https://drafts.csswg.org/geometry-1/#dom-dommatrixreadonly-is2d",
+      "linkingText": [
+        "is2D"
+      ],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-typed-om-1",
+          "title": "CSS Typed OM Level 1",
+          "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    }
+  ]
+}

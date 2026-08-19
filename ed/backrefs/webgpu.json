@@ -1,0 +1,2145 @@
+{
+  "spec": {
+    "title": "WebGPU",
+    "url": "https://gpuweb.github.io/gpuweb/"
+  },
+  "backrefs": [
+    {
+      "id": "ndc",
+      "href": "https://gpuweb.github.io/gpuweb/#ndc",
+      "linkingText": [
+        "NDC"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "clip-space-coordinates",
+      "href": "https://gpuweb.github.io/gpuweb/#clip-space-coordinates",
+      "linkingText": [
+        "Clip space coordinates"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "lose-the-device",
+      "href": "https://gpuweb.github.io/gpuweb/#lose-the-device",
+      "linkingText": [
+        "lose the device"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpufeaturename",
+      "href": "https://gpuweb.github.io/gpuweb/#gpufeaturename",
+      "linkingText": [
+        "GPUFeatureName"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-supported-limits-maximmediatesize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maximmediatesize",
+      "linkingText": [
+        "maxImmediateSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-supported-limits-maxcomputeworkgroupstoragesize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcomputeworkgroupstoragesize",
+      "linkingText": [
+        "maxComputeWorkgroupStorageSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpusupportedlimits-maxtexturedimension2d",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxtexturedimension2d",
+      "linkingText": [
+        "maxTextureDimension2D"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "gpuwgsllanguagefeatures",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuwgsllanguagefeatures",
+      "linkingText": [
+        "WGSLLanguageFeatures"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpuadapterinfo-subgroupminsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupminsize",
+      "linkingText": [
+        "subgroupMinSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpuadapterinfo-subgroupmaxsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterinfo-subgroupmaxsize",
+      "linkingText": [
+        "subgroupMaxSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterInfo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpu",
+      "href": "https://gpuweb.github.io/gpuweb/#gpu",
+      "linkingText": [
+        "GPU"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-gpurequestadapteroptions",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurequestadapteroptions",
+      "linkingText": [
+        "GPURequestAdapterOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "gpuadapter",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuadapter",
+      "linkingText": [
+        "GPUAdapter"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpudevice",
+      "href": "https://gpuweb.github.io/gpuweb/#gpudevice",
+      "linkingText": [
+        "GPUDevice"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        },
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-limits",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-limits",
+      "linkingText": [
+        "limits"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "gpubuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#gpubuffer",
+      "linkingText": [
+        "GPUBuffer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gputexture",
+      "href": "https://gpuweb.github.io/gpuweb/#gputexture",
+      "linkingText": [
+        "GPUTexture"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexture-format",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-format",
+      "linkingText": [
+        "format"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gputexturedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#gputexturedescriptor",
+      "linkingText": [
+        "GPUTextureDescriptor"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-size",
+      "linkingText": [
+        "size"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-miplevelcount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-miplevelcount",
+      "linkingText": [
+        "mipLevelCount"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-samplecount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-samplecount",
+      "linkingText": [
+        "sampleCount"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-dimension",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-dimension",
+      "linkingText": [
+        "dimension"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-format",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-format",
+      "linkingText": [
+        "format"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedescriptor-viewformats",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-viewformats",
+      "linkingText": [
+        "viewFormats"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturedimension-2d",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedimension-2d",
+      "linkingText": [
+        "\"2d\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-gputextureusageflags",
+      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gputextureusageflags",
+      "linkingText": [
+        "GPUTextureUsageFlags"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureusage-storage_binding",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureusage-storage_binding",
+      "linkingText": [
+        "STORAGE_BINDING"
+      ],
+      "type": "const",
+      "for": [
+        "GPUTextureUsage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-createtexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture",
+      "linkingText": [
+        "createTexture(descriptor)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexture-destroy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "type": "method",
+      "for": [
+        "GPUTexture"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-gputextureviewdescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputextureviewdescriptor",
+      "linkingText": [
+        "GPUTextureViewDescriptor"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdescriptor-swizzle",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdescriptor-swizzle",
+      "linkingText": [
+        "swizzle"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureViewDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gputextureviewdimension",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureviewdimension",
+      "linkingText": [
+        "GPUTextureViewDimension"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-1d",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-1d",
+      "linkingText": [
+        "\"1d\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-2d",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-2d",
+      "linkingText": [
+        "\"2d\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-2d-array",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-2d-array",
+      "linkingText": [
+        "\"2d-array\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-cube",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-cube",
+      "linkingText": [
+        "\"cube\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-cube-array",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-cube-array",
+      "linkingText": [
+        "\"cube-array\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureviewdimension-3d",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureviewdimension-3d",
+      "linkingText": [
+        "\"3d\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureViewDimension"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gputextureformat",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat",
+      "linkingText": [
+        "GPUTextureFormat"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureformat-rgba16float",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgba16float",
+      "linkingText": [
+        "\"rgba16float\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputextureformat-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-stencil8",
+      "linkingText": [
+        "\"stencil8\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "gpuexternaltexture",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuexternaltexture",
+      "linkingText": [
+        "GPUExternalTexture"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpusampler",
+      "href": "https://gpuweb.github.io/gpuweb/#gpusampler",
+      "linkingText": [
+        "GPUSampler"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpuaddressmode",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuaddressmode",
+      "linkingText": [
+        "GPUAddressMode"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpufiltermode",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpufiltermode",
+      "linkingText": [
+        "GPUFilterMode"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpucomparefunction",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpucomparefunction",
+      "linkingText": [
+        "GPUCompareFunction"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgrouplayoutentry-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgrouplayoutentry-sampler",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-sampler",
+      "linkingText": [
+        "sampler"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgrouplayoutentry-texture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-texture",
+      "linkingText": [
+        "texture"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgrouplayoutentry-storagetexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-storagetexture",
+      "linkingText": [
+        "storageTexture"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgrouplayoutentry-externaltexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-externaltexture",
+      "linkingText": [
+        "externalTexture"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "binding-member",
+      "href": "https://gpuweb.github.io/gpuweb/#binding-member",
+      "linkingText": [
+        "Binding member"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "binding-type",
+      "href": "https://gpuweb.github.io/gpuweb/#binding-type",
+      "linkingText": [
+        "Binding type"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpubufferbindingtype",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpubufferbindingtype",
+      "linkingText": [
+        "GPUBufferBindingType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubufferbindingtype-uniform",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-uniform",
+      "linkingText": [
+        "\"uniform\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUBufferBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubufferbindingtype-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-storage",
+      "linkingText": [
+        "\"storage\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUBufferBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubufferbindingtype-read-only-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-read-only-storage",
+      "linkingText": [
+        "\"read-only-storage\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUBufferBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpusamplerbindingtype",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpusamplerbindingtype",
+      "linkingText": [
+        "GPUSamplerBindingType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpusamplerbindingtype-filtering",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-filtering",
+      "linkingText": [
+        "\"filtering\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUSamplerBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpusamplerbindingtype-non-filtering",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-non-filtering",
+      "linkingText": [
+        "\"non-filtering\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUSamplerBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpusamplerbindingtype-comparison",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-comparison",
+      "linkingText": [
+        "\"comparison\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUSamplerBindingType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gputexturesampletype",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputexturesampletype",
+      "linkingText": [
+        "GPUTextureSampleType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturesampletype-float",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-float",
+      "linkingText": [
+        "\"float\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureSampleType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturesampletype-unfilterable-float",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-unfilterable-float",
+      "linkingText": [
+        "\"unfilterable-float\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureSampleType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturesampletype-depth",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth",
+      "linkingText": [
+        "\"depth\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureSampleType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturesampletype-sint",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint",
+      "linkingText": [
+        "\"sint\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureSampleType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturesampletype-uint",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint",
+      "linkingText": [
+        "\"uint\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureSampleType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-gputexturebindinglayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputexturebindinglayout",
+      "linkingText": [
+        "GPUTextureBindingLayout"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gputexturebindinglayout-sampletype",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturebindinglayout-sampletype",
+      "linkingText": [
+        "sampleType"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureBindingLayout"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-gpustoragetextureaccess",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpustoragetextureaccess",
+      "linkingText": [
+        "GPUStorageTextureAccess"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpustoragetextureaccess-write-only",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only",
+      "linkingText": [
+        "\"write-only\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUStorageTextureAccess"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpustoragetextureaccess-read-only",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only",
+      "linkingText": [
+        "\"read-only\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUStorageTextureAccess"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpustoragetextureaccess-read-write",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-write",
+      "linkingText": [
+        "\"read-write\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUStorageTextureAccess"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-createbindgrouplayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout",
+      "linkingText": [
+        "createBindGroupLayout(descriptor)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindgroupentry-resource",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgroupentry-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupEntry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-get-as-buffer-binding",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-get-as-buffer-binding",
+      "linkingText": [
+        "get as buffer binding"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-effective-buffer-binding-size",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-effective-buffer-binding-size",
+      "linkingText": [
+        "effective buffer binding size"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpupipelinelayout",
+      "href": "https://gpuweb.github.io/gpuweb/#gpupipelinelayout",
+      "linkingText": [
+        "GPUPipelineLayout"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpupipelinelayoutdescriptor-immediatesize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinelayoutdescriptor-immediatesize",
+      "linkingText": [
+        "immediateSize"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUPipelineLayoutDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-createshadermodule",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule",
+      "linkingText": [
+        "createShaderModule(descriptor)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpucompilationinfo",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucompilationinfo",
+      "linkingText": [
+        "GPUCompilationInfo"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpucompilationinfo-messages",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucompilationinfo-messages",
+      "linkingText": [
+        "messages"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUCompilationInfo"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpuprogrammablestage",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablestage",
+      "linkingText": [
+        "GPUProgrammableStage"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-validating-gpuprogrammablestage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpuprogrammablestage",
+      "linkingText": [
+        "validating GPUProgrammableStage"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-validating-shader-binding",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-shader-binding",
+      "linkingText": [
+        "validating shader binding"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-createcomputepipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipeline",
+      "linkingText": [
+        "createComputePipeline(descriptor)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpurenderpipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#gpurenderpipeline",
+      "linkingText": [
+        "GPURenderPipeline"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpudevice-createrenderpipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipeline",
+      "linkingText": [
+        "createRenderPipeline(descriptor)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-validating-inter-stage-interfaces",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-inter-stage-interfaces",
+      "linkingText": [
+        "validating inter-stage interfaces"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpumultisamplestate-count",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpumultisamplestate-count",
+      "linkingText": [
+        "count"
+      ],
+      "type": "dict-member",
+      "for": [
+        "GPUMultisampleState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "primitive-restart-value",
+      "href": "https://gpuweb.github.io/gpuweb/#primitive-restart-value",
+      "linkingText": [
+        "primitive restart value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpu-command",
+      "href": "https://gpuweb.github.io/gpuweb/#gpu-command",
+      "linkingText": [
+        "GPU command"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubindingcommandsmixin-setimmediates",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindingcommandsmixin-setimmediates",
+      "linkingText": [
+        "setImmediates(rangeOffset, data, dataOffset, dataSize)",
+        "setImmediates(rangeOffset, data, dataOffset)",
+        "setImmediates(rangeOffset, data)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUBindingCommandsMixin"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpucomputepassencoder",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder",
+      "linkingText": [
+        "GPUComputePassEncoder"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-renderstate-viewport-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-viewport-slot",
+      "linkingText": [
+        "[[viewport]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "RenderState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "gpuqueue",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuqueue",
+      "linkingText": [
+        "GPUQueue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpuqueue-submit",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit",
+      "linkingText": [
+        "submit(commandBuffers)"
+      ],
+      "type": "method",
+      "for": [
+        "GPUQueue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "clip-position",
+      "href": "https://gpuweb.github.io/gpuweb/#clip-position",
+      "linkingText": [
+        "clip position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "framebuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#framebuffer",
+      "linkingText": [
+        "framebuffer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "fragmentdestination-position",
+      "href": "https://gpuweb.github.io/gpuweb/#fragmentdestination-position",
+      "linkingText": [
+        "position"
+      ],
+      "type": "dfn",
+      "for": [
+        "FragmentDestination"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "rasterizationpoint",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint",
+      "linkingText": [
+        "RasterizationPoint"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "rasterizationpoint-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "rasterizationpoint-coveragemask",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-coveragemask",
+      "linkingText": [
+        "coverageMask"
+      ],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "rasterizationpoint-perspectivedivisor",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-perspectivedivisor",
+      "linkingText": [
+        "perspectiveDivisor"
+      ],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "rasterizationpoint-depth",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "front-facing",
+      "href": "https://gpuweb.github.io/gpuweb/#front-facing",
+      "linkingText": [
+        "front-facing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "shader-output-mask",
+      "href": "https://gpuweb.github.io/gpuweb/#shader-output-mask",
+      "linkingText": [
+        "shader-output mask"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-gpuextent3d",
+      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpuextent3d",
+      "linkingText": [
+        "GPUExtent3D"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "shader-f16",
+      "href": "https://gpuweb.github.io/gpuweb/#shader-f16",
+      "linkingText": [
+        "\"shader-f16\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpufeaturename-clip-distances",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-clip-distances",
+      "linkingText": [
+        "\"clip-distances\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpufeaturename-dual-source-blending",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-dual-source-blending",
+      "linkingText": [
+        "\"dual-source-blending\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "subgroups",
+      "href": "https://gpuweb.github.io/gpuweb/#subgroups",
+      "linkingText": [
+        "\"subgroups\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpufeaturename-primitive-index",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-primitive-index",
+      "linkingText": [
+        "\"primitive-index\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpufeaturename-subgroup-size-control",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-subgroup-size-control",
+      "linkingText": [
+        "\"subgroup-size-control\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    }
+  ]
+}

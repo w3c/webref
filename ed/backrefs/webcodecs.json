@@ -1,0 +1,1165 @@
+{
+  "spec": {
+    "title": "WebCodecs",
+    "url": "https://w3c.github.io/webcodecs/"
+  },
+  "backrefs": [
+    {
+      "id": "dom-videodecoder-decode",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-decode",
+      "linkingText": [
+        "decode(chunk)"
+      ],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "videoencoder",
+      "href": "https://w3c.github.io/webcodecs/#videoencoder",
+      "linkingText": [
+        "VideoEncoder"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoencoder-output-callback-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-output-callback-slot",
+      "linkingText": [
+        "[[output callback]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedvideochunkmetadata-decoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-decoderconfig",
+      "linkingText": [
+        "decoderConfig"
+      ],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "codec-string",
+      "href": "https://w3c.github.io/webcodecs/#codec-string",
+      "linkingText": [
+        "Codec String"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-audiodecoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-audiodecoderconfig",
+      "linkingText": [
+        "AudioDecoderConfig"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiodecoderconfig-samplerate",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodecoderconfig-samplerate",
+      "linkingText": [
+        "sampleRate"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiodecoderconfig-numberofchannels",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodecoderconfig-numberofchannels",
+      "linkingText": [
+        "numberOfChannels"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiodecoderconfig-description",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodecoderconfig-description",
+      "linkingText": [
+        "description"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-videodecoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig",
+      "linkingText": [
+        "VideoDecoderConfig"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-videodecoderconfig-description",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-description",
+      "linkingText": [
+        "description"
+      ],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp8-codec-registration",
+          "title": "VP8 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp8_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-audioencoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-audioencoderconfig",
+      "linkingText": [
+        "AudioEncoderConfig"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-videoencoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig",
+      "linkingText": [
+        "VideoEncoderConfig"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-videoencoderencodeoptions",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderencodeoptions",
+      "linkingText": [
+        "VideoEncoderEncodeOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "encodedaudiochunk",
+      "href": "https://w3c.github.io/webcodecs/#encodedaudiochunk",
+      "linkingText": [
+        "EncodedAudioChunk"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedaudiochunktype-key",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunktype-key",
+      "linkingText": [
+        "\"key\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "EncodedAudioChunkType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedaudiochunk-internal-data-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-internal-data-slot",
+      "linkingText": [
+        "[[internal data]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedaudiochunk-type-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-aac-codec-registration",
+          "title": "AAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/aac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-alaw-codec-registration",
+          "title": "A-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/alaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-flac-codec-registration",
+          "title": "FLAC WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/flac_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-mp3-codec-registration",
+          "title": "MP3 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/mp3_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-opus-codec-registration",
+          "title": "Opus WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-ulaw-codec-registration",
+          "title": "u-law PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vorbis-codec-registration",
+          "title": "Vorbis WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "encodedvideochunk",
+      "href": "https://w3c.github.io/webcodecs/#encodedvideochunk",
+      "linkingText": [
+        "EncodedVideoChunk"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp8-codec-registration",
+          "title": "VP8 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp8_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-encodedvideochunktype",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-encodedvideochunktype",
+      "linkingText": [
+        "EncodedVideoChunkType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedvideochunktype-key",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunktype-key",
+      "linkingText": [
+        "\"key\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "EncodedVideoChunkType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp8-codec-registration",
+          "title": "VP8 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp8_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        },
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedvideochunk-internal-data-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunk-internal-data-slot",
+      "linkingText": [
+        "[[internal data]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp8-codec-registration",
+          "title": "VP8 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp8_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-encodedvideochunk-type-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunk-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-av1-codec-registration",
+          "title": "AV1 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/av1_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-avc-codec-registration",
+          "title": "AVC (H.264) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-codec-registry",
+          "title": "WebCodecs Codec Registry",
+          "url": "https://w3c.github.io/webcodecs/codec_registry.html"
+        },
+        {
+          "shortname": "webcodecs-hevc-codec-registration",
+          "title": "HEVC (H.265) WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp8-codec-registration",
+          "title": "VP8 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp8_codec_registration.html"
+        },
+        {
+          "shortname": "webcodecs-vp9-codec-registration",
+          "title": "VP9 WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/vp9_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "audiodata",
+      "href": "https://w3c.github.io/webcodecs/#audiodata",
+      "linkingText": [
+        "AudioData"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "sample",
+      "href": "https://w3c.github.io/webcodecs/#sample",
+      "linkingText": [
+        "sample"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-audiosampleformat",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-audiosampleformat",
+      "linkingText": [
+        "AudioSampleFormat"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiosampleformat-u8",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-u8",
+      "linkingText": [
+        "\"u8\"",
+        "u8"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiosampleformat-s16",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s16",
+      "linkingText": [
+        "\"s16\"",
+        "s16"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiosampleformat-s32",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s32",
+      "linkingText": [
+        "\"s32\"",
+        "s32"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-audiosampleformat-f32",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-f32",
+      "linkingText": [
+        "\"f32\"",
+        "f32"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "interleaved",
+      "href": "https://w3c.github.io/webcodecs/#interleaved",
+      "linkingText": [
+        "interleaved"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-pcm-codec-registration",
+          "title": "Linear PCM WebCodecs Registration",
+          "url": "https://w3c.github.io/webcodecs/pcm_codec_registration.html"
+        }
+      ]
+    },
+    {
+      "id": "videoframe",
+      "href": "https://w3c.github.io/webcodecs/#videoframe",
+      "linkingText": [
+        "VideoFrame"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        },
+        {
+          "shortname": "webcodecs-video-frame-metadata-registry",
+          "title": "WebCodecs VideoFrame Metadata Registry",
+          "url": "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html"
+        },
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-videoframemetadata",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videoframemetadata",
+      "linkingText": [
+        "VideoFrameMetadata"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webcodecs-video-frame-metadata-registry",
+          "title": "WebCodecs VideoFrame Metadata Registry",
+          "url": "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-display-width-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot",
+      "linkingText": [
+        "[[display width]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-display-height-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot",
+      "linkingText": [
+        "[[display height]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-displaywidth",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-displayheight",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-timestamp",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webrtc-encoded-transform",
+          "title": "WebRTC Encoded Transform",
+          "url": "https://w3c.github.io/webrtc-encoded-transform/"
+        }
+      ]
+    },
+    {
+      "id": "dom-videoframe-close",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-close",
+      "linkingText": [
+        "close()"
+      ],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webgpu",
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        }
+      ]
+    },
+    {
+      "id": "clone-videoframe",
+      "href": "https://w3c.github.io/webcodecs/#clone-videoframe",
+      "linkingText": [
+        "Clone VideoFrame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    },
+    {
+      "id": "close-videoframe",
+      "href": "https://w3c.github.io/webcodecs/#close-videoframe",
+      "linkingText": [
+        "Close VideoFrame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "mediacapture-transform",
+          "title": "MediaStreamTrack Insertable Media Processing using Streams",
+          "url": "https://w3c.github.io/mediacapture-transform/"
+        }
+      ]
+    }
+  ]
+}

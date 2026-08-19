@@ -1,0 +1,510 @@
+{
+  "spec": {
+    "title": "File System Standard",
+    "url": "https://fs.spec.whatwg.org/"
+  },
+  "backrefs": [
+    {
+      "id": "entry",
+      "href": "https://fs.spec.whatwg.org/#entry",
+      "linkingText": [
+        "file system entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "file",
+      "href": "https://fs.spec.whatwg.org/#file",
+      "linkingText": [
+        "file entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "file-entry-binary-data",
+      "href": "https://fs.spec.whatwg.org/#file-entry-binary-data",
+      "linkingText": [
+        "binary data"
+      ],
+      "type": "dfn",
+      "for": [
+        "file entry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "directory",
+      "href": "https://fs.spec.whatwg.org/#directory",
+      "linkingText": [
+        "directory entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "entry-parent",
+      "href": "https://fs.spec.whatwg.org/#entry-parent",
+      "linkingText": [
+        "parent"
+      ],
+      "type": "dfn",
+      "for": [
+        "file system entry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "locator-path",
+      "href": "https://fs.spec.whatwg.org/#locator-path",
+      "linkingText": [
+        "path"
+      ],
+      "type": "dfn",
+      "for": [
+        "file system locator"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "locator-root",
+      "href": "https://fs.spec.whatwg.org/#locator-root",
+      "linkingText": [
+        "root"
+      ],
+      "type": "dfn",
+      "for": [
+        "file system locator"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "file-locator",
+      "href": "https://fs.spec.whatwg.org/#file-locator",
+      "linkingText": [
+        "file locator"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "directory-locator",
+      "href": "https://fs.spec.whatwg.org/#directory-locator",
+      "linkingText": [
+        "directory locator"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "file-system-root",
+      "href": "https://fs.spec.whatwg.org/#file-system-root",
+      "linkingText": [
+        "file system root"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        }
+      ]
+    },
+    {
+      "id": "locating-an-entry",
+      "href": "https://fs.spec.whatwg.org/#locating-an-entry",
+      "linkingText": [
+        "locating an entry"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemhandle",
+      "href": "https://fs.spec.whatwg.org/#filesystemhandle",
+      "linkingText": [
+        "FileSystemHandle"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "manifest-incubations",
+          "title": "Manifest Incubations",
+          "url": "https://wicg.github.io/manifest-incubations/"
+        },
+        {
+          "shortname": "web-app-launch",
+          "title": "Web App Launch Handler API",
+          "url": "https://wicg.github.io/web-app-launch/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemhandle-locator",
+      "href": "https://fs.spec.whatwg.org/#filesystemhandle-locator",
+      "linkingText": [
+        "locator"
+      ],
+      "type": "dfn",
+      "for": [
+        "FileSystemHandle"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemhandle-is-in-a-bucket-file-system",
+      "href": "https://fs.spec.whatwg.org/#filesystemhandle-is-in-a-bucket-file-system",
+      "linkingText": [
+        "is in a bucket file system"
+      ],
+      "type": "dfn",
+      "for": [
+        "FileSystemHandle"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemfilehandle",
+      "href": "https://fs.spec.whatwg.org/#filesystemfilehandle",
+      "linkingText": [
+        "FileSystemFileHandle"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "creating-a-new-filesystemfilehandle",
+      "href": "https://fs.spec.whatwg.org/#creating-a-new-filesystemfilehandle",
+      "linkingText": [
+        "creating a new FileSystemFileHandle"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-filesystemfilehandle-getfile",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-getfile",
+      "linkingText": [
+        "getFile()"
+      ],
+      "type": "method",
+      "for": [
+        "FileSystemFileHandle"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-filesystemfilehandle-createwritable",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-createwritable",
+      "linkingText": [
+        "createWritable(options)",
+        "createWritable()"
+      ],
+      "type": "method",
+      "for": [
+        "FileSystemFileHandle"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemdirectoryhandle",
+      "href": "https://fs.spec.whatwg.org/#filesystemdirectoryhandle",
+      "linkingText": [
+        "FileSystemDirectoryHandle"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    },
+    {
+      "id": "filesystemwritablefilestream",
+      "href": "https://fs.spec.whatwg.org/#filesystemwritablefilestream",
+      "linkingText": [
+        "FileSystemWritableFileStream"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-filesystemwritablefilestream-truncate",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemwritablefilestream-truncate",
+      "linkingText": [
+        "truncate(size)"
+      ],
+      "type": "method",
+      "for": [
+        "FileSystemWritableFileStream"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-write",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write",
+      "linkingText": [
+        "write(buffer, options)",
+        "write(buffer)"
+      ],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "origin-private-file-system",
+      "href": "https://fs.spec.whatwg.org/#origin-private-file-system",
+      "linkingText": [
+        "bucket file system"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "cross-origin-storage",
+          "title": "Cross-Origin Storage",
+          "url": "https://wicg.github.io/cross-origin-storage/"
+        },
+        {
+          "shortname": "file-system-access",
+          "title": "File System Access",
+          "url": "https://wicg.github.io/file-system-access/"
+        }
+      ]
+    },
+    {
+      "id": "dom-storagemanager-getdirectory",
+      "href": "https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory",
+      "linkingText": [
+        "getDirectory()"
+      ],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "saa-non-cookie-storage",
+          "title": "Extending Storage Access API (SAA) to non-cookie storage",
+          "url": "https://privacycg.github.io/saa-non-cookie-storage/"
+        },
+        {
+          "shortname": "storage-buckets",
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        }
+      ]
+    }
+  ]
+}

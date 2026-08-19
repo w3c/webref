@@ -1,0 +1,216 @@
+{
+  "spec": {
+    "title": "WebTransport",
+    "url": "https://w3c.github.io/webtransport/"
+  },
+  "backrefs": [
+    {
+      "id": "webtransport",
+      "href": "https://w3c.github.io/webtransport/#webtransport",
+      "linkingText": [
+        "WebTransport"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "dom-webtransport-webtransport",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-webtransport",
+      "linkingText": [
+        "WebTransport(url, options)",
+        "constructor(url, options)",
+        "WebTransport(url)",
+        "constructor(url)"
+      ],
+      "type": "constructor",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "obtain-a-webtransport-connection",
+      "href": "https://w3c.github.io/webtransport/#obtain-a-webtransport-connection",
+      "linkingText": [
+        "obtain a WebTransport connection"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "webtransport-cleanup",
+      "href": "https://w3c.github.io/webtransport/#webtransport-cleanup",
+      "linkingText": [
+        "cleanup"
+      ],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webdriver-bidi",
+          "title": "WebDriver BiDi",
+          "url": "https://w3c.github.io/webdriver-bidi/"
+        }
+      ]
+    },
+    {
+      "id": "context-cleanup-steps",
+      "href": "https://w3c.github.io/webtransport/#context-cleanup-steps",
+      "linkingText": [
+        "context cleanup steps"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "dom-webtransportoptions-servercertificatehashes",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-servercertificatehashes",
+      "linkingText": [
+        "serverCertificateHashes"
+      ],
+      "type": "dict-member",
+      "for": [
+        "WebTransportOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "verify-a-certificate-hash",
+      "href": "https://w3c.github.io/webtransport/#verify-a-certificate-hash",
+      "linkingText": [
+        "verify a certificate hash"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "custom-certificate-requirements",
+      "href": "https://w3c.github.io/webtransport/#custom-certificate-requirements",
+      "linkingText": [
+        "custom certificate requirements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-webtransportcloseinfo",
+      "href": "https://w3c.github.io/webtransport/#dictdef-webtransportcloseinfo",
+      "linkingText": [
+        "WebTransportCloseInfo"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "webtransporterror",
+      "href": "https://w3c.github.io/webtransport/#webtransporterror",
+      "linkingText": [
+        "WebTransportError"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "dom-webtransporterroroptions-source",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source",
+      "linkingText": [
+        "source"
+      ],
+      "type": "dict-member",
+      "for": [
+        "WebTransportErrorOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    }
+  ]
+}

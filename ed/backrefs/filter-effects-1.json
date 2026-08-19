@@ -1,0 +1,2436 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 1",
+    "url": "https://drafts.csswg.org/filter-effects-1/"
+  },
+  "backrefs": [
+    {
+      "id": "filter-primitive",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-primitive",
+      "linkingText": [
+        "filter primitive"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "pass-through-filter",
+      "href": "https://drafts.csswg.org/filter-effects-1/#pass-through-filter",
+      "linkingText": [
+        "pass through filter"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-filter",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-filter",
+      "linkingText": [
+        "filter"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "compat",
+          "title": "Compatibility Standard",
+          "url": "https://compat.spec.whatwg.org/"
+        },
+        {
+          "shortname": "filter-effects-2",
+          "title": "Filter Effects Module Level 2",
+          "url": "https://drafts.csswg.org/filter-effects-2/"
+        },
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-color-4",
+          "title": "CSS Color Module Level 4",
+          "url": "https://drafts.csswg.org/css-color-4/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        },
+        {
+          "shortname": "css-transforms-2",
+          "title": "CSS Transforms Module Level 2",
+          "url": "https://drafts.csswg.org/css-transforms-2/"
+        },
+        {
+          "shortname": "css-view-transitions-1",
+          "title": "CSS View Transitions Module Level 1",
+          "url": "https://drafts.csswg.org/css-view-transitions-1/"
+        },
+        {
+          "shortname": "css-view-transitions-2",
+          "title": "CSS View Transitions Module Level 2",
+          "url": "https://drafts.csswg.org/css-view-transitions-2/"
+        }
+      ]
+    },
+    {
+      "id": "typedef-filter-value-list",
+      "href": "https://drafts.csswg.org/filter-effects-1/#typedef-filter-value-list",
+      "linkingText": [
+        "<filter-value-list>"
+      ],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-2",
+          "title": "Filter Effects Module Level 2",
+          "url": "https://drafts.csswg.org/filter-effects-2/"
+        }
+      ]
+    },
+    {
+      "id": "filter-function",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-function",
+      "linkingText": [
+        "filter function"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-filter-blur",
+      "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-blur",
+      "linkingText": [
+        "blur()"
+      ],
+      "type": "function",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-contain-1",
+          "title": "CSS Containment Module Level 1",
+          "url": "https://drafts.csswg.org/css-contain-1/"
+        },
+        {
+          "shortname": "css-contain-2",
+          "title": "CSS Containment Module Level 2",
+          "url": "https://drafts.csswg.org/css-contain-2/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-filter-drop-shadow",
+      "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-drop-shadow",
+      "linkingText": [
+        "drop-shadow()"
+      ],
+      "type": "function",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-backgrounds-3",
+          "title": "CSS Backgrounds and Borders Module Level 3",
+          "url": "https://drafts.csswg.org/css-backgrounds-3/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-filter",
+      "href": "https://drafts.csswg.org/filter-effects-1/#elementdef-filter",
+      "linkingText": [
+        "filter"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "filter-effects-2",
+          "title": "Filter Effects Module Level 2",
+          "url": "https://drafts.csswg.org/filter-effects-2/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-filterunits",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-filterunits",
+      "linkingText": [
+        "filterUnits"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitiveunits",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitiveunits",
+      "linkingText": [
+        "primitiveUnits"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-x",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-y",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-width",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-height",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "filter-region",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-region",
+      "linkingText": [
+        "filter region"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "operating-coordinate-space",
+      "href": "https://drafts.csswg.org/filter-effects-1/#operating-coordinate-space",
+      "linkingText": [
+        "operating coordinate space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "filter-primitive-attributes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-primitive-attributes",
+      "linkingText": [
+        "filter primitive attributes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-x",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-y",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-width",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-height",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-result",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+      "linkingText": [
+        "result"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-filter-primitive-in",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+      "linkingText": [
+        "in"
+      ],
+      "type": "element-attr",
+      "for": [
+        "filter-primitive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "filter-primitive-tree",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-primitive-tree",
+      "linkingText": [
+        "filter primitive tree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "primary-filter-primitive-tree",
+      "href": "https://drafts.csswg.org/filter-effects-1/#primary-filter-primitive-tree",
+      "linkingText": [
+        "primary filter primitive tree"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "filter-primitive-subregion",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-primitive-subregion",
+      "linkingText": [
+        "filter primitive subregion"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feblend-mode",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feblend-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feBlend"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feblend-in2",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feblend-in2",
+      "linkingText": [
+        "in2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feBlend"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-fecolormatrix",
+      "href": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecolormatrix",
+      "linkingText": [
+        "feColorMatrix"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecolormatrix-type",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecolormatrix-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feColorMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecolormatrix-values",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecolormatrix-values",
+      "linkingText": [
+        "values"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feColorMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "transfer-function-element",
+      "href": "https://drafts.csswg.org/filter-effects-1/#transfer-function-element",
+      "linkingText": [
+        "transfer function element"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "transfer-function-element-attributes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#transfer-function-element-attributes",
+      "linkingText": [
+        "transfer function element attributes"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-type",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-tablevalues",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-tablevalues",
+      "linkingText": [
+        "tableValues"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-slope",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-slope",
+      "linkingText": [
+        "slope"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-intercept",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-intercept",
+      "linkingText": [
+        "intercept"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-amplitude",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-amplitude",
+      "linkingText": [
+        "amplitude"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-exponent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-exponent",
+      "linkingText": [
+        "exponent"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomponenttransfer-offset",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComponentTransfer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-operator",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-operator",
+      "linkingText": [
+        "operator"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-k1",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k1",
+      "linkingText": [
+        "k1"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-k2",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k2",
+      "linkingText": [
+        "k2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-k3",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k3",
+      "linkingText": [
+        "k3"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-k4",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k4",
+      "linkingText": [
+        "k4"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fecomposite-in2",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-in2",
+      "linkingText": [
+        "in2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feComposite"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-order",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-order",
+      "linkingText": [
+        "order"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-kernelmatrix",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-kernelmatrix",
+      "linkingText": [
+        "kernelMatrix"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-divisor",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-divisor",
+      "linkingText": [
+        "divisor"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-bias",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-bias",
+      "linkingText": [
+        "bias"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-targetx",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-targetx",
+      "linkingText": [
+        "targetX"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-targety",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-targety",
+      "linkingText": [
+        "targetY"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-edgemode",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-edgemode",
+      "linkingText": [
+        "edgeMode"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-kernelunitlength",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-kernelunitlength",
+      "linkingText": [
+        "kernelUnitLength"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feconvolvematrix-preservealpha",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-preservealpha",
+      "linkingText": [
+        "preserveAlpha"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feConvolveMatrix"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fediffuselighting-surfacescale",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-surfacescale",
+      "linkingText": [
+        "surfaceScale"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDiffuseLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fediffuselighting-diffuseconstant",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-diffuseconstant",
+      "linkingText": [
+        "diffuseConstant"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDiffuseLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fediffuselighting-kernelunitlength",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-kernelunitlength",
+      "linkingText": [
+        "kernelUnitLength"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDiffuseLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedisplacementmap-scale",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDisplacementMap"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedisplacementmap-xchannelselector",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-xchannelselector",
+      "linkingText": [
+        "xChannelSelector"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDisplacementMap"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedisplacementmap-ychannelselector",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-ychannelselector",
+      "linkingText": [
+        "yChannelSelector"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDisplacementMap"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedisplacementmap-in2",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-in2",
+      "linkingText": [
+        "in2"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDisplacementMap"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedropshadow-dx",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-dx",
+      "linkingText": [
+        "dx"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDropShadow"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedropshadow-dy",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-dy",
+      "linkingText": [
+        "dy"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDropShadow"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedropshadow-stddeviation",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-stddeviation",
+      "linkingText": [
+        "stdDeviation"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDropShadow"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-flood-color",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-flood-color",
+      "linkingText": [
+        "flood-color"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-flood-opacity",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-flood-opacity",
+      "linkingText": [
+        "flood-opacity"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fegaussianblur-stddeviation",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fegaussianblur-stddeviation",
+      "linkingText": [
+        "stdDeviation"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feGaussianBlur"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fegaussianblur-edgemode",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fegaussianblur-edgemode",
+      "linkingText": [
+        "edgeMode"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feGaussianBlur"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "elementdef-feimage",
+      "href": "https://drafts.csswg.org/filter-effects-1/#elementdef-feimage",
+      "linkingText": [
+        "feImage"
+      ],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-images-3",
+          "title": "CSS Images Module Level 3",
+          "url": "https://drafts.csswg.org/css-images-3/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feimage-xlinkhref",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-xlinkhref",
+      "linkingText": [
+        "xlink:href"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feImage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feimage-href",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-href",
+      "linkingText": [
+        "href"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feImage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feimage-crossorigin",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-crossorigin",
+      "linkingText": [
+        "crossorigin"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feImage"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-femorphology-operator",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-femorphology-operator",
+      "linkingText": [
+        "operator"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feMorphology"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-femorphology-radius",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-femorphology-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feMorphology"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feoffset-dx",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feoffset-dx",
+      "linkingText": [
+        "dx"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feOffset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feoffset-dy",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feoffset-dy",
+      "linkingText": [
+        "dy"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feOffset"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespecularlighting-surfacescale",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-surfacescale",
+      "linkingText": [
+        "surfaceScale"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpecularLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespecularlighting-specularconstant",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-specularconstant",
+      "linkingText": [
+        "specularConstant"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpecularLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespecularlighting-specularexponent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-specularexponent",
+      "linkingText": [
+        "specularExponent"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpecularLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespecularlighting-kernelunitlength",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-kernelunitlength",
+      "linkingText": [
+        "kernelUnitLength"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpecularLighting"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feturbulence-basefrequency",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-basefrequency",
+      "linkingText": [
+        "baseFrequency"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feTurbulence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feturbulence-numoctaves",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-numoctaves",
+      "linkingText": [
+        "numOctaves"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feTurbulence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feturbulence-seed",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-seed",
+      "linkingText": [
+        "seed"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feTurbulence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feturbulence-stitchtiles",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-stitchtiles",
+      "linkingText": [
+        "stitchTiles"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feTurbulence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-feturbulence-type",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feTurbulence"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-color-interpolation-filters",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-color-interpolation-filters",
+      "linkingText": [
+        "color-interpolation-filters"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-interpolation-filters-auto",
+      "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "color-interpolation-filters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-interpolation-filters-srgb",
+      "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-srgb",
+      "linkingText": [
+        "sRGB"
+      ],
+      "type": "value",
+      "for": [
+        "color-interpolation-filters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-color-interpolation-filters-linearrgb",
+      "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb",
+      "linkingText": [
+        "linearRGB"
+      ],
+      "type": "value",
+      "for": [
+        "color-interpolation-filters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    },
+    {
+      "id": "light-source",
+      "href": "https://drafts.csswg.org/filter-effects-1/#light-source",
+      "linkingText": [
+        "light source"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedistantlight-azimuth",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedistantlight-azimuth",
+      "linkingText": [
+        "azimuth"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDistantLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fedistantlight-elevation",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedistantlight-elevation",
+      "linkingText": [
+        "elevation"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feDistantLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fepointlight-x",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "element-attr",
+      "for": [
+        "fePointLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fepointlight-y",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "element-attr",
+      "for": [
+        "fePointLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fepointlight-z",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-z",
+      "linkingText": [
+        "z"
+      ],
+      "type": "element-attr",
+      "for": [
+        "fePointLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-x",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-y",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-z",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-z",
+      "linkingText": [
+        "z"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-pointsatx",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsatx",
+      "linkingText": [
+        "pointsAtX"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-pointsaty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsaty",
+      "linkingText": [
+        "pointsAtY"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-pointsatz",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsatz",
+      "linkingText": [
+        "pointsAtZ"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-specularexponent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-specularexponent",
+      "linkingText": [
+        "specularExponent"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "element-attrdef-fespotlight-limitingconeangle",
+      "href": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-limitingconeangle",
+      "linkingText": [
+        "limitingConeAngle"
+      ],
+      "type": "element-attr",
+      "for": [
+        "feSpotLight"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "SVG2",
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://w3c.github.io/svgwg/svg2-draft/"
+        }
+      ]
+    },
+    {
+      "id": "propdef-lighting-color",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-lighting-color",
+      "linkingText": [
+        "lighting-color"
+      ],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-2022",
+          "title": "CSS Snapshot 2022",
+          "url": "https://drafts.csswg.org/css-2022/"
+        },
+        {
+          "shortname": "css-2023",
+          "title": "CSS Snapshot 2023",
+          "url": "https://drafts.csswg.org/css-2023/"
+        },
+        {
+          "shortname": "css-2024",
+          "title": "CSS Snapshot 2024",
+          "url": "https://drafts.csswg.org/css-2024/"
+        },
+        {
+          "shortname": "css-2025",
+          "title": "CSS Snapshot 2025",
+          "url": "https://drafts.csswg.org/css-2025/"
+        },
+        {
+          "shortname": "css-2026",
+          "title": "CSS Snapshot 2026",
+          "url": "https://drafts.csswg.org/css-2026/"
+        },
+        {
+          "shortname": "css-masking-1",
+          "title": "CSS Masking Module Level 1",
+          "url": "https://drafts.csswg.org/css-masking-1/"
+        }
+      ]
+    }
+  ]
+}

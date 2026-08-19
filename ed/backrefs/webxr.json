@@ -1,0 +1,2364 @@
+{
+  "spec": {
+    "title": "WebXR Device API",
+    "url": "https://immersive-web.github.io/webxr/"
+  },
+  "backrefs": [
+    {
+      "id": "xr-device",
+      "href": "https://immersive-web.github.io/webxr/#xr-device",
+      "linkingText": [
+        "XR device"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "immersive-xr-device",
+      "href": "https://immersive-web.github.io/webxr/#immersive-xr-device",
+      "linkingText": [
+        "immersive XR device"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "inline-xr-device",
+      "href": "https://immersive-web.github.io/webxr/#inline-xr-device",
+      "linkingText": [
+        "inline XR device"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "xrsystem",
+      "href": "https://immersive-web.github.io/webxr/#xrsystem",
+      "linkingText": [
+        "XRSystem"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        }
+      ]
+    },
+    {
+      "id": "active-immersive-session",
+      "href": "https://immersive-web.github.io/webxr/#active-immersive-session",
+      "linkingText": [
+        "active immersive session"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsystem-requestsession",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsystem-requestsession",
+      "linkingText": [
+        "requestSession(mode, options)",
+        "requestSession(mode)"
+      ],
+      "type": "method",
+      "for": [
+        "XRSystem"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "raw-camera-access",
+          "title": "WebXR Raw Camera Access Module",
+          "url": "https://immersive-web.github.io/raw-camera-access/"
+        },
+        {
+          "shortname": "prerendering-revamped",
+          "title": "Prerendering Revamped",
+          "url": "https://wicg.github.io/nav-speculation/prerendering.html"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsessionmode-inline",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline",
+      "linkingText": [
+        "\"inline\"",
+        "inline"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsessionmode-immersive-vr",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr",
+      "linkingText": [
+        "\"immersive-vr\"",
+        "immersive-vr"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-xrsessioninit",
+      "href": "https://immersive-web.github.io/webxr/#dictdef-xrsessioninit",
+      "linkingText": [
+        "XRSessionInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsessioninit-requiredfeatures",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures",
+      "linkingText": [
+        "requiredFeatures"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRSessionInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsessioninit-optionalfeatures",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures",
+      "linkingText": [
+        "optionalFeatures"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRSessionInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "feature-descriptor",
+      "href": "https://immersive-web.github.io/webxr/#feature-descriptor",
+      "linkingText": [
+        "feature descriptor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "feature-requirements",
+      "href": "https://immersive-web.github.io/webxr/#feature-requirements",
+      "linkingText": [
+        "feature requirements"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "capable-of-supporting",
+      "href": "https://immersive-web.github.io/webxr/#capable-of-supporting",
+      "linkingText": [
+        "capable of supporting"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession",
+      "href": "https://immersive-web.github.io/webxr/#xrsession",
+      "linkingText": [
+        "XRSession"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession-mode",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsession-enabledfeatures",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-enabledfeatures",
+      "linkingText": [
+        "enabledFeatures"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession-ended",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        }
+      ]
+    },
+    {
+      "id": "active-render-state",
+      "href": "https://immersive-web.github.io/webxr/#active-render-state",
+      "linkingText": [
+        "active render state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "pending-render-state",
+      "href": "https://immersive-web.github.io/webxr/#pending-render-state",
+      "linkingText": [
+        "pending render state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsession-renderstate",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-renderstate",
+      "linkingText": [
+        "renderState"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "update-the-pending-layers-state",
+      "href": "https://immersive-web.github.io/webxr/#update-the-pending-layers-state",
+      "linkingText": [
+        "update the pending layers state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsession-updaterenderstate",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updaterenderstate",
+      "linkingText": [
+        "updateRenderState(state)",
+        "updateRenderState()",
+        "updateRenderState(newState)"
+      ],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession-xr-device",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-xr-device",
+      "linkingText": [
+        "XR device"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsession-inputsources",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-inputsources",
+      "linkingText": [
+        "inputSources"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession-list-of-views",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-list-of-views",
+      "linkingText": [
+        "list of views"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-xrrenderstateinit",
+      "href": "https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit",
+      "linkingText": [
+        "XRRenderStateInit"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrenderstateinit-baselayer",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-baselayer",
+      "linkingText": [
+        "baseLayer"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRRenderStateInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrenderstateinit-layers",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstateinit-layers",
+      "linkingText": [
+        "layers"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRRenderStateInit"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrrenderstate",
+      "href": "https://immersive-web.github.io/webxr/#xrrenderstate",
+      "linkingText": [
+        "XRRenderState"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "initialize-the-render-state",
+      "href": "https://immersive-web.github.io/webxr/#initialize-the-render-state",
+      "linkingText": [
+        "initialize the render state"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrenderstate-baselayer",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrenderstate-baselayer",
+      "linkingText": [
+        "baseLayer"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRRenderState"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "callbackdef-xrframerequestcallback",
+      "href": "https://immersive-web.github.io/webxr/#callbackdef-xrframerequestcallback",
+      "linkingText": [
+        "XRFrameRequestCallback"
+      ],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrsession-requestanimationframe",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe",
+      "linkingText": [
+        "requestAnimationFrame(callback)"
+      ],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xr-animation-frame",
+      "href": "https://immersive-web.github.io/webxr/#xr-animation-frame",
+      "linkingText": [
+        "XR animation frame"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xr-compositor",
+      "href": "https://immersive-web.github.io/webxr/#xr-compositor",
+      "linkingText": [
+        "XR Compositor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrframe",
+      "href": "https://immersive-web.github.io/webxr/#xrframe",
+      "linkingText": [
+        "XRFrame"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrframe-active",
+      "href": "https://immersive-web.github.io/webxr/#xrframe-active",
+      "linkingText": [
+        "active"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrframe-session",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrframe-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        },
+        {
+          "shortname": "webxr-lighting-estimation-1",
+          "title": "WebXR Lighting Estimation API Level 1",
+          "url": "https://immersive-web.github.io/lighting-estimation/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrframe-time",
+      "href": "https://immersive-web.github.io/webxr/#xrframe-time",
+      "linkingText": [
+        "time"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrframe-getpose",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrframe-getpose",
+      "linkingText": [
+        "getPose(space, baseSpace)"
+      ],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "xrsession-list-of-frame-updates",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-list-of-frame-updates",
+      "linkingText": [
+        "list of frame updates"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "xrspace",
+      "href": "https://immersive-web.github.io/webxr/#xrspace",
+      "linkingText": [
+        "XRSpace"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        },
+        {
+          "shortname": "webxr-lighting-estimation-1",
+          "title": "WebXR Lighting Estimation API Level 1",
+          "url": "https://immersive-web.github.io/lighting-estimation/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrspace-session",
+      "href": "https://immersive-web.github.io/webxr/#xrspace-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSpace"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrspace-native-origin",
+      "href": "https://immersive-web.github.io/webxr/#xrspace-native-origin",
+      "linkingText": [
+        "native origin"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRSpace"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        },
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "xrreferencespace",
+      "href": "https://immersive-web.github.io/webxr/#xrreferencespace",
+      "linkingText": [
+        "XRReferenceSpace"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrreferencespace-type",
+      "href": "https://immersive-web.github.io/webxr/#xrreferencespace-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRReferenceSpace"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrreferencespacetype-viewer",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-viewer",
+      "linkingText": [
+        "\"viewer\"",
+        "viewer"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRReferenceSpaceType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrreferencespacetype-local",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-local",
+      "linkingText": [
+        "\"local\"",
+        "local"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRReferenceSpaceType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrreferencespacetype-local-floor",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-local-floor",
+      "linkingText": [
+        "\"local-floor\"",
+        "local-floor"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRReferenceSpaceType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrreferencespacetype-bounded-floor",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-bounded-floor",
+      "linkingText": [
+        "\"bounded-floor\"",
+        "bounded-floor"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRReferenceSpaceType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrreferencespacetype-unbounded",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrreferencespacetype-unbounded",
+      "linkingText": [
+        "\"unbounded\"",
+        "unbounded"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRReferenceSpaceType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewgeometry-transform",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewgeometry-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewGeometry"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        }
+      ]
+    },
+    {
+      "id": "view",
+      "href": "https://immersive-web.github.io/webxr/#view",
+      "linkingText": [
+        "view"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "view-active",
+      "href": "https://immersive-web.github.io/webxr/#view-active",
+      "linkingText": [
+        "active"
+      ],
+      "type": "dfn",
+      "for": [
+        "view"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-xreye",
+      "href": "https://immersive-web.github.io/webxr/#enumdef-xreye",
+      "linkingText": [
+        "XREye"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xreye-none",
+      "href": "https://immersive-web.github.io/webxr/#dom-xreye-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "XREye"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xreye-left",
+      "href": "https://immersive-web.github.io/webxr/#dom-xreye-left",
+      "linkingText": [
+        "\"left\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "XREye"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xreye-right",
+      "href": "https://immersive-web.github.io/webxr/#dom-xreye-right",
+      "linkingText": [
+        "\"right\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "XREye"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrview",
+      "href": "https://immersive-web.github.io/webxr/#xrview",
+      "linkingText": [
+        "XRView"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrview-eye",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrview-eye",
+      "linkingText": [
+        "eye"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRView"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        }
+      ]
+    },
+    {
+      "id": "xrview-session",
+      "href": "https://immersive-web.github.io/webxr/#xrview-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRView"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "xrview-frame",
+      "href": "https://immersive-web.github.io/webxr/#xrview-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRView"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        }
+      ]
+    },
+    {
+      "id": "primary-view",
+      "href": "https://immersive-web.github.io/webxr/#primary-view",
+      "linkingText": [
+        "primary view"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "secondary-view",
+      "href": "https://immersive-web.github.io/webxr/#secondary-view",
+      "linkingText": [
+        "secondary view"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrviewport",
+      "href": "https://immersive-web.github.io/webxr/#xrviewport",
+      "linkingText": [
+        "XRViewport"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewport-x",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-x",
+      "linkingText": [
+        "x"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewport-y",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-y",
+      "linkingText": [
+        "y"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewport-width",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-width",
+      "linkingText": [
+        "width"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewport-height",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewport-height",
+      "linkingText": [
+        "height"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrrigidtransform",
+      "href": "https://immersive-web.github.io/webxr/#xrrigidtransform",
+      "linkingText": [
+        "XRRigidTransform"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "anchors",
+          "title": "WebXR Anchors Module",
+          "url": "https://immersive-web.github.io/anchors/"
+        },
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-depth-sensing-1",
+          "title": "WebXR Depth Sensing Module",
+          "url": "https://immersive-web.github.io/depth-sensing/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrigidtransform-position",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-position",
+      "linkingText": [
+        "position"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRRigidTransform"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrigidtransform-orientation",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRRigidTransform"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrrigidtransform-matrix",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrrigidtransform-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRRigidTransform"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        }
+      ]
+    },
+    {
+      "id": "xrpose",
+      "href": "https://immersive-web.github.io/webxr/#xrpose",
+      "linkingText": [
+        "XRPose"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrviewerpose-views",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrviewerpose-views",
+      "linkingText": [
+        "views"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRViewerPose"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        }
+      ]
+    },
+    {
+      "id": "xrinputsource",
+      "href": "https://immersive-web.github.io/webxr/#xrinputsource",
+      "linkingText": [
+        "XRInputSource"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        },
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrinputsource-targetraymode",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetraymode",
+      "linkingText": [
+        "targetRayMode"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRInputSource"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrtargetraymode-gaze",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-gaze",
+      "linkingText": [
+        "\"gaze\"",
+        "gaze"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRTargetRayMode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrtargetraymode-tracked-pointer",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-tracked-pointer",
+      "linkingText": [
+        "\"tracked-pointer\"",
+        "tracked-pointer"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRTargetRayMode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        },
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrtargetraymode-screen",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrtargetraymode-screen",
+      "linkingText": [
+        "\"screen\"",
+        "screen"
+      ],
+      "type": "enum-value",
+      "for": [
+        "XRTargetRayMode"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrinputsource-targetrayspace",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace",
+      "linkingText": [
+        "targetRaySpace"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRInputSource"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrinputsource-gripspace",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-gripspace",
+      "linkingText": [
+        "gripSpace"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRInputSource"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-gamepads-module-1",
+          "title": "WebXR Gamepads Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrinputsource-profiles",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles",
+      "linkingText": [
+        "profiles"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRInputSource"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-hand-input-1",
+          "title": "WebXR Hand Input Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-hand-input/"
+        },
+        {
+          "shortname": "webxr-hit-test-1",
+          "title": "WebXR Hit Test Module",
+          "url": "https://immersive-web.github.io/hit-test/"
+        }
+      ]
+    },
+    {
+      "id": "xrlayer",
+      "href": "https://immersive-web.github.io/webxr/#xrlayer",
+      "linkingText": [
+        "XRLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-xrwebglrenderingcontext",
+      "href": "https://immersive-web.github.io/webxr/#typedefdef-xrwebglrenderingcontext",
+      "linkingText": [
+        "XRWebGLRenderingContext"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrwebgllayer",
+      "href": "https://immersive-web.github.io/webxr/#xrwebgllayer",
+      "linkingText": [
+        "XRWebGLLayer"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-webgpu-binding",
+          "title": "WebXR/WebGPU Binding Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        },
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrwebgllayer-session",
+      "href": "https://immersive-web.github.io/webxr/#xrwebgllayer-session",
+      "linkingText": [
+        "session"
+      ],
+      "type": "dfn",
+      "for": [
+        "XRWebGLLayer"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "opaque-framebuffer",
+      "href": "https://immersive-web.github.io/webxr/#opaque-framebuffer",
+      "linkingText": [
+        "opaque framebuffer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "xrsessionevent",
+      "href": "https://immersive-web.github.io/webxr/#xrsessionevent",
+      "linkingText": [
+        "XRSessionEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrinputsourceevent-inputsource",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrinputsourceevent-inputsource",
+      "linkingText": [
+        "inputSource"
+      ],
+      "type": "attribute",
+      "for": [
+        "XRInputSourceEvent"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-ar-module-1",
+          "title": "WebXR Augmented Reality Module - Level 1",
+          "url": "https://immersive-web.github.io/webxr-ar-module/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-xrsession-inputsourceschange",
+      "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-inputsourceschange",
+      "linkingText": [
+        "inputsourceschange"
+      ],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-xrsession-selectstart",
+      "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectstart",
+      "linkingText": [
+        "selectstart"
+      ],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-xrsession-selectend",
+      "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-selectend",
+      "linkingText": [
+        "selectend"
+      ],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxr-dom-overlays-1",
+          "title": "WebXR DOM Overlays Module",
+          "url": "https://immersive-web.github.io/dom-overlays/"
+        }
+      ]
+    },
+    {
+      "id": "explicit-consent",
+      "href": "https://immersive-web.github.io/webxr/#explicit-consent",
+      "linkingText": [
+        "Explicit consent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "body-tracking",
+          "title": "WebXR Body Tracking Module - Level 1",
+          "url": "https://immersive-web.github.io/body-tracking/"
+        }
+      ]
+    },
+    {
+      "id": "rounding",
+      "href": "https://immersive-web.github.io/webxr/#rounding",
+      "linkingText": [
+        "Rounding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "quantization",
+      "href": "https://immersive-web.github.io/webxr/#quantization",
+      "linkingText": [
+        "Quantization"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "webxr-plane-detection",
+          "title": "WebXR Plane Detection Module",
+          "url": "https://immersive-web.github.io/plane-detection/"
+        },
+        {
+          "shortname": "real-world-meshing",
+          "title": "WebXR Mesh Detection Module",
+          "url": "https://immersive-web.github.io/real-world-meshing/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrpermissiondescriptor-requiredfeatures",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-requiredfeatures",
+      "linkingText": [
+        "requiredFeatures"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRPermissionDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    },
+    {
+      "id": "dom-xrpermissiondescriptor-optionalfeatures",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrpermissiondescriptor-optionalfeatures",
+      "linkingText": [
+        "optionalFeatures"
+      ],
+      "type": "dict-member",
+      "for": [
+        "XRPermissionDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webxrlayers-1",
+          "title": "WebXR Layers API Level 1",
+          "url": "https://immersive-web.github.io/layers/"
+        }
+      ]
+    }
+  ]
+}

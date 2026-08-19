@@ -1,0 +1,11 @@
+// Source: Soft Navigations and Interaction Contentful Paint (https://wicg.github.io/soft-navigations/)
+[Exposed=Window]
+interface InteractionContentfulPaint : PerformanceEntry {
+    readonly attribute LargestContentfulPaint largestContentfulPaint;
+    readonly attribute unsigned long long interactionId;
+
+    object toJSON();
+};
+
+// Source: Soft Navigations and Interaction Contentful Paint (https://wicg.github.io/soft-navigations/)
+InteractionContentfulPaint includes PaintTimingMixin;

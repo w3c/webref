@@ -1,0 +1,1643 @@
+{
+  "spec": {
+    "title": "Content Security Policy Level 3",
+    "url": "https://w3c.github.io/webappsec-csp/"
+  },
+  "backrefs": [
+    {
+      "id": "content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy",
+      "linkingText": [
+        "Content Security Policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        },
+        {
+          "shortname": "reporting-1",
+          "title": "Reporting API",
+          "url": "https://w3c.github.io/reporting/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-required-ascii-whitespace",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-required-ascii-whitespace",
+      "linkingText": [
+        "required-ascii-whitespace"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "content-security-policy-object",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy-object",
+      "linkingText": [
+        "content security policy object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "content-security-policy-object-directive-set",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set",
+      "linkingText": [
+        "directive set"
+      ],
+      "type": "dfn",
+      "for": [
+        "content security policy object"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "content-security-policy-object-disposition",
+      "href": "https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "type": "dfn",
+      "for": [
+        "content security policy object"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "contains-a-header-delivered-content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#contains-a-header-delivered-content-security-policy",
+      "linkingText": [
+        "contains a header-delivered Content Security Policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "serialized-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#serialized-csp",
+      "linkingText": [
+        "serialized CSP"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-serialized-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy",
+      "linkingText": [
+        "serialized-policy"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-parse-a-serialized-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp",
+      "linkingText": [
+        "parse a serialized CSP"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "parse-response-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+      "linkingText": [
+        "Parse response’s Content Security Policies"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-parse-a-responses-content-security-policies",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies",
+      "linkingText": [
+        "parse a response’s Content Security Policies"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "directives",
+      "href": "https://w3c.github.io/webappsec-csp/#directives",
+      "linkingText": [
+        "directives"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "directive-name",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "directive-value",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-value",
+      "linkingText": [
+        "value"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "directive-pre-request-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-pre-request-check",
+      "linkingText": [
+        "pre-request check"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        }
+      ]
+    },
+    {
+      "id": "directive-post-request-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-post-request-check",
+      "linkingText": [
+        "post-request check"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        }
+      ]
+    },
+    {
+      "id": "directive-inline-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-inline-check",
+      "linkingText": [
+        "inline check"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "directive-pre-navigation-check",
+      "href": "https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check",
+      "linkingText": [
+        "pre-navigation check"
+      ],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "source-lists",
+      "href": "https://w3c.github.io/webappsec-csp/#source-lists",
+      "linkingText": [
+        "source lists"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#source-expression",
+      "linkingText": [
+        "source expression"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-serialized-source-list",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-serialized-source-list",
+      "linkingText": [
+        "serialized-source-list"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-none",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-none",
+      "linkingText": [
+        "'none'"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-source-expression",
+      "linkingText": [
+        "source-expression"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-scheme-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-scheme-source",
+      "linkingText": [
+        "scheme-source"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-host-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-host-source",
+      "linkingText": [
+        "host-source"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-scheme-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-scheme-part",
+      "linkingText": [
+        "scheme-part"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-host-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-host-part",
+      "linkingText": [
+        "host-part"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-port-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-port-part",
+      "linkingText": [
+        "port-part"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-path-part",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-path-part",
+      "linkingText": [
+        "path-part"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-keyword-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-keyword-source",
+      "linkingText": [
+        "keyword-source"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-self",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-self",
+      "linkingText": [
+        "'self'"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-unsafe-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline",
+      "linkingText": [
+        "'unsafe-inline'"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-strict-dynamic",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic",
+      "linkingText": [
+        "'strict-dynamic'"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-wasm-unsafe-eval",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-wasm-unsafe-eval",
+      "linkingText": [
+        "'wasm-unsafe-eval'"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-nonce-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-nonce-source",
+      "linkingText": [
+        "nonce-source"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-base64-value",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-base64-value",
+      "linkingText": [
+        "base64-value"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-hash-source",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-hash-source",
+      "linkingText": [
+        "hash-source"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        },
+        {
+          "shortname": "webpackage",
+          "title": "Loading Signed Exchanges",
+          "url": "https://wicg.github.io/webpackage/loading.html"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "grammardef-hash-algorithm",
+      "href": "https://w3c.github.io/webappsec-csp/#grammardef-hash-algorithm",
+      "linkingText": [
+        "hash-algorithm"
+      ],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "sri-2",
+          "title": "Subresource Integrity",
+          "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+        }
+      ]
+    },
+    {
+      "id": "violation-resource",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "violation-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-policy",
+      "linkingText": [
+        "policy"
+      ],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "isolated-contexts",
+          "title": "Isolated Contexts",
+          "url": "https://wicg.github.io/isolated-web-apps/isolated-contexts.html"
+        }
+      ]
+    },
+    {
+      "id": "violation-sample",
+      "href": "https://w3c.github.io/webappsec-csp/#violation-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "header-content-security-policy",
+      "href": "https://w3c.github.io/webappsec-csp/#header-content-security-policy",
+      "linkingText": [
+        "Content-Security-Policy"
+      ],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "header-content-security-policy-report-only",
+      "href": "https://w3c.github.io/webappsec-csp/#header-content-security-policy-report-only",
+      "linkingText": [
+        "Content-Security-Policy-Report-Only"
+      ],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "report-for-request",
+      "href": "https://w3c.github.io/webappsec-csp/#report-for-request",
+      "linkingText": [
+        "Report Content Security Policy violations for request"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "should-block-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-request",
+      "linkingText": [
+        "Should request be blocked by Content Security Policy?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "should-block-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-response",
+      "linkingText": [
+        "Should response to request be blocked by Content Security Policy?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        }
+      ]
+    },
+    {
+      "id": "global-object-csp-list",
+      "href": "https://w3c.github.io/webappsec-csp/#global-object-csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "type": "dfn",
+      "for": [
+        "global object"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "enforced",
+      "href": "https://w3c.github.io/webappsec-csp/#enforced",
+      "linkingText": [
+        "enforced"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "run-document-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-document-csp-initialization",
+      "linkingText": [
+        "Run CSP initialization for a Document"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "should-block-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-inline",
+      "linkingText": [
+        "Should element’s inline type behavior be blocked by Content Security Policy?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "should-block-navigation-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-request",
+      "linkingText": [
+        "Should navigation request of type be blocked by Content Security Policy?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "prefetch",
+          "title": "Prefetch",
+          "url": "https://wicg.github.io/nav-speculation/prefetch.html"
+        }
+      ]
+    },
+    {
+      "id": "should-block-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
+      "linkingText": [
+        "Should navigation response to navigation request of type in target be blocked by Content Security Policy?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "webdriver2",
+          "title": "WebDriver",
+          "url": "https://w3c.github.io/webdriver/"
+        }
+      ]
+    },
+    {
+      "id": "run-global-object-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization",
+      "linkingText": [
+        "Run CSP initialization for a global object"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "service-workers",
+          "title": "Service Workers Nightly",
+          "url": "https://w3c.github.io/ServiceWorker/"
+        }
+      ]
+    },
+    {
+      "id": "can-compile-strings",
+      "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
+      "linkingText": [
+        "EnsureCSPDoesNotBlockStringCompilation(realm, parameterStrings, bodyString, codeString, compilationType, parameterArgs, bodyArg)"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-next",
+          "title": "Scripting Policy",
+          "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "securitypolicyviolationevent",
+      "href": "https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "eventdef-globaleventhandlers-securitypolicyviolation",
+      "href": "https://w3c.github.io/webappsec-csp/#eventdef-globaleventhandlers-securitypolicyviolation",
+      "linkingText": [
+        "securitypolicyviolation"
+      ],
+      "type": "event",
+      "for": [
+        "GlobalEventHandlers",
+        "WorkerGlobalScope"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "fetch-directives",
+      "href": "https://w3c.github.io/webappsec-csp/#fetch-directives",
+      "linkingText": [
+        "Fetch directives"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        }
+      ]
+    },
+    {
+      "id": "child-src",
+      "href": "https://w3c.github.io/webappsec-csp/#child-src",
+      "linkingText": [
+        "child-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "connect-src",
+      "href": "https://w3c.github.io/webappsec-csp/#connect-src",
+      "linkingText": [
+        "connect-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        },
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "default-src",
+      "href": "https://w3c.github.io/webappsec-csp/#default-src",
+      "linkingText": [
+        "default-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "frame-src",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-src",
+      "linkingText": [
+        "frame-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "object-src",
+      "href": "https://w3c.github.io/webappsec-csp/#object-src",
+      "linkingText": [
+        "object-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "script-src",
+      "href": "https://w3c.github.io/webappsec-csp/#script-src",
+      "linkingText": [
+        "script-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "trusted-types",
+          "title": "Trusted Types",
+          "url": "https://w3c.github.io/trusted-types/dist/spec/"
+        }
+      ]
+    },
+    {
+      "id": "webrtc",
+      "href": "https://w3c.github.io/webappsec-csp/#webrtc",
+      "linkingText": [
+        "webrtc"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webtransport",
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        }
+      ]
+    },
+    {
+      "id": "worker-src",
+      "href": "https://w3c.github.io/webappsec-csp/#worker-src",
+      "linkingText": [
+        "worker-src"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fenced-frame",
+          "title": "Fenced Frame",
+          "url": "https://wicg.github.io/fenced-frame/"
+        }
+      ]
+    },
+    {
+      "id": "allow-base-for-document",
+      "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
+      "linkingText": [
+        "Is base allowed for document?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        }
+      ]
+    },
+    {
+      "id": "sandbox",
+      "href": "https://w3c.github.io/webappsec-csp/#sandbox",
+      "linkingText": [
+        "sandbox"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "connection-allowlists",
+          "title": "Connection Allowlists",
+          "url": "https://wicg.github.io/connection-allowlists/"
+        },
+        {
+          "shortname": "portals",
+          "title": "Portals",
+          "url": "https://wicg.github.io/portals/"
+        },
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "form-action",
+      "href": "https://w3c.github.io/webappsec-csp/#form-action",
+      "linkingText": [
+        "form-action"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "frame-ancestors",
+      "href": "https://w3c.github.io/webappsec-csp/#frame-ancestors",
+      "linkingText": [
+        "frame-ancestors"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "report-uri",
+      "href": "https://w3c.github.io/webappsec-csp/#report-uri",
+      "linkingText": [
+        "report-uri"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "report-to",
+      "href": "https://w3c.github.io/webappsec-csp/#report-to",
+      "linkingText": [
+        "report-to"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "match-url-to-source-expression",
+      "href": "https://w3c.github.io/webappsec-csp/#match-url-to-source-expression",
+      "linkingText": [
+        "Does url match expression in origin with redirect count?"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "permissions-policy-1",
+          "title": "Permissions Policy",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/"
+        }
+      ]
+    },
+    {
+      "id": "scheme-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#scheme-part-match",
+      "linkingText": [
+        "scheme-part match"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "host-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#host-part-match",
+      "linkingText": [
+        "host-part match"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "port-part-matches",
+      "href": "https://w3c.github.io/webappsec-csp/#port-part-matches",
+      "linkingText": [
+        "port-part matches"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "path-part-match",
+      "href": "https://w3c.github.io/webappsec-csp/#path-part-match",
+      "linkingText": [
+        "path-part match"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    },
+    {
+      "id": "source-list-allows-all-inline-behavior",
+      "href": "https://w3c.github.io/webappsec-csp/#source-list-allows-all-inline-behavior",
+      "linkingText": [
+        "allows all inline behavior"
+      ],
+      "type": "dfn",
+      "for": [
+        "source list"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "csp-embedded-enforcement",
+          "title": "Content Security Policy: Embedded Enforcement",
+          "url": "https://w3c.github.io/webappsec-cspee/"
+        }
+      ]
+    }
+  ]
+}

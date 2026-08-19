@@ -1,0 +1,57 @@
+{
+  "spec": {
+    "title": "Fetch Metadata Request Headers",
+    "url": "https://w3c.github.io/webappsec-fetch-metadata/"
+  },
+  "backrefs": [
+    {
+      "id": "http-headerdef-sec-fetch-dest",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest",
+      "linkingText": [
+        "Sec-Fetch-Dest"
+      ],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "fedcm-1",
+          "title": "Federated Credential Management API",
+          "url": "https://w3c-fedid.github.io/FedCM/"
+        }
+      ]
+    },
+    {
+      "id": "abstract-opdef-append-the-fetch-metadata-headers-for-a-request",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-append-the-fetch-metadata-headers-for-a-request",
+      "linkingText": [
+        "append the Fetch metadata headers for a request"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fetch",
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        {
+          "shortname": "storage-access-headers",
+          "title": "Storage Access Headers",
+          "url": "https://privacycg.github.io/storage-access-headers/"
+        },
+        {
+          "shortname": "signature-based-sri",
+          "title": "Signature-based Integrity",
+          "url": "https://wicg.github.io/signature-based-sri/"
+        }
+      ]
+    }
+  ]
+}

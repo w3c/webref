@@ -1,0 +1,478 @@
+{
+  "spec": {
+    "title": "CSS Typed OM Level 1",
+    "url": "https://drafts.css-houdini.org/css-typed-om-1/"
+  },
+  "backrefs": [
+    {
+      "id": "css-internal-representation",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation",
+      "linkingText": [
+        "internal representation"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-easing-2",
+          "title": "CSS Easing Functions Module Level 2",
+          "url": "https://drafts.csswg.org/css-easing-2/"
+        },
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssstylevalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue",
+      "linkingText": [
+        "CSSStyleValue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-parser-api",
+          "title": "CSS Parser API",
+          "url": "https://wicg.github.io/css-parser-api/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-cssstylevalue-associatedproperty-slot",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssstylevalue-associatedproperty-slot",
+      "linkingText": [
+        "[[associatedProperty]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSStyleValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "stylepropertymapreadonly",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymapreadonly",
+      "linkingText": [
+        "StylePropertyMapReadOnly"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "font-metrics-api-1",
+          "title": "Font Metrics API Level 1",
+          "url": "https://drafts.css-houdini.org/font-metrics-api-1/"
+        },
+        {
+          "shortname": "css-layout-api-1",
+          "title": "CSS Layout API Level 1",
+          "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+        },
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "stylepropertymap",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#stylepropertymap",
+      "linkingText": [
+        "StylePropertyMap"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "custom-property-name-string",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string",
+      "linkingText": [
+        "custom property name string"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-conditional-3",
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://drafts.csswg.org/css-conditional-3/"
+        },
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        },
+        {
+          "shortname": "css-syntax-3",
+          "title": "CSS Syntax Module Level 3",
+          "url": "https://drafts.csswg.org/css-syntax-3/"
+        }
+      ]
+    },
+    {
+      "id": "csskeywordvalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csskeywordvalue",
+      "linkingText": [
+        "CSSKeywordValue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "dom-csskeywordvalue-value",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csskeywordvalue-value",
+      "linkingText": [
+        "value"
+      ],
+      "type": "attribute",
+      "for": [
+        "CSSKeywordValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue",
+      "linkingText": [
+        "CSSNumericValue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-type",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-percent-hint",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint",
+      "linkingText": [
+        "percent hint"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-add-two-types",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-add-two-types",
+      "linkingText": [
+        "add two types"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-multiply-two-types",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-multiply-two-types",
+      "linkingText": [
+        "multiply two types"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-invert-a-type",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-invert-a-type",
+      "linkingText": [
+        "invert a type"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        }
+      ]
+    },
+    {
+      "id": "cssnumericvalue-match",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-match",
+      "linkingText": [
+        "match"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSSNumericValue"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-values-4",
+          "title": "CSS Values and Units Module Level 4",
+          "url": "https://drafts.csswg.org/css-values-4/"
+        },
+        {
+          "shortname": "css-values-5",
+          "title": "CSS Values and Units Module Level 5",
+          "url": "https://drafts.csswg.org/css-values-5/"
+        }
+      ]
+    },
+    {
+      "id": "cssunitvalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssunitvalue",
+      "linkingText": [
+        "CSSUnitValue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "scroll-animations-1",
+          "title": "Scroll-driven Animations Module Level 1",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
+        }
+      ]
+    },
+    {
+      "id": "cssimagevalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssimagevalue",
+      "linkingText": [
+        "CSSImageValue"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-paint-api-1",
+          "title": "CSS Painting API Level 1",
+          "url": "https://drafts.css-houdini.org/css-paint-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "css-reify",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#css-reify",
+      "linkingText": [
+        "reify",
+        "reification"
+      ],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-shadow-1",
+          "title": "CSS Shadow Module Level 1",
+          "url": "https://drafts.csswg.org/css-shadow-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-as-a-cssstylevalue",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-as-a-cssstylevalue",
+      "linkingText": [
+        "reify as a CSSStyleValue",
+        "reified as a CSSStyleValue"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-a-list-of-component-values",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-a-list-of-component-values",
+      "linkingText": [
+        "reify a list of component values"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-an-identifier",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-an-identifier",
+      "linkingText": [
+        "reify an identifier"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-a-numeric-value",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-a-numeric-value",
+      "linkingText": [
+        "reify a numeric value"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-a-transform-list",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-a-transform-list",
+      "linkingText": [
+        "reify a <transform-list>"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    },
+    {
+      "id": "reify-a-transform-function",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#reify-a-transform-function",
+      "linkingText": [
+        "reify a <transform-function>"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-properties-values-api-1",
+          "title": "CSS Properties and Values API Level 1",
+          "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+        }
+      ]
+    }
+  ]
+}
