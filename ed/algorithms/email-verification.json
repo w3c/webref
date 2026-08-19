@@ -1,0 +1,272 @@
+{
+  "spec": {
+    "title": "Email Verification API",
+    "url": "https://wicg.github.io/email-verification/"
+  },
+  "algorithms": [
+    {
+      "html": "The verifier includes a standard email input and a hidden input for the Email Verification Token (EVT), with <code>autocomplete=\"email-verification-token\"</code> and a unique <code>nonce</code>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>When the user focuses the <code>email</code> input, the browser suggests autofill email addresses (e.g., <code>user@email.example</code>).</p>"
+        },
+        {
+          "html": "<p>The user selects <code>user@email.example</code>.</p>"
+        },
+        {
+          "html": "<p>The browser performs issuer discovery (finding <code>email.example</code> delegates to <code>issuer.example</code>), validates the user’s session with the issuer, and shows a prompt:\n<strong>Verify your email?</strong>\nDo you want to share a verified token for <code>user@email.example</code> with <code>rp.example</code>?\n[Allow] [Deny]</p>"
+        },
+        {
+          "html": "<p>If the user selects \"Allow\", the browser fetches the EVT from <code>issuer.example</code>, binds it to <code>rp.example</code> and the nonce <code>xyz123456789</code>, and stores the bound token.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When the user selects an email address <var>email</var> from the user agent’s autofill suggestions for an <code>&lt;input&gt;</code> element <var>emailInput</var> within a <code>&lt;form&gt;</code> <var>form</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>evtInput</var> be the first <code>&lt;input&gt;</code> element in <var>form</var> that has an <code>autocomplete</code> attribute whose value is <code>email-verification-token</code>.</p>"
+        },
+        {
+          "html": "<p>If no such <var>evtInput</var> exists, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>nonce</var> be the value of the <code>nonce</code> attribute of <var>evtInput</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>nonce</var> is empty, terminate these steps.</p>"
+        },
+        {
+          "html": "<p>Set <var>form</var>’s EVP state to:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code>email</code>: <var>email</var></p>\n      </li><li data-md=\"\">\n       <p><code>inputElement</code>: <var>emailInput</var></p>\n      </li><li data-md=\"\">\n       <p><code>token</code>: null</p>\n     </li></ul>"
+        },
+        {
+          "html": "In the background, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>issuer</var> be the result of performing the <a href=\"https://www.ietf.org/archive/id/draft-hardt-email-verification-00.html#name-issuer-discovery\">issuer discovery</a> steps defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-evp-protocol\" title=\"Email Verification Protocol (EVP) Backend\">[EVP-Protocol]</a> on <var>email</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>issuer</var> is null, terminate these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>accountMatch</var> be the result of performing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/email-verification/#accounts-validation\" id=\"ref-for-accounts-validation\">Accounts Validation</a> on <var>email</var> with <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>accountMatch</var> is false, terminate these steps.</p>"
+            },
+            {
+              "html": "<p>Show a user prompt asking for permission to verify the email address <var>email</var> with <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>If the user denies permission, terminate these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>evtResult</var> be the result of performing <a data-link-type=\"dfn\" href=\"https://wicg.github.io/email-verification/#evt-issuance\" id=\"ref-for-evt-issuance\">EVT Issuance</a> for <var>email</var> from <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>evtResult</var> is null, terminate these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>evt</var> be <var>evtResult</var>[0].</p>"
+            },
+            {
+              "html": "<p>Let <var>keyPair</var> be <var>evtResult</var>[1].</p>"
+            },
+            {
+              "html": "<p>Let <var>kbEvt</var> be the result of performing the <a href=\"https://www.ietf.org/archive/id/draft-hardt-email-verification-00.html#name-kb-creation\">key-binding creation</a> steps defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-evp-protocol\" title=\"Email Verification Protocol (EVP) Backend\">[EVP-Protocol]</a> on <var>evt</var> using the private key component of <var>keyPair</var>, with <var>nonce</var> and the origin of the document.</p>"
+            },
+            {
+              "html": "<p>Let <var>state</var> be <var>form</var>’s EVP state.</p>"
+            },
+            {
+              "html": "If <var>state</var> is not null and <var>state</var>’s <code>email</code> is case-insensitively equal to <var>email</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>state</var>’s <code>token</code> to <var>kbEvt</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When a <code>&lt;form&gt;</code> <var>form</var> is submitted:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>state</var> be <var>form</var>’s EVP state.</p>"
+        },
+        {
+          "html": "<p>If <var>state</var> is null or <var>state</var>’s <code>token</code> is null, continue with standard form submission steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentEmail</var> be the value of <var>state</var>’s <code>inputElement</code>.</p>"
+        },
+        {
+          "html": "If <var>currentEmail</var> is case-insensitively equal to <var>state</var>’s <code>email</code>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>evtInput</var> be the first <code>&lt;input&gt;</code> element in <var>form</var> that has an <code>autocomplete</code> attribute whose value is <code>email-verification-token</code>.</p>"
+            },
+            {
+              "html": "If <var>evtInput</var> exists:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set the value of <var>evtInput</var> to <var>state</var>’s <code>token</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Continue with the standard form submission steps defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-html\" title=\"HTML Standard\">[HTML]</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an email address <var>email</var> and an issuer domain <var>issuer</var>, the user agent MUST perform the following steps to validate the accounts:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "<p>Check the login status of <var>issuer</var> using the Login Status API <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-login-status\" title=\"Login Status API\">[login-status]</a>.</p>"
+        },
+        {
+          "html": "<p>If the status is <a href=\"https://w3c-fedid.github.io/login-status/#logged-out\">logged-out</a>, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>wellKnown</var> be the result of fetching the <a href=\"https://w3c-fedid.github.io/FedCM/#well-known-file\">well-known file</a> for <var>issuer</var> as defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-fedcm\" title=\"Federated Credential Management API\">[fedcm]</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>wellKnown</var> is null, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>accountsEndpoint</var> be the value of the <code>accounts_endpoint</code> member of <var>wellKnown</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>accountsEndpoint</var> is not present or is not a valid URL, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>accounts</var> be the result of executing the <a href=\"https://w3c-fedid.github.io/FedCM/#fetch-accounts\">fetch accounts</a> algorithm defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-fedcm\" title=\"Federated Credential Management API\">[fedcm]</a> for <var>issuer</var> and <var>accountsEndpoint</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>accounts</var> is null or empty, return false.</p>"
+        },
+        {
+          "html": "For each <var>account</var> in <var>accounts</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>accountEmail</var> be the value of the <code>email</code> member of <var>account</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>accountEmail</var> is case-insensitively equal to <var>email</var>, return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an email address <var>email</var> and an issuer domain <var>issuer</var>, the user agent MUST perform the following steps to obtain an EVT:",
+      "rationale": "generate",
+      "steps": [
+        {
+          "html": "<p>Generate an ephemeral asymmetric key pair <var>keyPair</var> (using an algorithm supported by the issuer, as defined in the issuer’s metadata, defaulting to Ed25519 if not specified).</p>"
+        },
+        {
+          "html": "<p>Construct a JSON Web Token <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-jwt\" title=\"JSON Web Token (JWT)\">[JWT]</a> <var>requestToken</var>:</p>",
+          "ignored": [
+            "The header MUST contain: alg: The signing algorithm (matching keyPair’s algorithm). jwk: The public key component of keyPair. The payload MUST contain: aud: The issuer’s identifier (domain). iat: The current time. email: The email address. Sign requestToken using the private key component of keyPair."
+          ]
+        },
+        {
+          "html": "<p>Let <var>issuanceUrl</var> be the issuer’s token issuance endpoint (obtained from the issuer’s metadata).</p>"
+        },
+        {
+          "html": "Construct an HTTP POST request <var>request</var> to <var>issuanceUrl</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <code>Content-Type</code> header to <code>application/x-www-form-urlencoded</code>.</p>"
+            },
+            {
+              "html": "<p>Set the <code>Sec-Fetch-Dest</code> header to <code>email-verification</code>.</p>"
+            },
+            {
+              "html": "<p>Include first-party cookies for <var>issuer</var>.</p>"
+            },
+            {
+              "html": "<p>Set the request body to the URL-encoded representation of:\n<code>request_token</code> = <var>requestToken</var> (serialized as a string).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Send <var>request</var> and wait for the response <var>callResponse</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>callResponse</var>’s status code is not 200 OK or its <code>Content-Type</code> is not <code>application/json</code>, return null.</p>"
+        },
+        {
+          "html": "<p>Parse <var>callResponse</var>’s body as JSON and let <var>json</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>json</var> does not contain <code>issuance_token</code>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>evt</var> be <var>json</var>’s <code>issuance_token</code>.</p>"
+        },
+        {
+          "html": "Verify <var>evt</var>:",
+          "rationale": "verify",
+          "steps": [
+            {
+              "html": "<p>Verify <var>evt</var> is a valid SD-JWT <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-sd-jwt\" title=\"Selective Disclosure for JSON Web Tokens (SD-JWT)\">[SD-JWT]</a> signed by the issuer.</p>"
+            },
+            {
+              "html": "<p>Verify the <code>cnf</code> claim in <var>evt</var> contains a public key that matches the public key of <var>keyPair</var>.</p>"
+            },
+            {
+              "html": "<p>Verify the <code>email</code> claim in <var>evt</var> matches <var>email</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If verification fails, return null.</p>"
+        },
+        {
+          "html": "<p>Return a tuple containing (<var>evt</var>, <var>keyPair</var>).</p>"
+        }
+      ]
+    },
+    {
+      "html": "When a verifier receives a submitted form containing an email address <var>email</var> and a bound token <var>boundToken</var> (from the input field with <code>autocomplete=\"email-verification-token\"</code>):",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Perform the <a href=\"https://www.ietf.org/archive/id/draft-hardt-email-verification-00.html#name-token-verification\">token verification</a> steps defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/email-verification/#biblio-evp-protocol\" title=\"Email Verification Protocol (EVP) Backend\">[EVP-Protocol]</a> on <var>boundToken</var> for the verifier’s origin and the expected nonce.</p>"
+        },
+        {
+          "html": "<p>If the verification fails, fail verification.</p>"
+        },
+        {
+          "html": "<p>Let <var>verifiedEmail</var> be the email address extracted from the verified token.</p>"
+        },
+        {
+          "html": "<p>If <var>verifiedEmail</var> is not case-insensitively equal to <var>email</var>, fail verification.</p>"
+        },
+        {
+          "html": "<p>Otherwise, verification succeeds.</p>"
+        }
+      ]
+    }
+  ]
+}
