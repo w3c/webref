@@ -1,0 +1,29 @@
+From d68016f395aec3a107116fdcbc242cc49ce71322 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 19 Aug 2026 17:49:30 +0200
+Subject: [PATCH] Drop duplicate navigationId attribute
+
+Pending resolution of https://github.com/WICG/soft-navigations/issues/90
+---
+ ed/idl/soft-navigations.idl | 5 -----
+ 1 file changed, 5 deletions(-)
+
+diff --git a/ed/idl/soft-navigations.idl b/ed/idl/soft-navigations.idl
+index c762998acd..5eb20f37cf 100644
+--- a/ed/idl/soft-navigations.idl
++++ b/ed/idl/soft-navigations.idl
+@@ -3,11 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Soft Navigations and Interaction Contentful Paint (https://wicg.github.io/soft-navigations/)
+ 
+-[Exposed=(Window,Worker)]
+-partial interface PerformanceEntry {
+-    readonly attribute unsigned long long navigationId;
+-};
+-
+ [Exposed=Window]
+ interface InteractionContentfulPaint : PerformanceEntry {
+     readonly attribute LargestContentfulPaint largestContentfulPaint;
+-- 
+2.55.0
+
