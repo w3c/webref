@@ -32,7 +32,11 @@ dictionary ToolAnnotations {
   boolean untrustedContentHint = false;
 };
 
-callback ToolExecuteCallback = Promise<any> (object inputObject);
+dictionary ToolExecuteCallbackOptions {
+  required AbortSignal signal;
+};
+
+callback ToolExecuteCallback = Promise<any> (object inputObject, ToolExecuteCallbackOptions options);
 
 dictionary ModelContextRegisterToolOptions {
   sequence<USVString> exposedTo;
