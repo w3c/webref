@@ -47048,6 +47048,12 @@
                       "html": "<p>Let <var>mode</var> be <var>templateStartTag</var>'s <code id=\"parsing-main-inhead:attr-template-shadowrootmode-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode\">shadowrootmode</a></code> attribute's value.</p>"
                     },
                     {
+                      "html": "<p>Let <var>delegatesFocus</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootdelegatesfocus\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus\">shadowrootdelegatesfocus</a></code> attribute;\n       otherwise false.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>serializable</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootserializable\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable\">shadowrootserializable</a></code> attribute;\n       otherwise false.</p>"
+                    },
+                    {
                       "html": "<p>Let <var>slotAssignment</var> be \"<code>named</code>\".</p>"
                     },
                     {
@@ -47055,12 +47061,6 @@
                     },
                     {
                       "html": "<p>Let <var>clonable</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootclonable\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable\">shadowrootclonable</a></code> attribute; otherwise\n       false.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>serializable</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootserializable\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable\">shadowrootserializable</a></code> attribute;\n       otherwise false.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>delegatesFocus</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootdelegatesfocus\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus\">shadowrootdelegatesfocus</a></code> attribute;\n       otherwise false.</p>"
                     },
                     {
                       "html": "<p>If <var>declarativeShadowHostElement</var> is a <a id=\"parsing-main-inhead:shadow-host\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" data-x-internal=\"shadow-host\">shadow host</a>, then\n       <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location\">insert an element at the adjusted insertion location</a> with\n       <var>template</var>.</p>"
@@ -47091,13 +47091,13 @@
                           "html": "<p>Let <var>shadow</var> be <var>declarativeShadowHostElement</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-shadow-root\" id=\"parsing-main-inhead:concept-element-shadow-root\" data-x-internal=\"concept-element-shadow-root\">shadow root</a>.</p>"
                         },
                         {
+                          "html": "<p>Set <var>shadow</var>'s <a id=\"parsing-main-inhead:available-to-element-internals\" href=\"https://dom.spec.whatwg.org/#shadowroot-available-to-element-internals\" data-x-internal=\"available-to-element-internals\">available to element internals</a> to\n         true.</p>"
+                        },
+                        {
                           "html": "<p>Set <var>shadow</var>'s <a href=\"https://dom.spec.whatwg.org/#shadowroot-declarative\" id=\"parsing-main-inhead:concept-shadow-root-declarative\" data-x-internal=\"concept-shadow-root-declarative\">declarative</a> to true.</p>"
                         },
                         {
                           "html": "<p>Set <var>template</var>'s <a id=\"parsing-main-inhead:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> to\n         <var>shadow</var>.</p>"
-                        },
-                        {
-                          "html": "<p>Set <var>shadow</var>'s <a id=\"parsing-main-inhead:available-to-element-internals\" href=\"https://dom.spec.whatwg.org/#shadowroot-available-to-element-internals\" data-x-internal=\"available-to-element-internals\">available to element internals</a> to\n         true.</p>"
                         },
                         {
                           "html": "<p>If <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootcustomelementregistry-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry\">shadowrootcustomelementregistry</a></code>\n         attribute, then set <var>shadow</var>'s <a id=\"parsing-main-inhead:keep-custom-element-registry-null\" href=\"https://dom.spec.whatwg.org/#shadowroot-keep-custom-element-registry-null\" data-x-internal=\"keep-custom-element-registry-null\">keep custom element registry null</a> to\n         true.</p>"
@@ -49404,7 +49404,7 @@
                   "html": "<p>If <var>shadow</var>'s <a href=\"https://dom.spec.whatwg.org/#shadowroot-serializable\" id=\"serialising-html-fragments:shadow-serializable-2\" data-x-internal=\"shadow-serializable\">serializable</a> is set, then append\n       \"<code> shadowrootserializable=\"\"</code>\".</p>"
                 },
                 {
-                  "html": "<p>If <var>shadow</var>'s <a id=\"serialising-html-fragments:slot-assignment\" href=\"https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment\" data-x-internal=\"slot-assignment\">slot assignment</a> is \"<code>manual</code>\", then append \"<code> shadowrootslotassignment=\"manual\"</code>\".</p>"
+                  "html": "<p>If <var>shadow</var>'s <a id=\"serialising-html-fragments:slot-assignment\" href=\"https://dom.spec.whatwg.org/#shadowroot-slot-assignment\" data-x-internal=\"slot-assignment\">slot assignment</a> is \"<code>manual</code>\", then append \"<code> shadowrootslotassignment=\"manual\"</code>\".</p>"
                 },
                 {
                   "html": "<p>If <var>shadow</var>'s <a id=\"serialising-html-fragments:clonable\" href=\"https://dom.spec.whatwg.org/#shadowroot-clonable\" data-x-internal=\"clonable\">clonable</a> is set, then append\n       \"<code> shadowrootclonable=\"\"</code>\".</p>"

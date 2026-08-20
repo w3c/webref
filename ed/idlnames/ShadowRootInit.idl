@@ -2,8 +2,8 @@
 dictionary ShadowRootInit {
   required ShadowRootMode mode;
   boolean delegatesFocus = false;
+  boolean serializable = false;
   SlotAssignmentMode slotAssignment = "named";
   boolean clonable = false;
-  boolean serializable = false;
   CustomElementRegistry? customElementRegistry;
 };
