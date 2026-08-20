@@ -177,7 +177,7 @@
           ]
         },
         {
-          "html": "Otherwise, set <code>activeContext</code> to\n<code>result.activeContext</code> and <code>state</code> to <code>result.state</code> of <code>result</code> resulting from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.1 </bdi>Convert Contexts for Decompression Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>input</code>, and <code>output</code>."
+          "html": "Otherwise, set <code>activeContext</code> to\n<code>result.activeContext</code>, <code>output</code> to <code>result.output</code>, and <code>state</code> to <code>result.state</code> of <code>result</code> resulting from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.1 </bdi>Convert Contexts for Decompression Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>input</code>, and <code>output</code>."
         },
         {
           "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>objectTypes</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.5.4 </bdi>Get Object Types for Compression Algorithm</a>, passing <code>activeContext</code>, and <code>input</code>."
@@ -498,13 +498,7 @@
           "html": "Set <code>embeddedContextResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.2 </bdi>Apply Embedded Contexts Algorithm</a>, passing\n<code>activeContext</code>, <code>output</code> as <code>input</code>, and <code>state</code>."
         },
         {
-          "html": "Set <code>result</code> to an empty map."
-        },
-        {
-          "html": "Set <code>result</code>.<code>state</code> to <code>embeddedContextResult</code>.<code>state</code> and <code>result.activeContext</code> to\n<code>embeddedContextResult</code>.<code>activeContext</code>."
-        },
-        {
-          "html": "Return <code>result</code>."
+          "html": "Set <code>result</code> to <code>embeddedContextResult</code> and <code>result.output</code> to <code>output</code>. Return <code>result</code>."
         }
       ]
     },

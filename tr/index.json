@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-08-19T01:35:34.931Z",
+  "date": "2026-08-20T01:46:09.053Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -123,6 +123,7 @@
       "ecma-426",
       "tc39-async-explicit-resource-management",
       "tc39-atomics-microwait",
+      "tc39-await-dictionary",
       "tc39-canonical-tz",
       "tc39-decorators",
       "tc39-defer-import-eval",
@@ -222,6 +223,7 @@
       "document-isolation-policy",
       "document-picture-in-picture",
       "document-policy",
+      "email-verification",
       "entries-api",
       "explicit-javascript-compile-hints-file-based",
       "eyedropper-api",
@@ -289,6 +291,7 @@
       "iso18181-2",
       "iso14496-22",
       "rfc2397",
+      "rfc3229",
       "rfc4120",
       "rfc5861",
       "rfc6265",
@@ -482,7 +485,7 @@
       "device-memory-1",
       "device-posture",
       "did-1.1",
-      "did-resolution",
+      "did-resolution-1.0",
       "digital-credentials",
       "DOM-Parsing",
       "dpub-aam-1.1",
@@ -554,9 +557,6 @@
       "mediaqueries-5",
       "mediasession",
       "mediastream-recording",
-      "miniapp-lifecycle",
-      "miniapp-manifest",
-      "miniapp-packaging",
       "mixed-content",
       "motion-1",
       "mse-byte-stream-format-isobmff",
@@ -775,10 +775,10 @@
     ]
   },
   "stats": {
-    "crawled": 420,
+    "crawled": 417,
     "errors": 0
   },
-  "crawler": "reffy-21.1.0",
+  "crawler": "reffy-21.1.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -824,7 +824,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "19 August 2026",
+      "date": "20 August 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1245,11 +1245,11 @@
       ],
       "crawled": "https://www.w3.org/TR/attribution/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Aug 2026 12:13:19 GMT"
+        "lastModified": "Wed, 19 Aug 2026 16:17:09 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 August 2026",
-      "revision": "91ef1746295b24d52f086740b63b8336b768290e",
+      "date": "19 August 2026",
+      "revision": "2b8acbb822b1763cc84c164bf0e1115c1a77e63d",
       "algorithms": "algorithms/attribution.json",
       "links": "links/attribution.json",
       "refs": "refs/attribution.json",
@@ -1856,11 +1856,11 @@
       ],
       "crawled": "https://www.w3.org/TR/cbor-ld-10/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Jul 2026 20:39:11 GMT"
+        "lastModified": "Wed, 19 Aug 2026 16:45:29 GMT"
       },
       "generator": "respec",
-      "date": "27 July 2026",
-      "revision": "76ca03b8fa94fe93905698f8200387bdf6381fb6",
+      "date": "19 August 2026",
+      "revision": "f491a4d7ebcb2de6249ddf754d85ec77710e3f81",
       "algorithms": "algorithms/cbor-ld-10.json",
       "links": "links/cbor-ld-10.json",
       "refs": "refs/cbor-ld-10.json",
@@ -11024,17 +11024,21 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/did-resolution/",
+      "url": "https://www.w3.org/TR/did-resolution-1.0/",
       "seriesComposition": "full",
-      "shortname": "did-resolution",
+      "shortname": "did-resolution-1.0",
       "series": {
         "shortname": "did-resolution",
-        "currentSpecification": "did-resolution",
+        "currentSpecification": "did-resolution-1.0",
         "title": "Decentralized Identifier Resolution (DID Resolution)",
         "shortTitle": "DID Resolution",
         "releaseUrl": "https://www.w3.org/TR/did-resolution/",
         "nightlyUrl": "https://w3c.github.io/did-resolution/"
       },
+      "seriesVersion": "1.0",
+      "formerNames": [
+        "did-resolution"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -11043,8 +11047,8 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/did-resolution/",
-        "status": "Working Draft",
+        "url": "https://www.w3.org/TR/did-resolution-1.0/",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -11061,21 +11065,21 @@
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/did-resolution/",
+        "https://www.w3.org/TR/did-resolution-1.0/",
         "https://w3c.github.io/did-resolution/"
       ],
-      "crawled": "https://www.w3.org/TR/did-resolution/",
+      "crawled": "https://www.w3.org/TR/did-resolution-1.0/",
       "crawlCacheInfo": {
         "lastModified": "Mon, 03 Aug 2026 07:00:54 GMT"
       },
       "generator": "respec",
       "date": "06 August 2026",
-      "algorithms": "algorithms/did-resolution.json",
-      "links": "links/did-resolution.json",
-      "refs": "refs/did-resolution.json",
-      "dfns": "dfns/did-resolution.json",
-      "headings": "headings/did-resolution.json",
-      "ids": "ids/did-resolution.json",
+      "algorithms": "algorithms/did-resolution-1.0.json",
+      "links": "links/did-resolution-1.0.json",
+      "refs": "refs/did-resolution-1.0.json",
+      "dfns": "dfns/did-resolution-1.0.json",
+      "headings": "headings/did-resolution-1.0.json",
+      "ids": "ids/did-resolution-1.0.json",
       "cddl": []
     },
     {
@@ -11126,11 +11130,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Aug 2026 13:17:22 GMT"
+        "lastModified": "Thu, 20 Aug 2026 01:01:36 GMT"
       },
       "generator": "respec",
-      "date": "12 August 2026",
-      "revision": "494315a3b4461317e45a05279b7ffd848a0453a1",
+      "date": "20 August 2026",
+      "revision": "02bd8ca165e93939e8e7f722d1331f7d76d45a16",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -12059,7 +12063,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/epub-34/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB 3.4",
@@ -15471,170 +15475,6 @@
       "dfns": "dfns/mediastream-recording.json",
       "headings": "headings/mediastream-recording.json",
       "ids": "ids/mediastream-recording.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/miniapp-lifecycle/",
-      "seriesComposition": "full",
-      "shortname": "miniapp-lifecycle",
-      "series": {
-        "shortname": "miniapp-lifecycle",
-        "currentSpecification": "miniapp-lifecycle",
-        "title": "MiniApp Lifecycle",
-        "shortTitle": "MiniApp Lifecycle",
-        "releaseUrl": "https://www.w3.org/TR/miniapp-lifecycle/",
-        "nightlyUrl": "https://w3c.github.io/miniapp-lifecycle/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/groups/wg/miniapps/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/miniapp-lifecycle/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/miniapp-lifecycle/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/miniapp-lifecycle",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "MiniApp Lifecycle",
-      "source": "w3c",
-      "shortTitle": "MiniApp Lifecycle",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/miniapp-lifecycle/",
-        "https://w3c.github.io/miniapp-lifecycle/"
-      ],
-      "crawled": "https://www.w3.org/TR/miniapp-lifecycle/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Aug 2026 16:23:04 GMT"
-      },
-      "generator": "respec",
-      "date": "11 August 2026",
-      "links": "links/miniapp-lifecycle.json",
-      "refs": "refs/miniapp-lifecycle.json",
-      "dfns": "dfns/miniapp-lifecycle.json",
-      "headings": "headings/miniapp-lifecycle.json",
-      "ids": "ids/miniapp-lifecycle.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/miniapp-manifest/",
-      "seriesComposition": "full",
-      "shortname": "miniapp-manifest",
-      "series": {
-        "shortname": "miniapp-manifest",
-        "currentSpecification": "miniapp-manifest",
-        "title": "MiniApp Manifest",
-        "shortTitle": "MiniApp Manifest",
-        "releaseUrl": "https://www.w3.org/TR/miniapp-manifest/",
-        "nightlyUrl": "https://w3c.github.io/miniapp-manifest/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/groups/wg/miniapps/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/miniapp-manifest/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/miniapp-manifest/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/miniapp-manifest",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "MiniApp Manifest",
-      "source": "w3c",
-      "shortTitle": "MiniApp Manifest",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/miniapp-manifest/",
-        "https://w3c.github.io/miniapp-manifest/"
-      ],
-      "crawled": "https://www.w3.org/TR/miniapp-manifest/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Aug 2026 16:24:43 GMT"
-      },
-      "generator": "respec",
-      "date": "11 August 2026",
-      "algorithms": "algorithms/miniapp-manifest.json",
-      "links": "links/miniapp-manifest.json",
-      "refs": "refs/miniapp-manifest.json",
-      "dfns": "dfns/miniapp-manifest.json",
-      "headings": "headings/miniapp-manifest.json",
-      "ids": "ids/miniapp-manifest.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/miniapp-packaging/",
-      "seriesComposition": "full",
-      "shortname": "miniapp-packaging",
-      "series": {
-        "shortname": "miniapp-packaging",
-        "currentSpecification": "miniapp-packaging",
-        "title": "MiniApp Packaging",
-        "shortTitle": "MiniApp Packaging",
-        "releaseUrl": "https://www.w3.org/TR/miniapp-packaging/",
-        "nightlyUrl": "https://w3c.github.io/miniapp-packaging/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/groups/wg/miniapps/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/miniapp-packaging/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/miniapp-packaging/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/miniapp-packaging",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "MiniApp Packaging",
-      "source": "w3c",
-      "shortTitle": "MiniApp Packaging",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/miniapp-packaging/",
-        "https://w3c.github.io/miniapp-packaging/"
-      ],
-      "crawled": "https://www.w3.org/TR/miniapp-packaging/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Aug 2026 16:26:36 GMT"
-      },
-      "generator": "respec",
-      "date": "11 August 2026",
-      "algorithms": "algorithms/miniapp-packaging.json",
-      "links": "links/miniapp-packaging.json",
-      "refs": "refs/miniapp-packaging.json",
-      "dfns": "dfns/miniapp-packaging.json",
-      "headings": "headings/miniapp-packaging.json",
-      "ids": "ids/miniapp-packaging.json",
       "cddl": []
     },
     {
@@ -19737,11 +19577,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 17 Aug 2026 10:22:51 GMT"
+        "lastModified": "Wed, 19 Aug 2026 08:33:23 GMT"
       },
       "generator": "respec",
-      "date": "17 August 2026",
-      "revision": "3a6d8328081f733ab6ef4e3d9069caaa5e93573a",
+      "date": "19 August 2026",
+      "revision": "9379a8a36432a5ba1ac35b3f1a47d1707fc3d844",
       "algorithms": "algorithms/shacl12-rules.json",
       "links": "links/shacl12-rules.json",
       "refs": "refs/shacl12-rules.json",
@@ -21935,8 +21775,8 @@
       "series": {
         "shortname": "vc-confidence-method",
         "currentSpecification": "vc-confidence-method",
-        "title": "Confidence Method v1.0",
-        "shortTitle": "Confidence Method v1.0",
+        "title": "Verifiable Credential Confidence Methods",
+        "shortTitle": "Verifiable Credential Confidence Methods",
         "releaseUrl": "https://www.w3.org/TR/vc-confidence-method/",
         "nightlyUrl": "https://w3c.github.io/vc-confidence-method/"
       },
@@ -21962,7 +21802,7 @@
       },
       "title": "Verifiable Credential Confidence Methods v1.0",
       "source": "w3c",
-      "shortTitle": "Confidence Method v1.0",
+      "shortTitle": "Verifiable Credential Confidence Methods v1.0",
       "categories": [],
       "standing": "good",
       "versions": [
@@ -22730,7 +22570,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23268,10 +23108,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vocab-ssn-2023/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Sep 2025 19:02:44 GMT"
+        "lastModified": "Wed, 19 Aug 2026 17:41:36 GMT"
       },
       "generator": "respec",
-      "date": "16 September 2025",
+      "date": "19 August 2026",
+      "revision": "37fa55298187464b41c3712620dcbf5bd438b1b2",
       "links": "links/vocab-ssn-2023.json",
       "refs": "refs/vocab-ssn-2023.json",
       "dfns": "dfns/vocab-ssn-2023.json",
@@ -24313,7 +24154,8 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
-          "webauthn"
+          "webauthn",
+          "webdriver/tests/classic/external/webauthn"
         ]
       },
       "versions": [
@@ -24957,7 +24799,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-ulaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Jul 2026 17:19:14 GMT"
+        "lastModified": "Wed, 14 May 2025 23:11:52 GMT"
       },
       "generator": "bikeshed",
       "date": "14 May 2025",
@@ -25443,6 +25285,9 @@
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
           "webdriver"
+        ],
+        "excludePaths": [
+          "webdriver/tests/classic/external/webauthn"
         ]
       },
       "versions": [
@@ -26066,7 +25911,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webtransport/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
