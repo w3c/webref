@@ -1275,6 +1275,7 @@ interface HTMLTemplateElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   readonly attribute DocumentFragment content;
+  [CEReactions, Reflect="for"] attribute DOMString htmlFor;
   [CEReactions] attribute DOMString shadowRootMode;
   [CEReactions, Reflect] attribute boolean shadowRootDelegatesFocus;
   [CEReactions] attribute DOMString shadowRootSlotAssignment;
