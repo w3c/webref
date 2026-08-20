@@ -347,9 +347,9 @@ interface DocumentFragment : Node {
 interface ShadowRoot : DocumentFragment {
   readonly attribute ShadowRootMode mode;
   readonly attribute boolean delegatesFocus;
+  readonly attribute boolean serializable;
   readonly attribute SlotAssignmentMode slotAssignment;
   readonly attribute boolean clonable;
-  readonly attribute boolean serializable;
   readonly attribute Element host;
 
   attribute EventHandler onslotchange;
@@ -409,9 +409,9 @@ interface Element : Node {
 dictionary ShadowRootInit {
   required ShadowRootMode mode;
   boolean delegatesFocus = false;
+  boolean serializable = false;
   SlotAssignmentMode slotAssignment = "named";
   boolean clonable = false;
-  boolean serializable = false;
   CustomElementRegistry? customElementRegistry;
 };
 
