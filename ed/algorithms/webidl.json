@@ -2514,7 +2514,7 @@
           "html": "<p>Let <var>jsArrayBuffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value⑤②\">converting</a>\n<var>arrayBuffer</var> to a JavaScript value.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-isdetachedbuffer\" id=\"ref-for-sec-isdetachedbuffer③\">IsDetachedBuffer</a>(<var>jsArrayBuffer</var>) is false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#javascript-throw\" id=\"ref-for-javascript-throw③③\">throw</a> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③③\">TypeError</a></code>.</p>"
+          "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-isdetachedbuffer\" id=\"ref-for-sec-isdetachedbuffer③\">IsDetachedBuffer</a>(<var>jsArrayBuffer</var>) is true, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#javascript-throw\" id=\"ref-for-javascript-throw③③\">throw</a> a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③③\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>arrayBufferData</var> be <var>jsArrayBuffer</var>.[[ArrayBufferData]].</p>"
