@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLButtonElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectSetter] attribute DOMString command;\n  [CEReactions, Reflect] attribute Element? commandForElement;\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute USVString formAction;\n  [CEReactions] attribute DOMString formEnctype;\n  [CEReactions] attribute DOMString formMethod;\n  [CEReactions, Reflect] attribute boolean formNoValidate;\n  [CEReactions, Reflect] attribute DOMString formTarget;\n  [CEReactions, Reflect] attribute DOMString name;\n  [CEReactions, ReflectSetter] attribute DOMString type;\n  [CEReactions, Reflect] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLButtonElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectSetter] attribute DOMString command;\n  [CEReactions, Reflect=\"commandfor\"] attribute Element? commandForElement;\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute USVString formAction;\n  [CEReactions] attribute DOMString formEnctype;\n  [CEReactions] attribute DOMString formMethod;\n  [CEReactions, Reflect] attribute boolean formNoValidate;\n  [CEReactions, Reflect] attribute DOMString formTarget;\n  [CEReactions, Reflect] attribute DOMString name;\n  [CEReactions, ReflectSetter] attribute DOMString type;\n  [CEReactions, Reflect] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
     "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement"
   },
   "extended": [
@@ -553,7 +553,7 @@
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "interface mixin PopoverTargetAttributes {\n  [CEReactions, Reflect] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
+        "fragment": "interface mixin PopoverTargetAttributes {\n  [CEReactions, Reflect=\"popovertarget\"] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#popovertargetattributes"
       },
       "extended": [],
