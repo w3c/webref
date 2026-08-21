@@ -615,11 +615,11 @@
       "value": "<declaration-value> : <declaration-value>?"
     },
     {
-      "name": "toggle()",
-      "prose": "The toggle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-toggle",
+      "name": "cycle()",
+      "prose": "The cycle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-cycle",
       "type": "function",
-      "value": "toggle( <whole-value># )"
+      "value": "cycle( <whole-value># )"
     },
     {
       "name": "inherit()",
@@ -675,7 +675,7 @@
     },
     {
       "name": "ident()",
-      "prose": "The ident() function represents an <ident>, and can be used to manually construct <custom-ident> values from several parts.",
+      "prose": "The ident() function represents an arbitrary <ident>, built from one or more separate idents, strings, and integers. It is an arbitrary substitution function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident",
       "type": "function",
       "value": "ident( <ident-arg>+ )"
@@ -685,6 +685,12 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-ident-arg",
       "type": "type",
       "value": "<string> | <integer> | <ident>"
+    },
+    {
+      "name": "<ident-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-ident-args",
+      "type": "type",
+      "value": "ident( <declaration-value> )"
     },
     {
       "name": "random()",

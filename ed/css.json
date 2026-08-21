@@ -1390,6 +1390,13 @@
       "extended": []
     },
     {
+      "name": "cycle()",
+      "prose": "The cycle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-cycle",
+      "syntax": "cycle( <whole-value># )",
+      "extended": []
+    },
+    {
       "name": "device-cmyk()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-device-cmyk",
       "syntax": "<legacy-device-cmyk-syntax> | <modern-device-cmyk-syntax>",
@@ -1539,7 +1546,7 @@
     },
     {
       "name": "ident()",
-      "prose": "The ident() function represents an <ident>, and can be used to manually construct <custom-ident> values from several parts.",
+      "prose": "The ident() function represents an arbitrary <ident>, built from one or more separate idents, strings, and integers. It is an arbitrary substitution function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-ident",
       "syntax": "ident( <ident-arg>+ )",
       "extended": []
@@ -2191,13 +2198,6 @@
       "name": "target-text()",
       "href": "https://drafts.csswg.org/css-content-3/#target-text-function",
       "syntax": "target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? )",
-      "extended": []
-    },
-    {
-      "name": "toggle()",
-      "prose": "The toggle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-toggle",
-      "syntax": "toggle( <whole-value># )",
       "extended": []
     },
     {
@@ -19344,6 +19344,12 @@
       "name": "ident-arg",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-ident-arg",
       "syntax": "<string> | <integer> | <ident>",
+      "extended": []
+    },
+    {
+      "name": "ident-args",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-ident-args",
+      "syntax": "ident( <declaration-value> )",
       "extended": []
     },
     {
