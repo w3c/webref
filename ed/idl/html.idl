@@ -970,7 +970,7 @@ interface HTMLButtonElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions, ReflectSetter] attribute DOMString command;
-  [CEReactions, Reflect] attribute Element? commandForElement;
+  [CEReactions, Reflect="commandfor"] attribute Element? commandForElement;
   [CEReactions, Reflect] attribute boolean disabled;
   readonly attribute HTMLFormElement? form;
   [CEReactions, ReflectSetter] attribute USVString formAction;
@@ -1814,7 +1814,7 @@ dictionary DragEventInit : MouseEventInit {
 };
 
 interface mixin PopoverTargetAttributes {
-  [CEReactions, Reflect] attribute Element? popoverTargetElement;
+  [CEReactions, Reflect="popovertarget"] attribute Element? popoverTargetElement;
   [CEReactions] attribute DOMString popoverTargetAction;
 };
 
