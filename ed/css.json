@@ -571,13 +571,6 @@
       "extended": []
     },
     {
-      "name": "@macro",
-      "href": "https://drafts.csswg.org/css-mixins-1/#macro-rule",
-      "descriptors": [],
-      "syntax": "@macro <dashed-ident> { <declaration-rule-list> }",
-      "extended": []
-    },
-    {
       "name": "@media",
       "prose": "The @media rule is a conditional group rule whose condition is a media query. Its syntax is:",
       "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-media",
@@ -891,7 +884,7 @@
       "name": "@mixin",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
       "descriptors": [],
-      "syntax": "@mixin [<function-token> <function-parameter>#? ) | <ident-token> ] { <declaration-rule-list> }",
+      "syntax": "@mixin [<function-token> <function-parameter>#? ) | <ident-token> ] { <block-contents> }",
       "extended": []
     },
     {
@@ -978,6 +971,13 @@
       "extended": []
     },
     {
+      "name": "@private",
+      "href": "https://drafts.csswg.org/css-mixins-1/#private",
+      "descriptors": [],
+      "syntax": "@private { <declaration-rule-list> }",
+      "extended": []
+    },
+    {
       "name": "@property",
       "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#at-ruledef-property",
       "descriptors": [
@@ -1004,13 +1004,6 @@
         }
       ],
       "syntax": "@property <custom-property-name># { <declaration-list> }",
-      "extended": []
-    },
-    {
-      "name": "@result",
-      "href": "https://drafts.csswg.org/css-mixins-1/#result-rule",
-      "descriptors": [],
-      "syntax": "@result { <declaration-rule-list> }",
       "extended": []
     },
     {
