@@ -5,10 +5,27 @@ updates:
   schedule:
     interval: daily
     time: '10:00'
-  open-pull-requests-limit: 10
+  cooldown:
+    default-days: 7
+    exclude:
+      # Packages that we usually want to get as soon as possible
+      - "reffy"
+      - "strudy"
+      - "webidl2"
+      - "css-tree"
+  groups:
+    dependencies:
+      exclude-patterns:
+        - "reffy"
+        - "strudy"
+        - "webidl2"
+        - "css-tree"
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
     interval: daily
     time: '10:00'
-  open-pull-requests-limit: 10
+  groups:
+    actions-dependencies:
+      patterns:
+        - "*"
