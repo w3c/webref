@@ -1,0 +1,41 @@
+From 361d7e4e1c4345bc297ea6331f27e4b36f029160 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 24 Aug 2026 07:54:43 +0200
+Subject: [PATCH] Drop new value definition for `appearance`
+
+The `base` value already exists in the base definition and should not be
+re-defined in css-forms-1, see:
+https://github.com/w3c/csswg-drafts/issues/11865
+---
+ ed/css/css-forms.json | 15 ---------------
+ 1 file changed, 15 deletions(-)
+
+diff --git a/ed/css/css-forms.json b/ed/css/css-forms.json
+index 4b102d6458..532f1faf9a 100644
+--- a/ed/css/css-forms.json
++++ b/ed/css/css-forms.json
+@@ -4,21 +4,6 @@
+     "url": "https://drafts.csswg.org/css-forms-1/"
+   },
+   "properties": [
+-    {
+-      "name": "appearance",
+-      "newValues": "base",
+-      "values": [
+-        {
+-          "name": "base",
+-          "href": "https://drafts.csswg.org/css-forms-1/#valdef-appearance-base",
+-          "type": "value",
+-          "value": "base"
+-        }
+-      ],
+-      "styleDeclaration": [
+-        "appearance"
+-      ]
+-    },
+     {
+       "name": "field-sizing",
+       "href": "https://drafts.csswg.org/css-forms-1/#propdef-field-sizing",
+-- 
+2.55.0
+
