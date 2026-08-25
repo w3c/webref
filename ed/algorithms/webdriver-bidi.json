@@ -2411,7 +2411,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>viewport</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#visual-viewport\" id=\"ref-for-visual-viewport\">visual viewport</a>.</p>"
+              "html": "<p>Let <var>viewport</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#visual-viewport\" id=\"ref-for-visual-viewport\">visual viewport</a>.</p>"
             },
             {
               "html": "<p>Let <var>viewport rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly②\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑨\">x coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pageleft\" id=\"ref-for-dom-visualviewport-pageleft\">page left</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑨\">y coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pagetop\" id=\"ref-for-dom-visualviewport-pagetop\">page top</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑧\">width dimension</a>\n  <var>viewport</var> width, and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑧\">height dimension</a> <var>viewport</var> height.</p>"
@@ -3435,10 +3435,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>viewport</var> is not null, set the width of <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a>\n to be the <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#viewport-dimensions-width\" id=\"ref-for-viewport-dimensions-width\">width</a> in CSS pixels and\n set the height of the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport①\">layout viewport</a> to be the\n <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#viewport-dimensions-height\" id=\"ref-for-viewport-dimensions-height\">height</a> in CSS pixels.</p>"
+          "html": "<p>If <var>viewport</var> is not null, set the width of <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a>\n to be the <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#viewport-dimensions-width\" id=\"ref-for-viewport-dimensions-width\">width</a> in CSS pixels and\n set the height of the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#layout-viewport\" id=\"ref-for-layout-viewport①\">layout viewport</a> to be the\n <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#viewport-dimensions-height\" id=\"ref-for-viewport-dimensions-height\">height</a> in CSS pixels.</p>"
         },
         {
-          "html": "<p>Otherwise, set the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport②\">layout viewport</a> to the\n implementation-defined default.</p>"
+          "html": "<p>Otherwise, set the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#layout-viewport\" id=\"ref-for-layout-viewport②\">layout viewport</a> to the\n implementation-defined default.</p>"
         }
       ]
     },
@@ -3500,7 +3500,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the implementation is unable to adjust the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport③\">layout viewport</a>\n parameters with the given <var>command parameters</var> for any reason, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①③\">unsupported operation</a>.</p>"
+          "html": "<p>If the implementation is unable to adjust the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#layout-viewport\" id=\"ref-for-layout-viewport③\">layout viewport</a>\n parameters with the given <var>command parameters</var> for any reason, return\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①③\">unsupported operation</a>.</p>"
         },
         {
           "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③①\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③②\">contains</a> \"<code>context</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑤③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⑦\">invalid argument</a>.</p>"
@@ -11839,7 +11839,7 @@
     },
     {
       "name": "evaluate media feature",
-      "html": "To get the result of evaluating a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-4/#media-features\" id=\"ref-for-media-features\">media feature</a> <var>media feature</var> in the given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> <var>document</var>:",
+      "html": "To get the result of evaluating a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/mediaqueries-5/#media-feature\" id=\"ref-for-media-feature\">media feature</a> <var>media feature</var> in the given <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> <var>document</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
