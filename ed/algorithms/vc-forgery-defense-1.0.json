@@ -5,14 +5,14 @@
   },
   "algorithms": [
     {
-      "html": "The following algorithm generates a <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-6\">witness list</a> for a set\n      of <em>N</em> credential hashes. Inputs: an array of <em>N</em> hashes,\n      in order of their desired <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witnessindex\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witnessindex-1\">witnessIndex</a> values,\n      and the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-length\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-length-2\">witness length</a> <em>b</em> (default 128). Outputs: a\n      <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-seed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-seed-3\">witness seed</a> and <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-encoded-witnesses\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-encoded-witnesses-2\">encoded witnesses</a>.",
+      "html": "The following algorithm generates a <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-7\">witness list</a> for a set\n      of <em>N</em> credential hashes. Inputs: an array of <em>N</em> hashes,\n      in order of their desired <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witnessindex\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witnessindex-1\">witnessIndex</a> values,\n      and the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-length\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-length-2\">witness length</a> <em>b</em> (default 128). Outputs: a\n      <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-seed\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-seed-4\">witness seed</a> and <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-encoded-witnesses\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-encoded-witnesses-2\">encoded witnesses</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Generate a UUID v4 value <em>seed</em> using a cryptographically\n        secure random number generator [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-forgery-defense/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">RFC4122</a></cite>]."
+          "html": "Let <em>seed</em> be a string carrying at least 122 bits of min-entropy,\n        generated using a cryptographically secure random number generator; for\n        example, 16 random bytes encoded as multibase-base64url [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-forgery-defense/#bib-multibase\" title=\"The Multibase Encoding Scheme\">MULTIBASE</a></cite>],\n        or a UUID v4 value [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-forgery-defense/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">RFC4122</a></cite>]. See\n        <a href=\"https://w3c.github.io/vc-forgery-defense/#seed-unpredictability\" class=\"sec-ref\"><bdi class=\"secno\">7.3 </bdi>Seed Unpredictability</a>."
         },
         {
-          "html": "Let <em>seedBytes</em> be the 16-byte representation of <em>seed</em>\n        obtained by decoding its hex digits (stripping hyphens) as a big-endian\n        byte sequence."
+          "html": "Let <em>seedBytes</em> be the result of UTF-8 encoding [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-forgery-defense/#bib-infra\" title=\"Infra Standard\">INFRA</a></cite>]\n        <em>seed</em>."
         },
         {
           "html": "Let <em>data</em> be a zeroed bit array of <em>N × b</em> bits."
@@ -62,11 +62,11 @@
       ]
     },
     {
-      "html": "The following algorithm verifies that a given credential's witness\n      is valid. Inputs: the resolved <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-8\">witness list credential</a>, a credential\n      hash, and the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-index-6\">witness index</a> <em>i</em>.",
+      "html": "The following algorithm verifies that a given credential's witness\n      is valid. Inputs: the resolved <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-9\">witness list credential</a>, a credential\n      hash, and the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-index\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-index-6\">witness index</a> <em>i</em>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Verify all proofs on the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-9\">witness list credential</a>. If any\n        proof fails, return an error."
+          "html": "Verify all proofs on the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-10\">witness list credential</a>. If any\n        proof fails, return an error."
         },
         {
           "html": "Let <em>subject</em> be the witness list credential's\n        <code>credentialSubject</code>."
@@ -96,7 +96,7 @@
           "html": "Extract bits at offset <code>(i − 1) × b</code> through\n        <code>i × b − 1</code> from <em>data</em>, most-significant-bit first.\n        Let this be <em>storedW</em>."
         },
         {
-          "html": "Let <em>seedBytes</em> be the 16-byte representation of <em>seed</em>\n        obtained by decoding its hex digits (stripping hyphens) as a big-endian\n        byte sequence."
+          "html": "Let <em>seedBytes</em> be the UTF-8 encoding [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-forgery-defense/#bib-infra\" title=\"Infra Standard\">INFRA</a></cite>] of <em>seed</em>,\n        exactly as it appears in the credential."
         },
         {
           "html": "Let <em>msg</em> be the input credential hash."
@@ -119,7 +119,7 @@
           "html": "Locate a <code>credentialStatus</code> entry of type\n          <code>WitnessListEntry</code>."
         },
         {
-          "html": "Let the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-12\">witness list credential</a> URL be the value of the\n          entry's <code>witnessListCredential</code> property."
+          "html": "Let the <a href=\"https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-witness-list-credential-13\">witness list credential</a> URL be the value of the\n          entry's <code>witnessListCredential</code> property."
         },
         {
           "html": "Dereference that URL to obtain the witness list credential."
