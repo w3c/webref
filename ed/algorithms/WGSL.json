@@ -64,6 +64,43 @@
       ]
     },
     {
+      "name": "reading a swizzle view",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#swizzle-view-read",
+      "html": "<strong>Algorithm:</strong> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"swizzle view read\" data-noexport=\"\" id=\"swizzle-view-read\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">SwizzleViewRead</dfn>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>By convention <var>IndexList</var> = «&nbsp;<var>Idx</var><sub>0</sub>,&nbsp;...,&nbsp;<var>Idx</var><sub><var>K</var>−1</sub>&nbsp;»</p>"
+        },
+        {
+          "html": "<p>Read vector <var>u</var> from memory referenced by <var>p</var>.  <var>u</var> has type vec<var>N</var>&lt;<var>S</var>&gt;.</p>"
+        },
+        {
+          "html": "<p>Form value <var>v</var> of type vec<var>K</var>&lt;<var>S</var>&gt; where:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Component <var>i</var> of <var>v</var> equals the value of\ncomponent <var>Idx</var><sub><var>i</var></sub> of <var>u</var>.\nUsing <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#vector-single-component\">indexing syntax</a>:\n<var>v</var>[<var>i</var>] = <var>u</var>[<var>Idx</var><sub><var>i</var></sub>]</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "writing via a swizzle view",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#swizzle-view-write",
+      "html": "<strong>Algorithm:</strong> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"swizzle view write\" data-noexport=\"\" id=\"swizzle-view-write\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">SwizzleViewWrite</dfn>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>By convention <var>IndexList</var> = «&nbsp;<var>Idx</var><sub>0</sub>,&nbsp;...,&nbsp;<var>Idx</var><sub><var>K</var>−1</sub>&nbsp;»</p>"
+        },
+        {
+          "html": "<p>Initialize variable <var>new</var> to <var>old_contents</var>.</p>"
+        },
+        {
+          "html": "<p>For each <var>i</var> in 0..<var>K</var>-1:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Set component <var>Idx</var><sub><var>i</var></sub> of <var>new</var> to the value of component <var>i</var> of <var>update</var>.\nUsing <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#vector-single-component\">indexing syntax</a>:\n<var>new</var>[<var>Idx</var><sub><var>i</var></sub>] = <var>update</var>[<var>i</var>].</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Write <var>new</var> to the memory referenced by <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
       "html": "Each kind of value or variable declaration may place additional constraints on\nthe form of the initializer expression, if present, and on the\neffective-value-type.",
       "rationale": "if",
       "steps": [
@@ -86,7 +123,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#atomic-type\" id=\"ref-for-atomic-type⑦\">Atomic types</a> can only appear in mutable storage buffers or workgroup\nvariables.</p>"
         },
         {
-          "html": "<p>The data in <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-write\" id=\"ref-for-access-write②\">write</a>\nor <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-read_write\" id=\"ref-for-access-read_write⑧\">read_write</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-mode\" id=\"ref-for-access-mode①③\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
+          "html": "<p>The data in <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-write\" id=\"ref-for-access-write②\">write</a>\nor <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-read_write\" id=\"ref-for-access-read_write①②\">read_write</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-mode\" id=\"ref-for-access-mode①③\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
         },
         {
           "html": "<p>Variables in the <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#address-spaces-workgroup\" id=\"ref-for-address-spaces-workgroup①①\">workgroup</a> address space can only be\n<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed\" id=\"ref-for-statically-accessed④\">statically accessed</a> in a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#compute-shader-stage\" id=\"ref-for-compute-shader-stage①\">compute shader stage</a>.</p>"
@@ -96,6 +133,70 @@
         },
         {
           "html": "<p>If there is no initializer, the variable is <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#default-initial-value\" id=\"ref-for-default-initial-value\">default\ninitialized</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "swizzle assignment",
+      "html": "Perform the following steps.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Evaluate <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Evaluate <var>e</var>, yielding vector <var>update</var>.</p>"
+        },
+        {
+          "html": "<p>Read the memory referenced by <var>p</var>, yielding vector <var>old_contents</var> with type vec<var>N</var>&lt;<var>S</var>&gt;.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#swizzle-view-write\" id=\"ref-for-swizzle-view-write③\">SwizzleViewWrite</a>(<var>p</var>, <var>IndexList</var>, <var>old_contents</var>, <var>update</var>)</p>"
+        }
+      ]
+    },
+    {
+      "html": "Perform the following steps.",
+      "rationale": "compute",
+      "steps": [
+        {
+          "html": "<p>Evaluate &amp;<var>e1</var>, yielding pointer <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Read the memory referenced by <var>p</var>, yielding value <var>old_contents</var>.</p>\n         <p>Use <var>old_contents</var> as the value for <var>e1</var> in the expansion given below.</p>"
+        },
+        {
+          "html": "<p>Evaluate <var>e2</var>.</p>"
+        },
+        {
+          "html": "<p>Compute <var>update</var> by performing the specified binary operation on <var>old_contents</var> and <var>e2</var>.</p>\n         <ul>\n          <li data-md=\"\">\n           <p>For example, if the compound assignment is <code>v += w</code> then the specified operation is addition.</p>\n         </li></ul>"
+        },
+        {
+          "html": "<p>Write <var>update</var> to memory through pointer <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Perform the following steps.",
+      "rationale": "perform",
+      "steps": [
+        {
+          "html": "<p>Evaluate <var>p</var>.</p>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#swizzle-view-read\" id=\"ref-for-swizzle-view-read③\">SwizzleViewRead</a>(<var>p</var>, <var>IndexList</var>),\nyielding vector <var>viewed_contents</var> of type vec<var>K</var>&lt;<var>S</var>&gt;.</p>\n         <p>This is the value for <var>e1</var> when used as the left operand\nof the binary operator in the expansion given below.\nTo ensure left-to-right evaluation of the binary expression,\nthis must occur before the evaluation of <var>e2</var>.</p>"
+        },
+        {
+          "html": "<p>Evaluate <var>e2</var>.</p>"
+        },
+        {
+          "html": "<p>Read the memory referenced by <var>p</var>, yielding vector <var>old_contents</var> of type vec<var>N</var>&lt;<var>S</var>&gt;.</p>"
+        },
+        {
+          "html": "<p>Compute <var>update</var> by performing the specified binary operation on <var>viewed_contents</var> and <var>e2</var>.</p>\n         <ul>\n          <li data-md=\"\">\n           <p>For example, if the swizzle assignment is <code>v.xy += w</code> then the specified operation is addition.</p>\n         </li></ul>"
+        },
+        {
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#swizzle-view-write\" id=\"ref-for-swizzle-view-write④\">SwizzleViewWrite</a>(<var>p</var>, <var>IndexList</var>, <var>old_contents</var>, <var>update</var>).</p>"
         }
       ]
     },
