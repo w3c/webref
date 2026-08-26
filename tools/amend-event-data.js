@@ -341,12 +341,12 @@ const patches = {
     }
   ],
   'mediacapture-surface-control': [
-    // Pending clarification on the notion of "viewport":
-    // https://github.com/w3c/mediacapture-surface-control/issues/51
+    // Element fires at the "topmost event target", which extraction code
+    // cannot map to the right interface.
     {
       pattern: { type: 'wheel' },
       matched: 1,
-      delete: true
+      change: { targets: ["HTMLElement"] }
     }
   ],
   'notifications': [
@@ -449,19 +449,6 @@ const patches = {
       pattern: { type: "devicechange" },
       matched: 1,
       delete: true
-    }
-  ],
-  'selection-api': [
-    // pending https://github.com/w3c/selection-api/pull/148
-    {
-      pattern: { type: "selectstart" },
-      matched: 1,
-      change: { interface: "Event", bubbles: true }
-    },
-    {
-      pattern: { type: "selectionchange" },
-      matched: 1,
-      change: { interface: "Event", bubbles: false }
     }
   ],
   'speech-api': [
@@ -583,7 +570,8 @@ const patches = {
       }
     }
   ],
-  // Pending https://github.com/WebAudio/web-midi-api/pull/234
+  // Spec fires two events at once on two different targets. The extraction
+  // code does not understand that phrasing.
   'webmidi': [
     {
       pattern: { targets: null, type: "statechange" },
@@ -594,22 +582,8 @@ const patches = {
       pattern: { type: "statechange"},
       matched: 1,
       change: {
-        targets: ["MIDIPort", "MIDIAccess" ],
-        interface: "MIDIConnectionEvent"
+        targets: ["MIDIPort", "MIDIAccess" ]
       }
-    },
-    {
-      pattern: { type: "midimessage"},
-      matched: 1,
-      change: { interface: "MIDIMessageEvent" }
-    }
-  ],
-  // pending https://github.com/immersive-web/layers/pull/285
-  'webxrlayers-1': [
-    {
-      pattern: { type: "redraw" },
-      matched: 1,
-      change: { interface: "XRLayerEvent" }
     }
   ],
   'web-animations-1': [
