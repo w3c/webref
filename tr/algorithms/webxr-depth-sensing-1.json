@@ -54,7 +54,7 @@
               "html": "<p>For each <var>preference</var> in <var>preferences</var>, preform the following steps:</p>"
             },
             {
-              "html": "<p>If <var>preference</var> with the other values of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is not considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing①\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
+              "html": "<p>If <var>preference</var> with the other values of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is not considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing③\">native depth sensing</a> capabilities of the device, continue to the next entry.</p>"
             },
             {
               "html": "<p>Set <var>selection</var> to <var>preference</var> and abort these nested steps.</p>"
@@ -77,7 +77,7 @@
           "html": "<p>If any of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> are <code>null</code>, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration①\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing②\">native depth sensing</a> capabilities of the device return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing-configuration\" id=\"ref-for-depth-sensing-configuration\">depth sensing configuration</a> of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> and abort these steps.</p>"
+          "html": "<p>If <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> is considered a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#support-the-depth-sensing-configuration\" id=\"ref-for-support-the-depth-sensing-configuration①\">supported depth sensing configuration</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing④\">native depth sensing</a> capabilities of the device return the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing-configuration\" id=\"ref-for-depth-sensing-configuration\">depth sensing configuration</a> of <var>selectedType</var>,<var>selectedUsage</var>,<var>selectedDataFormat</var> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>depthTypeRequest</var> is not an empty list, set it to an empty list and repeat these steps.</p>"
@@ -89,7 +89,7 @@
     },
     {
       "name": "start-depth-sensing",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-resumedepthsensing\" id=\"ref-for-dom-xrsession-resumedepthsensing\">resumeDepthSensing()</a></code> is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface③\">XRSession</a></code> <var>session</var>, the User Agent MUST run the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-resumedepthsensing\" id=\"ref-for-dom-xrsession-resumedepthsensing\">resumeDepthSensing()</a></code> is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface④\">XRSession</a></code> <var>session</var>, the User Agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -114,7 +114,7 @@
     },
     {
       "name": "stop-depth-sensing",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-pausedepthsensing\" id=\"ref-for-dom-xrsession-pausedepthsensing\">pauseDepthSensing()</a></code> is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface④\">XRSession</a></code> <var>session</var>, the User Agent MUST run the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-pausedepthsensing\" id=\"ref-for-dom-xrsession-pausedepthsensing\">pauseDepthSensing()</a></code> is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the User Agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -213,7 +213,7 @@
     {
       "name": "obtain-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-cpu-depth-information",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation\" id=\"ref-for-dom-xrframe-getdepthinformation①\">getDepthInformation(view)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface②\">XRFrame</a></code> <var>frame</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview③\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-cpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain CPU depth information</dfn> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation\" id=\"ref-for-dom-xrframe-getdepthinformation①\">getDepthInformation(view)</a></code> method is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface②\">XRFrame</a></code> <var>frame</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview④\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-cpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain CPU depth information</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -245,7 +245,7 @@
     {
       "name": "create-cpu-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-cpu-depth-information-instance",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CPU depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview④\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-cpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CPU depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑤\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -264,34 +264,40 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthactive\" id=\"ref-for-dom-xrsession-depthactive②\">depthActive</a></code> is <code>false</code>, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype②\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage③\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat④\">depthDataFormat</a></code>.</p>"
+          "html": "<p>Let <var>nativeDepthInformation</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-information\" id=\"ref-for-native-depth-information\">native depth information</a> obtained by querying <var>device</var> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype②\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage③\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat④\">depthDataFormat</a></code>.</p>"
         },
         {
           "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#block-access\" id=\"ref-for-block-access\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
+          "html": "<p>Let <var>nativeDepthBuffer</var> be <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-buffer\" id=\"ref-for-native-depth-buffer①\">native depth buffer</a>.</p>"
         },
         {
-          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information\">limit the amount of information</a> available in depth buffer, adjust the depth buffer accordingly.</p>"
+          "html": "<p>If <var>nativeDepthBuffer</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#block-access\" id=\"ref-for-block-access\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width④\">width</a></code> to the width of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>If <var>nativeDepthBuffer</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information\">limit the amount of information</a> available in depth buffer, adjust <var>nativeDepthBuffer</var> accordingly.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height③\">height</a></code> to the height of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width④\">width</a></code> to <var>nativeDepthBuffer</var>’s width.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height③\">height</a></code> to <var>nativeDepthBuffer</var>’s height.</p>"
         },
         {
           "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview③\">normDepthBufferFromNormView</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform②\">XRRigidTransform</a></code>, based on <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-coordinates-transformation-matrix\" id=\"ref-for-depth-coordinates-transformation-matrix\">depth coordinates transformation matrix</a>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-data\" id=\"ref-for-dom-xrcpudepthinformation-data⑦\">data</a></code> to the raw depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-rawvaluetometers\" id=\"ref-for-dom-xrdepthinformation-rawvaluetometers③\">rawValueToMeters</a></code> to the scale factor supplied by <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-data\" id=\"ref-for-dom-xrcpudepthinformation-data⑦\">data</a></code> to a copy of the raw depth values for <var>view</var> from <var>nativeDepthBuffer</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view⑦\">view</a> to <var>view</var>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform①\">transform</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor\" id=\"ref-for-xrdepthinformation-sensor③\">sensor</a>’s pose at <var>time</var> in <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space①\">reference space</a>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform②\">transform</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor\" id=\"ref-for-xrdepthinformation-sensor③\">sensor</a>’s pose at <var>time</var> in <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space①\">reference space</a>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -301,7 +307,7 @@
     {
       "name": "obtain-webgl-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-webgl-depth-information",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation\" id=\"ref-for-dom-xrwebglbinding-getdepthinformation\">getDepthInformation(view)</a></code> method is invoked on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding②\">XRWebGLBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑥\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgl-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGL depth information</dfn> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation\" id=\"ref-for-dom-xrwebglbinding-getdepthinformation\">getDepthInformation(view)</a></code> method is invoked on a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding②\">XRWebGLBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑦\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgl-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGL depth information</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -317,7 +323,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing\" id=\"ref-for-depth-sensing④\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device④\">XR device</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-enabledfeatures\" id=\"ref-for-dom-xrsession-enabledfeatures③\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode③\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑤\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage④\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized①\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage④\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized②\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active④\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑥\">InvalidStateError</a></code> and abort these steps.</p>"
@@ -336,7 +342,7 @@
     {
       "name": "create-webgl-depth-information",
       "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgl-depth-information-instance",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑦\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgl-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGL depth information instance</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview⑧\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -371,34 +377,40 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthactive\" id=\"ref-for-dom-xrsession-depthactive③\">depthActive</a></code> is <code>false</code>, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>nativeDepthInformation</var> be a result of querying <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing③\">native depth sensing</a> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype③\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑤\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑥\">depthDataFormat</a></code>.</p>"
+          "html": "<p>Let <var>nativeDepthInformation</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-information\" id=\"ref-for-native-depth-information①\">native depth information</a> obtained by querying <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing⑤\">native depth sensing</a> for the depth information valid as of <var>time</var>, for specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype③\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑤\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑥\">depthDataFormat</a></code>.</p>"
         },
         {
           "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#block-access\" id=\"ref-for-block-access①\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
+          "html": "<p>Let <var>nativeDepthBuffer</var> be <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-buffer\" id=\"ref-for-native-depth-buffer②\">native depth buffer</a>.</p>"
         },
         {
-          "html": "<p>If the depth buffer present in <var>nativeDepthInformation</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information①\">limit the amount of information</a> available in depth buffer, adjust the depth buffer accordingly.</p>"
+          "html": "<p>If <var>nativeDepthBuffer</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#block-access\" id=\"ref-for-block-access①\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width⑤\">width</a></code> to the width of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>If <var>nativeDepthBuffer</var> meets user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information①\">limit the amount of information</a> available in depth buffer, adjust <var>nativeDepthBuffer</var> accordingly.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height④\">height</a></code> to the height of the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width⑤\">width</a></code> to <var>nativeDepthBuffer</var>’s width.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height④\">height</a></code> to <var>nativeDepthBuffer</var>’s height.</p>"
         },
         {
           "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview⑤\">normDepthBufferFromNormView</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform③\">XRRigidTransform</a></code>, based on <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-coordinates-transformation-matrix\" id=\"ref-for-depth-coordinates-transformation-matrix①\">depth coordinates transformation matrix</a>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texture\" id=\"ref-for-dom-xrwebgldepthinformation-texture②\">texture</a></code> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#opaque-texture\" id=\"ref-for-opaque-texture①\">opaque texture</a> containing the depth buffer returned in <var>nativeDepthInformation</var>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-rawvaluetometers\" id=\"ref-for-dom-xrdepthinformation-rawvaluetometers⑤\">rawValueToMeters</a></code> to the scale factor supplied by <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texture\" id=\"ref-for-dom-xrwebgldepthinformation-texture②\">texture</a></code> to an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#opaque-texture\" id=\"ref-for-opaque-texture①\">opaque texture</a> containing <var>nativeDepthBuffer</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view⑧\">view</a> to <var>view</var>.</p>"
         },
         {
-          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform②\">transform</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor\" id=\"ref-for-xrdepthinformation-sensor⑤\">sensor</a>’s pose at <var>time</var> in <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space②\">reference space</a>.</p>"
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform③\">transform</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor\" id=\"ref-for-xrdepthinformation-sensor⑤\">sensor</a>’s pose at <var>time</var> in <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space②\">reference space</a>.</p>"
         },
         {
           "html": "Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texturetype\" id=\"ref-for-dom-xrwebgldepthinformation-texturetype②\">textureType</a></code> as follows:",
@@ -441,6 +453,202 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get WebGPU depth view descriptor",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrgpudepthinformation-getviewdescriptor",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRGPUDepthInformation\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrgpudepthinformation-getviewdescriptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewDescriptor()</code></dfn> method returns a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gputextureviewdescriptor\" id=\"ref-for-dictdef-gputextureviewdescriptor①\">GPUTextureViewDescriptor</a></code> configured to create a two-dimensional view of the portion of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrgpudepthinformation-texture\" id=\"ref-for-dom-xrgpudepthinformation-texture④\">texture</a></code> containing this object’s depth information.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Run the algorithm to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#attempting-to-access-the-depth-buffer\" id=\"ref-for-attempting-to-access-the-depth-buffer④\">attempt to access the depth buffer</a> with <var>depthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gputextureviewdescriptor\" id=\"ref-for-dictdef-gputextureviewdescriptor②\">GPUTextureViewDescriptor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-dimension\" id=\"ref-for-dom-gputextureviewdescriptor-dimension\">dimension</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdimension-2d\" id=\"ref-for-dom-gputextureviewdimension-2d\">\"2d\"</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-basemiplevel\" id=\"ref-for-dom-gputextureviewdescriptor-basemiplevel\">baseMipLevel</a></code> to `0`.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-miplevelcount\" id=\"ref-for-dom-gputextureviewdescriptor-miplevelcount\">mipLevelCount</a></code> to `1`.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-basearraylayer\" id=\"ref-for-dom-gputextureviewdescriptor-basearraylayer\">baseArrayLayer</a></code> to <var>depthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrgpudepthinformation-array-layer-index\" id=\"ref-for-xrgpudepthinformation-array-layer-index\">array layer index</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-arraylayercount\" id=\"ref-for-dom-gputextureviewdescriptor-arraylayercount\">arrayLayerCount</a></code> to `1`.</p>"
+        },
+        {
+          "html": "<p>Return <var>descriptor</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame\">XR animation frame</a> algorithm is extended as follows: immediately before setting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑥\">XRFrame</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active⑤\">active</a> boolean to <code>false</code>, the user agent MUST run the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <var>texture</var> in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑦\">XRFrame</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrframe-list-of-webgpu-depth-textures\" id=\"ref-for-xrframe-list-of-webgpu-depth-textures\">list of WebGPU depth textures</a>:",
+          "rationale": "call",
+          "steps": [
+            {
+              "html": "<p>Before the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-buffer\" id=\"ref-for-native-depth-buffer⑥\">native depth buffer</a> backing <var>texture</var> is modified or reused, ensure that all WebGPU work submitted during the processing of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑧\">XRFrame</a></code> that accesses <var>texture</var> has completed, or synchronize that work with the native depth sensing implementation using an equivalent GPU-side dependency.</p>"
+            },
+            {
+              "html": "<p>Call <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexture-destroy\" id=\"ref-for-dom-gputexture-destroy①\">destroy()</a></code> on <var>texture</var> without destroying its underlying <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-buffer\" id=\"ref-for-native-depth-buffer⑦\">native depth buffer</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑨\">XRFrame</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrframe-list-of-webgpu-depth-textures\" id=\"ref-for-xrframe-list-of-webgpu-depth-textures①\">list of WebGPU depth textures</a> to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain-webgpu-depth-information",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-webgpu-depth-information",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrgpubinding-getdepthinformation\" id=\"ref-for-dom-xrgpubinding-getdepthinformation①\">getDepthInformation(view)</a></code> is invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding\" id=\"ref-for-xrgpubinding④\">XRGPUBinding</a></code> <var>binding</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> <var>view</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-webgpu-depth-information\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain WebGPU depth information</dfn> by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>session</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session\">session</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>device</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device①\">device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>frame</var> be <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-frame\" id=\"ref-for-xrview-frame④\">frame</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var> does not match <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session⑤\">session</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑧\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing\" id=\"ref-for-depth-sensing⑤\">depth-sensing</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑥\">XR device</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-enabledfeatures\" id=\"ref-for-dom-xrsession-enabledfeatures④\">list of enabled features</a> for <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode④\">mode</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑥\">NotSupportedError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑥\">depthUsage</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized\" id=\"ref-for-dom-xrdepthusage-gpu-optimized③\">\"gpu-optimized\"</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑨\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>device</var> has been <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#destroyed\" id=\"ref-for-destroyed\">destroyed</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⓪\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active⑥\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-animationframe\" id=\"ref-for-xrframe-animationframe③\">animationFrame</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②②\">InvalidStateError</a></code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthInformation</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgpu-depth-information-instance\" id=\"ref-for-create-a-webgpu-depth-information-instance\">creating a WebGPU depth information instance</a> given <var>binding</var>, <var>frame</var>, and <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>depthInformation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create-webgpu-depth-information",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgpu-depth-information-instance",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-webgpu-depth-information-instance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a WebGPU depth information instance</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding\" id=\"ref-for-xrgpubinding⑤\">XRGPUBinding</a></code> <var>binding</var>, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①⓪\">XRFrame</a></code> <var>frame</var>, and an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①①\">XRView</a></code> <var>view</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrgpudepthinformation\" id=\"ref-for-xrgpudepthinformation①⓪\">XRGPUDepthInformation</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session⑥\">session</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>xrDevice</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑦\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>gpuDevice</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device②\">device</a>.</p>"
+        },
+        {
+          "html": "Initialize <var>time</var> as follows:",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If session was created with matchDepthView set to true:",
+                  "html": "Let <var>time</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time②\">time</a>."
+                },
+                {
+                  "case": "Otherwise:",
+                  "html": "Let <var>time</var> be the time that <var>xrDevice</var> captured the depth information."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthactive\" id=\"ref-for-dom-xrsession-depthactive④\">depthActive</a></code> is <code>false</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>nativeDepthInformation</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-information\" id=\"ref-for-native-depth-information②\">native depth information</a> obtained by querying <var>xrDevice</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing\" id=\"ref-for-native-depth-sensing⑥\">native depth sensing</a> for the depth information valid as of <var>time</var>, for the specified <var>view</var>, taking into account <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthtype\" id=\"ref-for-dom-xrsession-depthtype④\">depthType</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage\" id=\"ref-for-dom-xrsession-depthusage⑦\">depthUsage</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑧\">depthDataFormat</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>nativeDepthInformation</var> is <code>null</code>, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>nativeDepthBuffer</var> be <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-buffer\" id=\"ref-for-native-depth-buffer⑧\">native depth buffer</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>nativeDepthBuffer</var> meets the user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#block-access\" id=\"ref-for-block-access②\">block access</a> to the depth data, return <code>null</code> and abort these steps.</p>"
+        },
+        {
+          "html": "<p>If <var>nativeDepthBuffer</var> meets the user agent’s criteria to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information\" id=\"ref-for-limit-the-amount-of-information②\">limit the amount of information</a> available in the depth buffer, adjust <var>nativeDepthBuffer</var> accordingly.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width⑦\">width</a></code> to <var>nativeDepthBuffer</var>’s width.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height⑥\">height</a></code> to <var>nativeDepthBuffer</var>’s height.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-normdepthbufferfromnormview\" id=\"ref-for-dom-xrdepthinformation-normdepthbufferfromnormview⑦\">normDepthBufferFromNormView</a></code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrigidtransform\" id=\"ref-for-xrrigidtransform④\">XRRigidTransform</a></code>, based on <var>nativeDepthInformation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#depth-coordinates-transformation-matrix\" id=\"ref-for-depth-coordinates-transformation-matrix②\">depth coordinates transformation matrix</a>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-rawvaluetometers\" id=\"ref-for-dom-xrdepthinformation-rawvaluetometers⑦\">rawValueToMeters</a></code> to the scale factor supplied by <var>nativeDepthInformation</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>format</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#enumdef-gputextureformat\" id=\"ref-for-enumdef-gputextureformat①\">GPUTextureFormat</a></code> corresponding to <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat\" id=\"ref-for-dom-xrsession-depthdataformat⑨\">depthDataFormat</a></code> in the <a href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats\">§ 2.2 Intended depth type, data usage, and data formats</a> table.</p>"
+        },
+        {
+          "html": "<p>Let <var>arrayLayerCount</var> be the number of array layers in <var>nativeDepthBuffer</var>, or `1` if <var>nativeDepthBuffer</var> is not layered.</p>"
+        },
+        {
+          "html": "<p>Let <var>arrayLayerIndex</var> be `0` if <var>arrayLayerCount</var> is `1`; otherwise, let it be <var>view</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrview-index\" id=\"ref-for-dom-xrview-index\">index</a></code>.</p>"
+        },
+        {
+          "html": "<p>Assert that <var>arrayLayerIndex</var> is less than <var>arrayLayerCount</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#gputexturedescriptor\" id=\"ref-for-gputexturedescriptor\">GPUTextureDescriptor</a></code> with the following members:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-size\" id=\"ref-for-dom-gputexturedescriptor-size\">size</a></code> set to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#typedefdef-gpuextent3d\" id=\"ref-for-typedefdef-gpuextent3d\">GPUExtent3D</a></code> whose width is <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width\" id=\"ref-for-dom-xrdepthinformation-width⑧\">width</a></code>, height is <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height\" id=\"ref-for-dom-xrdepthinformation-height⑦\">height</a></code>, and depth or array layer count is <var>arrayLayerCount</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-miplevelcount\" id=\"ref-for-dom-gputexturedescriptor-miplevelcount\">mipLevelCount</a></code> set to `1`.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-samplecount\" id=\"ref-for-dom-gputexturedescriptor-samplecount\">sampleCount</a></code> set to `1`.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-dimension\" id=\"ref-for-dom-gputexturedescriptor-dimension\">dimension</a></code> set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedimension-2d\" id=\"ref-for-dom-gputexturedimension-2d①\">\"2d\"</a></code>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-format\" id=\"ref-for-dom-gputexturedescriptor-format\">format</a></code> set to <var>format</var>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-usage\" id=\"ref-for-dom-gputexturedescriptor-usage\">usage</a></code> set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureusage-texture_binding\" id=\"ref-for-dom-gputextureusage-texture_binding①\">TEXTURE_BINDING</a></code>.</p>\n       </li><li data-md=\"\">\n        <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-viewformats\" id=\"ref-for-dom-gputexturedescriptor-viewformats\">viewFormats</a></code> set to an empty sequence.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrgpudepthinformation-texture\" id=\"ref-for-dom-xrgpudepthinformation-texture⑥\">texture</a></code> to the result of calling <var>gpuDevice</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudevice-createtexture\" id=\"ref-for-dom-gpudevice-createtexture\">createTexture()</a></code> with <var>descriptor</var>, except with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#gputexture\" id=\"ref-for-gputexture③\">GPUTexture</a></code>’s underlying storage pointing to <var>nativeDepthBuffer</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrgpudepthinformation-array-layer-index\" id=\"ref-for-xrgpudepthinformation-array-layer-index①\">array layer index</a> to <var>arrayLayerIndex</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrgpudepthinformation-texture\" id=\"ref-for-dom-xrgpudepthinformation-texture⑦\">texture</a></code> to <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrframe-list-of-webgpu-depth-textures\" id=\"ref-for-xrframe-list-of-webgpu-depth-textures②\">list of WebGPU depth textures</a>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view\" id=\"ref-for-xrdepthinformation-view①⓪\">view</a> to <var>view</var>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>result</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrviewgeometry-transform\" id=\"ref-for-dom-xrviewgeometry-transform④\">transform</a></code> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-sensor\" id=\"ref-for-xrdepthinformation-sensor⑦\">sensor</a>’s pose at <var>time</var> in <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-reference-space\" id=\"ref-for-view-reference-space③\">reference space</a>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"

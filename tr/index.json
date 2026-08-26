@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-08-25T01:35:32.323Z",
+  "date": "2026-08-26T01:46:38.540Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -159,6 +159,7 @@
       "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
+      "mediacapture-extensions",
       "mediacapture-handle-actions",
       "mediacapture-surface-control",
       "pdf-aam",
@@ -622,7 +623,6 @@
       "shacl12-core",
       "shacl12-node-expr",
       "shacl12-profiling",
-      "shacl12-rules",
       "shacl12-sparql",
       "shacl12-ui",
       "sparql12-entailment",
@@ -633,6 +633,7 @@
       "sparql12-results-csv-tsv",
       "sparql12-results-json",
       "sparql12-results-xml",
+      "sparql12-rl",
       "sparql12-service-description",
       "sparql12-update",
       "sri-2",
@@ -778,7 +779,7 @@
     "crawled": 417,
     "errors": 0
   },
-  "crawler": "reffy-21.1.1",
+  "crawler": "reffy-21.1.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -824,7 +825,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "25 August 2026",
+      "date": "26 August 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -4173,11 +4174,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Aug 2026 14:08:02 GMT"
+        "lastModified": "Tue, 25 Aug 2026 15:52:34 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 August 2026",
-      "revision": "87b44e016626bbbf5c55953ea622e3fe1483131f",
+      "date": "25 August 2026",
+      "revision": "86ff5dd6478d7261084361d60357b8676a4d0caf",
       "algorithms": "algorithms/css-color-4.json",
       "links": "links/css-color-4.json",
       "refs": "refs/css-color-4.json",
@@ -5499,11 +5500,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-fonts-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Aug 2026 09:32:41 GMT"
+        "lastModified": "Tue, 25 Aug 2026 10:16:48 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 August 2026",
-      "revision": "7539965d98f6a6aae2933753b28aa505288a14d4",
+      "date": "25 August 2026",
+      "revision": "e87f13d5f9206a72f06f14ddde555b92e4c60ee6",
       "algorithms": "algorithms/css-fonts-4.json",
       "links": "links/css-fonts-4.json",
       "refs": "refs/css-fonts-4.json",
@@ -12124,7 +12125,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/epub-a11y-12/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB Accessibility 1.2",
@@ -16677,6 +16678,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "payment-method-manifest"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/payment-method-manifest/",
         "https://w3c.github.io/payment-method-manifest/"
@@ -19531,66 +19538,6 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/shacl12-rules/",
-      "seriesComposition": "full",
-      "shortname": "shacl12-rules",
-      "series": {
-        "shortname": "shacl-rules",
-        "currentSpecification": "shacl12-rules",
-        "title": "SHACL Rules",
-        "shortTitle": "SHACL Rules",
-        "releaseUrl": "https://www.w3.org/TR/shacl-rules/",
-        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-rules/"
-      },
-      "seriesVersion": "1.2",
-      "formerNames": [
-        "shacl12-inf-rules"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Data Shapes Working Group",
-          "url": "https://www.w3.org/groups/wg/data-shapes/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/shacl12-rules/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/data-shapes/shacl12-rules/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/data-shapes",
-        "sourcePath": "shacl12-rules/index.html",
-        "filename": "index.html"
-      },
-      "title": "SHACL 1.2 Rules",
-      "source": "w3c",
-      "shortTitle": "SHACL 1.2 Rules",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/shacl12-rules/",
-        "https://w3c.github.io/data-shapes/shacl12-rules/"
-      ],
-      "crawled": "https://www.w3.org/TR/shacl12-rules/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Aug 2026 08:33:23 GMT"
-      },
-      "generator": "respec",
-      "date": "19 August 2026",
-      "revision": "9379a8a36432a5ba1ac35b3f1a47d1707fc3d844",
-      "algorithms": "algorithms/shacl12-rules.json",
-      "links": "links/shacl12-rules.json",
-      "refs": "refs/shacl12-rules.json",
-      "dfns": "dfns/shacl12-rules.json",
-      "headings": "headings/shacl12-rules.json",
-      "ids": "ids/shacl12-rules.json",
-      "cddl": []
-    },
-    {
       "url": "https://www.w3.org/TR/shacl12-sparql/",
       "seriesComposition": "full",
       "shortname": "shacl12-sparql",
@@ -20146,6 +20093,66 @@
       "refs": "refs/sparql12-results-xml.json",
       "headings": "headings/sparql12-results-xml.json",
       "ids": "ids/sparql12-results-xml.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/sparql12-rl/",
+      "seriesComposition": "full",
+      "shortname": "sparql12-rl",
+      "series": {
+        "shortname": "sparql-rl",
+        "currentSpecification": "sparql12-rl",
+        "title": "SPARQL RL",
+        "shortTitle": "SPARQL RL",
+        "releaseUrl": "https://www.w3.org/TR/sparql-rl/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/sparql-rl/"
+      },
+      "seriesVersion": "1.2",
+      "formerNames": [
+        "shacl12-inf-rules",
+        "shacl12-rules"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/sparql12-rl/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/sparql12-rl/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "sparql12-rl/index.html",
+        "filename": "index.html"
+      },
+      "title": "SPARQL 1.2 RL",
+      "source": "w3c",
+      "shortTitle": "SPARQL 1.2 RL",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/sparql12-rl/",
+        "https://w3c.github.io/data-shapes/sparql12-rl/"
+      ],
+      "crawled": "https://www.w3.org/TR/sparql12-rl/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 24 Aug 2026 10:53:46 GMT"
+      },
+      "generator": "respec",
+      "date": "25 August 2026",
+      "algorithms": "algorithms/sparql12-rl.json",
+      "links": "links/sparql12-rl.json",
+      "refs": "refs/sparql12-rl.json",
+      "dfns": "dfns/sparql12-rl.json",
+      "headings": "headings/sparql12-rl.json",
+      "ids": "ids/sparql12-rl.json",
       "cddl": []
     },
     {
@@ -22421,11 +22428,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-forgery-defense-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Aug 2026 10:38:37 GMT"
+        "lastModified": "Tue, 25 Aug 2026 14:56:42 GMT"
       },
       "generator": "respec",
-      "date": "24 August 2026",
-      "revision": "915413186de43aa92f990d4d553dc36127a9074d",
+      "date": "25 August 2026",
+      "revision": "c26da8fca083f6a56ca4acc7c9ffab3c7352b52b",
       "algorithms": "algorithms/vc-forgery-defense-1.0.json",
       "links": "links/vc-forgery-defense-1.0.json",
       "refs": "refs/vc-forgery-defense-1.0.json",
@@ -23094,7 +23101,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vocab-ssn-2023/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "Semantic Sensor Network Ontology - 2023 Edition",
@@ -24134,7 +24141,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webauthn-3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24164,11 +24171,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webauthn-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 22 May 2026 10:04:12 GMT"
+        "lastModified": "Wed, 19 Aug 2026 15:41:58 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 May 2026",
-      "revision": "1f961c91b7c2de3d1b45ef3d6ca7b64d104b84e0",
+      "date": "25 August 2026",
+      "revision": "0a33db2d8901277e5107a89cb3152db125b328de",
       "algorithms": "algorithms/webauthn-3.json",
       "links": "links/webauthn-3.json",
       "refs": "refs/webauthn-3.json",
@@ -25215,11 +25222,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Aug 2026 06:57:53 GMT"
+        "lastModified": "Tue, 25 Aug 2026 10:59:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 August 2026",
-      "revision": "f685b9312940dbc7fa9ccf5ed36979bd351ddcc0",
+      "date": "25 August 2026",
+      "revision": "27a2f4b1aa258bb8c6859eb7ee265add0f9840fb",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -26134,11 +26141,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webxr-depth-sensing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 21:13:42 GMT"
+        "lastModified": "Tue, 25 Aug 2026 20:35:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 December 2025",
-      "revision": "2e5e9876756505b11a47efe9ce3effc53ea07608",
+      "date": "25 August 2026",
+      "revision": "e4b58e863683e0598a84f083c452bca9ecf264f8",
       "algorithms": "algorithms/webxr-depth-sensing-1.json",
       "links": "links/webxr-depth-sensing-1.json",
       "refs": "refs/webxr-depth-sensing-1.json",

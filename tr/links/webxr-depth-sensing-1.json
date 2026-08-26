@@ -26,6 +26,7 @@
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/": {},
+      "https://www.w3.org/TR/webgpu/": {},
       "https://www.w3.org/TR/webxr-ar-module-1/": {},
       "https://www.w3.org/TR/webxr/": {},
       "https://www.w3.org/TR/webxrlayers-1/": {},
@@ -44,9 +45,24 @@
       }
     },
     "autolinks": {
+      "https://gpuweb.github.io/gpuweb/": {
+        "anchors": [
+          "destroyed"
+        ]
+      },
+      "https://immersive-web.github.io/webxr-webgpu-binding/": {
+        "anchors": [
+          "webgpu-compatible-session",
+          "xrgpubinding",
+          "xrgpubinding-device",
+          "xrgpubinding-session"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "list-contain"
+          "list-contain",
+          "list",
+          "list-append"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -70,7 +86,6 @@
       },
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
-          "5.1",
           "5.14",
           "5.9"
         ]
@@ -80,14 +95,45 @@
           "3.7"
         ]
       },
+      "https://www.w3.org/TR/webgpu/": {
+        "anchors": [
+          "dom-gputextureformat-r32float",
+          "dom-gputextureformat-r16uint",
+          "gputexture",
+          "dictdef-gputextureviewdescriptor",
+          "dom-gputexturedimension-2d",
+          "enumdef-gputextureformat",
+          "dom-gputextureusage-texture_binding",
+          "dom-gputexture-destroy",
+          "dom-gputextureviewdescriptor-dimension",
+          "dom-gputextureviewdimension-2d",
+          "dom-gputextureviewdescriptor-basemiplevel",
+          "dom-gputextureviewdescriptor-miplevelcount",
+          "dom-gputextureviewdescriptor-basearraylayer",
+          "dom-gputextureviewdescriptor-arraylayercount",
+          "gputexturedescriptor",
+          "dom-gputexturedescriptor-size",
+          "typedefdef-gpuextent3d",
+          "dom-gputexturedescriptor-miplevelcount",
+          "dom-gputexturedescriptor-samplecount",
+          "dom-gputexturedescriptor-dimension",
+          "dom-gputexturedescriptor-format",
+          "dom-gputexturedescriptor-usage",
+          "dom-gputexturedescriptor-viewformats",
+          "dom-gpudevice-createtexture"
+        ]
+      },
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "xrsession-interface",
+          "xrview",
+          "xrsession-list-of-views",
+          "view-geometry-projection-matrix",
+          "dom-xrviewgeometry-transform",
           "feature-descriptor",
           "capable-of-supporting",
           "inline-xr-device",
           "feature-policy",
-          "xrview",
           "xrsystem",
           "dictdef-xrsessioninit",
           "dom-xrsessioninit-requiredfeatures",
@@ -101,7 +147,6 @@
           "xrsession-mode",
           "xrrigidtransform",
           "xrviewgeometry-mixin",
-          "dom-xrviewgeometry-transform",
           "view-reference-space",
           "view-geometry-containing-object",
           "xrview-frame",
@@ -112,7 +157,8 @@
           "callbackdef-xrframerequestcallback",
           "dom-xrview-eye",
           "dom-xreye-right",
-          "view-geometry-projection-matrix"
+          "xr-animation-frame",
+          "dom-xrview-index"
         ]
       },
       "https://www.w3.org/TR/webxrlayers-1/": {
