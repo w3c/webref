@@ -2,3 +2,18 @@
 dictionary VideoFrameMetadata {
   // Possible members are recorded in the VideoFrame Metadata Registry.
 };
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary VideoFrameMetadata {
+  sequence<Segment> segments;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary VideoFrameMetadata {
+  BackgroundBlur backgroundBlur;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary VideoFrameMetadata {
+  ImageBitmap backgroundSegmentationMask;
+};

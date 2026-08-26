@@ -1,0 +1,4044 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams Extensions",
+    "url": "https://w3c.github.io/mediacapture-extensions/"
+  },
+  "dfns": [
+    {
+      "id": "dom-mediadevices-defaultsemantics",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediadevices-defaultsemantics",
+      "linkingText": [
+        "defaultSemantics"
+      ],
+      "localLinkingText": [
+        "MediaDevices.defaultSemantics"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x4-3-1-attributes"
+        ],
+        "number": "4.3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamconstraints-semantics",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamconstraints-semantics",
+      "linkingText": [
+        "semantics"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaStreamConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediastreamconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediastreamconstraints-members",
+        "title": "Dictionary MediaStreamConstraints Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-getusermediasemantics",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-getusermediasemantics",
+      "linkingText": [
+        "GetUserMediaSemantics"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getusermediasemantics-enum",
+        "href": "https://w3c.github.io/mediacapture-extensions/#getusermediasemantics-enum",
+        "title": "GetUserMediaSemantics enum",
+        "alternateIds": [
+          "x4-5-getusermediasemantics-enum"
+        ],
+        "number": "4.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-getusermediasemantics-browser-chooses",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-getusermediasemantics-browser-chooses",
+      "linkingText": [
+        "browser-chooses"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GetUserMediaSemantics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getusermediasemantics-enum",
+        "href": "https://w3c.github.io/mediacapture-extensions/#getusermediasemantics-enum",
+        "title": "GetUserMediaSemantics enum",
+        "alternateIds": [
+          "x4-5-getusermediasemantics-enum"
+        ],
+        "number": "4.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-getusermediasemantics-user-chooses",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-getusermediasemantics-user-chooses",
+      "linkingText": [
+        "user-chooses"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GetUserMediaSemantics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getusermediasemantics-enum",
+        "href": "https://w3c.github.io/mediacapture-extensions/#getusermediasemantics-enum",
+        "title": "GetUserMediaSemantics enum",
+        "alternateIds": [
+          "x4-5-getusermediasemantics-enum"
+        ],
+        "number": "4.5"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-same-permission",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-same-permission",
+      "linkingText": [
+        "Same-permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x4-6-algorithms"
+        ],
+        "number": "4.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-stats",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-stats",
+      "linkingText": [
+        "[[Stats]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack-statistics",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-statistics",
+        "title": "MediaStreamTrack Statistics",
+        "alternateIds": [
+          "x5-2-mediastreamtrack-statistics"
+        ],
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrack-stats",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrack-stats",
+      "linkingText": [
+        "stats"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrack.stats"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-0",
+        "title": "Attributes",
+        "alternateIds": [
+          "x5-2-1-attributes"
+        ],
+        "number": "5.2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats",
+      "linkingText": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-delivered-audio-frames",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-delivered-audio-frames",
+      "linkingText": [
+        "delivered audio frames",
+        "delivered audio frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-delivered-audio-frames-duration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-delivered-audio-frames-duration",
+      "linkingText": [
+        "delivered audio frames duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-dropped-audio-frames",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-dropped-audio-frames",
+      "linkingText": [
+        "dropped audio frames",
+        "dropped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-dropped-audio-frames-duration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-dropped-audio-frames-duration",
+      "linkingText": [
+        "dropped audio frames duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-input-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-input-latency",
+      "linkingText": [
+        "input latency",
+        "Input latency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-latest-input-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-latest-input-latency",
+      "linkingText": [
+        "latest input latency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-average-input-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-average-input-latency",
+      "linkingText": [
+        "average input latency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-minimum-input-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-minimum-input-latency",
+      "linkingText": [
+        "minimum input latency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-maximum-input-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-maximum-input-latency",
+      "linkingText": [
+        "maximum input latency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-latency-reset-time",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-latency-reset-time",
+      "linkingText": [
+        "latency reset time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-deliveredframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-deliveredframes",
+      "linkingText": [
+        "[[DeliveredFrames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-deliveredframesduration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-deliveredframesduration",
+      "linkingText": [
+        "[[DeliveredFramesDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-droppedframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-droppedframes",
+      "linkingText": [
+        "[[DroppedFrames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-droppedframesduration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-droppedframesduration",
+      "linkingText": [
+        "[[DroppedFramesDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-latency",
+      "linkingText": [
+        "[[Latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-averagelatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-averagelatency",
+      "linkingText": [
+        "[[AverageLatency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-minimumlatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-minimumlatency",
+      "linkingText": [
+        "[[MinimumLatency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-maximumlatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-maximumlatency",
+      "linkingText": [
+        "[[MaximumLatency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-lasttask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-lasttask",
+      "linkingText": [
+        "[[LastTask]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-lastexposuretime",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-lastexposuretime",
+      "linkingText": [
+        "[[LastExposureTime]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-expose-audio-frame-counters-steps",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-expose-audio-frame-counters-steps",
+      "linkingText": [
+        "expose audio frame counters steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackaudiostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackaudiostats-interface",
+        "title": "The MediaStreamTrackAudioStats interface",
+        "alternateIds": [
+          "x6-the-mediastreamtrackaudiostats-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-deliveredframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-deliveredframes",
+      "linkingText": [
+        "deliveredFrames"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.deliveredFrames"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-deliveredframesduration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-deliveredframesduration",
+      "linkingText": [
+        "deliveredFramesDuration"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.deliveredFramesDuration"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-totalframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-totalframes",
+      "linkingText": [
+        "totalFrames"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.totalFrames"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-totalframesduration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-totalframesduration",
+      "linkingText": [
+        "totalFramesDuration"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.totalFramesDuration"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-latency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-latency",
+      "linkingText": [
+        "latency"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.latency"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-averagelatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-averagelatency",
+      "linkingText": [
+        "averageLatency"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.averageLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-minimumlatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-minimumlatency",
+      "linkingText": [
+        "minimumLatency"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.minimumLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-maximumlatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-maximumlatency",
+      "linkingText": [
+        "maximumLatency"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.maximumLatency"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-1",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-resetlatency",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-resetlatency",
+      "linkingText": [
+        "resetLatency()"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.resetLatency",
+        "MediaStreamTrackAudioStats.resetLatency()",
+        "resetLatency"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "methods",
+        "href": "https://w3c.github.io/mediacapture-extensions/#methods",
+        "title": "Methods"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackaudiostats-tojson",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackAudioStats.toJSON",
+        "MediaStreamTrackAudioStats.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrackAudioStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "methods",
+        "href": "https://w3c.github.io/mediacapture-extensions/#methods",
+        "title": "Methods"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackvideostats",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats",
+      "linkingText": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-delivered-video-frames",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-delivered-video-frames",
+      "linkingText": [
+        "delivered video frames",
+        "delivered video frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-discarded-video-frames",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-discarded-video-frames",
+      "linkingText": [
+        "discarded video frames",
+        "discarded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-total-video-frames",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-total-video-frames",
+      "linkingText": [
+        "total video frames",
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-deliveredframes-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-deliveredframes-0",
+      "linkingText": [
+        "[[DeliveredFrames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-discardedframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-discardedframes",
+      "linkingText": [
+        "[[DiscardedFrames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-totalframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-totalframes",
+      "linkingText": [
+        "[[TotalFrames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-lasttask-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-lasttask-0",
+      "linkingText": [
+        "[[LastTask]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-expose-video-frame-counters-steps",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-expose-video-frame-counters-steps",
+      "linkingText": [
+        "expose video frame counters steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-mediastreamtrackvideostats-interface",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-mediastreamtrackvideostats-interface",
+        "title": "The MediaStreamTrackVideoStats interface",
+        "alternateIds": [
+          "x7-the-mediastreamtrackvideostats-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackvideostats-deliveredframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats-deliveredframes",
+      "linkingText": [
+        "deliveredFrames"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackVideoStats.deliveredFrames"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-2",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackvideostats-discardedframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats-discardedframes",
+      "linkingText": [
+        "discardedFrames"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackVideoStats.discardedFrames"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-2",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackvideostats-totalframes",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats-totalframes",
+      "linkingText": [
+        "totalFrames"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackVideoStats.totalFrames"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#attributes-2",
+        "title": "Attributes"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrackvideostats-tojson",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrackVideoStats.toJSON",
+        "MediaStreamTrackVideoStats.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "MediaStreamTrackVideoStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "methods-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#methods-0",
+        "title": "Methods"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-powerefficient",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksupportedconstraints-members",
+        "title": "Dictionary MediaTrackSupportedConstraints Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-powerefficient",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatrackcapabilities-members",
+        "title": "Dictionary MediaTrackCapabilities Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-powerefficient",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksettings-members",
+        "title": "Dictionary MediaTrackSettings Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "def-constraint-powerEfficient",
+      "href": "https://w3c.github.io/mediacapture-extensions/#def-constraint-powerEfficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-extensions/#constrainable-properties",
+        "title": "Constrainable Properties",
+        "alternateIds": [
+          "x8-4-constrainable-properties"
+        ],
+        "number": "8.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-powerefficientpixelformat",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-powerefficientpixelformat",
+      "linkingText": [
+        "powerEfficientPixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksupportedconstraints-members-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksupportedconstraints-members-0",
+        "title": "Dictionary MediaTrackSupportedConstraints Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-powerefficientpixelformat",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-powerefficientpixelformat",
+      "linkingText": [
+        "powerEfficientPixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatrackcapabilities-members-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatrackcapabilities-members-0",
+        "title": "Dictionary MediaTrackCapabilities Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-powerefficientpixelformat",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-powerefficientpixelformat",
+      "linkingText": [
+        "powerEfficientPixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksettings-members-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksettings-members-0",
+        "title": "Dictionary MediaTrackSettings Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "def-constraint-powerEfficientPixelFormat",
+      "href": "https://w3c.github.io/mediacapture-extensions/#def-constraint-powerEfficientPixelFormat",
+      "linkingText": [
+        "powerEfficientPixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#constrainable-properties-0",
+        "title": "Constrainable Properties",
+        "alternateIds": [
+          "x9-4-constrainable-properties"
+        ],
+        "number": "9.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-presentation-timestamp",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-presentation-timestamp",
+      "linkingText": [
+        "presentation timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "video-timestamp-concepts",
+        "href": "https://w3c.github.io/mediacapture-extensions/#video-timestamp-concepts",
+        "title": "10. Video timestamp concepts",
+        "alternateIds": [
+          "x10-video-timestamp-concepts"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-capture-timestamp",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-capture-timestamp",
+      "linkingText": [
+        "capture timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "video-timestamp-concepts",
+        "href": "https://w3c.github.io/mediacapture-extensions/#video-timestamp-concepts",
+        "title": "10. Video timestamp concepts",
+        "alternateIds": [
+          "x10-video-timestamp-concepts"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-receive-timestamp",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-receive-timestamp",
+      "linkingText": [
+        "receive timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "video-timestamp-concepts",
+        "href": "https://w3c.github.io/mediacapture-extensions/#video-timestamp-concepts",
+        "title": "10. Video timestamp concepts",
+        "alternateIds": [
+          "x10-video-timestamp-concepts"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rtp-timestamp",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-rtp-timestamp",
+      "linkingText": [
+        "RTP timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "video-timestamp-concepts",
+        "href": "https://w3c.github.io/mediacapture-extensions/#video-timestamp-concepts",
+        "title": "10. Video timestamp concepts",
+        "alternateIds": [
+          "x10-video-timestamp-concepts"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-capturetime",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-capturetime",
+      "linkingText": [
+        "captureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-receivetime",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-receivetime",
+      "linkingText": [
+        "receiveTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-rtptimestamp",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-rtptimestamp",
+      "linkingText": [
+        "rtpTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-initialize-video-frame-timestamps-from-internal-mediastreamtrack-video-frame",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-initialize-video-frame-timestamps-from-internal-mediastreamtrack-video-frame",
+      "linkingText": [
+        "Initialize Video Frame Timestamps From Internal MediaStreamTrack Video Frame"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithms-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-0",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x10-3-algorithms"
+        ],
+        "number": "10.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-copy-video-frame-timestamps-to-internal-mediastreamtrack-video-frame",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-copy-video-frame-timestamps-to-internal-mediastreamtrack-video-frame",
+      "linkingText": [
+        "Copy Video Frame Timestamps To Internal MediaStreamTrack Video Frame"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithms-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-0",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x10-3-algorithms"
+        ],
+        "number": "10.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-gesturereactions",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-gesturereactions",
+      "linkingText": [
+        "gestureReactions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "title": "12. Exposing MediaStreamTrack source heuristic reactions support",
+        "alternateIds": [
+          "x12-exposing-mediastreamtrack-source-heuristic-reactions-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-gesturereactions",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-gesturereactions",
+      "linkingText": [
+        "gestureReactions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "title": "12. Exposing MediaStreamTrack source heuristic reactions support",
+        "alternateIds": [
+          "x12-exposing-mediastreamtrack-source-heuristic-reactions-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-gesturereactions",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-gesturereactions",
+      "linkingText": [
+        "gestureReactions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "title": "12. Exposing MediaStreamTrack source heuristic reactions support",
+        "alternateIds": [
+          "x12-exposing-mediastreamtrack-source-heuristic-reactions-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-gesturereactions",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-gesturereactions",
+      "linkingText": [
+        "gestureReactions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-heuristic-reactions-support",
+        "title": "12. Exposing MediaStreamTrack source heuristic reactions support",
+        "alternateIds": [
+          "x12-exposing-mediastreamtrack-source-heuristic-reactions-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-faceframing",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-faceframing",
+      "linkingText": [
+        "faceFraming"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "title": "13. Exposing MediaStreamTrack source automatic face framing support",
+        "alternateIds": [
+          "x13-exposing-mediastreamtrack-source-automatic-face-framing-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-faceframing",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-faceframing",
+      "linkingText": [
+        "faceFraming"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "title": "13. Exposing MediaStreamTrack source automatic face framing support",
+        "alternateIds": [
+          "x13-exposing-mediastreamtrack-source-automatic-face-framing-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-faceframing",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-faceframing",
+      "linkingText": [
+        "faceFraming"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "title": "13. Exposing MediaStreamTrack source automatic face framing support",
+        "alternateIds": [
+          "x13-exposing-mediastreamtrack-source-automatic-face-framing-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-faceframing",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-faceframing",
+      "linkingText": [
+        "faceFraming"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-automatic-face-framing-support",
+        "title": "13. Exposing MediaStreamTrack source automatic face framing support",
+        "alternateIds": [
+          "x13-exposing-mediastreamtrack-source-automatic-face-framing-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-eyegazecorrection",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-eyegazecorrection",
+      "linkingText": [
+        "eyeGazeCorrection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "title": "14. Exposing MediaStreamTrack source eye gaze correction support",
+        "alternateIds": [
+          "x14-exposing-mediastreamtrack-source-eye-gaze-correction-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-eyegazecorrection",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-eyegazecorrection",
+      "linkingText": [
+        "eyeGazeCorrection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "title": "14. Exposing MediaStreamTrack source eye gaze correction support",
+        "alternateIds": [
+          "x14-exposing-mediastreamtrack-source-eye-gaze-correction-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-eyegazecorrection",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-eyegazecorrection",
+      "linkingText": [
+        "eyeGazeCorrection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "title": "14. Exposing MediaStreamTrack source eye gaze correction support",
+        "alternateIds": [
+          "x14-exposing-mediastreamtrack-source-eye-gaze-correction-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-eyegazecorrection",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-eyegazecorrection",
+      "linkingText": [
+        "eyeGazeCorrection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "href": "https://w3c.github.io/mediacapture-extensions/#exposing-mediastreamtrack-source-eye-gaze-correction-support",
+        "title": "14. Exposing MediaStreamTrack source eye gaze correction support",
+        "alternateIds": [
+          "x14-exposing-mediastreamtrack-source-eye-gaze-correction-support"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-voiceisolation",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-voiceisolation",
+      "linkingText": [
+        "voiceIsolation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "voiceisolation-constraint",
+        "href": "https://w3c.github.io/mediacapture-extensions/#voiceisolation-constraint",
+        "title": "15. VoiceIsolation constraint",
+        "alternateIds": [
+          "x15-voiceisolation-constraint"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-voiceisolation",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-voiceisolation",
+      "linkingText": [
+        "voiceIsolation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "voiceisolation-constraint",
+        "href": "https://w3c.github.io/mediacapture-extensions/#voiceisolation-constraint",
+        "title": "15. VoiceIsolation constraint",
+        "alternateIds": [
+          "x15-voiceisolation-constraint"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-voiceisolation",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-voiceisolation",
+      "linkingText": [
+        "voiceIsolation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "voiceisolation-constraint",
+        "href": "https://w3c.github.io/mediacapture-extensions/#voiceisolation-constraint",
+        "title": "15. VoiceIsolation constraint",
+        "alternateIds": [
+          "x15-voiceisolation-constraint"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-voiceisolation",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-voiceisolation",
+      "linkingText": [
+        "voiceIsolation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "voiceisolation-constraint",
+        "href": "https://w3c.github.io/mediacapture-extensions/#voiceisolation-constraint",
+        "title": "15. VoiceIsolation constraint",
+        "alternateIds": [
+          "x15-voiceisolation-constraint"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediastreamtrack-onconfigurationchange",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrack-onconfigurationchange",
+      "linkingText": [
+        "onconfigurationchange"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrack.onconfigurationchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack-interface-extensions",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-interface-extensions",
+        "title": "MediaStreamTrack Interface Extensions",
+        "alternateIds": [
+          "x16-1-mediastreamtrack-interface-extensions"
+        ],
+        "number": "16.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-configurationchange",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-configurationchange",
+      "linkingText": [
+        "configurationchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack-interface-extensions",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-interface-extensions",
+        "title": "MediaStreamTrack Interface Extensions",
+        "alternateIds": [
+          "x16-1-mediastreamtrack-interface-extensions"
+        ],
+        "number": "16.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "change-track-configuration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#change-track-configuration",
+      "linkingText": [
+        "a change of configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack-interface-extensions",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-interface-extensions",
+        "title": "MediaStreamTrack Interface Extensions",
+        "alternateIds": [
+          "x16-1-mediastreamtrack-interface-extensions"
+        ],
+        "number": "16.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-segments",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-segments",
+      "linkingText": [
+        "segments"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "members-0",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members-0",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment",
+      "linkingText": [
+        "Segment"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "segment",
+        "href": "https://w3c.github.io/mediacapture-extensions/#segment",
+        "title": "Segment",
+        "alternateIds": [
+          "x17-2-segment"
+        ],
+        "number": "17.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype",
+      "linkingText": [
+        "SegmentType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "segment",
+        "href": "https://w3c.github.io/mediacapture-extensions/#segment",
+        "title": "Segment",
+        "alternateIds": [
+          "x17-2-segment"
+        ],
+        "number": "17.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-segment-type",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype-human-face",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype-human-face",
+      "linkingText": [
+        "human-face"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SegmentType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype-left-eye",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype-left-eye",
+      "linkingText": [
+        "left-eye"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SegmentType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype-right-eye",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype-right-eye",
+      "linkingText": [
+        "right-eye"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SegmentType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype-eye",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype-eye",
+      "linkingText": [
+        "eye"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SegmentType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segmenttype-mouth",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segmenttype-mouth",
+      "linkingText": [
+        "mouth"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SegmentType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment-id",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment-partof",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-partof",
+      "linkingText": [
+        "partOf"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment-probability",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-probability",
+      "linkingText": [
+        "probability"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment-centerpoint",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-centerpoint",
+      "linkingText": [
+        "centerPoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-segment-boundingbox",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-segment-boundingbox",
+      "linkingText": [
+        "boundingBox"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Segment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-segment-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-segment-members",
+        "title": "Dictionary Segment Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-humanfacedetectionmode",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-humanfacedetectionmode",
+      "linkingText": [
+        "humanFaceDetectionMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksupportedconstraints-members-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksupportedconstraints-members-1",
+        "title": "Dictionary MediaTrackSupportedConstraints Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-humanfacedetectionmode",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-humanfacedetectionmode",
+      "linkingText": [
+        "humanFaceDetectionMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatrackcapabilities-members-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatrackcapabilities-members-1",
+        "title": "Dictionary MediaTrackCapabilities Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-humanfacedetectionmode",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-humanfacedetectionmode",
+      "linkingText": [
+        "humanFaceDetectionMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatrackconstraintset-members",
+        "title": "Dictionary MediaTrackConstraintSet Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-humanfacedetectionmode",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-humanfacedetectionmode",
+      "linkingText": [
+        "humanFaceDetectionMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediatracksettings-members-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediatracksettings-members-1",
+        "title": "Dictionary MediaTrackSettings Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-humanfacedetectionmodeenum",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-humanfacedetectionmodeenum",
+      "linkingText": [
+        "HumanFaceDetectionModeEnum"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "humanfacedetectionmodeenum",
+        "href": "https://w3c.github.io/mediacapture-extensions/#humanfacedetectionmodeenum",
+        "title": "HumanFaceDetectionModeEnum",
+        "alternateIds": [
+          "x17-7-humanfacedetectionmodeenum"
+        ],
+        "number": "17.7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-humanfacedetectionmodeenum-none",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-humanfacedetectionmodeenum-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HumanFaceDetectionModeEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "humanfacedetectionmodeenum-enumeration-description",
+        "href": "https://w3c.github.io/mediacapture-extensions/#humanfacedetectionmodeenum-enumeration-description",
+        "title": "HumanFaceDetectionModeEnum Enumeration Description"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-humanfacedetectionmodeenum-bounding-box",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-humanfacedetectionmodeenum-bounding-box",
+      "linkingText": [
+        "bounding-box"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HumanFaceDetectionModeEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "humanfacedetectionmodeenum-enumeration-description",
+        "href": "https://w3c.github.io/mediacapture-extensions/#humanfacedetectionmodeenum-enumeration-description",
+        "title": "HumanFaceDetectionModeEnum Enumeration Description"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-humanfacedetectionmodeenum-bounding-box-with-landmark-center-point",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-humanfacedetectionmodeenum-bounding-box-with-landmark-center-point",
+      "linkingText": [
+        "bounding-box-with-landmark-center-point"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HumanFaceDetectionModeEnum"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "humanfacedetectionmodeenum-enumeration-description",
+        "href": "https://w3c.github.io/mediacapture-extensions/#humanfacedetectionmodeenum-enumeration-description",
+        "title": "HumanFaceDetectionModeEnum Enumeration Description"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "def-constraint-humanFaceDetectionMode",
+      "href": "https://w3c.github.io/mediacapture-extensions/#def-constraint-humanFaceDetectionMode",
+      "linkingText": [
+        "humanFaceDetectionMode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#constrainable-properties-1",
+        "title": "Constrainable Properties",
+        "alternateIds": [
+          "x17-8-constrainable-properties"
+        ],
+        "number": "17.8"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-backgroundblur",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-backgroundblur",
+      "linkingText": [
+        "backgroundBlur"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "members-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members-1",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-backgroundblur",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-backgroundblur",
+      "linkingText": [
+        "BackgroundBlur"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "backgroundblur",
+        "href": "https://w3c.github.io/mediacapture-extensions/#backgroundblur",
+        "title": "BackgroundBlur",
+        "alternateIds": [
+          "x18-2-backgroundblur"
+        ],
+        "number": "18.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediaeffectinfo",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediaeffectinfo",
+      "linkingText": [
+        "MediaEffectInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediaeffectinfo",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediaeffectinfo",
+        "title": "MediaEffectInfo",
+        "alternateIds": [
+          "x18-3-mediaeffectinfo"
+        ],
+        "number": "18.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediaeffectinfo-enabled",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediaeffectinfo-enabled",
+      "linkingText": [
+        "enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaEffectInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-mediaeffectinfo-members",
+        "href": "https://w3c.github.io/mediacapture-extensions/#dictionary-mediaeffectinfo-members",
+        "title": "Dictionary MediaEffectInfo Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-backgroundsegmentationmask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksupportedconstraints-backgroundsegmentationmask",
+      "linkingText": [
+        "backgroundSegmentationMask"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "background-segmentation-mask",
+        "href": "https://w3c.github.io/mediacapture-extensions/#background-segmentation-mask",
+        "title": "20. Background segmentation mask",
+        "alternateIds": [
+          "x20-background-segmentation-mask"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackconstraintset-backgroundsegmentationmask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackconstraintset-backgroundsegmentationmask",
+      "linkingText": [
+        "backgroundSegmentationMask"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "background-segmentation-mask",
+        "href": "https://w3c.github.io/mediacapture-extensions/#background-segmentation-mask",
+        "title": "20. Background segmentation mask",
+        "alternateIds": [
+          "x20-background-segmentation-mask"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatracksettings-backgroundsegmentationmask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatracksettings-backgroundsegmentationmask",
+      "linkingText": [
+        "backgroundSegmentationMask"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "background-segmentation-mask",
+        "href": "https://w3c.github.io/mediacapture-extensions/#background-segmentation-mask",
+        "title": "20. Background segmentation mask",
+        "alternateIds": [
+          "x20-background-segmentation-mask"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-mediatrackcapabilities-backgroundsegmentationmask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediatrackcapabilities-backgroundsegmentationmask",
+      "linkingText": [
+        "backgroundSegmentationMask"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "background-segmentation-mask",
+        "href": "https://w3c.github.io/mediacapture-extensions/#background-segmentation-mask",
+        "title": "20. Background segmentation mask",
+        "alternateIds": [
+          "x20-background-segmentation-mask"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-videoframemetadata-backgroundsegmentationmask",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-videoframemetadata-backgroundsegmentationmask",
+      "linkingText": [
+        "backgroundSegmentationMask"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "members-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#members-2",
+        "title": "Members"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-camera",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-camera",
+      "linkingText": [
+        "camera"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement",
+      "linkingText": [
+        "HTMLCameraElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-track",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-track",
+      "linkingText": [
+        "[[track]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraints",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraints",
+      "linkingText": [
+        "[[constraints]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-error",
+      "linkingText": [
+        "[[error]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-ontrack",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-ontrack",
+      "linkingText": [
+        "ontrack"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.ontrack"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-oncancel",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.oncancel"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-onerror",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.onerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-camera-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-camera-html-element",
+        "title": "The camera HTML element",
+        "alternateIds": [
+          "x21-1-the-camera-html-element"
+        ],
+        "number": "21.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-constructor",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.constructor",
+        "HTMLCameraElement.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-track",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.track"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.error"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlcameraelement-setconstraints",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-setconstraints",
+      "linkingText": [
+        "setConstraints()",
+        "setConstraints(constraints)"
+      ],
+      "localLinkingText": [
+        "HTMLCameraElement.setConstraints",
+        "HTMLCameraElement.setConstraints()",
+        "setConstraints"
+      ],
+      "type": "method",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-activation-start-stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream",
+      "linkingText": [
+        "activation start stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraint-filter",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter",
+      "linkingText": [
+        "constraint filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLCameraElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-1",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-1",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-1-1-algorithms"
+        ],
+        "number": "21.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-microphone",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-microphone",
+      "linkingText": [
+        "microphone"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement",
+      "linkingText": [
+        "HTMLMicrophoneElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-track-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-track-0",
+      "linkingText": [
+        "[[track]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraints-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraints-0",
+      "linkingText": [
+        "[[constraints]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-error-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-error-0",
+      "linkingText": [
+        "[[error]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-ontrack",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-ontrack",
+      "linkingText": [
+        "ontrack"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.ontrack"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-oncancel",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.oncancel"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-onerror",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.onerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-microphone-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-microphone-html-element",
+        "title": "The microphone HTML element",
+        "alternateIds": [
+          "x21-2-the-microphone-html-element"
+        ],
+        "number": "21.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-constructor",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.constructor",
+        "HTMLMicrophoneElement.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-track",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.track"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.error"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmicrophoneelement-setconstraints",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-setconstraints",
+      "linkingText": [
+        "setConstraints()",
+        "setConstraints(constraints)"
+      ],
+      "localLinkingText": [
+        "HTMLMicrophoneElement.setConstraints",
+        "HTMLMicrophoneElement.setConstraints()",
+        "setConstraints"
+      ],
+      "type": "method",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-activation-start-stream-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-0",
+      "linkingText": [
+        "activation start stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraint-filter-0",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-0",
+      "linkingText": [
+        "constraint filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLMicrophoneElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-2",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-2",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-2-1-algorithms"
+        ],
+        "number": "21.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-usermedia",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-usermedia",
+      "linkingText": [
+        "usermedia"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmediastreamconstraints",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints",
+      "linkingText": [
+        "HTMLMediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmediastreamconstraints-video",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HTMLMediaStreamConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlmediastreamconstraints-audio",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-audio",
+      "linkingText": [
+        "audio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HTMLMediaStreamConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement",
+      "linkingText": [
+        "HTMLUserMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-stream",
+      "linkingText": [
+        "[[stream]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraints-1",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraints-1",
+      "linkingText": [
+        "[[constraints]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-error-1",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-error-1",
+      "linkingText": [
+        "[[error]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-onstream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-onstream",
+      "linkingText": [
+        "onstream"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.onstream"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-oncancel",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.oncancel"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-onerror",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.onerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-usermedia-html-element",
+        "href": "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element",
+        "title": "The usermedia HTML element",
+        "alternateIds": [
+          "x21-3-the-usermedia-html-element"
+        ],
+        "number": "21.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-constructor",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.constructor",
+        "HTMLUserMediaElement.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.stream"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.error"
+      ],
+      "type": "attribute",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlusermediaelement-setconstraints",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-setconstraints",
+      "linkingText": [
+        "setConstraints()",
+        "setConstraints(constraints)"
+      ],
+      "localLinkingText": [
+        "HTMLUserMediaElement.setConstraints",
+        "HTMLUserMediaElement.setConstraints()",
+        "setConstraints"
+      ],
+      "type": "method",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-activation-start-stream-1",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-1",
+      "linkingText": [
+        "activation start stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraint-filter-1",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-1",
+      "linkingText": [
+        "constraint filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLUserMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms-3",
+        "href": "https://w3c.github.io/mediacapture-extensions/#algorithms-3",
+        "title": "Algorithms",
+        "alternateIds": [
+          "x21-3-1-algorithms"
+        ],
+        "number": "21.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-trusted",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-trusted",
+      "linkingText": [
+        "trusted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AllUserMediaElements"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-algorithms",
+        "href": "https://w3c.github.io/mediacapture-extensions/#shared-algorithms",
+        "title": "Shared Algorithms",
+        "alternateIds": [
+          "x21-4-shared-algorithms"
+        ],
+        "number": "21.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-media-capture-element-task-source",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-media-capture-element-task-source",
+      "linkingText": [
+        "media capture element task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AllUserMediaElements"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-algorithms",
+        "href": "https://w3c.github.io/mediacapture-extensions/#shared-algorithms",
+        "title": "Shared Algorithms",
+        "alternateIds": [
+          "x21-4-shared-algorithms"
+        ],
+        "number": "21.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-queue-an-event",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event",
+      "linkingText": [
+        "queue an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AllUserMediaElements"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shared-algorithms",
+        "href": "https://w3c.github.io/mediacapture-extensions/#shared-algorithms",
+        "title": "Shared Algorithms",
+        "alternateIds": [
+          "x21-4-shared-algorithms"
+        ],
+        "number": "21.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

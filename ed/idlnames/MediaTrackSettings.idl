@@ -18,6 +18,46 @@ dictionary MediaTrackSettings {
   boolean backgroundBlur;
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean powerEfficient;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean powerEfficientPixelFormat;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean gestureReactions;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean faceFraming;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean eyeGazeCorrection;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean voiceIsolation;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  DOMString humanFaceDetectionMode;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackSettings {
+  boolean backgroundSegmentationMask;
+};
+
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)
 partial dictionary MediaTrackSettings {
   DOMString         whiteBalanceMode;

@@ -1,0 +1,9 @@
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+dictionary Segment {
+  required SegmentType type;
+  required long        id;
+  long                 partOf;
+  required float       probability;
+  Point2D              centerPoint;
+  DOMRectInit          boundingBox;
+};

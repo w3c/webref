@@ -4,6 +4,11 @@ dictionary MediaStreamConstraints {
   (boolean or MediaTrackConstraints) audio = false;
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaStreamConstraints {
+  GetUserMediaSemantics semantics;
+};
+
 // Source: preferCurrentTab (https://wicg.github.io/prefer-current-tab/)
 partial dictionary MediaStreamConstraints {
   boolean preferCurrentTab = false;

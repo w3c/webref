@@ -23,6 +23,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLDepthInformation": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLDepthInformation/texture": {},
       "https://github.com/immersive-web/depth-sensing/issues": {},
+      "https://gpuweb.github.io/gpuweb/": {},
       "https://immersive-web.github.io/layers/": {},
       "https://immersive-web.github.io/webxr-ar-module/": {},
       "https://immersive-web.github.io/webxr/": {},
@@ -41,10 +42,47 @@
       "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
+      "https://gpuweb.github.io/gpuweb/": {
+        "anchors": [
+          "dom-gputextureformat-r32float",
+          "dom-gputextureformat-r16uint",
+          "gputexture",
+          "dictdef-gputextureviewdescriptor",
+          "dom-gputexturedimension-2d",
+          "enumdef-gputextureformat",
+          "dom-gputextureusage-texture_binding",
+          "dom-gputexture-destroy",
+          "dom-gputextureviewdescriptor-dimension",
+          "dom-gputextureviewdimension-2d",
+          "dom-gputextureviewdescriptor-basemiplevel",
+          "dom-gputextureviewdescriptor-miplevelcount",
+          "dom-gputextureviewdescriptor-basearraylayer",
+          "dom-gputextureviewdescriptor-arraylayercount",
+          "destroyed",
+          "gputexturedescriptor",
+          "dom-gputexturedescriptor-size",
+          "typedefdef-gpuextent3d",
+          "dom-gputexturedescriptor-miplevelcount",
+          "dom-gputexturedescriptor-samplecount",
+          "dom-gputexturedescriptor-dimension",
+          "dom-gputexturedescriptor-format",
+          "dom-gputexturedescriptor-usage",
+          "dom-gputexturedescriptor-viewformats",
+          "dom-gpudevice-createtexture"
+        ]
+      },
       "https://immersive-web.github.io/layers/": {
         "anchors": [
           "enumdef-xrtexturetype",
           "xrwebglbinding"
+        ]
+      },
+      "https://immersive-web.github.io/webxr-webgpu-binding/": {
+        "anchors": [
+          "webgpu-compatible-session",
+          "xrgpubinding",
+          "xrgpubinding-device",
+          "xrgpubinding-session"
         ]
       },
       "https://immersive-web.github.io/webxr/": {
@@ -59,12 +97,15 @@
           "dom-xrframe-session",
           "callbackdef-xrframerequestcallback",
           "dom-xrview-eye",
-          "dom-xreye-right"
+          "dom-xreye-right",
+          "dom-xrview-index"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "list-contain"
+          "list-contain",
+          "list",
+          "list-append"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -88,7 +129,6 @@
       },
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
-          "5.1",
           "5.14",
           "5.9"
         ]
@@ -101,6 +141,9 @@
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "xrsession-interface",
+          "xrsession-list-of-views",
+          "view-geometry-projection-matrix",
+          "dom-xrviewgeometry-transform",
           "feature-descriptor",
           "capable-of-supporting",
           "inline-xr-device",
@@ -112,14 +155,13 @@
           "dom-xrsession-enabledfeatures",
           "xrsession-mode",
           "xrviewgeometry-mixin",
-          "dom-xrviewgeometry-transform",
           "view-reference-space",
           "view-geometry-containing-object",
           "xrview-frame",
           "xrframe-animationframe",
           "xrframe-interface",
           "xrframe-time",
-          "view-geometry-projection-matrix"
+          "xr-animation-frame"
         ]
       },
       "https://www.w3.org/TR/webxrlayers-1/": {

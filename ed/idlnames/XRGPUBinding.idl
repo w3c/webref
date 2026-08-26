@@ -17,3 +17,8 @@ interface XRGPUBinding {
 
   GPUTextureFormat getPreferredColorFormat();
 };
+
+// Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
+partial interface XRGPUBinding {
+  XRGPUDepthInformation? getDepthInformation(XRView view);
+};

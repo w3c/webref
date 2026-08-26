@@ -10,7 +10,8 @@
         "Window": [
           "XRDepthInformation",
           "XRCPUDepthInformation",
-          "XRWebGLDepthInformation"
+          "XRWebGLDepthInformation",
+          "XRGPUDepthInformation"
         ]
       }
     },
@@ -448,6 +449,66 @@
         ],
         "partial": false,
         "href": "https://immersive-web.github.io/depth-sensing/#xrwebgldepthinformation"
+      },
+      "XRGPUDepthInformation": {
+        "fragment": "[Exposed=Window]\ninterface XRGPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute GPUTexture texture;\n\n  GPUTextureViewDescriptor getViewDescriptor();\n};",
+        "type": "interface",
+        "name": "XRGPUDepthInformation",
+        "inheritance": "XRDepthInformation",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "texture",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrgpudepthinformation-texture"
+          },
+          {
+            "type": "operation",
+            "name": "getViewDescriptor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureViewDescriptor"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://immersive-web.github.io/depth-sensing/#dom-xrgpudepthinformation-getviewdescriptor"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://immersive-web.github.io/depth-sensing/#xrgpudepthinformation"
       }
     },
     "idlExtendedNames": {
@@ -685,6 +746,51 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "XRGPUBinding": [
+        {
+          "fragment": "partial interface XRGPUBinding {\n  XRGPUDepthInformation? getDepthInformation(XRView view);\n};",
+          "type": "interface",
+          "name": "XRGPUBinding",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getDepthInformation",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "XRGPUDepthInformation"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "view",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "XRView"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://immersive-web.github.io/depth-sensing/#dom-xrgpubinding-getdepthinformation"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -692,7 +798,8 @@
       "Window": [
         "XRDepthInformation",
         "XRCPUDepthInformation",
-        "XRWebGLDepthInformation"
+        "XRWebGLDepthInformation",
+        "XRGPUDepthInformation"
       ]
     },
     "dependencies": {
@@ -729,6 +836,15 @@
       "XRWebGLBinding": [
         "XRWebGLDepthInformation",
         "XRView"
+      ],
+      "XRGPUDepthInformation": [
+        "XRDepthInformation",
+        "GPUTexture",
+        "GPUTextureViewDescriptor"
+      ],
+      "XRGPUBinding": [
+        "XRGPUDepthInformation",
+        "XRView"
       ]
     },
     "externalDependencies": [
@@ -740,7 +856,10 @@
       "XRView",
       "WebGLTexture",
       "XRTextureType",
-      "XRWebGLBinding"
+      "XRWebGLBinding",
+      "GPUTexture",
+      "GPUTextureViewDescriptor",
+      "XRGPUBinding"
     ],
     "hasObsoleteIdl": false
   }

@@ -18,6 +18,36 @@ dictionary MediaTrackConstraintSet {
   ConstrainBoolean backgroundBlur;
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainBoolean gestureReactions;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainBoolean faceFraming;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainBoolean eyeGazeCorrection;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainBoolean voiceIsolation;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainDOMString humanFaceDetectionMode;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackConstraintSet {
+  ConstrainBoolean backgroundSegmentationMask;
+};
+
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)
 partial dictionary MediaTrackConstraintSet {
   ConstrainDOMString           whiteBalanceMode;

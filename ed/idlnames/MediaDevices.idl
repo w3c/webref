@@ -5,6 +5,11 @@ interface MediaDevices : EventTarget {
   Promise<sequence<MediaDeviceInfo>> enumerateDevices();
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial interface MediaDevices {
+  readonly attribute GetUserMediaSemantics defaultSemantics;
+};
+
 // Source: The Capture-Handle Actions Mechanism (https://w3c.github.io/mediacapture-handle/actions/)
 partial interface MediaDevices {
   undefined setSupportedCaptureActions(sequence<DOMString> actions);

@@ -786,6 +786,45 @@
     "interface": "AnimationPlaybackEvent"
   },
   {
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "HTMLUserMediaElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
+  },
+  {
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "HTMLMicrophoneElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
+  },
+  {
+    "type": "cancel",
+    "targets": [
+      {
+        "target": "HTMLCameraElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
+  },
+  {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cancel",
     "src": {
       "format": "summary table",
@@ -1469,6 +1508,20 @@
     ],
     "cancelable": false,
     "interface": "CompositionEvent"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-interface-extensions"
+    },
+    "href": "https://w3c.github.io/mediacapture-extensions/#dfn-configurationchange",
+    "type": "configurationchange",
+    "targets": [
+      {
+        "target": "MediaStreamTrack"
+      }
+    ],
+    "interface": "Event"
   },
   {
     "src": {
@@ -2712,6 +2765,45 @@
       }
     ],
     "interface": "PictureInPictureEvent"
+  },
+  {
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLUserMediaElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
+  },
+  {
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLMicrophoneElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
+  },
+  {
+    "type": "error",
+    "targets": [
+      {
+        "target": "HTMLCameraElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "DOMException"
   },
   {
     "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-error",
@@ -6734,6 +6826,19 @@
     "interface": "StorageEvent"
   },
   {
+    "type": "stream",
+    "targets": [
+      {
+        "target": "HTMLUserMediaElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event"
+  },
+  {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-submit",
     "src": {
       "format": "summary table",
@@ -7037,6 +7142,32 @@
     ],
     "cancelable": true,
     "interface": "TouchEvent"
+  },
+  {
+    "type": "track",
+    "targets": [
+      {
+        "target": "HTMLMicrophoneElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event"
+  },
+  {
+    "type": "track",
+    "targets": [
+      {
+        "target": "HTMLCameraElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event"
   },
   {
     "href": "https://w3c.github.io/webrtc-pc/#event-track",

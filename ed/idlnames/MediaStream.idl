@@ -16,3 +16,8 @@ interface MediaStream : EventTarget {
   attribute EventHandler onaddtrack;
   attribute EventHandler onremovetrack;
 };
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker)]
+partial interface MediaStream {
+};

@@ -9,7 +9,15 @@
     "fragment": "[Exposed=(Window), SecureContext]\ninterface XRGPUBinding {\n  constructor(XRSession session, GPUDevice device);\n\n  readonly attribute double nativeProjectionScaleFactor;\n  readonly attribute boolean usesDepthValues;\n\n  XRProjectionLayer createProjectionLayer(optional XRGPUProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRGPUQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRGPUCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XRGPUEquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRGPUCubeLayerInit init = {});\n\n  XRGPUSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRGPUSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n\n  GPUTextureFormat getPreferredColorFormat();\n};",
     "href": "https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+      },
+      "fragment": "partial interface XRGPUBinding {\n  XRGPUDepthInformation? getDepthInformation(XRView view);\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

@@ -1,0 +1,13 @@
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=Window]
+interface HTMLCameraElement : HTMLElement {
+  [HTMLConstructor] constructor();
+
+  readonly attribute MediaStreamTrack? track;
+  readonly attribute DOMException? error;
+  undefined setConstraints(optional MediaTrackConstraintSet constraints = {});
+
+  attribute EventHandler ontrack;
+  attribute EventHandler onerror;
+  attribute EventHandler oncancel;
+};

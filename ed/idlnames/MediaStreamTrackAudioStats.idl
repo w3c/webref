@@ -1,0 +1,10 @@
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker)]
+interface MediaStreamTrackAudioStats {
+  readonly attribute DOMHighResTimeStamp latency;
+  readonly attribute DOMHighResTimeStamp averageLatency;
+  readonly attribute DOMHighResTimeStamp minimumLatency;
+  readonly attribute DOMHighResTimeStamp maximumLatency;
+  undefined resetLatency();
+  [Default] object toJSON();
+};

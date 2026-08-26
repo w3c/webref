@@ -18,6 +18,22 @@ interface MediaStreamTrack : EventTarget {
   Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker), Transferable]
+partial interface MediaStreamTrack {
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial interface MediaStreamTrack {
+  [SameObject] readonly attribute
+      (MediaStreamTrackAudioStats or MediaStreamTrackVideoStats)? stats;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial interface MediaStreamTrack {
+  attribute EventHandler onconfigurationchange;
+};
+
 // Source: The Capture-Handle Actions Mechanism (https://w3c.github.io/mediacapture-handle/actions/)
 partial interface MediaStreamTrack {
   sequence<DOMString> getSupportedCaptureActions();

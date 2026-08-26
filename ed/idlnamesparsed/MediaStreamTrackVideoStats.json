@@ -1,0 +1,15 @@
+{
+  "name": "MediaStreamTrackVideoStats",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams Extensions",
+      "url": "https://w3c.github.io/mediacapture-extensions/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaStreamTrackVideoStats {\n  readonly attribute unsigned long long deliveredFrames;\n  readonly attribute unsigned long long discardedFrames;\n  readonly attribute unsigned long long totalFrames;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

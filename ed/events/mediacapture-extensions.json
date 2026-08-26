@@ -1,0 +1,110 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams Extensions",
+    "url": "https://w3c.github.io/mediacapture-extensions/"
+  },
+  "events": [
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/mediacapture-extensions/#mediastreamtrack-interface-extensions"
+      },
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-configurationchange",
+      "type": "configurationchange",
+      "targets": [
+        "MediaStreamTrack"
+      ],
+      "interface": "Event"
+    },
+    {
+      "type": "track",
+      "targets": [
+        "HTMLCameraElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "Event"
+    },
+    {
+      "type": "track",
+      "targets": [
+        "HTMLMicrophoneElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "Event"
+    },
+    {
+      "type": "error",
+      "targets": [
+        "HTMLCameraElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "error",
+      "targets": [
+        "HTMLMicrophoneElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "error",
+      "targets": [
+        "HTMLUserMediaElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "cancel",
+      "targets": [
+        "HTMLCameraElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "cancel",
+      "targets": [
+        "HTMLMicrophoneElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "cancel",
+      "targets": [
+        "HTMLUserMediaElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "DOMException"
+    },
+    {
+      "type": "stream",
+      "targets": [
+        "HTMLUserMediaElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "Event"
+    }
+  ]
+}

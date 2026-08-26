@@ -1,0 +1,13 @@
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=Window]
+interface HTMLUserMediaElement : HTMLElement {
+  [HTMLConstructor] constructor();
+
+  readonly attribute MediaStream? stream;
+  readonly attribute DOMException? error;
+  undefined setConstraints(optional HTMLMediaStreamConstraints constraints = {});
+
+  attribute EventHandler onstream;
+  attribute EventHandler onerror;
+  attribute EventHandler oncancel;
+};

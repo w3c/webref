@@ -1,0 +1,727 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams Extensions",
+    "url": "https://w3c.github.io/mediacapture-extensions/"
+  },
+  "algorithms": [
+    {
+      "html": "When the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code> method is invoked, run the\n      following steps before invoking the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>\n      algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mediaDevices</var> be the object on which this method was\n            invoked.</p>"
+        },
+        {
+          "html": "<p>Let <var>constraints</var> be the method's first argument.</p>"
+        },
+        {
+          "html": "<p>Let <var>semanticsPresent</var> be <code>true</code> if\n            <var>constraints</var><code>.semantics</code> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>,\n            otherwise <code>false</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>semantics</var> be\n            <var>constraints</var><code>.semantics</code>\n            if it <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>,\n            or the value of <var>mediaDevices</var><code>.<a data-link-for=\"MediaDevices\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-mediadevices-defaultsemantics\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-mediadevices-defaultsemantics-3\"><code>defaultSemantics</code></a></code>\n            otherwise.</p>"
+        },
+        {
+          "html": "Replace step 6.5.1. of the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>\n            algorithm in its entirety with the following two steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>descriptor</var> be a <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"PermissionDescriptor\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissiondescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\"><code>PermissionDescriptor</code></a>\n                with its <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PermissionDescriptor\" data-xref-for=\"PermissionDescriptor\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissiondescriptor-name\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\"><code>name</code></a> member set to the permission name\n                associated with <var>kind</var> (e.g. <a data-link-type=\"permission\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dfn-camera\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-camera\">\"camera\"</a> for\n                <code>\"video\"</code>, <a data-link-type=\"permission\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dfn-microphone\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-microphone\">\"microphone\"</a> for <code>\"audio\"</code>).</p>"
+            },
+            {
+              "html": "<p>If the number of unique devices sourcing tracks of\n                media type <var>kind</var> in <var>candidateSet</var>\n                is greater than <code>1</code> and\n                <var>semantics</var> is <code>\"user-chooses\"</code>,\n                then <a data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dfn-prompt-the-user-to-choose\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-prompt-the-user-to-choose\">prompt the user to choose</a> a device with\n                <var>descriptor</var>, resulting in provided media.\n                Otherwise, <a data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dfn-request-permission-to-use\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\">request permission to use</a> a\n                device with <var>descriptor</var>, while considering\n                all devices being attached to a live and\n                <a href=\"https://w3c.github.io/mediacapture-extensions/#dfn-same-permission\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-same-permission-1\">same-permission</a> MediaStreamTrack in the current\n                <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"browsing-context\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#browsing-context\">browsing context</a> to mean having permission status \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"PermissionState\" data-xref-for=\"PermissionState\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissionstate-granted\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\"><code>granted</code></a>\",\n                resulting in provided media.</p>\n                <p><dfn id=\"dfn-same-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Same-permission</dfn> in this context means a\n                <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> that required the same level of\n                permission to obtain as what is being requested.</p>\n                <p>When asking the user’s permission, the user agent\n                <em class=\"rfc2119\">MUST</em> disclose whether permission will be granted only to\n                the device chosen, or to all devices of that\n                <var>kind</var>.</p>\n                <p>Let <var>track</var> be the provided media, which\n                <em class=\"rfc2119\">MUST</em> be precisely one track of type <var>kind</var> from\n                <var>finalSet</var>. If <var>semantics</var> is\n                <code>\"browser-chooses\"</code> then the decision of\n                which track to choose from <var>finalSet</var> is up\n                to the User Agent, which <em class=\"rfc2119\">MAY</em> use the value of the computed\n                \"fitness distance\" from the <a href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-selectsettings\">\n                SelectSettings</a>\n                algorithm, the value of <var>semanticsPresent</var>,\n                or any other internally-available information about\n                the devices, as inputs to its decision.\n                If <var>semantics</var> is <code>\"user-chooses\"</code>,\n                and the application has not narrowed down the choices\n                to one, then the user agent <em class=\"rfc2119\">MUST</em> ask the user to make\n                the final selection.</p>\n                <p>Once selected, the source of the\n                <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> <em class=\"rfc2119\">MUST NOT</em> change.</p>\n                <p>User Agents are encouraged to default to or present\n                a default choice based primarily on fitness distance,\n                and secondarily on the user's primary or system default\n                device for <var>kind</var> (when possible). User Agents\n                <em class=\"rfc2119\">MAY</em> allow users to use any media source, including\n                pre-recorded media files.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>The context named <var>originalContext</var> that created a track named <var>originalTrack</var> remains in control\n          of the <var>originalTrack</var> source, named <var>trackSource</var>, even when <var>originalTrack</var> is transferred into <var>transferredTrack</var>.</p>"
+        },
+        {
+          "html": "<p>In particular, <var>originalContext</var> remains the proxy to privacy indicators of <var>trackSource</var>.\n            <var>transferredTrack</var> or any of its clones are considered as tracks using <var>trackSource</var>\n            as if they were tracks created in and controlled by <var>originalContext</var>.</p>"
+        },
+        {
+          "html": "<p>When <var>originalContext</var> goes away, <var>trackSource</var> gets ended, thus <var>transferredTrack</var> gets ended.</p>"
+        },
+        {
+          "html": "<p>When <var>originalContext</var> would have muted/unmuted <var>originalTrack</var>, <var>transferredTrack</var> gets muted/unmuted.</p>"
+        },
+        {
+          "html": "<p>If <var>transferredTrack</var> is cloned in <var>transferredTrackClone</var>, <var>transferredTrackClone</var> is tied to <var>trackSource</var>.\n          It is not tied to <var>originalTrack</var> in any way.</p>"
+        },
+        {
+          "html": "<p>If <var>transferredTrack</var> is transferred into <var>transferredAgainTrack</var>, <var>transferredAgainTrack</var> is tied to <var>trackSource</var>.\n          It is not tied to <var>transferredTrack</var> or <var>originalTrack</var> in any way.</p>"
+        }
+      ]
+    },
+    {
+      "html": "At creation of a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> object, called <var>track</var>, run the following steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>Initialize <var>track</var>.<code>[[IsDetached]]</code> to <code>false</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> <a data-cite=\"!HTML/#transfer-steps\" href=\"https://html.spec.whatwg.org/multipage/#transfer-steps\">transfer steps</a>, given <var>value</var> and <var>dataHolder</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>value</var>.<code>[[IsDetached]]</code> is <code>true</code>, throw a \"DataCloneError\" DOMException.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[agentCluster]]</code> to the <a data-link-type=\"dfn\" data-link-for=\"ECMAScript\" data-xref-for=\"ECMAScript\" data-cite=\"ecmascript\" data-cite-path=\"/executable-code-and-execution-contexts.html\" data-cite-frag=\"surrounding-agent\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" data-link-for=\"ECMAScript\" data-xref-for=\"ECMAScript\" data-cite=\"ecmascript\" data-cite-path=\"/executable-code-and-execution-contexts.html\" data-cite-frag=\"sec-agent-clusters\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agent-clusters\">agent cluster</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[id]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-id\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-id\"><code>id</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[kind]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[label]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-label\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-label\"><code>label</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[readyState]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-readystate\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\"><code>readyState</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[enabled]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-enabled\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-enabled\"><code>enabled</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[muted]]</code> to <var>value</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-muted\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-muted\"><code>muted</code></a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[source]]</code> to <var>value</var> underlying source.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[constraints]]</code> to <var>value</var> active constraints.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[contentHint]]</code> to <var>value</var> application-set content hint.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<code>[[IsDetached]]</code> to <code>true</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<a data-cite=\"mediacapture-streams#dfn-readystate\" data-link-type=\"attribute\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-readystate\">[[ReadyState]]</a> to \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"MediaStreamTrackState\" data-xref-for=\"MediaStreamTrackState\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"idl-def-MediaStreamTrackState.ended\" href=\"https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.ended\"><code>ended</code></a>\" (without stopping the underlying source or firing an <code>ended</code> event).</p>"
+        }
+      ]
+    },
+    {
+      "html": "<a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> <a data-cite=\"!HTML/#transfer-receiving-steps\" href=\"https://html.spec.whatwg.org/multipage/#transfer-receiving-steps\">transfer-receiving steps</a>, given <var>dataHolder</var> and <var>track</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" data-link-for=\"ECMAScript\" data-xref-for=\"ECMAScript\" data-cite=\"ecmascript\" data-cite-path=\"/executable-code-and-execution-contexts.html\" data-cite-frag=\"surrounding-agent\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" data-link-for=\"ECMAScript\" data-xref-for=\"ECMAScript\" data-cite=\"ecmascript\" data-cite-path=\"/executable-code-and-execution-contexts.html\" data-cite-frag=\"sec-agent-clusters\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-agent-clusters\">agent cluster</a> is not\n          <var>dataHolder</var>.<code>[[agentCluster]]</code>, then throw a \"DataCloneError\" DOMException.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-id\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-id\"><code>id</code></a> to <var>dataHolder</var>.<code>[[id]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> to <var>dataHolder</var>.<code>[[kind]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-label\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-label\"><code>label</code></a> to <var>dataHolder</var>.<code>[[label]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-readystate\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\"><code>readyState</code></a> to <var>dataHolder</var>.<code>[[readyState]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-enabled\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-enabled\"><code>enabled</code></a> to <var>dataHolder</var>.<code>[[enabled]]</code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-muted\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-muted\"><code>muted</code></a> to <var>dataHolder</var>.<code>[[muted]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>track</var> application-set content hint to <var>dataHolder</var>.<code>[[contentHint]]</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dfn-initialize-the-underlying-source\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-initialize-the-underlying-source\">Initialize the underlying source</a> of <var>track</var> to <var>dataHolder</var>.<code>[[source]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>track</var>'s constraints to <var>dataHolder</var>.<code>[[constraints]]</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the track's is of <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> <code>\"audio\"</code>,\n      run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> is sourced from\n          <code>getUserMedia()</code>, initialize <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-lt=\"[[Stats]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stats\" class=\"internalDFN\" id=\"ref-for-dfn-stats-1\"><code>[[Stats]]</code></a>\n          to a new instance of <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MediaStreamTrackAudioStats\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats\" class=\"internalDFN\" id=\"ref-for-dom-mediastreamtrackaudiostats-2\"><code>MediaStreamTrackAudioStats</code></a> set up to expose\n          audio stats for this <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "If the track's is of <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a> <code>\"video\"</code>,\n      run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> is sourced from\n          <code>getUserMedia()</code> or <code>getDisplayMedia()</code>,\n          initialize <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-lt=\"[[Stats]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stats\" class=\"internalDFN\" id=\"ref-for-dfn-stats-2\"><code>[[Stats]]</code></a> to a new instance of\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MediaStreamTrackVideoStats\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackvideostats\" class=\"internalDFN\" id=\"ref-for-dom-mediastreamtrackvideostats-2\"><code>MediaStreamTrackVideoStats</code></a> set up to expose video stats for this\n          <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "MediaStreamTrack/stats",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrack-stats",
+      "html": "When this getter is called, the user agenst <em class=\"rfc2119\">MUST</em> run the following\n            steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n                Let <var>track</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a> that this\n                getter is called on.\n              </p>"
+        },
+        {
+          "html": "<p>Return <var>track</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-lt=\"[[Stats]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stats\" class=\"internalDFN\" id=\"ref-for-dfn-stats-3\"><code>[[Stats]]</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "a change of configuration",
+      "href": "https://w3c.github.io/mediacapture-extensions/#change-track-configuration",
+      "html": "When the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">User Agent</a> detects <dfn data-export=\"\" id=\"change-track-configuration\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">a change of configuration</dfn>\n       in a <var>track</var>'s underlying source, the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">User Agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-muted\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-muted\"><code>muted</code></a> is <code>true</code>, wait for <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-muted\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-muted\"><code>muted</code></a>\n          to become <code>false</code> or <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-readystate\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\"><code>readyState</code></a> to be \"ended\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"current-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" data-link-for=\"environment settings object\" data-xref-for=\"environment settings object\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"responsible-event-loop\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\">responsible event loop</a> \n          to perform the following steps:</p>\n          <p>\n            </p>\n          <p></p>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>track</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-readystate\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-readystate\"><code>readyState</code></a> is \"ended\", abort these steps.</p>"
+            },
+            {
+              "html": "<p>If <var>track</var>'s capabilities and settings are matching <var>source</var> configuration, abort these steps.\n            </p>"
+            },
+            {
+              "html": "<p>Update <var>track</var>'s capabilities and settings according <var>track</var>'s underlying source.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"configurationchange\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-configurationchange\" class=\"internalDFN\" id=\"ref-for-dfn-configurationchange-1\"><code>configurationchange</code></a> on <var>track</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/constructor()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-constructor",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" data-export=\"\" data-dfn-type=\"constructor\" id=\"dom-htmlcameraelement-constructor\" data-idl=\"constructor\" data-title=\"constructor()\" data-lt=\"constructor()\" data-local-lt=\"HTMLCameraElement.constructor|HTMLCameraElement.constructor()|constructor\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>constructor()</code></dfn> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track\" class=\"internalDFN\" id=\"ref-for-dfn-track-1\"><code>[[track]]</code></a> to null."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-1\"><code>[[constraints]]</code></a> to «»."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error\" class=\"internalDFN\" id=\"ref-for-dfn-error-1\"><code>[[error]]</code></a> to null."
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/track",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-track",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlcameraelement-track\" data-idl=\"attribute\" data-title=\"track\" data-type=\"MediaStreamTrack\" data-lt=\"track\" data-local-lt=\"HTMLCameraElement.track\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>track</code></dfn> <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track\" class=\"internalDFN\" id=\"ref-for-dfn-track-2\"><code>[[track]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-error",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlcameraelement-error\" data-idl=\"attribute\" data-title=\"error\" data-type=\"DOMException\" data-lt=\"error\" data-local-lt=\"HTMLCameraElement.error\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>error</code></dfn> <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error\" class=\"internalDFN\" id=\"ref-for-dfn-error-2\"><code>[[error]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/setConstraints()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlcameraelement-setconstraints",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-htmlcameraelement-setconstraints\" data-idl=\"operation\" data-title=\"setConstraints()\" data-type=\"undefined\" data-lt=\"setConstraints()|setConstraints(constraints)\" data-local-lt=\"HTMLCameraElement.setConstraints|HTMLCameraElement.setConstraints()|setConstraints\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>setConstraints()</code></dfn> steps with\n        a parameter <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-2\"><code>[[constraints]]</code></a> to <var>constraints</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <code><a data-xref-type=\"element\" data-link-type=\"element\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-camera\" class=\"internalDFN\" id=\"ref-for-dfn-camera-11\">camera</a></code> element's <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a>\n          given <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> is a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"non-secure-context\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\">non-secure context</a>,\n            then return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a>'s <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-window\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\">active window</a>\n            does not have <a data-link-type=\"dfn\" data-lt=\"transient activation\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient user activation</a>,\n            then return."
+        },
+        {
+          "html": "If <var>event</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-trusted\" class=\"internalDFN\" id=\"ref-for-dfn-trusted-1\">trusted</a>, then\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-1\">queue an event</a> named <code>error</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>,\n            using an \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these\n            steps."
+        },
+        {
+          "html": "If <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track\" class=\"internalDFN\" id=\"ref-for-dfn-track-3\"><code>[[track]]</code></a> is not null, then abort these\n            steps."
+        },
+        {
+          "html": "Run <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream\" class=\"internalDFN\" id=\"ref-for-dfn-activation-start-stream-1\">activation start stream</a> steps given\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/activation start stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" id=\"dfn-activation-start-stream\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">activation start stream</dfn>\n        steps for a given <var>element</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track\" class=\"internalDFN\" id=\"ref-for-dfn-track-5\"><code>[[track]]</code></a> is null."
+        },
+        {
+          "html": "Set <var>constraints</var> to the result of\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter\" class=\"internalDFN\" id=\"ref-for-dfn-constraint-filter-1\">constraint filter</a> with\n            <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-3\"><code>[[constraints]]</code></a>."
+        },
+        {
+          "html": "Let <var>mediaPromise</var> be the result of calling\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code> with <var>constraints</var>\n            as its first argument."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"promise\" data-xref-for=\"promise\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-perform-steps-once-promise-is-settled\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\">React</a> to <var>mediaPromise</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>mediaPromise</var> was fulfilled with value <var>v</var>:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>v</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStream\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastream\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastream\"><code>MediaStream</code></a>."
+                },
+                {
+                  "html": "Let <var>tracks</var> be the set of <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>s in\n                    <var>v</var>'s <a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dfn-track-set\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-track-set\">track set</a> whose <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a>\n                    is equal to \"video\"."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>tracks</var>'s <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-size\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> is 1."
+                },
+                {
+                  "html": "Set\n                    <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track\" class=\"internalDFN\" id=\"ref-for-dfn-track-6\"><code>[[track]]</code></a> to <var>tracks</var>[0]."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-2\">Queue an event</a> named <code>track</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>mediaPromise</var> was rejected with reason <var>r</var>."
+                },
+                {
+                  "html": "If <var>r</var> indicated that the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>\n                    call has failed due to user action or inaction, such as a\n                    user rejecting or not answering a permission prompt raised\n                    by <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>, then\n                    <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-3\">queue an event</a> named <code>cancel</code> on\n                    <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>, and return."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>r</var> is a <var>DOMException</var>."
+                },
+                {
+                  "html": "Set <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLCameraElement\" data-xref-for=\"HTMLCameraElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error\" class=\"internalDFN\" id=\"ref-for-dfn-error-3\"><code>[[error]]</code></a> to <var>r</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-4\">Queue an event</a> named <code>error</code>\n                    on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, using <var>r</var>.\n                    (Description still TBD.)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLCameraElement/constraint filter",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter",
+      "html": "The <dfn data-dfn-for=\"HTMLCameraElement\" id=\"dfn-constraint-filter\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">constraint filter</dfn> steps\n          for a <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"MediaTrackConstraintSet\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediatrackconstraintset\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraintset\"><code>MediaTrackConstraintSet</code></a> <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints\"><code>MediaStreamConstraints</code></a> <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-dictionary\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\">dictionary</a>."
+        },
+        {
+          "html": "Remove any <a data-cite=\"mediacapture-streams#dfn-required-constraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints\">required constraints</a> from <var>constraints</var>."
+        },
+        {
+          "html": "Set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-video\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-video\"><code>video</code></a>\"] to\n            <var>constraints</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/constructor()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-constructor",
+      "html": "The <dfn data-dfn-for=\"HTMLMicrophoneElement\" data-export=\"\" data-dfn-type=\"constructor\" id=\"dom-htmlmicrophoneelement-constructor\" data-idl=\"constructor\" data-title=\"constructor()\" data-lt=\"constructor()\" data-local-lt=\"HTMLMicrophoneElement.constructor|HTMLMicrophoneElement.constructor()|constructor\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>constructor()</code></dfn>\n          steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track-0\" class=\"internalDFN\" id=\"ref-for-dfn-track-0-1\"><code>[[track]]</code></a> to null."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-0\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-0-1\"><code>[[constraints]]</code></a> to «»."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-0\" class=\"internalDFN\" id=\"ref-for-dfn-error-0-1\"><code>[[error]]</code></a> to null."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/track",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-track",
+      "html": "The <dfn data-dfn-for=\"HTMLMicrophoneElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlmicrophoneelement-track\" data-idl=\"attribute\" data-title=\"track\" data-type=\"MediaStreamTrack\" data-lt=\"track\" data-local-lt=\"HTMLMicrophoneElement.track\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>track</code></dfn> <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a>\n          steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track-0\" class=\"internalDFN\" id=\"ref-for-dfn-track-0-2\"><code>[[track]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-error",
+      "html": "The <dfn data-dfn-for=\"HTMLMicrophoneElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlmicrophoneelement-error\" data-idl=\"attribute\" data-title=\"error\" data-type=\"DOMException\" data-lt=\"error\" data-local-lt=\"HTMLMicrophoneElement.error\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>error</code></dfn> <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-0\" class=\"internalDFN\" id=\"ref-for-dfn-error-0-2\"><code>[[error]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/setConstraints()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlmicrophoneelement-setconstraints",
+      "html": "The <dfn data-dfn-for=\"HTMLMicrophoneElement\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-htmlmicrophoneelement-setconstraints\" data-idl=\"operation\" data-title=\"setConstraints()\" data-type=\"undefined\" data-lt=\"setConstraints()|setConstraints(constraints)\" data-local-lt=\"HTMLMicrophoneElement.setConstraints|HTMLMicrophoneElement.setConstraints()|setConstraints\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>setConstraints()</code></dfn> steps with\n          a parameter <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-0\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-0-2\"><code>[[constraints]]</code></a> to <var>constraints</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <code><a data-xref-type=\"element\" data-link-type=\"element\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-microphone\" class=\"internalDFN\" id=\"ref-for-dfn-microphone-11\">microphone</a></code> element's\n          <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a> given <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> is a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"non-secure-context\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\">non-secure context</a>,\n            then return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a>'s <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-window\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\">active window</a>\n            does not have <a data-link-type=\"dfn\" data-lt=\"transient activation\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient user activation</a>,\n            then return."
+        },
+        {
+          "html": "If <var>event</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-trusted\" class=\"internalDFN\" id=\"ref-for-dfn-trusted-2\">trusted</a>, then\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-5\">queue an event</a> named <code>error</code>, using an\n            \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Otherwise, if <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track-0\" class=\"internalDFN\" id=\"ref-for-dfn-track-0-3\"><code>[[track]]</code></a> is null, then\n            run <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-0\" class=\"internalDFN\" id=\"ref-for-dfn-activation-start-stream-0-1\">activation start stream</a> steps given\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/activation start stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-0",
+      "html": "The\n          <dfn data-dfn-for=\"HTMLMicrophoneElement\" id=\"dfn-activation-start-stream-0\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">activation start stream</dfn>\n          steps for a given <var>element</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track-0\" class=\"internalDFN\" id=\"ref-for-dfn-track-0-5\"><code>[[track]]</code></a> is null."
+        },
+        {
+          "html": "Set <var>constraints</var> to the result of\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-0\" class=\"internalDFN\" id=\"ref-for-dfn-constraint-filter-0-1\">constraint filter</a> with\n            <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-0\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-0-3\"><code>[[constraints]]</code></a>."
+        },
+        {
+          "html": "Let <var>mediaPromise</var> be the result of calling\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code> with <var>constraints</var>\n            as its first argument."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"promise\" data-xref-for=\"promise\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-perform-steps-once-promise-is-settled\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\">React</a> to <var>mediaPromise</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>mediaPromise</var> was fulfilled with value <var>v</var>:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>v</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStream\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastream\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastream\"><code>MediaStream</code></a>."
+                },
+                {
+                  "html": "Let <var>tracks</var> be the set of <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack\"><code>MediaStreamTrack</code></a>s in\n                    <var>v</var>'s <a data-link-type=\"dfn\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dfn-track-set\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-track-set\">track set</a> whose <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamTrack\" data-xref-for=\"MediaStreamTrack\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamtrack-kind\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind\"><code>kind</code></a>\n                    is equal to <code>\"audio\"</code>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>tracks</var>'s <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-size\" href=\"https://infra.spec.whatwg.org/#list-size\">size</a> is 1."
+                },
+                {
+                  "html": "Set\n                    <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[track]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-track-0\" class=\"internalDFN\" id=\"ref-for-dfn-track-0-6\"><code>[[track]]</code></a> to <var>tracks</var>[0]."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-6\">Queue an event</a> named <code>track</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>mediaPromise</var> was rejected with reason <var>r</var>."
+                },
+                {
+                  "html": "If <var>r</var> indicated that the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>\n                    call has failed due to user action or inaction, such as a\n                    user rejecting or not answering a permission prompt raised\n                    by <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>, then\n                    <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-7\">queue an event</a> named <code>cancel</code> on\n                    <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>, and return."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>r</var> is a <var>DOMException</var>."
+                },
+                {
+                  "html": "Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLMicrophoneElement\" data-xref-for=\"HTMLMicrophoneElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-0\" class=\"internalDFN\" id=\"ref-for-dfn-error-0-3\"><code>[[error]]</code></a> to <var>r</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-8\">Queue an event</a> named <code>error</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>,\n                    using <var>r</var>.\n                    (Description still TBD.)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLMicrophoneElement/constraint filter",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-0",
+      "html": "The <dfn data-dfn-for=\"HTMLMicrophoneElement\" id=\"dfn-constraint-filter-0\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">constraint filter</dfn> steps\n          for a <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"MediaTrackConstraintSet\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediatrackconstraintset\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraintset\"><code>MediaTrackConstraintSet</code></a> <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints\"><code>MediaStreamConstraints</code></a> <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-dictionary\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\">dictionary</a>."
+        },
+        {
+          "html": "Remove any <a data-cite=\"mediacapture-streams#dfn-required-constraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints\">required constraints</a> from <var>constraints</var>"
+        },
+        {
+          "html": "Set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-audio\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-audio\"><code>audio</code></a>\"] to\n            <var>constraints</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/constructor()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-constructor",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" data-export=\"\" data-dfn-type=\"constructor\" id=\"dom-htmlusermediaelement-constructor\" data-idl=\"constructor\" data-title=\"constructor()\" data-lt=\"constructor()\" data-local-lt=\"HTMLUserMediaElement.constructor|HTMLUserMediaElement.constructor()|constructor\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>constructor()</code></dfn>\n          steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[stream]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stream\" class=\"internalDFN\" id=\"ref-for-dfn-stream-1\"><code>[[stream]]</code></a> to null."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-1\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-1-1\"><code>[[constraints]]</code></a> to «»."
+        },
+        {
+          "html": "Initialize <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-1\" class=\"internalDFN\" id=\"ref-for-dfn-error-1-1\"><code>[[error]]</code></a> to null."
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-stream",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlusermediaelement-stream\" data-idl=\"attribute\" data-title=\"stream\" data-type=\"MediaStream\" data-lt=\"stream\" data-local-lt=\"HTMLUserMediaElement.stream\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>stream</code></dfn>\n          <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[stream]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stream\" class=\"internalDFN\" id=\"ref-for-dfn-stream-2\"><code>[[stream]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/error",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-error",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-htmlusermediaelement-error\" data-idl=\"attribute\" data-title=\"error\" data-type=\"DOMException\" data-lt=\"error\" data-local-lt=\"HTMLUserMediaElement.error\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>error</code></dfn>\n          <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-getter\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-getter\">getter</a> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Return <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-1\" class=\"internalDFN\" id=\"ref-for-dfn-error-1-2\"><code>[[error]]</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/setConstraints()",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dom-htmlusermediaelement-setconstraints",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-htmlusermediaelement-setconstraints\" data-idl=\"operation\" data-title=\"setConstraints()\" data-type=\"undefined\" data-lt=\"setConstraints()|setConstraints(constraints)\" data-local-lt=\"HTMLUserMediaElement.setConstraints|HTMLUserMediaElement.setConstraints()|setConstraints\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>setConstraints()</code></dfn>\n          steps with a parameter <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-1\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-1-2\"><code>[[constraints]]</code></a> to <var>constraints</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <code><a data-xref-type=\"element\" data-link-type=\"element\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-usermedia\" class=\"internalDFN\" id=\"ref-for-dfn-usermedia-11\">usermedia</a></code> element's <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a>,\n          given <var>event</var>, is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> is a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"non-secure-context\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\">non-secure context</a>,\n            then return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a>'s <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-window\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\">active window</a>\n            does not have <a data-link-type=\"dfn\" data-lt=\"transient activation\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient user activation</a>,\n            then return."
+        },
+        {
+          "html": "If <var>event</var> is not <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-trusted\" class=\"internalDFN\" id=\"ref-for-dfn-trusted-3\">trusted</a>, then\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-9\">queue an event</a> named <code>error</code>, using an\n            \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "Otherwise, if <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[stream]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stream\" class=\"internalDFN\" id=\"ref-for-dfn-stream-3\"><code>[[stream]]</code></a> is null, then\n            run <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-1\" class=\"internalDFN\" id=\"ref-for-dfn-activation-start-stream-1-1\">activation start stream</a> steps given\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/activation start stream",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-activation-start-stream-1",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" id=\"dfn-activation-start-stream-1\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">activation start stream</dfn>\n          steps for a given <var>element</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[stream]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stream\" class=\"internalDFN\" id=\"ref-for-dfn-stream-5\"><code>[[stream]]</code></a> is\n            null."
+        },
+        {
+          "html": "Let <var>constraints</var> be the result of calling\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-1\" class=\"internalDFN\" id=\"ref-for-dfn-constraint-filter-1-1\">constraint filter</a> with\n            <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[constraints]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-constraints-1\" class=\"internalDFN\" id=\"ref-for-dfn-constraints-1-3\"><code>[[constraints]]</code></a>."
+        },
+        {
+          "html": "Let <var>mediaPromise</var> be the result of calling\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code> with\n            <var>constraints</var> as its first argument."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"promise\" data-xref-for=\"promise\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-perform-steps-once-promise-is-settled\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\">React</a> to <var>mediaPromise</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>mediaPromise</var> was fulfilled with value <var>v</var>:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>v</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"MediaStream\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastream\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastream\"><code>MediaStream</code></a>."
+                },
+                {
+                  "html": "Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[stream]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-stream\" class=\"internalDFN\" id=\"ref-for-dfn-stream-6\"><code>[[stream]]</code></a> to <var>v</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-10\">Queue an event</a> named <code>stream</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "assert",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>mediaPromise</var> was rejected with reason <var>r</var>."
+                },
+                {
+                  "html": "If <var>r</var> indicated that the <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>\n                    call has failed due to user action or inaction, such as a\n                    user rejecting or not answering a permission prompt raised\n                    by <a data-link-type=\"method\" data-xref-type=\"method\" data-link-for=\"MediaDevices\" data-xref-for=\"MediaDevices\" data-lt=\"getUserMedia()\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediadevices-getusermedia\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia\"><code>getUserMedia</code></a><code>()</code>, then\n                    <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-11\">queue an event</a> named <code>cancel</code> on\n                    <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>, and return."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>r</var> is a <var>DOMException</var>."
+                },
+                {
+                  "html": "Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"HTMLUserMediaElement\" data-xref-for=\"HTMLUserMediaElement\" data-lt=\"[[error]]\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-error-1\" class=\"internalDFN\" id=\"ref-for-dfn-error-1-3\"><code>[[error]]</code></a> to <var>r</var>."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-event-12\">Queue an event</a> named <code>error</code> on <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>,\n                    using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>. (Description still TBD.)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLUserMediaElement/constraint filter",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-constraint-filter-1",
+      "html": "The <dfn data-dfn-for=\"HTMLUserMediaElement\" id=\"dfn-constraint-filter-1\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">constraint filter</dfn>\n          for <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"HTMLMediaStreamConstraints\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediastreamconstraints-3\"><code>HTMLMediaStreamConstraints</code></a> <var>constraints</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints\"><code>MediaStreamConstraints</code></a> <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-dictionary\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\">dictionary</a>."
+        },
+        {
+          "html": "If <var>constraints</var>[\"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"HTMLMediaStreamConstraints\" data-xref-for=\"HTMLMediaStreamConstraints\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-audio\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediastreamconstraints-audio-1\"><code>audio</code></a>\"]\n            <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "Remove any\n                <a data-cite=\"mediacapture-streams#dfn-required-constraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints\">required constraints</a>\n                from <var>constraints</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-audio\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-audio\"><code>audio</code></a>\"]."
+            },
+            {
+              "html": "Set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-audio\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-audio\"><code>audio</code></a>\"] to\n                <var>constraints</var>[\"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"HTMLMediaStreamConstraints\" data-xref-for=\"HTMLMediaStreamConstraints\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-audio\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediastreamconstraints-audio-2\"><code>audio</code></a>\"]."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-audio\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-audio\"><code>audio</code></a>\"] to\n            an empty <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-dictionary\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\">dictionary</a>."
+        },
+        {
+          "html": "If <var>constraints</var>[\"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"HTMLMediaStreamConstraints\" data-xref-for=\"HTMLMediaStreamConstraints\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-video\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediastreamconstraints-video-1\"><code>video</code></a>\"]\n            <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "Remove any\n                <a data-cite=\"mediacapture-streams#dfn-required-constraints\" href=\"https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints\">required constraints</a>\n                from <var>constraints</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-video\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-video\"><code>video</code></a>\"]."
+            },
+            {
+              "html": "Set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-video\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-video\"><code>video</code></a>\"] to\n                <var>constraints</var>[\"<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"HTMLMediaStreamConstraints\" data-xref-for=\"HTMLMediaStreamConstraints\" href=\"https://w3c.github.io/mediacapture-extensions/#dom-htmlmediastreamconstraints-video\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediastreamconstraints-video-2\"><code>video</code></a>\"]."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, set <var>result</var>[\"<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MediaStreamConstraints\" data-xref-for=\"MediaStreamConstraints\" data-cite=\"mediacapture-streams\" data-cite-path=\"\" data-cite-frag=\"dom-mediastreamconstraints-video\" href=\"https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints-video\"><code>video</code></a>\"] to an\n            empty <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-dictionary\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary\">dictionary</a>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "name": "AllUserMediaElements/trusted",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-trusted",
+      "html": "To determine whether an <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"event\" href=\"https://dom.spec.whatwg.org/#event\"><code>Event</code></a> <var>event</var> is\n        <dfn data-dfn-for=\"AllUserMediaElements\" id=\"dfn-trusted\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">trusted</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>event</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-istrusted\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\"><code>isTrusted</code></a> is false: Return false."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">User agents</a> <em class=\"rfc2119\">SHOULD</em> run additional, implementation-defined steps\n          to determine trusted-ness of <var>event</var>."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "AllUserMediaElements/queue an event",
+      "href": "https://w3c.github.io/mediacapture-extensions/#dfn-queue-an-event",
+      "html": "To <dfn data-dfn-for=\"AllUserMediaElements\" id=\"dfn-queue-an-event\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue an event</dfn> named\n      <var>name</var> on <var>element</var>, using an <var>eventConstructor</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on <var>element</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"AllUserMediaElements\" data-xref-for=\"AllUserMediaElements\" href=\"https://w3c.github.io/mediacapture-extensions/#dfn-media-capture-element-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-media-capture-element-task-source-1\">media capture element task source</a>\n          with <var>element</var>, using the following steps:",
+          "rationale": "fire",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <var>name</var> at <var>element</var>,\n              using <var>eventConstructor</var>."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

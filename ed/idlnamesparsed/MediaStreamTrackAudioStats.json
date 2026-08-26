@@ -1,0 +1,15 @@
+{
+  "name": "MediaStreamTrackAudioStats",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams Extensions",
+      "url": "https://w3c.github.io/mediacapture-extensions/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaStreamTrackAudioStats {\n  readonly attribute DOMHighResTimeStamp latency;\n  readonly attribute DOMHighResTimeStamp averageLatency;\n  readonly attribute DOMHighResTimeStamp minimumLatency;\n  readonly attribute DOMHighResTimeStamp maximumLatency;\n  undefined resetLatency();\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/mediacapture-extensions/#dom-mediastreamtrackaudiostats"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,8 @@
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker)]
+interface MediaStreamTrackVideoStats {
+  readonly attribute unsigned long long deliveredFrames;
+  readonly attribute unsigned long long discardedFrames;
+  readonly attribute unsigned long long totalFrames;
+  [Default] object toJSON();
+};

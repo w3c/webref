@@ -18,6 +18,46 @@ dictionary MediaTrackCapabilities {
   sequence<boolean> backgroundBlur;
 };
 
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> powerEfficient;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> powerEfficientPixelFormat;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> gestureReactions;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> faceFraming;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> eyeGazeCorrection;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> voiceIsolation;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<DOMString> humanFaceDetectionMode;
+};
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+partial dictionary MediaTrackCapabilities {
+  sequence<boolean> backgroundSegmentationMask;
+};
+
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)
 partial dictionary MediaTrackCapabilities {
   sequence<DOMString>  whiteBalanceMode;
