@@ -6273,23 +6273,31 @@
     "type": "selectionchange",
     "targets": [
       {
-        "target": "Window"
-      },
-      {
-        "target": "Document",
-        "bubbles": false
-      },
-      {
         "target": "HTMLElement",
-        "bubbles": false
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       },
       {
         "target": "MathMLElement",
-        "bubbles": false
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       },
       {
         "target": "SVGElement",
-        "bubbles": false
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       }
     ],
     "interface": "Event",
@@ -7685,6 +7693,21 @@
     "src": {
       "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#CONTEXT_RESTORED"
     }
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-forward-wheel-event"
+    },
+    "href": "https://w3c.github.io/mediacapture-surface-control/#subroutine-forward-wheel-event",
+    "type": "wheel",
+    "interface": "WheelEvent",
+    "targets": [
+      {
+        "target": "HTMLElement",
+        "bubbles": false
+      }
+    ]
   },
   {
     "type": "wheel",
