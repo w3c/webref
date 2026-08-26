@@ -326,6 +326,20 @@ const patches = {
       change: { bubbles: false}
     }
   ],
+  // Pending https://github.com/w3c/mediacapture-extensions/issues/176
+  // but spec also uses a proxy "queue an event" algorithm that cannot be detected
+  'mediacapture-extensions': [
+    {
+      pattern: { type: /^(cancel|error)$/ },
+      matched: 6,
+      change: { interface: "DOMException" }
+    },
+    {
+      pattern: { type: /^(stream|track)$/ },
+      matched: 3,
+      change: { interface: "Event" }
+    }
+  ],
   'mediacapture-surface-control': [
     // Pending clarification on the notion of "viewport":
     // https://github.com/w3c/mediacapture-surface-control/issues/51
