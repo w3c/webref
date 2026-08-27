@@ -2986,6 +2986,94 @@
       "links": []
     },
     {
+      "id": "dom-offlineaudiocontext-rendering-started-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-rendering-started-slot",
+      "linkingText": [
+        "[[rendering started]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-rendered-buffers-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-rendered-buffers-slot",
+      "linkingText": [
+        "[[rendered buffers]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-committed-frames-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-committed-frames-slot",
+      "linkingText": [
+        "[[committed frames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-rendered-frames-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-rendered-frames-slot",
+      "linkingText": [
+        "[[rendered frames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dom-offlineaudiocontext-offlineaudiocontext",
       "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-offlineaudiocontext",
       "linkingText": [
@@ -3189,6 +3277,7 @@
       "id": "dom-offlineaudiocontext-startrendering",
       "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering",
       "linkingText": [
+        "startRendering(chunkSize)",
         "startRendering()"
       ],
       "localLinkingText": [],
@@ -3208,39 +3297,15 @@
       "links": []
     },
     {
-      "id": "dom-offlineaudiocontext-rendering-started-slot",
-      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-rendering-started-slot",
+      "id": "calculate-the-buffer-length-for-offline-rendering",
+      "href": "https://webaudio.github.io/web-audio-api/#calculate-the-buffer-length-for-offline-rendering",
       "linkingText": [
-        "[[rendering started]]"
+        "calculate the buffer length for offline rendering"
       ],
       "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OfflineAudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OfflineAudioContext-methods",
-        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
-        "title": "Methods",
-        "number": "1.3.3"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "dom-offlineaudiocontext-rendered-buffer-slot",
-      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-rendered-buffer-slot",
-      "linkingText": [
-        "[[rendered buffer]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OfflineAudioContext"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "OfflineAudioContext-methods",
@@ -3269,6 +3334,28 @@
         "number": "1.3.3"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-startrendering-chunksize-chunksize",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering-chunksize-chunksize",
+      "linkingText": [
+        "chunkSize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "OfflineAudioContext/startRendering(chunkSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext-methods",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
+        "title": "Methods",
+        "number": "1.3.3"
+      },
+      "definedIn": "table",
       "links": []
     },
     {
@@ -3335,6 +3422,28 @@
         "number": "1.3.3"
       },
       "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-close",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext-methods",
+        "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext-methods",
+        "title": "Methods",
+        "number": "1.3.3"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
