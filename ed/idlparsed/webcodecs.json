@@ -3487,7 +3487,7 @@
         "href": "https://w3c.github.io/webcodecs/#audiodata"
       },
       "AudioDataInit": {
-        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required AllowSharedBufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
         "type": "dictionary",
         "name": "AudioDataInit",
         "inheritance": null,
@@ -3603,7 +3603,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             "default": null,
             "required": true,
@@ -6264,7 +6264,7 @@
       ],
       "AudioDataInit": [
         "AudioSampleFormat",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "ArrayBuffer"
       ],
       "AudioDataCopyToOptions": [
