@@ -24741,7 +24741,10 @@
           ]
         },
         {
-          "html": "<p>If <var>noopener</var> is true or <var>windowType</var> is \"<code>new with no\n   opener</code>\", then return null.</p>"
+          "html": "<p>If <var>windowType</var> is \"<code>new with no opener</code>\", then return\n   null.</p>"
+        },
+        {
+          "html": "<p>If <var>noopener</var> is true and <var>target</var> is not an <a id=\"apis-for-creating-and-navigating-browsing-contexts-by-name:ascii-case-insensitive\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" data-x-internal=\"ascii-case-insensitive\">ASCII\n   case-insensitive</a> match for \"<code>_self</code>\", \"<code>_parent</code>\", or \"<code>_top</code>\", then return null.</p>"
         },
         {
           "html": "<p>Return <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-wp\" id=\"apis-for-creating-and-navigating-browsing-contexts-by-name:nav-wp\">active\n   <code>WindowProxy</code></a>.</p>"
@@ -28829,7 +28832,7 @@
           "html": "<p>Otherwise, if <var>name</var> is an <a id=\"navigable-target-names:ascii-case-insensitive-4\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" data-x-internal=\"ascii-case-insensitive\">ASCII case-insensitive</a> match for \"<code>_top</code>\", set <var>chosen</var> to <var>currentNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"navigable-target-names:nav-traversable-2\">traversable navigable</a>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>name</var> is not an <a id=\"navigable-target-names:ascii-case-insensitive-5\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" data-x-internal=\"ascii-case-insensitive\">ASCII case-insensitive</a> match for\n   \"<code>_blank</code>\" and <var>noopener</var> is false, then set <var>chosen</var> to\n   the result of <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#find-a-navigable-by-target-name\" id=\"navigable-target-names:find-a-navigable-by-target-name\">finding a navigable by target\n   name</a> given <var>name</var> and <var>currentNavigable</var>.</p>"
+          "html": "<p>Otherwise, if <var>name</var> is not an <a id=\"navigable-target-names:ascii-case-insensitive-5\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" data-x-internal=\"ascii-case-insensitive\">ASCII case-insensitive</a> match for\n   \"<code>_blank</code>\", then set <var>chosen</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#find-a-navigable-by-target-name\" id=\"navigable-target-names:find-a-navigable-by-target-name\">finding a navigable by target name</a> given\n   <var>name</var> and <var>currentNavigable</var>.</p>"
         },
         {
           "html": "If <var>chosen</var> is null, then a new <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"navigable-target-names:top-level-traversable\">top-level traversable</a> is being\n    requested, and what happens depends on the user agent's configuration and abilities — it\n    is determined by the rules given for the first applicable option from the following list:",
@@ -43415,7 +43418,7 @@
           "html": "<p>Let <var>node</var> be the last node in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"the-insertion-mode:stack-of-open-elements\">stack of open\n   elements</a>.</p>"
         },
         {
-          "html": "<p><i>Loop</i>: If <var>node</var> is the first node in the stack of open elements, then set\n   <var>last</var> to true, and, if the parser was created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"the-insertion-mode:html-fragment-parsing-algorithm\">HTML fragment\n   parsing algorithm</a> (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"the-insertion-mode:fragment-case\">fragment case</a>), set <var>node</var> to the <var id=\"the-insertion-mode:concept-frag-parse-context\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var> element passed to that algorithm.</p>"
+          "html": "<p><i>Loop</i>: If <var>node</var> is the first node in the stack of open elements, then set\n   <var>last</var> to true, and, if the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"the-insertion-mode:fragment-context-element\">fragment context element</a> is non-null,\n   then set <var>node</var> to that element (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"the-insertion-mode:fragment-case\">fragment case</a>).</p>"
         },
         {
           "html": "<p>If <var>node</var> is a <code id=\"the-insertion-mode:the-td-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-td-element\">td</a></code> or <code id=\"the-insertion-mode:the-th-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-th-element\">th</a></code> element and <var>last</var> is\n   false, then switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"the-insertion-mode:insertion-mode-7\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-intd\" id=\"the-insertion-mode:parsing-main-intd-2\">in\n   cell</a>\" and return.</p>"
@@ -46463,91 +46466,57 @@
     {
       "name": "appropriate place for inserting a node",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node",
-      "html": "The <dfn id=\"appropriate-place-for-inserting-a-node\">appropriate place for inserting a node</dfn>, optionally using a particular\n  <i>override target</i>, is the position in a node returned by running the following steps:",
-      "rationale": "if",
+      "html": "To find the <dfn id=\"appropriate-place-for-inserting-a-node\">appropriate place for inserting a node</dfn>, given an optional\n  <code id=\"creating-and-inserting-nodes:node-3\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> <var>overrideTarget</var> (default null), perform the following steps. They\n  return an <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location\" id=\"creating-and-inserting-nodes:insertion-location\">insertion location</a>.",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p>If there was an <i>override target</i> specified, then let <var>target</var> be the\n    <i>override target</i>.</p>\n\n    <p>Otherwise, let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"creating-and-inserting-nodes:current-node\">current node</a>.</p>"
+          "html": "<p>Let <var>targetParent</var> be <var>overrideTarget</var> if it is not null; otherwise the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"creating-and-inserting-nodes:current-node\">current node</a>.</p>"
         },
         {
-          "html": "Determine the <var>adjusted insertion location</var> using the first matching steps\n    from the following list:",
-          "rationale": ".switch",
-          "steps": [
-            {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "If foster parenting is enabled and target is a table, tbody, tfoot, thead, or tr element",
-                  "html": "Run these substeps:",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>last template</var> be the last <code id=\"creating-and-inserting-nodes:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element in the\n       <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements\">stack of open elements</a>, if any.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>last table</var> be the last <code id=\"creating-and-inserting-nodes:the-table-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-table-element\">table</a></code> element in the\n       <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-2\">stack of open elements</a>, if any.</p>"
-                    },
-                    {
-                      "html": "<p>If there is a <var>last template</var> and either there is no <var>last table</var>, or there is one, but <var>last template</var> is lower\n       (more recently added) than <var>last table</var> in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-3\">stack of open\n       elements</a>, then let <var>adjusted insertion location</var> be inside <var>last template</var>'s <a id=\"creating-and-inserting-nodes:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>, after its last child (if any),\n       and abort these steps.</p>"
-                    },
-                    {
-                      "html": "<p>If there is no <var>last table</var>,  then let <var>adjusted insertion\n       location</var> be inside the first element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-4\">stack of open elements</a> (the\n       <code id=\"creating-and-inserting-nodes:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element), after its last child (if any), and abort these steps.\n       (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"creating-and-inserting-nodes:fragment-case\">fragment case</a>)</p>"
-                    },
-                    {
-                      "html": "<p>If <var>last table</var> has a parent node, then let <var>adjusted insertion location</var> be inside <var>last table</var>'s parent\n       node, immediately before <var>last table</var>, and abort these steps.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>previous element</var> be the element immediately above <var>last table</var> in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-5\">stack of open elements</a>.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>adjusted insertion location</var> be inside <var>previous\n       element</var>, after its last child (if any).</p>"
-                    }
-                  ]
-                },
-                {
-                  "case": "Otherwise",
-                  "html": "<p>Let <var>adjusted insertion location</var> be inside <var>target</var>,\n      after its last child (if any).</p>"
-                }
-              ]
-            }
-          ]
+          "html": "<p>Let <var>referenceChild</var> be null.</p>"
         },
         {
-          "html": "If <var>adjusted insertion location</var> is inside a <code id=\"creating-and-inserting-nodes:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element:",
+          "html": "If <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#foster-parent\" id=\"creating-and-inserting-nodes:foster-parent\">foster parenting</a> is enabled and\n    <var>targetParent</var> is a <code id=\"creating-and-inserting-nodes:the-table-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-table-element\">table</a></code>, <code id=\"creating-and-inserting-nodes:the-tbody-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element\">tbody</a></code>, <code id=\"creating-and-inserting-nodes:the-tfoot-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element\">tfoot</a></code>,\n    <code id=\"creating-and-inserting-nodes:the-thead-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-thead-element\">thead</a></code>, or <code id=\"creating-and-inserting-nodes:the-tr-element\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-tr-element\">tr</a></code> element:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>template</var> be that element.</p>"
+              "html": "<p>Let <var>lastTemplateOrTable</var> be the last <code id=\"creating-and-inserting-nodes:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> or\n     <code id=\"creating-and-inserting-nodes:the-table-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#the-table-element\">table</a></code> element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements\">stack of open elements</a> if there is one;\n     otherwise null.</p>"
             },
             {
-              "html": "<p>Let <var>target</var> be <var>template</var>'s <a id=\"creating-and-inserting-nodes:insertion-target\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-target\">insertion target</a>.</p>"
+              "html": "<p>If <var>lastTemplateOrTable</var> is null, then return (the first element in the\n     <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-2\">stack of open elements</a> (the <code id=\"creating-and-inserting-nodes:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element), null).\n     (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"creating-and-inserting-nodes:fragment-case\">fragment case</a>)</p>"
             },
             {
-              "html": "If <var>target</var> is not null:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>template</var>'s <a id=\"creating-and-inserting-nodes:insertion-end-marker\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-end-marker\">insertion end marker</a> is not null and its\n        <a id=\"creating-and-inserting-nodes:parent\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is <var>target</var>, then set <var>adjusted insertion location</var> to\n        inside <var>target</var>, before <var>template</var>'s <a id=\"creating-and-inserting-nodes:insertion-end-marker-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-end-marker\">insertion end\n        marker</a>.</p>"
-                },
-                {
-                  "html": "<p>Otherwise, set <var>adjusted insertion location</var> to inside <var>target</var>,\n       after its last child (if any).</p>"
-                }
-              ]
+              "html": "<p>If <var>lastTemplateOrTable</var> is a <code id=\"creating-and-inserting-nodes:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then set\n     <var>targetParent</var> to <var>lastTemplateOrTable</var>.</p>"
             },
             {
-              "html": "<p>Otherwise, set <var>adjusted insertion location</var> to inside <var>template</var>'s\n     <a id=\"creating-and-inserting-nodes:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>, after its last child (if any).</p>"
+              "html": "<p>Otherwise, if <var>lastTemplateOrTable</var>'s <a id=\"creating-and-inserting-nodes:parent\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is not null, then set\n     <var>targetParent</var> to <var>lastTemplateOrTable</var>'s <a id=\"creating-and-inserting-nodes:parent-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> and set\n     <var>referenceChild</var> to <var>lastTemplateOrTable</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>targetParent</var> to the element immediately above\n     <var>lastTemplateOrTable</var> in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-3\">stack of open elements</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return the <var>adjusted insertion location</var>.</p>"
+          "html": "<p>If <var>targetParent</var> is not a <code id=\"creating-and-inserting-nodes:the-template-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then return\n   (<var>targetParent</var>, <var>referenceChild</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>patchInsertionTarget</var> be <var>targetParent</var>'s\n   <a id=\"creating-and-inserting-nodes:insertion-target\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-target\">insertion target</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>patchInsertionTarget</var> is null, then return (<var>targetParent</var>'s\n   <a id=\"creating-and-inserting-nodes:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>, null).</p>"
+        },
+        {
+          "html": "<p>If <var>targetParent</var>'s <a id=\"creating-and-inserting-nodes:insertion-end-marker\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-end-marker\">insertion end marker</a> is not null and its\n    <a id=\"creating-and-inserting-nodes:parent-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is <var>patchInsertionTarget</var>, then return\n    (<var>patchInsertionTarget</var>, <var>targetParent</var>'s\n    <a id=\"creating-and-inserting-nodes:insertion-end-marker-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#insertion-end-marker\">insertion end marker</a>).</p>"
+        },
+        {
+          "html": "<p>Return (<var>patchInsertionTarget</var>, null).</p>"
         }
       ]
     },
     {
       "name": "create an element for a token",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token",
-      "html": "To <dfn id=\"create-an-element-for-the-token\">create an element for a token</dfn>, given a\n  token <var>token</var>, a string <var>namespace</var>, and a <code id=\"creating-and-inserting-nodes:node\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> object\n  <var>intendedParent</var>:",
+      "html": "To <dfn id=\"create-an-element-for-the-token\">create an element for a token</dfn>, given a\n  token <var>token</var>, a string <var>namespace</var>, and a <code id=\"creating-and-inserting-nodes:node-4\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> object\n  <var>intendedParent</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -46572,7 +46541,7 @@
           "html": "<p>Let <var>definition</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-definition\" id=\"creating-and-inserting-nodes:look-up-a-custom-element-definition\">looking up a custom element definition</a> given <var>registry</var>,\n   <var>namespace</var>, <var>localName</var>, and <var>is</var>.</p>"
         },
         {
-          "html": "<p>Let <var>willExecuteScript</var> be true if <var>definition</var> is non-null and the\n   parser was not created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"creating-and-inserting-nodes:html-fragment-parsing-algorithm\">HTML fragment parsing algorithm</a>; otherwise\n   false.</p>"
+          "html": "<p>Let <var>willExecuteScript</var> be true if <var>definition</var> is non-null and the\n   parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"creating-and-inserting-nodes:fragment-context-element\">fragment context element</a> is null; otherwise false.</p>"
         },
         {
           "html": "If <var>willExecuteScript</var> is true:",
@@ -46617,7 +46586,7 @@
           "html": "<p>If <var>element</var> is a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-reset\" id=\"creating-and-inserting-nodes:category-reset\">resettable element</a> and not\n   a <a id=\"creating-and-inserting-nodes:form-associated-custom-element\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-element\">form-associated custom element</a>, then invoke its <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-reset-control\" id=\"creating-and-inserting-nodes:concept-form-reset-control\">reset algorithm</a>. (This initializes the element's <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-fe-value\" id=\"creating-and-inserting-nodes:concept-fe-value\">value</a> and <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-fe-checked\" id=\"creating-and-inserting-nodes:concept-fe-checked\">checkedness</a>\n   based on the element's attributes.)</p>"
         },
         {
-          "html": "<p>If <var>element</var> is a <a id=\"creating-and-inserting-nodes:form-associated-element\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> and not a\n   <a id=\"creating-and-inserting-nodes:form-associated-custom-element-2\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-element\">form-associated custom element</a>, the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer\"><code>form</code> element pointer</a> is not null, there is no\n   <code id=\"creating-and-inserting-nodes:the-template-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element on the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-6\">stack of open elements</a>, <var>element</var> is\n   either not <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"creating-and-inserting-nodes:category-listed\">listed</a> or doesn't have a <code id=\"creating-and-inserting-nodes:attr-fae-form\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> attribute, and the <var>intendedParent</var> is in the same\n   <a id=\"creating-and-inserting-nodes:tree\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a> as the element pointed to by the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer-2\"><code>form</code> element\n   pointer</a>, then <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-association\" id=\"creating-and-inserting-nodes:concept-form-association\">associate</a> <var>element</var>\n   with the <code id=\"creating-and-inserting-nodes:the-form-element\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element pointed to by the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer-3\"><code>form</code> element\n   pointer</a> and set <var>element</var>'s <a id=\"creating-and-inserting-nodes:parser-inserted-flag\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#parser-inserted-flag\">parser inserted flag</a>.</p>"
+          "html": "<p>If <var>element</var> is a <a id=\"creating-and-inserting-nodes:form-associated-element\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> and not a\n   <a id=\"creating-and-inserting-nodes:form-associated-custom-element-2\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-element\">form-associated custom element</a>, the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer\"><code>form</code> element pointer</a> is not null, there is no\n   <code id=\"creating-and-inserting-nodes:the-template-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element on the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-4\">stack of open elements</a>, <var>element</var> is\n   either not <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"creating-and-inserting-nodes:category-listed\">listed</a> or doesn't have a <code id=\"creating-and-inserting-nodes:attr-fae-form\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> attribute, and the <var>intendedParent</var> is in the same\n   <a id=\"creating-and-inserting-nodes:tree\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a> as the element pointed to by the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer-2\"><code>form</code> element\n   pointer</a>, then <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-association\" id=\"creating-and-inserting-nodes:concept-form-association\">associate</a> <var>element</var>\n   with the <code id=\"creating-and-inserting-nodes:the-form-element\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element pointed to by the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#form-element-pointer\" id=\"creating-and-inserting-nodes:form-element-pointer-3\"><code>form</code> element\n   pointer</a> and set <var>element</var>'s <a id=\"creating-and-inserting-nodes:parser-inserted-flag\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#parser-inserted-flag\">parser inserted flag</a>.</p>"
         },
         {
           "html": "<p>Return <var>element</var>.</p>"
@@ -46627,49 +46596,46 @@
     {
       "name": "adjusted insertion location",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location",
-      "html": "To compute the <dfn id=\"adjusted-insertion-location\">adjusted insertion location</dfn> with an optional insertion location\n  <var>insertionLocation</var> (default null):",
+      "html": "To compute the <dfn id=\"adjusted-insertion-location\">adjusted insertion location</dfn> with an optional <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location\" id=\"creating-and-inserting-nodes:insertion-location-2\">insertion\n  location</a> <var>insertionLocation</var> (default null):",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>overrideTarget</var> be null if <var>insertionLocation</var> is null;\n   otherwise the node in which <var>insertionLocation</var> finds itself.</p>"
+          "html": "<p>Let <var>overrideTarget</var> be null if <var>insertionLocation</var> is null;\n   otherwise <var>insertionLocation</var>'s <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location-target-parent\" id=\"creating-and-inserting-nodes:insertion-location-target-parent\">target parent</a>.</p>"
         },
         {
-          "html": "<p>Let the <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"creating-and-inserting-nodes:appropriate-place-for-inserting-a-node\">appropriate place for inserting\n   a node</a> given <var>overrideTarget</var>.</p>"
+          "html": "<p>Let <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"creating-and-inserting-nodes:appropriate-place-for-inserting-a-node\">appropriate place for inserting a\n   node</a> given <var>overrideTarget</var>.</p>"
         },
         {
-          "html": "<p>If the node in which the <var>adjustedInsertionLocation</var> finds itself is the first\n   element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-7\">stack of open elements</a> and the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#root-insertion-target\" id=\"creating-and-inserting-nodes:root-insertion-target\">root insertion\n   target</a> is non-null, then set the <var>adjustedInsertionLocation</var> to the parser's\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#root-insertion-target\" id=\"creating-and-inserting-nodes:root-insertion-target-2\">root insertion target</a>, after its last child (if any).</p>"
+          "html": "<p>If <var>adjustedInsertionLocation</var>'s <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location-target-parent\" id=\"creating-and-inserting-nodes:insertion-location-target-parent-2\">target parent</a> is the first element in the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-5\">stack of open elements</a> and the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#root-insertion-target\" id=\"creating-and-inserting-nodes:root-insertion-target\">root insertion target</a> is\n   non-null, then set <var>adjustedInsertionLocation</var> to (the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#root-insertion-target\" id=\"creating-and-inserting-nodes:root-insertion-target-2\">root insertion\n   target</a>, null).</p>"
         },
         {
-          "html": "<p>Return the <var>adjustedInsertionLocation</var>.</p>"
+          "html": "<p>Return <var>adjustedInsertionLocation</var>.</p>"
         }
       ]
     },
     {
       "name": "insert an element at the adjusted insertion location",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location",
-      "html": "To <dfn id=\"insert-an-element-at-the-adjusted-insertion-location\">insert an element at the adjusted insertion location</dfn> with an element\n  <var>element</var> and an optional insertion location <var>insertionLocation</var> (default\n  null):",
-      "rationale": "set",
+      "html": "To <dfn id=\"insert-an-element-at-the-adjusted-insertion-location\">insert an element at the adjusted insertion location</dfn> with an element\n  <var>element</var> and an optional <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location\" id=\"creating-and-inserting-nodes:insertion-location-3\">insertion location</a> <var>insertionLocation</var>\n  (default null):",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p>Set <var>insertionLocation</var> to the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location\">adjusted insertion location</a> given\n   <var>insertionLocation</var>.</p>"
+          "html": "<p>Let (<var>targetParent</var>, <var>referenceChild</var>) be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location\">adjusted insertion\n   location</a> given <var>insertionLocation</var>.</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be the node in which <var>insertionLocation</var> finds\n   itself.</p>"
+          "html": "<p>If any of the following are true:</p>\n\n    <ul><li><var>element</var>'s <a id=\"creating-and-inserting-nodes:parent-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is non-null;</li><li><var>element</var> is a <a id=\"creating-and-inserting-nodes:host-including-inclusive-ancestor\" href=\"https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor\" data-x-internal=\"host-including-inclusive-ancestor\">host-including inclusive ancestor</a> of\n     <var>targetParent</var>; or</li><li><var>targetParent</var> is a <code id=\"creating-and-inserting-nodes:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> node that already has an element\n     child,</li></ul>\n\n    <p>then return.</p>"
         },
         {
-          "html": "<p>If any of the following are true:</p>\n\n    <ul><li><var>element</var>'s <a id=\"creating-and-inserting-nodes:parent-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is non-null;</li><li><var>element</var> is a <a id=\"creating-and-inserting-nodes:host-including-inclusive-ancestor\" href=\"https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor\" data-x-internal=\"host-including-inclusive-ancestor\">host-including inclusive ancestor</a> of\n     <var>target</var>; or</li><li><var>target</var> is a <code id=\"creating-and-inserting-nodes:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> node that already has an element child,</li></ul>\n\n    <p>then return.</p>"
+          "html": "<p><a id=\"creating-and-inserting-nodes:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <a id=\"creating-and-inserting-nodes:ensure-pre-insert-validity\" href=\"https://dom.spec.whatwg.org/#concept-node-ensure-pre-insertion-validity\" data-x-internal=\"ensure-pre-insert-validity\">ensure pre-insert validity</a> given <var>element</var>,\n   <var>targetParent</var>, <var>referenceChild</var>, and « » does not throw.</p>"
         },
         {
-          "html": "<p><a id=\"creating-and-inserting-nodes:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <a id=\"creating-and-inserting-nodes:ensure-pre-insert-validity\" href=\"https://dom.spec.whatwg.org/#concept-node-ensure-pre-insertion-validity\" data-x-internal=\"ensure-pre-insert-validity\">ensure pre-insert validity</a> given <var>element</var>,\n   <var>target</var>, null, and « » does not throw.</p>"
+          "html": "<p>If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"creating-and-inserting-nodes:fragment-context-element-2\">fragment context element</a> is null, then push a new\n   <a id=\"creating-and-inserting-nodes:element-queue-3\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#element-queue\">element queue</a> onto <var>element</var>'s <a id=\"creating-and-inserting-nodes:relevant-agent-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\">relevant agent</a>'s <a id=\"creating-and-inserting-nodes:custom-element-reactions-stack-3\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-reactions-stack\">custom\n   element reactions stack</a>.</p>"
         },
         {
-          "html": "<p>If the parser was not created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"creating-and-inserting-nodes:html-fragment-parsing-algorithm-2\">HTML fragment parsing\n   algorithm</a>, then push a new <a id=\"creating-and-inserting-nodes:element-queue-3\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#element-queue\">element queue</a> onto <var>element</var>'s\n   <a id=\"creating-and-inserting-nodes:relevant-agent-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\">relevant agent</a>'s <a id=\"creating-and-inserting-nodes:custom-element-reactions-stack-3\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-reactions-stack\">custom element reactions stack</a>.</p>"
+          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"creating-and-inserting-nodes:concept-node-insert\" data-x-internal=\"concept-node-insert\">Insert</a> <var>element</var> into\n   <var>targetParent</var> before <var>referenceChild</var>.</p>"
         },
         {
-          "html": "<p>Insert <var>element</var> at <var>insertionLocation</var>.</p>"
-        },
-        {
-          "html": "<p>If the parser was not created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"creating-and-inserting-nodes:html-fragment-parsing-algorithm-3\">HTML fragment parsing\n   algorithm</a>, then pop the <a id=\"creating-and-inserting-nodes:element-queue-4\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#element-queue\">element queue</a> from <var>element</var>'s\n   <a id=\"creating-and-inserting-nodes:relevant-agent-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\">relevant agent</a>'s <a id=\"creating-and-inserting-nodes:custom-element-reactions-stack-4\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-reactions-stack\">custom element reactions stack</a>, and <a id=\"creating-and-inserting-nodes:invoke-custom-element-reactions-2\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#invoke-custom-element-reactions\">invoke\n   custom element reactions</a> in that queue.</p>"
+          "html": "<p>If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"creating-and-inserting-nodes:fragment-context-element-3\">fragment context element</a> is null, then pop the <a id=\"creating-and-inserting-nodes:element-queue-4\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#element-queue\">element\n   queue</a> from <var>element</var>'s <a id=\"creating-and-inserting-nodes:relevant-agent-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\">relevant agent</a>'s <a id=\"creating-and-inserting-nodes:custom-element-reactions-stack-4\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-reactions-stack\">custom element\n   reactions stack</a>, and <a id=\"creating-and-inserting-nodes:invoke-custom-element-reactions-2\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#invoke-custom-element-reactions\">invoke custom element reactions</a> in that queue.</p>"
         }
       ]
     },
@@ -46680,16 +46646,16 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let the <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"creating-and-inserting-nodes:appropriate-place-for-inserting-a-node-2\">appropriate place for inserting\n   a node</a>.</p>"
+          "html": "<p>Let <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"creating-and-inserting-nodes:appropriate-place-for-inserting-a-node-2\">appropriate place for inserting a\n   node</a>.</p>"
         },
         {
-          "html": "<p>Let <var>element</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token\" id=\"creating-and-inserting-nodes:create-an-element-for-the-token\">creating an element for the token</a> given <var>token</var>, <var>namespace</var>,\n   and the node in which the <var>adjustedInsertionLocation</var> finds itself.</p>"
+          "html": "<p>Let <var>element</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token\" id=\"creating-and-inserting-nodes:create-an-element-for-the-token\">creating an element for the token</a> given <var>token</var>, <var>namespace</var>,\n   and <var>adjustedInsertionLocation</var>'s <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location-target-parent\" id=\"creating-and-inserting-nodes:insertion-location-target-parent-3\">target parent</a>.</p>"
         },
         {
           "html": "<p>If <var>onlyAddToElementStack</var> is false, then run <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"creating-and-inserting-nodes:insert-an-element-at-the-adjusted-insertion-location\">insert an element at the\n   adjusted insertion location</a> with <var>element</var>.</p>"
         },
         {
-          "html": "<p>Push <var>element</var> onto the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-8\">stack of open elements</a> so that it is the new\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"creating-and-inserting-nodes:current-node-2\">current node</a>.</p>"
+          "html": "<p>Push <var>element</var> onto the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"creating-and-inserting-nodes:stack-of-open-elements-6\">stack of open elements</a> so that it is the new\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"creating-and-inserting-nodes:current-node-2\">current node</a>.</p>"
         },
         {
           "html": "<p>Return <var>element</var>.</p>"
@@ -46706,56 +46672,59 @@
           "html": "<p>Let <var>data</var> be the characters passed to the algorithm, or, if no characters were\n   explicitly specified, the character of the character token being processed.</p>"
         },
         {
-          "html": "<p>Let <var>insertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-2\">adjusted insertion location</a>.</p>"
+          "html": "<p>Let (<var>targetParent</var>, <var>referenceChild</var>) be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-2\">adjusted insertion\n   location</a>.</p>"
         },
         {
-          "html": "<p>If <var>insertionLocation</var> is in a <code id=\"creating-and-inserting-nodes:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> node, then return.</p>"
+          "html": "<p>If <var>targetParent</var> is a <code id=\"creating-and-inserting-nodes:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> node, then return.</p>"
         },
         {
-          "html": "<p>If there is a <code id=\"creating-and-inserting-nodes:text-2\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node immediately before <var>insertionLocation</var>, then\n    append <var>data</var> to that <code id=\"creating-and-inserting-nodes:text-3\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node's <a href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"creating-and-inserting-nodes:concept-cd-data\" data-x-internal=\"concept-cd-data\">data</a>.</p>\n\n    <p>Otherwise, let <var>text</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-text-node\" id=\"creating-and-inserting-nodes:create-a-text-node\" data-x-internal=\"create-a-text-node\">creating a\n    text node</a> given the <a id=\"creating-and-inserting-nodes:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> of the node in which\n    <var>insertionLocation</var> finds itself and <var>data</var>, and insert <var>text</var> at\n    <var>insertionLocation</var>.</p>"
+          "html": "<p>Let <var>previousSibling</var> be <var>referenceChild</var>'s <a id=\"creating-and-inserting-nodes:previous-sibling\" href=\"https://dom.spec.whatwg.org/#concept-tree-previous-sibling\" data-x-internal=\"previous-sibling\">previous\n   sibling</a> if <var>referenceChild</var> is non-null; otherwise <var>targetParent</var>'s\n   <a id=\"creating-and-inserting-nodes:last-child\" href=\"https://dom.spec.whatwg.org/#concept-tree-last-child\" data-x-internal=\"last-child\">last child</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>previousSibling</var> is a <code id=\"creating-and-inserting-nodes:text-2\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node, then append <var>data</var> to\n    <var>previousSibling</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"creating-and-inserting-nodes:concept-cd-data\" data-x-internal=\"concept-cd-data\">data</a>.</p>\n\n    <p>Otherwise, let <var>text</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-text-node\" id=\"creating-and-inserting-nodes:create-a-text-node\" data-x-internal=\"create-a-text-node\">creating a\n    text node</a> given <var>targetParent</var>'s <a id=\"creating-and-inserting-nodes:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> and <var>data</var>,\n    and <a href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"creating-and-inserting-nodes:concept-node-insert-2\" data-x-internal=\"concept-node-insert\">insert</a> <var>text</var> into\n    <var>targetParent</var> before <var>referenceChild</var>.</p>"
         }
       ]
     },
     {
       "name": "insert a comment",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment",
-      "html": "When the steps below require the user agent to <dfn id=\"insert-a-comment\">insert a comment</dfn> while processing a\n  comment token, with an optional insertion location <var>insertionLocation</var> (default null),\n  the user agent must run the following steps:",
+      "html": "When the steps below require the user agent to <dfn id=\"insert-a-comment\">insert a comment</dfn> while processing a\n  comment token, with an optional <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location\" id=\"creating-and-inserting-nodes:insertion-location-4\">insertion location</a> <var>insertionLocation</var>\n  (default null), the user agent must run the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>data</var> be the data given in the comment token being\n   processed.</p>"
         },
         {
-          "html": "<p>Set <var>insertionLocation</var> to the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-3\">adjusted insertion location</a> given\n   <var>insertionLocation</var>.</p>"
+          "html": "<p>Let (<var>targetParent</var>, <var>referenceChild</var>) be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-3\">adjusted insertion\n   location</a> given <var>insertionLocation</var>.</p>"
         },
         {
-          "html": "<p>Let <var>comment</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-comment-node\" id=\"creating-and-inserting-nodes:create-a-comment-node\" data-x-internal=\"create-a-comment-node\">creating a\n   comment node</a> given the <a id=\"creating-and-inserting-nodes:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> of the node in which the\n   <var>insertionLocation</var> finds itself and <var>data</var>.</p>"
+          "html": "<p>Let <var>comment</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-comment-node\" id=\"creating-and-inserting-nodes:create-a-comment-node\" data-x-internal=\"create-a-comment-node\">creating a\n   comment node</a> given <var>targetParent</var>'s <a id=\"creating-and-inserting-nodes:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> and\n   <var>data</var>.</p>"
         },
         {
-          "html": "<p>Insert <var>comment</var> at <var>insertionLocation</var>.</p>"
+          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"creating-and-inserting-nodes:concept-node-insert-3\" data-x-internal=\"concept-node-insert\">Insert</a> <var>comment</var> into\n   <var>targetParent</var> before <var>referenceChild</var>.</p>"
         }
       ]
     },
     {
       "name": "insert a processing instruction",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction",
-      "html": "When the steps below require the user agent to <dfn id=\"insert-a-processing-instruction\">insert a processing instruction</dfn> while\n  processing a processing instruction token, with an optional insertion location\n  <var>insertionLocation</var> (default null), the user agent must run the following steps:",
+      "html": "When the steps below require the user agent to <dfn id=\"insert-a-processing-instruction\">insert a processing instruction</dfn> while\n  processing a processing instruction token, with an optional <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-location\" id=\"creating-and-inserting-nodes:insertion-location-5\">insertion location</a>\n  <var>insertionLocation</var> (default null), the user agent must run the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>target</var> be the target given in the processing instruction token being\n   processed.</p>"
+          "html": "<p>Let <var>piTarget</var> be the target given in the processing instruction token being\n   processed.</p>"
         },
         {
           "html": "<p>Let <var>data</var> be the data given in the processing instruction token being\n   processed.</p>"
         },
         {
-          "html": "<p>Set <var>insertionLocation</var> to the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-4\">adjusted insertion location</a> given\n   <var>insertionLocation</var>.</p>"
+          "html": "<p>Let (<var>targetParent</var>, <var>referenceChild</var>) be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"creating-and-inserting-nodes:adjusted-insertion-location-4\">adjusted insertion\n   location</a> given <var>insertionLocation</var>.</p>"
         },
         {
-          "html": "<p>Let <var>pi</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-processing-instruction-node\" id=\"creating-and-inserting-nodes:create-a-processing-instruction-node\" data-x-internal=\"create-a-processing-instruction-node\">creating a processing instruction node</a> given the <a id=\"creating-and-inserting-nodes:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> of the\n   node in which the <var>insertionLocation</var> finds itself, <var>target</var>, and\n   <var>data</var>.</p>"
+          "html": "<p>Let <var>pi</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-processing-instruction-node\" id=\"creating-and-inserting-nodes:create-a-processing-instruction-node\" data-x-internal=\"create-a-processing-instruction-node\">creating a processing instruction node</a> given <var>targetParent</var>'s <a id=\"creating-and-inserting-nodes:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n   document</a>, <var>piTarget</var>, and <var>data</var>.</p>"
         },
         {
-          "html": "<p>Insert <var>pi</var> at <var>insertionLocation</var>.</p>"
+          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"creating-and-inserting-nodes:concept-node-insert-4\" data-x-internal=\"concept-node-insert\">Insert</a> <var>pi</var> into\n   <var>targetParent</var> before <var>referenceChild</var>.</p>"
         }
       ]
     },
@@ -46792,11 +46761,11 @@
             },
             {
               "case": "A comment token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-initial-insertion-mode:insert-a-comment\">Insert a comment</a> as the last child of the <code id=\"the-initial-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-initial-insertion-mode:insert-a-comment\">Insert a comment</a> given (the <code id=\"the-initial-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object, null).</p>"
             },
             {
               "case": "A processing instruction token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-initial-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> as the last child of the <code id=\"the-initial-insertion-mode:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>\n    object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-initial-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> given (the <code id=\"the-initial-insertion-mode:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object,\n    null).</p>"
             },
             {
               "case": "A DOCTYPE token",
@@ -46823,11 +46792,11 @@
             },
             {
               "case": "A comment token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-before-html-insertion-mode:insert-a-comment\">Insert a comment</a> as the last child of the <code id=\"the-before-html-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-before-html-insertion-mode:insert-a-comment\">Insert a comment</a> given (the <code id=\"the-before-html-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object, null).</p>"
             },
             {
               "case": "A processing instruction token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-before-html-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> as the last child of the <code id=\"the-before-html-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>\n    object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-before-html-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> given (the <code id=\"the-before-html-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object,\n    null).</p>"
             },
             {
               "case": "A character token that is one of U+0009 CHARACTER TABULATION, U+000A LINE FEED (LF), U+000C FORM FEED (FF), U+000D CARRIAGE RETURN (CR), or U+0020 SPACE",
@@ -46835,7 +46804,7 @@
             },
             {
               "case": "A start tag whose tag name is \"html\"",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token\" id=\"the-before-html-insertion-mode:create-an-element-for-the-token\">Create an element for the token</a> in the <a id=\"the-before-html-insertion-mode:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a>, with the\n    <code id=\"the-before-html-insertion-mode:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> as the intended parent. <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"the-before-html-insertion-mode:insert-an-element-at-the-adjusted-insertion-location\">Insert an element at the adjusted insertion\n    location</a> with that element and the <code id=\"the-before-html-insertion-mode:document-4\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, after its last child (if any).\n    Put this element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"the-before-html-insertion-mode:stack-of-open-elements\">stack of open elements</a>.</p>\n\n    <p>Switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"the-before-html-insertion-mode:insertion-mode-2\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#the-before-head-insertion-mode\" id=\"the-before-html-insertion-mode:the-before-head-insertion-mode\">before\n    head</a>\".</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token\" id=\"the-before-html-insertion-mode:create-an-element-for-the-token\">Create an element for the token</a> in the <a id=\"the-before-html-insertion-mode:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a>, with the\n    <code id=\"the-before-html-insertion-mode:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> as the intended parent. <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"the-before-html-insertion-mode:insert-an-element-at-the-adjusted-insertion-location\">Insert an element at the adjusted insertion\n    location</a> with that element and (the <code id=\"the-before-html-insertion-mode:document-4\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, null). Put this element in the\n    <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"the-before-html-insertion-mode:stack-of-open-elements\">stack of open elements</a>.</p>\n\n    <p>Switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"the-before-html-insertion-mode:insertion-mode-2\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#the-before-head-insertion-mode\" id=\"the-before-html-insertion-mode:the-before-head-insertion-mode\">before\n    head</a>\".</p>"
             },
             {
               "case": "An end tag whose tag name is one of: \"head\", \"body\", \"html\", \"br\"",
@@ -46966,7 +46935,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let the <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"parsing-main-inhead:appropriate-place-for-inserting-a-node\">appropriate place for\n     inserting a node</a>.</p>"
+                  "html": "<p>Let <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"parsing-main-inhead:appropriate-place-for-inserting-a-node\">appropriate place for\n     inserting a node</a>.</p>"
                 },
                 {
                   "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token\" id=\"parsing-main-inhead:create-an-element-for-the-token\">Create an element for the token</a> in the <a id=\"parsing-main-inhead:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a>, with\n     the intended parent being the node in which the <var>adjustedInsertionLocation</var> finds\n     itself.</p>"
@@ -46984,7 +46953,7 @@
                   "html": "<p>If the parser was invoked via the <code id=\"parsing-main-inhead:dom-document-write-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-document-write\">document.write()</a></code> or <code id=\"parsing-main-inhead:dom-document-writeln\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-document-writeln\">document.writeln()</a></code> methods, then optionally set the\n     <code id=\"parsing-main-inhead:the-script-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code> element's <a id=\"parsing-main-inhead:already-started-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#already-started\">already started</a> to true. (For example, the user\n     agent might use this clause to prevent execution of <a href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"parsing-main-inhead:concept-origin\">cross-origin</a>\n     scripts inserted via <code id=\"parsing-main-inhead:dom-document-write-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-document-write\">document.write()</a></code> under slow\n     network conditions, or when the page has already taken a long time to load.)</p>"
                 },
                 {
-                  "html": "<p>Insert the newly created element at the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"parsing-main-inhead:adjusted-insertion-location\">adjusted insertion location</a> given\n     <var>adjustedInsertionLocation</var>.</p>"
+                  "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location\">Insert an element at the adjusted insertion location</a> with the newly created\n     element and <var>adjustedInsertionLocation</var>.</p>"
                 },
                 {
                   "html": "<p>Push the element onto the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-inhead:stack-of-open-elements-3\">stack of open elements</a> so that it is the new\n     <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inhead:current-node-3\">current node</a>.</p>"
@@ -47029,7 +46998,7 @@
                   "html": "<p>Push \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-intemplate\" id=\"parsing-main-inhead:parsing-main-intemplate-2\">in template</a>\" onto the\n     <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-template-insertion-modes\" id=\"parsing-main-inhead:stack-of-template-insertion-modes\">stack of template insertion modes</a> so that it is the new <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-template-insertion-mode\" id=\"parsing-main-inhead:current-template-insertion-mode\">current template\n     insertion mode</a>.</p>"
                 },
                 {
-                  "html": "<p>Let the <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"parsing-main-inhead:appropriate-place-for-inserting-a-node-2\">appropriate place for\n     inserting a node</a>.</p>"
+                  "html": "<p>Let <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#appropriate-place-for-inserting-a-node\" id=\"parsing-main-inhead:appropriate-place-for-inserting-a-node-2\">appropriate place for\n     inserting a node</a>.</p>"
                 },
                 {
                   "html": "If <var>templateStartTag</var>'s <code id=\"parsing-main-inhead:attr-template-shadowrootmode\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode\">shadowrootmode</a></code> is not in the <a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-shadowrootmode-none-state\" id=\"parsing-main-inhead:attr-shadowrootmode-none-state\">None</a> state:",
@@ -47063,7 +47032,7 @@
                       "html": "<p>Let <var>clonable</var> be true if <var>templateStartTag</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootclonable\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable\">shadowrootclonable</a></code> attribute; otherwise\n       false.</p>"
                     },
                     {
-                      "html": "<p>If <var>declarativeShadowHostElement</var> is a <a id=\"parsing-main-inhead:shadow-host\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" data-x-internal=\"shadow-host\">shadow host</a>, then\n       <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location\">insert an element at the adjusted insertion location</a> with\n       <var>template</var> and <var>adjustedInsertionLocation</var>.</p>"
+                      "html": "<p>If <var>declarativeShadowHostElement</var> is a <a id=\"parsing-main-inhead:shadow-host\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" data-x-internal=\"shadow-host\">shadow host</a>, then\n       <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location-2\">insert an element at the adjusted insertion location</a> with\n       <var>template</var> and <var>adjustedInsertionLocation</var>.</p>"
                     },
                     {
                       "html": "Otherwise:",
@@ -47077,7 +47046,7 @@
                           "rationale": "insert",
                           "steps": [
                             {
-                              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location-2\">Insert an element at the adjusted insertion location</a> with\n           <var>template</var> and <var>adjustedInsertionLocation</var>.</p>"
+                              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location-3\">Insert an element at the adjusted insertion location</a> with\n           <var>template</var> and <var>adjustedInsertionLocation</var>.</p>"
                             },
                             {
                               "html": "<p>The user agent may report an error to the developer console.</p>"
@@ -47111,7 +47080,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>scope</var> be the node that contains the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"parsing-main-inhead:adjusted-insertion-location-2\">adjusted insertion\n        location</a>.</p>"
+                      "html": "<p>Let <var>scope</var> be the node that contains the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"parsing-main-inhead:adjusted-insertion-location\">adjusted insertion\n        location</a>.</p>"
                     },
                     {
                       "html": "<p>If <var>scope</var> is a <code id=\"parsing-main-inhead:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then set <var>scope</var> to\n        <var>scope</var>'s <a id=\"parsing-main-inhead:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>.</p>"
@@ -47136,7 +47105,7 @@
                           "html": "<p>Pop the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inhead:current-node-6\">current node</a> off the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-inhead:stack-of-open-elements-6\">stack of open\n         elements</a>.</p>"
                         },
                         {
-                          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location-3\">Insert an element at the adjusted insertion location</a> with\n         <var>template</var>.</p>"
+                          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-an-element-at-the-adjusted-insertion-location\" id=\"parsing-main-inhead:insert-an-element-at-the-adjusted-insertion-location-4\">Insert an element at the adjusted insertion location</a> with\n         <var>template</var>.</p>"
                         },
                         {
                           "html": "<p>Push <var>template</var> onto the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-inhead:stack-of-open-elements-7\">stack of open elements</a>.</p>"
@@ -47763,7 +47732,7 @@
             },
             {
               "case": "A start tag whose tag name is \"input\"",
-              "html": "If the parser was created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"parsing-main-inbody:html-fragment-parsing-algorithm\">HTML fragment parsing algorithm</a>\n    (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inbody:fragment-case-3\">fragment case</a>) and the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\" id=\"parsing-main-inbody:concept-frag-parse-context\">context</a>\n    element passed to that algorithm is a <code id=\"parsing-main-inbody:the-select-element\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element:",
+              "html": "If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"parsing-main-inbody:fragment-context-element\">fragment context element</a> is a <code id=\"parsing-main-inbody:the-select-element\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n    (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inbody:fragment-case-3\">fragment case</a>):",
               "rationale": "parse",
               "steps": [
                 {
@@ -47855,7 +47824,7 @@
             },
             {
               "case": "A start tag whose tag name is \"select\"",
-              "html": "If the parser was created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"parsing-main-inbody:html-fragment-parsing-algorithm-2\">HTML fragment parsing algorithm</a>\n    (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inbody:fragment-case-4\">fragment case</a>) and the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\" id=\"parsing-main-inbody:concept-frag-parse-context-2\">context</a>\n    element passed to that algorithm is a <code id=\"parsing-main-inbody:the-select-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element:",
+              "html": "If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"parsing-main-inbody:fragment-context-element-2\">fragment context element</a> is a <code id=\"parsing-main-inbody:the-select-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n    (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inbody:fragment-case-4\">fragment case</a>):",
               "rationale": "parse",
               "steps": [
                 {
@@ -48103,16 +48072,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>insertionLocation</var> be <var>commonAncestor</var>, after its last child, if\n     any.</p>"
-            },
-            {
-              "html": "<p>Let <var>adjustedInsertionLocation</var> be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"parsing-main-inbody:adjusted-insertion-location\">adjusted insertion location</a>\n     given <var>insertionLocation</var>.</p>"
-            },
-            {
-              "html": "<p>Let <var>target</var> be the node in which <var>adjustedInsertionLocation</var> finds\n     itself.</p>"
-            },
-            {
-              "html": "<p>Let <var>refNode</var> be the node <var>adjustedInsertionLocation</var> is immediately\n     before, or null if <var>adjustedInsertionLocation</var> is after <var>target</var>'s last\n     child.</p>"
+              "html": "<p>Let (<var>target</var>, <var>refNode</var>) be the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#adjusted-insertion-location\" id=\"parsing-main-inbody:adjusted-insertion-location\">adjusted insertion\n     location</a> given (<var>commonAncestor</var>, null).</p>"
             },
             {
               "html": "<p>If <var>lastNode</var>'s <a id=\"parsing-main-inbody:parent\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a> is non-null, then <a href=\"https://dom.spec.whatwg.org/#concept-node-remove\" id=\"parsing-main-inbody:concept-node-remove\" data-x-internal=\"concept-node-remove\">remove</a> <var>lastNode</var>.</p>"
@@ -48125,7 +48085,7 @@
                   "html": "<p><a id=\"parsing-main-inbody:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <a id=\"parsing-main-inbody:ensure-pre-insert-validity\" href=\"https://dom.spec.whatwg.org/#concept-node-ensure-pre-insertion-validity\" data-x-internal=\"ensure-pre-insert-validity\">ensure pre-insert validity</a> given\n       <var>lastNode</var>, <var>target</var>, <var>refNode</var>, and « » does not throw.</p>"
                 },
                 {
-                  "html": "<p>Insert <var>lastNode</var> at <var>adjustedInsertionLocation</var>.</p>"
+                  "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"parsing-main-inbody:concept-node-insert\" data-x-internal=\"concept-node-insert\">Insert</a> <var>lastNode</var> into\n       <var>target</var> before <var>refNode</var>.</p>"
                 }
               ]
             },
@@ -48838,11 +48798,11 @@
             },
             {
               "case": "A comment token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"parsing-main-afterbody:insert-a-comment\">Insert a comment</a> as the last child of the first element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-afterbody:stack-of-open-elements\">stack of\n    open elements</a> (the <code id=\"parsing-main-afterbody:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element).</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"parsing-main-afterbody:insert-a-comment\">Insert a comment</a> given (the first element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-afterbody:stack-of-open-elements\">stack of open\n    elements</a> (the <code id=\"parsing-main-afterbody:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element), null).</p>"
             },
             {
               "case": "A processing instruction token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"parsing-main-afterbody:insert-a-processing-instruction\">Insert a processing instruction</a> as the last child of the first element in the\n    <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-afterbody:stack-of-open-elements-2\">stack of open elements</a> (the <code id=\"parsing-main-afterbody:the-html-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element).</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"parsing-main-afterbody:insert-a-processing-instruction\">Insert a processing instruction</a> given (the first element in the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-afterbody:stack-of-open-elements-2\">stack of\n    open elements</a> (the <code id=\"parsing-main-afterbody:the-html-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element), null).</p>"
             },
             {
               "case": "A DOCTYPE token",
@@ -48854,7 +48814,7 @@
             },
             {
               "case": "An end tag whose tag name is \"html\"",
-              "html": "<p>If the parser was created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"parsing-main-afterbody:html-fragment-parsing-algorithm\">HTML fragment parsing algorithm</a>, this\n    is a <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parse-errors\" id=\"parsing-main-afterbody:parse-errors-2\">parse error</a>; ignore the token. (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-afterbody:fragment-case\">fragment case</a>)</p>\n\n    <p>Otherwise, switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"parsing-main-afterbody:insertion-mode-4\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#the-after-after-body-insertion-mode\" id=\"parsing-main-afterbody:the-after-after-body-insertion-mode\">after after body</a>\".</p>"
+              "html": "<p>If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"parsing-main-afterbody:fragment-context-element\">fragment context element</a> is non-null, this is a <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parse-errors\" id=\"parsing-main-afterbody:parse-errors-2\">parse\n    error</a>; ignore the token. (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-afterbody:fragment-case\">fragment case</a>)</p>\n\n    <p>Otherwise, switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"parsing-main-afterbody:insertion-mode-4\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#the-after-after-body-insertion-mode\" id=\"parsing-main-afterbody:the-after-after-body-insertion-mode\">after after body</a>\".</p>"
             },
             {
               "case": "An end-of-file token",
@@ -48901,7 +48861,7 @@
             },
             {
               "case": "An end tag whose tag name is \"frameset\"",
-              "html": "<p>If the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node\">current node</a> is the root <code id=\"parsing-main-inframeset:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element, then this is a\n    <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parse-errors\" id=\"parsing-main-inframeset:parse-errors-2\">parse error</a>; ignore the token. (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inframeset:fragment-case\">fragment case</a>)</p>\n\n    <p>Otherwise, pop the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node-2\">current node</a> from the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-inframeset:stack-of-open-elements\">stack of open\n    elements</a>.</p>\n\n    <p>If the parser was not created as part of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm\" id=\"parsing-main-inframeset:html-fragment-parsing-algorithm\">HTML fragment parsing algorithm</a>\n    (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inframeset:fragment-case-2\">fragment case</a>), and the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node-3\">current node</a> is no longer a\n    <code id=\"parsing-main-inframeset:frameset\"><a href=\"https://html.spec.whatwg.org/multipage/obsolete.html#frameset\">frameset</a></code> element, then switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"parsing-main-inframeset:insertion-mode-3\">insertion mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-afterframeset\" id=\"parsing-main-inframeset:parsing-main-afterframeset\">after frameset</a>\".</p>"
+              "html": "<p>If the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node\">current node</a> is the root <code id=\"parsing-main-inframeset:the-html-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element, then this is a\n    <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parse-errors\" id=\"parsing-main-inframeset:parse-errors-2\">parse error</a>; ignore the token. (<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-case\" id=\"parsing-main-inframeset:fragment-case\">fragment case</a>)</p>\n\n    <p>Otherwise, pop the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node-2\">current node</a> from the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\" id=\"parsing-main-inframeset:stack-of-open-elements\">stack of open\n    elements</a>.</p>\n\n    <p>If the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"parsing-main-inframeset:fragment-context-element\">fragment context element</a> is null and the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-node\" id=\"parsing-main-inframeset:current-node-3\">current\n    node</a> is no longer a <code id=\"parsing-main-inframeset:frameset\"><a href=\"https://html.spec.whatwg.org/multipage/obsolete.html#frameset\">frameset</a></code> element, then switch the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insertion-mode\" id=\"parsing-main-inframeset:insertion-mode-3\">insertion\n    mode</a> to \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-afterframeset\" id=\"parsing-main-inframeset:parsing-main-afterframeset\">after frameset</a>\".</p>"
             },
             {
               "case": "A start tag whose tag name is \"frame\"",
@@ -48979,11 +48939,11 @@
           "steps": [
             {
               "case": "A comment token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-after-after-body-insertion-mode:insert-a-comment\">Insert a comment</a> as the last child of the <code id=\"the-after-after-body-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-after-after-body-insertion-mode:insert-a-comment\">Insert a comment</a> given (the <code id=\"the-after-after-body-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object, null).</p>"
             },
             {
               "case": "A processing instruction token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-after-after-body-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> as the last child of the <code id=\"the-after-after-body-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>\n    object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-after-after-body-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> given (the <code id=\"the-after-after-body-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object,\n    null).</p>"
             },
             {
               "case": "A DOCTYPE token",
@@ -49018,11 +48978,11 @@
           "steps": [
             {
               "case": "A comment token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-after-after-frameset-insertion-mode:insert-a-comment\">Insert a comment</a> as the last child of the <code id=\"the-after-after-frameset-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-comment\" id=\"the-after-after-frameset-insertion-mode:insert-a-comment\">Insert a comment</a> given (the <code id=\"the-after-after-frameset-insertion-mode:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object, null).</p>"
             },
             {
               "case": "A processing instruction token",
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-after-after-frameset-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> as the last child of the <code id=\"the-after-after-frameset-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>\n    object.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#insert-a-processing-instruction\" id=\"the-after-after-frameset-insertion-mode:insert-a-processing-instruction\">Insert a processing instruction</a> given (the <code id=\"the-after-after-frameset-insertion-mode:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object,\n    null).</p>"
             },
             {
               "case": "A DOCTYPE token",
@@ -49577,13 +49537,16 @@
           "html": "<p>Create a new <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-parser\" id=\"parsing-html-fragments:html-parser-2\">HTML parser</a> whose <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#allow-declarative-shadow-roots\" id=\"parsing-html-fragments:allow-declarative-shadow-roots\">allow declarative shadow roots</a> is\n   <var>allowDeclarativeShadowRoots</var>, and associate it with <var>document</var>.</p>"
         },
         {
+          "html": "<p>Set the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#fragment-context-element\" id=\"parsing-html-fragments:fragment-context-element-3\">fragment context element</a> to <var id=\"parsing-html-fragments:concept-frag-parse-context-3\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>.</p>"
+        },
+        {
           "html": "<p>If <var>contextDocument</var>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-script\" id=\"parsing-html-fragments:concept-n-script\">scripting is\n   disabled</a>, then set <var>scriptingMode</var> to <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-disabled\" id=\"parsing-html-fragments:scripting-mode-disabled\">Disabled</a>.</p>"
         },
         {
           "html": "<p>Set the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode\" id=\"parsing-html-fragments:scripting-mode\">scripting mode</a> to <var>scriptingMode</var>.</p>"
         },
         {
-          "html": "Set the state of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-parser\" id=\"parsing-html-fragments:html-parser-3\">HTML parser</a>'s <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#tokenization\" id=\"parsing-html-fragments:tokenization\">tokenization</a> stage as\n    follows, switching on <var id=\"parsing-html-fragments:concept-frag-parse-context-3\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>:",
+          "html": "Set the state of the <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-parser\" id=\"parsing-html-fragments:html-parser-3\">HTML parser</a>'s <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#tokenization\" id=\"parsing-html-fragments:tokenization\">tokenization</a> stage as\n    follows, switching on <var id=\"parsing-html-fragments:concept-frag-parse-context-4\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -49653,10 +49616,10 @@
           "html": "<p>Set the parser's <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#root-insertion-target\" id=\"parsing-html-fragments:root-insertion-target\">root insertion target</a> to <var>fragment</var>.</p>"
         },
         {
-          "html": "<p>If <var id=\"parsing-html-fragments:concept-frag-parse-context-4\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var> is a <code id=\"parsing-html-fragments:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code>\n   element, then push \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-intemplate\" id=\"parsing-html-fragments:parsing-main-intemplate\">in template</a>\" onto the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-template-insertion-modes\" id=\"parsing-html-fragments:stack-of-template-insertion-modes\">stack of template insertion modes</a> so that it is the new <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-template-insertion-mode\" id=\"parsing-html-fragments:current-template-insertion-mode\">current template\n   insertion mode</a>.</p>"
+          "html": "<p>If <var id=\"parsing-html-fragments:concept-frag-parse-context-5\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var> is a <code id=\"parsing-html-fragments:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code>\n   element, then push \"<a href=\"https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-intemplate\" id=\"parsing-html-fragments:parsing-main-intemplate\">in template</a>\" onto the\n   <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-template-insertion-modes\" id=\"parsing-html-fragments:stack-of-template-insertion-modes\">stack of template insertion modes</a> so that it is the new <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#current-template-insertion-mode\" id=\"parsing-html-fragments:current-template-insertion-mode\">current template\n   insertion mode</a>.</p>"
         },
         {
-          "html": "<p>Create a start tag token whose name is the local name of <var id=\"parsing-html-fragments:concept-frag-parse-context-5\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var> and whose attributes are the attributes of\n    <var id=\"parsing-html-fragments:concept-frag-parse-context-6\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>.</p>\n\n    <p>Let this start tag token be the start tag token of <var id=\"parsing-html-fragments:concept-frag-parse-context-7\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>; e.g. for the purposes of determining if it is\n    an <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-integration-point\" id=\"parsing-html-fragments:html-integration-point\">HTML integration point</a>.</p>"
+          "html": "<p>Create a start tag token whose name is the local name of <var id=\"parsing-html-fragments:concept-frag-parse-context-6\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var> and whose attributes are the attributes of\n    <var id=\"parsing-html-fragments:concept-frag-parse-context-7\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>.</p>\n\n    <p>Let this start tag token be the start tag token of <var id=\"parsing-html-fragments:concept-frag-parse-context-8\"><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context\">context</a></var>; e.g. for the purposes of determining if it is\n    an <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-integration-point\" id=\"parsing-html-fragments:html-integration-point\">HTML integration point</a>.</p>"
         },
         {
           "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/parsing.html#reset-the-insertion-mode-appropriately\" id=\"parsing-html-fragments:reset-the-insertion-mode-appropriately\">Reset the parser's insertion mode\n    appropriately</a>.</p>"

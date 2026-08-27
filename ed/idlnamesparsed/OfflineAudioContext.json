@@ -6,7 +6,7 @@
       "title": "Web Audio API 1.1",
       "url": "https://www.w3.org/TR/webaudio-1.1/"
     },
-    "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n    constructor(OfflineAudioContextOptions contextOptions);\n    constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n    Promise<AudioBuffer> startRendering();\n    Promise<undefined> resume();\n    Promise<undefined> suspend(double suspendTime);\n    readonly attribute unsigned long length;\n    attribute EventHandler oncomplete;\n};",
+    "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n    constructor(OfflineAudioContextOptions contextOptions);\n    constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n    Promise<AudioBuffer> startRendering(optional unsigned long? chunkSize = null);\n    Promise<undefined> resume();\n    Promise<undefined> suspend(double suspendTime);\n    Promise<undefined> close();\n    readonly attribute unsigned long? length;\n    attribute EventHandler oncomplete;\n};",
     "href": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext"
   },
   "extended": [],

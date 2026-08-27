@@ -1,7 +1,7 @@
 // Source: Web Audio API 1.1 (https://www.w3.org/TR/webaudio-1.1/)
 dictionary OfflineAudioContextOptions {
     unsigned long numberOfChannels = 1;
-    required unsigned long length;
+    unsigned long? length = null;
     required float sampleRate;
     (AudioContextRenderSizeCategory or unsigned long) renderSizeHint = "default";
 };

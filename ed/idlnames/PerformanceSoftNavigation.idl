@@ -4,6 +4,8 @@ interface PerformanceSoftNavigation : PerformanceEntry {
     readonly attribute NavigationType navigationType;
     readonly attribute unsigned long long interactionId;
     InteractionContentfulPaint? getLargestInteractionContentfulPaint();
+
+    [Default] object toJSON();
 };
 
 // Source: Soft Navigations and Interaction Contentful Paint (https://wicg.github.io/soft-navigations/)

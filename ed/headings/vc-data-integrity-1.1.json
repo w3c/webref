@@ -466,6 +466,446 @@
       "number": "4.2.4.5"
     },
     {
+      "id": "SDAlgorithms",
+      "href": "https://w3c.github.io/vc-data-integrity/#SDAlgorithms",
+      "level": 3,
+      "title": "Selective Disclosure Algorithms",
+      "alternateIds": [
+        "x4-3-selective-disclosure-algorithms"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "introduction-1",
+      "href": "https://w3c.github.io/vc-data-integrity/#introduction-1",
+      "level": 4,
+      "title": "Introduction",
+      "alternateIds": [
+        "x4-3-1-introduction"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "create-base-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#create-base-proof",
+      "level": 4,
+      "title": "Create Base Proof",
+      "alternateIds": [
+        "x4-3-2-create-base-proof"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "add-derived-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#add-derived-proof",
+      "level": 4,
+      "title": "Add Derived Proof",
+      "alternateIds": [
+        "x4-3-3-add-derived-proof"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "verify-derived-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#verify-derived-proof",
+      "level": 4,
+      "title": "Verify Derived Proof",
+      "alternateIds": [
+        "x4-3-4-verify-derived-proof"
+      ],
+      "number": "4.3.4"
+    },
+    {
+      "id": "selective-disclosure-common-sub-algorithms",
+      "href": "https://w3c.github.io/vc-data-integrity/#selective-disclosure-common-sub-algorithms",
+      "level": 3,
+      "title": "Selective Disclosure Common Sub-Algorithms",
+      "alternateIds": [
+        "x4-4-selective-disclosure-common-sub-algorithms"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "TransformSD",
+      "href": "https://w3c.github.io/vc-data-integrity/#TransformSD",
+      "level": 4,
+      "title": "TransformSD",
+      "alternateIds": [
+        "x4-4-1-transformsd"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "HashSD",
+      "href": "https://w3c.github.io/vc-data-integrity/#HashSD",
+      "level": 4,
+      "title": "HashSD",
+      "alternateIds": [
+        "x4-4-2-hashsd"
+      ],
+      "number": "4.4.2"
+    },
+    {
+      "id": "CreateDisclosureData",
+      "href": "https://w3c.github.io/vc-data-integrity/#CreateDisclosureData",
+      "level": 4,
+      "title": "CreateDisclosureData",
+      "alternateIds": [
+        "x4-4-3-createdisclosuredata"
+      ],
+      "number": "4.4.3"
+    },
+    {
+      "id": "CreateVerifyData",
+      "href": "https://w3c.github.io/vc-data-integrity/#CreateVerifyData",
+      "level": 4,
+      "title": "CreateVerifyData",
+      "alternateIds": [
+        "x4-4-4-createverifydata"
+      ],
+      "number": "4.4.4"
+    },
+    {
+      "id": "signed-individual-claims-sic-specific-sub-algorithms",
+      "href": "https://w3c.github.io/vc-data-integrity/#signed-individual-claims-sic-specific-sub-algorithms",
+      "level": 3,
+      "title": "Signed Individual Claims (SIC) Specific Sub-Algorithms",
+      "alternateIds": [
+        "x4-5-signed-individual-claims-sic-specific-sub-algorithms"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "SerializeBase-SIC",
+      "href": "https://w3c.github.io/vc-data-integrity/#SerializeBase-SIC",
+      "level": 4,
+      "title": "SerializeBase-SIC",
+      "alternateIds": [
+        "x4-5-1-serializebase-sic"
+      ],
+      "number": "4.5.1"
+    },
+    {
+      "id": "ParseBase-SIC",
+      "href": "https://w3c.github.io/vc-data-integrity/#ParseBase-SIC",
+      "level": 4,
+      "title": "ParseBase-SIC",
+      "alternateIds": [
+        "x4-5-2-parsebase-sic"
+      ],
+      "number": "4.5.2"
+    },
+    {
+      "id": "SerializeDerived-SIC",
+      "href": "https://w3c.github.io/vc-data-integrity/#SerializeDerived-SIC",
+      "level": 4,
+      "title": "SerializeDerived-SIC",
+      "alternateIds": [
+        "x4-5-3-serializederived-sic"
+      ],
+      "number": "4.5.3"
+    },
+    {
+      "id": "ParseDerived-SIC",
+      "href": "https://w3c.github.io/vc-data-integrity/#ParseDerived-SIC",
+      "level": 4,
+      "title": "ParseDerived-SIC",
+      "alternateIds": [
+        "x4-5-4-parsederived-sic"
+      ],
+      "number": "4.5.4"
+    },
+    {
+      "id": "VerifyDerived-SIC",
+      "href": "https://w3c.github.io/vc-data-integrity/#VerifyDerived-SIC",
+      "level": 4,
+      "title": "VerifyDerived-SIC",
+      "alternateIds": [
+        "x4-5-5-verifyderived-sic"
+      ],
+      "number": "4.5.5"
+    },
+    {
+      "id": "salted-hash-of-claims-shoc-specific-sub-algorithms",
+      "href": "https://w3c.github.io/vc-data-integrity/#salted-hash-of-claims-shoc-specific-sub-algorithms",
+      "level": 3,
+      "title": "Salted Hash of Claims (SHoC) Specific Sub-Algorithms",
+      "alternateIds": [
+        "x4-6-salted-hash-of-claims-shoc-specific-sub-algorithms"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "SaltedHashSD",
+      "href": "https://w3c.github.io/vc-data-integrity/#SaltedHashSD",
+      "level": 4,
+      "title": "SaltedHashSD",
+      "alternateIds": [
+        "x4-6-1-saltedhashsd"
+      ],
+      "number": "4.6.1"
+    },
+    {
+      "id": "SerializeBase-SHoC",
+      "href": "https://w3c.github.io/vc-data-integrity/#SerializeBase-SHoC",
+      "level": 4,
+      "title": "SerializeBase-SHoC",
+      "alternateIds": [
+        "x4-6-2-serializebase-shoc"
+      ],
+      "number": "4.6.2"
+    },
+    {
+      "id": "ParseBase-SHoC",
+      "href": "https://w3c.github.io/vc-data-integrity/#ParseBase-SHoC",
+      "level": 4,
+      "title": "ParseBase-SHoC",
+      "alternateIds": [
+        "x4-6-3-parsebase-shoc"
+      ],
+      "number": "4.6.3"
+    },
+    {
+      "id": "SerializeDerived-SHoC",
+      "href": "https://w3c.github.io/vc-data-integrity/#SerializeDerived-SHoC",
+      "level": 4,
+      "title": "SerializeDerived-SHoC",
+      "alternateIds": [
+        "x4-6-4-serializederived-shoc"
+      ],
+      "number": "4.6.4"
+    },
+    {
+      "id": "ParseDerived-SHoC",
+      "href": "https://w3c.github.io/vc-data-integrity/#ParseDerived-SHoC",
+      "level": 4,
+      "title": "ParseDerived-SHoC",
+      "alternateIds": [
+        "x4-6-5-parsederived-shoc"
+      ],
+      "number": "4.6.5"
+    },
+    {
+      "id": "VerifyDerived-SHoC",
+      "href": "https://w3c.github.io/vc-data-integrity/#VerifyDerived-SHoC",
+      "level": 4,
+      "title": "VerifyDerived-SHoC",
+      "alternateIds": [
+        "x4-6-6-verifyderived-shoc"
+      ],
+      "number": "4.6.6"
+    },
+    {
+      "id": "selective-disclosure-functions",
+      "href": "https://w3c.github.io/vc-data-integrity/#selective-disclosure-functions",
+      "level": 3,
+      "title": "Selective Disclosure Functions",
+      "alternateIds": [
+        "x4-7-selective-disclosure-functions"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "labelreplacementcanonicalizenquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#labelreplacementcanonicalizenquads",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeNQuads",
+      "alternateIds": [
+        "x4-7-1-labelreplacementcanonicalizenquads"
+      ],
+      "number": "4.7.1"
+    },
+    {
+      "id": "labelreplacementcanonicalizejsonld",
+      "href": "https://w3c.github.io/vc-data-integrity/#labelreplacementcanonicalizejsonld",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeJsonLd",
+      "alternateIds": [
+        "x4-7-2-labelreplacementcanonicalizejsonld"
+      ],
+      "number": "4.7.2"
+    },
+    {
+      "id": "createlabelmapfunction",
+      "href": "https://w3c.github.io/vc-data-integrity/#createlabelmapfunction",
+      "level": 4,
+      "title": "createLabelMapFunction",
+      "alternateIds": [
+        "x4-7-3-createlabelmapfunction"
+      ],
+      "number": "4.7.3"
+    },
+    {
+      "id": "createshuffledidlabelmapfunction",
+      "href": "https://w3c.github.io/vc-data-integrity/#createshuffledidlabelmapfunction",
+      "level": 4,
+      "title": "createShuffledIdLabelMapFunction",
+      "alternateIds": [
+        "x4-7-4-createshuffledidlabelmapfunction"
+      ],
+      "number": "4.7.4"
+    },
+    {
+      "id": "createhmacidlabelmapfunction",
+      "href": "https://w3c.github.io/vc-data-integrity/#createhmacidlabelmapfunction",
+      "level": 4,
+      "title": "createHmacIdLabelMapFunction",
+      "alternateIds": [
+        "x4-7-5-createhmacidlabelmapfunction"
+      ],
+      "number": "4.7.5"
+    },
+    {
+      "id": "compresslabelmap",
+      "href": "https://w3c.github.io/vc-data-integrity/#compresslabelmap",
+      "level": 4,
+      "title": "compressLabelMap",
+      "alternateIds": [
+        "x4-7-6-compresslabelmap"
+      ],
+      "number": "4.7.6"
+    },
+    {
+      "id": "decompresslabelmap",
+      "href": "https://w3c.github.io/vc-data-integrity/#decompresslabelmap",
+      "level": 4,
+      "title": "decompressLabelMap",
+      "alternateIds": [
+        "x4-7-7-decompresslabelmap"
+      ],
+      "number": "4.7.7"
+    },
+    {
+      "id": "skolemizenquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#skolemizenquads",
+      "level": 4,
+      "title": "skolemizeNQuads",
+      "alternateIds": [
+        "x4-7-8-skolemizenquads"
+      ],
+      "number": "4.7.8"
+    },
+    {
+      "id": "deskolemizenquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#deskolemizenquads",
+      "level": 4,
+      "title": "deskolemizeNQuads",
+      "alternateIds": [
+        "x4-7-9-deskolemizenquads"
+      ],
+      "number": "4.7.9"
+    },
+    {
+      "id": "skolemizeexpandedjsonld",
+      "href": "https://w3c.github.io/vc-data-integrity/#skolemizeexpandedjsonld",
+      "level": 4,
+      "title": "skolemizeExpandedJsonLd",
+      "alternateIds": [
+        "x4-7-10-skolemizeexpandedjsonld"
+      ],
+      "number": "4.7.10"
+    },
+    {
+      "id": "skolemizecompactjsonld",
+      "href": "https://w3c.github.io/vc-data-integrity/#skolemizecompactjsonld",
+      "level": 4,
+      "title": "skolemizeCompactJsonLd",
+      "alternateIds": [
+        "x4-7-11-skolemizecompactjsonld"
+      ],
+      "number": "4.7.11"
+    },
+    {
+      "id": "todeskolemizednquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#todeskolemizednquads",
+      "level": 4,
+      "title": "toDeskolemizedNQuads",
+      "alternateIds": [
+        "x4-7-12-todeskolemizednquads"
+      ],
+      "number": "4.7.12"
+    },
+    {
+      "id": "jsonpointertopaths",
+      "href": "https://w3c.github.io/vc-data-integrity/#jsonpointertopaths",
+      "level": 4,
+      "title": "jsonPointerToPaths",
+      "alternateIds": [
+        "x4-7-13-jsonpointertopaths"
+      ],
+      "number": "4.7.13"
+    },
+    {
+      "id": "createinitialselection",
+      "href": "https://w3c.github.io/vc-data-integrity/#createinitialselection",
+      "level": 4,
+      "title": "createInitialSelection",
+      "alternateIds": [
+        "x4-7-14-createinitialselection"
+      ],
+      "number": "4.7.14"
+    },
+    {
+      "id": "selectpaths",
+      "href": "https://w3c.github.io/vc-data-integrity/#selectpaths",
+      "level": 4,
+      "title": "selectPaths",
+      "alternateIds": [
+        "x4-7-15-selectpaths"
+      ],
+      "number": "4.7.15"
+    },
+    {
+      "id": "selectjsonld",
+      "href": "https://w3c.github.io/vc-data-integrity/#selectjsonld",
+      "level": 4,
+      "title": "selectJsonLd",
+      "alternateIds": [
+        "x4-7-16-selectjsonld"
+      ],
+      "number": "4.7.16"
+    },
+    {
+      "id": "relabelblanknodes",
+      "href": "https://w3c.github.io/vc-data-integrity/#relabelblanknodes",
+      "level": 4,
+      "title": "relabelBlankNodes",
+      "alternateIds": [
+        "x4-7-17-relabelblanknodes"
+      ],
+      "number": "4.7.17"
+    },
+    {
+      "id": "selectcanonicalnquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#selectcanonicalnquads",
+      "level": 4,
+      "title": "selectCanonicalNQuads",
+      "alternateIds": [
+        "x4-7-18-selectcanonicalnquads"
+      ],
+      "number": "4.7.18"
+    },
+    {
+      "id": "canonicalizeandgroup",
+      "href": "https://w3c.github.io/vc-data-integrity/#canonicalizeandgroup",
+      "level": 4,
+      "title": "canonicalizeAndGroup",
+      "alternateIds": [
+        "x4-7-19-canonicalizeandgroup"
+      ],
+      "number": "4.7.19"
+    },
+    {
+      "id": "hashmandatorynquads",
+      "href": "https://w3c.github.io/vc-data-integrity/#hashmandatorynquads",
+      "level": 4,
+      "title": "hashMandatoryNQuads",
+      "alternateIds": [
+        "x4-7-20-hashmandatorynquads"
+      ],
+      "number": "4.7.20"
+    },
+    {
       "id": "security-considerations",
       "href": "https://w3c.github.io/vc-data-integrity/#security-considerations",
       "level": 2,

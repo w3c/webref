@@ -3,9 +3,10 @@
 interface OfflineAudioContext : BaseAudioContext {
     constructor(OfflineAudioContextOptions contextOptions);
     constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);
-    Promise<AudioBuffer> startRendering();
+    Promise<AudioBuffer> startRendering(optional unsigned long? chunkSize = null);
     Promise<undefined> resume();
     Promise<undefined> suspend(double suspendTime);
-    readonly attribute unsigned long length;
+    Promise<undefined> close();
+    readonly attribute unsigned long? length;
     attribute EventHandler oncomplete;
 };
