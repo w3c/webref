@@ -495,7 +495,10 @@
               "html": "<p id=\"section-5.4.3-2.7.2.1.1\">If <em>host</em> does not Domain-Match <em>cookie</em>'s host, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.1.1\" class=\"pilcrow\">¶</a></p>"
             },
             {
-              "html": "<p id=\"section-5.4.3-2.7.2.2.1\">Set <em>cookie</em>'s host-only to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.2.1\" class=\"pilcrow\">¶</a></p>"
+              "html": "<p id=\"section-5.4.3-2.7.2.2.1\">If <em>cookie</em>'s host is an IP address and is host-equal to <em>host</em>, then set <em>cookie</em>'s\nhost-only to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.7.2.3.1\">Otherwise, set <em>cookie</em>'s host-only to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.3.1\" class=\"pilcrow\">¶</a></p>"
             }
           ]
         },
