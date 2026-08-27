@@ -406,6 +406,18 @@ const patches = {
       }
     }
   ],
+  // Spec uses specific formatting for the definition of the events and code
+  // fails to idenfity GlobalEventHandlers as the target because the event
+  // handler IDL attributes are defined in a different spec, and pointerevents
+  // uses "topmost event target". Note: the extraction logic could perhaps be
+  // improved to address this more directly.
+  'pointerevents4': [
+    {
+      pattern: { type: /^(.*click|contextmenu|mouse.*|wheel)$/ },
+      matched: 12,
+      change: { targets: ["GlobalEventHandlers"] }
+    }
+  ],
   'pointerlock-2': [
     {
       pattern: { type: /^pointerlock(change|error)$/ },
