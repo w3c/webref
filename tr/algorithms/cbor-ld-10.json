@@ -24,7 +24,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>prefix</code> to the result of passing <code>registryEntryId</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-cbor-tag-structure-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.6.1 </bdi>Get CBOR Tag Structure Algorithm</a>."
+          "html": "Set <code>prefix</code> to the result of passing <code>registryEntryId</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-cbor-tag-structure-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.6.1 </bdi>Get CBOR Tag Structure Algorithm</a>."
         },
         {
           "html": "Set <code>state</code> to an empty map."
@@ -43,10 +43,10 @@
               "html": "Set <code>state.registryEntryId</code> to <code>registryEntryId</code>."
             },
             {
-              "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.1 </bdi>Initialize Conversion Algorithm</a>."
+              "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.1 </bdi>Initialize Conversion Algorithm</a>."
             },
             {
-              "html": "Set <code>output</code> to the result of passing <code>state</code> and <code>jsonldDocument</code>\nas <code>inputDocuments</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.2 </bdi>Convert Document Algorithm</a>."
+              "html": "Set <code>output</code> to the result of passing <code>state</code> and <code>jsonldDocument</code>\nas <code>inputDocuments</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.2 </bdi>Convert Document Algorithm</a>."
             },
             {
               "html": "Set <code>suffix</code> to the CBOR encoding of <code>output</code>."
@@ -72,7 +72,7 @@
           "html": "Set <code>state</code> to an empty map."
         },
         {
-          "html": "Set <code>result</code> to the result of passing <code>cborldBytes</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-registry-entry-id-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.6.2 </bdi>Get Registry Entry ID Algorithm</a>."
+          "html": "Set <code>result</code> to the result of passing <code>cborldBytes</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-registry-entry-id-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.6.2 </bdi>Get Registry Entry ID Algorithm</a>."
         },
         {
           "html": "Set <code>state</code>.<code>registryEntryId</code> to <code>result</code>.<code>registryEntryId</code> and <code>suffix</code> to <code>result</code>.<code>suffix</code>."
@@ -88,18 +88,18 @@
               "html": "For each entry <em><code>type</code>: <code>map</code></em> in the <code>typeTables</code> array in the CBOR-LD Varint Registry Entry\nassociated with <code>registryEntryId</code>, add that entry to <code>state</code>.<code>typeTable</code>, and set the value of <code>type</code>\nin <code>state</code>.<code>reverseTypeTable</code> to <code>inverseMap</code>, where <code>inverseMap</code> is <code>map</code> with the mapping inverted."
             },
             {
-              "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.1 </bdi>Initialize Conversion Algorithm</a>."
+              "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.1 </bdi>Initialize Conversion Algorithm</a>."
             },
             {
               "html": "Set <code>input</code> to the result of decoding <code>suffix</code> from bytes to a map."
             },
             {
-              "html": "Set <code>jsonldDocument</code> to the result of passing <code>state</code> and <code>input</code> as <code>inputDocuments</code>\nto <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.2 </bdi>Convert Document Algorithm</a>."
+              "html": "Set <code>jsonldDocument</code> to the result of passing <code>state</code> and <code>input</code> as <code>inputDocuments</code>\nto <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.2 </bdi>Convert Document Algorithm</a>."
             }
           ]
         },
         {
-          "html": "Otherwise, set <code>jsonldDocument</code> to the result of parsing <code>cborldBytes</code>."
+          "html": "Otherwise, set <code>jsonldDocument</code> to the result of decoding <code>suffix</code> from bytes to a map."
         },
         {
           "html": "Return <code>jsonldDocument</code>."
@@ -111,10 +111,10 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-context-loader-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.4.1 </bdi>Initialize Context Loader Algorithm</a>."
+          "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-context-loader-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.4.1 </bdi>Initialize Context Loader Algorithm</a>."
         },
         {
-          "html": "Set <code>state.initialActiveContext</code> to the result of passing empty maps <code>termMap</code> and\n<code>previousActiveContext</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Initialize Active Context Algorithm</a>."
+          "html": "Set <code>state.initialActiveContext</code> to the result of passing empty maps <code>termMap</code> and\n<code>previousActiveContext</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.1 </bdi>Initialize Active Context Algorithm</a>."
         },
         {
           "html": "Set <code>state.typesEncodedAsBytes</code> to an empty set."
@@ -145,7 +145,7 @@
               "html": "Set <code>output</code> to an empty map."
             },
             {
-              "html": "Set <code>result</code> to the result of passing <code>state</code>, <code>input</code>, <code>output</code>, and\n<code>state.initialActiveContext</code> as <code>activeContext</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#general-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.3 </bdi>General Conversion Algorithm</a>."
+              "html": "Set <code>result</code> to the result of passing <code>state</code>, <code>input</code>, <code>output</code>, and\n<code>state.initialActiveContext</code> as <code>activeContext</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#general-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.3 </bdi>General Conversion Algorithm</a>."
             },
             {
               "html": "Add <code>result.output</code> to <code>outputMaps</code>."
@@ -169,7 +169,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <code>contextConversionResult</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.5.1 </bdi>Convert Contexts for Compression Algorithm</a>, passing\n<code>state</code>, <code>activeContext</code>, <code>input</code>, and <code>output</code>."
+              "html": "Set <code>contextConversionResult</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.5.1 </bdi>Convert Contexts for Compression Algorithm</a>, passing\n<code>state</code>, <code>activeContext</code>, <code>input</code>, and <code>output</code>."
             },
             {
               "html": "Set <code>activeContext</code> to <code>contextConversionResult.activeContext</code>, <code>output</code>\nto <code>contextConversionResult.output</code>, and <code>state</code> to <code>contextConversionResult.state</code>."
@@ -177,22 +177,22 @@
           ]
         },
         {
-          "html": "Otherwise, set <code>activeContext</code> to\n<code>result.activeContext</code>, <code>output</code> to <code>result.output</code>, and <code>state</code> to <code>result.state</code> of <code>result</code> resulting from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.1 </bdi>Convert Contexts for Decompression Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>input</code>, and <code>output</code>."
+          "html": "Otherwise, set <code>activeContext</code> to\n<code>result.activeContext</code>, <code>output</code> to <code>result.output</code>, and <code>state</code> to <code>result.state</code> of <code>result</code> resulting from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.6.1 </bdi>Convert Contexts for Decompression Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>input</code>, and <code>output</code>."
         },
         {
-          "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>objectTypes</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.5.4 </bdi>Get Object Types for Compression Algorithm</a>, passing <code>activeContext</code>, and <code>input</code>."
+          "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>objectTypes</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.5.4 </bdi>Get Object Types for Compression Algorithm</a>, passing <code>activeContext</code>, and <code>input</code>."
         },
         {
-          "html": "Otherwise, set <code>objectTypes</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.4 </bdi>Get Object Types for Decompression Algorithm</a>,\npassing <code>state</code>, <code>activeContext</code>, and <code>input</code>."
+          "html": "Otherwise, set <code>objectTypes</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.6.4 </bdi>Get Object Types for Decompression Algorithm</a>,\npassing <code>state</code>, <code>activeContext</code>, and <code>input</code>."
         },
         {
-          "html": "Set <code>activeContext</code> to the result of passing <code>activeContext</code> and <code>objectTypes</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-type-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.4 </bdi>Apply Type Scoped Contexts Algorithm</a>."
+          "html": "Set <code>activeContext</code> to the result of passing <code>activeContext</code> and <code>objectTypes</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-type-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.4 </bdi>Apply Type Scoped Contexts Algorithm</a>."
         },
         {
-          "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>termEntries</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.5.3 </bdi>Get Input Entries for Compression Algorithm</a>, passing <code>state</code>,\n<code>input</code>, and <code>activeContext</code>."
+          "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>termEntries</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.5.3 </bdi>Get Input Entries for Compression Algorithm</a>, passing <code>state</code>,\n<code>input</code>, and <code>activeContext</code>."
         },
         {
-          "html": "Otherwise, set\n<code>termEntries</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.3 </bdi>Get Input Entries for Decompression Algorithm</a>,\npassing <code>state</code>, <code>input</code>, output, and <code>activeContext</code>."
+          "html": "Otherwise, set\n<code>termEntries</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.6.3 </bdi>Get Input Entries for Decompression Algorithm</a>,\npassing <code>state</code>, <code>input</code>, output, and <code>activeContext</code>."
         },
         {
           "html": "For <code>[termInfo, value]</code> in <code>termEntries</code>:",
@@ -202,7 +202,7 @@
               "html": "Set <code>term</code> to <code>termInfo.term</code>."
             },
             {
-              "html": "Set <code>valueActiveContext</code> to the result of passing <code>activeContext</code> and <code>term</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-property-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.3 </bdi>Apply Property Scoped Contexts Algorithm</a>."
+              "html": "Set <code>valueActiveContext</code> to the result of passing <code>activeContext</code> and <code>term</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-property-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.3 </bdi>Apply Property Scoped Contexts Algorithm</a>."
             },
             {
               "html": "Set <code>plural</code> to the value of <code>termInfo.plural</code> and <code>termType</code> to the value of <code>@type</code>\nin <code>termInfo.def</code>."
@@ -218,7 +218,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.4 </bdi>Convert Value Algorithm</a>,\npassing <code>state</code>, <code>termType</code>, <code>unconvertedValue</code> as <code>value</code>, and <code>valueActiveContext</code>\nas <code>activeContext</code>."
+                  "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.4 </bdi>Convert Value Algorithm</a>,\npassing <code>state</code>, <code>termType</code>, <code>unconvertedValue</code> as <code>value</code>, and <code>valueActiveContext</code>\nas <code>activeContext</code>."
                 },
                 {
                   "html": "Set <code>state</code> to <code>result.state</code> and add <code>result.output</code> to <code>outputs</code>."
@@ -252,10 +252,10 @@
           "html": "If <code>value</code> is <code>null</code>, return <code>null</code>."
         },
         {
-          "html": "If <code>state</code>.<code>strategy</code> is set to \"compression\", set <code>output</code> to the result of passing <code>state</code>, <code>termType</code>,\n<code>termInfo</code>, and <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.5.2 </bdi>Convert Value for Compression Algorithm</a>."
+          "html": "If <code>state</code>.<code>strategy</code> is set to \"compression\", set <code>output</code> to the result of passing <code>state</code>, <code>termType</code>,\n<code>termInfo</code>, and <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.5.2 </bdi>Convert Value for Compression Algorithm</a>."
         },
         {
-          "html": "Otherwise, set <code>output</code> to the result of passing <code>state</code>, <code>termType</code>,\n<code>termInfo</code>, and <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.6.2 </bdi>Convert Value for Decompression Algorithm</a>."
+          "html": "Otherwise, set <code>output</code> to the result of passing <code>state</code>, <code>termType</code>,\n<code>termInfo</code>, and <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.6.2 </bdi>Convert Value for Decompression Algorithm</a>."
         },
         {
           "html": "If <code>output</code> is defined, return <code>result</code>, a map contatining <code>state</code> and <code>output</code>."
@@ -272,7 +272,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <code>result</code> be the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.4 </bdi>Convert Value Algorithm</a>, passing <code>activeContext</code>, <code>state</code>,\n<code>termInfo</code>, <code>termType</code>, and <code>element</code> as <code>value</code>. Set <code>state</code> to <code>result</code>.<code>state</code> and add <code>result</code>.<code>output</code>\nto <code>outputs</code>."
+                  "html": "Let <code>result</code> be the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#convert-value-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.4 </bdi>Convert Value Algorithm</a>, passing <code>activeContext</code>, <code>state</code>,\n<code>termInfo</code>, <code>termType</code>, and <code>element</code> as <code>value</code>. Set <code>state</code> to <code>result</code>.<code>state</code> and add <code>result</code>.<code>output</code>\nto <code>outputs</code>."
                 }
               ]
             },
@@ -288,7 +288,7 @@
           "html": "Set <code>output</code> to an empty map."
         },
         {
-          "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#general-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.2.3 </bdi>General Conversion Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>value</code> as <code>input</code>, and <code>output</code>."
+          "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#general-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.3 </bdi>General Conversion Algorithm</a>, passing <code>state</code>,\n<code>activeContext</code>, <code>value</code> as <code>input</code>, and <code>output</code>."
         },
         {
           "html": "Return <code>result</code>."
@@ -300,7 +300,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>applyEmbeddedResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.2 </bdi>Apply Embedded Contexts Algorithm</a>,\npassing <code>state</code>, <code>activeContext</code>, and <code>input</code>."
+          "html": "Set <code>applyEmbeddedResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.2 </bdi>Apply Embedded Contexts Algorithm</a>,\npassing <code>state</code>, <code>activeContext</code>, and <code>input</code>."
         },
         {
           "html": "Set <code>activeContext</code> to <code>applyEmbeddedResult.activeContext</code> and <code>state</code> to\n<code>applyEmbeddedResult.state</code>."
@@ -334,7 +334,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <code>encoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-context-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.1.1 </bdi>Create Context Encoder</a>, passing\n<code>state.typeTable</code> and <code>contextValue</code>."
+              "html": "Set <code>encoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-context-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.1.1 </bdi>Create Context Encoder</a>, passing\n<code>state.typeTable</code> and <code>contextValue</code>."
             },
             {
               "html": "If <code>encoderData</code> is an empty map, add <code>contextValue</code> to <code>encodedContexts</code>."
@@ -366,7 +366,7 @@
           "html": "If <code>valueToEncode</code> is an object, return."
         },
         {
-          "html": "Otherwise, set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.2.1 </bdi>Create Value Encoder</a>, passing\n<code>state</code>, <code>termInfo</code>, <code>valueToToEncode</code>, and <code>termType</code>."
+          "html": "Otherwise, set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.2.1 </bdi>Create Value Encoder</a>, passing\n<code>state</code>, <code>termInfo</code>, <code>valueToToEncode</code>, and <code>termType</code>."
         },
         {
           "html": "Return <code>result</code>."
@@ -462,13 +462,13 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-context-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.1.3 </bdi>Create Context Decoder</a>, passing <code>state</code>.<code>reverseTypeTable</code>."
+          "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-context-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.1.3 </bdi>Create Context Decoder</a>, passing <code>state</code>.<code>reverseTypeTable</code>."
         },
         {
           "html": "Set <code>contextTermId</code> to the value of \"@context\" in <code>state</code>.<code>keywordsMap</code>."
         },
         {
-          "html": "If <code>contextTermId</code> has an entry in <code>input</code>, set the value of\n\"@context\" in <code>output</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-context\" class=\"sec-ref\"><bdi class=\"secno\">5.5.1.4 </bdi>Decode Context</a>, passing <code>decoderData</code> and\nthe value of <code>contextTermId</code> in <code>input</code> as <code>value</code>."
+          "html": "If <code>contextTermId</code> has an entry in <code>input</code>, set the value of\n\"@context\" in <code>output</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-context\" class=\"sec-ref\"><bdi class=\"secno\">6.5.1.4 </bdi>Decode Context</a>, passing <code>decoderData</code> and\nthe value of <code>contextTermId</code> in <code>input</code> as <code>value</code>."
         },
         {
           "html": "Set <code>contextTermIdPlural</code> to the value of <code>contextTermId</code> plus 1."
@@ -487,7 +487,7 @@
               "html": "Set <code>contexts</code> to be an empty array."
             },
             {
-              "html": "For each <code>valueToDecode</code> in <code>encodedContexts</code>, add the result of passing <code>decoderData</code> and <code>valueToDecode</code>\nas <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-context\" class=\"sec-ref\"><bdi class=\"secno\">5.5.1.4 </bdi>Decode Context</a> to <code>contexts</code>."
+              "html": "For each <code>valueToDecode</code> in <code>encodedContexts</code>, add the result of passing <code>decoderData</code> and <code>valueToDecode</code>\nas <code>value</code> to <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-context\" class=\"sec-ref\"><bdi class=\"secno\">6.5.1.4 </bdi>Decode Context</a> to <code>contexts</code>."
             },
             {
               "html": "Set the value of \"@context\" in <code>output</code> to <code>contexts</code>."
@@ -495,7 +495,7 @@
           ]
         },
         {
-          "html": "Set <code>embeddedContextResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.2 </bdi>Apply Embedded Contexts Algorithm</a>, passing\n<code>activeContext</code>, <code>output</code> as <code>input</code>, and <code>state</code>."
+          "html": "Set <code>embeddedContextResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.2 </bdi>Apply Embedded Contexts Algorithm</a>, passing\n<code>activeContext</code>, <code>output</code> as <code>input</code>, and <code>state</code>."
         },
         {
           "html": "Set <code>result</code> to <code>embeddedContextResult</code> and <code>result.output</code> to <code>output</code>. Return <code>result</code>."
@@ -510,10 +510,10 @@
           "html": "If <code>value</code> is a map, return."
         },
         {
-          "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.2.3 </bdi>Create Value Decoder</a>, passing <code>valueToDecode</code>,\n<code>state</code>, <code>termInfo</code>, and <code>termType</code>."
+          "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.2.3 </bdi>Create Value Decoder</a>, passing <code>valueToDecode</code>,\n<code>state</code>, <code>termInfo</code>, and <code>termType</code>."
         },
         {
-          "html": "Set <code>decodedValue</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-value\" class=\"sec-ref\"><bdi class=\"secno\">5.5.2.4 </bdi>Decode Value</a>, passing <code>decoderData</code>."
+          "html": "Set <code>decodedValue</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-value\" class=\"sec-ref\"><bdi class=\"secno\">6.5.2.4 </bdi>Decode Value</a>, passing <code>decoderData</code>."
         },
         {
           "html": "Return <code>decodedValue</code>."
@@ -638,10 +638,10 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.2.3 </bdi>Create Value Decoder</a>, passing <code>value</code>,\n<code>termInfo</code>, <code>state</code>, and \"@vocab\" as <code>termType</code>."
+                  "html": "Set <code>decoderData</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#create-value-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.2.3 </bdi>Create Value Decoder</a>, passing <code>value</code>,\n<code>termInfo</code>, <code>state</code>, and \"@vocab\" as <code>termType</code>."
                 },
                 {
-                  "html": "If <code>decoderData</code> exists, add the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-value\" class=\"sec-ref\"><bdi class=\"secno\">5.5.2.4 </bdi>Decode Value</a>, passing <code>decoderData</code>, to `objectTypes."
+                  "html": "If <code>decoderData</code> exists, add the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-value\" class=\"sec-ref\"><bdi class=\"secno\">6.5.2.4 </bdi>Decode Value</a>, passing <code>decoderData</code>, to `objectTypes."
                 },
                 {
                   "html": "Otherwise, add <code>value</code> to <code>objectTypes</code>."
@@ -690,7 +690,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>activeContext.termMap</code> as\n<code>activeTermMap</code>, and the value of '@context' in <code>input</code> as <code>contexts</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.5 </bdi>Update Term Map Algorithm</a>."
+          "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>activeContext.termMap</code> as\n<code>activeTermMap</code>, and the value of '@context' in <code>input</code> as <code>contexts</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.5 </bdi>Update Term Map Algorithm</a>."
         },
         {
           "html": "Set <code>state</code> to <code>termMapUpdateResult.state</code>."
@@ -699,7 +699,7 @@
           "html": "Set <code>termMap</code> to <code>termMapUpdateResult.activeTermMap</code>."
         },
         {
-          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
+          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
         },
         {
           "html": "Set <code>result</code> to be a new map, and set <code>result.activeContext</code> to <code>newActiveContext</code> and\n<code>result.state</code> to <code>state</code>."
@@ -714,13 +714,13 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set <code>revertedTermMap</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#revert-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.6 </bdi>Revert Term Map Algorithm</a>,\npassing <code>activeContext</code>."
+          "html": "Set <code>revertedTermMap</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#revert-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.6 </bdi>Revert Term Map Algorithm</a>,\npassing <code>activeContext</code>."
         },
         {
           "html": "Set <code>termDef</code> to the value of <code>term</code> in <code>activeContext.termMap</code>. Set <code>contexts</code> to the value of\n\"@context\" in <code>termDef</code>."
         },
         {
-          "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>revertedTermMap</code> as\n<code>activeTermMap</code>, <code>true</code> as <code>propertyScope</code>, and <code>contexts</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.5 </bdi>Update Term Map Algorithm</a>."
+          "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>revertedTermMap</code> as\n<code>activeTermMap</code>, <code>true</code> as <code>propertyScope</code>, and <code>contexts</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.5 </bdi>Update Term Map Algorithm</a>."
         },
         {
           "html": "Set <code>state</code> to <code>termMapUpdateResult.state</code>."
@@ -729,7 +729,7 @@
           "html": "Set <code>termMap</code> to <code>termMapUpdateResult.activeTermMap</code>."
         },
         {
-          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
+          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
         },
         {
           "html": "Set <code>result</code> to be a new map, and set <code>result.activeContext</code> to <code>newActiveContext</code> and\n<code>result.state</code> to <code>state</code>."
@@ -760,7 +760,7 @@
               "html": "Set <code>typeDef</code> to the value of <code>type</code> in <code>newTermMap</code>. Set <code>contexts</code> to the value of\n\"@context\" in <code>typeDef</code>."
             },
             {
-              "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>newTermMap</code> as\n<code>activeTermMap</code>, <code>contexts</code>, and <code>true</code> as <code>typeScope</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.5 </bdi>Update Term Map Algorithm</a>."
+              "html": "Set <code>termMapUpdateResult</code> to the result of passing <code>state</code>, <code>newTermMap</code> as\n<code>activeTermMap</code>, <code>contexts</code>, and <code>true</code> as <code>typeScope</code> to\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.5 </bdi>Update Term Map Algorithm</a>."
             },
             {
               "html": "Set <code>state</code> to <code>termMapUpdateResult.state</code> and <code>newTermMap</code> to\n<code>termMapUpdateResult.activeTermMap</code>."
@@ -768,7 +768,7 @@
           ]
         },
         {
-          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>newTermMap</code> as <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
+          "html": "Set <code>newActiveContext</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.1 </bdi>Initialize Active Context Algorithm</a>,\npassing <code>newTermMap</code> as <code>termMap</code> and <code>activeContext</code> as <code>previousActiveContext</code>."
         },
         {
           "html": "Set <code>result</code> to be a new map, and set <code>result.activeContext</code> to <code>newActiveContext</code> and\n<code>result.state</code> to <code>state</code>."
@@ -796,7 +796,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <code>loadResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#load-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.4.2 </bdi>Load Context Algorithm</a>, passing <code>state</code> and\n<code>contextIdentifier</code>."
+              "html": "Set <code>loadResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#load-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.4.2 </bdi>Load Context Algorithm</a>, passing <code>state</code> and\n<code>contextIdentifier</code>."
             },
             {
               "html": "Set <code>entry</code> to <code>loadResult</code>.<code>entry</code>, <code>context</code> to <code>entry</code>.<code>context</code>, and <code>state</code> to <code>loadResult</code>.<code>state</code>."
@@ -978,7 +978,7 @@
           "html": "Otherwise, set <code>context</code> to <code>contextIdentifier</code>."
         },
         {
-          "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#add-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.4.3 </bdi>Add Context Algorithm</a>, passing\n<code>state</code>, <code>context</code>, and <code>contextUrl</code> if set."
+          "html": "Set <code>result</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#add-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.4.3 </bdi>Add Context Algorithm</a>, passing\n<code>state</code>, <code>context</code>, and <code>contextUrl</code> if set."
         },
         {
           "html": "Return <code>result</code>."
@@ -1004,7 +1004,7 @@
                   "html": "Fetch the context object associated with <code>importUrl</code> and set <code>importContext</code> to the value of\n\"@context\" in that object."
                 },
                 {
-                  "html": "Set <code>importedContextAdditionResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#add-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.4.3 </bdi>Add Context Algorithm</a>,\npassing <code>state</code>, <code>importContext</code> as <code>context</code>, and <code>importUrl</code> as <code>contextUrl</code>."
+                  "html": "Set <code>importedContextAdditionResult</code> to the result of <a href=\"https://www.w3.org/TR/cbor-ld-10/#add-context-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.4.3 </bdi>Add Context Algorithm</a>,\npassing <code>state</code>, <code>importContext</code> as <code>context</code>, and <code>importUrl</code> as <code>contextUrl</code>."
                 },
                 {
                   "html": "Set <code>state</code> to <code>importedContextAdditionResult.state</code> and <code>importEntry</code> to\n<code>importedContextAdditionResult.entry</code>."
@@ -1380,7 +1380,7 @@
           "html": "Set <code>termId</code> to the result of looking up\n<code>valueToEncode</code> in <code>state.termToId</code>."
         },
         {
-          "html": "If <code>termId</code> is an integer, return an encoder that, when\ninvoked via <a href=\"https://www.w3.org/TR/cbor-ld-10/#encode-url\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.3 </bdi>Encode URL</a>, encodes <code>termId</code> as\na Major Type 0 (unsigned integer) CBOR item."
+          "html": "If <code>termId</code> is an integer, return an encoder that, when\ninvoked via <a href=\"https://www.w3.org/TR/cbor-ld-10/#encode-url\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.3 </bdi>Encode URL</a>, encodes <code>termId</code> as\na Major Type 0 (unsigned integer) CBOR item."
         },
         {
           "html": "Attempt to parse <code>valueToEncode</code> as a URL.\nIf parsing fails (i.e., the value is not a valid URL), return\n<code>undefined</code>."
@@ -1389,16 +1389,16 @@
           "html": "Set <code>prefix</code> to the entry in the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-prefix-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-prefix-table-2\">URL Prefix Table</a>\nsuch that <code>valueToEncode</code> starts with <code>prefix</code> and\nthe remainder of <code>valueToEncode</code> following <code>prefix</code>\ndoes not contain a \"<code>:</code>\" (U+003A COLON) character. If no such\nentry exists, return <code>undefined</code> (meaning, no compression is\npossible for this URL)."
         },
         {
-          "html": "If <code>prefix</code> is \"<code>https://</code>\" or\n\"<code>http://</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.1 </bdi>Create HTTP URL Encoder</a> passing\n<code>valueToEncode</code>."
+          "html": "If <code>prefix</code> is \"<code>https://</code>\" or\n\"<code>http://</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.6.1 </bdi>Create HTTP URL Encoder</a> passing\n<code>valueToEncode</code>."
         },
         {
-          "html": "If <code>prefix</code> is \"<code>urn:uuid:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.7.1 </bdi>Create UUID URN Encoder</a> passing\n<code>valueToEncode</code>."
+          "html": "If <code>prefix</code> is \"<code>urn:uuid:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.7.1 </bdi>Create UUID URN Encoder</a> passing\n<code>valueToEncode</code>."
         },
         {
-          "html": "If <code>prefix</code> is \"<code>data:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.1 </bdi>Create Data URL Encoder</a> passing\n<code>valueToEncode</code>."
+          "html": "If <code>prefix</code> is \"<code>data:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.8.1 </bdi>Create Data URL Encoder</a> passing\n<code>valueToEncode</code>."
         },
         {
-          "html": "If <code>prefix</code> is \"<code>did:v1:nym:</code>\" or\n\"<code>did:key:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a> passing\n<code>valueToEncode</code>."
+          "html": "If <code>prefix</code> is \"<code>did:v1:nym:</code>\" or\n\"<code>did:key:</code>\", return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a> passing\n<code>valueToEncode</code>."
         },
         {
           "html": "Return <code>undefined</code> (meaning, no compression&nbsp;is possible for this URL)."
@@ -1406,11 +1406,11 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.2 </bdi>Create URL Encoder</a>, and returns CBOR binary data.",
+      "html": "This algorithm takes an encoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.2 </bdi>Create URL Encoder</a>, and returns CBOR binary data.",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the encoder was created for a term-ID match (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.2 </bdi>Create URL Encoder</a>), return a CBOR encoding of\n<code>termId</code> as a Major Type 0 (unsigned integer) object."
+          "html": "If the encoder was created for a term-ID match (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.2 </bdi>Create URL Encoder</a>), return a CBOR encoding of\n<code>termId</code> as a Major Type 0 (unsigned integer) object."
         },
         {
           "html": "Otherwise, invoke the <code>encode</code> method of the appropriate\nprefix-specific sub-encoder and return the resulting CBOR binary data."
@@ -1435,16 +1435,16 @@
               "html": "Set <code>prefix</code> to the value corresponding to <code>prefixId</code>\nin the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-prefix-reverse-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-prefix-reverse-table-1\">URL Prefix Reverse Table</a>."
             },
             {
-              "html": "If <code>prefix</code> is \"<code>http://</code>\" or\n\"<code>https://</code>\", set <code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.3 </bdi>Create HTTP URL Decoder</a> passing\n<code>valueToDecode</code>."
+              "html": "If <code>prefix</code> is \"<code>http://</code>\" or\n\"<code>https://</code>\", set <code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.6.3 </bdi>Create HTTP URL Decoder</a> passing\n<code>valueToDecode</code>."
             },
             {
-              "html": "Otherwise, if <code>prefix</code> is \"<code>urn:uuid:</code>\", set\n<code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.7.3 </bdi>Create UUID URN Decoder</a> passing\n<code>valueToDecode</code>."
+              "html": "Otherwise, if <code>prefix</code> is \"<code>urn:uuid:</code>\", set\n<code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.7.3 </bdi>Create UUID URN Decoder</a> passing\n<code>valueToDecode</code>."
             },
             {
-              "html": "Otherwise, if <code>prefix</code> is \"<code>data:</code>\", set\n<code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.3 </bdi>Create Data URL Decoder</a> passing\n<code>valueToDecode</code>."
+              "html": "Otherwise, if <code>prefix</code> is \"<code>data:</code>\", set\n<code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.8.3 </bdi>Create Data URL Decoder</a> passing\n<code>valueToDecode</code>."
             },
             {
-              "html": "Otherwise, if <code>prefix</code> is \"<code>did:v1:nym:</code>\" or\n\"<code>did:key:</code>\", set <code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> passing\n<code>valueToDecode</code>."
+              "html": "Otherwise, if <code>prefix</code> is \"<code>did:v1:nym:</code>\" or\n\"<code>did:key:</code>\", set <code>decoder</code> to the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> passing\n<code>valueToDecode</code>."
             },
             {
               "html": "If <code>prefix</code> did not match any of the above (including when\n<code>prefixId</code> has no entry in the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-prefix-reverse-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-prefix-reverse-table-2\">URL Prefix Reverse Table</a>), or if <code>decoder</code> is\n<code>undefined</code> (meaning, the sub-decoder rejected the shape of\n<code>valueToDecode</code>), throw an\n<code>ERR_UNKNOWN_COMPRESSED_VALUE</code> error."
@@ -1455,7 +1455,7 @@
           ]
         },
         {
-          "html": "If <code>valueToDecode</code> is an integer, set <code>term</code> to the\nresult of looking up <code>valueToDecode</code> in\n<code>state.idToTerm</code> and return a decoder whose\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-url\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.5 </bdi>Decode URL</a> invocation returns <code>term</code>."
+          "html": "If <code>valueToDecode</code> is an integer, set <code>term</code> to the\nresult of looking up <code>valueToDecode</code> in\n<code>state.idToTerm</code> and return a decoder whose\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-url\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.5 </bdi>Decode URL</a> invocation returns <code>term</code>."
         },
         {
           "html": "Return <code>undefined</code>."
@@ -1463,11 +1463,11 @@
       ]
     },
     {
-      "html": "This algorithm takes a decoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.4 </bdi>Create URL Decoder</a>, and returns a string value.",
+      "html": "This algorithm takes a decoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.4 </bdi>Create URL Decoder</a>, and returns a string value.",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the decoder was created for an integer term-ID value (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.4 </bdi>Create URL Decoder</a>), return the associated\n<code>term</code> string."
+          "html": "If the decoder was created for an integer term-ID value (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.4 </bdi>Create URL Decoder</a>), return the associated\n<code>term</code> string."
         },
         {
           "html": "Otherwise, invoke the <code>decode</code> method of the appropriate\nprefix-specific sub-decoder and return the resulting string."
@@ -1493,7 +1493,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.1 </bdi>Create HTTP URL Encoder</a>, and returns CBOR binary data.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.6.1 </bdi>Create HTTP URL Encoder</a>, and returns CBOR binary data.",
       "rationale": "set",
       "steps": [
         {
@@ -1529,7 +1529,7 @@
       ]
     },
     {
-      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.3 </bdi>Create HTTP URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.6.3 </bdi>Create HTTP URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
       "rationale": "return",
       "steps": [
         {
@@ -1631,7 +1631,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.1 </bdi>Create Data URL Encoder</a>, and returns CBOR binary data.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.8.1 </bdi>Create Data URL Encoder</a>, and returns CBOR binary data.",
       "rationale": "set",
       "steps": [
         {
@@ -1721,7 +1721,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a>, and returns CBOR binary\ndata.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a>, and returns CBOR binary\ndata.",
       "rationale": "set",
       "steps": [
         {
@@ -1798,7 +1798,7 @@
       ]
     },
     {
-      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
       "rationale": "set",
       "steps": [
         {
@@ -1846,7 +1846,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-date-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.4.1 </bdi>Create XSD Date Encoder</a>, and returns CBOR binary data.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-date-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.4.1 </bdi>Create XSD Date Encoder</a>, and returns CBOR binary data.",
       "rationale": "set",
       "steps": [
         {
@@ -1912,7 +1912,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-datetime-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.5.1 </bdi>Create XSD DateTime Encoder</a>, and returns CBOR binary\ndata.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-datetime-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.5.1 </bdi>Create XSD DateTime Encoder</a>, and returns CBOR binary\ndata.",
       "rationale": "set",
       "steps": [
         {
@@ -2023,7 +2023,7 @@
       ]
     },
     {
-      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-multibase-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.6.1 </bdi>Create Multibase Encoder</a>, and returns CBOR binary data.",
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-multibase-encoder\" class=\"sec-ref\"><bdi class=\"secno\">6.5.6.1 </bdi>Create Multibase Encoder</a>, and returns CBOR binary data.",
       "rationale": "set",
       "steps": [
         {

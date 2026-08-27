@@ -50,15 +50,14 @@
       "https://github.com/w3c/pointerevents/commits": {},
       "https://github.com/w3c/pointerevents/issues/100": {},
       "https://github.com/w3c/pointerevents/issues/285": {},
-      "https://github.com/w3c/pointerevents/issues/646": {},
       "https://github.com/w3c/pointerevents/pull/495": {},
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
+          "drag-and-drop-processing-model",
           "inert",
           "concept-fe-disabled",
           "focusable-area",
-          "click-focusable",
-          "drag-and-drop-processing-model"
+          "click-focusable"
         ]
       },
       "https://infra.spec.whatwg.org/": {},
@@ -110,7 +109,6 @@
       "https://www.w3.org/TR/uievents/": {
         "anchors": [
           "keys-modifiers",
-          "event-type-contextmenu",
           "legacy-event-initializers"
         ]
       },
@@ -137,24 +135,17 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "eventtarget",
-          "concept-tree-ancestor",
-          "event",
-          "element",
-          "concept-event-create",
-          "dom-event-type",
-          "concept-event-dispatch",
-          "concept-tree-inclusive-ancestor",
-          "dom-event-composed",
-          "document-element",
-          "event-target",
-          "dom-event-target",
-          "concept-event-listener",
           "concept-event-constructor-ext",
           "concept-event-fire",
           "concept-node-document",
+          "element",
           "connected",
           "dom-eventinit-composed",
+          "concept-event-create",
+          "dom-event-target",
+          "concept-event-dispatch",
+          "event",
+          "event-target",
           "dom-event-cancelable",
           "dom-event-istrusted",
           "dom-event-timestamp",
@@ -162,6 +153,13 @@
           "callbackdef-eventlistener",
           "dom-addeventlisteneroptions-passive",
           "canceled-flag",
+          "eventtarget",
+          "concept-tree-ancestor",
+          "dom-event-type",
+          "concept-tree-inclusive-ancestor",
+          "dom-event-composed",
+          "document-element",
+          "concept-event-listener",
           "concept-document",
           "dom-event-initevent"
         ]
@@ -214,22 +212,22 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "Exposed",
-          "idl-DOMString",
           "idl-long",
-          "idl-boolean",
-          "idl-short",
-          "idl-unsigned-short",
           "idl-double",
           "idl-float",
+          "idl-DOMString",
+          "idl-boolean",
           "idl-sequence",
+          "Exposed",
           "SecureContext",
-          "idl-unsigned-long",
           "idl-undefined",
           "dfn-throw",
           "notfounderror",
           "idl-DOMException",
-          "invalidstateerror"
+          "invalidstateerror",
+          "idl-short",
+          "idl-unsigned-short",
+          "idl-unsigned-long"
         ]
       },
       "https://www.w3.org/TR/CSS2/visuren.html": {
@@ -262,6 +260,8 @@
       },
       "https://www.w3.org/TR/uievents/": {
         "anchors": [
+          "dom-uievent-detail",
+          "dictdef-eventmodifierinit",
           "uievent",
           "un-initialized-value",
           "keyboardevent",
@@ -270,16 +270,14 @@
           "dom-keyboardevent-altkey",
           "dom-keyboardevent-metakey",
           "default-action",
-          "dom-keyboardevent-getmodifierstate",
-          "dictdef-eventmodifierinit",
           "focusout",
+          "dom-keyboardevent-getmodifierstate",
           "initialize-a-uievent",
           "initialize-pointerlock-attributes-for-mouseevent",
           "key-modifier-state",
           "set-pointerlock-attributes-for-mousemove",
-          "dom-uievent-view",
-          "dom-uievent-detail",
-          "host-language"
+          "host-language",
+          "dom-uievent-view"
         ]
       }
     }
