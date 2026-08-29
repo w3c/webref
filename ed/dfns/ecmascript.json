@@ -22019,11 +22019,11 @@
       "links": []
     },
     {
-      "id": "sec-minfromtime",
-      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-minfromtime",
+      "id": "sec-minutefromtime",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-minutefromtime",
       "linkingText": [
-        "MinFromTime",
-        "MinFromTime(tv)"
+        "MinuteFromTime",
+        "MinuteFromTime(tv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22031,20 +22031,20 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-minfromtime",
-        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-minfromtime",
-        "title": "MinFromTime ( tv )",
+        "id": "sec-minutefromtime",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-minutefromtime",
+        "title": "MinuteFromTime ( tv )",
         "number": "21.4.1.14"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "sec-secfromtime",
-      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secfromtime",
+      "id": "sec-secondfromtime",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secondfromtime",
       "linkingText": [
-        "SecFromTime",
-        "SecFromTime(tv)"
+        "SecondFromTime",
+        "SecondFromTime(tv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22052,20 +22052,20 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-secfromtime",
-        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secfromtime",
-        "title": "SecFromTime ( tv )",
+        "id": "sec-secondfromtime",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secondfromtime",
+        "title": "SecondFromTime ( tv )",
         "number": "21.4.1.15"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "sec-millisecfromtime",
-      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-millisecfromtime",
+      "id": "sec-millisecondfromtime",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-millisecondfromtime",
       "linkingText": [
-        "MillisecFromTime",
-        "MillisecFromTime(tv)"
+        "MillisecondFromTime",
+        "MillisecondFromTime(tv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22073,9 +22073,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-millisecfromtime",
-        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-millisecfromtime",
-        "title": "MillisecFromTime ( tv )",
+        "id": "sec-millisecondfromtime",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-millisecondfromtime",
+        "title": "MillisecondFromTime ( tv )",
         "number": "21.4.1.16"
       },
       "definedIn": "heading",
@@ -22439,7 +22439,7 @@
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-maketime",
       "linkingText": [
         "MakeTime",
-        "MakeTime(hour, min, sec, ms)"
+        "MakeTime(hour, minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22449,7 +22449,7 @@
       "heading": {
         "id": "sec-maketime",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-maketime",
-        "title": "MakeTime ( hour, min, sec, ms )",
+        "title": "MakeTime ( hour, minute, second, millisecond )",
         "number": "21.4.1.27"
       },
       "definedIn": "heading",
@@ -22460,7 +22460,7 @@
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makeday",
       "linkingText": [
         "MakeDay",
-        "MakeDay(year, month, date)"
+        "MakeDay(year, month, day)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22470,7 +22470,7 @@
       "heading": {
         "id": "sec-makeday",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makeday",
-        "title": "MakeDay ( year, month, date )",
+        "title": "MakeDay ( year, month, day )",
         "number": "21.4.1.28"
       },
       "definedIn": "heading",
@@ -22854,7 +22854,7 @@
       "id": "sec-date.utc",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.utc",
       "linkingText": [
-        "UTC(year, month, date, hours, minutes, seconds, ms)"
+        "UTC(year, month, day, hour, minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -22866,7 +22866,7 @@
       "heading": {
         "id": "sec-date.utc",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.utc",
-        "title": "Date.UTC ( year [ , month [ , date [ , hours [ , minutes [ , seconds [ , ms ] ] ] ] ] ] )",
+        "title": "Date.UTC ( year [ , month [ , day [ , hour [ , minute [ , second [ , millisecond ] ] ] ] ] ] )",
         "number": "21.4.3.4"
       },
       "definedIn": "heading",
@@ -23292,7 +23292,7 @@
       "id": "sec-date.prototype.setdate",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setdate",
       "linkingText": [
-        "setDate(date)"
+        "setDate(day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23304,7 +23304,7 @@
       "heading": {
         "id": "sec-date.prototype.setdate",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setdate",
-        "title": "Date.prototype.setDate ( date )",
+        "title": "Date.prototype.setDate ( day )",
         "number": "21.4.4.20"
       },
       "definedIn": "heading",
@@ -23314,7 +23314,7 @@
       "id": "sec-date.prototype.setfullyear",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setfullyear",
       "linkingText": [
-        "setFullYear(year, month, date)"
+        "setFullYear(year, month, day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23326,7 +23326,7 @@
       "heading": {
         "id": "sec-date.prototype.setfullyear",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setfullyear",
-        "title": "Date.prototype.setFullYear ( year [ , month [ , date ] ] )",
+        "title": "Date.prototype.setFullYear ( year [ , month [ , day ] ] )",
         "number": "21.4.4.21"
       },
       "definedIn": "heading",
@@ -23336,7 +23336,7 @@
       "id": "sec-date.prototype.sethours",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.sethours",
       "linkingText": [
-        "setHours(hour, min, sec, ms)"
+        "setHours(hour, minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23348,7 +23348,7 @@
       "heading": {
         "id": "sec-date.prototype.sethours",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.sethours",
-        "title": "Date.prototype.setHours ( hour [ , min [ , sec [ , ms ] ] ] )",
+        "title": "Date.prototype.setHours ( hour [ , minute [ , second [ , millisecond ] ] ] )",
         "number": "21.4.4.22"
       },
       "definedIn": "heading",
@@ -23358,7 +23358,7 @@
       "id": "sec-date.prototype.setmilliseconds",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmilliseconds",
       "linkingText": [
-        "setMilliseconds(ms)"
+        "setMilliseconds(millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23370,7 +23370,7 @@
       "heading": {
         "id": "sec-date.prototype.setmilliseconds",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmilliseconds",
-        "title": "Date.prototype.setMilliseconds ( ms )",
+        "title": "Date.prototype.setMilliseconds ( millisecond )",
         "number": "21.4.4.23"
       },
       "definedIn": "heading",
@@ -23380,7 +23380,7 @@
       "id": "sec-date.prototype.setminutes",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setminutes",
       "linkingText": [
-        "setMinutes(min, sec, ms)"
+        "setMinutes(minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23392,7 +23392,7 @@
       "heading": {
         "id": "sec-date.prototype.setminutes",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setminutes",
-        "title": "Date.prototype.setMinutes ( min [ , sec [ , ms ] ] )",
+        "title": "Date.prototype.setMinutes ( minute [ , second [ , millisecond ] ] )",
         "number": "21.4.4.24"
       },
       "definedIn": "heading",
@@ -23402,7 +23402,7 @@
       "id": "sec-date.prototype.setmonth",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmonth",
       "linkingText": [
-        "setMonth(month, date)"
+        "setMonth(month, day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23414,7 +23414,7 @@
       "heading": {
         "id": "sec-date.prototype.setmonth",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setmonth",
-        "title": "Date.prototype.setMonth ( month [ , date ] )",
+        "title": "Date.prototype.setMonth ( month [ , day ] )",
         "number": "21.4.4.25"
       },
       "definedIn": "heading",
@@ -23424,7 +23424,7 @@
       "id": "sec-date.prototype.setseconds",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setseconds",
       "linkingText": [
-        "setSeconds(sec, ms)"
+        "setSeconds(second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23436,7 +23436,7 @@
       "heading": {
         "id": "sec-date.prototype.setseconds",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setseconds",
-        "title": "Date.prototype.setSeconds ( sec [ , ms ] )",
+        "title": "Date.prototype.setSeconds ( second [ , millisecond ] )",
         "number": "21.4.4.26"
       },
       "definedIn": "heading",
@@ -23468,7 +23468,7 @@
       "id": "sec-date.prototype.setutcdate",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcdate",
       "linkingText": [
-        "setUTCDate(date)"
+        "setUTCDate(day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23480,7 +23480,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcdate",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcdate",
-        "title": "Date.prototype.setUTCDate ( date )",
+        "title": "Date.prototype.setUTCDate ( day )",
         "number": "21.4.4.28"
       },
       "definedIn": "heading",
@@ -23490,7 +23490,7 @@
       "id": "sec-date.prototype.setutcfullyear",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcfullyear",
       "linkingText": [
-        "setUTCFullYear(year, month, date)"
+        "setUTCFullYear(year, month, day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23502,7 +23502,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcfullyear",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcfullyear",
-        "title": "Date.prototype.setUTCFullYear ( year [ , month [ , date ] ] )",
+        "title": "Date.prototype.setUTCFullYear ( year [ , month [ , day ] ] )",
         "number": "21.4.4.29"
       },
       "definedIn": "heading",
@@ -23512,7 +23512,7 @@
       "id": "sec-date.prototype.setutchours",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutchours",
       "linkingText": [
-        "setUTCHours(hour, min, sec, ms)"
+        "setUTCHours(hour, minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23524,7 +23524,7 @@
       "heading": {
         "id": "sec-date.prototype.setutchours",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutchours",
-        "title": "Date.prototype.setUTCHours ( hour [ , min [ , sec [ , ms ] ] ] )",
+        "title": "Date.prototype.setUTCHours ( hour [ , minute [ , second [ , millisecond ] ] ] )",
         "number": "21.4.4.30"
       },
       "definedIn": "heading",
@@ -23534,7 +23534,7 @@
       "id": "sec-date.prototype.setutcmilliseconds",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmilliseconds",
       "linkingText": [
-        "setUTCMilliseconds(ms)"
+        "setUTCMilliseconds(millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23546,7 +23546,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcmilliseconds",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmilliseconds",
-        "title": "Date.prototype.setUTCMilliseconds ( ms )",
+        "title": "Date.prototype.setUTCMilliseconds ( millisecond )",
         "number": "21.4.4.31"
       },
       "definedIn": "heading",
@@ -23556,7 +23556,7 @@
       "id": "sec-date.prototype.setutcminutes",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcminutes",
       "linkingText": [
-        "setUTCMinutes(min, sec, ms)"
+        "setUTCMinutes(minute, second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23568,7 +23568,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcminutes",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcminutes",
-        "title": "Date.prototype.setUTCMinutes ( min [ , sec [ , ms ] ] )",
+        "title": "Date.prototype.setUTCMinutes ( minute [ , second [ , millisecond ] ] )",
         "number": "21.4.4.32"
       },
       "definedIn": "heading",
@@ -23578,7 +23578,7 @@
       "id": "sec-date.prototype.setutcmonth",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmonth",
       "linkingText": [
-        "setUTCMonth(month, date)"
+        "setUTCMonth(month, day)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23590,7 +23590,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcmonth",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcmonth",
-        "title": "Date.prototype.setUTCMonth ( month [ , date ] )",
+        "title": "Date.prototype.setUTCMonth ( month [ , day ] )",
         "number": "21.4.4.33"
       },
       "definedIn": "heading",
@@ -23600,7 +23600,7 @@
       "id": "sec-date.prototype.setutcseconds",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcseconds",
       "linkingText": [
-        "setUTCSeconds(sec, ms)"
+        "setUTCSeconds(second, millisecond)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23612,7 +23612,7 @@
       "heading": {
         "id": "sec-date.prototype.setutcseconds",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype.setutcseconds",
-        "title": "Date.prototype.setUTCSeconds ( sec [ , ms ] )",
+        "title": "Date.prototype.setUTCSeconds ( second [ , millisecond ] )",
         "number": "21.4.4.34"
       },
       "definedIn": "heading",
