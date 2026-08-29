@@ -5,8 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "https://github.com/w3c/data-shapes/issues/1073": {},
-      "https://github.com/w3c/data-shapes/issues/1087": {},
       "https://github.com/w3c/data-shapes/issues/159": {},
       "https://github.com/w3c/data-shapes/issues/176": {},
       "https://github.com/w3c/data-shapes/issues/288": {},
@@ -17,11 +15,14 @@
       "https://github.com/w3c/data-shapes/issues/573": {},
       "https://github.com/w3c/data-shapes/issues/647": {},
       "https://github.com/w3c/data-shapes/issues/999": {},
-      "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22SHACL+Rules%22": {},
       "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22SPARQL%22": {},
-      "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22SRL%22": {},
       "https://github.com/w3c/data-shapes/tree/gh-pages/shacl12-test-suite": {},
       "https://w3c.github.io/data-shapes/shacl12-cs/": {},
+      "https://w3c.github.io/data-shapes/shacl12-inference-rules/": {
+        "anchors": [
+          "SPARQLRule"
+        ]
+      },
       "https://w3c.github.io/data-shapes/shacl12-overview/": {},
       "https://w3c.github.io/data-shapes/shacl12-profiling/": {},
       "https://w3c.github.io/data-shapes/shacl12-ui/": {},
@@ -100,10 +101,6 @@
           "message",
           "core-components",
           "PatternConstraintComponent",
-          "deactivated",
-          "implicit-targetClass",
-          "syntax-rule-path-defaultValue",
-          "value-nodes",
           "targetClass",
           "targetSubjectsOf",
           "targetObjectsOf",
@@ -117,9 +114,11 @@
           "MaxLengthConstraintComponent",
           "DisjointConstraintComponent",
           "LessThanConstraintComponent",
+          "LessThanOrEqualsConstraintComponent",
           "security"
         ]
       },
+      "https://www.w3.org/TR/shacl12-inference-rules/": {},
       "https://www.w3.org/TR/shacl12-node-expr/": {
         "anchors": [
           "custom-list-parameter-functions",
@@ -127,7 +126,6 @@
           "dfn-evaluation-failure"
         ]
       },
-      "https://www.w3.org/TR/shacl12-rules/": {},
       "https://www.w3.org/TR/shacl12-sparql/": {},
       "https://www.w3.org/TR/sparql12-federated-query/": {
         "anchors": [
@@ -184,14 +182,11 @@
           "dfn-predicate",
           "dfn-rdf-triple",
           "dfn-rdf-graph",
-          "dfn-rdf-node",
-          "dfn-object",
-          "dfn-reifier"
+          "dfn-rdf-node"
         ]
       },
       "https://www.w3.org/TR/shacl12-core/": {
         "anchors": [
-          "dfn-focus-node",
           "dfn-shapes-graph",
           "dfn-value",
           "dfn-validators",
@@ -204,6 +199,7 @@
           "dfn-property-shape",
           "dfn-shape",
           "dfn-shacl-property-path",
+          "dfn-focus-node",
           "dfn-value-node",
           "dfn-constraint",
           "dfn-mandatory-parameter",
@@ -219,9 +215,7 @@
           "dfn-well-formed",
           "dfn-output-nodes",
           "dfn-focus-graph",
-          "dfn-target",
-          "dfn-data-graph",
-          "dfn-shacl-superclass"
+          "dfn-target"
         ]
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
