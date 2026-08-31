@@ -1,9 +1,1052 @@
 {
   "spec": {
-    "title": "SHACL 1.2 SPARQL Extensions",
+    "title": "SHACL 1.2 SPARQL-Related Features",
     "url": "https://w3c.github.io/data-shapes/shacl12-sparql/"
   },
   "dfns": [
+    {
+      "id": "dfn-graph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-graph",
+      "linkingText": [
+        "graph",
+        "graphs",
+        "RDF graphs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-triple",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-triple",
+      "linkingText": [
+        "triple",
+        "triples"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-iri",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-iri",
+      "linkingText": [
+        "IRI",
+        "IRIs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-literal",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-literal",
+      "linkingText": [
+        "literal",
+        "literals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-blank-node",
+      "linkingText": [
+        "blank node",
+        "blank nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-node",
+      "linkingText": [
+        "node",
+        "nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-datatype",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-datatype",
+      "linkingText": [
+        "datatype",
+        "datatypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-reifier",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-reifier",
+      "linkingText": [
+        "reifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-term",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-term",
+      "linkingText": [
+        "term",
+        "terms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-subject",
+      "linkingText": [
+        "subject",
+        "subjects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-predicate",
+      "linkingText": [
+        "predicate",
+        "predicates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-object",
+      "linkingText": [
+        "object",
+        "objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-focus-node",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-focus-node",
+      "linkingText": [
+        "focus node",
+        "focus nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-value",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-value-node",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-value-node",
+      "linkingText": [
+        "value node",
+        "value nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraint",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-constraint",
+      "linkingText": [
+        "constraint",
+        "constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-constraint-component",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-constraint-component",
+      "linkingText": [
+        "constraint component",
+        "constraint components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-parameter",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-parameter",
+      "linkingText": [
+        "parameter",
+        "parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-mandatory-parameter",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-mandatory-parameter",
+      "linkingText": [
+        "mandatory parameter",
+        "mandatory parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-optional-parameter",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-optional-parameter",
+      "linkingText": [
+        "optional parameter",
+        "optional parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-parameter-value",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-parameter-value",
+      "linkingText": [
+        "parameter value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shape",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shape",
+      "linkingText": [
+        "shape",
+        "shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-node-shape",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-node-shape",
+      "linkingText": [
+        "node shape",
+        "node shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-property-shape",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-property-shape",
+      "linkingText": [
+        "property shape",
+        "property shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-property-path",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shacl-property-path",
+      "linkingText": [
+        "shacl property path",
+        "shacl property paths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-sparql-property-path",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-sparql-property-path",
+      "linkingText": [
+        "sparql property path",
+        "sparql property paths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-data-graph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-data-graph",
+      "linkingText": [
+        "data graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shapes-graph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shapes-graph",
+      "linkingText": [
+        "shapes graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-target",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-target",
+      "linkingText": [
+        "target",
+        "targets",
+        "target nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-validator",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-validator",
+      "linkingText": [
+        "validator",
+        "validators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-node-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-node-expression",
+      "linkingText": [
+        "node expression",
+        "node expressions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-node-expression-function",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-node-expression-function",
+      "linkingText": [
+        "node expression function",
+        "node expression functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-node-expression-function-name",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-node-expression-function-name",
+      "linkingText": [
+        "node expression function name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-output-nodes",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-output-nodes",
+      "linkingText": [
+        "output nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-focus-graph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-focus-graph",
+      "linkingText": [
+        "focus graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-conform",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-conform",
+      "linkingText": [
+        "conform",
+        "conforms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-failure",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-failure",
+      "linkingText": [
+        "failure",
+        "failures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-validation-result",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-validation-result",
+      "linkingText": [
+        "validation result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-instance",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shacl-instance",
+      "linkingText": [
+        "shacl instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-subclass",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shacl-subclass",
+      "linkingText": [
+        "shacl subclass"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-superclass",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shacl-superclass",
+      "linkingText": [
+        "SHACL superclass"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-type",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-shacl-type",
+      "linkingText": [
+        "shacl type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-well-formed",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-well-formed",
+      "linkingText": [
+        "well-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-ill-formed",
+      "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-ill-formed",
+      "linkingText": [
+        "ill-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
     {
       "id": "dfn-binding",
       "href": "https://w3c.github.io/data-shapes/shacl12-sparql/#dfn-binding",
