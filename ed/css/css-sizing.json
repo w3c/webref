@@ -7,7 +7,7 @@
     {
       "name": "width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-width",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | stretch | fit-content | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -32,6 +32,13 @@
           "value": "auto"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -46,10 +53,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -64,7 +72,7 @@
     {
       "name": "height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-height",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | stretch | fit-content | <calc-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -89,6 +97,13 @@
           "value": "auto"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -103,10 +118,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -146,6 +162,13 @@
           "value": "auto"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -160,10 +183,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -204,6 +228,13 @@
           "value": "auto"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -218,10 +249,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -262,6 +294,13 @@
           "value": "none"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -276,10 +315,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -320,6 +360,13 @@
           "value": "none"
         },
         {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 4.2 Stretch-fit Sizing: filling the containing block.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
@@ -334,10 +381,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content(<length-percentage [0,∞]>)",
-          "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-          "type": "function"
+          "name": "fit-content",
+          "prose": "Use the fit-content size in the relevant axis, i.e. min(max-content, max(min-content, stretch)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         },
         {
           "name": "calc-size()",
@@ -384,10 +432,17 @@
     },
     {
       "name": "column-width",
-      "newValues": "min-content | max-content | fit-content(<length-percentage>)",
+      "newValues": "stretch | min-content | max-content | fit-content",
       "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
       "values": [
+        {
+          "name": "stretch",
+          "prose": "Specifies the optimal column width as the stretch-fit inline size of the multi-column container.",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
         {
           "name": "min-content",
           "prose": "Specifies the optimal column width as the min-content inline size of the multi-column container’s contents.",
@@ -403,10 +458,11 @@
           "value": "max-content"
         },
         {
-          "name": "fit-content()",
-          "value": "fit-content()",
-          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-fit-content-length-percentage",
-          "type": "value"
+          "name": "fit-content",
+          "prose": "Specifies the optimal column width as min(max-content inline size, max(min-content inline size, stretch-fit inline size)).",
+          "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-fit-content",
+          "type": "value",
+          "value": "fit-content"
         }
       ],
       "styleDeclaration": [
