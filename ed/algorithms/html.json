@@ -19319,13 +19319,19 @@
           "html": "<p>If <var>element</var> is not a <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-element\" id=\"form-associated-custom-elements:form-associated-custom-element-10\">form-associated custom element</a>, then throw a\n   <a id=\"form-associated-custom-elements:notsupportederror-2\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" data-x-internal=\"notsupportederror\">\"<code>NotSupportedError</code>\"</a> <code id=\"form-associated-custom-elements:domexception-2\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>flags</var> contains one or more true values and <var>message</var> is not given\n   or is the empty string, then throw a <code id=\"form-associated-custom-elements:typeerror\"><a data-x-internal=\"typeerror\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>message</var> is not given, then set it to the empty string.</p>"
+        },
+        {
+          "html": "<p>If <var>flags</var> contains one or more true values and <var>message</var> is the empty\n   string, then throw a <code id=\"form-associated-custom-elements:typeerror\"><a data-x-internal=\"typeerror\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>message</var> to the result of <a href=\"https://infra.spec.whatwg.org/#normalize-newlines\" id=\"form-associated-custom-elements:normalize-newlines\" data-x-internal=\"normalize-newlines\">normalizing\n   newlines</a> given <var>message</var>.</p>"
         },
         {
           "html": "<p>For each entry <var>flag</var> → <var>value</var> of <var>flags</var>, set\n   <var>element</var>'s validity flag with the name <var>flag</var> to <var>value</var>.</p>"
         },
         {
-          "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#face-validation-message\" id=\"form-associated-custom-elements:face-validation-message\">validation message</a>\n   to the empty string if <var>message</var> is not given or all of <var>element</var>'s validity\n   flags are false, or to <var>message</var> otherwise.</p>"
+          "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#face-validation-message\" id=\"form-associated-custom-elements:face-validation-message\">validation message</a>\n   to the empty string if all of <var>element</var>'s validity flags are false; otherwise to\n   <var>message</var>.</p>"
         },
         {
           "html": "<p>If <var>element</var>'s <code>customError</code> validity flag is true, then set\n   <var>element</var>'s <a id=\"form-associated-custom-elements:custom-validity-error-message\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#custom-validity-error-message\">custom validity error message</a> to <var>element</var>'s\n   <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#face-validation-message\" id=\"form-associated-custom-elements:face-validation-message-2\">validation message</a>. Otherwise, set\n   <var>element</var>'s <a id=\"form-associated-custom-elements:custom-validity-error-message-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#custom-validity-error-message\">custom validity error message</a> to the empty string.</p>"
