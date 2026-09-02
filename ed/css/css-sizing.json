@@ -26,7 +26,7 @@
         },
         {
           "name": "auto",
-          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types (block and inline boxes, inline blocks, and all table display types) when aspect-ratio is auto. It also resolves to zero when no box is generated.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
@@ -91,7 +91,7 @@
         },
         {
           "name": "auto",
-          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types (block and inline boxes, inline blocks, and all table display types) when aspect-ratio is auto. It also resolves to zero when no box is generated.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
@@ -156,7 +156,7 @@
         },
         {
           "name": "auto",
-          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types (block and inline boxes, inline blocks, and all table display types) when aspect-ratio is auto. It also resolves to zero when no box is generated.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
@@ -222,7 +222,7 @@
         },
         {
           "name": "auto",
-          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types (block and inline boxes, inline blocks, and all table display types) when aspect-ratio is auto. It also resolves to zero when no box is generated.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
@@ -419,7 +419,7 @@
         },
         {
           "name": "border-box",
-          "prose": "Sizes specified on sizing properties as <length-percentage> represent the box’s visually-apparent sizes, including the borders/padding (but not margin): they are applied to the border box. The padding and border of the box are laid out and drawn inside the specified width and height, with the content box sized to fill the remaining space, floored at zero. The content width and height are calculated by subtracting the border and padding widths of the respective sides from the specified <length-percentage>. As the content width and height cannot be negative, this computation is floored at zero. Used values, as exposed for instance through getComputedStyle(), also refer to the border box.",
+          "prose": "Any <length-percentage> values in the sizing properties are applied to the border box, thus representing the box’s visually-apparent sizes: the padding and border of the box (but not its margins) are essentially laid out and drawn inside the used width and height, with the content box sized to fill the remaining space. More specifically, the content box width and height are calculated by subtracting the border and padding in the corresponding axis from the specified <length-percentage>, and flooring the result at zero (as the inner size of a box cannot be negative). Used values of the sizing properties, as exposed for instance through getComputedStyle(), also refer to the border box.",
           "href": "https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-border-box",
           "type": "value",
           "value": "border-box"

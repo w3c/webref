@@ -316,6 +316,7 @@
       "https://drafts.csswg.org/css-gaps-1/": {},
       "https://drafts.csswg.org/css-grid-2/": {},
       "https://drafts.csswg.org/css-images-3/": {},
+      "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-logical-1/": {
         "anchors": [
           "logical-property-group"
@@ -323,7 +324,6 @@
       },
       "https://drafts.csswg.org/css-multicol-2/": {},
       "https://drafts.csswg.org/css-multicol/": {},
-      "https://drafts.csswg.org/css-page-3/": {},
       "https://drafts.csswg.org/css-sizing-4/": {},
       "https://drafts.csswg.org/css-text-4/": {},
       "https://drafts.csswg.org/css-ui-3/": {
@@ -343,7 +343,12 @@
       "https://drafts.csswg.org/cssom/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10601": {},
+      "https://github.com/w3c/csswg-drafts/issues/10619": {},
+      "https://github.com/w3c/csswg-drafts/issues/11006": {},
+      "https://github.com/w3c/csswg-drafts/issues/11076": {},
       "https://github.com/w3c/csswg-drafts/issues/1132": {},
+      "https://github.com/w3c/csswg-drafts/issues/11716": {},
+      "https://github.com/w3c/csswg-drafts/issues/12076": {},
       "https://github.com/w3c/csswg-drafts/issues/1771": {},
       "https://github.com/w3c/csswg-drafts/issues/1938": {},
       "https://github.com/w3c/csswg-drafts/issues/2297": {},
@@ -353,6 +358,7 @@
       "https://github.com/w3c/csswg-drafts/issues/2822": {},
       "https://github.com/w3c/csswg-drafts/issues/3731": {},
       "https://github.com/w3c/csswg-drafts/issues/3973": {},
+      "https://github.com/w3c/csswg-drafts/issues/4028": {},
       "https://github.com/w3c/csswg-drafts/issues/4217": {},
       "https://github.com/w3c/csswg-drafts/issues/4218": {},
       "https://github.com/w3c/csswg-drafts/issues/4961": {},
@@ -365,7 +371,6 @@
       "https://github.com/w3c/csswg-drafts/issues/6391": {},
       "https://github.com/w3c/csswg-drafts/issues/6822": {},
       "https://github.com/w3c/csswg-drafts/issues/7206": {},
-      "https://github.com/w3c/csswg-drafts/issues/820": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-sizing/animation/height-composition.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-sizing/animation/height-interpolation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-sizing/animation/height-no-interpolation.html": {},
@@ -997,9 +1002,8 @@
     "autolinks": {
       "https://drafts.csswg.org/css-align-3/": {
         "anchors": [
-          "self-alignment-properties",
-          "valdef-justify-self-stretch",
-          "valdef-align-self-stretch"
+          "valdef-align-self-stretch",
+          "self-align"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
@@ -1012,15 +1016,17 @@
           "content-box",
           "border-box",
           "margin-box",
-          "propdef-padding",
-          "margin",
           "padding",
+          "border",
+          "margin",
+          "propdef-padding",
           "margin-properties",
           "padding-properties"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
+          "used-value",
           "computed-value",
           "initial-value"
         ]
@@ -1050,6 +1056,8 @@
           "block-box",
           "formatting-context",
           "principal-box",
+          "in-flow",
+          "block-level-box",
           "independent-formatting-context",
           "css-text-sequence"
         ]
@@ -1080,9 +1088,18 @@
           "natural-size"
         ]
       },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "anchors": [
+          "line-box"
+        ]
+      },
       "https://drafts.csswg.org/css-logical-1/": {
         "anchors": [
+          "propdef-inline-size",
           "propdef-block-size",
+          "propdef-min-inline-size",
+          "propdef-min-block-size",
+          "propdef-max-inline-size",
           "propdef-max-block-size"
         ]
       },
@@ -1091,17 +1108,12 @@
           "propdef-column-width"
         ]
       },
-      "https://drafts.csswg.org/css-page-3/": {
-        "anchors": [
-          "at-ruledef-page",
-          "descdef-page-size"
-        ]
-      },
       "https://drafts.csswg.org/css-sizing-4/": {
         "anchors": [
           "funcdef-width-fit-content",
           "propdef-size",
           "propdef-aspect-ratio",
+          "valdef-aspect-ratio-auto",
           "propdef-contain-intrinsic-size",
           "valdef-contain-intrinsic-width-auto"
         ]
