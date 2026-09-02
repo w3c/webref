@@ -23,6 +23,9 @@
       "https://tools.ietf.org/html/draft-ietf-tls-grease": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/FileAPI/": {},
+      "https://w3c.github.io/ServiceWorker/": {},
+      "https://w3c.github.io/resource-timing/": {},
+      "https://w3c.github.io/webappsec-csp/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://w3c.github.io/webappsec-subresource-integrity/": {},
       "https://w3c.github.io/webcrypto/": {},
@@ -35,13 +38,15 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "document",
-          "concept-document"
+          "document"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "requestinit",
+          "concept-header-list",
+          "concept-header-list-get-decode-split",
+          "concept-response",
           "dom-requestinit-integrity",
           "response"
         ]
@@ -73,8 +78,8 @@
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin",
-          "concept-origin-opaque",
           "same-site",
+          "concept-origin-opaque",
           "ascii-serialisation-of-an-origin",
           "same-origin"
         ]
@@ -88,6 +93,12 @@
         "anchors": [
           "starting-a-new-parallel-queue",
           "enqueue-the-following-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window",
+          "concept-document-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -125,12 +136,16 @@
           "concept-relevant-global",
           "queue-a-global-task",
           "dom-manipulation-task-source",
-          "environment-settings-object"
+          "environment-settings-object",
+          "global-object"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
         "anchors": [
-          "workernavigator"
+          "workernavigator",
+          "workerglobalscope",
+          "concept-WorkerGlobalScope-owner-set",
+          "sharedworkerglobalscope"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -142,6 +157,7 @@
           "ordered-map",
           "byte-sequence",
           "list",
+          "boolean",
           "ordered-set",
           "set-append",
           "list-iterate",
@@ -149,11 +165,16 @@
           "map-exists",
           "list-size",
           "assert",
-          "map-set",
+          "list-remove",
           "list-contain",
+          "set-intersection",
+          "list-is-empty",
+          "map-set",
           "list-append",
           "list-clone",
-          "map-remove"
+          "map-remove",
+          "iteration-continue",
+          "strip-leading-and-trailing-ascii-whitespace"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -177,6 +198,13 @@
           "dfn-file"
         ]
       },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "serviceworkerglobalscope",
+          "dfn-service-worker-client",
+          "dom-serviceworkercontainer-register"
+        ]
+      },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature"
@@ -190,6 +218,7 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "notfounderror",
           "Exposed",
           "SecureContext",
           "idl-promise",
@@ -198,7 +227,6 @@
           "idl-sequence",
           "SameObject",
           "this",
-          "notfounderror",
           "idl-DOMException",
           "dataerror",
           "a-new-promise",
