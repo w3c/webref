@@ -1218,6 +1218,422 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>sharedKey</var> and <var>ciphertext</var> be the outputs that result\n              from performing the Encaps function for the hybrid\n              KEM instance indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n              <var>algorithm</var> in Section 4 of\n              [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-concrete-hybrid-kems-04\" title=\"Concrete Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-concrete-hybrid-kems-04</a></cite>], using the key\n              represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n              internal slot of <var>key</var> as the <var>ek</var> input parameter.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If the Encaps function returned an error, return an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>result</var> be a new <a data-link-type=\"idl\" data-lt=\"EncapsulatedBits\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedBits-7\"><code>EncapsulatedBits</code></a>\n              dictionary.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-sharedKey\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedBits-sharedKey-4\"><code>sharedKey</code></a> attribute\n              of <var>result</var> to the result of <a data-link-type=\"dfn\" data-lt=\"create\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a>\n              an <a data-link-type=\"interface\" data-lt=\"ArrayBuffer\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing <var>sharedKey</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-ciphertext\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedBits-ciphertext-4\"><code>ciphertext</code></a> attribute\n              of <var>result</var> to the result of <a data-link-type=\"dfn\" data-lt=\"create\" href=\"https://webidl.spec.whatwg.org/#arraybuffer-create\">creating</a>\n              an <a data-link-type=\"interface\" data-lt=\"ArrayBuffer\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\"><code>ArrayBuffer</code></a> containing <var>ciphertext</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Return <var>result</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n              If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>sharedKey</var> be the output that results from performing\n              the Decaps function for the hybrid KEM instance\n              indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>algorithm</var> in\n              Section 4 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-concrete-hybrid-kems-04\" title=\"Concrete Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-concrete-hybrid-kems-04</a></cite>],\n              using the key represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n              internal slot of <var>key</var> as the <var>dk</var> input parameter, and\n              <var>ciphertext</var> as the <var>ct</var> input parameter.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If the Decaps function returned an error, return an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Return <var>sharedKey</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "<p>\n              Return 256.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              one of \"<code>encapsulateKey</code>\", \"<code>encapsulateBits</code>\",\n              \"<code>decapsulateKey</code>\" or \"<code>decapsulateBits</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Generate a hybrid KEM key pair by performing the\n              GenerateKeyPair function described in Section 5.2 of\n              [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-hybrid-kems-12\" title=\"Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-hybrid-kems-12</a></cite>] with the hybrid\n              KEM instance indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n              <var>normalizedAlgorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If the key generation step fails,\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n              <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>algorithm</var> be a new <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a> object.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n              <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> attribute of\n              <var>normalizedAlgorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>publicKey</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n              representing the encapsulation key of the generated key pair.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>publicKey</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a> internal\n              slot of <var>publicKey</var> to <var>algorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>publicKey</var> to true.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>publicKey</var> to be the\n              <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-usage-intersection\">usage intersection</a> of\n              <var>usages</var> and <code>[ \"encapsulateKey\", \"encapsulateBits\" ]</code>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>privateKey</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n              representing the decapsulation key of the generated key pair.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>privateKey</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a> internal\n              slot of <var>privateKey</var> to <var>algorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>privateKey</var> to <var>extractable</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>privateKey</var> to be the\n              <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-usage-intersection\">usage intersection</a> of\n              <var>usages</var> and <code>[ \"decapsulateKey\", \"decapsulateBits\" ]</code>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>result</var> be a new <a data-link-type=\"dictionary\" data-lt=\"CryptoKeyPair\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKeyPair\"><code>CryptoKeyPair</code></a>\n              dictionary.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKeyPair-publicKey\"><code>publicKey</code></a> attribute\n              of <var>result</var> to be <var>publicKey</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKeyPair-privateKey\"><code>privateKey</code></a> attribute\n              of <var>result</var> to be <var>privateKey</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Return <var>result</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>keyData</var> be the key data to be imported.</p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-5\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-4\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-3\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If format is \"raw-public\":",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      If <var>usages</var> contains an entry which is not\n                      \"<code>encapsulateKey</code>\" or \"<code>encapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>data</var> be <var>keyData</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the length in bytes of <var>data</var> is not the raw public key\n                      length, <code>Nek</code>, for the hybrid KEM instance\n                      indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                      <var>normalizedAlgorithm</var> in Section 4 of\n                      [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-concrete-hybrid-kems-04\" title=\"Concrete Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-concrete-hybrid-kems-04</a></cite>], then\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n                      that represents the hybrid KEM public key data in <var>data</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                      of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\"\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>algorithm</var> be a new <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n                      <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> attribute of\n                      <var>normalizedAlgorithm</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If format is \"raw-seed\":",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      If <var>usages</var> contains an entry which is not\n                      \"<code>decapsulateKey</code>\" or \"<code>decapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>data</var> be <var>keyData</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the length in bits of <var>data</var> is not 256\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>keyPair</var> be the result of performing the\n                      DeriveKeyPair function described in Section 5.5 of\n                      [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-hybrid-kems-12\" title=\"Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-hybrid-kems-12</a></cite>] with the\n                      hybrid KEM instance indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a>\n                      member of <var>normalizedAlgorithm</var>, using <var>data</var> as the\n                      <var>seed</var> input parameter.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the DeriveKeyPair function returned an error,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n                      that represents the hybrid KEM private key identified by\n                      the decapsulation key of <var>keyPair</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                      of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\"\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>algorithm</var> be a new <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n                      <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> attribute of\n                      <var>normalizedAlgorithm</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If format is \"jwk\":",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<dl class=\"switch\">\n                      <dt>If <var>keyData</var> is a <a data-link-type=\"dictionary\" data-lt=\"JsonWebKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-JsonWebKey\"><code>JsonWebKey</code></a> dictionary:</dt>\n                      <dd><p>Let <var>jwk</var> equal <var>keyData</var>.</p></dd>\n                      <dt>Otherwise:</dt>\n                      <dd><p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">Throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.</p></dd>\n                    </dl>",
+                      "rationale": ".switch",
+                      "steps": [
+                        {
+                          "operation": "switch",
+                          "steps": [
+                            {
+                              "case": "If keyData is a JsonWebKey dictionary:",
+                              "html": "<p>Let <var>jwk</var> equal <var>keyData</var>.</p>"
+                            },
+                            {
+                              "case": "Otherwise:",
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">Throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.</p>"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-7\"><code>priv</code></a> field of <var>jwk</var> is present\n                      and if <var>usages</var> contains an entry which is not\n                      \"<code>decapsulateKey</code>\" or \"<code>decapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-8\"><code>priv</code></a> field of <var>jwk</var> is not present\n                      and if <var>usages</var> contains an entry which is not\n                      \"<code>encapsulateKey</code>\" or \"<code>encapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-kty\"><code>kty</code></a> field of <var>jwk</var> is not\n                      \"<code>AKP</code>\",\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-alg\"><code>alg</code></a> field of <var>jwk</var> is not present,\n                      or its value does not identify the hybrid KEM instance\n                      indicated by the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                      <var>normalizedAlgorithm</var>,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If <var>usages</var> is non-empty and the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-use\"><code>use</code></a> field of <var>jwk</var> is present\n                      and is not equal to \"<code>enc</code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-key_ops\"><code>key_ops</code></a> field of <var>jwk</var> is present, and\n                      is invalid according to the requirements of JSON Web\n                      Key [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-jwk\" title=\"JSON Web Key (JWK)\">JWK</a></cite>], or it does not contain all of the specified <var>usages</var>\n                      values,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-ext\"><code>ext</code></a> field of <var>jwk</var> is present and\n                      has the value false and <var>extractable</var> is true,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<dl class=\"switch\">\n                      <dt>If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-9\"><code>priv</code></a> field of <var>jwk</var> is present:</dt>\n                      <dd>\n                        \n                      </dd>\n                      <dt>Otherwise:</dt>\n                      <dd>\n                        \n                      </dd>\n                    </dl>",
+                      "rationale": ".switch",
+                      "steps": [
+                        {
+                          "operation": "switch",
+                          "steps": [
+                            {
+                              "case": "If the priv field of jwk is present:",
+                              "html": "",
+                              "rationale": "if",
+                              "steps": [
+                                {
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-10\"><code>priv</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded\n                              32-byte seed representing a hybrid KEM private key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                },
+                                {
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              hybrid KEM private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-11\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded seed.\n                            </p>"
+                                },
+                                {
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
+                                },
+                                {
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-5\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the hybrid KEM public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                }
+                              ]
+                            },
+                            {
+                              "case": "Otherwise:",
+                              "html": "",
+                              "rationale": "if",
+                              "steps": [
+                                {
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-6\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded raw\n                              public key whose length is <code>Nek</code> for the\n                              hybrid KEM instance indicated by the\n                              <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                              <var>normalizedAlgorithm</var> in Section 4 of\n                              [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-draft-irtf-cfrg-concrete-hybrid-kems-04\" title=\"Concrete Hybrid PQ/T Key Encapsulation Mechanisms\">draft-irtf-cfrg-concrete-hybrid-kems-04</a></cite>],\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                },
+                                {
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              hybrid KEM public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-7\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
+                                },
+                                {
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>algorithm</var> be a new instance of a <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a> object.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n                      <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "Otherwise:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n              Return <var>key</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>\n              Let <var>key</var> be the <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> to be\n              exported.\n            </p>"
+        },
+        {
+          "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+        },
+        {
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-6\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-5\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-4\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "rationale": ".switch",
+          "steps": [
+            {
+              "operation": "switch",
+              "steps": [
+                {
+                  "case": "If format is \"raw-public\":",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                      of <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>data</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> containing\n                      the raw octets of the key represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of\n                      <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>result</var> be <var>data</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If format is \"raw-seed\":",
+                  "html": "",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                      of <var>key</var> is not \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"InvalidAccessError\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>data</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> containing the 32-byte seed represented by\n                      the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>result</var> be <var>data</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "If format is \"jwk\":",
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>\n                      Let <var>jwk</var> be a new <a data-link-type=\"dictionary\" data-lt=\"JsonWebKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-JsonWebKey\"><code>JsonWebKey</code></a>\n                      dictionary.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>keyAlgorithm</var> be the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a> internal slot of <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <code>kty</code> attribute of <var>jwk</var> to\n                      \"<code>AKP</code>\".\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <code>alg</code> attribute of <var>jwk</var> to the\n                      <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>keyAlgorithm</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-8\"><code>pub</code></a> attribute of <var>jwk</var>\n                      to the base64url encoded public key corresponding\n                      to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<dl class=\"switch\">\n                      <dt>\n                        If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                        of <var>key</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\":\n                      </dt>\n                      <dd>\n                        Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-12\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded 32-byte seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>.\n                      </dd>\n                    </dl>",
+                      "rationale": ".switch",
+                      "steps": [
+                        {
+                          "operation": "switch",
+                          "steps": [
+                            {
+                              "case": "If the [[type]] internal slot of key is \"private\":",
+                              "html": "Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-12\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded 32-byte seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                      Set the <code>key_ops</code> attribute of <var>jwk</var> to the <a data-link-type=\"attribute\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-cryptokey-usages\"><code>usages</code></a> attribute of <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Set the <code>ext</code> attribute of <var>jwk</var> to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal slot\n                      of <var>key</var>.\n                    </p>"
+                    },
+                    {
+                      "html": "<p>\n                      Let <var>result</var> be <var>jwk</var>.\n                    </p>"
+                    }
+                  ]
+                },
+                {
+                  "case": "Otherwise:",
+                  "html": "<p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n              Return <var>result</var>.\n            </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "if",
+      "steps": [
+        {
           "html": "<p>\n              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context\" class=\"internalDFN\" id=\"ref-for-dfn-ContextParams-context-2\"><code>context</code></a> member of <var>normalizedAlgorithm</var>\n              is present and has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\">length</a> greater than 255\n              bytes, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
@@ -1329,7 +1745,7 @@
           "html": "<p>Let <var>keyData</var> be the key data to be imported.</p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-3\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-3\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-5\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-4\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-3\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-3\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-3\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-7\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-6\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-5\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -1562,7 +1978,7 @@
                       ]
                     },
                     {
-                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-7\"><code>priv</code></a> field is present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>sign</code>\", or,\n                      if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-8\"><code>priv</code></a> field is not present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>verify</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-13\"><code>priv</code></a> field is present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>sign</code>\", or,\n                      if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-14\"><code>priv</code></a> field is not present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>verify</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
                     },
                     {
                       "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-kty\"><code>kty</code></a> field of <var>jwk</var> is not\n                      \"<code>AKP</code>\",\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
@@ -1580,7 +1996,7 @@
                       "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-ext\"><code>ext</code></a> field of <var>jwk</var> is present and\n                      has the value false and <var>extractable</var> is true,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
                     },
                     {
-                      "html": "<dl class=\"switch\">\n                      <dt>If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-9\"><code>priv</code></a> field of <var>jwk</var> is present:</dt>\n                      <dd>\n                        \n                      </dd>\n                      <dt>Otherwise:</dt>\n                      <dd>\n                        \n                      </dd>\n                    </dl>",
+                      "html": "<dl class=\"switch\">\n                      <dt>If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-15\"><code>priv</code></a> field of <var>jwk</var> is present:</dt>\n                      <dd>\n                        \n                      </dd>\n                      <dt>Otherwise:</dt>\n                      <dd>\n                        \n                      </dd>\n                    </dl>",
                       "rationale": ".switch",
                       "steps": [
                         {
@@ -1592,16 +2008,16 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-10\"><code>priv</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded seed\n                              representing an ML-DSA private key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-16\"><code>priv</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded seed\n                              representing an ML-DSA private key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-11\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded seed.\n                            </p>"
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-17\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded seed.\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-5\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the ML-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-9\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the ML-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 }
                               ]
                             },
@@ -1611,10 +2027,10 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-6\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded public key\n                              representing an ML-DSA public key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-10\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded public key\n                              representing an ML-DSA public key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-7\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-11\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
@@ -1659,7 +2075,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-4\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-4\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>\n                If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-6\"><code>raw-public</code></a>\":\n              </dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-5\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-4\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-4\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-4\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>\n                If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-8\"><code>raw-public</code></a>\":\n              </dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-seed-7\"><code>raw-seed</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-6\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -1830,10 +2246,10 @@
                       "html": "<p>\n                      Set the <code>alg</code> attribute of <var>jwk</var> to\n                      the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>keyAlgorithm</var>.\n                    </p>"
                     },
                     {
-                      "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-8\"><code>pub</code></a> attribute of <var>jwk</var>\n                      to the base64url encoded public key corresponding\n                      to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
+                      "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-12\"><code>pub</code></a> attribute of <var>jwk</var>\n                      to the base64url encoded public key corresponding\n                      to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
                     },
                     {
-                      "html": "<dl class=\"switch\">\n                      <dt>\n                        If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                        of <var>key</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\":\n                      </dt>\n                      <dd>\n                        Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-12\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>.\n                      </dd>\n                    </dl>",
+                      "html": "<dl class=\"switch\">\n                      <dt>\n                        If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                        of <var>key</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\":\n                      </dt>\n                      <dd>\n                        Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-18\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>.\n                      </dd>\n                    </dl>",
                       "rationale": ".switch",
                       "steps": [
                         {
@@ -1841,7 +2257,7 @@
                           "steps": [
                             {
                               "case": "If the [[type]] internal slot of key is \"private\":",
-                              "html": "Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-12\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>."
+                              "html": "Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-18\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded seed represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>."
                             }
                           ]
                         }
@@ -1983,7 +2399,7 @@
           "html": "<p>Let <var>keyData</var> be the key data to be imported.</p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-5\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-5\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-7\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-private\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-private-2\"><code>raw-private</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-5\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-5\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-5\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-9\"><code>raw-public</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-private\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-private-2\"><code>raw-private</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-7\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -2279,7 +2695,7 @@
                       ]
                     },
                     {
-                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-13\"><code>priv</code></a> field is present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>sign</code>\", or,\n                      if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-14\"><code>priv</code></a> field is not present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>verify</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
+                      "html": "<p>\n                      If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-19\"><code>priv</code></a> field is present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>sign</code>\", or,\n                      if the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-20\"><code>priv</code></a> field is not present\n                      and <var>usages</var> contains an entry which is not\n                      \"<code>verify</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
                     },
                     {
                       "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-kty\"><code>kty</code></a> field of <var>jwk</var> is not\n                      \"<code>AKP</code>\",\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
@@ -2297,7 +2713,7 @@
                       "html": "<p>\n                      If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-jsonwebkey-ext\"><code>ext</code></a> field of <var>jwk</var> is present and\n                      has the value false and <var>extractable</var> is true,\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                    </p>"
                     },
                     {
-                      "html": "<dl class=\"switch\">\n                      <dt>If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-15\"><code>priv</code></a> field of <var>jwk</var> is present:</dt>\n                      <dd>\n                        \n                      </dd>\n                      <dt>Otherwise:</dt>\n                      <dd>\n                        \n                      </dd>\n                    </dl>",
+                      "html": "<dl class=\"switch\">\n                      <dt>If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-21\"><code>priv</code></a> field of <var>jwk</var> is present:</dt>\n                      <dd>\n                        \n                      </dd>\n                      <dt>Otherwise:</dt>\n                      <dd>\n                        \n                      </dd>\n                    </dl>",
                       "rationale": ".switch",
                       "steps": [
                         {
@@ -2309,16 +2725,16 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-16\"><code>priv</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded value\n                              representing an SLH-DSA private key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-22\"><code>priv</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded value\n                              representing an SLH-DSA private key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-17\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded private key.\n                            </p>"
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-23\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded private key.\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-9\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the SLH-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-13\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the SLH-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 }
                               ]
                             },
@@ -2328,10 +2744,10 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-10\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded public key\n                              representing an SLH-DSA public key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
+                                  "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-14\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain a valid base64url encoded public key\n                              representing an SLH-DSA public key,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-11\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
+                                  "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-15\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
@@ -2376,7 +2792,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-6\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-6\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>\n                If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-8\"><code>raw-public</code></a>\":\n              </dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-private\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-private-3\"><code>raw-private</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-6\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-spki-6\"><code>spki</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-pkcs8-6\"><code>pkcs8</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>\n                If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-public-10\"><code>raw-public</code></a>\":\n              </dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-private\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-private-3\"><code>raw-private</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-8\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -2590,10 +3006,10 @@
                       "html": "<p>\n                      Set the <code>alg</code> attribute of <var>jwk</var> to\n                      the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>keyAlgorithm</var>.\n                    </p>"
                     },
                     {
-                      "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-12\"><code>pub</code></a> attribute of <var>jwk</var>\n                      to the base64url encoded public key corresponding\n                      to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
+                      "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-16\"><code>pub</code></a> attribute of <var>jwk</var>\n                      to the base64url encoded public key corresponding\n                      to the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                      internal slot of <var>key</var>.\n                    </p>"
                     },
                     {
-                      "html": "<dl class=\"switch\">\n                      <dt>\n                        If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                        of <var>key</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\":\n                      </dt>\n                      <dd>\n                        Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-18\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded private key represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>.\n                      </dd>\n                    </dl>",
+                      "html": "<dl class=\"switch\">\n                      <dt>\n                        If the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot\n                        of <var>key</var> is \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\":\n                      </dt>\n                      <dd>\n                        Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-24\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded private key represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>.\n                      </dd>\n                    </dl>",
                       "rationale": ".switch",
                       "steps": [
                         {
@@ -2601,7 +3017,7 @@
                           "steps": [
                             {
                               "case": "If the [[type]] internal slot of key is \"private\":",
-                              "html": "Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-18\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded private key represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>."
+                              "html": "Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-24\"><code>priv</code></a> attribute of <var>jwk</var>\n                        to the base64url encoded private key represented by\n                        the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a>\n                        internal slot of <var>key</var>."
                             }
                           ]
                         }
@@ -2784,7 +3200,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              one of \"<code>encrypt</code>\", \"<code>decrypt</code>\",\n              \"<code>wrapKey</code>\" or \"<code>unwrapKey</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-7\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-7\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-7\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-9\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -2912,7 +3328,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-8\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-8\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-8\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-10\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3110,7 +3526,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              one of \"<code>encrypt</code>\", \"<code>decrypt</code>\",\n              \"<code>wrapKey</code>\" or \"<code>unwrapKey</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-9\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-9\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-9\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-11\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3211,7 +3627,7 @@
           "html": "<p>\n              If the underlying cryptographic key material represented by the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-handle\"><code>[[handle]]</code></a> internal slot of <var>key</var>\n              cannot be accessed, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-10\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-10\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-10\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-12\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3570,7 +3986,7 @@
           "html": "<p>\n              If <var>usages</var> contains an entry which is not\n              \"<code>sign</code>\" or \"<code>verify</code>\",\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n              <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-11\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-11\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-11\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-13\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3731,7 +4147,7 @@
           "html": "<p>\n              Let <var>data</var> be an <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-byte-sequence-containing\">byte sequence containing</a> <var>bits</var>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-12\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-12\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-12\"><code>raw-secret</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>If <var>format</var> is \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-14\"><code>jwk</code></a>\":</dt>\n              <dd>\n                \n              </dd>\n              <dt>Otherwise:</dt>\n              <dd>\n                <p>\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                  <a data-link-type=\"exception\" data-lt=\"NotSupportedError\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>.\n                </p>\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {

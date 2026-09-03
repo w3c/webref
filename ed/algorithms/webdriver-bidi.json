@@ -2346,19 +2346,72 @@
       ]
     },
     {
+      "name": "round a number",
+      "href": "https://w3c.github.io/webdriver-bidi/#round-a-number",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"round-a-number\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">round a number</dfn> given <var>number</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>number</var> is not <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#finite\" id=\"ref-for-finite\">finite</a> or <var>number</var> is an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#integral-number\" id=\"ref-for-integral-number\">integral Number</a>, return <var>number</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>number</var> &lt; 0.5𝔽 and <var>number</var> &gt; +0𝔽, return +0𝔽.</p>"
+        },
+        {
+          "html": "<p>If <var>number</var> &lt; -0𝔽 and n ≥ -0.5𝔽, return -0𝔽.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#integral-number\" id=\"ref-for-integral-number①\">integral Number</a> closest to <var>number</var>, preferring the Number closer to +∞ in the case of a tie.</p>"
+        }
+      ]
+    },
+    {
       "name": "render document to a canvas",
       "href": "https://w3c.github.io/webdriver-bidi/#render-document-to-a-canvas",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"render-document-to-a-canvas\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">render document to a canvas</dfn> given <var>document</var> and <var>rect</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"render-document-to-a-canvas\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">render document to a canvas</dfn> given <var>document</var>, <var>rect</var> and <var>image size</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>ratio</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-device-pixel-ratio\" id=\"ref-for-determine-the-device-pixel-ratio\">determine the device pixel ratio</a> given <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-defaultview\" id=\"ref-for-dom-document-defaultview\">default view</a>.</p>"
         },
         {
-          "html": "<p>Let <var>paint width</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑥\">width dimension</a> multiplied by <var>ratio</var>,\n rounded to the nearest integer, so it matches the width of <var>rect</var> in device\n pixels.</p>"
+          "html": "<p>Let <var>framebuffer width</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑥\">width dimension</a> multiplied by\n <var>ratio</var>, so it matches the width of <var>rect</var> in device pixels.</p>"
         },
         {
-          "html": "<p>Let <var>paint height</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑥\">height dimension</a> multiplied by <var>ratio</var>,\n rounded to the nearest integer, so it matches the height of <var>rect</var> in device\n pixels.</p>"
+          "html": "<p>Let <var>framebuffer height</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑥\">height dimension</a> multiplied by\n <var>ratio</var>, so it matches the height of <var>rect</var> in device pixels.</p>"
+        },
+        {
+          "html": "<p>Let <var>scale</var> be 1.</p>"
+        },
+        {
+          "html": "If <var>image size</var> is not null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>max width</var> be the <code>maxWidth</code> field of <var>image size</var> if\n  present, or null otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>max height</var> be the <code>maxHeight</code> field of <var>image size</var> if\n  present, or null otherwise.</p>"
+            },
+            {
+              "html": "<p>If <var>max width</var> is not null and <var>max width</var> divided by <var>framebuffer width</var>\n  is less than <var>scale</var>, set <var>scale</var> to <var>max width</var> divided by <var>framebuffer\n  width</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>max height</var> is not null and <var>max height</var> divided by <var>framebuffer\n  height</var> is less than <var>scale</var>, set <var>scale</var> to <var>max height</var> divided by\n  <var>framebuffer height</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>scale width</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number\">round a number</a> given <var>framebuffer width</var> multiplied by <var>scale</var> rounded to the nearest integer.</p>"
+        },
+        {
+          "html": "<p>Let <var>scale height</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number①\">round a number</a> given <var>framebuffer height</var> multiplied by <var>scale</var> rounded to the nearest integer.</p>"
+        },
+        {
+          "html": "<p>Let <var>paint width</var> be the maximum of 1 and <var>scale width</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>paint height</var> be the maximum of 1 and <var>scale height</var>.</p>"
         },
         {
           "html": "<p>Let <var>canvas</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement\" id=\"ref-for-htmlcanvaselement\">HTMLCanvasElement</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-width\" id=\"ref-for-dom-canvas-width\">width</a></code> <var>paint\n width</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-height\" id=\"ref-for-dom-canvas-height\">height</a></code> <var>paint height</var>.</p>"
@@ -2370,10 +2423,19 @@
           "html": "<p>Set <var>canvas</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage//canvas.html#offscreencanvas-context-mode\" id=\"ref-for-offscreencanvas-context-mode\">context mode</a> to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-2d\" id=\"ref-for-concept-canvas-2d\">2D</a>.</p>"
         },
         {
-          "html": "<p>Complete implementation specific steps equivalent to drawing the region of\n the framebuffer representing the region of <var>document</var> covered by <var>rect</var> to\n <var>canvas context</var>, such that each pixel in the framebuffer corresponds to a pixel in\n <var>canvas context</var> with (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑦\">x coordinate</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑦\">y coordinate</a>) in\n viewport coordinates corresponding to (0,0) in <var>canvas context</var> and (<var>rect</var>’s\n <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑧\">x coordinate</a> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑦\">width dimension</a>, <var>rect</var>’s\n <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑧\">y coordinate</a> + <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑦\">height dimension</a>) corresponding to (<var>paint\n width</var>, <var>paint height</var>).</p>"
+          "html": "<p>Let <var>source x</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑦\">x coordinate</a> multiplied by <var>ratio</var>, and let\n <var>source y</var> be <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑦\">y coordinate</a> multiplied by <var>ratio</var>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TermCanvas\" id=\"ref-for-TermCanvas\">canvas</a>.</p>"
+          "html": "<p>Let <var>source rectangle</var> be the rectangle whose corners are the four points\n (<var>source x</var>, <var>source y</var>), (<var>source x</var> + <var>framebuffer width</var>, <var>source y</var>),\n (<var>source x</var> + <var>framebuffer width</var>, <var>source y</var> + <var>framebuffer height</var>), and\n (<var>source x</var>, <var>source y</var> + <var>framebuffer height</var>).</p>"
+        },
+        {
+          "html": "<p>Let <var>destination rectangle</var> be the rectangle whose corners are the four\n points (0, 0), (<var>framebuffer width</var>, 0), (<var>framebuffer width</var>,\n <var>framebuffer height</var>), and (0, <var>framebuffer height</var>).</p>"
+        },
+        {
+          "html": "<p>Complete implementation specific steps equivalent to painting the region of\n <var>document</var>’s framebuffer specified by <var>source rectangle</var> on the region of\n <var>canvas context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#output-bitmap\" id=\"ref-for-output-bitmap\">output bitmap</a> specified by <var>destination rectangle</var>.</p>\n      <p>When the dimensions of <var>destination rectangle</var> are smaller than <var>source rectangle</var>,\n then the value painted at a point in the <var>destination rectangle</var> is computed\n by filtering the data from <var>document</var>’s framebuffer. The user agent may use\n any filtering algorithm (for example bilinear interpolation or nearest-neighbor).\n When the filtering algorithm requires a pixel value from outside the framebuffer,\n it must instead use the value from the nearest edge pixel. (That is, the filter uses \"clamp-to-edge\" behavior.)\n When the filtering algorithm requires a pixel value from outside the <var>source rectangle</var>\n but inside the framebuffer, then the value from the framebuffer must be used.</p>"
+        },
+        {
+          "html": "<p>Return <var>canvas</var>.</p>"
         }
       ]
     },
@@ -2414,7 +2476,7 @@
               "html": "<p>Let <var>viewport</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#visual-viewport\" id=\"ref-for-visual-viewport\">visual viewport</a>.</p>"
             },
             {
-              "html": "<p>Let <var>viewport rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly②\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑨\">x coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pageleft\" id=\"ref-for-dom-visualviewport-pageleft\">page left</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑨\">y coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pagetop\" id=\"ref-for-dom-visualviewport-pagetop\">page top</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑧\">width dimension</a>\n  <var>viewport</var> width, and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑧\">height dimension</a> <var>viewport</var> height.</p>"
+              "html": "<p>Let <var>viewport rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly②\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑧\">x coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pageleft\" id=\"ref-for-dom-visualviewport-pageleft\">page left</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑧\">y coordinate</a>\n  <var>viewport</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-pagetop\" id=\"ref-for-dom-visualviewport-pagetop\">page top</a>, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑦\">width dimension</a>\n  <var>viewport</var> width, and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑦\">height dimension</a> <var>viewport</var> height.</p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⑦\">success</a> with data <var>viewport rect</var>.</p>"
@@ -2428,7 +2490,7 @@
           "html": "<p>Let <var>document element</var> be the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#ref-for-dom-document-documentelement\" id=\"ref-for-ref-for-dom-document-documentelement①\">document element</a> for <var>document</var>.</p>"
         },
         {
-          "html": "<p>Let <var>document rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly③\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①⓪\">x coordinate</a> 0, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①⓪\">y coordinate</a> 0, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑨\">width dimension</a> <var>document element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-element-scrollheight\" id=\"ref-for-dom-element-scrollheight\">scroll height</a>,\n and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑨\">height dimension</a> <var>document element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-element-scrollwidth\" id=\"ref-for-dom-element-scrollwidth\">scroll width</a>.</p>"
+          "html": "<p>Let <var>document rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly③\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate⑨\">x coordinate</a> 0, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate⑨\">y coordinate</a> 0, <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑧\">width dimension</a> <var>document element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-element-scrollheight\" id=\"ref-for-dom-element-scrollheight\">scroll height</a>,\n and <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑧\">height dimension</a> <var>document element</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#dom-element-scrollwidth\" id=\"ref-for-dom-element-scrollwidth\">scroll width</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success②⑧\">success</a> with data <var>document rect</var>.</p>"
@@ -2496,7 +2558,7 @@
                   "html": "<p>Let <var>element rect</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#element-get-the-bounding-box\" id=\"ref-for-element-get-the-bounding-box\">get the bounding box</a> for <var>element</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly④\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①①\">x coordinate</a>\n  <var>element rect</var>[\"<code>x</code>\"] + <var>viewport rect</var>[\"<code>x</code>\"],\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①①\">y coordinate</a> <var>element rect</var>[\"<code>y</code>\"] + <var>viewport\n  rect</var>[\"<code>y</code>\"], width <var>element rect</var>[\"<code>width</code>\"],\n  and height <var>element rect</var>[\"<code>height</code>\"].</p>"
+                  "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly④\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①⓪\">x coordinate</a>\n  <var>element rect</var>[\"<code>x</code>\"] + <var>viewport rect</var>[\"<code>x</code>\"],\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①⓪\">y coordinate</a> <var>element rect</var>[\"<code>y</code>\"] + <var>viewport\n  rect</var>[\"<code>y</code>\"], width <var>element rect</var>[\"<code>width</code>\"],\n  and height <var>element rect</var>[\"<code>height</code>\"].</p>"
                 }
               ],
               "additional": [
@@ -2505,13 +2567,13 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>clip x</var> be <var>clip</var>[\"<code>x</code>\"] plus <var>origin rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①②\">x coordinate</a>.</p>"
+                      "html": "<p>Let <var>clip x</var> be <var>clip</var>[\"<code>x</code>\"] plus <var>origin rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①①\">x coordinate</a>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>clip y</var> be <var>clip</var>[\"<code>y</code>\"] plus <var>origin rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①②\">y coordinate</a>.</p>"
+                      "html": "<p>Let <var>clip y</var> be <var>clip</var>[\"<code>y</code>\"] plus <var>origin rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①①\">y coordinate</a>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly⑤\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①③\">x coordinate</a> <var>clip x</var>,\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①③\">y coordinate</a> <var>clip y</var>, width <var>clip</var>[\"<code>width</code>\"], and height\n  <var>clip</var>[\"<code>height</code>\"].</p>"
+                      "html": "<p>Let <var>clip rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly⑤\">DOMRectReadOnly</a></code> with <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-x-coordinate\" id=\"ref-for-rectangle-x-coordinate①②\">x coordinate</a> <var>clip x</var>,\n  <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-y-coordinate\" id=\"ref-for-rectangle-y-coordinate①②\">y coordinate</a> <var>clip y</var>, width <var>clip</var>[\"<code>width</code>\"], and height\n  <var>clip</var>[\"<code>height</code>\"].</p>"
                     }
                   ]
                 }
@@ -2526,10 +2588,13 @@
           "html": "<p>Let <var>rect</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#rectangle-intersection\" id=\"ref-for-rectangle-intersection\">rectangle intersection</a> of <var>origin rect</var> and <var>clip rect</var>.</p>"
         },
         {
-          "html": "<p>If <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①⓪\">width dimension</a> is 0 or <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①⓪\">height dimension</a> is 0,\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors③⑤\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unable-to-capture-screen\" id=\"ref-for-dfn-unable-to-capture-screen\">unable to capture screen</a>.</p>"
+          "html": "<p>If <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑨\">width dimension</a> is 0 or <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.fxtf.org/geometry/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑨\">height dimension</a> is 0,\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors③⑤\">error</a> with error code <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unable-to-capture-screen\" id=\"ref-for-dfn-unable-to-capture-screen\">unable to capture screen</a>.</p>"
         },
         {
-          "html": "<p>Let <var>canvas</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#render-document-to-a-canvas\" id=\"ref-for-render-document-to-a-canvas\">render document to a canvas</a> with <var>document</var> and <var>rect</var>.</p>"
+          "html": "<p>Let <var>image size</var> be the value of the <code>imageSize</code> field of <var>command\n parameters</var> if present, or null otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>canvas</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#render-document-to-a-canvas\" id=\"ref-for-render-document-to-a-canvas\">render document to a canvas</a> with <var>document</var>, <var>rect</var> and\n <var>image size</var>.</p>"
         },
         {
           "html": "<p>Let <var>format</var> be the <code>format</code> field of <var>command parameters</var>.</p>"

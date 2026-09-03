@@ -4629,9 +4629,6 @@
           "html": "<p>If <var>request</var> is null, then return.</p>"
         },
         {
-          "html": "<p>Set <var>request</var>'s <a id=\"fetching-and-processing-a-resource-from-a-link-element:synchronous-flag\" href=\"https://fetch.spec.whatwg.org/#synchronous-flag\" data-x-internal=\"synchronous-flag\">synchronous flag</a>.</p>"
-        },
-        {
           "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/semantics.html#linked-resource-fetch-setup-steps\" id=\"fetching-and-processing-a-resource-from-a-link-element:linked-resource-fetch-setup-steps-2\">linked resource fetch setup steps</a>, given <var>el</var> and\n   <var>request</var>. If the result is false, then return.</p>"
         },
         {
@@ -6570,18 +6567,15 @@
           ]
         },
         {
-          "html": "Run these steps <a id=\"downloading-resources:in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
-          "rationale": "abort these steps",
+          "html": "<p>Optionally, the user agent may return, if it believes doing so would safeguard the user\n   from a potentially hostile download.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"downloading-resources:concept-request\" data-x-internal=\"concept-request\">request</a> whose <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"downloading-resources:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a> is <var>urlString</var>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"downloading-resources:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> is <a id=\"downloading-resources:entry-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object\">entry settings object</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"downloading-resources:concept-request-initiator\" data-x-internal=\"concept-request-initiator\">initiator</a> is \"<code>download</code>\", <a href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"downloading-resources:concept-request-destination\" data-x-internal=\"concept-request-destination\">destination</a> is the empty string, and whose\n   <a id=\"downloading-resources:use-url-credentials-flag\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" data-x-internal=\"use-url-credentials-flag\">use-URL-credentials flag</a> is set.</p>"
+        },
+        {
+          "html": "<a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"downloading-resources:concept-fetch\" data-x-internal=\"concept-fetch\">Fetch</a> <var>request</var>, with <i id=\"downloading-resources:processresponse\"><a data-x-internal=\"processresponse\" href=\"https://fetch.spec.whatwg.org/#process-response\">processResponse</a></i> set to the following steps given <a href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"downloading-resources:concept-response\" data-x-internal=\"concept-response\">response</a> <var>response</var>:",
+          "rationale": "handle",
           "steps": [
-            {
-              "html": "<p>Optionally, the user agent may abort these steps, if it believes doing so would\n     safeguard the user from a potentially hostile download.</p>"
-            },
-            {
-              "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"downloading-resources:concept-request\" data-x-internal=\"concept-request\">request</a> whose\n     <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"downloading-resources:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a> is <var>urlString</var>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"downloading-resources:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> is <a id=\"downloading-resources:entry-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object\">entry settings object</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"downloading-resources:concept-request-initiator\" data-x-internal=\"concept-request-initiator\">initiator</a> is \"<code>download</code>\", <a href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"downloading-resources:concept-request-destination\" data-x-internal=\"concept-request-destination\">destination</a> is the empty string, and whose\n     <a id=\"downloading-resources:synchronous-flag\" href=\"https://fetch.spec.whatwg.org/#synchronous-flag\" data-x-internal=\"synchronous-flag\">synchronous flag</a> and <a id=\"downloading-resources:use-url-credentials-flag\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" data-x-internal=\"use-url-credentials-flag\">use-URL-credentials flag</a> are set.</p>"
-            },
-            {
-              "html": "<p>Let <var>response</var> be the result of <a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"downloading-resources:concept-fetch\" data-x-internal=\"concept-fetch\">fetching</a>\n     <var>request</var>.</p>"
-            },
             {
               "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/links.html#handle-as-a-download\" id=\"downloading-resources:handle-as-a-download\">Handle as a download</a> <var>response</var> with\n     <var>subject</var>'s <a id=\"downloading-resources:node-navigable-2\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> and null.</p>"
             }
@@ -6592,7 +6586,7 @@
     {
       "name": "handle as a download",
       "href": "https://html.spec.whatwg.org/multipage/links.html#handle-as-a-download",
-      "html": "To <dfn id=\"handle-as-a-download\">handle as a download</dfn> a <a href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"downloading-resources:concept-response\" data-x-internal=\"concept-response\">response</a>\n  <var>response</var> with a <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"downloading-resources:navigable\">navigable</a>\n  <var>navigable</var> and a <a id=\"downloading-resources:navigation-id\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\">navigation ID</a> or null <var>navigationId</var>:",
+      "html": "To <dfn id=\"handle-as-a-download\">handle as a download</dfn> a <a href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"downloading-resources:concept-response-2\" data-x-internal=\"concept-response\">response</a>\n  <var>response</var> with a <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"downloading-resources:navigable\">navigable</a>\n  <var>navigable</var> and a <a id=\"downloading-resources:navigation-id\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\">navigation ID</a> or null <var>navigationId</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -6617,7 +6611,7 @@
           "html": "<p>If <var>download behavior</var> is not null, let <var>destinationFolder</var> be\n   <var>download behavior</var>'s <a href=\"https://w3c.github.io/webdriver-bidi/#download-behavior-struct-destination-folder\" id=\"downloading-resources:download-behavior-struct-destination-folder\" data-x-internal=\"download-behavior-struct-destination-folder\">destinationFolder</a>.</p>"
         },
         {
-          "html": "Run these steps <a id=\"downloading-resources:in-parallel-2\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Run these steps <a id=\"downloading-resources:in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
           "rationale": "run",
           "steps": [
             {
@@ -6885,17 +6879,20 @@
       ]
     },
     {
-      "html": "In the absence of a <code id=\"rel-icon:the-link-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> with the <code id=\"rel-icon:rel-icon-3\"><a href=\"https://html.spec.whatwg.org/multipage/links.html#rel-icon\">icon</a></code> keyword, for\n  <code id=\"rel-icon:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> objects whose <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"rel-icon:the-document's-address\" data-x-internal=\"the-document's-address\">URL</a>'s\n  <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"rel-icon:concept-url-scheme\" data-x-internal=\"concept-url-scheme\">scheme</a> is an <a id=\"rel-icon:http(s)-scheme\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" data-x-internal=\"http(s)-scheme\">HTTP(S) scheme</a>, user agents may\n  instead run these steps <a id=\"rel-icon:in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+      "html": "In the absence of a <code id=\"rel-icon:the-link-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> with the <code id=\"rel-icon:rel-icon-3\"><a href=\"https://html.spec.whatwg.org/multipage/links.html#rel-icon\">icon</a></code> keyword, for\n  <code id=\"rel-icon:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> objects whose <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"rel-icon:the-document's-address\" data-x-internal=\"the-document's-address\">URL</a>'s\n  <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"rel-icon:concept-url-scheme\" data-x-internal=\"concept-url-scheme\">scheme</a> is an <a id=\"rel-icon:http(s)-scheme\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" data-x-internal=\"http(s)-scheme\">HTTP(S) scheme</a>, user agents may\n  instead run these steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"rel-icon:concept-request-2\" data-x-internal=\"concept-request\">request</a> whose\n   <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"rel-icon:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a> is the <a id=\"rel-icon:url-record\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL record</a> obtained by\n   resolving the <a id=\"rel-icon:url\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url\">URL</a> \"<code>/favicon.ico</code>\" against the\n   <code id=\"rel-icon:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object's <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"rel-icon:the-document's-address-2\" data-x-internal=\"the-document's-address\">URL</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"rel-icon:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> is the <code id=\"rel-icon:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object's\n   <a id=\"rel-icon:relevant-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"rel-icon:concept-request-destination-2\" data-x-internal=\"concept-request-destination\">destination</a> is \"<code>image</code>\",\n   <a id=\"rel-icon:synchronous-flag\" href=\"https://fetch.spec.whatwg.org/#synchronous-flag\" data-x-internal=\"synchronous-flag\">synchronous flag</a> is set, <a href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"rel-icon:concept-request-credentials-mode\" data-x-internal=\"concept-request-credentials-mode\">credentials\n   mode</a> is \"<code>include</code>\", and whose <a id=\"rel-icon:use-url-credentials-flag\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" data-x-internal=\"use-url-credentials-flag\">use-URL-credentials flag</a>\n   is set.</p>"
+          "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"rel-icon:concept-request-2\" data-x-internal=\"concept-request\">request</a> whose\n   <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"rel-icon:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a> is the <a id=\"rel-icon:url-record\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL record</a> obtained by\n   resolving the <a id=\"rel-icon:url\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url\">URL</a> \"<code>/favicon.ico</code>\" against the\n   <code id=\"rel-icon:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object's <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"rel-icon:the-document's-address-2\" data-x-internal=\"the-document's-address\">URL</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"rel-icon:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> is the <code id=\"rel-icon:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object's\n   <a id=\"rel-icon:relevant-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>, <a href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"rel-icon:concept-request-destination-2\" data-x-internal=\"concept-request-destination\">destination</a> is \"<code>image</code>\", <a href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"rel-icon:concept-request-credentials-mode\" data-x-internal=\"concept-request-credentials-mode\">credentials mode</a> is \"<code>include</code>\", and whose <a id=\"rel-icon:use-url-credentials-flag\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" data-x-internal=\"use-url-credentials-flag\">use-URL-credentials flag</a> is set.</p>"
         },
         {
-          "html": "<p>Let <var>response</var> be the result of <a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"rel-icon:concept-fetch\" data-x-internal=\"concept-fetch\">fetching</a> <var>request</var>.</p>"
-        },
-        {
-          "html": "<p>Use <var>response</var>'s <a id=\"rel-icon:unsafe-response\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> as an icon as if it had been\n   declared using the <code id=\"rel-icon:rel-icon-4\"><a href=\"https://html.spec.whatwg.org/multipage/links.html#rel-icon\">icon</a></code> keyword.</p>"
+          "html": "<a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"rel-icon:concept-fetch\" data-x-internal=\"concept-fetch\">Fetch</a> <var>request</var>, with <i id=\"rel-icon:processresponse\"><a data-x-internal=\"processresponse\" href=\"https://fetch.spec.whatwg.org/#process-response\">processResponse</a></i> set to the following steps given <a href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"rel-icon:concept-response\" data-x-internal=\"concept-response\">response</a> <var>response</var>:",
+          "rationale": "use",
+          "steps": [
+            {
+              "html": "<p>Use <var>response</var>'s <a id=\"rel-icon:unsafe-response\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> as an icon as if it had been\n     declared using the <code id=\"rel-icon:rel-icon-4\"><a href=\"https://html.spec.whatwg.org/multipage/links.html#rel-icon\">icon</a></code> keyword.</p>"
+            }
+          ]
         }
       ]
     },
@@ -8566,6 +8563,45 @@
           "html": "<p>End the <a id=\"reacting-to-environment-changes:synchronous-section-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\">synchronous section</a>, continuing the remaining steps\n   <a id=\"reacting-to-environment-changes:in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>.</p>"
         },
         {
+          "html": "Let <var>finishUpdate</var> be the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code id=\"reacting-to-environment-changes:the-img-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element has experienced <a href=\"https://html.spec.whatwg.org/multipage/images.html#relevant-mutations\" id=\"reacting-to-environment-changes:relevant-mutations\">relevant mutations</a>\n     since this algorithm started, then set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"reacting-to-environment-changes:pending-request-3\">pending request</a> to null and abort these\n     steps.</p>"
+            },
+            {
+              "html": "<p>Set the <code id=\"reacting-to-environment-changes:the-img-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/images.html#last-selected-source\" id=\"reacting-to-environment-changes:last-selected-source-2\">last selected source</a> to <var>selected\n     source</var> and the <code id=\"reacting-to-environment-changes:the-img-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/images.html#current-pixel-density\" id=\"reacting-to-environment-changes:current-pixel-density-2\">current pixel density</a> to\n     <var>selected pixel density</var>.</p>"
+            },
+            {
+              "html": "<p>Set the <var>image request</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-state\" id=\"reacting-to-environment-changes:img-req-state\">state</a> to <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-all\" id=\"reacting-to-environment-changes:img-all\">completely available</a>.</p>"
+            },
+            {
+              "html": "<p>Add the image to the <a href=\"https://html.spec.whatwg.org/multipage/images.html#list-of-available-images\" id=\"reacting-to-environment-changes:list-of-available-images\">list of available images</a> using the key <var>key</var>,\n     with the <a href=\"https://html.spec.whatwg.org/multipage/images.html#ignore-higher-layer-caching\" id=\"reacting-to-environment-changes:ignore-higher-layer-caching\">ignore higher-layer caching</a> flag set.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#upgrade-the-pending-request-to-the-current-request\" id=\"reacting-to-environment-changes:upgrade-the-pending-request-to-the-current-request\">Upgrade the pending request to the current request</a>.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#prepare-an-image-for-presentation\" id=\"reacting-to-environment-changes:prepare-an-image-for-presentation\">Prepare <var>image request</var> for\n     presentation</a> given the <code id=\"reacting-to-environment-changes:the-img-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element.</p>"
+            },
+            {
+              "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"reacting-to-environment-changes:concept-event-fire\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"reacting-to-environment-changes:event-load\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-load\">load</a></code> at the <code id=\"reacting-to-environment-changes:the-img-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If the <a href=\"https://html.spec.whatwg.org/multipage/images.html#list-of-available-images\" id=\"reacting-to-environment-changes:list-of-available-images-2\">list of available images</a> contains an entry for <var>key</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>image request</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-data\" id=\"reacting-to-environment-changes:img-req-data\">image data</a> to that of\n     the entry.</p>"
+            },
+            {
+              "html": "<p><a id=\"reacting-to-environment-changes:queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a id=\"reacting-to-environment-changes:dom-manipulation-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a>\n     given the <code id=\"reacting-to-environment-changes:the-img-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element and <var>finishUpdate</var>.</p>"
+            }
+          ]
+        },
+        {
           "html": "Otherwise:",
           "rationale": "let",
           "steps": [
@@ -8573,7 +8609,7 @@
               "html": "<p>Let <var>request</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#create-a-potential-cors-request\" id=\"reacting-to-environment-changes:create-a-potential-cors-request\">creating a potential-CORS request</a> given\n     <var>urlString</var>, \"<code>image</code>\", and\n     <var>corsAttributeState</var>.</p>"
             },
             {
-              "html": "<p>Set <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"reacting-to-environment-changes:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> to\n     <var>client</var>, set <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"reacting-to-environment-changes:concept-request-initiator\" data-x-internal=\"concept-request-initiator\">initiator</a> to \"<code>imageset</code>\", and set <var>request</var>'s <a id=\"reacting-to-environment-changes:synchronous-flag\" href=\"https://fetch.spec.whatwg.org/#synchronous-flag\" data-x-internal=\"synchronous-flag\">synchronous\n     flag</a>.</p>"
+              "html": "<p>Set <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"reacting-to-environment-changes:concept-request-client\" data-x-internal=\"concept-request-client\">client</a> to\n     <var>client</var> and set <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"reacting-to-environment-changes:concept-request-initiator\" data-x-internal=\"concept-request-initiator\">initiator</a> to \"<code>imageset</code>\".</p>"
             },
             {
               "html": "<p>Set <var>request</var>'s\n     <a href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"reacting-to-environment-changes:concept-request-referrer-policy\" data-x-internal=\"concept-request-referrer-policy\">referrer policy</a> to the current state of\n     the element's <code id=\"reacting-to-environment-changes:attr-img-referrerpolicy\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy\">referrerpolicy</a></code> attribute.</p>"
@@ -8582,40 +8618,19 @@
               "html": "<p>Set <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#request-priority\" id=\"reacting-to-environment-changes:concept-request-priority\" data-x-internal=\"concept-request-priority\">priority</a> to the current state of the element's <code id=\"reacting-to-environment-changes:attr-img-fetchpriority\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority\">fetchpriority</a></code> attribute.</p>"
             },
             {
-              "html": "<p>Let <var>response</var> be the result of <a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"reacting-to-environment-changes:concept-fetch\" data-x-internal=\"concept-fetch\">fetching</a> <var>request</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>response</var>'s <a id=\"reacting-to-environment-changes:unsafe-response\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> is a <a id=\"reacting-to-environment-changes:network-error\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" data-x-internal=\"network-error\">network error</a> or\n     if the image format is unsupported (as determined by applying the <a href=\"https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically\" id=\"reacting-to-environment-changes:content-type-sniffing:-image\" data-x-internal=\"content-type-sniffing:-image\">image sniffing rules</a>, again as mentioned earlier),\n     or if the user agent is able to determine that <var>image request</var>'s image is corrupted in\n     some fatal way such that the image dimensions cannot be obtained, or if the resource type is\n     <code id=\"reacting-to-environment-changes:multipart/x-mixed-replace-2\"><a href=\"https://html.spec.whatwg.org/multipage/iana.html#multipart/x-mixed-replace\">multipart/x-mixed-replace</a></code>, then set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"reacting-to-environment-changes:pending-request-3\">pending request</a> to null and abort\n     these steps.</p>"
-            },
-            {
-              "html": "<p>Otherwise, <var>response</var>'s <a id=\"reacting-to-environment-changes:unsafe-response-2\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> is <var>image\n     request</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-data\" id=\"reacting-to-environment-changes:img-req-data-2\">image data</a>. It can be either\n     <a id=\"reacting-to-environment-changes:cors-same-origin\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\">CORS-same-origin</a> or <a id=\"reacting-to-environment-changes:cors-cross-origin\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-cross-origin\">CORS-cross-origin</a>; this affects the image's\n     interaction with other APIs (e.g., when used on a <code id=\"reacting-to-environment-changes:the-canvas-element\"><a href=\"https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element\">canvas</a></code>).</p>"
-            }
-          ]
-        },
-        {
-          "html": "<a id=\"reacting-to-environment-changes:queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a id=\"reacting-to-environment-changes:dom-manipulation-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a> given\n    the <code id=\"reacting-to-environment-changes:the-img-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element and the following steps:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If the <code id=\"reacting-to-environment-changes:the-img-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element has experienced <a href=\"https://html.spec.whatwg.org/multipage/images.html#relevant-mutations\" id=\"reacting-to-environment-changes:relevant-mutations\">relevant mutations</a>\n     since this algorithm started, then set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"reacting-to-environment-changes:pending-request-4\">pending request</a> to null and abort these\n     steps.</p>"
-            },
-            {
-              "html": "<p>Set the <code id=\"reacting-to-environment-changes:the-img-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/images.html#last-selected-source\" id=\"reacting-to-environment-changes:last-selected-source-2\">last selected source</a> to <var>selected\n     source</var> and the <code id=\"reacting-to-environment-changes:the-img-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/images.html#current-pixel-density\" id=\"reacting-to-environment-changes:current-pixel-density-2\">current pixel density</a> to\n     <var>selected pixel density</var>.</p>"
-            },
-            {
-              "html": "<p>Set the <var>image request</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-state\" id=\"reacting-to-environment-changes:img-req-state\">state</a> to <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-all\" id=\"reacting-to-environment-changes:img-all\">completely available</a>.</p>"
-            },
-            {
-              "html": "<p>Add the image to the <a href=\"https://html.spec.whatwg.org/multipage/images.html#list-of-available-images\" id=\"reacting-to-environment-changes:list-of-available-images-2\">list of available images</a> using the key <var>key</var>,\n     with the <a href=\"https://html.spec.whatwg.org/multipage/images.html#ignore-higher-layer-caching\" id=\"reacting-to-environment-changes:ignore-higher-layer-caching\">ignore higher-layer caching</a> flag set.</p>"
-            },
-            {
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#upgrade-the-pending-request-to-the-current-request\" id=\"reacting-to-environment-changes:upgrade-the-pending-request-to-the-current-request\">Upgrade the pending request to the current request</a>.</p>"
-            },
-            {
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#prepare-an-image-for-presentation\" id=\"reacting-to-environment-changes:prepare-an-image-for-presentation\">Prepare <var>image request</var> for\n     presentation</a> given the <code id=\"reacting-to-environment-changes:the-img-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element.</p>"
-            },
-            {
-              "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"reacting-to-environment-changes:concept-event-fire\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"reacting-to-environment-changes:event-load\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-load\">load</a></code> at the <code id=\"reacting-to-environment-changes:the-img-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element.</p>"
+              "html": "<a href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"reacting-to-environment-changes:concept-fetch\" data-x-internal=\"concept-fetch\">Fetch</a> <var>request</var>, with <i id=\"reacting-to-environment-changes:processresponse\"><a data-x-internal=\"processresponse\" href=\"https://fetch.spec.whatwg.org/#process-response\">processResponse</a></i> set to the following steps given <a href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"reacting-to-environment-changes:concept-response\" data-x-internal=\"concept-response\">response</a> <var>response</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>response</var>'s <a id=\"reacting-to-environment-changes:unsafe-response\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> is a <a id=\"reacting-to-environment-changes:network-error\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" data-x-internal=\"network-error\">network error</a>\n       or if the image format is unsupported (as determined by applying the <a href=\"https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically\" id=\"reacting-to-environment-changes:content-type-sniffing:-image\" data-x-internal=\"content-type-sniffing:-image\">image sniffing rules</a>, again as mentioned\n       earlier), or if the user agent is able to determine that <var>image request</var>'s image is\n       corrupted in some fatal way such that the image dimensions cannot be obtained, or if the\n       resource type is <code id=\"reacting-to-environment-changes:multipart/x-mixed-replace-2\"><a href=\"https://html.spec.whatwg.org/multipage/iana.html#multipart/x-mixed-replace\">multipart/x-mixed-replace</a></code>, then set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"reacting-to-environment-changes:pending-request-4\">pending\n       request</a> to null and return.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, <var>response</var>'s <a id=\"reacting-to-environment-changes:unsafe-response-2\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#unsafe-response\">unsafe response</a> is <var>image\n       request</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-data\" id=\"reacting-to-environment-changes:img-req-data-2\">image data</a>. It can be either\n       <a id=\"reacting-to-environment-changes:cors-same-origin\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-same-origin\">CORS-same-origin</a> or <a id=\"reacting-to-environment-changes:cors-cross-origin\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-cross-origin\">CORS-cross-origin</a>; this affects the image's\n       interaction with other APIs (e.g., when used on a <code id=\"reacting-to-environment-changes:the-canvas-element\"><a href=\"https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element\">canvas</a></code>).</p>"
+                },
+                {
+                  "html": "<p><a id=\"reacting-to-environment-changes:queue-an-element-task-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">Queue an element task</a> on the <a id=\"reacting-to-environment-changes:dom-manipulation-task-source-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\">DOM manipulation task source</a>\n       given the <code id=\"reacting-to-environment-changes:the-img-element-12\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element and <var>finishUpdate</var>.</p>"
+                }
+              ]
             }
           ]
         }
