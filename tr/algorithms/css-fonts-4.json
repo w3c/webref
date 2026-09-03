@@ -63,6 +63,9 @@
                   "html": "<p>Otherwise, italic values above the desired italic value are checked in ascending order followed by\nitalic values below the desired italic value, until 0 is hit. Only positive values of italic values are checked\nin this stage.</p>"
                 },
                 {
+                  "html": "<p>For variable fonts with an ital axis,\na match is created by setting the ital value to 1.</p>"
+                },
+                {
                   "html": "<p>If no match is found, oblique values greater than or equal to 11deg are checked in ascending order\nfollowed by oblique values below 11deg in descending order, until 0 is hit. Only positive values of oblique values\nare checked in this stage.</p>"
                 },
                 {
@@ -84,7 +87,7 @@
                       "html": "<p>Otherwise, oblique values above the desired oblique value are checked in ascending order followed by\noblique values below the desired oblique value, until 0 is hit. Only positive values of oblique values are checked in this stage.</p>"
                     },
                     {
-                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑤\">font-synthesis-style</a> has the value\n<a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.</p>"
+                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑤\">font-synthesis-style</a> has the value\n<a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.\nThe ital axis is not used to satisfy an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique③\">oblique</a> request.</p>"
                     },
                     {
                       "html": "<p>If no match is found, italic values greater than or equal to 1 are checked in ascending order\nfollowed by italic values below 1 in descending order, until 0 is hit. Only positive values of italic values are checked in this stage.</p>"
@@ -98,17 +101,17 @@
                   ]
                 },
                 {
-                  "html": "If the value of <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①⑨\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique③\">oblique</a> and the requested angle is greater than or equal to 0deg and less than 11deg,",
+                  "html": "If the value of <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-style\" id=\"ref-for-propdef-font-style①⑨\">font-style</a> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique④\">oblique</a> and the requested angle is greater than or equal to 0deg and less than 11deg,",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If the matching set includes faces with oblique values containing the value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique④\">oblique</a>,\nfaces with oblique values which do not include the desired oblique value are removed from the matching\nset.</p>"
+                      "html": "<p>If the matching set includes faces with oblique values containing the value of <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique⑤\">oblique</a>,\nfaces with oblique values which do not include the desired oblique value are removed from the matching\nset.</p>"
                     },
                     {
                       "html": "<p>Otherwise, oblique values below the desired oblique value are checked in descending order until 0 is hit, followed by\noblique values above the desired oblique value. Only positive values of oblique values are checked\nin this stage.</p>"
                     },
                     {
-                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑥\">font-synthesis-style</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto①\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.</p>"
+                      "html": "<p>For variable fonts with a slnt axis,\na match is created by setting the slnt value\nwith the specified oblique value.\nOtherwise, if <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis-style\" id=\"ref-for-propdef-font-synthesis-style⑥\">font-synthesis-style</a> has the value <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-style-auto\" id=\"ref-for-valdef-font-synthesis-style-auto①\">auto</a>,\nthen a fallback match is produced\nby geometric shearing to the specified oblique value.\nThe ital axis is not used to satisfy an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css2/#valdef-font-style-oblique\" id=\"ref-for-valdef-font-style-oblique⑥\">oblique</a> request.</p>"
                     },
                     {
                       "html": "<p>If no match is found, italic values less than 1 are checked in descending order until 0 is hit,\nfollowed by italic values above 1 in ascending order. Only positive values of italic values\nare checked in this stage.</p>"

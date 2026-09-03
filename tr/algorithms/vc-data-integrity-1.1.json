@@ -18,7 +18,7 @@
           "html": "The software selects one or more cryptography suites that meet the needs of\nthe use case, such as one that provides full, selective, or unlinkable\ndisclosure, using acceptable cryptographic key material."
         },
         {
-          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>\nor Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof-set-chain\" data-matched-text=\"[[[#add-proof-set-chain]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Add Proof Set/Chain</a> to add one or more proofs."
+          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.2 </bdi>Add Proof</a>\nor Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof-set-chain\" data-matched-text=\"[[[#add-proof-set-chain]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.3 </bdi>Add Proof Set/Chain</a> to add one or more proofs."
         }
       ]
     },
@@ -27,16 +27,16 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "The software transforms the incoming data into a document that can be understood\nby the applicable algorithm provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> or Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a>."
+          "html": "The software transforms the incoming data into a document that can be understood\nby the applicable algorithm provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.4 </bdi>Verify Proof</a> or Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.5 </bdi>Verify Proof Sets and Chains</a>."
         },
         {
           "html": "The software uses JSON Schema or an equivalent mechanism to validate that the\nincoming document follows an expected schema used by the application."
         },
         {
-          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a>\nor Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a> to verify the integrity of the\nincoming document."
+          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.4 </bdi>Verify Proof</a>\nor Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.5 </bdi>Verify Proof Sets and Chains</a> to verify the integrity of the\nincoming document."
         },
         {
-          "html": "If the document is a JSON-LD document, the software uses the algorithm provided\nin Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#context-validation\" data-matched-text=\"[[[#context-validation]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6 </bdi>Context Validation</a>, or one providing equivalent protections,\nto validate all JSON-LD Context values used in the document."
+          "html": "If the document is a JSON-LD document, the software uses the algorithm provided\nin Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#context-validation\" data-matched-text=\"[[[#context-validation]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.6 </bdi>Context Validation</a>, or one providing equivalent protections,\nto validate all JSON-LD Context values used in the document."
         }
       ]
     },
@@ -90,7 +90,7 @@
           "html": "Set <var>inputDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
         },
         {
-          "html": "Run steps 1 through 6 of the algorithm in section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>, passing\n<var>inputDocument</var>, <var>suite</var>, and <var>options</var>. If no exceptions are raised, append\nthe generated <var>proof</var> value to the <var>allProofs</var>; otherwise, raise the exception."
+          "html": "Run steps 1 through 6 of the algorithm in section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.2 </bdi>Add Proof</a>, passing\n<var>inputDocument</var>, <var>suite</var>, and <var>options</var>. If no exceptions are raised, append\nthe generated <var>proof</var> value to the <var>allProofs</var>; otherwise, raise the exception."
         },
         {
           "html": "Set <var>output</var>.<var>proof</var> to the value of <var>allProofs</var>."
@@ -129,7 +129,7 @@
           "html": "Let <var>cryptosuiteVerificationResult</var> be the result of running the\n<var>cryptosuite</var>.<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifyproof\" class=\"internalDFN\" id=\"ref-for-dfn-verifyproof-1\">verifyProof</a> algorithm with\n<var data-type=\"map\">securedDocument</var> provided as input."
         },
         {
-          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-2\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n            <dl data-link-for=\"verification result\">\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-4\">verified</a></dt>\n              <dd><var>cryptosuiteVerificationResult</var>.<var>verified</var></dd>\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-1\">verifiedDocument</a></dt>\n              <dd><var>cryptosuiteVerificationResult</var>.<var>verifiedDocument</var></dd>\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-mediatype\" class=\"internalDFN\" id=\"ref-for-dfn-mediatype-1\">mediaType</a></dt>\n              <dd><var>mediaType</var></dd>\n            </dl>"
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-2\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n                <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-4\">verified</a></dt>\n                <dd><var>cryptosuiteVerificationResult</var>.<var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-1\">verifiedDocument</a></dt>\n                <dd><var>cryptosuiteVerificationResult</var>.<var>verifiedDocument</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-mediatype\" class=\"internalDFN\" id=\"ref-for-dfn-mediatype-1\">mediaType</a></dt>\n                <dd><var>mediaType</var></dd>\n                </dl>"
         }
       ]
     },
@@ -157,7 +157,7 @@
               "html": "Let <var>inputDocument</var> be a copy of <var>securedDocument</var> with the proof value\nremoved and then set <var>inputDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
             },
             {
-              "html": "Run steps 4 through 8 of the algorithm in section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> on\n<var>inputDocument</var>; if no exceptions are raised, append <var>cryptosuiteVerificationResult</var>\nto <var>verificationResults</var>."
+              "html": "Run steps 4 through 8 of the algorithm in section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.1.4 </bdi>Verify Proof</a> on\n<var>inputDocument</var>; if no exceptions are raised, append <var>cryptosuiteVerificationResult</var>\nto <var>verificationResults</var>."
             }
           ]
         },
@@ -165,14 +165,14 @@
           "html": "Set <var>successfulVerificationResults</var> to an empty list."
         },
         {
-          "html": "Let <var>combinedVerificationResult</var> be an empty struct. Set <var>combinedVerificationResult</var>.<var>status</var>\nto <code>true</code>, <var>combinedVerificationResult</var>.<var>document</var> to <code>null</code>, and\n<var>combinedVerificationResult</var>.<var>mediaType</var> to <code>null</code>."
+          "html": "Let <var>combinedVerificationResult</var> be an empty struct. Set <var>combinedVerificationResult</var>.<var>status</var>\n        to <code>true</code>, <var>combinedVerificationResult</var>.<var>document</var> to <code>null</code>, and\n        <var>combinedVerificationResult</var>.<var>mediaType</var> to <code>null</code>."
         },
         {
           "html": "For each <var>cryptosuiteVerificationResult</var> in <var>verificationResults</var>:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If <var>cryptosuiteVerificationResult</var>.<var>verified</var> is <code>false</code>, set <var>combinedVerificationResult</var>.<var>verified</var>\nto <code>false</code>."
+              "html": "If <var>cryptosuiteVerificationResult</var>.<var>verified</var> is <code>false</code>, set <var>combinedVerificationResult</var>.<var>verified</var>\n        to <code>false</code>."
             },
             {
               "html": "Otherwise, set <var>combinedVerificationResult</var>.<var>document</var> to\n<var>cryptosuiteVerificationResult</var>.<var>verifiedDocument</var>, set\n<var>combinedVerificationResult</var>.<var>mediaType</var> to <var>cryptosuiteVerificationResult</var>.<var>mediaType</var>, and\nappend <var>cryptosuiteVerificationResult</var> to <var>successfulVerificationResults</var>."
@@ -192,17 +192,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>result</var>.<var>validated</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n<var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\nand clone <var>inputDocument</var> to <var>result</var>.<var>validatedDocument</var>."
+          "html": "Set <var>result</var>.<var>validated</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n        <var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\n        and clone <var>inputDocument</var> to <var>result</var>.<var>validatedDocument</var>."
         },
         {
-          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>validatedDocument</var>,\nwhich might be undefined."
+          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>validatedDocument</var>,\n        which might be undefined."
         },
         {
-          "html": "If <var>contextValue</var> does not deeply equal <var>knownContext</var>, any subtree in\n<var>result</var>.<var>validatedDocument</var> contains an <code>@context</code> property, or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
+          "html": "If <var>contextValue</var> does not deeply equal <var>knownContext</var>, any subtree in\n        <var>result</var>.<var>validatedDocument</var> contains an <code>@context</code> property, or any URI in\n        <var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\n        known good value or cryptographic hash, then perform the applicable action:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>validatedDocument</var> to the result\nof running the <a href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nJSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n<var>knownContext</var> as inputs. If the compaction fails, add at least one error\nto <var>result</var>.<var>errors</var>."
+              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>validatedDocument</var> to the result\n        of running the <a href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\n        JSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n        <var>knownContext</var> as inputs. If the compaction fails, add at least one error\n        to <var>result</var>.<var>errors</var>."
             },
             {
               "html": "If <var>recompact</var> is not <code>true</code>, add at least one error to <var>result</var>.<var>errors</var>."
@@ -210,10 +210,1315 @@
           ]
         },
         {
-          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>validated</var> to <code>true</code>; otherwise, set\n<var>result</var>.<var>validated</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
+          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>validated</var> to <code>true</code>; otherwise, set\n        <var>result</var>.<var>validated</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
         },
         {
           "html": "Return the value of <var>result</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-13\">data integrity proof</a> given\nan <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-unsecured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unsecured-data-document-1\">unsecured data document</a> and properly specified cryptosuite.\nThe choice of cryptosuite sets the values of <var>canonScheme</var>,\n<var>hashName</var>, <var>sigFunc</var>, <var>verifyFunc</var>, and <var>proofEncoding</var>, which are used\nin the algorithm below. Additional required inputs are an\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-unsecured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unsecured-data-document-2\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-14\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\n        Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.2 </bdi>Proof Configuration</a> with\n        <var>options</var>, the <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var>\n        passed as parameters."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>, <var>options</var>, the\n        <var>cypherSuiteName</var>, <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\n        passed as a parameters."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofSerializationAlg\" data-matched-text=\"[[[#ProofSerializationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.4 </bdi>Proof Serialization</a> with <var>hashData</var>, <var>options</var>, and\n        <var>sigFunc</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\n        base64-url-encoded Multibase encoding</a> of the <var>proofBytes</var> if\n        <var>proofEncoding</var> is  <code>base64</code> otherwise let <var>proof</var>.<var>proofValue</var>\n        be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\n        base58-btc-encoded Multibase value</a> of the <var>proofBytes</var> if\n        <var>proofEncoding</var> is <code>base58</code>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-15\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-16\">data integrity proof</a> given\n        an <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-secured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-secured-data-document-12\">secured data document</a>. Required inputs are an\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-secured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-secured-data-document-13\">secured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>securedDocument</var>). This algorithm returns\n        a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-7\">verification result</a>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> whose\n        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>securedDocument</var> with\n        the <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>proofOptions</var> be a copy of <var>securedDocument</var>.<var>proof</var> with <code>proofValue</code>\n        removed."
+        },
+        {
+          "html": "Set <var>cryptosuiteName</var> to <var>securedDocument</var>.<var>proof</var>.<var>cryptosuite</var>,\n        which must be one of specified cryptosuites.\n        From the cryptosuite specification, set the values of <var>canonScheme</var>, <var>hashName</var>,\n        <var>verifyFunc</var>, and <var>proofEncode</var>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the\n        <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase decoded base64-url\n        value</a> in <var>securedDocument</var>.<var>proof</var>.<var>proofValue</var> if <var>proofEncode</var> is\n        <code>base64</code> otherwise let <var>proofBytes</var> be the\n        <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase decoded base58-btc\n        value</a>."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#TransformationAlg\" data-matched-text=\"[[[#TransformationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.3 </bdi>Transformation</a> with <var>unsecuredDocument</var>,\n        and <var>cypherSuiteName</var>,\n        <var>canonScheme</var>, and <var>hashName</var> <var>proofOptions</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\n        Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.2 </bdi>Proof Configuration</a> with <var>options</var>, <var>cypherSuiteName</var>,\n        <var>canonScheme</var>, and <var>hashName</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#HashingAlg\" data-matched-text=\"[[[#HashingAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.1 </bdi>Hashing</a> with <var>transformedData</var>, <var>proofConfig</var>, and <var>hashName</var>\n        passed as a parameters."
+        },
+        {
+          "html": "Let <var data-type=\"boolean\">verified</var> be the result of running the algorithm in Section\n        <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofVerificationAlg\" data-matched-text=\"[[[#ProofVerificationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.5 </bdi>Proof Verification</a> with <var>hashData</var>,\n        <var>proofBytes</var>, <var>proofConfig</var>, and <var>verifyFunc</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-8\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n                <dl data-link-for=\"verification result\">\n                        <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-7\">verified</a></dt>\n                        <dd><var data-type=\"boolean\">verified</var></dd>\n                        <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-3\">verifiedDocument</a></dt>\n                        <dd>\n        <var>unsecuredDocument</var> if <var data-type=\"boolean\">verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a></dd>\n                </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n        (<var>transformedDocument</var>), <em>canonical proof configuration</em>\n        (<var>canonicalProofConfig</var>), and <em>hash name</em> (<var>hashName</var>). A single\n        <em>hash data</em> value represented as a series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>hashName</var> is <code>SHA-256</code>,\n        let <var>transformedDocumentHash</var> be the result of applying the\n        SHA-256 (SHA-2 with 256-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        respective <var>transformedDocument</var>.\n        Respective <var>transformedDocumentHash</var> will be exactly 32 bytes\n        in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-384</code>,\n        let <var>transformedDocumentHash</var> be the result of applying the\n        SHA-384 (SHA-2 with 384-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        respective <var>transformedDocument</var>.\n        Respective <var>transformedDocumentHash</var> will be exactly 48 bytes\n        in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-512</code>,\n        let <var>transformedDocumentHash</var> be the result of applying the\n        SHA-512 (SHA-2 with 512-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        respective <var>transformedDocument</var>.\n        Respective <var>transformedDocumentHash</var> will be exactly 64 bytes\n        in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-256</code>,\n        let <var>proofConfigHash</var> be the result of applying the\n        SHA-256 (SHA-2 with 256-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        <var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\n        will be exactly 32 bytes in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-384</code>,\n        let <var>proofConfigHash</var> be the result of applying the\n        SHA-384 (SHA-2 with 384-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        <var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\n        will be exactly 48 bytes in size."
+        },
+        {
+          "html": "If <var>hashName</var> is <code>SHA-512</code>,\n        let <var>proofConfigHash</var> be the result of applying the\n        SHA-512 (SHA-2 with 512-bit output)\n        cryptographic hashing algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6234\" title=\"US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)\">RFC6234</a></cite>] to the\n        <var>canonicalProofConfig</var>. Respective <var>proofConfigHash</var>\n        will be exactly 64 bytes in size."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of joining <var>proofConfigHash</var> (the\n        first hash) with <var>transformedDocumentHash</var> (the second hash)."
+        },
+        {
+          "html": "Return <var>hashData</var> as the <em>hash data</em>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are <em>proof options</em>\n        (<var>options</var>), a <em>cryptosuite identifier</em> (<var>cryptosuite</var>), the\n        <em>canonicalization scheme </em> (<var>canonScheme</var>) and <em>hash name</em>\n        (<var>hashName</var>). The\n        <em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier\n        for the\n        <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\n        cryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MUST</em> contain the cryptosuite\n        identifier (<var>cryptosuite</var>). A <em>proof configuration</em>\n        object is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proofConfig</var> be a clone of the <var>options</var> object."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>type</var> is not set to <code>DataIntegrityProof</code>,\n        <var>proofConfig</var>.<var>cryptosuite</var> is not set to the <em>cryptosuite</em>,\n        or both, an <code>INVALID_PROOF_CONFIGURATION</code> error <em class=\"rfc2119\">MUST</em> be raised."
+        },
+        {
+          "html": "If <var>proofConfig</var>.<var>created</var> is set to a value that is not a\n        valid [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-xmlschema11-2\" title=\"W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes\">XMLSCHEMA11-2</a></cite>] datetime, an <code>INVALID_PROOF_DATETIME</code> error <em class=\"rfc2119\">MUST</em> be\n        raised."
+        },
+        {
+          "html": "Set <var>proofConfig</var>.|@context| to <var>unsecuredDocument</var>.|@context|."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>rdfc</code>,\n        let <var>canonicalProofConfig</var> be the result of applying the\n        Universal RDF Dataset Canonicalization Algorithm\n        [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] to the <var>proofConfig</var>, with hashing parameter set to <var>hashName</var>."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>jcs</code>,\n        let <var>canonicalProofConfig</var> be the result of applying the\n        JSON Canonicalization Scheme [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8785\" title=\"JSON Canonicalization Scheme (JCS)\">RFC8785</a></cite>] to the <var>proofConfig</var>."
+        },
+        {
+          "html": "Return <var>canonicalProofConfig</var>."
+        }
+      ]
+    },
+    {
+      "html": "Required inputs to this algorithm are an\n        <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">\n        unsecured data document</a> (<var>unsecuredDocument</var>),\n        transformation options (<var>options</var>), a cryptosuite identifier (<var>cryptosuite</var>),\n        the <em>canonicalization scheme </em> (<var>canonScheme</var>) and <em>hash name</em>\n        (<var>hashName</var>). The\n        transformation options <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n        <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\n        cryptographic suite</a> (<var>type</var>) and a cryptosuite\n        identifier (<var>cryptosuite</var>). A <em>transformed data document</em> is\n        produced as output. Whenever this algorithm encodes strings, it <em class=\"rfc2119\">MUST</em> use UTF-8\n        encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>options</var>.<var>type</var> is not set to the string <code>DataIntegrityProof</code>,\n        <var>options</var>.<var>cryptosuite</var> is not set to the <em>cryptosuite</em>\n        value, or both, then a <code>PROOF_TRANSFORMATION_ERROR</code> <em class=\"rfc2119\">MUST</em> be\n        raised."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>rdfc</code>,\n        let <var>canonicalDocument</var> be the result of applying the\n        Universal RDF Dataset Canonicalization Algorithm\n        [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] to the <var>unsecuredDocument</var>\n        with hashing parameter set to <var>hashName</var>."
+        },
+        {
+          "html": "If <var>canonScheme</var> is <code>jcs</code>,\n        let <var>canonicalDocument</var> be the result of applying the\n        JSON Canonicalization Scheme [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8785\" title=\"JSON Canonicalization Scheme (JCS)\">RFC8785</a></cite>] to the <var>unsecuredDocument</var>."
+        },
+        {
+          "html": "Set <var>output</var> to the value of <var>canonicalDocument</var>."
+        },
+        {
+          "html": "Return <var>canonicalDocument</var> as the <em>transformed data document</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to serialize a digital signature from\n        a set of cryptographic hash data. This\n        algorithm is designed to be used in conjunction with the algorithms defined\n        in <a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\n        Section 4: Algorithms</a> of the Data Integrity specification\n        [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]. Required inputs are\n        cryptographic hash data (<var>hashData</var>), <em>proof options</em> (<var>options</var>), and\n        a <em>signature function</em> (<var>sigFunc</var>). The\n        <em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n        <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">cryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MAY</em> contain a cryptosuite\n        identifier (<var>cryptosuite</var>). A single <em>digital proof</em> value\n        represented as series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>privateKeyBytes</var> be the result of retrieving the\n        private key bytes (or a signing interface enabling the use of the private key\n        bytes) associated with the verification method identified by the\n        <var>options</var>.<var>verificationMethod</var> value."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of applying the <var>sigFunc</var>, with <var>hashData</var> as\n        the data\n        to be signed using the private key specified by <var>privateKeyBytes</var>.\n        <var>proofBytes</var> will have a length as indicated by the cryptosuite."
+        },
+        {
+          "html": "Return <var>proofBytes</var> as the <em>digital proof</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to verify a digital signature from\n        a set of cryptographic hash data. This\n        algorithm is designed to be used in conjunction with the algorithms defined\n        in <a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">Section 4: Algorithms</a>\n        of the Data Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]\n        specification. Required inputs are\n        cryptographic hash data (<var>hashData</var>), a digital signature (<var>proofBytes</var>),\n        proof options (<var>options</var>), and a <em>verification function</em> (<var>verifyFunc</var>).\n        A <em>verification result</em>\n        represented as a boolean value is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>publicKeyBytes</var> be the result of retrieving the\n        public key bytes associated with the\n        <var>options</var>.<var>verificationMethod</var> value as described in\n        <a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\"> Section\n        4: Retrieve Verification Method</a> of the\n        Data Integrity specification [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>]."
+        },
+        {
+          "html": "Let <var>verificationResult</var> be the result of applying the <var>verifyFunc</var>,\n        using the public key specified by <var>publicKeyBytes</var>, with <var>hashData</var>\n        as the data to be verified against the\n        <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>verificationResult</var> as the <em>verification result</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-17\">data integrity proof</a> given\nan <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-unsecured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unsecured-data-document-4\">unsecured data document</a>. Required inputs are an\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-unsecured-data-document\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-unsecured-data-document-5\">unsecured data document</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>unsecuredDocument</var>), and a set of proof\noptions (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). A <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-18\">data integrity proof</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>), or an error,\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be a clone of the proof options, <var>options</var>."
+        },
+        {
+          "html": "Let <var>proofConfig</var> be the result of running the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.2 </bdi>Proof Configuration</a> with\n<var>options</var> passed as a parameter."
+        },
+        {
+          "html": "Let <var>transformedData</var> be the result of running the algorithm in\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#TransformSD\" data-matched-text=\"[[[#TransformSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.1 </bdi>TransformSD</a> with <var>unsecuredDocument</var>,\n<var>proofConfig</var>, and <var>options</var> passed as parameters."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of running the algorithm in\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#HashSD\" data-matched-text=\"[[[#HashSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.2 </bdi>HashSD</a> with <var>transformedData</var> and <var>proofConfig</var>\npassed as a parameters."
+        },
+        {
+          "html": "In a SHoC approach, add to <var>hashData</var> the <var>saltedHash</var> data that results\nfrom running the algorithm in <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#SaltedHashSD\" data-matched-text=\"[[[#SaltedHashSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.1 </bdi>SaltedHashSD</a>."
+        },
+        {
+          "html": "Let <var>proofBytes</var> be the result of running the approach-specific\n<em>SerializeBase</em> algorithm. For example, use <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeBase-SIC\" data-matched-text=\"[[[#SerializeBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.1 </bdi>SerializeBase-SIC</a> for\nthe SIC approach, and use <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeBase-SHoC\" data-matched-text=\"[[[#SerializeBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.2 </bdi>SerializeBase-SHoC</a> for the SHoC approach. In\nall cases, pass <var>hashData</var> and <var>options</var> as parameters."
+        },
+        {
+          "html": "Let <var>proof</var>.<var>proofValue</var> be a <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\"><code>base64-url-encoded</code> Multibase value</a> of the <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proof</var> as the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-data-integrity-proof\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-proof-19\">data integrity proof</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a selective disclosure derived proof. It is\ncalled by a holder of a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> that is protected by a\nselective disclosure 'base proof'. The derived proof is to be given to a\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifier\">verifier</a>. The algorithm inputs include a JSON-LD document (<var>document</var>); a\nselective disclosure base proof (<var>proof</var>); an array of JSON pointers to use to\nselectively disclose statements (<var>selectivePointers</var>); and any custom JSON-LD\nAPI options, such as a document loader. A single <em>selectively revealed\ndocument</em> value, represented as an object, is produced as output.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let the <var>proofData</var> object be the result returned from the approach-specific\n<em>ParseBase</em> sub-algorithm. For example, for the SIC approach use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ParseBase-SIC\" data-matched-text=\"[[[#ParseBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.2 </bdi>ParseBase-SIC</a>, and for the SHoC approach use <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ParseBase-SHoC\" data-matched-text=\"[[[#ParseBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.3 </bdi>ParseBase-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>hmacKey</var> and\n<var>mandatoryPointers</var>."
+        },
+        {
+          "html": "Initialize <var>disclosureData</var> to the object returned when calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#CreateDisclosureData\" data-matched-text=\"[[[#CreateDisclosureData]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.3 </bdi>CreateDisclosureData</a>, passing the <var>document</var>, <var>proofData</var>,\n<var>selectivePointers</var>, and any custom JSON-LD API options, such as a document\nloader. The <var>disclosureData</var> object will contain the following fields:\n<var>revealDocument</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, <var>verifierLabelMap</var>\n<var>mandatory</var>, and <var>nonMandatory</var>."
+        },
+        {
+          "html": "Initialize <var>newProof</var> to a shallow copy of <var>proof</var>."
+        },
+        {
+          "html": "Replace <var>proofValue</var> in <var>newProof</var> with the result of calling the approach-specific\n<em>SerializeDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeDerived-SIC\" data-matched-text=\"[[[#SerializeDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.3 </bdi>SerializeDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeDerived-SHoC\" data-matched-text=\"[[[#SerializeDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.4 </bdi>SerializeDerived-SHoC</a>. In all cases, pass <var>proofData</var> and <var>disclosureData</var>\nas parameters."
+        },
+        {
+          "html": "Set the value of the \"proof\" property in <var>revealDocument</var> to <var>newProof</var>."
+        },
+        {
+          "html": "Return <var>revealDocument</var> as the <em>selectively revealed document</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm attempts verification of a selective disclosure\nderived proof. This algorithm is called by a verifier of a selective\ndisclosure protected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. Algorithm inputs include\na JSON-LD document (<var>document</var>); a selective disclosure derived proof\n(<var>proof</var>); and any custom JSON-LD API options, such as a document loader.\nThis algorithm returns a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-9\">verification result</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
+        },
+        {
+          "html": "Initialize the <var>proofData</var> object to the result returned by the approach-specific\n<em>ParseDerived</em> sub-algorithm. For example, for the SIC approach, use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ParseDerived-SIC\" data-matched-text=\"[[[#ParseDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.4 </bdi>ParseDerived-SIC</a>, and for the SHoC approach, use <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ParseDerived-SHoC\" data-matched-text=\"[[[#ParseDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.5 </bdi>ParseDerived-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>labelMap</var> and\n<var>mandatoryIndexes</var>."
+        },
+        {
+          "html": "Initialize the <var>verifyData</var> object to the value returned by calling the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#CreateVerifyData\" data-matched-text=\"[[[#CreateVerifyData]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.4 </bdi>CreateVerifyData</a>, passing the <var>document</var>,\n<var>proofData</var>, and any custom JSON-LD API options, such as a document loader.\nThe <var>verifyData</var> object will contain the following fields: <var>proofHash</var>,\n<var>mandatoryHash</var>, and <var>nonMandatory</var>."
+        },
+        {
+          "html": "Initialize <var>verified</var> to the result of calling the approach-specific\n<em>VerifyDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#VerifyDerived-SIC\" data-matched-text=\"[[[#VerifyDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.5 </bdi>VerifyDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#VerifyDerived-SHoC\" data-matched-text=\"[[[#VerifyDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.6 </bdi>VerifyDerived-SHoC</a>. In all cases, pass <var>proofData</var> and\n<var>verifyData</var> as parameters."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-10\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-8\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-4\">verifiedDocument</a></dt>\n                <dd>\nif <var>verified</var> is <code>true</code>, <var>unsecuredDocument</var>; otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "Required inputs to this algorithm are an <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document\">unsecured data document</a>\n(<var>unsecuredDocument</var>) and transformation options (<var>options</var>). The\ntransformation options <em class=\"rfc2119\">MUST</em> contain a type identifier for the <a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">cryptographic suite</a> (<var>type</var>), a\ncryptosuite identifier (<var>cryptosuite</var>), and a verification method\n(<var>verificationMethod</var>). The transformation options <em class=\"rfc2119\">MUST</em> contain an array of\nmandatory JSON pointers (<var>mandatoryPointers</var>) and <em class=\"rfc2119\">MAY</em> contain additional\noptions, such as a JSON-LD document loader. A <em>transformed data\ndocument</em> is produced as output. Whenever this algorithm encodes\nstrings, it <em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using a locally generated and exportable HMAC\nkey. The HMAC uses the same hash algorithm used in the signature algorithm,\nwhich is detected via the <var>verificationMethod</var> provided to the\nfunction, i.e., SHA-256 for a P-256 curve. Per the recommendations of\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc2104\" title=\"HMAC: Keyed-Hashing for Message Authentication\">RFC2104</a></cite>], the HMAC key <em class=\"rfc2119\">MUST</em> be the same length as the digest size; for SHA-256,\nthis is 256 bits or 32 bytes."
+        },
+        {
+          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createhmacidlabelmapfunction\" data-matched-text=\"[[[#createhmacidlabelmapfunction]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.5 </bdi>createHmacIdLabelMapFunction</a>, passing <var>hmac</var>; otherwise\ninitialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createshuffledidlabelmapfunction\" data-matched-text=\"[[[#createshuffledidlabelmapfunction]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.4 </bdi>createShuffledIdLabelMapFunction</a>, passing <var>hmac</var>;"
+        },
+        {
+          "html": "Initialize <var>groupDefinitions</var> to a map with an entry with a key of the string\n\"mandatory\" and a value of <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "Initialize <var>groups</var> to the result of calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalizeandgroup\" data-matched-text=\"[[[#canonicalizeandgroup]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.19 </bdi>canonicalizeAndGroup</a>, passing <var>labelMapFactoryFunction</var>,\n<var>groupDefinitions</var>, <var>unsecuredDocument</var> as <var>document</var>, and any custom JSON-LD\nAPI options. Note: This step transforms the document into an array of canonical\nN-Quads with pseudorandom blank node identifiers based on <var>hmac</var>, and groups\nthe N-Quad strings according to selections based on JSON pointers."
+        },
+        {
+          "html": "Initialize <var>mandatory</var> to the values in the <var>groups</var>.<var>mandatory</var>.<var>matching</var> map."
+        },
+        {
+          "html": "Initialize <var>nonMandatory</var> to the values in the\n<var>groups</var>.<var>mandatory</var>.<var>nonMatching</var> map."
+        },
+        {
+          "html": "Initialize <var>hmacKey</var> to the result of exporting the HMAC key from <var>hmac</var>."
+        },
+        {
+          "html": "Return an object with <code>mandatoryPointers</code> set to <var>mandatoryPointers</var>,\n<code>mandatory</code> set to <var>mandatory</var>, <code>nonMandatory</code> set to <var>nonMandatory</var>,\nand <code>hmacKey</code> set to <var>hmacKey</var>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>) and <em>canonical proof configuration</em>\n(<var>canonicalProofConfig</var>). A <em>hash data</em> value represented\nas an object is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var> to the result of calling the RDF Dataset Canonicalization\nalgorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on <var>canonicalProofConfig</var> and then cryptographically\nhashing the result using the same hash that is used by the signature algorithm,\ni.e., SHA-256 for a P-256 curve. Note: This step can be performed in parallel;\nit only needs to be completed before this algorithm terminates as the result is\npart of the return value."
+        },
+        {
+          "html": "Initialize <var>mandatoryHash</var> to the result of calling the the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#hashmandatorynquads\" data-matched-text=\"[[[#hashmandatorynquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.20 </bdi>hashMandatoryNQuads</a>, passing\n<var>transformedDocument</var>.<var>mandatory</var>."
+        },
+        {
+          "html": "Initialize <var>hashData</var> as a deep copy of <var>transformedDocument</var> and\nadd <var>proofHash</var> as <code>proofHash</code> and <var>mandatoryHash</var> as <code>mandatoryHash</code> to that\nobject."
+        },
+        {
+          "html": "Return <var>hashData</var> as <em>hash data</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates data to be used to generate a derived proof. The\ninputs include a JSON-LD document (<var>document</var>), parsed base proof data\n(<var>proofData</var>), an array of JSON pointers to use to selectively disclose\nstatements (<var>selectivePointers</var>), and any custom JSON-LD API options,\nsuch as a document loader). A single object, <em>disclosure data</em>, is\nproduced as output, which contains the \"revealDocument\", \"mandatoryIndexes\",\n\"selectiveIndexes\", \"verifierLabelMap\", \"mandatory\", and\n\"nonMandatory\" fields.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>hmac</var> to an HMAC API using <var>proofData</var>.<var>hmacKey</var>. The HMAC uses the same hash\nalgorithm used in the signature algorithm, i.e., SHA-256 for a P-256 curve."
+        },
+        {
+          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createhmacidlabelmapfunction\" data-matched-text=\"[[[#createhmacidlabelmapfunction]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.5 </bdi>createHmacIdLabelMapFunction</a>, passing <var>hmac</var>; otherwise\ninitialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createshuffledidlabelmapfunction\" data-matched-text=\"[[[#createshuffledidlabelmapfunction]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.4 </bdi>createShuffledIdLabelMapFunction</a>, passing <var>hmac</var>."
+        },
+        {
+          "html": "Initialize <var>combinedPointers</var> to the concatenation of <var>mandatoryPointers</var>\nand <var>selectivePointers</var>."
+        },
+        {
+          "html": "Initialize <var>groupDefinitions</var> to a map with the following entries: key of\nthe string <code>\"mandatory\"</code> and value of <var>proofData</var>.<var>mandatoryPointers</var>, key of\nthe string <code>\"selective\"</code> and value of <var>selectivePointers</var>, and key of the string\n <code>\"combined\"</code> and value of <var>combinedPointers</var>."
+        },
+        {
+          "html": "Initialize <var>groups</var> and <var>labelMap</var> to their associated values in the result\nof calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalizeandgroup\" data-matched-text=\"[[[#canonicalizeandgroup]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.19 </bdi>canonicalizeAndGroup</a>, passing <var>document</var>,\n<var>labelMapFactoryFunction</var>, <var>groupDefinitions</var>, and any custom\nJSON-LD API options as parameters. Note: This step transforms the document into\nan array of canonical N-Quad strings with pseudorandom blank node identifiers\nbased on <var>hmac</var>, and groups the N-Quad strings according to selections based on\nJSON pointers."
+        },
+        {
+          "html": "Compute the mandatory indexes. Initialize <var>relativeIndex</var> to zero."
+        },
+        {
+          "html": "Initialize <var>mandatoryIndexes</var> to an empty array."
+        },
+        {
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>combined</var>.<var>matching</var>, convert\nthe absolute index of any <em>mandatory</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>groups</var>.<var>mandatory</var>.<var>matching</var> has <var>absoluteIndex</var> as a key, then append\n<var>relativeIndex</var> to <var>mandatoryIndexes</var>."
+            },
+            {
+              "html": "Increment <var>relativeIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "Compute the selective indexes. Initialize <var>relativeIndex</var> to zero."
+        },
+        {
+          "html": "Initialize <var>selectiveIndexes</var> to an empty array."
+        },
+        {
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>combined</var>.<var>matching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>groups</var>.<var>selective</var>.<var>matching</var> has <var>absoluteIndex</var> as a key, then append\n<var>relativeIndex</var> to <var>selectiveIndexes</var>."
+            },
+            {
+              "html": "Increment <var>relativeIndex</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>revealDocument</var> to the result of the calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectjsonld\" data-matched-text=\"[[[#selectjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.16 </bdi>selectJsonLd</a>, passing <var>document</var>, and <var>combinedPointers</var> as <var>pointers</var>."
+        },
+        {
+          "html": "Run the RDF Dataset Canonicalization Algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on\nthe joined |combinedGroup.deskolemizedNQuads|, passing any custom\noptions, and get the canonical bnode identifier map, <var>canonicalIdMap</var>.\nNote: This map includes the canonical blank node identifiers that a verifier\nwill produce when they canonicalize the reveal document."
+        },
+        {
+          "html": "Initialize <var>verifierLabelMap</var> to an empty map. This map will map\nthe canonical blank node identifiers the verifier will produce when they\ncanonicalize the revealed document to the blank node identifiers that were\noriginally signed in the base proof."
+        },
+        {
+          "html": "For each key (<var>inputLabel</var>) and value (<var>verifierLabel</var>) in <var>canonicalIdMap</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry to <var>verifierLabelMap</var> using <var>verifierLabel</var> as the key and the\nvalue associated with <var>inputLabel</var> as a key in <var>labelMap</var> as the value."
+            }
+          ]
+        },
+        {
+          "html": "Return an object with properties matching <var>revealDocument</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>, <var>verifierLabelMap</var>,\n<var>groups</var>.<var>mandatory</var>.<var>matching</var> for <var>mandatory</var>, and\n<var>groups</var>.<var>mandatory</var>.<var>nonMatching</var> for <var>nonMandatory</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates the additional data needed to perform\nverification of a selective disclosed <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> protected with\na derived proof. The inputs include a JSON-LD\ndocument (<var>document</var>), parsed derived proof data (<var>proofData</var>),\nand any custom JSON-LD API options, such as a document loader. A single\n<em>verify data</em> object value is produced as output containing the following\nfields: \"proofHash\", \"mandatoryHash\", and \"nonMandatory\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let  <var>proofHash</var> be the result of cryptographically hashing the\n<var>canonicalProofConfig</var> value returned by the algorithm of section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#ProofConfigurationAlg\" data-matched-text=\"[[[#ProofConfigurationAlg]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2.4.2 </bdi>Proof Configuration</a>. Using the same hash that is used by the signature\nalgorithm, i.e., SHA-256 for a P-256 curve."
+        },
+        {
+          "html": "Initialize <var>labelMapFactoryFunction</var> to the result of calling the algorithm of\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createlabelmapfunction\" data-matched-text=\"[[[#createlabelmapfunction]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.3 </bdi>createLabelMapFunction</a> with the parameter\n<var>proofData</var>.<var>verifierLabelMap</var>."
+        },
+        {
+          "html": "Initialize <var>nquads</var> to the result of calling the algorithm of section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#labelreplacementcanonicalizejsonld\" data-matched-text=\"[[[#labelreplacementcanonicalizejsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.2 </bdi>labelReplacementCanonicalizeJsonLd</a>, passing <var>document</var>,\n<var>labelMapFactoryFunction</var>, and any custom\nJSON-LD API options. Note: This step transforms the document into an array of\ncanonical N-Quads with pseudorandom blank node identifiers based on <var>labelMap</var>."
+        },
+        {
+          "html": "Initialize <var>mandatory</var> to an empty array."
+        },
+        {
+          "html": "Initialize <var>nonMandatory</var> to an empty array."
+        },
+        {
+          "html": "For each entry (<var>index</var>, <var>nq</var>) in <var>nquads</var>, separate the N-Quads into mandatory\nand non-mandatory categories:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>mandatoryIndexes</var> includes <var>index</var>, add <var>nq</var> to <var>mandatory</var>."
+            },
+            {
+              "html": "Otherwise, add <var>nq</var> to <var>nonMandatory</var>."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>mandatoryHash</var> to the result of calling the function\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#hashmandatorynquads\" data-matched-text=\"[[[#hashmandatorynquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.20 </bdi>hashMandatoryNQuads</a>, passing <var>mandatory</var>."
+        },
+        {
+          "html": "Return an object with properties matching <var>proofHash</var>, <var>nonMandatory</var>, and\n<var>mandatoryHash</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to create a serialized base proof\nin the signed individual claims (SIC) approach.\nRequired inputs are\ncryptographic hash data (<var>hashData</var>) and\n<em>proof options</em> (<var>options</var>). The\n<em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MAY</em> contain a cryptosuite\nidentifier (<var>cryptosuite</var>). A single <em>digital proof</em> value\nrepresented as series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>nonMandatory</var>,\nand <var>hmacKey</var> to the values associated with their property names in\n<var>hashData</var>."
+        },
+        {
+          "html": "Initialize <var>proofScopedKeyPair</var> to a locally generated key pair corresponding to\nthe signature algorithm use by the <var>crytosuite</var>.\nNote: This key pair is scoped to the specific proof; it is not used for anything\nelse and the private key will be destroyed when this algorithm terminates."
+        },
+        {
+          "html": "Initialize <var>signatures</var> to an array where each element holds the result of\ndigitally signing the UTF-8 representation of each N-Quad string in\n<var>nonMandatory</var>, in order. The digital signature algorithm is the same as that\nfor the <var>cryptosuite</var> and uses the private key from\n<var>proofScopedKeyPair</var>. Note: This step generates individual signatures for each\nstatement (claim) that can be selectively disclosed using a local, proof-scoped\nkey pair that binds them together; this key pair will be bound to the proof by a\nsignature over its public key using the private key associated with the base\nproof verification method."
+        },
+        {
+          "html": "Initialize <var>publicKeyProofScoped</var> to the multikey expression of the public key exported\nfrom <var>proofScopedKeyPair</var>."
+        },
+        {
+          "html": "Initialize <var>toSign</var> to the concatenation of <var>proofHash</var>, <var>publicKeyProofScoped</var>, and\n<var>mandatoryHash</var>, in that order."
+        },
+        {
+          "html": "Initialize <var>baseSignature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
+        },
+        {
+          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize a byte array, <var>proofBytes</var>, so that starts with the legacay\nECDSA-SD base proof header bytes 0xd9, 0x5d, and 0x00. Otherwise initialize\n<var>proofValue</var> with the general SIC header bytes TBD."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>hmacKey</var>, <var>signatures</var>, and <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofBytes</var>."
+        },
+        {
+          "html": "Return <var>proofBytes</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of a legacy <code>ecdsa-sd-2023</code> selective\ndisclosure base proof value or a general signed individual claim (SIC) approach\nselective disclosure base proof. The required inputs are a proof value\n(<var>proofValue</var>). A single object <em>parsed base proof</em>, containing\nfive elements, using the names <code>baseSignature</code>, <code>publicKeyProofScoped</code>, <code>hmacKey</code>,\n<code>signatures</code>, and <code>mandatoryPointers</code>, is produced  as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is\na multibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the ECDSA-SD base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x00</code>, or the general SIC header bytes TBD,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte base proof header. Confirm that the result\nis an array of five elements."
+        },
+        {
+          "html": "Return an object with properties set to the five elements, using the names\n<code>baseSignature</code>, <code>publicKeyProofScoped</code>, <code>hmacKey</code>, <code>signatures</code>, and <code>mandatoryPointers</code>,\nrespectively."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm serializes a derived proof value. The required input is\na <var>dislosureData</var> object containing the following fields:\nbase signature (<var>baseSignature</var>), public key\n(<var>publicKey</var>), an array of signatures (<var>signatures</var>), a label\nmap (<var>labelMap</var>), and an array of mandatory indexes\n(<var>mandatoryIndexes</var>). A single <em>derived proof</em> value, serialized\nas a byte string, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>compressedLabelMap</var> to the result of calling the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#compresslabelmap\" data-matched-text=\"[[[#compresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.6 </bdi>compressLabelMap</a>, passing <var>labelMap</var> as the parameter."
+        },
+        {
+          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize a byte array, <var>proofValue</var>, that starts with the ECDSA-SD disclosure\nproof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>. Otherwise initialize a byte\narray, <var>proofValue</var>, that starts with the general SIC derived proof header bytes\nTBD."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>signatures</var>, <var>compressedLabelMap</var>, and\n<var>mandatoryIndexes</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Return the <em>derived proof</em> as a string with the\nbase64url-no-pad-encoding of <var>proofValue</var> as described in the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nMultibase section</a> of <cite><a data-matched-text=\"[[[CID]]]\" href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite>. That is, return a string\nstarting with \"<code>u</code>\" and ending with the base64url-no-pad-encoded value of\n<var>proofValue</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of the derived proof value.\nThe required input is a derived proof value (<var>proofValue</var>).\nA single <em>derived proof value</em> value object is produced as output, which\ncontains a set to five elements, using the names \"baseSignature\", \"publicKeyProofScoped\",\n\"signatures\", \"labelMap\", and \"mandatoryIndexes\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is a\nmultibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the ECDSA-SD disclosure proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>, or the general SIC approach derived\nproof header bytes TBD, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte derived proof header. If the result is not\nan array of five elements an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Replace the fourth element in <var>components</var> using the result of calling the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#decompresslabelmap\" data-matched-text=\"[[[#decompresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.7 </bdi>decompressLabelMap</a>, passing the existing\nfourth element of <var>components</var> as <var>compressedLabelMap</var> and <var>cryptosuite</var>."
+        },
+        {
+          "html": "Return <em>derived proof value</em> as an object with properties set to the five\nelements, using the names \"baseSignature\", \"publicKey\", \"signatures\",\n\"labelMap\", and \"mandatoryIndexes\", respectively."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm attempts verification of an <code>ecdsa-sd-2023</code> derived\nproof or a general SIC approach derived proof. This algorithm is called by a\nverifier of an ECDSA-SD-protected or SIC approach protected\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. The inputs include a JSON-LD document\n(<var>document</var>), derived proof data (<var>proofData</var>), verification data\n(<var>verifyData</var>), and any custom JSON-LD API options, such as a document loader.\nThis algorithm returns a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-11\">verification result</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
+        },
+        {
+          "html": "Let <var>publicKeyBytes</var> be the result of retrieving the\npublic key bytes associated with the\n<var>options</var>.<var>verificationMethod</var> value as described in the\n<cite><a data-matched-text=\"[[[CID]]]\" href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite> specification,\n<a href=\"https://www.w3.org/TR/cid-1.0/#retrieve-verification-method\">\nSection: Retrieve Verification Method</a>."
+        },
+        {
+          "html": "Initialize <var>baseSignature</var>,  <var>publicKeyProofScoped</var>, and <var>signatures</var> to the values\nassociated with their property names in the <var>proofData</var> object and\n<var>proofHash</var>, <var>mandatoryHash</var>, and <var>nonMandatory</var> to the values associated with\ntheir property names in the <var>verifyData</var> object."
+        },
+        {
+          "html": "If the length of <var>signatures</var> does not match the length of <var>nonMandatory</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the signature count does not match\nthe non-mandatory message count."
+        },
+        {
+          "html": "Initialize <var>toVerify</var> to the concatenation of <var>proofHash</var>, <var>publicKeyProofScoped</var>, and\n<var>mandatoryHash</var>, in that order."
+        },
+        {
+          "html": "Initialize <var>verified</var> to true."
+        },
+        {
+          "html": "Initialize <var>verificationCheck</var> be the result of applying the verification\nalgorithm of the signature algorithm appropriate to the <var>cryptosuite</var>,\nwith <var>toVerify</var> as the data to be verified against the <var>baseSignature</var> using\nthe public key specified by <var>publicKeyBytes</var>. If <var>verificationCheck</var> is\n<code>false</code>, set <var>verified</var> to false."
+        },
+        {
+          "html": "For every entry (<var>index</var>, <var>signature</var>) in <var>signatures</var>, verify every signature\nfor every selectively disclosed (non-mandatory) statement:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize <var>verificationCheck</var> to the result of applying the verification\nalgorithm for the signature algorithm of the  <var>cryptosuite</var>, with\nthe UTF-8 representation of the value at <var>index</var> of <var>nonMandatory</var> as the data\nto be verified against <var>signature</var> using the public key specified by\n<var>publicKeyProofScoped</var>."
+            },
+            {
+              "html": "If <var>verificationCheck</var> is <code>false</code>, set <var>verified</var> to false."
+            }
+          ]
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-12\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-9\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-5\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var>verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>) and <var>cryptosuite</var>. A <em>salted hash data</em> value\nrepresented as an object is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>salts</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> create a cryptographically secure random number of\nbyte length half the size of the hash length, e.g., for security category 1 or 2\nusing SHA-256 the length of each salt would be 16 bytes."
+        },
+        {
+          "html": "Initialize <var>saltedHashes</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> compute the appropriate hash (SHA-256 for security\ncategory 1 or 2 signature algorithms) over the concatenation of each <var>salt</var> and\nits corresponding <var>nonMandatory</var> item. Add this hash value to the <var>saltedHashes</var>\narray."
+        },
+        {
+          "html": "Add <var>salts</var> as <code>salts</code> and <var>saltedHashes</var> as  <code>saltedHashes</code> to  the <var>saltedHashData</var>\nobject."
+        },
+        {
+          "html": "Return <var>saltedHashData</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to serialize SHoC approach base proof;\ncalled by an\nissuer of an Quantum-Safe-SD-protected Verifiable Credential.\nThe base proof is to be\ngiven only to the holder, who is responsible for generating a derived proof from\nit, exposing only selectively disclosed details in the proof to a verifier. This\nalgorithm is designed to be used in conjunction with the algorithms defined\nin the Data Integrity [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-vc-data-integrity\" title=\"Verifiable Credential Data Integrity 1.0\">VC-DATA-INTEGRITY</a></cite>] specification,\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#algorithms\">\nSection 4: Algorithms</a>. Required inputs are\ncryptographic hash data (<var>hashData</var>) and\n<em>proof options</em> (<var>options</var>). The\n<em>proof options</em> <em class=\"rfc2119\">MUST</em> contain a type identifier for the\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite\">\ncryptographic suite</a> (<var>type</var>) and <em class=\"rfc2119\">MAY</em> contain a cryptosuite\nidentifier (<var>cryptosuite</var>). A single <em>digital proof</em> value\nrepresented as series of bytes is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>salts</var>,\n<var>saltedHashes</var>,\nand <var>hmacKey</var> to the values associated with their property names\n<var>hashData</var>."
+        },
+        {
+          "html": "Initialize <var>toSign</var> the hash of the concatenation of <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>,\nand <var>saltedHashes</var> where the order of the concatenation <em class=\"rfc2119\">MUST</em> be followed. The\ncryptographic hash algorithm is that specified for signature algorithm in\nthe <var>cryptosuite</var>."
+        },
+        {
+          "html": "Initialize <var>signature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
+        },
+        {
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nbase proof header bytes 0xd9, 0x5d, and 0x10."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>signature</var>, <var>hmacKey</var>, <var>salts</var>, <var>saltedHashes</var>, and <var>mandatoryPointers</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Return <var>proofValue</var> as <em>proof bytes</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of a SHoC approach selective\ndisclosure base proof value. The required inputs are a proof value\n(<var>proofValue</var>). A single object <em>proof data</em>, containing\nfive elements, using the names <code>signature</code>, <code>hmacKey</code>, <code>salts</code>\n<code>saltedHashes</code>, and <code>mandatoryPointers</code>, is produced  as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is\na multibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x10</code>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte SHoC approach base proof header. Confirm that\nthe result is an array of five elements."
+        },
+        {
+          "html": "Return an object with properties set to the five elements, using the names\n<code>signature</code>, <code>hmacKey</code>, <code>salts</code>, <code>saltedHashes</code>, and <code>mandatoryPointers</code>,\nrespectively."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm serializes a SHoC approach derived proof value.\nThe required inputs are a base signature (<var>signature</var>), an array of salts\n(<var>salts</var>), an array of salted  hashes (<var>saltedHashes</var>), a label map\n(<var>labelMap</var>), an array of mandatory indexes (<var>mandatoryIndexes</var>), and an array\nof selective indexes (<var>selectiveIndexes</var>). A single <em>derived proof</em>\nvalue, serialized as a UTF-8 string, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>compressedLabelMap</var> to the result of calling the algorithm in\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#compresslabelmap\" data-matched-text=\"[[[#compresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.6 </bdi>compressLabelMap</a>, passing <var>labelMap</var> as the parameter."
+        },
+        {
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nderived proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>salts</var>, <var>saltedHashes</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>."
+        },
+        {
+          "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
+        },
+        {
+          "html": "Return the <em>derived proof</em> as a string with the\nbase64url-no-pad-encoding of <var>proofValue</var> as described in the\n<a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">\nMultibase section</a> of <cite><a data-matched-text=\"[[[CID]]]\" href=\"https://www.w3.org/TR/cid-1.0/\">Controlled Identifiers v1.0</a></cite>. That is, return a string\nstarting with \"<code>u</code>\" and ending with the base64url-no-pad-encoded value of\n<var>proofValue</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm parses the components of a SHoC approach derived proof\nvalue. The required input is a derived proof value (<var>proofValue</var>).\nA single <em>proof data</em> object is produced as output, which\ncontains a set to six elements, using the names \"signature\", \"salts\",\n\"saltedHashes\", \"labelMap\", \"mandatoryIndexes\", and \"selectiveIndexes\".",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If the <var>proofValue</var> string does not start with <code>u</code>, indicating that it is a\nmultibase-base64url-no-pad-encoded value, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
+        },
+        {
+          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach derived proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte SHoC approach derived proof header. If the\nresult is not an array of the following six elements —\na byte array of length corresponding to the signature  size;\nan array of byte arrays, each of length appropriate to the <em>salt size</em>;\nan array of byte arrays, each of length corresponding to the hash size;\na map of integers to byte arrays, each of length 32;\nan array of integers; and another array of integers — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Replace the fourth element in <var>components</var> using the result of calling the\nalgorithm in <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#decompresslabelmap\" data-matched-text=\"[[[#decompresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.7 </bdi>decompressLabelMap</a>, passing the existing\nfourth element of <var>components</var> as <var>compressedLabelMap</var>."
+        },
+        {
+          "html": "Return <em>proof data</em> as an object with properties set to the five\nelements, using the names \"signature\", \"salts\", \"saltedHashes\",\n\"labelMap\", \"mandatoryIndexes\",  and \"selectiveIndexes\" respectively."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm attempts verification of an SHoC approach derived\nproof. This algorithm is called by a verifier of an SHoC approach protected\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>. The inputs include a JSON-LD document\n(<var>document</var>), derived proof data (<var>proofData</var>), verification data\n(<var>verifyData</var>), and any\ncustom JSON-LD API options, such as a document loader. This algorithm returns\na <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-13\">verification result</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
+        },
+        {
+          "html": "Initialize <var>signature</var>,  <var>salts</var>, <var>saltedHashes</var>, and <var>selectiveIndexes</var> to the\nvalues associated with their property names in the <var>proofData</var> parameter and\n<var>proofHash</var>, <var>nonMandatory</var>, and <var>mandatoryHash</var> to the values  associated  with\ntheir property names in the <var>verifyData</var> parameter."
+        },
+        {
+          "html": "If the length of <var>salts</var> does not match the length of <var>saltedHashes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match the salted hashes count."
+        },
+        {
+          "html": "The values of the elements of the <var>selectiveIndexes</var> array must be between 0 and\nthe length of the <var>salts</var> array minus one. If not,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the selective indexes are out of bounds."
+        },
+        {
+          "html": "Initialize <var>toVerify</var> to the byte  concatenation of the values: <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>, and <var>saltedHashes</var> in that order with the array values\nthemselves concatenated together."
+        },
+        {
+          "html": "Initialize <var>verified</var> to true."
+        },
+        {
+          "html": "Initialize <var>verificationCheck</var> be the result of applying the verification\nalgorithm of the appropriate signature algorithms as indicated by\nthe \"cryptosuite\" property,\nwith <var>toVerify</var> as the data to be verified against the <var>signature</var>.\nIf <var>verificationCheck</var> is\n<code>false</code>, set <var>verified</var> to false."
+        },
+        {
+          "html": "For every entry (<var>nq</var>, <var>index</var>) in <var>nonMandatory</var>, verify the salted hash\nfor every selectively disclosed (non-mandatory) statement:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <var>computedHash</var> be the  hash of the concatenation of\n<var>salts</var>[<var>selectiveIndexes</var>[index]] and <var>nq</var>."
+            },
+            {
+              "html": "Initialize <var>verificationCheck</var> to the result of comparing the <var>computedHash</var>\nwith the value of  <var>saltedHashes</var>[<var>selectedIndexes</var>[index]]."
+            },
+            {
+              "html": "If <var>verificationCheck</var> is <code>false</code>, set <var>verified</var> to false."
+            }
+          ]
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-14\">verification result</a> with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-10\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-6\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var>verified</var> is <code>true</code>, otherwise <a href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm canonicalizes an array of N-Quad [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-n-quads\" title=\"RDF 1.1 N-Quads\">N-QUADS</a></cite>] strings and replaces\nany blank node identifiers in the canonicalized result using a label map\nfactory function, <var>labelMapFactoryFunction</var>. The required inputs are\nan array of N-Quad strings (<var>nquads</var>), and a label map factory function\n(<var>labelMapFactoryFunction</var>). Any custom options can also be passed. An\nN-Quads representation of the <em>canonicalNQuads</em> as an array of N-Quad\nstrings, with the replaced blank node labels, and a map from the old blank node\nIDs to the new blank node IDs, <em>labelMap</em>, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Run the RDF Dataset Canonicalization Algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rdf-canon\" title=\"RDF Dataset Canonicalization\">RDF-CANON</a></cite>] on\nthe joined <var>nquads</var>, passing any custom options, and as output,\nget the canonicalized dataset, which includes a canonical bnode identifier\nmap, <var>canonicalIdMap</var>."
+        },
+        {
+          "html": "Pass <var>canonicalIdMap</var> to <var>labelMapFactoryFunction</var> to produce\na new bnode identifier map, <em>labelMap</em>."
+        },
+        {
+          "html": "Use the canonicalized dataset and <em>labelMap</em> to produce the canonical\nN-Quads representation as an array of N-Quad strings, <em>canonicalNQuads</em>."
+        },
+        {
+          "html": "Return an object containing <em>labelMap</em> and <em>canonicalNQuads</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm canonicalizes a JSON-LD document and replaces any blank\nnode identifiers in the canonicalized result using a label map factory\nfunction, <var>labelMapFactoryFunction</var>. The required inputs are a JSON-LD\ndocument (<var>document</var>) and a label map factory function\n(<var>labelMapFactoryFunction</var>). Additional custom options (such as\na document loader) can also be passed. An N-Quads representation of the\n<em>canonicalNQuads</em> as an array of N-Quad strings, with the replaced\nblank node labels, and a map from the old blank node IDs to the new blank node\nIDs, <em>labelMap</em>, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Deserialize the JSON-LD document to RDF, <var>rdf</var>, using the <a href=\"https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm\">\nDeserialize JSON-LD to RDF algorithm</a>, passing any custom options (such\nas a document loader)."
+        },
+        {
+          "html": "Serialize <var>rdf</var> to an array of N-Quad strings, <var>nquads</var>."
+        },
+        {
+          "html": "Return the result of calling the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#labelreplacementcanonicalizenquads\" data-matched-text=\"[[[#labelreplacementcanonicalizenquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.1 </bdi>labelReplacementCanonicalizeNQuads</a>, passing <var>nquads</var>,\n<var>labelMapFactoryFunction</var>, and any custom options."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a label map factory function that uses an\ninput label map to replace canonical blank node identifiers with another\nvalue. The required input is a label map, <var>labelMap</var>. A\nfunction, <em>labelMapFactoryFunction</em>, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a function, <var>labelMapFactoryFunction</var>, with one required input\n(a canonical node identifier map, <var>canonicalIdMap</var>), that will\nreturn a blank node identifier map, <em>bnodeIdMap</em>, as output. Set the\nfunction's implementation to:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Generate a new empty bnode identifier map, <em>bnodeIdMap</em>."
+            },
+            {
+              "html": "For each map entry, <em>entry</em>, in <var>canonicalIdMap</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Use the canonical identifier from the value in <em>entry</em> as a key\nin <var>labelMap</var> to get the new label, <em>newLabel</em>."
+                },
+                {
+                  "html": "Add a new entry, <var>newEntry</var>, to <em>bnodeIdMap</em> using the key\nfrom <em>entry</em> and <em>newLabel</em> as the value."
+                }
+              ]
+            },
+            {
+              "html": "Return <em>bnodeIdMap</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>labelMapFactoryFunction</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a label map factory function that uses an\nHMAC to shuffle canonical blank node identifiers. The required input is an HMAC\n(previously initialized with a secret key), <var>HMAC</var>. A function,\n<em>labelMapFactoryFunction</em>, is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a function, <var>labelMapFactoryFunction</var>, with one required input\n(a canonical node identifier map, <var>canonicalIdMap</var>), that will\nreturn a blank node identifier map, <em>bnodeIdMap</em>, as output. Set the\nfunction's implementation to:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Generate a new empty bnode identifier map, <em>bnodeIdMap</em>."
+            },
+            {
+              "html": "For each map entry, <em>entry</em>, in <var>canonicalIdMap</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Perform an HMAC operation on the canonical identifier from the value in <em>entry</em> to get an HMAC\ndigest, <em>digest</em>."
+                },
+                {
+                  "html": "Generate a new string value, <em>b64urlDigest</em>, and initialize it to \"u\"\nfollowed by appending a base64url-no-pad encoded version of the <em>digest</em>\nvalue."
+                },
+                {
+                  "html": "Add a new entry, <var>newEntry</var>, to <em>bnodeIdMap</em> using the key\nfrom <em>entry</em> and <em>b64urlDigest</em> as the value."
+                }
+              ]
+            },
+            {
+              "html": "Derive the shuffled mapping from the <code>bnodeIdMap</code> as follows:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Set <code>hmacIds</code> to be the sorted array of values from the <code>bnodeIdMap</code>, and set\n<code>bnodeKeys</code> to be the ordered array of keys from the <code>bnodeIdMap</code>."
+                },
+                {
+                  "html": "For each key in <code>bnodeKeys</code>, replace the <code>bnodeIdMap</code> value for that key with the\nindex position of the value in the <code>hmacIds</code> array prefixed by \"b\", i.e.,\n<code>bnodeIdMap.set(bkey, 'b' + hmacIds.indexOf(bnodeIdMap.get(bkey)))</code>."
+                }
+              ]
+            },
+            {
+              "html": "Return <em>bnodeIdMap</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>labelMapFactoryFunction</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates a label map factory function that uses an\nHMAC to replace canonical blank node identifiers with their encoded HMAC\ndigests. The required input is an HMAC (previously initialized with a\nsecret key), <var>HMAC</var>. A function, <em>labelMapFactoryFunction</em>, is\nproduced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a function, <var>labelMapFactoryFunction</var>, with one required input\n(a canonical node identifier map, <var>canonicalIdMap</var>), that will\nreturn a blank node identifier map, <em>bnodeIdMap</em>, as output. Set the\nfunction's implementation to:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Generate a new empty bnode identifier map, <em>bnodeIdMap</em>."
+            },
+            {
+              "html": "For each map entry, <em>entry</em>, in <var>canonicalIdMap</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "HMAC the canonical identifier from the value in <em>entry</em> to get an HMAC\ndigest, <em>digest</em>."
+                },
+                {
+                  "html": "Generate a new string value, <em>b64urlDigest</em>, and initialize it to \"u\"\nfollowed by appending a base64url-no-pad encoded version of the <em>digest</em>\nvalue."
+                },
+                {
+                  "html": "Add a new entry, <var>newEntry</var>, to <em>bnodeIdMap</em> using the key\nfrom <em>entry</em> and <em>b64urlDigest</em> as the value."
+                }
+              ]
+            },
+            {
+              "html": "Return <em>bnodeIdMap</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>labelMapFactoryFunction</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm compresses a label map. The required inputs are\nlabel map (<var>labelMap</var>) and the <var>cryptosuite</var>. The output is a\n<em>compressed label map</em>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>map</var> to an empty map."
+        },
+        {
+          "html": "For each entry (<var>k</var>, <var>v</var>) in <var>labelMap</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "if <var>cryptosuite</var> is  set to  <code>ecdsa-sd-2023</code> then\nadd an entry to <var>map</var> with a key that is a base-10 integer parsed from the\ncharacters following the \"c14n\" prefix in <var>k</var> and a value that is a byte array\nresulting from base64url-no-pad-decoding the characters after the \"u\" prefix in\n<var>v</var>. Otherwise add an entry to <code>map</code>, with a key that is a base-10 integer\nparsed from the\ncharacters following the \"c14n\" prefix in <var>k</var>, and a value that is a base-10\ninteger parsed from the characters following the \"b\" prefix in <code>v</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>map</var> as <em>compressed label map</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm decompresses a label map. The required inputs are a\ncompressed label map (<var>compressedLabelMap</var>) and the <var>cryptosuite</var>. The output\nis a <em>decompressed label map</em>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>map</var> to an empty map."
+        },
+        {
+          "html": "For each entry (<var>k</var>, <var>v</var>) in <var>compressedLabelMap</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\nadd an entry to <var>map</var> with a key that adds the prefix \"c14n\" to <var>k</var> and a value\nthat adds a prefix of \"u\" to the base64url-no-pad-encoded value for <var>v</var>;\nOtherwise add an entry to <code>map</code>, with a key that adds the prefix \"c14n\" to <code>k</code>, and a value\nthat adds a prefix of \"b\" to <code>v</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>map</var> as <em>decompressed label map</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm replaces all blank node identifiers in an array of\nN-Quad strings with custom scheme URNs. The required inputs are an array of\nN-Quad strings (<var>inputNQuads</var>) and a URN scheme (<var>urnScheme</var>).\nAn array of N-Quad strings, <em>skolemizedNQuads</em>, is produced as output.\nThis operation is intended to be reversible through the use of the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#deskolemizenquads\" data-matched-text=\"[[[#deskolemizenquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.9 </bdi>deskolemizeNQuads</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a new array of N-Quad strings, <em>skolemizedNQuads</em>."
+        },
+        {
+          "html": "For each N-Quad string, <em>s1</em>, in <var>inputNQuads</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Create a new string, <em>s2</em>, that is a copy of <em>s1</em> replacing any\noccurrence of a blank node identifier with a URN (\"urn:\"), plus the input\ncustom scheme (<var>urnScheme</var>), plus a colon (\":\"), and\nthe value of the blank node identifier. For example, a regular expression\nof a similar form to the following would achieve the desired result:\n<code>s1.replace(/(_:([^\\s]+))/g, '&lt;urn:custom-scheme:$2&gt;')</code>."
+            },
+            {
+              "html": "Append <em>s2</em> to <em>skolemizedNQuads</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <em>skolemizedNQuads</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm replaces all custom scheme URNs in an array of\nN-Quad statements with a blank node identifier. The required inputs are an array\nof N-Quad strings (<var>inputNQuads</var>) and a URN scheme\n(<var>urnScheme</var>). An array of N-Quad strings,\n<em>deskolemizedNquads</em>, is produced as output. This operation is intended\nto reverse use of the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#deskolemizenquads\" data-matched-text=\"[[[#deskolemizenquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.9 </bdi>deskolemizeNQuads</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a new array of N-Quad strings, <em>deskolemizedNQuads</em>."
+        },
+        {
+          "html": "For each N-Quad string, <em>s1</em>, in <var>inputNQuads</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Create a new string, <em>s2</em>, that is a copy of <em>s1</em> replacing any\noccurrence of a URN (\"urn:\"), plus the input\ncustom scheme (<var>urnScheme</var>), plus a colon (\":\"), and\nthe value of the blank node identifier with a blank node prefix (\"_:\"), plus\nthe value of the blank node identifier. For example, a regular expression\nof a similar form to the following would achieve the desired result:\n<code>s1.replace(/(&lt;urn:custom-scheme:([^&gt;]+)&gt;)/g, '_:$2').</code>."
+            },
+            {
+              "html": "Append <em>s2</em> to <em>deskolemizedNQuads</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <em>deskolemizedNQuads</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm replaces all blank node identifiers in an expanded\nJSON-LD document with custom-scheme URNs, including assigning such URNs to\nblank nodes that are unlabeled. The required inputs are an expanded JSON-LD document\n(<var>expanded</var>), a custom URN scheme\n(<var>urnScheme</var>), a UUID string or other comparably random string\n(<var>randomString</var>), and reference to a shared integer (<var>count</var>).\nAny additional custom options (such as a document loader) can also be passed.\nIt produces the expanded form of the skolemized JSON-LD document\n(<var>skolemizedExpandedDocument</var> as output. The skolemization used in this\noperation is intended to be reversible through the use of the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#todeskolemizednquads\" data-matched-text=\"[[[#todeskolemizednquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.12 </bdi>toDeskolemizedNQuads</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>skolemizedExpandedDocument</var> to an empty array."
+        },
+        {
+          "html": "For each <var>element</var> in <var>expanded</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If either <var>element</var> is not an object or it contains the key\n<em>@value</em>, append a copy of <var>element</var> to\n<var>skolemizedExpandedDocument</var> and continue to the next\n<var>element</var>."
+            },
+            {
+              "html": "Otherwise, initialize <var>skolemizedNode</var> to an object, and for\neach <em>property</em> and <em>value</em> in <var>element</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "If <em>value</em> is an array, set the value of <em>property</em> in\n<var>skolemizedNode</var> to the result of calling this algorithm\nrecursively passing <em>value</em> for <var>expanded</var> and keeping the\nother parameters the same."
+                },
+                {
+                  "html": "Otherwise, set the value of <em>property</em> in <var>skolemizedNode</var> to\nthe first element in the array result of calling this algorithm recursively\npassing an array with <em>value</em> as its only element for <var>expanded</var>\nand keeping the other parameters the same."
+                }
+              ]
+            },
+            {
+              "html": "If <var>skolemizedNode</var> has no <em>@id</em> property, set the value of\nthe <em>@id</em> property in <var>skolemizedNode</var> to the concatenation\nof \"urn:\", <var>urnScheme</var>, \"_\",  <var>randomString</var>, \"_\" and the value of\n<var>count</var>, incrementing the value of <var>count</var> afterwards."
+            },
+            {
+              "html": "Otherwise, if the value of the <em>@id</em> property in\n<var>skolemizedNode</var> starts with \"_:\", preserve the existing blank node\nidentifier when skolemizing by setting the value of the <em>@id</em> property\nin <var>skolemizedNode</var> to the concatenation of \"urn:\",\n<var>urnScheme</var>, and the blank node identifier (i.e., the existing\nvalue of the <em>@id</em> property minus the \"_:\" prefix; e.g., if the\nexisting value of the <em>@id</em> property is <code>_:b0</code>, the blank node\nidentifier is <code>b0</code>)."
+            },
+            {
+              "html": "Append <var>skolemizedNode</var> to <var>skolemizedExpandedDocument</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>skolemizedExpandedDocument</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm replaces all blank node identifiers in a compact\nJSON-LD document with custom-scheme URNs. The required inputs are a compact\nJSON-LD document (<var>document</var>) and a custom URN scheme\n(<var>urnScheme</var>) which defaults to \"custom-scheme:\". The <var>document</var> is assumed to\nuse only one\n<em>@context</em> property at the top level of the document. Any additional\ncustom options (such as a document loader) can also be passed. It produces both\nan expanded form of the skolemized JSON-LD document\n(<var>skolemizedExpandedDocument</var> and a compact form of the skolemized\nJSON-LD document (<var>skolemizedCompactDocument</var>) as output. The\nskolemization used in this operation is intended to be reversible through the\nuse of the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#todeskolemizednquads\" data-matched-text=\"[[[#todeskolemizednquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.12 </bdi>toDeskolemizedNQuads</a> which uses the\nsame custom URN scheme (<var>urnScheme</var>).",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>expanded</var> to the result of the JSON-LD\n<a href=\"https://www.w3.org/TR/json-ld11-api/#expansion-algorithm\">\nExpansion Algorithm</a>, passing <var>document</var> and any custom\noptions."
+        },
+        {
+          "html": "Initialize <var>skolemizedExpandedDocument</var> to the result of the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizeexpandedjsonld\" data-matched-text=\"[[[#skolemizeexpandedjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.10 </bdi>skolemizeExpandedJsonLd</a>."
+        },
+        {
+          "html": "Initialize <var>skolemizedCompactDocument</var> to the result of the JSON-LD\n<a href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nCompaction Algorithm</a>, passing <var>skolemizedExpandedDocument</var> and any\ncustom options."
+        },
+        {
+          "html": "Return an object with both <var>skolemizedExpandedDocument</var> and\n<var>skolemizedCompactDocument</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm converts a skolemized JSON-LD document, such as one\ncreated using the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizecompactjsonld\" data-matched-text=\"[[[#skolemizecompactjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.11 </bdi>skolemizeCompactJsonLd</a>,\nto an array of deskolemized N-Quads. The required input is a JSON-LD document,\n<em>skolemizedDocument</em>. Additional custom options (such as a document\nloader) can be passed. An array of deskolemized N-Quad strings\n(<var>deskolemizedNQuads</var>) is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>skolemizedDataset</var> to the result of the\n<a href=\"https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm\">\nDeserialize JSON-LD to RDF</a> algorithm, passing any custom options (such as a\ndocument loader), to convert <var>skolemizedDocument</var> from JSON-LD to RDF in N-Quads\nformat."
+        },
+        {
+          "html": "Split <var>skolemizedDataset</var> into an array of individual N-Quads,\n<var>skolemizedNQuads</var>."
+        },
+        {
+          "html": "Set <var>deskolemizedNQuads</var> to the result of the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#deskolemizenquads\" data-matched-text=\"[[[#deskolemizenquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.9 </bdi>deskolemizeNQuads</a> with <var>skolemizedNQuads</var> and \"custom-scheme:\"\nas parameters. Implementations <em class=\"rfc2119\">MAY</em> choose a different <em>urnScheme</em>\nthat is different than \"custom-scheme:\" so long as the same scheme name was\nused to generate <em>skolemizedDocument</em>."
+        },
+        {
+          "html": "Return <var>deskolemizedNQuads</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm converts a JSON Pointer [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#bib-rfc6901\" title=\"JavaScript Object Notation (JSON) Pointer\">RFC6901</a></cite>] to an array of paths\ninto a JSON tree. The required input is a JSON Pointer string\n(<var>pointer</var>). An array of paths (<em>paths</em>) is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>paths</var> to an empty array."
+        },
+        {
+          "html": "Initialize <var>splitPath</var> to an array by splitting <var>pointer</var> on the\n\"/\" character and skipping the first, empty, split element. In Javascript\nnotation, this step is equivalent to the following code:\n<code>pointer.split('/').slice(1)</code>"
+        },
+        {
+          "html": "For each <var>path</var> in <var>splitPath</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>path</var> does not include <code>~</code>, then add <var>path</var> to <var>paths</var>, converting it to\nan integer if it parses as one, leaving it as a string if it does not."
+            },
+            {
+              "html": "Otherwise, unescape any JSON pointer escape sequences in <var>path</var> and add the\nresult to <var>paths</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>paths</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm creates an initial selection (a fragment of a JSON-LD\ndocument) based on a JSON-LD object. This is a helper function used within the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectjsonld\" data-matched-text=\"[[[#selectjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.16 </bdi>selectJsonLd</a>. The required input is a\nJSON-LD object (<var>source</var>). A JSON-LD document fragment object\n(<var>selection</var>) is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>selection</var> to an empty object."
+        },
+        {
+          "html": "If <var>source</var> has an <code>id</code> that is not a blank node identifier, set\n<var>selection</var>.<var>id</var> to its value. Note: All non-blank node identifiers in the path of\nany JSON Pointer <em class=\"rfc2119\">MUST</em> be included in the selection, this includes any root\ndocument identifier."
+        },
+        {
+          "html": "If <var>source</var>.<var>type</var> is set, set <var>selection</var>.<var>type</var> to its value.\nNote: The selection <em class=\"rfc2119\">MUST</em> include all <code>type</code>s in the path of any JSON Pointer,\nincluding any root document <code>type</code>."
+        },
+        {
+          "html": "Return <var>selection</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm selects a portion of a compact JSON-LD document using\npaths parsed from a parsed JSON Pointer. This is a helper function used within\nthe algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectjsonld\" data-matched-text=\"[[[#selectjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.16 </bdi>selectJsonLd</a>. The required inputs are an\narray of paths (<var>paths</var>) parsed from a JSON Pointer, a compact JSON-LD\ndocument (<var>document</var>), a selection document\n(<var>selectionDocument</var>) to be populated, and an array of arrays\n(<var>arrays</var>) for tracking selected arrays. This algorithm produces\nno output; instead it populates the given <var>selectionDocument</var> with\nany values selected via <var>paths</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>parentValue</var> to <var>document</var>."
+        },
+        {
+          "html": "Initialize <var>value</var> to <var>parentValue</var>."
+        },
+        {
+          "html": "Initialize <var>selectedParent</var> to <var>selectionDocument</var>."
+        },
+        {
+          "html": "Initialize <var>selectedValue</var> to <var>selectedParent</var>."
+        },
+        {
+          "html": "For each <var>path</var> in <var>paths</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>selectedParent</var> to <var>selectedValue</var>."
+            },
+            {
+              "html": "Set <var>parentValue</var> to <var>value</var>."
+            },
+            {
+              "html": "Set <var>value</var> to <var>parentValue</var>.<var>path</var>. If <var>value</var> is now undefined,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>,\nindicating that the JSON pointer does not match the given <var>document</var>."
+            },
+            {
+              "html": "Set <var>selectedValue</var> to <var>selectedParent</var>.<var>path</var>."
+            },
+            {
+              "html": "If <var>selectedValue</var> is now undefined:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "If <var>value</var> is an array, set <var>selectedValue</var> to an empty array and append\n<var>selectedValue</var> to <var>arrays</var>."
+                },
+                {
+                  "html": "Otherwise, set <var>selectedValue</var> to an initial selection passing <var>value</var> as\n<var>source</var> to the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createinitialselection\" data-matched-text=\"[[[#createinitialselection]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.14 </bdi>createInitialSelection</a>."
+                },
+                {
+                  "html": "Set <var>selectedParent</var>.<var>path</var> to <var>selectedValue</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Note: With path traversal complete at the target value, the selected value will\nnow be computed."
+        },
+        {
+          "html": "If <var>value</var> is a literal, set <var>selectedValue</var> to <var>value</var>."
+        },
+        {
+          "html": "If <var>value</var> is an array, Set <var>selectedValue</var> to a copy of <var>value</var>."
+        },
+        {
+          "html": "In all other cases, set <var>selectedValue</var> to an object that merges a shallow copy of\n<var>selectedValue</var> with a deep copy of <var>value</var>, e.g., <code>{...selectedValue,\n…deepCopy(value)}</code>."
+        },
+        {
+          "html": "Get the last <var>path</var>, <var>lastPath</var>, from <var>paths</var>."
+        },
+        {
+          "html": "Set <var>selectedParent</var>.<var>lastPath</var> to <var>selectedValue</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm selects a portion of a compact JSON-LD document using\nan array of JSON Pointers. The required inputs are an array of JSON Pointers\n(<var>pointers</var>) and a compact JSON-LD document (<var>document</var>). The\n<var>document</var> is assumed to use a JSON-LD context that aliases <code>@id</code>\nand <code>@type</code> to <code>id</code> and <code>type</code>, respectively, and to use only one\n<em><code>@context</code></em> property at the top level of the document. A new JSON-LD\ndocument that represents a selection (<em>selectionDocument</em>) of the\noriginal JSON-LD document is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>pointers</var> is empty, return <code>null</code>. This indicates nothing has been selected\nfrom the original document."
+        },
+        {
+          "html": "Initialize <var>arrays</var> to an empty array. This variable will be used to track\nselected sparse arrays to make them dense after all <var>pointers</var> have\nbeen processed."
+        },
+        {
+          "html": "Initialize <var>selectionDocument</var> to an initial selection passing <var>document</var> as\n<var>source</var> to the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#createinitialselection\" data-matched-text=\"[[[#createinitialselection]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.14 </bdi>createInitialSelection</a>."
+        },
+        {
+          "html": "Set the value of the <em><code>@context</code></em> property in <var>selectionDocument</var> to\na copy of the value of the <em><code>@context</code></em> property in <var>document</var>."
+        },
+        {
+          "html": "For each <var>pointer</var> in <var>pointers</var>, walk the document from root to the pointer\ntarget value, building the <var>selectionDocument</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Parse the <var>pointer</var> into an array of paths, <var>paths</var>, using the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#jsonpointertopaths\" data-matched-text=\"[[[#jsonpointertopaths]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.13 </bdi>jsonPointerToPaths</a>."
+            },
+            {
+              "html": "Use the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectpaths\" data-matched-text=\"[[[#selectpaths]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.15 </bdi>selectPaths</a>, passing\n<var>document</var>, <var>paths</var>, <var>selectionDocument</var>, and\n<var>arrays</var>."
+            }
+          ]
+        },
+        {
+          "html": "For each <var>array</var> in <var>arrays</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Make <var>array</var> dense by removing any undefined elements between\nelements that are defined."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>selectionDocument</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm relabels the blank node identifiers in an array of\nN-Quad strings using a blank node label map. The required inputs are an array\nof N-Quad strings (<var>nquads</var>) and a blank node label map\n(<var>labelMap</var>). An array of N-Quad strings with relabeled blank node\nidentifiers (<var>relabeledNQuads</var>) is produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Create a new array of N-Quad strings, <em>relabeledNQuads</em>."
+        },
+        {
+          "html": "For each N-Quad string, <em>s1</em>, in <var>nquads</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Create a new string, <em>s2</em>, such it that is a copy of <em>s1</em> except\neach blank node identifier therein has been replaced with the value associated\nwith it as a key in <var>labelMap</var>."
+            },
+            {
+              "html": "Append <em>s2</em> to <em>relabeledNQuads</em>."
+            }
+          ]
+        },
+        {
+          "html": "Return <em>relabeledNQuads</em>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm selects a portion of a skolemized compact JSON-LD\ndocument using an array of JSON Pointers, and outputs the resulting canonical\nN-Quads with any blank node labels replaced using the given label map. The\nrequired inputs are an array of JSON Pointers (<var>pointers</var>), a\nskolemized compact JSON-LD document (<var>skolemizedCompactDocument</var>),\nand a blank node label map (<var>labelMap</var>). Additional custom options\n(such as a document loader) can be passed. The <var>document</var> is assumed\nto use a JSON-LD context that aliases <code>@id</code> and <code>@type</code> to <code>id</code> and <code>type</code>,\nrespectively, and to use only one <em><code>@context</code></em> property at the top level\nof the document. An object containing the new JSON-LD document that represents\na selection of the original JSON-LD document (<var>selectionDocument</var>), an\narray of deskolemized N-Quad strings (<var>deskolemizedNQuads</var>), and an\narray of canonical N-Quads with replacement blank node labels (<var>nquads</var>)\nis produced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>selectionDocument</var> to the result of the algorithm\nin Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectjsonld\" data-matched-text=\"[[[#selectjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.16 </bdi>selectJsonLd</a>, passing <var>pointers</var>,\nand <var>skolemizedCompactDocument</var> as <em>document</em>."
+        },
+        {
+          "html": "Initialize <var>deskolemizedNQuads</var> to the result of the algorithm\nin Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#todeskolemizednquads\" data-matched-text=\"[[[#todeskolemizednquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.12 </bdi>toDeskolemizedNQuads</a>, passing\n<var>selectionDocument</var> as <var>skolemizedCompactDocument</var>, and\nany custom options."
+        },
+        {
+          "html": "Initialize <var>nquads</var> to the result of the algorithm\nin Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#relabelblanknodes\" data-matched-text=\"[[[#relabelblanknodes]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.17 </bdi>relabelBlankNodes</a>, passing <var>labelMap</var>,\nand <var>deskolemizedNQuads</var> as <var>nquads</var>."
+        },
+        {
+          "html": "Return an object containing <var>selectionDocument</var>,\n<var>deskolemizedNQuads</var>, and <var>nquads</var>."
+        }
+      ]
+    },
+    {
+      "html": "The required inputs are a compact JSON-LD document (<var>document</var>),\na label map factory function (<var>labelMapFactoryFunction</var>), and a map\nof named group definitions (<var>groupDefinitions</var>). Additional custom\noptions (such as a document loader) can be passed. The <var>document</var> is\nassumed to use a JSON-LD context that aliases <code>@id</code> and <code>@type</code> to <code>id</code> and\n<code>type</code>, respectively, and to use only one <em><code>@context</code></em> property at the top\nlevel of the document. An object containing the created groups\n(<var>groups</var>), the skolemized compact JSON-LD document\n(<var>skolemizedCompactDocument</var>), the skolemized expanded JSON-LD\ndocument (<var>skolemizedExpandedDocument</var>), the deskolemized N-Quad\nstrings (<var>deskolemizedNQuads</var>), the blank node label map\n(<var>labelMap</var>), and the canonical N-Quad strings <var>nquads</var>, is\nproduced as output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>skolemizedExpandedDocument</var> and\n<var>skolemizedCompactDocument</var> to their associated values in the\nresult of the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizecompactjsonld\" data-matched-text=\"[[[#skolemizecompactjsonld]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.11 </bdi>skolemizeCompactJsonLd</a>,\npassing <var>document</var> and any custom options."
+        },
+        {
+          "html": "Initialize <var>deskolemizedNQuads</var> to the result of the\nalgorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#todeskolemizednquads\" data-matched-text=\"[[[#todeskolemizednquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.12 </bdi>toDeskolemizedNQuads</a>, passing\n<var>skolemizedExpandedDocument</var> and any custom options."
+        },
+        {
+          "html": "Initialize <var>nquads</var> and <var>labelMap</var> to their associated\nvalues in the result of the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#labelreplacementcanonicalizenquads\" data-matched-text=\"[[[#labelreplacementcanonicalizenquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.1 </bdi>labelReplacementCanonicalizeNQuads</a>, passing\n<var>labelMapFactoryFunction</var>, <var>deskolemizedNQuads</var> as\n<var>nquads</var>, and any custom options."
+        },
+        {
+          "html": "Initialize <var>selections</var> to a new map."
+        },
+        {
+          "html": "For each key (<var>name</var>) and value (<var>pointers</var>) entry in\n<var>groupDefinitions</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Add an entry with a key of <var>name</var> and a value that is the result\nof the algorithm in Section <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#selectcanonicalnquads\" data-matched-text=\"[[[#selectcanonicalnquads]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.18 </bdi>selectCanonicalNQuads</a>, passing\n<var>pointers</var>, <var>labelMap</var>, <var>skolemizedCompactDocument</var>\nas <var>document</var>, and any custom options."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>groups</var> to an empty object."
+        },
+        {
+          "html": "For each key (<var>name</var>) and value (<var>selectionResult</var>) entry in\n<var>selections</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize <var>matching</var> to an empty map."
+            },
+            {
+              "html": "Initialize <var>nonMatching</var> to an empty map."
+            },
+            {
+              "html": "Initialize <var>selectedNQuads</var> to <em>nquads</em> from\n<var>selectionResult</var>."
+            },
+            {
+              "html": "Initialize <var>selectedDeskolemizedNQuads</var> from\n<em>deskolemizedNQuads</em> from <var>selectionResult</var>."
+            },
+            {
+              "html": "For each element (<var>nq</var>) and index (<var>index</var>) in\n<var>nquads</var>:",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "Create a map entry, <var>entry</var>, with a key of <var>index</var> and a\nvalue of <var>nq</var>."
+                },
+                {
+                  "html": "If <var>selectedNQuads</var> includes <var>nq</var> then add <var>entry</var>\nto <var>matching</var>; otherwise, add <var>entry</var> to <var>nonMatching</var>."
+                }
+              ]
+            },
+            {
+              "html": "Set <var>name</var> in <var>groups</var> to an object containing\n<var>matching</var>, <var>nonMatching</var>, and\n<var>selectedDeskolemizedNQuads</var> as <var>deskolemizedNQuads</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return an object containing <var>groups</var>,\n<var>skolemizedExpandedDocument</var>, <var>skolemizedCompactDocument</var>,\n<var>deskolemizedNQuads</var>, <var>labelMap</var>, and <var>nquads</var>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm cryptographically hashes an array of mandatory to\ndisclose N-Quads using a provided hashing API. The required input is an array of\nmandatory to disclose N-Quads (<var>mandatory</var>) and a hashing function\n(<var>hasher</var>). A cryptographic hash (<em>mandatoryHash</em>) is produced\nas output.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <code>bytes</code> to the UTF-8 representation of the joined <code>mandatory</code>\nN-Quads."
+        },
+        {
+          "html": "Initialize <code>mandatoryHash</code> to the result of using <code>hasher</code> to hash <code>bytes</code>."
+        },
+        {
+          "html": "Return <code>mandatoryHash</code>."
         }
       ]
     }

@@ -36,14 +36,44 @@
       "number": "1"
     },
     {
-      "id": "how-it-works",
-      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-it-works",
+      "id": "full-disclosure",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#full-disclosure",
       "level": 3,
-      "title": "How it Works",
+      "title": "Full Disclosure",
       "alternateIds": [
-        "x1-1-how-it-works"
+        "x1-1-full-disclosure"
       ],
       "number": "1.1"
+    },
+    {
+      "id": "how-it-works",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-it-works",
+      "level": 4,
+      "title": "How Full Disclosure Works",
+      "alternateIds": [
+        "x1-1-1-how-full-disclosure-works"
+      ],
+      "number": "1.1.1"
+    },
+    {
+      "id": "GeneralSelectiveDisclosure",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#GeneralSelectiveDisclosure",
+      "level": 3,
+      "title": "Selective Disclosure",
+      "alternateIds": [
+        "x1-2-selective-disclosure"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "how-selective-disclosure-works",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-selective-disclosure-works",
+      "level": 4,
+      "title": "How Selective Disclosure Works",
+      "alternateIds": [
+        "x1-2-1-how-selective-disclosure-works"
+      ],
+      "number": "1.2.1"
     },
     {
       "id": "design-goals-and-rationale",
@@ -51,9 +81,9 @@
       "level": 3,
       "title": "Design Goals and Rationale",
       "alternateIds": [
-        "x1-2-design-goals-and-rationale"
+        "x1-3-design-goals-and-rationale"
       ],
-      "number": "1.2"
+      "number": "1.3"
     },
     {
       "id": "conformance",
@@ -61,9 +91,9 @@
       "level": 3,
       "title": "Conformance",
       "alternateIds": [
-        "x1-3-conformance"
+        "x1-4-conformance"
       ],
-      "number": "1.3"
+      "number": "1.4"
     },
     {
       "id": "terminology",
@@ -71,9 +101,9 @@
       "level": 3,
       "title": "Terminology",
       "alternateIds": [
-        "x1-4-terminology"
+        "x1-5-terminology"
       ],
-      "number": "1.4"
+      "number": "1.5"
     },
     {
       "id": "data-model",
@@ -256,74 +286,624 @@
       "number": "4"
     },
     {
-      "id": "processing-model",
-      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#processing-model",
+      "id": "document-algorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#document-algorithms",
       "level": 3,
-      "title": "Processing Model",
+      "title": "Document Algorithms",
       "alternateIds": [
-        "x4-1-processing-model"
+        "x4-1-document-algorithms"
       ],
       "number": "4.1"
     },
     {
+      "id": "processing-model",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#processing-model",
+      "level": 4,
+      "title": "Processing Model",
+      "alternateIds": [
+        "x4-1-1-processing-model"
+      ],
+      "number": "4.1.1"
+    },
+    {
       "id": "add-proof",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof",
-      "level": 3,
+      "level": 4,
       "title": "Add Proof",
       "alternateIds": [
-        "x4-2-add-proof"
+        "x4-1-2-add-proof"
       ],
-      "number": "4.2"
+      "number": "4.1.2"
     },
     {
       "id": "add-proof-set-chain",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof-set-chain",
-      "level": 3,
+      "level": 4,
       "title": "Add Proof Set/Chain",
       "alternateIds": [
-        "x4-3-add-proof-set-chain"
+        "x4-1-3-add-proof-set-chain"
       ],
-      "number": "4.3"
+      "number": "4.1.3"
     },
     {
       "id": "verify-proof",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof",
-      "level": 3,
+      "level": 4,
       "title": "Verify Proof",
       "alternateIds": [
-        "x4-4-verify-proof"
+        "x4-1-4-verify-proof"
       ],
-      "number": "4.4"
+      "number": "4.1.4"
     },
     {
       "id": "verify-proof-sets-and-chains",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains",
-      "level": 3,
+      "level": 4,
       "title": "Verify Proof Sets and Chains",
       "alternateIds": [
-        "x4-5-verify-proof-sets-and-chains"
+        "x4-1-5-verify-proof-sets-and-chains"
       ],
-      "number": "4.5"
+      "number": "4.1.5"
     },
     {
       "id": "context-validation",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#context-validation",
-      "level": 3,
+      "level": 4,
       "title": "Context Validation",
       "alternateIds": [
-        "x4-6-context-validation"
+        "x4-1-6-context-validation"
       ],
-      "number": "4.6"
+      "number": "4.1.6"
     },
     {
       "id": "processing-errors",
       "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#processing-errors",
-      "level": 3,
+      "level": 4,
       "title": "Processing Errors",
       "alternateIds": [
-        "x4-7-processing-errors"
+        "x4-1-7-processing-errors"
+      ],
+      "number": "4.1.7"
+    },
+    {
+      "id": "CryptosuiteCommonAlgorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#CryptosuiteCommonAlgorithms",
+      "level": 3,
+      "title": "Cryptosuite Common Algorithms",
+      "alternateIds": [
+        "x4-2-cryptosuite-common-algorithms"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "introduction-0",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#introduction-0",
+      "level": 4,
+      "title": "Introduction",
+      "alternateIds": [
+        "x4-2-1-introduction"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "create-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#create-proof",
+      "level": 4,
+      "title": "Create Proof",
+      "alternateIds": [
+        "x4-2-2-create-proof"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "verify-proof-0",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-0",
+      "level": 4,
+      "title": "Verify Proof",
+      "alternateIds": [
+        "x4-2-3-verify-proof"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "common-functions",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#common-functions",
+      "level": 4,
+      "title": "Common Functions",
+      "alternateIds": [
+        "x4-2-4-common-functions"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "HashingAlg",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#HashingAlg",
+      "level": 5,
+      "title": "Hashing",
+      "alternateIds": [
+        "x4-2-4-1-hashing"
+      ],
+      "number": "4.2.4.1"
+    },
+    {
+      "id": "ProofConfigurationAlg",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ProofConfigurationAlg",
+      "level": 5,
+      "title": "Proof Configuration",
+      "alternateIds": [
+        "x4-2-4-2-proof-configuration"
+      ],
+      "number": "4.2.4.2"
+    },
+    {
+      "id": "TransformationAlg",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#TransformationAlg",
+      "level": 5,
+      "title": "Transformation",
+      "alternateIds": [
+        "x4-2-4-3-transformation"
+      ],
+      "number": "4.2.4.3"
+    },
+    {
+      "id": "ProofSerializationAlg",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ProofSerializationAlg",
+      "level": 5,
+      "title": "Proof Serialization",
+      "alternateIds": [
+        "x4-2-4-4-proof-serialization"
+      ],
+      "number": "4.2.4.4"
+    },
+    {
+      "id": "ProofVerificationAlg",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ProofVerificationAlg",
+      "level": 5,
+      "title": "Proof Verification",
+      "alternateIds": [
+        "x4-2-4-5-proof-verification"
+      ],
+      "number": "4.2.4.5"
+    },
+    {
+      "id": "SDAlgorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SDAlgorithms",
+      "level": 3,
+      "title": "Selective Disclosure Algorithms",
+      "alternateIds": [
+        "x4-3-selective-disclosure-algorithms"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "introduction-1",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#introduction-1",
+      "level": 4,
+      "title": "Introduction",
+      "alternateIds": [
+        "x4-3-1-introduction"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "create-base-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#create-base-proof",
+      "level": 4,
+      "title": "Create Base Proof",
+      "alternateIds": [
+        "x4-3-2-create-base-proof"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "add-derived-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#add-derived-proof",
+      "level": 4,
+      "title": "Add Derived Proof",
+      "alternateIds": [
+        "x4-3-3-add-derived-proof"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "verify-derived-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-derived-proof",
+      "level": 4,
+      "title": "Verify Derived Proof",
+      "alternateIds": [
+        "x4-3-4-verify-derived-proof"
+      ],
+      "number": "4.3.4"
+    },
+    {
+      "id": "selective-disclosure-common-sub-algorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selective-disclosure-common-sub-algorithms",
+      "level": 3,
+      "title": "Selective Disclosure Common Sub-Algorithms",
+      "alternateIds": [
+        "x4-4-selective-disclosure-common-sub-algorithms"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "TransformSD",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#TransformSD",
+      "level": 4,
+      "title": "TransformSD",
+      "alternateIds": [
+        "x4-4-1-transformsd"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "HashSD",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#HashSD",
+      "level": 4,
+      "title": "HashSD",
+      "alternateIds": [
+        "x4-4-2-hashsd"
+      ],
+      "number": "4.4.2"
+    },
+    {
+      "id": "CreateDisclosureData",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#CreateDisclosureData",
+      "level": 4,
+      "title": "CreateDisclosureData",
+      "alternateIds": [
+        "x4-4-3-createdisclosuredata"
+      ],
+      "number": "4.4.3"
+    },
+    {
+      "id": "CreateVerifyData",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#CreateVerifyData",
+      "level": 4,
+      "title": "CreateVerifyData",
+      "alternateIds": [
+        "x4-4-4-createverifydata"
+      ],
+      "number": "4.4.4"
+    },
+    {
+      "id": "signed-individual-claims-sic-specific-sub-algorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#signed-individual-claims-sic-specific-sub-algorithms",
+      "level": 3,
+      "title": "Signed Individual Claims (SIC) Specific Sub-Algorithms",
+      "alternateIds": [
+        "x4-5-signed-individual-claims-sic-specific-sub-algorithms"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "SerializeBase-SIC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeBase-SIC",
+      "level": 4,
+      "title": "SerializeBase-SIC",
+      "alternateIds": [
+        "x4-5-1-serializebase-sic"
+      ],
+      "number": "4.5.1"
+    },
+    {
+      "id": "ParseBase-SIC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ParseBase-SIC",
+      "level": 4,
+      "title": "ParseBase-SIC",
+      "alternateIds": [
+        "x4-5-2-parsebase-sic"
+      ],
+      "number": "4.5.2"
+    },
+    {
+      "id": "SerializeDerived-SIC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeDerived-SIC",
+      "level": 4,
+      "title": "SerializeDerived-SIC",
+      "alternateIds": [
+        "x4-5-3-serializederived-sic"
+      ],
+      "number": "4.5.3"
+    },
+    {
+      "id": "ParseDerived-SIC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ParseDerived-SIC",
+      "level": 4,
+      "title": "ParseDerived-SIC",
+      "alternateIds": [
+        "x4-5-4-parsederived-sic"
+      ],
+      "number": "4.5.4"
+    },
+    {
+      "id": "VerifyDerived-SIC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#VerifyDerived-SIC",
+      "level": 4,
+      "title": "VerifyDerived-SIC",
+      "alternateIds": [
+        "x4-5-5-verifyderived-sic"
+      ],
+      "number": "4.5.5"
+    },
+    {
+      "id": "salted-hash-of-claims-shoc-specific-sub-algorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#salted-hash-of-claims-shoc-specific-sub-algorithms",
+      "level": 3,
+      "title": "Salted Hash of Claims (SHoC) Specific Sub-Algorithms",
+      "alternateIds": [
+        "x4-6-salted-hash-of-claims-shoc-specific-sub-algorithms"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "SaltedHashSD",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SaltedHashSD",
+      "level": 4,
+      "title": "SaltedHashSD",
+      "alternateIds": [
+        "x4-6-1-saltedhashsd"
+      ],
+      "number": "4.6.1"
+    },
+    {
+      "id": "SerializeBase-SHoC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeBase-SHoC",
+      "level": 4,
+      "title": "SerializeBase-SHoC",
+      "alternateIds": [
+        "x4-6-2-serializebase-shoc"
+      ],
+      "number": "4.6.2"
+    },
+    {
+      "id": "ParseBase-SHoC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ParseBase-SHoC",
+      "level": 4,
+      "title": "ParseBase-SHoC",
+      "alternateIds": [
+        "x4-6-3-parsebase-shoc"
+      ],
+      "number": "4.6.3"
+    },
+    {
+      "id": "SerializeDerived-SHoC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#SerializeDerived-SHoC",
+      "level": 4,
+      "title": "SerializeDerived-SHoC",
+      "alternateIds": [
+        "x4-6-4-serializederived-shoc"
+      ],
+      "number": "4.6.4"
+    },
+    {
+      "id": "ParseDerived-SHoC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#ParseDerived-SHoC",
+      "level": 4,
+      "title": "ParseDerived-SHoC",
+      "alternateIds": [
+        "x4-6-5-parsederived-shoc"
+      ],
+      "number": "4.6.5"
+    },
+    {
+      "id": "VerifyDerived-SHoC",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#VerifyDerived-SHoC",
+      "level": 4,
+      "title": "VerifyDerived-SHoC",
+      "alternateIds": [
+        "x4-6-6-verifyderived-shoc"
+      ],
+      "number": "4.6.6"
+    },
+    {
+      "id": "selective-disclosure-functions",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selective-disclosure-functions",
+      "level": 3,
+      "title": "Selective Disclosure Functions",
+      "alternateIds": [
+        "x4-7-selective-disclosure-functions"
       ],
       "number": "4.7"
+    },
+    {
+      "id": "labelreplacementcanonicalizenquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#labelreplacementcanonicalizenquads",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeNQuads",
+      "alternateIds": [
+        "x4-7-1-labelreplacementcanonicalizenquads"
+      ],
+      "number": "4.7.1"
+    },
+    {
+      "id": "labelreplacementcanonicalizejsonld",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#labelreplacementcanonicalizejsonld",
+      "level": 4,
+      "title": "labelReplacementCanonicalizeJsonLd",
+      "alternateIds": [
+        "x4-7-2-labelreplacementcanonicalizejsonld"
+      ],
+      "number": "4.7.2"
+    },
+    {
+      "id": "createlabelmapfunction",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#createlabelmapfunction",
+      "level": 4,
+      "title": "createLabelMapFunction",
+      "alternateIds": [
+        "x4-7-3-createlabelmapfunction"
+      ],
+      "number": "4.7.3"
+    },
+    {
+      "id": "createshuffledidlabelmapfunction",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#createshuffledidlabelmapfunction",
+      "level": 4,
+      "title": "createShuffledIdLabelMapFunction",
+      "alternateIds": [
+        "x4-7-4-createshuffledidlabelmapfunction"
+      ],
+      "number": "4.7.4"
+    },
+    {
+      "id": "createhmacidlabelmapfunction",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#createhmacidlabelmapfunction",
+      "level": 4,
+      "title": "createHmacIdLabelMapFunction",
+      "alternateIds": [
+        "x4-7-5-createhmacidlabelmapfunction"
+      ],
+      "number": "4.7.5"
+    },
+    {
+      "id": "compresslabelmap",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#compresslabelmap",
+      "level": 4,
+      "title": "compressLabelMap",
+      "alternateIds": [
+        "x4-7-6-compresslabelmap"
+      ],
+      "number": "4.7.6"
+    },
+    {
+      "id": "decompresslabelmap",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#decompresslabelmap",
+      "level": 4,
+      "title": "decompressLabelMap",
+      "alternateIds": [
+        "x4-7-7-decompresslabelmap"
+      ],
+      "number": "4.7.7"
+    },
+    {
+      "id": "skolemizenquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizenquads",
+      "level": 4,
+      "title": "skolemizeNQuads",
+      "alternateIds": [
+        "x4-7-8-skolemizenquads"
+      ],
+      "number": "4.7.8"
+    },
+    {
+      "id": "deskolemizenquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#deskolemizenquads",
+      "level": 4,
+      "title": "deskolemizeNQuads",
+      "alternateIds": [
+        "x4-7-9-deskolemizenquads"
+      ],
+      "number": "4.7.9"
+    },
+    {
+      "id": "skolemizeexpandedjsonld",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizeexpandedjsonld",
+      "level": 4,
+      "title": "skolemizeExpandedJsonLd",
+      "alternateIds": [
+        "x4-7-10-skolemizeexpandedjsonld"
+      ],
+      "number": "4.7.10"
+    },
+    {
+      "id": "skolemizecompactjsonld",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#skolemizecompactjsonld",
+      "level": 4,
+      "title": "skolemizeCompactJsonLd",
+      "alternateIds": [
+        "x4-7-11-skolemizecompactjsonld"
+      ],
+      "number": "4.7.11"
+    },
+    {
+      "id": "todeskolemizednquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#todeskolemizednquads",
+      "level": 4,
+      "title": "toDeskolemizedNQuads",
+      "alternateIds": [
+        "x4-7-12-todeskolemizednquads"
+      ],
+      "number": "4.7.12"
+    },
+    {
+      "id": "jsonpointertopaths",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#jsonpointertopaths",
+      "level": 4,
+      "title": "jsonPointerToPaths",
+      "alternateIds": [
+        "x4-7-13-jsonpointertopaths"
+      ],
+      "number": "4.7.13"
+    },
+    {
+      "id": "createinitialselection",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#createinitialselection",
+      "level": 4,
+      "title": "createInitialSelection",
+      "alternateIds": [
+        "x4-7-14-createinitialselection"
+      ],
+      "number": "4.7.14"
+    },
+    {
+      "id": "selectpaths",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selectpaths",
+      "level": 4,
+      "title": "selectPaths",
+      "alternateIds": [
+        "x4-7-15-selectpaths"
+      ],
+      "number": "4.7.15"
+    },
+    {
+      "id": "selectjsonld",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selectjsonld",
+      "level": 4,
+      "title": "selectJsonLd",
+      "alternateIds": [
+        "x4-7-16-selectjsonld"
+      ],
+      "number": "4.7.16"
+    },
+    {
+      "id": "relabelblanknodes",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#relabelblanknodes",
+      "level": 4,
+      "title": "relabelBlankNodes",
+      "alternateIds": [
+        "x4-7-17-relabelblanknodes"
+      ],
+      "number": "4.7.17"
+    },
+    {
+      "id": "selectcanonicalnquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selectcanonicalnquads",
+      "level": 4,
+      "title": "selectCanonicalNQuads",
+      "alternateIds": [
+        "x4-7-18-selectcanonicalnquads"
+      ],
+      "number": "4.7.18"
+    },
+    {
+      "id": "canonicalizeandgroup",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalizeandgroup",
+      "level": 4,
+      "title": "canonicalizeAndGroup",
+      "alternateIds": [
+        "x4-7-19-canonicalizeandgroup"
+      ],
+      "number": "4.7.19"
+    },
+    {
+      "id": "hashmandatorynquads",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#hashmandatorynquads",
+      "level": 4,
+      "title": "hashMandatoryNQuads",
+      "alternateIds": [
+        "x4-7-20-hashmandatorynquads"
+      ],
+      "number": "4.7.20"
     },
     {
       "id": "security-considerations",

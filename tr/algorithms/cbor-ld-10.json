@@ -545,10 +545,10 @@
                   "html": "If <code>key</code> is odd, set <code>plural</code> to true. Otherwise, set <code>plural</code> to false."
                 },
                 {
-                  "html": "If <code>plural</code> is <code>true</code>, set <code>term</code> to the value of <code>key</code> minus 1 in <code>state</code>.<code>idToTerm</code>.\nIf that value does not have an entry, throw an error ERR_UNKNOWN_CBORLD_TERM_ID."
+                  "html": "If <code>plural</code> is <code>true</code>, set <code>term</code> to the value of <code>key</code> minus 1 in <code>state</code>.<code>idToTerm</code>.\nIf that value does not have an entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
                 },
                 {
-                  "html": "Otherwise, set <code>term</code> to the value of <code>key</code> in <code>state</code>.<code>idToTerm</code>. If that value does not have\nan entry, throw an error ERR_UNKNOWN_CBORLD_TERM_ID."
+                  "html": "Otherwise, set <code>term</code> to the value of <code>key</code> in <code>state</code>.<code>idToTerm</code>. If that value does not have\nan entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
                 }
               ]
             },
@@ -614,10 +614,10 @@
                   "html": "If <code>key</code> is odd, set <code>plural</code> to true. Otherwise, set <code>plural</code> to false."
                 },
                 {
-                  "html": "If <code>plural</code> is <code>true</code>, set <code>term</code> to the value of <code>id</code> minus 1 in <code>state</code>.<code>idToTerm</code>.\nIf that value does not have an entry, throw an error ERR_UNKNOWN_CBORLD_TERM_ID."
+                  "html": "If <code>plural</code> is <code>true</code>, set <code>term</code> to the value of <code>id</code> minus 1 in <code>state</code>.<code>idToTerm</code>.\nIf that value does not have an entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
                 },
                 {
-                  "html": "Otherwise, set <code>term</code> to the value of <code>id</code> in <code>state</code>.<code>idToTerm</code>. If that value does not have\nan entry, throw an error ERR_UNKNOWN_CBORLD_TERM_ID."
+                  "html": "Otherwise, set <code>term</code> to the value of <code>id</code> in <code>state</code>.<code>idToTerm</code>. If that value does not have\nan entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
                 }
               ]
             },
@@ -832,7 +832,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "If <code>allowProtectedOverride</code> is set to <code>false</code> and <code>def</code> is not identical to <code>activeDef</code>,\nthrow an error ERR_PROTECTED_TERM_REDEFINITION."
+                          "html": "If <code>allowProtectedOverride</code> is set to <code>false</code> and <code>def</code> is not identical to <code>activeDef</code>,\nthrow an error <code>ERR_PROTECTED_TERM_REDEFINITION</code>."
                         },
                         {
                           "html": "Otherwise, set the value of <code>term</code> in <code>newTermMap</code> to a map containing the values from <code>activeDef</code>\nand <code>propagate</code> set to the value of <code>def</code>.<code>propagate</code>."
@@ -1161,7 +1161,7 @@
           "html": "Otherwise, if <code>decoderData</code>.<code>reverseContextTable</code> has an entry for <code>value</code>, return\nthe value of that entry."
         },
         {
-          "html": "Otherwise, throw an error ERR_UNDEFINED_COMPRESSED_CONTEXT."
+          "html": "Otherwise, throw an error <code>ERR_UNDEFINED_COMPRESSED_CONTEXT</code>."
         }
       ]
     },
@@ -1334,7 +1334,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <code>intValue</code> is not in <code>subTable</code>, throw an error ERR_UNKNOWN_COMPRESSED_VALUE."
+                  "html": "If <code>intValue</code> is not in <code>subTable</code>, throw an error <code>ERR_UNKNOWN_COMPRESSED_VALUE</code>."
                 },
                 {
                   "html": "Otherwise, set <code>decoded</code> to the value of <code>intValue</code> in <code>subTable</code>."

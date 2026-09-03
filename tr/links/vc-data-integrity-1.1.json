@@ -46,21 +46,25 @@
       "https://w3id.org/security": {},
       "https://www.ecma-international.org/publications-and-standards/standards/ecma-6/": {},
       "https://www.rfc-editor.org/info/bcp14": {},
-      "https://www.rfc-editor.org/rfc/rfc2119": {},
-      "https://www.rfc-editor.org/rfc/rfc5280": {},
-      "https://www.rfc-editor.org/rfc/rfc7517": {},
-      "https://www.rfc-editor.org/rfc/rfc7519": {},
-      "https://www.rfc-editor.org/rfc/rfc7696": {},
-      "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.rfc-editor.org/rfc/rfc8259": {
+      "https://www.rfc-editor.org/info/rfc2104/": {},
+      "https://www.rfc-editor.org/info/rfc2119/": {},
+      "https://www.rfc-editor.org/info/rfc5280/": {},
+      "https://www.rfc-editor.org/info/rfc6234/": {},
+      "https://www.rfc-editor.org/info/rfc6901/": {},
+      "https://www.rfc-editor.org/info/rfc7517/": {},
+      "https://www.rfc-editor.org/info/rfc7519/": {},
+      "https://www.rfc-editor.org/info/rfc7696/": {},
+      "https://www.rfc-editor.org/info/rfc8174/": {},
+      "https://www.rfc-editor.org/info/rfc8259/": {
         "anchors": [
           "section-4"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc8392": {},
-      "https://www.rfc-editor.org/rfc/rfc8785": {},
-      "https://www.rfc-editor.org/rfc/rfc9457": {},
-      "https://www.rfc-editor.org/rfc/rfc9562": {},
+      "https://www.rfc-editor.org/info/rfc8392/": {},
+      "https://www.rfc-editor.org/info/rfc8785/": {},
+      "https://www.rfc-editor.org/info/rfc8949/": {},
+      "https://www.rfc-editor.org/info/rfc9457/": {},
+      "https://www.rfc-editor.org/info/rfc9562/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2022/WD-vc-data-integrity-20221110/": {},
       "https://www.w3.org/TR/2023/CR-vc-data-integrity-20231121/": {},
@@ -86,7 +90,9 @@
       "https://www.w3.org/TR/html-rdfa/": {},
       "https://www.w3.org/TR/json-ld11-api/": {
         "anchors": [
-          "compaction-algorithm"
+          "compaction-algorithm",
+          "deserialize-json-ld-to-rdf-algorithm",
+          "expansion-algorithm"
         ]
       },
       "https://www.w3.org/TR/json-ld11/": {},
@@ -103,6 +109,15 @@
       },
       "https://www.w3.org/TR/rdf-concepts/": {},
       "https://www.w3.org/TR/turtle/": {},
+      "https://www.w3.org/TR/vc-data-integrity/": {
+        "anchors": [
+          "dfn-cryptosuite",
+          "dfn-unsecured-data-document",
+          "algorithms",
+          "PROOF_VERIFICATION_ERROR",
+          "PROOF_GENERATION_ERROR"
+        ]
+      },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "terminology",
@@ -123,8 +138,10 @@
           "privacy-considerations"
         ]
       },
+      "https://www.w3.org/TR/vc-di-bbs/": {},
       "https://www.w3.org/TR/vc-di-ecdsa/": {
         "anchors": [
+          "createhmacidlabelmapfunction",
           "ecdsa-jcs-2019",
           "ecdsa-rdfc-2019"
         ]
@@ -187,8 +204,10 @@
         "anchors": [
           "dfn-verifiable-credential",
           "dfn-verifiable-presentation",
-          "dfn-verifier",
-          "dfn-holders"
+          "dfn-claims",
+          "dfn-issuers",
+          "dfn-holders",
+          "dfn-verifier"
         ]
       }
     }
