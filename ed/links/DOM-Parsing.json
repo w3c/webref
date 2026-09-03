@@ -6,28 +6,22 @@
   "links": {
     "rawlinks": {
       "http://w3c-test.org/domparsing/": {},
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "shadowroot"
-        ]
-      },
+      "https://dom.spec.whatwg.org/": {},
       "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/LC2_comments.html": {},
       "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/implementationReport.html": {},
       "https://dvcs.w3.org/hg/innerhtml/summary/": {},
       "https://github.com/w3c/DOM-Parsing/commits/gh-pages": {},
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "LegacyNullToEmptyString"
-        ]
-      },
+      "https://github.com/w3c/DOM-Parsing/issues/44": {},
+      "https://github.com/w3c/DOM-Parsing/issues/52": {},
+      "https://github.com/w3c/DOM-Parsing/issues/?q=is%3Aissue+is%3Aopen+label%3A%22xml-serialization%22": {},
       "https://html.spec.whatwg.org/dynamic-markup-insertion.html": {
         "anchors": [
-          "fragment-parsing-algorithm-steps",
           "dom-element-innerhtml",
           "dom-element-outerhtml",
           "dom-element-insertadjacenthtml"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
         "anchors": [
           "domparser",
@@ -40,83 +34,23 @@
           "fragment-serializing-algorithm-steps"
         ]
       },
+      "https://infra.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/multipage/": {},
-      "https://tc39.github.io/ecma262/": {
+      "https://w3c.github.io/DOM-Parsing/": {
         "anchors": [
-          "sec-error-objects"
+          "xml-serializing-an-element-node",
+          "generating-namespace-prefixes",
+          "dfn-found"
         ]
       },
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/dom/": {
-        "anchors": [
-          "case-sensitive",
-          "ascii-case-insensitive",
-          "concept-tree-child",
-          "concept-tree-first-child",
-          "concept-tree-next-sibling",
-          "concept-tree-parent",
-          "concept-document-content-type",
-          "concept-document-encoding",
-          "html-document",
-          "concept-element-local-name",
-          "concept-element-namespace",
-          "concept-node-document",
-          "concept-node-append",
-          "concept-node-insert",
-          "concept-node-replace",
-          "concept-tree-order",
-          "concept-range-start-node",
-          "concept-document-url",
-          "xml-document",
-          "interface-attr",
-          "dom-attr-localname",
-          "dom-attr-namespaceuri",
-          "dom-attr-prefix",
-          "dom-attr-value",
-          "dom-characterdata-data",
-          "interface-comment",
-          "document",
-          "dom-document-doctype",
-          "dom-document-documentelement",
-          "interface-documenttype",
-          "dom-documenttype-name",
-          "dom-documenttype-publicid",
-          "dom-documenttype-systemid",
-          "documentfragment",
-          "element",
-          "dom-element-attributes",
-          "dom-element-localname",
-          "dom-element-namespaceuri",
-          "dom-element-prefix",
-          "dom-element-setattribute",
-          "node",
-          "interface-processinginstruction",
-          "dom-processinginstruction-target",
-          "range",
-          "interface-text",
-          "domexception",
-          "invalidstateerror",
-          "nomodificationallowederror",
-          "syntaxerror",
-          "xmldocument"
-        ]
-      },
-      "https://www.w3.org/TR/html5/": {},
       "https://www.w3.org/TR/html5/single-page.html": {
         "anchors": [
-          "active-document",
           "html-parser",
           "parsing-xhtml-documents",
           "xml-parser",
-          "location",
-          "meta",
-          "the-noscript-element",
-          "script",
-          "the-template-element",
-          "void-elements",
-          "template-contents",
-          "cereactios"
+          "template-contents"
         ]
       },
       "https://www.w3.org/TR/xml/": {
@@ -137,12 +71,87 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {}
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "node",
+          "element",
+          "concept-element-namespace",
+          "range",
+          "concept-attribute",
+          "concept-tree-child",
+          "concept-attribute-namespace",
+          "concept-element-attribute",
+          "document",
+          "comment",
+          "cdatasection",
+          "text",
+          "documentfragment",
+          "documenttype",
+          "processinginstruction",
+          "attr",
+          "concept-element-local-name",
+          "concept-element-namespace-prefix",
+          "dom-element-setattribute",
+          "concept-attribute-namespace-prefix",
+          "concept-attribute-value",
+          "concept-attribute-local-name",
+          "concept-element",
+          "document-element",
+          "concept-cd-data",
+          "concept-doctype-publicid",
+          "concept-doctype-systemid",
+          "html-document",
+          "concept-pi-target"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
+        "anchors": [
+          "domparser",
+          "xmlserializer",
+          "dom-range-createcontextualfragment",
+          "fragment-parsing-algorithm-steps",
+          "fragment-serializing-algorithm-steps"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/scripting.html": {
+        "anchors": [
+          "htmlscriptelement",
+          "script",
+          "the-template-element"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "html-namespace",
+          "xml-namespace",
+          "ordered-map",
+          "map-exists",
+          "list-is-empty",
+          "list-iterate",
+          "list",
+          "xmlns-namespace",
+          "iteration-continue",
+          "string",
+          "map-iterate",
+          "list-clone",
+          "assert",
+          "list-size",
+          "list-contain",
+          "list-append",
+          "ordered-set",
+          "set-append",
+          "map-set",
+          "ascii-case-insensitive"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "dfn-extended-attribute"
+          "invalidstateerror",
+          "idl-DOMException",
+          "exceptiondef-typeerror"
         ]
       }
     }
