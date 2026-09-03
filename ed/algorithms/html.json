@@ -5878,7 +5878,7 @@
           "html": "<p>Let <var>hyperlinkSuffix</var> be null.</p>"
         },
         {
-          "html": "If <var>element</var> is an <code id=\"links-created-by-a-and-area-elements:the-a-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element\">a</a></code> element, and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"links-created-by-a-and-area-elements:concept-event-target\" data-x-internal=\"concept-event-target\">target</a> is an <code id=\"links-created-by-a-and-area-elements:the-img-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> with an <code id=\"links-created-by-a-and-area-elements:attr-img-ismap\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap\">ismap</a></code> attribute specified:",
+          "html": "If <var>element</var> is an <code id=\"links-created-by-a-and-area-elements:the-a-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element\">a</a></code> element, and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"links-created-by-a-and-area-elements:concept-event-target\" data-x-internal=\"concept-event-target\">target</a> is an <code id=\"links-created-by-a-and-area-elements:the-img-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> with an <code id=\"links-created-by-a-and-area-elements:attr-img-ismap\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap\">ismap</a></code> attribute specified:",
           "rationale": "let",
           "steps": [
             {
@@ -12031,7 +12031,7 @@
           "html": "<p>If <var>element</var> has a <a id=\"the-input-element:form-owner\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> and <var>element</var>'s <code id=\"the-input-element:attr-input-type-36\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#attr-input-type\">type</a></code> attribute is not in the <a href=\"https://html.spec.whatwg.org/multipage/input.html#button-state-(type=button)\" id=\"the-input-element:button-state-(type=button)-4\">Button</a> state, then return.</p>"
         },
         {
-          "html": "<p>Run the <a id=\"the-input-element:popover-target-attribute-activation-behavior\" href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-target-attribute-activation-behavior\">popover target attribute activation behavior</a> given <var>element</var>\n   and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"the-input-element:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
+          "html": "<p>Run the <a id=\"the-input-element:popover-target-attribute-activation-behavior\" href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-target-attribute-activation-behavior\">popover target attribute activation behavior</a> given <var>element</var>\n   and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"the-input-element:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
         }
       ]
     },
@@ -12745,7 +12745,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, run the <a id=\"the-button-element:popover-target-attribute-activation-behavior\" href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-target-attribute-activation-behavior\">popover target attribute activation behavior</a> given\n   <var>element</var> and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"the-button-element:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
+          "html": "<p>Otherwise, run the <a id=\"the-button-element:popover-target-attribute-activation-behavior\" href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-target-attribute-activation-behavior\">popover target attribute activation behavior</a> given\n   <var>element</var> and <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"the-button-element:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
         }
       ]
     },
@@ -15517,7 +15517,7 @@
           "html": "<p><a id=\"dialog-light-dismiss:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>event</var>'s <code id=\"dialog-light-dismiss:dom-event-istrusted\"><a data-x-internal=\"dom-event-istrusted\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\">isTrusted</a></code> attribute is true.</p>"
         },
         {
-          "html": "<p>Let <var>document</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"dialog-light-dismiss:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>'s <a id=\"dialog-light-dismiss:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
+          "html": "<p>Let <var>document</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"dialog-light-dismiss:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>'s <a id=\"dialog-light-dismiss:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
         },
         {
           "html": "<p>If <var>document</var>'s <a id=\"dialog-light-dismiss:open-dialogs-list\" href=\"https://html.spec.whatwg.org/multipage/dom.html#open-dialogs-list\">open dialogs list</a> is <a href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"dialog-light-dismiss:list-is-empty\" data-x-internal=\"list-is-empty\">empty</a>, then return.</p>"
@@ -15581,7 +15581,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>target</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"dialog-light-dismiss:concept-event-target-2\" data-x-internal=\"concept-event-target\">target</a>.</p>"
+          "html": "<p>Let <var>target</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"dialog-light-dismiss:concept-event-target-2\" data-x-internal=\"concept-event-target\">target</a>.</p>"
         },
         {
           "html": "<p>If <var>target</var> is a <code id=\"dialog-light-dismiss:the-dialog-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element\">dialog</a></code> element, <var>target</var> has an <code id=\"dialog-light-dismiss:attr-dialog-open\"><a href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open\">open</a></code> attribute, <var>target</var>'s <a href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#is-modal\" id=\"dialog-light-dismiss:is-modal\">is modal</a> is\n   true, and <var>event</var>'s <code id=\"dialog-light-dismiss:mouseevent-clientx\"><a data-x-internal=\"mouseevent-clientx\" href=\"https://drafts.csswg.org/cssom-view/#dom-mouseevent-clientx\">clientX</a></code> and\n   <code id=\"dialog-light-dismiss:mouseevent-clienty\"><a data-x-internal=\"mouseevent-clienty\" href=\"https://drafts.csswg.org/cssom-view/#dom-mouseevent-clienty\">clientY</a></code> are outside the bounds of <var>target</var>,\n   then return null.\n\n   </p>"
@@ -23022,7 +23022,7 @@
           "html": "<p><a id=\"popover-light-dismiss:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>event</var>'s <code id=\"popover-light-dismiss:dom-event-istrusted\"><a data-x-internal=\"dom-event-istrusted\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\">isTrusted</a></code> attribute is true.</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"popover-light-dismiss:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
+          "html": "<p>Let <var>target</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"popover-light-dismiss:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
         },
         {
           "html": "<p>Let <var>document</var> be <var>target</var>'s <a id=\"popover-light-dismiss:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
@@ -27420,7 +27420,7 @@
               "html": "<p>Set <a id=\"the-navigationprecommitcontroller-interface:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationprecommitcontroller-event\" id=\"the-navigationprecommitcontroller-interface:concept-navigationprecommitcontroller-event-6\">event</a>'s <code id=\"the-navigationprecommitcontroller-interface:dom-navigateevent-destination\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-destination\">destination</a></code>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationdestination-state\" id=\"the-navigationprecommitcontroller-interface:concept-navigationdestination-state-2\">state</a> to\n     <var>serializedState</var>.</p>"
             },
             {
-              "html": "<p>Set <a id=\"the-navigationprecommitcontroller-interface:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationprecommitcontroller-event\" id=\"the-navigationprecommitcontroller-interface:concept-navigationprecommitcontroller-event-7\">event</a>'s  <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"the-navigationprecommitcontroller-interface:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-api-method-tracker\" id=\"the-navigationprecommitcontroller-interface:ongoing-api-method-tracker\">ongoing API method tracker</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-method-tracker-state\" id=\"the-navigationprecommitcontroller-interface:navigation-api-method-tracker-state\">serialized state</a> to\n     <var>serializedState</var>.</p>"
+              "html": "<p>Set <a id=\"the-navigationprecommitcontroller-interface:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationprecommitcontroller-event\" id=\"the-navigationprecommitcontroller-interface:concept-navigationprecommitcontroller-event-7\">event</a>'s  <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"the-navigationprecommitcontroller-interface:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-api-method-tracker\" id=\"the-navigationprecommitcontroller-interface:ongoing-api-method-tracker\">ongoing API method tracker</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api-method-tracker-state\" id=\"the-navigationprecommitcontroller-interface:navigation-api-method-tracker-state\">serialized state</a> to\n     <var>serializedState</var>.</p>"
             }
           ]
         },
@@ -27901,7 +27901,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>navigation</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-event-target\" id=\"navigate-event-firing:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
+          "html": "<p>Let <var>navigation</var> be <var>event</var>'s <a href=\"https://dom.spec.whatwg.org/#event-target\" id=\"navigate-event-firing:concept-event-target\" data-x-internal=\"concept-event-target\">target</a>.</p>"
         },
         {
           "html": "<p>Let <var>navigable</var> be <var>event</var>'s <a id=\"navigate-event-firing:concept-relevant-global-8\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"navigate-event-firing:window-navigable-2\">navigable</a>.</p>"

@@ -1376,7 +1376,7 @@
           "concept-event-dispatch",
           "dictdef-eventinit",
           "dom-event-type",
-          "concept-event-target",
+          "event-target",
           "dom-event-currenttarget",
           "dom-event-bubbles",
           "dom-event-cancelable",
@@ -1459,8 +1459,8 @@
           "propdef-align-items",
           "propdef-align-self",
           "propdef-justify-self",
-          "propdef-propdef-justify-content",
-          "propdef-propdef-justify-items"
+          "propdef-justify-content",
+          "propdef-justify-items"
         ]
       },
       "https://drafts.csswg.org/css-anchor-position/": {
@@ -1842,7 +1842,7 @@
       "https://drafts.csswg.org/css-syntax/": {
         "anchors": [
           "parse-grammar",
-          "conform-classes",
+          "w3c-conformance-classes",
           "parse-a-list-of-component-values",
           "parse-a-comma-separated-list-of-component-values",
           "component-value",
@@ -1925,6 +1925,11 @@
           "combine-integers"
         ]
       },
+      "https://drafts.csswg.org/css-values-5/": {
+        "anchors": [
+          "funcdef-attr"
+        ]
+      },
       "https://drafts.csswg.org/css-values/": {
         "anchors": [
           "lengths",
@@ -1934,7 +1939,6 @@
           "in",
           "px",
           "pt",
-          "funcdef-attr",
           "math-function"
         ]
       },
@@ -2904,7 +2908,7 @@
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
-          "DefinitionOfScheme",
+          "blob-url",
           "dfn-Blob",
           "dfn-type",
           "dfn-file",
@@ -2951,6 +2955,11 @@
           "cache"
         ]
       },
+      "https://w3c.github.io/accname/": {
+        "anchors": [
+          "dfn-accessible-name"
+        ]
+      },
       "https://w3c.github.io/aria/": {
         "anchors": [
           "button",
@@ -2961,7 +2970,6 @@
           "aria-label",
           "aria-level",
           "dfn-role",
-          "dfn-accessible-name",
           "ARIAMixin",
           "dfn-ariamixin-getter-steps",
           "dfn-ariamixin-setter-steps",
@@ -2972,7 +2980,7 @@
       },
       "https://w3c.github.io/battery/": {
         "anchors": [
-          "widl-Navigator-getBattery-Promise-BatteryManager"
+          "dom-navigator-getbattery"
         ]
       },
       "https://w3c.github.io/charmod-norm/": {},
@@ -3809,7 +3817,7 @@
       "https://w3c.github.io/webvtt/": {
         "anchors": [
           "webvtt-file",
-          "webvtt-file-using-cue-text",
+          "webvtt-file-using-caption-or-subtitle-cue-text",
           "webvtt-file-using-only-nested-cues",
           "webvtt-parser",
           "rules-for-updating-the-display-of-webvtt-text-tracks",
