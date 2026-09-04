@@ -10916,7 +10916,7 @@
               "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑦\">realm id</a> for <var>realm</var>.</p>"
             },
             {
-              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③④\">map</a> matching the <code>script.RealmDestroyedParameters</code>\n production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
+              "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③④\">map</a> matching the <code>script.RealmDestroyedParameters</code>\n production, with the <code>realm</code> field set to <var>realm id</var>.</p>"
             },
             {
               "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑤\">map</a> matching the <code>script.RealmDestroyed</code>\n production, with the <code>params</code> field set to <var>params</var>.</p>"
@@ -10976,10 +10976,19 @@
           "html": "<p>Let <var>realm id</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#realm-id\" id=\"ref-for-realm-id⑨\">realm id</a> for <var>realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑧\">map</a> matching the <code>script.RealmDestroyedParameters</code>\n production, with the <code>realm</code> field set of <var>realm id</var>.</p>"
+          "html": "<p>Let <var>params</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑧\">map</a> matching the <code>script.RealmDestroyedParameters</code>\n production, with the <code>realm</code> field set to <var>realm id</var>.</p>"
         },
         {
           "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①③⑨\">map</a> matching the <code>script.RealmDestroyed</code>\n production, with the <code>params</code> field set to <var>params</var>.</p>"
+        },
+        {
+          "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled②②\">set of sessions for which an event is enabled</a>\n given \"<code>script.realmDestroyed</code>\" and <var>related navigables</var>:",
+          "rationale": "emit",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②④\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
+            }
+          ]
         }
       ]
     },
@@ -11395,7 +11404,7 @@
               "html": "<p>Let <var>related navigables</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#get-related-navigables\" id=\"ref-for-get-related-navigables①③\">get related navigables</a> given <var>settings</var>.</p>"
             },
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#event-is-enabled\" id=\"ref-for-event-is-enabled③\">event is enabled</a> with <var>session</var>, \"<code>log.entryAdded</code>\" and\n <var>related navigables</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②④\">emit an event</a> with <var>session</var> and <var>body</var>.</p>\n        <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#buffer-a-log-event\" id=\"ref-for-buffer-a-log-event\">buffer a log event</a> with <var>session</var>, <var>related browsing\n contexts</var>, and <var>body</var>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#event-is-enabled\" id=\"ref-for-event-is-enabled③\">event is enabled</a> with <var>session</var>, \"<code>log.entryAdded</code>\" and\n <var>related navigables</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑤\">emit an event</a> with <var>session</var> and <var>body</var>.</p>\n        <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#buffer-a-log-event\" id=\"ref-for-buffer-a-log-event\">buffer a log event</a> with <var>session</var>, <var>related browsing\n contexts</var>, and <var>body</var>.</p>"
             }
           ]
         }
@@ -11435,7 +11444,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#event-is-enabled\" id=\"ref-for-event-is-enabled④\">event is enabled</a> with <var>session</var>, \"<code>log.entryAdded</code>\" and\n <var>related navigables</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑤\">emit an event</a> with <var>session</var> and <var>body</var>.</p>\n        <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#buffer-a-log-event\" id=\"ref-for-buffer-a-log-event①\">buffer a log event</a> with <var>session</var>, <var>related browsing\n contexts</var>, and <var>body</var>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#event-is-enabled\" id=\"ref-for-event-is-enabled④\">event is enabled</a> with <var>session</var>, \"<code>log.entryAdded</code>\" and\n <var>related navigables</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑥\">emit an event</a> with <var>session</var> and <var>body</var>.</p>\n        <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#buffer-a-log-event\" id=\"ref-for-buffer-a-log-event①\">buffer a log event</a> with <var>session</var>, <var>related browsing\n contexts</var>, and <var>body</var>.</p>"
             }
           ]
         }
@@ -11471,7 +11480,7 @@
                   "rationale": "emit",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑥\">Emit an event</a> with <var>session</var> and <var>event</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑦\">Emit an event</a> with <var>session</var> and <var>event</var>.</p>"
                     },
                     {
                       "html": "For each <var>other context id</var> in <var>other navigables</var>:",
@@ -11684,7 +11693,7 @@
           "html": "<p>Let <var>related navigables</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑥④\">set</a> containing <var>navigable</var>.</p>"
         },
         {
-          "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled②②\">set of sessions for which an event is enabled</a> given\n \"<code>input.fileDialogOpened</code>\" and <var>related navigables</var>:",
+          "html": "For each <var>session</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#set-of-sessions-for-which-an-event-is-enabled\" id=\"ref-for-set-of-sessions-for-which-an-event-is-enabled②③\">set of sessions for which an event is enabled</a> given\n \"<code>input.fileDialogOpened</code>\" and <var>related navigables</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -11706,7 +11715,7 @@
               "html": "<p>Let <var>body</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⑤⑨\">map</a> matching the <code>input.fileDialogOpened</code>\n production, with the <code>params</code> field set to <var>params</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑦\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#emit-an-event\" id=\"ref-for-emit-an-event②⑧\">Emit an event</a> with <var>session</var> and <var>body</var>.</p>"
             }
           ]
         },

@@ -125,6 +125,40 @@
       ]
     },
     {
+      "name": "inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-inline-size",
+      "value": "auto | <box-size>",
+      "initial": "auto",
+      "appliesTo": "all elements except non-replaced inlines",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type, recursing into fit-content()",
+      "logicalPropertyGroup": "size",
+      "styleDeclaration": [
+        "inline-size",
+        "inlineSize"
+      ]
+    },
+    {
+      "name": "block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-block-size",
+      "value": "auto | <box-size>",
+      "initial": "auto",
+      "appliesTo": "all elements except non-replaced inlines",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type, recursing into fit-content()",
+      "logicalPropertyGroup": "size",
+      "styleDeclaration": [
+        "block-size",
+        "blockSize"
+      ]
+    },
+    {
       "name": "min-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
       "value": "auto | <box-size>",
@@ -247,6 +281,40 @@
       ]
     },
     {
+      "name": "min-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-inline-size",
+      "value": "auto | <box-size>",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, recursing into fit-content()",
+      "logicalPropertyGroup": "min-size",
+      "styleDeclaration": [
+        "min-inline-size",
+        "minInlineSize"
+      ]
+    },
+    {
+      "name": "min-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-block-size",
+      "value": "auto | <box-size>",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, recursing into fit-content()",
+      "logicalPropertyGroup": "min-size",
+      "styleDeclaration": [
+        "min-block-size",
+        "minBlockSize"
+      ]
+    },
+    {
       "name": "max-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
       "value": "none | <box-size>",
@@ -366,6 +434,40 @@
       "styleDeclaration": [
         "max-height",
         "maxHeight"
+      ]
+    },
+    {
+      "name": "max-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-inline-size",
+      "value": "none | <box-size>",
+      "initial": "none",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, recursing into fit-content()",
+      "logicalPropertyGroup": "max-size",
+      "styleDeclaration": [
+        "max-inline-size",
+        "maxInlineSize"
+      ]
+    },
+    {
+      "name": "max-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-block-size",
+      "value": "none | <box-size>",
+      "initial": "none",
+      "appliesTo": "all elements that accept width or height",
+      "inherited": "no",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, recursing into fit-content()",
+      "logicalPropertyGroup": "max-size",
+      "styleDeclaration": [
+        "max-block-size",
+        "maxBlockSize"
       ]
     },
     {
