@@ -36,9 +36,11 @@ const supersededBy = {
 
   // https://github.com/w3c/csswg-drafts/issues/6434#issuecomment-877447360
   // https://drafts.csswg.org/css-borders-4/#level-changes
+  // https://github.com/w3c/csswg-drafts/issues/10189
   'css-logical': [
     'css-position',
-    'css-borders'
+    'css-borders',
+    'css-sizing'
   ],
 
   // See https://github.com/w3c/csswg-drafts/issues/6435
