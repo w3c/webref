@@ -7497,16 +7497,16 @@
       "name": "dimensions",
       "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#img-dimensions",
       "html": "To determine the <dfn id=\"img-dimensions\">dimensions</dfn> of an <code id=\"the-img-element:the-img-element-18\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element\n  <var>image</var>:",
-      "rationale": "if",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p>If <var>image</var> is <a id=\"the-img-element:being-rendered\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\">being rendered</a>, then return its rendered width and\n   height, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"the-img-element:'px'\" data-x-internal=\"'px'\">CSS pixels</a>. <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSS\">[CSS]</a></p>"
+          "html": "<p>Let <var>naturalDimensions</var> be null.</p>"
         },
         {
-          "html": "<p>If <var>image</var> is <i id=\"the-img-element:img-available-5\"><a href=\"https://html.spec.whatwg.org/multipage/images.html#img-available\">available</a></i> and has\n   <a id=\"the-img-element:density-corrected-intrinsic-width-and-height-2\" href=\"https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height\">density-corrected natural width and height</a>, then return its\n   <a id=\"the-img-element:density-corrected-intrinsic-width-and-height-3\" href=\"https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height\">density-corrected natural width and height</a>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"the-img-element:'px'-2\" data-x-internal=\"'px'\">CSS\n   pixels</a>.</p>"
+          "html": "<p>If <var>image</var> is <i id=\"the-img-element:img-available-5\"><a href=\"https://html.spec.whatwg.org/multipage/images.html#img-available\">available</a></i>, then set\n   <var>naturalDimensions</var> to <var>image</var>'s <a id=\"the-img-element:density-corrected-intrinsic-width-and-height-2\" href=\"https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height\">density-corrected natural width and\n   height</a>.</p>"
         },
         {
-          "html": "<p>Return a width of 0 and a height of 0.</p>"
+          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#determine-dimensions\" id=\"the-img-element:determine-dimensions\">determining the\n   dimensions</a> of <var>image</var> given <var>naturalDimensions</var>.</p>"
         }
       ]
     },
@@ -7520,7 +7520,7 @@
           "html": "<p>If the image is not <i id=\"the-img-element:img-available-6\"><a href=\"https://html.spec.whatwg.org/multipage/images.html#img-available\">available</a></i>, then return 0.</p>"
         },
         {
-          "html": "<p>Return the respective component of the image's <a id=\"the-img-element:density-corrected-intrinsic-width-and-height-4\" href=\"https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height\">density-corrected natural width and\n   height</a>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"the-img-element:'px'-3\" data-x-internal=\"'px'\">CSS pixels</a>. <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSS\">[CSS]</a></p>"
+          "html": "<p>Return the respective component of the image's <a id=\"the-img-element:density-corrected-intrinsic-width-and-height-3\" href=\"https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height\">density-corrected natural width and\n   height</a>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"the-img-element:'px'\" data-x-internal=\"'px'\">CSS pixels</a>. <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSS\">[CSS]</a></p>"
         }
       ]
     },
@@ -7604,10 +7604,10 @@
           "html": "<p>Let <var>img</var> be the result of <a href=\"https://dom.spec.whatwg.org/#concept-create-element\" id=\"the-img-element:create-an-element\" data-x-internal=\"create-an-element\">creating an\n   element</a> given <var>document</var>, \"<code>img</code>\", and the <a id=\"the-img-element:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML\n   namespace</a>.</p>"
         },
         {
-          "html": "<p>If <var>width</var> is given, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-img-element:concept-element-attributes-set-value\" data-x-internal=\"concept-element-attributes-set-value\">set\n   an attribute value</a> for <var>img</var> using \"<code id=\"the-img-element:attr-dim-width-4\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width\">width</a></code>\"\n   and <var>width</var>.</p>"
+          "html": "<p>If <var>width</var> is given, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-img-element:concept-element-attributes-set-value\" data-x-internal=\"concept-element-attributes-set-value\">set\n   an attribute value</a> for <var>img</var> using \"<code id=\"the-img-element:attr-dim-width-5\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width\">width</a></code>\"\n   and <var>width</var>.</p>"
         },
         {
-          "html": "<p>If <var>height</var> is given, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-img-element:concept-element-attributes-set-value-2\" data-x-internal=\"concept-element-attributes-set-value\">set an attribute value</a> for <var>img</var>\n   using \"<code id=\"the-img-element:attr-dim-height-4\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height\">height</a></code>\" and <var>height</var>.</p>"
+          "html": "<p>If <var>height</var> is given, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-img-element:concept-element-attributes-set-value-2\" data-x-internal=\"concept-element-attributes-set-value\">set an attribute value</a> for <var>img</var>\n   using \"<code id=\"the-img-element:attr-dim-height-5\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height\">height</a></code>\" and <var>height</var>.</p>"
         },
         {
           "html": "<p>Return <var>img</var>.</p>"
@@ -11218,6 +11218,50 @@
       ]
     },
     {
+      "name": "determine the dimensions",
+      "href": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#determine-dimensions",
+      "html": "To <dfn id=\"determine-dimensions\">determine the dimensions</dfn> of an <code id=\"dimension-attributes:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> or\n  <code id=\"dimension-attributes:the-input-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#the-input-element\">input</a></code> element <var>element</var> given a struct consisting of a width and a height,\n  or null, <var>naturalDimensions</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var> is <a id=\"dimension-attributes:being-rendered\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\">being rendered</a>, then return the width and height of\n   <var>element</var>'s <a id=\"dimension-attributes:content-box\" href=\"https://drafts.csswg.org/css-box/#content-box\" data-x-internal=\"content-box\">content box</a>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"dimension-attributes:'px'-3\" data-x-internal=\"'px'\">CSS pixels</a>.\n   <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSS\">[CSS]</a></p>"
+        },
+        {
+          "html": "<p>Let <var>width</var> and <var>height</var> be 0.</p>"
+        },
+        {
+          "html": "<p>If <var>naturalDimensions</var> is not null, then set <var>width</var> to\n   <var>naturalDimensions</var>'s width and <var>height</var> to <var>naturalDimensions</var>'s\n   height.</p>"
+        },
+        {
+          "html": "If <var>element</var> has a <code id=\"dimension-attributes:attr-dim-width-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width\">width</a></code> attribute:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>attributeWidth</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#rules-for-parsing-non-negative-integers\" id=\"dimension-attributes:rules-for-parsing-non-negative-integers\">parsing that attribute's value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>attributeWidth</var> is not an error, then set <var>width</var> to\n     <var>attributeWidth</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>element</var> has a <code id=\"dimension-attributes:attr-dim-height-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height\">height</a></code> attribute:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>attributeHeight</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#rules-for-parsing-non-negative-integers\" id=\"dimension-attributes:rules-for-parsing-non-negative-integers-2\">parsing that attribute's value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>attributeHeight</var> is not an error, then set <var>height</var> to\n     <var>attributeHeight</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a width of <var>width</var> and a height of <var>height</var>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"dimension-attributes:'px'-4\" data-x-internal=\"'px'\">CSS pixels</a>.</p>"
+        }
+      ]
+    },
+    {
       "html": "The <code id=\"the-table-element:dom-table-caption-2\"><a href=\"https://html.spec.whatwg.org/multipage/tables.html#dom-table-caption\">caption</a></code> setter steps are:",
       "rationale": "remove",
       "steps": [
@@ -12104,6 +12148,26 @@
         },
         {
           "html": "<p>If <var>previouslySelectable</var> is false and <var>nowSelectable</var> is true, set the\n   element's <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-textarea/input-cursor\" id=\"the-input-element:concept-textarea/input-cursor\">text entry cursor position</a> to the\n   beginning of the text control, and <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#set-the-selection-direction\" id=\"the-input-element:set-the-selection-direction\">set its selection\n   direction</a> to \"<code>none</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "dimensions",
+      "href": "https://html.spec.whatwg.org/multipage/input.html#input-img-dimensions",
+      "html": "To determine the <dfn id=\"input-img-dimensions\">dimensions</dfn> of an <code id=\"the-input-element:the-input-element-29\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#the-input-element\">input</a></code>\n  element <var>input</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>input</var>'s <code id=\"the-input-element:attr-input-type-51\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#attr-input-type\">type</a></code> attribute is not in the\n   <a href=\"https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)\" id=\"the-input-element:image-button-state-(type=image)-4\">Image Button</a> state, then return a width of 0 and a\n   height of 0. (In that case no image is <i id=\"the-input-element:input-img-available\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#input-img-available\">available</a></i>.)</p>"
+        },
+        {
+          "html": "<p>Let <var>naturalDimensions</var> be null.</p>"
+        },
+        {
+          "html": "<p>If an image is <i id=\"the-input-element:input-img-available-2\"><a href=\"https://html.spec.whatwg.org/multipage/input.html#input-img-available\">available</a></i>, then set\n   <var>naturalDimensions</var> to the result of applying the <a id=\"the-input-element:default-sizing-algorithm\" href=\"https://drafts.csswg.org/css-images/#default-sizing\" data-x-internal=\"default-sizing-algorithm\">default sizing algorithm</a>\n   with that image's <a href=\"https://drafts.csswg.org/css-images/#natural-dimensions\" id=\"the-input-element:natural-dimensions\" data-x-internal=\"natural-dimensions\">natural width, natural height, and natural\n   aspect ratio</a>, if any, using a <a id=\"the-input-element:default-object-size\" href=\"https://drafts.csswg.org/css-images/#default-object-size\" data-x-internal=\"default-object-size\">default object size</a> of 300 by 150.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#determine-dimensions\" id=\"the-input-element:determine-dimensions\">determining the\n   dimensions</a> of <var>input</var> given <var>naturalDimensions</var>.</p>"
         }
       ]
     },
