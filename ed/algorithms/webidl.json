@@ -276,7 +276,7 @@
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> <var>n</var> to <var>max</var> − 1, inclusive:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range\">the range</a> <var>n</var> to <var>max</var>, exclusive:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -286,7 +286,7 @@
                       "html": "<p>Let <var>o</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#optionality-list\" id=\"ref-for-optionality-list②\">optionality list</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 0 to <var>n</var> − 1, inclusive:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range①\">the range</a> 0 to <var>n</var>, exclusive:",
                       "rationale": "append",
                       "steps": [
                         {
@@ -298,7 +298,7 @@
                       ]
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range②\">the range</a> <var>n</var> to <var>i</var>, inclusive:",
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> <var>n</var> to <var>i</var>, inclusive:",
                       "rationale": "append",
                       "steps": [
                         {
@@ -333,7 +333,7 @@
                   "html": "<p>Let <var>o</var> be an <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#optionality-list\" id=\"ref-for-optionality-list③\">optionality list</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range③\">the range</a> 0 to <var>i</var> − 1, inclusive:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>j</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range②\">the range</a> 0 to <var>i</var>, exclusive:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -2360,7 +2360,7 @@
           "html": "<p>Let <var>bytes</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length③\">length</a> equal to <var>length</var>.</p>"
         },
         {
-          "html": "<p>For <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range④\">the range</a> <var>offset</var> to <var>offset</var> + <var>length</var> − 1, inclusive, set\n<var>bytes</var>[<var>i</var> − <var>offset</var>] to <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-getvaluefrombuffer\" id=\"ref-for-sec-getvaluefrombuffer\">GetValueFromBuffer</a>(<var>jsArrayBuffer</var>, <var>i</var>, Uint8,\ntrue, Unordered).</p>"
+          "html": "<p>For <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range③\">the range</a> <var>offset</var> to <var>offset</var> + <var>length</var>, exclusive,\nset <var>bytes</var>[<var>i</var> − <var>offset</var>] to <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-getvaluefrombuffer\" id=\"ref-for-sec-getvaluefrombuffer\">GetValueFromBuffer</a>(<var>jsArrayBuffer</var>, <var>i</var>, Uint8,\ntrue, Unordered).</p>"
         },
         {
           "html": "<p>Return <var>bytes</var>.</p>"
@@ -2420,7 +2420,7 @@
           "html": "<p class=\"assertion\">Assert: <var>bytes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length④\">length</a> ≤ <var>jsArrayBuffer</var>.[[ArrayBufferByteLength]]\n− <var>startingOffset</var>.</p>"
         },
         {
-          "html": "<p>For <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range⑤\">the range</a> <var>startingOffset</var> to <var>startingOffset</var> + <var>bytes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑤\">length</a> − 1, inclusive, perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer\" id=\"ref-for-sec-setvalueinbuffer\">SetValueInBuffer</a>(<var>jsArrayBuffer</var>,\n<var>i</var>, Uint8, <var>bytes</var>[<var>i</var> - <var>startingOffset</var>], true, Unordered).</p>"
+          "html": "<p>For <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range④\">the range</a> <var>startingOffset</var> to <var>startingOffset</var> +\n<var>bytes</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence-length\" id=\"ref-for-byte-sequence-length⑤\">length</a>, exclusive, perform\n<a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer\" id=\"ref-for-sec-setvalueinbuffer\">SetValueInBuffer</a>(<var>jsArrayBuffer</var>, <var>i</var>, Uint8, <var>bytes</var>[<var>i</var> - <var>startingOffset</var>], true,\nUnordered).</p>"
         }
       ]
     },

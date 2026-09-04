@@ -1717,11 +1717,17 @@ browsingContext.CaptureScreenshotParameters = {
   ? origin: ("viewport" / "document") .default "viewport",
   ? format: browsingContext.ImageFormat,
   ? clip: browsingContext.ClipRectangle,
+  ? imageSize: browsingContext.ImageSize,
 }
 
 browsingContext.ImageFormat = {
    type: text,
    ? quality: 0.0..1.0,
+}
+
+browsingContext.ImageSize = {
+   ? maxWidth: (js-uint .gt 1),
+   ? maxHeight: (js-uint .gt 1),
 }
 
 browsingContext.ClipRectangle = (

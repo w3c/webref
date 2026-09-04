@@ -575,41 +575,6 @@
       ]
     },
     {
-      "id": "dom-viewtransition-waituntil",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil",
-      "linkingText": [
-        "waitUntil(promise)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "ViewTransition"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-domtransition-interface",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
-        "title": "The ViewTransition interface",
-        "number": "2.3"
-      },
-      "definedIn": "pre",
-      "links": [
-        {
-          "type": "dev",
-          "id": "ref-for-dom-viewtransition-waituntil",
-          "name": "viewTransition.waitUntil()",
-          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-waituntil",
-          "heading": {
-            "id": "the-domtransition-interface",
-            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
-            "title": "The ViewTransition interface",
-            "number": "2.3"
-          }
-        }
-      ]
-    },
-    {
       "id": "dom-viewtransition-waituntil-promise-promise",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil-promise-promise",
       "linkingText": [
@@ -852,6 +817,28 @@
       "links": []
     },
     {
+      "id": "viewtransition-wait-until-promise-count",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-wait-until-promise-count",
+      "linkingText": [
+        "wait until promise count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "2.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "viewtransitiontypeset",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset",
       "linkingText": [
@@ -897,6 +884,41 @@
           "id": "ref-for-dom-viewtransition-skiptransition③",
           "name": "viewTransition.skipTransition()",
           "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-skiptransition%E2%91%A2",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "2.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-viewtransition-waituntil",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil",
+      "linkingText": [
+        "waitUntil(promise)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ViewTransition-waitUntil",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ViewTransition-waitUntil",
+        "title": "waitUntil() Method Steps",
+        "number": "2.3.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-viewtransition-waituntil①",
+          "name": "viewTransition.waitUntil()",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-waituntil%E2%91%A0",
           "heading": {
             "id": "the-domtransition-interface",
             "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
@@ -2119,36 +2141,16 @@
       "links": []
     },
     {
-      "id": "document-wait-until-promise-count",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-wait-until-promise-count",
+      "id": "element-active-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#element-active-view-transition",
       "linkingText": [
-        "wait until promise count"
+        "active view transition"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "document"
+        "element"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "additions-to-document",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
-        "title": "Additions to Document",
-        "number": "12.1.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "captured-in-a-view-transition",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-in-a-view-transition",
-      "linkingText": [
-        "captured in a view transition"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2157,7 +2159,29 @@
         "title": "Additions to Elements",
         "number": "12.1.2"
       },
-      "definedIn": "prose",
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "element-captured-in-a-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#element-captured-in-a-view-transition",
+      "linkingText": [
+        "captured in a view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "elements-concept",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#elements-concept",
+        "title": "Additions to Elements",
+        "number": "12.1.2"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {

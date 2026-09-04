@@ -5,12 +5,34 @@
   },
   "backrefs": [
     {
-      "id": "valdef-width-stretch",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-stretch",
+      "id": "propdef-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-size",
       "linkingText": [
-        "stretch"
+        "size"
       ],
-      "type": "value",
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-logical-1",
+          "title": "CSS Logical Properties and Values Module Level 1",
+          "url": "https://drafts.csswg.org/css-logical-1/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
+        }
+      ]
+    },
+    {
+      "id": "funcdef-width-fit-content",
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
+      "linkingText": [
+        "fit-content()"
+      ],
+      "type": "function",
       "for": [
         "width",
         "height",
@@ -27,11 +49,6 @@
       ],
       "access": "public",
       "referencedBy": [
-        {
-          "shortname": "css-align-3",
-          "title": "CSS Box Alignment Module Level 3",
-          "url": "https://drafts.csswg.org/css-align-3/"
-        },
         {
           "shortname": "css-sizing-3",
           "title": "CSS Box Sizing Module Level 3",
@@ -41,81 +58,6 @@
           "shortname": "css-values-5",
           "title": "CSS Values and Units Module Level 5",
           "url": "https://drafts.csswg.org/css-values-5/"
-        }
-      ]
-    },
-    {
-      "id": "valdef-width-fit-content",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-fit-content",
-      "linkingText": [
-        "fit-content"
-      ],
-      "type": "value",
-      "for": [
-        "width",
-        "height",
-        "inline-size",
-        "block-size",
-        "min-width",
-        "min-height",
-        "min-inline-size",
-        "min-block-size",
-        "max-width",
-        "max-height",
-        "max-inline-size",
-        "max-block-size"
-      ],
-      "access": "public",
-      "referencedBy": [
-        {
-          "shortname": "css-align-3",
-          "title": "CSS Box Alignment Module Level 3",
-          "url": "https://drafts.csswg.org/css-align-3/"
-        },
-        {
-          "shortname": "css-flexbox-1",
-          "title": "CSS Flexible Box Layout Module Level 1",
-          "url": "https://drafts.csswg.org/css-flexbox-1/"
-        },
-        {
-          "shortname": "css-sizing-3",
-          "title": "CSS Box Sizing Module Level 3",
-          "url": "https://drafts.csswg.org/css-sizing-3/"
-        },
-        {
-          "shortname": "css-values-5",
-          "title": "CSS Values and Units Module Level 5",
-          "url": "https://drafts.csswg.org/css-values-5/"
-        }
-      ]
-    },
-    {
-      "id": "valdef-width-contain",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "linkingText": [
-        "contain"
-      ],
-      "type": "value",
-      "for": [
-        "width",
-        "height",
-        "inline-size",
-        "block-size",
-        "min-width",
-        "min-height",
-        "min-inline-size",
-        "min-block-size",
-        "max-width",
-        "max-height",
-        "max-inline-size",
-        "max-block-size"
-      ],
-      "access": "public",
-      "referencedBy": [
-        {
-          "shortname": "css-sizing-3",
-          "title": "CSS Box Sizing Module Level 3",
-          "url": "https://drafts.csswg.org/css-sizing-3/"
         }
       ]
     },
@@ -173,6 +115,11 @@
           "shortname": "css-flexbox-1",
           "title": "CSS Flexible Box Layout Module Level 1",
           "url": "https://drafts.csswg.org/css-flexbox-1/"
+        },
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
         }
       ]
     },
@@ -210,6 +157,25 @@
           "shortname": "css-images-3",
           "title": "CSS Images Module Level 3",
           "url": "https://drafts.csswg.org/css-images-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-aspect-ratio-auto",
+      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-aspect-ratio-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "type": "value",
+      "for": [
+        "aspect-ratio"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-sizing-3",
+          "title": "CSS Box Sizing Module Level 3",
+          "url": "https://drafts.csswg.org/css-sizing-3/"
         }
       ]
     },
@@ -323,6 +289,25 @@
           "shortname": "css-sizing-3",
           "title": "CSS Box Sizing Module Level 3",
           "url": "https://drafts.csswg.org/css-sizing-3/"
+        }
+      ]
+    },
+    {
+      "id": "valdef-column-width-fit-content",
+      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-column-width-fit-content",
+      "linkingText": [
+        "fit-content"
+      ],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "css-align-3",
+          "title": "CSS Box Alignment Module Level 3",
+          "url": "https://drafts.csswg.org/css-align-3/"
         }
       ]
     }

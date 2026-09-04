@@ -1,0 +1,764 @@
+{
+  "spec": {
+    "title": "The Profiles Vocabulary 1.0",
+    "url": "https://w3c.github.io/dx-prof/prof/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://w3c.github.io/dx-prof/prof/#respecDocument",
+      "level": 1,
+      "title": "The Profiles Vocabulary 1.0",
+      "alternateIds": [
+        "title"
+      ]
+    },
+    {
+      "id": "FamilyOfDocs",
+      "href": "https://w3c.github.io/dx-prof/prof/#FamilyOfDocs",
+      "level": 3,
+      "title": "Overview of DXWG documents on profiles",
+      "alternateIds": [
+        "overview-of-dxwg-documents-on-profiles"
+      ]
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/dx-prof/prof/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/dx-prof/prof/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "profile-background",
+      "href": "https://w3c.github.io/dx-prof/prof/#profile-background",
+      "level": 3,
+      "title": "Profile background",
+      "alternateIds": [
+        "x1-1-profile-background"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/dx-prof/prof/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "diagramconventions",
+      "href": "https://w3c.github.io/dx-prof/prof/#diagramconventions",
+      "level": 3,
+      "title": "Diagram Conventions",
+      "alternateIds": [
+        "x2-1-diagram-conventions"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "definitions",
+      "href": "https://w3c.github.io/dx-prof/prof/#definitions",
+      "level": 2,
+      "title": "Definitions",
+      "alternateIds": [
+        "x3-definitions"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://w3c.github.io/dx-prof/prof/#namespaces",
+      "level": 2,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x4-namespaces"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "motivation",
+      "href": "https://w3c.github.io/dx-prof/prof/#motivation",
+      "level": 2,
+      "title": "Motivation",
+      "alternateIds": [
+        "x5-motivation"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "motivating-requirements",
+      "href": "https://w3c.github.io/dx-prof/prof/#motivating-requirements",
+      "level": 3,
+      "title": "Motivating Requirements",
+      "alternateIds": [
+        "x5-1-motivating-requirements"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "relatedwork",
+      "href": "https://w3c.github.io/dx-prof/prof/#relatedwork",
+      "level": 2,
+      "title": "Related Work",
+      "alternateIds": [
+        "x6-related-work"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "related-owl",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-owl",
+      "level": 3,
+      "title": "Web Ontology Language (OWL)",
+      "alternateIds": [
+        "x6-1-web-ontology-language-owl"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "related-dcat",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-dcat",
+      "level": 3,
+      "title": "Data Catalog Vocabulary (DCAT)",
+      "alternateIds": [
+        "x6-2-data-catalog-vocabulary-dcat"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "related-adms",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-adms",
+      "level": 3,
+      "title": "Asset Description Metadata Schema (ADMS)",
+      "alternateIds": [
+        "x6-3-asset-description-metadata-schema-adms"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "related-prov",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-prov",
+      "level": 3,
+      "title": "PROV-O: The PROV Ontology",
+      "alternateIds": [
+        "x6-4-prov-o-the-prov-ontology"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "related-void",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-void",
+      "level": 3,
+      "title": "The VoID Vocabulary",
+      "alternateIds": [
+        "x6-5-the-void-vocabulary"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "related-voaf",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-voaf",
+      "level": 3,
+      "title": "Vocabulary of a Friend (VOAF)",
+      "alternateIds": [
+        "x6-6-vocabulary-of-a-friend-voaf"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "related-modspec",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-modspec",
+      "level": 3,
+      "title": "OGC's ModSpec",
+      "alternateIds": [
+        "x6-7-ogc-s-modspec"
+      ],
+      "number": "6.7"
+    },
+    {
+      "id": "related-constraintlanguages",
+      "href": "https://w3c.github.io/dx-prof/prof/#related-constraintlanguages",
+      "level": 3,
+      "title": "Constraint Languages",
+      "alternateIds": [
+        "x6-8-constraint-languages"
+      ],
+      "number": "6.8"
+    },
+    {
+      "id": "conceptualmodel",
+      "href": "https://w3c.github.io/dx-prof/prof/#conceptualmodel",
+      "level": 2,
+      "title": "Conceptual Model",
+      "alternateIds": [
+        "x7-conceptual-model"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "initial-examples",
+      "href": "https://w3c.github.io/dx-prof/prof/#initial-examples",
+      "level": 3,
+      "title": "Initial Examples",
+      "alternateIds": [
+        "x7-1-initial-examples"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "roles-vocab",
+      "href": "https://w3c.github.io/dx-prof/prof/#roles-vocab",
+      "level": 3,
+      "title": "Roles Vocabulary",
+      "alternateIds": [
+        "x7-2-roles-vocabulary"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "null-profiles",
+      "href": "https://w3c.github.io/dx-prof/prof/#null-profiles",
+      "level": 3,
+      "title": "Null Profiles",
+      "alternateIds": [
+        "x7-3-null-profiles"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "specification",
+      "href": "https://w3c.github.io/dx-prof/prof/#specification",
+      "level": 2,
+      "title": "Vocabulary Specification",
+      "alternateIds": [
+        "x8-vocabulary-specification"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "RDF-representation",
+      "href": "https://w3c.github.io/dx-prof/prof/#RDF-representation",
+      "level": 3,
+      "title": "RDF representation",
+      "alternateIds": [
+        "x8-1-rdf-representation"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/dx-prof/prof/#dependencies",
+      "level": 3,
+      "title": "Dependencies",
+      "alternateIds": [
+        "x8-2-dependencies"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "Class:Profile",
+      "href": "https://w3c.github.io/dx-prof/prof/#Class%3AProfile",
+      "level": 3,
+      "title": "Class: Profile",
+      "alternateIds": [
+        "x8-3-class-profile"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "Property:hasResource",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AhasResource",
+      "level": 4,
+      "title": "Property: hasResource",
+      "alternateIds": [
+        "x8-3-1-property-hasresource"
+      ],
+      "number": "8.3.1"
+    },
+    {
+      "id": "Property:isProfileOf",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AisProfileOf",
+      "level": 4,
+      "title": "Property: isProfileOf",
+      "alternateIds": [
+        "x8-3-2-property-isprofileof"
+      ],
+      "number": "8.3.2"
+    },
+    {
+      "id": "Property:isTransitiveProfileOf",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AisTransitiveProfileOf",
+      "level": 4,
+      "title": "Property: isTransitiveProfileOf",
+      "alternateIds": [
+        "x8-3-3-property-istransitiveprofileof"
+      ],
+      "number": "8.3.3"
+    },
+    {
+      "id": "Property:hasToken",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AhasToken",
+      "level": 4,
+      "title": "Property: hasToken",
+      "alternateIds": [
+        "x8-3-4-property-hastoken"
+      ],
+      "number": "8.3.4"
+    },
+    {
+      "id": "Class:ResourceDescriptor",
+      "href": "https://w3c.github.io/dx-prof/prof/#Class%3AResourceDescriptor",
+      "level": 3,
+      "title": "Class: ResourceDescriptor",
+      "alternateIds": [
+        "x8-4-class-resourcedescriptor"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "Property:hasArtifact",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AhasArtifact",
+      "level": 4,
+      "title": "Property: hasArtifact",
+      "alternateIds": [
+        "x8-4-1-property-hasartifact"
+      ],
+      "number": "8.4.1"
+    },
+    {
+      "id": "Property:conformsTo",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AconformsTo",
+      "level": 4,
+      "title": "Property: dct:conformsTo",
+      "alternateIds": [
+        "x8-4-2-property-dct-conformsto"
+      ],
+      "number": "8.4.2"
+    },
+    {
+      "id": "Property:format",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3Aformat",
+      "level": 4,
+      "title": "Property: dct:format",
+      "alternateIds": [
+        "x8-4-3-property-dct-format"
+      ],
+      "number": "8.4.3"
+    },
+    {
+      "id": "Property:hasRole",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AhasRole",
+      "level": 4,
+      "title": "Property: hasRole",
+      "alternateIds": [
+        "x8-4-4-property-hasrole"
+      ],
+      "number": "8.4.4"
+    },
+    {
+      "id": "Property:isInheritedFrom",
+      "href": "https://w3c.github.io/dx-prof/prof/#Property%3AisInheritedFrom",
+      "level": 4,
+      "title": "Property: isInheritedFrom",
+      "alternateIds": [
+        "x8-4-5-property-isinheritedfrom"
+      ],
+      "number": "8.4.5"
+    },
+    {
+      "id": "Class:ResourceRole",
+      "href": "https://w3c.github.io/dx-prof/prof/#Class%3AResourceRole",
+      "level": 3,
+      "title": "Class: ResourceRole",
+      "alternateIds": [
+        "x8-5-class-resourcerole"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "resource-roles-vocab",
+      "href": "https://w3c.github.io/dx-prof/prof/#resource-roles-vocab",
+      "level": 2,
+      "title": "Resource Role Instances",
+      "alternateIds": [
+        "x9-resource-role-instances"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "Role:constraints",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Aconstraints",
+      "level": 3,
+      "title": "Resource Role: Constraints",
+      "alternateIds": [
+        "x9-1-resource-role-constraints"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "Role:example",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Aexample",
+      "level": 3,
+      "title": "Resource Role: Example",
+      "alternateIds": [
+        "x9-2-resource-role-example"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "Role:guidance",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Aguidance",
+      "level": 3,
+      "title": "Resource Role: Guidance",
+      "alternateIds": [
+        "x9-3-resource-role-guidance"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "Role:mapping",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Amapping",
+      "level": 3,
+      "title": "Resource Role: Mapping",
+      "alternateIds": [
+        "x9-4-resource-role-mapping"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "Role:schema",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Aschema",
+      "level": 3,
+      "title": "Resource Role: Schema",
+      "alternateIds": [
+        "x9-5-resource-role-schema"
+      ],
+      "number": "9.5"
+    },
+    {
+      "id": "Role:specification",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Aspecification",
+      "level": 3,
+      "title": "Resource Role: Specification",
+      "alternateIds": [
+        "x9-6-resource-role-specification"
+      ],
+      "number": "9.6"
+    },
+    {
+      "id": "Role:validation",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Avalidation",
+      "level": 3,
+      "title": "Resource Role: Validation",
+      "alternateIds": [
+        "x9-7-resource-role-validation"
+      ],
+      "number": "9.7"
+    },
+    {
+      "id": "Role:vocabulary",
+      "href": "https://w3c.github.io/dx-prof/prof/#Role%3Avocabulary",
+      "level": 3,
+      "title": "Resource Role: Vocabulary",
+      "alternateIds": [
+        "x9-8-resource-role-vocabulary"
+      ],
+      "number": "9.8"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/dx-prof/prof/#examples",
+      "level": 2,
+      "title": "10. Examples",
+      "alternateIds": [
+        "x10-examples"
+      ]
+    },
+    {
+      "id": "eg-dcat-ap",
+      "href": "https://w3c.github.io/dx-prof/prof/#eg-dcat-ap",
+      "level": 3,
+      "title": "DCAT-AP",
+      "alternateIds": [
+        "x10-1-dcat-ap"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "eg-hierarchy",
+      "href": "https://w3c.github.io/dx-prof/prof/#eg-hierarchy",
+      "level": 3,
+      "title": "DCAT-AP hierarchy",
+      "alternateIds": [
+        "x10-2-dcat-ap-hierarchy"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "eg-csiro-dummy-dcap",
+      "href": "https://w3c.github.io/dx-prof/prof/#eg-csiro-dummy-dcap",
+      "level": 3,
+      "title": "CSIRO Dummy Dublin Core AP",
+      "alternateIds": [
+        "x10-3-csiro-dummy-dublin-core-ap"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "eg-adms",
+      "href": "https://w3c.github.io/dx-prof/prof/#eg-adms",
+      "level": 3,
+      "title": "Asset Description Metadata Schema",
+      "alternateIds": [
+        "x10-4-asset-description-metadata-schema"
+      ],
+      "number": "10.4"
+    },
+    {
+      "id": "null-profile-examples",
+      "href": "https://w3c.github.io/dx-prof/prof/#null-profile-examples",
+      "level": 2,
+      "title": "Null Profile Examples",
+      "alternateIds": [
+        "a-null-profile-examples"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "null-profile-of-pos",
+      "href": "https://w3c.github.io/dx-prof/prof/#null-profile-of-pos",
+      "level": 3,
+      "title": "Null Profile of POS",
+      "alternateIds": [
+        "a-1-null-profile-of-pos"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "null-profile-of-prof",
+      "href": "https://w3c.github.io/dx-prof/prof/#null-profile-of-prof",
+      "level": 3,
+      "title": "Null Profile of PROF",
+      "alternateIds": [
+        "a-2-null-profile-of-prof"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "testsuite",
+      "href": "https://w3c.github.io/dx-prof/prof/#testsuite",
+      "level": 2,
+      "title": "Test Suite",
+      "alternateIds": [
+        "b-test-suite"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "alignments",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignments",
+      "level": 2,
+      "title": "Alignments",
+      "alternateIds": [
+        "c-alignments"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "alignment-dcat",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-dcat",
+      "level": 3,
+      "title": "Dataset Catalogue Vocabulary",
+      "alternateIds": [
+        "c-1-dataset-catalogue-vocabulary"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "alignment-adms",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-adms",
+      "level": 3,
+      "title": "Asset Description Metadata Schema",
+      "alternateIds": [
+        "c-2-asset-description-metadata-schema"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "alignment-dct",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-dct",
+      "level": 3,
+      "title": "Dublin Core Terms",
+      "alternateIds": [
+        "c-3-dublin-core-terms"
+      ],
+      "number": "C.3"
+    },
+    {
+      "id": "alignment-owl",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-owl",
+      "level": 3,
+      "title": "Web Ontology Language",
+      "alternateIds": [
+        "c-4-web-ontology-language"
+      ],
+      "number": "C.4"
+    },
+    {
+      "id": "alignment-voaf",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-voaf",
+      "level": 3,
+      "title": "Vocabulary of a Friend",
+      "alternateIds": [
+        "c-5-vocabulary-of-a-friend"
+      ],
+      "number": "C.5"
+    },
+    {
+      "id": "alignment-modspec",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-modspec",
+      "level": 3,
+      "title": "OGC/ISO Modular Specification",
+      "alternateIds": [
+        "c-6-ogc-iso-modular-specification"
+      ],
+      "number": "C.6"
+    },
+    {
+      "id": "alignment-skos",
+      "href": "https://w3c.github.io/dx-prof/prof/#alignment-skos",
+      "level": 3,
+      "title": "Simple Knowledge Organization System",
+      "alternateIds": [
+        "c-7-simple-knowledge-organization-system"
+      ],
+      "number": "C.7"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/dx-prof/prof/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "d-security-considerations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/dx-prof/prof/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "e-privacy-considerations"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/dx-prof/prof/#changes",
+      "level": 2,
+      "title": "Changes",
+      "alternateIds": [
+        "f-changes"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "changes-since-2pwd",
+      "href": "https://w3c.github.io/dx-prof/prof/#changes-since-2pwd",
+      "level": 3,
+      "title": "Changes since last Public Draft",
+      "alternateIds": [
+        "f-1-changes-since-last-public-draft"
+      ],
+      "number": "F.1"
+    },
+    {
+      "id": "features-at-risk",
+      "href": "https://w3c.github.io/dx-prof/prof/#features-at-risk",
+      "level": 3,
+      "title": "Features at risk",
+      "alternateIds": [
+        "f-2-features-at-risk"
+      ],
+      "number": "F.2"
+    },
+    {
+      "id": "appendices",
+      "href": "https://w3c.github.io/dx-prof/prof/#appendices",
+      "level": 2,
+      "title": "Appendices",
+      "alternateIds": [
+        "g-appendices"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/dx-prof/prof/#acknowledgements",
+      "level": 3,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "g-1-acknowledgements"
+      ],
+      "number": "G.1"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://w3c.github.io/dx-prof/prof/#issue-summary",
+      "level": 3,
+      "title": "Issue summary",
+      "alternateIds": [
+        "g-2-issue-summary"
+      ],
+      "number": "G.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/dx-prof/prof/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "h-references"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/dx-prof/prof/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "h-1-normative-references"
+      ],
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/dx-prof/prof/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "h-2-informative-references"
+      ],
+      "number": "H.2"
+    }
+  ]
+}

@@ -8,11 +8,7 @@
       "https://eprint.iacr.org/2020/1244": {},
       "https://eprint.iacr.org/2020/823": {},
       "https://github.com/w3c/vc-di-eddsa/issues/": {},
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "nulls"
-        ]
-      },
+      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-vc-comments/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
       "https://www.rfc-editor.org/info/bcp14": {},
@@ -34,15 +30,21 @@
       },
       "https://www.w3.org/TR/json-ld11-api/": {
         "anchors": [
-          "deserialize-json-ld-to-rdf-algorithm",
-          "expansion-algorithm"
+          "expansion-algorithm",
+          "deserialize-json-ld-to-rdf-algorithm"
         ]
       },
       "https://www.w3.org/TR/rdf-canon/": {
         "anchors": [
-          "dataset-poisoning",
           "canon-algorithm",
           "dfn-serialized-canonical-form"
+        ]
+      },
+      "https://www.w3.org/TR/vc-data-integrity-1.1/": {
+        "anchors": [
+          "CryptosuiteCommonAlgorithms",
+          "create-proof",
+          "verify-proof-0"
         ]
       },
       "https://www.w3.org/TR/vc-data-integrity/": {
@@ -51,17 +53,16 @@
           "proofs",
           "add-proof",
           "verify-proof",
-          "dfn-unsecured-data-document",
-          "dfn-cryptosuite",
-          "PROOF_TRANSFORMATION_ERROR",
-          "PROOF_GENERATION_ERROR",
-          "algorithms",
-          "PROOF_VERIFICATION_ERROR",
           "security-considerations",
           "privacy-considerations",
           "dfn-transformation-algorithm",
           "dfn-hashing-algorithm",
           "dfn-proof-serialization-algorithm",
+          "dfn-unsecured-data-document",
+          "dfn-cryptosuite",
+          "PROOF_TRANSFORMATION_ERROR",
+          "PROOF_GENERATION_ERROR",
+          "algorithms",
           "add-proof-set-chain"
         ]
       },
@@ -83,16 +84,12 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ordered-map",
-          "struct",
-          "struct-item"
+          "struct"
         ]
       },
-      "https://www.w3.org/TR/vc-data-integrity/": {
+      "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
-          "dfn-data-integrity-cryptographic-suite-instance",
-          "dfn-data-integrity-proof",
-          "dfn-unsecured-data-document",
-          "dfn-secured-data-document"
+          "dfn-data-integrity-cryptographic-suite-instance"
         ]
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {

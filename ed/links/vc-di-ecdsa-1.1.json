@@ -32,14 +32,13 @@
       "https://www.w3.org/TR/cid-1.0/": {
         "anchors": [
           "Multikey",
-          "multibase-0",
-          "retrieve-verification-method"
+          "multibase-0"
         ]
       },
       "https://www.w3.org/TR/json-ld11-api/": {
         "anchors": [
-          "expansion-algorithm",
           "deserialize-json-ld-to-rdf-algorithm",
+          "expansion-algorithm",
           "compaction-algorithm"
         ]
       },
@@ -47,9 +46,14 @@
       "https://www.w3.org/TR/rdf-canon/": {
         "anchors": [
           "dfn-hash-algorithm",
-          "dataset-poisoning",
-          "canon-algorithm",
-          "dfn-serialized-canonical-form"
+          "dataset-poisoning"
+        ]
+      },
+      "https://www.w3.org/TR/vc-data-integrity-1.1/": {
+        "anchors": [
+          "create-proof",
+          "verify-proof-0",
+          "CryptosuiteCommonAlgorithms"
         ]
       },
       "https://www.w3.org/TR/vc-data-integrity/": {
@@ -58,12 +62,11 @@
           "proofs",
           "add-proof",
           "verify-proof",
+          "PROOF_GENERATION_ERROR",
+          "PROOF_VERIFICATION_ERROR",
           "dfn-unsecured-data-document",
           "dfn-cryptosuite",
-          "PROOF_TRANSFORMATION_ERROR",
-          "PROOF_GENERATION_ERROR",
           "algorithms",
-          "PROOF_VERIFICATION_ERROR",
           "security-considerations",
           "privacy-considerations"
         ]
@@ -89,18 +92,18 @@
           "struct-item"
         ]
       },
-      "https://www.w3.org/TR/vc-data-integrity/": {
+      "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
           "dfn-data-integrity-cryptographic-suite-instance",
           "dfn-data-integrity-proof",
-          "dfn-unsecured-data-document",
-          "dfn-secured-data-document"
+          "dfn-unsecured-data-document"
         ]
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "dfn-verifiable-credential",
           "dfn-verifier",
+          "dfn-verify",
           "dfn-unlinkable-disclosure"
         ]
       }

@@ -14,13 +14,13 @@
           "html": "<p>Let <var>coverage</var> be <code>2 * min(<var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width\">width</a> / <var>edge</var>’s <span id=\"ref-for-width①\">width</span>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height\">height</a> / <var>edge</var>’s <span id=\"ref-for-height①\">height</span>)</code>.</p>"
         },
         {
-          "html": "<p>Let <var>adustedRadiusWidth</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width②\">width</a>, and <var>outset</var>’s <span id=\"ref-for-width③\">width</span>.</p>"
+          "html": "<p>Let <var>adjustedRadiusWidth</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width②\">width</a>, and <var>outset</var>’s <span id=\"ref-for-width③\">width</span>.</p>"
         },
         {
-          "html": "<p>Let <var>adustedRadiusHeight</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension①\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height②\">height</a>, and <var>outset</var>’s <span id=\"ref-for-height③\">height</span>.</p>"
+          "html": "<p>Let <var>adjustedRadiusHeight</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension①\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height②\">height</a>, and <var>outset</var>’s <span id=\"ref-for-height③\">height</span>.</p>"
         },
         {
-          "html": "<p>Return (<var>adustedRadiusWidth</var>, <var>adustedRadiusHeight</var>).</p>"
+          "html": "<p>Return (<var>adjustedRadiusWidth</var>, <var>adjustedRadiusHeight</var>).</p>"
         }
       ]
     },
@@ -31,7 +31,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>radius</var> is greater than <var>spread</var>, or if <var>coverage</var> is greater than 1, then return <code><var>radius</var> + <var>outset</var></code>.</p>"
+          "html": "<p>If <var>radius</var> is greater than <var>outset</var>, or if <var>coverage</var> is greater than 1, then return <code><var>radius</var> + <var>outset</var></code>.</p>"
         },
         {
           "html": "<p>Let <var>ratio</var> be <code><var>radius</var> / <var>outset</var></code>.</p>"
@@ -88,67 +88,96 @@
       ]
     },
     {
+      "name": "sum-vectors",
+      "href": "https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-list-sum",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"two-dimensional vector list\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"two-dimensional-vector-list-sum\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sum</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector④\">two-dimensional vector</a>s <var>vectors</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>x</var> be <code>0</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>y</var> be <code>0</code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>v</var> in <var>vectors</var>:",
+          "rationale": "increment",
+          "steps": [
+            {
+              "html": "<p>Increment <var>x</var> by <var>v</var>[0];</p>"
+            },
+            {
+              "html": "<p>Increment <var>y</var> by <var>v</var>[1];</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code>(<var>x</var>, <var>y</var>)</code>.</p>"
+        }
+      ]
+    },
+    {
       "name": "border-aligned-contour-path",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given numbers <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>:\n\n    \n    <p>To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-aligned-corner-clip-out-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border-aligned corner clip-out path</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly②\">DOMPointReadOnly</a></code> <var>originalCornerOuter</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector④\">two-dimensional vector</a> <var>vectorTowardsStart</var>, a <span id=\"ref-for-two-dimensional-vector⑤\">two-dimensional vector</span> <var>vectorTowardsEnd</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter\">superellipse parameter</a> <var>curvature</var>, and numbers <var>startInset</var> and <var>endInset</var>:</p>",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>, numbers <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>:\n\n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-aligned-corner-clip-out-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border-aligned corner clip-out path</dfn> given numbers <var>startRadius</var>, <var>endRadius</var>, <var>startInset</var>, <var>endInset</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑥\">DOMPointReadOnly</a></code> <var>targetCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector⑥\">two-dimensional vector</a>s <var>normalizedV3</var>, and <var>normalizedV2</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter\">superellipse parameter</a> <var>K</var>:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>borderRect</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#border-box\" id=\"ref-for-border-box⑦\">border box</a>.</p>"
         },
         {
-          "html": "<p>Let <var>unshapedTargetRect</var> be <var>borderRect</var>, inset by <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>.</p>"
+          "html": "<p>Let <var>targetRect</var> be <var>borderRect</var>, inset by <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>.</p>"
         },
         {
-          "html": "<p>Let <var>path</var> be a path that contains <var>unshapedTargetRect</var>.</p>"
+          "html": "<p>Let <var>path</var> be a path that traces <var>targetRect</var>.</p>"
         },
         {
-          "html": "<p>Let <var>scaleFactor</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#opposite-corner-scale-factor\" id=\"ref-for-opposite-corner-scale-factor\">opposite corner scale factor</a> given <var>element</var>.</p>"
+          "html": "<p>Let <var>topRightRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑤\">used value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius①\">border-top-right-radius</a>.</p>"
         },
         {
-          "html": "Let <var>adjustedRadius</var> be the following steps given a property <var>P</var>, and numbers <var>insetX</var> and <var>insetY</var>:",
+          "html": "<p>Let <var>bottomRightRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius①\">border-bottom-right-radius</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bottomLeftRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑦\">used value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius①\">border-bottom-left-radius</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLeftRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑧\">used value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius③\">border-top-left-radius</a>.</p>"
+        },
+        {
+          "html": "Let <var>adjustedInset</var> be the following steps, given a radius <var>radius</var>, and numbers <var>insetX</var> and <var>insetY</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>radius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#used-value\" id=\"ref-for-used-value⑥\">used value</a> of <var>P</var>.</p>"
+              "html": "<p>Let <var>adjustedRadius</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#outset-adjusted-border-radius\" id=\"ref-for-outset-adjusted-border-radius②\">outset-adjusted border radius</a> given <var>borderRect</var>’s size, <var>radius</var>, and the outset <code>(-<var>insetX</var>, -<var>insetY</var>)</code>.</p>"
             },
             {
-              "html": "<p>If <var>insetX</var> and <var>insetY</var> are zero, return <var>radius</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>insetX</var> or <var>insetY</var> are positive, then return <code>(<var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width④\">width</a> ⋅ <var>scaleFactor</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height④\">height</a> ⋅ <var>scaleFactor</var>)</code>.</p>"
-            },
-            {
-              "html": "<p>Let <var>adjustedRadiusInOutsetCoordinates</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#outset-adjusted-border-radius\" id=\"ref-for-outset-adjusted-border-radius②\">outset-adjusted border radius</a> given <var>borderRect</var>’s size, <var>radius</var>, and <code>(-<var>insetX</var>, -<var>insetY</var>)</code>.</p>"
-            },
-            {
-              "html": "<p>Return <code>(<var>adjustedRadiusInOutsetCoordinates</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width⑤\">width</a> - <var>insetX</var>, <var>adjustedRadiusInOutsetCoordinates</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height⑤\">height</a> - <var>insetY</var>)</code>.</p>"
+              "html": "<p>Return the inset <code>(<var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width④\">width</a> - <var>adjustedRadius</var>’s <span id=\"ref-for-width⑤\">width</span>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height④\">height</a> - <var>adjustedRadius</var>’s <span id=\"ref-for-height⑤\">height</span>)</code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>adjustedTopRightRadius</var> be the <var>adjustedRadius</var> given <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius①\">border-top-right-radius</a>, <var>insetRight</var>, and <var>insetTop</var>.</p>"
+          "html": "<p>Let <var>adjustedTopRightInset</var> be the <var>adjustedInset</var> given <var>topRightRadius</var>, <var>rightInset</var>, and <var>topInset</var>.</p>"
         },
         {
-          "html": "<p>Let <var>adjustedBottomRightRadius</var> be the <var>adjustedRadius</var> given <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius①\">border-bottom-right-radius</a>, <var>insetRight</var>, and <var>insetBottom</var>.</p>"
+          "html": "<p>Let <var>adjustedBottomRightInset</var> be the <var>adjustedInset</var> given <var>bottomRightRadius</var>, <var>rightInset</var>, and <var>bottomInset</var>.</p>"
         },
         {
-          "html": "<p>Let <var>adjustedBottomLeftRadius</var> be the <var>adjustedRadius</var> given <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius①\">border-bottom-left-radius</a>, <var>insetLeft</var>, and <var>insetBottom</var>.</p>"
+          "html": "<p>Let <var>adjustedBottomLeftInset</var> be the <var>adjustedInset</var> given <var>bottomLeftRadius</var>, <var>leftInset</var>, and <var>bottomInset</var>.</p>"
         },
         {
-          "html": "<p>Let <var>adjustedTopLeftRadius</var> be the <var>adjustedRadius</var> given <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius③\">border-top-left-radius</a>, <var>insetLeft</var>, and <var>insetTop</var>.</p>"
+          "html": "<p>Let <var>adjustedTopLeftInset</var> be the <var>adjustedInset</var> given <var>topLeftRadius</var>, <var>leftInset</var>, and <var>topInset</var>.</p>"
         },
         {
-          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path\">border-aligned corner clip-out path</a> given\n<var>borderRect</var>’s right, <var>borderRect</var>’s top,\n<code>(-<var>adjustedTopRightRadius</var>[0], 0)</code>, <code>(0, <var>adjustedTopRightRadius</var>[1])</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape\">corner-top-right-shape</a>,\n<var>topInset</var>, and <var>rightInset</var>.</p>"
+          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path\">border-aligned corner clip-out path</a> given\n<var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height⑥\">height</a>, <var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width⑥\">width</a>,\n<var>adjustedTopRightInset</var>’s <span id=\"ref-for-height⑦\">height</span>, <var>adjustedTopRightInset</var>’s <span id=\"ref-for-width⑦\">width</span>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly②\">DOMPointReadOnly</a></code> at <code>(<var>targetRect</var>’s right, <var>targetRect</var>’s top)</code>,\n<code>(-1, 0)</code>, <code>(0, 1)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape\">corner-top-right-shape</a>.</p>"
         },
         {
-          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path①\">border-aligned corner clip-out path</a> given\n<var>borderRect</var>’s right, <var>borderRect</var>’s bottom,\n<code>(0, -<var>adjustedBottomRightRadius</var>[1])</code>, <code>(-<var>adjustedBottomRightRadius</var>[0], 0)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape\">corner-bottom-right-shape</a>,\n<var>rightInset</var>, and <var>bottomInset</var>.</p>"
+          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path①\">border-aligned corner clip-out path</a> given\n<var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width⑧\">width</a>, <var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height⑧\">height</a>,\n<var>adjustedBottomRightInset</var>’s <span id=\"ref-for-width⑨\">width</span>, <var>adjustedBottomRightInset</var>’s <span id=\"ref-for-height⑨\">height</span>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly③\">DOMPointReadOnly</a></code> at <code>(<var>targetRect</var>’s right, <var>targetRect</var>’s bottom)</code>,\n<code>(0, -1)</code>, <code>(-1, 0)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape\">corner-bottom-right-shape</a>.</p>"
         },
         {
-          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path②\">border-aligned corner clip-out path</a> given\n<var>borderRect</var>’s left, <var>borderRect</var>’s bottom,\n<code>(<var>adjustedBottomLeftRadius</var>[0], 0)</code>, <code>(0, -<var>adjustedBottomLeftRadius</var>[1])</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-left-shape\" id=\"ref-for-propdef-corner-bottom-left-shape\">corner-bottom-left-shape</a>,\n<var>bottomInset</var>, and <var>leftInset</var>.</p>"
+          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path②\">border-aligned corner clip-out path</a> given\n<var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⓪\">height</a>, <var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⓪\">width</a>,\n<var>adjustedBottomLeftInset</var>’s <span id=\"ref-for-height①①\">height</span>, <var>adjustedBottomLeftInset</var>’s <span id=\"ref-for-width①①\">width</span>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly④\">DOMPointReadOnly</a></code> at <code>(<var>targetRect</var>’s left, <var>targetRect</var>’s bottom)</code>,\n<code>(1, 0)</code>, <code>(0, -1)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-left-shape\" id=\"ref-for-propdef-corner-bottom-left-shape\">corner-bottom-left-shape</a>.</p>"
         },
         {
-          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path③\">border-aligned corner clip-out path</a> given\n<var>borderRect</var>’s left, <var>borderRect</var>’s top,\n<code>(0, <var>adjustedTopLeftRadius</var>[1])</code>, <code>(<var>adjustedTopLeftRadius</var>[0], 0)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value③\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape⑤\">corner-top-left-shape</a>,\n<var>leftInset</var>, and <var>topInset</var>.</p>"
+          "html": "<p>Clip out from <var>path</var>, the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#border-aligned-corner-clip-out-path\" id=\"ref-for-border-aligned-corner-clip-out-path③\">border-aligned corner clip-out path</a> given\n<var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①②\">width</a>, <var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①②\">height</a>,\n<var>adjustedTopLeftInset</var>’s <span id=\"ref-for-width①③\">width</span>, <var>adjustedTopLeftInset</var>’s <span id=\"ref-for-height①③\">height</span>,\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑤\">DOMPointReadOnly</a></code> at <code>(<var>targetRect</var>’s left, <var>targetRect</var>’s top)</code>,\n<code>(0, 1)</code>, <code>(1, 0)</code>,\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value③\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape⑤\">corner-top-left-shape</a>.</p>"
         },
         {
           "html": "<p>Return <var>path</var>.</p>"
@@ -158,134 +187,233 @@
     {
       "name": "border-aligned-contour-path",
       "href": "https://drafts.csswg.org/css-borders-4/#border-contour-path",
-      "html": "To compute an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given numbers <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>:\n\n    \n    <p>To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-aligned-corner-clip-out-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border-aligned corner clip-out path</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly②\">DOMPointReadOnly</a></code> <var>originalCornerOuter</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector④\">two-dimensional vector</a> <var>vectorTowardsStart</var>, a <span id=\"ref-for-two-dimensional-vector⑤\">two-dimensional vector</span> <var>vectorTowardsEnd</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter\">superellipse parameter</a> <var>curvature</var>, and numbers <var>startInset</var> and <var>endInset</var>:</p>",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-contour-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border contour path</dfn> given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑦\">element</a> <var>element</var>, numbers <var>topInset</var>, <var>rightInset</var>, <var>bottomInset</var>, <var>leftInset</var>:\n\n    \n    <p>To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"border-aligned-corner-clip-out-path\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">border-aligned corner clip-out path</dfn> given numbers <var>startRadius</var>, <var>endRadius</var>, <var>startInset</var>, <var>endInset</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑥\">DOMPointReadOnly</a></code> <var>targetCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector⑥\">two-dimensional vector</a>s <var>normalizedV3</var>, and <var>normalizedV2</var>, a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter\">superellipse parameter</a> <var>K</var>:</p>",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>curvature</var> is ∞, then return an empty path.</p>"
+          "html": "<p>If <var>startRadius</var> or <var>endRadius</var> is zero, then return an empty path.</p>"
         },
         {
-          "html": "<p>Let <var>clampedHalfCorner</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner\">normalized superellipse half corner</a> given <code>clamp(<var>curvature</var>, -1, 1)</code>.</p>"
+          "html": "<p>If <var>K</var> is ∞, then return an empty path.</p>"
         },
         {
-          "html": "<p>Let <var>originalCornerStart</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors\">extended by</a> « <var>vectorTowardsStart</var> ».</p>"
+          "html": "<p>Let <var>vectorToOriginalCornerOuterV3</var> be <var>normalizedV3</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale\">scaled by</a> <code>-<var>endInset</var></code>.</p>"
         },
         {
-          "html": "<p>Let <var>originalCornerEnd</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①\">extended by</a> « <var>vectorTowardsEnd</var> ».</p>"
+          "html": "<p>Let <var>vectorToOriginalCornerOuterV2</var> be <var>normalizedV2</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①\">scaled by</a> <code>-<var>startInset</var></code>.</p>"
         },
         {
-          "html": "<p>Let <var>originalCornerCenter</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors②\">extended by</a> « <var>vectorTowardsStart</var>, <var>vectorTowardsEnd</var> ».</p>"
+          "html": "<p>Let <var>originalCornerOuter</var> be <var>targetCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors\">extended by</a> « <var>vectorToOriginalCornerOuterV3</var>, <var>vectorToOriginalCornerOuterV2</var> ».</p>"
         },
         {
-          "html": "<p>Let <var>extendStart</var> be a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points\">vector between</a> <var>originalCornerStart</var> and <var>originalCornerCenter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale\">scaled by</a> <var>startInset</var>.</p>"
+          "html": "<p>Let <var>originalCornerStart</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①\">extended by</a> « <var>normalizedV3</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale②\">scaled by</a> <var>endRadius</var> ».</p>"
         },
         {
-          "html": "<p>Let <var>extendEnd</var> be a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points①\">vector between</a> <var>originalCornerEnd</var> and <var>originalCornerCenter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize①\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①\">scaled by</a> <var>endInset</var>.</p>"
+          "html": "<p>Let <var>originalCornerEnd</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors②\">extended by</a> « <var>normalizedV2</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale③\">scaled by</a> <var>startRadius</var> ».</p>"
         },
         {
-          "html": "<p>Let <var>clipStart</var> be <var>originalCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors③\">extended by</a> « <var>extendStart</var> ».</p>"
+          "html": "<p>Let <var>halfCornerX</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner\">normalized superellipse half corner</a> given <var>K</var>.</p>"
         },
         {
-          "html": "<p>Let <var>clipEnd</var> be <var>originalCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors④\">extended by</a> « <var>extendEnd</var> ».</p>"
+          "html": "<p>Let <var>controlPointX</var> be <code>clamp(0, 1/(sqrt(2) - 1) ⋅ <var>halfCornerX</var> - 1/sqrt(2), 1)</code>.</p>"
         },
         {
-          "html": "<p>Let <var>clipOuter</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑤\">extended by</a> « <var>extendStart</var>, <var>extendEnd</var> ».</p>"
+          "html": "<p>Let <var>insetDiff</var> be <code>clamp(-<var>startRadius</var>, <var>endInset</var> - <var>startInset</var>, <var>endRadius</var>)</code>.</p>"
         },
         {
-          "html": "<p>Let <var>vectorFromStartToControlPoint</var> be the the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector⑥\">two-dimensional vector</a> <code>(2 ⋅ <var>clampedHalfCorner</var> - 0.5, 1.5 - 2 ⋅ <var>clampedHalfCorner</var>)</code>.</p>"
+          "html": "<p>If <var>K</var> is smaller than or equal to zero, and <var>insetDiff</var> is equal to <code>-<var>startRadius</var></code> or <var>endRadius</var>, then return an empty path.</p>"
         },
         {
-          "html": "<p>Let <var>singlePixelVectorFromStartToControlPoint</var> be the <var>vectorFromStartToControlPoint</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize②\">normalized</a>.</p>"
+          "html": "<p>Let <var>startControlPointX</var> be <var>controlPointX</var>.</p>"
         },
         {
-          "html": "<p>Let <code><var>strokeA</var>, <var>strokeB</var></code> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-perpendicular\" id=\"ref-for-two-dimensional-vector-perpendicular\">perpendicular</a> of <var>singlePixelVectorFromStartToControlPoint</var>.</p>"
+          "html": "<p>Let <var>endControlPointX</var> be <var>controlPointX</var>.</p>"
         },
         {
-          "html": "<p>Let <var>offset1</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points②\">the vector between</a> <var>originalCornerStart</var> and <var>outerCorner</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize③\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale②\">scaled by</a> <code><var>startInset</var> ⋅ <var>strokeA</var></code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>offset2</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points③\">the vector between</a> <var>outerCorner</var> and <var>originalCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize④\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale③\">scaled by</a> <code><var>startInset</var> ⋅ <var>strokeB</var></code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>offset3</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points④\">the vector between</a> <var>originalCornerEnd</var> and <var>originalCornerCenter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize⑤\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale④\">scaled by</a> <code><var>endInset</var> ⋅ <var>strokeB</var></code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>offset4</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points⑤\">the vector between</a> <var>originalCornerCenter</var> and <var>originalCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize⑥\">normalized</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑤\">scaled by</a> <code><var>endInset</var> ⋅ <var>strokeA</var></code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>adjustedCornerStart</var> be <var>originalCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑥\">extended by</a> « <var>offset1</var>, <var>offset2</var> ».</p>"
-        },
-        {
-          "html": "<p>Let <var>adjustedCornerEnd</var> be <var>originalCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑦\">extended by</a> « <var>offset3</var>, <var>offset4</var> ».</p>"
-        },
-        {
-          "html": "<p>Let <var>adjustedCornerCenter</var> be <var>originalCornerCenter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑧\">extended by</a> « <var>offset4</var>, <var>offset1</var> ».</p>"
-        },
-        {
-          "html": "<p>Let <var>adjustedCornerOuter</var> be <var>originalCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑨\">extended by</a> « <var>offset2</var>, <var>offset3</var> ».</p>"
-        },
-        {
-          "html": "<p>Let <var>curveCenter</var> be <var>adjustedCornerOuter</var> if <var>curvature</var> is less than 0, <var>adjustedCornerCenter</var> otherwise.</p>"
-        },
-        {
-          "html": "Let <var>mapPointToCorner</var> be the following steps: given numbers <var>x</var> and <var>y</var>:",
+          "html": "If <var>insetDiff</var> is not zero:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>v1</var> be  <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points⑥\">the vector between</a> <var>curveCenter</var> and <var>adjustedCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑥\">scaled by</a> <var>x</var>.</p>"
+              "html": "<p>Let <var>bevelNormalVectorX</var> be <code><var>endRadius</var> ⋅ <var>insetDiff</var> + <var>startRadius</var> ⋅ sqrt(<var>startRadius</var><sup>2</sup> + <var>endRadius</var><sup>2</sup> - <var>insetDiff</var><sup>2</sup>)</code>.</p>"
             },
             {
-              "html": "<p>Let <var>v2</var> be  <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points⑦\">the vector between</a> <var>curveCenter</var> and <var>adjustedCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑦\">scaled by</a> <var>y</var>.</p>"
+              "html": "<p>Let <var>bevelNormalVectorY</var> be <code>-<var>startRadius</var> ⋅ <var>insetDiff</var> + <var>endRadius</var> ⋅ sqrt(<var>startRadius</var><sup>2</sup> + <var>endRadius</var><sup>2</sup> - <var>insetDiff</var><sup>2</sup>)</code>.</p>"
             },
             {
-              "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly③\">DOMPointReadOnly</a></code> at <code>(<var>x</var>, <var>y</var>)</code>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①⓪\">extended by</a> « <var>v1</var>, <var>v2</var> ».</p>"
+              "html": "<p>Let <var>bevelControlPointX</var> be <code>(<var>startRadius</var> ⋅ <var>bevelNormalVectorY</var>)/(<var>startRadius</var> ⋅ <var>bevelNormalVectorY</var> + <var>endRadius</var> ⋅ <var>bevelNormalVectorX</var>)</code>.</p>"
+            },
+            {
+              "html": "<p>Set <var>startControlPointX</var> to <code><var>bevelControlPointX</var> · (2 · <var>controlPointX</var>)</code> if <var>K</var> is less than zero, <code>1 - (1 - <var>bevelControlPointX</var>) · (2 · (1 - <var>controlPointX</var>))</code> otherwise.</p>"
+            },
+            {
+              "html": "<p>Set <var>endControlPointX</var> to <code>2 ⋅ <var>controlPointX</var> - <var>startControlPointX</var></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>controlPoint</var> be the result of calling <var>mapPointToCorner</var> given <var>vectorFromStartToControlPoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-y\" id=\"ref-for-dom-dompointreadonly-y④\">y</a></code> and <code>1 - <var>unitVectorFromStartToControlPoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-x\" id=\"ref-for-dom-dompointreadonly-x④\">x</a></code></code>.</p>"
+          "html": "<p>Let <var>unmappedStartNormalVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector⑦\">two-dimensional vector</a> <code>((1 - <var>startControlPointX</var>) ⋅ <var>startRadius</var>, <var>startControlPointX</var> ⋅ <var>endRadius</var>)</code>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize\">normalized</a>.</p>"
         },
         {
-          "html": "<p>Let <var>axisAlignedCornerStart</var> be the intersection between the lines <code>(<var>adjustedCornerStart</var>, <var>controlPoint</var>)</code> and <code>(<var>clipStart</var>, <var>clipOuter</var>)</code>. If the lines are parallel, let it be <code>adjustedCornerStart</code>.</p>"
+          "html": "<p>Let <var>unmappedEndNormalVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector\" id=\"ref-for-two-dimensional-vector⑧\">two-dimensional vector</a> <code>(<var>endControlPointX</var> ⋅ <var>startRadius</var>, (1 - <var>endControlPointX</var>) ⋅ <var>endRadius</var>)</code>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-normalize\" id=\"ref-for-two-dimensional-vector-normalize①\">normalized</a>.</p>"
         },
         {
-          "html": "<p>Let <var>axisAlignedCornerEnd</var> be the intersection between the lines <code>(<var>adjustedCornerEnd</var>, <var>controlPoint</var>)</code> and <code>(<var>clipEnd</var>, <var>clipOuter</var>)</code>. If the lines are parallel, let it be <code>adjustedCornerEnd</code>.</p>"
+          "html": "<p>Let <var>startNormalVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-list-sum\" id=\"ref-for-two-dimensional-vector-list-sum\">sum</a> of « <var>normalizedV3</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale④\">scaled by</a> <var>unmappedStartNormalVector</var>[0], <var>normalizedV2</var> <span id=\"ref-for-two-dimensional-vector-scale⑤\">scaled by</span> <var>unmappedStartNormalVector</var>[1] ».</p>"
         },
         {
-          "html": "<p>Let <var>path</var> be a path, starting at <var>axisAlignedCornerStart</var>.</p>"
+          "html": "<p>Let <var>endNormalVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-list-sum\" id=\"ref-for-two-dimensional-vector-list-sum①\">sum</a> of « <var>normalizedV3</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑥\">scaled by</a> <var>unmappedEndNormalVector</var>[0], <var>normalizedV2</var> <span id=\"ref-for-two-dimensional-vector-scale⑦\">scaled by</span> <var>unmappedEndNormalVector</var>[1] ».</p>"
         },
         {
-          "html": "If <var>curvature</var> is -∞:",
+          "html": "<p>Let <var>adjustedCornerStart</var> be <var>originalCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors③\">extended by</a> « <var>startNormalVector</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑧\">scaled by</a> <var>startInset</var> ».</p>"
+        },
+        {
+          "html": "<p>Let <var>adjustedCornerEnd</var> be <var>originalCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors④\">extended by</a> « <var>endNormalVector</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale⑨\">scaled by</a> <var>endInset</var> ».</p>"
+        },
+        {
+          "html": "<p>Let <var>startTangentVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-perpendicular\" id=\"ref-for-two-dimensional-vector-perpendicular\">perpendicular</a> of <var>startNormalVector</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①⓪\">scaled by</a> -1.</p>"
+        },
+        {
+          "html": "<p>Let <var>endTangentVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-perpendicular\" id=\"ref-for-two-dimensional-vector-perpendicular①\">perpendicular</a> of <var>endNormalVector</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>miterStart</var> be <var>adjustedCornerStart</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>miterEnd</var> be <var>adjustedCornerEnd</var>.</p>"
+        },
+        {
+          "html": "If <var>startInset</var> is less than zero:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clipStart</var> be <var>targetCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑤\">extended by</a> « <var>normalizedV3</var> ».</p>"
+            },
+            {
+              "html": "<p>Set <var>miterStart</var> to the intersection between the lines <code>(<var>adjustedCornerStart</var>, <var>adjustedCornerStart</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑥\">extended by</a> « <var>startTangentVector</var> »)</code> and <code>(<var>clipStart</var>, <var>targetCornerOuter</var>)</code>. If the lines are parallel, let it be <var>adjustedCornerStart</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>K</var> is greater than or equal to zero, set <var>adjustedCornerStart</var> to <var>miterStart</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>endInset</var> is less than zero:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clipEnd</var> be <var>targetCornerOuter</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑦\">extended by</a> « <var>normalizedV2</var> ».</p>"
+            },
+            {
+              "html": "<p>Set <var>miterEnd</var> to the intersection between the lines <code>(<var>adjustedCornerEnd</var>, <var>adjustedCornerEnd</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑧\">extended by</a> « <var>endTangentVector</var> »)</code> and <code>(<var>clipEnd</var>, <var>targetCornerOuter</var>)</code>. If the lines are parallel, let it be <var>adjustedCornerEnd</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>K</var> is greater than or equal to zero, set <var>adjustedCornerEnd</var> to <var>miterEnd</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>adjustedCornerDiagonalVector</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points\">vector between</a> <var>adjustedCornerStart</var> and <var>adjustedCornerEnd</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>adjustedCornerHeight</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#dot-product\" id=\"ref-for-dot-product\">dot product</a> of <var>adjustedCornerDiagonalVector</var> and <var>normalizedV2</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>adjustedCornerOuter</var> be <var>adjustedCornerEnd</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors⑨\">extended by</a> « <var>normalizedV2</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①①\">scaled by</a> <code>-<var>adjustedCornerHeight</var></code> ».</p>"
+        },
+        {
+          "html": "<p>Let <var>adjustedCornerCenter</var> be <var>adjustedCornerStart</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①⓪\">extended by</a> « <var>normalizedV2</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①②\">scaled by</a> <var>adjustedCornerHeight</var> ».</p>"
+        },
+        {
+          "html": "Let <var>mapPointToCorner</var> be the following steps, given numbers <var>x</var> and <var>y</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑦\">DOMPointReadOnly</a></code> <var>start</var>, <var>end</var>, and <var>center</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>v1</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points①\">the vector between</a> <var>center</var> and <var>end</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①③\">scaled by</a> <var>x</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>v4</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points②\">the vector between</a> <var>center</var> and <var>start</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①④\">scaled by</a> <var>y</var>.</p>"
+            },
+            {
+              "html": "<p>Return <var>center</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①①\">extended by</a> « <var>v1</var>, <var>v4</var> ».</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>selfIntersection</var> be undefined.</p>"
+        },
+        {
+          "html": "If <var>K</var>, <var>startInset</var>, and <var>endInset</var> are less than zero:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>-<var>endInset</var></code> is greater than or equal to <var>startRadius</var>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>selfIntersection</var> to the intersection between the segment <code>(<var>miterStart</var>, <var>adjustedCornerStart</var>)</code> and the line <code>(<var>miterEnd</var>, <var>adjustedCornerEnd</var>)</code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <code>-<var>startInset</var></code> is greater than or equal to <var>endRadius</var>, and <var>selfIntersection</var> is undefined:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>selfIntersection</var> to the intersection between the segment <code>(<var>miterEnd</var>, <var>adjustedCornerEnd</var>)</code> and the line <code>(<var>miterStart</var>, <var>adjustedCornerStart</var>)</code>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>path</var> be a path, starting at <var>miterStart</var>.</p>"
+        },
+        {
+          "html": "If <var>selfIntersection</var> is a defined point:",
           "rationale": "extend",
           "steps": [
             {
-              "html": "<p>Extend <var>path</var> to <var>adjustedCornerStart</var>.</p>"
-            },
-            {
-              "html": "<p>Extend <var>path</var> to <var>adjustedCornerCenter</var>.</p>"
-            },
-            {
-              "html": "<p>Extend <var>path</var> to <var>adjustedCornerEnd</var>.</p>"
+              "html": "<p>Extend <var>path</var> to <var>selfIntersection</var>.</p>"
             }
           ]
         },
         {
-          "html": "Otherwise:",
+          "html": "Otherwise, if <var>K</var> is -∞:",
+          "rationale": "extend",
+          "steps": [
+            {
+              "html": "<p>Extend <var>path</var> to <var>adjustedCornerCenter</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if <var>K</var> is greater than zero or less than or equal to -1:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>K</var> be <code>0.5<sup>-abs(<var>curvature</var>)</sup></code>.</p>"
+              "html": "<p>Let <var>n</var> be <code>2<sup>abs(<var>K</var>)</sup></code>.</p>"
             },
             {
-              "html": "<p>For every <var>T</var> between 0 and 1, in an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/overview.html#implementation-approximated\" id=\"ref-for-implementation-approximated\">implementation-approximated</a> manner,\n\textend <var>path</var> to the result of calling <var>mapPointToCorner</var> given <code><var>T</var><sup><var>K</var></sup></code> and <code>(1 - <var>T</var>)<sup><var>K</var></sup></code>.</p>"
+              "html": "<p>Let <var>curveCenter</var> be <var>adjustedCornerOuter</var> if <var>K</var> is less than zero, <var>adjustedCornerCenter</var> otherwise.</p>"
+            },
+            {
+              "html": "<p>For every <var>T</var> between 0 and 1, in an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/overview.html#implementation-approximated\" id=\"ref-for-implementation-approximated\">implementation-approximated</a> manner,\nextend <var>path</var> to the result of calling <var>mapPointToCorner</var> given <code><var>T</var><sup>1/<var>n</var></sup></code> and <code>(1 - <var>T</var>)<sup>1/<var>n</var></sup></code>, <var>adjustedCornerStart</var>, <var>adjustedCornerEnd</var>, and <var>curveCenter</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Extend <var>path</var> to <var>axisAlignedCornerEnd</var>.</p>"
+          "html": "Otherwise, if <var>K</var> is greater than -1 and less than zero:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>tangentIntersection</var> be the intersection between the lines <code>(<var>adjustedCornerStart</var>, <var>adjustedCornerStart</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①②\">extended by</a> « <var>startTangentVector</var> »)</code> and <code>(<var>adjustedCornerEnd</var>, <var>adjustedCornerEnd</var> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①③\">extended by</a> « <var>endTangentVector</var> »)</code>. If the lines are parallel, let it be <var>adjustedCornerStart</var>.</p>"
+            },
+            {
+              "html": "<p>For every <var>T</var> between 0 and 1, in an <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/overview.html#implementation-approximated\" id=\"ref-for-implementation-approximated①\">implementation-approximated</a> manner,\nextend <var>path</var> to the result of calling <var>mapPointToCorner</var> given <code>1 - (1 - <var>T</var>)<sup>1/2</sup></code> and <code>1 - <var>T</var><sup>1/2</sup></code>, <var>adjustedCornerStart</var>, <var>adjustedCornerEnd</var>, and <var>tangentIntersection</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Extend <var>path</var> to <var>clipOuter</var>.</p>"
+          "html": "<p>Extend <var>path</var> to <var>miterEnd</var>.</p>"
         },
         {
           "html": "<p>Return <var>path</var>.</p>"
@@ -302,16 +430,70 @@
           "html": "<p>Let <var>rect</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#border-box\" id=\"ref-for-border-box⑧\">border box</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape①\">corner-top-right-shape</a>,\nmapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑤\">computed</span> horizontal <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius②\">border-top-right-radius</a>, 0, <var>rect</var>’s <span id=\"ref-for-computed-value⑥\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-top-right-radius③\">border-top-right-radius</span>).</p>"
+          "html": "<p>Let <var>topRightRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value④\">computed value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius\" id=\"ref-for-propdef-border-top-right-radius②\">border-top-right-radius</a>.</p>"
         },
         {
-          "html": "<p>Let <var>bottomRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull①\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape①\">corner-bottom-right-shape</a>,\nrotated by 90deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①\">width dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑧\">computed</span> horizontal <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius②\">border-bottom-right-radius</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value⑨\">computed</span> vertical <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius③\">border-bottom-right-radius</span>,\n<var>element</var>’s <span id=\"ref-for-computed-value①⓪\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-right-radius④\">border-bottom-right-radius</span>).</p>"
+          "html": "<p>Let <var>bottomRightRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑤\">computed value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius\" id=\"ref-for-propdef-border-bottom-right-radius②\">border-bottom-right-radius</a>.</p>"
         },
         {
-          "html": "<p>Let <var>bottomLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull②\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape②\">corner-bottom-right-shape</a>,\nrotated by 180deg with (0.5, 0.5) as an origin,\nand mapped to the rectangle (0, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①\">height dimension</a> - <var>element</var>’s <span id=\"ref-for-computed-value①②\">computed</span> vertical <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius②\">border-bottom-left-radius</a>,\n<var>element</var>’s <span id=\"ref-for-computed-value①③\">computed</span> <span class=\"property\" id=\"ref-for-propdef-border-bottom-left-radius③\">border-bottom-left-radius</span>).</p>"
+          "html": "<p>Let <var>bottomLeftRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑥\">computed value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius\" id=\"ref-for-propdef-border-bottom-left-radius②\">border-bottom-left-radius</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull③\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①④\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape⑥\">corner-top-left-shape</a>,\nrotated by 270deg with (0.5, 0.5) as an origin,\nmapped to (0, 0, <var>element</var>’s <span id=\"ref-for-computed-value①⑤\">computed</span> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius④\">border-top-left-radius</a>).</p>"
+          "html": "<p>Let <var>topLeftRadius</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑦\">computed value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius\" id=\"ref-for-propdef-border-top-left-radius④\">border-top-left-radius</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unmappedTopRightHull</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑧\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-right-shape\" id=\"ref-for-propdef-corner-top-right-shape①\">corner-top-right-shape</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unmappedBottomRightHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull①\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value⑨\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-right-shape\" id=\"ref-for-propdef-corner-bottom-right-shape①\">corner-bottom-right-shape</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unmappedBottomLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull②\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⓪\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-bottom-left-shape\" id=\"ref-for-propdef-corner-bottom-left-shape①\">corner-bottom-left-shape</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>unmappedTopLeftHull</var> be a the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull\" id=\"ref-for-normalized-inner-corner-hull③\">normalized inner corner hull</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①①\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-corner-top-left-shape\" id=\"ref-for-propdef-corner-top-left-shape⑥\">corner-top-left-shape</a>.</p>"
+        },
+        {
+          "html": "Let <var>mapPolygonToCorner</var> be the following steps, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑧\">DOMPointReadOnly</a></code> <var>polygon</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly⑨\">DOMPointReadOnly</a></code> <var>start</var>, <var>end</var>, and <var>center</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>mappedPolygon</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>p</var> in <var>polygon</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>v1</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points③\">the vector between</a> <var>center</var> and <var>end</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①⑤\">scaled by</a> <var>p</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-x\" id=\"ref-for-dom-dompointreadonly-x④\">x</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>v4</var> be <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#vector-between-two-points\" id=\"ref-for-vector-between-two-points④\">the vector between</a> <var>center</var> and <var>start</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#two-dimensional-vector-scale\" id=\"ref-for-two-dimensional-vector-scale①⑥\">scaled by</a> <var>p</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-y\" id=\"ref-for-dom-dompointreadonly-y④\">y</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>mappedPoint</var> be <var>center</var>, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#point-extended-by-vectors\" id=\"ref-for-point-extended-by-vectors①④\">extended by</a> « <var>v1</var>, <var>v4</var> ».</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>mappedPoint</var> to <var>mappedPolygon</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return <var>mappedPolygon</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>topRightHull</var> be <var>mapPolygonToCorner</var> given <var>unmappedTopRightHull</var>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly①⓪\">DOMPointReadOnly</a></code> at <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension\">width dimension</a> - <var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①④\">width</a>, 0)</code>,\nat <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension①\">width dimension</a>, <var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①④\">height</a>)</code>,\nand at <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension②\">width dimension</a> - <var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⑤\">width</a>, <var>topRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⑤\">height</a>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bottomRightHull</var> be <var>mapPolygonToCorner</var> given <var>unmappedBottomRightHull</var>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly①①\">DOMPointReadOnly</a></code> at <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension③\">width dimension</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension\">height dimension</a> - <var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⑥\">height</a>)</code>,\nat <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension④\">width dimension</a> - <var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⑥\">width</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension①\">height dimension</a>)</code>,\nand at <code>(<var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-width-dimension\" id=\"ref-for-rectangle-width-dimension⑤\">width dimension</a> - <var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⑦\">width</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension②\">height dimension</a> - <var>bottomRightRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⑦\">height</a>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bottomLeftHull</var> be <var>mapPolygonToCorner</var> given <var>unmappedBottomLeftHull</var>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly①②\">DOMPointReadOnly</a></code> at <code>(<var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⑧\">width</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension③\">height dimension</a>)</code>,\nat <code>(0, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension④\">height dimension</a> - <var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⑧\">height</a>)</code>,\nand at <code>(<var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width①⑨\">width</a>, <var>rect</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/geometry-1/#rectangle-height-dimension\" id=\"ref-for-rectangle-height-dimension⑤\">height dimension</a> - <var>bottomLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height①⑨\">height</a>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLeftHull</var> be <var>mapPolygonToCorner</var> given <var>unmappedTopLeftHull</var>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dompointreadonly\" id=\"ref-for-dompointreadonly①③\">DOMPointReadOnly</a></code> at <code>(0, <var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height②⓪\">height</a>)</code>,\nat <code>(<var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width②⓪\">width</a>, 0)</code>,\nand at <code>(<var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#width\" id=\"ref-for-width②①\">width</a>, <var>topLeftRadius</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-sizing-3/#height\" id=\"ref-for-height②①\">height</a>)</code>.</p>"
         },
         {
           "html": "<p>Let <var>scaleFactorA</var> be the highest number which, if both <var>topLeftHull</var> and <var>bottomRightHull</var> were scaled by, using their first point as the origin, those polygons would not intersect.</p>"
@@ -325,9 +507,47 @@
       ]
     },
     {
+      "name": "superellipse-param-to-hull",
+      "href": "https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-inner-corner-hull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized inner corner hull</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter②\">superellipse parameter</a> <var>K</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>K</var> is greater than or equal to zero, return a triangle between the points « (1, 1), (1, 0), (0, 1) ».</p>"
+        },
+        {
+          "html": "<p>Let <var>v4Line</var> be the line through the points <code>(0, 0)</code> and <code>(0, 1)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>v3Line</var> be the line through the points <code>(0, 0)</code> and <code>(1, 0)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>halfCornerX</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>K</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>halfCornerPoint</var> be a point at <code>(<var>halfCornerX</var>, <var>halfCornerX</var>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>diagonalLine</var> be the line through the points <code>(0, 0)</code> and <code>(1, 1)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>tangentLine</var> be the line perpendicular to <var>diagonalLine</var>, at <var>halfCornerPoint</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>v4Intersection</var> be the intersection between <var>v4Line</var> and <var>tangentLine</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>v3Intersection</var> be the intersection between <var>v3Line</var> and <var>tangentLine</var>.</p>"
+        },
+        {
+          "html": "<p>Return a pentagon between the points « (1, 1), (1, 0), <var>v3Intersection</var>, <var>v4Intersection</var>, (0, 1) ».</p>"
+        }
+      ]
+    },
+    {
       "name": "superellipse-param-to-interpolation-value",
       "href": "https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑤\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑥\">superellipse parameter</a> <var>K</var>, return the first matching statement, switching on <var>K</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
       "rationale": ".switch",
       "steps": [
         {
@@ -343,17 +563,17 @@
             },
             {
               "case": "Otherwise",
-              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑤\">superellipse parameter</a> <var>s</var>, return the first matching statement, switching on <var>s</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
+              "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-superellipse-half-corner\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized superellipse half corner</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑥\">superellipse parameter</a> <var>K</var>, return the first matching statement, switching on <var>K</var>:\n\n\t\n    <dl class=\"switch\">\n     <dt data-md=\"\">-∞\n     </dt><dd data-md=\"\">\n      <p>Return 0.</p>\n     </dd><dt data-md=\"\">∞\n     </dt><dd data-md=\"\">\n      <p>Return 1.</p>\n     </dd><dt data-md=\"\">Otherwise\n     </dt><dd data-md=\"\">\n      \n    </dd></dl>",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>k</var> be <code>0.5<sup>abs(<var>s</var>)</sup></code>.</p>"
+                  "html": "<p>Let <var>n</var> be <code>2<sup>abs(<var>K</var>)</sup></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>convexHalfCorner</var> be <code>0.5<sup>1/<var>k</var></sup></code>.</p>"
+                  "html": "<p>Let <var>convexHalfCorner</var> be <code>0.5<sup>1/<var>n</var></sup></code>.</p>"
                 },
                 {
-                  "html": "<p>If <var>s</var> is less than 0, return <code>1 - <var>convexHalfCorner</var></code>.</p>"
+                  "html": "<p>If <var>K</var> is less than 0, return <code>1 - <var>convexHalfCorner</var></code>.</p>"
                 },
                 {
                   "html": "<p>Return <var>convexHalfCorner</var>.</p>"
@@ -361,44 +581,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "superellipse-param-to-hull",
-      "href": "https://drafts.csswg.org/css-borders-4/#normalized-inner-corner-hull",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalized-inner-corner-hull\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalized inner corner hull</dfn> given a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#superellipse-parameter\" id=\"ref-for-superellipse-parameter⑥\">superellipse parameter</a> <var>curvature</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>If <var>curvature</var> is greater than or equal to zero, return a triangle betwen « (1, 1), (1, 0), (0, 1) ».</p>"
-        },
-        {
-          "html": "<p>Let <var>axisLineA</var> be a line between <code>(1, 0)</code> and <code>(1, 1)</code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>axisLineB</var> be a line between <code>(0, 1)</code> and <code>(1, 1)</code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>normalizedHalfCorner</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-borders-4/#normalized-superellipse-half-corner\" id=\"ref-for-normalized-superellipse-half-corner①\">normalized superellipse half corner</a> given <var>curvature</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>halfCornerPoint</var> be <code>(<var>normalizedHalfCorner</var>, 1 - <var>normalizedHalfCorner</var>)</code>.</p>"
-        },
-        {
-          "html": "<p>Let <var>lineFromCenterToHalfCorner</var> be a line between <code>(0, 0)</code> and <var>halfCornerPoint</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>tangentLine</var> be the line perpendicular to <var>lineFromCenterToHalfCorner</var>, at <var>halfCornerPoint</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>intersectionA</var> be the intersection between <var>axisLineA</var> and <var>tangentLine</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>intersectionB</var> be the intersection between <var>axisLineB</var> and <var>tangentLine</var>.</p>"
-        },
-        {
-          "html": "<p>Return a pentagon between the points « (1, 1), (1, 0), <var>intersectionA</var>, <var>intersectionB</var>, (0, 1), (1, 1) ».</p>"
         }
       ]
     },
@@ -431,19 +613,19 @@
                   "html": "<p>Let <var>convexHalfCorner</var> be <var>interpolationValue</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, set <var>convexHalfCorner</var> to 1 - <var>interpolationValue</var>.</p>"
+                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, set <var>convexHalfCorner</var> to <code>1 - <var>interpolationValue</var></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>k</var> be <code>ln(0.5) / ln(<var>convexHalfCorner</var>)</code>.</p>"
+                  "html": "<p>Let <var>n</var> be <code>ln(0.5) / ln(<var>convexHalfCorner</var>)</code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>s</var> be <code>log2(<var>k</var>)</code>.</p>"
+                  "html": "<p>Let <var>K</var> be <code>log2(<var>n</var>)</code>.</p>"
                 },
                 {
-                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, return -<var>s</var>.</p>"
+                  "html": "<p>If <var>interpolationValue</var> is less than 0.5, return -<var>K</var>.</p>"
                 },
                 {
-                  "html": "<p>Return <var>s</var>.</p>"
+                  "html": "<p>Return <var>K</var>.</p>"
                 }
               ]
             }
@@ -476,16 +658,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑨\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-block-start-style\" id=\"ref-for-propdef-border-block-start-style②\">border-block-start-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑤\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-start\" id=\"ref-for-block-start②\">block-start</a>.</p>"
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑤\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-block-start-style\" id=\"ref-for-propdef-border-block-start-style②\">border-block-start-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑤\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-start\" id=\"ref-for-block-start②\">block-start</a>.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②⓪\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-inline-start-style\" id=\"ref-for-propdef-border-inline-start-style②\">border-inline-start-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑥\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-start\" id=\"ref-for-inline-start①\">inline-start</a>.</p>"
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑥\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-inline-start-style\" id=\"ref-for-propdef-border-inline-start-style②\">border-inline-start-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑥\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-start\" id=\"ref-for-inline-start①\">inline-start</a>.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②①\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-block-end-style\" id=\"ref-for-propdef-border-block-end-style②\">border-block-end-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑦\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-end\" id=\"ref-for-block-end①\">block-end</a>.</p>"
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑦\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-block-end-style\" id=\"ref-for-propdef-border-block-end-style②\">border-block-end-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑦\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-end\" id=\"ref-for-block-end①\">block-end</a>.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②②\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-inline-end-style\" id=\"ref-for-propdef-border-inline-end-style②\">border-inline-end-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑧\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-end\" id=\"ref-for-inline-end①\">inline-end</a>.</p>"
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑧\">computed</a> <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-borders-4/#propdef-border-inline-end-style\" id=\"ref-for-propdef-border-inline-end-style②\">border-inline-end-style</a> is not <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-borders-4/#valdef-line-style-none\" id=\"ref-for-valdef-line-style-none⑧\">none</a>, then return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#inline-end\" id=\"ref-for-inline-end①\">inline-end</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-writing-modes-4/#block-start\" id=\"ref-for-block-start③\">block-start</a>.</p>"

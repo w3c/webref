@@ -1479,7 +1479,7 @@
         "width"
       ],
       "name": "fit-content()",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
       "syntax": "fit-content(<length-percentage [0,∞]>)",
       "extended": []
     },
@@ -4191,20 +4191,20 @@
     },
     {
       "name": "block-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-block-size",
       "initial": "auto",
-      "appliesTo": "Same as height and width",
+      "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as height, width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value type, recursing into fit-content()",
       "logicalPropertyGroup": "size",
       "styleDeclaration": [
         "block-size",
         "blockSize"
       ],
-      "syntax": "<'width'>",
+      "syntax": "auto | <box-size>",
       "extended": []
     },
     {
@@ -6470,7 +6470,7 @@
       "name": "column-gap",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-gap",
       "initial": "normal",
-      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "appliesTo": "multi-column containers, flex containers, grid containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "see § 2.3 Percentages In gap Properties",
       "computedValue": "specified keyword, else a computed <length-percentage> value",
@@ -6813,9 +6813,9 @@
         "column-width",
         "columnWidth"
       ],
-      "syntax": "auto | <length [0,∞]> | min-content | max-content | fit-content(<length-percentage>)",
+      "syntax": "auto | <length [0,∞]> | <box-size>",
       "extended": [
-        "https://drafts.csswg.org/css-sizing-3/"
+        "https://drafts.csswg.org/css-sizing-4/"
       ]
     },
     {
@@ -9155,7 +9155,7 @@
       "name": "gap",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap",
       "initial": "see individual properties",
-      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "appliesTo": "multi-column containers, flex containers, grid containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to corresponding dimension of the content area",
       "computedValue": "see individual properties",
@@ -9537,7 +9537,7 @@
       "styleDeclaration": [
         "height"
       ],
-      "syntax": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -9765,20 +9765,20 @@
     },
     {
       "name": "inline-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-inline-size",
       "initial": "auto",
-      "appliesTo": "Same as height and width",
+      "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as height, width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value type, recursing into fit-content()",
       "logicalPropertyGroup": "size",
       "styleDeclaration": [
         "inline-size",
         "inlineSize"
       ],
-      "syntax": "<'width'>",
+      "syntax": "auto | <box-size>",
       "extended": []
     },
     {
@@ -11115,20 +11115,20 @@
     },
     {
       "name": "max-block-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-max-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-block-size",
       "initial": "none",
-      "appliesTo": "same as height and width",
+      "appliesTo": "all elements that accept width or height",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as max-height, max-width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value, recursing into fit-content()",
       "logicalPropertyGroup": "max-size",
       "styleDeclaration": [
         "max-block-size",
         "maxBlockSize"
       ],
-      "syntax": "<'max-width'>",
+      "syntax": "none | <box-size>",
       "extended": []
     },
     {
@@ -11146,7 +11146,7 @@
         "max-height",
         "maxHeight"
       ],
-      "syntax": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "none | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -11154,20 +11154,20 @@
     },
     {
       "name": "max-inline-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-max-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-inline-size",
       "initial": "none",
-      "appliesTo": "same as height and width",
+      "appliesTo": "all elements that accept width or height",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as max-height, max-width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value, recursing into fit-content()",
       "logicalPropertyGroup": "max-size",
       "styleDeclaration": [
         "max-inline-size",
         "maxInlineSize"
       ],
-      "syntax": "<'max-width'>",
+      "syntax": "none | <box-size>",
       "extended": []
     },
     {
@@ -11188,6 +11188,27 @@
       "extended": []
     },
     {
+      "name": "max-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-max-size",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "max-size",
+        "maxSize"
+      ],
+      "longhands": [
+        "max-width",
+        "max-height"
+      ],
+      "syntax": "<'max-width'> <'max-height'>?",
+      "extended": []
+    },
+    {
       "name": "max-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
       "initial": "none",
@@ -11202,7 +11223,7 @@
         "max-width",
         "maxWidth"
       ],
-      "syntax": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "none | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -11210,20 +11231,20 @@
     },
     {
       "name": "min-block-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-min-block-size",
-      "initial": "0",
-      "appliesTo": "same as height and width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-block-size",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as min-height, min-width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value, recursing into fit-content()",
       "logicalPropertyGroup": "min-size",
       "styleDeclaration": [
         "min-block-size",
         "minBlockSize"
       ],
-      "syntax": "<'min-width'>",
+      "syntax": "auto | <box-size>",
       "extended": []
     },
     {
@@ -11241,7 +11262,7 @@
         "min-height",
         "minHeight"
       ],
-      "syntax": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -11249,20 +11270,20 @@
     },
     {
       "name": "min-inline-size",
-      "href": "https://drafts.csswg.org/css-logical-1/#propdef-min-inline-size",
-      "initial": "0",
-      "appliesTo": "same as height and width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-inline-size",
+      "initial": "auto",
+      "appliesTo": "all elements that accept width or height",
       "inherited": "no",
-      "percentages": "As for the corresponding physical property",
-      "computedValue": "Same as min-height, min-width",
+      "percentages": "relative to width/height of containing block",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "by computed value, recursing into fit-content()",
       "logicalPropertyGroup": "min-size",
       "styleDeclaration": [
         "min-inline-size",
         "minInlineSize"
       ],
-      "syntax": "<'min-width'>",
+      "syntax": "auto | <box-size>",
       "extended": []
     },
     {
@@ -11283,6 +11304,27 @@
       "extended": []
     },
     {
+      "name": "min-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-min-size",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "min-size",
+        "minSize"
+      ],
+      "longhands": [
+        "min-width",
+        "min-height"
+      ],
+      "syntax": "<'min-width'> <'min-height'>?",
+      "extended": []
+    },
+    {
       "name": "min-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
       "initial": "auto",
@@ -11297,7 +11339,7 @@
         "min-width",
         "minWidth"
       ],
-      "syntax": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -13006,7 +13048,7 @@
       "name": "row-gap",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-gap",
       "initial": "normal",
-      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "appliesTo": "multi-column containers, flex containers, grid containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "see § 2.3 Percentages In gap Properties",
       "computedValue": "specified keyword, else a computed <length-percentage> value",
@@ -14195,7 +14237,7 @@
         "scroll-snap-type",
         "scrollSnapType"
       ],
-      "syntax": "none | [ x | y | block | inline | both ] [ mandatory | proximity ]?",
+      "syntax": "none | [ x | y | block | inline | both | pair ] [ mandatory | proximity ]?",
       "extended": []
     },
     {
@@ -14421,6 +14463,26 @@
         "shapeRendering"
       ],
       "syntax": "auto | optimizeSpeed | crispEdges | geometricPrecision",
+      "extended": []
+    },
+    {
+      "name": "size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-size",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "size"
+      ],
+      "longhands": [
+        "width",
+        "height"
+      ],
+      "syntax": "<'width'> <'height'>?",
       "extended": []
     },
     {
@@ -16591,7 +16653,7 @@
       "styleDeclaration": [
         "width"
       ],
-      "syntax": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -18357,6 +18419,12 @@
       "name": "box",
       "prose": "The following <box> CSS keywords are defined for use in properties (such as transform-box and background-clip) that need to refer to various box edges:",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-box",
+      "extended": []
+    },
+    {
+      "name": "box-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
+      "syntax": "<length-percentage> | stretch | contain | min-content | max-content | fit-content | fit-content() | calc-size()",
       "extended": []
     },
     {

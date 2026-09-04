@@ -7,7 +7,7 @@
     {
       "name": "scroll-snap-type",
       "href": "https://drafts.csswg.org/css-scroll-snap-1/#propdef-scroll-snap-type",
-      "value": "none | [ x | y | block | inline | both ] [ mandatory | proximity ]?",
+      "value": "none | [ x | y | block | inline | both | pair ] [ mandatory | proximity ]?",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -50,6 +50,13 @@
           "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-both",
           "type": "value",
           "value": "both"
+        },
+        {
+          "name": "pair",
+          "prose": "The scroll container snaps to snap positions in both of its axes together as a single 2D point belonging to a single snap area. A snap area is only eligible as a snap position in a scroll container with pair if it specifies an alignment in both axes (i.e. neither its block nor inline alignment in scroll-snap-align computes to none). Snap areas that specify alignment in only a single axis are ignored.",
+          "href": "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-pair",
+          "type": "value",
+          "value": "pair"
         },
         {
           "name": "none",
