@@ -23,6 +23,7 @@
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.css-houdini.org/css-typed-om-1/": {},
       "https://drafts.csswg.org/css-animations-2/": {},
       "https://drafts.csswg.org/css-animations/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
@@ -34,15 +35,12 @@
       "https://drafts.csswg.org/scroll-animations-1/": {},
       "https://drafts.csswg.org/selectors/": {},
       "https://drafts.csswg.org/web-animations-1/": {},
-      "https://drafts.csswg.org/web-animations-2/": {
-        "anchors": [
-          "trigger-ranges"
-        ]
-      },
+      "https://drafts.csswg.org/web-animations-2/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/CSS/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
@@ -90,8 +88,13 @@
         "anchors": [
           "event",
           "concept-shadow-root",
-          "concept-tree-order",
           "dom-event-target"
+        ]
+      },
+      "https://drafts.css-houdini.org/css-typed-om-1/": {
+        "anchors": [
+          "cssnumericvalue",
+          "csskeywordvalue"
         ]
       },
       "https://drafts.csswg.org/css-animations-1/": {
@@ -101,7 +104,6 @@
       },
       "https://drafts.csswg.org/css-animations-2/": {
         "anchors": [
-          "typedef-single-animation-timeline",
           "propdef-animation-timeline"
         ]
       },
@@ -127,10 +129,9 @@
           "coordinating-list-property",
           "coordinating-list-base-property",
           "coordinated-value-list",
-          "css-css-identifier",
+          "mult-one-plus",
           "mult-opt",
           "typedef-length-percentage",
-          "mult-one-plus",
           "string-value"
         ]
       },
@@ -157,12 +158,31 @@
           "concept-animation",
           "timeline",
           "dom-animation-play",
-          "dom-animation-pause"
+          "dom-animation-pause",
+          "animationtimeline",
+          "dictdef-keyframeanimationoptions",
+          "inactive-timeline",
+          "document-default-document-timeline"
+        ]
+      },
+      "https://drafts.csswg.org/web-animations-2/": {
+        "anchors": [
+          "enumdef-animationtriggerbehavior",
+          "dom-keyframeanimationoptions-rangestart",
+          "dom-keyframeanimationoptions-rangeend",
+          "dictdef-timelinerangeoffset"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "Exposed",
+          "idl-any",
+          "idl-DOMString"
         ]
       },
       "https://www.w3.org/TR/web-animations-1/": {

@@ -38515,11 +38515,11 @@
     {
       "name": "Sanitizer/configure",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configure-a-sanitizer",
-      "html": "To <dfn data-dfn-for=\"Sanitizer\" id=\"configure-a-sanitizer\" data-export=\"\">configure</dfn> a\n  <code id=\"the-sanitizer-interface:sanitizer-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer\">Sanitizer</a></code> <var>sanitizer</var>, given a dictionary <var>configuration</var> and a\n  boolean <var>allowCommentsPIsAndDataAttributes</var>:",
+      "html": "To <dfn data-dfn-for=\"Sanitizer\" id=\"configure-a-sanitizer\" data-export=\"\">configure</dfn> a\n  <code id=\"the-sanitizer-interface:sanitizer-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer\">Sanitizer</a></code> <var>sanitizer</var>, given a dictionary <var>configuration</var> and a\n  boolean <var>permissiveDefaults</var>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-the-configuration\" id=\"the-sanitizer-interface:canonicalize-the-configuration\">Canonicalize the configuration</a> <var>configuration</var> with\n   <var>allowCommentsPIsAndDataAttributes</var>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-the-configuration\" id=\"the-sanitizer-interface:canonicalize-the-configuration\">Canonicalize the configuration</a> <var>configuration</var> with\n   <var>permissiveDefaults</var>.</p>"
         },
         {
           "html": "<p>If <var>configuration</var> is not <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid\">valid</a>,\n   then throw a <code id=\"the-sanitizer-interface:typeerror\"><a data-x-internal=\"typeerror\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code>.</p>"
@@ -38532,7 +38532,7 @@
     {
       "name": "canonicalize the configuration",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-the-configuration",
-      "html": "To <dfn id=\"canonicalize-the-configuration\">canonicalize the configuration</dfn> <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig\" id=\"the-sanitizer-interface:sanitizerconfig-5\">SanitizerConfig</a>\n  <var>configuration</var> with a boolean <var>allowCommentsPIsAndDataAttributes</var>:",
+      "html": "To <dfn id=\"canonicalize-the-configuration\">canonicalize the configuration</dfn> <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig\" id=\"the-sanitizer-interface:sanitizerconfig-5\">SanitizerConfig</a>\n  <var>configuration</var> with a boolean <var>permissiveDefaults</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -38546,7 +38546,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>allowCommentsPIsAndDataAttributes</var> is true, then set\n     <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-removeprocessinginstructions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions\">removeProcessingInstructions</a></code>\"]\n     to an empty list.</p>"
+              "html": "<p>If <var>permissiveDefaults</var> is true, then set <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-removeprocessinginstructions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions\">removeProcessingInstructions</a></code>\"]\n     to an empty list.</p>"
             },
             {
               "html": "<p>Otherwise, set <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"] to an empty\n     list.</p>"
@@ -38587,10 +38587,13 @@
           "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-removeprocessinginstructions-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions\">removeProcessingInstructions</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-10\" data-x-internal=\"map-exists\">exists</a>, then set <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-removeprocessinginstructions-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions\">removeProcessingInstructions</a></code>\"]\n   to the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-processing-instruction-list\" id=\"the-sanitizer-interface:canonicalize-a-processing-instruction-list-2\">canonicalizing</a>\n   <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-removeprocessinginstructions-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions\">removeProcessingInstructions</a></code>\"].</p>"
         },
         {
-          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-comments\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments\">comments</a></code>\"]\n   does not <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-11\" data-x-internal=\"map-exists\">exist</a>, then set it to\n   <var>allowCommentsPIsAndDataAttributes</var>.</p>"
+          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-comments\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments\">comments</a></code>\"]\n   does not <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-11\" data-x-internal=\"map-exists\">exist</a>, then set it to\n   <var>permissiveDefaults</var>.</p>"
         },
         {
-          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-12\" data-x-internal=\"map-exists\">exists</a> and <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-dataattributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-dataattributes\">dataAttributes</a></code>\"] does not <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-13\" data-x-internal=\"map-exists\">exist</a>, then set it to <var>allowCommentsPIsAndDataAttributes</var>.</p>"
+          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-12\" data-x-internal=\"map-exists\">exists</a> and <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-dataattributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-dataattributes\">dataAttributes</a></code>\"] does not <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-13\" data-x-internal=\"map-exists\">exist</a>, then set it to <var>permissiveDefaults</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-javascripturls\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] does not <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-14\" data-x-internal=\"map-exists\">exist</a>, then set it to <var>permissiveDefaults</var>.</p>"
         }
       ]
     },
@@ -38638,7 +38641,7 @@
           "html": "<p>If <var>pi</var> is a <code id=\"the-sanitizer-interface:idl-domstring\"><a data-x-internal=\"idl-domstring\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\">DOMString</a></code>, then return «[ \"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\" → <var>pi</var> ]».</p>"
         },
         {
-          "html": "<p><a id=\"the-sanitizer-interface:assert-2\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>pi</var> is a dictionary and <var>pi</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-14\" data-x-internal=\"map-exists\">exists</a>.</p>"
+          "html": "<p><a id=\"the-sanitizer-interface:assert-2\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>pi</var> is a dictionary and <var>pi</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-15\" data-x-internal=\"map-exists\">exists</a>.</p>"
         },
         {
           "html": "<p>Return «[ \"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\" →\n   <var>pi</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"]\n   ]».</p>"
@@ -38655,7 +38658,7 @@
           "html": "<p>If <var>name</var> is a <code id=\"the-sanitizer-interface:idl-domstring-3\"><a data-x-internal=\"idl-domstring\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\">DOMString</a></code>, then return «[\n   \"name\" → <var>name</var>, \"namespace\" → <var>defaultNamespace</var> ]».</p>"
         },
         {
-          "html": "<p><a id=\"the-sanitizer-interface:assert-3\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>name</var> is a dictionary and both <var>name</var>[\"name\"] and\n   <var>name</var>[\"namespace\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-15\" data-x-internal=\"map-exists\">exist</a>.</p>"
+          "html": "<p><a id=\"the-sanitizer-interface:assert-3\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>name</var> is a dictionary and both <var>name</var>[\"name\"] and\n   <var>name</var>[\"namespace\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-16\" data-x-internal=\"map-exists\">exist</a>.</p>"
         },
         {
           "html": "<p>If <var>name</var>[\"namespace\"] is the empty string, then set it to null.</p>"
@@ -38729,7 +38732,7 @@
           "html": "<p><a id=\"the-sanitizer-interface:assert-4\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>config</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-2\">valid</a>.</p>"
         },
         {
-          "html": "If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-16\" data-x-internal=\"map-exists\">exists</a>:",
+          "html": "If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-17\" data-x-internal=\"map-exists\">exists</a>:",
           "rationale": "for",
           "steps": [
             {
@@ -38737,10 +38740,10 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-17\" data-x-internal=\"map-exists\">exists</a>, then set <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] to the\n       result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort\" data-x-internal=\"list-sort\">sorting</a> <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"], with\n       <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items\">compare sanitizer items</a>.</p>"
+                  "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-18\" data-x-internal=\"map-exists\">exists</a>, then set <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] to the\n       result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort\" data-x-internal=\"list-sort\">sorting</a> <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"], with\n       <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items\">compare sanitizer items</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n       <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-18\" data-x-internal=\"map-exists\">exists</a>, then set <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n       to the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-2\" data-x-internal=\"list-sort\">sorting</a> <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"],\n       with <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-2\">compare sanitizer items</a>.</p>"
+                  "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n       <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-19\" data-x-internal=\"map-exists\">exists</a>, then set <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n       to the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-2\" data-x-internal=\"list-sort\">sorting</a> <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"],\n       with <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-2\">compare sanitizer items</a>.</p>"
                 }
               ]
             },
@@ -38759,10 +38762,10 @@
           ]
         },
         {
-          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-19\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"] to\n   the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-5\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"],\n   with <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-5\">compare sanitizer items</a>.</p>"
+          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-20\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"] to\n   the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-5\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"],\n   with <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-5\">compare sanitizer items</a>.</p>"
         },
         {
-          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-20\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"] to the result\n   of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-6\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-8\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"], with\n   <var>piA</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"] being\n   <a id=\"the-sanitizer-interface:code-unit-less-than\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" data-x-internal=\"code-unit-less-than\">code unit less than</a> <var>piB</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"].</p>"
+          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-21\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"] to the result\n   of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-6\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-processinginstructions-8\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions\">processingInstructions</a></code>\"], with\n   <var>piA</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"] being\n   <a id=\"the-sanitizer-interface:code-unit-less-than\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" data-x-internal=\"code-unit-less-than\">code unit less than</a> <var>piB</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerprocessinginstruction-target-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target\">target</a></code>\"].</p>"
         },
         {
           "html": "Otherwise:",
@@ -38774,7 +38777,7 @@
           ]
         },
         {
-          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-21\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] to the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-8\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-8\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] given <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-6\">compare sanitizer\n   items</a>.</p>"
+          "html": "<p>If <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-22\" data-x-internal=\"map-exists\">exists</a>, then set <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] to the result of <a href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"the-sanitizer-interface:list-sort-8\" data-x-internal=\"list-sort\">sorting</a> <var>config</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-8\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] given <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items\" id=\"the-sanitizer-interface:compare-sanitizer-items-6\">compare sanitizer\n   items</a>.</p>"
         },
         {
           "html": "Otherwise:",
@@ -38806,18 +38809,18 @@
           "html": "<p>Set <var>element</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-element-with-attributes\" id=\"the-sanitizer-interface:canonicalize-a-sanitizer-element-with-attributes-2\">canonicalizing</a> <var>element</var>.</p>"
         },
         {
-          "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-9\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-22\" data-x-internal=\"map-exists\">exists</a>:",
+          "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-9\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-23\" data-x-internal=\"map-exists\">exists</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>modified</var> be the result of <a href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"the-sanitizer-interface:list-remove\" data-x-internal=\"list-remove\">removing</a>\n     <var>element</var> from <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"].</p>"
             },
             {
-              "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-9\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-23\" data-x-internal=\"map-exists\">exists</a>:",
+              "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-9\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-24\" data-x-internal=\"map-exists\">exists</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-24\" data-x-internal=\"map-exists\">exists</a>:",
+                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-25\" data-x-internal=\"map-exists\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -38832,7 +38835,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n        <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-25\" data-x-internal=\"map-exists\">exists</a>:",
+                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n        <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-26\" data-x-internal=\"map-exists\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -38850,7 +38853,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-10\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-26\" data-x-internal=\"map-exists\">exists</a>:",
+                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-10\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-27\" data-x-internal=\"map-exists\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -38868,7 +38871,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-11\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n        <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-27\" data-x-internal=\"map-exists\">exists</a>:",
+                  "html": "If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-11\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n        <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-28\" data-x-internal=\"map-exists\">exists</a>:",
                   "rationale": "set",
                   "steps": [
                     {
@@ -38915,7 +38918,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-17\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-28\" data-x-internal=\"map-exists\">exists</a> or <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-16\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n     <a href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"the-sanitizer-interface:map-with-default-2\" data-x-internal=\"map-with-default\">with default</a> « » is not empty, then return\n     false.</p>"
+              "html": "<p>If <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-attributes-17\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-29\" data-x-internal=\"map-exists\">exists</a> or <var>element</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerelementnamespacewithattributes-removeattributes-16\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes\">removeAttributes</a></code>\"]\n     <a href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"the-sanitizer-interface:map-with-default-2\" data-x-internal=\"map-with-default\">with default</a> « » is not empty, then return\n     false.</p>"
             },
             {
               "html": "<p>Let <var>modified</var> be the result of <a href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"the-sanitizer-interface:list-remove-4\" data-x-internal=\"list-remove\">removing</a>\n     <var>element</var> from <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-replacewithchildrenelements-8\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements\">replaceWithChildrenElements</a></code>\"].</p>"
@@ -38990,7 +38993,7 @@
           "html": "<p>Set <var>attribute</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-name\" id=\"the-sanitizer-interface:canonicalize-a-sanitizer-name-5\">canonicalizing</a> <var>attribute</var>.</p>"
         },
         {
-          "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-12\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-29\" data-x-internal=\"map-exists\">exists</a>:",
+          "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-12\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-30\" data-x-internal=\"map-exists\">exists</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -39000,7 +39003,7 @@
               "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-attributes-13\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes\">attributes</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"the-sanitizer-interface:list-contains-5\" data-x-internal=\"list-contains\">contains</a> <var>attribute</var>, then return false.</p>"
             },
             {
-              "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-16\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"]\n      <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-30\" data-x-internal=\"map-exists\">exists</a>:",
+              "html": "If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-elements-16\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements\">elements</a></code>\"]\n      <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-31\" data-x-internal=\"map-exists\">exists</a>:",
               "rationale": "for",
               "steps": [
                 {
@@ -39052,7 +39055,7 @@
           "html": "<p><a id=\"the-sanitizer-interface:assert-8\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>configuration</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-6\">valid</a>.</p>"
         },
         {
-          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-comments-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments\">comments</a></code>\"]\n   <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"the-sanitizer-interface:map-exists-31\" data-x-internal=\"map-exists\">exists</a> and is equal to <var>allow</var>, then return\n   false.</p>"
+          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-comments-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments\">comments</a></code>\"]\n   is <var>allow</var>, then return false.</p>"
         },
         {
           "html": "<p>Set <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-comments-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments\">comments</a></code>\"] to <var>allow</var>.</p>"
@@ -39113,9 +39116,9 @@
       ]
     },
     {
-      "name": "Sanitizer/allowProcessingInstruction(pi)",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowprocessinginstruction",
-      "html": "The <dfn data-dfn-for=\"Sanitizer\" id=\"dom-sanitizer-allowprocessinginstruction\" data-dfn-type=\"method\"><code>allowProcessingInstruction(<var>pi</var>)</code></dfn>\n  method steps are:",
+      "name": "Sanitizer/setJavascriptURLs(allow)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-setjavascripturls",
+      "html": "The <dfn data-dfn-for=\"Sanitizer\" id=\"dom-sanitizer-setjavascripturls\" data-dfn-type=\"method\"><code>setJavascriptURLs(<var>allow</var>)</code></dfn> method\n  steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -39123,6 +39126,29 @@
         },
         {
           "html": "<p><a id=\"the-sanitizer-interface:assert-10\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>configuration</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-8\">valid</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-javascripturls-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] is <var>allow</var>, then\n   return false.</p>"
+        },
+        {
+          "html": "<p>Set <var>configuration</var>[\"<code id=\"the-sanitizer-interface:dom-sanitizerconfig-javascripturls-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] to <var>allow</var>.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Sanitizer/allowProcessingInstruction(pi)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowprocessinginstruction",
+      "html": "The <dfn data-dfn-for=\"Sanitizer\" id=\"dom-sanitizer-allowprocessinginstruction\" data-dfn-type=\"method\"><code>allowProcessingInstruction(<var>pi</var>)</code></dfn>\n  method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>configuration</var> be <a id=\"the-sanitizer-interface:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration\" id=\"the-sanitizer-interface:configuration-11\">configuration</a>.</p>"
+        },
+        {
+          "html": "<p><a id=\"the-sanitizer-interface:assert-11\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>configuration</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-9\">valid</a>.</p>"
         },
         {
           "html": "<p>Set <var>pi</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-processing-instruction\" id=\"the-sanitizer-interface:canonicalize-a-processing-instruction-2\">canonicalizing</a> <var>pi</var>.</p>"
@@ -39172,10 +39198,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>configuration</var> be <a id=\"the-sanitizer-interface:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration\" id=\"the-sanitizer-interface:configuration-11\">configuration</a>.</p>"
+          "html": "<p>Let <var>configuration</var> be <a id=\"the-sanitizer-interface:this-12\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration\" id=\"the-sanitizer-interface:configuration-12\">configuration</a>.</p>"
         },
         {
-          "html": "<p><a id=\"the-sanitizer-interface:assert-11\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>configuration</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-9\">valid</a>.</p>"
+          "html": "<p><a id=\"the-sanitizer-interface:assert-12\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>configuration</var> is <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid\" id=\"the-sanitizer-interface:dom-sanitizerconfig-valid-10\">valid</a>.</p>"
         },
         {
           "html": "<p>Set <var>pi</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-processing-instruction\" id=\"the-sanitizer-interface:canonicalize-a-processing-instruction-3\">canonicalizing</a> <var>pi</var>.</p>"
@@ -39297,10 +39323,10 @@
               "html": "<p>Let <var>sanitizer</var> be a new <code id=\"sanitization-algorithms:sanitizer-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer\">Sanitizer</a></code> object.</p>"
             },
             {
-              "html": "<p>Let <var>allowCommentsAndDataAttributes</var> be true if <var>safe</var> is false; false\n     otherwise.</p>"
+              "html": "<p>Let <var>permissiveDefaults</var> be true if <var>safe</var> is false; false\n     otherwise.</p>"
             },
             {
-              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configure-a-sanitizer\" id=\"sanitization-algorithms:configure-a-sanitizer\">Configure</a> <var>sanitizer</var> given\n     <var>sanitizerSpec</var> and <var>allowCommentsAndDataAttributes</var>.</p>"
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configure-a-sanitizer\" id=\"sanitization-algorithms:configure-a-sanitizer\">Configure</a> <var>sanitizer</var> given\n     <var>sanitizerSpec</var> and <var>permissiveDefaults</var>.</p>"
             },
             {
               "html": "<p>Set <var>sanitizerSpec</var> to <var>sanitizer</var>.</p>"
@@ -39328,14 +39354,14 @@
           "html": "<p>If <var>safe</var> is true, then <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#remove-unsafe\" id=\"sanitization-algorithms:remove-unsafe\">remove unsafe</a> from\n   <var>configuration</var>.</p>"
         },
         {
-          "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps\">inner sanitize steps</a> given <var>node</var>, <var>configuration</var>,\n   and <var>safe</var>.</p>"
+          "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps\">inner sanitize steps</a> given <var>node</var> and\n   <var>configuration</var>.</p>"
         }
       ]
     },
     {
       "name": "inner sanitize steps",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps",
-      "html": "To perform the <dfn id=\"inner-sanitize-steps\">inner sanitize steps</dfn> given a <code id=\"sanitization-algorithms:node-2\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> <var>node</var>, a\n  <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig\" id=\"sanitization-algorithms:sanitizerconfig-2\">SanitizerConfig</a> <var>configuration</var>, and a boolean\n  <var>handleJavascriptNavigationUrls</var>:",
+      "html": "To perform the <dfn id=\"inner-sanitize-steps\">inner sanitize steps</dfn> given a <code id=\"sanitization-algorithms:node-2\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> <var>node</var> and a\n  <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig\" id=\"sanitization-algorithms:sanitizerconfig-2\">SanitizerConfig</a> <var>configuration</var>:",
       "rationale": "for",
       "steps": [
         {
@@ -39402,7 +39428,7 @@
                       "html": "<p><a id=\"sanitization-algorithms:assert-7\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>node</var> is not a <code id=\"sanitization-algorithms:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>.</p>"
                     },
                     {
-                      "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-2\">inner sanitize steps</a> given <var>child</var>,\n         <var>configuration</var>, and <var>handleJavascriptNavigationUrls</var>.</p>"
+                      "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-2\">inner sanitize steps</a> given <var>child</var> and\n         <var>configuration</var>.</p>"
                     },
                     {
                       "html": "<p>Let <var>fragment</var> be the result of <a href=\"https://dom.spec.whatwg.org/#create-a-document-fragment\" id=\"sanitization-algorithms:create-a-document-fragment\" data-x-internal=\"create-a-document-fragment\">creating a document fragment</a> given <var>node</var>'s\n         <a id=\"sanitization-algorithms:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
@@ -39437,10 +39463,10 @@
                   ]
                 },
                 {
-                  "html": "<p>If <var>elementName</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerelementnamespace-name\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-name\">name</a></code>\"] is \"<code id=\"sanitization-algorithms:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code>\" and\n       <var>elementName</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerelementnamespace-namespace\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-namespace\">namespace</a></code>\"] is the <a id=\"sanitization-algorithms:html-namespace-2-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML\n       namespace</a>, then run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-3\">inner sanitize steps</a> given <var>child</var>'s\n       <a id=\"sanitization-algorithms:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>, <var>configuration</var>, and\n       <var>handleJavascriptNavigationUrls</var>.</p>"
+                  "html": "<p>If <var>elementName</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerelementnamespace-name\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-name\">name</a></code>\"] is \"<code id=\"sanitization-algorithms:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code>\" and\n       <var>elementName</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerelementnamespace-namespace\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-namespace\">namespace</a></code>\"] is the <a id=\"sanitization-algorithms:html-namespace-2-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML\n       namespace</a>, then run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-3\">inner sanitize steps</a> given <var>child</var>'s\n       <a id=\"sanitization-algorithms:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> and <var>configuration</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>child</var> is a <a id=\"sanitization-algorithms:shadow-host\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" data-x-internal=\"shadow-host\">shadow host</a>, then run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-4\">inner sanitize\n       steps</a> given <var>child</var>'s <a id=\"sanitization-algorithms:shadow-root\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" data-x-internal=\"shadow-root\">shadow root</a>, <var>configuration</var>, and\n       <var>handleJavascriptNavigationUrls</var>.</p>"
+                  "html": "<p>If <var>child</var> is a <a id=\"sanitization-algorithms:shadow-host\" href=\"https://dom.spec.whatwg.org/#element-shadow-host\" data-x-internal=\"shadow-host\">shadow host</a>, then run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-4\">inner sanitize\n       steps</a> given <var>child</var>'s <a id=\"sanitization-algorithms:shadow-root\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" data-x-internal=\"shadow-root\">shadow root</a> and\n       <var>configuration</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>elementWithLocalAttributes</var> be «[ ]».</p>"
@@ -39480,14 +39506,14 @@
                       ]
                     },
                     {
-                      "html": "If <var>handleJavascriptNavigationUrls</var> is true:",
+                      "html": "If <var>configuration</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerconfig-javascripturls\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] is not true:",
                       "rationale": "if",
                       "steps": [
                         {
                           "html": "<p>If the pair (<var>elementName</var>, <var>attrName</var>) matches an entry in the\n           <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-navigating-url-attributes-list\" id=\"sanitization-algorithms:built-in-navigating-url-attributes-list\">built-in navigating URL attributes list</a>, and if <var>attribute</var>\n           <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#contains-a-javascript:-url\" id=\"sanitization-algorithms:contains-a-javascript:-url\">contains a <code>javascript:</code> URL</a>, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-remove\" id=\"sanitization-algorithms:concept-element-attributes-remove-5\" data-x-internal=\"concept-element-attributes-remove\">remove</a> <var>attribute</var>.</p>"
                         },
                         {
-                          "html": "<p>If <var>child</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"sanitization-algorithms:concept-element-namespace-3\" data-x-internal=\"concept-element-namespace\">namespace</a> is\n           the <a id=\"sanitization-algorithms:mathml-namespace\" href=\"https://infra.spec.whatwg.org/#mathml-namespace\" data-x-internal=\"mathml-namespace\">MathML Namespace</a>, <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"sanitization-algorithms:concept-attribute-local-name-3\" data-x-internal=\"concept-attribute-local-name\">local name</a> is \"<code>href</code>\",\n           <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace\" id=\"sanitization-algorithms:concept-attribute-namespace-3\" data-x-internal=\"concept-attribute-namespace\">namespace</a> is\n           null or the <a id=\"sanitization-algorithms:xlink-namespace\" href=\"https://infra.spec.whatwg.org/#xlink-namespace\" data-x-internal=\"xlink-namespace\">XLink namespace</a>, and <var>attribute</var> <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#contains-a-javascript:-url\" id=\"sanitization-algorithms:contains-a-javascript:-url-2\">contains a\n           javascript: URL</a>, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-remove\" id=\"sanitization-algorithms:concept-element-attributes-remove-6\" data-x-internal=\"concept-element-attributes-remove\">remove</a> <var>attribute</var>.</p>"
+                          "html": "<p>If <var>child</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"sanitization-algorithms:concept-element-namespace-3\" data-x-internal=\"concept-element-namespace\">namespace</a> is\n           the <a id=\"sanitization-algorithms:mathml-namespace\" href=\"https://infra.spec.whatwg.org/#mathml-namespace\" data-x-internal=\"mathml-namespace\">MathML namespace</a>, <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"sanitization-algorithms:concept-attribute-local-name-3\" data-x-internal=\"concept-attribute-local-name\">local name</a> is \"<code>href</code>\",\n           <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace\" id=\"sanitization-algorithms:concept-attribute-namespace-3\" data-x-internal=\"concept-attribute-namespace\">namespace</a> is\n           null or the <a id=\"sanitization-algorithms:xlink-namespace\" href=\"https://infra.spec.whatwg.org/#xlink-namespace\" data-x-internal=\"xlink-namespace\">XLink namespace</a>, and <var>attribute</var> <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#contains-a-javascript:-url\" id=\"sanitization-algorithms:contains-a-javascript:-url-2\">contains a\n           <code>javascript:</code> URL</a>, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-remove\" id=\"sanitization-algorithms:concept-element-attributes-remove-6\" data-x-internal=\"concept-element-attributes-remove\">remove</a> <var>attribute</var>.</p>"
                         },
                         {
                           "html": "<p>If the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-animating-url-attributes-list\" id=\"sanitization-algorithms:built-in-animating-url-attributes-list\">built-in animating URL attributes list</a> <a href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"sanitization-algorithms:list-contains-12\" data-x-internal=\"list-contains\">contains</a> the pair (<var>elementName</var>, <var>attrName</var>), and\n           <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"sanitization-algorithms:concept-attribute-value\" data-x-internal=\"concept-attribute-value\">value</a> is \"<code>href</code>\" or \"<code>xlink:href</code>\", then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-remove\" id=\"sanitization-algorithms:concept-element-attributes-remove-7\" data-x-internal=\"concept-element-attributes-remove\">remove</a> <var>attribute</var>.</p>"
@@ -39497,7 +39523,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-5\">inner sanitize steps</a> given <var>child</var>,\n       <var>configuration</var>, and <var>handleJavascriptNavigationUrls</var>.</p>"
+                  "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps\" id=\"sanitization-algorithms:inner-sanitize-steps-5\">inner sanitize steps</a> given <var>child</var> and\n       <var>configuration</var>.</p>"
                 }
               ]
             }
@@ -39706,6 +39732,18 @@
           "steps": [
             {
               "html": "<p>If <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#remove-an-attribute-from-sanitizer-config\" id=\"sanitization-algorithms:remove-an-attribute-from-sanitizer-config-2\">removing</a>\n     <var>attribute</var> from <var>configuration</var> is true, then set <var>result</var> to\n     true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>configuration</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerconfig-javascripturls-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] is true:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>result</var> to true.</p>"
+            },
+            {
+              "html": "<p>Set <var>configuration</var>[\"<code id=\"sanitization-algorithms:dom-sanitizerconfig-javascripturls-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-javascripturls\">javascriptURLs</a></code>\"] to false.</p>"
             }
           ]
         },

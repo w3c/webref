@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "title": "Animation Triggers",
+    "url": "https://drafts.csswg.org/animation-triggers-1/"
+  },
+  "algorithms": [
+    {
+      "name": "AnimationTrigger/AnimationTrigger(options)",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#dom-animationtrigger-animationtrigger",
+      "html": "Creates a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#animationtrigger\" id=\"ref-for-animationtrigger\">AnimationTrigger</a></code> object using the following procedure:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#animationtrigger\" id=\"ref-for-animationtrigger①\">AnimationTrigger</a></code> object, <var>trigger</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>trigger</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#trigger-did-trigger\" id=\"ref-for-trigger-did-trigger①\">did trigger</a> to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>trigger</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#trigger-trigger-state\" id=\"ref-for-trigger-trigger-state⑥\">state</a> to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#trigger-state-pending\" id=\"ref-for-trigger-state-pending\">pending</a>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-activation-range\" id=\"ref-for-timeline-trigger-activation-range⑦\">activation range</a> of <var>trigger</var> using <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtriggeroptions-activationrangestart\" id=\"ref-for-dom-animationtriggeroptions-activationrangestart\">activationRangeStart</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtriggeroptions-activationrangeend\" id=\"ref-for-dom-animationtriggeroptions-activationrangeend\">activationRangeEnd</a></code>,\nfollowing the same rules as the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions\" id=\"ref-for-dictdef-keyframeanimationoptions\">KeyframeAnimationOptions</a></code>\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangestart\" id=\"ref-for-dom-keyframeanimationoptions-rangestart\">rangeStart</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-2/#dom-keyframeanimationoptions-rangeend\" id=\"ref-for-dom-keyframeanimationoptions-rangeend\">rangeEnd</a></code> members respectively.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-active-range\" id=\"ref-for-timeline-trigger-active-range⑥\">active range</a> of <var>trigger</var> using <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtriggeroptions-activerangestart\" id=\"ref-for-dom-animationtriggeroptions-activerangestart\">activeRangeStart</a></code> and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtriggeroptions-activerangeend\" id=\"ref-for-dom-animationtriggeroptions-activerangeend\">activeRangeEnd</a></code>,\nfollowing the same rules above for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-activation-range\" id=\"ref-for-timeline-trigger-activation-range⑧\">activation range</a>, unless they are set to\n\"auto\", in which case they are set to their corresponding side\nof the <span id=\"ref-for-timeline-trigger-activation-range⑨\">activation range</span>.</p>"
+        },
+        {
+          "html": "<p>Set <var>trigger</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtrigger-timeline\" id=\"ref-for-dom-animationtrigger-timeline①\">timeline</a></code> to <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/animation-triggers-1/#dom-animationtriggeroptions-timeline\" id=\"ref-for-dom-animationtriggeroptions-timeline\">timeline</a></code>.</p>"
+        }
+      ]
+    }
+  ]
+}

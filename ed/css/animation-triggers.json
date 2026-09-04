@@ -62,12 +62,12 @@
     {
       "name": "timeline-trigger-source",
       "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-source",
-      "value": "<single-animation-timeline>#",
+      "value": "[ none | auto | [ <dashed-ident> | <scroll()> | <view()> ]+ ]#",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "list, each item either the keyword none, the keyword auto, a case-sensitive css identifier, a computed scroll() function, or a computed view() function",
+      "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -317,7 +317,7 @@
         },
         {
           "name": "[ <dashed-ident> <animation-action>+ ]+",
-          "prose": "The corresponding animation is a triggered animation, responding to the triggers named by each <dashed-ident>, and responding by taking the action named by the corresponding <animation-action>. (See § 2.1 Trigger Name Scoping: the trigger-scope property for how <dashed-ident>s are resolved to triggers.) How many <animation-action>s a trigger accepts, and what exactly activates them, is determined by the type of the trigger. (Event triggers take one and possibly an optional second, depending on whether they’re stateless or stateful; timeline triggers take one and optionally a second.) Specifying the wrong number of actions (too many or too few) is valid syntactically, but causes the trigger to have no effect. If multiple triggers occur simultaneously, they take effect in the order specified. If the same <dashed-ident> is specified multiple times, all but the last have no effect.",
+          "prose": "The corresponding animation is a triggered animation, responding to the triggers named by each <dashed-ident>, and responding by taking the action named by the corresponding <animation-action>. (See § 2.3 Trigger Name Scoping: the trigger-scope property for how <dashed-ident>s are resolved to triggers.) How many <animation-action>s a trigger accepts, and what exactly activates them, is determined by the type of the trigger. (Event triggers take one and possibly an optional second, depending on whether they’re stateless or stateful; timeline triggers take one and optionally a second.) Specifying the wrong number of actions (too many or too few) is valid syntactically, but causes the trigger to have no effect. If multiple triggers occur simultaneously, they take effect in the order specified. If the same <dashed-ident> is specified multiple times, all but the last have no effect.",
           "href": "https://drafts.csswg.org/animation-triggers-1/#valdef-animation-trigger--dashed-ident-animation-action",
           "type": "value",
           "value": "[ <dashed-ident> <animation-action>+ ]+"
