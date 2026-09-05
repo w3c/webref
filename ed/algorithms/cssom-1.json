@@ -1223,86 +1223,105 @@
     {
       "name": "serialize a CSS declaration block",
       "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-declaration-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS declaration block</dfn> <var>declaration block</var> means to run the steps below:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-declaration-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS declaration block</dfn> <var>declaration block</var>,\n\trun the following steps.\n\tIt will return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> representing the serialization of all the declarations in <var>declaration block</var>.",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>list</var> be an empty array."
+          "html": "<p>Let <var>serialized props</var> initially be the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "Let <var>already serialized</var> be an empty array."
+          "html": "<p>Let <var>already serialized</var> initially be the empty <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set\" id=\"ref-for-set\">set</a>.</p>"
         },
         {
-          "html": "<i>Declaration loop</i>: For each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration③\">CSS declaration</a> <var>declaration</var> in <var>declaration block</var>’s\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations③\">declarations</a>, follow these substeps:",
+          "html": "<p>Let <var>decls</var> be <var>declaration block</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations③\">declarations</a>.</p>"
+        },
+        {
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration③\">CSS declaration</a> <var>decl</var> in <var>decls</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>property</var> be <var>declaration</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①\">property name</a>."
+              "html": "<p>Let <var>name</var> be <var>decl</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①\">property name</a>.</p>"
             },
             {
-              "html": "If <var>property</var> is in <var>already serialized</var>, continue with the steps labeled <i>declaration loop</i>."
+              "html": "<p>If <var>name</var> is in <var>already serialized</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "If <var>property</var> maps to one or more shorthand properties, let <var>shorthands</var> be an array of those shorthand properties, in\n   <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order\">preferred order</a>."
+              "html": "<p>Attempt to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-into-a-shorthand-form\" id=\"ref-for-serialize-into-a-shorthand-form\">serialize into a shorthand form</a> <var>name</var>,\ngiven <var>decls</var> and <var>already serialized</var>.\nIf this returns a string, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> it to <var>serialized props</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
-              "html": "<i>Shorthand loop</i>: For each <var>shorthand</var> in <var>shorthands</var>, follow these substeps:",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "Let <var>longhands</var> be an array consisting of all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> in <var>declaration block</var>’s\n     <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations④\">declarations</a> that are not in <var>already serialized</var> and have a\n     <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name②\">property name</a> that\n     maps to one of the shorthand properties in <var>shorthands</var>."
-                },
-                {
-                  "html": "If not all properties that map to <var>shorthand</var> are present in <var>longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
-                },
-                {
-                  "html": "Let <var>current longhands</var> be an empty array."
-                },
-                {
-                  "html": "Append all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑤\">CSS declarations</a> in <var>longhands</var> that have a\n     <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name③\">property name</a> that maps to <var>shorthand</var> to <var>current longhands</var>."
-                },
-                {
-                  "html": "If there are one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑥\">CSS declarations</a> in <var>current longhands</var> that have their\n     <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag\">important flag</a> set and one or more with it unset, continue with\n     the steps labeled <i>shorthand loop</i>."
-                },
-                {
-                  "html": "If there is any declaration in <var>declaration block</var> in between the first and the last longhand in <var>current longhands</var>\n     which belongs to the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#logical-property-group\" id=\"ref-for-logical-property-group\">logical property group</a>, but has a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#mapping-logic\" id=\"ref-for-mapping-logic\">mapping logic</a> as any of the longhands in <var>current longhands</var>,\n     and is not in <var>current longhands</var>, continue with the steps labeled <i>shorthand loop</i>."
-                },
-                {
-                  "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serialize a CSS value</a> with <var>current longhands</var>."
-                },
-                {
-                  "html": "If <var>value</var> is the empty string, continue with the steps labeled <i>shorthand loop</i>."
-                },
-                {
-                  "html": "Let <var>serialized declaration</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration\">serialize a CSS declaration</a> with property name\n     <var>shorthand</var>, value <var>value</var>, and the <i>important</i> flag set if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑦\">CSS declarations</a> in\n     <var>current longhands</var> have their <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag①\">important flag</a> set."
-                },
-                {
-                  "html": "Append <var>serialized declaration</var> to <var>list</var>."
-                },
-                {
-                  "html": "Append the property names of all items of <var>current longhands</var> to <var>already serialized</var>."
-                },
-                {
-                  "html": "Continue with the steps labeled <i>declaration loop</i>."
-                }
-              ]
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration\">serialize a CSS declaration</a>\nwith property name <var>name</var>,\nvalue the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value①\">serializing a CSS value</a> from <var>decl</var>,\nand the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag\">important flag</a> set if <var>decl</var> has it set.\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> the result to <var>serialized props</var>.</p>"
             },
             {
-              "html": "Let <var>value</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value②\">serialize a CSS value</a> of <var>declaration</var>."
-            },
-            {
-              "html": "Let <var>serialized declaration</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration①\">serialize a CSS declaration</a> with property name <var>property</var>, value\n   <var>value</var>, and the <i>important</i> flag set if <var>declaration</var> has its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag②\">important\n   flag</a> set."
-            },
-            {
-              "html": "Append <var>serialized declaration</var> to <var>list</var>."
-            },
-            {
-              "html": "Append <var>property</var> to <var>already serialized</var>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>name</var> to <var>already serialized</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var>list</var> joined with \"<code> </code>\" (U+0020)."
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenating</a> <var>serialized props</var>,\nwith separator \"<code> </code>\" (U+0020 SPACE).</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize into a shorthand form",
+      "href": "https://drafts.csswg.org/cssom-1/#serialize-into-a-shorthand-form",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-into-a-shorthand-form\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize into a shorthand form</dfn> a property <var>property</var>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> <var>decls</var>\n\tand a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set\" id=\"ref-for-set①\">set</a> of already-serialized declarations <var>already serialized</var>,\n\trun the following steps.\n\tIt will return either a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> representing the serialization of a shorthand that <var>property</var> is part of,\n\tor <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure\">failure</a>,\n\tand will mutate <var>already serialized</var>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>possible shorthands</var> be a list of shorthand declaration names\nthat <var>property</var> is a longhand for,\nin <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order\">preferred shorthand order</a>.</p>"
+        },
+        {
+          "html": "<u class=\"link-error\" data-lt=\"For each\" title=\"LINK ERROR: No 'dfn' refs found for 'for each' with for='['iteration']'.\">For each</u> <var>shorthand</var> in <var>possible shorthands</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>needed longhand names</var> be the names of the longhands that <var>shorthand</var> maps to.</p>"
+            },
+            {
+              "html": "<p>If any of <var>needed longhand names</var> is not in <var>decls</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If any of <var>needed longhand names</var> is in <var>already serialized</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>used longhands</var> be the declarations from <var>decls</var>\ncorresponding to the property names in <var>needed longhand names</var>.</p>"
+            },
+            {
+              "html": "<p>If there is at least one declaration in <var>used longhands</var> with its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag①\">important flag</a> set,\nand at least one without it set,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#intermixed-properties\" id=\"ref-for-intermixed-properties\">intermixed properties</a> in <var>decls</var> between <var>used longhands</var>\nbelong to the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#logical-property-group\" id=\"ref-for-logical-property-group\">logical property group</a> as a longhand in <var>used longhands</var>\nbut have a different <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-logical-1/#mapping-logic\" id=\"ref-for-mapping-logic\">mapping logic</a>,\nand are not in <var>used longhands</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value②\">Serialize a CSS value</a> with <var>used longhands</var>, and let <var>value</var> be the result.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is the empty string,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> the property names of all the items in <var>used longhands</var> to <var>already serialized</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration①\">Serialize a CSS declaration</a>\nwith property name <var>shorthand</var>,\nvalue <var>value</var>,\nand the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag②\">important flag</a> set\nif all the <var>used longhands</var> have it set.\nReturn the result.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure①\">failure</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "intermixed properties",
+      "href": "https://drafts.csswg.org/cssom-1/#intermixed-properties",
+      "html": "To get a list of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intermixed-properties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intermixed properties</dfn>\n\tin a list of declarations <var>decls</var>\n\tbetween a set of properties <var>props</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Find the first and last declarations in <var>decls</var>\nthat belong to <var>props</var>.</p>"
+        },
+        {
+          "html": "<p>Return the slice of <var>decls</var> between (and including) those two declarations.</p>"
         }
       ]
     },
@@ -1320,10 +1339,10 @@
           "html": "If <var>localName</var> is not \"<code>style</code>\", or <var>namespace</var> is not null, then return."
         },
         {
-          "html": "If <var>value</var> is null, empty the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑤\">declarations</a>."
+          "html": "If <var>value</var> is null, empty the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations④\">declarations</a>."
         },
         {
-          "html": "Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑥\">declarations</a> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block①\">parse a CSS declaration block</a>\n from a string <var>value</var>."
+          "html": "Otherwise, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑤\">declarations</a> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block①\">parse a CSS declaration block</a>\n from a string <var>value</var>."
         }
       ]
     },
@@ -1341,7 +1360,7 @@
           "html": "Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attributes-get-by-namespace\" id=\"ref-for-concept-element-attributes-get-by-namespace\">getting an attribute</a>\n given null, \"<code>style</code>\", and <var>owner node</var>."
         },
         {
-          "html": "If <var>value</var> is not null, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑦\">declarations</a> be the result of\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block②\">parse a CSS declaration block</a> from a string <var>value</var>."
+          "html": "If <var>value</var> is not null, let the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑥\">declarations</a> be the result of\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block②\">parse a CSS declaration block</a> from a string <var>value</var>."
         }
       ]
     },
@@ -1372,22 +1391,25 @@
       ]
     },
     {
-      "name": "preferred order",
+      "name": "preferred shorthand order",
       "href": "https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-shorthands-preferred-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred order</dfn> of a list of shorthand properties <var>shorthands</var> is as follows:",
-      "rationale": "move",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-shorthands-preferred-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred shorthand order</dfn> \n\tof a list of shorthand properties <var>shorthands</var> is as follows:\n\n\n    \n     \t\tretaining their relative order.",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Order <var>shorthands</var> lexicographically."
+          "html": "<p>Order <var>shorthands</var> lexicographically.</p>"
         },
         {
-          "html": "Move all items in <var>shorthands</var> that begin with \"<code>-</code>\" (U+002D) last in the list, retaining their relative order."
+          "html": "<p>Remove all items in <var>shorthands</var> that are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#legacy-shorthand\" id=\"ref-for-legacy-shorthand\">legacy shorthands</a>\nbut do not begin with \"<code>-</code>\" (U+002D).</p>"
         },
         {
-          "html": "Move all items in <var>shorthands</var> that begin with \"<code>-</code>\" (U+002D) but do not begin with \"<code>-webkit-</code>\" last in the\n list, retaining their relative order."
+          "html": "<p>Move all items in <var>shorthands</var> that begin with \"<code>-webkit-</code>\" (U+002D) last in the list,\nretaining their relative order.</p>"
         },
         {
-          "html": "Order <var>shorthands</var> by the number of longhand properties that map to it, with the greatest number first."
+          "html": "<p>Move all items in <var>shorthands</var> that begin with \"<code>-</code>\" (U+002D)\nbut do not begin with \"<code>-webkit-</code>\" last in the list,\nretaining their relative order.</p>"
+        },
+        {
+          "html": "<p>Order <var>shorthands</var> by the number of longhand properties that map to it,\nwith the greatest number first,</p>"
         }
       ]
     },
@@ -1401,7 +1423,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag\" id=\"ref-for-cssstyledeclaration-computed-flag⑥\">computed flag</a> is set, then return the empty string.</p>"
         },
         {
-          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block\" id=\"ref-for-serialize-a-css-declaration-block③\">serializing</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑨\">declarations</a>.</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block\" id=\"ref-for-serialize-a-css-declaration-block③\">serializing</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑧\">declarations</a>.</p>"
         }
       ]
     },
@@ -1413,10 +1435,10 @@
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag\" id=\"ref-for-cssstyledeclaration-readonly-flag③\">readonly flag</a> is set,\n then <a data-link-type=\"dfn\" href=\"http://heycam.github.io/webidl/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\" id=\"ref-for-nomodificationallowederror\">NoModificationAllowedError</a></code> exception."
         },
         {
-          "html": "Empty the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⓪\">declarations</a>."
+          "html": "Empty the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations⑨\">declarations</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block③\">Parse</a> the given value and, if the return value is not the empty list, insert the items in the list\n into the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①①\">declarations</a>, in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order\" id=\"ref-for-concept-declarations-specified-order③\">specified order</a>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block\" id=\"ref-for-parse-a-css-declaration-block③\">Parse</a> the given value and, if the return value is not the empty list, insert the items in the list\n into the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⓪\">declarations</a>, in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order\" id=\"ref-for-concept-declarations-specified-order③\">specified order</a>."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#update-style-attribute-for\" id=\"ref-for-update-style-attribute-for\">Update style attribute for</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-block\" id=\"ref-for-css-declaration-block⑧\">CSS declaration block</a>."
@@ -1448,7 +1470,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <var>longhand</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑧\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑤\">property\n       name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①②\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①③\">declarations</a>, let <var>declaration</var>\n       be that <span id=\"ref-for-css-declaration①③\">CSS declaration</span>, or null otherwise."
+                      "html": "If <var>longhand</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑧\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name③\">property\n       name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration⑨\">CSS declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①②\">declarations</a>, let <var>declaration</var>\n       be that <span id=\"ref-for-css-declaration①⓪\">CSS declaration</span>, or null otherwise."
                     },
                     {
                       "html": "If <var>declaration</var> is null, then return the empty string."
@@ -1469,7 +1491,7 @@
           ]
         },
         {
-          "html": "If <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑨\">case-sensitive</a>\n match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑥\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①④\">CSS declaration</a> in the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①④\">declarations</a>, then return the result of invoking\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value④\">serialize a CSS value</a> of that declaration."
+          "html": "If <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive⑨\">case-sensitive</a>\n match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name④\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①①\">CSS declaration</a> in the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①③\">declarations</a>, then return the result of invoking\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value④\">serialize a CSS value</a> of that declaration."
         },
         {
           "html": "Return the empty string."
@@ -1507,7 +1529,7 @@
           ]
         },
         {
-          "html": "If <var>property</var> is a\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①⓪\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑦\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①⑤\">CSS\n declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑤\">declarations</a> that has the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag④\">important flag</a> set, return the string \"<code>important</code>\"."
+          "html": "If <var>property</var> is a\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①⓪\">case-sensitive</a> match for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name⑤\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration①②\">CSS\n declaration</a> in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①④\">declarations</a> that has the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-important-flag\" id=\"ref-for-css-declaration-important-flag④\">important flag</a> set, return the string \"<code>important</code>\"."
         },
         {
           "html": "Return the empty string."
@@ -1555,7 +1577,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>longhand result</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set-a-css-declaration\" id=\"ref-for-set-a-css-declaration\">set the CSS declaration</a>\n   <var>longhand</var> with the appropriate value(s) from <var>component value list</var>, with the <i>important</i>\n   flag set if <var>priority</var> is not the empty string, and unset otherwise, and with the list of declarations\n   being the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑥\">declarations</a>."
+              "html": "Let <var>longhand result</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set-a-css-declaration\" id=\"ref-for-set-a-css-declaration\">set the CSS declaration</a>\n   <var>longhand</var> with the appropriate value(s) from <var>component value list</var>, with the <i>important</i>\n   flag set if <var>priority</var> is not the empty string, and unset otherwise, and with the list of declarations\n   being the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑤\">declarations</a>."
             },
             {
               "html": "If <var>longhand result</var> is true, let <var>updated</var> be true."
@@ -1563,7 +1585,7 @@
           ]
         },
         {
-          "html": "Otherwise, let <var>updated</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set-a-css-declaration\" id=\"ref-for-set-a-css-declaration①\">set the CSS declaration</a>\n <var>property</var> with value <var>component value list</var>, with the <i>important</i> flag set if\n <var>priority</var> is not the empty string, and unset otherwise, and with the list of declarations being the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑦\">declarations</a>."
+          "html": "Otherwise, let <var>updated</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set-a-css-declaration\" id=\"ref-for-set-a-css-declaration①\">set the CSS declaration</a>\n <var>property</var> with value <var>component value list</var>, with the <i>important</i> flag set if\n <var>priority</var> is not the empty string, and unset otherwise, and with the list of declarations being the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑥\">declarations</a>."
         },
         {
           "html": "If <var>updated</var> is true, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#update-style-attribute-for\" id=\"ref-for-update-style-attribute-for①\">update style attribute for</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-block\" id=\"ref-for-css-declaration-block⑨\">CSS declaration block</a>."
@@ -1599,15 +1621,15 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>longhand</var> is not a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①④\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②③\">CSS declaration</a>\n   in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑧\">declarations</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>."
+              "html": "If <var>longhand</var> is not a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①②\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⓪\">CSS declaration</a>\n   in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑦\">declarations</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>."
             },
             {
-              "html": "Remove that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②④\">CSS declaration</a> and let <var>removed</var> be true."
+              "html": "Remove that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②①\">CSS declaration</a> and let <var>removed</var> be true."
             }
           ]
         },
         {
-          "html": "Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①④\">case-sensitive</a> match for a\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①⑤\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑤\">CSS declaration</a> in the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑨\">declarations</a>, remove that <span id=\"ref-for-css-declaration②⑥\">CSS declaration</span> and let <var>removed</var> be true."
+          "html": "Otherwise, if <var>property</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/i18n-glossary/#dfn-case-sensitive\" id=\"ref-for-dfn-case-sensitive①④\">case-sensitive</a> match for a\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-property-name\" id=\"ref-for-css-declaration-property-name①③\">property name</a> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②②\">CSS declaration</a> in the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑧\">declarations</a>, remove that <span id=\"ref-for-css-declaration②③\">CSS declaration</span> and let <var>removed</var> be true."
         },
         {
           "html": "If <var>removed</var> is true, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#update-style-attribute-for\" id=\"ref-for-update-style-attribute-for②\">Update style attribute for</a> the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration-block\" id=\"ref-for-css-declaration-block①⓪\">CSS declaration block</a>."
@@ -1704,15 +1726,15 @@
     {
       "name": "serialize a CSS value",
       "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-value",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS value</dfn> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑦\">CSS declaration</a> <var>declaration</var>\nor a list of longhand <span id=\"ref-for-css-declaration②⑧\">CSS declarations</span> <var>list</var>,\nfollow these rules:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS value</dfn> of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②④\">CSS declaration</a> <var>declaration</var>\nor a list of longhand <span id=\"ref-for-css-declaration②⑤\">CSS declarations</span> <var>list</var>,\nfollow these rules:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If this algorithm is invoked with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> <var>list</var>:",
+          "html": "If this algorithm is invoked with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> <var>list</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>shorthand</var> be the first shorthand property,\nin <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order①\">preferred order</a>,\nthat exactly maps to all of the longhand properties in <var>list</var>.</p>"
+              "html": "<p>Let <var>shorthand</var> be the first shorthand property,\nin <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order①\">preferred shorthand order</a>,\nthat exactly maps to all of the longhand properties in <var>list</var>.</p>"
             },
             {
               "html": "<p>If there is no such shorthand or\n <var>shorthand</var> cannot exactly represent the values of all the properties in <var>list</var>,\nreturn the empty string.</p>"
@@ -1723,7 +1745,7 @@
           ]
         },
         {
-          "html": "<p>Represent the value of the <var>declaration</var>\nas a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of CSS component values <var>components</var>\nthat, when <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsed</a> according to the property’s grammar,\nwould represent that value.\nAdditionally, unless otherwise specified:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If certain component values can appear in any order\nwithout changing the meaning of the value\n(a pattern typically represented by a double bar <a data-link-type=\"grammar\" href=\"https://drafts.csswg.org/css-values-4/#comb-any\" id=\"ref-for-comb-any\">||</a> in the value syntax),\nreorder the component values to use the canonical order of component values\nas given in the property definition table.</p>\n      </li><li data-md=\"\">\n       <p>If component values can be omitted or replaced with a shorter representation\nwithout changing the meaning of the value,\nomit/replace them.</p>\n      </li><li data-md=\"\">\n       <p>If either of the above syntactic translations would be less backwards-compatible,\ndo not perform them.</p>\n     </li></ul>"
+          "html": "<p>Represent the value of the <var>declaration</var>\nas a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of CSS component values <var>components</var>\nthat, when <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsed</a> according to the property’s grammar,\nwould represent that value.\nAdditionally, unless otherwise specified:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If certain component values can appear in any order\nwithout changing the meaning of the value\n(a pattern typically represented by a double bar <a data-link-type=\"grammar\" href=\"https://drafts.csswg.org/css-values-4/#comb-any\" id=\"ref-for-comb-any\">||</a> in the value syntax),\nreorder the component values to use the canonical order of component values\nas given in the property definition table.</p>\n      </li><li data-md=\"\">\n       <p>If component values can be omitted or replaced with a shorter representation\nwithout changing the meaning of the value,\nomit/replace them.</p>\n      </li><li data-md=\"\">\n       <p>If either of the above syntactic translations would be less backwards-compatible,\ndo not perform them.</p>\n     </li></ul>"
         },
         {
           "html": "<p>Remove any <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token\">&lt;whitespace-token&gt;</a>s from <var>components</var>.</p>"
@@ -1897,13 +1919,13 @@
           ]
         },
         {
-          "html": "Let <var>decls</var> be an empty list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑨\">CSS declarations</a>."
+          "html": "Let <var>decls</var> be an empty list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration②⑥\">CSS declarations</a>."
         },
         {
           "html": "If <var>obj</var> is not null, and <var>elt</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>,\n  part of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-shadow-1/#flat-tree\" id=\"ref-for-flat-tree\">flat tree</a>,\n  and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-root\" id=\"ref-for-concept-shadow-including-root\">shadow-including root</a> has a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#browsing-context\" id=\"ref-for-browsing-context\">browsing context</a> which either\n  doesn’t have a <u class=\"link-error\" data-lt=\"browsing context container\" title=\"LINK ERROR: No 'dfn' refs found for 'browsing context container' that are marked for export.\n  (Possible specs this could be from: longtasks-1)\">browsing context container</u>, or whose\n  <u class=\"link-error\" data-lt=\"browsing context container\" title=\"LINK ERROR: No 'dfn' refs found for 'browsing context container' that are marked for export.\n  (Possible specs this could be from: longtasks-1)\">browsing context container</u> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered\">being rendered</a>,\n  set <var>decls</var> to a list of all longhand properties that are\n  <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#supported-css-property\" id=\"ref-for-supported-css-property⑤\">supported CSS properties</a>, in lexicographical order,\n  with the value being the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#resolved-value\" id=\"ref-for-resolved-value\">resolved value</a> computed for <var>obj</var>\n  using the style rules associated with <var>doc</var>. Additionally, append to\n  <var>decls</var> all the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-1/#custom-property\" id=\"ref-for-custom-property⑤\">custom properties</a> whose <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value\">computed value</a>\n  for <var>obj</var> is not the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value\">guaranteed-invalid value</a>."
         },
         {
-          "html": "Return a live <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstyleproperties\" id=\"ref-for-cssstyleproperties⑧\">CSSStyleProperties</a></code> object with the following properties:\n  \n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag\" id=\"ref-for-cssstyledeclaration-computed-flag⑦\">computed flag</a>\n   \n      </dt><dd>Set.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag\" id=\"ref-for-cssstyledeclaration-readonly-flag⑦\">readonly flag</a>\n   \n      </dt><dd>Set.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations②⓪\">declarations</a>\n   \n      </dt><dd><var>decls</var>.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule\" id=\"ref-for-cssstyledeclaration-parent-css-rule⑤\">parent CSS rule</a>\n   \n      </dt><dd>Null.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\" id=\"ref-for-cssstyledeclaration-owner-node⑧\">owner node</a>\n   \n      </dt><dd><var>obj</var>.\n  \n     </dd></dl>"
+          "html": "Return a live <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-1/#cssstyleproperties\" id=\"ref-for-cssstyleproperties⑧\">CSSStyleProperties</a></code> object with the following properties:\n  \n     <dl>\n      <dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag\" id=\"ref-for-cssstyledeclaration-computed-flag⑦\">computed flag</a>\n   \n      </dt><dd>Set.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-readonly-flag\" id=\"ref-for-cssstyledeclaration-readonly-flag⑦\">readonly flag</a>\n   \n      </dt><dd>Set.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①⑨\">declarations</a>\n   \n      </dt><dd><var>decls</var>.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule\" id=\"ref-for-cssstyledeclaration-parent-css-rule⑤\">parent CSS rule</a>\n   \n      </dt><dd>Null.\n   \n      </dd><dt><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node\" id=\"ref-for-cssstyledeclaration-owner-node⑧\">owner node</a>\n   \n      </dt><dd><var>obj</var>.\n  \n     </dd></dl>"
         }
       ]
     },

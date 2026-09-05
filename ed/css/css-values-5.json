@@ -389,7 +389,7 @@
         },
         {
           "name": "<'animation-timeline'>",
-          "prose": "Represents the interpolation progress as the progress of the specified animation timeline. The values none and auto are invalid. [CSS-ANIMATIONS-2] [WEB-ANIMATIONS-2]",
+          "prose": "Represents the interpolation progress as the progress of the specified animation timeline. The values none and auto are invalid. [CSS-ANIMATIONS-2] [WEB-ANIMATIONS-2] If the specified timeline does not exist on the element or otherwise doesn’t have a progress for some reason, this represents an interpolation progress of 0.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-progress-source-animation-timeline",
           "type": "value",
           "value": "<'animation-timeline'>"
