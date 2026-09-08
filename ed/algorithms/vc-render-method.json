@@ -9,7 +9,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Validate the template JSON object against the JSON template schema defined\n          above. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be\n          returned."
+          "html": "Validate the template against the card object definition in\n          <a href=\"https://w3c.github.io/vc-render-method/#card-object\" data-matched-text=\"[[[#card-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.1 </bdi>The Card Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an\n          error <em class=\"rfc2119\">MUST</em> be returned."
         },
         {
           "html": "For each string value in the template object:",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "html": "Validate the resulting JSON object against the <code>card</code> output schema. If\n          validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an error <em class=\"rfc2119\">MUST</em> be returned."
+          "html": "Validate the resulting JSON object against the card object definition\n          in <a href=\"https://w3c.github.io/vc-render-method/#card-object\" data-matched-text=\"[[[#card-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.1 </bdi>The Card Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and\n          an error <em class=\"rfc2119\">MUST</em> be returned."
         }
       ]
     },
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-16\">wrapper code</a> <em class=\"rfc2119\">MUST</em> setup to receive communication from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-25\">host page</a> via the\n<code>MessageChannel</code> and provide the <code>window.renderMethodReady</code> method for use by\nthe <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-template-code\" class=\"internalDFN\" id=\"ref-for-dfn-template-code-6\">template code</a>.",
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-16\">wrapper code</a> <em class=\"rfc2119\">MUST</em> setup to receive communication from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-25\">host page</a> via the\n<code>MessageChannel</code> and provide the <code>window.renderMethodReady</code> method for use by\nthe <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-template-code\" class=\"internalDFN\" id=\"ref-for-dfn-template-code-7\">template code</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
