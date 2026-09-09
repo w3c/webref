@@ -26,7 +26,7 @@
     },
     {
       "name": "remove containertiming attribute",
-      "html": "When the [^containertiming^] content attribute is removed from an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement①④\">HTMLElement</a></code> <var>element</var>, perform the following steps:",
+      "html": "When the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/container-timing/#dom-htmlelement-containertiming\" id=\"ref-for-dom-htmlelement-containertiming⑤\">containerTiming</a></code> content attribute is removed from an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/dom.html#htmlelement\" id=\"ref-for-htmlelement①④\">HTMLElement</a></code> <var>element</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -65,7 +65,7 @@
           "html": "<p>If <var>containerRoot</var> is null, return.</p>"
         },
         {
-          "html": "<p>Let <var>record</var> be the entry in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map③\">container root records map</a> for <var>containerRoot</var>. If no such entry exists, set <var>record</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#create-a-container-timing-record\" id=\"ref-for-create-a-container-timing-record\">create a Container Timing Record</a> given <var>paintTimingInfo</var> and the value of <var>containerRoot</var>’s [^containertiming^] content attribute; then add (<var>containerRoot</var> → <var>record</var>) to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map④\">container root records map</a>.</p>"
+          "html": "<p>Let <var>record</var> be the entry in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map③\">container root records map</a> for <var>containerRoot</var>. If no such entry exists, set <var>record</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#create-a-container-timing-record\" id=\"ref-for-create-a-container-timing-record\">create a Container Timing Record</a> given <var>paintTimingInfo</var> and the value of <var>containerRoot</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/container-timing/#dom-htmlelement-containertiming\" id=\"ref-for-dom-htmlelement-containertiming⑧\">containerTiming</a></code> content attribute; then add (<var>containerRoot</var> → <var>record</var>) to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map④\">container root records map</a>.</p>"
         },
         {
           "html": "<p>Let <var>enclosingRect</var> be the smallest enclosing rectangle of <var>intersectionRect</var>.</p>"
@@ -161,7 +161,7 @@
           "html": "<p>If <var>element</var> is null, return null.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s [^containertiming^] content attribute is present, return <var>element</var>.</p>"
+          "html": "<p>If <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/container-timing/#dom-htmlelement-containertiming\" id=\"ref-for-dom-htmlelement-containertiming⑨\">containerTiming</a></code> content attribute is present, return <var>element</var>.</p>"
         },
         {
           "html": "<p>If <var>element</var>’s parentElement is not null, return the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#get-the-container-root-element\" id=\"ref-for-get-the-container-root-element②\">get the container root element</a> given <var>element</var>’s parentElement.</p>"
@@ -208,7 +208,7 @@
           "html": "<p>Set <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-timing-record-haspendingchanges\" id=\"ref-for-container-timing-record-haspendingchanges②\">hasPendingChanges</a> to true.</p>"
         },
         {
-          "html": "<p>If <var>containerRoot</var>’s [^containertimingignore^] content attribute is present, return.</p>"
+          "html": "<p>If <var>containerRoot</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/container-timing/#dom-htmlelement-containertimingignore\" id=\"ref-for-dom-htmlelement-containertimingignore③\">containerTimingIgnore</a></code> content attribute is present, return.</p>"
         },
         {
           "html": "<p>Let <var>parentContainerRoot</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#get-the-parent-container-root-element\" id=\"ref-for-get-the-parent-container-root-element\">get the parent container root element</a> given <var>containerRoot</var>.</p>"
@@ -217,7 +217,7 @@
           "html": "<p>If <var>parentContainerRoot</var> is null, return.</p>"
         },
         {
-          "html": "<p>Let <var>parentRecord</var> be the entry in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map⑥\">container root records map</a> for <var>parentContainerRoot</var>. If no such entry exists, set <var>parentRecord</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#create-a-container-timing-record\" id=\"ref-for-create-a-container-timing-record①\">create a Container Timing Record</a> given <var>paintTimingInfo</var> and the value of <var>parentContainerRoot</var>’s [^containertiming^] content attribute; then add (<var>parentContainerRoot</var> → <var>parentRecord</var>) to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map⑦\">container root records map</a>.</p>"
+          "html": "<p>Let <var>parentRecord</var> be the entry in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map⑥\">container root records map</a> for <var>parentContainerRoot</var>. If no such entry exists, set <var>parentRecord</var> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#create-a-container-timing-record\" id=\"ref-for-create-a-container-timing-record①\">create a Container Timing Record</a> given <var>paintTimingInfo</var> and the value of <var>parentContainerRoot</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/container-timing/#dom-htmlelement-containertiming\" id=\"ref-for-dom-htmlelement-containertiming①⓪\">containerTiming</a></code> content attribute; then add (<var>parentContainerRoot</var> → <var>parentRecord</var>) to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#container-root-records-map\" id=\"ref-for-container-root-records-map⑦\">container root records map</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/container-timing/#maybe-update-the-last-new-painted-area\" id=\"ref-for-maybe-update-the-last-new-painted-area①\">Maybe update the last new painted area</a> for <var>parentRecord</var> given <var>document</var>, <var>parentContainerRoot</var>, <var>element</var>, <var>enclosingRect</var>, and <var>paintTimingInfo</var>.</p>"
