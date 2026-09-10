@@ -147,7 +147,7 @@
           "html": "Set <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-composition-end\" class=\"internalDFN\" id=\"ref-for-dfn-composition-end-3\">composition end</a> to <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-composition-start\" class=\"internalDFN\" id=\"ref-for-dfn-composition-start-4\">composition start</a> plus the length of <var>text</var>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-dispatch-text-update-event\" class=\"internalDFN\" id=\"ref-for-dfn-dispatch-text-update-event-1\">Dispatch text update event</a> given <var>editContext</var> and <var>text</var>."
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-dispatch-text-update-event\" class=\"internalDFN\" id=\"ref-for-dfn-dispatch-text-update-event-1\">Dispatch text update event</a> given <var>editContext</var>, <var>text</var>, the minimum of <var>insertionStart</var> and <var>insertionEnd</var>,\n                    and the maximum of <var>insertionStart</var> and <var>insertionEnd</var>."
         },
         {
           "html": "If <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-8\">is composing</a> is true, then:",
@@ -186,14 +186,14 @@
           "html": "Let <var>newActiveEditContext</var> be the result of running the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-determine-the-active-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-determine-the-active-editcontext-1\">determine the active EditContext</a> given <var>document</var>."
         },
         {
-          "html": "If <var>oldActiveEditContext</var> is not null, then run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-3\">deactivate an EditContext</a> given <var>oldActiveEditContext</var>."
+          "html": "If <var>oldActiveEditContext</var> is not null and is not equal to <var>newActiveEditContext</var>, then run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-3\">deactivate an EditContext</a> given <var>oldActiveEditContext</var>."
         },
         {
           "html": "If <var>newActiveEditContext</var> is not null, then:",
           "rationale": "update",
           "steps": [
             {
-              "html": "Update the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-edit-context\" class=\"internalDFN\" id=\"ref-for-dfn-text-edit-context-20\">Text Edit Context</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-4\">text state</a> to match the values in <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-5\">text state</a>."
+              "html": "Update the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-edit-context\" class=\"internalDFN\" id=\"ref-for-dfn-text-edit-context-20\">Text Edit Context</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-4\">text state</a> to match the values in <var>newActiveEditContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-5\">text state</a>."
             }
           ]
         },
@@ -203,11 +203,11 @@
       ]
     },
     {
-      "html": "<dl>\n                <dt>Input</dt>\n                <dd><var>editContext</var>, an <a data-link-type=\"idl\" data-lt=\"EditContext\" href=\"https://www.w3.org/TR/edit-context/#dom-editcontext\" class=\"internalDFN\" id=\"ref-for-dom-editcontext-27\"><code>EditContext</code></a></dd>\n                <dd><var>text</var>, a string</dd>\n                <dt>Output</dt>\n                <dd>None</dd>\n            </dl>",
+      "html": "<dl>\n                <dt>Input</dt>\n                <dd><var>editContext</var>, an <a data-link-type=\"idl\" data-lt=\"EditContext\" href=\"https://www.w3.org/TR/edit-context/#dom-editcontext\" class=\"internalDFN\" id=\"ref-for-dom-editcontext-27\"><code>EditContext</code></a></dd>\n                <dd><var>text</var>, a string</dd>\n                <dd><var>updateRangeStart</var>, an offset into <var>editContext</var>'s previous <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-editcontext-text\" class=\"internalDFN\" id=\"ref-for-dom-editcontext-text-1\"><code>text</code></a></dd>\n                <dd><var>updateRangeEnd</var>, an offset into <var>editContext</var>'s previous <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-editcontext-text\" class=\"internalDFN\" id=\"ref-for-dom-editcontext-text-2\"><code>text</code></a></dd>\n                <dt>Output</dt>\n                <dd>None</dd>\n            </dl>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"textupdate\" at <var>editContext</var> using <a data-link-type=\"idl\" data-lt=\"TextUpdateEvent\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-3\"><code>TextUpdateEvent</code></a>, with\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-text\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-text-1\"><code>text</code></a> initialized to <var>text</var>,\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionstart\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-selectionstart-1\"><code>selectionStart</code></a> initialized to |<var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-selection-start\" class=\"internalDFN\" id=\"ref-for-dfn-selection-start-4\">selection start</a>, and\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionend\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-selectionend-1\"><code>selectionEnd</code></a> initialized to <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-selection-end\" class=\"internalDFN\" id=\"ref-for-dfn-selection-end-4\">selection end</a>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named \"textupdate\" at <var>editContext</var> using <a data-link-type=\"idl\" data-lt=\"TextUpdateEvent\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-3\"><code>TextUpdateEvent</code></a>, with\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-updaterangestart\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-updaterangestart-1\"><code>updateRangeStart</code></a> initialized to <var>updateRangeStart</var>,\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-updaterangeend\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-updaterangeend-1\"><code>updateRangeEnd</code></a> initialized to <var>updateRangeEnd</var>,\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-text\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-text-1\"><code>text</code></a> initialized to <var>text</var>,\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionstart\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-selectionstart-1\"><code>selectionStart</code></a> initialized to <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-selection-start\" class=\"internalDFN\" id=\"ref-for-dfn-selection-start-4\">selection start</a>, and\n            <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionend\" class=\"internalDFN\" id=\"ref-for-dom-textupdateevent-selectionend-1\"><code>selectionEnd</code></a> initialized to <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-selection-end\" class=\"internalDFN\" id=\"ref-for-dfn-selection-end-4\">selection end</a>."
         }
       ]
     },
@@ -261,10 +261,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-10\">is composing</a> to false."
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named\n            <a href=\"https://w3c.github.io/uievents/#event-type-compositionend\">compositionend</a>\n            at <var>editContext</var> using <a data-link-type=\"interface\" data-lt=\"CompositionEvent\" href=\"https://www.w3.org/TR/uievents/#compositionevent\"><code>CompositionEvent</code></a>."
+          "html": "If <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-10\">is composing</a> is true, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-11\">is composing</a> to false."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named\n                    <a href=\"https://w3c.github.io/uievents/#event-type-compositionend\">compositionend</a>\n                    at <var>editContext</var> using <a data-link-type=\"interface\" data-lt=\"CompositionEvent\" href=\"https://www.w3.org/TR/uievents/#compositionevent\"><code>CompositionEvent</code></a>."
+            }
+          ]
         }
       ]
     },
