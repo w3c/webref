@@ -1,0 +1,563 @@
+{
+  "spec": {
+    "title": "Web Install",
+    "url": "https://wicg.github.io/install-element/"
+  },
+  "algorithms": [
+    {
+      "name": "finish a web install request",
+      "href": "https://wicg.github.io/install-element/#dfn-finish-a-web-install-request",
+      "html": "To <dfn id=\"dfn-finish-a-web-install-request\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">finish a web install request</dfn> given a\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-3\">web install request</a> <var>request</var> and\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-outcome\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-outcome-1\">web install outcome</a> <var>outcome</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\">state</a> to\n          <code>complete</code>."
+        },
+        {
+          "html": "Let <var>traversable</var> be <var>request</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-1\">document</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>, if it\n          has one; otherwise null."
+        },
+        {
+          "html": "If <var>traversable</var> is not null and its\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"top-level traversable\" data-xref-for=\"top-level traversable\" href=\"https://wicg.github.io/install-element/#dfn-active-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-active-web-install-request-1\">active web install request</a> is\n          <var>request</var>, set it to null."
+        },
+        {
+          "html": "Return <var>outcome</var>."
+        }
+      ]
+    },
+    {
+      "name": "run a web install request",
+      "href": "https://wicg.github.io/install-element/#dfn-run-a-web-install-request",
+      "html": "To <dfn id=\"dfn-run-a-web-install-request\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">run a web install request</dfn> given a\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-4\">web install request</a> <var>request</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>document</var> be <var>request</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-2\">document</a>."
+        },
+        {
+          "html": "If <var>document</var> is not an <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-eligible-installing-document\" class=\"internalDFN\" id=\"ref-for-dfn-eligible-installing-document-1\">eligible installing document</a>,\n          return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-1\">finish a web install request</a> with\n          <var>request</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-state-invalid\" class=\"internalDFN\" id=\"ref-for-dfn-installation-state-invalid-1\">installation state invalid</a>."
+        },
+        {
+          "html": "Let <var>traversable</var> be <var>document</var>'s\n          <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>."
+        },
+        {
+          "html": "If <var>traversable</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"top-level traversable\" data-xref-for=\"top-level traversable\" href=\"https://wicg.github.io/install-element/#dfn-active-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-active-web-install-request-2\">active web install request</a> is not null,\n          return\n          the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-2\">finish a web install request</a> with\n          <var>request</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-operation-aborted\" class=\"internalDFN\" id=\"ref-for-dfn-installation-operation-aborted-1\">installation operation aborted</a>."
+        },
+        {
+          "html": "Set <var>traversable</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"top-level traversable\" data-xref-for=\"top-level traversable\" href=\"https://wicg.github.io/install-element/#dfn-active-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-active-web-install-request-3\">active web install request</a> to\n          <var>request</var>."
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-1\">target mode</a> is\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-current-document\" class=\"internalDFN\" id=\"ref-for-dfn-current-document-2\">current document</a>, let <var>targetResult</var> be the result of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-resolve-a-current-document-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-resolve-a-current-document-install-target-1\">resolve a current-document install target</a> for\n          <var>request</var>. Otherwise, let <var>targetResult</var> be the\n          result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-resolve-an-explicit-manifest-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-resolve-an-explicit-manifest-install-target-1\">resolve an explicit manifest install target</a> for\n          <var>request</var>."
+        },
+        {
+          "html": "If <var>targetResult</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-outcome\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-outcome-2\">web install outcome</a>, return the\n          result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-3\">finish a web install request</a> with\n          <var>request</var> and <var>targetResult</var>."
+        },
+        {
+          "html": "Let <var>target</var> be <var>targetResult</var>."
+        },
+        {
+          "html": "If <var>document</var> is no longer an\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-eligible-installing-document\" class=\"internalDFN\" id=\"ref-for-dfn-eligible-installing-document-2\">eligible installing document</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>traversable</var>'s\n              <a data-link-type=\"dfn|abstract-op\" data-link-for=\"top-level traversable\" data-xref-for=\"top-level traversable\" href=\"https://wicg.github.io/install-element/#dfn-active-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-active-web-install-request-4\">active web install request</a> is\n              <var>request</var>, set it to null."
+            },
+            {
+              "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-4\">finish a web install request</a> with\n              <var>request</var> and <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-state-invalid\" class=\"internalDFN\" id=\"ref-for-dfn-installation-state-invalid-2\">installation state invalid</a>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>permissionGranted</var> be the result of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-obtain-web-install-permission\" class=\"internalDFN\" id=\"ref-for-dfn-obtain-web-install-permission-1\">obtain web install permission</a> for <var>request</var>."
+        },
+        {
+          "html": "If <var>permissionGranted</var> is false, return the result of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-5\">finish a web install request</a> with <var>request</var> and\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-not-allowed\" class=\"internalDFN\" id=\"ref-for-dfn-installation-not-allowed-1\">installation not allowed</a>."
+        },
+        {
+          "html": "Let <var>outcome</var> be the result of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-perform-web-installation\" class=\"internalDFN\" id=\"ref-for-dfn-perform-web-installation-1\">perform web installation</a> with <var>request</var> and\n          <var>target</var>."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-finish-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-finish-a-web-install-request-6\">finish a web install request</a> with\n          <var>request</var> and <var>outcome</var>."
+        }
+      ]
+    },
+    {
+      "name": "eligible installing document",
+      "href": "https://wicg.github.io/install-element/#dfn-eligible-installing-document",
+      "html": "To determine whether a <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a> <var>document</var> is an\n        <dfn id=\"dfn-eligible-installing-document\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">eligible installing document</dfn>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"fully-active\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, return false."
+        },
+        {
+          "html": "If <var>document</var> is not the\n          <a data-cite=\"html/document-sequences.html#active-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#active-document\">\n          active document</a> of a\n          <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>, return false."
+        },
+        {
+          "html": "If <var>document</var> is a\n          <a href=\"https://wicg.github.io/fenced-frame/#fenced-frame\">\n          fenced frame</a> document, return false."
+        },
+        {
+          "html": "If <var>document</var>'s\n          <a data-cite=\"html/browsers.html#active-sandboxing-flag-set\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\">\n          active sandboxing flag set</a> is not empty, return false."
+        },
+        {
+          "html": "If the <code>web-app-installation</code> <a data-link-type=\"dfn\" data-cite=\"permissions-policy\" data-cite-path=\"\" data-cite-frag=\"policy-controlled-feature\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a>\n          is disabled in <var>document</var>, return false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "resolve a current-document install target",
+      "href": "https://wicg.github.io/install-element/#dfn-resolve-a-current-document-install-target",
+      "html": "To <dfn id=\"dfn-resolve-a-current-document-install-target\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">resolve a current-document install target</dfn> for a\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-5\">web install request</a> <var>request</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\">state</a> to\n            <code>resolving target</code>."
+        },
+        {
+          "html": "Let <var>document</var> be <var>request</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-3\">document</a>."
+        },
+        {
+          "html": "Let <var>manifest</var> be <var>document</var>'s\n            <a data-cite=\"appmanifest#dfn-processed-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processed-manifest\">\n            processed manifest</a>."
+        },
+        {
+          "html": "If <var>manifest</var> is null, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-1\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>manifestURL</var> be <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-manifest-url\" href=\"https://www.w3.org/TR/appmanifest/#dfn-manifest-url\">manifest URL</a>."
+        },
+        {
+          "html": "Let <var>identity</var> be <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-id\" href=\"https://www.w3.org/TR/appmanifest/#dfn-id\">manifest id</a>."
+        },
+        {
+          "html": "If the manifest did not explicitly contain an\n            <code>id</code> member, return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-2\">invalid install data</a>."
+        },
+        {
+          "html": "If <var>identity</var> is not <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/browsers.html\" data-cite-frag=\"same-origin\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\">same origin</a> with\n            <var>document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-document-url\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a>, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-3\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>target</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-target-1\">web install target</a> whose\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-1\">manifest</a> is <var>manifest</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-0-1\">manifest URL</a> is <var>manifestURL</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-identity\" class=\"internalDFN\" id=\"ref-for-dfn-identity-1\">identity</a> is <var>identity</var>, and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-start-url\" class=\"internalDFN\" id=\"ref-for-dfn-start-url-1\">start URL</a> is <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-start_url\" href=\"https://www.w3.org/TR/appmanifest/#dfn-start_url\">start URL</a>."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-validate-a-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-web-install-target-1\">validate a web install target</a> with\n            <var>request</var> and <var>target</var>."
+        }
+      ]
+    },
+    {
+      "name": "resolve an explicit manifest install target",
+      "href": "https://wicg.github.io/install-element/#dfn-resolve-an-explicit-manifest-install-target",
+      "html": "To <dfn id=\"dfn-resolve-an-explicit-manifest-install-target\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">resolve an explicit manifest install target</dfn> for a\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-6\">web install request</a> <var>request</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-3\">state</a> to\n            <code>resolving target</code>."
+        },
+        {
+          "html": "Let <var>manifestURL</var> be <var>request</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-1\">manifest URL</a>."
+        },
+        {
+          "html": "If <var>manifestURL</var> is not an HTTP(S) URL whose\n            <a data-link-type=\"dfn\" data-link-for=\"url\" data-xref-for=\"url\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-origin\" href=\"https://url.spec.whatwg.org/#concept-url-origin\">origin</a> is not\n            <a data-cite=\"secure-contexts#is-origin-trustworthy\" href=\"https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy\">\n            potentially trustworthy</a>, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-4\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>response</var> be the result of\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-fetch-an-install-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-fetch-an-install-manifest-1\">fetch an install manifest</a> from <var>manifestURL</var>."
+        },
+        {
+          "html": "If <var>response</var> is failure, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-5\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>manifest</var> be the result of\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-process-an-install-manifest-response\" class=\"internalDFN\" id=\"ref-for-dfn-process-an-install-manifest-response-1\">process an install manifest response</a> with\n            <var>response</var> and <var>manifestURL</var>."
+        },
+        {
+          "html": "If <var>manifest</var> is failure, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-6\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>identity</var> be <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-id\" href=\"https://www.w3.org/TR/appmanifest/#dfn-id\">manifest id</a>."
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-id\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-id-1\">manifest ID</a> is not\n            null, and it is not equal to <var>identity</var>, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-7\">invalid install data</a>."
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-id\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-id-2\">manifest ID</a> is null,\n            and the fetched manifest did not explicitly contain an\n            <code>id</code> member, return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-8\">invalid install data</a>."
+        },
+        {
+          "html": "Let <var>target</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-target-2\">web install target</a> whose\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-2\">manifest</a> is <var>manifest</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-0-2\">manifest URL</a> is <var>manifestURL</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-identity\" class=\"internalDFN\" id=\"ref-for-dfn-identity-2\">identity</a> is <var>identity</var>, and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-start-url\" class=\"internalDFN\" id=\"ref-for-dfn-start-url-2\">start URL</a> is <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-start_url\" href=\"https://www.w3.org/TR/appmanifest/#dfn-start_url\">start URL</a>."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-validate-a-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-web-install-target-2\">validate a web install target</a> with\n            <var>request</var> and <var>target</var>."
+        }
+      ]
+    },
+    {
+      "name": "fetch an install manifest",
+      "href": "https://wicg.github.io/install-element/#dfn-fetch-an-install-manifest",
+      "html": "To <dfn id=\"dfn-fetch-an-install-manifest\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fetch an install manifest</dfn> from a URL\n          <var>manifestURL</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>request</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"request\" href=\"https://fetch.spec.whatwg.org/#request\"><code>Request</code></a> whose\n            <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-url\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\">URL</a> is <var>manifestURL</var>,\n            <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-method\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\">method</a> is <code>GET</code>,\n            <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-destination\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\">destination</a> is <code>manifest</code>,\n            <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-credentials-mode\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\">credentials mode</a> is <code>omit</code>, and\n            <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-redirect-mode\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\">redirect mode</a> is <code>error</code>."
+        },
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-referrer\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\">referrer</a> to\n            <code>no-referrer</code>."
+        },
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn\" data-link-for=\"request\" data-xref-for=\"request\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-request-mode\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\">mode</a> to\n            <code>cors</code>."
+        },
+        {
+          "html": "Let <var>response</var> be the result of <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-fetch\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\">fetching</a>\n            <var>request</var>."
+        },
+        {
+          "html": "If <var>response</var> is a <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-network-error\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\">network error</a>, return failure."
+        },
+        {
+          "html": "If <var>response</var>'s <a data-link-type=\"dfn\" data-link-for=\"response\" data-xref-for=\"response\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-response-status\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\">status</a> is not an\n            <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"ok-status\" href=\"https://fetch.spec.whatwg.org/#ok-status\">ok status</a>, return failure."
+        },
+        {
+          "html": "Return <var>response</var>."
+        }
+      ]
+    },
+    {
+      "name": "process an install manifest response",
+      "href": "https://wicg.github.io/install-element/#dfn-process-an-install-manifest-response",
+      "html": "To <dfn id=\"dfn-process-an-install-manifest-response\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process an install manifest response</dfn> given a\n          <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Response\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"response\" href=\"https://fetch.spec.whatwg.org/#response\"><code>Response</code></a> <var>response</var> and URL\n          <var>manifestURL</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>bodyBytes</var> be the result of\n            <a data-cite=\"fetch#body-fully-read\" href=\"https://fetch.spec.whatwg.org/#body-fully-read\">fully reading</a>\n            <var>response</var>'s <a data-link-type=\"dfn\" data-link-for=\"response\" data-xref-for=\"response\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"concept-response-body\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\">body</a>."
+        },
+        {
+          "html": "If fully reading the body failed, return failure."
+        },
+        {
+          "html": "Let <var>manifest</var> be the result of running\n            <a data-cite=\"appmanifest#dfn-processing-a-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\">\n            process a manifest</a> with\n            <var>bodyBytes</var>, <var>manifestURL</var> as both the\n            <var>manifest URL</var> and <var>document URL</var>, and null as\n            the <var>client</var>."
+        },
+        {
+          "html": "If processing the manifest failed, return failure."
+        },
+        {
+          "html": "Return <var>manifest</var>."
+        }
+      ]
+    },
+    {
+      "name": "validate a web install target",
+      "href": "https://wicg.github.io/install-element/#dfn-validate-a-web-install-target",
+      "html": "To <dfn id=\"dfn-validate-a-web-install-target\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate a web install target</dfn> given a\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-7\">web install request</a> <var>request</var> and\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-target-3\">web install target</a> <var>target</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>manifest</var> be <var>target</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-3\">manifest</a>."
+        },
+        {
+          "html": "If the source manifest did not explicitly contain a valid\n            <code>start_url</code> member, return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-9\">invalid install data</a>."
+        },
+        {
+          "html": "If neither <a data-cite=\"appmanifest#dfn-name\" href=\"https://www.w3.org/TR/appmanifest/#dfn-name\">name</a> nor\n            <a data-cite=\"appmanifest#dfn-short_name\" href=\"https://www.w3.org/TR/appmanifest/#dfn-short_name\">short name</a> is a\n            non-empty string, return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-10\">invalid install data</a>."
+        },
+        {
+          "html": "If <var>manifest</var>'s\n            <a data-cite=\"appmanifest#dfn-icons\" href=\"https://www.w3.org/TR/appmanifest/#dfn-icons\">icons</a> list does not contain\n            at least one valid image resource whose\n            <a data-cite=\"appmanifest#dfn-purpose\" href=\"https://www.w3.org/TR/appmanifest/#dfn-purpose\">purpose</a> contains\n            <code>any</code>, return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-11\">invalid install data</a>."
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-2\">target mode</a> is\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-explicit-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-explicit-manifest-1\">explicit manifest</a>, and <var>target</var>'s\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-start-url\" class=\"internalDFN\" id=\"ref-for-dfn-start-url-3\">start URL</a> is not <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/browsers.html\" data-cite-frag=\"same-origin\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\">same origin</a> with\n            <var>target</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-0-3\">manifest URL</a>, return\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-12\">invalid install data</a>."
+        },
+        {
+          "html": "Return <var>target</var>."
+        }
+      ]
+    },
+    {
+      "name": "obtain web install permission",
+      "href": "https://wicg.github.io/install-element/#dfn-obtain-web-install-permission",
+      "html": "To <dfn id=\"dfn-obtain-web-install-permission\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">obtain web install permission</dfn> for a\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-8\">web install request</a> <var>request</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-entry-point\" class=\"internalDFN\" id=\"ref-for-dfn-entry-point-1\">entry point</a> is\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-install-element\" class=\"internalDFN\" id=\"ref-for-dfn-install-element-2\">install element</a>, return true."
+        },
+        {
+          "html": "If <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-3\">target mode</a> is\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-current-document\" class=\"internalDFN\" id=\"ref-for-dfn-current-document-3\">current document</a>, return true."
+        },
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-4\">state</a> to\n            <code>awaiting permission</code>."
+        },
+        {
+          "html": "Let <var>descriptor</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"PermissionDescriptor\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissiondescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\"><code>PermissionDescriptor</code></a> whose\n            <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PermissionDescriptor\" data-xref-for=\"PermissionDescriptor\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissiondescriptor-name\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\"><code>name</code></a> is\n            <code>web-app-installation</code>."
+        },
+        {
+          "html": "Let <var>state</var> be the result of <a data-link-type=\"dfn\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dfn-request-permission-to-use\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\">request permission to use</a>\n            the powerful feature described by <var>descriptor</var>."
+        },
+        {
+          "html": "If <var>state</var> is not \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"PermissionState\" data-xref-for=\"PermissionState\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissionstate-granted\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\"><code>granted</code></a>\", return\n            false."
+        },
+        {
+          "html": "Return true."
+        }
+      ]
+    },
+    {
+      "name": "perform web installation",
+      "href": "https://wicg.github.io/install-element/#dfn-perform-web-installation",
+      "html": "To <dfn id=\"dfn-perform-web-installation\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">perform web installation</dfn> given a\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-10\">web install request</a> <var>request</var> and\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-target\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-target-5\">web install target</a> <var>target</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-5\">state</a> to\n          <code>awaiting confirmation</code>."
+        },
+        {
+          "html": "If the user agent determines that an\n          <a data-cite=\"appmanifest#dfn-installed-web-application\" href=\"https://www.w3.org/TR/appmanifest/#dfn-installed-web-application\">\n          installed web application</a>\n          with <var>target</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-identity\" class=\"internalDFN\" id=\"ref-for-dfn-identity-3\">identity</a> already\n          exists:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "Present user-controlled UI that offers a reasonable action for\n              the existing application, such as launching it."
+            },
+            {
+              "html": "If the user declines or dismisses that UI, return\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-user-aborted-installation\" class=\"internalDFN\" id=\"ref-for-dfn-user-aborted-installation-1\">user aborted installation</a>."
+            },
+            {
+              "html": "Perform the accepted action and return\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-1\">installation succeeded</a>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>accepted</var> be the result of\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-confirm-web-installation\" class=\"internalDFN\" id=\"ref-for-dfn-confirm-web-installation-1\">confirm web installation</a> with <var>request</var> and\n          <var>target</var>."
+        },
+        {
+          "html": "If <var>accepted</var> is false, return\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-user-aborted-installation\" class=\"internalDFN\" id=\"ref-for-dfn-user-aborted-installation-2\">user aborted installation</a>."
+        },
+        {
+          "html": "Set <var>request</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-6\">state</a> to\n          <code>installing</code>."
+        },
+        {
+          "html": "Ask the user agent to install an\n          <a data-cite=\"appmanifest#dfn-installed-web-application\" href=\"https://www.w3.org/TR/appmanifest/#dfn-installed-web-application\">\n          installed web application</a> whose\n          <a data-cite=\"appmanifest#dfn-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-manifest\">application manifest</a> is\n          <var>target</var>'s\n          <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install target\" data-xref-for=\"web install target\" href=\"https://wicg.github.io/install-element/#dfn-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-4\">manifest</a>."
+        },
+        {
+          "html": "If the user agent cannot complete installation, return\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-operation-aborted\" class=\"internalDFN\" id=\"ref-for-dfn-installation-operation-aborted-2\">installation operation aborted</a>."
+        },
+        {
+          "html": "Return <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-2\">installation succeeded</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"install()\" href=\"https://wicg.github.io/install-element/#dom-navigator-install\" class=\"internalDFN\" id=\"ref-for-dom-navigator-install-7\"><code>install</code></a><code>()</code> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s\n            <a data-cite=\"html/window-object.html#concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\">\n            associated Document</a>."
+        },
+        {
+          "html": "If <var>document</var> is not an <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-eligible-installing-document\" class=\"internalDFN\" id=\"ref-for-dfn-eligible-installing-document-3\">eligible installing document</a>,\n            throw an \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var>document</var> does not have <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>,\n            throw a \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"NotAllowedError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"notallowederror\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"consume-user-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user activation</a> of <var>document</var>."
+        },
+        {
+          "html": "Let <var>request</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-11\">web install request</a> whose\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-4\">document</a> is <var>document</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-entry-point\" class=\"internalDFN\" id=\"ref-for-dfn-entry-point-2\">entry point</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-navigator\" class=\"internalDFN\" id=\"ref-for-dfn-navigator-2\">navigator</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-4\">target mode</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-current-document\" class=\"internalDFN\" id=\"ref-for-dfn-current-document-4\">current document</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-2\">manifest URL</a> and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-id\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-id-3\">manifest ID</a> are null,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-source-element\" class=\"internalDFN\" id=\"ref-for-dfn-source-element-1\">source element</a> is null, and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-7\">state</a> is <code>created</code>."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-run-a-navigator-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-run-a-navigator-install-request-1\">run a navigator install request</a> with\n            <var>request</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"Navigator\" data-xref-for=\"Navigator\" data-lt=\"install()\" href=\"https://wicg.github.io/install-element/#dom-navigator-install\" class=\"internalDFN\" id=\"ref-for-dom-navigator-install-8\"><code>install</code></a><code>()</code> method steps given\n          <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams\" class=\"internalDFN\" id=\"ref-for-dom-installparams-2\"><code>InstallParams</code></a> <var>options</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s\n            <a data-cite=\"html/window-object.html#concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/window-object.html#concept-document-window\">\n            associated Document</a>."
+        },
+        {
+          "html": "If <var>document</var> is not an <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-eligible-installing-document\" class=\"internalDFN\" id=\"ref-for-dfn-eligible-installing-document-4\">eligible installing document</a>,\n            throw an \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "If <var>document</var> does not have <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"transient-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>,\n            throw a \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"NotAllowedError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"notallowederror\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"consume-user-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user activation</a> of <var>document</var>."
+        },
+        {
+          "html": "Let <var>manifestURL</var> be the result of the\n            <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n            <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifest\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifest-2\"><code>manifest</code></a> with\n            <var>document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-document-url\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a> as base URL."
+        },
+        {
+          "html": "If <var>manifestURL</var> is failure, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var>manifestID</var> be null."
+        },
+        {
+          "html": "If <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifestid\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifestid-2\"><code>manifestId</code></a> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>manifestID</var> to the result of the\n                <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n                <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifestid\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifestid-3\"><code>manifestId</code></a> with no base\n                URL."
+            },
+            {
+              "html": "If <var>manifestID</var> is failure, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>request</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-12\">web install request</a> whose\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-5\">document</a> is <var>document</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-entry-point\" class=\"internalDFN\" id=\"ref-for-dfn-entry-point-3\">entry point</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-navigator\" class=\"internalDFN\" id=\"ref-for-dfn-navigator-3\">navigator</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-5\">target mode</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-explicit-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-explicit-manifest-2\">explicit manifest</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-3\">manifest URL</a> is <var>manifestURL</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-id\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-id-4\">manifest ID</a> is <var>manifestID</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-source-element\" class=\"internalDFN\" id=\"ref-for-dfn-source-element-2\">source element</a> is null, and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-8\">state</a> is <code>created</code>."
+        },
+        {
+          "html": "Return the result of <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-run-a-navigator-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-run-a-navigator-install-request-2\">run a navigator install request</a> with\n            <var>request</var>."
+        }
+      ]
+    },
+    {
+      "name": "run a navigator install request",
+      "href": "https://wicg.github.io/install-element/#dfn-run-a-navigator-install-request",
+      "html": "To <dfn id=\"dfn-run-a-navigator-install-request\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">run a navigator install request</dfn> given a\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-13\">web install request</a> <var>request</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>promise</var> be a new promise."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>outcome</var> be the result of\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-run-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-run-a-web-install-request-1\">run a web install request</a> with <var>request</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"user-interaction-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a>\n                given <var>request</var>'s\n                <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-6\">document</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                to run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>outcome</var> is\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-3\">installation succeeded</a>, <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"resolve\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n                    <var>promise</var> with a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"WebInstallResult\" href=\"https://wicg.github.io/install-element/#dom-webinstallresult\" class=\"internalDFN\" id=\"ref-for-dom-webinstallresult-3\"><code>WebInstallResult</code></a> and\n                    abort these substeps."
+                },
+                {
+                  "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-15\">invalid install data</a>,\n                    <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a\n                    \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"DataError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dataerror\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these substeps."
+                },
+                {
+                  "html": "If <var>outcome</var> is\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-state-invalid\" class=\"internalDFN\" id=\"ref-for-dfn-installation-state-invalid-4\">installation state invalid</a>, <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var>promise</var> with an \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\"\n                    <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these substeps."
+                },
+                {
+                  "html": "If <var>outcome</var> is\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-not-allowed\" class=\"internalDFN\" id=\"ref-for-dfn-installation-not-allowed-2\">installation not allowed</a>, <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                    <var>promise</var> with a \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"NotAllowedError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"notallowederror\" href=\"https://webidl.spec.whatwg.org/#notallowederror\"><code>NotAllowedError</code></a>\"\n                    <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these substeps."
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var>promise</var> with an\n                    \"<a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"AbortError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"aborterror\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>promise</var>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"HTMLInstallElement\" data-xref-for=\"HTMLInstallElement\" data-lt=\"constructor()\" href=\"https://wicg.github.io/install-element/#dom-htmlinstallelement-constructor\" class=\"internalDFN\" id=\"ref-for-dom-htmlinstallelement-constructor-1\"><code>constructor</code></a><code>()</code> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Run\n            <a data-cite=\"!CAPABILITY-ELEMENTS#activationblockersmixin-initialization-steps\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-initialization-steps\">\n            <code>ActivationBlockersMixin</code>'s initialization steps</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"HTMLInstallElement\" href=\"https://wicg.github.io/install-element/#dom-htmlinstallelement\" class=\"internalDFN\" id=\"ref-for-dom-htmlinstallelement-5\"><code>HTMLInstallElement</code></a> insertion steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Run\n            <a data-cite=\"!CAPABILITY-ELEMENTS#activationblockersmixin-insertion-steps\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-insertion-steps\">\n            <code>ActivationBlockersMixin</code>'s insertion steps</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"HTMLInstallElement\" href=\"https://wicg.github.io/install-element/#dom-htmlinstallelement\" class=\"internalDFN\" id=\"ref-for-dom-htmlinstallelement-6\"><code>HTMLInstallElement</code></a> removing steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Run\n            <a data-cite=\"!CAPABILITY-ELEMENTS#activationblockersmixin-removing-steps\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-removing-steps\">\n            <code>ActivationBlockersMixin</code>'s removing steps</a>."
+        }
+      ]
+    },
+    {
+      "html": "The <code>&lt;<a data-link-type=\"element\" href=\"https://wicg.github.io/install-element/#dfn-install\" class=\"internalDFN\" id=\"ref-for-dfn-install-15\"><code>install</code></a>&gt;</code>\n          element's <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a> given an <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"event\" href=\"https://dom.spec.whatwg.org/#event\"><code>Event</code></a>\n          <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>event</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-istrusted\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\"><code>isTrusted</code></a> is false, return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ActivationBlockersMixin\" data-xref-for=\"ActivationBlockersMixin\" href=\"https://wicg.github.io/install-element/#dom-activationblockersmixin-isvalid\" class=\"internalDFN\" id=\"ref-for-dom-activationblockersmixin-isvalid-2\"><code>isValid</code></a> is false, return."
+        },
+        {
+          "html": "Let <var>document</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n            <a data-cite=\"dom#concept-node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+        },
+        {
+          "html": "If <var>document</var> is not an <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-eligible-installing-document\" class=\"internalDFN\" id=\"ref-for-dfn-eligible-installing-document-5\">eligible installing document</a>,\n            return."
+        },
+        {
+          "html": "Let <var>manifestURL</var> be null."
+        },
+        {
+          "html": "Let <var>manifestID</var> be null."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-4\"><code>manifestid</code></a></code> attribute but no\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-4\"><code>manifest</code></a></code> attribute,\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-1\">queue an install result</a> of <code>invalid_data</code> at\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+        },
+        {
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-5\"><code>manifest</code></a></code> attribute:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>manifestURL</var> to the result of the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a>\n                on the attribute's value with <var>document</var>'s\n                <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-document-url\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a> as base."
+            },
+            {
+              "html": "If <var>manifestURL</var> is failure,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-2\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+            },
+            {
+              "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n                <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-5\"><code>manifestid</code></a></code> attribute, set\n                <var>manifestID</var> to the result of the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n                that attribute's value with no base URL."
+            },
+            {
+              "html": "If <var>manifestID</var> is failure,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-3\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+            }
+          ]
+        },
+        {
+          "html": "Let <var>request</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-web-install-request-14\">web install request</a> whose\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-document\" class=\"internalDFN\" id=\"ref-for-dfn-document-7\">document</a> is <var>document</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-entry-point\" class=\"internalDFN\" id=\"ref-for-dfn-entry-point-4\">entry point</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-install-element\" class=\"internalDFN\" id=\"ref-for-dfn-install-element-3\">install element</a>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-target-mode-0\" class=\"internalDFN\" id=\"ref-for-dfn-target-mode-0-6\">target mode</a> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-current-document\" class=\"internalDFN\" id=\"ref-for-dfn-current-document-6\">current document</a> if\n            <var>manifestURL</var> is null and <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-explicit-manifest\" class=\"internalDFN\" id=\"ref-for-dfn-explicit-manifest-3\">explicit manifest</a> otherwise,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-url\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-url-4\">manifest URL</a> is <var>manifestURL</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-manifest-id\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-id-5\">manifest ID</a> is <var>manifestID</var>,\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-source-element\" class=\"internalDFN\" id=\"ref-for-dfn-source-element-3\">source element</a> is <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, and\n            <a data-link-type=\"dfn|abstract-op\" data-link-for=\"web install request\" data-xref-for=\"web install request\" href=\"https://wicg.github.io/install-element/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-9\">state</a> is <code>created</code>."
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>outcome</var> be the result of\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-run-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-run-a-web-install-request-2\">run a web install request</a> with <var>request</var>."
+            },
+            {
+              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-4\">installation succeeded</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-4\">queue an install result</a> of <code>success</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
+            },
+            {
+              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-16\">invalid install data</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-5\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
+            },
+            {
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-6\">Queue an install result</a> of <code>aborted</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "queue an install result",
+      "href": "https://wicg.github.io/install-element/#dfn-queue-an-install-result",
+      "html": "To <dfn id=\"dfn-queue-an-install-result\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue an install result</dfn> of <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InstallResult\" href=\"https://wicg.github.io/install-element/#dom-installresult\" class=\"internalDFN\" id=\"ref-for-dom-installresult-3\"><code>InstallResult</code></a>\n          <var>result</var> at an <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"HTMLInstallElement\" href=\"https://wicg.github.io/install-element/#dom-htmlinstallelement\" class=\"internalDFN\" id=\"ref-for-dom-htmlinstallelement-7\"><code>HTMLInstallElement</code></a>\n          <var>element</var>, <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">queue an element task</a> on the\n          <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"user-interaction-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> with <var>element</var> to run these\n          steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>event</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"InstallResultEvent\" href=\"https://wicg.github.io/install-element/#dom-installresultevent\" class=\"internalDFN\" id=\"ref-for-dom-installresultevent-3\"><code>InstallResultEvent</code></a> whose\n            <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-type\" href=\"https://dom.spec.whatwg.org/#dom-event-type\"><code>type</code></a> is <code>installresult</code>,\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallResultEvent\" data-xref-for=\"InstallResultEvent\" href=\"https://wicg.github.io/install-element/#dom-installresultevent-result\" class=\"internalDFN\" id=\"ref-for-dom-installresultevent-result-2\"><code>result</code></a> is <var>result</var>,\n            <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-bubbles\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\"><code>bubbles</code></a> is true, <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-cancelable\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\"><code>cancelable</code></a> is false, and\n            <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-composed\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\"><code>composed</code></a> is false."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-dispatch\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\">Dispatch</a> <var>event</var> at <var>element</var>."
+        }
+      ]
+    }
+  ]
+}

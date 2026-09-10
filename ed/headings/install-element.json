@@ -1,0 +1,501 @@
+{
+  "spec": {
+    "title": "Web Install",
+    "url": "https://wicg.github.io/install-element/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/install-element/#title",
+      "level": 1,
+      "title": "Web Install"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/install-element/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/install-element/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "goals",
+      "href": "https://wicg.github.io/install-element/#goals",
+      "level": 3,
+      "title": "Goals",
+      "alternateIds": [
+        "x1-1-goals"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "non-goals",
+      "href": "https://wicg.github.io/install-element/#non-goals",
+      "level": 3,
+      "title": "Non-goals",
+      "alternateIds": [
+        "x1-2-non-goals"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://wicg.github.io/install-element/#examples",
+      "level": 2,
+      "title": "Examples",
+      "alternateIds": [
+        "x2-examples"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://wicg.github.io/install-element/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "alternateIds": [
+        "x3-dependencies"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://wicg.github.io/install-element/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x4-terminology"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "model",
+      "href": "https://wicg.github.io/install-element/#model",
+      "level": 2,
+      "title": "Web Install model",
+      "alternateIds": [
+        "x5-web-install-model"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "shared-algorithm",
+      "href": "https://wicg.github.io/install-element/#shared-algorithm",
+      "level": 2,
+      "title": "Shared Web Install processing",
+      "alternateIds": [
+        "x6-shared-web-install-processing"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "preconditions",
+      "href": "https://wicg.github.io/install-element/#preconditions",
+      "level": 2,
+      "title": "Common request preconditions",
+      "alternateIds": [
+        "x7-common-request-preconditions"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "target-resolution",
+      "href": "https://wicg.github.io/install-element/#target-resolution",
+      "level": 2,
+      "title": "Resolving an installation target",
+      "alternateIds": [
+        "x8-resolving-an-installation-target"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "current-document-target",
+      "href": "https://wicg.github.io/install-element/#current-document-target",
+      "level": 3,
+      "title": "Current-document target",
+      "alternateIds": [
+        "x8-1-current-document-target"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "explicit-manifest-target",
+      "href": "https://wicg.github.io/install-element/#explicit-manifest-target",
+      "level": 3,
+      "title": "Explicit manifest target",
+      "alternateIds": [
+        "x8-2-explicit-manifest-target"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "manifest-fetch",
+      "href": "https://wicg.github.io/install-element/#manifest-fetch",
+      "level": 2,
+      "title": "Fetching and processing a manifest",
+      "alternateIds": [
+        "x9-fetching-and-processing-a-manifest"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "fetching-an-install-manifest",
+      "href": "https://wicg.github.io/install-element/#fetching-an-install-manifest",
+      "level": 3,
+      "title": "Fetching an install manifest",
+      "alternateIds": [
+        "x9-1-fetching-an-install-manifest"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "processing-an-install-manifest-response",
+      "href": "https://wicg.github.io/install-element/#processing-an-install-manifest-response",
+      "level": 3,
+      "title": "Processing an install manifest response",
+      "alternateIds": [
+        "x9-2-processing-an-install-manifest-response"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "validating-a-web-install-target",
+      "href": "https://wicg.github.io/install-element/#validating-a-web-install-target",
+      "level": 3,
+      "title": "Validating a web install target",
+      "alternateIds": [
+        "x9-3-validating-a-web-install-target"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "permission",
+      "href": "https://wicg.github.io/install-element/#permission",
+      "level": 2,
+      "title": "10. Permission and user consent",
+      "alternateIds": [
+        "x10-permission-and-user-consent"
+      ]
+    },
+    {
+      "id": "the-web-app-installation-powerful-feature",
+      "href": "https://wicg.github.io/install-element/#the-web-app-installation-powerful-feature",
+      "level": 3,
+      "title": "The web-app-installation powerful feature",
+      "alternateIds": [
+        "x10-1-the-web-app-installation-powerful-feature"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "obtaining-install-permission",
+      "href": "https://wicg.github.io/install-element/#obtaining-install-permission",
+      "level": 3,
+      "title": "Obtaining install permission",
+      "alternateIds": [
+        "x10-2-obtaining-install-permission"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "installation-confirmation",
+      "href": "https://wicg.github.io/install-element/#installation-confirmation",
+      "level": 3,
+      "title": "Installation confirmation",
+      "alternateIds": [
+        "x10-3-installation-confirmation"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "perform-install",
+      "href": "https://wicg.github.io/install-element/#perform-install",
+      "level": 2,
+      "title": "11. Performing installation",
+      "alternateIds": [
+        "x11-performing-installation"
+      ]
+    },
+    {
+      "id": "navigator-api",
+      "href": "https://wicg.github.io/install-element/#navigator-api",
+      "level": 2,
+      "title": "12. The navigator.install() API",
+      "alternateIds": [
+        "x12-the-navigator-install-api"
+      ]
+    },
+    {
+      "id": "install-method",
+      "href": "https://wicg.github.io/install-element/#install-method",
+      "level": 3,
+      "title": "install() method",
+      "alternateIds": [
+        "x12-1-install-method"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "manifest-member",
+      "href": "https://wicg.github.io/install-element/#manifest-member",
+      "level": 3,
+      "title": "manifest member",
+      "alternateIds": [
+        "x12-2-manifest-member"
+      ],
+      "number": "12.2"
+    },
+    {
+      "id": "manifestid-member",
+      "href": "https://wicg.github.io/install-element/#manifestid-member",
+      "level": 4,
+      "title": "manifestId member",
+      "alternateIds": [
+        "x12-2-1-manifestid-member"
+      ],
+      "number": "12.2.1"
+    },
+    {
+      "id": "promise-processing",
+      "href": "https://wicg.github.io/install-element/#promise-processing",
+      "level": 3,
+      "title": "Promise processing",
+      "alternateIds": [
+        "x12-3-promise-processing"
+      ],
+      "number": "12.3"
+    },
+    {
+      "id": "install-element",
+      "href": "https://wicg.github.io/install-element/#install-element",
+      "level": 2,
+      "title": "13. The <install> element",
+      "alternateIds": [
+        "x13-the-install-element"
+      ]
+    },
+    {
+      "id": "internal-state-and-lifecycle",
+      "href": "https://wicg.github.io/install-element/#internal-state-and-lifecycle",
+      "level": 3,
+      "title": "Internal state and lifecycle",
+      "alternateIds": [
+        "x13-1-internal-state-and-lifecycle"
+      ],
+      "number": "13.1"
+    },
+    {
+      "id": "attributes",
+      "href": "https://wicg.github.io/install-element/#attributes",
+      "level": 3,
+      "title": "Attributes",
+      "alternateIds": [
+        "x13-2-attributes"
+      ],
+      "number": "13.2"
+    },
+    {
+      "id": "lifecycle-and-rendering",
+      "href": "https://wicg.github.io/install-element/#lifecycle-and-rendering",
+      "level": 3,
+      "title": "Lifecycle and rendering",
+      "alternateIds": [
+        "x13-3-lifecycle-and-rendering"
+      ],
+      "number": "13.3"
+    },
+    {
+      "id": "activation-behavior",
+      "href": "https://wicg.github.io/install-element/#activation-behavior",
+      "level": 3,
+      "title": "Activation behavior",
+      "alternateIds": [
+        "x13-4-activation-behavior"
+      ],
+      "number": "13.4"
+    },
+    {
+      "id": "install-result-event",
+      "href": "https://wicg.github.io/install-element/#install-result-event",
+      "level": 3,
+      "title": "The installresult event",
+      "alternateIds": [
+        "x13-5-the-installresult-event"
+      ],
+      "number": "13.5"
+    },
+    {
+      "id": "result-attribute",
+      "href": "https://wicg.github.io/install-element/#result-attribute",
+      "level": 3,
+      "title": "result attribute",
+      "alternateIds": [
+        "x13-6-result-attribute"
+      ],
+      "number": "13.6"
+    },
+    {
+      "id": "host-integrations",
+      "href": "https://wicg.github.io/install-element/#host-integrations",
+      "level": 2,
+      "title": "14. Host-specification integrations",
+      "alternateIds": [
+        "x14-host-specification-integrations"
+      ]
+    },
+    {
+      "id": "web-app-manifest",
+      "href": "https://wicg.github.io/install-element/#web-app-manifest",
+      "level": 3,
+      "title": "Web App Manifest",
+      "alternateIds": [
+        "x14-1-web-app-manifest"
+      ],
+      "number": "14.1"
+    },
+    {
+      "id": "whatwg-html",
+      "href": "https://wicg.github.io/install-element/#whatwg-html",
+      "level": 3,
+      "title": "WHATWG HTML",
+      "alternateIds": [
+        "x14-2-whatwg-html"
+      ],
+      "number": "14.2"
+    },
+    {
+      "id": "capability-elements",
+      "href": "https://wicg.github.io/install-element/#capability-elements",
+      "level": 3,
+      "title": "Capability Elements",
+      "alternateIds": [
+        "x14-3-capability-elements"
+      ],
+      "number": "14.3"
+    },
+    {
+      "id": "permissions-and-permissions-policy",
+      "href": "https://wicg.github.io/install-element/#permissions-and-permissions-policy",
+      "level": 3,
+      "title": "Permissions and Permissions Policy",
+      "alternateIds": [
+        "x14-4-permissions-and-permissions-policy"
+      ],
+      "number": "14.4"
+    },
+    {
+      "id": "launch-handler",
+      "href": "https://wicg.github.io/install-element/#launch-handler",
+      "level": 3,
+      "title": "Launch Handler",
+      "alternateIds": [
+        "x14-5-launch-handler"
+      ],
+      "number": "14.5"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/install-element/#privacy",
+      "level": 2,
+      "title": "15. Privacy considerations",
+      "alternateIds": [
+        "x15-privacy-considerations"
+      ]
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/install-element/#security",
+      "level": 2,
+      "title": "16. Security considerations",
+      "alternateIds": [
+        "x16-security-considerations"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "href": "https://wicg.github.io/install-element/#accessibility",
+      "level": 2,
+      "title": "17. Accessibility considerations",
+      "alternateIds": [
+        "x17-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "internationalization",
+      "href": "https://wicg.github.io/install-element/#internationalization",
+      "level": 2,
+      "title": "18. Internationalization considerations",
+      "alternateIds": [
+        "x18-internationalization-considerations"
+      ]
+    },
+    {
+      "id": "testing",
+      "href": "https://wicg.github.io/install-element/#testing",
+      "level": 2,
+      "title": "19. Testing considerations",
+      "alternateIds": [
+        "x19-testing-considerations"
+      ]
+    },
+    {
+      "id": "open-issues",
+      "href": "https://wicg.github.io/install-element/#open-issues",
+      "level": 2,
+      "title": "20. Open issues index",
+      "alternateIds": [
+        "x20-open-issues-index"
+      ]
+    },
+    {
+      "id": "conformance",
+      "href": "https://wicg.github.io/install-element/#conformance",
+      "level": 2,
+      "title": "21. Conformance",
+      "alternateIds": [
+        "x21-conformance"
+      ]
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://wicg.github.io/install-element/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "a-acknowledgements"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/install-element/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://wicg.github.io/install-element/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b-1-normative-references"
+      ],
+      "number": "B.1"
+    }
+  ]
+}

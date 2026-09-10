@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Web Install",
+    "url": "https://wicg.github.io/install-element/"
+  },
+  "events": [
+    {
+      "type": "installresult",
+      "targets": [
+        "HTMLInstallElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "validationstatuschange",
+      "targets": [
+        "ActivationBlockersMixin"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    }
+  ]
+}

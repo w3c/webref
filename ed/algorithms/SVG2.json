@@ -3810,6 +3810,57 @@
       ]
     },
     {
+      "html": "The <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url-set\">set the url</a> algorithm for an <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/linking.html#InterfaceSVGAElement\">SVGAElement</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set this element's <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a> to null."
+        },
+        {
+          "html": "Let <var>url</var> be failure."
+        },
+        {
+          "html": "If this element's <span class=\"attr-name\">‘href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>url</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given this element's <span class=\"attr-name\">‘href’</span> content attribute's value,\n      relative to this element's <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>url</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute's value,\n      relative to this element's <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>url</var> is not failure, then set this element's <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a> to url."
+        }
+      ]
+    },
+    {
+      "html": "To <a href=\"https://html.spec.whatwg.org/multipage/links.html#update-href\">update href</a> for an <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/linking.html#InterfaceSVGAElement\">SVGAElement</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the element's <span class=\"attr-name\">‘xlink:href’</span> content attribute's value to the element's\n        <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a>, <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\">serialized</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, set the element's <span class=\"attr-name\">‘href’</span> content attribute's value to the element's\n    <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a>, <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\">serialized</a>."
+        }
+      ]
+    },
+    {
       "html": "Presentation with an effective precision higher than\nsingle-precision may be obtained by taking advantage\nof the fact that at least double-precision floating point must be used\nwhen generating a CTM (See CTM generation processing in the\n<a href=\"https://w3c.github.io/svgwg/svg2-draft/conform.html#ConformingSVGViewers\">Conforming SVG Viewers</a> section).\nThe steps for generating content that takes advantage of this are:",
       "rationale": "split",
       "steps": [
