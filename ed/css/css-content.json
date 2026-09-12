@@ -41,7 +41,7 @@
           "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
           "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
           "type": "type",
-          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-counter-style> ]+",
           "values": [
             {
               "name": "<string>",
@@ -202,7 +202,7 @@
           "prose": "<content-list> is defined above, in the section on the string-set property. The value of <content-list> becomes the text content of the bookmark label.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-label-content-list",
           "type": "value",
-          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-counter-style> ]+",
           "values": [
             {
               "name": "<string>",
@@ -461,6 +461,12 @@
           "value": "marker"
         }
       ]
+    },
+    {
+      "name": "<symbolic-counter-style>",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-symbolic-counter-style",
+      "type": "type",
+      "value": "disc | circle | square | disclosure-open | disclosure-closed"
     }
   ]
 }
