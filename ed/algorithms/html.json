@@ -13121,6 +13121,20 @@
       ]
     },
     {
+      "name": "get an option element's label",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-label",
+      "html": "To <dfn id=\"concept-option-label\">get an <code>option</code> element's label</dfn>, given\n  an <code id=\"the-option-element:the-option-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a boolean <var>includeAltText</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>option</var> has a <code id=\"the-option-element:attr-option-label-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label\">label</a></code> attribute whose\n   value is not the empty string, then return that value.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#collect-option-text\" id=\"the-option-element:collect-option-text\">collect option text</a> given <var>option</var> and\n   <var>includeAltText</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "update an option's nearest ancestor select",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-an-option's-nearest-ancestor-select",
       "html": "To <dfn id=\"update-an-option's-nearest-ancestor-select\">update an <code>option</code>'s nearest ancestor <code>select</code></dfn>, given an\n  <code id=\"the-option-element:the-option-element-23\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <var>option</var>:",
@@ -13231,7 +13245,7 @@
           "html": "<p>Let <var>attribute</var> be <a id=\"the-option-element:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-option-element:attr-option-label-8\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label\">label</a></code> attribute.</p>"
         },
         {
-          "html": "<p>If <var>attribute</var> is null, then return <a id=\"the-option-element:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-label\" id=\"the-option-element:concept-option-label\">label</a>.</p>"
+          "html": "<p>If <var>attribute</var> is null, then return the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-label\" id=\"the-option-element:concept-option-label\">getting an <code>option</code> element's label</a> given\n   <a id=\"the-option-element:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> and false.</p>"
         },
         {
           "html": "<p>Return <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"the-option-element:concept-attribute-value\" data-x-internal=\"concept-attribute-value\">value</a>.</p>"

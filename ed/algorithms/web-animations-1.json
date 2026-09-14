@@ -753,6 +753,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①①\">update an animation’s finished state</a>\nfor <var>animation</var>\nwith the <var>did seek</var> flag set to true,\nand the <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
@@ -815,7 +818,7 @@
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate\" id=\"ref-for-apply-any-pending-playback-rate⑨\">Apply any pending playback rate</a> on <var>animation</var>.</p>"
                     },
                     {
-                      "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①①\">update an animation’s finished state</a>\nfor <var>animation</var>\nwith the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
+                      "html": "<p>Run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①②\">update an animation’s finished state</a>\nfor <var>animation</var>\nwith the <var>did seek</var> flag set to false,\nand the <var>synchronously notify</var> flag set to false.</p>"
                     }
                   ]
                 },
@@ -1426,6 +1429,9 @@
         },
         {
           "html": "<p>Assign each member that <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a> in <var>input</var>\n  to the corresponding timing property of <var>effect</var> as follows:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-delay\" id=\"ref-for-dom-effecttiming-delay①\">delay</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#start-delay\" id=\"ref-for-start-delay①⑦\">start delay</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-enddelay\" id=\"ref-for-dom-effecttiming-enddelay①\">endDelay</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#end-delay\" id=\"ref-for-end-delay⑤\">end delay</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill\" id=\"ref-for-dom-effecttiming-fill③\">fill</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#fill-mode\" id=\"ref-for-fill-mode①⑦\">fill mode</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterationstart\" id=\"ref-for-dom-effecttiming-iterationstart⑥\">iterationStart</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-start\" id=\"ref-for-iteration-start①①\">iteration start</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations\" id=\"ref-for-dom-effecttiming-iterations⑤\">iterations</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-count\" id=\"ref-for-iteration-count①⑨\">iteration count</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-duration\" id=\"ref-for-dom-effecttiming-duration⑦\">duration</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#iteration-duration\" id=\"ref-for-iteration-duration①⑧\">iteration duration</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-direction\" id=\"ref-for-dom-effecttiming-direction①\">direction</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#playback-direction\" id=\"ref-for-playback-direction⑧\">playback direction</a></p>\n      </li><li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/web-animations-1/#dom-effecttiming-easing\" id=\"ref-for-dom-effecttiming-easing③\">easing</a></code> → <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function\" id=\"ref-for-easing-function⑨\">easing function</a></p>\n     </li></ul>"
+        },
+        {
+          "html": "<p>If <var>effect</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#animation-effect-associated-animation\" id=\"ref-for-animation-effect-associated-animation②④\">associated with an animation</a>,\n  run the procedure to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state\" id=\"ref-for-update-an-animations-finished-state①③\">update an animation’s finished state</a>\n  for its <span id=\"ref-for-animation-effect-associated-animation②⑤\">associated animation</span>\n  with the <var>did seek</var> flag set to false,\n  and the <var>synchronously notify</var> flag set to false.</p>"
         }
       ]
     },
