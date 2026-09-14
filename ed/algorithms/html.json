@@ -12978,7 +12978,7 @@
               "html": "<p>If <var>node</var> is an <code id=\"the-select-element:the-option-element-18\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element, then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-select-element:list-append\" data-x-internal=\"list-append\">append</a> <var>node</var> to <var>options</var>.</p>"
             },
             {
-              "html": "<p>If any of the following conditions are true:</p>\n\n      <ul><li><p><var>node</var> is a <code id=\"the-select-element:the-select-element-27\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-hr-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element\">hr</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-option-element-19\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element;</p></li><li><p><var>node</var> is a <code id=\"the-select-element:the-datalist-element\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element\">datalist</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-optgroup-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> element and <var>node</var> has an\n       <a id=\"the-select-element:ancestor\" href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\" data-x-internal=\"ancestor\">ancestor</a> <code id=\"the-select-element:the-optgroup-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> in between itself and <var>select</var>,</p></li></ul>\n\n      <p>then set <var>node</var> to the next <a id=\"the-select-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> of <var>select</var> in\n      <a id=\"the-select-element:tree-order-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, excluding <var>node</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-select-element:descendant-2\" data-x-internal=\"descendant\">descendants</a>, if any such node exists; otherwise null.</p>\n\n      <p>Otherwise, set <var>node</var> to the next <a id=\"the-select-element:descendant-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> of <var>select</var> in\n      <a id=\"the-select-element:tree-order-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, if any such node exists; otherwise null.</p>"
+              "html": "<p>If any of the following conditions are true:</p>\n\n      <ul><li><p><var>node</var> is a <code id=\"the-select-element:the-select-element-27\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-hr-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element\">hr</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-option-element-19\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element;</p></li><li><p><var>node</var> is a <code id=\"the-select-element:the-datalist-element\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element\">datalist</a></code> element;</p></li><li><p><var>node</var> is an <code id=\"the-select-element:the-optgroup-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> element and <var>node</var> has an\n       <a id=\"the-select-element:ancestor-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\" data-x-internal=\"ancestor\">ancestor</a> <code id=\"the-select-element:the-optgroup-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> in between itself and <var>select</var>,</p></li></ul>\n\n      <p>then set <var>node</var> to the next <a id=\"the-select-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> of <var>select</var> in\n      <a id=\"the-select-element:tree-order-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, excluding <var>node</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-select-element:descendant-2\" data-x-internal=\"descendant\">descendants</a>, if any such node exists; otherwise null.</p>\n\n      <p>Otherwise, set <var>node</var> to the next <a id=\"the-select-element:descendant-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> of <var>select</var> in\n      <a id=\"the-select-element:tree-order-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, if any such node exists; otherwise null.</p>"
             }
           ]
         },
@@ -13087,10 +13087,13 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>optgroup</var> has a child <code id=\"the-optgroup-element:the-legend-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element\">legend</a></code> element, then return the result of\n   <a href=\"https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace\" id=\"the-optgroup-element:strip-and-collapse-ascii-whitespace\" data-x-internal=\"strip-and-collapse-ascii-whitespace\">stripping and collapsing ASCII\n   whitespace</a> from the concatenation of <a href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"the-optgroup-element:concept-cd-data\" data-x-internal=\"concept-cd-data\">data</a> of all the\n   <code id=\"the-optgroup-element:text\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node descendants of <var>optgroup</var>'s first child <code id=\"the-optgroup-element:the-legend-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element\">legend</a></code>\n   element, in <a id=\"the-optgroup-element:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, excluding any that are descendants of descendants of the\n   <code id=\"the-optgroup-element:the-legend-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element\">legend</a></code> that are themselves <code id=\"the-optgroup-element:the-script-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code> or <a id=\"the-optgroup-element:svg-script\" href=\"https://w3c.github.io/svgwg/svg2-draft/interact.html#elementdef-script\" data-x-internal=\"svg-script\">SVG\n   <code>script</code></a> elements.</p>"
+          "html": "<p>If <var>optgroup</var>'s first element child is a <code id=\"the-optgroup-element:the-legend-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element\">legend</a></code> element, then return\n   the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#get-html-aware-text-content\" id=\"the-optgroup-element:get-html-aware-text-content\">get HTML-aware text content</a> given that <code id=\"the-optgroup-element:the-legend-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element\">legend</a></code> element and\n   true.</p>"
         },
         {
-          "html": "<p>Otherwise, return the value of <var>optgroup</var>'s <code id=\"the-optgroup-element:attr-optgroup-label-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label\">label</a></code> attribute.</p>"
+          "html": "<p>If <var>optgroup</var> has a <code id=\"the-optgroup-element:attr-optgroup-label-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label\">label</a></code> attribute,\n   then return the value of that attribute.</p>"
+        },
+        {
+          "html": "<p>Return the empty string.</p>"
         }
       ]
     },
@@ -13130,7 +13133,7 @@
           "html": "<p>If <var>option</var> has a <code id=\"the-option-element:attr-option-label-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label\">label</a></code> attribute whose\n   value is not the empty string, then return that value.</p>"
         },
         {
-          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#collect-option-text\" id=\"the-option-element:collect-option-text\">collect option text</a> given <var>option</var> and\n   <var>includeAltText</var>.</p>"
+          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#get-html-aware-text-content\" id=\"the-option-element:get-html-aware-text-content\">get HTML-aware text content</a> given <var>option</var> and\n   <var>includeAltText</var>.</p>"
         }
       ]
     },
@@ -13299,16 +13302,16 @@
       ]
     },
     {
-      "name": "collect option text",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#collect-option-text",
-      "html": "To <dfn id=\"collect-option-text\">collect option text</dfn>, given an <code id=\"the-option-element:the-option-element-32\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a\n  boolean <var>includeAltText</var>:",
+      "name": "get HTML-aware text content",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#get-html-aware-text-content",
+      "html": "To <dfn id=\"get-html-aware-text-content\">get HTML-aware text content</dfn>, given an element <var>element</var> and a\n  boolean <var>includeAltText</var>:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>text</var> be the empty string.</p>"
         },
         {
-          "html": "For each <a id=\"the-option-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <var>descendant</var> of <var>option</var> in <a id=\"the-option-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
+          "html": "For each <a id=\"the-option-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <var>descendant</var> of <var>element</var> in <a id=\"the-option-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree\n    order</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -13318,16 +13321,10 @@
               "html": "<p>If <var>descendant</var> is a <code id=\"the-option-element:text-2\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node, then set <var>text</var> to the\n     concatenation of <var>text</var> and <var>descendant</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"the-option-element:concept-cd-data\" data-x-internal=\"concept-cd-data\">data</a>.</p>"
             },
             {
-              "html": "If <var>descendant</var> is an <code id=\"the-option-element:the-img-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element and <var>includeAltText</var> is\n      true:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If the value of <var>descendant</var>'s <code id=\"the-option-element:attr-img-alt\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code>\n       attribute is not empty, then set <var>text</var> to the concatenation of <var>text</var>,\n       <code>\" \"</code>, the value of <var>descendant</var>'s <code id=\"the-option-element:attr-img-alt-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code> attribute, and <code>\" \"</code>.</p>"
-                },
-                {
-                  "html": "<p><a id=\"the-option-element:continue-2\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">Continue</a> skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-3\" data-x-internal=\"descendant\">descendants</a> of\n       <var>descendant</var>.</p>"
-                }
-              ]
+              "html": "<p>If <var>descendant</var> is an <code id=\"the-option-element:the-img-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element with an <code id=\"the-option-element:attr-img-alt\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code> attribute and <var>includeAltText</var> is true, then set\n     <var>text</var> to the concatenation of <var>text</var> and the value of\n     <var>descendant</var>'s <code id=\"the-option-element:attr-img-alt-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code> attribute.</p>"
+            },
+            {
+              "html": "<p>If <var>descendant</var> is an <code id=\"the-option-element:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element, then <a id=\"the-option-element:continue-2\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>\n     skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-3\" data-x-internal=\"descendant\">descendants</a> of <var>descendant</var>.</p>"
             }
           ]
         },

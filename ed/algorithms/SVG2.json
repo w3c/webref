@@ -1106,7 +1106,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>value</var> be the base value of the\n    reflected content attribute (using the attribute's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a>\n    if it is not present or invalid)."
+          "html": "Let <var>value</var> be the base value of the\n    reflected content attribute. If the attribute is not present, or if its\n    value cannot be parsed, let <var>value</var> be the attribute's\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a>, or an empty list if the attribute's\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a> is <span class=\"attr-value\">(none)</span>."
         },
         {
           "html": "Let <var>length</var> be the number of items in the list."
@@ -2637,14 +2637,14 @@
     {
       "name": "text/x",
       "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementXAttribute",
-      "html": "If more characters exist than <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>s,\n    or if the attribute is not specified on a <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>tspan</span></a>’</span>,\n    then for each additional character:",
+      "html": "If more characters exist than <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>s,\n    or if the attribute is not specified,\n    then for each additional character:",
       "rationale": "if",
       "steps": [
         {
           "html": "if an ancestor <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> or <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>tspan</span></a>’</span> element\n        specifies an absolute X (Y) coordinate for the given character\n        via an <span class=\"attr-name\">‘x’</span>\n        (<span class=\"attr-name\">‘y’</span>) attribute\n        (nearest ancestor has precedence), then that\n        absolute X (Y) coordinate is used as the starting X (Y)\n        coordinate for that character, else"
         },
         {
-          "html": "the starting X (Y) coordinate for rendering the glyphs\n        corresponding to the given character is the X (Y) coordinate\n        of the resulting <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> from the most\n        recently rendered glyph for the current <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> element."
+          "html": "the starting X (Y) coordinate for rendering the glyphs\n        corresponding to the given character is the X (Y) coordinate\n        of the resulting <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> from the most\n        recently rendered glyph for the current <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> element,\n        or the X (Y) coordinate of the initial <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> if no glyph has yet been rendered for that\n        element."
         }
       ]
     },
