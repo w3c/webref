@@ -2402,16 +2402,34 @@
           ]
         },
         {
-          "html": "<p>Let <var>scale width</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number\">round a number</a> given <var>framebuffer width</var> multiplied by <var>scale</var> rounded to the nearest integer.</p>"
+          "html": "If <var>scale</var> is less than 1:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>scale width</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number\">round a number</a> given <var>framebuffer width</var>\n  multiplied by <var>scale</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>scale height</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number①\">round a number</a> given <var>framebuffer height</var>\n  multiplied by <var>scale</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>paint width</var> be the maximum of 1 and <var>scale width</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>paint height</var> be the maximum of 1 and <var>scale height</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Let <var>scale height</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#round-a-number\" id=\"ref-for-round-a-number①\">round a number</a> given <var>framebuffer height</var> multiplied by <var>scale</var> rounded to the nearest integer.</p>"
-        },
-        {
-          "html": "<p>Let <var>paint width</var> be the maximum of 1 and <var>scale width</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>paint height</var> be the maximum of 1 and <var>scale height</var>.</p>"
+          "html": "Otherwise:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>paint width</var> be <var>framebuffer width</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>paint height</var> be <var>framebuffer height</var>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>canvas</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement\" id=\"ref-for-htmlcanvaselement\">HTMLCanvasElement</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-width\" id=\"ref-for-dom-canvas-width\">width</a></code> <var>paint\n width</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-height\" id=\"ref-for-dom-canvas-height\">height</a></code> <var>paint height</var>.</p>"
@@ -2429,7 +2447,7 @@
           "html": "<p>Let <var>source rectangle</var> be the rectangle whose corners are the four points\n (<var>source x</var>, <var>source y</var>), (<var>source x</var> + <var>framebuffer width</var>, <var>source y</var>),\n (<var>source x</var> + <var>framebuffer width</var>, <var>source y</var> + <var>framebuffer height</var>), and\n (<var>source x</var>, <var>source y</var> + <var>framebuffer height</var>).</p>"
         },
         {
-          "html": "<p>Let <var>destination rectangle</var> be the rectangle whose corners are the four\n points (0, 0), (<var>framebuffer width</var>, 0), (<var>framebuffer width</var>,\n <var>framebuffer height</var>), and (0, <var>framebuffer height</var>).</p>"
+          "html": "<p>Let <var>destination rectangle</var> be the rectangle whose corners are the four\n points (0, 0), (<var>paint width</var>, 0), (<var>paint width</var>, <var>paint height</var>), and\n (0, <var>paint height</var>).</p>"
         },
         {
           "html": "<p>Complete implementation specific steps equivalent to painting the region of\n <var>document</var>’s framebuffer specified by <var>source rectangle</var> on the region of\n <var>canvas context</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#output-bitmap\" id=\"ref-for-output-bitmap\">output bitmap</a> specified by <var>destination rectangle</var>.</p>\n      <p>When the dimensions of <var>destination rectangle</var> are smaller than <var>source rectangle</var>,\n then the value painted at a point in the <var>destination rectangle</var> is computed\n by filtering the data from <var>document</var>’s framebuffer. The user agent may use\n any filtering algorithm (for example bilinear interpolation or nearest-neighbor).\n When the filtering algorithm requires a pixel value from outside the framebuffer,\n it must instead use the value from the nearest edge pixel. (That is, the filter uses \"clamp-to-edge\" behavior.)\n When the filtering algorithm requires a pixel value from outside the <var>source rectangle</var>\n but inside the framebuffer, then the value from the framebuffer must be used.</p>"
