@@ -949,6 +949,7 @@ EmulationCommand = (
   emulation.SetScreenSettingsOverride //
   emulation.SetScriptingEnabled //
   emulation.SetScrollbarTypeOverride //
+  emulation.SetTextLayoutModeOverride //
   emulation.SetTimezoneOverride //
   emulation.SetTouchOverride //
   emulation.SetUserAgentOverride //
@@ -963,6 +964,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
+  emulation.SetTextLayoutModeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult /
@@ -1181,6 +1183,21 @@ emulation.SetScrollbarTypeOverrideParameters = {
 }
 
 emulation.SetScrollbarTypeOverrideResult = EmptyResult
+
+emulation.SetTextLayoutModeOverride = (
+  method: "emulation.setTextLayoutModeOverride",
+  params: emulation.SetTextLayoutModeOverrideParameters
+)
+
+emulation.SetTextLayoutModeOverrideParameters = {
+  textLayoutMode: emulation.TextLayoutMode / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.TextLayoutMode = "mobile"
+
+emulation.SetTextLayoutModeOverrideResult = EmptyResult
 
 emulation.SetTimezoneOverride = (
   method: "emulation.setTimezoneOverride",
@@ -3171,6 +3188,7 @@ EmulationCommand = (
   emulation.SetScreenSettingsOverride //
   emulation.SetScriptingEnabled //
   emulation.SetScrollbarTypeOverride //
+  emulation.SetTextLayoutModeOverride //
   emulation.SetTimezoneOverride //
   emulation.SetTouchOverride //
   emulation.SetUserAgentOverride //
@@ -3367,6 +3385,19 @@ emulation.SetScrollbarTypeOverrideParameters = {
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
+
+emulation.SetTextLayoutModeOverride = (
+  method: "emulation.setTextLayoutModeOverride",
+  params: emulation.SetTextLayoutModeOverrideParameters
+)
+
+emulation.SetTextLayoutModeOverrideParameters = {
+  textLayoutMode: emulation.TextLayoutMode / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.TextLayoutMode = "mobile"
 
 emulation.SetTimezoneOverride = (
   method: "emulation.setTimezoneOverride",
@@ -4914,6 +4945,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
+  emulation.SetTextLayoutModeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult /
@@ -4941,6 +4973,8 @@ emulation.SetViewportMetaOverrideResult = EmptyResult
 emulation.SetScriptingEnabledResult = EmptyResult
 
 emulation.SetScrollbarTypeOverrideResult = EmptyResult
+
+emulation.SetTextLayoutModeOverrideResult = EmptyResult
 
 emulation.SetTimezoneOverrideResult = EmptyResult
 
