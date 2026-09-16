@@ -160,6 +160,13 @@ export default {
     "<integer>": "<number-token>"
   },
 
+  // https://drafts.csswg.org/css-values-5/#funcdef-sibling-count
+  // https://drafts.csswg.org/css-values-5/#funcdef-sibling-index
+  "css-values-5": {
+    "sibling-count()": "sibling-count()",
+    "sibling-index()": "sibling-index()"
+  },
+
   // https://drafts.csswg.org/css-view-transitions-2/#typedef-view-transition-type
   "css-view-transitions-2": {
     "<view-transition-type>": "<custom-ident>"
