@@ -326,6 +326,25 @@ const patches = {
       change: { bubbles: false}
     }
   ],
+  // Crawler fails to parse dispatch syntax for "installresult"
+  // ActivationBlockersMixin is already defined in Geolocation Element for now,
+  // ignoring the re-definition in Install Element, and thus ignoring
+  // "validationstatuschange"
+  'install-element': [
+    {
+      pattern: { type: "installresult" },
+      matched: 1,
+      change: {
+        interface: "InstallResultEvent",
+        bubbles: true
+      }
+    },
+    {
+      pattern: { type: "validationstatuschange" },
+      matched: 1,
+      delete: true
+    }
+  ],
   // Pending https://github.com/w3c/mediacapture-extensions/issues/176
   // but spec also uses a proxy "queue an event" algorithm that cannot be detected
   'mediacapture-extensions': [
