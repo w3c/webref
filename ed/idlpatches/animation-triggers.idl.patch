@@ -1,0 +1,25 @@
+From 92f17f8f69e499e3aa3804d583805331c39b49c6 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 16 Sep 2026 11:22:54 +0200
+Subject: [PATCH] Re-create the `AnimationTriggerBehavior` enum
+
+Pending resolution of: https://github.com/w3c/csswg-drafts/issues/14471
+---
+ ed/idl/animation-triggers.idl | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/ed/idl/animation-triggers.idl b/ed/idl/animation-triggers.idl
+index d3f5921e4e..33c174e6d8 100644
+--- a/ed/idl/animation-triggers.idl
++++ b/ed/idl/animation-triggers.idl
+@@ -22,3 +22,5 @@ dictionary AnimationTriggerOptions {
+   (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) activeRangeStart = "auto";
+   (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) activeRangeEnd = "auto";
+ };
++
++enum AnimationTriggerBehavior { "once", "repeat", "alternate", "state" };
+
+\ No newline at end of file
+-- 
+2.55.0
+
