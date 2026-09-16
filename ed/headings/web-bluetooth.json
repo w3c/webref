@@ -1,30 +1,30 @@
 {
   "spec": {
     "title": "Web Bluetooth",
-    "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    "url": "https://bluetooth.spec.whatwg.org/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#title",
+      "href": "https://bluetooth.spec.whatwg.org/#title",
       "level": 1,
       "title": "Web Bluetooth"
     },
     {
       "id": "abstract",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#abstract",
+      "href": "https://bluetooth.spec.whatwg.org/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#sotd",
+      "href": "https://bluetooth.spec.whatwg.org/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#toc",
+      "href": "https://bluetooth.spec.whatwg.org/#toc",
       "level": 2,
       "title": "Table of Contents",
       "alternateIds": [
@@ -33,602 +33,602 @@
     },
     {
       "id": "introduction",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#introduction",
+      "href": "https://bluetooth.spec.whatwg.org/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "introduction-examples",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#introduction-examples",
+      "href": "https://bluetooth.spec.whatwg.org/#introduction-examples",
       "level": 3,
       "title": "Examples",
       "number": "1.1"
     },
     {
       "id": "security-and-privacy",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#security-and-privacy",
+      "href": "https://bluetooth.spec.whatwg.org/#security-and-privacy",
       "level": 2,
       "title": "Security considerations",
       "number": "2"
     },
     {
       "id": "privacy",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#privacy",
+      "href": "https://bluetooth.spec.whatwg.org/#privacy",
       "level": 2,
       "title": "Privacy considerations",
       "number": "3"
     },
     {
       "id": "device-access-is-powerful",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-access-is-powerful",
+      "href": "https://bluetooth.spec.whatwg.org/#device-access-is-powerful",
       "level": 3,
       "title": "Device access is powerful",
       "number": "3.1"
     },
     {
       "id": "server-takeovers",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#server-takeovers",
+      "href": "https://bluetooth.spec.whatwg.org/#server-takeovers",
       "level": 3,
       "title": "Trusted servers can serve malicious code",
       "number": "3.2"
     },
     {
       "id": "attacks-on-devices",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#attacks-on-devices",
+      "href": "https://bluetooth.spec.whatwg.org/#attacks-on-devices",
       "level": 3,
       "title": "Attacks on devices",
       "number": "3.3"
     },
     {
       "id": "bluetooth-device-identifiers",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-device-identifiers",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-device-identifiers",
       "level": 3,
       "title": "Bluetooth device identifiers",
       "number": "3.4"
     },
     {
       "id": "remote-device-identifiers",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#remote-device-identifiers",
+      "href": "https://bluetooth.spec.whatwg.org/#remote-device-identifiers",
       "level": 4,
       "title": "Identifiers for remote Bluetooth devices",
       "number": "3.4.1"
     },
     {
       "id": "ua-bluetooth-address",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ua-bluetooth-address",
+      "href": "https://bluetooth.spec.whatwg.org/#ua-bluetooth-address",
       "level": 4,
       "title": "The UA’s Bluetooth address",
       "number": "3.4.2"
     },
     {
       "id": "availability-fingerprint",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#availability-fingerprint",
+      "href": "https://bluetooth.spec.whatwg.org/#availability-fingerprint",
       "level": 3,
       "title": "Exposing Bluetooth availability",
       "number": "3.5"
     },
     {
       "id": "device-discovery",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-discovery",
+      "href": "https://bluetooth.spec.whatwg.org/#device-discovery",
       "level": 2,
       "title": "Device Discovery",
       "number": "4"
     },
     {
       "id": "permission-api-integration",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration",
+      "href": "https://bluetooth.spec.whatwg.org/#permission-api-integration",
       "level": 3,
       "title": "Permission API Integration",
       "number": "4.1"
     },
     {
       "id": "availability",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#availability",
+      "href": "https://bluetooth.spec.whatwg.org/#availability",
       "level": 3,
       "title": "Overall Bluetooth availability",
       "number": "4.2"
     },
     {
       "id": "device-representation",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#device-representation",
+      "href": "https://bluetooth.spec.whatwg.org/#device-representation",
       "level": 2,
       "title": "Device Representation",
       "number": "5"
     },
     {
       "id": "global-device-properties",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#global-device-properties",
+      "href": "https://bluetooth.spec.whatwg.org/#global-device-properties",
       "level": 3,
       "title": "Global Bluetooth device properties",
       "number": "5.1"
     },
     {
       "id": "bluetoothdevice-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothdevice-interface",
       "level": 3,
       "title": "BluetoothDevice",
       "number": "5.2"
     },
     {
       "id": "handling-visibility-change",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#handling-visibility-change",
+      "href": "https://bluetooth.spec.whatwg.org/#handling-visibility-change",
       "level": 4,
       "title": "Handling Visibility Change",
       "number": "5.2.1"
     },
     {
       "id": "handling-full-activity-loss",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#handling-full-activity-loss",
+      "href": "https://bluetooth.spec.whatwg.org/#handling-full-activity-loss",
       "level": 4,
       "title": "Handling Document Loss of Full Activity",
       "number": "5.2.2"
     },
     {
       "id": "advertising-events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#advertising-events",
+      "href": "https://bluetooth.spec.whatwg.org/#advertising-events",
       "level": 4,
       "title": "Responding to Advertising Events",
       "number": "5.2.3"
     },
     {
       "id": "bluetoothmanufacturerdatamap",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothmanufacturerdatamap",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothmanufacturerdatamap",
       "level": 5,
       "title": "BluetoothManufacturerDataMap",
       "number": "5.2.3.1"
     },
     {
       "id": "bluetoothservicedatamap",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothservicedatamap",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothservicedatamap",
       "level": 5,
       "title": "BluetoothServiceDataMap",
       "number": "5.2.3.2"
     },
     {
       "id": "gatt-interaction",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#gatt-interaction",
+      "href": "https://bluetooth.spec.whatwg.org/#gatt-interaction",
       "level": 2,
       "title": "GATT Interaction",
       "number": "6"
     },
     {
       "id": "information-model",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#information-model",
+      "href": "https://bluetooth.spec.whatwg.org/#information-model",
       "level": 3,
       "title": "GATT Information Model",
       "number": "6.1"
     },
     {
       "id": "persistence",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#persistence",
+      "href": "https://bluetooth.spec.whatwg.org/#persistence",
       "level": 4,
       "title": "Persistence across connections",
       "number": "6.1.1"
     },
     {
       "id": "bluetooth-cache",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-cache",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-cache",
       "level": 4,
       "title": "The Bluetooth cache",
       "number": "6.1.2"
     },
     {
       "id": "navigating-bluetooth-hierarchy",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#navigating-bluetooth-hierarchy",
+      "href": "https://bluetooth.spec.whatwg.org/#navigating-bluetooth-hierarchy",
       "level": 4,
       "title": "Navigating the Bluetooth Hierarchy",
       "number": "6.1.3"
     },
     {
       "id": "identifying-attributes",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#identifying-attributes",
+      "href": "https://bluetooth.spec.whatwg.org/#identifying-attributes",
       "level": 4,
       "title": "Identifying Services, Characteristics, and Descriptors",
       "number": "6.1.4"
     },
     {
       "id": "bluetoothgattremoteserver-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattremoteserver-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothgattremoteserver-interface",
       "level": 3,
       "title": "BluetoothRemoteGATTServer",
       "number": "6.2"
     },
     {
       "id": "bluetoothgattservice-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattservice-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothgattservice-interface",
       "level": 3,
       "title": "BluetoothRemoteGATTService",
       "number": "6.3"
     },
     {
       "id": "bluetoothgattcharacteristic-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothgattcharacteristic-interface",
       "level": 3,
       "title": "BluetoothRemoteGATTCharacteristic",
       "number": "6.4"
     },
     {
       "id": "characteristicproperties-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristicproperties-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#characteristicproperties-interface",
       "level": 4,
       "title": "BluetoothCharacteristicProperties",
       "number": "6.4.1"
     },
     {
       "id": "bluetoothgattdescriptor-interface",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattdescriptor-interface",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetoothgattdescriptor-interface",
       "level": 3,
       "title": "BluetoothRemoteGATTDescriptor",
       "number": "6.5"
     },
     {
       "id": "events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#events",
+      "href": "https://bluetooth.spec.whatwg.org/#events",
       "level": 3,
       "title": "Events",
       "number": "6.6"
     },
     {
       "id": "bluetooth-tree",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-tree",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-tree",
       "level": 4,
       "title": "Bluetooth Tree",
       "number": "6.6.1"
     },
     {
       "id": "event-types",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#event-types",
+      "href": "https://bluetooth.spec.whatwg.org/#event-types",
       "level": 4,
       "title": "Event types",
       "number": "6.6.2"
     },
     {
       "id": "disconnection-events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#disconnection-events",
+      "href": "https://bluetooth.spec.whatwg.org/#disconnection-events",
       "level": 4,
       "title": "Responding to Disconnection",
       "number": "6.6.3"
     },
     {
       "id": "notification-events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#notification-events",
+      "href": "https://bluetooth.spec.whatwg.org/#notification-events",
       "level": 4,
       "title": "Responding to Notifications and Indications",
       "number": "6.6.4"
     },
     {
       "id": "service-change-events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#service-change-events",
+      "href": "https://bluetooth.spec.whatwg.org/#service-change-events",
       "level": 4,
       "title": "Responding to Service Changes",
       "number": "6.6.5"
     },
     {
       "id": "idl-event-handlers",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-event-handlers",
+      "href": "https://bluetooth.spec.whatwg.org/#idl-event-handlers",
       "level": 4,
       "title": "IDL event handlers",
       "number": "6.6.6"
     },
     {
       "id": "error-handling",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#error-handling",
+      "href": "https://bluetooth.spec.whatwg.org/#error-handling",
       "level": 3,
       "title": "Error handling",
       "number": "6.7"
     },
     {
       "id": "uuids",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#uuids",
+      "href": "https://bluetooth.spec.whatwg.org/#uuids",
       "level": 2,
       "title": "UUIDs",
       "number": "7"
     },
     {
       "id": "standardized-uuids",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#standardized-uuids",
+      "href": "https://bluetooth.spec.whatwg.org/#standardized-uuids",
       "level": 3,
       "title": "Standardized UUIDs",
       "number": "7.1"
     },
     {
       "id": "gatt-assigned-numbers",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#gatt-assigned-numbers",
+      "href": "https://bluetooth.spec.whatwg.org/#gatt-assigned-numbers",
       "level": 3,
       "title": "GATT assigned numbers",
       "number": "7.2"
     },
     {
       "id": "advertising-data-filter",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#advertising-data-filter",
+      "href": "https://bluetooth.spec.whatwg.org/#advertising-data-filter",
       "level": 2,
       "title": "Advertising Data Filter",
       "number": "8"
     },
     {
       "id": "the-blocklist",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#the-blocklist",
+      "href": "https://bluetooth.spec.whatwg.org/#the-blocklist",
       "level": 2,
       "title": "The Blocklist",
       "number": "9"
     },
     {
       "id": "navigator-extensions",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#navigator-extensions",
+      "href": "https://bluetooth.spec.whatwg.org/#navigator-extensions",
       "level": 2,
       "title": "10. Extensions to the Navigator Interface"
     },
     {
       "id": "integrations",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#integrations",
+      "href": "https://bluetooth.spec.whatwg.org/#integrations",
       "level": 2,
       "title": "11. Integrations"
     },
     {
       "id": "permissions-policy",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#permissions-policy",
+      "href": "https://bluetooth.spec.whatwg.org/#permissions-policy",
       "level": 3,
       "title": "Permissions Policy",
       "number": "11.1"
     },
     {
       "id": "automated-testing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#automated-testing",
+      "href": "https://bluetooth.spec.whatwg.org/#automated-testing",
       "level": 2,
       "title": "12. Automated testing"
     },
     {
       "id": "bluetooth-bidi-definitions",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-bidi-definitions",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-bidi-definitions",
       "level": 3,
       "title": "Definitions",
       "number": "12.1"
     },
     {
       "id": "bluetooth-module",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-module",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-module",
       "level": 3,
       "title": "The bluetooth module",
       "number": "12.2"
     },
     {
       "id": "bidi-types",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bidi-types",
+      "href": "https://bluetooth.spec.whatwg.org/#bidi-types",
       "level": 4,
       "title": "Types",
       "number": "12.2.1"
     },
     {
       "id": "bluetooth-requestdevice-type",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-requestdevice-type",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-requestdevice-type",
       "level": 5,
       "title": "The bluetooth.RequestDevice Type",
       "number": "12.2.1.1"
     },
     {
       "id": "bluetooth-requestdeviceinfo-type",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-requestdeviceinfo-type",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-requestdeviceinfo-type",
       "level": 5,
       "title": "The bluetooth.RequestDeviceInfo Type",
       "number": "12.2.1.2"
     },
     {
       "id": "bluetooth-requestdeviceprompt-type",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-requestdeviceprompt-type",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-requestdeviceprompt-type",
       "level": 5,
       "title": "The bluetooth.RequestDevicePrompt Type",
       "number": "12.2.1.3"
     },
     {
       "id": "bluetooth-scanrecord-type",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-scanrecord-type",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-scanrecord-type",
       "level": 5,
       "title": "The bluetooth.ScanRecord Type",
       "number": "12.2.1.4"
     },
     {
       "id": "bidi-errors",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bidi-errors",
+      "href": "https://bluetooth.spec.whatwg.org/#bidi-errors",
       "level": 4,
       "title": "Errors",
       "number": "12.2.2"
     },
     {
       "id": "bidi-commands",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bidi-commands",
+      "href": "https://bluetooth.spec.whatwg.org/#bidi-commands",
       "level": 4,
       "title": "Commands",
       "number": "12.2.3"
     },
     {
       "id": "bluetooth-handlerequestdeviceprompt-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-handlerequestdeviceprompt-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-handlerequestdeviceprompt-command",
       "level": 5,
       "title": "The bluetooth.handleRequestDevicePrompt Command",
       "number": "12.2.3.1"
     },
     {
       "id": "bluetooth-simulateAdapter-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulateAdapter-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulateAdapter-command",
       "level": 5,
       "title": "The bluetooth.simulateAdapter Command",
       "number": "12.2.3.2"
     },
     {
       "id": "bluetooth-disableSimulation-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-disableSimulation-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-disableSimulation-command",
       "level": 5,
       "title": "The bluetooth.disableSimulation Command",
       "number": "12.2.3.3"
     },
     {
       "id": "bluetooth-simulateconnectedperipheral-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulateconnectedperipheral-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulateconnectedperipheral-command",
       "level": 5,
       "title": "The bluetooth.simulatePreconnectedPeripheral Command",
       "number": "12.2.3.4"
     },
     {
       "id": "bluetooth-simulateadvertisement-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulateadvertisement-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulateadvertisement-command",
       "level": 5,
       "title": "The bluetooth.simulateAdvertisement Command",
       "number": "12.2.3.5"
     },
     {
       "id": "bluetooth-simulategattconnectionresponse-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulategattconnectionresponse-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulategattconnectionresponse-command",
       "level": 5,
       "title": "The bluetooth.simulateGattConnectionResponse Command",
       "number": "12.2.3.6"
     },
     {
       "id": "bluetooth-simulategattdisconnection-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulategattdisconnection-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulategattdisconnection-command",
       "level": 5,
       "title": "The bluetooth.simulateGattDisconnection Command",
       "number": "12.2.3.7"
     },
     {
       "id": "bluetooth-simulateservice-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulateservice-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulateservice-command",
       "level": 5,
       "title": "The bluetooth.simulateService Command",
       "number": "12.2.3.8"
     },
     {
       "id": "bluetooth-simulatecharacteristic-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulatecharacteristic-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulatecharacteristic-command",
       "level": 5,
       "title": "The bluetooth.simulateCharacteristic Command",
       "number": "12.2.3.9"
     },
     {
       "id": "bluetooth-simulatecharacteristicresponse-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulatecharacteristicresponse-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulatecharacteristicresponse-command",
       "level": 5,
       "title": "The bluetooth.simulateCharacteristicResponse Command",
       "number": "12.2.3.10"
     },
     {
       "id": "bluetooth-simulatedescriptor-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulatedescriptor-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulatedescriptor-command",
       "level": 5,
       "title": "The bluetooth.simulateDescriptor Command",
       "number": "12.2.3.11"
     },
     {
       "id": "bluetooth-simulatedescriptorresponse-command",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-simulatedescriptorresponse-command",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-simulatedescriptorresponse-command",
       "level": 5,
       "title": "The bluetooth.simulateDescriptorResponse Command",
       "number": "12.2.3.12"
     },
     {
       "id": "bidi-events",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bidi-events",
+      "href": "https://bluetooth.spec.whatwg.org/#bidi-events",
       "level": 4,
       "title": "Events",
       "number": "12.2.4"
     },
     {
       "id": "bluetooth-requestdevicepromptupdated-event",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-requestdevicepromptupdated-event",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-requestdevicepromptupdated-event",
       "level": 5,
       "title": "The bluetooth.requestDevicePromptUpdated Event",
       "number": "12.2.4.1"
     },
     {
       "id": "bluetooth-gattConnectionAttempted-event",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-gattConnectionAttempted-event",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-gattConnectionAttempted-event",
       "level": 5,
       "title": "The bluetooth.gattConnectionAttempted Event",
       "number": "12.2.4.2"
     },
     {
       "id": "bluetooth-characteristiceventgenerated-event",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-characteristiceventgenerated-event",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-characteristiceventgenerated-event",
       "level": 5,
       "title": "The bluetooth.characteristicEventGenerated Event",
       "number": "12.2.4.3"
     },
     {
       "id": "bluetooth-descriptoreventgenerated-event",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetooth-descriptoreventgenerated-event",
+      "href": "https://bluetooth.spec.whatwg.org/#bluetooth-descriptoreventgenerated-event",
       "level": 5,
       "title": "The bluetooth.descriptorEventGenerated Event",
       "number": "12.2.4.4"
     },
     {
       "id": "terminology",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#terminology",
+      "href": "https://bluetooth.spec.whatwg.org/#terminology",
       "level": 2,
       "title": "13. Terminology and Conventions"
     },
     {
       "id": "w3c-conformance",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#w3c-conformance",
+      "href": "https://bluetooth.spec.whatwg.org/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#w3c-conventions",
+      "href": "https://bluetooth.spec.whatwg.org/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "index",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#index",
+      "href": "https://bluetooth.spec.whatwg.org/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#index-defined-here",
+      "href": "https://bluetooth.spec.whatwg.org/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#index-defined-elsewhere",
+      "href": "https://bluetooth.spec.whatwg.org/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#references",
+      "href": "https://bluetooth.spec.whatwg.org/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#normative",
+      "href": "https://bluetooth.spec.whatwg.org/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#informative",
+      "href": "https://bluetooth.spec.whatwg.org/#informative",
       "level": 3,
       "title": "Non-Normative References"
     },
     {
       "id": "idl-index",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#idl-index",
+      "href": "https://bluetooth.spec.whatwg.org/#idl-index",
       "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "cddl-index",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#cddl-index",
+      "href": "https://bluetooth.spec.whatwg.org/#cddl-index",
       "level": 2,
       "title": "CDDL Index"
     },
     {
       "id": "issues-index",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#issues-index",
+      "href": "https://bluetooth.spec.whatwg.org/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }
