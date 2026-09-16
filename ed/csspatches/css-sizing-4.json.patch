@@ -1,0 +1,29 @@
+From 6764b59dbbdcbe01ec907627bd02652f5426d564 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 16 Sep 2026 10:34:01 +0200
+Subject: [PATCH] Add missing `href` for `column-width`
+
+CSS Sizing 4 "extends" the `column-width` property defined in CSS Multicol 2,
+but that extension is more a re-definition in practice. The spec still treats
+that as an extension, and does not have a dfn for the property but rather a
+link to the base definition in CSS Multicol 2. We need a proper href in Webref.
+Let's link to the wrapping section.
+---
+ ed/css/css-sizing-4.json | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ed/css/css-sizing-4.json b/ed/css/css-sizing-4.json
+index 8c52078354..c73031514b 100644
+--- a/ed/css/css-sizing-4.json
++++ b/ed/css/css-sizing-4.json
+@@ -383,6 +383,7 @@
+     },
+     {
+       "name": "column-width",
++      "href": "https://drafts.csswg.org/css-sizing-4/#column-sizing",
+       "value": "auto | <box-size>",
+       "computedValue": "as specified, with <length-percentage> values computed",
+       "animationType": "by computed value type",
+-- 
+2.55.0
+
