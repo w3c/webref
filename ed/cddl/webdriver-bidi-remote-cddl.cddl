@@ -529,6 +529,7 @@ browsingContext.StartScreencast = (
 
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
+  ? destinationFolder: text,
   ? mimeType: text,
   ? video: browsingContext.MediaTrackConstraints,
   ? audio: bool .default false,
@@ -2310,6 +2311,7 @@ browsingContext.StartScreencast = (
 
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
+  ? destinationFolder: text,
   ? mimeType: text,
   ? video: browsingContext.MediaTrackConstraints,
   ? audio: bool .default false,

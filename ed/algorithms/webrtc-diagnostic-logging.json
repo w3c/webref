@@ -1,0 +1,125 @@
+{
+  "spec": {
+    "title": "WebRTC Diagnostic Logging API",
+    "url": "https://wicg.github.io/webrtc-diagnostic-logging/"
+  },
+  "algorithms": [
+    {
+      "html": "When this method is invoked, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent\">user agent</a> MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>options</var> be the first argument of this method.</p>"
+        },
+        {
+          "html": "<p>Let <var>metadata</var> be <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcdiagnosticloggingoptions-metadata\" id=\"ref-for-dom-rtcdiagnosticloggingoptions-metadata\">metadata</a></code> member.</p>"
+        },
+        {
+          "html": "<p>If <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-size\" id=\"ref-for-map-size\">size</a> is greater than 5, or if any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a>\n  <var>key</var> → <var>value</var> of <var>metadata</var> has a  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> greater than 100,\n  return a promise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">In parallel</a>, perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>uuid</var> be a randomly generated UUID <a data-link-type=\"biblio\" href=\"https://wicg.github.io/webrtc-diagnostic-logging/#biblio-rfc4122\" title=\"Universally Unique IDentifiers (UUIDs)\">[rfc4122]</a>. To avoid\nfingerprinting, implementations SHOULD use the form in section 4.4 of\nRFC 4122 when generating UUIDs.</p>"
+            },
+            {
+              "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s associated <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document\">document</a>.</p>"
+            },
+            {
+              "html": "<p>If the <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code> internal\nslot is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>\nobject whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name\">name</a></code> attribute has the value\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">\"InvalidStateError\"</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Store <var>uuid</var> in the <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code>\ninternal slot.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>p</var> with <var>uuid</var>.</p>"
+            },
+            {
+              "html": "<p>Start a logging session of internal WebRTC activity identified with <var>uuid</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When this method is invoked, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①\">user agent</a> MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>options</var> be the first argument of this method.</p>"
+        },
+        {
+          "html": "<p>Let <var>metadata</var> be <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcdiagnosticloggingoptions-metadata\" id=\"ref-for-dom-rtcdiagnosticloggingoptions-metadata①\">metadata</a></code> member.</p>"
+        },
+        {
+          "html": "<p>If <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-size\" id=\"ref-for-map-size①\">size</a> is greater than 5, or if any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry①\">entry</a>\n<var>key</var> → <var>value</var> of <var>metadata</var> has a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> greater than 100, return a promise <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">rejected</a> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code> internal\nslot is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> object\nwhose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name①\">name</a></code> attribute has the value\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Stop the logging session identified with\n<code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code>.</p>"
+            },
+            {
+              "html": "<p>Set <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code> to\n<code>null</code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>p</var> with <code>undefined</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When this method is invoked, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent②\">user agent</a> MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>p</var> be a new promise.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">In parallel</a>, perform the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code> internal\nslot is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> object\nwhose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dom-domexception-name\" id=\"ref-for-dom-domexception-name②\">name</a></code> attribute has the value\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">\"InvalidStateError\"</a></code> and discard these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>uuid</var> be the value of the <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code>.</p>"
+            },
+            {
+              "html": "<p>Discard the logging session identified with\n<code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code>.</p>"
+            },
+            {
+              "html": "<p>Set <code class=\"idl\"><u class=\"link-error\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" title=\"LINK ERROR: No 'idl' refs found for '[[RTCDiagnosticLoggingSessionId]]'.\">[[RTCDiagnosticLoggingSessionId]]</u></code> to\n<code>null</code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>p</var> with <code>undefined</code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>p</var>.</p>"
+        }
+      ]
+    }
+  ]
+}
