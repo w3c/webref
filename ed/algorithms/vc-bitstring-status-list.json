@@ -108,6 +108,63 @@
           "html": "Return the <var>uncompressed bitstring</var>."
         }
       ]
+    },
+    {
+      "html": "This algorithm takes a <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\n(<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>vc</var>), an integer <var>listLength</var> containing the number of entries\nin the <code>BitstringStatusListCredential</code> associated with <var>vc</var>, and a string\n<var>statusPurpose</var> (e.g., 'revocation', 'suspension'...) as input and returns\na 'BitstringStatusListEntry' object.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var> to be an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+        },
+        {
+          "html": "Set <var>listIndex</var> to <var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListIndex</var>/<var>listLength</var> rounded down\nto the next lowest integer (i.e., apply the <code>floor()</code> operation)."
+        },
+        {
+          "html": "Set <var>statusListIndex</var> to <var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListIndex</var> % <var>listLength</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusListCredential</var> to the concatenation of the following values:\n<var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListBaseUrl</var>, '/', <var>statusPurpose</var>, '/', <var>listIndex</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>type</var> to 'BitstringStatusListEntry'."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusListIndex</var> to <var>statusListIndex</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusPurpose</var> to <var>statusPurpose</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "html": "The algorithm takes a <code>BitstringStatusListEntry</code> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a>\n<var>statusListEntry</var>), whose <var>statusListCredential</var> value is expected to be a\nURL of the form <var>terseStatusListBaseUrl</var>, '/', <var>statusPurpose</var>, '/',\n<var>listIndex</var>, and an integer <var>listLength</var> containing the number of entries in\neach <code>BitstringStatusListCredential</code> published by the <a data-cite=\"vc-data-model-2.0\" data-cite-path=\"\" data-cite-frag=\"dfn-issuers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-issuers\">issuer</a> as\ninput, and returns a 'TerseBitstringStatusListEntry' object.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var> to be an empty <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+        },
+        {
+          "html": "Set <var>listIndex</var> to the integer representation of the final path segment of\n<var>statusListEntry</var>.<var>statusListCredential</var>."
+        },
+        {
+          "html": "Set <var>terseStatusListBaseUrl</var> to <var>statusListEntry</var>.<var>statusListCredential</var>\nwith the final two path segments (i.e., '/', <var>statusPurpose</var>, '/',\n<var>listIndex</var>) removed."
+        },
+        {
+          "html": "Set <var>result</var>.<var>type</var> to 'TerseBitstringStatusListEntry'."
+        },
+        {
+          "html": "Set <var>result</var>.<var>terseStatusListBaseUrl</var> to <var>terseStatusListBaseUrl</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>terseStatusListIndex</var> to <var>listIndex</var> * <var>listLength</var> + the\ninteger representation of <var>statusListEntry</var>.<var>statusListIndex</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
     }
   ]
 }

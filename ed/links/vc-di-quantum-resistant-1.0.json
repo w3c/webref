@@ -44,7 +44,11 @@
       "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
           "create-proof",
-          "verify-proof-0"
+          "verify-proof-0",
+          "create-base-proof",
+          "add-derived-proof",
+          "verify-derived-proof",
+          "SDApproachTable"
         ]
       },
       "https://www.w3.org/TR/vc-data-integrity/": {
@@ -96,16 +100,18 @@
       "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
           "dfn-data-integrity-cryptographic-suite-instance",
+          "dfn-sic",
+          "dfn-shoc",
           "dfn-data-integrity-proof",
           "dfn-unsecured-data-document"
         ]
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
+          "dfn-selective-disclosure",
           "dfn-verifiable-credential",
           "dfn-verifier",
           "dfn-verify",
-          "dfn-selective-disclosure",
           "dfn-unlinkable-disclosure"
         ]
       }

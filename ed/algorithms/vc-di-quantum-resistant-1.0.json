@@ -30,6 +30,24 @@
           ]
         },
         {
+          "html": "If <var>options</var>.<var>cryptosuite</var> is listed in <a href=\"https://w3c.github.io/vc-di-quantum-resistant/#SDCryptosuiteTable\" data-matched-text=\"[[[#SDCryptosuiteTable]]]\" class=\"table-ref\" title=\"Selective Disclosure Cryptosuites.\">Table <bdi class=\"\">13</bdi></a> then:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the values of the parameters <code>approach</code>, <code>hashName</code>, <code>sigFunc</code>, and\n<code>verifyFunc</code>, as indicated in the corresponding\ncolumn in the <a href=\"https://w3c.github.io/vc-di-quantum-resistant/#SDCryptosuiteTable\" data-matched-text=\"[[[#SDCryptosuiteTable]]]\" class=\"table-ref\" title=\"Selective Disclosure Cryptosuites.\">Table <bdi class=\"\">13</bdi></a>."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>createBaseProof</var> to the algorithm in Section\n<a data-cite=\"VC-DATA-INTEGRITY-1.1\" data-cite-frag=\"create-base-proof\" data-matched-text=\"[[[VC-DATA-INTEGRITY-1.1#create-base-proof]]]\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#create-base-proof\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">4.3.2 </bdi>Create Base Proof</a> passing in the above parameters."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>addDerivedProof</var> to the algorithm in Section\n<a data-cite=\"VC-DATA-INTEGRITY-1.1\" data-cite-frag=\"add-derived-proof\" data-matched-text=\"[[[VC-DATA-INTEGRITY-1.1#add-derived-proof]]]\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#add-derived-proof\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">4.3.3 </bdi>Add Derived Proof</a> passing in the above parameters."
+            },
+            {
+              "html": "Set <var>cryptosuite</var>.<var>verifyDerivedProof</var> to the algorithm in Section\n<a data-cite=\"VC-DATA-INTEGRITY-1.1\" data-cite-frag=\"verify-derived-proof\" data-matched-text=\"[[[VC-DATA-INTEGRITY-1.1#verify-derived-proof]]]\" href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#verify-derived-proof\" class=\"sec-ref\">§&nbsp;<bdi class=\"secno\">4.3.4 </bdi>Verify Derived Proof</a> passing in the above parameters."
+            }
+          ]
+        },
+        {
           "html": "Return <var>cryptosuite</var>."
         }
       ]
