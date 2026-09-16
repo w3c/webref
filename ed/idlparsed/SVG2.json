@@ -8535,7 +8535,7 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#InterfaceSVGScriptElement"
       },
       "SVGAElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [Reflect, SameObject] readonly attribute SVGAnimatedString target;\n  [Reflect] attribute DOMString download;\n  [Reflect] attribute USVString ping;\n  [Reflect] attribute DOMString rel;\n  [Reflect=\"rel\", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [Reflect] attribute DOMString hreflang;\n  [Reflect] attribute DOMString type;\n\n  attribute DOMString referrerPolicy;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [Reflect, SameObject] readonly attribute SVGAnimatedString target;\n  [Reflect] attribute DOMString download;\n  [Reflect] attribute USVString ping;\n  [Reflect] attribute DOMString rel;\n  [Reflect=\"rel\", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n\n  attribute DOMString referrerPolicy;\n};",
         "type": "interface",
         "name": "SVGAElement",
         "inheritance": "SVGGraphicsElement",
@@ -8673,50 +8673,6 @@
             ],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "hreflang",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Reflect",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Reflect",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
           },
           {
             "type": "attribute",
@@ -8954,227 +8910,11 @@
           "includes": "SVGURIReference"
         },
         {
-          "fragment": "// Inline HTMLHyperlinkElementUtils except href, which conflicts.\npartial interface SVGAElement {\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
-          "type": "interface",
-          "name": "SVGAElement",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "origin",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true
-            },
-            {
-              "type": "attribute",
-              "name": "protocol",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "username",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "password",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "host",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "hostname",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "port",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "pathname",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "search",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "hash",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "USVString"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": false
-            }
-          ],
+          "fragment": "SVGAElement includes HyperlinkElementUtils;",
+          "type": "includes",
           "extAttrs": [],
-          "partial": true
+          "target": "SVGAElement",
+          "includes": "HyperlinkElementUtils"
         }
       ],
       "SVGViewElement": [
@@ -9503,7 +9243,8 @@
         "SVGGraphicsElement",
         "SVGAnimatedString",
         "DOMTokenList",
-        "SVGURIReference"
+        "SVGURIReference",
+        "HyperlinkElementUtils"
       ],
       "SVGViewElement": [
         "SVGElement",

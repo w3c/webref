@@ -324,7 +324,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute boolean accelerated;\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createExportableTensor(\n    MLTensorDescriptor descriptor, GPUDevice gpuDevice);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  GPUBuffer exportToGPU(MLTensor tensor);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute boolean accelerated;\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -435,6 +435,64 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createtensor"
+          },
+          {
+            "type": "operation",
+            "name": "createExportableTensor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensorDescriptor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "gpuDevice",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUDevice"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-createexportabletensor"
           },
           {
             "type": "operation",
@@ -642,6 +700,39 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-writetensor"
+          },
+          {
+            "type": "operation",
+            "name": "exportToGPU",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBuffer"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "tensor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MLTensor"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-exporttogpu"
           },
           {
             "type": "operation",
@@ -14677,9 +14768,11 @@
         "MLNamedTensors",
         "MLTensor",
         "MLTensorDescriptor",
+        "GPUDevice",
         "MLOperandDescriptor",
         "AllowSharedBufferSource",
         "ArrayBuffer",
+        "GPUBuffer",
         "MLOpSupportLimits",
         "MLContextLostInfo"
       ],
@@ -14938,7 +15031,8 @@
     "externalDependencies": [
       "GPUDevice",
       "AllowSharedBufferSource",
-      "ArrayBuffer"
+      "ArrayBuffer",
+      "GPUBuffer"
     ],
     "hasObsoleteIdl": false
   }

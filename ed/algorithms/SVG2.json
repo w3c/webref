@@ -1106,7 +1106,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>value</var> be the base value of the\n    reflected content attribute (using the attribute's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a>\n    if it is not present or invalid)."
+          "html": "Let <var>value</var> be the base value of the\n    reflected content attribute. If the attribute is not present, or if its\n    value cannot be parsed, let <var>value</var> be the attribute's\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a>, or an empty list if the attribute's\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\">initial value</a> is <span class=\"attr-value\">(none)</span>."
         },
         {
           "html": "Let <var>length</var> be the number of items in the list."
@@ -2637,14 +2637,14 @@
     {
       "name": "text/x",
       "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementXAttribute",
-      "html": "If more characters exist than <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>s,\n    or if the attribute is not specified on a <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>tspan</span></a>’</span>,\n    then for each additional character:",
+      "html": "If more characters exist than <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>s,\n    or if the attribute is not specified,\n    then for each additional character:",
       "rationale": "if",
       "steps": [
         {
           "html": "if an ancestor <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> or <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>tspan</span></a>’</span> element\n        specifies an absolute X (Y) coordinate for the given character\n        via an <span class=\"attr-name\">‘x’</span>\n        (<span class=\"attr-name\">‘y’</span>) attribute\n        (nearest ancestor has precedence), then that\n        absolute X (Y) coordinate is used as the starting X (Y)\n        coordinate for that character, else"
         },
         {
-          "html": "the starting X (Y) coordinate for rendering the glyphs\n        corresponding to the given character is the X (Y) coordinate\n        of the resulting <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> from the most\n        recently rendered glyph for the current <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> element."
+          "html": "the starting X (Y) coordinate for rendering the glyphs\n        corresponding to the given character is the X (Y) coordinate\n        of the resulting <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> from the most\n        recently rendered glyph for the current <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElement\"><span>text</span></a>’</span> element,\n        or the X (Y) coordinate of the initial <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermCurrentTextPosition\">current text position</a> if no glyph has yet been rendered for that\n        element."
         }
       ]
     },
@@ -3806,6 +3806,57 @@
         },
         {
           "html": "If the event type is one which the user agent associates with the evocation\n  of special user-interface controls (e.g., a right-click or command-click\n  evoking a context menu), the user agent should evoke such user-agent-specific\n  behavior, such as presenting a context menu."
+        }
+      ]
+    },
+    {
+      "html": "The <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url-set\">set the url</a> algorithm for an <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/linking.html#InterfaceSVGAElement\">SVGAElement</a>:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set this element's <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a> to null."
+        },
+        {
+          "html": "Let <var>url</var> be failure."
+        },
+        {
+          "html": "If this element's <span class=\"attr-name\">‘href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>url</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given this element's <span class=\"attr-name\">‘href’</span> content attribute's value,\n      relative to this element's <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>url</var> to the result of <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute's value,\n      relative to this element's <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>url</var> is not failure, then set this element's <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a> to url."
+        }
+      ]
+    },
+    {
+      "html": "To <a href=\"https://html.spec.whatwg.org/multipage/links.html#update-href\">update href</a> for an <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/linking.html#InterfaceSVGAElement\">SVGAElement</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If this element's <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set the element's <span class=\"attr-name\">‘xlink:href’</span> content attribute's value to the element's\n        <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a>, <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\">serialized</a>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, set the element's <span class=\"attr-name\">‘href’</span> content attribute's value to the element's\n    <a href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\">url</a>, <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\">serialized</a>."
         }
       ]
     },

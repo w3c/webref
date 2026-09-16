@@ -120,7 +120,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#storage-buffer\" id=\"ref-for-storage-buffer①①\">Storage buffers</a> and <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#type-storage-texture\" id=\"ref-for-type-storage-texture④\">storage textures</a> with an access mode other\nthan <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-read\" id=\"ref-for-access-read④\">read</a> cannot be <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed\" id=\"ref-for-statically-accessed③\">statically accessed</a> in a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#vertex-shader-stage\" id=\"ref-for-vertex-shader-stage\">vertex shader stage</a>.\nSee WebGPU <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout\" id=\"ref-for-dom-gpudevice-createbindgrouplayout\">createBindGroupLayout()</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#atomic-type\" id=\"ref-for-atomic-type⑦\">Atomic types</a> can only appear in mutable storage buffers or workgroup\nvariables.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#atomic-type\" id=\"ref-for-atomic-type⑧\">Atomic types</a> can only appear in mutable storage buffers or workgroup\nvariables.</p>"
         },
         {
           "html": "<p>The data in <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texture-storage\">storage textures</a> with a <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-write\" id=\"ref-for-access-write②\">write</a>\nor <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-read_write\" id=\"ref-for-access-read_write①②\">read_write</a> <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#access-mode\" id=\"ref-for-access-mode①③\">access mode</a> is mutable, but can only be\nmodified via <a href=\"https://gpuweb.github.io/gpuweb/wgsl/#texturestore\">textureStore</a> built-in function.\nThe variable itself cannot be modified.</p>"
@@ -273,6 +273,50 @@
         },
         {
           "html": "<p>Store the value <code>v</code> <code>only if</code> the result of the equality comparison was <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "atomic-store-min-vec2u",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Load the original <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#vec2u\" id=\"ref-for-vec2u\">vec2u</a> value <var>old</var> from the memory referenced by <var>atomic_ptr</var>.</p>"
+        },
+        {
+          "html": "<p>Compute the 64-bit unsigned integer values:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>old64</var> = 2<sup>32</sup> × <var>old</var>[1] + <var>old</var>[0]</p>\n       </li><li data-md=\"\">\n        <p><var>v64</var> = 2<sup>32</sup> × <var>v</var>[1] + <var>v</var>[0]</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Compute value <var>new64</var> as the minimum of <var>old64</var> and <var>v64</var>.</p>"
+        },
+        {
+          "html": "<p>Compute value <var>new</var> of type vec2&lt;u32&gt;, where:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>new</var>[0] contains the least significant 32 bits of <var>new64</var>, and</p>\n       </li><li data-md=\"\">\n        <p><var>new</var>[1] contains the 32 most significant bits of <var>new64</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Store <var>new</var> into the memory referenced by <var>atomic_ptr</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "atomic-store-max-vec2u",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Load the original <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/wgsl/#vec2u\" id=\"ref-for-vec2u①\">vec2u</a> value <var>old</var> from the memory referenced by <var>atomic_ptr</var>.</p>"
+        },
+        {
+          "html": "<p>Compute the 64-bit unsigned integer values:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>old64</var> = 2<sup>32</sup> × <var>old</var>[1] + <var>old</var>[0]</p>\n       </li><li data-md=\"\">\n        <p><var>v64</var> = 2<sup>32</sup> × <var>v</var>[1] + <var>v</var>[0]</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Compute value <var>new64</var> as the maximum of <var>old64</var> and <var>v64</var>.</p>"
+        },
+        {
+          "html": "<p>Compute value <var>new</var> of type vec2&lt;u32&gt;, where:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>new</var>[0] contains the least significant 32 bits of <var>new64</var>, and</p>\n       </li><li data-md=\"\">\n        <p><var>new</var>[1] contains the 32 most significant bits of <var>new64</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Store <var>new</var> into the memory referenced by <var>atomic_ptr</var>.</p>"
         }
       ]
     }

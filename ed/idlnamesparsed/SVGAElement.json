@@ -6,7 +6,7 @@
       "title": "Scalable Vector Graphics (SVG) 2",
       "url": "https://www.w3.org/TR/SVG2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [Reflect, SameObject] readonly attribute SVGAnimatedString target;\n  [Reflect] attribute DOMString download;\n  [Reflect] attribute USVString ping;\n  [Reflect] attribute DOMString rel;\n  [Reflect=\"rel\", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [Reflect] attribute DOMString hreflang;\n  [Reflect] attribute DOMString type;\n\n  attribute DOMString referrerPolicy;\n};",
+    "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [Reflect, SameObject] readonly attribute SVGAnimatedString target;\n  [Reflect] attribute DOMString download;\n  [Reflect] attribute USVString ping;\n  [Reflect] attribute DOMString rel;\n  [Reflect=\"rel\", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n\n  attribute DOMString referrerPolicy;\n};",
     "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#InterfaceSVGAElement"
   },
   "extended": [
@@ -22,7 +22,7 @@
         "title": "Scalable Vector Graphics (SVG) 2",
         "url": "https://www.w3.org/TR/SVG2/"
       },
-      "fragment": "// Inline HTMLHyperlinkElementUtils except href, which conflicts.\npartial interface SVGAElement {\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};"
+      "fragment": "SVGAElement includes HyperlinkElementUtils;"
     }
   ],
   "inheritance": {
@@ -549,6 +549,21 @@
         },
         "fragment": "interface mixin SVGURIReference {\n  [SameObject] readonly attribute SVGAnimatedString href;\n};",
         "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGURIReference"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "HyperlinkElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin HyperlinkElementUtils {\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n\n  [CEReactions, Reflect] attribute DOMString hreflang;\n  [CEReactions, Reflect] attribute DOMString type;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/links.html#hyperlinkelementutils"
       },
       "extended": [],
       "inheritance": null,

@@ -7,6 +7,8 @@ interface PerformanceContainerTiming : PerformanceEntry {
     readonly attribute DOMHighResTimeStamp firstRenderTime;
     readonly attribute HTMLElement? lastPaintedElement;
     readonly attribute HTMLElement? rootElement;
+
+    [Default] object toJSON();
 };
 
 // Source: Container Timing API (https://wicg.github.io/container-timing/)

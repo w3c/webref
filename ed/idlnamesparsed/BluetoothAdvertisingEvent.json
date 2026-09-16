@@ -7,7 +7,7 @@
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
     "fragment": "[\n  Exposed=Window,\n  SecureContext\n]\ninterface BluetoothAdvertisingEvent : Event {\n  constructor(DOMString type, BluetoothAdvertisingEventInit init);\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute FrozenArray<UUID> uuids;\n  readonly attribute DOMString? name;\n  readonly attribute unsigned short? appearance;\n  readonly attribute byte? txPower;\n  readonly attribute byte? rssi;\n  [SameObject]\n  readonly attribute BluetoothManufacturerDataMap manufacturerData;\n  [SameObject]\n  readonly attribute BluetoothServiceDataMap serviceData;\n};",
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothadvertisingevent"
+    "href": "https://bluetooth.spec.whatwg.org/#bluetoothadvertisingevent"
   },
   "extended": [],
   "inheritance": {

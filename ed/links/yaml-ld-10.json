@@ -36,9 +36,18 @@
       "https://w3c.github.io/yaml-ld/tests/": {},
       "https://w3c.github.io/yaml-ld/tests/manifest.html": {
         "anchors": [
+          "local-json-ld-context",
+          "compact-local-json-ld-context",
+          "local-yaml-ld-context",
+          "compact-local-yaml-ld-context",
+          "flatten",
+          "frame-t0001",
           "cr-utf8-1-positive",
           "cr-utf8-2-negative",
           "cr-comments-1-positive",
+          "cr-well-formed-1-positive",
+          "cr-well-formed-2-negative",
+          "cr-well-formed-3-negative",
           "aa-information-1-positive",
           "aa-cycles-1-positive",
           "aa-cycles-2-negative",
@@ -68,6 +77,9 @@
           "core-yaml11-off",
           "core-yaml11-yes-title",
           "core-yaml11-yes-upper",
+          "cir-scalar-core-1-positive",
+          "cir-scalar-core-2-positive",
+          "cir-document-content-1-negative",
           "two-documents-from-stream",
           "one-document-from-stream",
           "cir-mapping-key-1-negative",
@@ -77,7 +89,8 @@
           "cir-mapping-key-5-negative",
           "html-dedent-needed",
           "html-dedent-not-needed",
-          "html-and-yaml-streams"
+          "html-and-yaml-streams",
+          "mixed-script-types"
         ]
       },
       "https://www.csc.kth.se/utbildning/kth/kurser/DD143X/dkand11/Group2Mads/Rapport_Malin_Eriksson_Viktor_Hallberg.pdf": {},
@@ -195,6 +208,7 @@
           "321-representation-graph",
           "dump",
           "323-presentation-stream",
+          "well-formed-streams-and-identified-aliases",
           "parsing-the-presentation-stream",
           "presenting-the-serialization-tree",
           "composing-the-representation-graph",
@@ -204,11 +218,6 @@
       }
     },
     "autolinks": {
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "javascript-string"
-        ]
-      },
       "https://www.w3.org/TR/json-ld11-api/": {
         "anchors": [
           "dfn-internal-representation",
@@ -229,7 +238,10 @@
           "node-anchors",
           "alias-nodes",
           "node-tags",
-          "mapping"
+          "scalar",
+          "nodes",
+          "mapping",
+          "sequence"
         ]
       }
     }

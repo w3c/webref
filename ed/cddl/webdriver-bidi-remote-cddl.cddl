@@ -362,8 +362,8 @@ browsingContext.ImageFormat = {
 }
 
 browsingContext.ImageSize = {
-   ? maxWidth: (js-uint .gt 1),
-   ? maxHeight: (js-uint .gt 1),
+   ? maxWidth: (js-uint .ge 1),
+   ? maxHeight: (js-uint .ge 1),
 }
 
 browsingContext.ClipRectangle = (
@@ -529,6 +529,7 @@ browsingContext.StartScreencast = (
 
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
+  ? destinationFolder: text,
   ? mimeType: text,
   ? video: browsingContext.MediaTrackConstraints,
   ? audio: bool .default false,
@@ -2143,8 +2144,8 @@ browsingContext.ImageFormat = {
 }
 
 browsingContext.ImageSize = {
-   ? maxWidth: (js-uint .gt 1),
-   ? maxHeight: (js-uint .gt 1),
+   ? maxWidth: (js-uint .ge 1),
+   ? maxHeight: (js-uint .ge 1),
 }
 
 browsingContext.ClipRectangle = (
@@ -2310,6 +2311,7 @@ browsingContext.StartScreencast = (
 
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
+  ? destinationFolder: text,
   ? mimeType: text,
   ? video: browsingContext.MediaTrackConstraints,
   ? audio: bool .default false,

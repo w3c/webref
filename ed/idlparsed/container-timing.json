@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "PerformanceContainerTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute HTMLElement? lastPaintedElement;\n    readonly attribute HTMLElement? rootElement;\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceContainerTiming : PerformanceEntry {\n    readonly attribute DOMString identifier;\n    readonly attribute DOMRectReadOnly intersectionRect;\n    readonly attribute unsigned long long size;\n    readonly attribute DOMHighResTimeStamp firstRenderTime;\n    readonly attribute HTMLElement? lastPaintedElement;\n    readonly attribute HTMLElement? rootElement;\n\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceContainerTiming",
         "inheritance": "PerformanceEntry",
@@ -114,6 +114,29 @@
             "special": "",
             "readonly": true,
             "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-rootelement"
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-tojson"
           }
         ],
         "extAttrs": [

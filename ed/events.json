@@ -189,9 +189,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A0"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived",
     "type": "advertisementreceived",
     "targets": [
       {
@@ -482,9 +482,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetooth-availabilitychanged",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetooth-availabilitychanged",
     "type": "availabilitychanged",
     "targets": [
       {
@@ -1198,9 +1198,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A1"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A1"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged",
     "type": "characteristicvaluechanged",
     "targets": [
       {
@@ -3497,9 +3497,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A2"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A2"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected",
     "type": "gattserverdisconnected",
     "targets": [
       {
@@ -3745,6 +3745,24 @@
       }
     ],
     "interface": "InstallEvent"
+  },
+  {
+    "type": "installresult",
+    "targets": [
+      {
+        "target": "HTMLInstallElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "InstallResultEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-invalid",
@@ -6555,9 +6573,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A5"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A5"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceadded",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-serviceadded",
     "type": "serviceadded",
     "targets": [
       {
@@ -6574,9 +6592,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A6"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A6"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-servicechanged",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-servicechanged",
     "type": "servicechanged",
     "targets": [
       {
@@ -6593,9 +6611,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#ref-for-concept-event-fire%E2%91%A4"
+      "href": "https://bluetooth.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A4"
     },
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#eventdef-bluetoothremotegattservice-serviceremoved",
+    "href": "https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-serviceremoved",
     "type": "serviceremoved",
     "targets": [
       {
@@ -7709,6 +7727,15 @@
   {
     "type": "validationstatuschange",
     "targets": [
+      {
+        "target": "HTMLInstallElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
       {
         "target": "HTMLGeolocationElement",
         "bubbles": true,

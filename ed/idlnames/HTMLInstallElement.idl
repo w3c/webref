@@ -1,0 +1,12 @@
+// Source: Web Install (https://wicg.github.io/install-element/)
+[Exposed=Window]
+interface HTMLInstallElement : HTMLElement {
+  [HTMLConstructor] constructor();
+
+  [CEReactions] attribute USVString? manifest;
+  [CEReactions] attribute USVString? manifestId;
+  attribute EventHandler oninstallresult;
+};
+
+// Source: Web Install (https://wicg.github.io/install-element/)
+HTMLInstallElement includes ActivationBlockersMixin;

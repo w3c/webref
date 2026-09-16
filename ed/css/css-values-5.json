@@ -389,7 +389,7 @@
         },
         {
           "name": "<'animation-timeline'>",
-          "prose": "Represents the interpolation progress as the progress of the specified animation timeline. The values none and auto are invalid. [CSS-ANIMATIONS-2] [WEB-ANIMATIONS-2]",
+          "prose": "Represents the interpolation progress as the progress of the specified animation timeline. The values none and auto are invalid. [CSS-ANIMATIONS-2] [WEB-ANIMATIONS-2] If the specified timeline does not exist on the element or otherwise doesn’t have a progress for some reason, this represents an interpolation progress of 0.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-progress-source-animation-timeline",
           "type": "value",
           "value": "<'animation-timeline'>"
@@ -784,13 +784,15 @@
       "name": "sibling-count()",
       "prose": "The sibling-count() functional notation represents, as an <integer>, the total number of child elements in the parent of the element on which the notation is used.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-count",
-      "type": "function"
+      "type": "function",
+      "value": "sibling-count()"
     },
     {
       "name": "sibling-index()",
       "prose": "The sibling-index() functional notation represents, as an <integer>, the index of the element on which the notation is used among its inclusive siblings. Like :nth-child(), sibling-index() is 1-indexed.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-index",
-      "type": "function"
+      "type": "function",
+      "value": "sibling-index()"
     },
     {
       "name": "calc-size()",

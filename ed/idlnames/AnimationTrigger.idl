@@ -1,11 +1,11 @@
-// Source: Web Animations Module Level 2 (https://www.w3.org/TR/web-animations-2/)
+// Source: Animation Triggers (https://drafts.csswg.org/animation-triggers-1/)
 [Exposed=Window]
 interface AnimationTrigger {
   constructor(optional AnimationTriggerOptions options = {});
   attribute AnimationTimeline timeline;
   attribute AnimationTriggerBehavior behavior;
-  attribute any rangeStart;
-  attribute any rangeEnd;
-  attribute any exitRangeStart;
-  attribute any exitRangeEnd;
+  attribute any activationRangeStart;
+  attribute any activationRangeEnd;
+  attribute any activeRangeStart;
+  attribute any activeRangeEnd;
 };

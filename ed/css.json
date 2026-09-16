@@ -1407,7 +1407,7 @@
     {
       "name": "dynamic-range-limit-mix()",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-dynamic-range-limit-mix",
-      "syntax": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]#{2,} )",
+      "syntax": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]# )",
       "extended": []
     },
     {
@@ -1467,20 +1467,6 @@
       "name": "fit-content()",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "syntax": "fit-content( <length-percentage> )",
-      "extended": []
-    },
-    {
-      "for": [
-        "height",
-        "max-height",
-        "max-width",
-        "min-height",
-        "min-width",
-        "width"
-      ],
-      "name": "fit-content()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "syntax": "fit-content(<length-percentage [0,∞]>)",
       "extended": []
     },
     {
@@ -1742,14 +1728,14 @@
       "name": "palette-mix()",
       "prose": "With the palette-mix() function defined as follows:",
       "href": "https://drafts.csswg.org/css-fonts-4/#funcdef-palette-mix",
-      "syntax": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})",
+      "syntax": "palette-mix( <color-interpolation-method>? , [ <'font-palette'> && <percentage [0,100]>? ]# )",
       "extended": []
     },
     {
       "name": "param()",
-      "prose": "The param() function specifies a link parameter, with a key of the <dashed-ident>, and a value of the <declaration-value>?. (If the <declaration-value> is omitted, it represents an empty value.) It has the syntax:",
+      "prose": "All three methods of setting link parameters share the same syntax for defining a parameter, using the param() function:",
       "href": "https://drafts.csswg.org/css-link-params-1/#funcdef-param",
-      "syntax": "param( <dashed-ident> , <declaration-value>? )",
+      "syntax": "param( <param-spec> , <declaration-value>? )",
       "extended": []
     },
     {
@@ -2054,12 +2040,14 @@
       "name": "sibling-count()",
       "prose": "The sibling-count() functional notation represents, as an <integer>, the total number of child elements in the parent of the element on which the notation is used.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-count",
+      "syntax": "sibling-count()",
       "extended": []
     },
     {
       "name": "sibling-index()",
       "prose": "The sibling-index() functional notation represents, as an <integer>, the index of the element on which the notation is used among its inclusive siblings. Like :nth-child(), sibling-index() is 1-indexed.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-index",
+      "syntax": "sibling-index()",
       "extended": []
     },
     {
@@ -4204,8 +4192,10 @@
         "block-size",
         "blockSize"
       ],
-      "syntax": "auto | <box-size>",
-      "extended": []
+      "syntax": "auto | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "block-step",
@@ -6801,22 +6791,15 @@
     },
     {
       "name": "column-width",
-      "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-width",
-      "initial": "auto",
-      "appliesTo": "block containers except table wrapper boxes",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "the keyword auto or an absolute length",
-      "canonicalOrder": "per grammar",
+      "href": "https://drafts.csswg.org/css-sizing-4/#column-sizing",
+      "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
       "styleDeclaration": [
         "column-width",
         "columnWidth"
       ],
-      "syntax": "auto | <length [0,∞]> | <box-size>",
-      "extended": [
-        "https://drafts.csswg.org/css-sizing-4/"
-      ]
+      "syntax": "auto | <box-size>",
+      "extended": []
     },
     {
       "name": "column-wrap",
@@ -9537,10 +9520,9 @@
       "styleDeclaration": [
         "height"
       ],
-      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "auto | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -9778,8 +9760,10 @@
         "inline-size",
         "inlineSize"
       ],
-      "syntax": "auto | <box-size>",
-      "extended": []
+      "syntax": "auto | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "inline-sizing",
@@ -11128,8 +11112,10 @@
         "max-block-size",
         "maxBlockSize"
       ],
-      "syntax": "none | <box-size>",
-      "extended": []
+      "syntax": "none | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "max-height",
@@ -11146,10 +11132,9 @@
         "max-height",
         "maxHeight"
       ],
-      "syntax": "none | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "none | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -11167,8 +11152,10 @@
         "max-inline-size",
         "maxInlineSize"
       ],
-      "syntax": "none | <box-size>",
-      "extended": []
+      "syntax": "none | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "max-lines",
@@ -11223,10 +11210,9 @@
         "max-width",
         "maxWidth"
       ],
-      "syntax": "none | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "none | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -11244,8 +11230,10 @@
         "min-block-size",
         "minBlockSize"
       ],
-      "syntax": "auto | <box-size>",
-      "extended": []
+      "syntax": "auto | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "min-height",
@@ -11262,10 +11250,9 @@
         "min-height",
         "minHeight"
       ],
-      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "auto | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -11283,8 +11270,10 @@
         "min-inline-size",
         "minInlineSize"
       ],
-      "syntax": "auto | <box-size>",
-      "extended": []
+      "syntax": "auto | <box-size> | <anchor-size()>",
+      "extended": [
+        "https://drafts.csswg.org/css-anchor-position-1/"
+      ]
     },
     {
       "name": "min-intrinsic-sizing",
@@ -11339,10 +11328,9 @@
         "min-width",
         "minWidth"
       ],
-      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "auto | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -15946,14 +15934,14 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "list, each item either the keyword none, the keyword auto, a case-sensitive css identifier, a computed scroll() function, or a computed view() function",
+      "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
         "timeline-trigger-source",
         "timelineTriggerSource"
       ],
-      "syntax": "<single-animation-timeline>#",
+      "syntax": "[ none | auto | [ <dashed-ident> | <scroll()> | <view()> ]+ ]#",
       "extended": []
     },
     {
@@ -16653,10 +16641,9 @@
       "styleDeclaration": [
         "width"
       ],
-      "syntax": "auto | <box-size> | <anchor-size()> | contain | fit-content(<length-percentage [0,∞]>)",
+      "syntax": "auto | <box-size> | <anchor-size()>",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/",
-        "https://drafts.csswg.org/css-sizing-4/"
+        "https://drafts.csswg.org/css-anchor-position-1/"
       ]
     },
     {
@@ -18424,7 +18411,7 @@
     {
       "name": "box-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
-      "syntax": "<length-percentage> | stretch | contain | min-content | max-content | fit-content | fit-content() | calc-size()",
+      "syntax": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "extended": []
     },
     {
@@ -18721,7 +18708,7 @@
       "name": "content-list",
       "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
-      "syntax": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+      "syntax": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-counter-style> ]+",
       "extended": []
     },
     {
@@ -20220,6 +20207,12 @@
       "extended": []
     },
     {
+      "name": "param-spec",
+      "href": "https://drafts.csswg.org/css-link-params-1/#typedef-param-spec",
+      "syntax": "color | accent-color | [ <dashed-ident> <css-type>? ]",
+      "extended": []
+    },
+    {
       "name": "pattern-descriptor",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptor",
       "syntax": "pattern : <url-pattern()>",
@@ -21009,6 +21002,12 @@
       "name": "symbol",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-symbol",
       "syntax": "<string> | <image> | <custom-ident>",
+      "extended": []
+    },
+    {
+      "name": "symbolic-counter-style",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-symbolic-counter-style",
+      "syntax": "disc | circle | square | disclosure-open | disclosure-closed",
       "extended": []
     },
     {

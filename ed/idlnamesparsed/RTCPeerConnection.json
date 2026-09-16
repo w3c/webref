@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "WebRTC Diagnostic Logging API",
+        "url": "https://wicg.github.io/webrtc-diagnostic-logging/"
+      },
+      "fragment": "[\n  Exposed=Window\n] partial interface RTCPeerConnection {\n  static Promise<DOMString> startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> finishDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> discardDiagnosticLogging();\n};"
+    },
+    {
+      "spec": {
         "title": "Identity for WebRTC 1.0",
         "url": "https://www.w3.org/TR/webrtc-identity/"
       },

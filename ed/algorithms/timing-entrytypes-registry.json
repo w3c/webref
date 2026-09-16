@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "title": "Timing Entry Names Registry",
+    "url": "https://w3c.github.io/timing-entrytypes-registry/"
+  },
+  "algorithms": [
+    {
+      "name": "should add entry",
+      "href": "https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry",
+      "html": "Each entry type must specify an algorithm\n      <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-should-add-entry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should add entry</dfn> which,\n      given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceentry\" id=\"ref-for-performanceentry③\">PerformanceEntry</a></code> <var>entry</var> of the entry type and optionally a\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dictdef-performanceobserverinit\" id=\"ref-for-dictdef-performanceobserverinit\">PerformanceObserverInit</a></code> <var>options</var> of an observer observing that entry\n      type, determines the following:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>options</var> was not provided, whether <var>entry</var> is eligible to be\n        added to the performance timeline, regardless of limitations in the\n        buffer size."
+        },
+        {
+          "html": "Otherwise, given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer\">registered performance observer</a> <var>regObs</var>\n        containing <var>options</var> in its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list\">options list</a>, whether <var>entry</var> must be\n        appended to <var>regObs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer\">observer</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer\">observer buffer</a>."
+        }
+      ]
+    }
+  ]
+}

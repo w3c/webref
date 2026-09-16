@@ -920,7 +920,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionalternative"
       },
       "SpeechRecognitionResult": {
-        "fragment": "// A complete one-shot simple response\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
+        "fragment": "// A complete one-shot simple response\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative? item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
         "type": "interface",
         "name": "SpeechRecognitionResult",
         "inheritance": null,
@@ -948,7 +948,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "SpeechRecognitionAlternative"
             },
@@ -1011,7 +1011,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognitionresult"
       },
       "SpeechRecognitionResultList": {
-        "fragment": "// A collection of responses (used in continuous mode)\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult item(unsigned long index);\n};",
+        "fragment": "// A collection of responses (used in continuous mode)\n[SecureContext, Exposed=Window]\ninterface SpeechRecognitionResultList {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionResult? item(unsigned long index);\n};",
         "type": "interface",
         "name": "SpeechRecognitionResultList",
         "inheritance": null,
@@ -1039,7 +1039,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "SpeechRecognitionResult"
             },
@@ -1283,7 +1283,7 @@
         "href": "https://webaudio.github.io/web-speech-api/#speechgrammar"
       },
       "SpeechGrammarList": {
-        "fragment": "// The object representing a speech grammar collection. This interface has been deprecated and exists in this spec for the sole purpose of maintaining backwards compatibility.\n[Exposed=Window]\ninterface SpeechGrammarList {\n    constructor();\n    readonly attribute unsigned long length;\n    getter SpeechGrammar item(unsigned long index);\n    undefined addFromURI(DOMString src,\n                    optional float weight = 1.0);\n    undefined addFromString(DOMString string,\n                    optional float weight = 1.0);\n};",
+        "fragment": "// The object representing a speech grammar collection. This interface has been deprecated and exists in this spec for the sole purpose of maintaining backwards compatibility.\n[Exposed=Window]\ninterface SpeechGrammarList {\n    constructor();\n    readonly attribute unsigned long length;\n    getter SpeechGrammar? item(unsigned long index);\n    undefined addFromURI(DOMString src,\n                    optional float weight = 1.0);\n    undefined addFromString(DOMString string,\n                    optional float weight = 1.0);\n};",
         "type": "interface",
         "name": "SpeechGrammarList",
         "inheritance": null,
@@ -1317,7 +1317,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "SpeechGrammar"
             },

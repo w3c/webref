@@ -5,38 +5,6 @@
   },
   "properties": [
     {
-      "name": "column-width",
-      "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-width",
-      "value": "auto | <length [0,∞]>",
-      "initial": "auto",
-      "appliesTo": "block containers except table wrapper boxes",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "the keyword auto or an absolute length",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "auto",
-          "prose": "means that the column width will be determined by other properties (e.g., column-count, if it has a non-auto value).",
-          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-width-auto",
-          "type": "value",
-          "value": "auto"
-        },
-        {
-          "name": "<length [0,∞]>",
-          "prose": "describes the optimal column width. The actual column width may be wider (to fill the available space), or narrower (only if the available space is smaller than the specified column width). Negative values are not allowed. Used values will be clamped to a minimum of 1px.",
-          "href": "https://drafts.csswg.org/css-multicol-2/#valdef-column-width-length-0",
-          "type": "value",
-          "value": "<length [0,∞]>"
-        }
-      ],
-      "styleDeclaration": [
-        "column-width",
-        "columnWidth"
-      ]
-    },
-    {
       "name": "column-height",
       "href": "https://drafts.csswg.org/css-multicol-2/#propdef-column-height",
       "value": "auto | <length [0,∞]>",

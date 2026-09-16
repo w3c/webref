@@ -138,6 +138,13 @@
     },
     {
       "spec": {
+        "title": "Web Install",
+        "url": "https://wicg.github.io/install-element/"
+      },
+      "fragment": "partial interface Navigator {\n  Promise<WebInstallResult> install();\n  Promise<WebInstallResult> install(InstallParams options);\n};"
+    },
+    {
+      "spec": {
         "title": "Early detection of input events",
         "url": "https://wicg.github.io/is-input-pending/"
       },

@@ -297,9 +297,71 @@
       "access": "public",
       "referencedBy": [
         {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        },
+        {
           "shortname": "WGSL",
           "title": "WebGPU Shading Language",
           "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubuffer-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-size",
+      "linkingText": [
+        "size"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubuffer-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpubuffer-destroy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "type": "method",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
         }
       ]
     },
@@ -2035,6 +2097,11 @@
           "shortname": "webxr-webgpu-binding",
           "title": "WebXR/WebGPU Binding Module - Level 1",
           "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+        },
+        {
+          "shortname": "webnn",
+          "title": "Web Neural Network API",
+          "url": "https://webmachinelearning.github.io/webnn/"
         }
       ]
     },
@@ -2359,6 +2426,25 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-subgroup-size-control",
       "linkingText": [
         "\"subgroup-size-control\""
+      ],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "WGSL",
+          "title": "WebGPU Shading Language",
+          "url": "https://gpuweb.github.io/gpuweb/wgsl/"
+        }
+      ]
+    },
+    {
+      "id": "dom-gpufeaturename-atomic-vec2u-min-max",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-atomic-vec2u-min-max",
+      "linkingText": [
+        "\"atomic-vec2u-min-max\""
       ],
       "type": "enum-value",
       "for": [

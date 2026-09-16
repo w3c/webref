@@ -7,7 +7,7 @@
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n};",
-    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattdescriptor"
+    "href": "https://bluetooth.spec.whatwg.org/#bluetoothremotegattdescriptor"
   },
   "extended": [],
   "inheritance": null,

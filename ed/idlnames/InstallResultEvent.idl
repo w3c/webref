@@ -1,0 +1,7 @@
+// Source: Web Install (https://wicg.github.io/install-element/)
+[Exposed=Window]
+interface InstallResultEvent : Event {
+  constructor(DOMString type,
+              optional InstallResultEventInit eventInitDict = {});
+  readonly attribute InstallResult result;
+};

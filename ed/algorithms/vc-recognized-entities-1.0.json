@@ -27,7 +27,7 @@
           "html": "Let <var>listReference</var> be the value of the <code>recognizedIn</code> property and let\n<var>listId</var> be its <code>id</code>."
         },
         {
-          "html": "Let <var>list</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-13\">recognized entity credential</a> identified by\n<var>listId</var>, obtained from <var>providedDocuments</var> if present and\nsufficiently fresh, or otherwise retrieved from <var>listId</var>."
+          "html": "Let <var>list</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-14\">recognized entity credential</a> identified by\n<var>listId</var>, obtained from <var>providedDocuments</var> if present and\nsufficiently fresh, or otherwise retrieved from <var>listId</var>."
         },
         {
           "html": "Verify the proof on <var>list</var>, confirm that it is currently valid, and\nconfirm that <var>issuerId</var> appears as the <code>id</code> of a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-9\">recognized entity</a>\nin the <code>credentialSubject</code> of <var>list</var>. If any check fails, return an\nerror."
@@ -60,7 +60,7 @@
           "html": "Verify the proof on <var>presentation</var> and confirm that it is bound to\n<var>issuerId</var>. If verification fails, return <var>result</var>."
         },
         {
-          "html": "Let <var>candidates</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-20\">recognized entity credentials</a> contained in\n<var>presentation</var> in which <var>issuerId</var> appears as the <code>id</code> of a\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-13\">recognized entity</a> in the <code>credentialSubject</code>. If <var>candidates</var> is\nempty, return <var>result</var>."
+          "html": "Let <var>candidates</var> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity-credential\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-credential-21\">recognized entity credentials</a> contained in\n<var>presentation</var> in which <var>issuerId</var> appears as the <code>id</code> of a\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-recognized-entities/#dfn-recognized-entity\" class=\"internalDFN\" id=\"ref-for-dfn-recognized-entity-13\">recognized entity</a> in the <code>credentialSubject</code>. If <var>candidates</var> is\nempty, return <var>result</var>."
         },
         {
           "html": "For each <var>list</var> in <var>candidates</var>, verify the proof on\n<var>list</var> and confirm that it is currently valid, discarding any\n<var>list</var> that fails either check."
