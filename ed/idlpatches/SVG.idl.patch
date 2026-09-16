@@ -1,21 +1,22 @@
-From 8f3ed1a11128229948e2fcad50d59a94fb267f61 Mon Sep 17 00:00:00 2001
+From 11a29c538c7b48419fa1cb3936f01bd7a2219f24 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Wed, 6 May 2026 09:18:20 +0200
-Subject: [PATCH] Fix IDL of SVG spec
+Date: Wed, 16 Sep 2026 10:10:49 +0200
+Subject: [PATCH] Patch IDL of SVG spec
 
-HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
+Prefer the `SVGPathElement` in SVG Paths, pending:
+https://github.com/w3c/svgwg/issues/824
 
-Also drop `SVGPathElement`, now that SVG Paths is also being crawled, pending
-clarification of status between SVG 2 and SVG Paths.
+Also drop the `hreflang` and `type` attributes for `SVGAElement`, pending:
+https://github.com/w3c/svgwg/pull/1108
 ---
- ed/idl/SVG.idl | 19 ++++++++++++++-----
- 1 file changed, 14 insertions(+), 5 deletions(-)
+ ed/idl/SVG.idl | 6 ------
+ 1 file changed, 6 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 6edd6cac38..e8e070bb6f 100644
+index 5c067c3644..ef4d5a7fd6 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -415,10 +415,6 @@ interface SVGAnimatedPreserveAspectRatio {
+@@ -411,10 +411,6 @@ interface SVGAnimatedPreserveAspectRatio {
    [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
  
@@ -26,27 +27,15 @@ index 6edd6cac38..e8e070bb6f 100644
  [Exposed=Window]
  interface SVGRectElement : SVGGeometryElement {
    [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -668,7 +664,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -657,8 +653,6 @@ interface SVGAElement : SVGGraphicsElement {
+   [Reflect] attribute USVString ping;
+   [Reflect] attribute DOMString rel;
+   [Reflect="rel", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
+-  [Reflect] attribute DOMString hreflang;
+-  [Reflect] attribute DOMString type;
+ 
+   attribute DOMString referrerPolicy;
  };
- 
- SVGAElement includes SVGURIReference;
--SVGAElement includes HTMLHyperlinkElementUtils;
-+
-+// Inline HTMLHyperlinkElementUtils except href, which conflicts.
-+partial interface SVGAElement {
-+  readonly attribute USVString origin;
-+  [CEReactions] attribute USVString protocol;
-+  [CEReactions] attribute USVString username;
-+  [CEReactions] attribute USVString password;
-+  [CEReactions] attribute USVString host;
-+  [CEReactions] attribute USVString hostname;
-+  [CEReactions] attribute USVString port;
-+  [CEReactions] attribute USVString pathname;
-+  [CEReactions] attribute USVString search;
-+  [CEReactions] attribute USVString hash;
-+};
- 
- [Exposed=Window]
- interface SVGViewElement : SVGElement {};
 -- 
-2.54.0
+2.55.0
+
