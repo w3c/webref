@@ -98,7 +98,12 @@ const supersededBy = {
 
   // CSS Gap Decorations supersedes CSS Multi-column layout
   // https://drafts.csswg.org/css-gaps-1/#color-style-width
-  'css-multicol': 'css-gaps',
+  // Same thing for the definition of column-width in CSS Sizing 3:
+  // https://drafts.csswg.org/css-sizing-3/#column-sizing
+  'css-multicol': [
+    'css-gaps',
+    'css-sizing'
+  ],
 
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
