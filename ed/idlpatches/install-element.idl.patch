@@ -1,0 +1,32 @@
+From 417b5fad23f485dabbf2c7a61079cf476b7f1031 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 16 Sep 2026 10:54:09 +0200
+Subject: [PATCH] Drop definition of `ActivationBlockersMixin` mixin
+
+The mixin is already defined in the Geolocation Element spec. The Install
+Element spec notes that the mixin would better be defined in a more generic
+spec, and perhaps in the Install Element spec itself in the end. Let's stick to
+the definition in the Geolocation Element spec while this gets sorted out.
+---
+ ed/idl/install-element.idl | 5 -----
+ 1 file changed, 5 deletions(-)
+
+diff --git a/ed/idl/install-element.idl b/ed/idl/install-element.idl
+index 7af451e032..b406bc8e28 100644
+--- a/ed/idl/install-element.idl
++++ b/ed/idl/install-element.idl
+@@ -24,11 +24,6 @@ interface HTMLInstallElement : HTMLElement {
+   attribute EventHandler oninstallresult;
+ };
+ 
+-interface mixin ActivationBlockersMixin {
+-  readonly attribute boolean isValid;
+-  readonly attribute DOMString invalidReason;
+-  attribute EventHandler onvalidationstatuschange;
+-};
+ HTMLInstallElement includes ActivationBlockersMixin;
+ 
+ enum InstallResult {
+-- 
+2.55.0
+
