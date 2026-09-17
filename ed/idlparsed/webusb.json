@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "WebUSB API",
-    "url": "https://wicg.github.io/webusb/"
+    "url": "https://usb.spec.whatwg.org/"
   },
   "idlparsed": {
     "jsNames": {
@@ -69,7 +69,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-vendorid"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-vendorid"
           },
           {
             "type": "field",
@@ -85,7 +85,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-productid"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-productid"
           },
           {
             "type": "field",
@@ -101,7 +101,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-classcode"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-classcode"
           },
           {
             "type": "field",
@@ -117,7 +117,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-subclasscode"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-subclasscode"
           },
           {
             "type": "field",
@@ -133,7 +133,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-protocolcode"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-protocolcode"
           },
           {
             "type": "field",
@@ -149,12 +149,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicefilter-serialnumber"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicefilter-serialnumber"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbdevicefilter"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbdevicefilter"
       },
       "USBDeviceRequestOptions": {
         "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters = [];\n};",
@@ -185,7 +185,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicerequestoptions-filters"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicerequestoptions-filters"
           },
           {
             "type": "field",
@@ -213,12 +213,12 @@
               "value": []
             },
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevicerequestoptions-exclusionfilters"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevicerequestoptions-exclusionfilters"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbdevicerequestoptions"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbdevicerequestoptions"
       },
       "USB": {
         "fragment": "[Exposed=(Worker,Window), SecureContext]\ninterface USB : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<USBDevice>> getDevices();\n  [Exposed=Window] Promise<USBDevice> requestDevice(USBDeviceRequestOptions options);\n};",
@@ -240,7 +240,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webusb/#dom-usb-onconnect"
+            "href": "https://usb.spec.whatwg.org/#dom-usb-onconnect"
           },
           {
             "type": "attribute",
@@ -256,7 +256,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webusb/#dom-usb-ondisconnect"
+            "href": "https://usb.spec.whatwg.org/#dom-usb-ondisconnect"
           },
           {
             "type": "operation",
@@ -290,7 +290,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usb-getdevices"
+            "href": "https://usb.spec.whatwg.org/#dom-usb-getdevices"
           },
           {
             "type": "operation",
@@ -342,7 +342,7 @@
               }
             ],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usb-requestdevice"
+            "href": "https://usb.spec.whatwg.org/#dom-usb-requestdevice"
           }
         ],
         "extAttrs": [
@@ -370,7 +370,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usb"
+        "href": "https://usb.spec.whatwg.org/#usb"
       },
       "USBConnectionEventInit": {
         "fragment": "dictionary USBConnectionEventInit : EventInit {\n    required USBDevice device;\n};",
@@ -392,12 +392,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbconnectioneventinit-device"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconnectioneventinit-device"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbconnectioneventinit"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbconnectioneventinit"
       },
       "USBConnectionEvent": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBConnectionEvent : Event {\n  constructor(DOMString type, USBConnectionEventInit eventInitDict);\n  [SameObject] readonly attribute USBDevice device;\n};",
@@ -442,7 +442,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbconnectionevent-usbconnectionevent"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconnectionevent-usbconnectionevent"
           },
           {
             "type": "attribute",
@@ -465,7 +465,7 @@
             ],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbconnectionevent-device"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconnectionevent-device"
           }
         ],
         "extAttrs": [
@@ -493,7 +493,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbconnectionevent"
+        "href": "https://usb.spec.whatwg.org/#usbconnectionevent"
       },
       "USBTransferStatus": {
         "fragment": "enum USBTransferStatus {\n  \"ok\",\n  \"stall\",\n  \"babble\"\n};",
@@ -503,21 +503,21 @@
           {
             "type": "enum-value",
             "value": "ok",
-            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-ok"
+            "href": "https://usb.spec.whatwg.org/#dom-usbtransferstatus-ok"
           },
           {
             "type": "enum-value",
             "value": "stall",
-            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-stall"
+            "href": "https://usb.spec.whatwg.org/#dom-usbtransferstatus-stall"
           },
           {
             "type": "enum-value",
             "value": "babble",
-            "href": "https://wicg.github.io/webusb/#dom-usbtransferstatus-babble"
+            "href": "https://usb.spec.whatwg.org/#dom-usbtransferstatus-babble"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webusb/#enumdef-usbtransferstatus"
+        "href": "https://usb.spec.whatwg.org/#enumdef-usbtransferstatus"
       },
       "USBInTransferResult": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBInTransferResult {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
@@ -562,7 +562,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-usbintransferresult"
+            "href": "https://usb.spec.whatwg.org/#dom-usbintransferresult-usbintransferresult"
           },
           {
             "type": "attribute",
@@ -578,7 +578,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-data"
+            "href": "https://usb.spec.whatwg.org/#dom-usbintransferresult-data"
           },
           {
             "type": "attribute",
@@ -594,7 +594,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbintransferresult-status"
+            "href": "https://usb.spec.whatwg.org/#dom-usbintransferresult-status"
           }
         ],
         "extAttrs": [
@@ -622,7 +622,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbintransferresult"
+        "href": "https://usb.spec.whatwg.org/#usbintransferresult"
       },
       "USBOutTransferResult": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBOutTransferResult {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
@@ -670,7 +670,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-usbouttransferresult"
+            "href": "https://usb.spec.whatwg.org/#dom-usbouttransferresult-usbouttransferresult"
           },
           {
             "type": "attribute",
@@ -686,7 +686,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-byteswritten"
+            "href": "https://usb.spec.whatwg.org/#dom-usbouttransferresult-byteswritten"
           },
           {
             "type": "attribute",
@@ -702,7 +702,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbouttransferresult-status"
+            "href": "https://usb.spec.whatwg.org/#dom-usbouttransferresult-status"
           }
         ],
         "extAttrs": [
@@ -730,7 +730,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbouttransferresult"
+        "href": "https://usb.spec.whatwg.org/#usbouttransferresult"
       },
       "USBIsochronousInTransferPacket": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
@@ -775,7 +775,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-usbisochronousintransferpacket"
           },
           {
             "type": "attribute",
@@ -791,7 +791,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-data"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-data"
           },
           {
             "type": "attribute",
@@ -807,7 +807,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferpacket-status"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferpacket-status"
           }
         ],
         "extAttrs": [
@@ -835,7 +835,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbisochronousintransferpacket"
+        "href": "https://usb.spec.whatwg.org/#usbisochronousintransferpacket"
       },
       "USBIsochronousInTransferResult": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferResult {\n  constructor(sequence<USBIsochronousInTransferPacket> packets, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute FrozenArray<USBIsochronousInTransferPacket> packets;\n};",
@@ -889,7 +889,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-usbisochronousintransferresult"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferresult-usbisochronousintransferresult"
           },
           {
             "type": "attribute",
@@ -905,7 +905,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-data"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferresult-data"
           },
           {
             "type": "attribute",
@@ -930,7 +930,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousintransferresult-packets"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousintransferresult-packets"
           }
         ],
         "extAttrs": [
@@ -958,7 +958,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbisochronousintransferresult"
+        "href": "https://usb.spec.whatwg.org/#usbisochronousintransferresult"
       },
       "USBIsochronousOutTransferPacket": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferPacket {\n  constructor(USBTransferStatus status, optional unsigned long bytesWritten = 0);\n  readonly attribute unsigned long bytesWritten;\n  readonly attribute USBTransferStatus status;\n};",
@@ -1006,7 +1006,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-usbisochronousouttransferpacket"
           },
           {
             "type": "attribute",
@@ -1022,7 +1022,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-byteswritten"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-byteswritten"
           },
           {
             "type": "attribute",
@@ -1038,7 +1038,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferpacket-status"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousouttransferpacket-status"
           }
         ],
         "extAttrs": [
@@ -1066,7 +1066,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbisochronousouttransferpacket"
+        "href": "https://usb.spec.whatwg.org/#usbisochronousouttransferpacket"
       },
       "USBIsochronousOutTransferResult": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBIsochronousOutTransferResult {\n  constructor(sequence<USBIsochronousOutTransferPacket> packets);\n  readonly attribute FrozenArray<USBIsochronousOutTransferPacket> packets;\n};",
@@ -1104,7 +1104,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferresult-usbisochronousouttransferresult"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousouttransferresult-usbisochronousouttransferresult"
           },
           {
             "type": "attribute",
@@ -1129,7 +1129,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbisochronousouttransferresult-packets"
+            "href": "https://usb.spec.whatwg.org/#dom-usbisochronousouttransferresult-packets"
           }
         ],
         "extAttrs": [
@@ -1157,7 +1157,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbisochronousouttransferresult"
+        "href": "https://usb.spec.whatwg.org/#usbisochronousouttransferresult"
       },
       "USBDevice": {
         "fragment": "[Exposed=(Worker,Window), SecureContext]\ninterface USBDevice {\n  readonly attribute octet usbVersionMajor;\n  readonly attribute octet usbVersionMinor;\n  readonly attribute octet usbVersionSubminor;\n  readonly attribute octet deviceClass;\n  readonly attribute octet deviceSubclass;\n  readonly attribute octet deviceProtocol;\n  readonly attribute unsigned short vendorId;\n  readonly attribute unsigned short productId;\n  readonly attribute octet deviceVersionMajor;\n  readonly attribute octet deviceVersionMinor;\n  readonly attribute octet deviceVersionSubminor;\n  readonly attribute DOMString? manufacturerName;\n  readonly attribute DOMString? productName;\n  readonly attribute DOMString? serialNumber;\n  readonly attribute USBConfiguration? configuration;\n  readonly attribute FrozenArray<USBConfiguration> configurations;\n  readonly attribute boolean opened;\n  Promise<undefined> open();\n  Promise<undefined> close();\n  Promise<undefined> forget();\n  Promise<undefined> selectConfiguration(octet configurationValue);\n  Promise<undefined> claimInterface(octet interfaceNumber);\n  Promise<undefined> releaseInterface(octet interfaceNumber);\n  Promise<undefined> selectAlternateInterface(octet interfaceNumber, octet alternateSetting);\n  Promise<USBInTransferResult> controlTransferIn(USBControlTransferParameters setup, unsigned short length);\n  Promise<USBOutTransferResult> controlTransferOut(USBControlTransferParameters setup, optional BufferSource data);\n  Promise<undefined> clearHalt(USBDirection direction, octet endpointNumber);\n  Promise<USBInTransferResult> transferIn(octet endpointNumber, unsigned long length);\n  Promise<USBOutTransferResult> transferOut(octet endpointNumber, BufferSource data);\n  Promise<USBIsochronousInTransferResult> isochronousTransferIn(octet endpointNumber, sequence<unsigned long> packetLengths);\n  Promise<USBIsochronousOutTransferResult> isochronousTransferOut(octet endpointNumber, BufferSource data, sequence<unsigned long> packetLengths);\n  Promise<undefined> reset();\n};",
@@ -1179,7 +1179,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionmajor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-usbversionmajor"
           },
           {
             "type": "attribute",
@@ -1195,7 +1195,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionminor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-usbversionminor"
           },
           {
             "type": "attribute",
@@ -1211,7 +1211,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-usbversionsubminor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-usbversionsubminor"
           },
           {
             "type": "attribute",
@@ -1227,7 +1227,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceclass"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-deviceclass"
           },
           {
             "type": "attribute",
@@ -1243,7 +1243,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-devicesubclass"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-devicesubclass"
           },
           {
             "type": "attribute",
@@ -1259,7 +1259,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceprotocol"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-deviceprotocol"
           },
           {
             "type": "attribute",
@@ -1275,7 +1275,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-vendorid"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-vendorid"
           },
           {
             "type": "attribute",
@@ -1291,7 +1291,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-productid"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-productid"
           },
           {
             "type": "attribute",
@@ -1307,7 +1307,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionmajor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-deviceversionmajor"
           },
           {
             "type": "attribute",
@@ -1323,7 +1323,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionminor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-deviceversionminor"
           },
           {
             "type": "attribute",
@@ -1339,7 +1339,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-deviceversionsubminor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-deviceversionsubminor"
           },
           {
             "type": "attribute",
@@ -1355,7 +1355,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-manufacturername"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-manufacturername"
           },
           {
             "type": "attribute",
@@ -1371,7 +1371,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-productname"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-productname"
           },
           {
             "type": "attribute",
@@ -1387,7 +1387,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-serialnumber"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-serialnumber"
           },
           {
             "type": "attribute",
@@ -1403,7 +1403,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-configuration"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-configuration"
           },
           {
             "type": "attribute",
@@ -1428,7 +1428,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-configurations"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-configurations"
           },
           {
             "type": "attribute",
@@ -1444,7 +1444,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-opened"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-opened"
           },
           {
             "type": "operation",
@@ -1469,7 +1469,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-open"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-open"
           },
           {
             "type": "operation",
@@ -1494,7 +1494,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-close"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-close"
           },
           {
             "type": "operation",
@@ -1519,7 +1519,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-forget"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-forget"
           },
           {
             "type": "operation",
@@ -1561,7 +1561,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-selectconfiguration"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-selectconfiguration"
           },
           {
             "type": "operation",
@@ -1603,7 +1603,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-claiminterface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-claiminterface"
           },
           {
             "type": "operation",
@@ -1645,7 +1645,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-releaseinterface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-releaseinterface"
           },
           {
             "type": "operation",
@@ -1703,7 +1703,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-selectalternateinterface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-selectalternateinterface"
           },
           {
             "type": "operation",
@@ -1761,7 +1761,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-controltransferin"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-controltransferin"
           },
           {
             "type": "operation",
@@ -1819,7 +1819,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-controltransferout"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-controltransferout"
           },
           {
             "type": "operation",
@@ -1877,7 +1877,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-clearhalt"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-clearhalt"
           },
           {
             "type": "operation",
@@ -1935,7 +1935,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-transferin"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-transferin"
           },
           {
             "type": "operation",
@@ -1993,7 +1993,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-transferout"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-transferout"
           },
           {
             "type": "operation",
@@ -2060,7 +2060,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-isochronoustransferin"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-isochronoustransferin"
           },
           {
             "type": "operation",
@@ -2143,7 +2143,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-isochronoustransferout"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-isochronoustransferout"
           },
           {
             "type": "operation",
@@ -2168,7 +2168,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webusb/#dom-usbdevice-reset"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdevice-reset"
           }
         ],
         "extAttrs": [
@@ -2196,7 +2196,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbdevice"
+        "href": "https://usb.spec.whatwg.org/#usbdevice"
       },
       "USBRequestType": {
         "fragment": "enum USBRequestType {\n  \"standard\",\n  \"class\",\n  \"vendor\"\n};",
@@ -2206,21 +2206,21 @@
           {
             "type": "enum-value",
             "value": "standard",
-            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-standard"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrequesttype-standard"
           },
           {
             "type": "enum-value",
             "value": "class",
-            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-class"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrequesttype-class"
           },
           {
             "type": "enum-value",
             "value": "vendor",
-            "href": "https://wicg.github.io/webusb/#dom-usbrequesttype-vendor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrequesttype-vendor"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webusb/#enumdef-usbrequesttype"
+        "href": "https://usb.spec.whatwg.org/#enumdef-usbrequesttype"
       },
       "USBRecipient": {
         "fragment": "enum USBRecipient {\n  \"device\",\n  \"interface\",\n  \"endpoint\",\n  \"other\"\n};",
@@ -2230,26 +2230,26 @@
           {
             "type": "enum-value",
             "value": "device",
-            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-device"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrecipient-device"
           },
           {
             "type": "enum-value",
             "value": "interface",
-            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-interface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrecipient-interface"
           },
           {
             "type": "enum-value",
             "value": "endpoint",
-            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-endpoint"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrecipient-endpoint"
           },
           {
             "type": "enum-value",
             "value": "other",
-            "href": "https://wicg.github.io/webusb/#dom-usbrecipient-other"
+            "href": "https://usb.spec.whatwg.org/#dom-usbrecipient-other"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webusb/#enumdef-usbrecipient"
+        "href": "https://usb.spec.whatwg.org/#enumdef-usbrecipient"
       },
       "USBControlTransferParameters": {
         "fragment": "dictionary USBControlTransferParameters {\n  required USBRequestType requestType;\n  required USBRecipient recipient;\n  required octet request;\n  required unsigned short value;\n  required unsigned short index;\n};",
@@ -2271,7 +2271,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-requesttype"
+            "href": "https://usb.spec.whatwg.org/#dom-usbcontroltransferparameters-requesttype"
           },
           {
             "type": "field",
@@ -2287,7 +2287,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-recipient"
+            "href": "https://usb.spec.whatwg.org/#dom-usbcontroltransferparameters-recipient"
           },
           {
             "type": "field",
@@ -2303,7 +2303,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-request"
+            "href": "https://usb.spec.whatwg.org/#dom-usbcontroltransferparameters-request"
           },
           {
             "type": "field",
@@ -2319,7 +2319,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-value"
+            "href": "https://usb.spec.whatwg.org/#dom-usbcontroltransferparameters-value"
           },
           {
             "type": "field",
@@ -2335,12 +2335,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbcontroltransferparameters-index"
+            "href": "https://usb.spec.whatwg.org/#dom-usbcontroltransferparameters-index"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbcontroltransferparameters"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbcontroltransferparameters"
       },
       "USBConfiguration": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBConfiguration {\n  constructor(USBDevice device, octet configurationValue);\n  readonly attribute octet configurationValue;\n  readonly attribute DOMString? configurationName;\n  readonly attribute FrozenArray<USBInterface> interfaces;\n};",
@@ -2385,7 +2385,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-usbconfiguration"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconfiguration-usbconfiguration"
           },
           {
             "type": "attribute",
@@ -2401,7 +2401,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationvalue"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconfiguration-configurationvalue"
           },
           {
             "type": "attribute",
@@ -2417,7 +2417,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-configurationname"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconfiguration-configurationname"
           },
           {
             "type": "attribute",
@@ -2442,7 +2442,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbconfiguration-interfaces"
+            "href": "https://usb.spec.whatwg.org/#dom-usbconfiguration-interfaces"
           }
         ],
         "extAttrs": [
@@ -2470,7 +2470,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbconfiguration"
+        "href": "https://usb.spec.whatwg.org/#usbconfiguration"
       },
       "USBInterface": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBInterface {\n  constructor(USBConfiguration configuration, octet interfaceNumber);\n  readonly attribute octet interfaceNumber;\n  readonly attribute USBAlternateInterface alternate;\n  readonly attribute FrozenArray<USBAlternateInterface> alternates;\n  readonly attribute boolean claimed;\n};",
@@ -2515,7 +2515,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbinterface-usbinterface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbinterface-usbinterface"
           },
           {
             "type": "attribute",
@@ -2531,7 +2531,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbinterface-interfacenumber"
+            "href": "https://usb.spec.whatwg.org/#dom-usbinterface-interfacenumber"
           },
           {
             "type": "attribute",
@@ -2547,7 +2547,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbinterface-alternate"
+            "href": "https://usb.spec.whatwg.org/#dom-usbinterface-alternate"
           },
           {
             "type": "attribute",
@@ -2572,7 +2572,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbinterface-alternates"
+            "href": "https://usb.spec.whatwg.org/#dom-usbinterface-alternates"
           },
           {
             "type": "attribute",
@@ -2588,7 +2588,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbinterface-claimed"
+            "href": "https://usb.spec.whatwg.org/#dom-usbinterface-claimed"
           }
         ],
         "extAttrs": [
@@ -2616,7 +2616,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbinterface"
+        "href": "https://usb.spec.whatwg.org/#usbinterface"
       },
       "USBAlternateInterface": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBAlternateInterface {\n  constructor(USBInterface deviceInterface, octet alternateSetting);\n  readonly attribute octet alternateSetting;\n  readonly attribute octet interfaceClass;\n  readonly attribute octet interfaceSubclass;\n  readonly attribute octet interfaceProtocol;\n  readonly attribute DOMString? interfaceName;\n  readonly attribute FrozenArray<USBEndpoint> endpoints;\n};",
@@ -2661,7 +2661,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-usbalternateinterface"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-usbalternateinterface"
           },
           {
             "type": "attribute",
@@ -2677,7 +2677,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-alternatesetting"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-alternatesetting"
           },
           {
             "type": "attribute",
@@ -2693,7 +2693,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceclass"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-interfaceclass"
           },
           {
             "type": "attribute",
@@ -2709,7 +2709,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacesubclass"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-interfacesubclass"
           },
           {
             "type": "attribute",
@@ -2725,7 +2725,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfaceprotocol"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-interfaceprotocol"
           },
           {
             "type": "attribute",
@@ -2741,7 +2741,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-interfacename"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-interfacename"
           },
           {
             "type": "attribute",
@@ -2766,7 +2766,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbalternateinterface-endpoints"
+            "href": "https://usb.spec.whatwg.org/#dom-usbalternateinterface-endpoints"
           }
         ],
         "extAttrs": [
@@ -2794,7 +2794,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbalternateinterface"
+        "href": "https://usb.spec.whatwg.org/#usbalternateinterface"
       },
       "USBDirection": {
         "fragment": "enum USBDirection {\n  \"in\",\n  \"out\"\n};",
@@ -2804,16 +2804,16 @@
           {
             "type": "enum-value",
             "value": "in",
-            "href": "https://wicg.github.io/webusb/#dom-usbdirection-in"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdirection-in"
           },
           {
             "type": "enum-value",
             "value": "out",
-            "href": "https://wicg.github.io/webusb/#dom-usbdirection-out"
+            "href": "https://usb.spec.whatwg.org/#dom-usbdirection-out"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webusb/#enumdef-usbdirection"
+        "href": "https://usb.spec.whatwg.org/#enumdef-usbdirection"
       },
       "USBEndpointType": {
         "fragment": "enum USBEndpointType {\n  \"bulk\",\n  \"interrupt\",\n  \"isochronous\"\n};",
@@ -2823,21 +2823,21 @@
           {
             "type": "enum-value",
             "value": "bulk",
-            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-bulk"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpointtype-bulk"
           },
           {
             "type": "enum-value",
             "value": "interrupt",
-            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-interrupt"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpointtype-interrupt"
           },
           {
             "type": "enum-value",
             "value": "isochronous",
-            "href": "https://wicg.github.io/webusb/#dom-usbendpointtype-isochronous"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpointtype-isochronous"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webusb/#enumdef-usbendpointtype"
+        "href": "https://usb.spec.whatwg.org/#enumdef-usbendpointtype"
       },
       "USBEndpoint": {
         "fragment": "[\n  Exposed=(Worker,Window),\n  SecureContext\n]\ninterface USBEndpoint {\n  constructor(USBAlternateInterface alternate, octet endpointNumber, USBDirection direction);\n  readonly attribute octet endpointNumber;\n  readonly attribute USBDirection direction;\n  readonly attribute USBEndpointType type;\n  readonly attribute unsigned long packetSize;\n};",
@@ -2898,7 +2898,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-usbendpoint"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpoint-usbendpoint"
           },
           {
             "type": "attribute",
@@ -2914,7 +2914,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-endpointnumber"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpoint-endpointnumber"
           },
           {
             "type": "attribute",
@@ -2930,7 +2930,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-direction"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpoint-direction"
           },
           {
             "type": "attribute",
@@ -2946,7 +2946,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-type"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpoint-type"
           },
           {
             "type": "attribute",
@@ -2962,7 +2962,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbendpoint-packetsize"
+            "href": "https://usb.spec.whatwg.org/#dom-usbendpoint-packetsize"
           }
         ],
         "extAttrs": [
@@ -2990,7 +2990,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbendpoint"
+        "href": "https://usb.spec.whatwg.org/#usbendpoint"
       },
       "USBBlocklistEntry": {
         "fragment": "// USBBlocklistEntry is never exposed.\ndictionary USBBlocklistEntry {\n  required unsigned short idVendor;\n  required unsigned short idProduct;\n  required unsigned short bcdDevice;\n};",
@@ -3012,7 +3012,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-idvendor"
+            "href": "https://usb.spec.whatwg.org/#dom-usbblocklistentry-idvendor"
           },
           {
             "type": "field",
@@ -3028,7 +3028,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-idproduct"
+            "href": "https://usb.spec.whatwg.org/#dom-usbblocklistentry-idproduct"
           },
           {
             "type": "field",
@@ -3044,12 +3044,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-usbblocklistentry-bcddevice"
+            "href": "https://usb.spec.whatwg.org/#dom-usbblocklistentry-bcddevice"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbblocklistentry"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbblocklistentry"
       },
       "USBPermissionDescriptor": {
         "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
@@ -3080,7 +3080,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbpermissiondescriptor-filters"
+            "href": "https://usb.spec.whatwg.org/#dom-usbpermissiondescriptor-filters"
           },
           {
             "type": "field",
@@ -3105,12 +3105,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbpermissiondescriptor-exclusionfilters"
+            "href": "https://usb.spec.whatwg.org/#dom-usbpermissiondescriptor-exclusionfilters"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbpermissiondescriptor"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbpermissiondescriptor"
       },
       "AllowedUSBDevice": {
         "fragment": "dictionary AllowedUSBDevice {\n  required octet vendorId;\n  required octet productId;\n  DOMString serialNumber;\n};",
@@ -3132,7 +3132,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-vendorid"
+            "href": "https://usb.spec.whatwg.org/#dom-allowedusbdevice-vendorid"
           },
           {
             "type": "field",
@@ -3148,7 +3148,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-productid"
+            "href": "https://usb.spec.whatwg.org/#dom-allowedusbdevice-productid"
           },
           {
             "type": "field",
@@ -3164,12 +3164,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-allowedusbdevice-serialnumber"
+            "href": "https://usb.spec.whatwg.org/#dom-allowedusbdevice-serialnumber"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-allowedusbdevice"
+        "href": "https://usb.spec.whatwg.org/#dictdef-allowedusbdevice"
       },
       "USBPermissionStorage": {
         "fragment": "dictionary USBPermissionStorage {\n  sequence<AllowedUSBDevice> allowedDevices = [];\n};",
@@ -3203,12 +3203,12 @@
               "value": []
             },
             "required": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbpermissionstorage-alloweddevices"
+            "href": "https://usb.spec.whatwg.org/#dom-usbpermissionstorage-alloweddevices"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#dictdef-usbpermissionstorage"
+        "href": "https://usb.spec.whatwg.org/#dictdef-usbpermissionstorage"
       },
       "USBPermissionResult": {
         "fragment": "[Exposed=(Worker,Window)]\ninterface USBPermissionResult : PermissionStatus {\n  attribute FrozenArray<USBDevice> devices;\n};",
@@ -3239,7 +3239,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webusb/#dom-usbpermissionresult-devices"
+            "href": "https://usb.spec.whatwg.org/#dom-usbpermissionresult-devices"
           }
         ],
         "extAttrs": [
@@ -3261,7 +3261,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webusb/#usbpermissionresult"
+        "href": "https://usb.spec.whatwg.org/#usbpermissionresult"
       }
     },
     "idlExtendedNames": {
@@ -3293,7 +3293,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://wicg.github.io/webusb/#dom-navigator-usb"
+              "href": "https://usb.spec.whatwg.org/#dom-navigator-usb"
             }
           ],
           "extAttrs": [
@@ -3344,7 +3344,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://wicg.github.io/webusb/#dom-workernavigator-usb"
+              "href": "https://usb.spec.whatwg.org/#dom-workernavigator-usb"
             }
           ],
           "extAttrs": [

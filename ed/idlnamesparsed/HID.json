@@ -7,7 +7,7 @@
       "url": "https://wicg.github.io/webhid/"
     },
     "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    [Exposed=Window] Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
-    "href": "https://wicg.github.io/webhid/#dom-hid"
+    "href": "https://hid.spec.whatwg.org/#dom-hid"
   },
   "extended": [],
   "inheritance": {

@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "WebHID API",
-    "url": "https://wicg.github.io/webhid/"
+    "url": "https://hid.spec.whatwg.org/"
   },
   "idlparsed": {
     "jsNames": {
@@ -57,7 +57,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webhid/#dom-hid-onconnect"
+            "href": "https://hid.spec.whatwg.org/#dom-hid-onconnect"
           },
           {
             "type": "attribute",
@@ -73,7 +73,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webhid/#dom-hid-ondisconnect"
+            "href": "https://hid.spec.whatwg.org/#dom-hid-ondisconnect"
           },
           {
             "type": "operation",
@@ -107,7 +107,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hid-getdevices"
+            "href": "https://hid.spec.whatwg.org/#dom-hid-getdevices"
           },
           {
             "type": "operation",
@@ -168,7 +168,7 @@
               }
             ],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hid-requestdevice"
+            "href": "https://hid.spec.whatwg.org/#dom-hid-requestdevice"
           }
         ],
         "extAttrs": [
@@ -199,7 +199,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hid"
+        "href": "https://hid.spec.whatwg.org/#dom-hid"
       },
       "HIDDeviceRequestOptions": {
         "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n    sequence<HIDDeviceFilter> exclusionFilters;\n};",
@@ -230,7 +230,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicerequestoptions-filters"
           },
           {
             "type": "field",
@@ -255,12 +255,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-exclusionfilters"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicerequestoptions-exclusionfilters"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions"
+        "href": "https://hid.spec.whatwg.org/#dom-hiddevicerequestoptions"
       },
       "HIDDeviceFilter": {
         "fragment": "dictionary HIDDeviceFilter {\n    unsigned long vendorId;\n    unsigned short productId;\n    unsigned short usagePage;\n    unsigned short usage;\n};",
@@ -282,7 +282,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicefilter-vendorid"
           },
           {
             "type": "field",
@@ -298,7 +298,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-productid"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicefilter-productid"
           },
           {
             "type": "field",
@@ -314,7 +314,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicefilter-usagepage"
           },
           {
             "type": "field",
@@ -330,12 +330,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usage"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevicefilter-usage"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter"
+        "href": "https://hid.spec.whatwg.org/#dom-hiddevicefilter"
       },
       "HIDDevice": {
         "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> forget();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
@@ -357,7 +357,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-oninputreport"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-oninputreport"
           },
           {
             "type": "attribute",
@@ -373,7 +373,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-opened"
           },
           {
             "type": "attribute",
@@ -389,7 +389,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-vendorid"
           },
           {
             "type": "attribute",
@@ -405,7 +405,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-productid"
           },
           {
             "type": "attribute",
@@ -421,7 +421,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-productname"
           },
           {
             "type": "attribute",
@@ -446,7 +446,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-collections"
           },
           {
             "type": "operation",
@@ -471,7 +471,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-open"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-open"
           },
           {
             "type": "operation",
@@ -496,7 +496,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-close"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-close"
           },
           {
             "type": "operation",
@@ -521,7 +521,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-forget"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-forget"
           },
           {
             "type": "operation",
@@ -586,7 +586,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendreport"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendreport"
           },
           {
             "type": "operation",
@@ -651,7 +651,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendfeaturereport"
           },
           {
             "type": "operation",
@@ -700,7 +700,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport"
+            "href": "https://hid.spec.whatwg.org/#dom-hiddevice-receivefeaturereport"
           }
         ],
         "extAttrs": [
@@ -731,7 +731,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hiddevice"
+        "href": "https://hid.spec.whatwg.org/#dom-hiddevice"
       },
       "HIDConnectionEvent": {
         "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
@@ -776,7 +776,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent-constructor"
+            "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-constructor"
           },
           {
             "type": "attribute",
@@ -799,7 +799,7 @@
             ],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent-device"
+            "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-device"
           }
         ],
         "extAttrs": [
@@ -830,7 +830,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidconnectionevent"
+        "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent"
       },
       "HIDConnectionEventInit": {
         "fragment": "dictionary HIDConnectionEventInit : EventInit {\n    required HIDDevice device;\n};",
@@ -852,12 +852,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit-device"
+            "href": "https://hid.spec.whatwg.org/#dom-hidconnectioneventinit-device"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit"
+        "href": "https://hid.spec.whatwg.org/#dom-hidconnectioneventinit"
       },
       "HIDInputReportEvent": {
         "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
@@ -902,7 +902,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-constructor"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-constructor"
           },
           {
             "type": "attribute",
@@ -925,7 +925,7 @@
             ],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-device"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-device"
           },
           {
             "type": "attribute",
@@ -941,7 +941,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-reportid"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-reportid"
           },
           {
             "type": "attribute",
@@ -957,7 +957,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent-data"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-data"
           }
         ],
         "extAttrs": [
@@ -988,7 +988,7 @@
           }
         ],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent"
+        "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent"
       },
       "HIDInputReportEventInit": {
         "fragment": "dictionary HIDInputReportEventInit : EventInit {\n    required HIDDevice device;\n    required octet reportId;\n    required DataView data;\n};",
@@ -1010,7 +1010,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-device"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreporteventinit-device"
           },
           {
             "type": "field",
@@ -1026,7 +1026,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-reportid"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreporteventinit-reportid"
           },
           {
             "type": "field",
@@ -1042,12 +1042,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-data"
+            "href": "https://hid.spec.whatwg.org/#dom-hidinputreporteventinit-data"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit"
+        "href": "https://hid.spec.whatwg.org/#dom-hidinputreporteventinit"
       },
       "HIDCollectionInfo": {
         "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
@@ -1069,7 +1069,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-usagepage"
           },
           {
             "type": "field",
@@ -1085,7 +1085,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-usage"
           },
           {
             "type": "field",
@@ -1101,7 +1101,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-type"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-type"
           },
           {
             "type": "field",
@@ -1126,7 +1126,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-children"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-children"
           },
           {
             "type": "field",
@@ -1151,7 +1151,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-inputreports"
           },
           {
             "type": "field",
@@ -1176,7 +1176,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-outputreports"
           },
           {
             "type": "field",
@@ -1201,12 +1201,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports"
+            "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo-featurereports"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo"
+        "href": "https://hid.spec.whatwg.org/#dom-hidcollectioninfo"
       },
       "HIDReportInfo": {
         "fragment": "dictionary HIDReportInfo {\n    octet reportId;\n    sequence<HIDReportItem> items;\n};",
@@ -1228,7 +1228,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportinfo-reportid"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportinfo-reportid"
           },
           {
             "type": "field",
@@ -1253,12 +1253,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportinfo-items"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportinfo-items"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidreportinfo"
+        "href": "https://hid.spec.whatwg.org/#dom-hidreportinfo"
       },
       "HIDReportItem": {
         "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
@@ -1280,7 +1280,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isabsolute"
           },
           {
             "type": "field",
@@ -1296,7 +1296,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isarray"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isarray"
           },
           {
             "type": "field",
@@ -1312,7 +1312,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isbufferedbytes"
           },
           {
             "type": "field",
@@ -1328,7 +1328,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isconstant"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isconstant"
           },
           {
             "type": "field",
@@ -1344,7 +1344,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-islinear"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-islinear"
           },
           {
             "type": "field",
@@ -1360,7 +1360,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isrange"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isrange"
           },
           {
             "type": "field",
@@ -1376,7 +1376,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-isvolatile"
           },
           {
             "type": "field",
@@ -1392,7 +1392,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-hasnull"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-hasnull"
           },
           {
             "type": "field",
@@ -1408,7 +1408,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-haspreferredstate"
           },
           {
             "type": "field",
@@ -1424,7 +1424,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-wrap"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-wrap"
           },
           {
             "type": "field",
@@ -1449,7 +1449,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usages"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-usages"
           },
           {
             "type": "field",
@@ -1465,7 +1465,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-usageminimum"
           },
           {
             "type": "field",
@@ -1481,7 +1481,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-usagemaximum"
           },
           {
             "type": "field",
@@ -1497,7 +1497,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportsize"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-reportsize"
           },
           {
             "type": "field",
@@ -1513,7 +1513,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportcount"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-reportcount"
           },
           {
             "type": "field",
@@ -1529,7 +1529,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitexponent"
           },
           {
             "type": "field",
@@ -1545,7 +1545,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitsystem"
           },
           {
             "type": "field",
@@ -1561,7 +1561,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactorlengthexponent"
           },
           {
             "type": "field",
@@ -1577,7 +1577,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactormassexponent"
           },
           {
             "type": "field",
@@ -1593,7 +1593,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactortimeexponent"
           },
           {
             "type": "field",
@@ -1609,7 +1609,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactortemperatureexponent"
           },
           {
             "type": "field",
@@ -1625,7 +1625,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactorcurrentexponent"
           },
           {
             "type": "field",
@@ -1641,7 +1641,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-unitfactorluminousintensityexponent"
           },
           {
             "type": "field",
@@ -1657,7 +1657,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-logicalminimum"
           },
           {
             "type": "field",
@@ -1673,7 +1673,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-logicalmaximum"
           },
           {
             "type": "field",
@@ -1689,7 +1689,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-physicalminimum"
           },
           {
             "type": "field",
@@ -1705,7 +1705,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-physicalmaximum"
           },
           {
             "type": "field",
@@ -1730,12 +1730,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://wicg.github.io/webhid/#dom-hidreportitem-strings"
+            "href": "https://hid.spec.whatwg.org/#dom-hidreportitem-strings"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://wicg.github.io/webhid/#dom-hidreportitem"
+        "href": "https://hid.spec.whatwg.org/#dom-hidreportitem"
       },
       "HIDUnitSystem": {
         "fragment": "enum HIDUnitSystem {\n    \"none\", \"si-linear\", \"si-rotation\", \"english-linear\",\n    \"english-rotation\", \"vendor-defined\", \"reserved\"\n};",
@@ -1745,41 +1745,41 @@
           {
             "type": "enum-value",
             "value": "none",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-none"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-none"
           },
           {
             "type": "enum-value",
             "value": "si-linear",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-linear"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-si-linear"
           },
           {
             "type": "enum-value",
             "value": "si-rotation",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-rotation"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-si-rotation"
           },
           {
             "type": "enum-value",
             "value": "english-linear",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-linear"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-english-linear"
           },
           {
             "type": "enum-value",
             "value": "english-rotation",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-rotation"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-english-rotation"
           },
           {
             "type": "enum-value",
             "value": "vendor-defined",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-vendor-defined"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-vendor-defined"
           },
           {
             "type": "enum-value",
             "value": "reserved",
-            "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-reserved"
+            "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-reserved"
           }
         ],
         "extAttrs": [],
-        "href": "https://wicg.github.io/webhid/#dom-hidunitsystem"
+        "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem"
       }
     },
     "idlExtendedNames": {
@@ -1811,7 +1811,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://wicg.github.io/webhid/#dom-navigator-hid"
+              "href": "https://hid.spec.whatwg.org/#dom-navigator-hid"
             }
           ],
           "extAttrs": [
@@ -1853,7 +1853,7 @@
               ],
               "special": "",
               "readonly": true,
-              "href": "https://wicg.github.io/webhid/#dom-workernavigator-hid"
+              "href": "https://hid.spec.whatwg.org/#dom-workernavigator-hid"
             }
           ],
           "extAttrs": [

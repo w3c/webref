@@ -1566,6 +1566,24 @@
   {
     "src": {
       "format": "fire an event phrasing",
+      "href": "https://serial.spec.whatwg.org/#onconnect-attribute-0"
+    },
+    "href": "https://serial.spec.whatwg.org/#dfn-connect",
+    "type": "connect",
+    "targets": [
+      {
+        "target": "SerialPort",
+        "bubbles": true,
+        "bubblingPath": [
+          "Serial"
+        ]
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
       "href": "https://w3c.github.io/presentation-api/#ref-for-index-term-fire-an-event-6"
     },
     "href": "https://w3c.github.io/presentation-api/#dfn-connect",
@@ -1594,27 +1612,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/serial/#onconnect-attribute-0"
+      "href": "https://hid.spec.whatwg.org/#hid-interface"
     },
-    "href": "https://wicg.github.io/serial/#dfn-connect",
-    "type": "connect",
-    "targets": [
-      {
-        "target": "SerialPort",
-        "bubbles": true,
-        "bubblingPath": [
-          "Serial"
-        ]
-      }
-    ],
-    "interface": "Event"
-  },
-  {
-    "src": {
-      "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/webhid/#hid-interface"
-    },
-    "href": "https://wicg.github.io/webhid/#dfn-connect",
+    "href": "https://hid.spec.whatwg.org/#dfn-connect",
     "type": "connect",
     "targets": [
       {
@@ -1640,9 +1640,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/webusb/#ref-for-concept-event-fire"
+      "href": "https://usb.spec.whatwg.org/#ref-for-concept-event-fire"
     },
-    "href": "https://wicg.github.io/webusb/#connect",
+    "href": "https://usb.spec.whatwg.org/#connect",
     "type": "connect",
     "targets": [
       {
@@ -2168,23 +2168,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://w3c.github.io/remote-playback/#establishing-a-connection-with-a-remote-playback-device"
+      "href": "https://serial.spec.whatwg.org/#ondisconnect-attribute-0"
     },
-    "href": "https://w3c.github.io/remote-playback/#dfn-disconnect",
-    "type": "disconnect",
-    "targets": [
-      {
-        "target": "RemotePlayback"
-      }
-    ],
-    "interface": "Event"
-  },
-  {
-    "src": {
-      "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/serial/#ondisconnect-attribute-0"
-    },
-    "href": "https://wicg.github.io/serial/#dfn-disconnect",
+    "href": "https://serial.spec.whatwg.org/#dfn-disconnect",
     "type": "disconnect",
     "targets": [
       {
@@ -2200,9 +2186,23 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/webhid/#hid-interface"
+      "href": "https://w3c.github.io/remote-playback/#establishing-a-connection-with-a-remote-playback-device"
     },
-    "href": "https://wicg.github.io/webhid/#dfn-disconnect",
+    "href": "https://w3c.github.io/remote-playback/#dfn-disconnect",
+    "type": "disconnect",
+    "targets": [
+      {
+        "target": "RemotePlayback"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://hid.spec.whatwg.org/#hid-interface"
+    },
+    "href": "https://hid.spec.whatwg.org/#dfn-disconnect",
     "type": "disconnect",
     "targets": [
       {
@@ -2214,9 +2214,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/webusb/#ref-for-concept-event-fire%E2%91%A0"
+      "href": "https://usb.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A0"
     },
-    "href": "https://wicg.github.io/webusb/#disconnect",
+    "href": "https://usb.spec.whatwg.org/#disconnect",
     "type": "disconnect",
     "targets": [
       {
@@ -3707,9 +3707,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://wicg.github.io/webhid/#hiddevice-interface"
+      "href": "https://hid.spec.whatwg.org/#hiddevice-interface"
     },
-    "href": "https://wicg.github.io/webhid/#dfn-inputreport",
+    "href": "https://hid.spec.whatwg.org/#dfn-inputreport",
     "type": "inputreport",
     "targets": [
       {
