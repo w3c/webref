@@ -533,6 +533,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
+  emulation.SetTextLayoutModeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult /
@@ -560,6 +561,8 @@ emulation.SetViewportMetaOverrideResult = EmptyResult
 emulation.SetScriptingEnabledResult = EmptyResult
 
 emulation.SetScrollbarTypeOverrideResult = EmptyResult
+
+emulation.SetTextLayoutModeOverrideResult = EmptyResult
 
 emulation.SetTimezoneOverrideResult = EmptyResult
 
@@ -1893,6 +1896,7 @@ browsingContext.StartScreencast = (
 
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
+  ? destinationFolder: text,
   ? mimeType: text,
   ? video: browsingContext.MediaTrackConstraints,
   ? audio: bool .default false,
@@ -1935,6 +1939,7 @@ EmulationCommand = (
   emulation.SetScreenSettingsOverride //
   emulation.SetScriptingEnabled //
   emulation.SetScrollbarTypeOverride //
+  emulation.SetTextLayoutModeOverride //
   emulation.SetTimezoneOverride //
   emulation.SetTouchOverride //
   emulation.SetUserAgentOverride //
@@ -2131,6 +2136,19 @@ emulation.SetScrollbarTypeOverrideParameters = {
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
+
+emulation.SetTextLayoutModeOverride = (
+  method: "emulation.setTextLayoutModeOverride",
+  params: emulation.SetTextLayoutModeOverrideParameters
+)
+
+emulation.SetTextLayoutModeOverrideParameters = {
+  textLayoutMode: emulation.TextLayoutMode / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.TextLayoutMode = "mobile"
 
 emulation.SetTimezoneOverride = (
   method: "emulation.setTimezoneOverride",
@@ -3678,6 +3696,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetScrollbarTypeOverrideResult /
+  emulation.SetTextLayoutModeOverrideResult /
   emulation.SetTimezoneOverrideResult /
   emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult /
@@ -3705,6 +3724,8 @@ emulation.SetViewportMetaOverrideResult = EmptyResult
 emulation.SetScriptingEnabledResult = EmptyResult
 
 emulation.SetScrollbarTypeOverrideResult = EmptyResult
+
+emulation.SetTextLayoutModeOverrideResult = EmptyResult
 
 emulation.SetTimezoneOverrideResult = EmptyResult
 
