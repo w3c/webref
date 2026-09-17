@@ -51,9 +51,9 @@
       "id": "what-is",
       "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#what-is",
       "level": 3,
-      "title": "What is profiling?",
+      "title": "What is SHACL profiling?",
       "alternateIds": [
-        "x1-1-what-is-profiling"
+        "x1-1-what-is-shacl-profiling"
       ],
       "number": "1.1"
     },
@@ -170,22 +170,22 @@
     {
       "id": "dependencies",
       "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#dependencies",
-      "level": 3,
+      "level": 4,
       "title": "Calculating Dependencies",
       "alternateIds": [
-        "x2-7-calculating-dependencies"
+        "x2-6-1-calculating-dependencies"
       ],
-      "number": "2.7"
+      "number": "2.6.1"
     },
     {
-      "id": "indicating-validity",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#indicating-validity",
+      "id": "persisting-validation",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#persisting-validation",
       "level": 3,
-      "title": "Indicating Validity",
+      "title": "Persisting validation results",
       "alternateIds": [
-        "x2-8-indicating-validity"
+        "x2-7-persisting-validation-results"
       ],
-      "number": "2.8"
+      "number": "2.7"
     },
     {
       "id": "profiling-of-shacl",
@@ -248,34 +248,64 @@
       "number": "4"
     },
     {
+      "id": "profiling-with-shacl-intro",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profiling-with-shacl-intro",
+      "level": 3,
+      "title": "Introduction",
+      "alternateIds": [
+        "x4-1-introduction"
+      ],
+      "number": "4.1"
+    },
+    {
       "id": "profiling-specifications",
       "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profiling-specifications",
       "level": 3,
       "title": "Profiling Specifications",
       "alternateIds": [
-        "x4-1-profiling-specifications"
+        "x4-2-profiling-specifications"
       ],
-      "number": "4.1"
+      "number": "4.2"
     },
     {
-      "id": "characterizing-the-profiling-situation",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#characterizing-the-profiling-situation",
+      "id": "characterization",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#characterization",
       "level": 4,
-      "title": "Characterizing the profiling situation",
+      "title": "Characterization",
       "alternateIds": [
-        "x4-1-1-characterizing-the-profiling-situation"
+        "x4-2-1-characterization"
       ],
-      "number": "4.1.1"
+      "number": "4.2.1"
     },
     {
-      "id": "implications-for-data",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#implications-for-data",
+      "id": "reasoning",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#reasoning",
       "level": 4,
-      "title": "Implications for data",
+      "title": "Reasoning",
       "alternateIds": [
-        "x4-1-2-implications-for-data"
+        "x4-2-2-reasoning"
       ],
-      "number": "4.1.2"
+      "number": "4.2.2"
+    },
+    {
+      "id": "hierarchies",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#hierarchies",
+      "level": 4,
+      "title": "Profile Hierarchies",
+      "alternateIds": [
+        "x4-2-3-profile-hierarchies"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "null-profiles",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#null-profiles",
+      "level": 4,
+      "title": "Creating Null Profiles",
+      "alternateIds": [
+        "x4-2-4-creating-null-profiles"
+      ],
+      "number": "4.2.4"
     },
     {
       "id": "profiling-data",
@@ -283,39 +313,9 @@
       "level": 3,
       "title": "Profiling Data",
       "alternateIds": [
-        "x4-2-profiling-data"
-      ],
-      "number": "4.2"
-    },
-    {
-      "id": "profile-parts",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profile-parts",
-      "level": 3,
-      "title": "Profile Part Roles",
-      "alternateIds": [
-        "x4-3-profile-part-roles"
+        "x4-3-profiling-data"
       ],
       "number": "4.3"
-    },
-    {
-      "id": "hierarchies",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#hierarchies",
-      "level": 3,
-      "title": "Profile Hierarchies",
-      "alternateIds": [
-        "x4-4-profile-hierarchies"
-      ],
-      "number": "4.4"
-    },
-    {
-      "id": "null-profiles",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#null-profiles",
-      "level": 3,
-      "title": "Creating Null Profiles",
-      "alternateIds": [
-        "x4-5-creating-null-profiles"
-      ],
-      "number": "4.5"
     },
     {
       "id": "vocabulary",
@@ -388,14 +388,34 @@
       "number": "5.3"
     },
     {
-      "id": "prop-usedshapesgraph",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedshapesgraph",
+      "id": "prop-conforms",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms",
       "level": 4,
-      "title": "Property: used shapes graph",
+      "title": "Property: conforms",
       "alternateIds": [
-        "x5-3-1-property-used-shapes-graph"
+        "x5-3-1-property-conforms"
       ],
       "number": "5.3.1"
+    },
+    {
+      "id": "cls-validationagent",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-validationagent",
+      "level": 3,
+      "title": "Class: Validation Agent",
+      "alternateIds": [
+        "x5-4-class-validation-agent"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "cls-validationactivity",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-validationactivity",
+      "level": 3,
+      "title": "Class: Validation Activity",
+      "alternateIds": [
+        "x5-5-class-validation-activity"
+      ],
+      "number": "5.5"
     },
     {
       "id": "prop-useddatagraph",
@@ -403,39 +423,39 @@
       "level": 4,
       "title": "Property: used data graph",
       "alternateIds": [
-        "x5-3-2-property-used-data-graph"
+        "x5-5-1-property-used-data-graph"
       ],
-      "number": "5.3.2"
+      "number": "5.5.1"
     },
     {
-      "id": "prop-usedconfiguration",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedconfiguration",
+      "id": "prop-usedShapesGraph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedShapesGraph",
       "level": 4,
-      "title": "Property: used configuration",
+      "title": "Property: used shapes graph",
       "alternateIds": [
-        "x5-3-3-property-used-configuration"
+        "x5-5-2-property-used-shapes-graph"
       ],
-      "number": "5.3.3"
+      "number": "5.5.2"
     },
     {
-      "id": "prop-conforms",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms",
+      "id": "prop-generated",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-generated",
       "level": 4,
-      "title": "Property: conforms",
+      "title": "Property: generated",
       "alternateIds": [
-        "x5-3-4-property-conforms"
+        "x5-5-3-property-generated"
       ],
-      "number": "5.3.4"
+      "number": "5.5.3"
     },
     {
-      "id": "cls-processorconfiguration",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-processorconfiguration",
-      "level": 3,
-      "title": "Class: Processor Configuration",
+      "id": "prop-wasassociatedwith",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-wasassociatedwith",
+      "level": 4,
+      "title": "Property: was associated with",
       "alternateIds": [
-        "x5-4-class-processor-configuration"
+        "x5-5-4-property-was-associated-with"
       ],
-      "number": "5.4"
+      "number": "5.5.4"
     },
     {
       "id": "cls-shape",
@@ -443,9 +463,9 @@
       "level": 3,
       "title": "Class: Shape",
       "alternateIds": [
-        "x5-5-class-shape"
+        "x5-6-class-shape"
       ],
-      "number": "5.5"
+      "number": "5.6"
     },
     {
       "id": "prop-isdefinedby",
@@ -453,9 +473,9 @@
       "level": 4,
       "title": "Property: is defined by",
       "alternateIds": [
-        "x5-5-1-property-is-defined-by"
+        "x5-6-1-property-is-defined-by"
       ],
-      "number": "5.5.1"
+      "number": "5.6.1"
     },
     {
       "id": "rule-conformstoshapesgraph",
@@ -463,9 +483,9 @@
       "level": 3,
       "title": "Rule: conforms to shapes graph",
       "alternateIds": [
-        "x5-6-rule-conforms-to-shapes-graph"
+        "x5-7-rule-conforms-to-shapes-graph"
       ],
-      "number": "5.6"
+      "number": "5.7"
     },
     {
       "id": "rule-conformstospecification",
@@ -473,9 +493,49 @@
       "level": 3,
       "title": "Rule: conforms to specification",
       "alternateIds": [
-        "x5-7-rule-conforms-to-specification"
+        "x5-8-rule-conforms-to-specification"
       ],
-      "number": "5.7"
+      "number": "5.8"
+    },
+    {
+      "id": "alignments",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#alignments",
+      "level": 3,
+      "title": "Alignments",
+      "alternateIds": [
+        "x5-9-alignments"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "prov-o-alignment",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prov-o-alignment",
+      "level": 4,
+      "title": "PROV-O Alignment",
+      "alternateIds": [
+        "x5-9-1-prov-o-alignment"
+      ],
+      "number": "5.9.1"
+    },
+    {
+      "id": "unresolved-issues",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#unresolved-issues",
+      "level": 2,
+      "title": "Unresolved Issues",
+      "alternateIds": [
+        "x6-unresolved-issues"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "administrative",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#administrative",
+      "level": 3,
+      "title": "Administrative",
+      "alternateIds": [
+        "x6-1-administrative"
+      ],
+      "number": "6.1"
     },
     {
       "id": "profiles",
