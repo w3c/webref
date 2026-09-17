@@ -1,0 +1,6 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+[Exposed=Window, SecureContext]
+interface ToolActivatedEvent : Event {
+  constructor(DOMString type, optional ToolActivatedEventInit eventInitDict = {});
+  readonly attribute DOMString toolName;
+};

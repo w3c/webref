@@ -1,0 +1,6 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+[Exposed=Window, SecureContext]
+interface ToolCancelEvent : Event {
+  constructor(DOMString type, optional ToolCancelEventInit eventInitDict = {});
+  readonly attribute DOMString toolName;
+};

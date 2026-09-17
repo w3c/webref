@@ -5,7 +5,12 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "ToolActivatedEvent",
+          "ToolCancelEvent"
+        ]
+      },
       "functions": {
         "Window": [
           "ModelContext"
@@ -14,7 +19,7 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n  Promise<DOMString> executeTool(RegisteredTool tool, optional any inputObject, optional ModelContextExecuteToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n  Promise<sequence<RegisteredTool>> getTools(optional ModelContextGetToolOptions options = {});\n  Promise<DOMString> executeTool(RegisteredTool tool, optional any inputObject, optional ModelContextExecuteToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n  attribute EventHandler ontoolactivated;\n  attribute EventHandler ontoolcancel;\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": "EventTarget",
@@ -223,6 +228,38 @@
             "special": "",
             "readonly": false,
             "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-ontoolchange"
+          },
+          {
+            "type": "attribute",
+            "name": "ontoolactivated",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-ontoolactivated"
+          },
+          {
+            "type": "attribute",
+            "name": "ontoolcancel",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-ontoolcancel"
           }
         ],
         "extAttrs": [
@@ -761,6 +798,234 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-registeredtool"
+      },
+      "ToolActivatedEvent": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ToolActivatedEvent : Event {\n  constructor(DOMString type, optional ToolActivatedEventInit eventInitDict = {});\n  readonly attribute DOMString toolName;\n};",
+        "type": "interface",
+        "name": "ToolActivatedEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ToolActivatedEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolactivatedevent-toolactivatedevent"
+          },
+          {
+            "type": "attribute",
+            "name": "toolName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolactivatedevent-toolname"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#toolactivatedevent"
+      },
+      "ToolActivatedEventInit": {
+        "fragment": "dictionary ToolActivatedEventInit : EventInit {\n  DOMString toolName = \"\";\n};",
+        "type": "dictionary",
+        "name": "ToolActivatedEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "toolName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolactivatedeventinit-toolname"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolactivatedeventinit"
+      },
+      "ToolCancelEvent": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ToolCancelEvent : Event {\n  constructor(DOMString type, optional ToolCancelEventInit eventInitDict = {});\n  readonly attribute DOMString toolName;\n};",
+        "type": "interface",
+        "name": "ToolCancelEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ToolCancelEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolcancelevent-toolcancelevent"
+          },
+          {
+            "type": "attribute",
+            "name": "toolName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolcancelevent-toolname"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#toolcancelevent"
+      },
+      "ToolCancelEventInit": {
+        "fragment": "dictionary ToolCancelEventInit : EventInit {\n  DOMString toolName = \"\";\n};",
+        "type": "dictionary",
+        "name": "ToolCancelEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "toolName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolcanceleventinit-toolname"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolcanceleventinit"
       }
     },
     "idlExtendedNames": {
@@ -809,7 +1074,9 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "ModelContext"
+        "ModelContext",
+        "ToolActivatedEvent",
+        "ToolCancelEvent"
       ]
     },
     "dependencies": {
@@ -843,6 +1110,20 @@
       "RegisteredTool": [
         "Window",
         "ToolAnnotations"
+      ],
+      "ToolActivatedEvent": [
+        "Event",
+        "ToolActivatedEventInit"
+      ],
+      "ToolActivatedEventInit": [
+        "EventInit"
+      ],
+      "ToolCancelEvent": [
+        "Event",
+        "ToolCancelEventInit"
+      ],
+      "ToolCancelEventInit": [
+        "EventInit"
       ]
     },
     "externalDependencies": [
@@ -850,7 +1131,9 @@
       "EventTarget",
       "EventHandler",
       "AbortSignal",
-      "Window"
+      "Window",
+      "Event",
+      "EventInit"
     ],
     "hasObsoleteIdl": false
   }

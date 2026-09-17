@@ -6,4 +6,6 @@ interface ModelContext : EventTarget {
   Promise<DOMString> executeTool(RegisteredTool tool, optional any inputObject, optional ModelContextExecuteToolOptions options = {});
 
   attribute EventHandler ontoolchange;
+  attribute EventHandler ontoolactivated;
+  attribute EventHandler ontoolcancel;
 };
