@@ -20862,6 +20862,20 @@
       ]
     },
     {
+      "name": "fire a focus event",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#fire-a-focus-event",
+      "html": "To <dfn id=\"fire-a-focus-event\">fire a focus event</dfn> named <var>e</var> at an element or a <code id=\"focus-processing-model:window\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code>\n  object <var>target</var> given a related target <var>relatedTarget</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>view</var> be <var>target</var> if <var>target</var> is a <code id=\"focus-processing-model:window-2\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code>\n   object; otherwise <var>target</var>'s <a id=\"focus-processing-model:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a id=\"focus-processing-model:concept-relevant-global-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"focus-processing-model:concept-event-fire-2\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <var>e</var> at\n   <var>target</var>, using <code id=\"focus-processing-model:focusevent\"><a data-x-internal=\"focusevent\" href=\"https://w3c.github.io/uievents/#focusevent\">FocusEvent</a></code>, with the <code id=\"focus-processing-model:dom-focusevent-relatedtarget\"><a data-x-internal=\"dom-focusevent-relatedtarget\" href=\"https://w3c.github.io/uievents/#dom-focusevent-relatedtarget\">relatedTarget</a></code> attribute initialized to\n   <var>relatedTarget</var>, the <code id=\"focus-processing-model:dom-uievent-view\"><a data-x-internal=\"dom-uievent-view\" href=\"https://w3c.github.io/uievents/#dom-uievent-view\">view</a></code> attribute initialized\n   to <var>view</var>, and the <a id=\"focus-processing-model:composed-flag\" href=\"https://dom.spec.whatwg.org/#composed-flag\" data-x-internal=\"composed-flag\">composed flag</a> set.</p>"
+        }
+      ]
+    },
+    {
       "html": "When a key event is to be routed in a <a id=\"focus-processing-model:top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>, the user agent must\n  run the following steps:",
       "rationale": "let",
       "steps": [
