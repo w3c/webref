@@ -3161,6 +3161,23 @@
       ]
     },
     {
+      "name": "Request Soft Update",
+      "href": "https://w3c.github.io/ServiceWorker/#request-soft-update",
+      "html": "This algorithm allows other specifications to request that the user agent check a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑤④\">service worker registration</a> for updates.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①①\">storage key</a> is not <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal⑤\">equal</a> to <var>requestingStorageKey</var>, return.</p>"
+        },
+        {
+          "html": "<p>If the user agent decides to limit the frequency of update checks for <var>registration</var>, return.</p>"
+        },
+        {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update①\">Soft Update</a> algorithm with <var>registration</var> and <var>forceBypassCache</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "Install",
       "href": "https://w3c.github.io/ServiceWorker/#install",
       "rationale": ".algorithm",
@@ -3278,7 +3295,7 @@
               "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#update-registration-state\" id=\"ref-for-update-registration-state①\">Update Registration State</a> algorithm passing <var>registration</var>, \"<code>installing</code>\" and null as the arguments.</p>"
             },
             {
-              "html": "<p>If <var>newestWorker</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove③\">remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑥\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①①\">storage key</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①②\">serialized</a> <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑥\">scope url</a>)].</p>"
+              "html": "<p>If <var>newestWorker</var> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove③\">remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑥\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①②\">storage key</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①②\">serialized</a> <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑥\">scope url</a>)].</p>"
             },
             {
               "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#finish-job\" id=\"ref-for-finish-job⑨\">Finish Job</a> with <var>job</var> and abort these steps.</p>"
@@ -3362,7 +3379,7 @@
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#update-worker-state\" id=\"ref-for-update-worker-state⑥\">Update Worker State</a> algorithm passing <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker②⑤\">active worker</a> and \"<code>activating</code>\" as the arguments.</p>"
         },
         {
-          "html": "<p>Let <var>matchedClients</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client④⓪\">service worker clients</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url⑦\">creation URL</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#match-service-worker-registration\" id=\"ref-for-match-service-worker-registration⑥\">matches</a> <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①②\">storage key</a> and <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑦\">scope url</a>.</p>"
+          "html": "<p>Let <var>matchedClients</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-client\" id=\"ref-for-dfn-service-worker-client④⓪\">service worker clients</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-creation-url\" id=\"ref-for-concept-environment-creation-url⑦\">creation URL</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#match-service-worker-registration\" id=\"ref-for-match-service-worker-registration⑥\">matches</a> <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①③\">storage key</a> and <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑦\">scope url</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>client</var> of <var>matchedClients</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④③\">queue a task</a> on <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop②⑧\">responsible event loop</a>, using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③④\">DOM manipulation task source</a>, to run the following substeps:",
@@ -3855,7 +3872,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③③\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update①\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③③\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update②\">Soft Update</a> algorithm with <var>registration</var>.</p>"
                     },
                     {
                       "html": "<p>Return <var>timingInfo</var>.</p>"
@@ -3867,7 +3884,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③④\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update②\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③④\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update③\">Soft Update</a> algorithm with <var>registration</var>.</p>"
                     },
                     {
                       "html": "<p>Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-cache-lookup-start\" id=\"ref-for-service-worker-timing-info-worker-cache-lookup-start\">worker cache lookup start</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-coarsened-shared-current-time\" id=\"ref-for-dfn-coarsened-shared-current-time①\">coarsened shared current time</a> given <var>useHighResPerformanceTimers</var>.</p>"
@@ -3960,7 +3977,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑤\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update③\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+                      "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③⑤\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update④\">Soft Update</a> algorithm with <var>registration</var>.</p>"
                     },
                     {
                       "html": "<p>Let <var>queue</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue\" id=\"ref-for-queue①\">queue</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-race-result\" id=\"ref-for-dfn-race-result②\">race result</a>.</p>"
@@ -4274,7 +4291,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④⓪\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update④\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+              "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④⓪\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑤\">Soft Update</a> algorithm with <var>registration</var>.</p>"
             },
             {
               "html": "<p>Return null.</p>"
@@ -4296,7 +4313,7 @@
                   "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#run-service-worker\" id=\"ref-for-run-service-worker⑦\">Run Service Worker</a> algorithm with <var>activeWorker</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>shouldSoftUpdate</var> is true, then run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑤\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+                  "html": "<p>If <var>shouldSoftUpdate</var> is true, then run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑥\">Soft Update</a> algorithm with <var>registration</var>.</p>"
                 }
               ]
             },
@@ -4432,7 +4449,7 @@
           "html": "<p>Wait for <var>task</var> to have executed or for <var>handleFetchFailed</var> to be true.</p>"
         },
         {
-          "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④②\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑥\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+          "html": "<p>If <var>shouldSoftUpdate</var> is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④②\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑦\">Soft Update</a> algorithm with <var>registration</var>.</p>"
         },
         {
           "html": "<p>If <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object\" id=\"ref-for-dfn-service-worker-global-object①⑥\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-race-response-map\" id=\"ref-for-serviceworkerglobalscope-race-response-map①\">race response map</a>[<var>request</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑤\">remove</a> <var>activeWorker</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-global-object\" id=\"ref-for-dfn-service-worker-global-object①⑦\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-race-response-map\" id=\"ref-for-serviceworkerglobalscope-race-response-map②\">race response map</a>[<var>request</var>].</p>"
@@ -4861,7 +4878,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑤\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④③\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑦\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+              "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑤\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④③\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑧\">Soft Update</a> algorithm with <var>registration</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -4876,7 +4893,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑥\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④④\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑧\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+              "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑥\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④④\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑨\">Soft Update</a> algorithm with <var>registration</var>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -4908,7 +4925,7 @@
           "html": "<p>Wait for <var>task</var> to have executed or been discarded.</p>"
         },
         {
-          "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑦\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④⑤\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update⑨\">Soft Update</a> algorithm with <var>registration</var>.</p>"
+          "html": "<p>If <var>registration</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-stale\" id=\"ref-for-service-worker-registration-stale⑦\">stale</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④⑤\">in parallel</a> run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#soft-update\" id=\"ref-for-soft-update①⓪\">Soft Update</a> algorithm with <var>registration</var>.</p>"
         }
       ]
     },
@@ -4922,7 +4939,7 @@
           "html": "<p>Run the following steps atomically.</p>"
         },
         {
-          "html": "<p>Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑤⑨\">service worker registration</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-use\" id=\"ref-for-dfn-use⑤\">used</a> by <var>client</var>.</p>"
+          "html": "<p>Let <var>registration</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑥①\">service worker registration</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-use\" id=\"ref-for-dfn-use⑤\">used</a> by <var>client</var>.</p>"
         },
         {
           "html": "<p>If <var>registration</var> is null, abort these steps.</p>"
@@ -5015,7 +5032,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">Remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑧\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①③\">storage key</a>, <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-scope-url\" id=\"ref-for-dfn-job-scope-url⑨\">scope url</a>)].</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">Remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑧\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①④\">storage key</a>, <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-scope-url\" id=\"ref-for-dfn-job-scope-url⑨\">scope url</a>)].</p>"
         },
         {
           "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#resolve-job-promise\" id=\"ref-for-resolve-job-promise④\">Resolve Job Promise</a> with <var>job</var> and true.</p>"
@@ -5040,7 +5057,7 @@
           "html": "<p>Let <var>scopeString</var> be <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①③\">serialized</a> <var>scope</var> with the <em>exclude fragment flag</em> set.</p>"
         },
         {
-          "html": "<p>Let <var>registration</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑥①\">service worker registration</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①④\">storage key</a> is set to <var>storage key</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑧\">scope url</a> is set to <var>scope</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-update-via-cache\" id=\"ref-for-dfn-update-via-cache⑨\">update via cache mode</a> is set to <var>updateViaCache</var>.</p>"
+          "html": "<p>Let <var>registration</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑥③\">service worker registration</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①⑤\">storage key</a> is set to <var>storage key</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑧\">scope url</a> is set to <var>scope</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-update-via-cache\" id=\"ref-for-dfn-update-via-cache⑨\">update via cache mode</a> is set to <var>updateViaCache</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑨\">registration map</a>[(<var>storage key</var>, <var>scopeString</var>)] to <var>registration</var>.</p>"
@@ -5251,7 +5268,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>storage key</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal⑤\">equals</a> <var>entry storage key</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">append</a> <var>entry scope</var> to the end of <var>scopeStringSet</var>.</p>"
+              "html": "<p>If <var>storage key</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal⑥\">equals</a> <var>entry storage key</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">append</a> <var>entry scope</var> to the end of <var>scopeStringSet</var>.</p>"
             }
           ]
         },
@@ -5297,7 +5314,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>storage key</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal⑥\">equals</a> <var>entry storage key</var> and <var>scopeString</var> matches <var>entry scope</var>, then return <var>registration</var>.</p>"
+              "html": "<p>If <var>storage key</var> <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#storage-key-equal\" id=\"ref-for-storage-key-equal⑦\">equals</a> <var>entry storage key</var> and <var>scopeString</var> matches <var>entry scope</var>, then return <var>registration</var>.</p>"
             }
           ]
         },
