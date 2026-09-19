@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "dfn-installing-document",
-      "href": "https://wicg.github.io/install-element/#dfn-installing-document",
+      "id": "dfn-initiating-document",
+      "href": "https://wicg.github.io/install-element/#dfn-initiating-document",
       "linkingText": [
-        "installing document"
+        "initiating document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -51,14 +51,16 @@
       "links": []
     },
     {
-      "id": "dfn-navigator",
-      "href": "https://wicg.github.io/install-element/#dfn-navigator",
+      "id": "dfn-imperative",
+      "href": "https://wicg.github.io/install-element/#dfn-imperative",
       "linkingText": [
-        "navigator"
+        "imperative"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "entry-point kind"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -74,14 +76,16 @@
       "links": []
     },
     {
-      "id": "dfn-install-element",
-      "href": "https://wicg.github.io/install-element/#dfn-install-element",
+      "id": "dfn-declarative",
+      "href": "https://wicg.github.io/install-element/#dfn-declarative",
       "linkingText": [
-        "install element"
+        "declarative"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "entry-point kind"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -97,10 +101,10 @@
       "links": []
     },
     {
-      "id": "dfn-target-mode",
-      "href": "https://wicg.github.io/install-element/#dfn-target-mode",
+      "id": "dfn-application-source",
+      "href": "https://wicg.github.io/install-element/#dfn-application-source",
       "linkingText": [
-        "target mode"
+        "application source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -262,10 +266,10 @@
       "links": []
     },
     {
-      "id": "dfn-target-mode-0",
-      "href": "https://wicg.github.io/install-element/#dfn-target-mode-0",
+      "id": "dfn-application-source-0",
+      "href": "https://wicg.github.io/install-element/#dfn-application-source-0",
       "linkingText": [
-        "target mode"
+        "application source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -337,60 +341,10 @@
       "links": []
     },
     {
-      "id": "dfn-source-element",
-      "href": "https://wicg.github.io/install-element/#dfn-source-element",
+      "id": "dfn-web-install-candidate",
+      "href": "https://wicg.github.io/install-element/#dfn-web-install-candidate",
       "linkingText": [
-        "source element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "web install request"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-state",
-      "href": "https://wicg.github.io/install-element/#dfn-state",
-      "linkingText": [
-        "state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "web install request"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-web-install-target",
-      "href": "https://wicg.github.io/install-element/#dfn-web-install-target",
-      "linkingText": [
-        "web install target"
+        "web install candidate"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -418,7 +372,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "web install target"
+        "web install candidate"
       ],
       "access": "private",
       "informative": false,
@@ -443,7 +397,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "web install target"
+        "web install candidate"
       ],
       "access": "private",
       "informative": false,
@@ -468,7 +422,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "web install target"
+        "web install candidate"
       ],
       "access": "private",
       "informative": false,
@@ -493,7 +447,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "web install target"
+        "web install candidate"
       ],
       "access": "private",
       "informative": false,
@@ -579,102 +533,10 @@
       "links": []
     },
     {
-      "id": "dfn-user-aborted-installation",
-      "href": "https://wicg.github.io/install-element/#dfn-user-aborted-installation",
+      "id": "dfn-installation-aborted",
+      "href": "https://wicg.github.io/install-element/#dfn-installation-aborted",
       "linkingText": [
-        "user aborted installation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-installation-not-allowed",
-      "href": "https://wicg.github.io/install-element/#dfn-installation-not-allowed",
-      "linkingText": [
-        "installation not allowed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-installation-state-invalid",
-      "href": "https://wicg.github.io/install-element/#dfn-installation-state-invalid",
-      "linkingText": [
-        "installation state invalid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-installation-not-supported",
-      "href": "https://wicg.github.io/install-element/#dfn-installation-not-supported",
-      "linkingText": [
-        "installation not supported"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "model",
-        "href": "https://wicg.github.io/install-element/#model",
-        "title": "Web Install model",
-        "alternateIds": [
-          "x5-web-install-model"
-        ],
-        "number": "5"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-installation-operation-aborted",
-      "href": "https://wicg.github.io/install-element/#dfn-installation-operation-aborted",
-      "linkingText": [
-        "installation operation aborted"
+        "installation aborted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -765,10 +627,10 @@
       "links": []
     },
     {
-      "id": "dfn-eligible-installing-document",
-      "href": "https://wicg.github.io/install-element/#dfn-eligible-installing-document",
+      "id": "dfn-eligible-initiating-document",
+      "href": "https://wicg.github.io/install-element/#dfn-eligible-initiating-document",
       "linkingText": [
-        "eligible installing document"
+        "eligible initiating document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -788,10 +650,10 @@
       "links": []
     },
     {
-      "id": "dfn-resolve-a-current-document-install-target",
-      "href": "https://wicg.github.io/install-element/#dfn-resolve-a-current-document-install-target",
+      "id": "dfn-resolve-a-web-install-candidate-from-the-current-document",
+      "href": "https://wicg.github.io/install-element/#dfn-resolve-a-web-install-candidate-from-the-current-document",
       "linkingText": [
-        "resolve a current-document install target"
+        "resolve a web install candidate from the current document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -799,11 +661,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "current-document-target",
-        "href": "https://wicg.github.io/install-element/#current-document-target",
-        "title": "Current-document target",
+        "id": "current-document-candidate",
+        "href": "https://wicg.github.io/install-element/#current-document-candidate",
+        "title": "Resolving from the current document",
         "alternateIds": [
-          "x8-1-current-document-target"
+          "x8-1-resolving-from-the-current-document"
         ],
         "number": "8.1"
       },
@@ -811,10 +673,10 @@
       "links": []
     },
     {
-      "id": "dfn-resolve-an-explicit-manifest-install-target",
-      "href": "https://wicg.github.io/install-element/#dfn-resolve-an-explicit-manifest-install-target",
+      "id": "dfn-resolve-a-web-install-candidate-from-an-explicit-manifest",
+      "href": "https://wicg.github.io/install-element/#dfn-resolve-a-web-install-candidate-from-an-explicit-manifest",
       "linkingText": [
-        "resolve an explicit manifest install target"
+        "resolve a web install candidate from an explicit manifest"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -822,11 +684,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "explicit-manifest-target",
-        "href": "https://wicg.github.io/install-element/#explicit-manifest-target",
-        "title": "Explicit manifest target",
+        "id": "explicit-manifest-candidate",
+        "href": "https://wicg.github.io/install-element/#explicit-manifest-candidate",
+        "title": "Resolving from an explicit manifest",
         "alternateIds": [
-          "x8-2-explicit-manifest-target"
+          "x8-2-resolving-from-an-explicit-manifest"
         ],
         "number": "8.2"
       },
@@ -857,10 +719,10 @@
       "links": []
     },
     {
-      "id": "dfn-process-an-install-manifest-response",
-      "href": "https://wicg.github.io/install-element/#dfn-process-an-install-manifest-response",
+      "id": "dfn-process-install-manifest-bytes",
+      "href": "https://wicg.github.io/install-element/#dfn-process-install-manifest-bytes",
       "linkingText": [
-        "process an install manifest response"
+        "process install manifest bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -868,11 +730,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "processing-an-install-manifest-response",
-        "href": "https://wicg.github.io/install-element/#processing-an-install-manifest-response",
-        "title": "Processing an install manifest response",
+        "id": "processing-an-install-manifest",
+        "href": "https://wicg.github.io/install-element/#processing-an-install-manifest",
+        "title": "Processing an install manifest",
         "alternateIds": [
-          "x9-2-processing-an-install-manifest-response"
+          "x9-2-processing-an-install-manifest"
         ],
         "number": "9.2"
       },
@@ -880,10 +742,10 @@
       "links": []
     },
     {
-      "id": "dfn-validate-a-web-install-target",
-      "href": "https://wicg.github.io/install-element/#dfn-validate-a-web-install-target",
+      "id": "dfn-validate-a-web-install-candidate",
+      "href": "https://wicg.github.io/install-element/#dfn-validate-a-web-install-candidate",
       "linkingText": [
-        "validate a web install target"
+        "validate a web install candidate"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -891,11 +753,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "validating-a-web-install-target",
-        "href": "https://wicg.github.io/install-element/#validating-a-web-install-target",
-        "title": "Validating a web install target",
+        "id": "validating-a-web-install-candidate",
+        "href": "https://wicg.github.io/install-element/#validating-a-web-install-candidate",
+        "title": "Validating a web install candidate",
         "alternateIds": [
-          "x9-3-validating-a-web-install-target"
+          "x9-3-validating-a-web-install-candidate"
         ],
         "number": "9.3"
       },
@@ -995,10 +857,10 @@
       "links": []
     },
     {
-      "id": "dfn-perform-web-installation",
-      "href": "https://wicg.github.io/install-element/#dfn-perform-web-installation",
+      "id": "dfn-perform-a-web-install-action",
+      "href": "https://wicg.github.io/install-element/#dfn-perform-a-web-install-action",
       "linkingText": [
-        "perform web installation"
+        "perform a Web Install action"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1169,10 +1031,10 @@
       "links": []
     },
     {
-      "id": "dfn-run-a-navigator-install-request",
-      "href": "https://wicg.github.io/install-element/#dfn-run-a-navigator-install-request",
+      "id": "dfn-settle-a-navigator-install-promise",
+      "href": "https://wicg.github.io/install-element/#dfn-settle-a-navigator-install-promise",
       "linkingText": [
-        "run a navigator install request"
+        "settle a Navigator install promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1180,11 +1042,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "promise-processing",
-        "href": "https://wicg.github.io/install-element/#promise-processing",
-        "title": "Promise processing",
+        "id": "promise-settlement",
+        "href": "https://wicg.github.io/install-element/#promise-settlement",
+        "title": "Promise settlement",
         "alternateIds": [
-          "x12-3-promise-processing"
+          "x12-3-promise-settlement"
         ],
         "number": "12.3"
       },
