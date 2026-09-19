@@ -12,6 +12,7 @@
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "cors-check",
           "body-fully-read"
         ]
       },
@@ -46,6 +47,11 @@
         ]
       },
       "https://infra.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "anchors": [
+          "json-mime-type"
+        ]
+      },
       "https://url.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/PEPC/geolocation-element.html": {
@@ -61,11 +67,21 @@
           "fenced-frame"
         ]
       },
+      "https://wicg.github.io/local-network-access/": {
+        "anchors": [
+          "local-network-access-check"
+        ]
+      },
       "https://wicg.github.io/manifest-incubations/": {},
       "https://wicg.github.io/web-app-launch/": {},
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "directive-manifest-src"
+        ]
+      },
       "https://www.w3.org/TR/appmanifest/": {
         "anchors": [
           "dfn-manifest",
@@ -97,10 +113,10 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
+          "eventtarget-activation-behavior",
           "concept-document-url",
           "event",
           "dictdef-eventinit",
-          "eventtarget-activation-behavior",
           "dom-event-istrusted",
           "dom-event-type",
           "dom-event-bubbles",
@@ -111,19 +127,10 @@
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "request",
-          "concept-request-url",
-          "concept-request-method",
-          "concept-request-destination",
-          "concept-request-credentials-mode",
-          "concept-request-redirect-mode",
-          "concept-request-referrer",
-          "concept-request-mode",
-          "concept-fetch",
+          "network-partition-key",
           "concept-network-error",
           "concept-response-status",
           "ok-status",
-          "response",
           "concept-response-body"
         ]
       },
@@ -173,6 +180,7 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "relevant-settings-object",
           "concept-relevant-global",
           "queue-a-global-task",
           "user-interaction-task-source",
