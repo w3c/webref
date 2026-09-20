@@ -281,7 +281,7 @@
         "href": "https://webidl.spec.whatwg.org/#ArrayBufferView"
       },
       "BufferSource": {
-        "fragment": "typedef (ArrayBufferView or ArrayBuffer) BufferSource;",
+        "fragment": "typedef (ArrayBuffer or ArrayBufferView) BufferSource;",
         "type": "typedef",
         "name": "BufferSource",
         "idlType": {
@@ -297,7 +297,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBufferView"
+              "idlType": "ArrayBuffer"
             },
             {
               "type": "typedef-type",
@@ -305,7 +305,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": "ArrayBufferView"
             }
           ]
         },
