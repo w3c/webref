@@ -40,14 +40,6 @@
           "utf-8-decode-without-bom-or-fail"
         ]
       },
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "EnforceRange",
-          "idl-unsigned-long",
-          "js-unsigned-long",
-          "create-a-namespace-object"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
           "in-parallel"
@@ -82,9 +74,47 @@
           "set-append"
         ]
       },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "sec-returnifabrupt-shorthands",
+          "sec-ordinaryobjectcreate",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-object-type",
+          "sec-ecmascript-language-types-bigint-type",
+          "sec-ecmascript-language-types-number-type",
+          "sec-module-namespace-exotic-objects",
+          "sec-arraybuffer-objects",
+          "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-samevalue",
+          "sec-built-in-function-objects",
+          "current-realm",
+          "%E2%84%A4",
+          "mathematical-value",
+          "%F0%9D%94%BD",
+          "%E2%84%9D",
+          "sec-makebasicobject",
+          "sec-nativeerror-object-structure",
+          "sec-string-object",
+          "sec-ecmascript-language-types-string-type",
+          "sec-string.fromcharcode",
+          "sec-string.prototype.charcodeat",
+          "sec-string.fromcodepoint",
+          "sec-string.prototype.codepointat",
+          "sec-string.prototype.concat",
+          "sec-string.prototype.substring",
+          "sec-isstrictlyequal",
+          "sec-islessthan",
+          "cyclic-module-record",
+          "sec-newmoduleenvironment",
+          "sec-GetImportedModule",
+          "resolvedbinding-record",
+          "sec-array-exotic-objects"
+        ]
+      },
       "https://tc39.es/ecma262/multipage/abstract-operations.html": {
         "anchors": [
           "sec-createdataproperty",
+          "sec-hasproperty",
           "sec-get-o-p",
           "sec-iscallable",
           "sec-setintegritylevel",
@@ -131,43 +161,6 @@
           "sec-hostresizearraybuffer"
         ]
       },
-      "https://tc39.github.io/ecma262/": {
-        "anchors": [
-          "sec-returnifabrupt-shorthands",
-          "sec-ordinaryobjectcreate",
-          "sec-native-error-types-used-in-this-standard-typeerror",
-          "sec-object-type",
-          "sec-ecmascript-language-types-bigint-type",
-          "sec-ecmascript-language-types-number-type",
-          "sec-module-namespace-exotic-objects",
-          "sec-arraybuffer-objects",
-          "sec-native-error-types-used-in-this-standard-rangeerror",
-          "sec-samevalue",
-          "sec-built-in-function-objects",
-          "current-realm",
-          "%E2%84%A4",
-          "mathematical-value",
-          "%F0%9D%94%BD",
-          "%E2%84%9D",
-          "sec-makebasicobject",
-          "sec-nativeerror-object-structure",
-          "sec-string-object",
-          "sec-ecmascript-language-types-string-type",
-          "sec-string.fromcharcode",
-          "sec-string.prototype.charcodeat",
-          "sec-string.fromcodepoint",
-          "sec-string.prototype.codepointat",
-          "sec-string.prototype.concat",
-          "sec-string.prototype.substring",
-          "sec-isstrictlyequal",
-          "sec-islessthan",
-          "cyclic-module-record",
-          "sec-newmoduleenvironment",
-          "sec-GetImportedModule",
-          "resolvedbinding-record",
-          "sec-array-exotic-objects"
-        ]
-      },
       "https://tc39.github.io/proposal-source-phase-imports/": {
         "anchors": [
           "sec-properties-of-the-%abstractmodulesource%-prototype-object",
@@ -176,7 +169,7 @@
       },
       "https://webassembly.github.io/spec/core/": {
         "anchors": [
-          "appending/embedding.html"
+          "appendix/embedding.html"
         ]
       },
       "https://webassembly.github.io/spec/core/appendix/embedding.html": {
@@ -213,6 +206,7 @@
           "embed-func-alloc",
           "embed-match-valtype",
           "embed-ref-type",
+          "embed-tag-alloc",
           "embed-tag-type"
         ]
       },
@@ -324,28 +318,30 @@
           "idl-USVString",
           "idl-sequence",
           "idl-boolean",
-          "BufferSource",
+          "AllowResizable",
+          "AllowSharedBufferSource",
           "idl-promise",
           "idl-object",
           "dfn-get-buffer-source-copy",
+          "new",
           "a-new-promise",
           "resolve",
           "implements",
           "reject",
-          "new",
-          "upon-fulfillment",
-          "upon-rejection",
+          "dfn-perform-steps-once-promise-is-settled",
           "dfn-throw",
           "idl-any",
           "LegacyNamespace",
           "idl-DOMString",
           "idl-undefined",
           "dfn-associated-realm",
-          "abstract-opdef-converttoint",
-          "Exposed",
           "EnforceRange",
           "idl-unsigned-long",
-          "dfn-namespace-object"
+          "abstract-opdef-converttoint",
+          "js-unsigned-long",
+          "Exposed",
+          "dfn-namespace-object",
+          "create-a-namespace-object"
         ]
       }
     }
