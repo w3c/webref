@@ -648,7 +648,7 @@
           "html": "Initialize <var>baseSignature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
         },
         {
-          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize a byte array, <var>proofBytes</var>, so that starts with the legacay\nECDSA-SD base proof header bytes 0xd9, 0x5d, and 0x00. Otherwise initialize\n<var>proofValue</var> with the general SIC header bytes TBD."
+          "html": "Initialize a byte array, <var>proofBytes</var>, so that it starts with the SIC approach\nbase proof header bytes 0xd9, 0x5d, and 0x00."
         },
         {
           "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>hmacKey</var>, <var>signatures</var>, and <var>mandatoryPointers</var>."
@@ -672,7 +672,7 @@
           "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
         },
         {
-          "html": "If the <var>decodedProofValue</var> does not start with the ECDSA-SD base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x00</code>, or the general SIC header bytes TBD,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "If the <var>decodedProofValue</var> does not start with the general SIC header bytes\n<code>0xd9</code>, <code>0x5d</code>, and <code>0x00</code>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an\nerror type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
           "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte base proof header. Confirm that the result\nis an array of five elements."
@@ -690,7 +690,7 @@
           "html": "Initialize <var>compressedLabelMap</var> to the result of calling the algorithm in\nSection <a href=\"https://www.w3.org/TR/vc-data-integrity-1.1/#compresslabelmap\" data-matched-text=\"[[[#compresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.6 </bdi>compressLabelMap</a>, passing <var>labelMap</var> as the parameter."
         },
         {
-          "html": "If <var>cryptosuite</var> is set to <code>ecdsa-sd-2023</code> then\ninitialize a byte array, <var>proofValue</var>, that starts with the ECDSA-SD disclosure\nproof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>. Otherwise initialize a byte\narray, <var>proofValue</var>, that starts with the general SIC derived proof header bytes\nTBD."
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the general SIC derived\nproof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>."
         },
         {
           "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>signatures</var>, <var>compressedLabelMap</var>, and\n<var>mandatoryIndexes</var>."
@@ -714,7 +714,7 @@
           "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
         },
         {
-          "html": "If the <var>decodedProofValue</var> does not start with the ECDSA-SD disclosure proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>, or the general SIC approach derived\nproof header bytes TBD, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "If the <var>decodedProofValue</var> does not start with the general SIC approach derived\nproof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\"><code>PROOF_VERIFICATION_ERROR</code></a>."
         },
         {
           "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte derived proof header. If the result is not\nan array of five elements an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
