@@ -8644,6 +8644,9 @@
       "rationale": "if",
       "steps": [
         {
+          "html": "<p>If <var>insertedNode</var>'s <a id=\"the-iframe-element:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"the-iframe-element:concept-document-bc\">browsing context</a> is null, then return.</p>"
+        },
+        {
           "html": "<p>If <var>insertedNode</var> has a <code id=\"the-iframe-element:attr-iframe-sandbox-4\"><a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox\">sandbox</a></code>\n   attribute, then <a href=\"https://html.spec.whatwg.org/multipage/browsers.html#parse-a-sandboxing-directive\" id=\"the-iframe-element:parse-a-sandboxing-directive\">parse the sandboxing\n   directive</a> given the attribute's value and <var>insertedNode</var>'s\n   <a id=\"the-iframe-element:iframe-sandboxing-flag-set\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#iframe-sandboxing-flag-set\"><code>iframe</code> sandboxing flag set</a>.</p>"
         },
         {
@@ -8757,7 +8760,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>maybeURL</var> be the result of <a id=\"the-iframe-element:encoding-parsing-a-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given that\n     attribute's value, relative to <var>element</var>'s <a id=\"the-iframe-element:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
+              "html": "<p>Let <var>maybeURL</var> be the result of <a id=\"the-iframe-element:encoding-parsing-a-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\">encoding-parsing a URL</a> given that\n     attribute's value, relative to <var>element</var>'s <a id=\"the-iframe-element:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
             },
             {
               "html": "<p>If <var>maybeURL</var> is not failure, then set <var>url</var> to\n     <var>maybeURL</var>.</p>"
@@ -8792,7 +8795,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-pending-resource-timing-start-time\" id=\"the-iframe-element:iframe-pending-resource-timing-start-time\">pending resource-timing start time</a> to\n     the <a id=\"the-iframe-element:current-high-resolution-time\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" data-x-internal=\"current-high-resolution-time\">current high resolution time</a> given <var>element</var>'s\n     <a id=\"the-iframe-element:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a id=\"the-iframe-element:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>.</p>"
+              "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-pending-resource-timing-start-time\" id=\"the-iframe-element:iframe-pending-resource-timing-start-time\">pending resource-timing start time</a> to\n     the <a id=\"the-iframe-element:current-high-resolution-time\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" data-x-internal=\"current-high-resolution-time\">current high resolution time</a> given <var>element</var>'s\n     <a id=\"the-iframe-element:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a id=\"the-iframe-element:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>.</p>"
             },
             {
               "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-pending-resource-timing-url\" id=\"the-iframe-element:iframe-pending-resource-timing-url\">pending resource-timing URL</a> to\n     <var>url</var>.</p>"
@@ -8800,7 +8803,7 @@
           ]
         },
         {
-          "html": "<p><a id=\"the-iframe-element:navigate\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\">Navigate</a> <var>element</var>'s <a id=\"the-iframe-element:content-navigable-9\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable\">content\n   navigable</a> to <var>url</var> using <var>element</var>'s <a id=\"the-iframe-element:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>, with\n   <i id=\"the-iframe-element:navigation-hh\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-hh\">historyHandling</a></i> set to <var>historyHandling</var>, <i id=\"the-iframe-element:navigation-referrer-policy\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-referrer-policy\">referrerPolicy</a></i> set to <var>referrerPolicy</var>, <i id=\"the-iframe-element:navigation-resource\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-resource\">documentResource</a></i> set to <var>srcdocString</var>, and <i id=\"the-iframe-element:navigation-initial-insertion\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-initial-insertion\">initialInsertion</a></i> set to <var>initialInsertion</var>.</p>"
+          "html": "<p><a id=\"the-iframe-element:navigate\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\">Navigate</a> <var>element</var>'s <a id=\"the-iframe-element:content-navigable-9\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable\">content\n   navigable</a> to <var>url</var> using <var>element</var>'s <a id=\"the-iframe-element:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>, with\n   <i id=\"the-iframe-element:navigation-hh\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-hh\">historyHandling</a></i> set to <var>historyHandling</var>, <i id=\"the-iframe-element:navigation-referrer-policy\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-referrer-policy\">referrerPolicy</a></i> set to <var>referrerPolicy</var>, <i id=\"the-iframe-element:navigation-resource\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-resource\">documentResource</a></i> set to <var>srcdocString</var>, and <i id=\"the-iframe-element:navigation-initial-insertion\"><a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-initial-insertion\">initialInsertion</a></i> set to <var>initialInsertion</var>.</p>"
         }
       ]
     },
@@ -8827,7 +8830,7 @@
               "html": "<p><a id=\"the-iframe-element:assert-2\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-pending-resource-timing-url\" id=\"the-iframe-element:iframe-pending-resource-timing-url-2\">pending resource-timing URL</a> is not\n      null.</p>"
             },
             {
-              "html": "<p>Let <var>global</var> be <var>element</var>'s <a id=\"the-iframe-element:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s\n      <a id=\"the-iframe-element:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>.</p>"
+              "html": "<p>Let <var>global</var> be <var>element</var>'s <a id=\"the-iframe-element:node-document-5\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s\n      <a id=\"the-iframe-element:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>.</p>"
             },
             {
               "html": "<p>Let <var>fallbackTimingInfo</var> be a new <a href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\" id=\"the-iframe-element:fetch-timing-info\" data-x-internal=\"fetch-timing-info\">fetch timing info</a> whose <a href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-start-time\" id=\"the-iframe-element:fetch-timing-info-start-time\" data-x-internal=\"fetch-timing-info-start-time\">start time</a> is <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-pending-resource-timing-start-time\" id=\"the-iframe-element:iframe-pending-resource-timing-start-time-3\">pending resource-timing start time</a>\n      and whose <a href=\"https://fetch.spec.whatwg.org/#fetch-timing-info-end-time\" id=\"the-iframe-element:fetch-timing-info-end-time\" data-x-internal=\"fetch-timing-info-end-time\">response end time</a> is the\n      <a id=\"the-iframe-element:current-high-resolution-time-2\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" data-x-internal=\"current-high-resolution-time\">current high resolution time</a> given <var>global</var>.</p>"
@@ -8861,7 +8864,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"the-iframe-element:concept-document-bc\">browsing context</a> is\n    null, then return false.</p>"
+          "html": "<p>If <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"the-iframe-element:concept-document-bc-2\">browsing context</a> is\n    null, then return false.</p>"
         },
         {
           "html": "<p>If <var>document</var> is not <a id=\"the-iframe-element:fully-active\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>, then return false.</p>"
@@ -50162,14 +50165,11 @@
       ]
     },
     {
-      "html": "The <code id=\"frames:frame\"><a href=\"https://html.spec.whatwg.org/multipage/obsolete.html#frame\">frame</a></code> <a id=\"frames:html-element-insertion-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-insertion-steps\">HTML element insertion steps</a>, given\n  <var>insertedNode</var>, are:",
+      "html": "The <code id=\"frames:frame\"><a href=\"https://html.spec.whatwg.org/multipage/obsolete.html#frame\">frame</a></code> <a id=\"frames:html-element-post-connection-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-post-connection-steps\">HTML element post-connection steps</a>, given\n  <var>insertedNode</var>, are:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>insertedNode</var> is not <a id=\"frames:in-a-document-tree\" href=\"https://dom.spec.whatwg.org/#in-a-document-tree\" data-x-internal=\"in-a-document-tree\">in a document tree</a>, then return.</p>"
-        },
-        {
-          "html": "<p>If <var>insertedNode</var>'s <a id=\"frames:root\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"frames:concept-document-bc\">browsing context</a> is null, then return.</p>"
+          "html": "<p>If <var>insertedNode</var>'s <a id=\"frames:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"frames:concept-document-bc\">browsing context</a> is null, then return.</p>"
         },
         {
           "html": "<p><a id=\"frames:create-a-new-child-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#create-a-new-child-navigable\">Create a new child navigable</a> for <var>insertedNode</var>.</p>"
