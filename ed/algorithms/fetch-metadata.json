@@ -11,7 +11,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy URL</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url\">current URL</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy URL</a>.</p>"
         },
         {
           "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-introduction\" id=\"ref-for-name-introduction①\">Structured Field</a> whose value is a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-tokens\" id=\"ref-for-name-tokens①\">token</a>.</p>"
@@ -20,7 +20,7 @@
           "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination②\">destination</a> is the empty string, set <var>header</var>’s value to the string\n\"<code>empty</code>\". Otherwise, set <var>header</var>’s value to <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination③\">destination</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest\" id=\"ref-for-http-headerdef-sec-fetch-dest\"><code>Sec-Fetch-Dest</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a>\n`<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest\" id=\"ref-for-http-headerdef-sec-fetch-dest\"><code>Sec-Fetch-Dest</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
         }
       ]
     },
@@ -31,7 +31,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url①\">current URL</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>.</p>"
         },
         {
           "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-introduction\" id=\"ref-for-name-introduction③\">Structured Field</a> whose value is a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-tokens\" id=\"ref-for-name-tokens④\">token</a>.</p>"
@@ -40,7 +40,7 @@
           "html": "<p>Set <var>header</var>’s value to <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode①\">mode</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-mode\" id=\"ref-for-http-headerdef-sec-fetch-mode\"><code>Sec-Fetch-Mode</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header①\">Set a structured field value</a>\n`<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-mode\" id=\"ref-for-http-headerdef-sec-fetch-mode\"><code>Sec-Fetch-Mode</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
         }
       ]
     },
@@ -51,7 +51,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②\">current URL</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>.</p>"
         },
         {
           "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-introduction\" id=\"ref-for-name-introduction⑤\">Structured Field</a> whose value is a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-tokens\" id=\"ref-for-name-tokens⑥\">token</a>.</p>"
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header②\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site\" id=\"ref-for-http-headerdef-sec-fetch-site\"><code>Sec-Fetch-Site</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header②\">Set a structured field value</a>\n`<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site\" id=\"ref-for-http-headerdef-sec-fetch-site\"><code>Sec-Fetch-Site</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>.</p>"
         }
       ]
     },
@@ -92,10 +92,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">url</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url③\">potentially trustworthy URL</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url③\">current URL</a> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url③\">potentially trustworthy URL</a>.</p>"
         },
         {
-          "html": "<p>If <var>r</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request③\">navigation request</a>, or if <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-user-activation\" id=\"ref-for-request-user-activation\">user-activation</a> is <code>false</code>, return.</p>"
+          "html": "<p>If <var>r</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request③\">navigation request</a>, or if <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-user-activation\" id=\"ref-for-request-user-activation\">user-activation</a> is\n<code>false</code>, return.</p>"
         },
         {
           "html": "<p>Let <var>header</var> be a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-introduction\" id=\"ref-for-name-introduction⑦\">Structured Field</a> whose value is a <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651.html#name-tokens\" id=\"ref-for-name-tokens⑦\">token</a>.</p>"
@@ -104,7 +104,7 @@
           "html": "<p>Set <var>header</var>’s value to <code>true</code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header③\">Set a structured field value</a> `<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-user\" id=\"ref-for-http-headerdef-sec-fetch-user\"><code>Sec-Fetch-User</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header③\">Set a structured field value</a>\n`<a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-user\" id=\"ref-for-http-headerdef-sec-fetch-user\"><code>Sec-Fetch-User</code></a>`/<var>header</var> in <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>.</p>"
         }
       ]
     },
@@ -115,7 +115,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url④\">url</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url④\">potentially trustworthy URL</a>, return.</p>"
+          "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url④\">current URL</a> is not an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url④\">potentially trustworthy URL</a>, return.</p>"
         },
         {
           "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-fetch-metadata/#abstract-opdef-set-dest\" id=\"ref-for-abstract-opdef-set-dest\">Set the <code>Sec-Fetch-Dest</code> header</a> for <var>r</var>.</p>"
@@ -139,7 +139,7 @@
           "html": "<p>If an extension does not have permission to access to a given URL, its requests to that URL could\ncontain a <code>Sec-Fetch-Site</code> header whose value is <code>cross-site</code>, just as a normal web request would.\nIf the extension does have access to a given URL, the <code>Sec-Fetch-Site</code> value could be <code>same-origin</code>.</p>"
         },
         {
-          "html": "<p>The <code>Origin</code> header could be included with outgoing requests from extension contexts, with an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> value that allows servers to distinguish extension-initiated requests\nfrom web-initiated requests.</p>"
+          "html": "<p>The <code>Origin</code> header could be included with outgoing requests from extension contexts, with an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> value that allows servers to distinguish extension-initiated requests\nfrom web-initiated requests.</p>"
         }
       ]
     }
