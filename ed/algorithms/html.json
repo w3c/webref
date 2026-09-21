@@ -43493,7 +43493,7 @@
           "html": "<p>Let <var>xmlDeclarationEnd</var> be a pointer to the next byte in the input byte stream\n   which is 0x3E (&gt;). If there is no such byte, then return failure.</p>"
         },
         {
-          "html": "<p>Set <var>encodingPosition</var> to the position of the first occurrence of the subsequence\n   of bytes 0x65, 0x6E, 0x63, 0x6F, 0x64, 0x69, 0x6E, 0x67 (`<code>encoding</code>`) at or\n   after the current <var>encodingPosition</var>. If there is no such sequence, then return\n   failure.</p>"
+          "html": "<p>Set <var>encodingPosition</var> to the position of the first occurrence of the subsequence\n   of bytes 0x65, 0x6E, 0x63, 0x6F, 0x64, 0x69, 0x6E, 0x67 (`<code>encoding</code>`) at or\n   after the current <var>encodingPosition</var> and before <var>xmlDeclarationEnd</var>. If there is\n   no such sequence, then return failure.</p>"
         },
         {
           "html": "<p>Advance <var>encodingPosition</var> past the 0x67 (g) byte.</p>"
