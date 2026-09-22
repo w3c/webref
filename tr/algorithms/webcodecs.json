@@ -76,6 +76,9 @@
           "html": "<p>Assign <code>false</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-dequeue-event-scheduled-slot\" id=\"ref-for-dom-audiodecoder-dequeue-event-scheduled-slot\">[[dequeue event scheduled]]</a></code>.</p>"
         },
         {
+          "html": "<p>Assign <code>0</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot\">[[priming samples to discard]]</a></code>.</p>"
+        },
+        {
           "html": "<p>Return d.</p>"
         }
       ]
@@ -130,6 +133,9 @@
             },
             {
               "html": "<p>Configure <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-implementation-slot\" id=\"ref-for-dom-audiodecoder-codec-implementation-slot④\">[[codec implementation]]</a></code> with <var>config</var>.</p>"
+            },
+            {
+              "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot①\">[[priming samples to discard]]</a></code> with the\nnumber of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#priming-samples\" id=\"ref-for-priming-samples①\">priming samples</a> indicated by\n<var>config</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-description\" id=\"ref-for-dom-audiodecoderconfig-description\">description</a></code>, as defined by the\ncodec’s registration in the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webcodecs/#biblio-webcodecs-codec-registry\" title=\"WebCodecs Codec Registry\">[WEBCODECS-CODEC-REGISTRY]</a>, or <code>0</code>\nif not specified.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">queue a task</a> to run the following steps:",
@@ -202,8 +208,11 @@
         },
         {
           "html": "Enqueue the following steps to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-work-queue-slot\" id=\"ref-for-dom-audiodecoder-codec-work-queue-slot②\">[[codec work queue]]</a></code>:",
-          "rationale": "attempt",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>chunk</var> contains <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#priming-samples\" id=\"ref-for-priming-samples②\">priming samples</a> information, update\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot②\">[[priming samples to discard]]</a></code> as defined by the\ncodec’s registration in the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webcodecs/#biblio-webcodecs-codec-registry\" title=\"WebCodecs Codec Registry\">[WEBCODECS-CODEC-REGISTRY]</a>.</p>"
+            },
             {
               "html": "<p>Attempt to use <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-codec-implementation-slot\" id=\"ref-for-dom-audiodecoder-codec-implementation-slot⑥\">[[codec implementation]]</a></code> to decode\nthe chunk.</p>"
             },
@@ -389,37 +398,64 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>data</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#audiodata\" id=\"ref-for-audiodata②\">AudioData</a></code>, initialized as follows:",
-              "rationale": "assign",
-              "steps": [
-                {
-                  "html": "<p>Assign <code>false</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached\">[[Detached]]</a></code>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#media-resource\" id=\"ref-for-media-resource\">media resource</a> described by <var>output</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>resourceReference</var> be a reference to <var>resource</var>.</p>"
-                },
-                {
-                  "html": "<p>Assign <var>resourceReference</var> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot\">[[resource reference]]</a></code>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>timestamp</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-timestamp-slot\" id=\"ref-for-dom-encodedaudiochunk-timestamp-slot\">[[timestamp]]</a></code> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①\">EncodedAudioChunk</a></code> associated with <var>output</var>.</p>"
-                },
-                {
-                  "html": "<p>Assign <var>timestamp</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-timestamp-slot\" id=\"ref-for-dom-audiodata-timestamp-slot\">[[timestamp]]</a></code>.</p>"
-                },
-                {
-                  "html": "<p>If <var>output</var> uses a recognized <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#enumdef-audiosampleformat\" id=\"ref-for-enumdef-audiosampleformat\">AudioSampleFormat</a></code>, assign that\nformat to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-format-slot\" id=\"ref-for-dom-audiodata-format-slot\">[[format]]</a></code>. Otherwise, assign <code>null</code> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-format-slot\" id=\"ref-for-dom-audiodata-format-slot①\">[[format]]</a></code>.</p>"
-                },
-                {
-                  "html": "<p>Assign values to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-sample-rate-slot\" id=\"ref-for-dom-audiodata-sample-rate-slot\">[[sample rate]]</a></code>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-frames-slot\" id=\"ref-for-dom-audiodata-number-of-frames-slot\">[[number of frames]]</a></code>, and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-channels-slot\" id=\"ref-for-dom-audiodata-number-of-channels-slot\">[[number of channels]]</a></code> as determined by <var>output</var>.</p>"
-                }
-              ]
+              "html": "<p>Let <var>discardedFrames</var> be the lesser of the number of frames of\n<var>output</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot③\">[[priming samples to discard]]</a></code>.</p>"
             },
             {
-              "html": "<p>Invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-output-callback-slot\" id=\"ref-for-dom-audiodecoder-output-callback-slot①\">[[output callback]]</a></code> with <var>data</var>.</p>"
+              "html": "<p>Decrement <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot④\">[[priming samples to discard]]</a></code> by\n<var>discardedFrames</var>.</p>"
+            },
+            {
+              "html": "<p>Remove the first <var>discardedFrames</var> frames from <var>output</var>.</p>"
+            },
+            {
+              "html": "If the number of frames of <var>output</var> is greater than 0:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>data</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#audiodata\" id=\"ref-for-audiodata②\">AudioData</a></code>, initialized as follows:",
+                  "rationale": "assign",
+                  "steps": [
+                    {
+                      "html": "<p>Assign <code>false</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached\">[[Detached]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>resource</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#media-resource\" id=\"ref-for-media-resource\">media resource</a> described by <var>output</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>resourceReference</var> be a reference to <var>resource</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Assign <var>resourceReference</var> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot\">[[resource reference]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>timestamp</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-timestamp-slot\" id=\"ref-for-dom-encodedaudiochunk-timestamp-slot\">[[timestamp]]</a></code> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①\">EncodedAudioChunk</a></code> associated with <var>output</var>.</p>"
+                    },
+                    {
+                      "html": "If <var>discardedFrames</var> is greater than 0:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>discardedDuration</var> be the result of dividing\n<var>discardedFrames</var> by the sample rate of <var>output</var>,\nmultiplied by 1,000,000 and rounded to the nearest\ninteger.</p>"
+                        },
+                        {
+                          "html": "<p>Increment <var>timestamp</var> by <var>discardedDuration</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Assign <var>timestamp</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-timestamp-slot\" id=\"ref-for-dom-audiodata-timestamp-slot\">[[timestamp]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>output</var> uses a recognized <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#enumdef-audiosampleformat\" id=\"ref-for-enumdef-audiosampleformat\">AudioSampleFormat</a></code>, assign that\nformat to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-format-slot\" id=\"ref-for-dom-audiodata-format-slot\">[[format]]</a></code>. Otherwise, assign <code>null</code> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-format-slot\" id=\"ref-for-dom-audiodata-format-slot①\">[[format]]</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Assign values to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-sample-rate-slot\" id=\"ref-for-dom-audiodata-sample-rate-slot\">[[sample rate]]</a></code>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-frames-slot\" id=\"ref-for-dom-audiodata-number-of-frames-slot\">[[number of frames]]</a></code>, and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-channels-slot\" id=\"ref-for-dom-audiodata-number-of-channels-slot\">[[number of channels]]</a></code> as determined by <var>output</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-output-callback-slot\" id=\"ref-for-dom-audiodecoder-output-callback-slot①\">[[output callback]]</a></code> with <var>data</var>.</p>"
+                }
+              ]
             }
           ]
         }
@@ -466,6 +502,9 @@
               "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-pending-flush-promises-slot\" id=\"ref-for-dom-audiodecoder-pending-flush-promises-slot④\">[[pending flush promises]]</a></code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoder-priming-samples-to-discard-slot\" id=\"ref-for-dom-audiodecoder-priming-samples-to-discard-slot⑤\">[[priming samples to discard]]</a></code> to <code>0</code>.</p>"
         }
       ]
     },
@@ -1335,7 +1374,7 @@
                   "html": "<p>Assign to\n<var>encoderConfig</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audioencoderconfig-numberofchannels\" id=\"ref-for-dom-audioencoderconfig-numberofchannels\">numberOfChannels</a></code> to\n<var>outputConfig</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-numberofchannels\" id=\"ref-for-dom-audiodecoderconfig-numberofchannels\">numberOfChannels</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Assign <var>outputConfig</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-description\" id=\"ref-for-dom-audiodecoderconfig-description\">description</a></code> with a\nsequence of codec specific bytes as determined by the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audioencoder-codec-implementation-slot\" id=\"ref-for-dom-audioencoder-codec-implementation-slot①①\">[[codec implementation]]</a></code>. The User Agent <em class=\"rfc2119\">MUST</em> ensure that the provided description\ncould be used to correctly decode output.</p>"
+                  "html": "<p>Assign <var>outputConfig</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-description\" id=\"ref-for-dom-audiodecoderconfig-description①\">description</a></code> with a\nsequence of codec specific bytes as determined by the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audioencoder-codec-implementation-slot\" id=\"ref-for-dom-audioencoder-codec-implementation-slot①①\">[[codec implementation]]</a></code>. The User Agent <em class=\"rfc2119\">MUST</em> ensure that the provided description\ncould be used to correctly decode output.</p>"
                 }
               ]
             },
@@ -2034,7 +2073,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-codec\" id=\"ref-for-dom-audiodecoderconfig-codec②\">codec</a></code> is empty after\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\" id=\"ref-for-strip-leading-and-trailing-ascii-whitespace\">stripping leading and trailing ASCII whitespace</a>,\nreturn <code>false</code>.</p>"
         },
         {
-          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-description\" id=\"ref-for-dom-audiodecoderconfig-description③\">description</a></code> is [<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-detached\" id=\"ref-for-buffersource-detached\">detached</a>], return\n false.</p>"
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-description\" id=\"ref-for-dom-audiodecoderconfig-description④\">description</a></code> is [<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-detached\" id=\"ref-for-buffersource-detached\">detached</a>], return\n false.</p>"
         },
         {
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-samplerate\" id=\"ref-for-dom-audiodecoderconfig-samplerate②\">sampleRate</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-audiodecoderconfig-numberofchannels\" id=\"ref-for-dom-audiodecoderconfig-numberofchannels②\">numberOfChannels</a></code> are equal to zero, return <code>false</code>.</p>"
