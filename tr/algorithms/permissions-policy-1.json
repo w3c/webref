@@ -264,27 +264,27 @@
               "html": "<p>Let <var>feature</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①⑧\">policy-controlled feature</a> identified by\n<var>feature-name</var>.</p>"
             },
             {
-              "html": "<p>If <var>params</var>[\"report-to\"] exists, and is a string, then set\n<var>reporting-config</var>[<var>feature</var>] to <var>params</var>[\"report-to\"].</p>"
+              "html": "<p>If <var>params</var>[\"report-to\"] exists, and is a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token⑤\">token</a>, then set\n<var>reporting-config</var>[<var>feature</var>] to <var>params</var>[\"report-to\"].</p>"
             },
             {
               "html": "<p>Let <var>allowlist</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#allowlist\" id=\"ref-for-allowlist①⑧\">allowlist</a>.</p>"
             },
             {
-              "html": "<p>If <var>value</var> is the token <code>*</code>, or if <var>value</var> is a list which contains\nthe token <code>*</code>, set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value①\">the special value\n<code>*</code></a>.</p>"
+              "html": "<p>If <var>value</var> is the <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token⑥\">token</a> <code>*</code>, or if <var>value</var> is a list which contains\nthe <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token⑦\">token</a> <code>*</code>, set <var>allowlist</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#the-special-value\" id=\"ref-for-the-special-value①\">the special value\n<code>*</code></a>.</p>"
             },
             {
               "html": "Otherwise:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>value</var> is the token <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin②\">self-origin</a> be <var>origin</var>.</p>"
+                  "html": "<p>If <var>value</var> is the <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token⑧\">token</a> <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin②\">self-origin</a> be <var>origin</var>.</p>"
                 },
                 {
                   "html": "Otherwise if <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a>\n <var>element</var> in <var>value</var>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>element</var> is the token <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin③\">self-origin</a> be <var>origin</var>.</p>"
+                      "html": "<p>If <var>element</var> is the <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc8941#token\" id=\"ref-for-token⑨\">token</a> <code>self</code>, let <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#self-origin\" id=\"ref-for-self-origin③\">self-origin</a> be <var>origin</var>.</p>"
                     },
                     {
                       "html": "<p>If <var>element</var> is a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#permissions-source-expression\" id=\"ref-for-permissions-source-expression⑤\">permissions-source-expression</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>element</var> to <var>allowlist</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#expressions\" id=\"ref-for-expressions②\">expressions</a>.</p>"

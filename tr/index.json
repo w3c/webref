@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-09-22T01:22:45.582Z",
+  "date": "2026-09-23T01:33:42.186Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -14,6 +14,8 @@
       "av1-mpeg2-ts",
       "av1-rtp-spec",
       "av1-spec",
+      "bluetooth-scanning",
+      "bluetooth",
       "compat",
       "compression",
       "console",
@@ -49,6 +51,7 @@
       "fido-client-to-authenticator-protocol-v2.3",
       "fs",
       "fullscreen",
+      "hid",
       "html",
       "anchors",
       "body-tracking",
@@ -115,6 +118,7 @@
       "webgl2",
       "captured-mouse-events",
       "element-capture",
+      "serial",
       "storage",
       "streams",
       "svg-animations",
@@ -148,22 +152,24 @@
       "testutils",
       "url",
       "urlpattern",
+      "usb",
       "web-nfc",
       "login-status",
-      "at-driver",
       "css-aam",
+      "mathml-aam",
+      "pdf-aam",
+      "at-driver",
       "shacl12-cs",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
-      "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
       "mediacapture-extensions",
       "mediacapture-handle-actions",
       "mediacapture-surface-control",
-      "pdf-aam",
       "permissions-registry",
+      "png-4",
       "network-reporting",
       "sparql12-concepts",
       "trace-context-amqp",
@@ -192,8 +198,6 @@
       "wasm-js-api-2-fork-threads",
       "wasm-core-2-fork-wide-arithmetic",
       "speech-api",
-      "web-bluetooth",
-      "web-bluetooth-scanning",
       "webidl",
       "prompt-api",
       "proofreader-api",
@@ -267,7 +271,6 @@
       "savedata",
       "scheduling-apis",
       "scroll-to-text-fragment",
-      "serial",
       "shape-detection-api",
       "text-detection-api",
       "signature-based-sri",
@@ -285,10 +288,8 @@
       "managed-configuration",
       "webcrypto-modern-algos",
       "webcrypto-secure-curves",
-      "webhid",
       "webpackage",
       "webrtc-diagnostic-logging",
-      "webusb",
       "window-controls-overlay",
       "iso10918-5",
       "iso18181-2",
@@ -312,6 +313,7 @@
       "rfc7617",
       "rfc7725",
       "rfc7838",
+      "rfc7903",
       "rfc7932",
       "rfc8246",
       "rfc8288",
@@ -782,7 +784,7 @@
     "crawled": 418,
     "errors": 0
   },
-  "crawler": "reffy-21.1.6",
+  "crawler": "reffy-21.1.7",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -828,7 +830,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "22 September 2026",
+      "date": "23 September 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -960,11 +962,11 @@
         "title": "Accessible Name and Description Computation",
         "shortTitle": "Accessible Name and Description Computation",
         "releaseUrl": "https://www.w3.org/TR/accname/",
-        "nightlyUrl": "https://w3c.github.io/accname/"
+        "nightlyUrl": "https://w3c.github.io/aria/accname/"
       },
       "seriesVersion": "1.2",
       "nightly": {
-        "url": "https://w3c.github.io/accname/",
+        "url": "https://w3c.github.io/aria/accname/",
         "status": "Editor's Draft",
         "repository": "https://github.com/w3c/aria",
         "alternateUrls": [],
@@ -990,23 +992,17 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "accname"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/accname-1.2/",
-        "https://w3c.github.io/accname/"
+        "https://w3c.github.io/aria/accname/"
       ],
       "crawled": "https://www.w3.org/TR/accname-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Sep 2026 17:02:02 GMT"
+        "lastModified": "Tue, 22 Sep 2026 17:33:47 GMT"
       },
       "generator": "respec",
-      "date": "27 August 2026",
-      "revision": "72b0856bcbc1aa2d457ef42185a5134fa87ff253",
+      "date": "22 September 2026",
+      "revision": "02e0992d874990ef1e05bea7698eb1d85481fc8a",
       "algorithms": "algorithms/accname-1.2.json",
       "links": "links/accname-1.2.json",
       "refs": "refs/accname-1.2.json",
@@ -2325,7 +2321,7 @@
         "title": "Core Accessibility API Mappings",
         "shortTitle": "Core Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/core-aam/",
-        "nightlyUrl": "https://w3c.github.io/core-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/core-aam/"
       },
       "seriesVersion": "1.2",
       "organization": "W3C",
@@ -2341,7 +2337,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/core-aam/",
+        "url": "https://w3c.github.io/aria/core-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -2355,23 +2351,17 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "core-aam"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/core-aam-1.2/",
-        "https://w3c.github.io/core-aam/"
+        "https://w3c.github.io/aria/core-aam/"
       ],
       "crawled": "https://www.w3.org/TR/core-aam-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Sep 2026 17:01:59 GMT"
+        "lastModified": "Tue, 22 Sep 2026 17:39:54 GMT"
       },
       "generator": "respec",
-      "date": "29 August 2026",
-      "revision": "2f5c69b053c2b03f03fb00b4c9ff2c4ce517af55",
+      "date": "22 September 2026",
+      "revision": "02e0992d874990ef1e05bea7698eb1d85481fc8a",
       "algorithms": "algorithms/core-aam-1.2.json",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
@@ -11239,7 +11229,7 @@
         "title": "Digital Publishing Accessibility API Mappings",
         "shortTitle": "Digital Publishing Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/dpub-aam/",
-        "nightlyUrl": "https://w3c.github.io/dpub-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/dpub-aam/"
       },
       "seriesVersion": "1.1",
       "categories": [],
@@ -11256,7 +11246,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/dpub-aam/",
+        "url": "https://w3c.github.io/aria/dpub-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -11267,15 +11257,9 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing Accessibility API Mappings 1.1",
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "dpub-aam"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/dpub-aam-1.1/",
-        "https://w3c.github.io/dpub-aam/"
+        "https://w3c.github.io/aria/dpub-aam/"
       ],
       "crawled": "https://www.w3.org/TR/dpub-aam-1.1/",
       "crawlCacheInfo": {
@@ -11299,7 +11283,7 @@
         "title": "Digital Publishing WAI-ARIA",
         "shortTitle": "Digital Publishing WAI-ARIA",
         "releaseUrl": "https://www.w3.org/TR/dpub-aria/",
-        "nightlyUrl": "https://w3c.github.io/dpub-aria/"
+        "nightlyUrl": "https://w3c.github.io/aria/dpub-aria/"
       },
       "seriesVersion": "1.1",
       "categories": [],
@@ -11316,7 +11300,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/dpub-aria/",
+        "url": "https://w3c.github.io/aria/dpub-aria/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -11327,15 +11311,9 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing WAI-ARIA 1.1",
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "dpub-aria"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/dpub-aria-1.1/",
-        "https://w3c.github.io/dpub-aria/"
+        "https://w3c.github.io/aria/dpub-aria/"
       ],
       "crawled": "https://www.w3.org/TR/dpub-aria-1.1/",
       "crawlCacheInfo": {
@@ -13168,7 +13146,7 @@
         "title": "Graphics Accessibility API Mappings",
         "shortTitle": "Graphics Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/graphics-aam/",
-        "nightlyUrl": "https://w3c.github.io/graphics-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/graphics-aam/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -13184,7 +13162,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/graphics-aam/",
+        "url": "https://w3c.github.io/aria/graphics-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -13198,15 +13176,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "graphics-aam"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/graphics-aam-1.0/",
-        "https://w3c.github.io/graphics-aam/"
+        "https://w3c.github.io/aria/graphics-aam/"
       ],
       "crawled": "https://www.w3.org/TR/graphics-aam-1.0/",
       "crawlCacheInfo": {
@@ -13231,7 +13203,7 @@
         "title": "WAI-ARIA Graphics",
         "shortTitle": "WAI-ARIA Graphics",
         "releaseUrl": "https://www.w3.org/TR/graphics-aria/",
-        "nightlyUrl": "https://w3c.github.io/graphics-aria/"
+        "nightlyUrl": "https://w3c.github.io/aria/graphics-aria/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -13247,7 +13219,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/graphics-aria/",
+        "url": "https://w3c.github.io/aria/graphics-aria/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -13261,15 +13233,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "graphics-aria"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/graphics-aria-1.0/",
-        "https://w3c.github.io/graphics-aria/"
+        "https://w3c.github.io/aria/graphics-aria/"
       ],
       "crawled": "https://www.w3.org/TR/graphics-aria-1.0/",
       "crawlCacheInfo": {
@@ -13427,7 +13393,7 @@
         "title": "HTML Accessibility API Mappings",
         "shortTitle": "HTML Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/html-aam/",
-        "nightlyUrl": "https://w3c.github.io/html-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/html-aam/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -13443,7 +13409,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/html-aam/",
+        "url": "https://w3c.github.io/aria/html-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -13457,23 +13423,17 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "html-aam"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/html-aam-1.0/",
-        "https://w3c.github.io/html-aam/"
+        "https://w3c.github.io/aria/html-aam/"
       ],
       "crawled": "https://www.w3.org/TR/html-aam-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Sep 2026 17:01:59 GMT"
+        "lastModified": "Tue, 22 Sep 2026 17:31:10 GMT"
       },
       "generator": "respec",
-      "date": "29 August 2026",
-      "revision": "2f5c69b053c2b03f03fb00b4c9ff2c4ce517af55",
+      "date": "22 September 2026",
+      "revision": "02e0992d874990ef1e05bea7698eb1d85481fc8a",
       "algorithms": "algorithms/html-aam-1.0.json",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
@@ -16952,11 +16912,11 @@
       ],
       "crawled": "https://www.w3.org/TR/permissions-policy-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jun 2026 14:58:52 GMT"
+        "lastModified": "Tue, 22 Sep 2026 18:36:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 June 2026",
-      "revision": "c10c76d8efc3d1c7bd8278357fbaba9a4147206a",
+      "date": "22 September 2026",
+      "revision": "29398046f1e0cb45c091adda853df74925dc740a",
       "algorithms": "algorithms/permissions-policy-1.json",
       "links": "links/permissions-policy-1.json",
       "refs": "refs/permissions-policy-1.json",
@@ -17121,12 +17081,19 @@
         "title": "Portable Network Graphics (PNG)",
         "shortTitle": "PNG",
         "releaseUrl": "https://www.w3.org/TR/png/",
-        "nightlyUrl": "https://w3c.github.io/png/"
+        "nightlyUrl": "https://www.w3.org/TR/png/"
       },
       "seriesVersion": "3",
+      "nightly": {
+        "url": "https://www.w3.org/TR/png-3/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
       "formerNames": [
         "PNG-spec"
       ],
+      "seriesNext": "png-4",
       "organization": "W3C",
       "groups": [
         {
@@ -17139,14 +17106,6 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/png/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/png",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Portable Network Graphics (PNG) Specification (Third Edition)",
       "source": "w3c",
       "shortTitle": "PNG",
@@ -17154,9 +17113,14 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "png"
+        ]
+      },
       "versions": [
-        "https://www.w3.org/TR/png-3/",
-        "https://w3c.github.io/png/"
+        "https://www.w3.org/TR/png-3/"
       ],
       "crawled": "https://www.w3.org/TR/png-3/",
       "crawlCacheInfo": {
@@ -19635,7 +19599,7 @@
       },
       "title": "SHACL 1.2 SPARQL-Related Features",
       "source": "w3c",
-      "shortTitle": "SHACL 1.2 SPARQL Extensions",
+      "shortTitle": "SHACL 1.2 SPARQL-Related Features",
       "categories": [],
       "standing": "good",
       "versions": [
@@ -20408,7 +20372,7 @@
         "title": "SVG Accessibility API Mappings",
         "shortTitle": "SVG Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/svg-aam/",
-        "nightlyUrl": "https://w3c.github.io/svg-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/svg-aam/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -20424,7 +20388,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/svg-aam/",
+        "url": "https://w3c.github.io/aria/svg-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -20438,23 +20402,17 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "svg-aam"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/svg-aam-1.0/",
-        "https://w3c.github.io/svg-aam/"
+        "https://w3c.github.io/aria/svg-aam/"
       ],
       "crawled": "https://www.w3.org/TR/svg-aam-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Aug 2026 07:15:40 GMT"
+        "lastModified": "Tue, 22 Sep 2026 17:43:55 GMT"
       },
       "generator": "respec",
-      "date": "27 August 2026",
-      "revision": "72b0856bcbc1aa2d457ef42185a5134fa87ff253",
+      "date": "22 September 2026",
+      "revision": "02e0992d874990ef1e05bea7698eb1d85481fc8a",
       "algorithms": "algorithms/svg-aam-1.0.json",
       "links": "links/svg-aam-1.0.json",
       "refs": "refs/svg-aam-1.0.json",
@@ -20981,7 +20939,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/timing-entrytypes-registry",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Timing Entry Names Registry",
@@ -22196,7 +22154,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-di-ecdsa-1.1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24168,11 +24126,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webaudio-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Nov 2024 21:11:46 GMT"
+        "lastModified": "Fri, 11 Sep 2026 14:55:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 November 2024",
-      "revision": "26962420c302c52605b3552531453b933801ef6a",
+      "date": "22 September 2026",
+      "revision": "cb8b688eba5d3718e1f4e5d7b1c20af114fd718a",
       "algorithms": "algorithms/webaudio-1.1.json",
       "links": "links/webaudio-1.1.json",
       "refs": "refs/webaudio-1.1.json",

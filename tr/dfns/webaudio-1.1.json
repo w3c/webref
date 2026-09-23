@@ -167,6 +167,28 @@
       "links": []
     },
     {
+      "id": "dom-baseaudiocontext-state-before-interruption-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-baseaudiocontext-state-before-interruption-slot",
+      "linkingText": [
+        "[[state before interruption]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dom-baseaudiocontext-render-quantum-size-slot",
       "href": "https://www.w3.org/TR/webaudio-1.1/#dom-baseaudiocontext-render-quantum-size-slot",
       "linkingText": [
@@ -260,6 +282,29 @@
       "linkingText": [
         "\"closed\"",
         "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioContextState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "BaseAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#BaseAudioContext",
+        "title": "The BaseAudioContext Interface",
+        "number": "1.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontextstate-interrupted",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontextstate-interrupted",
+      "linkingText": [
+        "\"interrupted\"",
+        "interrupted"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -2090,10 +2135,54 @@
       "links": []
     },
     {
+      "id": "dom-audiocontext-sink-id-at-construction-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-sink-id-at-construction-slot",
+      "linkingText": [
+        "[[sink ID at construction]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dom-audiocontext-pending-resume-promises-slot",
       "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-pending-resume-promises-slot",
       "linkingText": [
         "[[pending resume promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-playback-stats-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-playback-stats-slot",
+      "linkingText": [
+        "[[playback stats]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2185,28 +2274,6 @@
       "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-outputlatency",
       "linkingText": [
         "outputLatency"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioContext-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext-attributes",
-        "title": "Attributes",
-        "number": "1.2.2"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-audiocontext-rendercapacity",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-rendercapacity",
-      "linkingText": [
-        "renderCapacity"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2332,6 +2399,28 @@
         "number": "1.2.2"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-playbackstats",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-playbackstats",
+      "linkingText": [
+        "playbackStats"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -2855,531 +2944,6 @@
       "links": []
     },
     {
-      "id": "AudioRenderCapacity",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity",
-      "linkingText": [
-        "audiorenderCapacity"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity",
-        "title": "AudioRenderCapacity",
-        "number": "1.2.9"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "audiorendercapacity",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#audiorendercapacity",
-      "linkingText": [
-        "AudioRenderCapacity"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity",
-        "title": "AudioRenderCapacity",
-        "number": "1.2.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacity-start-options-options",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacity-start-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioRenderCapacity/start(options)",
-        "AudioRenderCapacity/start()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity",
-        "title": "AudioRenderCapacity",
-        "number": "1.2.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacity-onupdate",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacity-onupdate",
-      "linkingText": [
-        "onupdate"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioRenderCapacity"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-attributes",
-        "title": "Attributes",
-        "number": "1.2.9.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "eventdef-audiorendercapacity-update",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#eventdef-audiorendercapacity-update",
-      "linkingText": [
-        "update"
-      ],
-      "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "AudioRenderCapacity"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-attributes",
-        "title": "Attributes",
-        "number": "1.2.9.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacity-start",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacity-start",
-      "linkingText": [
-        "start(options)",
-        "start()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "AudioRenderCapacity"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity-methods",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-methods",
-        "title": "Methods",
-        "number": "1.2.9.2"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacity-stop",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacity-stop",
-      "linkingText": [
-        "stop()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "AudioRenderCapacity"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacity-methods",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacity-methods",
-        "title": "Methods",
-        "number": "1.2.9.2"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "AudioRenderCapacityOptions",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityOptions",
-      "linkingText": [
-        "audiorenderCapacityoptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityOptions",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityOptions",
-        "title": "AudioRenderCapacityOptions",
-        "number": "1.2.10"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "dictdef-audiorendercapacityoptions",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dictdef-audiorendercapacityoptions",
-      "linkingText": [
-        "AudioRenderCapacityOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityOptions",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityOptions",
-        "title": "AudioRenderCapacityOptions",
-        "number": "1.2.10"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityoptions-updateinterval",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityoptions-updateinterval",
-      "linkingText": [
-        "updateInterval"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AudioRenderCapacityOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-AudioRenderCapacityOptions-members",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#dictionary-AudioRenderCapacityOptions-members",
-        "title": "Dictionary AudioRenderCapacityOptions Members",
-        "number": "1.2.10.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "AudioRenderCapacityEvent",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-      "linkingText": [
-        "audiorenderCapacityevent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "audiorendercapacityevent",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#audiorendercapacityevent",
-      "linkingText": [
-        "AudioRenderCapacityEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-audiorendercapacityevent",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-audiorendercapacityevent",
-      "linkingText": [
-        "AudioRenderCapacityEvent(type, eventInitDict)",
-        "constructor(type, eventInitDict)",
-        "AudioRenderCapacityEvent(type)",
-        "constructor(type)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)",
-        "AudioRenderCapacityEvent/constructor(type, eventInitDict)",
-        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)",
-        "AudioRenderCapacityEvent/constructor(type)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-audiorendercapacityevent-type-eventinitdict-eventinitdict",
-      "linkingText": [
-        "eventInitDict"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type, eventInitDict)",
-        "AudioRenderCapacityEvent/constructor(type, eventInitDict)",
-        "AudioRenderCapacityEvent/AudioRenderCapacityEvent(type)",
-        "AudioRenderCapacityEvent/constructor(type)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dictdef-audiorendercapacityeventinit",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dictdef-audiorendercapacityeventinit",
-      "linkingText": [
-        "AudioRenderCapacityEventInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityeventinit-timestamp",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityeventinit-timestamp",
-      "linkingText": [
-        "timestamp"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AudioRenderCapacityEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityeventinit-averageload",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityeventinit-averageload",
-      "linkingText": [
-        "averageLoad"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AudioRenderCapacityEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityeventinit-peakload",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityeventinit-peakload",
-      "linkingText": [
-        "peakLoad"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AudioRenderCapacityEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityeventinit-underrunratio",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityeventinit-underrunratio",
-      "linkingText": [
-        "underrunRatio"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AudioRenderCapacityEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent",
-        "title": "AudioRenderCapacityEvent",
-        "number": "1.2.11"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-timestamp",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-timestamp",
-      "linkingText": [
-        "timestamp"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent-attributes",
-        "title": "Attributes",
-        "number": "1.2.11.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-averageload",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-averageload",
-      "linkingText": [
-        "averageLoad"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent-attributes",
-        "title": "Attributes",
-        "number": "1.2.11.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-peakload",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-peakload",
-      "linkingText": [
-        "peakLoad"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent-attributes",
-        "title": "Attributes",
-        "number": "1.2.11.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-audiorendercapacityevent-underrunratio",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiorendercapacityevent-underrunratio",
-      "linkingText": [
-        "underrunRatio"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioRenderCapacityEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioRenderCapacityEvent-attributes",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioRenderCapacityEvent-attributes",
-        "title": "Attributes",
-        "number": "1.2.11.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
       "id": "OfflineAudioContext",
       "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
       "linkingText": [
@@ -3419,6 +2983,94 @@
         "number": "1.3"
       },
       "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-rendering-started-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-rendering-started-slot",
+      "linkingText": [
+        "[[rendering started]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-rendered-buffers-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-rendered-buffers-slot",
+      "linkingText": [
+        "[[rendered buffers]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-committed-frames-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-committed-frames-slot",
+      "linkingText": [
+        "[[committed frames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-rendered-frames-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-rendered-frames-slot",
+      "linkingText": [
+        "[[rendered frames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext",
+        "title": "The OfflineAudioContext Interface",
+        "number": "1.3"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -3625,6 +3277,7 @@
       "id": "dom-offlineaudiocontext-startrendering",
       "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-startrendering",
       "linkingText": [
+        "startRendering(chunkSize)",
         "startRendering()"
       ],
       "localLinkingText": [],
@@ -3641,50 +3294,6 @@
         "number": "1.3.3"
       },
       "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dom-offlineaudiocontext-rendering-started-slot",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-rendering-started-slot",
-      "linkingText": [
-        "[[rendering started]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OfflineAudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OfflineAudioContext-methods",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-methods",
-        "title": "Methods",
-        "number": "1.3.3"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "dom-offlineaudiocontext-rendered-buffer-slot",
-      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-rendered-buffer-slot",
-      "linkingText": [
-        "[[rendered buffer]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OfflineAudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "OfflineAudioContext-methods",
-        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-methods",
-        "title": "Methods",
-        "number": "1.3.3"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {
@@ -3705,6 +3314,28 @@
         "number": "1.3.3"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-startrendering-chunksize-chunksize",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-startrendering-chunksize-chunksize",
+      "linkingText": [
+        "chunkSize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "OfflineAudioContext/startRendering(chunkSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext-methods",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-methods",
+        "title": "Methods",
+        "number": "1.3.3"
+      },
+      "definedIn": "table",
       "links": []
     },
     {
@@ -3771,6 +3402,28 @@
         "number": "1.3.3"
       },
       "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-offlineaudiocontext-close",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-offlineaudiocontext-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "OfflineAudioContext-methods",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#OfflineAudioContext-methods",
+        "title": "Methods",
+        "number": "1.3.3"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -17631,6 +17284,440 @@
       "links": []
     },
     {
+      "id": "AudioPlaybackStats",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+      "linkingText": [
+        "AudioPlaybackStats"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "underrun-frame",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#underrun-frame",
+      "linkingText": [
+        "underrun frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "underrun-event",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#underrun-event",
+      "linkingText": [
+        "underrun event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-tojson",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-audio-context-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-audio-context-slot",
+      "linkingText": [
+        "[[audio context]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrun-duration-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-underrun-duration-slot",
+      "linkingText": [
+        "[[underrun duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrun-events-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-underrun-events-slot",
+      "linkingText": [
+        "[[underrun events]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-total-duration-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-total-duration-slot",
+      "linkingText": [
+        "[[total duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-average-latency-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-average-latency-slot",
+      "linkingText": [
+        "[[average latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-minimum-latency-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-minimum-latency-slot",
+      "linkingText": [
+        "[[minimum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-maximum-latency-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-maximum-latency-slot",
+      "linkingText": [
+        "[[maximum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-latency-reset-time-slot",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-latency-reset-time-slot",
+      "linkingText": [
+        "[[latency reset time]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-currently-tracked-interval",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-currently-tracked-interval",
+      "linkingText": [
+        "currently tracked interval"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrunduration",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-underrunduration",
+      "linkingText": [
+        "underrunDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrunevents",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-underrunevents",
+      "linkingText": [
+        "underrunEvents"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-totalduration",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-totalduration",
+      "linkingText": [
+        "totalDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-averagelatency",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-averagelatency",
+      "linkingText": [
+        "averageLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-minimumlatency",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-minimumlatency",
+      "linkingText": [
+        "minimumLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-maximumlatency",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-maximumlatency",
+      "linkingText": [
+        "maximumLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-resetlatency",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audioplaybackstats-resetlatency",
+      "linkingText": [
+        "resetLatency()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-methods",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#AudioPlaybackStats-methods",
+        "title": "Methods",
+        "number": "1.33.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "control-thread",
       "href": "https://www.w3.org/TR/webaudio-1.1/#control-thread",
       "linkingText": [
@@ -17785,7 +17872,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17805,7 +17892,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17825,7 +17912,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17845,7 +17932,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17865,7 +17952,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17885,7 +17972,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17905,7 +17992,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17927,7 +18014,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17949,7 +18036,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17969,7 +18056,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17989,7 +18076,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18009,7 +18096,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18029,7 +18116,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18049,7 +18136,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18069,7 +18156,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18089,7 +18176,7 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -18109,7 +18196,71 @@
         "id": "rendering-loop",
         "href": "https://www.w3.org/TR/webaudio-1.1/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "interruption",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#interruption",
+      "linkingText": [
+        "interruption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-interruption-start",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-interruption-start",
+      "linkingText": [
+        "interruption-start"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-interruption-end",
+      "href": "https://www.w3.org/TR/webaudio-1.1/#dom-audiocontext-interruption-end",
+      "linkingText": [
+        "interruption-end"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interruption-handling",
+        "href": "https://www.w3.org/TR/webaudio-1.1/#interruption-handling",
+        "title": "Handling an interruption on the AudioContext",
+        "number": "2.7"
       },
       "definedIn": "prose",
       "links": []
