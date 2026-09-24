@@ -9821,10 +9821,10 @@
       "links": []
     },
     {
-      "id": "cddl-type-browsingcontextinfo",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsingcontextinfo",
+      "id": "cddl-type-browsingcontextbaseinfo",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsingcontextbaseinfo",
       "linkingText": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "localLinkingText": [],
       "type": "cddl-type",
@@ -9841,8 +9841,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-children",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-children",
+      "id": "cddl-key-browsingcontextbaseinfo-children",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-children",
       "linkingText": [
         "children",
         "\"children\""
@@ -9850,7 +9850,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9864,8 +9864,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-clientwindow",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-clientwindow",
+      "id": "cddl-key-browsingcontextbaseinfo-clientwindow",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-clientwindow",
       "linkingText": [
         "clientWindow",
         "\"clientWindow\""
@@ -9873,7 +9873,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9887,8 +9887,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-context",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-context",
+      "id": "cddl-key-browsingcontextbaseinfo-context",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-context",
       "linkingText": [
         "context",
         "\"context\""
@@ -9896,7 +9896,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9910,8 +9910,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-originalopener",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-originalopener",
+      "id": "cddl-key-browsingcontextbaseinfo-originalopener",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-originalopener",
       "linkingText": [
         "originalOpener",
         "\"originalOpener\""
@@ -9919,7 +9919,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9933,8 +9933,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-url",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-url",
+      "id": "cddl-key-browsingcontextbaseinfo-url",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-url",
       "linkingText": [
         "url",
         "\"url\""
@@ -9942,7 +9942,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9956,8 +9956,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-usercontext",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-usercontext",
+      "id": "cddl-key-browsingcontextbaseinfo-usercontext",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-usercontext",
       "linkingText": [
         "userContext",
         "\"userContext\""
@@ -9965,7 +9965,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.Info"
+        "browsingContext.BaseInfo"
       ],
       "access": "private",
       "informative": false,
@@ -9979,8 +9979,8 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextinfo-parent",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextinfo-parent",
+      "id": "cddl-key-browsingcontextbaseinfo-parent",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextbaseinfo-parent",
       "linkingText": [
         "parent",
         "\"parent\""
@@ -9988,8 +9988,28 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
+        "browsingContext.BaseInfo"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-browsingContext-Info",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-browsingContext-Info",
+        "title": "The browsingContext.Info Type",
+        "number": "7.3.2.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "cddl-type-browsingcontextinfo",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsingcontextinfo",
+      "linkingText": [
         "browsingContext.Info"
       ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -16207,6 +16227,49 @@
       "type": "cddl-key",
       "for": [
         "browsingContext.ContextCreated"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextCreated",
+        "href": "https://w3c.github.io/webdriver-bidi/#event-browsingContext-contextCreated",
+        "title": "The browsingContext.contextCreated Event",
+        "number": "7.3.4.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "cddl-type-browsingcontextcontextcreatedparameters",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsingcontextcontextcreatedparameters",
+      "linkingText": [
+        "browsingContext.ContextCreatedParameters"
+      ],
+      "localLinkingText": [],
+      "type": "cddl-type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-browsingContext-contextCreated",
+        "href": "https://w3c.github.io/webdriver-bidi/#event-browsingContext-contextCreated",
+        "title": "The browsingContext.contextCreated Event",
+        "number": "7.3.4.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "cddl-key-browsingcontextcontextcreatedparameters-hasplannednavigation",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextcontextcreatedparameters-hasplannednavigation",
+      "linkingText": [
+        "hasPlannedNavigation",
+        "\"hasPlannedNavigation\""
+      ],
+      "localLinkingText": [],
+      "type": "cddl-key",
+      "for": [
+        "browsingContext.ContextCreatedParameters"
       ],
       "access": "private",
       "informative": false,
