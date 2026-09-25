@@ -284,7 +284,7 @@ browsingContext.BrowsingContext = text;
 
 browsingContext.InfoList = [*browsingContext.Info]
 
-browsingContext.Info = {
+browsingContext.BaseInfo = (
   children: browsingContext.InfoList / null,
   clientWindow: browser.ClientWindow,
   context: browsingContext.BrowsingContext,
@@ -292,6 +292,10 @@ browsingContext.Info = {
   url: text,
   userContext: browser.UserContext,
   ? parent: browsingContext.BrowsingContext / null,
+)
+
+browsingContext.Info = {
+  browsingContext.BaseInfo
 }
 
 browsingContext.Locator = (
@@ -407,8 +411,13 @@ browsingContext.TraverseHistoryResult = EmptyResult
 
 browsingContext.ContextCreated = (
  method: "browsingContext.contextCreated",
- params: browsingContext.Info
+ params: browsingContext.ContextCreatedParameters
 )
+
+browsingContext.ContextCreatedParameters = {
+ browsingContext.BaseInfo,
+ hasPlannedNavigation: bool,
+}
 
 browsingContext.ContextDestroyed = (
  method: "browsingContext.contextDestroyed",
