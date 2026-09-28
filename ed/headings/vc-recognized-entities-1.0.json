@@ -196,66 +196,214 @@
       "number": "4.3"
     },
     {
-      "id": "threat-model",
-      "href": "https://w3c.github.io/vc-recognized-entities/#threat-model",
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/vc-recognized-entities/#security-considerations",
       "level": 2,
-      "title": "Threat Model",
+      "title": "Security Considerations",
       "alternateIds": [
-        "a-threat-model"
+        "a-security-considerations"
       ],
       "number": "A"
     },
     {
-      "id": "target-threats",
-      "href": "https://w3c.github.io/vc-recognized-entities/#target-threats",
+      "id": "unauthorized-issuer-spoofing",
+      "href": "https://w3c.github.io/vc-recognized-entities/#unauthorized-issuer-spoofing",
       "level": 3,
-      "title": "Target Threats",
+      "title": "Unauthorized Issuer Spoofing",
       "alternateIds": [
-        "a-1-target-threats"
+        "a-1-unauthorized-issuer-spoofing"
       ],
       "number": "A.1"
     },
     {
-      "id": "implementation-threats",
-      "href": "https://w3c.github.io/vc-recognized-entities/#implementation-threats",
+      "id": "recognized-entity-credential-tampering",
+      "href": "https://w3c.github.io/vc-recognized-entities/#recognized-entity-credential-tampering",
       "level": 3,
-      "title": "Implementation Threats",
+      "title": "Recognized Entity Credential Tampering",
       "alternateIds": [
-        "a-2-implementation-threats"
+        "a-2-recognized-entity-credential-tampering"
       ],
       "number": "A.2"
     },
     {
-      "id": "external-threats",
-      "href": "https://w3c.github.io/vc-recognized-entities/#external-threats",
+      "id": "list-retrieval-denial-of-service",
+      "href": "https://w3c.github.io/vc-recognized-entities/#list-retrieval-denial-of-service",
       "level": 3,
-      "title": "External Threats",
+      "title": "List Retrieval Denial of Service",
       "alternateIds": [
-        "a-3-external-threats"
+        "a-3-list-retrieval-denial-of-service"
       ],
       "number": "A.3"
     },
     {
-      "id": "dependency-threats",
-      "href": "https://w3c.github.io/vc-recognized-entities/#dependency-threats",
+      "id": "unvetted-recognized-entity-credential-propagation",
+      "href": "https://w3c.github.io/vc-recognized-entities/#unvetted-recognized-entity-credential-propagation",
       "level": 3,
-      "title": "Dependency Threats",
+      "title": "Unvetted Recognized Entity Credential Propagation",
       "alternateIds": [
-        "a-4-dependency-threats"
+        "a-4-unvetted-recognized-entity-credential-propagation"
       ],
       "number": "A.4"
     },
     {
-      "id": "security-considerations",
-      "href": "https://w3c.github.io/vc-recognized-entities/#security-considerations",
+      "id": "list-publisher-impersonation",
+      "href": "https://w3c.github.io/vc-recognized-entities/#list-publisher-impersonation",
       "level": 3,
-      "title": "Security Considerations"
+      "title": "List Publisher Impersonation",
+      "alternateIds": [
+        "a-5-list-publisher-impersonation"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "stale-recognition-acceptance",
+      "href": "https://w3c.github.io/vc-recognized-entities/#stale-recognition-acceptance",
+      "level": 3,
+      "title": "Stale Recognition Acceptance",
+      "alternateIds": [
+        "a-6-stale-recognition-acceptance"
+      ],
+      "number": "A.6"
+    },
+    {
+      "id": "external-resource-substitution",
+      "href": "https://w3c.github.io/vc-recognized-entities/#external-resource-substitution",
+      "level": 3,
+      "title": "External Resource Substitution",
+      "alternateIds": [
+        "a-7-external-resource-substitution"
+      ],
+      "number": "A.7"
+    },
+    {
+      "id": "unbounded-recognition-chain-trust",
+      "href": "https://w3c.github.io/vc-recognized-entities/#unbounded-recognition-chain-trust",
+      "level": 3,
+      "title": "Unbounded Recognition Chain Trust",
+      "alternateIds": [
+        "a-8-unbounded-recognition-chain-trust"
+      ],
+      "number": "A.8"
+    },
+    {
+      "id": "abuse-of-recognized-actions",
+      "href": "https://w3c.github.io/vc-recognized-entities/#abuse-of-recognized-actions",
+      "level": 3,
+      "title": "Abuse of Recognized Actions",
+      "alternateIds": [
+        "a-9-abuse-of-recognized-actions"
+      ],
+      "number": "A.9"
+    },
+    {
+      "id": "overly-permissive-schema-constraints",
+      "href": "https://w3c.github.io/vc-recognized-entities/#overly-permissive-schema-constraints",
+      "level": 3,
+      "title": "Overly Permissive Schema Constraints",
+      "alternateIds": [
+        "a-10-overly-permissive-schema-constraints"
+      ],
+      "number": "A.10"
+    },
+    {
+      "id": "json-schema-attack",
+      "href": "https://w3c.github.io/vc-recognized-entities/#json-schema-attack",
+      "level": 3,
+      "title": "JSON Schema Attack",
+      "alternateIds": [
+        "a-11-json-schema-attack"
+      ],
+      "number": "A.11"
+    },
+    {
+      "id": "compromise-of-recognized-entity-identifier",
+      "href": "https://w3c.github.io/vc-recognized-entities/#compromise-of-recognized-entity-identifier",
+      "level": 3,
+      "title": "Compromise of Recognized Entity Identifier",
+      "alternateIds": [
+        "a-12-compromise-of-recognized-entity-identifier"
+      ],
+      "number": "A.12"
+    },
+    {
+      "id": "verifier-trust-anchor-misconfiguration",
+      "href": "https://w3c.github.io/vc-recognized-entities/#verifier-trust-anchor-misconfiguration",
+      "level": 3,
+      "title": "Verifier Trust Anchor Misconfiguration",
+      "alternateIds": [
+        "a-13-verifier-trust-anchor-misconfiguration"
+      ],
+      "number": "A.13"
+    },
+    {
+      "id": "cryptographically-relevant-quantum-computer-breaks-cryptography",
+      "href": "https://w3c.github.io/vc-recognized-entities/#cryptographically-relevant-quantum-computer-breaks-cryptography",
+      "level": 3,
+      "title": "Cryptographically Relevant Quantum Computer Breaks Cryptography",
+      "alternateIds": [
+        "a-14-cryptographically-relevant-quantum-computer-breaks-cryptography"
+      ],
+      "number": "A.14"
     },
     {
       "id": "privacy-considerations",
       "href": "https://w3c.github.io/vc-recognized-entities/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "b-privacy-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "privacy-leakage-via-list-fetch",
+      "href": "https://w3c.github.io/vc-recognized-entities/#privacy-leakage-via-list-fetch",
       "level": 3,
-      "title": "Privacy Considerations"
+      "title": "Privacy Leakage via List Fetch",
+      "alternateIds": [
+        "b-1-privacy-leakage-via-list-fetch"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "surveillance-of-recognized-entity-identifiers",
+      "href": "https://w3c.github.io/vc-recognized-entities/#surveillance-of-recognized-entity-identifiers",
+      "level": 3,
+      "title": "Surveillance of Recognized Entity Identifiers",
+      "alternateIds": [
+        "b-2-surveillance-of-recognized-entity-identifiers"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "harms-by-association",
+      "href": "https://w3c.github.io/vc-recognized-entities/#harms-by-association",
+      "level": 3,
+      "title": "Harms by Association",
+      "alternateIds": [
+        "b-3-harms-by-association"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "market-competition-considerations",
+      "href": "https://w3c.github.io/vc-recognized-entities/#market-competition-considerations",
+      "level": 2,
+      "title": "Market Competition Considerations",
+      "alternateIds": [
+        "c-market-competition-considerations"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "anti-competitive-list-gatekeeping",
+      "href": "https://w3c.github.io/vc-recognized-entities/#anti-competitive-list-gatekeeping",
+      "level": 3,
+      "title": "Anti-Competitive List Gatekeeping",
+      "alternateIds": [
+        "c-1-anti-competitive-list-gatekeeping"
+      ],
+      "number": "C.1"
     },
     {
       "id": "ecosystem-examples",
@@ -263,9 +411,9 @@
       "level": 2,
       "title": "Ecosystem Examples",
       "alternateIds": [
-        "b-ecosystem-examples"
+        "d-ecosystem-examples"
       ],
-      "number": "B"
+      "number": "D"
     },
     {
       "id": "gs1-federated-identifier-example",
@@ -273,9 +421,9 @@
       "level": 3,
       "title": "GS1 Federated Identifier Example",
       "alternateIds": [
-        "b-1-gs1-federated-identifier-example"
+        "d-1-gs1-federated-identifier-example"
       ],
-      "number": "B.1"
+      "number": "D.1"
     },
     {
       "id": "un-grid-cross-border-trade-example",
@@ -283,9 +431,9 @@
       "level": 3,
       "title": "UN GRID Cross-Border Trade Example",
       "alternateIds": [
-        "b-2-un-grid-cross-border-trade-example"
+        "d-2-un-grid-cross-border-trade-example"
       ],
-      "number": "B.2"
+      "number": "D.2"
     },
     {
       "id": "holder-based-delivery",
@@ -293,9 +441,9 @@
       "level": 3,
       "title": "Holder-Based Delivery",
       "alternateIds": [
-        "b-3-holder-based-delivery"
+        "d-3-holder-based-delivery"
       ],
-      "number": "B.3"
+      "number": "D.3"
     },
     {
       "id": "stale-credentials",
@@ -309,9 +457,9 @@
       "level": 2,
       "title": "Relationship to Other Technologies",
       "alternateIds": [
-        "c-relationship-to-other-technologies"
+        "e-relationship-to-other-technologies"
       ],
-      "number": "C"
+      "number": "E"
     },
     {
       "id": "etsi-trust-service-lists",
@@ -319,9 +467,9 @@
       "level": 3,
       "title": "ETSI Trust Service Lists",
       "alternateIds": [
-        "c-1-etsi-trust-service-lists"
+        "e-1-etsi-trust-service-lists"
       ],
-      "number": "C.1"
+      "number": "E.1"
     },
     {
       "id": "x-509-certificate-authority-lists",
@@ -329,9 +477,9 @@
       "level": 3,
       "title": "X.509 Certificate Authority Lists",
       "alternateIds": [
-        "c-2-x-509-certificate-authority-lists"
+        "e-2-x-509-certificate-authority-lists"
       ],
-      "number": "C.2"
+      "number": "E.2"
     },
     {
       "id": "iso-iec-18013-5-mdl-vical",
@@ -339,9 +487,9 @@
       "level": 3,
       "title": "ISO/IEC 18013-5 mDL VICAL",
       "alternateIds": [
-        "c-3-iso-iec-18013-5-mdl-vical"
+        "e-3-iso-iec-18013-5-mdl-vical"
       ],
-      "number": "C.3"
+      "number": "E.3"
     },
     {
       "id": "acknowledgements",
@@ -349,9 +497,9 @@
       "level": 2,
       "title": "Acknowledgements",
       "alternateIds": [
-        "d-acknowledgements"
+        "f-acknowledgements"
       ],
-      "number": "D"
+      "number": "F"
     },
     {
       "id": "references",
@@ -359,9 +507,9 @@
       "level": 2,
       "title": "References",
       "alternateIds": [
-        "e-references"
+        "g-references"
       ],
-      "number": "E"
+      "number": "G"
     },
     {
       "id": "normative-references",
@@ -369,9 +517,9 @@
       "level": 3,
       "title": "Normative references",
       "alternateIds": [
-        "e-1-normative-references"
+        "g-1-normative-references"
       ],
-      "number": "E.1"
+      "number": "G.1"
     },
     {
       "id": "informative-references",
@@ -379,9 +527,9 @@
       "level": 3,
       "title": "Informative references",
       "alternateIds": [
-        "e-2-informative-references"
+        "g-2-informative-references"
       ],
-      "number": "E.2"
+      "number": "G.2"
     }
   ]
 }
