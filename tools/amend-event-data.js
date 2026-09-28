@@ -545,7 +545,7 @@ const patches = {
       change: { targets: ['XMLHttpRequest', 'XMLHttpRequestUpload'] }
     }
   ],
-  'web-bluetooth': [
+  'bluetooth': [
     {
       pattern: { type: /^(advertisementreceived|gattserverdisconnected)$/ },
       matched: 2,
