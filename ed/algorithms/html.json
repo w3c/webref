@@ -8740,7 +8740,7 @@
               ]
             },
             {
-              "html": "<p><i>Navigate</i>: <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\" id=\"the-iframe-element:navigate-an-iframe-or-frame-2\">Navigate an <code>iframe</code> or <code>frame</code></a>\n     given <var>element</var>, <var>url</var>, and <var>referrerPolicy</var>.</p>"
+              "html": "<p><i>Navigate</i>: <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\" id=\"the-iframe-element:navigate-an-iframe-or-frame-2\">Navigate an <code>iframe</code> or <code>frame</code></a>\n     given <var>element</var>, <var>url</var>, <var>referrerPolicy</var>, null, and\n     <var>initialInsertion</var>.</p>"
             }
           ]
         }
@@ -29952,10 +29952,22 @@
         },
         {
           "html": "If <var>newDocument</var> is null:",
-          "rationale": "if",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>initialInsertion</var> is true, <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"the-javascript:-url-special-case:nav-container\">container</a> is non-null, and <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"the-javascript:-url-special-case:nav-document-2\">active document</a>'s <a id=\"the-javascript:-url-special-case:is-initial-about:blank\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about:blank\">is initial\n      <code>about:blank</code></a> is true, then run the <a id=\"the-javascript:-url-special-case:iframe-load-event-steps\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-load-event-steps\">iframe load event steps</a>\n      given <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"the-javascript:-url-special-case:nav-container-2\">container</a>.</p>"
+              "html": "<p>Let <var>container</var> be <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"the-javascript:-url-special-case:nav-container\">container</a>.</p>"
+            },
+            {
+              "html": "If <var>initialInsertion</var> is true, <var>container</var> is non-null, and\n      <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"the-javascript:-url-special-case:nav-document-2\">active document</a>'s <a id=\"the-javascript:-url-special-case:is-initial-about:blank\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about:blank\">is\n      initial <code>about:blank</code></a> is true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>container</var> is an <code id=\"the-javascript:-url-special-case:the-iframe-element\"><a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\">iframe</a></code> element, then run the <a id=\"the-javascript:-url-special-case:iframe-load-event-steps\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-load-event-steps\">iframe\n       load event steps</a> given <var>container</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, <a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"the-javascript:-url-special-case:concept-event-fire\" data-x-internal=\"concept-event-fire\">fire an event</a> named <code id=\"the-javascript:-url-special-case:event-load\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-load\">load</a></code> at <var>container</var>.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Return.</p>"
@@ -50182,7 +50194,7 @@
     {
       "name": "process the frame attributes",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#process-the-frame-attributes",
-      "html": "To <dfn id=\"process-the-frame-attributes\">process the <code>frame</code> attributes</dfn> for an element <var>element</var>, with\n  an optional boolean <dfn id=\"process-frame-initial-insertion\"><var>initialInsertion</var></dfn>:",
+      "html": "To <dfn id=\"process-the-frame-attributes\">process the <code>frame</code> attributes</dfn> for an element <var>element</var>, with\n  an optional boolean <dfn id=\"process-frame-initial-insertion\"><var>initialInsertion</var></dfn> (default false):",
       "rationale": "let",
       "steps": [
         {
@@ -50204,7 +50216,7 @@
           ]
         },
         {
-          "html": "<p><a id=\"frames:navigate-an-iframe-or-frame\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\">Navigate an <code>iframe</code> or <code>frame</code></a> given\n   <var>element</var>, <var>url</var>, the empty string, and <var>initialInsertion</var>.</p>"
+          "html": "<p><a id=\"frames:navigate-an-iframe-or-frame\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\">Navigate an <code>iframe</code> or <code>frame</code></a> given\n   <var>element</var>, <var>url</var>, the empty string, null, and\n   <var>initialInsertion</var>.</p>"
         }
       ]
     }
