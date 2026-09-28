@@ -85,13 +85,13 @@
               "html": "Set <code>state.strategy</code> to \"decompression\"."
             },
             {
-              "html": "For each entry <em><code>type</code>: <code>map</code></em> in the <code>typeTables</code> array in the CBOR-LD Varint Registry Entry\nassociated with <code>registryEntryId</code>, add that entry to <code>state</code>.<code>typeTable</code>, and set the value of <code>type</code>\nin <code>state</code>.<code>reverseTypeTable</code> to <code>inverseMap</code>, where <code>inverseMap</code> is <code>map</code> with the mapping inverted."
+              "html": "For each entry <em><code>type</code>: <code>map</code></em> in the <code>typeTables</code> array in the CBOR-LD Registry Entry\nassociated with <code>registryEntryId</code>, add that entry to <code>state</code>.<code>typeTable</code>, and set the value of <code>type</code>\nin <code>state</code>.<code>reverseTypeTable</code> to <code>inverseMap</code>, where <code>inverseMap</code> is <code>map</code> with the mapping inverted."
             },
             {
               "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://w3c.github.io/cbor-ld/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.1 </bdi>Initialize Conversion Algorithm</a>."
             },
             {
-              "html": "Set <code>input</code> to the result of decoding <code>suffix</code> from bytes to a map."
+              "html": "Set <code>input</code> to the result of decoding <code>suffix. If the result is not a map or an array, throw an error \n</code>ERR_INVALID_PAYLOAD_STRUCTURE`."
             },
             {
               "html": "Set <code>jsonldDocument</code> to the result of passing <code>state</code> and <code>input</code> as <code>inputDocuments</code>\nto <a href=\"https://w3c.github.io/cbor-ld/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.2 </bdi>Convert Document Algorithm</a>."
