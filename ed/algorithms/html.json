@@ -8740,7 +8740,7 @@
               ]
             },
             {
-              "html": "<p><i>Navigate</i>: <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\" id=\"the-iframe-element:navigate-an-iframe-or-frame-2\">Navigate an <code>iframe</code> or <code>frame</code></a>\n     given <var>element</var>, <var>url</var>, and <var>referrerPolicy</var>.</p>"
+              "html": "<p><i>Navigate</i>: <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\" id=\"the-iframe-element:navigate-an-iframe-or-frame-2\">Navigate an <code>iframe</code> or <code>frame</code></a>\n     given <var>element</var>, <var>url</var>, <var>referrerPolicy</var>, null, and\n     <var>initialInsertion</var>.</p>"
             }
           ]
         }
@@ -9519,10 +9519,10 @@
           "html": "<p>Set the element's <a href=\"https://html.spec.whatwg.org/multipage/media.html#show-poster-flag\" id=\"loading-the-media-resource:show-poster-flag\">show poster flag</a> to true.</p>"
         },
         {
-          "html": "<p>If the <a href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"loading-the-media-resource:media-element-19\">media element</a>'s <a id=\"loading-the-media-resource:lazy-loading-attribute\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attribute\">lazy loading attribute</a> is in the <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager-state\" id=\"loading-the-media-resource:attr-loading-eager-state\">Eager</a> state or <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript\" id=\"loading-the-media-resource:concept-n-noscript\">scripting\n   is disabled</a>, set the <a href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"loading-the-media-resource:media-element-20\">media element</a>'s <a href=\"https://html.spec.whatwg.org/multipage/media.html#delaying-the-load-event-flag\" id=\"loading-the-media-resource:delaying-the-load-event-flag-2\">delaying-the-load-event flag</a>\n   to true (this <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event\" id=\"loading-the-media-resource:delay-the-load-event-2\">delays the load event</a>).</p>"
+          "html": "<p><a id=\"loading-the-media-resource:await-a-stable-state\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#await-a-stable-state\">Await a stable state</a>, allowing the <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"loading-the-media-resource:concept-task-4\">task</a> that invoked this algorithm to continue. The <a id=\"loading-the-media-resource:synchronous-section-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\">synchronous\n   section</a> consists of all the remaining steps of this algorithm until the algorithm says the\n   <a id=\"loading-the-media-resource:synchronous-section-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\">synchronous section</a> has ended. (Steps in <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\" id=\"loading-the-media-resource:synchronous-section-4\">synchronous sections</a> are marked with ⌛.)</p>"
         },
         {
-          "html": "<p><a id=\"loading-the-media-resource:await-a-stable-state\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#await-a-stable-state\">Await a stable state</a>, allowing the <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"loading-the-media-resource:concept-task-4\">task</a> that invoked this algorithm to continue. The <a id=\"loading-the-media-resource:synchronous-section-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\">synchronous\n   section</a> consists of all the remaining steps of this algorithm until the algorithm says the\n   <a id=\"loading-the-media-resource:synchronous-section-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\">synchronous section</a> has ended. (Steps in <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-section\" id=\"loading-the-media-resource:synchronous-section-4\">synchronous sections</a> are marked with ⌛.)</p>"
+          "html": "<p>⌛ If the <a href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"loading-the-media-resource:media-element-19\">media element</a>'s <a id=\"loading-the-media-resource:lazy-loading-attribute\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attribute\">lazy loading attribute</a> is in the\n   <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager-state\" id=\"loading-the-media-resource:attr-loading-eager-state\">Eager</a> state or <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript\" id=\"loading-the-media-resource:concept-n-noscript\">scripting is disabled</a>, then set the <a href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"loading-the-media-resource:media-element-20\">media\n   element</a>'s <a href=\"https://html.spec.whatwg.org/multipage/media.html#delaying-the-load-event-flag\" id=\"loading-the-media-resource:delaying-the-load-event-flag-2\">delaying-the-load-event flag</a> to true (this <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event\" id=\"loading-the-media-resource:delay-the-load-event-2\">delays the load event</a>).</p>"
         },
         {
           "html": "<p>⌛ If the <a href=\"https://html.spec.whatwg.org/multipage/media.html#media-element\" id=\"loading-the-media-resource:media-element-21\">media element</a>'s <a href=\"https://html.spec.whatwg.org/multipage/media.html#blocked-on-parser\" id=\"loading-the-media-resource:blocked-on-parser\">blocked-on-parser</a> flag is false,\n    then <a href=\"https://html.spec.whatwg.org/multipage/media.html#populate-the-list-of-pending-text-tracks\" id=\"loading-the-media-resource:populate-the-list-of-pending-text-tracks\">populate the list of pending text tracks</a>.</p>"
@@ -12898,6 +12898,9 @@
         },
         {
           "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-select-element:selectedness-setting-algorithm\">selectedness setting algorithm</a> given\n   <var>selectElement</var>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>selectElement</var>.</p>"
         }
       ]
     },
@@ -12991,33 +12994,133 @@
       ]
     },
     {
+      "name": "ask for a reset",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#ask-for-a-reset",
+      "html": "To <dfn id=\"ask-for-a-reset\">ask for a reset</dfn> given an <code id=\"the-select-element:the-option-element-20\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>select</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-select-element:cached-nearest-ancestor-select-element\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>select</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-select-element:selectedness-setting-algorithm-2\">selectedness setting algorithm</a> given <var>select</var>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements-2\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>select</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "selectedness setting algorithm",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm",
-      "html": "The <dfn id=\"selectedness-setting-algorithm\">selectedness setting algorithm</dfn>, given a <code id=\"the-select-element:the-select-element-29\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>element</var>, is to run the following steps:",
+      "html": "To run the <dfn id=\"selectedness-setting-algorithm\">selectedness setting algorithm</dfn> given a <code id=\"the-select-element:the-select-element-28\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>select</var>, run these steps. They return a boolean.",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>element</var>'s <code id=\"the-select-element:attr-select-multiple-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute is\n   absent, and <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-size\" id=\"the-select-element:concept-select-size-5\">display size</a> is 1,\n   and no <code id=\"the-select-element:the-option-element-21\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> elements in the <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-13\">list of options</a> have their <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-12\">selectedness</a> set to true, then set the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-13\">selectedness</a> of the first <code id=\"the-select-element:the-option-element-22\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code>\n   element in the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-14\">list of options</a> in\n   <a id=\"the-select-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a> that is not <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-disabled\" id=\"the-select-element:concept-option-disabled-2\">disabled</a>,\n   if any, to true, and return.</p>"
+          "html": "<p>If <var>select</var> has the <code id=\"the-select-element:attr-select-multiple-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code>\n   attribute, then return false.</p>"
         },
         {
-          "html": "<p>If <var>element</var>'s <code id=\"the-select-element:attr-select-multiple-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute is\n   absent, and two or more <code id=\"the-select-element:the-option-element-23\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> elements in <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-15\">list of options</a> have their <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-14\">selectedness</a> set to true, then set the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-15\">selectedness</a> of all but the last <code id=\"the-select-element:the-option-element-24\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code>\n   element with its <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-16\">selectedness</a> set to true in\n   the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-16\">list of options</a> in <a id=\"the-select-element:tree-order-5\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>\n   to false.</p>"
+          "html": "<p>Let <var>hasChanged</var> be false.</p>"
+        },
+        {
+          "html": "<p>Let <var>firstEnabledOption</var> be null.</p>"
+        },
+        {
+          "html": "<p>Let <var>lastSelectedOption</var> be null.</p>"
+        },
+        {
+          "html": "For each <var>option</var> of <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-12\">list of options</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-12\">selectedness</a> is\n      true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>lastSelectedOption</var> is not null:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>lastSelectedOption</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-13\">selectedness</a> to false.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>hasChanged</var> to true.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Set <var>lastSelectedOption</var> to <var>option</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>firstEnabledOption</var> is null and <var>option</var> is not <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-disabled\" id=\"the-select-element:concept-option-disabled-2\">disabled</a>, then set <var>firstEnabledOption</var> to\n     <var>option</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>lastSelectedOption</var> is null, <var>firstEnabledOption</var> is not null, and\n    <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-size\" id=\"the-select-element:concept-select-size-5\">display size</a> is 1:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>firstEnabledOption</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-14\">selectedness</a> to true.</p>"
+            },
+            {
+              "html": "<p>Set <var>hasChanged</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>hasChanged</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "reset a select's selectedness",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#reset-a-select's-selectedness",
+      "html": "To <dfn id=\"reset-a-select's-selectedness\">reset a <code>select</code>'s selectedness</dfn>, given a <code id=\"the-select-element:the-select-element-29\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>select</var> and a boolean <var>hasChanged</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the result of running the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-select-element:selectedness-setting-algorithm-3\">selectedness setting algorithm</a> given\n   <var>select</var> is true, then set <var>hasChanged</var> to true.</p>"
+        },
+        {
+          "html": "<p>If <var>hasChanged</var> is false, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements-3\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>select</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever a <code id=\"the-select-element:the-select-element-32\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>'s <code id=\"the-select-element:attr-select-multiple-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute is added or removed, run these\n  steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code id=\"the-select-element:attr-select-multiple-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute was removed, then set\n   the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-15\">selectedness</a> of all but the first\n   <code id=\"the-select-element:the-option-element-21\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element with its <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-16\">selectedness</a> set to true in <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-13\">list of options</a> to false.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#reset-a-select's-selectedness\" id=\"the-select-element:reset-a-select's-selectedness-2\">Reset a <code>select</code>'s selectedness</a> given <var>select</var> and\n   true.</p>"
         }
       ]
     },
     {
       "name": "send select update notifications",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#send-select-update-notifications",
-      "html": "To <dfn id=\"send-select-update-notifications\">send <code>select</code> update notifications</dfn> for a <code id=\"the-select-element:the-select-element-30\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>element</var>, <a id=\"the-select-element:queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">queue an element task</a> on the <a id=\"the-select-element:user-interaction-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task\n  source</a> given <var>element</var> to run these steps:",
+      "html": "To <dfn id=\"send-select-update-notifications\">send <code>select</code> update notifications</dfn> for a <code id=\"the-select-element:the-select-element-34\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>element</var>, <a id=\"the-select-element:queue-an-element-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-an-element-task\">queue an element task</a> on the <a id=\"the-select-element:user-interaction-task-source\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task\n  source</a> given <var>element</var> to run these steps:",
       "rationale": "set",
       "steps": [
         {
           "html": "Set <var>element</var>'s <a id=\"the-select-element:user-validity-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#user-validity\">user validity</a> to true."
         },
         {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent\" id=\"the-select-element:update-a-select's-selectedcontent\">update a <code>select</code>'s <code>selectedcontent</code></a> given\n   <var>element</var>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements-4\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>element</var>.</p>"
         },
         {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clone-selected-option-into-select-button\" id=\"the-select-element:clone-selected-option-into-select-button\">clone selected <code>option</code> into <code>select</code> button</a> given\n   <var>element</var>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clone-selected-option-into-select-button\" id=\"the-select-element:clone-selected-option-into-select-button\">Clone selected <code>option</code> into <code>select</code> button</a> given\n   <var>element</var>.</p>"
         },
         {
           "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"the-select-element:concept-event-fire\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"the-select-element:event-input\"><a data-x-internal=\"event-input\" href=\"https://w3c.github.io/uievents/#event-type-input\">input</a></code> at <var>element</var>, with the <code id=\"the-select-element:dom-event-bubbles\"><a data-x-internal=\"dom-event-bubbles\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\">bubbles</a></code> and <code id=\"the-select-element:dom-event-composed\"><a data-x-internal=\"dom-event-composed\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\">composed</a></code>\n   attributes initialized to true.</p>"
@@ -13030,14 +13133,14 @@
     {
       "name": "set the selected index",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#set-the-selected-index",
-      "html": "To <dfn id=\"set-the-selected-index\">set the selected index</dfn> of a <code id=\"the-select-element:the-select-element-38\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>select</var> to a value <var>value</var>:",
+      "html": "To <dfn id=\"set-the-selected-index\">set the selected index</dfn> of a <code id=\"the-select-element:the-select-element-42\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>select</var> to a value <var>value</var>:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>firstMatchingOption</var> be null.</p>"
         },
         {
-          "html": "For each <var>option</var> of <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-26\">list of options</a>:",
+          "html": "For each <var>option</var> of <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-23\">list of options</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -13052,7 +13155,7 @@
           "html": "<p>If <var>firstMatchingOption</var> is not null, then set <var>firstMatchingOption</var>'s\n   <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-20\">selectedness</a> to true and set\n   <var>firstMatchingOption</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-dirtiness\" id=\"the-select-element:concept-option-dirtiness-5\">dirtiness</a> to\n   true.</p>"
         },
         {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent\" id=\"the-select-element:update-a-select's-selectedcontent-2\">update a <code>select</code>'s <code>selectedcontent</code></a> given\n   <var>select</var>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements-5\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>select</var>.</p>"
         }
       ]
     },
@@ -13064,7 +13167,7 @@
           "html": "<p>Let <var>firstMatchingOption</var> be null.</p>"
         },
         {
-          "html": "For each <var>option</var> of <a id=\"the-select-element:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-28\">list of options</a>:",
+          "html": "For each <var>option</var> of <a id=\"the-select-element:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-select-element:concept-select-option-list-25\">list of options</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -13079,14 +13182,29 @@
           "html": "<p>If <var>firstMatchingOption</var> is not null, then set <var>firstMatchingOption</var>'s\n   <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-select-element:concept-option-selectedness-24\">selectedness</a> to true and set\n   <var>firstMatchingOption</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-dirtiness\" id=\"the-select-element:concept-option-dirtiness-6\">dirtiness</a> to\n   true.</p>"
         },
         {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent\" id=\"the-select-element:update-a-select's-selectedcontent-3\">update a <code>select</code>'s <code>selectedcontent</code></a> given\n   <a id=\"the-select-element:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-select-element:update-a-select's-descendant-selectedcontent-elements-6\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <a id=\"the-select-element:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Whenever an <code id=\"the-optgroup-element:the-optgroup-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> element's <code id=\"the-optgroup-element:attr-optgroup-disabled-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled\">disabled</a></code> attribute is added or removed, then:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>select</var> be the <code id=\"the-optgroup-element:the-optgroup-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select\" id=\"the-optgroup-element:option-element-nearest-ancestor-select\">nearest ancestor <code>select</code></a>.</p>"
+        },
+        {
+          "html": "<p>If <var>select</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#reset-a-select's-selectedness\" id=\"the-optgroup-element:reset-a-select's-selectedness\">Reset a <code>select</code>'s selectedness</a> given <var>select</var> and\n   false.</p>"
         }
       ]
     },
     {
       "name": "get an optgroup element's label",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#concept-optgroup-label",
-      "html": "To <dfn id=\"concept-optgroup-label\">get an <code>optgroup</code> element's label</dfn>,\n  given an <code id=\"the-optgroup-element:the-optgroup-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> <var>optgroup</var>:",
+      "html": "To <dfn id=\"concept-optgroup-label\">get an <code>optgroup</code> element's label</dfn>,\n  given an <code id=\"the-optgroup-element:the-optgroup-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> <var>optgroup</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -13127,9 +13245,24 @@
       ]
     },
     {
+      "html": "Whenever an <code id=\"the-option-element:the-option-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element's <code id=\"the-option-element:attr-option-disabled-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled\">disabled</a></code>\n  attribute is added or removed, then:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>select</var> be the <code id=\"the-option-element:the-option-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element's <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>select</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#reset-a-select's-selectedness\" id=\"the-option-element:reset-a-select's-selectedness\">Reset a <code>select</code>'s selectedness</a> given <var>select</var> and\n   false.</p>"
+        }
+      ]
+    },
+    {
       "name": "get an option element's label",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-label",
-      "html": "To <dfn id=\"concept-option-label\">get an <code>option</code> element's label</dfn>, given\n  an <code id=\"the-option-element:the-option-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a boolean <var>includeAltText</var>:",
+      "html": "To <dfn id=\"concept-option-label\">get an <code>option</code> element's label</dfn>, given\n  an <code id=\"the-option-element:the-option-element-13\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a boolean <var>includeAltText</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -13141,38 +13274,121 @@
       ]
     },
     {
-      "name": "update an option's nearest ancestor select",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-an-option's-nearest-ancestor-select",
-      "html": "To <dfn id=\"update-an-option's-nearest-ancestor-select\">update an <code>option</code>'s nearest ancestor <code>select</code></dfn>, given an\n  <code id=\"the-option-element:the-option-element-23\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <var>option</var>:",
+      "html": "Whenever an <code id=\"the-option-element:the-option-element-17\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var>'s <code id=\"the-option-element:attr-option-selected-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected\">selected</a></code> attribute is added or removed:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>oldSelect</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
+          "html": "<p>Let <var>hasChanged</var> be false.</p>"
+        },
+        {
+          "html": "If <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-dirtiness\" id=\"the-option-element:concept-option-dirtiness\">dirtiness</a> is false:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the <code id=\"the-option-element:attr-option-selected-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected\">selected</a></code> attribute was added and\n     <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-4\">selectedness</a> is false,\n     then set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-5\">selectedness</a> to\n     true and set <var>hasChanged</var> to true.</p>"
+            },
+            {
+              "html": "<p>If the <code id=\"the-option-element:attr-option-selected-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected\">selected</a></code> attribute was removed and\n     <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-6\">selectedness</a> is true,\n     then set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-7\">selectedness</a> to\n     false and set <var>hasChanged</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>select</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element-2\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>select</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#reset-a-select's-selectedness\" id=\"the-option-element:reset-a-select's-selectedness-2\">Reset a <code>select</code>'s selectedness</a> given <var>select</var> and\n   <var>hasChanged</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update an option's nearest ancestor select",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-an-option's-nearest-ancestor-select",
+      "html": "To <dfn id=\"update-an-option's-nearest-ancestor-select\">update an <code>option</code>'s nearest ancestor <code>select</code></dfn>, given an\n  <code id=\"the-option-element:the-option-element-26\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <var>option</var>, run these steps. They return a <a id=\"the-option-element:list\" href=\"https://infra.spec.whatwg.org/#list\" data-x-internal=\"list\">list</a> of\n  <code id=\"the-option-element:the-select-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> elements whose <a id=\"the-option-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <code id=\"the-option-element:the-selectedcontent-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> elements\n  need updating.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>oldSelect</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element-3\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
         },
         {
           "html": "<p>Let <var>newSelect</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select\" id=\"the-option-element:option-element-nearest-ancestor-select\">nearest ancestor <code>select</code></a>.</p>"
         },
         {
-          "html": "If <var>oldSelect</var> is not <var>newSelect</var>:",
+          "html": "<p>Set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element-4\">cached nearest ancestor <code>select</code>\n   element</a> to <var>newSelect</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>oldSelect</var> is <var>newSelect</var>, then return « ».</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be « ».</p>"
+        },
+        {
+          "html": "For each <var>select</var> of « <var>oldSelect</var>, <var>newSelect</var> »:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>oldSelect</var> is not null, then run the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-option-element:selectedness-setting-algorithm\">selectedness setting\n     algorithm</a> given <var>oldSelect</var>.</p>"
+              "html": "<p>If <var>select</var> is null, then <a id=\"the-option-element:continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>newSelect</var> is not null, then run the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-option-element:selectedness-setting-algorithm-2\">selectedness setting\n     algorithm</a> given <var>newSelect</var>.</p>"
+              "html": "<p>Let <var>hasChanged</var> be the result of running the <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedness-setting-algorithm\" id=\"the-option-element:selectedness-setting-algorithm-2\">selectedness setting\n     algorithm</a> given <var>select</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-10\">selectedness</a> is\n     true or <var>hasChanged</var> is true, then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-option-element:list-append\" data-x-internal=\"list-append\">append</a>\n     <var>select</var> to <var>result</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element-2\">cached nearest ancestor <code>select</code>\n   element</a> to <var>newSelect</var>.</p>"
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update descendant selectedcontent elements for an option",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-descendant-selectedcontent-elements-for-an-option",
+      "html": "To <dfn id=\"update-descendant-selectedcontent-elements-for-an-option\">update descendant <code>selectedcontent</code> elements for an\n  <code>option</code></dfn>, given an <code id=\"the-option-element:the-option-element-30\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>select</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#cached-nearest-ancestor-select-element\" id=\"the-option-element:cached-nearest-ancestor-select-element-5\">cached nearest ancestor\n   <code>select</code> element</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>select</var> is null or <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-11\">selectedness</a> is false, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-option-element:update-a-select's-descendant-selectedcontent-elements\">Update a <code>select</code>'s descendant <code>selectedcontent</code>\n   elements</a> given <var>select</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-option-element:the-option-element-31\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <a id=\"the-option-element:html-element-removing-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\">HTML element removing steps</a>, given\n  <var>removedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>selects</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-an-option's-nearest-ancestor-select\" id=\"the-option-element:update-an-option's-nearest-ancestor-select-2\">update an <code>option</code>'s nearest\n   ancestor <code>select</code></a> given <var>removedNode</var>.</p>"
+        },
+        {
+          "html": "<p>For each <var>select</var> of <var>selects</var>: <a id=\"the-option-element:queue-a-microtask\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-microtask\">queue a microtask</a> to\n   <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-option-element:update-a-select's-descendant-selectedcontent-elements-2\">update a <code>select</code>'s descendant <code>selectedcontent</code> elements</a>\n   given <var>select</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-option-element:the-option-element-32\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <a id=\"the-option-element:html-element-moving-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-moving-steps\">HTML element moving steps</a>, given <var>movedNode</var>,\n  <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>selects</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-an-option's-nearest-ancestor-select\" id=\"the-option-element:update-an-option's-nearest-ancestor-select-3\">update an <code>option</code>'s nearest\n   ancestor <code>select</code></a> given <var>movedNode</var>.</p>"
+        },
+        {
+          "html": "<p>For each <var>select</var> of <var>selects</var>: <a id=\"the-option-element:queue-a-microtask-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-microtask\">queue a microtask</a> to\n   <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements\" id=\"the-option-element:update-a-select's-descendant-selectedcontent-elements-3\">update a <code>select</code>'s descendant <code>selectedcontent</code> elements</a>\n   given <var>select</var>.</p>"
         }
       ]
     },
     {
       "name": "nearest ancestor select",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select",
-      "html": "To get the <dfn id=\"option-element-nearest-ancestor-select\">nearest ancestor\n  <code>select</code></dfn> given an <code id=\"the-option-element:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> <var>element</var>, run these steps. They\n  return a <code id=\"the-option-element:the-select-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> or null.",
+      "html": "To get the <dfn id=\"option-element-nearest-ancestor-select\">nearest ancestor\n  <code>select</code></dfn> given an <code id=\"the-option-element:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> <var>element</var>, run these steps. They\n  return a <code id=\"the-option-element:the-select-element-13\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element or null.",
       "rationale": "let",
       "steps": [
         {
@@ -13183,7 +13399,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>ancestor</var> is a <code id=\"the-option-element:the-datalist-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element\">datalist</a></code>, <code id=\"the-option-element:the-hr-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element\">hr</a></code>, or\n     <code id=\"the-option-element:the-option-element-27\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element, then return null.</p>"
+              "html": "<p>If <var>ancestor</var> is a <code id=\"the-option-element:the-datalist-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element\">datalist</a></code>, <code id=\"the-option-element:the-hr-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element\">hr</a></code>, or\n     <code id=\"the-option-element:the-option-element-33\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element, then return null.</p>"
             },
             {
               "html": "If <var>ancestor</var> is an <code id=\"the-option-element:the-optgroup-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element\">optgroup</a></code> element:",
@@ -13198,7 +13414,7 @@
               ]
             },
             {
-              "html": "<p>If <var>ancestor</var> is a <code id=\"the-option-element:the-select-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code>, then return\n     <var>ancestor</var>.</p>"
+              "html": "<p>If <var>ancestor</var> is a <code id=\"the-option-element:the-select-element-14\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code>, then return\n     <var>ancestor</var>.</p>"
             }
           ]
         },
@@ -13208,27 +13424,13 @@
       ]
     },
     {
-      "name": "maybe clone an option into selectedcontent",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#maybe-clone-an-option-into-selectedcontent",
-      "html": "To <dfn id=\"maybe-clone-an-option-into-selectedcontent\">maybe clone an <code>option</code> into <code>selectedcontent</code></dfn>, given an\n  <code id=\"the-option-element:the-option-element-28\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> <var>option</var>:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<p>Let <var>select</var> be <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select\" id=\"the-option-element:option-element-nearest-ancestor-select-2\">nearest ancestor <code>select</code></a>.</p>"
-        },
-        {
-          "html": "<p>If all of the following conditions are true:</p>\n\n    <ul><li><p><var>select</var> is not null;</p></li><li><p><var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-8\">selectedness</a> is\n     true; and</p></li><li><p><var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#select-enabled-selectedcontent\" id=\"the-option-element:select-enabled-selectedcontent\">enabled\n     <code>selectedcontent</code></a> is not null,</p></li></ul>\n\n    <p>then run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clone-an-option-into-a-selectedcontent\" id=\"the-option-element:clone-an-option-into-a-selectedcontent\">clone an <code>option</code> into a <code>selectedcontent</code></a> given\n    <var>option</var> and <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#select-enabled-selectedcontent\" id=\"the-option-element:select-enabled-selectedcontent-2\">enabled\n    <code>selectedcontent</code></a>.</p>"
-        }
-      ]
-    },
-    {
       "name": "clone selected option into select button",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#clone-selected-option-into-select-button",
-      "html": "To <dfn id=\"clone-selected-option-into-select-button\">clone selected <code>option</code> into <code>select</code> button</dfn>, given a\n  <code id=\"the-option-element:the-select-element-12\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
+      "html": "To <dfn id=\"clone-selected-option-into-select-button\">clone selected <code>option</code> into <code>select</code> button</dfn>, given a\n  <code id=\"the-option-element:the-select-element-15\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>option</var> be the first element of <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-option-element:concept-select-option-list-3\">option list</a> whose <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-9\">selectedness</a> is set to true, if such an element\n   exists; otherwise null.</p>"
+          "html": "<p>Let <var>option</var> be the first element of <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-option-element:concept-select-option-list-3\">option list</a> whose <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-12\">selectedness</a> is set to true, if such an element\n   exists; otherwise null.</p>"
         },
         {
           "html": "<p>Let <var>text</var> be the empty string.</p>"
@@ -13259,13 +13461,28 @@
       ]
     },
     {
+      "html": "The <code id=\"the-option-element:dom-option-selected-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-selected\">selected</a></code> setter steps are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <a id=\"the-option-element:this-6\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-14\">selectedness</a> to\n   the given value.</p>"
+        },
+        {
+          "html": "<p>Set <a id=\"the-option-element:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-dirtiness\" id=\"the-option-element:concept-option-dirtiness-2\">dirtiness</a> to\n   true.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#ask-for-a-reset\" id=\"the-option-element:ask-for-a-reset\">Ask for a reset</a> given <a id=\"the-option-element:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        }
+      ]
+    },
+    {
       "name": "HTMLOptionElement/form",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-form",
       "html": "The <dfn data-dfn-for=\"HTMLOptionElement\" id=\"dom-option-form\" data-dfn-type=\"attribute\"><code>form</code></dfn>\n  getter steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>select</var> be <a id=\"the-option-element:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select\" id=\"the-option-element:option-element-nearest-ancestor-select-3\">nearest ancestor <code>select</code></a>.</p>"
+          "html": "<p>Let <var>select</var> be <a id=\"the-option-element:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#option-element-nearest-ancestor-select\" id=\"the-option-element:option-element-nearest-ancestor-select-2\">nearest ancestor <code>select</code></a>.</p>"
         },
         {
           "html": "<p>If <var>select</var> is null, then return null.</p>"
@@ -13294,10 +13511,10 @@
           "html": "<p>If <var>value</var> is given, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-option-element:concept-element-attributes-set-value\" data-x-internal=\"concept-element-attributes-set-value\">set\n   an attribute value</a> for <var>option</var> using \"<code id=\"the-option-element:attr-option-value-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value\">value</a></code>\" and <var>value</var>.</p>"
         },
         {
-          "html": "<p>If <var>defaultSelected</var> is true, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-option-element:concept-element-attributes-set-value-2\" data-x-internal=\"concept-element-attributes-set-value\">set an attribute value</a> for <var>option</var>\n   using \"<code id=\"the-option-element:attr-option-selected-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected\">selected</a></code>\" and the empty string.</p>"
+          "html": "<p>If <var>defaultSelected</var> is true, then <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-option-element:concept-element-attributes-set-value-2\" data-x-internal=\"concept-element-attributes-set-value\">set an attribute value</a> for <var>option</var>\n   using \"<code id=\"the-option-element:attr-option-selected-12\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected\">selected</a></code>\" and the empty string.</p>"
         },
         {
-          "html": "<p>If <var>selected</var> is true, then set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-12\">selectedness</a> to true; otherwise set its <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-13\">selectedness</a> to false (even if\n   <var>defaultSelected</var> is true).</p>"
+          "html": "<p>If <var>selected</var> is true, then set <var>option</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-15\">selectedness</a> to true; otherwise set its <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-option-element:concept-option-selectedness-16\">selectedness</a> to false (even if\n   <var>defaultSelected</var> is true).</p>"
         },
         {
           "html": "<p>Return <var>option</var>.</p>"
@@ -13314,11 +13531,11 @@
           "html": "<p>Let <var>text</var> be the empty string.</p>"
         },
         {
-          "html": "For each <a id=\"the-option-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <var>descendant</var> of <var>element</var> in <a id=\"the-option-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree\n    order</a>:",
+          "html": "For each <a id=\"the-option-element:descendant-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <var>descendant</var> of <var>element</var> in <a id=\"the-option-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree\n    order</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>descendant</var> is a <code id=\"the-option-element:the-script-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code> or <a id=\"the-option-element:svg-script\" href=\"https://w3c.github.io/svgwg/svg2-draft/interact.html#elementdef-script\" data-x-internal=\"svg-script\">SVG\n     <code>script</code></a> element, then <a id=\"the-option-element:continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a> skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-2\" data-x-internal=\"descendant\">descendants</a> of <var>descendant</var>.</p>"
+              "html": "<p>If <var>descendant</var> is a <code id=\"the-option-element:the-script-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code> or <a id=\"the-option-element:svg-script\" href=\"https://w3c.github.io/svgwg/svg2-draft/interact.html#elementdef-script\" data-x-internal=\"svg-script\">SVG\n     <code>script</code></a> element, then <a id=\"the-option-element:continue-2\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a> skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-3\" data-x-internal=\"descendant\">descendants</a> of <var>descendant</var>.</p>"
             },
             {
               "html": "<p>If <var>descendant</var> is a <code id=\"the-option-element:text-2\"><a data-x-internal=\"text\" href=\"https://dom.spec.whatwg.org/#interface-text\">Text</a></code> node, then set <var>text</var> to the\n     concatenation of <var>text</var> and <var>descendant</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"the-option-element:concept-cd-data\" data-x-internal=\"concept-cd-data\">data</a>.</p>"
@@ -13327,7 +13544,7 @@
               "html": "<p>If <var>descendant</var> is an <code id=\"the-option-element:the-img-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element with an <code id=\"the-option-element:attr-img-alt\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code> attribute and <var>includeAltText</var> is true, then set\n     <var>text</var> to the concatenation of <var>text</var> and the value of\n     <var>descendant</var>'s <code id=\"the-option-element:attr-img-alt-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt\">alt</a></code> attribute.</p>"
             },
             {
-              "html": "<p>If <var>descendant</var> is an <code id=\"the-option-element:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element, then <a id=\"the-option-element:continue-2\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>\n     skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-3\" data-x-internal=\"descendant\">descendants</a> of <var>descendant</var>.</p>"
+              "html": "<p>If <var>descendant</var> is an <code id=\"the-option-element:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element, then <a id=\"the-option-element:continue-3\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>\n     skipping all <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-option-element:descendant-4\" data-x-internal=\"descendant\">descendants</a> of <var>descendant</var>.</p>"
             }
           ]
         },
@@ -13430,52 +13647,46 @@
       ]
     },
     {
-      "name": "update a select's selectedcontent",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent",
-      "html": "To <dfn id=\"update-a-select's-selectedcontent\">update a <code>select</code>'s <code>selectedcontent</code></dfn> given a\n  <code id=\"the-selectedcontent-element:the-select-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
-      "rationale": "let",
+      "name": "update a select's descendant selectedcontent elements",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-descendant-selectedcontent-elements",
+      "html": "To <dfn id=\"update-a-select's-descendant-selectedcontent-elements\">update a <code>select</code>'s descendant <code>selectedcontent</code> elements</dfn>\n  given a <code id=\"the-selectedcontent-element:the-select-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
+      "rationale": "if",
       "steps": [
         {
-          "html": "<p>Let <var>selectedcontent</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#select-enabled-selectedcontent\" id=\"the-selectedcontent-element:select-enabled-selectedcontent\">get a <code>select</code>'s enabled\n   <code>selectedcontent</code></a> given <var>select</var>.</p>"
+          "html": "<p>If <var>select</var> has the <code id=\"the-selectedcontent-element:attr-select-multiple\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code>\n   attribute, then return.</p>"
         },
         {
-          "html": "<p>If <var>selectedcontent</var> is null, then return.</p>"
+          "html": "<p>Let <var>descendantSelectedcontents</var> be a <a id=\"the-selectedcontent-element:list\" href=\"https://infra.spec.whatwg.org/#list\" data-x-internal=\"list\">list</a> of <var>select</var>'s\n   <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-selectedcontent-element:descendant\" data-x-internal=\"descendant\">descendants</a>, in <a id=\"the-selectedcontent-element:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>, that are\n   <code id=\"the-selectedcontent-element:the-selectedcontent-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> elements whose <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled\">disabled</a> is false.</p>"
         },
         {
-          "html": "<p>Let <var>option</var> be the first <code id=\"the-selectedcontent-element:the-option-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> in <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-selectedcontent-element:concept-select-option-list\">list of options</a> whose <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-selectedcontent-element:concept-option-selectedness\">selectedness</a> is true, if any such <code id=\"the-selectedcontent-element:the-option-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code>\n   exists, otherwise null.</p>"
-        },
-        {
-          "html": "<p>If <var>option</var> is null, then run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-selectedcontent\" id=\"the-selectedcontent-element:clear-a-selectedcontent\">clear a <code>selectedcontent</code></a>\n   given <var>selectedcontent</var>.</p>"
-        },
-        {
-          "html": "<p>Otherwise, run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clone-an-option-into-a-selectedcontent\" id=\"the-selectedcontent-element:clone-an-option-into-a-selectedcontent\">clone an option into a <code>selectedcontent</code></a> given\n   <var>option</var> and <var>selectedcontent</var>.</p>"
+          "html": "<p>For each <var>selectedcontent</var> of <var>descendantSelectedcontents</var>:\n   <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-selectedcontent\" id=\"the-selectedcontent-element:update-a-selectedcontent\">update a <code>selectedcontent</code></a> given <var>select</var> and\n   <var>selectedcontent</var>.</p>"
         }
       ]
     },
     {
-      "name": "get a select's enabled selectedcontent",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#select-enabled-selectedcontent",
-      "html": "To <dfn id=\"select-enabled-selectedcontent\">get a <code>select</code>'s enabled\n  <code>selectedcontent</code></dfn> given a <code id=\"the-selectedcontent-element:the-select-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
+      "name": "update a selectedcontent",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#update-a-selectedcontent",
+      "html": "To <dfn id=\"update-a-selectedcontent\">update a <code>selectedcontent</code></dfn> given a <code id=\"the-selectedcontent-element:the-select-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element\n  <var>select</var> and a <code id=\"the-selectedcontent-element:the-selectedcontent-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element <var>selectedcontent</var>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>select</var> has the <code id=\"the-selectedcontent-element:attr-select-multiple\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code>\n   attribute, then return null.</p>"
+          "html": "<p>If <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-2\">disabled</a> is\n   true, then return.</p>"
         },
         {
-          "html": "<p>Let <var>selectedcontent</var> be the first <code id=\"the-selectedcontent-element:the-selectedcontent-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element\n   <a id=\"the-selectedcontent-element:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> of <var>select</var> in <a id=\"the-selectedcontent-element:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a> if any such element\n   exists; otherwise return null.</p>"
+          "html": "<p>Let <var>option</var> be the first <code id=\"the-selectedcontent-element:the-option-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> in <var>select</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-select-option-list\" id=\"the-selectedcontent-element:concept-select-option-list\">list of options</a> whose <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#concept-option-selectedness\" id=\"the-selectedcontent-element:concept-option-selectedness\">selectedness</a> is true, if any such <code id=\"the-selectedcontent-element:the-option-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code>\n   exists; otherwise null.</p>"
         },
         {
-          "html": "<p>If <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled\">disabled</a> is\n   true, then return null.</p>"
+          "html": "<p>If <var>option</var> is null, then <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-selectedcontent\" id=\"the-selectedcontent-element:clear-a-selectedcontent\">clear a <code>selectedcontent</code></a>\n   given <var>selectedcontent</var>.</p>"
         },
         {
-          "html": "<p>Return <var>selectedcontent</var>.</p>"
+          "html": "<p>Otherwise, <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clone-an-option-into-a-selectedcontent\" id=\"the-selectedcontent-element:clone-an-option-into-a-selectedcontent\">clone an option into a <code>selectedcontent</code></a> given\n   <var>option</var> and <var>selectedcontent</var>.</p>"
         }
       ]
     },
     {
       "name": "clone an option into a selectedcontent",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#clone-an-option-into-a-selectedcontent",
-      "html": "To <dfn id=\"clone-an-option-into-a-selectedcontent\">clone an <code>option</code> into a <code>selectedcontent</code></dfn>, given an\n  <code id=\"the-selectedcontent-element:the-option-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a <code id=\"the-selectedcontent-element:the-selectedcontent-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element\n  <var>selectedcontent</var>:",
+      "html": "To <dfn id=\"clone-an-option-into-a-selectedcontent\">clone an <code>option</code> into a <code>selectedcontent</code></dfn>, given an\n  <code id=\"the-selectedcontent-element:the-option-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element <var>option</var> and a <code id=\"the-selectedcontent-element:the-selectedcontent-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element\n  <var>selectedcontent</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -13501,7 +13712,7 @@
     {
       "name": "clear a selectedcontent",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-selectedcontent",
-      "html": "To <dfn id=\"clear-a-selectedcontent\">clear a <code>selectedcontent</code></dfn> given a <code id=\"the-selectedcontent-element:the-selectedcontent-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element\n  <var>selectedcontent</var>:",
+      "html": "To <dfn id=\"clear-a-selectedcontent\">clear a <code>selectedcontent</code></dfn> given a <code id=\"the-selectedcontent-element:the-selectedcontent-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element\n  <var>selectedcontent</var>:",
       "rationale": "replace",
       "steps": [
         {
@@ -13510,40 +13721,49 @@
       ]
     },
     {
-      "name": "clear a select's non-primary selectedcontent elements",
-      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-select's-non-primary-selectedcontent-elements",
-      "html": "To <dfn id=\"clear-a-select's-non-primary-selectedcontent-elements\">clear a <code>select</code>'s non-primary <code>selectedcontent</code> elements</dfn>,\n  given a <code id=\"the-selectedcontent-element:the-select-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element <var>select</var>:",
+      "html": "The <code id=\"the-selectedcontent-element:the-selectedcontent-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> <a id=\"the-selectedcontent-element:html-element-post-connection-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-post-connection-steps\">HTML element post-connection steps</a>, given\n  <var>selectedcontent</var>, are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>passedFirstSelectedcontent</var> be false.</p>"
+          "html": "<p>Let <var>select</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#recalculate-a-selectedcontent-element's-disabledness\" id=\"the-selectedcontent-element:recalculate-a-selectedcontent-element's-disabledness-2\">recalculate a <code>selectedcontent</code>\n   element's disabledness</a> given <var>selectedcontent</var>.</p>"
         },
         {
-          "html": "For each <var>descendant</var> of <var>select</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" id=\"the-selectedcontent-element:descendant-2\" data-x-internal=\"descendant\">descendants</a> in <a id=\"the-selectedcontent-element:tree-order-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a> that is a\n    <code id=\"the-selectedcontent-element:the-selectedcontent-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>passedFirstSelectedcontent</var> is false, then set\n     <var>passedFirstSelectedcontent</var> to true.</p>"
-            },
-            {
-              "html": "<p>Otherwise, run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-selectedcontent\" id=\"the-selectedcontent-element:clear-a-selectedcontent-2\">clear a <code>selectedcontent</code></a> given\n     <var>descendant</var>.</p>"
-            }
-          ]
+          "html": "<p>If <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-3\">disabled</a> is\n   true, <var>select</var> is null, or <var>select</var> has the <code id=\"the-selectedcontent-element:attr-select-multiple-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-selectedcontent\" id=\"the-selectedcontent-element:update-a-selectedcontent-2\">Update a <code>selectedcontent</code></a> given <var>select</var> and\n   <var>selectedcontent</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <code id=\"the-selectedcontent-element:the-selectedcontent-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> <a id=\"the-selectedcontent-element:html-element-post-connection-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-post-connection-steps\">HTML element post-connection steps</a>, given\n  <var>selectedcontent</var>, are:",
+      "html": "The <code id=\"the-selectedcontent-element:the-selectedcontent-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> <a id=\"the-selectedcontent-element:html-element-moving-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-moving-steps\">HTML element moving steps</a>, given\n  <var>movedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>select</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#recalculate-a-selectedcontent-element's-disabledness\" id=\"the-selectedcontent-element:recalculate-a-selectedcontent-element's-disabledness-3\">recalculate a <code>selectedcontent</code>\n   element's disabledness</a> given <var>movedNode</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>movedNode</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-4\">disabled</a> is\n   true, <var>select</var> is null, or <var>select</var> has the <code id=\"the-selectedcontent-element:attr-select-multiple-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute, then return.</p>"
+        },
+        {
+          "html": "<p><a id=\"the-selectedcontent-element:queue-a-microtask\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-microtask\">Queue a microtask</a> to <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-selectedcontent\" id=\"the-selectedcontent-element:update-a-selectedcontent-3\">update a <code>selectedcontent</code></a> given\n   <var>select</var> and <var>movedNode</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "recalculate a selectedcontent element's disabledness",
+      "href": "https://html.spec.whatwg.org/multipage/form-elements.html#recalculate-a-selectedcontent-element's-disabledness",
+      "html": "To <dfn id=\"recalculate-a-selectedcontent-element's-disabledness\">recalculate a <code>selectedcontent</code> element's disabledness</dfn>, given a\n  <code id=\"the-selectedcontent-element:the-selectedcontent-element-12\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element <var>selectedcontent</var>, run these steps. They return a\n  <code id=\"the-selectedcontent-element:the-select-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element or null.",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>nearestSelectAncestor</var> be null.</p>"
         },
         {
-          "html": "<p>Set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-2\">disabled</a>\n   to false.</p>"
+          "html": "<p>Set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-5\">disabled</a>\n   to false.</p>"
         },
         {
-          "html": "For each <var>ancestor</var> of <var>selectedcontent</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\" id=\"the-selectedcontent-element:ancestor\" data-x-internal=\"ancestor\">ancestors</a>, in reverse <a id=\"the-selectedcontent-element:tree-order-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
+          "html": "For each <var>ancestor</var> of <var>selectedcontent</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\" id=\"the-selectedcontent-element:ancestor\" data-x-internal=\"ancestor\">ancestors</a>, in reverse <a id=\"the-selectedcontent-element:tree-order-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -13551,53 +13771,20 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>nearestSelectAncestor</var> is null, then set <var>nearestSelectAncestor</var>\n       to <var>select</var> and <a id=\"the-selectedcontent-element:continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>.</p>"
+                  "html": "<p>If <var>nearestSelectAncestor</var> is null, then set <var>nearestSelectAncestor</var>\n       to <var>ancestor</var> and <a id=\"the-selectedcontent-element:continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-3\">disabled</a> to true and <a id=\"the-selectedcontent-element:break\" href=\"https://infra.spec.whatwg.org/#iteration-break\" data-x-internal=\"break\">break</a>.</p>"
+                  "html": "<p>Set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-6\">disabled</a> to true and <a id=\"the-selectedcontent-element:break\" href=\"https://infra.spec.whatwg.org/#iteration-break\" data-x-internal=\"break\">break</a>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>If <var>ancestor</var> is an <code id=\"the-selectedcontent-element:the-option-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element or a\n     <code id=\"the-selectedcontent-element:the-selectedcontent-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element, then set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-4\">disabled</a> to true and <a id=\"the-selectedcontent-element:break-2\" href=\"https://infra.spec.whatwg.org/#iteration-break\" data-x-internal=\"break\">break</a>.</p>"
+              "html": "<p>If <var>ancestor</var> is an <code id=\"the-selectedcontent-element:the-option-element-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element\">option</a></code> element or a\n     <code id=\"the-selectedcontent-element:the-selectedcontent-element-13\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> element, then set <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-7\">disabled</a> to true and <a id=\"the-selectedcontent-element:break-2\" href=\"https://infra.spec.whatwg.org/#iteration-break\" data-x-internal=\"break\">break</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>selectedcontent</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-5\">disabled</a> is\n   true, <var>nearestSelectAncestor</var> is null, or <var>nearestSelectAncestor</var> has the\n   <code id=\"the-selectedcontent-element:attr-select-multiple-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple\">multiple</a></code> attribute, then return.</p>"
-        },
-        {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent\" id=\"the-selectedcontent-element:update-a-select's-selectedcontent\">update a <code>select</code>'s <code>selectedcontent</code></a> given\n   <var>nearestSelectAncestor</var>.</p>"
-        },
-        {
-          "html": "<p>Run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#clear-a-select's-non-primary-selectedcontent-elements\" id=\"the-selectedcontent-element:clear-a-select's-non-primary-selectedcontent-elements\">clear a <code>select</code>'s non-primary <code>selectedcontent</code>\n   elements</a> given <var>nearestSelectAncestor</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "The <code id=\"the-selectedcontent-element:the-selectedcontent-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element\">selectedcontent</a></code> <a id=\"the-selectedcontent-element:html-element-removing-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\">HTML element removing steps</a>, given\n  <var>removedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var> are:",
-      "rationale": "if",
-      "steps": [
-        {
-          "html": "<p>If <var>removedNode</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#selectedcontent-disabled\" id=\"the-selectedcontent-element:selectedcontent-disabled-6\">disabled</a> is\n   true, then return.</p>"
-        },
-        {
-          "html": "For each <var>ancestor</var> of <var>removedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-ancestor\" id=\"the-selectedcontent-element:ancestor-2\" data-x-internal=\"ancestor\">ancestors</a>, in reverse <a id=\"the-selectedcontent-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>ancestor</var> is a <code id=\"the-selectedcontent-element:the-select-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element, then return.</p>"
-            }
-          ]
-        },
-        {
-          "html": "For each <var>ancestor</var> of <var>oldAncestor</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor\" id=\"the-selectedcontent-element:inclusive-ancestor\" data-x-internal=\"inclusive-ancestor\">inclusive ancestors</a>, in reverse <a id=\"the-selectedcontent-element:tree-order-5\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>ancestor</var> is a <code id=\"the-selectedcontent-element:the-select-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element\">select</a></code> element, then run <a href=\"https://html.spec.whatwg.org/multipage/form-elements.html#update-a-select's-selectedcontent\" id=\"the-selectedcontent-element:update-a-select's-selectedcontent-2\">update a\n     <code>select</code>'s <code>selectedcontent</code></a> given <var>ancestor</var> and\n     return.</p>"
-            }
-          ]
+          "html": "<p>Return <var>nearestSelectAncestor</var>.</p>"
         }
       ]
     },
@@ -29736,7 +29923,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"beginning-navigation:concept-request\" data-x-internal=\"concept-request\">request</a> whose <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"beginning-navigation:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a> is <var>url</var> and whose <a href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"beginning-navigation:concept-request-policy-container\" data-x-internal=\"concept-request-policy-container\">policy container</a> is\n      <var>sourceSnapshotParams</var>'s <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-policy-container\" id=\"beginning-navigation:source-snapshot-params-policy-container\">source policy container</a>.</p>"
+              "html": "<p>Let <var>request</var> be a new <a href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"beginning-navigation:concept-request\" data-x-internal=\"concept-request\">request</a>, with</p>\n\n      <dl class=\"props\"><dt><a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"beginning-navigation:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a></dt><dd><var>url</var></dd><dt><a href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"beginning-navigation:concept-request-client\" data-x-internal=\"concept-request-client\">client</a></dt><dd><var>sourceSnapshotParams</var>'s <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-client\" id=\"beginning-navigation:source-snapshot-params-client\">fetch\n       client</a></dd><dt><a href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"beginning-navigation:concept-request-policy-container\" data-x-internal=\"concept-request-policy-container\">policy container</a></dt><dd><var>sourceSnapshotParams</var>'s <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-snapshot-params-policy-container\" id=\"beginning-navigation:source-snapshot-params-policy-container\">source policy container</a></dd></dl>"
             },
             {
               "html": "<p><a id=\"beginning-navigation:queue-a-global-task-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a id=\"beginning-navigation:navigation-and-traversal-task-source-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\">navigation and traversal task\n     source</a> given <var>navigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"beginning-navigation:nav-window-2\">active window</a> to\n     <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-to-a-javascript:-url\" id=\"beginning-navigation:navigate-to-a-javascript:-url-2\">navigate to a <code>javascript:</code> URL</a> given <var>navigable</var>,\n     <var>request</var>, <var>historyHandling</var>, <var>initiatorOriginSnapshot</var>,\n     <var>userInvolvement</var>, <var>cspNavigationType</var>, <var>initialInsertion</var>, and\n     <var>navigationId</var>.</p>"
@@ -29945,17 +30132,29 @@
           "html": "<p>If <var>initiatorOrigin</var> is not <a id=\"the-javascript:-url-special-case:same-origin-domain\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\">same origin-domain</a> with\n   <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"the-javascript:-url-special-case:nav-document\">active document</a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"the-javascript:-url-special-case:concept-document-origin\" data-x-internal=\"concept-document-origin\">origin</a>, then return.</p>"
         },
         {
-          "html": "<p>If the result of <a id=\"the-javascript:-url-special-case:should-navigation-request-of-type-be-blocked-by-content-security-policy\" href=\"https://w3c.github.io/webappsec-csp/#should-block-navigation-request\" data-x-internal=\"should-navigation-request-of-type-be-blocked-by-content-security-policy\">should navigation request of type be blocked by Content Security\n   Policy?</a> given <var>request</var> and <var>cspNavigationType</var> is \"<code>Blocked</code>\", then return. <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSP\">[CSP]</a></p>"
+          "html": "<p>If the result of <a id=\"the-javascript:-url-special-case:should-navigation-request-of-type-be-blocked-by-content-security-policy\" href=\"https://w3c.github.io/webappsec-csp/#should-block-navigation-request\" data-x-internal=\"should-navigation-request-of-type-be-blocked-by-content-security-policy\">should navigation request of type be blocked by Content Security\n    Policy?</a> given <var>request</var> and <var>cspNavigationType</var> is \"<code>Blocked</code>\", then return. <a href=\"https://html.spec.whatwg.org/multipage/references.html#refsCSP\">[CSP]</a></p>"
         },
         {
-          "html": "<p>Let <var>newDocument</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#evaluate-a-javascript:-url\" id=\"the-javascript:-url-special-case:evaluate-a-javascript:-url\">evaluating a <code>javascript:</code> URL</a> given <var>targetNavigable</var>,\n   <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"the-javascript:-url-special-case:concept-request-url\" data-x-internal=\"concept-request-url\">URL</a>, <var>initiatorOrigin</var>,\n   and <var>userInvolvement</var>.</p>"
+          "html": "<p>Let <var>newDocument</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#evaluate-a-javascript:-url\" id=\"the-javascript:-url-special-case:evaluate-a-javascript:-url\">evaluating a <code>javascript:</code> URL</a> given <var>targetNavigable</var>,\n   <var>request</var>'s <a href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"the-javascript:-url-special-case:concept-request-url-2\" data-x-internal=\"concept-request-url\">URL</a>, <var>initiatorOrigin</var>,\n   <var>userInvolvement</var>, and <var>navigationId</var>.</p>"
         },
         {
           "html": "If <var>newDocument</var> is null:",
-          "rationale": "if",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>initialInsertion</var> is true and <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"the-javascript:-url-special-case:nav-document-2\">active document</a>'s <a id=\"the-javascript:-url-special-case:is-initial-about:blank\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about:blank\">is initial\n     <code>about:blank</code></a> is true, then run the <a id=\"the-javascript:-url-special-case:iframe-load-event-steps\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-load-event-steps\">iframe load event steps</a>\n     given <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"the-javascript:-url-special-case:nav-container\">container</a>.</p>"
+              "html": "<p>Let <var>container</var> be <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"the-javascript:-url-special-case:nav-container\">container</a>.</p>"
+            },
+            {
+              "html": "If <var>initialInsertion</var> is true, <var>container</var> is non-null, and\n      <var>targetNavigable</var>'s <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"the-javascript:-url-special-case:nav-document-2\">active document</a>'s <a id=\"the-javascript:-url-special-case:is-initial-about:blank\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about:blank\">is\n      initial <code>about:blank</code></a> is true:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>container</var> is an <code id=\"the-javascript:-url-special-case:the-iframe-element\"><a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\">iframe</a></code> element, then run the <a id=\"the-javascript:-url-special-case:iframe-load-event-steps\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#iframe-load-event-steps\">iframe\n       load event steps</a> given <var>container</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, <a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"the-javascript:-url-special-case:concept-event-fire\" data-x-internal=\"concept-event-fire\">fire an event</a> named <code id=\"the-javascript:-url-special-case:event-load\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-load\">load</a></code> at <var>container</var>.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Return.</p>"
@@ -29985,7 +30184,7 @@
     {
       "name": "evaluate a javascript: URL",
       "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#evaluate-a-javascript%3A-url",
-      "html": "To <dfn id=\"evaluate-a-javascript:-url\">evaluate a <code>javascript:</code> URL</dfn> given a <a id=\"the-javascript:-url-special-case:navigable-2\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\">navigable</a>\n  <var>targetNavigable</var>, a <a id=\"the-javascript:-url-special-case:url\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url\">URL</a> <var>url</var>, an <a id=\"the-javascript:-url-special-case:concept-origin-2\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a>\n  <var>newDocumentOrigin</var>, and a <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#user-navigation-involvement\" id=\"the-javascript:-url-special-case:user-navigation-involvement-2\">user navigation involvement</a>\n  <var>userInvolvement</var>:",
+      "html": "To <dfn id=\"evaluate-a-javascript:-url\">evaluate a <code>javascript:</code> URL</dfn> given a <a id=\"the-javascript:-url-special-case:navigable-2\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\">navigable</a>\n  <var>targetNavigable</var>, a <a id=\"the-javascript:-url-special-case:url\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url\">URL</a> <var>url</var>, an <a id=\"the-javascript:-url-special-case:concept-origin-2\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a>\n  <var>newDocumentOrigin</var>, a <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#user-navigation-involvement\" id=\"the-javascript:-url-special-case:user-navigation-involvement-2\">user navigation involvement</a>\n  <var>userInvolvement</var>, and a <a href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\" id=\"the-javascript:-url-special-case:navigation-id-2\">navigation ID</a> <var>navigationId</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -37634,16 +37833,16 @@
       "name": "The event handler processing algorithm",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#the-event-handler-processing-algorithm",
       "html": "<dfn id=\"the-event-handler-processing-algorithm\">The event handler processing algorithm</dfn> for an <code id=\"event-handler-attributes:eventtarget-7\"><a data-x-internal=\"eventtarget\" href=\"https://dom.spec.whatwg.org/#interface-eventtarget\">EventTarget</a></code> object\n  <var>eventTarget</var>, a string <var>name</var> representing the <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-name\" id=\"event-handler-attributes:event-handler-name-7\">name</a> of an <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers\" id=\"event-handler-attributes:event-handlers-31\">event handler</a>, and an\n  <code id=\"event-handler-attributes:event\"><a data-x-internal=\"event\" href=\"https://dom.spec.whatwg.org/#interface-event\">Event</a></code> object <var>event</var> is as follows:",
-      "rationale": "if",
+      "rationale": "let",
       "steps": [
-        {
-          "html": "<p>If <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript\" id=\"event-handler-attributes:concept-n-noscript\">scripting is disabled</a> for\n   <var>eventTarget</var>, then return.</p>"
-        },
         {
           "html": "<p>Let <var>callback</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#getting-the-current-value-of-the-event-handler\" id=\"event-handler-attributes:getting-the-current-value-of-the-event-handler-2\">getting the current value of the event\n   handler</a> given <var>eventTarget</var> and <var>name</var>.</p>"
         },
         {
           "html": "<p>If <var>callback</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>callback</var>'s <a id=\"event-handler-attributes:associated-realm\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" data-x-internal=\"associated-realm\">associated realm</a>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"event-handler-attributes:concept-realm-global\">global object</a> is a <code id=\"event-handler-attributes:window-5\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object whose <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"event-handler-attributes:concept-document-window\">associated <code>Document</code></a> is not <a id=\"event-handler-attributes:fully-active\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully\n   active</a>, then return.</p>"
         },
         {
           "html": "<p>Let <var>special error event handling</var> be true if <var>event</var> is an\n   <code id=\"event-handler-attributes:errorevent\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#errorevent\">ErrorEvent</a></code> object, <var>event</var>'s <code id=\"event-handler-attributes:dom-event-type\"><a data-x-internal=\"dom-event-type\" href=\"https://dom.spec.whatwg.org/#dom-event-type\">type</a></code> is\n   \"<code id=\"event-handler-attributes:event-error\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-error\">error</a></code>\", and <var>event</var>'s <code id=\"event-handler-attributes:dom-event-currenttarget\"><a data-x-internal=\"dom-event-currenttarget\" href=\"https://dom.spec.whatwg.org/#dom-event-currenttarget\">currentTarget</a></code> implements the\n   <code id=\"event-handler-attributes:windoworworkerglobalscope\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\">WindowOrWorkerGlobalScope</a></code> mixin. Otherwise, let <var>special error event\n   handling</var> be false.</p>"
@@ -37718,10 +37917,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>eventTarget</var> is an element, then let <var>element</var> be\n     <var>eventTarget</var>, and <var>document</var> be <var>element</var>'s <a id=\"event-handler-attributes:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n     document</a>. Otherwise, <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-5\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object, let\n     <var>element</var> be null, and <var>document</var> be <var>eventTarget</var>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"event-handler-attributes:concept-document-window\">associated <code>Document</code></a>.</p>"
+              "html": "<p>If <var>eventTarget</var> is an element, then let <var>element</var> be\n     <var>eventTarget</var>, and <var>document</var> be <var>element</var>'s <a id=\"event-handler-attributes:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n     document</a>. Otherwise, <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-6\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object, let\n     <var>element</var> be null, and <var>document</var> be <var>eventTarget</var>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"event-handler-attributes:concept-document-window-2\">associated <code>Document</code></a>.</p>"
             },
             {
-              "html": "<p>If <var>document</var>'s <a id=\"event-handler-attributes:active-sandboxing-flag-set\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\">active sandboxing flag set</a> has its\n     <a id=\"event-handler-attributes:sandboxed-scripts-browsing-context-flag\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#sandboxed-scripts-browsing-context-flag\">sandboxed scripts browsing context flag</a> set, then return null.</p>"
+              "html": "<p>If <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript\" id=\"event-handler-attributes:concept-n-noscript\">scripting is disabled</a> for\n     <var>document</var>, then return null.</p>"
             },
             {
               "html": "<p>Let <var>body</var> be the uncompiled script body in <var>eventHandler</var>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-value\" id=\"event-handler-attributes:event-handler-value-9\">value</a>.</p>"
@@ -37757,7 +37956,7 @@
               "html": "<p>Push <var>settings object</var>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"event-handler-attributes:realm-execution-context\">realm execution context</a> onto the\n      <a id=\"event-handler-attributes:javascript-execution-context-stack\" href=\"https://tc39.es/ecma262/#execution-context-stack\" data-x-internal=\"javascript-execution-context-stack\">JavaScript execution context stack</a>; it is now the <a id=\"event-handler-attributes:running-javascript-execution-context\" href=\"https://tc39.es/ecma262/#running-execution-context\" data-x-internal=\"running-javascript-execution-context\">running JavaScript\n      execution context</a>.</p>"
             },
             {
-              "html": "<p>Let <var>function</var> be the result of calling <a href=\"https://tc39.es/ecma262/#sec-ordinaryfunctioncreate\" id=\"event-handler-attributes:js-ordinaryfunctioncreate-2\" data-x-internal=\"js-ordinaryfunctioncreate\">OrdinaryFunctionCreate</a>, with arguments:</p>\n\n      <dl><dt><i>functionPrototype</i></dt><dd><a id=\"event-handler-attributes:function.prototype\" href=\"https://tc39.es/ecma262/#sec-properties-of-the-function-prototype-object\" data-x-internal=\"function.prototype\">%Function.prototype%</a></dd><dt><i>sourceText</i></dt><dd>\n        <dl class=\"switch\"><dt>If <var>name</var> is <code id=\"event-handler-attributes:handler-onerror-3\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror\">onerror</a></code> and\n         <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-6\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object</dt><dd>The string formed by concatenating \"<code>function </code>\", <var>name</var>,\n         \"<code>(event, source, lineno, colno, error) {</code>\", U+000A LF,\n         <var>body</var>, U+000A LF, and \"<code>}</code>\".</dd><dt>Otherwise</dt><dd>The string formed by concatenating \"<code>function </code>\", <var>name</var>,\n         \"<code>(event) {</code>\", U+000A LF, <var>body</var>, U+000A LF, and \"<code>}</code>\".</dd></dl>\n       </dd><dt><i>ParameterList</i></dt><dd>\n        <dl class=\"switch\"><dt>If <var>name</var> is <code id=\"event-handler-attributes:handler-onerror-4\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror\">onerror</a></code> and\n         <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-7\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object</dt><dd>Let the function have five arguments, named <code>event</code>, <code>source</code>, <code>lineno</code>, <code>colno</code>, and\n         <code>error</code>.</dd><dt>Otherwise</dt><dd>Let the function have a single argument called <code>event</code>.</dd></dl>\n       </dd><dt><i>body</i></dt><dd>The result of parsing <var>body</var> above.</dd><dt><i>thisMode</i></dt><dd>non-lexical-this</dd><dt><i>scope</i></dt><dd>\n        \n       </dd></dl>",
+              "html": "<p>Let <var>function</var> be the result of calling <a href=\"https://tc39.es/ecma262/#sec-ordinaryfunctioncreate\" id=\"event-handler-attributes:js-ordinaryfunctioncreate-2\" data-x-internal=\"js-ordinaryfunctioncreate\">OrdinaryFunctionCreate</a>, with arguments:</p>\n\n      <dl><dt><i>functionPrototype</i></dt><dd><a id=\"event-handler-attributes:function.prototype\" href=\"https://tc39.es/ecma262/#sec-properties-of-the-function-prototype-object\" data-x-internal=\"function.prototype\">%Function.prototype%</a></dd><dt><i>sourceText</i></dt><dd>\n        <dl class=\"switch\"><dt>If <var>name</var> is <code id=\"event-handler-attributes:handler-onerror-3\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror\">onerror</a></code> and\n         <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-7\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object</dt><dd>The string formed by concatenating \"<code>function </code>\", <var>name</var>,\n         \"<code>(event, source, lineno, colno, error) {</code>\", U+000A LF,\n         <var>body</var>, U+000A LF, and \"<code>}</code>\".</dd><dt>Otherwise</dt><dd>The string formed by concatenating \"<code>function </code>\", <var>name</var>,\n         \"<code>(event) {</code>\", U+000A LF, <var>body</var>, U+000A LF, and \"<code>}</code>\".</dd></dl>\n       </dd><dt><i>ParameterList</i></dt><dd>\n        <dl class=\"switch\"><dt>If <var>name</var> is <code id=\"event-handler-attributes:handler-onerror-4\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#handler-onerror\">onerror</a></code> and\n         <var>eventTarget</var> is a <code id=\"event-handler-attributes:window-8\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object</dt><dd>Let the function have five arguments, named <code>event</code>, <code>source</code>, <code>lineno</code>, <code>colno</code>, and\n         <code>error</code>.</dd><dt>Otherwise</dt><dd>Let the function have a single argument called <code>event</code>.</dd></dl>\n       </dd><dt><i>body</i></dt><dd>The result of parsing <var>body</var> above.</dd><dt><i>thisMode</i></dt><dd>non-lexical-this</dd><dt><i>scope</i></dt><dd>\n        \n       </dd></dl>",
               "rationale": ".switch",
               "steps": [
                 {
@@ -37805,7 +38004,7 @@
                       "html": "<p>Let <var>scope</var> be <var>realm</var>.[[GlobalEnv]].</p>"
                     },
                     {
-                      "html": "<p>If <var>eventHandler</var> is an element's <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers\" id=\"event-handler-attributes:event-handlers-33\">event\n          handler</a>, then set <var>scope</var> to <a href=\"https://tc39.es/ecma262/#sec-newobjectenvironment\" id=\"event-handler-attributes:js-newobjectenvironment\" data-x-internal=\"js-newobjectenvironment\">NewObjectEnvironment</a>(<var>document</var>, true,\n          <var>scope</var>).</p>\n\n          <p>(Otherwise, <var>eventHandler</var> is a <code id=\"event-handler-attributes:window-8\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object's <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers\" id=\"event-handler-attributes:event-handlers-34\">event handler</a>.)</p>"
+                      "html": "<p>If <var>eventHandler</var> is an element's <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers\" id=\"event-handler-attributes:event-handlers-33\">event\n          handler</a>, then set <var>scope</var> to <a href=\"https://tc39.es/ecma262/#sec-newobjectenvironment\" id=\"event-handler-attributes:js-newobjectenvironment\" data-x-internal=\"js-newobjectenvironment\">NewObjectEnvironment</a>(<var>document</var>, true,\n          <var>scope</var>).</p>\n\n          <p>(Otherwise, <var>eventHandler</var> is a <code id=\"event-handler-attributes:window-9\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object's <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers\" id=\"event-handler-attributes:event-handlers-34\">event handler</a>.)</p>"
                     },
                     {
                       "html": "<p>If <var>form owner</var> is not null, then set <var>scope</var> to <a href=\"https://tc39.es/ecma262/#sec-newobjectenvironment\" id=\"event-handler-attributes:js-newobjectenvironment-2\" data-x-internal=\"js-newobjectenvironment\">NewObjectEnvironment</a>(<var>form owner</var>, true,\n         <var>scope</var>).</p>"
@@ -50182,7 +50381,7 @@
     {
       "name": "process the frame attributes",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#process-the-frame-attributes",
-      "html": "To <dfn id=\"process-the-frame-attributes\">process the <code>frame</code> attributes</dfn> for an element <var>element</var>, with\n  an optional boolean <dfn id=\"process-frame-initial-insertion\"><var>initialInsertion</var></dfn>:",
+      "html": "To <dfn id=\"process-the-frame-attributes\">process the <code>frame</code> attributes</dfn> for an element <var>element</var>, with\n  an optional boolean <dfn id=\"process-frame-initial-insertion\"><var>initialInsertion</var></dfn> (default false):",
       "rationale": "let",
       "steps": [
         {
@@ -50204,7 +50403,7 @@
           ]
         },
         {
-          "html": "<p><a id=\"frames:navigate-an-iframe-or-frame\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\">Navigate an <code>iframe</code> or <code>frame</code></a> given\n   <var>element</var>, <var>url</var>, the empty string, and <var>initialInsertion</var>.</p>"
+          "html": "<p><a id=\"frames:navigate-an-iframe-or-frame\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#navigate-an-iframe-or-frame\">Navigate an <code>iframe</code> or <code>frame</code></a> given\n   <var>element</var>, <var>url</var>, the empty string, null, and\n   <var>initialInsertion</var>.</p>"
         }
       ]
     }

@@ -6,7 +6,7 @@
       "title": "Scroll-driven Animations Module Level 1",
       "url": "https://www.w3.org/TR/scroll-animations-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(optional ViewTimelineOptions options = {});\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
+    "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(ViewTimelineOptions options);\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
     "href": "https://drafts.csswg.org/scroll-animations-1/#viewtimeline"
   },
   "extended": [],

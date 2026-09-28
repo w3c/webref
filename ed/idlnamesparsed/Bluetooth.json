@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Bluetooth",
-      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      "url": "https://bluetooth.spec.whatwg.org/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface Bluetooth : EventTarget {\n  Promise<boolean> getAvailability();\n  attribute EventHandler onavailabilitychanged;\n  [SameObject]\n  readonly attribute BluetoothDevice? referringDevice;\n  Promise<sequence<BluetoothDevice>> getDevices();\n  Promise<BluetoothDevice> requestDevice(optional RequestDeviceOptions options = {});\n};",
     "href": "https://bluetooth.spec.whatwg.org/#bluetooth"
@@ -13,28 +13,28 @@
     {
       "spec": {
         "title": "Web Bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        "url": "https://bluetooth.spec.whatwg.org/"
       },
       "fragment": "Bluetooth includes BluetoothDeviceEventHandlers;"
     },
     {
       "spec": {
         "title": "Web Bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        "url": "https://bluetooth.spec.whatwg.org/"
       },
       "fragment": "Bluetooth includes CharacteristicEventHandlers;"
     },
     {
       "spec": {
         "title": "Web Bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        "url": "https://bluetooth.spec.whatwg.org/"
       },
       "fragment": "Bluetooth includes ServiceEventHandlers;"
     },
     {
       "spec": {
         "title": "Web Bluetooth Scanning",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+        "url": "https://bluetooth.spec.whatwg.org/scanning.html"
       },
       "fragment": "partial interface Bluetooth {\n  [SecureContext]\n  Promise<BluetoothLEScan> requestLEScan(optional BluetoothLEScanOptions options = {});\n};"
     }
@@ -69,7 +69,7 @@
       "defined": {
         "spec": {
           "title": "Web Bluetooth",
-          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+          "url": "https://bluetooth.spec.whatwg.org/"
         },
         "fragment": "[SecureContext]\ninterface mixin BluetoothDeviceEventHandlers {\n  attribute EventHandler onadvertisementreceived;\n  attribute EventHandler ongattserverdisconnected;\n};",
         "href": "https://bluetooth.spec.whatwg.org/#bluetoothdeviceeventhandlers"
@@ -84,7 +84,7 @@
       "defined": {
         "spec": {
           "title": "Web Bluetooth",
-          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+          "url": "https://bluetooth.spec.whatwg.org/"
         },
         "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
         "href": "https://bluetooth.spec.whatwg.org/#characteristiceventhandlers"
@@ -99,7 +99,7 @@
       "defined": {
         "spec": {
           "title": "Web Bluetooth",
-          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+          "url": "https://bluetooth.spec.whatwg.org/"
         },
         "fragment": "[SecureContext]\ninterface mixin ServiceEventHandlers {\n  attribute EventHandler onserviceadded;\n  attribute EventHandler onservicechanged;\n  attribute EventHandler onserviceremoved;\n};",
         "href": "https://bluetooth.spec.whatwg.org/#serviceeventhandlers"

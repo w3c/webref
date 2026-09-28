@@ -15,7 +15,7 @@
         "title": "WebRTC Diagnostic Logging API",
         "url": "https://wicg.github.io/webrtc-diagnostic-logging/"
       },
-      "fragment": "[\n  Exposed=Window\n] partial interface RTCPeerConnection {\n  static Promise<DOMString> startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> finishDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> discardDiagnosticLogging();\n};"
+      "fragment": "[\n  Exposed=Window\n] partial interface RTCPeerConnection {\n  static DOMString startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static undefined stopDiagnosticLogging();\n  static undefined cancelDiagnosticLogging();\n};"
     },
     {
       "spec": {

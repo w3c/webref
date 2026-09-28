@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "WebHID API",
+        "url": "https://hid.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(DedicatedWorker,ServiceWorker), SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};"
+    },
+    {
+      "spec": {
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
@@ -40,10 +47,24 @@
     },
     {
       "spec": {
+        "title": "Web Serial API",
+        "url": "https://serial.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=DedicatedWorker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Serial serial;\n};"
+    },
+    {
+      "spec": {
         "title": "Storage Standard",
         "url": "https://storage.spec.whatwg.org/"
       },
       "fragment": "WorkerNavigator includes NavigatorStorage;"
+    },
+    {
+      "spec": {
+        "title": "WebUSB API",
+        "url": "https://usb.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Worker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};"
     },
     {
       "spec": {
@@ -61,13 +82,6 @@
     },
     {
       "spec": {
-        "title": "Web Serial API",
-        "url": "https://wicg.github.io/serial/"
-      },
-      "fragment": "[Exposed=DedicatedWorker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Serial serial;\n};"
-    },
-    {
-      "spec": {
         "title": "Storage Buckets API",
         "url": "https://wicg.github.io/storage-buckets/"
       },
@@ -79,20 +93,6 @@
         "url": "https://wicg.github.io/ua-client-hints/"
       },
       "fragment": "WorkerNavigator includes NavigatorUA;"
-    },
-    {
-      "spec": {
-        "title": "WebHID API",
-        "url": "https://wicg.github.io/webhid/"
-      },
-      "fragment": "[Exposed=(DedicatedWorker,ServiceWorker), SecureContext]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute HID hid;\n};"
-    },
-    {
-      "spec": {
-        "title": "WebUSB API",
-        "url": "https://wicg.github.io/webusb/"
-      },
-      "fragment": "[Exposed=Worker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};"
     },
     {
       "spec": {

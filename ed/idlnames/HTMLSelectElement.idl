@@ -23,8 +23,8 @@ interface HTMLSelectElement : HTMLElement {
   [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);
 
   [SameObject] readonly attribute HTMLCollection selectedOptions;
-  attribute long selectedIndex;
-  attribute DOMString value;
+  [CEReactions] attribute long selectedIndex;
+  [CEReactions] attribute DOMString value;
 
   readonly attribute boolean willValidate;
   readonly attribute ValidityState validity;

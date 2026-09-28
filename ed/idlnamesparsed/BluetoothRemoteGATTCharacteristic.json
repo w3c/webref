@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Bluetooth",
-      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      "url": "https://bluetooth.spec.whatwg.org/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTCharacteristic : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTService service;\n  readonly attribute UUID uuid;\n  readonly attribute BluetoothCharacteristicProperties properties;\n  readonly attribute DataView? value;\n  Promise<BluetoothRemoteGATTDescriptor> getDescriptor(BluetoothDescriptorUUID descriptor);\n  Promise<sequence<BluetoothRemoteGATTDescriptor>>\n    getDescriptors(optional BluetoothDescriptorUUID descriptor);\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n  Promise<undefined> writeValueWithResponse(BufferSource value);\n  Promise<undefined> writeValueWithoutResponse(BufferSource value);\n  Promise<BluetoothRemoteGATTCharacteristic> startNotifications();\n  Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();\n};",
     "href": "https://bluetooth.spec.whatwg.org/#bluetoothremotegattcharacteristic"
@@ -13,7 +13,7 @@
     {
       "spec": {
         "title": "Web Bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        "url": "https://bluetooth.spec.whatwg.org/"
       },
       "fragment": "BluetoothRemoteGATTCharacteristic includes CharacteristicEventHandlers;"
     }
@@ -48,7 +48,7 @@
       "defined": {
         "spec": {
           "title": "Web Bluetooth",
-          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+          "url": "https://bluetooth.spec.whatwg.org/"
         },
         "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
         "href": "https://bluetooth.spec.whatwg.org/#characteristiceventhandlers"

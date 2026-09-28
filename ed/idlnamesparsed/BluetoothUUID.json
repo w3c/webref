@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Bluetooth",
-      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      "url": "https://bluetooth.spec.whatwg.org/"
     },
     "fragment": "[Exposed=Window]\ninterface BluetoothUUID {\n  static UUID getService((DOMString or unsigned long) name);\n  static UUID getCharacteristic((DOMString or unsigned long) name);\n  static UUID getDescriptor((DOMString or unsigned long) name);\n\n  static UUID canonicalUUID([EnforceRange] unsigned long alias);\n};",
     "href": "https://bluetooth.spec.whatwg.org/#bluetoothuuid"

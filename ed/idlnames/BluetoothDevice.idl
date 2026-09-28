@@ -1,4 +1,4 @@
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 [Exposed=Window, SecureContext]
 interface BluetoothDevice : EventTarget {
   readonly attribute DOMString id;
@@ -11,11 +11,11 @@ interface BluetoothDevice : EventTarget {
   readonly attribute boolean watchingAdvertisements;
 };
 
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 BluetoothDevice includes BluetoothDeviceEventHandlers;
 
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 BluetoothDevice includes CharacteristicEventHandlers;
 
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 BluetoothDevice includes ServiceEventHandlers;

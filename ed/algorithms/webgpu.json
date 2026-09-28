@@ -569,12 +569,20 @@
                   "html": "<p>Let <var>device</var> be the result of creating <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#a-new-device\" id=\"ref-for-a-new-device⑦\" data-timeline=\"device\">a new device</a> from <var>adapter</var> with <var>descriptor</var>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"abstract-op\" href=\"https://gpuweb.github.io/gpuweb/#abstract-opdef-expire\" id=\"ref-for-abstract-opdef-expire④\" data-timeline=\"device\">Expire</a> <var>adapter</var>.</p>"
+                  "html": "<p>Set <var>adapter</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-adapter-slot\" id=\"ref-for-dom-gpuadapter-adapter-slot⑤\" data-timeline=\"const\">[[adapter]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-adapter-state-slot\" id=\"ref-for-dom-adapter-state-slot⑤\" data-timeline=\"device\">[[state]]</a></code> to</p>"
                 }
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "GPUAdapter.requestDevice",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice-descriptor-descriptor",
+      "html": "<table class=\"argumentdef data\">\n        <caption>Arguments for the <a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice\" id=\"ref-for-dom-gpuadapter-requestdevice⑦\">GPUAdapter.requestDevice(descriptor)</a> method.</caption>\n        <thead>\n         <tr>\n          <th>Parameter\n          </th><th>Type\n          </th><th style=\"text-align:center\">Nullable\n          </th><th style=\"text-align:center\">Optional\n          </th><th>Description\n        </th></tr></thead><tbody>\n         <tr>\n          <td><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"GPUAdapter/requestDevice(descriptor)\" data-dfn-type=\"argument\" data-export=\"\" id=\"dom-gpuadapter-requestdevice-descriptor-descriptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><var>descriptor</var></code></dfn>\n          </td><td><code class=\"idl\"><a data-link-type=\"idl-name\" href=\"https://gpuweb.github.io/gpuweb/#gpudevicedescriptor\" id=\"ref-for-gpudevicedescriptor②\">GPUDeviceDescriptor</a></code>\n          </td><td style=\"text-align:center\"><span class=\"no\">✘</span>\n          </td><td style=\"text-align:center\"><span class=\"yes\">✔</span>\n          </td><td>Description of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#gpudevice\" id=\"ref-for-gpudevice②⓪\">GPUDevice</a></code> to request.\n       </td></tr></tbody></table>",
+      "rationale": "issue",
+      "steps": [
         {
           "html": "<p>Issue the subsequent steps on <var data-timeline=\"content\">contentTimeline</var>.</p>"
         }

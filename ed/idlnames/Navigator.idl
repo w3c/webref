@@ -4,6 +4,18 @@ interface Navigator {
   // objects implementing this interface also implement the interfaces given below
 };
 
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
+[SecureContext]
+partial interface Navigator {
+  [SameObject]
+  readonly attribute Bluetooth bluetooth;
+};
+
+// Source: WebHID API (https://hid.spec.whatwg.org/)
+[SecureContext] partial interface Navigator {
+    [SameObject] readonly attribute HID hid;
+};
+
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Navigator {
   [SameObject] readonly attribute UserActivation userActivation;
@@ -30,19 +42,24 @@ Navigator includes NavigatorPlugins;
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Navigator includes NavigatorConcurrentHardware;
 
+// Source: Web Serial API (https://serial.spec.whatwg.org/)
+[Exposed=Window, SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute Serial serial;
+};
+
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
+
+// Source: WebUSB API (https://usb.spec.whatwg.org/)
+[Exposed=Window, SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute USB usb;
+};
 
 // Source: Login Status API (https://w3c-fedid.github.io/login-status/)
 partial interface Navigator {
   [SecureContext] readonly attribute NavigatorLogin login;
-};
-
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
-[SecureContext]
-partial interface Navigator {
-  [SameObject]
-  readonly attribute Bluetooth bluetooth;
 };
 
 // Source: CPU Performance API (https://wicg.github.io/cpu-performance/)
@@ -110,12 +127,6 @@ partial interface Navigator {
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 Navigator includes NavigatorNetworkInformation;
 
-// Source: Web Serial API (https://wicg.github.io/serial/)
-[Exposed=Window, SecureContext]
-partial interface Navigator {
-  [SameObject] readonly attribute Serial serial;
-};
-
 // Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
 Navigator includes NavigatorStorageBuckets;
 
@@ -128,17 +139,6 @@ Navigator includes NavigatorUA;
 ] partial interface Navigator {
   [SecureContext, SameObject]
   readonly attribute NavigatorManagedData managed;
-};
-
-// Source: WebHID API (https://wicg.github.io/webhid/)
-[SecureContext] partial interface Navigator {
-    [SameObject] readonly attribute HID hid;
-};
-
-// Source: WebUSB API (https://wicg.github.io/webusb/)
-[Exposed=Window, SecureContext]
-partial interface Navigator {
-  [SameObject] readonly attribute USB usb;
 };
 
 // Source: Window Controls Overlay (https://wicg.github.io/window-controls-overlay/)

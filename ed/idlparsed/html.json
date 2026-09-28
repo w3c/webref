@@ -498,7 +498,7 @@
         "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#radionodelist"
       },
       "HTMLOptionsCollection": {
-        "fragment": "[Exposed=Window]\ninterface HTMLOptionsCollection : HTMLCollection {\n  // inherits item(), namedItem()\n  [CEReactions] attribute unsigned long length; // shadows inherited length\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(long index);\n  attribute long selectedIndex;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLOptionsCollection : HTMLCollection {\n  // inherits item(), namedItem()\n  [CEReactions] attribute unsigned long length; // shadows inherited length\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(long index);\n  [CEReactions] attribute long selectedIndex;\n};",
         "type": "interface",
         "name": "HTMLOptionsCollection",
         "inheritance": "HTMLCollection",
@@ -724,7 +724,14 @@
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#dom-htmloptionscollection-selectedindex"
@@ -13214,7 +13221,7 @@
         "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement"
       },
       "HTMLSelectElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLSelectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectSetter] attribute DOMString autocomplete;\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, Reflect] attribute boolean multiple;\n  [CEReactions, Reflect] attribute DOMString name;\n  [CEReactions, Reflect] attribute boolean required;\n  [CEReactions, Reflect, ReflectDefault=0] attribute unsigned long size;\n\n  readonly attribute DOMString type;\n\n  [SameObject] readonly attribute HTMLOptionsCollection options;\n  [CEReactions] attribute unsigned long length;\n  getter HTMLOptionElement? item(unsigned long index);\n  HTMLOptionElement? namedItem(DOMString name);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(); // ChildNode overload\n  [CEReactions] undefined remove(long index);\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n\n  [SameObject] readonly attribute HTMLCollection selectedOptions;\n  attribute long selectedIndex;\n  attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  undefined showPicker();\n\n  readonly attribute NodeList labels;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLSelectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectSetter] attribute DOMString autocomplete;\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, Reflect] attribute boolean multiple;\n  [CEReactions, Reflect] attribute DOMString name;\n  [CEReactions, Reflect] attribute boolean required;\n  [CEReactions, Reflect, ReflectDefault=0] attribute unsigned long size;\n\n  readonly attribute DOMString type;\n\n  [SameObject] readonly attribute HTMLOptionsCollection options;\n  [CEReactions] attribute unsigned long length;\n  getter HTMLOptionElement? item(unsigned long index);\n  HTMLOptionElement? namedItem(DOMString name);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(); // ChildNode overload\n  [CEReactions] undefined remove(long index);\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n\n  [SameObject] readonly attribute HTMLCollection selectedOptions;\n  [CEReactions] attribute long selectedIndex;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  undefined showPicker();\n\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLSelectElement",
         "inheritance": "HTMLElement",
@@ -13801,7 +13808,14 @@
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-selectedindex"
@@ -13817,7 +13831,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-value"
@@ -14130,7 +14151,7 @@
         "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptgroupelement"
       },
       "HTMLOptionElement": {
-        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Option(optional DOMString text = \"\", optional DOMString value, optional boolean defaultSelected = false, optional boolean selected = false)]\ninterface HTMLOptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute DOMString label;\n  [CEReactions, Reflect=\"selected\"] attribute boolean defaultSelected;\n  attribute boolean selected;\n  [CEReactions, ReflectSetter] attribute DOMString value;\n\n  [CEReactions] attribute DOMString text;\n  readonly attribute long index;\n};",
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Option(optional DOMString text = \"\", optional DOMString value, optional boolean defaultSelected = false, optional boolean selected = false)]\ninterface HTMLOptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute DOMString label;\n  [CEReactions, Reflect=\"selected\"] attribute boolean defaultSelected;\n  [CEReactions] attribute boolean selected;\n  [CEReactions, ReflectSetter] attribute DOMString value;\n\n  [CEReactions] attribute DOMString text;\n  readonly attribute long index;\n};",
         "type": "interface",
         "name": "HTMLOptionElement",
         "inheritance": "HTMLElement",
@@ -14264,7 +14285,14 @@
               "union": false,
               "idlType": "boolean"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-option-selected"

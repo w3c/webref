@@ -55,9 +55,9 @@ interface RTCPeerConnection : EventTarget  {
 [
   Exposed=Window
 ] partial interface RTCPeerConnection {
-  static Promise<DOMString> startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});
-  static Promise<undefined> finishDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});
-  static Promise<undefined> discardDiagnosticLogging();
+  static DOMString startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});
+  static undefined stopDiagnosticLogging();
+  static undefined cancelDiagnosticLogging();
 };
 
 // Source: Identity for WebRTC 1.0 (https://www.w3.org/TR/webrtc-identity/)

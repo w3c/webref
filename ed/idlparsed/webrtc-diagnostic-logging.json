@@ -61,7 +61,7 @@
     "idlExtendedNames": {
       "RTCPeerConnection": [
         {
-          "fragment": "[\n  Exposed=Window\n] partial interface RTCPeerConnection {\n  static Promise<DOMString> startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> finishDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static Promise<undefined> discardDiagnosticLogging();\n};",
+          "fragment": "[\n  Exposed=Window\n] partial interface RTCPeerConnection {\n  static DOMString startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});\n  static undefined stopDiagnosticLogging();\n  static undefined cancelDiagnosticLogging();\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -72,19 +72,10 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "Promise",
+                "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  }
-                ]
+                "idlType": "DOMString"
               },
               "arguments": [
                 {
@@ -112,72 +103,35 @@
             },
             {
               "type": "operation",
-              "name": "finishDiagnosticLogging",
+              "name": "stopDiagnosticLogging",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "Promise",
+                "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "RTCDiagnosticLoggingOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "static",
-              "href": "https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcpeerconnection-finishdiagnosticlogging"
-            },
-            {
-              "type": "operation",
-              "name": "discardDiagnosticLogging",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
               "special": "static",
-              "href": "https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcpeerconnection-discarddiagnosticlogging"
+              "href": "https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcpeerconnection-stopdiagnosticlogging"
+            },
+            {
+              "type": "operation",
+              "name": "cancelDiagnosticLogging",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://wicg.github.io/webrtc-diagnostic-logging/#dom-rtcpeerconnection-canceldiagnosticlogging"
             }
           ],
           "extAttrs": [

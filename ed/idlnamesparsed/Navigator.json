@@ -12,6 +12,20 @@
   "extended": [
     {
       "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://bluetooth.spec.whatwg.org/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject]\n  readonly attribute Bluetooth bluetooth;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebHID API",
+        "url": "https://hid.spec.whatwg.org/"
+      },
+      "fragment": "[SecureContext] partial interface Navigator {\n    [SameObject] readonly attribute HID hid;\n};"
+    },
+    {
+      "spec": {
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
@@ -68,6 +82,13 @@
     },
     {
       "spec": {
+        "title": "Web Serial API",
+        "url": "https://serial.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute Serial serial;\n};"
+    },
+    {
+      "spec": {
         "title": "Storage Standard",
         "url": "https://storage.spec.whatwg.org/"
       },
@@ -75,17 +96,17 @@
     },
     {
       "spec": {
+        "title": "WebUSB API",
+        "url": "https://usb.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
         "title": "Login Status API",
         "url": "https://w3c-fedid.github.io/login-status/"
       },
       "fragment": "partial interface Navigator {\n  [SecureContext] readonly attribute NavigatorLogin login;\n};"
-    },
-    {
-      "spec": {
-        "title": "Web Bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
-      },
-      "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject]\n  readonly attribute Bluetooth bluetooth;\n};"
     },
     {
       "spec": {
@@ -166,13 +187,6 @@
     },
     {
       "spec": {
-        "title": "Web Serial API",
-        "url": "https://wicg.github.io/serial/"
-      },
-      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute Serial serial;\n};"
-    },
-    {
-      "spec": {
         "title": "Storage Buckets API",
         "url": "https://wicg.github.io/storage-buckets/"
       },
@@ -191,20 +205,6 @@
         "url": "https://wicg.github.io/WebApiDevice/managed_config/"
       },
       "fragment": "[\n  SecureContext\n] partial interface Navigator {\n  [SecureContext, SameObject]\n  readonly attribute NavigatorManagedData managed;\n};"
-    },
-    {
-      "spec": {
-        "title": "WebHID API",
-        "url": "https://wicg.github.io/webhid/"
-      },
-      "fragment": "[SecureContext] partial interface Navigator {\n    [SameObject] readonly attribute HID hid;\n};"
-    },
-    {
-      "spec": {
-        "title": "WebUSB API",
-        "url": "https://wicg.github.io/webusb/"
-      },
-      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute USB usb;\n};"
     },
     {
       "spec": {

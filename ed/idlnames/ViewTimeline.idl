@@ -1,7 +1,7 @@
 // Source: Scroll-driven Animations Module Level 1 (https://www.w3.org/TR/scroll-animations-1/)
 [Exposed=Window]
 interface ViewTimeline : ScrollTimeline {
-  constructor(optional ViewTimelineOptions options = {});
+  constructor(ViewTimelineOptions options);
   readonly attribute Element subject;
   readonly attribute CSSNumericValue startOffset;
   readonly attribute CSSNumericValue endOffset;

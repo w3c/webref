@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Option(optional DOMString text = \"\", optional DOMString value, optional boolean defaultSelected = false, optional boolean selected = false)]\ninterface HTMLOptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute DOMString label;\n  [CEReactions, Reflect=\"selected\"] attribute boolean defaultSelected;\n  attribute boolean selected;\n  [CEReactions, ReflectSetter] attribute DOMString value;\n\n  [CEReactions] attribute DOMString text;\n  readonly attribute long index;\n};",
+    "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Option(optional DOMString text = \"\", optional DOMString value, optional boolean defaultSelected = false, optional boolean selected = false)]\ninterface HTMLOptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions, ReflectSetter] attribute DOMString label;\n  [CEReactions, Reflect=\"selected\"] attribute boolean defaultSelected;\n  [CEReactions] attribute boolean selected;\n  [CEReactions, ReflectSetter] attribute DOMString value;\n\n  [CEReactions] attribute DOMString text;\n  readonly attribute long index;\n};",
     "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmloptionelement"
   },
   "extended": [],

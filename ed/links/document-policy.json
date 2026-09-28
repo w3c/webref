@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
@@ -21,20 +20,27 @@
           "the-document-object"
         ]
       },
+      "https://httpwg.org/specs/rfc8941.html": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://w3c.github.io/reporting/": {
         "anchors": [
           "queue-report"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc3864": {},
-      "https://www.w3.org/TR/CSP3/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/reporting-1/": {},
+      "https://w3c.github.io/webappsec-csp/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://www.rfc-editor.org/info/rfc3864/": {},
+      "https://www.w3.org/community/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
     "autolinks": {
+      "https://datatracker.ietf.org/doc/html/rfc8941": {
+        "anchors": [
+          "token",
+          "dictionary"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document",
@@ -55,18 +61,24 @@
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "browsing-context",
-          "opener-browsing-context",
           "nested-browsing-context",
           "creating-a-new-browsing-context",
+          "concept-origin",
+          "active-sandboxing-flag-set",
           "initialise-the-document-object",
-          "bc-container-document",
           "browsing-context-container"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
           "process-a-navigate-fetch"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "browsing-context",
+          "opener-browsing-context",
+          "nav-container-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -78,16 +90,6 @@
         "anchors": [
           "the-iframe-element",
           "attr-iframe-sandbox"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
-        "anchors": [
-          "concept-request-origin"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/origin.html": {
-        "anchors": [
-          "active-sandboxing-flag-set"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {

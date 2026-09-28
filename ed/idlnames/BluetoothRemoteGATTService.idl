@@ -1,4 +1,4 @@
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 [Exposed=Window, SecureContext]
 interface BluetoothRemoteGATTService : EventTarget {
   [SameObject]
@@ -15,8 +15,8 @@ interface BluetoothRemoteGATTService : EventTarget {
     getIncludedServices(optional BluetoothServiceUUID service);
 };
 
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 BluetoothRemoteGATTService includes CharacteristicEventHandlers;
 
-// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+// Source: Web Bluetooth (https://bluetooth.spec.whatwg.org/)
 BluetoothRemoteGATTService includes ServiceEventHandlers;

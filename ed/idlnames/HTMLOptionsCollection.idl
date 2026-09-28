@@ -6,5 +6,5 @@ interface HTMLOptionsCollection : HTMLCollection {
   [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);
   [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);
   [CEReactions] undefined remove(long index);
-  attribute long selectedIndex;
+  [CEReactions] attribute long selectedIndex;
 };

@@ -97,6 +97,64 @@
           ]
         }
       ]
+    },
+    {
+      "name": "autofill.trigger processing steps",
+      "html": "The remote end steps with <var>session</var> and <var>command parameters</var> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable id</var> be the value of the <code>context</code> field of <var>command parameters</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>navigable</var> be the result of trying to get a navigable with <var>navigable id</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>navigable</var>’s active document.</p>"
+        },
+        {
+          "html": "<p>Let <var>environment settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s associated Document is <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <var>environment settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context\" id=\"ref-for-realm-execution-context\">realm execution context</a>’s Realm component.</p>"
+        },
+        {
+          "html": "<p>Let <var>element id</var> be the value of the <code>element</code> field of <var>command parameters</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>element</var> be the result of trying to deserialize remote reference with <var>element id</var>, <var>realm</var>, and <var>session</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\" id=\"ref-for-form-associated-element②\">form control</a> or <var>element</var>’s form owner is null, return an error with error code \"invalid element state\".</p>"
+        },
+        {
+          "html": "<p>Let <var>card</var> be the value of the <code>card</code> field of <var>command parameters</var> if present, or null otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>address</var> be the value of the <code>address</code> field of <var>command parameters</var> if present, or null otherwise.</p>"
+        },
+        {
+          "html": "<p>If both <var>card</var> and <var>address</var> are not null, return an error with error code \"invalid argument\".</p>"
+        },
+        {
+          "html": "<p>If both <var>card</var> and <var>address</var> are null, return an error with error code \"invalid argument\".</p>"
+        },
+        {
+          "html": "<p>If the user agent is unable to perform <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill\" id=\"ref-for-autofill⑦\">autofill</a>, return an error with error code \"unsupported operation\".</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed card</var> be the result of parsing <var>card</var> as an <code>autofill.Card</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsed address</var> be the result of parsing <var>address</var> as an <code>autofill.Address</code>.</p>"
+        },
+        {
+          "html": "<p>The user agent should <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill\" id=\"ref-for-autofill⑧\">autofill</a> <var>element</var> and <var>element</var>’s form owner, while taking into account the contents of <var>parsed card</var> and <var>parsed address</var>.</p>"
+        },
+        {
+          "html": "<p>Return success with data null.</p>"
+        }
+      ]
     }
   ]
 }

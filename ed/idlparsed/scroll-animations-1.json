@@ -168,7 +168,7 @@
         "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline"
       },
       "ViewTimelineOptions": {
-        "fragment": "dictionary ViewTimelineOptions {\n  Element subject;\n  ScrollAxis axis = \"block\";\n  (DOMString or sequence<(CSSNumericValue or CSSKeywordValue)>) inset = \"auto\";\n};",
+        "fragment": "dictionary ViewTimelineOptions {\n  required Element subject;\n  ScrollAxis axis = \"block\";\n  (DOMString or sequence<(CSSNumericValue or CSSKeywordValue)>) inset = \"auto\";\n};",
         "type": "dictionary",
         "name": "ViewTimelineOptions",
         "inheritance": null,
@@ -186,7 +186,7 @@
               "idlType": "Element"
             },
             "default": null,
-            "required": false,
+            "required": true,
             "href": "https://drafts.csswg.org/scroll-animations-1/#dom-viewtimelineoptions-subject"
           },
           {
@@ -276,7 +276,7 @@
         "href": "https://drafts.csswg.org/scroll-animations-1/#dictdef-viewtimelineoptions"
       },
       "ViewTimeline": {
-        "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(optional ViewTimelineOptions options = {});\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(ViewTimelineOptions options);\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
         "type": "interface",
         "name": "ViewTimeline",
         "inheritance": "ScrollTimeline",
@@ -296,10 +296,8 @@
                   "union": false,
                   "idlType": "ViewTimelineOptions"
                 },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],

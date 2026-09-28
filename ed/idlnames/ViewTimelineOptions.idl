@@ -1,6 +1,6 @@
 // Source: Scroll-driven Animations Module Level 1 (https://www.w3.org/TR/scroll-animations-1/)
 dictionary ViewTimelineOptions {
-  Element subject;
+  required Element subject;
   ScrollAxis axis = "block";
   (DOMString or sequence<(CSSNumericValue or CSSKeywordValue)>) inset = "auto";
 };

@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Bluetooth",
-      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      "url": "https://bluetooth.spec.whatwg.org/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n};",
     "href": "https://bluetooth.spec.whatwg.org/#bluetoothremotegattdescriptor"
