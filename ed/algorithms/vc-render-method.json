@@ -5,11 +5,11 @@
   },
   "algorithms": [
     {
-      "html": "When processing a <code>card</code> template, the following steps <em class=\"rfc2119\">MUST</em> be\n        performed:",
+      "html": "When processing a summary template, the following steps <em class=\"rfc2119\">MUST</em> be\n        performed:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Validate the template against the card object definition in\n          <a href=\"https://w3c.github.io/vc-render-method/#card-object\" data-matched-text=\"[[[#card-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.1 </bdi>The Card Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an\n          error <em class=\"rfc2119\">MUST</em> be returned."
+          "html": "Validate the template against the summary object definition in\n          <a href=\"https://w3c.github.io/vc-render-method/#summary-object\" data-matched-text=\"[[[#summary-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.2 </bdi>The Summary Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and an\n          error <em class=\"rfc2119\">MUST</em> be returned."
         },
         {
           "html": "For each string value in the template object:",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "html": "Validate the resulting JSON object against the card object definition\n          in <a href=\"https://w3c.github.io/vc-render-method/#card-object\" data-matched-text=\"[[[#card-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.1 </bdi>The Card Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and\n          an error <em class=\"rfc2119\">MUST</em> be returned."
+          "html": "Validate the resulting JSON object against the summary object definition\n          in <a href=\"https://w3c.github.io/vc-render-method/#summary-object\" data-matched-text=\"[[[#summary-object]]]\" class=\"sec-ref\"><bdi class=\"secno\">2.2.1.2 </bdi>The Summary Object</a>. If validation fails, processing <em class=\"rfc2119\">MUST</em> stop and\n          an error <em class=\"rfc2119\">MUST</em> be returned."
         }
       ]
     },
@@ -42,7 +42,7 @@
           "html": "Let <code>vc</code> be the <a data-link-type=\"dfn\" data-cite=\"vc-data-model-2.1\" data-cite-path=\"\" data-cite-frag=\"dfn-verifiable-credential\" href=\"https://www.w3.org/TR/vc-data-model-2.1/#dfn-verifiable-credential\">verifiable credential</a> to be rendered."
         },
         {
-          "html": "Let <code>renderMethod</code> be the chosen <code>renderMethod</code> property in <code>vc</code> where\n<code>renderMethod.type</code> is <code>TemplateRenderMethod</code> and\n<code>renderMethod.renderSuite</code> is <code>html</code>."
+          "html": "Let <code>renderMethod</code> be the chosen <code>renderMethod</code> property in <code>vc</code> where\n<code>renderMethod.type</code> is <code>SuiteRenderMethod</code> and\n<code>renderMethod.renderSuite</code> is <code>html</code>."
         },
         {
           "html": "If <code>renderMethod.template</code> is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, then let <code>template</code> be the value of\n<code>renderMethod.template</code>."
