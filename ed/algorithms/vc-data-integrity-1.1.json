@@ -552,7 +552,7 @@
           "html": "Initialize <var>selectiveIndexes</var> to an empty array."
         },
         {
-          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>combined</var>.<var>matching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>mandatory</var>.<var>nonMatching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "html": "The following algorithm serializes a derived proof value. The required input is\na <var>dislosureData</var> object containing the following fields:\nbase signature (<var>baseSignature</var>), public key\n(<var>publicKey</var>), an array of signatures (<var>signatures</var>), a label\nmap (<var>labelMap</var>), and an array of mandatory indexes\n(<var>mandatoryIndexes</var>). A single <em>derived proof</em> value, serialized\nas a byte string, is produced as output.",
+      "html": "The following algorithm serializes a derived proof value. The required input is\na <var>dislosureData</var> object containing the following fields:\nbase signature (<var>baseSignature</var>), public key\n(<var>publicKey</var>), an array of signatures (<var>signatures</var>), a label\nmap (<var>labelMap</var>), an array of selective indexes (<var>selectiveIndexes</var>), and an \narray of mandatory indexes\n(<var>mandatoryIndexes</var>). A single <em>derived proof</em> value, serialized\nas a byte string, is produced as output.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -693,7 +693,19 @@
           "html": "Initialize a byte array, <var>proofValue</var>, that starts with the general SIC derived\nproof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x01</code>."
         },
         {
-          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>signatures</var>, <var>compressedLabelMap</var>, and\n<var>mandatoryIndexes</var>."
+          "html": "Create a list of <var>filteredSignatures</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Initialize <var>filteredSignatures</var> to an empty list."
+            },
+            {
+              "html": "For each <var>index</var> in increasing order in the <var>selectiveIndexes</var> array append the \n<var>signature</var> at that <var>index</var> to the <var>filteredSignatures</var> array."
+            }
+          ]
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>baseSignature</var>, <var>publicKeyProofScoped</var>, <var>filteredSignatures</var>, <var>compressedLabelMap</var>, and\n<var>mandatoryIndexes</var>."
         },
         {
           "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
@@ -795,7 +807,7 @@
           "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>salts</var>,\n<var>saltedHashes</var>,\nand <var>hmacKey</var> to the values associated with their property names\n<var>hashData</var>."
         },
         {
-          "html": "Initialize <var>toSign</var> the hash of the concatenation of <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>,\nand <var>saltedHashes</var> where the order of the concatenation <em class=\"rfc2119\">MUST</em> be followed. The\ncryptographic hash algorithm is that specified for signature algorithm in\nthe <var>cryptosuite</var>."
+          "html": "Initialize <var>toSign</var> the hash of the concatenation of <var>proofHash</var>,\n<var>mandatoryHash</var>,and <var>saltedHashes</var> where the order of the concatenation <em class=\"rfc2119\">MUST</em> \nbe followed. The cryptographic hash algorithm is that specified for signature \nalgorithm in the <var>cryptosuite</var>."
         },
         {
           "html": "Initialize <var>signature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
@@ -836,7 +848,7 @@
       ]
     },
     {
-      "html": "The following algorithm serializes a SHoC approach derived proof value.\nThe required inputs are a base signature (<var>signature</var>), an array of salts\n(<var>salts</var>), an array of salted  hashes (<var>saltedHashes</var>), a label map\n(<var>labelMap</var>), an array of mandatory indexes (<var>mandatoryIndexes</var>), and an array\nof selective indexes (<var>selectiveIndexes</var>). A single <em>derived proof</em>\nvalue, serialized as a UTF-8 string, is produced as output.",
+      "html": "The following algorithm serializes a SHoC approach derived proof value.\nThe required inputs are a base signature (<var>signature</var>), an array of filtered \nsalts (<var>filteredSalts</var>), an array of salted hashes (<var>saltedHashes</var>), a label map\n(<var>labelMap</var>), an array of mandatory indexes (<var>mandatoryIndexes</var>), and an array\nof selective indexes (<var>selectiveIndexes</var>). A single <em>derived proof</em>\nvalue, serialized as a UTF-8 string, is produced as output.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -846,7 +858,10 @@
           "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nderived proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>."
         },
         {
-          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>salts</var>, <var>saltedHashes</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>."
+          "html": "Let <var>filteredSalts</var> be the array obtained by selecting the salt values from the\n<var>salts</var> array corresponding to the values in the <var>selectiveIndexes</var> array in\nincreasing index order."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>filteredSalts</var>, <var>saltedHashes</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>."
         },
         {
           "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
@@ -870,7 +885,7 @@
           "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach derived proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
-          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte SHoC approach derived proof header. If the\nresult is not an array of the following six elements —\na byte array of length corresponding to the signature  size;\nan array of byte arrays, each of length appropriate to the <em>salt size</em>;\nan array of byte arrays, each of length corresponding to the hash size;\na map of integers to byte arrays, each of length 32;\nan array of integers; and another array of integers — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte SHoC approach derived proof header. If the\nresult is not an array of the following six elements —\na byte array of length corresponding to the signature size;\nan array of byte arrays, each of length appropriate to the <em>salt size</em>;\nan array of byte arrays, each of length corresponding to the hash size;\na map of integers to byte arrays, each of length 32;\nan array of integers; and another array of integers — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
           "html": "Replace the fourth element in <var>components</var> using the result of calling the\nalgorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#decompresslabelmap\" data-matched-text=\"[[[#decompresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.7 </bdi>decompressLabelMap</a>, passing the existing\nfourth element of <var>components</var> as <var>compressedLabelMap</var>."
@@ -891,13 +906,13 @@
           "html": "Initialize <var>signature</var>,  <var>salts</var>, <var>saltedHashes</var>, and <var>selectiveIndexes</var> to the\nvalues associated with their property names in the <var>proofData</var> parameter and\n<var>proofHash</var>, <var>nonMandatory</var>, and <var>mandatoryHash</var> to the values  associated  with\ntheir property names in the <var>verifyData</var> parameter."
         },
         {
-          "html": "If the length of <var>salts</var> does not match the length of <var>saltedHashes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match the salted hashes count."
+          "html": "If the length of <var>salts</var> does not match the length of <var>selectiveIndexes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match the salted hashes count."
         },
         {
-          "html": "The values of the elements of the <var>selectiveIndexes</var> array must be between 0 and\nthe length of the <var>salts</var> array minus one. If not,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the selective indexes are out of bounds."
+          "html": "The values of the elements of the <var>selectiveIndexes</var> array must be between 0 and\nthe length of the <var>saltedHash</var> array minus one. If not,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the selective indexes are out of bounds."
         },
         {
-          "html": "Initialize <var>toVerify</var> to the byte  concatenation of the values: <var>proofHash</var>,\n<var>mandatoryHash</var>, <var>salts</var>, and <var>saltedHashes</var> in that order with the array values\nthemselves concatenated together."
+          "html": "Initialize <var>toVerify</var> to the byte concatenation of the values of <var>proofHash</var>,\n<var>mandatoryHash</var>, and <var>saltedHashes</var>, in that order, with the array values\nthemselves concatenated together."
         },
         {
           "html": "Initialize <var>verified</var> to true."
@@ -910,10 +925,10 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "Let <var>computedHash</var> be the  hash of the concatenation of\n<var>salts</var>[<var>selectiveIndexes</var>[index]] and <var>nq</var>."
+              "html": "Let <var>computedHash</var> be the hash of the concatenation of\n<var>salts</var>[index] and <var>nq</var>."
             },
             {
-              "html": "Initialize <var>verificationCheck</var> to the result of comparing the <var>computedHash</var>\nwith the value of  <var>saltedHashes</var>[<var>selectedIndexes</var>[index]]."
+              "html": "Initialize <var>verificationCheck</var> to the result of comparing the <var>computedHash</var>\nwith the value of <var>saltedHashes</var>[<var>selectedIndexes</var>[index]]."
             },
             {
               "html": "If <var>verificationCheck</var> is <code>false</code>, set <var>verified</var> to false."
