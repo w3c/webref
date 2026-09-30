@@ -66,8 +66,8 @@
     },
     {
       "name": "::highlight()",
-      "value": "::highlight(<custom-ident>)",
-      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-highlight-custom-ident"
+      "value": "::highlight(<highlight-name-selector>)",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-highlight-highlight-name-selector"
     },
     {
       "name": "::before",
@@ -106,5 +106,12 @@
       "value": "::details-content"
     }
   ],
-  "values": []
+  "values": [
+    {
+      "name": "<highlight-name-selector>",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#typedef-highlight-name-selector",
+      "type": "type",
+      "value": "'*' | <custom-ident>"
+    }
+  ]
 }
