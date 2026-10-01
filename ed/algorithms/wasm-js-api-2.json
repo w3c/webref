@@ -141,7 +141,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception and return.</p>"
+                  "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception and return.</p>"
                 },
                 {
                   "html": "<p>Let <var>builtinSetNames</var> be <var>options</var>[\"builtins\"].</p>"
@@ -150,7 +150,7 @@
                   "html": "<p>Let <var>importedStringModule</var> be <var>options</var>[\"importedStringConstants\"].</p>"
                 },
                 {
-                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module①\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module①\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
                 },
                 {
                   "html": "Otherwise,",
@@ -232,7 +232,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports②\">module_imports</a>(<var>module</var>) <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>, and <var>importObject</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map « ».</p>"
+          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map «[ ]».</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
@@ -275,7 +275,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>builtinOrStringImports</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contains</a> <var>moduleName</var>,",
+              "html": "If <var>builtinOrStringImports</var>[<var>moduleName</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>,",
               "rationale": "let",
               "steps": [
                 {
@@ -336,7 +336,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
+                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
@@ -402,7 +402,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
+                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
@@ -417,7 +417,7 @@
                   "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#memory\" id=\"ref-for-memory②\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑤\">LinkError</a></code> exception.</p>"
                 },
                 {
-                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
+                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
@@ -435,7 +435,7 @@
                   "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
                 },
                 {
-                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
+                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
@@ -491,10 +491,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑨\">func</a> <var>funcaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑨\">func</a> <var>funcaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⓪\">func</a> <var>funcaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⓪\">func</a> <var>funcaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>func</var> be the result of creating <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#a-new-exported-function\" id=\"ref-for-a-new-exported-function\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
@@ -509,10 +509,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①①\">global</a> <var>globaladdr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①①\">global</a> <var>globaladdr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①②\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①②\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#create-a-global-object\" id=\"ref-for-create-a-global-object\">a new Global object</a> created from <var>globaladdr</var>.</p>"
@@ -527,10 +527,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①③\">mem</a> <var>memaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①③\">mem</a> <var>memaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①④\">mem</a> <var>memaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①④\">mem</a> <var>memaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>memory</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#create-a-memory-object\" id=\"ref-for-create-a-memory-object\">a new Memory object</a> created from <var>memaddr</var>.</p>"
@@ -545,10 +545,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑤\">table</a> <var>tableaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑤\">table</a> <var>tableaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑥\">table</a> <var>tableaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑥\">table</a> <var>tableaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>table</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#create-a-table-object\" id=\"ref-for-create-a-table-object\">a new Table object</a> created from <var>tableaddr</var>.</p>"
@@ -651,7 +651,7 @@
           "html": "<p>Let <var>importedStringModule</var> be <var>moduleObject</var>.[[ImportedStringModule]].</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#read-the-imports\" id=\"ref-for-read-the-imports\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>imports</var> be the result.\nIf this operation throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with the exception, and return <var>promise</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#read-the-imports\" id=\"ref-for-read-the-imports\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>imports</var> be the result.\nIf this operation throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with the exception, and return <var>promise</var>.</p>"
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
@@ -662,13 +662,13 @@
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module①\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module①\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
                 },
                 {
                   "html": "<p>Let <var>instanceObject</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#instance\" id=\"ref-for-instance②\">Instance</a></code>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object\">Initialize</a> <var>instanceObject</var> from <var>module</var> and <var>instance</var>.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object\">Initialize</a> <var>instanceObject</var> from <var>module</var> and <var>instance</var>.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>instanceObject</var>.</p>"
@@ -715,7 +715,7 @@
                   "rationale": "reject",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
                     }
                   ]
                 }
@@ -728,7 +728,7 @@
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
                 }
               ]
             }
@@ -771,7 +771,7 @@
       "name": "WebAssembly/JSTag",
       "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-jstag",
       "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-webassembly-jstag\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>JSTag</code></dfn> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#namespacedef-webassembly\" id=\"ref-for-namespacedef-webassembly\">WebAssembly</a></code> Namespace, when invoked, performs the following steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>JSTagAddr</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#get-the-javascript-exception-tag\" id=\"ref-for-get-the-javascript-exception-tag\">getting the JavaScript exception tag</a>.</p>"
@@ -1082,7 +1082,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, let <var>addrtype</var> be <var>descriptor</var>[\"address\"]; otherwise, let <var>addrtype</var> be \"i32\".</p>"
+          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, let <var>addrtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype\">ToValueType</a>(<var>descriptor</var>[\"address\"]); otherwise, let <var>addrtype</var> be <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype④\">i32</a>.</p>"
         },
         {
           "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#addressvaluetou64\" id=\"ref-for-addressvaluetou64\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
@@ -1170,7 +1170,7 @@
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store⑥\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Let <var>ret</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-size\" id=\"ref-for-embed-mem-size\">mem_size</a>(<var>store</var>, <var>memaddr</var>).</p>"
+          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-size\" id=\"ref-for-embed-mem-size\">mem_size</a>(<var>store</var>, <var>memaddr</var>).</p>"
         },
         {
           "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-grow\" id=\"ref-for-embed-mem-grow\">mem_grow</a>(<var>store</var>, <var>memaddr</var>, <var>delta</var>).</p>"
@@ -1231,7 +1231,7 @@
               "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[<var>x</var>] exists.</p>"
             },
             {
-              "html": "<p>Let <var>memaddr</var> be the memory address <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[<var>x</var>].</p>"
+              "html": "<p>Let <var>memaddr</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr⑦\">memory address</a> <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[<var>x</var>].</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#refresh-the-memory-buffer\" id=\"ref-for-refresh-the-memory-buffer①\">Refresh the memory buffer</a> of <var>memaddr</var>.</p>"
@@ -1434,7 +1434,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>elementtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype\">ToValueType</a>(<var>descriptor</var>[\"element\"]).</p>"
+          "html": "<p>Let <var>elementtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype①\">ToValueType</a>(<var>descriptor</var>[\"element\"]).</p>"
         },
         {
           "html": "If <var>elementtype</var> is not a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-reftype\" id=\"ref-for-match-reftype\">reftype</a>,",
@@ -1446,7 +1446,7 @@
           ]
         },
         {
-          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, let <var>addrtype</var> be <var>descriptor</var>[\"address\"]; otherwise, let <var>addrtype</var> be \"i32\".</p>"
+          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, let <var>addrtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>descriptor</var>[\"address\"]); otherwise, let <var>addrtype</var> be <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑤\">i32</a>.</p>"
         },
         {
           "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#addressvaluetou64\" id=\"ref-for-addressvaluetou64③\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
@@ -1727,16 +1727,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>s</var> equals \"i32\", return <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype④\">i32</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"i32\", return <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑥\">i32</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"i64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑤\">i64</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"i64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑦\">i64</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"f32\", return <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑥\">f32</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"f32\", return <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑧\">f32</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"f64\", return <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑦\">f64</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"f64\", return <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑨\">f64</a>.</p>"
         },
         {
           "html": "<p>If <var>s</var> equals \"v128\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①\">v128</a>.</p>"
@@ -1776,7 +1776,7 @@
           "html": "<p>Let <var>mutable</var> be <var>descriptor</var>[\"mutable\"].</p>"
         },
         {
-          "html": "<p>Let <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype①\">ToValueType</a>(<var>descriptor</var>[\"value\"]).</p>"
+          "html": "<p>Let <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype③\">ToValueType</a>(<var>descriptor</var>[\"value\"]).</p>"
         },
         {
           "html": "If <var>valuetype</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype\">matches</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types②\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑤\">exnref</a>,",
@@ -1852,9 +1852,9 @@
       ]
     },
     {
-      "name": "Global/value",
+      "name": "Global value getter",
       "href": "https://webassembly.github.io/spec/js-api/#dom-global-value",
-      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:\n\n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
+      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1863,10 +1863,9 @@
       ]
     },
     {
-      "name": "Global/value",
-      "href": "https://webassembly.github.io/spec/js-api/#dom-global-value",
-      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:\n\n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
-      "rationale": "let",
+      "name": "Global value setter",
+      "html": "The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store②①\">associated store</a>.</p>"
@@ -2057,7 +2056,7 @@
           "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑧\">error</a>, throw an exception. This exception should be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://webassembly.github.io/spec/js-api/#errors\">the WebAssembly error mapping</a>.</p>"
         },
         {
-          "html": "If <var>ret</var> is <u class=\"link-error\" data-lt=\"exception\" title=\"LINK ERROR: Ambiguous for-less link for 'exception', please see &lt;https://speced.github.io/bikeshed/#ambi-for&gt; for instructions:\nLocal references:\nspec:webassembly; type:dfn; for:/; text:exception\nspec:webassembly; type:dfn; for:tagtype/attribute; text:exception\nfor-less references:\nspec:webidl; type:dfn; for:/; text:exception\">exception</u> <var>exnaddr</var>, then",
+          "html": "If <var>ret</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"31b8b46e\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">exception</a> <var>exnaddr</var>, then",
           "rationale": "let",
           "steps": [
             {
@@ -2373,7 +2372,7 @@
               "html": "<p>Let <var>i31</var> be <a data-link-type=\"dfn\" data-refhint-key=\"87dd702b\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed②\">signed_31</a>(<var>u31</var>).</p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽③\">𝔽</a>(<var>i31</var>).</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽③\">𝔽</a>(<var>i31</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value④\">mathematical value</a>).</p>"
             }
           ]
         },
@@ -2424,7 +2423,7 @@
           "html": "<p class=\"assertion\">Assert: <var>type</var> does not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype⑤\">match</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①①\">exnref</a>.</p>"
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑧\">i64</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⓪\">i64</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2439,7 +2438,7 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑨\">i32</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①①\">i32</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2454,7 +2453,7 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⓪\">f32</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①②\">f32</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2487,7 +2486,7 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①①\">f64</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①③\">f64</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2533,7 +2532,7 @@
               ]
             },
             {
-              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①③\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">extern</a>),",
+              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①③\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">extern</a>) is true,",
               "rationale": "let",
               "steps": [
                 {
@@ -2545,7 +2544,7 @@
               ]
             },
             {
-              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <var>null</var> <a data-link-type=\"dfn\" data-refhint-key=\"cf0d7dd8\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">func</a>),",
+              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <var>null</var> <a data-link-type=\"dfn\" data-refhint-key=\"cf0d7dd8\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">func</a>) is true,",
               "rationale": "let",
               "steps": [
                 {
@@ -2618,7 +2617,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> <var>hostaddr</var> be the smallest address such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
+                  "html": "<p>Let <var>hostaddr</var> be the smallest <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>map</var>[<var>hostaddr</var>] to <var>v</var>.</p>"
@@ -2660,7 +2659,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>addrtype</var> is \"i32\",",
+          "html": "If <var>addrtype</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①④\">i32</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2672,7 +2671,7 @@
           ]
         },
         {
-          "html": "If <var>addrtype</var> is \"i64\",",
+          "html": "If <var>addrtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑤\">i64</a>,",
           "rationale": "let",
           "steps": [
             {
@@ -2698,10 +2697,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>addrtype</var> is \"i32\", return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽④\">𝔽</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value④\">mathematical value</a>).</p>"
+          "html": "<p>If <var>addrtype</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑥\">i32</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽④\">𝔽</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑤\">mathematical value</a>).</p>"
         },
         {
-          "html": "<p>Else if <var>addrtype</var> is \"i64\", return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℤ\" id=\"ref-for-ℤ①\">ℤ</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑤\">mathematical value</a>).</p>"
+          "html": "<p>Else if <var>addrtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑦\">i64</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℤ\" id=\"ref-for-ℤ①\">ℤ</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑥\">mathematical value</a>).</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: This step is not reached.</p>"
@@ -2774,7 +2773,7 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>paramType</var>) to <var>wasmParameters</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tovaluetype\" id=\"ref-for-tovaluetype④\">ToValueType</a>(<var>paramType</var>) to <var>wasmParameters</var>.</p>"
             }
           ]
         },
@@ -2909,10 +2908,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let keys be a new empty list.</p>"
-        },
-        {
-          "html": "<p>Return keys.</p>"
+          "html": "<p>Return « ».</p>"
         }
       ]
     },
@@ -3461,7 +3457,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①②\">i32</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑧\">i32</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>v</var>) »).</p>"
@@ -3475,7 +3471,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①③\">i32</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑨\">i32</a>.</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑨\">ToJSValue</a>(<var>index</var>) »).</p>"
@@ -3609,7 +3605,7 @@
               "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat\">CharCodeAt</a>(<var>string</var>, <var>i</var>).</p>"
             },
             {
-              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①④\">i32</a>).</p>"
+              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②⓪\">i32</a>).</p>"
             },
             {
               "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
