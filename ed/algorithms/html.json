@@ -7445,11 +7445,14 @@
       ]
     },
     {
-      "html": "The <code id=\"the-img-element:the-img-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> <a id=\"the-img-element:html-element-removing-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\">HTML element removing steps</a>, given <var>removedNode</var>,\n  <var>oldAncestor</var>, and <var>isSubtreeRoot</var> are:",
+      "html": "The <code id=\"the-img-element:the-img-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> <a id=\"the-img-element:html-element-removing-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\">HTML element removing steps</a>, given <var>removedNode</var>,\n  <var>isSubtreeRoot</var>, and <var>oldAncestor</var> are:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>isSubtreeRoot</var> is true and <var>oldAncestor</var> is a <code id=\"the-img-element:the-picture-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element\">picture</a></code>\n   element, then count this as a <a href=\"https://html.spec.whatwg.org/multipage/images.html#relevant-mutations\" id=\"the-img-element:relevant-mutations-3\">relevant mutation</a> for\n   <var>removedNode</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>removedNode</var>'s <a id=\"the-img-element:last-auto-sizes-width\" href=\"https://html.spec.whatwg.org/multipage/images.html#last-auto-sizes-width\">last auto-sizes width</a> to null.</p>"
         }
       ]
     },
@@ -7620,7 +7623,7 @@
     {
       "name": "density-corrected natural width and height",
       "href": "https://html.spec.whatwg.org/multipage/images.html#density-corrected-intrinsic-width-and-height",
-      "html": "To determine the <dfn id=\"density-corrected-intrinsic-width-and-height\">density-corrected\n  natural width and height</dfn> of an <code id=\"images-processing-model:the-img-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element <var>img</var>:",
+      "html": "To determine the <dfn id=\"density-corrected-intrinsic-width-and-height\">density-corrected\n  natural width and height</dfn> of an <code id=\"images-processing-model:the-img-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element <var>img</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -8464,7 +8467,16 @@
               "html": "<p>If the last <a id=\"parsing-a-sizes-attribute:component-value\" href=\"https://drafts.csswg.org/css-syntax/#component-value\" data-x-internal=\"component-value\">component value</a> in <var>unparsed size</var>\n     is a valid non-negative <a href=\"https://html.spec.whatwg.org/multipage/images.html#source-size-value\" id=\"parsing-a-sizes-attribute:source-size-value\">&lt;source-size-value&gt;</a>,\n     then set <var>size</var> to its value\n     and remove the <a id=\"parsing-a-sizes-attribute:component-value-2\" href=\"https://drafts.csswg.org/css-syntax/#component-value\" data-x-internal=\"component-value\">component value</a> from <var>unparsed size</var>.\n     Any CSS function other than the <a id=\"parsing-a-sizes-attribute:math-functions\" href=\"https://drafts.csswg.org/css-values/#math-function\" data-x-internal=\"math-functions\">math functions</a> is invalid.\n     Otherwise, there is a <a href=\"https://html.spec.whatwg.org/multipage/images.html#concept-microsyntax-parse-error\" id=\"parsing-a-sizes-attribute:concept-microsyntax-parse-error-2\">parse error</a>;\n     <a id=\"parsing-a-sizes-attribute:continue-2\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>size</var> is <code id=\"parsing-a-sizes-attribute:valdef-sizes-auto\"><a href=\"https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto\">auto</a></code>, and <var>img</var>\n      is not null, and <var>img</var> is <a id=\"parsing-a-sizes-attribute:being-rendered\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\">being rendered</a>, and <var>img</var>\n      <a id=\"parsing-a-sizes-attribute:allows-auto-sizes\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#allows-auto-sizes\">allows auto-sizes</a>, then set <var>size</var> to the <a id=\"parsing-a-sizes-attribute:concrete-object-size\" href=\"https://drafts.csswg.org/css-images/#concrete-object-size\" data-x-internal=\"concrete-object-size\">concrete object\n      size</a> width of <var>img</var>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"parsing-a-sizes-attribute:'px'\" data-x-internal=\"'px'\">CSS pixels</a>.</p>"
+              "html": "If <var>size</var> is <code id=\"parsing-a-sizes-attribute:valdef-sizes-auto\"><a href=\"https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto\">auto</a></code>, and <var>img</var> is\n      not null, and <var>img</var> <a id=\"parsing-a-sizes-attribute:allows-auto-sizes\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#allows-auto-sizes\">allows auto-sizes</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>img</var> is <a id=\"parsing-a-sizes-attribute:being-rendered\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\">being rendered</a>, then set <var>size</var> to the\n       <a id=\"parsing-a-sizes-attribute:concrete-object-size\" href=\"https://drafts.csswg.org/css-images/#concrete-object-size\" data-x-internal=\"concrete-object-size\">concrete object size</a> width of <var>img</var>, in <a href=\"https://drafts.csswg.org/css-values/#px\" id=\"parsing-a-sizes-attribute:'px'\" data-x-internal=\"'px'\">CSS\n       pixels</a>, and set <var>img</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#last-auto-sizes-width\" id=\"parsing-a-sizes-attribute:last-auto-sizes-width\">last auto-sizes width</a> to\n       <var>size</var>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, if <var>img</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#last-auto-sizes-width\" id=\"parsing-a-sizes-attribute:last-auto-sizes-width-2\">last auto-sizes width</a> is not null, then\n       set <var>size</var> to <var>img</var>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#last-auto-sizes-width\" id=\"parsing-a-sizes-attribute:last-auto-sizes-width-3\">last auto-sizes width</a>.</p>"
+                }
+              ]
             },
             {
               "html": "Remove all consecutive <a id=\"parsing-a-sizes-attribute:whitespace-token-2\" href=\"https://drafts.csswg.org/css-syntax/#typedef-whitespace-token\" data-x-internal=\"whitespace-token\">&lt;whitespace-token&gt;</a>s from the end of <var>unparsed\n      size</var>. If <var>unparsed size</var> is now empty:",
