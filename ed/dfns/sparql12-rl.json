@@ -52,10 +52,10 @@
       "links": []
     },
     {
-      "id": "dfn-triple-template",
-      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-template",
+      "id": "dfn-triple-pattern",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-pattern",
       "linkingText": [
-        "Triple template"
+        "Triple pattern"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -75,10 +75,10 @@
       "links": []
     },
     {
-      "id": "dfn-triple-pattern",
-      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-pattern",
+      "id": "dfn-triple-template",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-template",
       "linkingText": [
-        "Triple pattern"
+        "Triple template"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -727,9 +727,10 @@
       "links": []
     },
     {
-      "id": "dfn-triple-pattern-matching",
-      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-pattern-matching",
+      "id": "dfn-triple-pattern-match",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-pattern-match",
       "linkingText": [
+        "triple-pattern-match",
         "Triple pattern matching"
       ],
       "localLinkingText": [],
@@ -753,7 +754,6 @@
       "id": "dfn-triple-pattern-dependency",
       "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-triple-pattern-dependency",
       "linkingText": [
-        "triple-pattern-dependency",
         "Triple pattern dependency"
       ],
       "localLinkingText": [],
@@ -774,39 +774,12 @@
       "links": []
     },
     {
-      "id": "dfn-depends-on-a-triple-template",
-      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-depends-on-a-triple-template",
+      "id": "dfn-depends-pattern-template",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-depends-pattern-template",
       "linkingText": [
-        "depends on a triple template"
-      ],
-      "localLinkingText": [
         "depends-pattern-template"
       ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rule-dependency",
-        "href": "https://w3c.github.io/data-shapes/sparql12-rl/#rule-dependency",
-        "title": "Rule Dependency",
-        "alternateIds": [
-          "x4-3-rule-dependency"
-        ],
-        "number": "4.3"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "dfn-depends-on-a-rule",
-      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-depends-on-a-rule",
-      "linkingText": [
-        "depends on a rule"
-      ],
-      "localLinkingText": [
-        "depends-pattern-rule"
-      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
@@ -827,9 +800,7 @@
       "id": "dfn-rule-dependency",
       "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-rule-dependency",
       "linkingText": [
-        "rule dependency",
-        "depends on",
-        "Rule dependency"
+        "rule dependency"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -846,6 +817,29 @@
         "number": "4.3"
       },
       "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-depends-on-rule",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-depends-on-rule",
+      "linkingText": [
+        "depends-on-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://w3c.github.io/data-shapes/sparql12-rl/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x4-3-rule-dependency"
+        ],
+        "number": "4.3"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -1020,6 +1014,7 @@
         "stratification layer",
         "layer",
         "stratum",
+        "strata",
         "Stratification layer"
       ],
       "localLinkingText": [],
@@ -1063,6 +1058,29 @@
       "links": []
     },
     {
+      "id": "dfn-stratum-number",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-stratum-number",
+      "linkingText": [
+        "stratum number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stratification",
+        "href": "https://w3c.github.io/data-shapes/sparql12-rl/#stratification",
+        "title": "Stratification",
+        "alternateIds": [
+          "x4-4-stratification"
+        ],
+        "number": "4.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dfn-stratification-condition",
       "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-stratification-condition",
       "linkingText": [
@@ -1091,6 +1109,30 @@
       "linkingText": [
         "substitution",
         "Substitution function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://w3c.github.io/data-shapes/sparql12-rl/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x6-1-evaluation-definitions"
+        ],
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-replaceblanknodes",
+      "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-replaceblanknodes",
+      "linkingText": [
+        "replaceBlankNodes",
+        "Template instance function"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1231,7 +1273,7 @@
       "href": "https://w3c.github.io/data-shapes/sparql12-rl/#dfn-srl-document",
       "linkingText": [
         "SRL document",
-        "SPARQL-RL Document"
+        "SPARQL-RL document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1352,7 +1394,7 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
         "id": "alg-imports",
         "href": "https://w3c.github.io/data-shapes/sparql12-rl/#alg-imports",
