@@ -40274,8 +40274,26 @@
       "name": "timer initialization steps",
       "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timer-initialisation-steps",
       "html": "To perform the <dfn id=\"timer-initialisation-steps\">timer initialization\n  steps</dfn>, given a <code id=\"timers:windoworworkerglobalscope-2\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\">WindowOrWorkerGlobalScope</a></code> <var>global</var>, a string or <code id=\"timers:idl-function\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code> or <code id=\"timers:tt-trustedscript\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code>\n  <var>handler</var>, a number <var>timeout</var>, a list <var>arguments</var>, a boolean\n  <var>repeat</var>, and optionally (and only if <var>repeat</var> is true) a number\n  <var>previousId</var>, perform the following steps. They return a number.",
-      "rationale": "let",
+      "rationale": "if",
       "steps": [
+        {
+          "html": "If <var>handler</var> is not a <code id=\"timers:idl-function-2\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code> and\n    <var>previousId</var> was not given:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>globalName</var> be \"<code>Window</code>\" if <var>global</var> is a\n     <code id=\"timers:window\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object; \"<code>WorkerGlobalScope</code>\" otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>methodName</var> be \"<code>setInterval</code>\" if <var>repeat</var>\n     is true; \"<code>setTimeout</code>\" otherwise.</p>"
+            },
+            {
+              "html": "<p>Let <var>sink</var> be a concatenation of <var>globalName</var>, U+0020 SPACE, and\n     <var>methodName</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>handler</var> to the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"timers:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"timers:tt-trustedscript-2\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code>, <var>global</var>, <var>handler</var>,\n     <var>sink</var>, and \"<code>script</code>\".</p>"
+            }
+          ]
+        },
         {
           "html": "<p>Let <var>thisArg</var> be <var>global</var> if that is a <code id=\"timers:workerglobalscope\"><a href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\">WorkerGlobalScope</a></code>\n   object; otherwise let <var>thisArg</var> be the <code id=\"timers:windowproxy\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#windowproxy\">WindowProxy</a></code> that corresponds to\n   <var>global</var>.</p>"
         },
@@ -40323,30 +40341,12 @@
               "html": "<p><a id=\"timers:record-timing-info-for-timer-handler\" href=\"https://w3c.github.io/long-animation-frames/#record-timing-info-for-timer-handler\" data-x-internal=\"record-timing-info-for-timer-handler\">Record timing info for timer handler</a> given <var>handler</var>,\n     <var>settings object</var>, and <var>repeat</var>.</p>"
             },
             {
-              "html": "<p>If <var>handler</var> is a <code id=\"timers:idl-function-2\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code>, then <a href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"timers:es-invoking-callback-functions\" data-x-internal=\"es-invoking-callback-functions\">invoke</a> <var>handler</var> given\n     <var>arguments</var> and \"<code>report</code>\", and with <i id=\"timers:dfn-callback-this-value\"><a data-x-internal=\"dfn-callback-this-value\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\">callback this value</a></i> set to <var>thisArg</var>.</p>"
+              "html": "<p>If <var>handler</var> is a <code id=\"timers:idl-function-3\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code>, then <a href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"timers:es-invoking-callback-functions\" data-x-internal=\"es-invoking-callback-functions\">invoke</a> <var>handler</var> given\n     <var>arguments</var> and \"<code>report</code>\", and with <i id=\"timers:dfn-callback-this-value\"><a data-x-internal=\"dfn-callback-this-value\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\">callback this value</a></i> set to <var>thisArg</var>.</p>"
             },
             {
               "html": "Otherwise:",
-              "rationale": "if",
+              "rationale": "assert",
               "steps": [
-                {
-                  "html": "If <var>previousId</var> was not given:",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>globalName</var> be \"<code>Window</code>\" if <var>global</var> is\n         a <code id=\"timers:window\"><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\">Window</a></code> object; \"<code>WorkerGlobalScope</code>\"\n         otherwise.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>methodName</var> be \"<code>setInterval</code>\" if\n         <var>repeat</var> is true; \"<code>setTimeout</code>\" otherwise.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>sink</var> be a concatenation of <var>globalName</var>, U+0020 SPACE, and\n         <var>methodName</var>.</p>"
-                    },
-                    {
-                      "html": "<p>Set <var>handler</var> to the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"timers:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with\n         <code id=\"timers:tt-trustedscript-2\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code>, <var>global</var>,\n         <var>handler</var>, <var>sink</var>, and \"<code>script</code>\".</p>"
-                    }
-                  ]
-                },
                 {
                   "html": "<p><a id=\"timers:assert-2\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>handler</var> is a string.</p>"
                 },
