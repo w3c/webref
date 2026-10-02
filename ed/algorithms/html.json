@@ -33172,12 +33172,6 @@
           "html": "<p>Set <var>document</var>'s <i id=\"destroying-documents:concept-document-salvageable\"><a href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#concept-document-salvageable\">salvageable</a></i> state\n   to false.</p>"
         },
         {
-          "html": "<p>Let <var>ports</var> be the list of <code id=\"destroying-documents:messageport\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code>s whose <a id=\"destroying-documents:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"destroying-documents:concept-document-window\">associated <code>Document</code></a> is\n   <var>document</var>.</p>"
-        },
-        {
-          "html": "<p>For each <var>port</var> in <var>ports</var>, <a id=\"destroying-documents:disentangle\" href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#disentangle\">disentangle</a>\n   <var>port</var>.</p>"
-        },
-        {
           "html": "<p>Run any <a href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#unloading-document-cleanup-steps\" id=\"destroying-documents:unloading-document-cleanup-steps\">unloading document cleanup steps</a> for <var>document</var> that\n   are defined by this specification and <a id=\"destroying-documents:other-applicable-specifications\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#other-applicable-specifications\">other applicable specifications</a>.</p>"
         },
         {
@@ -33240,7 +33234,7 @@
           "html": "<p>Wait until <var>numberDestroyed</var> equals <var>childNavigable</var>'s <a href=\"https://infra.spec.whatwg.org/#list-size\" id=\"destroying-documents:list-size\" data-x-internal=\"list-size\">size</a>.</p>"
         },
         {
-          "html": "<a id=\"destroying-documents:queue-a-global-task-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a id=\"destroying-documents:navigation-and-traversal-task-source-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\">navigation and traversal task source</a>\n    given <var>document</var>'s <a id=\"destroying-documents:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> to perform the following\n    steps:",
+          "html": "<a id=\"destroying-documents:queue-a-global-task-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a id=\"destroying-documents:navigation-and-traversal-task-source-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\">navigation and traversal task source</a>\n    given <var>document</var>'s <a id=\"destroying-documents:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> to perform the following\n    steps:",
           "rationale": "destroy",
           "steps": [
             {
@@ -41913,14 +41907,11 @@
         },
         {
           "html": "<p>Disentangle <var>initiatorPort</var> and <var>otherPort</var>, so that they are no longer\n   entangled or associated with each other.</p>"
-        },
-        {
-          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"message-ports:concept-event-fire\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"message-ports:event-close\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-close\">close</a></code> at <var>otherPort</var>.</p>"
         }
       ]
     },
     {
-      "html": "<code id=\"message-ports:messageport-14\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> objects are <a id=\"message-ports:transferable-objects\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects\">transferable\n  objects</a>. Their <a id=\"message-ports:transfer-steps\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transfer-steps\">transfer steps</a>, given <var>value</var> and\n  <var>dataHolder</var>, are:",
+      "html": "<code id=\"message-ports:messageport-13\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> objects are <a id=\"message-ports:transferable-objects\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects\">transferable\n  objects</a>. Their <a id=\"message-ports:transfer-steps\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transfer-steps\">transfer steps</a>, given <var>value</var> and\n  <var>dataHolder</var>, are:",
       "rationale": "set",
       "steps": [
         {
@@ -41990,7 +41981,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>finalTargetPort</var> be the <code id=\"message-ports:messageport-15\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> in whose <a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#port-message-queue\" id=\"message-ports:port-message-queue-13\">port message\n      queue</a> the task now finds itself.</p>"
+              "html": "<p>Let <var>finalTargetPort</var> be the <code id=\"message-ports:messageport-14\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> in whose <a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#port-message-queue\" id=\"message-ports:port-message-queue-13\">port message\n      queue</a> the task now finds itself.</p>"
             },
             {
               "html": "<p>Let <var>messageEventTarget</var> be <var>finalTargetPort</var>'s <a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#message-event-target\" id=\"message-ports:message-event-target\">message event\n     target</a>.</p>"
@@ -41999,16 +41990,16 @@
               "html": "<p>Let <var>targetRealm</var> be <var>finalTargetPort</var>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"message-ports:concept-relevant-realm\">relevant realm</a>.</p>"
             },
             {
-              "html": "<p>Let <var>deserializeRecord</var> be\n      <a id=\"message-ports:structureddeserializewithtransfer\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\">StructuredDeserializeWithTransfer</a>(<var>serializeWithTransferResult</var>,\n      <var>targetRealm</var>).</p>\n\n      <p>If this throws an exception, catch it, <a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"message-ports:concept-event-fire-2\" data-x-internal=\"concept-event-fire\">fire an\n      event</a> named <code id=\"message-ports:event-messageerror-2\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-messageerror\">messageerror</a></code> at\n      <var>messageEventTarget</var>, using <code id=\"message-ports:messageevent\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#messageevent\">MessageEvent</a></code>, and then return.\n     </p>"
+              "html": "<p>Let <var>deserializeRecord</var> be\n      <a id=\"message-ports:structureddeserializewithtransfer\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structureddeserializewithtransfer\">StructuredDeserializeWithTransfer</a>(<var>serializeWithTransferResult</var>,\n      <var>targetRealm</var>).</p>\n\n      <p>If this throws an exception, catch it, <a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"message-ports:concept-event-fire\" data-x-internal=\"concept-event-fire\">fire an\n      event</a> named <code id=\"message-ports:event-messageerror-2\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-messageerror\">messageerror</a></code> at\n      <var>messageEventTarget</var>, using <code id=\"message-ports:messageevent\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#messageevent\">MessageEvent</a></code>, and then return.\n     </p>"
             },
             {
               "html": "<p>Let <var>messageClone</var> be <var>deserializeRecord</var>.[[Deserialized]].</p>"
             },
             {
-              "html": "<p>Let <var>newPorts</var> be a new <a id=\"message-ports:frozen-array\" href=\"https://webidl.spec.whatwg.org/#dfn-frozen-array-type\" data-x-internal=\"frozen-array\">frozen array</a> consisting of all\n     <code id=\"message-ports:messageport-16\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> objects in <var>deserializeRecord</var>.[[TransferredValues]], if any,\n     maintaining their relative order.</p>"
+              "html": "<p>Let <var>newPorts</var> be a new <a id=\"message-ports:frozen-array\" href=\"https://webidl.spec.whatwg.org/#dfn-frozen-array-type\" data-x-internal=\"frozen-array\">frozen array</a> consisting of all\n     <code id=\"message-ports:messageport-15\"><a href=\"https://html.spec.whatwg.org/multipage/web-messaging.html#messageport\">MessagePort</a></code> objects in <var>deserializeRecord</var>.[[TransferredValues]], if any,\n     maintaining their relative order.</p>"
             },
             {
-              "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"message-ports:concept-event-fire-3\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"message-ports:event-message-3\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-message\">message</a></code> at <var>messageEventTarget</var>, using\n     <code id=\"message-ports:messageevent-2\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#messageevent\">MessageEvent</a></code>, with the <code id=\"message-ports:dom-messageevent-data\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-data\">data</a></code> attribute\n     initialized to <var>messageClone</var> and the <code id=\"message-ports:dom-messageevent-ports\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports\">ports</a></code> attribute initialized to\n     <var>newPorts</var>.</p>"
+              "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"message-ports:concept-event-fire-2\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"message-ports:event-message-3\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-message\">message</a></code> at <var>messageEventTarget</var>, using\n     <code id=\"message-ports:messageevent-2\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#messageevent\">MessageEvent</a></code>, with the <code id=\"message-ports:dom-messageevent-data\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-data\">data</a></code> attribute\n     initialized to <var>messageClone</var> and the <code id=\"message-ports:dom-messageevent-ports\"><a href=\"https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports\">ports</a></code> attribute initialized to\n     <var>newPorts</var>.</p>"
             }
           ]
         }
