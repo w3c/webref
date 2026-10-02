@@ -5,9 +5,6 @@ interface MessagePort : EventTarget {
   undefined postMessage(any message, optional StructuredSerializeOptions options = {});
   undefined start();
   undefined close();
-
-  // event handlers
-  attribute EventHandler onclose;
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)

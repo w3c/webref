@@ -38409,7 +38409,7 @@
         "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#messageeventtarget"
       },
       "MessagePort": {
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onclose;\n};",
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n};",
         "type": "interface",
         "name": "MessagePort",
         "inheritance": "EventTarget",
@@ -38554,22 +38554,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#dom-messageport-close"
-          },
-          {
-            "type": "attribute",
-            "name": "onclose",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#handler-messageport-onclose"
           }
         ],
         "extAttrs": [
@@ -49326,7 +49310,6 @@
       "MessagePort": [
         "EventTarget",
         "StructuredSerializeOptions",
-        "EventHandler",
         "MessageEventTarget"
       ],
       "StructuredSerializeOptions": [],
