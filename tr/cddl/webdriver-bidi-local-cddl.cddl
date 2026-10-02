@@ -114,6 +114,19 @@ session.CapabilityRequest = {
   Extensible
 }
 
+session.CapabilityResponse = {
+  acceptInsecureCerts: bool,
+  browserName: text,
+  browserVersion: text,
+  platformName: text,
+  setWindowRect: bool,
+  userAgent: text,
+  ? proxy: session.ProxyConfiguration,
+  ? unhandledPromptBehavior: session.UserPromptHandler,
+  ? webSocketUrl: text,
+  Extensible
+}
+
 session.ProxyConfiguration = {
    session.AutodetectProxyConfiguration //
    session.DirectProxyConfiguration //
@@ -177,18 +190,7 @@ session.StatusResult = {
 
 session.NewResult = {
   sessionId: text,
-  capabilities: {
-    acceptInsecureCerts: bool,
-    browserName: text,
-    browserVersion: text,
-    platformName: text,
-    setWindowRect: bool,
-    userAgent: text,
-    ? proxy: session.ProxyConfiguration,
-    ? unhandledPromptBehavior: session.UserPromptHandler,
-    ? webSocketUrl: text,
-    Extensible
-  }
+  capabilities: session.CapabilityResponse
 }
 
 session.EndResult = EmptyResult

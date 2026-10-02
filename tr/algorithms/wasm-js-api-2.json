@@ -141,7 +141,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception and return.</p>"
+                  "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑤\">error</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror\">CompileError</a></code> exception and return.</p>"
                 },
                 {
                   "html": "<p>Let <var>builtinSetNames</var> be <var>options</var>[\"builtins\"].</p>"
@@ -150,7 +150,7 @@
                   "html": "<p>Let <var>importedStringModule</var> be <var>options</var>[\"importedStringConstants\"].</p>"
                 },
                 {
-                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module①\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module①\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror①\">CompileError</a></code> exception.</p>"
                 },
                 {
                   "html": "Otherwise,",
@@ -197,7 +197,7 @@
           "html": "<p class=\"assertion\">Assert: <var>importedStringModule</var> is not null.</p>"
         },
         {
-          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate\">OrdinaryObjectCreate</a>(null).</p>"
+          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate\">OrdinaryObjectCreate</a>(null).</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> (<var>moduleName</var>, <var>componentName</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports①\">module_imports</a>(<var>module</var>),",
@@ -210,7 +210,7 @@
               "html": "<p>Let <var>stringConstant</var> be <var>componentName</var>.</p>"
             },
             {
-              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty\">CreateDataProperty</a>(<var>exportsObject</var>, <var>stringConstant</var>, <var>stringConstant</var>).</p>"
+              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty\">CreateDataProperty</a>(<var>exportsObject</var>, <var>stringConstant</var>, <var>stringConstant</var>).</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>status</var> is true.</p>"
@@ -229,10 +229,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>module</var>.<a data-link-type=\"dfn\" data-refhint-key=\"32e497d6\" href=\"https://webassembly.github.io/spec/core/syntax/modules.html#syntax-module\" id=\"ref-for-syntax-module①\">imports</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>, and <var>importObject</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> exception.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports②\">module_imports</a>(<var>module</var>) <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>, and <var>importObject</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map « ».</p>"
+          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map «[ ]».</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
@@ -271,18 +271,18 @@
           "html": "<p>Let <var>imports</var> be « ».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> (<var>moduleName</var>, <var>componentName</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports②\">module_imports</a>(<var>module</var>),",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> (<var>moduleName</var>, <var>componentName</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports③\">module_imports</a>(<var>module</var>),",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>builtinOrStringImports</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contains</a> <var>moduleName</var>,",
+              "html": "If <var>builtinOrStringImports</var>[<var>moduleName</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>,",
               "rationale": "let",
               "steps": [
                 {
                   "html": "<p>Let <var>o</var> be <var>builtinOrStringImports</var>[<var>moduleName</var>].</p>"
                 },
                 {
-                  "html": "If <var>o</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type\">is not an Object</a> or if <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty\" id=\"ref-for-sec-hasproperty\">HasProperty</a>(<var>o</var>, <var>componentName</var>) is false,",
+                  "html": "If <var>o</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-object-type\" id=\"ref-for-sec-object-type\">is not an Object</a> or if <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty\" id=\"ref-for-sec-hasproperty\">HasProperty</a>(<var>o</var>, <var>componentName</var>) is false,",
                   "rationale": "set",
                   "steps": [
                     {
@@ -336,7 +336,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
+                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
@@ -402,7 +402,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
+                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
@@ -417,7 +417,7 @@
                   "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#memory\" id=\"ref-for-memory②\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑤\">LinkError</a></code> exception.</p>"
                 },
                 {
-                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
+                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
@@ -435,7 +435,7 @@
                   "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
                 },
                 {
-                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
+                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
@@ -443,12 +443,9 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">tag</a> <var>attribute</var> <var>functype</var>,",
-              "rationale": "assert",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">tag</a> <var>functype</var>,",
+              "rationale": "if",
               "steps": [
-                {
-                  "html": "<p class=\"assertion\">Assert: <var>attribute</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tagtype\" id=\"ref-for-syntax-tagtype\">exception</a>.</p>"
-                },
                 {
                   "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements③\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tag\" id=\"ref-for-tag②\">Tag</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑦\">LinkError</a></code> exception.</p>"
                 },
@@ -477,7 +474,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate①\">OrdinaryObjectCreate</a>(null).</p>"
+          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate①\">OrdinaryObjectCreate</a>(null).</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> (<var>name</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-exports\" id=\"ref-for-embed-module-exports\">module_exports</a>(<var>module</var>),",
@@ -494,10 +491,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑨\">func</a> <var>funcaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑨\">func</a> <var>funcaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⓪\">func</a> <var>funcaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"bfe00e59\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⓪\">func</a> <var>funcaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>func</var> be the result of creating <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#a-new-exported-function\" id=\"ref-for-a-new-exported-function\">a new Exported Function</a> from <var>funcaddr</var>.</p>"
@@ -512,10 +509,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①①\">global</a> <var>globaladdr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①①\">global</a> <var>globaladdr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①②\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"8861c941\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①②\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-global-object\" id=\"ref-for-create-a-global-object\">a new Global object</a> created from <var>globaladdr</var>.</p>"
@@ -530,10 +527,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①③\">mem</a> <var>memaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①③\">mem</a> <var>memaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①④\">mem</a> <var>memaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"27b68844\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①④\">mem</a> <var>memaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>memory</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-memory-object\" id=\"ref-for-create-a-memory-object\">a new Memory object</a> created from <var>memaddr</var>.</p>"
@@ -548,10 +545,10 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑤\">table</a> <var>tableaddr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑤\">table</a> <var>tableaddr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑥\">table</a> <var>tableaddr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" data-refhint-key=\"389af0f5\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑥\">table</a> <var>tableaddr</var> be <var>externval</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>table</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-table-object\" id=\"ref-for-create-a-table-object\">a new Table object</a> created from <var>tableaddr</var>.</p>"
@@ -562,12 +559,9 @@
               ]
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑨\">tag</a> <var>attribute</var> <var>functype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types⑨\">tag</a> <var>functype</var>,",
               "rationale": "assert",
               "steps": [
-                {
-                  "html": "<p class=\"assertion\">Assert: <var>attribute</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tagtype\" id=\"ref-for-syntax-tagtype①\">exception</a>.</p>"
-                },
                 {
                   "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"c77be4cb\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑦\">tag</a> <var>tagaddr</var>.</p>"
                 },
@@ -583,7 +577,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty①\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
+              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty①\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>status</var> is true.</p>"
@@ -591,7 +585,7 @@
           ]
         },
         {
-          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel\" id=\"ref-for-sec-setintegritylevel\">SetIntegrityLevel</a>(<var>exportsObject</var>, <code>\"frozen\"</code>).</p>"
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel\" id=\"ref-for-sec-setintegritylevel\">SetIntegrityLevel</a>(<var>exportsObject</var>, <code>\"frozen\"</code>).</p>"
         },
         {
           "html": "<p>Return <var>exportsObject</var>.</p>"
@@ -625,19 +619,16 @@
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-instantiate\" id=\"ref-for-embed-module-instantiate\">module_instantiate</a>(<var>store</var>, <var>module</var>, <var>imports</var>).</p>"
+          "html": "<p>Let (<var>store</var>, <var>result</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-instantiate\" id=\"ref-for-embed-module-instantiate\">module_instantiate</a>(<var>store</var>, <var>module</var>, <var>imports</var>).</p>"
         },
         {
           "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error⑦\">error</a>, throw an appropriate exception type:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑧\">LinkError</a></code> exception for most cases which occur during linking.</p>\n       </li><li data-md=\"\">\n        <p>If the error came when running the start function, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror\">RuntimeError</a></code> for most errors which occur from WebAssembly, or the error object propagated from inner ECMAScript code.</p>\n       </li><li data-md=\"\">\n        <p>Another error type if appropriate, for example an out-of-memory exception, as documented in <a href=\"https://www.w3.org/TR/wasm-js-api-2/#errors\">the WebAssembly error mapping</a>.</p>\n      </li></ul>"
         },
         {
-          "html": "<p>Let (<var>store</var>, <var>instance</var>) be <var>result</var>.</p>"
-        },
-        {
           "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③\">associated store</a> to <var>store</var>.</p>"
         },
         {
-          "html": "<p>Return <var>instance</var>.</p>"
+          "html": "<p>Return <var>result</var>.</p>"
         }
       ]
     },
@@ -660,7 +651,7 @@
           "html": "<p>Let <var>importedStringModule</var> be <var>moduleObject</var>.[[ImportedStringModule]].</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#read-the-imports\" id=\"ref-for-read-the-imports\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>imports</var> be the result.\nIf this operation throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with the exception, and return <var>promise</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#read-the-imports\" id=\"ref-for-read-the-imports\">Read the imports</a> of <var>module</var> with imports <var>importObject</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>imports</var> be the result.\nIf this operation throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with the exception, and return <var>promise</var>.</p>"
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
@@ -671,13 +662,13 @@
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module①\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#instantiate-the-core-of-a-webassembly-module\" id=\"ref-for-instantiate-the-core-of-a-webassembly-module①\">Instantiate the core of a WebAssembly module</a> <var>module</var> with <var>imports</var>, and let <var>instance</var> be the result.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
                 },
                 {
                   "html": "<p>Let <var>instanceObject</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#instance\" id=\"ref-for-instance②\">Instance</a></code>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object\">Initialize</a> <var>instanceObject</var> from <var>module</var> and <var>instance</var>.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#initialize-an-instance-object\" id=\"ref-for-initialize-an-instance-object\">Initialize</a> <var>instanceObject</var> from <var>module</var> and <var>instance</var>.\nIf this throws an exception, catch it, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with the exception, and terminate these substeps.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>instanceObject</var>.</p>"
@@ -724,7 +715,7 @@
                   "rationale": "reject",
                   "steps": [
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
                     }
                   ]
                 }
@@ -737,7 +728,7 @@
               "rationale": "reject",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
                 }
               ]
             }
@@ -780,7 +771,7 @@
       "name": "WebAssembly/JSTag",
       "href": "https://www.w3.org/TR/wasm-js-api-2/#dom-webassembly-jstag",
       "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebAssembly\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-webassembly-jstag\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>JSTag</code></dfn> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#namespacedef-webassembly\" id=\"ref-for-namespacedef-webassembly\">WebAssembly</a></code> Namespace, when invoked, performs the following steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>JSTagAddr</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#get-the-javascript-exception-tag\" id=\"ref-for-get-the-javascript-exception-tag\">getting the JavaScript exception tag</a>.</p>"
@@ -844,7 +835,7 @@
           "html": "<p>Let <var>imports</var> be « ».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> (<var>moduleName</var>, <var>name</var>, <var>type</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports③\">module_imports</a>(<var>module</var>),",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> (<var>moduleName</var>, <var>name</var>, <var>type</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports④\">module_imports</a>(<var>module</var>),",
           "rationale": "if",
           "steps": [
             {
@@ -1091,13 +1082,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, let <var>addrtype</var> be <var>descriptor</var>[\"address\"]; otherwise, let <var>addrtype</var> be \"i32\".</p>"
+          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, let <var>addrtype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype\">ToValueType</a>(<var>descriptor</var>[\"address\"]); otherwise, let <var>addrtype</var> be <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype④\">i32</a>.</p>"
         },
         {
-          "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
         },
         {
-          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, let <var>maximum</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑨\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64①\">AddressValueToU64</a>(<var>descriptor</var>[\"maximum\"], <var>addrtype</var>); otherwise, let <var>maximum</var> be empty.</p>"
+          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, let <var>maximum</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64①\">AddressValueToU64</a>(<var>descriptor</var>[\"maximum\"], <var>addrtype</var>); otherwise, let <var>maximum</var> be empty.</p>"
         },
         {
           "html": "<p>Let <var>memtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-memtype\" id=\"ref-for-syntax-memtype\">memory type</a> <var>addrtype</var> { <strong>min</strong> <var>initial</var>, <strong>max</strong> <var>maximum</var> }.</p>"
@@ -1142,7 +1133,7 @@
           "rationale": "perform",
           "steps": [
             {
-              "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
+              "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
             },
             {
               "html": "<p>Let <var>buffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-fixed-length-memory-buffer\" id=\"ref-for-create-a-fixed-length-memory-buffer①\">creating a fixed length memory buffer</a> from <var>memaddr</var>.</p>"
@@ -1179,7 +1170,7 @@
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store⑥\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Let <var>ret</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-size\" id=\"ref-for-embed-mem-size\">mem_size</a>(<var>store</var>, <var>memaddr</var>).</p>"
+          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-size\" id=\"ref-for-embed-mem-size\">mem_size</a>(<var>store</var>, <var>memaddr</var>).</p>"
         },
         {
           "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-grow\" id=\"ref-for-embed-mem-grow\">mem_grow</a>(<var>store</var>, <var>memaddr</var>, <var>delta</var>).</p>"
@@ -1214,7 +1205,7 @@
           "html": "<p>Let <var>addrtype</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-addrtype\" id=\"ref-for-syntax-addrtype\">address type</a> in <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-mem-type\" id=\"ref-for-embed-mem-type\">mem_type</a>(<var>store</var>, <var>memaddr</var>).</p>"
         },
         {
-          "html": "<p>Let <var>delta64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①①\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64②\">AddressValueToU64</a>(<var>delta</var>, <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>delta64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⓪\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64②\">AddressValueToU64</a>(<var>delta</var>, <var>addrtype</var>).</p>"
         },
         {
           "html": "<p>Let <var>ret</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#grow-the-memory-buffer\" id=\"ref-for-grow-the-memory-buffer\">growing the memory buffer</a> associated with <var>memaddr</var> by <var>delta64</var>.</p>"
@@ -1240,7 +1231,7 @@
               "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[<var>x</var>] exists.</p>"
             },
             {
-              "html": "<p>Let <var>memaddr</var> be the memory address <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[<var>x</var>].</p>"
+              "html": "<p>Let <var>memaddr</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr⑦\">memory address</a> <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[<var>x</var>].</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#refresh-the-memory-buffer\" id=\"ref-for-refresh-the-memory-buffer①\">Refresh the memory buffer</a> of <var>memaddr</var>.</p>"
@@ -1268,7 +1259,7 @@
           "html": "<p>Let <var>fixedBuffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-fixed-length-memory-buffer\" id=\"ref-for-create-a-fixed-length-memory-buffer②\">creating a fixed length memory buffer</a> from <var>memaddr</var>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer①\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①①\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer①\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
         },
         {
           "html": "<p>Set <strong>this</strong>.[[BufferObject]] to <var>fixedBuffer</var>.</p>"
@@ -1318,7 +1309,7 @@
           "html": "<p>Let <var>resizableBuffer</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#create-a-resizable-memory-buffer\" id=\"ref-for-create-a-resizable-memory-buffer\">creating a resizable memory buffer</a> from <var>memaddr</var> and <var>maxsize</var>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer②\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
+          "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer\" id=\"ref-for-sec-detacharraybuffer②\">DetachArrayBuffer</a>(<var>buffer</var>, \"WebAssembly.Memory\").</p>"
         },
         {
           "html": "<p>Set <strong>this</strong>.[[BufferObject]] to <var>resizableBuffer</var>.</p>"
@@ -1443,7 +1434,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>elementtype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype\">ToValueType</a>(<var>descriptor</var>[\"element\"]).</p>"
+          "html": "<p>Let <var>elementtype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype①\">ToValueType</a>(<var>descriptor</var>[\"element\"]).</p>"
         },
         {
           "html": "If <var>elementtype</var> is not a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-reftype\" id=\"ref-for-match-reftype\">reftype</a>,",
@@ -1455,13 +1446,13 @@
           ]
         },
         {
-          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, let <var>addrtype</var> be <var>descriptor</var>[\"address\"]; otherwise, let <var>addrtype</var> be \"i32\".</p>"
+          "html": "<p>If <var>descriptor</var>[\"address\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, let <var>addrtype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>descriptor</var>[\"address\"]); otherwise, let <var>addrtype</var> be <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑤\">i32</a>.</p>"
         },
         {
-          "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64③\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>initial</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64③\">AddressValueToU64</a>(<var>descriptor</var>[\"initial\"], <var>addrtype</var>).</p>"
         },
         {
-          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>, let <var>maximum</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64④\">AddressValueToU64</a>(<var>descriptor</var>[\"maximum\"], <var>addrtype</var>); otherwise, let <var>maximum</var> be empty.</p>"
+          "html": "<p>If <var>descriptor</var>[\"maximum\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>, let <var>maximum</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64④\">AddressValueToU64</a>(<var>descriptor</var>[\"maximum\"], <var>addrtype</var>); otherwise, let <var>maximum</var> be empty.</p>"
         },
         {
           "html": "<p>Let <var>type</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tabletype\" id=\"ref-for-syntax-tabletype\">table type</a> <var>addrtype</var> { <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits\">min</a></b> <var>initial</var>, <b><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-limits\" id=\"ref-for-syntax-limits①\">max</a></b> <var>maximum</var> } <var>elementtype</var>.</p>"
@@ -1486,7 +1477,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑤\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
             }
           ]
         },
@@ -1523,7 +1514,7 @@
           "html": "<p>Let (<var>addrtype</var>, <var>limits</var>, <var>elementtype</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-type\" id=\"ref-for-embed-table-type\">table_type</a>(<var>store</var>, <var>tableaddr</var>).</p>"
         },
         {
-          "html": "<p>Let <var>delta64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑤\">AddressValueToU64</a>(<var>delta</var>, <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>delta64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑤\">AddressValueToU64</a>(<var>delta</var>, <var>addrtype</var>).</p>"
         },
         {
           "html": "If <var>value</var> is missing,",
@@ -1542,7 +1533,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue②\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue②\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
             }
           ]
         },
@@ -1608,7 +1599,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>index64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑨\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑥\">AddressValueToU64</a>(<var>index</var>, <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>index64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑧\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑥\">AddressValueToU64</a>(<var>index</var>, <var>addrtype</var>).</p>"
         },
         {
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-table-read\" id=\"ref-for-embed-table-read\">table_read</a>(<var>store</var>, <var>tableaddr</var>, <var>index64</var>).</p>"
@@ -1617,7 +1608,7 @@
           "html": "<p>If <var>result</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①③\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑦\">RangeError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⓪\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue\">ToJSValue</a>(<var>result</var>).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue\">ToJSValue</a>(<var>result</var>).</p>"
         }
       ]
     },
@@ -1646,7 +1637,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>index64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑦\">AddressValueToU64</a>(<var>index</var>, <var>addrtype</var>).</p>"
+          "html": "<p>Let <var>index64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⑨\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#addressvaluetou64\" id=\"ref-for-addressvaluetou64⑦\">AddressValueToU64</a>(<var>index</var>, <var>addrtype</var>).</p>"
         },
         {
           "html": "If <var>value</var> is missing,",
@@ -1665,7 +1656,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②②\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue③\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
+              "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⓪\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue③\">ToWebAssemblyValue</a>(<var>value</var>, <var>elementtype</var>).</p>"
             }
           ]
         },
@@ -1736,16 +1727,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>s</var> equals \"i32\", return <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype④\">i32</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"i32\", return <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑥\">i32</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"i64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑤\">i64</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"i64\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑦\">i64</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"f32\", return <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑥\">f32</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"f32\", return <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑧\">f32</a>.</p>"
         },
         {
-          "html": "<p>If <var>s</var> equals \"f64\", return <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑦\">f64</a>.</p>"
+          "html": "<p>If <var>s</var> equals \"f64\", return <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑨\">f64</a>.</p>"
         },
         {
           "html": "<p>If <var>s</var> equals \"v128\", return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①\">v128</a>.</p>"
@@ -1768,7 +1759,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" data-refhint-key=\"92193adb\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype④\">externref</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②③\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue④\">ToWebAssemblyValue</a>(undefined, <var>valuetype</var>).</p>"
+          "html": "<p>If <var>valuetype</var> equals <a data-link-type=\"dfn\" data-refhint-key=\"92193adb\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype④\">externref</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②①\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue④\">ToWebAssemblyValue</a>(undefined, <var>valuetype</var>).</p>"
         },
         {
           "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-val-default\" id=\"ref-for-embed-val-default\">val_default</a>(<var>valuetype</var>).</p>"
@@ -1785,7 +1776,7 @@
           "html": "<p>Let <var>mutable</var> be <var>descriptor</var>[\"mutable\"].</p>"
         },
         {
-          "html": "<p>Let <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype①\">ToValueType</a>(<var>descriptor</var>[\"value\"]).</p>"
+          "html": "<p>Let <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype③\">ToValueType</a>(<var>descriptor</var>[\"value\"]).</p>"
         },
         {
           "html": "If <var>valuetype</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype\">matches</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types②\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype⑤\">exnref</a>,",
@@ -1813,7 +1804,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②④\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑤\">ToWebAssemblyValue</a>(<var>v</var>, <var>valuetype</var>).</p>"
+              "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②②\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑤\">ToWebAssemblyValue</a>(<var>v</var>, <var>valuetype</var>).</p>"
             }
           ]
         },
@@ -1856,14 +1847,14 @@
           "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read\">global_read</a>(<var>store</var>, <var>globaladdr</var>).</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑤\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①\">ToJSValue</a>(<var>value</var>).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①\">ToJSValue</a>(<var>value</var>).</p>"
         }
       ]
     },
     {
-      "name": "Global/value",
+      "name": "Global value getter",
       "href": "https://www.w3.org/TR/wasm-js-api-2/#dom-global-value",
-      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:\n\n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
+      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1872,10 +1863,9 @@
       ]
     },
     {
-      "name": "Global/value",
-      "href": "https://www.w3.org/TR/wasm-js-api-2/#dom-global-value",
-      "html": "The getter of the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Global\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-global-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>value</code></dfn> attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑥\">Global</a></code>, when invoked, performs the following steps:\n\n    \n    <p>The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:</p>",
-      "rationale": "let",
+      "name": "Global value setter",
+      "html": "The setter of the value attribute of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#global\" id=\"ref-for-global⑦\">Global</a></code>, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent②⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②①\">associated store</a>.</p>"
@@ -1893,7 +1883,7 @@
           "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut③\">const</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①②\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑥\">ToWebAssemblyValue</a>(<strong>the given value</strong>, <var>valuetype</var>).</p>"
+          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②③\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑥\">ToWebAssemblyValue</a>(<strong>the given value</strong>, <var>valuetype</var>).</p>"
         },
         {
           "html": "<p>Let <var>store</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-write\" id=\"ref-for-embed-global-write\">global_write</a>(<var>store</var>, <var>globaladdr</var>, <var>value</var>).</p>"
@@ -1949,15 +1939,15 @@
               "html": "<p>Let <var>moduleinst</var> be <var>funcinst</var>.module.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: <var>funcaddr</var> is contained in <var>moduleinst</var>.funcaddrs.</p>"
+              "html": "<p class=\"assertion\">Assert: <var>funcaddr</var> is contained in <var>moduleinst</var>.funcs.</p>"
             },
             {
-              "html": "<p>Let <var>index</var> be the index of <var>moduleinst</var>.funcaddrs where <var>funcaddr</var> is found.</p>"
+              "html": "<p>Let <var>index</var> be the index of <var>moduleinst</var>.funcs where <var>funcaddr</var> is found.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>index</var>).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>index</var>).</p>"
         }
       ]
     },
@@ -2001,7 +1991,7 @@
           "html": "<p>Let <var>name</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#name-of-the-webassembly-function\" id=\"ref-for-name-of-the-webassembly-function\">name of the WebAssembly function</a> <var>funcaddr</var>.</p>"
         },
         {
-          "html": "<p>Let <var>function</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑧\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>steps</var>, <var>arity</var>, <var>name</var>, « [[FunctionAddress]] », <var>realm</var>).</p>"
+          "html": "<p>Let <var>function</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>steps</var>, <var>arity</var>, <var>name</var>, « [[FunctionAddress]] », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Set <var>function</var>.[[FunctionAddress]] to <var>funcaddr</var>.</p>"
@@ -2049,7 +2039,7 @@
               "html": "<p>Otherwise, let <var>arg</var> be undefined.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑨\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑦\">ToWebAssemblyValue</a>(<var>arg</var>, <var>t</var>) to <var>args</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑤\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑦\">ToWebAssemblyValue</a>(<var>arg</var>, <var>t</var>) to <var>args</var>.</p>"
             },
             {
               "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
@@ -2066,7 +2056,7 @@
           "html": "<p>If <var>ret</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑧\">error</a>, throw an exception. This exception should be a WebAssembly <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①\">RuntimeError</a></code> exception, unless otherwise indicated by <a href=\"https://www.w3.org/TR/wasm-js-api-2/#errors\">the WebAssembly error mapping</a>.</p>"
         },
         {
-          "html": "If <var>ret</var> is <u class=\"link-error\" data-lt=\"exception\" title=\"LINK ERROR: Ambiguous for-less link for 'exception', please see &lt;https://speced.github.io/bikeshed/#ambi-for&gt; for instructions:\nLocal references:\nspec:webassembly; type:dfn; for:/; text:exception\nspec:webassembly; type:dfn; for:tagtype/attribute; text:exception\nfor-less references:\nspec:webidl; type:dfn; for:/; text:exception\">exception</u> <var>exnaddr</var>, then",
+          "html": "If <var>ret</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"31b8b46e\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">exception</a> <var>exnaddr</var>, then",
           "rationale": "let",
           "steps": [
             {
@@ -2083,7 +2073,7 @@
               "rationale": "throw",
               "steps": [
                 {
-                  "html": "<p>Throw <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⓪\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue②\">ToJSValue</a>(<var>payload</var>[0]).</p>"
+                  "html": "<p>Throw <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue②\">ToJSValue</a>(<var>payload</var>[0]).</p>"
                 }
               ]
             },
@@ -2108,7 +2098,7 @@
           "html": "<p>If <var>outArity</var> is 0, return undefined.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>outArity</var> is 1, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③①\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue③\">ToJSValue</a>(<var>ret</var>[0]).</p>"
+          "html": "<p>Otherwise, if <var>outArity</var> is 1, return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue③\">ToJSValue</a>(<var>ret</var>[0]).</p>"
         },
         {
           "html": "Otherwise,",
@@ -2122,7 +2112,7 @@
               "rationale": "append",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③②\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue④\">ToJSValue</a>(<var>r</var>) to <var>values</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue④\">ToJSValue</a>(<var>r</var>) to <var>values</var>.</p>"
                 }
               ]
             },
@@ -2153,12 +2143,12 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③③\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑤\">ToJSValue</a>(<var>arg</var>) to <var>jsArguments</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">Append</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑤\">ToJSValue</a>(<var>arg</var>) to <var>jsArguments</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>).</p>"
+          "html": "<p>Let <var>ret</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call\">Call</a>(<var>func</var>, undefined, <var>jsArguments</var>).</p>"
         },
         {
           "html": "<p>Let <var>resultsSize</var> be <var>results</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>.</p>"
@@ -2167,20 +2157,20 @@
           "html": "<p>If <var>resultsSize</var> is 0, return « ».</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>resultsSize</var> is 1, return « <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑤\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑧\">ToWebAssemblyValue</a>(<var>ret</var>, <var>results</var>[0]) ».</p>"
+          "html": "<p>Otherwise, if <var>resultsSize</var> is 1, return « <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑦\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑧\">ToWebAssemblyValue</a>(<var>ret</var>, <var>results</var>[0]) ».</p>"
         },
         {
           "html": "Otherwise,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">%Symbol.iterator%</a></code>).</p>"
+              "html": "<p>Let <var>method</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod\" id=\"ref-for-sec-getmethod\">GetMethod</a>(<var>ret</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols\">%Symbol.iterator%</a></code>).</p>"
             },
             {
               "html": "<p>If <var>method</var> is undefined, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑤\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
+              "html": "<p>Let <var>values</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands②⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist\" id=\"ref-for-sec-iteratortolist\">IteratorToList</a>(<a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod\" id=\"ref-for-sec-getiteratorfrommethod\">GetIteratorFromMethod</a>(<var>ret</var>, <var>method</var>)).</p>"
             },
             {
               "html": "<p>Let <var>wasmValues</var> be a new, empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
@@ -2193,7 +2183,7 @@
               "rationale": "append",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑨\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑨\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmValues</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③①\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue⑨\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmValues</var>.</p>"
                 }
               ]
             },
@@ -2271,7 +2261,7 @@
                       "html": "<p>Let <var>type</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#get-the-javascript-exception-tag\" id=\"ref-for-get-the-javascript-exception-tag②\">getting the JavaScript exception tag</a>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>payload</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⓪\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①⓪\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" data-refhint-key=\"92193adb\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⓪\">externref</a>).</p>"
+                      "html": "<p>Let <var>payload</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③②\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①⓪\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" data-refhint-key=\"92193adb\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⓪\">externref</a>).</p>"
                     },
                     {
                       "html": "<p>Let (<var>store</var>, <var>address</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc\">exn_alloc</a>(<var>store</var>, <var>type</var>, « <var>payload</var> »).</p>"
@@ -2372,7 +2362,7 @@
           ]
         },
         {
-          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"6b9f083b\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①①\">ref.null</a> <var>t</var>, return null.</p>"
+          "html": "<p>If <var>w</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"6b9f083b\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①①\">ref.null</a>, return null.</p>"
         },
         {
           "html": "If <var>w</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"2a855222\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values①②\">ref.i31</a> <var>u31</var>,",
@@ -2382,7 +2372,7 @@
               "html": "<p>Let <var>i31</var> be <a data-link-type=\"dfn\" data-refhint-key=\"87dd702b\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed②\">signed_31</a>(<var>u31</var>).</p>"
             },
             {
-              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽③\">𝔽</a>(<var>i31</var>).</p>"
+              "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽③\">𝔽</a>(<var>i31</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value④\">mathematical value</a>).</p>"
             }
           ]
         },
@@ -2433,11 +2423,11 @@
           "html": "<p class=\"assertion\">Assert: <var>type</var> does not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype⑤\">match</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①①\">exnref</a>.</p>"
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑧\">i64</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⓪\">i64</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>i64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64\" id=\"ref-for-sec-tobigint64\">ToBigInt64</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>i64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64\" id=\"ref-for-sec-tobigint64\">ToBigInt64</a>(<var>v</var>).</p>"
             },
             {
               "html": "<p>Let <var>u64</var> be the unsigned integer such that <var>i64</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed③\">signed_64</a>(<var>u64</var>).</p>"
@@ -2448,11 +2438,11 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype⑨\">i32</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①①\">i32</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>i32</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32\">ToInt32</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>i32</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32\">ToInt32</a>(<var>v</var>).</p>"
             },
             {
               "html": "<p>Let <var>u32</var> be the unsigned integer such that <var>i32</var> is <a data-link-type=\"dfn\" data-refhint-key=\"71830f3f\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed④\">signed_32</a>(<var>u32</var>).</p>"
@@ -2463,11 +2453,11 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⓪\">f32</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①②\">f32</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber\">ToNumber</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber\">ToNumber</a>(<var>v</var>).</p>"
             },
             {
               "html": "If <var>number</var> is <strong>NaN</strong>,",
@@ -2496,11 +2486,11 @@
           ]
         },
         {
-          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①①\">f64</a>,",
+          "html": "If <var>type</var> is <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①③\">f64</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber①\">ToNumber</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber\" id=\"ref-for-sec-tonumber①\">ToNumber</a>(<var>v</var>).</p>"
             },
             {
               "html": "If <var>number</var> is <strong>NaN</strong>,",
@@ -2537,16 +2527,16 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"6b9f083b\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②③\">ref.null</a> <var>heaptype</var>.</p>"
+                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"6b9f083b\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②③\">ref.null</a>.</p>"
                 }
               ]
             },
             {
-              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①③\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">extern</a>),",
+              "html": "Else if <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①③\">ref</a> <var>null</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types\">extern</a>) is true,",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①④\">ref</a> <a data-link-type=\"dfn\" data-refhint-key=\"f4809bf4\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types①\">any</a>).</p>"
+                  "html": "<p>Let <var>ref</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑦\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①①\">ToWebAssemblyValue</a>(<var>v</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①④\">ref</a> <a data-link-type=\"dfn\" data-refhint-key=\"f4809bf4\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types①\">any</a>).</p>"
                 },
                 {
                   "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"f3505c41\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②④\">ref.extern</a> <var>ref</var>.</p>"
@@ -2554,7 +2544,7 @@
               ]
             },
             {
-              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <var>null</var> <a data-link-type=\"dfn\" data-refhint-key=\"cf0d7dd8\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">func</a>),",
+              "html": "Else if <var>v</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exported-function\" id=\"ref-for-exported-function②\">Exported Function</a> and <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-match-valtype\" id=\"ref-for-embed-match-valtype①\">match_valtype</a>(<var>type</var>, <a data-link-type=\"dfn\" data-refhint-key=\"a130a533\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype①⑤\">ref</a> <var>null</var> <a data-link-type=\"dfn\" data-refhint-key=\"cf0d7dd8\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types②\">func</a>) is true,",
               "rationale": "let",
               "steps": [
                 {
@@ -2566,11 +2556,11 @@
               ]
             },
             {
-              "html": "Else if <var>v</var> <a data-link-type=\"dfn\" data-refhint-key=\"019acbc0\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type①\">is a Number</a> and <var>v</var> is equal to <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32①\">ToInt32</a>(<var>v</var>) and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ\">ℝ</a>(<var>v</var>) &lt; 2<sup>30</sup> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ①\">ℝ</a>(<var>v</var>) ⩾ -2<sup>30</sup>,",
+              "html": "Else if <var>v</var> <a data-link-type=\"dfn\" data-refhint-key=\"019acbc0\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type①\">is a Number</a> and <var>v</var> is equal to <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32①\">ToInt32</a>(<var>v</var>) and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ\">ℝ</a>(<var>v</var>) &lt; 2<sup>30</sup> and <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ①\">ℝ</a>(<var>v</var>) ⩾ -2<sup>30</sup>,",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>i31</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32②\">ToInt32</a>(<var>v</var>).</p>"
+                  "html": "<p>Let <var>i31</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands③⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32\" id=\"ref-for-sec-toint32②\">ToInt32</a>(<var>v</var>).</p>"
                 },
                 {
                   "html": "<p>Let <var>u31</var> be the unsigned integer such that <var>i31</var> is <a data-link-type=\"dfn\" data-refhint-key=\"87dd702b\" href=\"https://webassembly.github.io/spec/core/exec/numerics.html#aux-signed\" id=\"ref-for-aux-signed⑤\">signed_31</a>(<var>u31</var>).</p>"
@@ -2627,7 +2617,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> <var>hostaddr</var> be the smallest address such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
+                  "html": "<p>Let <var>hostaddr</var> be the smallest <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>map</var>[<var>hostaddr</var>] to <var>v</var>.</p>"
@@ -2669,11 +2659,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>addrtype</var> is \"i32\",",
+          "html": "If <var>addrtype</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①④\">i32</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>n</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webidl.spec.whatwg.org/#abstract-opdef-converttoint\" id=\"ref-for-abstract-opdef-converttoint\">ConvertToInt</a>(<var>v</var>, 32, \"unsigned\"), where the destination type is associated with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#EnforceRange\" id=\"ref-for-EnforceRange①\">[EnforceRange]</a>.</p>"
+              "html": "<p>Let <var>n</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webidl.spec.whatwg.org/#abstract-opdef-converttoint\" id=\"ref-for-abstract-opdef-converttoint\">ConvertToInt</a>(<var>v</var>, 32, \"unsigned\"), where the destination type is associated with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#EnforceRange\" id=\"ref-for-EnforceRange①\">[EnforceRange]</a>.</p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ②\">ℝ</a>(<var>n</var>) as a WebAssembly <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-int\" id=\"ref-for-syntax-int①\">u64</a>.</p>"
@@ -2681,11 +2671,11 @@
           ]
         },
         {
-          "html": "If <var>addrtype</var> is \"i64\",",
+          "html": "If <var>addrtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑤\">i64</a>,",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>n</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint\" id=\"ref-for-sec-tobigint\">ToBigInt</a>(<var>v</var>).</p>"
+              "html": "<p>Let <var>n</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint\" id=\"ref-for-sec-tobigint\">ToBigInt</a>(<var>v</var>).</p>"
             },
             {
               "html": "<p>If <var>n</var> &lt; 0 or <var>n</var> &gt; 2<sup>64</sup> − 1, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①⑧\">TypeError</a></code>.</p>"
@@ -2707,10 +2697,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>addrtype</var> is \"i32\", return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽④\">𝔽</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value④\">mathematical value</a>).</p>"
+          "html": "<p>If <var>addrtype</var> is <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑥\">i32</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽④\">𝔽</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑤\">mathematical value</a>).</p>"
         },
         {
-          "html": "<p>Else if <var>addrtype</var> is \"i64\", return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℤ\" id=\"ref-for-ℤ①\">ℤ</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑤\">mathematical value</a>).</p>"
+          "html": "<p>Else if <var>addrtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑦\">i64</a>, return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℤ\" id=\"ref-for-ℤ①\">ℤ</a>(<var>v</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑥\">mathematical value</a>).</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: This step is not reached.</p>"
@@ -2783,7 +2773,7 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype②\">ToValueType</a>(<var>paramType</var>) to <var>wasmParameters</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①②\">Append</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tovaluetype\" id=\"ref-for-tovaluetype④\">ToValueType</a>(<var>paramType</var>) to <var>wasmParameters</var>.</p>"
             }
           ]
         },
@@ -2918,10 +2908,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let keys be a new empty list.</p>"
-        },
-        {
-          "html": "<p>Return keys.</p>"
+          "html": "<p>Return « ».</p>"
         }
       ]
     },
@@ -3113,7 +3100,7 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①②\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①③\">Append</a> <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④②\">?</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①②\">ToWebAssemblyValue</a>(<var>value</var>, <var>resultType</var>) to <var>wasmPayload</var>.</p>"
             }
           ]
         },
@@ -3186,7 +3173,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑦\">ToJSValue</a>(<var>payload</var>[<var>index</var>]).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑦\">ToJSValue</a>(<var>payload</var>[<var>index</var>]).</p>"
         }
       ]
     },
@@ -3269,7 +3256,7 @@
               "html": "<p>Let <var>constructor</var> be a new object, implementing the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-nativeerror-object-structure\" id=\"ref-for-sec-nativeerror-object-structure\">NativeError Object Structure</a>, with <var>NativeError</var> set to <var>error</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty\">DefineMethodProperty</a>(<var>namespaceObject</var>, <var>error</var>,  <var>constructor</var>, false).</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty\">DefineMethodProperty</a>(<var>namespaceObject</var>, <var>error</var>,  <var>constructor</var>, false).</p>"
             }
           ]
         }
@@ -3386,7 +3373,7 @@
           "html": "<p>Let <var>builtins</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#get-the-builtins-for-a-builtin-set\" id=\"ref-for-get-the-builtins-for-a-builtin-set①\">get the builtins for a builtin set</a> <var>builtinSetName</var>.</p>"
         },
         {
-          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate②\">OrdinaryObjectCreate</a>(null).</p>"
+          "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate②\">OrdinaryObjectCreate</a>(null).</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
@@ -3402,7 +3389,7 @@
               "html": "<p>Let <var>value</var> be <var>func</var>.</p>"
             },
             {
-              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty②\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
+              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty②\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>status</var> is true.</p>"
@@ -3470,10 +3457,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①②\">i32</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑧\">i32</a>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>v</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>v</var>) »).</p>"
         }
       ]
     },
@@ -3484,10 +3471,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①③\">i32</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑨\">i32</a>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑨\">ToJSValue</a>(<var>index</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue⑨\">ToJSValue</a>(<var>index</var>) »).</p>"
         }
       ]
     },
@@ -3497,7 +3484,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring\">UnwrapString</a>(<var>v</var>)</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring\">UnwrapString</a>(<var>v</var>)</p>"
         }
       ]
     },
@@ -3590,7 +3577,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring①\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring①\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>stringLength</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> of <var>string</var>.</p>"
@@ -3618,7 +3605,7 @@
               "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat\">CharCodeAt</a>(<var>string</var>, <var>i</var>).</p>"
             },
             {
-              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①④\">i32</a>).</p>"
+              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②⓪\">i32</a>).</p>"
             },
             {
               "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
@@ -3655,7 +3642,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>v</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>v</var>) »).</p>"
         }
       ]
     },
@@ -3665,7 +3652,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> of <var>string</var>.</p>"
@@ -3690,7 +3677,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> of <var>string</var>.</p>"
@@ -3705,7 +3692,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>index</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>index</var>) »).</p>"
         }
       ]
     },
@@ -3715,7 +3702,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length③\">length</a> of <var>string</var>.</p>"
@@ -3728,13 +3715,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
         }
       ]
     },
@@ -3744,7 +3731,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length④\">length</a> of <var>string</var>.</p>"
@@ -3759,7 +3746,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑧\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①②\">ToJSValue</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①③\">ToJSValue</a>(<var>end</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①②\">ToJSValue</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①③\">ToJSValue</a>(<var>end</var>) »).</p>"
         }
       ]
     },
@@ -3787,7 +3774,7 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
           "rationale": "return",
           "steps": [
             {
@@ -3806,13 +3793,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal①\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal①\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
           "rationale": "return",
           "steps": [
             {
@@ -3821,7 +3808,7 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦③\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
           "rationale": "return",
           "steps": [
             {
