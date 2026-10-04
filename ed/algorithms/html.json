@@ -46875,7 +46875,7 @@
     {
       "name": "create an element for a token",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#create-an-element-for-the-token",
-      "html": "To <dfn id=\"create-an-element-for-the-token\">create an element for a token</dfn>, given a\n  token <var>token</var>, a string <var>namespace</var>, and a <code id=\"creating-and-inserting-nodes:node-4\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> object\n  <var>intendedParent</var>:",
+      "html": "To <dfn id=\"create-an-element-for-the-token\">create an element for a token</dfn>, given a\n  token <var>token</var>, a string <var>namespace</var>, a <code id=\"creating-and-inserting-nodes:node-4\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> object\n  <var>intendedParent</var>, and an optional string-or-null <var>prefix</var> (default null):",
       "rationale": "if",
       "steps": [
         {
@@ -46918,7 +46918,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>element</var> be the result of <a href=\"https://dom.spec.whatwg.org/#concept-create-element\" id=\"creating-and-inserting-nodes:create-an-element\" data-x-internal=\"create-an-element\">creating an\n    element</a> given <var>document</var>, <var>localName</var>, <var>namespace</var>, null,\n    <var>is</var>, <var>willExecuteScript</var>, and <var>registry</var>.</p>"
+          "html": "<p>Let <var>element</var> be the result of <a href=\"https://dom.spec.whatwg.org/#concept-create-element\" id=\"creating-and-inserting-nodes:create-an-element\" data-x-internal=\"create-an-element\">creating an\n    element</a> given <var>document</var>, <var>localName</var>, <var>namespace</var>,\n    <var>prefix</var>, <var>is</var>, <var>willExecuteScript</var>, and <var>registry</var>.</p>"
         },
         {
           "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-append\" id=\"creating-and-inserting-nodes:concept-element-attributes-append\" data-x-internal=\"concept-element-attributes-append\">Append</a> each attribute in the given\n    token to <var>element</var>.</p>"

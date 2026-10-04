@@ -3286,13 +3286,7 @@
           "html": "<p>If <var>data</var> contains the string \"<code>]]&gt;</code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④①\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror⑧\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤⓪\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>node</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node①\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#cdatasection\" id=\"ref-for-cdatasection⑧\">CDATASection</a></code>, given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④④\">this</a>.\n\n </p>"
-        },
-        {
-          "html": "<p>Set <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑥\">data</a> to <var>data</var>.\n\n </p>"
-        },
-        {
-          "html": "<p>Return <var>node</var>.\n</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-cdata-section-node\" id=\"ref-for-create-a-cdata-section-node\">creating a CDATA section node</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④④\">this</a> and\n <var>data</var>.\n</p>"
         }
       ]
     },
@@ -3671,7 +3665,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>doctype</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node②\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documenttype\" id=\"ref-for-documenttype②⓪\">DocumentType</a></code>, given <var>document</var>.\n\n </p>"
+          "html": "<p>Let <var>doctype</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node①\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documenttype\" id=\"ref-for-documenttype②⓪\">DocumentType</a></code>, given <var>document</var>.\n\n </p>"
         },
         {
           "html": "<p>Set <var>doctype</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype-name\" id=\"ref-for-concept-doctype-name④\">name</a> to <var>name</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype-publicid\" id=\"ref-for-concept-doctype-publicid②\">public ID</a> to\n <var>publicId</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype-systemid\" id=\"ref-for-concept-doctype-systemid②\">system ID</a> to <var>systemId</var>.\n\n </p>"
@@ -3684,7 +3678,7 @@
     {
       "name": "create a document fragment",
       "href": "https://dom.spec.whatwg.org/#create-a-document-fragment",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-document-fragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a document fragment</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤③\">document</a>\n<var>document</var>: return the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node③\">creating a node</a> that implements\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documentfragment\" id=\"ref-for-documentfragment③⓪\">DocumentFragment</a></code>, given <var>document</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-document-fragment\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a document fragment</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤③\">document</a>\n<var>document</var>: return the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node②\">creating a node</a> that implements\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documentfragment\" id=\"ref-for-documentfragment③⓪\">DocumentFragment</a></code>, given <var>document</var>.",
       "rationale": "To <dfn>"
     },
     {
@@ -3890,7 +3884,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>element</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node④\">creating a node</a> that implements\n <var>interface</var>, given <var>document</var>.\n\n </p>"
+          "html": "<p>Let <var>element</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node③\">creating a node</a> that implements\n <var>interface</var>, given <var>document</var>.\n\n </p>"
         },
         {
           "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace①⑤\">namespace</a> to <var>namespace</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace-prefix\" id=\"ref-for-concept-element-namespace-prefix①③\">namespace prefix</a> to <var>prefix</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①③\">local name</a> to\n <var>localName</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"ref-for-element-custom-element-registry⑨\">custom element registry</a> to <var>registry</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-state\" id=\"ref-for-concept-element-custom-element-state⑧\">custom element state</a> to <var>state</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-definition\" id=\"ref-for-concept-element-custom-element-definition③\">custom element definition</a> to null, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value②\"><code>is</code> value</a>\n to <var>is</var>.\n\n </p>"
@@ -4372,7 +4366,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>shadow</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑤\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot①①\">ShadowRoot</a></code>, given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤②\">node document</a>.\n\n </p>"
+          "html": "<p>Let <var>shadow</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node④\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#shadowroot\" id=\"ref-for-shadowroot①①\">ShadowRoot</a></code>, given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤②\">node document</a>.\n\n </p>"
         },
         {
           "html": "<p>Set <var>shadow</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"ref-for-concept-documentfragment-host①③\">host</a> to <var>element</var>.\n\n </p>"
@@ -4589,7 +4583,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>attribute</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑥\">creating a node</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#attr\" id=\"ref-for-attr③⑧\">Attr</a></code>,\n given <var>document</var>.\n\n </p>"
+          "html": "<p>Let <var>attribute</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑤\">creating a node</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#attr\" id=\"ref-for-attr③⑧\">Attr</a></code>,\n given <var>document</var>.\n\n </p>"
         },
         {
           "html": "<p>Set <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace\" id=\"ref-for-concept-attribute-namespace①⑦\">namespace</a> to <var>namespace</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix\" id=\"ref-for-concept-attribute-namespace-prefix⑥\">namespace prefix</a> to <var>prefix</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"ref-for-concept-attribute-local-name②②\">local name</a> to\n <var>localName</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"ref-for-concept-attribute-value②④\">value</a> to <var>value</var>.\n\n </p>"
@@ -4638,16 +4632,16 @@
           "html": "<p>If <var>offset</var> + <var>count</var> is greater than <var>length</var>, then set\n <var>count</var> to <var>length</var> − <var>offset</var>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#queue-a-mutation-record\" id=\"ref-for-queue-a-mutation-record②\">Queue a mutation record</a> of \"<code>characterData</code>\" for <var>node</var> with\n null, null, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑦\">data</a>, « », « », null, and null.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#queue-a-mutation-record\" id=\"ref-for-queue-a-mutation-record②\">Queue a mutation record</a> of \"<code>characterData</code>\" for <var>node</var> with\n null, null, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑥\">data</a>, « », « », null, and null.\n\n </p>"
         },
         {
-          "html": "<p>Insert <var>data</var> into <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑧\">data</a> after\n <var>offset</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit\">code units</a>.\n\n </p>"
+          "html": "<p>Insert <var>data</var> into <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑦\">data</a> after\n <var>offset</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit\">code units</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>deleteOffset</var> be <var>offset</var> + <var>data</var>’s\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length④\">length</a>.\n\n </p>"
         },
         {
-          "html": "<p>Starting from <var>deleteOffset</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①\">code units</a>, remove <var>count</var>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit②\">code units</a> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑨\">data</a>.\n\n </p>"
+          "html": "<p>Starting from <var>deleteOffset</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①\">code units</a>, remove <var>count</var>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit②\">code units</a> from <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑧\">data</a>.\n\n </p>"
         },
         {
           "html": "<p>For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-live-range\" id=\"ref-for-concept-live-range⑨\">live range</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node⑥\">start node</a> is <var>node</var> and\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset⑦\">start offset</a> is greater than <var>offset</var> but less than or equal to\n <var>offset</var> + <var>count</var>: set its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset⑧\">start offset</a> to <var>offset</var>.\n\n </p>"
@@ -4682,10 +4676,10 @@
           "html": "<p>If <var>offset</var> is greater than <var>length</var>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥⑨\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#indexsizeerror\" id=\"ref-for-indexsizeerror①\">IndexSizeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧③\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>offset</var> + <var>count</var> is greater than <var>length</var>, then return a\n string whose value is the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit③\">code units</a> from the <var>offset</var><sup>th</sup>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit④\">code unit</a> to the end of <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data②⓪\">data</a>.\n\n </p>"
+          "html": "<p>If <var>offset</var> + <var>count</var> is greater than <var>length</var>, then return a\n string whose value is the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit③\">code units</a> from the <var>offset</var><sup>th</sup>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit④\">code unit</a> to the end of <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data①⑨\">data</a>.\n\n </p>"
         },
         {
-          "html": "<p>Return a string whose value is the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑤\">code units</a> from the <var>offset</var><sup>th</sup>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑥\">code unit</a> to the <var>offset</var>+<var>count</var><sup>th</sup> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑦\">code unit</a> in\n <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data②①\">data</a>.\n</p>"
+          "html": "<p>Return a string whose value is the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑤\">code units</a> from the <var>offset</var><sup>th</sup>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑥\">code unit</a> to the <var>offset</var>+<var>count</var><sup>th</sup> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit⑦\">code unit</a> in\n <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data②⓪\">data</a>.\n</p>"
         }
       ]
     },
@@ -4696,10 +4690,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>text</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑦\">creating a node</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text③⑥\">Text</a></code>, given\n <var>document</var>.\n\n </p>"
+          "html": "<p>Let <var>text</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑥\">creating a node</a> that implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text③⑥\">Text</a></code>, given\n <var>document</var>.\n\n </p>"
         },
         {
-          "html": "<p>Set <var>text</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data②⑧\">data</a> to <var>data</var>.\n\n </p>"
+          "html": "<p>Set <var>text</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data②⑦\">data</a> to <var>data</var>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>text</var>.\n</p>"
@@ -4760,9 +4754,26 @@
       ]
     },
     {
+      "name": "create a CDATA section node",
+      "href": "https://dom.spec.whatwg.org/#create-a-cdata-section-node",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-cdata-section-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a CDATA section node</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑧\">document</a>\n<var>document</var> and a string <var>data</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>node</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-node\" id=\"ref-for-create-a-node⑦\">creating a node</a> that implements\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#cdatasection\" id=\"ref-for-cdatasection①⓪\">CDATASection</a></code>, given <var>document</var>.\n\n </p>"
+        },
+        {
+          "html": "<p>Set <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data③⓪\">data</a> to <var>data</var>.\n\n </p>"
+        },
+        {
+          "html": "<p>Return <var>node</var>.\n</p>"
+        }
+      ]
+    },
+    {
       "name": "create a processing instruction node",
       "href": "https://dom.spec.whatwg.org/#create-a-processing-instruction-node",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-processing-instruction-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a processing instruction node</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑧\">document</a>\n<var>document</var>, a string <var>target</var>, and a string <var>data</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-processing-instruction-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a processing instruction node</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑨\">document</a>\n<var>document</var>, a string <var>target</var>, and a string <var>data</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4955,7 +4966,7 @@
     {
       "name": "create a comment node",
       "href": "https://dom.spec.whatwg.org/#create-a-comment-node",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-comment-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a comment node</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑨\">document</a> <var>document</var> and\na string <var>data</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-a-comment-node\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a comment node</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥⓪\">document</a> <var>document</var> and\na string <var>data</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
