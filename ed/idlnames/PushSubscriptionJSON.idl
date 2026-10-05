@@ -2,5 +2,5 @@
 dictionary PushSubscriptionJSON {
   USVString endpoint;
   EpochTimeStamp? expirationTime = null;
-  record<DOMString, USVString> keys;
+  PushSubscriptionKeys keys;
 };
