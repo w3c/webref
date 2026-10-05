@@ -139,66 +139,47 @@
     {
       "name": "fetch steps",
       "href": "https://notifications.spec.whatwg.org/#fetch-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③③\">notification</a> <var>notification</var> are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch steps</dfn>, given a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③③\">notification</a> <var>notification</var> and null or\nan <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>settings</var>, are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Then, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
-          "rationale": "wait",
-          "steps": [
-            {
-              "html": "<p>Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response\">internal response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type\">type</a> is\n   \"<code>default</code>\", then attempt to decode the resource as image.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the image format is supported, set <var>notification</var>’s\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource③\">image resource</a> to the decoded resource. (Otherwise\n   <var>notification</var> has no <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource④\">image resource</a>.)\n  </p>"
-            }
-          ]
+          "html": "<p>If the notification platform supports images and <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url②\">image URL</a> is set, then <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-a-notification-resource\" id=\"ref-for-fetch-a-notification-resource\">fetch a notification resource</a> given\n <var>notification</var>, <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url③\">image URL</a>,\n <var>settings</var>, and the following step given a resource <var>resource</var>: set\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource③\">image resource</a> to <var>resource</var>.\n\n </p>"
         },
         {
-          "html": "Then, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
-          "rationale": "wait",
-          "steps": [
-            {
-              "html": "<p>Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②\">response</a>.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response③\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response①\">internal response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type①\">type</a> is\n   \"<code>default</code>\", then attempt to decode the resource as image.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the image format is supported, set <var>notification</var>’s\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource④\">icon resource</a> to the decoded resource. (Otherwise\n   <var>notification</var> has no <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource⑤\">icon resource</a>.)\n  </p>"
-            }
-          ]
+          "html": "<p>If the notification platform supports icons and <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url②\">icon URL</a> is set, then <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-a-notification-resource\" id=\"ref-for-fetch-a-notification-resource①\">fetch a notification resource</a> given\n <var>notification</var>, <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url③\">icon URL</a>,\n <var>settings</var>, and the following step given a resource <var>resource</var>: set\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource④\">icon resource</a> to <var>resource</var>.\n\n </p>"
         },
         {
-          "html": "Then, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
-          "rationale": "wait",
-          "steps": [
-            {
-              "html": "<p>Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a>.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response②\">internal response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type②\">type</a> is\n   \"<code>default</code>\", then attempt to decode the resource as image.\n\n   </p>"
-            },
-            {
-              "html": "<p>If the image format is supported, set <var>notification</var>’s\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource③\">badge resource</a> to the decoded resource. (Otherwise\n   <var>notification</var> has no <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource④\">badge resource</a>.)\n  </p>"
-            }
-          ]
+          "html": "<p>If the notification platform supports badges and <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url②\">badge URL</a> is set, then <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-a-notification-resource\" id=\"ref-for-fetch-a-notification-resource②\">fetch a notification resource</a> given\n <var>notification</var>, <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url③\">badge URL</a>,\n <var>settings</var>, and the following step given a resource <var>resource</var>: set\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource③\">badge resource</a> to <var>resource</var>.\n\n </p>"
         },
         {
-          "html": "Then, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
-          "rationale": "wait",
+          "html": "<p>If the notification platform supports actions and action icons, then\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">for each</a> <var>action</var> of <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑥\">actions</a>: if <var>action</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-url\" id=\"ref-for-action-icon-url②\">icon URL</a>\n is non-null, then <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-a-notification-resource\" id=\"ref-for-fetch-a-notification-resource③\">fetch a notification resource</a> given <var>notification</var>,\n <var>action</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-url\" id=\"ref-for-action-icon-url③\">icon URL</a>, <var>settings</var>, and the\n following step given a resource <var>resource</var>: set <var>action</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource①\">icon resource</a> to <var>resource</var>.\n</p>"
+        }
+      ]
+    },
+    {
+      "name": "fetch a notification resource",
+      "href": "https://notifications.spec.whatwg.org/#fetch-a-notification-resource",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fetch-a-notification-resource\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch a notification resource</dfn>, given a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③④\">notification</a>\n<var>notification</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>url</var>, null or an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a> <var>settings</var>, and an algorithm\n<var>processResource</var> that takes a resource:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is\n <var>url</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>settings</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is\n \"<code>image</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is \"<code>no-cors</code>\", and\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"<code>include</code>\".\n\n </p>"
+        },
+        {
+          "html": "<p>If <var>settings</var> is null, then set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> to\n  <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③\">origin</a>, <var>request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a> to \"<code>no-referrer</code>\", and <var>request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode\">service-workers mode</a> to \"<code>none</code>\".\n\n  </p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue\"><i>useParallelQueue</i></a> set to true\n  and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response-end-of-body\" id=\"ref-for-process-response-end-of-body\"><i>processResponseConsumeBody</i></a> set to the following steps given a\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var> and null, failure, or a\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>bytes</var>:",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Wait for the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a>.\n\n   </p>"
+              "html": "<p>If <var>bytes</var> is null or failure, then return.\n\n   </p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑦\">response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-internal-response\" id=\"ref-for-concept-internal-response③\">internal response</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-type\" id=\"ref-for-concept-response-type③\">type</a> is\n   \"<code>default</code>\", then attempt to decode the resource as image.\n\n   </p>"
+              "html": "<p>Attempt to decode <var>bytes</var> as an image.\n\n   </p>"
             },
             {
-              "html": "<p>If the image format is supported, then set <var>action</var>’s\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource①\">icon resource</a> to the decoded resource. (Otherwise\n   <var>action</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource②\">icon resource</a> remains null.)\n  </p>"
+              "html": "<p>If the image format is supported, then run <var>processResource</var> given the decoded\n   resource.\n  </p>"
             }
           ]
         }
@@ -207,20 +188,20 @@
     {
       "name": "notification show steps",
       "href": "https://notifications.spec.whatwg.org/#notification-show-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"notification-show-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">notification show steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③④\">notification</a>\n<var>notification</var> are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"notification-show-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">notification show steps</dfn>, given a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑤\">notification</a>\n<var>notification</var> and null or an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a> <var>settings</var>,\nare:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-steps\" id=\"ref-for-fetch-steps\">fetch steps</a> for <var>notification</var>.\n\n </p>"
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#fetch-steps\" id=\"ref-for-fetch-steps\">fetch steps</a> given <var>notification</var> and <var>settings</var>.\n\n </p>"
         },
         {
-          "html": "<p>Wait for any <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch④\">fetches</a> to complete and <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource⑤\">image resource</a>, <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource⑥\">icon resource</a>, and\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource⑤\">badge resource</a> to be set (if any), as well as the\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource③\">icon resources</a> for the <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑦\">actions</a> (if any).\n\n </p>"
+          "html": "<p>Wait for any <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch①\">fetches</a> to complete and <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-resource\" id=\"ref-for-image-resource④\">image resource</a>, <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-resource\" id=\"ref-for-icon-resource⑤\">icon resource</a>, and\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-resource\" id=\"ref-for-badge-resource④\">badge resource</a> to be set (if any), as well as the\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#action-icon-resource\" id=\"ref-for-action-icon-resource②\">icon resources</a> for the <var>notification</var>’s\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑦\">actions</a> (if any).\n\n </p>"
         },
         {
           "html": "<p>Let <var>shown</var> be false.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>oldNotification</var> be the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑤\">notification</a> in the\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#list-of-notifications\" id=\"ref-for-list-of-notifications①\">list of notifications</a> whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag②\">tag</a> is not the empty string and is\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag③\">tag</a>, and whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>, if any, and null\n otherwise.\n\n </p>"
+          "html": "<p>Let <var>oldNotification</var> be the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑥\">notification</a> in the\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#list-of-notifications\" id=\"ref-for-list-of-notifications①\">list of notifications</a> whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag②\">tag</a> is not the empty string and is\n <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag③\">tag</a>, and whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a>, if any, and null\n otherwise.\n\n </p>"
         },
         {
           "html": "If <var>oldNotification</var> is non-null:",
@@ -268,7 +249,7 @@
     },
     {
       "name": "activate steps",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑥\">notification</a> <var>notification</var>, or one of its\n<a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑧\">actions</a>, is activated by the end user, assuming the underlying notification\nplatform supports activation, the user agent must (unless otherwise specified) run these steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑦\">notification</a> <var>notification</var>, or one of its\n<a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions⑧\">actions</a>, is activated by the end user, assuming the underlying notification\nplatform supports activation, the user agent must (unless otherwise specified) run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -327,7 +308,7 @@
     {
       "name": "close steps",
       "href": "https://notifications.spec.whatwg.org/#close-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"close-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑧\">notification</a> <var>notification</var> are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"close-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">close steps</dfn> for a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑨\">notification</a> <var>notification</var> are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -344,7 +325,7 @@
     {
       "name": "handle close events",
       "href": "https://notifications.spec.whatwg.org/#handle-close-events",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-close-events\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle close events</dfn> given a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification③⑨\">notification</a> <var>notification</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-close-events\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle close events</dfn> given a <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⓪\">notification</a> <var>notification</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -358,7 +339,7 @@
     {
       "name": "alert steps",
       "href": "https://notifications.spec.whatwg.org/#alert-steps",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"alert-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">alert steps</dfn> for alerting the end user about a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⓪\">notification</a>\n<var>notification</var> are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"alert-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">alert steps</dfn> for alerting the end user about a given <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④①\">notification</a>\n<var>notification</var> are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -385,14 +366,14 @@
           "html": "<p>Associate <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> with <var>notification</var>.\n\n </p>"
         },
         {
-          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#get-the-notifications-permission-state\" id=\"ref-for-get-the-notifications-permission-state\">getting the notifications permission state</a> is not\n   \"<code>granted</code>\", then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named\n   <code>error</code> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>, and abort these steps.\n\n   </p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps①\">notification show steps</a> for <var>notification</var>.\n  </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps①\">notification show steps</a> given <var>notification</var> and\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.\n  </p>"
             }
           ]
         }
@@ -408,10 +389,10 @@
           "html": "<p>Let <var>global</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.\n\n </p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.\n\n </p>"
         },
         {
-          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -443,10 +424,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⑦\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-navigation-url\" id=\"ref-for-notification-navigation-url③\">navigation URL</a> is null, then\n return the empty string.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⑧\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-navigation-url\" id=\"ref-for-notification-navigation-url③\">navigation URL</a> is null, then\n return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⑧\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-navigation-url\" id=\"ref-for-notification-navigation-url④\">navigation URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification④⑨\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-navigation-url\" id=\"ref-for-notification-navigation-url④\">navigation URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -457,10 +438,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤⓪\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url④\">image URL</a>, then\n return the empty string.\n\n </p>"
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤①\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url④\">image URL</a>, then\n return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤①\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url⑤\">image URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤②\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#image-url\" id=\"ref-for-image-url⑤\">image URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -471,10 +452,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤②\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url④\">icon URL</a>, then\n return the empty string.\n\n </p>"
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤③\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url④\">icon URL</a>, then\n return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤③\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url⑤\">icon URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer②\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤④\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#icon-url\" id=\"ref-for-icon-url⑤\">icon URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer②\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -485,10 +466,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤④\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url④\">badge URL</a>, then\n return the empty string.\n\n </p>"
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤⑤\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url④\">badge URL</a>, then\n return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤⑤\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url⑤\">badge URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer③\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑤⑥\">notification</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#badge-url\" id=\"ref-for-badge-url⑤\">badge URL</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer③\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -502,7 +483,7 @@
           "html": "<p>Let <var>frozenActions</var> be an empty list of type <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://notifications.spec.whatwg.org/#dictdef-notificationaction\" id=\"ref-for-dictdef-notificationaction②\">NotificationAction</a></code>.\n\n </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>entry</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥②\">notification</a>’s\n  <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions①①\">actions</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>entry</var> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥③\">notification</a>’s\n  <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#actions\" id=\"ref-for-actions①①\">actions</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -540,29 +521,29 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.\n\n </p>"
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant Realm</a>.\n\n </p>"
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant Realm</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker\">active worker</a> is null, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and return <var>promise</var>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-active-worker\" id=\"ref-for-dfn-active-worker\">active worker</a> is null, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and return <var>promise</var>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>notification</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#create-a-notification-with-a-settings-object\" id=\"ref-for-create-a-notification-with-a-settings-object①\">creating a notification with a settings object</a> given <var>title</var>, <var>options</var>,\n and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>. If this threw an exception, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with that exception and return <var>promise</var>.\n\n </p>"
+          "html": "<p>Let <var>notification</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#create-a-notification-with-a-settings-object\" id=\"ref-for-create-a-notification-with-a-settings-object①\">creating a notification with a settings object</a> given <var>title</var>, <var>options</var>,\n and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>. If this threw an exception, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with that exception and return <var>promise</var>.\n\n </p>"
         },
         {
-          "html": "<p>Set <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\" id=\"ref-for-service-worker-registration②\">service worker registration</a> to\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>.\n\n </p>"
+          "html": "<p>Set <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\" id=\"ref-for-service-worker-registration②\">service worker registration</a> to\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>.\n\n </p>"
         },
         {
-          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#get-the-notifications-permission-state\" id=\"ref-for-get-the-notifications-permission-state②\">getting the notifications permission state</a> is not\n   \"<code>granted</code>\", then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the\n   <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source①\">DOM manipulation task source</a> given <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a>\n   <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>, and abort these steps.\n\n   </p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps②\">notification show steps</a> for <var>notification</var>.\n\n   </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#notification-show-steps\" id=\"ref-for-notification-show-steps②\">notification show steps</a> given <var>notification</var> and\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.\n\n   </p>"
             },
             {
               "html": "<p>Set <var>notification</var>’s <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\" id=\"ref-for-service-worker-registration③\">service worker registration</a>’s\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration-has-shownotification-been-successfully-invoked\" id=\"ref-for-service-worker-registration-has-shownotification-been-successfully-invoked\">has <code>showNotification()</code> been successfully invoked</a>\n   to true.\n\n   </p>"
@@ -584,26 +565,26 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.\n\n </p>"
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant Realm</a>.\n\n </p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant Realm</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>origin</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.\n\n </p>"
+          "html": "<p>Let <var>origin</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> in <var>realm</var>.\n\n </p>"
         },
         {
-          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>:",
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>tag</var> be <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://notifications.spec.whatwg.org/#dom-getnotificationoptions-tag\" id=\"ref-for-dom-getnotificationoptions-tag\">tag</a></code>\"].\n\n   </p>"
             },
             {
-              "html": "<p>Let <var>notifications</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of all <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥③\">notifications</a> in the\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#list-of-notifications\" id=\"ref-for-list-of-notifications⑧\">list of notifications</a> whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①\">same origin</a> with\n   <var>origin</var>, whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\" id=\"ref-for-service-worker-registration④\">service worker registration</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>, and\n   whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag⑤\">tag</a>, if <var>tag</var> is not the empty string, is <var>tag</var>.\n\n   </p>"
+              "html": "<p>Let <var>notifications</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of all <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥④\">notifications</a> in the\n   <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#list-of-notifications\" id=\"ref-for-list-of-notifications⑧\">list of notifications</a> whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①\">same origin</a> with\n   <var>origin</var>, whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#service-worker-registration\" id=\"ref-for-service-worker-registration④\">service worker registration</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>, and\n   whose <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#tag\" id=\"ref-for-tag⑤\">tag</a>, if <var>tag</var> is not the empty string, is <var>tag</var>.\n\n   </p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source③\">DOM manipulation task source</a> given <var>global</var>\n    to run these steps:",
@@ -613,7 +594,7 @@
                   "html": "<p>Let <var>objects</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.\n\n     </p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥④\">notification</a> in <var>notifications</var>, in creation\n     order, create a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://notifications.spec.whatwg.org/#notification\" id=\"ref-for-notification①③\">Notification</a></code> object with <var>realm</var> representing\n     <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥⑤\">notification</a>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> it to <var>objects</var>.\n\n     </p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥⑤\">notification</a> in <var>notifications</var>, in creation\n     order, create a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://notifications.spec.whatwg.org/#notification\" id=\"ref-for-notification①③\">Notification</a></code> object with <var>realm</var> representing\n     <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#concept-notification\" id=\"ref-for-concept-notification⑥⑥\">notification</a>, and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a> it to <var>objects</var>.\n\n     </p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <var>objects</var>.\n    </p>"
