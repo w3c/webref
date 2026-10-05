@@ -65,9 +65,8 @@
       "https://webidl.spec.whatwg.org/": {},
       "https://www.apple.com/": {},
       "https://www.google.com/": {},
-      "https://www.rfc-editor.org/rfc/rfc5646": {},
-      "https://www.unicode.org/reports/tr9/tr9-51.html": {},
-      "https://www.w3.org/Bugs/Public/show_bug.cgi?id=24055": {}
+      "https://www.rfc-editor.org/info/bcp47": {},
+      "https://www.unicode.org/reports/tr9/tr9-52.html": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -80,10 +79,19 @@
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-request-client",
+          "concept-request-destination",
+          "concept-request-mode",
+          "concept-request-credentials-mode",
+          "concept-request-origin",
+          "concept-request-referrer",
+          "request-service-workers-mode",
           "concept-fetch",
-          "concept-response",
-          "concept-internal-response",
-          "concept-response-type"
+          "fetch-useparallelqueue",
+          "process-response-end-of-body",
+          "concept-response"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -143,12 +151,13 @@
           "list",
           "implementation-defined",
           "map-exists",
+          "list-iterate",
+          "byte-sequence",
           "list-replace",
           "list-remove",
           "list-append",
           "list-contain",
           "list-empty",
-          "list-iterate",
           "boolean"
         ]
       },
@@ -168,6 +177,7 @@
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "dfn-service-worker-registration",
+          "dfn-service-worker",
           "serviceworkerglobalscope",
           "serviceworkerregistration",
           "extendableevent",
