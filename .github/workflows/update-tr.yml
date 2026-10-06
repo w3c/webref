@@ -29,7 +29,7 @@ jobs:
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --release --post csscomplete --post annotatelinks --post patchdfns --output report --fallback tr/index.json
+        node_modules/.bin/reffy --release --post csscomplete --post cssdangling --post annotatelinks --post patchdfns --output report --fallback tr/index.json
 
     # Update another Webref checkout to reduce the chances that the version we
     # checked out is no longer in sync with origin by the time the crawl is over
