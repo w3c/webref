@@ -1,0 +1,1406 @@
+{
+  "spec": {
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+    "url": "https://w3c.github.io/webauthn/"
+  },
+  "backrefs": [
+    {
+      "id": "base64url-encoding",
+      "href": "https://w3c.github.io/webauthn/#base64url-encoding",
+      "linkingText": [
+        "Base64url Encoding"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "authentication-ceremony",
+      "href": "https://w3c.github.io/webauthn/#authentication-ceremony",
+      "linkingText": [
+        "Authentication Ceremony"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "discoverable-credential",
+      "href": "https://w3c.github.io/webauthn/#discoverable-credential",
+      "linkingText": [
+        "Discoverable Credential"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "passkey",
+      "href": "https://w3c.github.io/webauthn/#passkey",
+      "linkingText": [
+        "Passkey"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "credential-id",
+      "href": "https://w3c.github.io/webauthn/#credential-id",
+      "linkingText": [
+        "Credential ID"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "public-key-credential",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential",
+      "linkingText": [
+        "Public Key Credential"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "html",
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "relying-party",
+      "href": "https://w3c.github.io/webauthn/#relying-party",
+      "linkingText": [
+        "Relying Party"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "relying-party-identifier",
+      "href": "https://w3c.github.io/webauthn/#relying-party-identifier",
+      "linkingText": [
+        "Relying Party Identifier"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "publickeycredential",
+      "href": "https://w3c.github.io/webauthn/#publickeycredential",
+      "linkingText": [
+        "PublicKeyCredential"
+      ],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredential-identifier-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-identifier-slot",
+      "linkingText": [
+        "[[identifier]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredential-clientextensionsresults-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-clientextensionsresults-slot",
+      "linkingText": [
+        "[[clientExtensionsResults]]"
+      ],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-credentialrequestoptions-publickey",
+      "href": "https://w3c.github.io/webauthn/#dom-credentialrequestoptions-publickey",
+      "linkingText": [
+        "publicKey"
+      ],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredential-create-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-create-slot",
+      "linkingText": [
+        "[[Create]](origin, options, sameOriginWithAncestors)"
+      ],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot",
+      "linkingText": [
+        "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "nav-tracking-mitigations",
+          "title": "Navigational-Tracking Mitigations",
+          "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+        },
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredential-isuserverifyingplatformauthenticatoravailable",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-isuserverifyingplatformauthenticatoravailable",
+      "linkingText": [
+        "isUserVerifyingPlatformAuthenticatorAvailable()"
+      ],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialparameters",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialparameters",
+      "linkingText": [
+        "PublicKeyCredentialParameters"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialparameters-type",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialParameters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialparameters-alg",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-alg",
+      "linkingText": [
+        "alg"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialParameters"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialcreationoptions",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions",
+      "linkingText": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-user",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-user",
+      "linkingText": [
+        "user"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-pubkeycredparams",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-pubkeycredparams",
+      "linkingText": [
+        "pubKeyCredParams"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-authenticatorselection",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-authenticatorselection",
+      "linkingText": [
+        "authenticatorSelection"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialentity-name",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name",
+      "linkingText": [
+        "name"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialEntity"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialrpentity",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrpentity",
+      "linkingText": [
+        "PublicKeyCredentialRpEntity"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialuserentity",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentity",
+      "linkingText": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialuserentity-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-id",
+      "linkingText": [
+        "id"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialuserentity-displayname",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-displayname",
+      "linkingText": [
+        "displayName"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-authenticatorattachment",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-authenticatorattachment",
+      "linkingText": [
+        "authenticatorAttachment"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-residentkey",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-residentkey",
+      "linkingText": [
+        "residentKey"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-userverification",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-userverification",
+      "linkingText": [
+        "userVerification"
+      ],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-authenticatorattachment-platform",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattachment-platform",
+      "linkingText": [
+        "\"platform\"",
+        "platform"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorAttachment"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-residentkeyrequirement-preferred",
+      "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-preferred",
+      "linkingText": [
+        "\"preferred\"",
+        "preferred"
+      ],
+      "type": "enum-value",
+      "for": [
+        "ResidentKeyRequirement"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-residentkeyrequirement-required",
+      "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-required",
+      "linkingText": [
+        "\"required\"",
+        "required"
+      ],
+      "type": "enum-value",
+      "for": [
+        "ResidentKeyRequirement"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialrequestoptions",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions",
+      "linkingText": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-timeout",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-rpid",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-allowcredentials",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials",
+      "linkingText": [
+        "allowCredentials"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-userverification",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-userverification",
+      "linkingText": [
+        "userVerification"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-extensions",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientinputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputs",
+      "linkingText": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientoutputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs",
+      "linkingText": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-collectedclientdata",
+      "href": "https://w3c.github.io/webauthn/#dictdef-collectedclientdata",
+      "linkingText": [
+        "CollectedClientData"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-collectedclientdata-type",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-collectedclientdata-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-collectedclientdata-origin",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "enumdef-publickeycredentialtype",
+      "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialtype",
+      "linkingText": [
+        "PublicKeyCredentialType"
+      ],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialtype-public-key",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialtype-public-key",
+      "linkingText": [
+        "\"public-key\"",
+        "public-key"
+      ],
+      "type": "enum-value",
+      "for": [
+        "PublicKeyCredentialType"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dictdef-publickeycredentialdescriptor",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptor",
+      "linkingText": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.1",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.2",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
+        },
+        {
+          "shortname": "fido-client-to-authenticator-protocol-v2.3",
+          "title": "Client to Authenticator Protocol (CTAP)",
+          "url": "https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-type",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-type",
+      "linkingText": [
+        "type"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-id",
+      "linkingText": [
+        "id"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-transports",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-transports",
+      "linkingText": [
+        "transports"
+      ],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-authenticatortransport-internal",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-internal",
+      "linkingText": [
+        "\"internal\"",
+        "internal"
+      ],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorTransport"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "typedefdef-cosealgorithmidentifier",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-cosealgorithmidentifier",
+      "linkingText": [
+        "COSEAlgorithmIdentifier"
+      ],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "dom-userverificationrequirement-required",
+      "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-required",
+      "linkingText": [
+        "\"required\"",
+        "required"
+      ],
+      "type": "enum-value",
+      "for": [
+        "UserVerificationRequirement"
+      ],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "publickey-credentials-create-feature",
+      "href": "https://w3c.github.io/webauthn/#publickey-credentials-create-feature",
+      "linkingText": [
+        "publickey-credentials-create-feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        },
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "publickey-credentials-get-feature",
+      "href": "https://w3c.github.io/webauthn/#publickey-credentials-get-feature",
+      "linkingText": [
+        "publickey-credentials-get-feature"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "referencedBy": [
+        {
+          "shortname": "credential-management-1",
+          "title": "Credential Management Level 1",
+          "url": "https://w3c.github.io/webappsec-credential-management/"
+        }
+      ]
+    },
+    {
+      "id": "user-verifying-platform-authenticator",
+      "href": "https://w3c.github.io/webauthn/#user-verifying-platform-authenticator",
+      "linkingText": [
+        "User-verifying platform authenticator"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "authdata-attestedcredentialdata-credentialpublickey",
+      "href": "https://w3c.github.io/webauthn/#authdata-attestedcredentialdata-credentialpublickey",
+      "linkingText": [
+        "credentialPublicKey"
+      ],
+      "type": "dfn",
+      "for": [
+        "authData/attestedCredentialData"
+      ],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "webauthn-extensions",
+      "href": "https://w3c.github.io/webauthn/#webauthn-extensions",
+      "linkingText": [
+        "WebAuthn Extensions"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "registration-extension",
+      "href": "https://w3c.github.io/webauthn/#registration-extension",
+      "linkingText": [
+        "registration extension"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "authentication-extension",
+      "href": "https://w3c.github.io/webauthn/#authentication-extension",
+      "linkingText": [
+        "authentication extension"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "client-extension",
+      "href": "https://w3c.github.io/webauthn/#client-extension",
+      "linkingText": [
+        "client extension"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "extension-identifier",
+      "href": "https://w3c.github.io/webauthn/#extension-identifier",
+      "linkingText": [
+        "extension identifier"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    },
+    {
+      "id": "largeblob",
+      "href": "https://w3c.github.io/webauthn/#largeblob",
+      "linkingText": [
+        "largeBlob"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "referencedBy": [
+        {
+          "shortname": "secure-payment-confirmation",
+          "title": "Secure Payment Confirmation",
+          "url": "https://w3c.github.io/secure-payment-confirmation/"
+        }
+      ]
+    }
+  ]
+}

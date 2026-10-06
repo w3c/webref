@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
-      "url": "https://www.w3.org/TR/webauthn-3/"
+      "url": "https://www.w3.org/TR/webauthn-4/"
     },
     "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAttestationResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      attestationObject;\n    sequence<DOMString>                              getTransports();\n    ArrayBuffer                                      getAuthenticatorData();\n    ArrayBuffer?                                     getPublicKey();\n    COSEAlgorithmIdentifier                          getPublicKeyAlgorithm();\n};",
     "href": "https://w3c.github.io/webauthn/#authenticatorattestationresponse"
@@ -16,7 +16,7 @@
     "defined": {
       "spec": {
         "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
-        "url": "https://www.w3.org/TR/webauthn-3/"
+        "url": "https://www.w3.org/TR/webauthn-4/"
       },
       "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      clientDataJSON;\n};",
       "href": "https://w3c.github.io/webauthn/#authenticatorresponse"
