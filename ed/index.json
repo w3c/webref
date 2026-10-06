@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-10-06T07:00:15.659Z",
+  "date": "2026-10-06T13:03:13.842Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -148,6 +148,7 @@
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
+      "tc39-thenable-curtailment",
       "testutils",
       "url",
       "urlpattern",
@@ -625,6 +626,7 @@
       "server-timing",
       "service-workers",
       "shacl12-core",
+      "shacl12-inference-rules",
       "shacl12-node-expr",
       "shacl12-profiling",
       "shacl12-sparql",
@@ -662,6 +664,7 @@
       "upgrade-insecure-requests",
       "user-timing",
       "vc-barcodes-1.0",
+      "vc-bitstring-status-list-1.1",
       "vc-bitstring-status-list",
       "vc-confidence-method",
       "vc-data-integrity-1.1",
@@ -703,6 +706,7 @@
       "webaudio-1.0",
       "webaudio-1.1",
       "webauthn-3",
+      "webauthn-4",
       "webcodecs-aac-codec-registration",
       "webcodecs-alaw-codec-registration",
       "webcodecs-av1-codec-registration",
@@ -789,10 +793,10 @@
     ]
   },
   "stats": {
-    "crawled": 758,
+    "crawled": 762,
     "errors": 47
   },
-  "crawler": "reffy-21.1.8",
+  "crawler": "reffy-21.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1082,7 +1086,7 @@
       ],
       "crawled": "https://aomediacodec.github.io/av1-rtp-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 04 Jun 2026 09:17:53 GMT"
+        "lastModified": "Thu, 04 Jun 2026 09:17:52 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2024",
@@ -3501,9 +3505,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Oct 2026 15:21:28 GMT"
+        "lastModified": "Tue, 06 Oct 2026 09:13:00 GMT"
       },
-      "date": "5 October 2026",
+      "date": "6 October 2026",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -3774,7 +3778,7 @@
       ],
       "crawled": "https://immersive-web.github.io/raw-camera-access/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 23:07:06 GMT"
+        "lastModified": "Thu, 11 Dec 2025 23:07:05 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2025",
@@ -4737,7 +4741,7 @@
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 68)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
@@ -4997,7 +5001,7 @@
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_sRGB/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 73)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_sRGB/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
@@ -5049,7 +5053,7 @@
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 74)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -5517,7 +5521,7 @@
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 83)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
@@ -5569,7 +5573,7 @@
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_texture_float/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 84)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_texture_float/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
@@ -5777,7 +5781,7 @@
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OVR_multiview2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 88)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OVR_multiview2/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
@@ -6193,7 +6197,7 @@
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 96)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -6297,7 +6301,7 @@
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 98)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
@@ -6401,7 +6405,7 @@
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 100)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
@@ -7725,7 +7729,7 @@
       ],
       "crawled": "https://tc39.es/proposal-error-stack-accessor/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 21 May 2026 12:13:08 GMT"
+        "lastModified": "Thu, 21 May 2026 12:13:04 GMT"
       },
       "date": "21 May 2026",
       "links": "links/tc39-error-stack-accessor.json",
@@ -8475,6 +8479,52 @@
       "cddl": []
     },
     {
+      "url": "https://tc39.es/proposal-thenable-curtailment/",
+      "seriesComposition": "full",
+      "shortname": "tc39-thenable-curtailment",
+      "series": {
+        "shortname": "tc39-thenable-curtailment",
+        "currentSpecification": "tc39-thenable-curtailment",
+        "title": "SafePromiseResolve",
+        "shortTitle": "SafePromiseResolve",
+        "nightlyUrl": "https://tc39.es/proposal-thenable-curtailment/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-thenable-curtailment/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-thenable-curtailment",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "SafePromiseResolve",
+      "source": "spec",
+      "shortTitle": "SafePromiseResolve",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-thenable-curtailment/"
+      ],
+      "crawled": "https://tc39.es/proposal-thenable-curtailment/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 30 Sep 2026 12:38:27 GMT"
+      },
+      "date": "30 September 2026",
+      "links": "links/tc39-thenable-curtailment.json",
+      "headings": "headings/tc39-thenable-curtailment.json",
+      "ids": "ids/tc39-thenable-curtailment.json",
+      "cddl": []
+    },
+    {
       "url": "https://testutils.spec.whatwg.org/",
       "seriesComposition": "full",
       "shortname": "testutils",
@@ -9115,10 +9165,10 @@
       ],
       "crawled": "https://w3c.github.io/editing/docs/execCommand/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Jul 2026 14:40:06 GMT"
+        "lastModified": "Tue, 06 Oct 2026 12:22:27 GMT"
       },
       "generator": "respec",
-      "date": "09 July 2026",
+      "date": "06 October 2026",
       "links": "links/execCommand.json",
       "refs": "refs/execCommand.json",
       "dfns": "dfns/execCommand.json",
@@ -10294,7 +10344,7 @@
       ],
       "crawled": "https://webassembly.github.io/esm-integration/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Sep 2026 20:35:12 GMT"
+        "lastModified": "Thu, 24 Sep 2026 20:35:08 GMT"
       },
       "generator": "bikeshed",
       "date": "24 September 2026",
@@ -11901,11 +11951,11 @@
       ],
       "crawled": "https://wicg.github.io/connection-allowlists/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 27 Sep 2026 19:51:06 GMT"
+        "lastModified": "Tue, 06 Oct 2026 11:25:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 September 2026",
-      "revision": "fb9080d67b3b2c75770a34e7f6877a714b862ba3",
+      "date": "6 October 2026",
+      "revision": "3ffefecb57a9e30a73432d780a31d76997a51851",
       "algorithms": "algorithms/connection-allowlists.json",
       "links": "links/connection-allowlists.json",
       "refs": "refs/connection-allowlists.json",
@@ -12168,11 +12218,11 @@
       ],
       "crawled": "https://wicg.github.io/cross-origin-storage/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Oct 2026 10:56:19 GMT"
+        "lastModified": "Tue, 06 Oct 2026 12:48:24 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 October 2026",
-      "revision": "4065d3bcab405ff02eecf617f1e1663c8c595e43",
+      "date": "6 October 2026",
+      "revision": "64c687b1ef524b7d8bb765e5e26be365b8aca0e5",
       "algorithms": "algorithms/cross-origin-storage.json",
       "links": "links/cross-origin-storage.json",
       "refs": "refs/cross-origin-storage.json",
@@ -13303,7 +13353,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Sep 2024 07:54:59 GMT"
+        "lastModified": "Mon, 16 Sep 2024 07:54:58 GMT"
       },
       "generator": "bikeshed",
       "date": "16 September 2024",
@@ -16244,6 +16294,9 @@
         "https://www.rfc-editor.org/info/rfc2397/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc2397/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 06 Oct 2026 12:30:40 GMT"
+      },
       "date": "6 October 2026",
       "links": "links/rfc2397.json",
       "headings": "headings/rfc2397.json",
@@ -16656,6 +16709,9 @@
         "https://www.rfc-editor.org/info/rfc6797/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6797/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 06 Oct 2026 12:46:39 GMT"
+      },
       "date": "6 October 2026",
       "links": "links/rfc6797.json",
       "headings": "headings/rfc6797.json",
@@ -17170,6 +17226,9 @@
         "https://www.rfc-editor.org/info/rfc7932/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7932/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 06 Oct 2026 12:46:45 GMT"
+      },
       "date": "6 October 2026",
       "links": "links/rfc7932.json",
       "headings": "headings/rfc7932.json",
@@ -17463,6 +17522,9 @@
         "https://www.rfc-editor.org/info/rfc8878/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc8878/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 06 Oct 2026 12:46:45 GMT"
+      },
       "date": "6 October 2026",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
@@ -18484,6 +18546,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "accname"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/accname-1.2/",
         "https://w3c.github.io/aria/accname/"
@@ -19836,6 +19904,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "core-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/core-aam-1.2/",
         "https://w3c.github.io/aria/core-aam/"
@@ -20352,7 +20426,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2026/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2026",
@@ -23990,7 +24064,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-link-params-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "10 September 2026",
@@ -24266,7 +24340,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-mixins-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "8 September 2026",
@@ -24605,7 +24679,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "5 February 2026",
@@ -25150,7 +25224,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-position-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "14 May 2026",
@@ -27353,7 +27427,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "4 September 2026",
@@ -27423,7 +27497,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Oct 2026 23:14:53 GMT"
+        "lastModified": "Fri, 02 Oct 2026 23:14:52 GMT"
       },
       "generator": "bikeshed",
       "date": "5 May 2025",
@@ -28757,6 +28831,15 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing Accessibility API Mappings 1.1",
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "dpub-aam"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/dpub-aam-1.1/",
         "https://w3c.github.io/aria/dpub-aam/"
@@ -28811,6 +28894,12 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing WAI-ARIA 1.1",
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "dpub-aria"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/dpub-aria-1.1/",
         "https://w3c.github.io/aria/dpub-aria/"
@@ -29901,7 +29990,7 @@
       ],
       "crawled": "https://w3c.github.io/event-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Mar 2026 18:31:41 GMT"
+        "lastModified": "Thu, 19 Mar 2026 18:31:40 GMT"
       },
       "generator": "bikeshed",
       "date": "19 March 2026",
@@ -30670,6 +30759,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "graphics-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/graphics-aam-1.0/",
         "https://w3c.github.io/aria/graphics-aam/"
@@ -30726,6 +30821,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "graphics-aria"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/graphics-aria-1.0/",
         "https://w3c.github.io/aria/graphics-aria/"
@@ -30862,7 +30963,7 @@
       ],
       "crawled": "https://w3c.github.io/hr-time/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Sep 2026 18:55:07 GMT"
+        "lastModified": "Tue, 01 Sep 2026 18:55:06 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2026",
@@ -30916,6 +31017,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "html-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/html-aam-1.0/",
         "https://w3c.github.io/aria/html-aam/"
@@ -31100,7 +31207,7 @@
       ],
       "crawled": "https://w3c.github.io/html-ruby/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Aug 2026 12:14:42 GMT"
+        "lastModified": "Tue, 25 Aug 2026 12:14:41 GMT"
       },
       "generator": "bikeshed",
       "date": "25 August 2026",
@@ -32261,7 +32368,7 @@
       ],
       "crawled": "https://w3c.github.io/media-capabilities/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Jun 2026 00:28:57 GMT"
+        "lastModified": "Tue, 09 Jun 2026 00:28:56 GMT"
       },
       "generator": "bikeshed",
       "date": "9 June 2026",
@@ -33279,7 +33386,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -33573,7 +33680,7 @@
       ],
       "crawled": "https://w3c.github.io/navigation-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Sep 2026 16:31:32 GMT"
+        "lastModified": "Tue, 01 Sep 2026 16:31:31 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2026",
@@ -35474,7 +35581,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf12-semantics/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -35662,7 +35769,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-xml/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Sep 2026 16:35:55 GMT"
+        "lastModified": "Thu, 24 Sep 2026 16:35:54 GMT"
       },
       "generator": "respec",
       "date": "24 September 2026",
@@ -36054,7 +36161,7 @@
       ],
       "crawled": "https://w3c.github.io/resource-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Sep 2026 16:30:46 GMT"
+        "lastModified": "Tue, 01 Sep 2026 16:30:45 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2026",
@@ -36783,7 +36890,7 @@
       ],
       "crawled": "https://w3c.github.io/server-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Apr 2026 04:24:19 GMT"
+        "lastModified": "Tue, 07 Apr 2026 04:24:18 GMT"
       },
       "generator": "bikeshed",
       "date": "7 April 2026",
@@ -36917,6 +37024,61 @@
       "dfns": "dfns/shacl12-core.json",
       "headings": "headings/shacl12-core.json",
       "ids": "ids/shacl12-core.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-inference-rules/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-inference-rules",
+      "series": {
+        "shortname": "shacl-inference-rules",
+        "currentSpecification": "shacl12-inference-rules",
+        "title": "SHACL Inference Rules",
+        "shortTitle": "SHACL Inference Rules",
+        "releaseUrl": "https://www.w3.org/TR/shacl-inference-rules/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-inference-rules/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-inference-rules/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-inference-rules/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-inference-rules/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Inference Rules",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Inference Rules",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-inference-rules/",
+        "https://w3c.github.io/data-shapes/shacl12-inference-rules/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-inference-rules/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Oct 2026 22:51:21 GMT"
+      },
+      "generator": "respec",
+      "date": "05 October 2026",
+      "links": "links/shacl12-inference-rules.json",
+      "refs": "refs/shacl12-inference-rules.json",
+      "dfns": "dfns/shacl12-inference-rules.json",
+      "headings": "headings/shacl12-inference-rules.json",
+      "ids": "ids/shacl12-inference-rules.json",
       "cddl": []
     },
     {
@@ -37828,7 +37990,7 @@
         "title": "SVG Accessibility API Mappings",
         "shortTitle": "SVG Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/svg-aam/",
-        "nightlyUrl": "https://w3c.github.io/svg-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/svg-aam/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -37844,7 +38006,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/svg-aam/",
+        "url": "https://w3c.github.io/aria/svg-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -37866,9 +38028,12 @@
       },
       "versions": [
         "https://www.w3.org/TR/svg-aam-1.0/",
-        "https://w3c.github.io/svg-aam/"
+        "https://w3c.github.io/aria/svg-aam/"
       ],
       "crawled": "https://w3c.github.io/aria/svg-aam/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Oct 2026 16:26:38 GMT"
+      },
       "generator": "respec",
       "date": "24 September 2026",
       "revision": "ffa9651ce86686fce2774e4b860179eb298d5e12",
@@ -39207,17 +39372,19 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+      "url": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
       "seriesComposition": "full",
-      "shortname": "vc-bitstring-status-list",
+      "shortname": "vc-bitstring-status-list-1.1",
       "series": {
         "shortname": "vc-bitstring-status-list",
         "currentSpecification": "vc-bitstring-status-list",
         "title": "Bitstring Status List",
         "shortTitle": "Bitstring Status List",
         "releaseUrl": "https://www.w3.org/TR/vc-bitstring-status-list/",
-        "nightlyUrl": "https://w3c.github.io/vc-bitstring-status-list/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-bitstring-status-list/"
       },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "vc-bitstring-status-list",
       "organization": "W3C",
       "groups": [
         {
@@ -39226,8 +39393,8 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -39240,11 +39407,11 @@
       },
       "title": "Bitstring Status List v1.1",
       "source": "w3c",
-      "shortTitle": "Bitstring Status List v1.0",
+      "shortTitle": "Bitstring Status List v1.1",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
         "https://w3c.github.io/vc-bitstring-status-list/"
       ],
       "crawled": "https://w3c.github.io/vc-bitstring-status-list/",
@@ -39253,6 +39420,59 @@
       },
       "generator": "respec",
       "date": "28 September 2026",
+      "algorithms": "algorithms/vc-bitstring-status-list-1.1.json",
+      "links": "links/vc-bitstring-status-list-1.1.json",
+      "refs": "refs/vc-bitstring-status-list-1.1.json",
+      "dfns": "dfns/vc-bitstring-status-list-1.1.json",
+      "headings": "headings/vc-bitstring-status-list-1.1.json",
+      "ids": "ids/vc-bitstring-status-list-1.1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+      "seriesComposition": "full",
+      "shortname": "vc-bitstring-status-list",
+      "series": {
+        "shortname": "vc-bitstring-status-list",
+        "currentSpecification": "vc-bitstring-status-list",
+        "title": "Bitstring Status List",
+        "shortTitle": "Bitstring Status List",
+        "releaseUrl": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-bitstring-status-list/"
+      },
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-bitstring-status-list-1.1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "Bitstring Status List v1.0",
+      "source": "w3c",
+      "shortTitle": "Bitstring Status List v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-bitstring-status-list/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-bitstring-status-list/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 May 2025 14:01:16 GMT"
+      },
+      "generator": "respec",
+      "date": "15 May 2025",
       "algorithms": "algorithms/vc-bitstring-status-list.json",
       "links": "links/vc-bitstring-status-list.json",
       "refs": "refs/vc-bitstring-status-list.json",
@@ -40337,15 +40557,15 @@
         "title": "Data Catalog Vocabulary (DCAT)",
         "shortTitle": "DCAT",
         "releaseUrl": "https://www.w3.org/TR/vocab-dcat/",
-        "nightlyUrl": "https://w3c.github.io/dxwg/dcat/"
+        "nightlyUrl": "https://w3c.github.io/dx-dcat/TR/"
       },
       "seriesVersion": "3",
       "nightly": {
-        "url": "https://w3c.github.io/dxwg/dcat/",
+        "url": "https://w3c.github.io/dx-dcat/TR/",
         "status": "Editor's Draft",
         "sourcePath": "dcat/index.html",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/dxwg",
+        "repository": "https://github.com/w3c/dx-dcat",
         "filename": "index.html"
       },
       "organization": "W3C",
@@ -40367,15 +40587,17 @@
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/vocab-dcat-3/",
-        "https://w3c.github.io/dxwg/dcat/"
+        "https://w3c.github.io/dx-dcat/TR/"
       ],
-      "crawled": "https://w3c.github.io/dxwg/dcat/",
+      "crawled": "https://w3c.github.io/dx-dcat/TR/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 25 Sep 2026 08:49:22 GMT"
+        "lastModified": "Fri, 25 Sep 2026 05:15:05 GMT"
       },
       "generator": "respec",
       "date": "25 September 2026",
+      "algorithms": "algorithms/vocab-dcat-3.json",
       "links": "links/vocab-dcat-3.json",
+      "refs": "refs/vocab-dcat-3.json",
       "headings": "headings/vocab-dcat-3.json",
       "ids": "ids/vocab-dcat-3.json",
       "cddl": []
@@ -40697,7 +40919,18 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
+          "accname",
+          "core-aam",
+          "dpub-aam",
+          "dpub-aria",
+          "graphics-aam",
+          "graphics-aria",
+          "html-aam",
+          "svg-aam",
           "wai-aria"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
         ]
       },
       "versions": [
@@ -40762,7 +40995,18 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
+          "accname",
+          "core-aam",
+          "dpub-aam",
+          "dpub-aria",
+          "graphics-aam",
+          "graphics-aria",
+          "html-aam",
+          "svg-aam",
           "wai-aria"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
         ]
       },
       "versions": [
@@ -41595,7 +41839,7 @@
       "shortname": "webauthn-3",
       "series": {
         "shortname": "webauthn",
-        "currentSpecification": "webauthn-3",
+        "currentSpecification": "webauthn-4",
         "title": "Web Authentication",
         "shortTitle": "Web Authentication",
         "releaseUrl": "https://www.w3.org/TR/webauthn/",
@@ -41603,6 +41847,13 @@
       },
       "seriesVersion": "3",
       "shortTitle": "Web Authentication",
+      "nightly": {
+        "url": "https://www.w3.org/TR/webauthn-3/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "webauthn-4",
       "organization": "W3C",
       "groups": [
         {
@@ -41613,6 +41864,57 @@
       "release": {
         "url": "https://www.w3.org/TR/webauthn-3/",
         "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+      "source": "w3c",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/webauthn-3/"
+      ],
+      "crawled": "https://www.w3.org/TR/webauthn-3/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Aug 2026 15:41:58 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 August 2026",
+      "revision": "0a33db2d8901277e5107a89cb3152db125b328de",
+      "algorithms": "algorithms/webauthn-3.json",
+      "links": "links/webauthn-3.json",
+      "refs": "refs/webauthn-3.json",
+      "dfns": "dfns/webauthn-3.json",
+      "headings": "headings/webauthn-3.json",
+      "ids": "ids/webauthn-3.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/webauthn-4/",
+      "seriesComposition": "full",
+      "shortname": "webauthn-4",
+      "series": {
+        "shortname": "webauthn",
+        "currentSpecification": "webauthn-4",
+        "title": "Web Authentication",
+        "shortTitle": "Web Authentication",
+        "releaseUrl": "https://www.w3.org/TR/webauthn/",
+        "nightlyUrl": "https://w3c.github.io/webauthn/"
+      },
+      "seriesVersion": "4",
+      "shortTitle": "Web Authentication",
+      "seriesPrevious": "webauthn-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Authentication Working Group",
+          "url": "https://www.w3.org/groups/wg/webauthn/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/webauthn-4/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -41637,7 +41939,7 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/webauthn-3/",
+        "https://www.w3.org/TR/webauthn-4/",
         "https://w3c.github.io/webauthn/"
       ],
       "crawled": "https://w3c.github.io/webauthn/",
@@ -41647,13 +41949,13 @@
       "generator": "bikeshed",
       "date": "25 August 2026",
       "revision": "9d88b7681b10926a41fd18b78e206a01804ed855",
-      "algorithms": "algorithms/webauthn-3.json",
-      "links": "links/webauthn-3.json",
-      "refs": "refs/webauthn-3.json",
+      "algorithms": "algorithms/webauthn-4.json",
+      "links": "links/webauthn-4.json",
+      "refs": "refs/webauthn-4.json",
       "idl": "idl/webauthn.idl",
-      "dfns": "dfns/webauthn-3.json",
-      "headings": "headings/webauthn-3.json",
-      "ids": "ids/webauthn-3.json",
+      "dfns": "dfns/webauthn-4.json",
+      "headings": "headings/webauthn-4.json",
+      "ids": "ids/webauthn-4.json",
       "cddl": []
     },
     {
@@ -44386,7 +44688,7 @@
       ],
       "crawled": "https://w3c.github.io/wot-architecture/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jun 2024 12:29:40 GMT"
+        "lastModified": "Wed, 05 Jun 2024 12:29:39 GMT"
       },
       "generator": "respec",
       "date": "05 June 2024",

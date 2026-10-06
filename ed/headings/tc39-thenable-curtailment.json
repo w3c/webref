@@ -1,0 +1,84 @@
+{
+  "spec": {
+    "title": "SafePromiseResolve",
+    "url": "https://tc39.es/proposal-thenable-curtailment/"
+  },
+  "headings": [
+    {
+      "id": "sec-safe-resolve-promise",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-safe-resolve-promise",
+      "title": "SafePromiseResolve Abstract Operations",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-has-property-which-could-run-user-code",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-has-property-which-could-run-user-code",
+      "title": "PropertyAccessCouldRunUserCode ( o, propertyKey, kind )",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-perform-promise-resolution",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-perform-promise-resolution",
+      "title": "PerformPromiseResolution ( promise, resolution, thenCallTiming )",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-newpromiseresolvethenablejob",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-newpromiseresolvethenablejob",
+      "title": "NewPromiseResolveThenableJob ( promiseToResolve, thenable, then )",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-perform-promise-resolve-thenable",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-perform-promise-resolve-thenable",
+      "title": "PerformPromiseResolveThenable ( promiseToResolve, thenable, then )",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "sec-createresolvingfunctions-modified",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-createresolvingfunctions-modified",
+      "title": "CreateResolvingFunctions ( toResolve )",
+      "level": 2,
+      "number": "1.5"
+    },
+    {
+      "id": "sec-safe-promise-resolve",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-safe-promise-resolve",
+      "title": "SafePromiseResolve ( promiseCapability, resolution )",
+      "level": 2,
+      "number": "1.6"
+    },
+    {
+      "id": "sec-requires-deferred-promise-resolution",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-requires-deferred-promise-resolution",
+      "title": "RequiresDeferredPromiseResolution ( value )",
+      "level": 3,
+      "number": "1.6.1"
+    },
+    {
+      "id": "sec-hosthasinternalmethodswhichcanrunusercode",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-hosthasinternalmethodswhichcanrunusercode",
+      "title": "HostObjectHasImpureLookupInternalMethods ( object )",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-host-hooks-summary",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-host-hooks-summary",
+      "title": "Host Hooks",
+      "level": 1,
+      "number": "A"
+    },
+    {
+      "id": "sec-copyright-and-software-license",
+      "href": "https://tc39.es/proposal-thenable-curtailment/#sec-copyright-and-software-license",
+      "title": "Copyright & Software License",
+      "level": 1
+    }
+  ]
+}
