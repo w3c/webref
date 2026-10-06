@@ -1,0 +1,8 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+[Exposed=Window, SecureContext]
+interface LanguageModelToolSuccess {
+  constructor(LanguageModelToolSuccessInit init);
+  readonly attribute DOMString callId;
+  readonly attribute DOMString name;
+  readonly attribute FrozenArray<LanguageModelToolResultContent> result;
+};

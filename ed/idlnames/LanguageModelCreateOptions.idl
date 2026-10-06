@@ -3,5 +3,5 @@ dictionary LanguageModelCreateOptions : LanguageModelCreateCoreOptions {
   AbortSignal signal;
   CreateMonitorCallback monitor;
 
-  sequence<LanguageModelMessage> initialPrompts;
+  sequence<LanguageModelMessage> initialPrompts = [];
 };

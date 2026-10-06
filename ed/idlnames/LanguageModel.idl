@@ -6,8 +6,8 @@ interface LanguageModel : EventTarget {
   // **EXPERIMENTAL**: Only available in extension and experimental contexts.
   static Promise<LanguageModelParams?> params();
 
-  // These will throw "NotSupportedError" DOMExceptions if role = "system"
-  Promise<DOMString> prompt(
+  // These will throw a TypeError if role = "system"
+  Promise<LanguageModelPromptResult> prompt(
     LanguageModelPrompt input,
     optional LanguageModelPromptOptions options = {}
   );

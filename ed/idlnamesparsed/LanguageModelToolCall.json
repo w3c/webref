@@ -1,0 +1,15 @@
+{
+  "name": "LanguageModelToolCall",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Prompt API",
+      "url": "https://webmachinelearning.github.io/prompt-api/"
+    },
+    "fragment": "// Represents a tool call requested by the language model.\n[Exposed=Window, SecureContext]\ninterface LanguageModelToolCall {\n  constructor(LanguageModelToolCallInit init);\n  readonly attribute DOMString callId;\n  readonly attribute DOMString name;\n  readonly attribute object? arguments;\n};",
+    "href": "https://webmachinelearning.github.io/prompt-api/#languagemodeltoolcall"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

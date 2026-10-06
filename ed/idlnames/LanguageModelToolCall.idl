@@ -1,0 +1,9 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+// Represents a tool call requested by the language model.
+[Exposed=Window, SecureContext]
+interface LanguageModelToolCall {
+  constructor(LanguageModelToolCallInit init);
+  readonly attribute DOMString callId;
+  readonly attribute DOMString name;
+  readonly attribute object? arguments;
+};

@@ -16,5 +16,5 @@ dictionary LanguageModelCreateCoreOptions {
 
   // Tools that the language model can use.
   // **EXPERIMENTAL**: Only available in experimental contexts.
-  sequence<LanguageModelTool> tools;
+  sequence<LanguageModelToolDeclaration> tools = [];
 };

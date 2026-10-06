@@ -1,0 +1,15 @@
+{
+  "name": "LanguageModelToolDeclaration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Prompt API",
+      "url": "https://webmachinelearning.github.io/prompt-api/"
+    },
+    "fragment": "// A description of a tool call that a language model can invoke.\n// Note: When considering changes to this dictionary, authors should ensure\n// general alignment with ModelContextTool from WebMCP\n// (https://webmachinelearning.github.io/webmcp/#model-context-tool).\ndictionary LanguageModelToolDeclaration {\n  required DOMString name;\n  required DOMString description;\n  // JSON schema for the input parameters.\n  required object inputSchema;\n};",
+    "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodeltooldeclaration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

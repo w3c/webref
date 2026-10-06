@@ -1,0 +1,8 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+[Exposed=Window, SecureContext]
+interface LanguageModelToolError {
+  constructor(LanguageModelToolErrorInit init);
+  readonly attribute DOMString callId;
+  readonly attribute DOMString name;
+  readonly attribute DOMString errorMessage;
+};
