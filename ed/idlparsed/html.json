@@ -17098,7 +17098,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldialogelement"
       },
       "HTMLScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString type;\n  [CEReactions, ReflectURL] attribute USVString src;\n  [CEReactions, Reflect] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions, Reflect] attribute boolean defer;\n  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions, Reflect] attribute DOMString integrity;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  [CEReactions] attribute DOMString text;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString type;\n  [CEReactions] attribute (TrustedScriptURL or USVString) src;\n  [CEReactions, Reflect] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions, Reflect] attribute boolean defer;\n  [SameObject, PutForwards=value, Reflect] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions, Reflect] attribute DOMString integrity;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  // innerText and textContent shadow HTMLElement's and Node's, to add Trusted Types checks\n  [CEReactions] attribute (TrustedScript or [LegacyNullToEmptyString] DOMString) innerText;\n  [CEReactions] attribute (TrustedScript or DOMString)? textContent;\n  [CEReactions] attribute (TrustedScript or DOMString) text;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -17152,19 +17152,30 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "USVString"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TrustedScriptURL"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
             },
             "extAttrs": [
               {
                 "type": "extended-attribute",
                 "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              },
-              {
-                "type": "extended-attribute",
-                "name": "ReflectURL",
                 "rhs": null,
                 "arguments": []
               }
@@ -17392,14 +17403,118 @@
           },
           {
             "type": "attribute",
+            "name": "innerText",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TrustedScript"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [
+                    {
+                      "type": "extended-attribute",
+                      "name": "LegacyNullToEmptyString",
+                      "rhs": null,
+                      "arguments": []
+                    }
+                  ],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-innertext"
+          },
+          {
+            "type": "attribute",
+            "name": "textContent",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TrustedScript"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-textcontent"
+          },
+          {
+            "type": "attribute",
             "name": "text",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TrustedScript"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
             },
             "extAttrs": [
               {
@@ -48792,7 +48907,9 @@
       ],
       "HTMLScriptElement": [
         "HTMLElement",
-        "DOMTokenList"
+        "TrustedScriptURL",
+        "DOMTokenList",
+        "TrustedScript"
       ],
       "HTMLTemplateElement": [
         "HTMLElement",
@@ -49469,6 +49586,8 @@
       "EventInit",
       "FileList",
       "FormData",
+      "TrustedScriptURL",
+      "TrustedScript",
       "DocumentFragment",
       "Node",
       "Text",
@@ -49489,13 +49608,11 @@
       "MouseEventInit",
       "ViewTransition",
       "Function",
-      "TrustedScript",
       "VoidFunction",
       "Range",
       "Uint8ClampedArray",
       "Float16Array",
       "ServiceWorker",
-      "TrustedScriptURL",
       "RequestCredentials"
     ],
     "hasObsoleteIdl": false

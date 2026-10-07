@@ -15893,16 +15893,51 @@
       ]
     },
     {
+      "name": "HTMLScriptElement/src",
+      "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-src",
+      "html": "The <dfn data-dfn-for=\"HTMLScriptElement\" id=\"dom-script-src\" data-dfn-type=\"attribute\"><code>src</code></dfn>\n  getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>attribute</var> be the result of <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-get-by-namespace\" id=\"the-script-element:concept-element-attributes-get-by-namespace\" data-x-internal=\"concept-element-attributes-get-by-namespace\">getting an attribute by namespace and local\n   name</a> given null, <code id=\"the-script-element:attr-script-src-5\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src\">src</a></code>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"the-script-element:concept-attribute-local-name\" data-x-internal=\"concept-attribute-local-name\">local name</a>, and <a id=\"the-script-element:this\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>attribute</var> is null, then return the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>urlString</var> be the result of <a id=\"the-script-element:encoding-parsing-and-serializing-a-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-and-serializing-a-url\">encoding-parsing-and-serializing a\n   URL</a> given <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"the-script-element:concept-attribute-value\" data-x-internal=\"concept-attribute-value\">value</a>,\n   relative to <a id=\"the-script-element:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-script-element:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>urlString</var> is not failure, then return <var>urlString</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>attribute</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"the-script-element:concept-attribute-value-2\" data-x-internal=\"concept-attribute-value\">value</a>, <a href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"the-script-element:convert\" data-x-internal=\"convert\">converted to a scalar value string</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-script-element:dom-script-src-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#dom-script-src\">src</a></code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>compliantScriptURL</var> be the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"the-script-element:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"the-script-element:tt-trustedscripturl-2\"><a data-x-internal=\"tt-trustedscripturl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscripturl\">TrustedScriptURL</a></code>, <a id=\"the-script-element:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-script-element:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>, the given value, \"<code>HTMLScriptElement src</code>\", and \"<code>script</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-set-value\" id=\"the-script-element:concept-element-attributes-set-value\" data-x-internal=\"concept-element-attributes-set-value\">Set an attribute value</a> given\n   <a id=\"the-script-element:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <code id=\"the-script-element:attr-script-src-6\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src\">src</a></code>'s <a href=\"https://dom.spec.whatwg.org/#concept-attribute-local-name\" id=\"the-script-element:concept-attribute-local-name-2\" data-x-internal=\"concept-attribute-local-name\">local name</a>, and\n   <var>compliantScriptURL</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "HTMLScriptElement/async",
       "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-script-async",
       "html": "The <dfn data-dfn-for=\"HTMLScriptElement\" id=\"dom-script-async\" data-dfn-type=\"attribute\"><code>async</code></dfn>\n  getter steps are:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a id=\"the-script-element:this\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/scripting.html#script-force-async\" id=\"the-script-element:script-force-async\">force async</a> is true, then\n   return true.</p>"
+          "html": "<p>If <a id=\"the-script-element:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/scripting.html#script-force-async\" id=\"the-script-element:script-force-async\">force async</a> is true, then\n   return true.</p>"
         },
         {
-          "html": "<p>If <a id=\"the-script-element:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-8\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code> content attribute is\n   present, then return true.</p>"
+          "html": "<p>If <a id=\"the-script-element:this-6\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-8\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code> content attribute is\n   present, then return true.</p>"
         },
         {
           "html": "<p>Return false.</p>"
@@ -15914,13 +15949,64 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <a id=\"the-script-element:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/scripting.html#script-force-async\" id=\"the-script-element:script-force-async-2\">force async</a> to\n   false.</p>"
+          "html": "<p>Set <a id=\"the-script-element:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/scripting.html#script-force-async\" id=\"the-script-element:script-force-async-2\">force async</a> to\n   false.</p>"
         },
         {
-          "html": "<p>If the given value is true, then set <a id=\"the-script-element:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-9\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code> content attribute to the empty string.</p>"
+          "html": "<p>If the given value is true, then set <a id=\"the-script-element:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-9\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code> content attribute to the empty string.</p>"
         },
         {
-          "html": "<p>Otherwise, remove <a id=\"the-script-element:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-10\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code>\n   content attribute.</p>"
+          "html": "<p>Otherwise, remove <a id=\"the-script-element:this-9\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-script-element:attr-script-async-10\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async\">async</a></code>\n   content attribute.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-script-element:dom-script-innertext-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#dom-script-innertext\">innerText</a></code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>compliantScript</var> be the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"the-script-element:tt-getcompliantstring-2\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"the-script-element:tt-trustedscript-4\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>, <a id=\"the-script-element:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-script-element:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>, the given value, \"<code>HTMLScriptElement innerText</code>\", and \"<code>script</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/trusted-types/dist/spec/#update-script-trustedness\" id=\"the-script-element:tt-update-script-trustedness\" data-x-internal=\"tt-update-script-trustedness\">Update script trustedness</a> for\n   <a id=\"the-script-element:this-12\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> given <var>compliantScript</var>.</p>"
+        },
+        {
+          "html": "<p>Run <a id=\"the-script-element:set-the-inner-text-steps\" href=\"https://html.spec.whatwg.org/multipage/dom.html#set-the-inner-text-steps\">set the inner text steps</a> with <a id=\"the-script-element:this-13\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> and\n   <var>compliantScript</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-script-element:dom-script-textcontent-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#dom-script-textcontent\">textContent</a></code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>value</var> be the given value.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var> is null, then set <var>value</var> to the empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>compliantScript</var> be the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"the-script-element:tt-getcompliantstring-3\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"the-script-element:tt-trustedscript-5\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>, <a id=\"the-script-element:this-15\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-script-element:concept-relevant-global-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>, <var>value</var>, \"<code>HTMLScriptElement textContent</code>\", and\n   \"<code>script</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/trusted-types/dist/spec/#update-script-trustedness\" id=\"the-script-element:tt-update-script-trustedness-2\" data-x-internal=\"tt-update-script-trustedness\">Update script trustedness</a> for\n   <a id=\"the-script-element:this-16\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> given <var>compliantScript</var>.</p>"
+        },
+        {
+          "html": "<p>Run <a id=\"the-script-element:set-text-content\" href=\"https://dom.spec.whatwg.org/#set-text-content\" data-x-internal=\"set-text-content\">set text content</a> with <a id=\"the-script-element:this-17\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> and\n   <var>compliantScript</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code id=\"the-script-element:dom-script-text-4\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#dom-script-text\">text</a></code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>compliantScript</var> be the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"the-script-element:tt-getcompliantstring-4\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"the-script-element:tt-trustedscript-6\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>, <a id=\"the-script-element:this-19\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-script-element:concept-relevant-global-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global\n   object</a>, the given value, \"<code>HTMLScriptElement text</code>\", and \"<code>script</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://w3c.github.io/trusted-types/dist/spec/#update-script-trustedness\" id=\"the-script-element:tt-update-script-trustedness-3\" data-x-internal=\"tt-update-script-trustedness\">Update script trustedness</a> for\n   <a id=\"the-script-element:this-20\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> given <var>compliantScript</var>.</p>"
+        },
+        {
+          "html": "<p><a id=\"the-script-element:string-replace-all\" href=\"https://dom.spec.whatwg.org/#string-replace-all\" data-x-internal=\"string-replace-all\">String replace all</a> with <var>compliantScript</var> within\n   <a id=\"the-script-element:this-21\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
         }
       ]
     },
@@ -22811,18 +22897,6 @@
               "html": "<p>If <var>nestedHide</var> is false, then set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-hiding\" id=\"the-popover-attribute:popover-hiding-3\">popover\n     hiding</a> to false.</p>"
             },
             {
-              "html": "If <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-2\">popover close watcher</a> is not null:",
-              "rationale": "destroy",
-              "steps": [
-                {
-                  "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-destroy\" id=\"the-popover-attribute:close-watcher-destroy\">Destroy</a> <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-3\">popover\n       close watcher</a>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-4\">popover close watcher</a> to null.</p>"
-                }
-              ]
-            },
-            {
               "html": "<p>Decrement <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hiding-popover-nesting-count\" id=\"the-popover-attribute:hiding-popover-nesting-count-3\">hiding popover nesting count</a>.</p>"
             }
           ]
@@ -22847,7 +22921,7 @@
               "html": "<p>If <var>autoPopoverListContainsElement</var> is true, then run <a href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-stack-until\" id=\"the-popover-attribute:hide-popover-stack-until-6\">hide popover stack\n     until</a> given <var>document</var>, <var>element</var>, <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto-state\" id=\"the-popover-attribute:attr-popover-auto-state-11\">Auto</a>, <var>focusPreviousElement</var>, and\n     <var>fireEvents</var>.</p>"
             },
             {
-              "html": "<p>Set <var>validityResult</var> to the result of running <a href=\"https://html.spec.whatwg.org/multipage/popover.html#check-popover-validity\" id=\"the-popover-attribute:check-popover-validity-7\">check popover validity</a>\n      given <var>element</var>, true, and null. If this throws an exception, catch it, and set\n      <var>validityResult</var> to that exception.</p>"
+              "html": "<p>Set <var>validityResult</var> to the result of running <a href=\"https://html.spec.whatwg.org/multipage/popover.html#check-popover-validity\" id=\"the-popover-attribute:check-popover-validity-7\">check popover validity</a>\n      given <var>element</var>, true, and <var>document</var>. If this throws an exception, catch\n      it, and set <var>validityResult</var> to that exception.</p>"
             },
             {
               "html": "If <var>validityResult</var> is not true:",
@@ -22874,7 +22948,7 @@
               "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"the-popover-attribute:concept-event-fire-3\" data-x-internal=\"concept-event-fire\">Fire an event</a> named <code id=\"the-popover-attribute:event-beforetoggle-4\"><a href=\"https://html.spec.whatwg.org/multipage/indices.html#event-beforetoggle\">beforetoggle</a></code>, using <code id=\"the-popover-attribute:toggleevent-3\"><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#toggleevent\">ToggleEvent</a></code>, with the <code id=\"the-popover-attribute:dom-toggleevent-oldstate-3\"><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-oldstate\">oldState</a></code> attribute initialized to \"<code>open</code>\", the <code id=\"the-popover-attribute:dom-toggleevent-newstate-3\"><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-newstate\">newState</a></code>\n     attribute initialized to \"<code>closed</code>\", and the <code id=\"the-popover-attribute:dom-toggleevent-source-3\"><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source\">source</a></code> attribute set to <var>source</var> at\n     <var>element</var>.</p>"
             },
             {
-              "html": "<p>Set <var>validityResult</var> to the result of running <a href=\"https://html.spec.whatwg.org/multipage/popover.html#check-popover-validity\" id=\"the-popover-attribute:check-popover-validity-9\">check popover validity</a>\n      given <var>element</var>, true, and null. If this throws an exception, catch it, and set\n      <var>validityResult</var> to that exception.</p>"
+              "html": "<p>Set <var>validityResult</var> to the result of running <a href=\"https://html.spec.whatwg.org/multipage/popover.html#check-popover-validity\" id=\"the-popover-attribute:check-popover-validity-9\">check popover validity</a>\n      given <var>element</var>, true, and <var>document</var>. If this throws an exception, catch\n      it, and set <var>validityResult</var> to that exception.</p>"
             },
             {
               "html": "If <var>validityResult</var> is not true:",
@@ -22929,6 +23003,18 @@
             },
             {
               "html": "<p>If <var>focusPreviousElement</var> is true and <var>document</var>'s <a id=\"the-popover-attribute:focused-area-of-the-document-2\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#focused-area-of-the-document\">focused area\n     of the document</a>'s <a id=\"the-popover-attribute:dom-anchor-2\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-anchor\">DOM anchor</a> is a <a id=\"the-popover-attribute:shadow-including-inclusive-descendant\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant\" data-x-internal=\"shadow-including-inclusive-descendant\">shadow-including inclusive\n     descendant</a> of <var>element</var>, then run the <a id=\"the-popover-attribute:focusing-steps\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusing-steps\">focusing steps</a> for\n     <var>previouslyFocusedElement</var>; the viewport should not be scrolled by doing this\n     step.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-2\">popover close watcher</a> is not null:",
+          "rationale": "destroy",
+          "steps": [
+            {
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-destroy\" id=\"the-popover-attribute:close-watcher-destroy\">Destroy</a> <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-3\">popover\n     close watcher</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher\" id=\"the-popover-attribute:popover-close-watcher-4\">popover close watcher</a> to null.</p>"
             }
           ]
         },
@@ -23192,7 +23278,7 @@
           "html": "<p>If any of the following are true:</p>\n\n    <ul><li><p><var>expectedToBeShowing</var> is true and <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-9\">popover visibility\n     state</a> is not <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"the-popover-attribute:popover-showing-state-8\">showing</a>; or</p></li><li><p><var>expectedToBeShowing</var> is false and <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-10\">popover\n     visibility state</a> is not <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-hidden-state\" id=\"the-popover-attribute:popover-hidden-state-3\">hidden</a>,</p></li></ul>\n\n    <p>then return false.</p>"
         },
         {
-          "html": "<p>If any of the following are true:</p>\n\n    <ul><li><p><var>element</var> is not <a id=\"the-popover-attribute:connected\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>;</p></li><li><p><var>element</var>'s <a id=\"the-popover-attribute:node-document-6\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> is not <a id=\"the-popover-attribute:fully-active\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully\n     active</a>;</p></li><li><p><var>expectedDocument</var> is not null and <var>element</var>'s <a id=\"the-popover-attribute:node-document-7\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n     document</a> is not <var>expectedDocument</var>;</p></li><li><p><var>element</var> is a <code id=\"the-popover-attribute:the-dialog-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element\">dialog</a></code> element and its <a id=\"the-popover-attribute:is-modal\" href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#is-modal\">is modal</a>\n     is set to true; or</p></li><li><p><var>element</var>'s <a id=\"the-popover-attribute:fullscreen-flag\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-flag\" data-x-internal=\"fullscreen-flag\">fullscreen flag</a> is set,</p></li></ul>\n\n    <p>then throw an <a id=\"the-popover-attribute:invalidstateerror-3\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" data-x-internal=\"invalidstateerror\">\"<code>InvalidStateError</code>\"</a> <code id=\"the-popover-attribute:domexception-10\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>If any of the following are true:</p>\n\n    <ul><li>\n     <p><var>expectedToBeShowing</var> is false and <var>element</var> is not\n     <a id=\"the-popover-attribute:connected\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>;</p>\n\n     \n    </li><li><p><var>expectedToBeShowing</var> is false and <var>element</var>'s <a id=\"the-popover-attribute:node-document-7\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n     document</a> is not <a id=\"the-popover-attribute:fully-active-2\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\">fully active</a>;</p></li><li><p><var>expectedDocument</var> is not null and <var>element</var>'s <a id=\"the-popover-attribute:node-document-8\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node\n     document</a> is not <var>expectedDocument</var>;</p></li><li><p><var>element</var> is a <code id=\"the-popover-attribute:the-dialog-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element\">dialog</a></code> element and its <a id=\"the-popover-attribute:is-modal\" href=\"https://html.spec.whatwg.org/multipage/interactive-elements.html#is-modal\">is modal</a>\n     is set to true; or</p></li><li><p><var>element</var>'s <a id=\"the-popover-attribute:fullscreen-flag\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-flag\" data-x-internal=\"fullscreen-flag\">fullscreen flag</a> is set,</p></li></ul>\n\n    <p>then throw an <a id=\"the-popover-attribute:invalidstateerror-3\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" data-x-internal=\"invalidstateerror\">\"<code>InvalidStateError</code>\"</a> <code id=\"the-popover-attribute:domexception-10\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Return true.</p>"
@@ -23213,7 +23299,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If all of the following are true:</p>\n\n      <ul><li><p><var>element</var> is an <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-elements\" id=\"the-popover-attribute:html-elements-25\">HTML element</a>;</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#opened-in-popover-mode\" id=\"the-popover-attribute:opened-in-popover-mode-9\">opened in popover mode</a> is \"<code>auto</code>\"; and</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-11\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"the-popover-attribute:popover-showing-state-9\">showing</a>,</p></li></ul>\n\n      <p>then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-popover-attribute:list-append\" data-x-internal=\"list-append\">append</a> <var>element</var> to\n      <var>popovers</var>.</p>"
+              "html": "<p>If all of the following are true:</p>\n\n      <ul><li><p><var>element</var> is an <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-elements\" id=\"the-popover-attribute:html-elements-25\">HTML element</a>;</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#opened-in-popover-mode\" id=\"the-popover-attribute:opened-in-popover-mode-9\">opened in popover mode</a> is \"<code>auto</code>\"; and</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-11\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"the-popover-attribute:popover-showing-state-11\">showing</a>,</p></li></ul>\n\n      <p>then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-popover-attribute:list-append\" data-x-internal=\"list-append\">append</a> <var>element</var> to\n      <var>popovers</var>.</p>"
             }
           ]
         },
@@ -23236,7 +23322,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If all of the following are true:</p>\n\n      <ul><li><p><var>element</var> is an <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-elements\" id=\"the-popover-attribute:html-elements-26\">HTML element</a>;</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#opened-in-popover-mode\" id=\"the-popover-attribute:opened-in-popover-mode-10\">opened in popover mode</a> is \"<code>hint</code>\"; and</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-12\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"the-popover-attribute:popover-showing-state-10\">showing</a>,</p></li></ul>\n\n      <p>then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-popover-attribute:list-append-2\" data-x-internal=\"list-append\">append</a> <var>element</var> to\n      <var>popovers</var>.</p>"
+              "html": "<p>If all of the following are true:</p>\n\n      <ul><li><p><var>element</var> is an <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-elements\" id=\"the-popover-attribute:html-elements-26\">HTML element</a>;</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#opened-in-popover-mode\" id=\"the-popover-attribute:opened-in-popover-mode-10\">opened in popover mode</a> is \"<code>hint</code>\"; and</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-visibility-state\" id=\"the-popover-attribute:popover-visibility-state-12\">popover visibility state</a> is <a href=\"https://html.spec.whatwg.org/multipage/popover.html#popover-showing-state\" id=\"the-popover-attribute:popover-showing-state-12\">showing</a>,</p></li></ul>\n\n      <p>then <a href=\"https://infra.spec.whatwg.org/#list-append\" id=\"the-popover-attribute:list-append-2\" data-x-internal=\"list-append\">append</a> <var>element</var> to\n      <var>popovers</var>.</p>"
             }
           ]
         },
@@ -36608,7 +36694,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>argument</var> is a <code id=\"hostgetcodeforeval(argument):tt-trustedscript\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code> object,\n   then return <var>argument</var>'s <a href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript-data\" id=\"hostgetcodeforeval(argument):tt-trustedscript-data\" data-x-internal=\"tt-trustedscript-data\">data</a>.</p>"
+          "html": "<p>If <var>argument</var> is a <code id=\"hostgetcodeforeval(argument):tt-trustedscript\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code> object,\n   then return <var>argument</var>'s <a href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript-data\" id=\"hostgetcodeforeval(argument):tt-trustedscript-data\" data-x-internal=\"tt-trustedscript-data\">data</a>.</p>"
         },
         {
           "html": "<p>Otherwise, return no-code.</p>"
@@ -40303,7 +40389,7 @@
     {
       "name": "timer initialization steps",
       "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timer-initialisation-steps",
-      "html": "To perform the <dfn id=\"timer-initialisation-steps\">timer initialization\n  steps</dfn>, given a <code id=\"timers:windoworworkerglobalscope-2\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\">WindowOrWorkerGlobalScope</a></code> <var>global</var>, a string or <code id=\"timers:idl-function\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code> or <code id=\"timers:tt-trustedscript\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code>\n  <var>handler</var>, a number <var>timeout</var>, a list <var>arguments</var>, a boolean\n  <var>repeat</var>, and optionally (and only if <var>repeat</var> is true) a number\n  <var>previousId</var>, perform the following steps. They return a number.",
+      "html": "To perform the <dfn id=\"timer-initialisation-steps\">timer initialization\n  steps</dfn>, given a <code id=\"timers:windoworworkerglobalscope-2\"><a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope\">WindowOrWorkerGlobalScope</a></code> <var>global</var>, a string or <code id=\"timers:idl-function\"><a data-x-internal=\"idl-function\" href=\"https://webidl.spec.whatwg.org/#common-Function\">Function</a></code> or <code id=\"timers:tt-trustedscript\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>\n  <var>handler</var>, a number <var>timeout</var>, a list <var>arguments</var>, a boolean\n  <var>repeat</var>, and optionally (and only if <var>repeat</var> is true) a number\n  <var>previousId</var>, perform the following steps. They return a number.",
       "rationale": "if",
       "steps": [
         {
@@ -40320,7 +40406,7 @@
               "html": "<p>Let <var>sink</var> be a concatenation of <var>globalName</var>, U+0020 SPACE, and\n     <var>methodName</var>.</p>"
             },
             {
-              "html": "<p>Set <var>handler</var> to the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"timers:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"timers:tt-trustedscript-2\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-script\">TrustedScript</a></code>, <var>global</var>, <var>handler</var>,\n     <var>sink</var>, and \"<code>script</code>\".</p>"
+              "html": "<p>Set <var>handler</var> to the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"timers:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"timers:tt-trustedscript-2\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>, <var>global</var>, <var>handler</var>,\n     <var>sink</var>, and \"<code>script</code>\".</p>"
             }
           ]
         },

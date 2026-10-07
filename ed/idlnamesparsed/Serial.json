@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Serial API",
+      "title": "Serial Standard",
       "url": "https://serial.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(DedicatedWorker, Window), SecureContext]\ninterface Serial : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<SerialPort>> getPorts();\n  [Exposed=Window] Promise<SerialPort> requestPort(optional SerialPortRequestOptions options = {});\n};",
-    "href": "https://serial.spec.whatwg.org/#dom-serial"
+    "href": "https://serial.spec.whatwg.org/#serial"
   },
   "extended": [],
   "inheritance": {

@@ -305,7 +305,7 @@
     {
       "name": "line-clamp",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
-      "value": "none | [<integer [1,∞]> || auto || <'block-ellipsis'>] -webkit-legacy?",
+      "value": "none | [<'max-lines'> || <'block-ellipsis'>] -webkit-legacy?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -316,28 +316,21 @@
       "values": [
         {
           "name": "none",
-          "prose": "Sets max-lines to auto, continue to auto, and block-ellipsis to no-ellipsis.",
+          "prose": "Sets max-lines to auto, continue to normal, and block-ellipsis to no-ellipsis.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-none",
           "type": "value",
           "value": "none"
         },
         {
-          "name": "<integer [1,∞]>",
-          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1",
+          "name": "<max-lines>",
+          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified (see below). Sets max-lines and block-ellipsis to the corresponding values, or to max-lines: auto and block-ellipsis: ellipsis respectively if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-max-lines",
           "type": "value",
-          "value": "<integer [1,∞]>"
-        },
-        {
-          "name": "auto",
-          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-auto",
-          "type": "value",
-          "value": "auto"
+          "value": "<max-lines>"
         },
         {
           "name": "<block-ellipsis>",
-          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
+          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified (see below). Sets max-lines and block-ellipsis to the corresponding values, or to max-lines: auto and block-ellipsis: ellipsis respectively if omitted.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
           "type": "value",
           "value": "<block-ellipsis>"
@@ -385,8 +378,8 @@
     {
       "name": "continue",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-continue",
-      "value": "auto | discard | collapse | -webkit-legacy",
-      "initial": "auto",
+      "value": "normal | discard | collapse | -webkit-legacy",
+      "initial": "normal",
       "appliesTo": "block containers and multicol containers",
       "inherited": "no",
       "percentages": "N/A",
@@ -402,15 +395,15 @@
           "value": "-webkit-legacy"
         },
         {
-          "name": "auto",
+          "name": "normal",
           "prose": "If the box has more content than can fit, the excess content is handled according to the usual rules.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-auto",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-normal",
           "type": "value",
-          "value": "auto"
+          "value": "normal"
         },
         {
           "name": "collapse",
-          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as auto.",
+          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as normal.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-collapse",
           "type": "value",
           "value": "collapse"
@@ -438,6 +431,22 @@
       "computedValue": "the keyword auto, or an integer, or both",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<integer [1,∞]>",
+          "prose": "Given an integer N, if the box is a line-clamp container, it has an line-based clamp point, set to the first possible clamp point after its Nth descendant in-flow line box. If fewer than N line boxes exist, or if there are no possible clamp points after the Nth descendant in-flow line box, then that line-clamp container has no line-based clamp point. If the box is instead a fragmentation container that captures region breaks, then a region break is forced after its Nth descendant in-flow line box. If fewer than N line boxes exist, then max-lines introduces no region break. Only line boxes in the same block formatting context are counted: the contents of descendants that establish independent formatting contexts are skipped over while counting line boxes. Only positive integers are accepted. Zero or negative integers are invalid and must cause the declaration to be ignored.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#max-lines-integer",
+          "type": "value",
+          "value": "<integer [1,∞]>"
+        },
+        {
+          "name": "auto",
+          "prose": "If the box is a line-clamp container, it has an auto clamp point, set to the last possible clamp point such that, for it and all previous possible clamp points, the container’s automatic block size (as determined in § 5.3.1 Line-clamp containers) is not greater than the block size the box would have if its automatic block size were infinite. If the block size would be infinite, then there is no auto clamp point.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#max-lines-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "max-lines",
         "maxLines"

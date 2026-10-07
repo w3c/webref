@@ -575,101 +575,13 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-innertext\" id=\"ref-for-dom-htmlscriptelement-innertext①\">innerText</a></code> setter steps are:",
-      "rationale": "let",
+      "name": "update script trustedness",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#update-script-trustedness",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"update-script-trustedness\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update script trustedness</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement⑧\">HTMLScriptElement</a></code> <var>script</var> given string <var>value</var>:",
+      "rationale": "set",
       "steps": [
         {
-          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑤\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①⑤\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>, the given value, <code>HTMLScriptElement innerText</code>, and\n<code>script</code>.</p>"
-        },
-        {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text②\">script text</a> value to <var>value</var>.</p>"
-        },
-        {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#set-the-inner-text-steps\" id=\"ref-for-set-the-inner-text-steps\">set the inner text steps</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a> and <var>value</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-innertext\" id=\"ref-for-dom-htmlscriptelement-innertext②\">innerText</a></code> getter steps are:",
-      "rationale": "return",
-      "steps": [
-        {
-          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#get-the-text-steps\" id=\"ref-for-get-the-text-steps\">get the text steps</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-textcontent\" id=\"ref-for-dom-htmlscriptelement-textcontent①\">textContent</a></code> setter steps are to, if the given value is null, act as if it was the\nempty string instead, and then do as described below:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑥\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①⑥\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>, the given value, <code>HTMLScriptElement textContent</code>, and\n<code>script</code>.</p>"
-        },
-        {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text③\">script text</a> value to <var>value</var>.</p>"
-        },
-        {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#set-text-content\" id=\"ref-for-set-text-content\">set text content</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a> and <var>value</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-textcontent\" id=\"ref-for-dom-htmlscriptelement-textcontent②\">textContent</a></code> getter steps are:",
-      "rationale": "return",
-      "steps": [
-        {
-          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#get-text-content\" id=\"ref-for-get-text-content\">get text content</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "Update the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-text\" id=\"ref-for-dom-htmlscriptelement-text②\">text</a></code> setter steps algorithm as follows.",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑦\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①⑦\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>, the given value, <code>HTMLScriptElement text</code>, and\n<code>script</code>.</ins>"
-        },
-        {
-          "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text④\">script text</a> value to the given value.</ins>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#string-replace-all\" id=\"ref-for-string-replace-all\">String replace all</a> with the given value within <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-src\" id=\"ref-for-dom-htmlscriptelement-src②\">src</a></code> getter steps are:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<ins>Let <var>element</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s get the element.</ins>"
-        },
-        {
-          "html": "<ins>Let <var>contentAttributeValue</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s get the content attribute.</ins>"
-        },
-        {
-          "html": "<ins>If <var>contentAttributeValue</var> is null, then return the empty string.</ins>"
-        },
-        {
-          "html": "<ins>Let <var>urlString</var> be the result of encoding-parsing-and-serializing a URL given <var>contentAttributeValue</var>, relative to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>.</ins>"
-        },
-        {
-          "html": "<ins>If <var>urlString</var> is not failure, then return <var>urlString</var>.</ins>"
-        },
-        {
-          "html": "<ins>Return <var>contentAttributeValue</var>, converted to a scalar value string.</ins>"
-        }
-      ]
-    },
-    {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#dom-htmlscriptelement-src\" id=\"ref-for-dom-htmlscriptelement-src③\">src</a></code> setter steps are:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑧\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscripturl\" id=\"ref-for-trustedscripturl①①\">TrustedScriptURL</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>, the given value, <code>HTMLScriptElement src</code>, and\n<code>script</code>.</ins>"
-        },
-        {
-          "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#attr-script-src\" id=\"ref-for-attr-script-src\">src</a> content attribute to <var>value</var>.</ins>"
+          "html": "<p>Set <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text②\">script text</a> value to <var>value</var>.</p>"
         }
       ]
     },
@@ -682,7 +594,7 @@
           "steps": [
             {
               "case": "An end tag whose tag name is \"script\"",
-              "html": "<p>...</p>\n     <ins>\n      <p>Set <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text⑥\">script text</a> value to its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content④\">child text content</a>.</p>\n     </ins>\n     <p>If the <span>active speculative HTML parser</span> is null, then <span>prepare the script\n        element</span> <var>script</var>. This might cause some script to execute, which might cause\n        <span data-x=\"dom-document-write\">new characters to be inserted into the tokenizer</span>, and\n        might cause the tokenizer to output more tokens, resulting in a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#nestedParsing\" id=\"ref-for-nestedParsing\">reentrant invocation of the parser</a>.</p>\n     <p>...</p>"
+              "html": "<p>...</p>\n     <ins>\n      <p>Set <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text④\">script text</a> value to its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content③\">child text content</a>.</p>\n     </ins>\n     <p>If the <span>active speculative HTML parser</span> is null, then <span>prepare the script\n        element</span> <var>script</var>. This might cause some script to execute, which might cause\n        <span data-x=\"dom-document-write\">new characters to be inserted into the tokenizer</span>, and\n        might cause the tokenizer to output more tokens, resulting in a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#nestedParsing\" id=\"ref-for-nestedParsing\">reentrant invocation of the parser</a>.</p>\n     <p>...</p>"
             }
           ]
         }
@@ -708,7 +620,7 @@
           "html": "<ins>\n      <p>Execute the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#prepare-the-script-text\" id=\"ref-for-prepare-the-script-text\">Prepare the script text</a> algorithm on <var>el</var>. If that algorithm threw an error, then return.</p>\n     </ins>"
         },
         {
-          "html": "<p>\n      Let <var>source text</var> be <var>el</var>’s \n      <del><a data-x-internal=\"child-text-content\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"script-processing-model:child-text-content\">child text content</a>.</del>\n      <ins><a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text⑦\">script text</a> value.</ins>\n     </p>"
+          "html": "<p>\n      Let <var>source text</var> be <var>el</var>’s \n      <del><a data-x-internal=\"child-text-content\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"script-processing-model:child-text-content\">child text content</a>.</del>\n      <ins><a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text⑤\">script text</a> value.</ins>\n     </p>"
         },
         {
           "html": "..."
@@ -729,7 +641,7 @@
           "html": "<p>Let <var>encodedScriptSource</var> be the result of removing the leading <code>\"javascript:\"</code> from <var>urlString</var>.</p>"
         },
         {
-          "html": "<p>Let <var>convertedScriptSource</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#process-value-with-a-default-policy\" id=\"ref-for-process-value-with-a-default-policy①\">Process value with a default policy</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①⑧\">TrustedScript</a></code> as <var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">clients</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>encodedScriptSource</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><code>\"Location href\"</code> as <var>sink</var></p>\n     </li></ul>\n     <p>If that algorithm threw an error or <var>convertedScriptSource</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①⑨\">TrustedScript</a></code> object, return \"Blocked\" and abort further steps.</p>"
+          "html": "<p>Let <var>convertedScriptSource</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/trusted-types/dist/spec/#process-value-with-a-default-policy\" id=\"ref-for-process-value-with-a-default-policy①\">Process value with a default policy</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①②\">TrustedScript</a></code> as <var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">clients</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>encodedScriptSource</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><code>\"Location href\"</code> as <var>sink</var></p>\n     </li></ul>\n     <p>If that algorithm threw an error or <var>convertedScriptSource</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\" id=\"ref-for-trustedscript①③\">TrustedScript</a></code> object, return \"Blocked\" and abort further steps.</p>"
         },
         {
           "html": "<p>Set <var>urlString</var> to be the result of prepending <code>\"javascript:\"</code> to stringified <var>convertedScriptSource</var>.</p>"

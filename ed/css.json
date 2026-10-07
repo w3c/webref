@@ -7040,7 +7040,7 @@
     {
       "name": "continue",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-continue",
-      "initial": "auto",
+      "initial": "normal",
       "appliesTo": "block containers and multicol containers",
       "inherited": "no",
       "percentages": "N/A",
@@ -7050,7 +7050,7 @@
       "styleDeclaration": [
         "continue"
       ],
-      "syntax": "auto | discard | collapse | -webkit-legacy | overflow | paginate | fragments",
+      "syntax": "normal | discard | collapse | -webkit-legacy | overflow | paginate | fragments",
       "extended": [
         "https://drafts.csswg.org/css-overflow-5/"
       ]
@@ -10183,7 +10183,7 @@
         "block-ellipsis",
         "continue"
       ],
-      "syntax": "none | [<integer [1,∞]> || auto || <'block-ellipsis'>] -webkit-legacy?",
+      "syntax": "none | [<'max-lines'> || <'block-ellipsis'>] -webkit-legacy?",
       "extended": []
     },
     {

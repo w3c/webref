@@ -4,7 +4,7 @@ interface HTMLScriptElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions, Reflect] attribute DOMString type;
-  [CEReactions, ReflectURL] attribute USVString src;
+  [CEReactions] attribute (TrustedScriptURL or USVString) src;
   [CEReactions, Reflect] attribute boolean noModule;
   [CEReactions] attribute boolean async;
   [CEReactions, Reflect] attribute boolean defer;
@@ -14,7 +14,10 @@ interface HTMLScriptElement : HTMLElement {
   [CEReactions, Reflect] attribute DOMString integrity;
   [CEReactions] attribute DOMString fetchPriority;
 
-  [CEReactions] attribute DOMString text;
+  // innerText and textContent shadow HTMLElement's and Node's, to add Trusted Types checks
+  [CEReactions] attribute (TrustedScript or [LegacyNullToEmptyString] DOMString) innerText;
+  [CEReactions] attribute (TrustedScript or DOMString)? textContent;
+  [CEReactions] attribute (TrustedScript or DOMString) text;
 
   static boolean supports(DOMString type);
 
