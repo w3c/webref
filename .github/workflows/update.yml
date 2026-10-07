@@ -36,7 +36,7 @@ jobs:
     # additional discontinued specs, kept for cross-referencing purpose.
     - name: Crawl specs with Reffy
       env:
-        RELEASE: ${{ (env.CRAWL_TYPE == 'ed') && '' || '--release' }}
+        RELEASE: ${{ (env.CRAWL_TYPE == 'tr') && '--release' || '' }}
         SPECS: ${{ (env.CRAWL_TYPE == 'ed') && 'all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt rfc7230 rfc7231 rfc7232 rfc7233 rfc7234 rfc7235' || 'all' }}
       run: |
         mkdir report
