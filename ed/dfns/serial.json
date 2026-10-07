@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Serial API",
+    "title": "Serial Standard",
     "url": "https://serial.spec.whatwg.org/"
   },
   "dfns": [
@@ -10,9 +10,7 @@
       "linkingText": [
         "serial"
       ],
-      "localLinkingText": [
-        "Navigator.serial"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Navigator"
@@ -23,9 +21,6 @@
         "id": "serial-attribute",
         "href": "https://serial.spec.whatwg.org/#serial-attribute",
         "title": "serial attribute",
-        "alternateIds": [
-          "x1-1-serial-attribute"
-        ],
         "number": "1.1"
       },
       "definedIn": "heading",
@@ -37,9 +32,7 @@
       "linkingText": [
         "serial"
       ],
-      "localLinkingText": [
-        "WorkerNavigator.serial"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "WorkerNavigator"
@@ -50,17 +43,14 @@
         "id": "serial-attribute-0",
         "href": "https://serial.spec.whatwg.org/#serial-attribute-0",
         "title": "serial attribute",
-        "alternateIds": [
-          "x2-1-serial-attribute"
-        ],
         "number": "2.1"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-serial",
-      "href": "https://serial.spec.whatwg.org/#dom-serial",
+      "id": "serial",
+      "href": "https://serial.spec.whatwg.org/#serial",
       "linkingText": [
         "Serial"
       ],
@@ -73,9 +63,29 @@
         "id": "serial-interface",
         "href": "https://serial.spec.whatwg.org/#serial-interface",
         "title": "Serial interface",
-        "alternateIds": [
-          "x3-serial-interface"
-        ],
+        "number": "3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-serial-requestport-options-options",
+      "href": "https://serial.spec.whatwg.org/#dom-serial-requestport-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Serial/requestPort(options)",
+        "Serial/requestPort()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serial-interface",
+        "href": "https://serial.spec.whatwg.org/#serial-interface",
+        "title": "Serial interface",
         "number": "3"
       },
       "definedIn": "pre",
@@ -85,14 +95,10 @@
       "id": "dom-serial-requestport",
       "href": "https://serial.spec.whatwg.org/#dom-serial-requestport",
       "linkingText": [
-        "requestPort()",
-        "requestPort(options)"
+        "requestPort(options)",
+        "requestPort()"
       ],
-      "localLinkingText": [
-        "Serial.requestPort",
-        "Serial.requestPort()",
-        "requestPort"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "Serial"
@@ -103,17 +109,14 @@
         "id": "requestport-method",
         "href": "https://serial.spec.whatwg.org/#requestport-method",
         "title": "requestPort() method",
-        "alternateIds": [
-          "x3-1-requestport-method"
-        ],
         "number": "3.1"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-available",
-      "href": "https://serial.spec.whatwg.org/#dfn-available",
+      "id": "available",
+      "href": "https://serial.spec.whatwg.org/#available",
       "linkingText": [
         "available"
       ],
@@ -126,17 +129,14 @@
         "id": "requestport-method",
         "href": "https://serial.spec.whatwg.org/#requestport-method",
         "title": "requestPort() method",
-        "alternateIds": [
-          "x3-1-requestport-method"
-        ],
         "number": "3.1"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-serialportrequestoptions",
-      "href": "https://serial.spec.whatwg.org/#dom-serialportrequestoptions",
+      "id": "dictdef-serialportrequestoptions",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialportrequestoptions",
       "linkingText": [
         "SerialPortRequestOptions"
       ],
@@ -149,9 +149,6 @@
         "id": "serialportrequestoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportrequestoptions-dictionary",
         "title": "SerialPortRequestOptions dictionary",
-        "alternateIds": [
-          "x3-1-1-serialportrequestoptions-dictionary"
-        ],
         "number": "3.1.1"
       },
       "definedIn": "heading",
@@ -174,9 +171,6 @@
         "id": "serialportrequestoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportrequestoptions-dictionary",
         "title": "SerialPortRequestOptions dictionary",
-        "alternateIds": [
-          "x3-1-1-serialportrequestoptions-dictionary"
-        ],
         "number": "3.1.1"
       },
       "definedIn": "dt",
@@ -199,17 +193,14 @@
         "id": "serialportrequestoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportrequestoptions-dictionary",
         "title": "SerialPortRequestOptions dictionary",
-        "alternateIds": [
-          "x3-1-1-serialportrequestoptions-dictionary"
-        ],
         "number": "3.1.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-serialportfilter",
-      "href": "https://serial.spec.whatwg.org/#dom-serialportfilter",
+      "id": "dictdef-serialportfilter",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialportfilter",
       "linkingText": [
         "SerialPortFilter"
       ],
@@ -222,9 +213,6 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "heading",
@@ -247,9 +235,6 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "dt",
@@ -272,9 +257,6 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "dt",
@@ -297,17 +279,14 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-matches-the-filter",
-      "href": "https://serial.spec.whatwg.org/#dfn-matches-the-filter",
+      "id": "matches-the-filter",
+      "href": "https://serial.spec.whatwg.org/#matches-the-filter",
       "linkingText": [
         "matches the filter"
       ],
@@ -320,17 +299,14 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-match-any-filter",
-      "href": "https://serial.spec.whatwg.org/#dfn-match-any-filter",
+      "id": "match-any-filter",
+      "href": "https://serial.spec.whatwg.org/#match-any-filter",
       "linkingText": [
         "match any filter",
         "matches any filter"
@@ -344,9 +320,6 @@
         "id": "serialportfilter-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportfilter-dictionary",
         "title": "SerialPortFilter dictionary",
-        "alternateIds": [
-          "x3-1-2-serialportfilter-dictionary"
-        ],
         "number": "3.1.2"
       },
       "definedIn": "prose",
@@ -358,11 +331,7 @@
       "linkingText": [
         "getPorts()"
       ],
-      "localLinkingText": [
-        "Serial.getPorts",
-        "Serial.getPorts()",
-        "getPorts"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "Serial"
@@ -373,9 +342,6 @@
         "id": "getports-method",
         "href": "https://serial.spec.whatwg.org/#getports-method",
         "title": "getPorts() method",
-        "alternateIds": [
-          "x3-2-getports-method"
-        ],
         "number": "3.2"
       },
       "definedIn": "heading",
@@ -387,9 +353,7 @@
       "linkingText": [
         "onconnect"
       ],
-      "localLinkingText": [
-        "Serial.onconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Serial"
@@ -400,9 +364,6 @@
         "id": "onconnect-attribute",
         "href": "https://serial.spec.whatwg.org/#onconnect-attribute",
         "title": "onconnect attribute",
-        "alternateIds": [
-          "x3-3-onconnect-attribute"
-        ],
         "number": "3.3"
       },
       "definedIn": "heading",
@@ -415,17 +376,16 @@
         "connect"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "onconnect-attribute",
         "href": "https://serial.spec.whatwg.org/#onconnect-attribute",
         "title": "onconnect attribute",
-        "alternateIds": [
-          "x3-3-onconnect-attribute"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
@@ -437,9 +397,7 @@
       "linkingText": [
         "ondisconnect"
       ],
-      "localLinkingText": [
-        "Serial.ondisconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Serial"
@@ -450,9 +408,6 @@
         "id": "ondisconnect-attribute",
         "href": "https://serial.spec.whatwg.org/#ondisconnect-attribute",
         "title": "ondisconnect attribute",
-        "alternateIds": [
-          "x3-4-ondisconnect-attribute"
-        ],
         "number": "3.4"
       },
       "definedIn": "heading",
@@ -465,17 +420,16 @@
         "disconnect"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "ondisconnect-attribute",
         "href": "https://serial.spec.whatwg.org/#ondisconnect-attribute",
         "title": "ondisconnect attribute",
-        "alternateIds": [
-          "x3-4-ondisconnect-attribute"
-        ],
         "number": "3.4"
       },
       "definedIn": "prose",
@@ -496,17 +450,59 @@
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-serial-port-task-source",
-      "href": "https://serial.spec.whatwg.org/#dfn-serial-port-task-source",
+      "id": "dom-serialport-open-options-options",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-open-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SerialPort/open(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "href": "https://serial.spec.whatwg.org/#serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-serialport-setsignals-signals-signals",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-setsignals-signals-signals",
+      "linkingText": [
+        "signals"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SerialPort/setSignals(signals)",
+        "SerialPort/setSignals()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "href": "https://serial.spec.whatwg.org/#serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "serial-port-task-source",
+      "href": "https://serial.spec.whatwg.org/#serial-port-task-source",
       "linkingText": [
         "serial port task source"
       ],
@@ -519,17 +515,14 @@
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-state",
-      "href": "https://serial.spec.whatwg.org/#dfn-state",
+      "id": "dom-serialport-state-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-state-slot",
       "linkingText": [
         "[[state]]"
       ],
@@ -538,23 +531,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-buffersize",
-      "href": "https://serial.spec.whatwg.org/#dfn-buffersize",
+      "id": "dom-serialport-buffersize-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-buffersize-slot",
       "linkingText": [
         "[[bufferSize]]"
       ],
@@ -563,23 +553,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-connected",
-      "href": "https://serial.spec.whatwg.org/#dfn-connected",
+      "id": "dom-serialport-connected-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-connected-slot",
       "linkingText": [
         "[[connected]]"
       ],
@@ -588,23 +575,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-readable",
-      "href": "https://serial.spec.whatwg.org/#dfn-readable",
+      "id": "dom-serialport-readable-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-readable-slot",
       "linkingText": [
         "[[readable]]"
       ],
@@ -613,23 +597,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-readfatal",
-      "href": "https://serial.spec.whatwg.org/#dfn-readfatal",
+      "id": "dom-serialport-readfatal-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-readfatal-slot",
       "linkingText": [
         "[[readFatal]]"
       ],
@@ -638,23 +619,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-writable",
-      "href": "https://serial.spec.whatwg.org/#dfn-writable",
+      "id": "dom-serialport-writable-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-writable-slot",
       "linkingText": [
         "[[writable]]"
       ],
@@ -663,23 +641,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-writefatal",
-      "href": "https://serial.spec.whatwg.org/#dfn-writefatal",
+      "id": "dom-serialport-writefatal-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-writefatal-slot",
       "linkingText": [
         "[[writeFatal]]"
       ],
@@ -688,23 +663,20 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-pendingclosepromise",
-      "href": "https://serial.spec.whatwg.org/#dfn-pendingclosepromise",
+      "id": "dom-serialport-pendingclosepromise-slot",
+      "href": "https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot",
       "linkingText": [
         "[[pendingClosePromise]]"
       ],
@@ -713,15 +685,12 @@
       "for": [
         "SerialPort"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "href": "https://serial.spec.whatwg.org/#serialport-interface",
         "title": "SerialPort interface",
-        "alternateIds": [
-          "x4-serialport-interface"
-        ],
         "number": "4"
       },
       "definedIn": "table",
@@ -733,9 +702,7 @@
       "linkingText": [
         "onconnect"
       ],
-      "localLinkingText": [
-        "SerialPort.onconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "SerialPort"
@@ -746,17 +713,14 @@
         "id": "onconnect-attribute-0",
         "href": "https://serial.spec.whatwg.org/#onconnect-attribute-0",
         "title": "onconnect attribute",
-        "alternateIds": [
-          "x4-1-onconnect-attribute"
-        ],
         "number": "4.1"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-logically-connected",
-      "href": "https://serial.spec.whatwg.org/#dfn-logically-connected",
+      "id": "logically-connected",
+      "href": "https://serial.spec.whatwg.org/#logically-connected",
       "linkingText": [
         "logically connected"
       ],
@@ -769,9 +733,6 @@
         "id": "onconnect-attribute-0",
         "href": "https://serial.spec.whatwg.org/#onconnect-attribute-0",
         "title": "onconnect attribute",
-        "alternateIds": [
-          "x4-1-onconnect-attribute"
-        ],
         "number": "4.1"
       },
       "definedIn": "prose",
@@ -783,9 +744,7 @@
       "linkingText": [
         "ondisconnect"
       ],
-      "localLinkingText": [
-        "SerialPort.ondisconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "SerialPort"
@@ -796,9 +755,6 @@
         "id": "ondisconnect-attribute-0",
         "href": "https://serial.spec.whatwg.org/#ondisconnect-attribute-0",
         "title": "ondisconnect attribute",
-        "alternateIds": [
-          "x4-2-ondisconnect-attribute"
-        ],
         "number": "4.2"
       },
       "definedIn": "heading",
@@ -810,11 +766,7 @@
       "linkingText": [
         "getInfo()"
       ],
-      "localLinkingText": [
-        "SerialPort.getInfo",
-        "SerialPort.getInfo()",
-        "getInfo"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -825,17 +777,14 @@
         "id": "getinfo-method",
         "href": "https://serial.spec.whatwg.org/#getinfo-method",
         "title": "getInfo() method",
-        "alternateIds": [
-          "x4-3-getinfo-method"
-        ],
         "number": "4.3"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-serialportinfo",
-      "href": "https://serial.spec.whatwg.org/#dom-serialportinfo",
+      "id": "dictdef-serialportinfo",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialportinfo",
       "linkingText": [
         "SerialPortInfo"
       ],
@@ -848,9 +797,6 @@
         "id": "serialportinfo-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportinfo-dictionary",
         "title": "SerialPortInfo dictionary",
-        "alternateIds": [
-          "x4-3-1-serialportinfo-dictionary"
-        ],
         "number": "4.3.1"
       },
       "definedIn": "heading",
@@ -873,9 +819,6 @@
         "id": "serialportinfo-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportinfo-dictionary",
         "title": "SerialPortInfo dictionary",
-        "alternateIds": [
-          "x4-3-1-serialportinfo-dictionary"
-        ],
         "number": "4.3.1"
       },
       "definedIn": "dt",
@@ -898,9 +841,6 @@
         "id": "serialportinfo-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportinfo-dictionary",
         "title": "SerialPortInfo dictionary",
-        "alternateIds": [
-          "x4-3-1-serialportinfo-dictionary"
-        ],
         "number": "4.3.1"
       },
       "definedIn": "dt",
@@ -923,9 +863,6 @@
         "id": "serialportinfo-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialportinfo-dictionary",
         "title": "SerialPortInfo dictionary",
-        "alternateIds": [
-          "x4-3-1-serialportinfo-dictionary"
-        ],
         "number": "4.3.1"
       },
       "definedIn": "dt",
@@ -935,14 +872,10 @@
       "id": "dom-serialport-open",
       "href": "https://serial.spec.whatwg.org/#dom-serialport-open",
       "linkingText": [
-        "open()",
-        "open(options)"
+        "open(options)",
+        "open()"
       ],
-      "localLinkingText": [
-        "SerialPort.open",
-        "SerialPort.open()",
-        "open"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -953,17 +886,14 @@
         "id": "open-method",
         "href": "https://serial.spec.whatwg.org/#open-method",
         "title": "open() method",
-        "alternateIds": [
-          "x4-4-open-method"
-        ],
         "number": "4.4"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-serialoptions",
-      "href": "https://serial.spec.whatwg.org/#dom-serialoptions",
+      "id": "dictdef-serialoptions",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialoptions",
       "linkingText": [
         "SerialOptions"
       ],
@@ -976,9 +906,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "heading",
@@ -1001,9 +928,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
@@ -1026,9 +950,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
@@ -1051,9 +972,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
@@ -1076,9 +994,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
@@ -1101,9 +1016,6 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
@@ -1126,17 +1038,14 @@
         "id": "serialoptions-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "alternateIds": [
-          "x4-4-1-serialoptions-dictionary"
-        ],
         "number": "4.4.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-paritytype",
-      "href": "https://serial.spec.whatwg.org/#dom-paritytype",
+      "id": "enumdef-paritytype",
+      "href": "https://serial.spec.whatwg.org/#enumdef-paritytype",
       "linkingText": [
         "ParityType"
       ],
@@ -1149,9 +1058,6 @@
         "id": "paritytype-enum",
         "href": "https://serial.spec.whatwg.org/#paritytype-enum",
         "title": "ParityType enum",
-        "alternateIds": [
-          "x4-4-1-1-paritytype-enum"
-        ],
         "number": "4.4.1.1"
       },
       "definedIn": "heading",
@@ -1161,6 +1067,7 @@
       "id": "dom-paritytype-none",
       "href": "https://serial.spec.whatwg.org/#dom-paritytype-none",
       "linkingText": [
+        "\"none\"",
         "none"
       ],
       "localLinkingText": [],
@@ -1174,9 +1081,6 @@
         "id": "paritytype-enum",
         "href": "https://serial.spec.whatwg.org/#paritytype-enum",
         "title": "ParityType enum",
-        "alternateIds": [
-          "x4-4-1-1-paritytype-enum"
-        ],
         "number": "4.4.1.1"
       },
       "definedIn": "dt",
@@ -1186,6 +1090,7 @@
       "id": "dom-paritytype-even",
       "href": "https://serial.spec.whatwg.org/#dom-paritytype-even",
       "linkingText": [
+        "\"even\"",
         "even"
       ],
       "localLinkingText": [],
@@ -1199,9 +1104,6 @@
         "id": "paritytype-enum",
         "href": "https://serial.spec.whatwg.org/#paritytype-enum",
         "title": "ParityType enum",
-        "alternateIds": [
-          "x4-4-1-1-paritytype-enum"
-        ],
         "number": "4.4.1.1"
       },
       "definedIn": "dt",
@@ -1211,6 +1113,7 @@
       "id": "dom-paritytype-odd",
       "href": "https://serial.spec.whatwg.org/#dom-paritytype-odd",
       "linkingText": [
+        "\"odd\"",
         "odd"
       ],
       "localLinkingText": [],
@@ -1224,17 +1127,14 @@
         "id": "paritytype-enum",
         "href": "https://serial.spec.whatwg.org/#paritytype-enum",
         "title": "ParityType enum",
-        "alternateIds": [
-          "x4-4-1-1-paritytype-enum"
-        ],
         "number": "4.4.1.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-flowcontroltype",
-      "href": "https://serial.spec.whatwg.org/#dom-flowcontroltype",
+      "id": "enumdef-flowcontroltype",
+      "href": "https://serial.spec.whatwg.org/#enumdef-flowcontroltype",
       "linkingText": [
         "FlowControlType"
       ],
@@ -1247,9 +1147,6 @@
         "id": "flowcontroltype-enum",
         "href": "https://serial.spec.whatwg.org/#flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "alternateIds": [
-          "x4-4-1-2-flowcontroltype-enum"
-        ],
         "number": "4.4.1.2"
       },
       "definedIn": "heading",
@@ -1259,6 +1156,7 @@
       "id": "dom-flowcontroltype-none",
       "href": "https://serial.spec.whatwg.org/#dom-flowcontroltype-none",
       "linkingText": [
+        "\"none\"",
         "none"
       ],
       "localLinkingText": [],
@@ -1272,9 +1170,6 @@
         "id": "flowcontroltype-enum",
         "href": "https://serial.spec.whatwg.org/#flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "alternateIds": [
-          "x4-4-1-2-flowcontroltype-enum"
-        ],
         "number": "4.4.1.2"
       },
       "definedIn": "dt",
@@ -1284,6 +1179,7 @@
       "id": "dom-flowcontroltype-hardware",
       "href": "https://serial.spec.whatwg.org/#dom-flowcontroltype-hardware",
       "linkingText": [
+        "\"hardware\"",
         "hardware"
       ],
       "localLinkingText": [],
@@ -1297,9 +1193,6 @@
         "id": "flowcontroltype-enum",
         "href": "https://serial.spec.whatwg.org/#flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "alternateIds": [
-          "x4-4-1-2-flowcontroltype-enum"
-        ],
         "number": "4.4.1.2"
       },
       "definedIn": "dt",
@@ -1311,9 +1204,7 @@
       "linkingText": [
         "connected"
       ],
-      "localLinkingText": [
-        "SerialPort.connected"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "SerialPort"
@@ -1324,9 +1215,6 @@
         "id": "connected-attribute",
         "href": "https://serial.spec.whatwg.org/#connected-attribute",
         "title": "connected attribute",
-        "alternateIds": [
-          "x4-5-connected-attribute"
-        ],
         "number": "4.5"
       },
       "definedIn": "heading",
@@ -1338,9 +1226,7 @@
       "linkingText": [
         "readable"
       ],
-      "localLinkingText": [
-        "SerialPort.readable"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "SerialPort"
@@ -1351,17 +1237,14 @@
         "id": "readable-attribute",
         "href": "https://serial.spec.whatwg.org/#readable-attribute",
         "title": "readable attribute",
-        "alternateIds": [
-          "x4-6-readable-attribute"
-        ],
         "number": "4.6"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-handle-closing-the-readable-stream",
-      "href": "https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream",
+      "id": "handle-closing-the-readable-stream",
+      "href": "https://serial.spec.whatwg.org/#handle-closing-the-readable-stream",
       "linkingText": [
         "handle closing the readable stream"
       ],
@@ -1374,9 +1257,6 @@
         "id": "readable-attribute",
         "href": "https://serial.spec.whatwg.org/#readable-attribute",
         "title": "readable attribute",
-        "alternateIds": [
-          "x4-6-readable-attribute"
-        ],
         "number": "4.6"
       },
       "definedIn": "prose",
@@ -1388,9 +1268,7 @@
       "linkingText": [
         "writable"
       ],
-      "localLinkingText": [
-        "SerialPort.writable"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "SerialPort"
@@ -1401,17 +1279,14 @@
         "id": "writable-attribute",
         "href": "https://serial.spec.whatwg.org/#writable-attribute",
         "title": "writable attribute",
-        "alternateIds": [
-          "x4-7-writable-attribute"
-        ],
         "number": "4.7"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-handle-closing-the-writable-stream",
-      "href": "https://serial.spec.whatwg.org/#dfn-handle-closing-the-writable-stream",
+      "id": "handle-closing-the-writable-stream",
+      "href": "https://serial.spec.whatwg.org/#handle-closing-the-writable-stream",
       "linkingText": [
         "handle closing the writable stream"
       ],
@@ -1424,9 +1299,6 @@
         "id": "writable-attribute",
         "href": "https://serial.spec.whatwg.org/#writable-attribute",
         "title": "writable attribute",
-        "alternateIds": [
-          "x4-7-writable-attribute"
-        ],
         "number": "4.7"
       },
       "definedIn": "prose",
@@ -1436,14 +1308,10 @@
       "id": "dom-serialport-setsignals",
       "href": "https://serial.spec.whatwg.org/#dom-serialport-setsignals",
       "linkingText": [
-        "setSignals()",
-        "setSignals(signals)"
+        "setSignals(signals)",
+        "setSignals()"
       ],
-      "localLinkingText": [
-        "SerialPort.setSignals",
-        "SerialPort.setSignals()",
-        "setSignals"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -1454,17 +1322,14 @@
         "id": "setsignals-method",
         "href": "https://serial.spec.whatwg.org/#setsignals-method",
         "title": "setSignals() method",
-        "alternateIds": [
-          "x4-8-setsignals-method"
-        ],
         "number": "4.8"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-serialoutputsignals",
-      "href": "https://serial.spec.whatwg.org/#dom-serialoutputsignals",
+      "id": "dictdef-serialoutputsignals",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialoutputsignals",
       "linkingText": [
         "SerialOutputSignals"
       ],
@@ -1477,9 +1342,6 @@
         "id": "serialoutputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoutputsignals-dictionary",
         "title": "SerialOutputSignals dictionary",
-        "alternateIds": [
-          "x4-8-1-serialoutputsignals-dictionary"
-        ],
         "number": "4.8.1"
       },
       "definedIn": "heading",
@@ -1502,9 +1364,6 @@
         "id": "serialoutputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoutputsignals-dictionary",
         "title": "SerialOutputSignals dictionary",
-        "alternateIds": [
-          "x4-8-1-serialoutputsignals-dictionary"
-        ],
         "number": "4.8.1"
       },
       "definedIn": "dt",
@@ -1527,9 +1386,6 @@
         "id": "serialoutputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoutputsignals-dictionary",
         "title": "SerialOutputSignals dictionary",
-        "alternateIds": [
-          "x4-8-1-serialoutputsignals-dictionary"
-        ],
         "number": "4.8.1"
       },
       "definedIn": "dt",
@@ -1552,9 +1408,6 @@
         "id": "serialoutputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialoutputsignals-dictionary",
         "title": "SerialOutputSignals dictionary",
-        "alternateIds": [
-          "x4-8-1-serialoutputsignals-dictionary"
-        ],
         "number": "4.8.1"
       },
       "definedIn": "dt",
@@ -1566,11 +1419,7 @@
       "linkingText": [
         "getSignals()"
       ],
-      "localLinkingText": [
-        "SerialPort.getSignals",
-        "SerialPort.getSignals()",
-        "getSignals"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -1581,17 +1430,14 @@
         "id": "getsignals-method",
         "href": "https://serial.spec.whatwg.org/#getsignals-method",
         "title": "getSignals() method",
-        "alternateIds": [
-          "x4-9-getsignals-method"
-        ],
         "number": "4.9"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-serialinputsignals",
-      "href": "https://serial.spec.whatwg.org/#dom-serialinputsignals",
+      "id": "dictdef-serialinputsignals",
+      "href": "https://serial.spec.whatwg.org/#dictdef-serialinputsignals",
       "linkingText": [
         "SerialInputSignals"
       ],
@@ -1604,9 +1450,6 @@
         "id": "serialinputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialinputsignals-dictionary",
         "title": "SerialInputSignals dictionary",
-        "alternateIds": [
-          "x4-9-1-serialinputsignals-dictionary"
-        ],
         "number": "4.9.1"
       },
       "definedIn": "heading",
@@ -1629,9 +1472,6 @@
         "id": "serialinputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialinputsignals-dictionary",
         "title": "SerialInputSignals dictionary",
-        "alternateIds": [
-          "x4-9-1-serialinputsignals-dictionary"
-        ],
         "number": "4.9.1"
       },
       "definedIn": "dt",
@@ -1654,9 +1494,6 @@
         "id": "serialinputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialinputsignals-dictionary",
         "title": "SerialInputSignals dictionary",
-        "alternateIds": [
-          "x4-9-1-serialinputsignals-dictionary"
-        ],
         "number": "4.9.1"
       },
       "definedIn": "dt",
@@ -1679,9 +1516,6 @@
         "id": "serialinputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialinputsignals-dictionary",
         "title": "SerialInputSignals dictionary",
-        "alternateIds": [
-          "x4-9-1-serialinputsignals-dictionary"
-        ],
         "number": "4.9.1"
       },
       "definedIn": "dt",
@@ -1704,9 +1538,6 @@
         "id": "serialinputsignals-dictionary",
         "href": "https://serial.spec.whatwg.org/#serialinputsignals-dictionary",
         "title": "SerialInputSignals dictionary",
-        "alternateIds": [
-          "x4-9-1-serialinputsignals-dictionary"
-        ],
         "number": "4.9.1"
       },
       "definedIn": "dt",
@@ -1718,11 +1549,7 @@
       "linkingText": [
         "close()"
       ],
-      "localLinkingText": [
-        "SerialPort.close",
-        "SerialPort.close()",
-        "close"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -1733,9 +1560,6 @@
         "id": "close-method",
         "href": "https://serial.spec.whatwg.org/#close-method",
         "title": "close() method",
-        "alternateIds": [
-          "x4-10-close-method"
-        ],
         "number": "4.10"
       },
       "definedIn": "heading",
@@ -1747,11 +1571,7 @@
       "linkingText": [
         "forget()"
       ],
-      "localLinkingText": [
-        "SerialPort.forget",
-        "SerialPort.forget()",
-        "forget"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "SerialPort"
@@ -1762,17 +1582,14 @@
         "id": "forget-method",
         "href": "https://serial.spec.whatwg.org/#forget-method",
         "title": "forget() method",
-        "alternateIds": [
-          "x4-11-forget-method"
-        ],
         "number": "4.11"
       },
       "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-parsing-the-bluetooth-service-class-id-blocklist",
-      "href": "https://serial.spec.whatwg.org/#dfn-parsing-the-bluetooth-service-class-id-blocklist",
+      "id": "parsing-the-bluetooth-service-class-id-blocklist",
+      "href": "https://serial.spec.whatwg.org/#parsing-the-bluetooth-service-class-id-blocklist",
       "linkingText": [
         "parsing the Bluetooth service class ID blocklist"
       ],
@@ -1785,17 +1602,14 @@
         "id": "blocklist",
         "href": "https://serial.spec.whatwg.org/#blocklist",
         "title": "Blocklist",
-        "alternateIds": [
-          "x5-blocklist"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-serial-port-profile-service-class-id",
-      "href": "https://serial.spec.whatwg.org/#dfn-serial-port-profile-service-class-id",
+      "id": "serial-port-profile-service-class-id",
+      "href": "https://serial.spec.whatwg.org/#serial-port-profile-service-class-id",
       "linkingText": [
         "Serial Port Profile service class ID"
       ],
@@ -1808,17 +1622,14 @@
         "id": "blocklist",
         "href": "https://serial.spec.whatwg.org/#blocklist",
         "title": "Blocklist",
-        "alternateIds": [
-          "x5-blocklist"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-blocked-bluetooth-service-class-uuid",
-      "href": "https://serial.spec.whatwg.org/#dfn-blocked-bluetooth-service-class-uuid",
+      "id": "blocked-bluetooth-service-class-uuid",
+      "href": "https://serial.spec.whatwg.org/#blocked-bluetooth-service-class-uuid",
       "linkingText": [
         "blocked Bluetooth service class UUID"
       ],
@@ -1831,17 +1642,14 @@
         "id": "blocklist",
         "href": "https://serial.spec.whatwg.org/#blocklist",
         "title": "Blocklist",
-        "alternateIds": [
-          "x5-blocklist"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-serial",
-      "href": "https://serial.spec.whatwg.org/#dfn-serial",
+      "id": "policy-controlled-feature-serial",
+      "href": "https://serial.spec.whatwg.org/#policy-controlled-feature-serial",
       "linkingText": [
         "serial"
       ],
@@ -1856,9 +1664,6 @@
         "id": "permissions-policy",
         "href": "https://serial.spec.whatwg.org/#permissions-policy",
         "title": "Permissions Policy",
-        "alternateIds": [
-          "x6-1-permissions-policy"
-        ],
         "number": "6.1"
       },
       "definedIn": "prose",

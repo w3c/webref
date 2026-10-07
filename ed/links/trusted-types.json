@@ -215,7 +215,6 @@
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
       "https://github.com/w3c/trusted-types/issues/507": {},
-      "https://github.com/w3c/trusted-types/issues/512": {},
       "https://github.com/w3c/trusted-types/issues/520": {},
       "https://github.com/w3c/webappsec": {},
       "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/DOMParser-parseFromString-regression.html": {},
@@ -693,11 +692,7 @@
           "concept-element-interface",
           "concept-child-text-content",
           "concept-node-document",
-          "concept-element-namespace",
-          "dom-node-textcontent",
-          "set-text-content",
-          "get-text-content",
-          "string-replace-all"
+          "concept-element-namespace"
         ]
       },
       "https://fetch.spec.whatwg.org/": {
@@ -718,22 +713,9 @@
           "configuration",
           "configure-a-sanitizer",
           "event-handler-content-attributes",
-          "set-the-inner-text-steps",
-          "get-the-text-steps",
-          "attr-script-src",
           "parsing-main-incdata",
           "nestedParsing",
           "prepare-the-script-element"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
-        "anchors": [
-          "cereactions"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/dom.html": {
-        "anchors": [
-          "dom-innertext"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
@@ -761,6 +743,8 @@
       },
       "https://html.spec.whatwg.org/multipage/scripting.html": {
         "anchors": [
+          "dom-script-src",
+          "dom-script-text",
           "htmlscriptelement"
         ]
       },
@@ -840,8 +824,7 @@
           "idl-any",
           "this",
           "exceptiondef-typeerror",
-          "invoke-a-callback-function",
-          "LegacyNullToEmptyString"
+          "invoke-a-callback-function"
         ]
       }
     }
