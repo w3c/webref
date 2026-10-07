@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-10-06T01:28:56.675Z",
+  "date": "2026-10-07T01:44:06.967Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -149,6 +149,7 @@
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
+      "tc39-thenable-curtailment",
       "testutils",
       "url",
       "urlpattern",
@@ -626,6 +627,7 @@
       "server-timing",
       "service-workers",
       "shacl12-core",
+      "shacl12-inference-rules",
       "shacl12-node-expr",
       "shacl12-profiling",
       "shacl12-sparql",
@@ -663,6 +665,7 @@
       "upgrade-insecure-requests",
       "user-timing",
       "vc-barcodes-1.0",
+      "vc-bitstring-status-list-1.1",
       "vc-bitstring-status-list",
       "vc-confidence-method",
       "vc-data-integrity-1.1",
@@ -704,6 +707,7 @@
       "webaudio-1.0",
       "webaudio-1.1",
       "webauthn-3",
+      "webauthn-4",
       "webcodecs-aac-codec-registration",
       "webcodecs-alaw-codec-registration",
       "webcodecs-av1-codec-registration",
@@ -759,6 +763,7 @@
     ],
     "post": [
       "csscomplete",
+      "cssdangling",
       "annotatelinks",
       "patchdfns"
     ],
@@ -781,10 +786,10 @@
     ]
   },
   "stats": {
-    "crawled": 418,
+    "crawled": 421,
     "errors": 0
   },
-  "crawler": "reffy-21.1.8",
+  "crawler": "reffy-21.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -830,7 +835,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "6 October 2026",
+      "date": "7 October 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -992,6 +997,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "accname"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/accname-1.2/",
         "https://w3c.github.io/aria/accname/"
@@ -2351,6 +2362,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "core-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/core-aam-1.2/",
         "https://w3c.github.io/aria/core-aam/"
@@ -11257,6 +11274,15 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing Accessibility API Mappings 1.1",
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "dpub-aam"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/dpub-aam-1.1/",
         "https://w3c.github.io/aria/dpub-aam/"
@@ -11311,6 +11337,12 @@
       "source": "w3c",
       "shortTitle": "Digital Publishing WAI-ARIA 1.1",
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "dpub-aria"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/dpub-aria-1.1/",
         "https://w3c.github.io/aria/dpub-aria/"
@@ -13176,6 +13208,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "graphics-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/graphics-aam-1.0/",
         "https://w3c.github.io/aria/graphics-aam/"
@@ -13233,6 +13271,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "graphics-aria"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/graphics-aria-1.0/",
         "https://w3c.github.io/aria/graphics-aria/"
@@ -13423,6 +13467,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "html-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/html-aam-1.0/",
         "https://w3c.github.io/aria/html-aam/"
@@ -17998,7 +18048,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf12-semantics/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19453,6 +19503,61 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/shacl12-inference-rules/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-inference-rules",
+      "series": {
+        "shortname": "shacl-inference-rules",
+        "currentSpecification": "shacl12-inference-rules",
+        "title": "SHACL Inference Rules",
+        "shortTitle": "SHACL Inference Rules",
+        "releaseUrl": "https://www.w3.org/TR/shacl-inference-rules/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-inference-rules/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-inference-rules/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-inference-rules/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-inference-rules/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Inference Rules",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Inference Rules",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-inference-rules/",
+        "https://w3c.github.io/data-shapes/shacl12-inference-rules/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-inference-rules/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 15 Sep 2026 13:33:05 GMT"
+      },
+      "generator": "respec",
+      "date": "17 September 2026",
+      "links": "links/shacl12-inference-rules.json",
+      "refs": "refs/shacl12-inference-rules.json",
+      "dfns": "dfns/shacl12-inference-rules.json",
+      "headings": "headings/shacl12-inference-rules.json",
+      "ids": "ids/shacl12-inference-rules.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/shacl12-node-expr/",
       "seriesComposition": "full",
       "shortname": "shacl12-node-expr",
@@ -20373,7 +20478,7 @@
         "title": "SVG Accessibility API Mappings",
         "shortTitle": "SVG Accessibility API Mappings",
         "releaseUrl": "https://www.w3.org/TR/svg-aam/",
-        "nightlyUrl": "https://w3c.github.io/svg-aam/"
+        "nightlyUrl": "https://w3c.github.io/aria/svg-aam/"
       },
       "seriesVersion": "1.0",
       "organization": "W3C",
@@ -20389,7 +20494,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/svg-aam/",
+        "url": "https://w3c.github.io/aria/svg-aam/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/aria",
@@ -20411,7 +20516,7 @@
       },
       "versions": [
         "https://www.w3.org/TR/svg-aam-1.0/",
-        "https://w3c.github.io/svg-aam/"
+        "https://w3c.github.io/aria/svg-aam/"
       ],
       "crawled": "https://www.w3.org/TR/svg-aam-1.0/",
       "crawlCacheInfo": {
@@ -20853,9 +20958,9 @@
       ],
       "crawled": "https://www.w3.org/TR/SVG2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Oct 2018 17:56:01 GMT"
+        "lastModified": "Fri, 02 Oct 2026 13:48:26 GMT"
       },
-      "date": "04 October 2018",
+      "date": "06 October 2026",
       "algorithms": "algorithms/SVG2.json",
       "links": "links/SVG2.json",
       "refs": "refs/SVG2.json",
@@ -21750,6 +21855,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
+      "seriesComposition": "full",
+      "shortname": "vc-bitstring-status-list-1.1",
+      "series": {
+        "shortname": "vc-bitstring-status-list",
+        "currentSpecification": "vc-bitstring-status-list",
+        "title": "Bitstring Status List",
+        "shortTitle": "Bitstring Status List",
+        "releaseUrl": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-bitstring-status-list/"
+      },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "vc-bitstring-status-list",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-bitstring-status-list/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-bitstring-status-list",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Bitstring Status List v1.1",
+      "source": "w3c",
+      "shortTitle": "Bitstring Status List v1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
+        "https://w3c.github.io/vc-bitstring-status-list/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 29 Sep 2026 22:02:44 GMT"
+      },
+      "generator": "respec",
+      "date": "24 September 2026",
+      "algorithms": "algorithms/vc-bitstring-status-list-1.1.json",
+      "links": "links/vc-bitstring-status-list-1.1.json",
+      "refs": "refs/vc-bitstring-status-list-1.1.json",
+      "dfns": "dfns/vc-bitstring-status-list-1.1.json",
+      "headings": "headings/vc-bitstring-status-list-1.1.json",
+      "ids": "ids/vc-bitstring-status-list-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
       "seriesComposition": "full",
       "shortname": "vc-bitstring-status-list",
@@ -21759,8 +21921,15 @@
         "title": "Bitstring Status List",
         "shortTitle": "Bitstring Status List",
         "releaseUrl": "https://www.w3.org/TR/vc-bitstring-status-list/",
-        "nightlyUrl": "https://w3c.github.io/vc-bitstring-status-list/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-bitstring-status-list/"
       },
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-bitstring-status-list-1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -21773,22 +21942,13 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/vc-bitstring-status-list/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-bitstring-status-list",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Bitstring Status List v1.0",
       "source": "w3c",
       "shortTitle": "Bitstring Status List v1.0",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-bitstring-status-list/",
-        "https://w3c.github.io/vc-bitstring-status-list/"
+        "https://www.w3.org/TR/vc-bitstring-status-list/"
       ],
       "crawled": "https://www.w3.org/TR/vc-bitstring-status-list/",
       "crawlCacheInfo": {
@@ -22686,11 +22846,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-render-method/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Sep 2026 14:33:36 GMT"
+        "lastModified": "Tue, 06 Oct 2026 13:56:20 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2026",
-      "revision": "d00c2f111ae97794ae4a2619787c386d153cdc7d",
+      "date": "06 October 2026",
+      "revision": "a22ebe02286eb0fda871799277720518567855df",
       "algorithms": "algorithms/vc-render-method.json",
       "links": "links/vc-render-method.json",
       "refs": "refs/vc-render-method.json",
@@ -22891,15 +23051,15 @@
         "title": "Data Catalog Vocabulary (DCAT)",
         "shortTitle": "DCAT",
         "releaseUrl": "https://www.w3.org/TR/vocab-dcat/",
-        "nightlyUrl": "https://w3c.github.io/dxwg/dcat/"
+        "nightlyUrl": "https://w3c.github.io/dx-dcat/TR/"
       },
       "seriesVersion": "3",
       "nightly": {
-        "url": "https://w3c.github.io/dxwg/dcat/",
+        "url": "https://w3c.github.io/dx-dcat/TR/",
         "status": "Editor's Draft",
         "sourcePath": "dcat/index.html",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/dxwg",
+        "repository": "https://github.com/w3c/dx-dcat",
         "filename": "index.html"
       },
       "organization": "W3C",
@@ -22921,7 +23081,7 @@
       "standing": "good",
       "versions": [
         "https://www.w3.org/TR/vocab-dcat-3/",
-        "https://w3c.github.io/dxwg/dcat/"
+        "https://w3c.github.io/dx-dcat/TR/"
       ],
       "crawled": "https://www.w3.org/TR/vocab-dcat-3/",
       "crawlCacheInfo": {
@@ -23255,7 +23415,18 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
+          "accname",
+          "core-aam",
+          "dpub-aam",
+          "dpub-aria",
+          "graphics-aam",
+          "graphics-aria",
+          "html-aam",
+          "svg-aam",
           "wai-aria"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
         ]
       },
       "versions": [
@@ -23320,7 +23491,18 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
+          "accname",
+          "core-aam",
+          "dpub-aam",
+          "dpub-aria",
+          "graphics-aam",
+          "graphics-aria",
+          "html-aam",
+          "svg-aam",
           "wai-aria"
+        ],
+        "excludePaths": [
+          "dpub-aam/manual"
         ]
       },
       "versions": [
@@ -24154,7 +24336,7 @@
       "shortname": "webauthn-3",
       "series": {
         "shortname": "webauthn",
-        "currentSpecification": "webauthn-3",
+        "currentSpecification": "webauthn-4",
         "title": "Web Authentication",
         "shortTitle": "Web Authentication",
         "releaseUrl": "https://www.w3.org/TR/webauthn/",
@@ -24162,6 +24344,13 @@
       },
       "seriesVersion": "3",
       "shortTitle": "Web Authentication",
+      "nightly": {
+        "url": "https://www.w3.org/TR/webauthn-3/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "webauthn-4",
       "organization": "W3C",
       "groups": [
         {
@@ -24174,6 +24363,57 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+      "source": "w3c",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/webauthn-3/"
+      ],
+      "crawled": "https://www.w3.org/TR/webauthn-3/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Aug 2026 15:41:58 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 August 2026",
+      "revision": "0a33db2d8901277e5107a89cb3152db125b328de",
+      "algorithms": "algorithms/webauthn-3.json",
+      "links": "links/webauthn-3.json",
+      "refs": "refs/webauthn-3.json",
+      "dfns": "dfns/webauthn-3.json",
+      "headings": "headings/webauthn-3.json",
+      "ids": "ids/webauthn-3.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/webauthn-4/",
+      "seriesComposition": "full",
+      "shortname": "webauthn-4",
+      "series": {
+        "shortname": "webauthn",
+        "currentSpecification": "webauthn-4",
+        "title": "Web Authentication",
+        "shortTitle": "Web Authentication",
+        "releaseUrl": "https://www.w3.org/TR/webauthn/",
+        "nightlyUrl": "https://w3c.github.io/webauthn/"
+      },
+      "seriesVersion": "4",
+      "shortTitle": "Web Authentication",
+      "seriesPrevious": "webauthn-3",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Authentication Working Group",
+          "url": "https://www.w3.org/groups/wg/webauthn/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/webauthn-4/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
       "nightly": {
         "url": "https://w3c.github.io/webauthn/",
         "status": "Editor's Draft",
@@ -24182,7 +24422,7 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 4",
       "source": "w3c",
       "categories": [
         "browser"
@@ -24196,23 +24436,23 @@
         ]
       },
       "versions": [
-        "https://www.w3.org/TR/webauthn-3/",
+        "https://www.w3.org/TR/webauthn-4/",
         "https://w3c.github.io/webauthn/"
       ],
-      "crawled": "https://www.w3.org/TR/webauthn-3/",
+      "crawled": "https://www.w3.org/TR/webauthn-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Aug 2026 15:41:58 GMT"
+        "lastModified": "Thu, 10 Sep 2026 12:12:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 August 2026",
-      "revision": "0a33db2d8901277e5107a89cb3152db125b328de",
-      "algorithms": "algorithms/webauthn-3.json",
-      "links": "links/webauthn-3.json",
-      "refs": "refs/webauthn-3.json",
+      "date": "15 September 2026",
+      "revision": "bec4dac15fd7bdfab8aed2b84aceeccb31f899eb",
+      "algorithms": "algorithms/webauthn-4.json",
+      "links": "links/webauthn-4.json",
+      "refs": "refs/webauthn-4.json",
       "idl": "idl/webauthn.idl",
-      "dfns": "dfns/webauthn-3.json",
-      "headings": "headings/webauthn-3.json",
-      "ids": "ids/webauthn-3.json",
+      "dfns": "dfns/webauthn-4.json",
+      "headings": "headings/webauthn-4.json",
+      "ids": "ids/webauthn-4.json",
       "cddl": []
     },
     {
