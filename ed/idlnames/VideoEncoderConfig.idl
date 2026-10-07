@@ -1,8 +1,8 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary VideoEncoderConfig {
   required DOMString codec;
-  [EnforceRange] required unsigned long width;
-  [EnforceRange] required unsigned long height;
+  required [EnforceRange] unsigned long width;
+  required [EnforceRange] unsigned long height;
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
   [EnforceRange] unsigned long long bitrate;
