@@ -4174,7 +4174,7 @@
         "block-ellipsis",
         "blockEllipsis"
       ],
-      "syntax": "no-ellipsis | auto | <string>",
+      "syntax": "no-ellipsis | ellipsis | <string>",
       "extended": []
     },
     {
@@ -10183,7 +10183,7 @@
         "block-ellipsis",
         "continue"
       ],
-      "syntax": "none | [<integer [1,∞]> || <'block-ellipsis'>] -webkit-legacy?",
+      "syntax": "none | [<integer [1,∞]> || auto || <'block-ellipsis'>] -webkit-legacy?",
       "extended": []
     },
     {
@@ -11160,18 +11160,18 @@
     {
       "name": "max-lines",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
-      "initial": "none",
+      "initial": "auto",
       "appliesTo": "block containers which are also either line-clamp containers or fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "the keyword none or an integer",
+      "computedValue": "the keyword auto, or an integer, or both",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
         "max-lines",
         "maxLines"
       ],
-      "syntax": "none | <integer [1,∞]>",
+      "syntax": "auto || <integer [1,∞]>",
       "extended": []
     },
     {

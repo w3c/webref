@@ -6,7 +6,7 @@
       "title": "Trusted Types",
       "url": "https://www.w3.org/TR/trusted-types/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n  [Exposed=Window] TrustedHTMLParserOptions createParserOptions(optional SetHTMLUnsafeOptions options = {}, any... arguments);\n};",
     "href": "https://w3c.github.io/trusted-types/dist/spec/#trustedtypepolicy"
   },
   "extended": [],

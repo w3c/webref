@@ -5,4 +5,5 @@ interface TrustedTypePolicy {
   TrustedHTML createHTML(DOMString input, any... arguments);
   TrustedScript createScript(DOMString input, any... arguments);
   TrustedScriptURL createScriptURL(DOMString input, any... arguments);
+  [Exposed=Window] TrustedHTMLParserOptions createParserOptions(optional SetHTMLUnsafeOptions options = {}, any... arguments);
 };

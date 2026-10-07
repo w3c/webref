@@ -75,7 +75,7 @@ partial interface Element {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Element {
   [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
-  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});
+  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;

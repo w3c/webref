@@ -6,7 +6,7 @@
       "title": "Cross-Origin Storage",
       "url": "https://wicg.github.io/cross-origin-storage/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface CrossOriginStorageManager {\n  Promise<FileSystemFileHandle> requestFileHandle(\n      CrossOriginStorageRequestFileHandleHash hash,\n      optional CrossOriginStorageRequestFileHandleOptions options = {});\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface CrossOriginStorageManager {\n  Promise<FileSystemFileHandle> getFileHandle(\n      CrossOriginStorageGetFileHandleHash hash,\n      optional CrossOriginStorageGetFileHandleOptions options = {});\n};",
     "href": "https://wicg.github.io/cross-origin-storage/#crossoriginstoragemanager"
   },
   "extended": [],
