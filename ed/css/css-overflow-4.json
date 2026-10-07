@@ -252,7 +252,7 @@
     {
       "name": "block-ellipsis",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-block-ellipsis",
-      "value": "no-ellipsis | auto | <string>",
+      "value": "no-ellipsis | ellipsis | <string>",
       "initial": "no-ellipsis",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -269,11 +269,11 @@
           "value": "no-ellipsis"
         },
         {
-          "name": "auto",
+          "name": "ellipsis",
           "prose": "Render an ellipsis character (U+2026)—​or a more typographically-appropriate equivalent—​as the block overflow ellipsis at the end of the affected line box. UAs should use the conventions of the content language, writing system, and writing mode to determine the most appropriate ellipsis string.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-auto",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-ellipsis",
           "type": "value",
-          "value": "auto"
+          "value": "ellipsis"
         },
         {
           "name": "<string>",
@@ -291,7 +291,7 @@
     {
       "name": "line-clamp",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
-      "value": "none | [<integer [1,∞]> || <'block-ellipsis'>] -webkit-legacy?",
+      "value": "none | [<integer [1,∞]> || auto || <'block-ellipsis'>] -webkit-legacy?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -302,21 +302,28 @@
       "values": [
         {
           "name": "none",
-          "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to no-ellipsis.",
+          "prose": "Sets max-lines to auto, continue to auto, and block-ellipsis to no-ellipsis.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<integer [1,∞]>",
-          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1",
           "type": "value",
           "value": "<integer [1,∞]>"
         },
         {
+          "name": "auto",
+          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
           "name": "<block-ellipsis>",
-          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Sets continue to collapse if any or all of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Additionally: if an <integer> N is specified without auto, sets max-lines to that N. if an <integer> N and auto are specified, sets max-lines to auto N. if auto without an <integer> is specified, or if the specified value include neither an <integer> nor auto, sets max-lines to auto. if a <block-ellipsis> value is specified, sets block-ellipsis to that value, otherwise sets block-ellipsis to ellipsis.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
           "type": "value",
           "value": "<block-ellipsis>"
@@ -399,23 +406,14 @@
     {
       "name": "max-lines",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
-      "value": "none | <integer [1,∞]>",
-      "initial": "none",
+      "value": "auto || <integer [1,∞]>",
+      "initial": "auto",
       "appliesTo": "block containers which are also either line-clamp containers or fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "the keyword none or an integer",
+      "computedValue": "the keyword auto, or an integer, or both",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "none",
-          "prose": "If the value of max-lines is not none, then, given a computed value of N:",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-max-lines-none",
-          "type": "value",
-          "value": "none"
-        }
-      ],
       "styleDeclaration": [
         "max-lines",
         "maxLines"
