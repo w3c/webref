@@ -403,7 +403,7 @@
         },
         {
           "name": "collapse",
-          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as normal.",
+          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually suppressed, and to not be taken into account for the box’s automatic block size (see § 5.3.1 Line-clamp containers for details). Visually suppressed content is treated as content hidden by overflow: clip, and unlike content made invisible by visibility: hidden or excluded from the box tree by display: none: it is not painted, and like ink overflow, does not affect layout or otherwise extend the scrollable overflow area. However, it remains part of of sequential focus navigation, and remains exposed through the accessibility tree. Any overflow visually suppressed boxes and line boxes might have is itself counted as ink overflow rather than scrollable overflow. If the box is a multicol container, the behavior is the same as normal.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-collapse",
           "type": "value",
           "value": "collapse"
