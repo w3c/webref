@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Serial Standard",
+    "title": "WebSerial Standard",
     "url": "https://serial.spec.whatwg.org/"
   },
   "idlparsed": {
@@ -645,7 +645,7 @@
         "href": "https://serial.spec.whatwg.org/#dictdef-serialportinfo"
       },
       "SerialOptions": {
-        "fragment": "dictionary SerialOptions {\n  [EnforceRange] required unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
+        "fragment": "dictionary SerialOptions {\n  required [EnforceRange] unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
         "type": "dictionary",
         "name": "SerialOptions",
         "inheritance": null,
@@ -653,17 +653,17 @@
           {
             "type": "field",
             "name": "baudRate",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,

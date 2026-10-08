@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Serial Standard",
+      "title": "WebSerial Standard",
       "url": "https://serial.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(DedicatedWorker, Window), SecureContext]\ninterface Serial : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<SerialPort>> getPorts();\n  [Exposed=Window] Promise<SerialPort> requestPort(optional SerialPortRequestOptions options = {});\n};",

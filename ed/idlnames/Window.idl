@@ -210,12 +210,12 @@ partial interface Window {
     [Replaceable] readonly attribute double pageXOffset;
     [Replaceable] readonly attribute double scrollY;
     [Replaceable] readonly attribute double pageYOffset;
-    Promise<undefined> scroll(optional ScrollToOptions options = {});
-    Promise<undefined> scroll(unrestricted double x, unrestricted double y);
-    Promise<undefined> scrollTo(optional ScrollToOptions options = {});
-    Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);
-    Promise<undefined> scrollBy(optional ScrollToOptions options = {});
-    Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);
+    Promise<ScrollResult> scroll(optional ScrollToOptions options = {});
+    Promise<ScrollResult> scroll(unrestricted double x, unrestricted double y);
+    Promise<ScrollResult> scrollTo(optional ScrollToOptions options = {});
+    Promise<ScrollResult> scrollTo(unrestricted double x, unrestricted double y);
+    Promise<ScrollResult> scrollBy(optional ScrollToOptions options = {});
+    Promise<ScrollResult> scrollBy(unrestricted double x, unrestricted double y);
 
     // client
     [Replaceable] readonly attribute long screenX;

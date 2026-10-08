@@ -1,6 +1,6 @@
-// Source: Serial Standard (https://serial.spec.whatwg.org/)
+// Source: WebSerial Standard (https://serial.spec.whatwg.org/)
 dictionary SerialOptions {
-  [EnforceRange] required unsigned long baudRate;
+  required [EnforceRange] unsigned long baudRate;
   [EnforceRange] octet dataBits = 8;
   [EnforceRange] octet stopBits = 1;
   ParityType parity = "none";

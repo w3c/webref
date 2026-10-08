@@ -123,13 +123,13 @@ partial interface Element {
 
   boolean checkVisibility(optional CheckVisibilityOptions options = {});
 
-  Promise<undefined> scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});
-  Promise<undefined> scroll(optional ScrollToOptions options = {});
-  Promise<undefined> scroll(unrestricted double x, unrestricted double y);
-  Promise<undefined> scrollTo(optional ScrollToOptions options = {});
-  Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);
-  Promise<undefined> scrollBy(optional ScrollToOptions options = {});
-  Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);
+  Promise<ScrollResult> scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});
+  Promise<ScrollResult> scroll(optional ScrollToOptions options = {});
+  Promise<ScrollResult> scroll(unrestricted double x, unrestricted double y);
+  Promise<ScrollResult> scrollTo(optional ScrollToOptions options = {});
+  Promise<ScrollResult> scrollTo(unrestricted double x, unrestricted double y);
+  Promise<ScrollResult> scrollBy(optional ScrollToOptions options = {});
+  Promise<ScrollResult> scrollBy(unrestricted double x, unrestricted double y);
   attribute unrestricted double scrollTop;
   attribute unrestricted double scrollLeft;
   readonly attribute long scrollWidth;
