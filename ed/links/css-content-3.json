@@ -92,17 +92,19 @@
       "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-contain-2/": {},
+      "https://drafts.csswg.org/css-content-3/": {},
       "https://drafts.csswg.org/css-counter-styles/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-lists-3/": {
         "anchors": [
-          "inheriting-counters",
-          "auto-numbering"
+          "auto-numbering",
+          "inheriting-counters"
         ]
       },
       "https://drafts.csswg.org/css-namespaces/": {},
+      "https://drafts.csswg.org/css-page-3/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-speech-1/": {},
       "https://drafts.csswg.org/css-text-3/": {},
@@ -120,6 +122,7 @@
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/14003": {},
       "https://github.com/w3c/csswg-drafts/issues/2038": {},
+      "https://github.com/w3c/csswg-drafts/issues/218": {},
       "https://github.com/w3c/csswg-drafts/issues/2506": {},
       "https://github.com/w3c/csswg-drafts/issues/2889": {},
       "https://github.com/w3c/csswg-drafts/issues/5478": {},
@@ -258,15 +261,11 @@
           "changes"
         ]
       },
+      "https://www.w3.org/TR/2025/WD-css-content-3-20251204/": {},
       "https://www.w3.org/TR/CSS/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
           "property-defs"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/conform.html": {
-        "anchors": [
-          "replaced-element"
         ]
       },
       "https://www.w3.org/TR/css-cascade/": {
@@ -308,6 +307,7 @@
     "autolinks": {
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
+          "inherited-value",
           "computed-value"
         ]
       },
@@ -316,14 +316,18 @@
           "style-containment"
         ]
       },
+      "https://drafts.csswg.org/css-content-3/": {
+        "anchors": [
+          "typedef-symbolic-counter-style",
+          "valdef-quotes-match-parent"
+        ]
+      },
       "https://drafts.csswg.org/css-counter-styles-3/": {
         "anchors": [
-          "typedef-counter-style",
           "predefined-symbolic-counter-style",
-          "generate-a-counter",
-          "counter-style",
           "descdef-counter-style-prefix",
           "descdef-counter-style-suffix",
+          "typedef-counter-style",
           "disc",
           "circle",
           "square",
@@ -333,7 +337,9 @@
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "propdef-display"
+          "replaced-element",
+          "propdef-display",
+          "inline-level-box"
         ]
       },
       "https://drafts.csswg.org/css-images-3/": {
@@ -350,13 +356,18 @@
       "https://drafts.csswg.org/css-lists-3/": {
         "anchors": [
           "typedef-counter",
-          "funcdef-counter",
+          "propdef-list-style-type",
           "counter"
         ]
       },
       "https://drafts.csswg.org/css-namespaces-3/": {
         "anchors": [
           "css-qualified-name"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {
+        "anchors": [
+          "page-margin-boxes"
         ]
       },
       "https://drafts.csswg.org/css-pseudo-4/": {
@@ -379,9 +390,9 @@
         "anchors": [
           "css-wide-keywords",
           "comb-one",
+          "mult-opt",
           "string-value",
           "mult-one-plus",
-          "mult-opt",
           "url-value",
           "comb-comma",
           "identifier-value",
