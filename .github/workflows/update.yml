@@ -1,13 +1,26 @@
+name: Crawl specs and update the main branch
+
 on:
   schedule:
     - cron: '30 */6 * * *' # Every 6 hours for "ed" (nightly) crawls
     - cron: '0 1 * * *'    # Once per day for "tr" (release) crawls
   workflow_dispatch:
+    inputs:
+      crawlType:
+        description: 'What to crawl'
+        required: true
+        default: 'ed'
+        type: choice
+        options:
+          - ed
+          - tr
 
-name: Crawl specs and update Webref
+concurrency:
+  group: update
+  queue: 2
 
 env:
-  CRAWL_TYPE: ${{ (github.event.schedule == '30 */6 * * *') && 'ed' || 'tr' }}
+  CRAWL_TYPE: ${{ (github.event.schedule == '30 */6 * * *' || (inputs.crawlType == 'ed')) && 'ed' || 'tr' }}
 
 jobs:
   update:
