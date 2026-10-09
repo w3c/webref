@@ -1265,6 +1265,12 @@
       "extended": []
     },
     {
+      "name": "change()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-change",
+      "syntax": "change()",
+      "extended": []
+    },
+    {
       "for": [
         "<basic-shape>"
       ],
@@ -1278,6 +1284,12 @@
       "prose": "The clamp() function takes three calculations—​a minimum value, a central value, and a maximum value—​and represents its central calculation, clamped according to its min and max calculations, favoring the min calculation if it conflicts with the max. (That is, given clamp(MIN, VAL, MAX), it represents exactly the same value as max(MIN, min(VAL, MAX))).",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-clamp",
       "syntax": "clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )",
+      "extended": []
+    },
+    {
+      "name": "click()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-click",
+      "syntax": "click()",
       "extended": []
     },
     {
@@ -1390,6 +1402,12 @@
       "extended": []
     },
     {
+      "name": "dblclick()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-dblclick",
+      "syntax": "dblclick()",
+      "extended": []
+    },
+    {
       "name": "device-cmyk()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-device-cmyk",
       "syntax": "<legacy-device-cmyk-syntax> | <modern-device-cmyk-syntax>",
@@ -1467,6 +1485,18 @@
       "name": "fit-content()",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "syntax": "fit-content( <length-percentage> )",
+      "extended": []
+    },
+    {
+      "name": "focusin()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-focusin",
+      "syntax": "focusin()",
+      "extended": []
+    },
+    {
+      "name": "focusout()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-focusout",
+      "syntax": "focusout()",
       "extended": []
     },
     {
@@ -1555,6 +1585,12 @@
       "prose": "Like the inherit keyword, the inherit() functional notation resolves to the computed value of a property on the parent. Rather than resolving to the value of the same property, however, it resolves to a sequence of component values representing the computed value of the property specified as its first argument. Its second argument, if present, is used as a fallback in case the first argument resolves to the guaranteed-invalid value.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-inherit",
       "syntax": "inherit( <custom-property-name>, <declaration-value>? )",
+      "extended": []
+    },
+    {
+      "name": "input()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-input",
+      "syntax": "input()",
       "extended": []
     },
     {
@@ -1758,6 +1794,30 @@
       "prose": "The pointer() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a pointer progress timeline. Its syntax is",
       "href": "https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer",
       "syntax": "pointer( [ <pointer-source> || <pointer-axis> ]? )",
+      "extended": []
+    },
+    {
+      "name": "pointerdown()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerdown",
+      "syntax": "pointerdown()",
+      "extended": []
+    },
+    {
+      "name": "pointerenter()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerenter",
+      "syntax": "pointerenter()",
+      "extended": []
+    },
+    {
+      "name": "pointerleave()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerleave",
+      "syntax": "pointerleave()",
+      "extended": []
+    },
+    {
+      "name": "pointerup()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerup",
+      "syntax": "pointerup()",
       "extended": []
     },
     {
@@ -6791,15 +6851,17 @@
     },
     {
       "name": "column-width",
-      "href": "https://drafts.csswg.org/css-sizing-4/#column-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#column-sizing",
       "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
       "styleDeclaration": [
         "column-width",
         "columnWidth"
       ],
-      "syntax": "auto | <box-size>",
-      "extended": []
+      "syntax": "auto | <box-size> | auto | <box-size>",
+      "extended": [
+        "https://drafts.csswg.org/css-sizing-4/"
+      ]
     },
     {
       "name": "column-wrap",
@@ -7015,7 +7077,7 @@
       "styleDeclaration": [
         "content"
       ],
-      "syntax": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> | <attr()> ]+ ]? | <element()>",
+      "syntax": "normal | none | [ <content-replacement> | <content-list> ] [/ <alt-text> ]? | <element()>",
       "extended": [
         "https://drafts.csswg.org/css-gcpm-3/"
       ]
@@ -8282,6 +8344,23 @@
       "extended": []
     },
     {
+      "name": "fit-tolerance",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-fit-tolerance",
+      "initial": "normal",
+      "appliesTo": "grid lanes containers",
+      "inherited": "no",
+      "percentages": "relative to the grid-axis content box size of the grid lanes container",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "as length",
+      "styleDeclaration": [
+        "fit-tolerance",
+        "fitTolerance"
+      ],
+      "syntax": "normal | <length-percentage [0,∞]> | infinite",
+      "extended": []
+    },
+    {
       "name": "flex",
       "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex",
       "initial": "0 1 auto",
@@ -8562,23 +8641,6 @@
         "flowInto"
       ],
       "syntax": "none | <custom-ident> [element | content]?",
-      "extended": []
-    },
-    {
-      "name": "flow-tolerance",
-      "href": "https://drafts.csswg.org/css-grid-3/#propdef-flow-tolerance",
-      "initial": "normal",
-      "appliesTo": "grid lanes containers",
-      "inherited": "no",
-      "percentages": "relative to the grid-axis content box size of the grid lanes container",
-      "computedValue": "a computed <length-percentage> value",
-      "canonicalOrder": "per grammar",
-      "animationType": "as length",
-      "styleDeclaration": [
-        "flow-tolerance",
-        "flowTolerance"
-      ],
-      "syntax": "normal | <length-percentage [0,∞]> | infinite",
       "extended": []
     },
     {
@@ -12851,13 +12913,13 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "the keyword none, the keyword auto or match-parent, or a list, each item a pair of string values",
+      "computedValue": "the keyword none, the keyword auto, a content language, or a list, each item a pair of string values",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
         "quotes"
       ],
-      "syntax": "auto | none | match-parent | [ <string> <string> ]+",
+      "syntax": "auto | none | bikeshed-this | [ <string> <string> ]+",
       "extended": []
     },
     {
@@ -15794,10 +15856,9 @@
       "longhands": [
         "timeline-trigger-name",
         "timeline-trigger-source",
-        "timeline-trigger-activation-range",
-        "timeline-trigger-active-range"
+        "timeline-trigger-range"
       ],
-      "syntax": "none | [ <'timeline-trigger-name'> <'timeline-trigger-source'> <'timeline-trigger-activation-range'> [ / <'timeline-trigger-active-range'> ]? ]#",
+      "syntax": "none | [ <'timeline-trigger-name'> <'timeline-trigger-source'> [ <'timeline-trigger-range'> ]? ]#",
       "extended": []
     },
     {
@@ -15925,6 +15986,27 @@
         "timelineTriggerName"
       ],
       "syntax": "none | <dashed-ident>#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-range",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-range",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger-range",
+        "timelineTriggerRange"
+      ],
+      "longhands": [
+        "timeline-trigger-activation-range",
+        "timeline-trigger-active-range"
+      ],
+      "syntax": "[ <'timeline-trigger-activation-range'> [ / <'timeline-trigger-active-range'> ]? ]#",
       "extended": []
     },
     {
@@ -18052,6 +18134,12 @@
       "extended": []
     },
     {
+      "name": "alt-text",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-alt-text",
+      "syntax": "[ <string> | <counter> | <attr()> ]+",
+      "extended": []
+    },
+    {
       "name": "anchor-name",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name",
       "syntax": "<dashed-ident>",
@@ -18411,7 +18499,7 @@
     {
       "name": "box-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
-      "syntax": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
+      "syntax": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | stretch(<length-percentage [0,∞]> | fit-content(<length-percentage [0,∞]>) | <calc-size()>",
       "extended": []
     },
     {
@@ -18697,17 +18785,7 @@
     },
     {
       "name": "content-list",
-      "href": "https://drafts.csswg.org/css-gcpm-3/#content-list",
-      "syntax": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+",
-      "extended": []
-    },
-    {
-      "for": [
-        "content"
-      ],
-      "name": "content-list",
-      "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
-      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-list",
       "syntax": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-counter-style> ]+",
       "extended": []
     },
@@ -18718,11 +18796,8 @@
       "extended": []
     },
     {
-      "for": [
-        "content"
-      ],
       "name": "content-replacement",
-      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-replacement",
       "syntax": "<image>",
       "extended": []
     },
@@ -18783,7 +18858,7 @@
     },
     {
       "name": "counter-style-name",
-      "prose": "<counter-style-name> is a <custom-ident> that is not an ASCII case-insensitive match for none. When used here, to define a counter style, it also cannot be any of the non-overridable counter-style names (in other uses that merely reference a counter style, such as the extend system, these are allowed). The <counter-style-name> is a tree-scoped name.",
+      "prose": "Counter styles are referenced by name, and represented syntactically by <counter-style-name>, which is a <custom-ident> specifying a tree-scoped name. The keyword none (including any ASCII case-insensitive permutation of it) is not a valid <counter-style-name>.",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style-name",
       "syntax": "<custom-ident>",
       "extended": []
@@ -19030,9 +19105,9 @@
       "extended": []
     },
     {
-      "name": "event-trigger-event",
-      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-trigger-event",
-      "syntax": "activate | interest | click | touch | dblclick | keypress(<string>) | ...",
+      "name": "event-function",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-function",
+      "syntax": "<click()> | <dblclick()> | <pointerenter()> | <pointerleave()> | <pointerup()> | <pointerdown()> | <keypress()> | <focusin()> | <focusout()> | <input()> | <change()>",
       "extended": []
     },
     {
@@ -21011,8 +21086,8 @@
       "extended": []
     },
     {
-      "name": "symbolic-counter-style",
-      "href": "https://drafts.csswg.org/css-content-3/#typedef-symbolic-counter-style",
+      "name": "symbolic-glyph",
+      "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-symbolic-glyph",
       "syntax": "disc | circle | square | disclosure-open | disclosure-closed",
       "extended": []
     },

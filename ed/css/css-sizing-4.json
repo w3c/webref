@@ -399,8 +399,7 @@
     },
     {
       "name": "column-width",
-      "href": "https://drafts.csswg.org/css-sizing-4/#column-sizing",
-      "value": "auto | <box-size>",
+      "newValues": "auto | <box-size>",
       "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
       "values": [
@@ -452,10 +451,64 @@
       "name": "<box-size>",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
       "type": "type",
-      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
+      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | stretch(<length-percentage [0,∞]> | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
     }
   ],
   "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "height"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "min-width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "min-height"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "max-width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "max-height"
+    },
     {
       "msg": "Dangling value",
       "name": "fit-content()",

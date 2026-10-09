@@ -4,3 +4,8 @@ interface OverconstrainedError : DOMException {
   constructor(DOMString constraint, optional DOMString message = "");
   readonly attribute DOMString constraint;
 };
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker)]
+partial interface OverconstrainedError {
+};

@@ -4,3 +4,8 @@ interface MediaStreamTrackEvent : Event {
   constructor(DOMString type, MediaStreamTrackEventInit eventInitDict);
   [SameObject] readonly attribute MediaStreamTrack track;
 };
+
+// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
+[Exposed=(Window,DedicatedWorker)]
+partial interface MediaStreamTrackEvent {
+};

@@ -579,6 +579,26 @@
       "links": []
     },
     {
+      "id": "propdef-timeline-trigger-range",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-range",
+      "linkingText": [
+        "timeline-trigger-range"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-trigger-range-shorthand",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-range-shorthand",
+        "title": "The timeline-trigger-range Shorthand",
+        "number": "3.6"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "propdef-timeline-trigger",
       "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger",
       "linkingText": [
@@ -593,7 +613,7 @@
         "id": "timeline-trigger-shorthand",
         "href": "https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-shorthand",
         "title": "The timeline-trigger Shorthand",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "table",
       "links": []
@@ -615,7 +635,7 @@
         "id": "timeline-trigger-shorthand",
         "href": "https://drafts.csswg.org/animation-triggers-1/#timeline-trigger-shorthand",
         "title": "The timeline-trigger Shorthand",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "prose",
       "links": []
@@ -791,10 +811,10 @@
       "links": []
     },
     {
-      "id": "valdef-event-trigger-source-event-trigger-event--event-trigger-event",
-      "href": "https://drafts.csswg.org/animation-triggers-1/#valdef-event-trigger-source-event-trigger-event--event-trigger-event",
+      "id": "valdef-event-trigger-source-event-function--event-function",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#valdef-event-trigger-source-event-function--event-function",
       "linkingText": [
-        "<event-trigger-event>+ [ / <event-trigger-event>+ ]?"
+        "<event-function>+ [ / <event-function>+ ]?"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -813,10 +833,10 @@
       "links": []
     },
     {
-      "id": "typedef-event-trigger-event",
-      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-trigger-event",
+      "id": "typedef-event-function",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-function",
       "linkingText": [
-        "<event-trigger-event>"
+        "<event-function>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -824,10 +844,232 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "event-trigger-source",
-        "href": "https://drafts.csswg.org/animation-triggers-1/#event-trigger-source",
-        "title": "Linking an Event: the event-trigger-source property",
-        "number": "4.2"
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-click",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-click",
+      "linkingText": [
+        "click()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-dblclick",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-dblclick",
+      "linkingText": [
+        "dblclick()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-pointerenter",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerenter",
+      "linkingText": [
+        "pointerenter()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-pointerleave",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerleave",
+      "linkingText": [
+        "pointerleave()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-pointerup",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerup",
+      "linkingText": [
+        "pointerup()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-pointerdown",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-pointerdown",
+      "linkingText": [
+        "pointerdown()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-focusin",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-focusin",
+      "linkingText": [
+        "focusin()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-focusout",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-focusout",
+      "linkingText": [
+        "focusout()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-input",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-input",
+      "linkingText": [
+        "input()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-change",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-change",
+      "linkingText": [
+        "change()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-event-function-keypress",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-event-function-keypress",
+      "linkingText": [
+        "keypress()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "event-function"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-functions",
+        "href": "https://drafts.csswg.org/animation-triggers-1/#event-functions",
+        "title": "Event Functions",
+        "number": "4.2.1"
       },
       "definedIn": "pre",
       "links": []

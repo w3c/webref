@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface MediaStreamTrackEvent : Event {\n  constructor(DOMString type, MediaStreamTrackEventInit eventInitDict);\n  [SameObject] readonly attribute MediaStreamTrack track;\n};",
     "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrackevent"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Capture and Streams Extensions",
+        "url": "https://w3c.github.io/mediacapture-extensions/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface MediaStreamTrackEvent {\n};"
+    }
+  ],
   "inheritance": {
     "name": "Event",
     "type": "interface",

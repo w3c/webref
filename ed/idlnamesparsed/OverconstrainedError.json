@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface OverconstrainedError : DOMException {\n  constructor(DOMString constraint, optional DOMString message = \"\");\n  readonly attribute DOMString constraint;\n};",
     "href": "https://w3c.github.io/mediacapture-main/#dom-overconstrainederror"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Capture and Streams Extensions",
+        "url": "https://w3c.github.io/mediacapture-extensions/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface OverconstrainedError {\n};"
+    }
+  ],
   "inheritance": {
     "name": "DOMException",
     "type": "interface",
