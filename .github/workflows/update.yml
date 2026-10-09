@@ -17,7 +17,7 @@ on:
 
 concurrency:
   group: update
-  queue: 2
+  queue: max
 
 env:
   CRAWL_TYPE: ${{ (github.event.schedule == '30 */6 * * *' || (inputs.crawlType == 'ed')) && 'ed' || 'tr' }}
