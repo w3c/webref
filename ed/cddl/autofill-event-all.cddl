@@ -1,0 +1,63 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: Autofill Event (https://wicg.github.io/autofill-event/)
+
+AutofillCommand = (
+  autofill.Trigger
+)
+
+autofill.Trigger = (
+  method: "autofill.trigger",
+  params: autofill.TriggerParameters
+)
+
+autofill.TriggerParameters = {
+  context: browsingContext.BrowsingContext,
+  element: script.SharedReference,
+  ? card: autofill.Card,
+  ? address: autofill.Address
+}
+
+autofill.Card = {
+  number: text,
+  name: text,
+  expiryMonth: text,
+  expiryYear: text,
+  cvc: text
+}
+
+autofill.Address = {
+  fields: [* autofill.Field]
+}
+
+autofill.Field = {
+  name: autofill.FieldName,
+  value: text
+}
+
+autofill.FieldName = "name" /
+                     "honorific-prefix" /
+                     "given-name" /
+                     "additional-name" /
+                     "family-name" /
+                     "honorific-suffix" /
+                     "nickname" /
+                     "organization" /
+                     "street-address" /
+                     "address-line1" /
+                     "address-line2" /
+                     "address-line3" /
+                     "address-level4" /
+                     "address-level3" /
+                     "address-level2" /
+                     "address-level1" /
+                     "country" /
+                     "country-name" /
+                     "postal-code" /
+                     "tel" /
+                     "tel-country-code" /
+                     "tel-national" /
+                     "tel-area-code" /
+                     "tel-local" /
+                     "email"

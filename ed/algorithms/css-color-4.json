@@ -340,6 +340,318 @@
       ]
     },
     {
+      "name": "to construct an EdgeSeeker lookup table",
+      "href": "https://drafts.csswg.org/css-color-4/#construct-an-edgeseeker-lookup-table",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"construct-an-edgeseeker-lookup-table\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct an EdgeSeeker lookup table</dfn>\n\tfor an RGB destination color space <var>destination</var>\n\twith non-imaginary primaries (not, for example, ProPhoto RGB),\n\tgiven a number of hue samples per region <var>N</var> (for example, 400):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "let <var>cusps</var> and <var>curve</var> each be an empty list"
+        },
+        {
+          "html": "for each of the six 60deg hue regions\n\t\t(0deg to 60deg, 60deg to 120deg, and so on up to 300deg to 360deg):",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "let <var>regionCusps</var> and <var>regionCurve</var> each be an empty list"
+            },
+            {
+              "html": "for each of <var>N</var> hues <var>h</var> evenly spaced across that region,\n\t\t\t\tinclusive of both endpoints, in increasing order:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "let <var>r</var>, <var>g</var> and <var>b</var> be the result of\n\t\t\t\t\t\tconverting the HSL triplet (<var>h</var>, 100%, 50%) to RGB\n\t\t\t\t\t\tusing the <a href=\"https://drafts.csswg.org/css-color-4/#hsl-to-rgb\">HSL to RGB conversion</a>"
+                },
+                {
+                  "html": "let <var>cusp</var> be the color with coordinates <var>r</var>, <var>g</var>, <var>b</var> in <var>destination</var>,\n\t\t\t\t\t\tconverted to the OkLCh color space"
+                },
+                {
+                  "html": "append {l: <var>cusp</var>’s Lightness, c: <var>cusp</var>’s Chroma, h: <var>cusp</var>’s Hue} to <var>regionCusps</var>"
+                },
+                {
+                  "html": "let <var>r2</var>, <var>g2</var> and <var>b2</var> be the result of\n\t\t\t\t\t\tconverting the HSL triplet (<var>h</var>, 100%, 75%) to RGB\n\t\t\t\t\t\tusing the <a href=\"https://drafts.csswg.org/css-color-4/#hsl-to-rgb\">HSL to RGB conversion</a>"
+                },
+                {
+                  "html": "let <var>curvePoint</var> be the color with coordinates <var>r2</var>, <var>g2</var>, <var>b2</var> in <var>destination</var>,\n\t\t\t\t\t\tconverted to the OkLCh color space"
+                },
+                {
+                  "html": "append {l: <var>curvePoint</var>’s Lightness, c: <var>curvePoint</var>’s Chroma, h: <var>curvePoint</var>’s Hue}\n\t\t\t\t\t\tto <var>regionCurve</var>"
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#remove-hue-folds\" id=\"ref-for-remove-hue-folds\">remove hue folds</a> from <var>regionCusps</var>, and from <var>regionCurve</var>"
+            },
+            {
+              "html": "append every entry of <var>regionCusps</var> except the last to <var>cusps</var>,\n\t\t\t\tand every entry of <var>regionCurve</var> except the last to <var>curve</var>"
+            }
+          ]
+        },
+        {
+          "html": "sort <var>cusps</var> and <var>curve</var> each by ascending hue"
+        },
+        {
+          "html": "for each of <var>cusps</var> and <var>curve</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "let <var>last</var> be its highest-hue entry,\n\t\t\t\tand let <var>first</var> be its lowest-hue entry with 360deg added to its hue"
+            },
+            {
+              "html": "let <var>end</var> be the entry whose Lightness and Chroma are obtained by\n\t\t\t\tlinearly interpolating, by hue, between <var>last</var> and <var>first</var>\n\t\t\t\tat hue 360deg"
+            },
+            {
+              "html": "prepend to the list an entry with <var>end</var>’s Lightness and Chroma at hue 0deg,\n\t\t\t\tand append <var>end</var> at hue 360deg"
+            }
+          ]
+        },
+        {
+          "html": "let <var>LUT</var> be an empty list"
+        },
+        {
+          "html": "for each entry <var>cusp</var> in <var>cusps</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "let <var>curvePoint</var> be the entry whose Lightness and Chroma are obtained by\n\t\t\t\tlinearly interpolating, by hue,\n\t\t\t\tbetween the two entries in <var>curve</var>\n\t\t\t\twhose hues most closely bracket <var>cusp</var>’s hue"
+            },
+            {
+              "html": "let <var>curvature</var> be the result of\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#calculate-the-curvature\" id=\"ref-for-calculate-the-curvature\">calculating the curvature</a>\n\t\t\t\tfor <var>cusp</var> and <var>curvePoint</var>"
+            },
+            {
+              "html": "append {l: <var>cusp</var>’s l, c: <var>cusp</var>’s c, h: <var>cusp</var>’s h, curvature: <var>curvature</var>} to <var>LUT</var>"
+            }
+          ]
+        },
+        {
+          "html": "return <var>LUT</var>"
+        }
+      ]
+    },
+    {
+      "name": "to remove hue folds from a list of EdgeSeeker samples",
+      "href": "https://drafts.csswg.org/css-color-4/#remove-hue-folds",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"remove-hue-folds\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove hue folds</dfn> from a list <var>samples</var>\n\tof OkLCh entries in order of increasing sampled HSL hue:\n\n\n    <p>Because the entries are keyed by OkLCh hue,\n\ta monotonically increasing sequence of sampled HSL hues\n\tdoes not always produce a monotonically increasing sequence of OkLCh hues:\n\tthe boundary can fold back on itself.\n\tSimply discarding each entry whose hue does not advance\n\tkeeps the overshoot before the fold and discards the good entries after it,\n\twhich is worse than doing nothing.\n\tInstead, the overshoot is removed,\n\tand the boundary resumes at the end of the backward run.</p>\n    <p>Here the <em>hue step</em> from hue <var>a</var> to hue <var>b</var> is\n\t(<var>b</var> − <var>a</var>) modulo 360deg, in the range [0deg, 360deg),\n\tand it is <em>forward</em> if it is less than or equal to 180deg.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "let <var>kept</var> be a list containing the first entry of <var>samples</var>"
+        },
+        {
+          "html": "let <var>i</var> be 1"
+        },
+        {
+          "html": "while <var>i</var> is less than the number of entries in <var>samples</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "if the hue step from <var>samples</var>[<var>i</var> − 1]'s hue to <var>samples</var>[<var>i</var>]'s hue is forward,\n\t\t\t\tappend <var>samples</var>[<var>i</var>] to <var>kept</var>, set <var>i</var> to <var>i</var> + 1,\n\t\t\t\tand continue with the next iteration"
+            },
+            {
+              "html": "let <var>j</var> be <var>i</var>"
+            },
+            {
+              "html": "while <var>j</var> is less than the index of the last entry of <var>samples</var>,\n\t\t\t\tand the hue step from <var>samples</var>[<var>j</var>]'s hue to <var>samples</var>[<var>j</var> + 1]'s hue is not forward,\n\t\t\t\tset <var>j</var> to <var>j</var> + 1"
+            },
+            {
+              "html": "let <var>resume</var> be <var>samples</var>[<var>j</var>]"
+            },
+            {
+              "html": "let <var>first</var> be the index of the first entry of <var>kept</var>\n\t\t\t\twhose hue step to <var>resume</var>’s hue is not forward,\n\t\t\t\tthat is, the first kept entry past <var>resume</var>’s hue"
+            },
+            {
+              "html": "Assert: there is such an entry, and <var>first</var> is at least 1"
+            },
+            {
+              "html": "let <var>bridge</var> be the entry at hue <var>resume</var>’s hue − 0.0001deg\n\t\t\t\twhose Lightness and Chroma are obtained by\n\t\t\t\tlinearly interpolating, by hue, between <var>kept</var>[<var>first</var> − 1] and <var>kept</var>[<var>first</var>],\n\t\t\t\twith the interpolation factor clamped to [0, 1]"
+            },
+            {
+              "html": "remove <var>kept</var>[<var>first</var>] and every entry after it from <var>kept</var>"
+            },
+            {
+              "html": "if the hue step from the hue of the last entry of <var>kept</var> to <var>bridge</var>’s hue\n\t\t\t\tis forward and not 0deg, append <var>bridge</var> to <var>kept</var>"
+            },
+            {
+              "html": "append <var>resume</var> to <var>kept</var>"
+            },
+            {
+              "html": "set <var>i</var> to <var>j</var> + 1"
+            }
+          ]
+        },
+        {
+          "html": "replace the contents of <var>samples</var> with <var>kept</var>"
+        }
+      ]
+    },
+    {
+      "name": "to calculate the curvature of a gamut boundary section",
+      "href": "https://drafts.csswg.org/css-color-4/#calculate-the-curvature",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"calculate-the-curvature\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">calculate the curvature</dfn> of a gamut boundary section,\n\tgiven a cusp point <var>cusp</var>\n\t(the OkLCh Lightness and Chroma of the point of highest chroma for a hue)\n\tand a second point <var>curvePoint</var>\n\ton the lighter part of the boundary at the same hue:\n\n\n    <p>The boundary section is normalized into a unit square\n\tin which (0, 0) is white\n\tand (1, 1) is the cusp.\n\tThe curvature is that of the circle\n\twhich passes through those two points\n\tand through the normalized <var>curvePoint</var>.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "let <var>x</var> be (100% − <var>curvePoint</var>’s Lightness) / (100% − <var>cusp</var>’s Lightness)"
+        },
+        {
+          "html": "let <var>y</var> be <var>curvePoint</var>’s Chroma / <var>cusp</var>’s Chroma"
+        },
+        {
+          "html": "if <var>x</var> equals <var>y</var>, return 0"
+        },
+        {
+          "html": "let <var>p1</var> be the point (0, 0)"
+        },
+        {
+          "html": "let <var>p2</var> be the point (<var>x</var>, <var>y</var>)"
+        },
+        {
+          "html": "let <var>p3</var> be the point (1, 1)"
+        },
+        {
+          "html": "let <var>m1</var> be\n\t\t−1 / ((<var>p2</var>’s y − <var>p1</var>’s y) / (<var>p2</var>’s x − <var>p1</var>’s x)),\n\t\tthe slope of the perpendicular bisector of the segment from <var>p1</var> to <var>p2</var>"
+        },
+        {
+          "html": "let <var>m2</var> be\n\t\t−1 / ((<var>p3</var>’s y − <var>p1</var>’s y) / (<var>p3</var>’s x − <var>p1</var>’s x)),\n\t\tthe slope of the perpendicular bisector of the segment from <var>p1</var> to <var>p3</var>"
+        },
+        {
+          "html": "let <var>mid1</var> be the midpoint of <var>p1</var> and <var>p2</var>"
+        },
+        {
+          "html": "let <var>mid2</var> be the midpoint of <var>p1</var> and <var>p3</var>"
+        },
+        {
+          "html": "let <var>centerX</var> be\n\t\t(<var>m1</var> × <var>mid1</var>’s x − <var>m2</var> × <var>mid2</var>’s x + <var>mid2</var>’s y − <var>mid1</var>’s y) / (<var>m1</var> − <var>m2</var>)"
+        },
+        {
+          "html": "let <var>centerY</var> be <var>m1</var> × (<var>centerX</var> − <var>mid1</var>’s x) + <var>mid1</var>’s y"
+        },
+        {
+          "html": "let <var>radius</var> be sqrt(<var>centerX</var>² + <var>centerY</var>²)"
+        },
+        {
+          "html": "let <var>curvature</var> be 1 / <var>radius</var>"
+        },
+        {
+          "html": "if <var>centerX</var> is less than <var>centerY</var>, return −<var>curvature</var>"
+        },
+        {
+          "html": "return <var>curvature</var>"
+        }
+      ]
+    },
+    {
+      "name": "to gamut map a color by EdgeSeeker",
+      "href": "https://drafts.csswg.org/css-color-4/#edgeseeker-gamut-map",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"edgeseeker-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">EdgeSeeker Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>\n\twith non-imaginary primaries (not, for example, ProPhoto RGB),\n\tgiven an EdgeSeeker lookup table <var>LUT</var>\n\tpreviously constructed for <var>destination</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "if <var>destination</var> has no gamut limits (XYZ-D65, XYZ-D50, Lab, LCH, Oklab, OkLCh) convert <var>origin</var> to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "if <var>destination</var> is HSL or HWB, let <var>LUT</var> be the lookup table constructed for sRGB"
+        },
+        {
+          "html": "let clip(<var>color</var>) be a function which converts <var>color</var> to <var>destination</var>,\n\tclamps each component to the bounds of the reference range for that component\n\tand returns the result"
+        },
+        {
+          "html": "if <var>origin</var> is in gamut of <var>destination</var>, return clip(<var>origin</var>)"
+        },
+        {
+          "html": "let <var>origin_OkLCh</var> be <var>origin</var> converted\n\t\tfrom <var>origin color space</var> to the OkLCh color space"
+        },
+        {
+          "html": "if the Lightness of <var>origin_OkLCh</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "if the Lightness of <var>origin_OkLCh</var> is less than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+        },
+        {
+          "html": "let <var>l</var>, <var>c</var> and <var>h</var> be the Lightness, Chroma and Hue of <var>origin_OkLCh</var>, respectively"
+        },
+        {
+          "html": "if <var>h</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component④⑤\">missing</a>, set <var>h</var> to 0deg"
+        },
+        {
+          "html": "let <var>maxChroma</var> be the result of\n\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#find-the-maximum-chroma\" id=\"ref-for-find-the-maximum-chroma\">finding the maximum chroma</a> for <var>l</var> and <var>h</var>, using <var>LUT</var>"
+        },
+        {
+          "html": "if <var>c</var> is greater than <var>maxChroma</var>, set <var>c</var> to <var>maxChroma</var>"
+        },
+        {
+          "html": "let <var>mapped</var> be the OkLCh color with Lightness <var>l</var>, Chroma <var>c</var>, hue <var>h</var>\n\t\tand the same alpha as <var>origin</var>"
+        },
+        {
+          "html": "set <var>clipped</var> to clip(<var>mapped</var>)"
+        },
+        {
+          "html": "return <var>clipped</var> as the gamut mapped color"
+        }
+      ]
+    },
+    {
+      "name": "to find the maximum in-gamut OkLCh chroma using an EdgeSeeker lookup table",
+      "href": "https://drafts.csswg.org/css-color-4/#find-the-maximum-chroma",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-maximum-chroma\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the maximum chroma</dfn>\n\tfor a given OkLCh Lightness <var>l</var> and hue <var>h</var>,\n\tusing an EdgeSeeker lookup table <var>LUT</var>\n\t(a list of entries, each with a Lightness, a Chroma, a hue and a curvature,\n\tsorted by ascending hue and together spanning\n\tthe full hue range from 0deg to 360deg inclusive):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "if <var>l</var> is less than or equal to 0%, or <var>l</var> is greater than or equal to 100%, return 0"
+        },
+        {
+          "html": "set <var>h</var> to <var>h</var> modulo 360deg,\n\t\tadding 360deg to the result if it is negative,\n\t\tso that <var>h</var> is in the range [0deg, 360deg)"
+        },
+        {
+          "html": "let <var>lower</var> and <var>upper</var> be the two entries in <var>LUT</var>\n\t\twhose hues most closely bracket <var>h</var>,\n\t\tsuch that <var>lower</var>’s hue is less than or equal to <var>h</var>\n\t\tand <var>upper</var>’s hue is greater than or equal to <var>h</var>"
+        },
+        {
+          "html": "let <var>t</var> be (<var>h</var> − <var>lower</var>’s hue) / (<var>upper</var>’s hue − <var>lower</var>’s hue),\n\t\tor 0 if <var>lower</var> and <var>upper</var> have the same hue"
+        },
+        {
+          "html": "let <var>cuspLightness</var> be\n\t\t<var>lower</var>’s Lightness + <var>t</var> × (<var>upper</var>’s Lightness − <var>lower</var>’s Lightness)"
+        },
+        {
+          "html": "let <var>cuspChroma</var> be\n\t\t<var>lower</var>’s Chroma + <var>t</var> × (<var>upper</var>’s Chroma − <var>lower</var>’s Chroma)"
+        },
+        {
+          "html": "let <var>curvature</var> be\n\t\t<var>lower</var>’s curvature + <var>t</var> × (<var>upper</var>’s curvature − <var>lower</var>’s curvature)"
+        },
+        {
+          "html": "if <var>l</var> is less than or equal to <var>cuspLightness</var>,\n\t\treturn (<var>l</var> / <var>cuspLightness</var>) × <var>cuspChroma</var>"
+        },
+        {
+          "html": "let <var>x</var> be (100% − <var>l</var>) / (100% − <var>cuspLightness</var>)"
+        },
+        {
+          "html": "return <var>cuspChroma</var> × the result of\n\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#find-the-normalized-chroma-on-the-upper-gamut-boundary-arc\" id=\"ref-for-find-the-normalized-chroma-on-the-upper-gamut-boundary-arc\">finding the normalized chroma on the upper gamut boundary arc</a>\n\t\tfor <var>x</var> and <var>curvature</var>"
+        }
+      ]
+    },
+    {
+      "name": "to find the normalized chroma on the upper gamut boundary arc",
+      "href": "https://drafts.csswg.org/css-color-4/#find-the-normalized-chroma-on-the-upper-gamut-boundary-arc",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-normalized-chroma-on-the-upper-gamut-boundary-arc\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the normalized chroma on the upper gamut boundary arc</dfn>,\n\tgiven a normalized position <var>x</var> along the upper boundary section\n\t(1 at the cusp, 0 at white)\n\tand a <var>curvature</var> whose absolute value is less than 1,\n\treturning the normalized chroma at that position:\n\n\n    <p>The boundary section is the arc of the circle\n\twhich passes through (0, 0) and (1, 1) with the given signed curvature.\n\tRather than locating the center of that circle,\n\twhich is very far away when the curvature is close to 0,\n\tthe circle’s equation is multiplied through by the curvature\n\tand solved directly for the chroma,\n\twhich avoids subtracting large, nearly equal quantities.</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "let <var>t</var> be sqrt(2 − <var>curvature</var>²)"
+        },
+        {
+          "html": "let <var>b</var> be <var>t</var> − <var>curvature</var>"
+        },
+        {
+          "html": "let <var>d</var> be <var>x</var> × (<var>t</var> + <var>curvature</var> × (1 − <var>x</var>))"
+        },
+        {
+          "html": "let <var>disc</var> be max(0, <var>b</var>² + 4 × <var>curvature</var> × <var>d</var>)"
+        },
+        {
+          "html": "return 2 × <var>d</var> / (<var>b</var> + sqrt(<var>disc</var>))"
+        }
+      ]
+    },
+    {
       "name": "to gamut map a color by Ray Tracing",
       "href": "https://drafts.csswg.org/css-color-4/#ray-trace-gamut-map",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ray-trace-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Ray Trace Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>:\n\n\t\n    \n    <div class=\"algorithm\" data-algorithm=\"to cast a ray\">\n     \n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cast-a-ray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cast a ray</dfn> through a linear-light RGB space\n\t\tfrom <var>start</var> to <var>end</var>\n\t\t(in gamut mapping,\n\t\t<var>start</var> is an anchor within the RGB gamut\n\t\tand <var>end</var> is the gamut mapped color, on the cubical gamut surface):\n\n\t\n     \n    </div>\n    <h5 class=\"heading settled\" data-level=\"14.2.6.1\" id=\"raytrace-footnotes\"><span class=\"secno\">14.2.6.1. </span><span class=\"content\">Footnotes for Ray Trace algorithm</span><a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnotes\"></a></h5>",
