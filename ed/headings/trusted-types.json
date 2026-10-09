@@ -109,6 +109,13 @@
       "number": "2.2.3"
     },
     {
+      "id": "trusted-html-parser-options",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options",
+      "level": 4,
+      "title": "TrustedHTMLParserOptions",
+      "number": "2.2.4"
+    },
+    {
       "id": "policies-hdr",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#policies-hdr",
       "level": 3,
@@ -116,32 +123,39 @@
       "number": "2.3"
     },
     {
+      "id": "trusted-types-with-sanitizer",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#trusted-types-with-sanitizer",
+      "level": 4,
+      "title": "Using together with a sanitizer",
+      "number": "2.3.1"
+    },
+    {
       "id": "trusted-type-policy-factory",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#trusted-type-policy-factory",
       "level": 4,
       "title": "TrustedTypePolicyFactory",
-      "number": "2.3.1"
+      "number": "2.3.2"
     },
     {
       "id": "trusted-type-policy",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#trusted-type-policy",
       "level": 4,
       "title": "TrustedTypePolicy",
-      "number": "2.3.2"
+      "number": "2.3.3"
     },
     {
       "id": "trusted-type-policy-options",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#trusted-type-policy-options",
       "level": 4,
       "title": "TrustedTypePolicyOptions",
-      "number": "2.3.3"
+      "number": "2.3.4"
     },
     {
       "id": "default-policy-hdr",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#default-policy-hdr",
       "level": 4,
       "title": "Default policy",
-      "number": "2.3.4"
+      "number": "2.3.5"
     },
     {
       "id": "enforcement-hdr",
@@ -156,6 +170,20 @@
       "level": 4,
       "title": "Content Security Policy",
       "number": "2.4.1"
+    },
+    {
+      "id": "sanitization-enforcement-hdr",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#sanitization-enforcement-hdr",
+      "level": 4,
+      "title": "Sanitization enforcement with createParserOptions",
+      "number": "2.4.2"
+    },
+    {
+      "id": "summary-of-input-enforcement",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#summary-of-input-enforcement",
+      "level": 4,
+      "title": "Summary of input enforcement",
+      "number": "2.4.3"
     },
     {
       "id": "algorithms",
@@ -186,39 +214,53 @@
       "number": "3.3"
     },
     {
+      "id": "get-trusted-type-compliant-input-algorithm",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input-algorithm",
+      "level": 3,
+      "title": "Get Trusted Type compliant input",
+      "number": "3.4"
+    },
+    {
       "id": "get-trusted-type-compliant-string-algorithm",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string-algorithm",
       "level": 3,
       "title": "Get Trusted Type compliant string",
-      "number": "3.4"
+      "number": "3.5"
+    },
+    {
+      "id": "get-trusted-type-compliant-parser-options-algorithm",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-parser-options-algorithm",
+      "level": 3,
+      "title": "Get Trusted Type compliant parser options",
+      "number": "3.6"
     },
     {
       "id": "process-value-with-a-default-policy-algorithm",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#process-value-with-a-default-policy-algorithm",
       "level": 3,
       "title": "Process value with a default policy",
-      "number": "3.5"
+      "number": "3.7"
     },
     {
       "id": "prepare-script-text",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#prepare-script-text",
       "level": 3,
       "title": "Prepare the script text",
-      "number": "3.6"
+      "number": "3.8"
     },
     {
       "id": "validate-attribute-mutation",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#validate-attribute-mutation",
       "level": 3,
       "title": "Get Trusted Type compliant attribute value",
-      "number": "3.7"
+      "number": "3.9"
     },
     {
       "id": "get-trusted-type-data-for-attribute",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-data-for-attribute",
       "level": 3,
       "title": "Get Trusted Type data for attribute",
-      "number": "3.8"
+      "number": "3.10"
     },
     {
       "id": "integrations",
@@ -256,46 +298,25 @@
       "number": "4.1.2.1"
     },
     {
-      "id": "the-innerText-idl-attribute",
-      "href": "https://w3c.github.io/trusted-types/dist/spec/#the-innerText-idl-attribute",
+      "id": "update-script-trustedness-algorithm",
+      "href": "https://w3c.github.io/trusted-types/dist/spec/#update-script-trustedness-algorithm",
       "level": 5,
-      "title": "The innerText IDL attribute",
+      "title": "Update script trustedness algorithm",
       "number": "4.1.2.2"
-    },
-    {
-      "id": "the-textContent-idl-attribute",
-      "href": "https://w3c.github.io/trusted-types/dist/spec/#the-textContent-idl-attribute",
-      "level": 5,
-      "title": "The textContent IDL attribute",
-      "number": "4.1.2.3"
-    },
-    {
-      "id": "the-text-idl-attribute",
-      "href": "https://w3c.github.io/trusted-types/dist/spec/#the-text-idl-attribute",
-      "level": 5,
-      "title": "The text IDL attribute",
-      "number": "4.1.2.4"
-    },
-    {
-      "id": "the-src-idl-attribute",
-      "href": "https://w3c.github.io/trusted-types/dist/spec/#the-src-idl-attribute",
-      "level": 5,
-      "title": "The src IDL attribute",
-      "number": "4.1.2.5"
     },
     {
       "id": "setting-slot-values-from-parser",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#setting-slot-values-from-parser",
       "level": 5,
       "title": "Setting slot values from parser",
-      "number": "4.1.2.6"
+      "number": "4.1.2.3"
     },
     {
       "id": "slot-value-verification",
       "href": "https://w3c.github.io/trusted-types/dist/spec/#slot-value-verification",
       "level": 5,
       "title": "Slot value verification",
-      "number": "4.1.2.7"
+      "number": "4.1.2.4"
     },
     {
       "id": "integration-with-content-security-policy",

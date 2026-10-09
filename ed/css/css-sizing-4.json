@@ -383,7 +383,7 @@
     },
     {
       "name": "column-width",
-      "value": "auto | <box-size>",
+      "newValues": "auto | <box-size>",
       "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
       "values": [
@@ -435,12 +435,66 @@
       "name": "<box-size>",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
       "type": "type",
-      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
+      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | stretch(<length-percentage [0,∞]> | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
     }
   ],
   "warnings": [
     {
       "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "height"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "min-width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "min-height"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "max-width"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stretch()",
+      "value": "stretch(<length-percentage [0,∞]>)",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-stretch",
+      "type": "function",
+      "for": "max-height"
+    },
+    {
+      "msg": "Dangling value",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "pureSyntax": false,
@@ -456,24 +510,6 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
       "type": "function",
       "for": "height"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
-      "for": "inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
-      "for": "block-size"
     },
     {
       "msg": "Dangling value",
@@ -500,24 +536,6 @@
       "pureSyntax": false,
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
       "type": "function",
-      "for": "min-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
-      "for": "min-block-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
       "for": "max-width"
     },
     {
@@ -528,24 +546,6 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
       "type": "function",
       "for": "max-height"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
-      "for": "max-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "fit-content()",
-      "value": "fit-content(<length-percentage [0,∞]>)",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-fit-content",
-      "type": "function",
-      "for": "max-block-size"
     },
     {
       "msg": "Dangling value",
@@ -572,24 +572,6 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
       "type": "value",
       "value": "contain",
-      "for": "inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
-      "for": "block-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
       "for": "min-width"
     },
     {
@@ -608,24 +590,6 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
       "type": "value",
       "value": "contain",
-      "for": "min-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
-      "for": "min-block-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
       "for": "max-width"
     },
     {
@@ -636,24 +600,6 @@
       "type": "value",
       "value": "contain",
       "for": "max-height"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
-      "for": "max-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "contain",
-      "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.1 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
-      "href": "https://drafts.csswg.org/css-sizing-4/#valdef-width-contain",
-      "type": "value",
-      "value": "contain",
-      "for": "max-block-size"
     },
     {
       "msg": "Dangling value",
@@ -674,20 +620,6 @@
       "name": "calc-size()",
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
       "type": "function",
-      "for": "inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
-      "for": "block-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
       "for": "min-width"
     },
     {
@@ -702,20 +634,6 @@
       "name": "calc-size()",
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
       "type": "function",
-      "for": "min-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
-      "for": "min-block-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
       "for": "max-width"
     },
     {
@@ -724,20 +642,6 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
       "type": "function",
       "for": "max-height"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
-      "for": "max-inline-size"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "calc-size()",
-      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-width-calc-size",
-      "type": "function",
-      "for": "max-block-size"
     }
   ]
 }

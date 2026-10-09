@@ -1,67 +1,68 @@
 {
   "spec": {
-    "title": "Web Serial API",
+    "title": "WebSerial Standard",
     "url": "https://serial.spec.whatwg.org/"
   },
   "algorithms": [
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"requestPort()\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" class=\"internalDFN\" id=\"ref-for-dom-serial-requestport-3\"><code>requestPort</code></a><code>()</code> method steps are:",
-      "rationale": "let",
+      "name": "Serial.requestPort()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" id=\"ref-for-dom-serial-requestport②\">requestPort()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named \"<a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial\" class=\"internalDFN\" id=\"ref-for-dfn-serial-1\"><code>serial</code></a>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n          <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"exception\" data-lt=\"SecurityError\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n          <var data-type=\"Promise\">promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature\">policy-controlled feature</a> named\n\"<a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#policy-controlled-feature-serial\" id=\"ref-for-policy-controlled-feature-serial\">serial</a>\", <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> does not have\n          <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\">transient activation</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n          \"<a data-link-type=\"exception\" data-lt=\"SecurityError\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\"\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-filters-1\"><code>filters</code></a>\"] is present,\n          then for each <var data-type=\"SerialPortFilter\">filter</var> in\n          <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-filters-2\"><code>filters</code></a>\"] run the following\n          steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" id=\"ref-for-dom-serialportrequestoptions-filters\">filters</a></code>\"] is present, then for\neach <var>filter</var> in <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" id=\"ref-for-dom-serialportrequestoptions-filters①\">filters</a></code>\"] run the\nfollowing steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid-1\"><code>bluetoothServiceClassId</code></a>\"] is\n              present:",
+              "html": "If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid\">bluetoothServiceClassId</a></code>\"] is present:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbvendorid-1\"><code>usbVendorId</code></a>\"] is present,\n                    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var data-type=\"Promise\">promise</var>."
+                  "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" id=\"ref-for-dom-serialportfilter-usbvendorid\">usbVendorId</a></code>\"] is present,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and return <var>promise</var>.</p>"
                 },
                 {
-                  "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbproductid-1\"><code>usbProductId</code></a>\"] is present,\n                    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var data-type=\"Promise\">promise</var>."
+                  "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" id=\"ref-for-dom-serialportfilter-usbproductid\">usbProductId</a></code>\"] is present,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code> and return <var>promise</var>.</p>"
                 }
               ]
             },
             {
-              "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbvendorid-2\"><code>usbVendorId</code></a>\"] is not\n              present, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return\n              <var data-type=\"Promise\">promise</var>."
+              "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" id=\"ref-for-dom-serialportfilter-usbvendorid①\">usbVendorId</a></code>\"] is not present,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code> and return <var>promise</var>.</p>"
             }
           ]
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+              "html": "<p>Let <var>allPorts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> Bluetooth device registered with the system:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> Bluetooth device registered with the system:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <a data-link-type=\"typedef\" data-lt=\"BluetoothServiceUUID\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid\"><code>BluetoothServiceUUID</code></a>\n                  <var data-type=\"BluetoothServiceUUID\">uuid</var> supported by the device:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://bluetooth.spec.whatwg.org/#typedefdef-bluetoothserviceuuid\" id=\"ref-for-typedefdef-bluetoothserviceuuid\">BluetoothServiceUUID</a></code> <var>uuid</var> supported by the\ndevice:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-allowedbluetoothserviceclassids\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-allowedbluetoothserviceclassids-1\"><code>allowedBluetoothServiceClassIds</code></a>\"]\n                          is present and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> <var data-type=\"BluetoothServiceUUID\">uuid</var>:",
+                      "html": "<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-allowedbluetoothserviceclassids\" id=\"ref-for-dom-serialportrequestoptions-allowedbluetoothserviceclassids\">allowedBluetoothServiceClassIds</a></code>\"]\nis present and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>uuid</var>:",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-3\"><code>SerialPort</code></a>\n                              representing the service on the Bluetooth device."
+                          "html": "<p>Let <var>port</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport②\">SerialPort</a></code> representing the service\non the Bluetooth device.</p>"
                         },
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var>."
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>port</var> to <var>allPorts</var>.</p>"
                         }
                       ]
                     }
@@ -70,293 +71,301 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-available\" class=\"internalDFN\" id=\"ref-for-dfn-available-1\">available</a> non-Bluetooth serial port:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#available\" id=\"ref-for-available\">available</a> non-Bluetooth serial port:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-4\"><code>SerialPort</code></a> representing\n                  the port."
+                  "html": "<p>Let <var>port</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport③\">SerialPort</a></code> representing the port.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"SerialPort\">port</var> to <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var>."
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>port</var> to <var>allPorts</var>.</p>"
                 }
               ]
             },
             {
-              "html": "Prompt the user to grant the site access to a serial port by\n              presenting them with a list of ports in <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> that <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-match-any-filter\" class=\"internalDFN\" id=\"ref-for-dfn-match-any-filter-1\">match any filter</a> in <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" class=\"internalDFN\" id=\"ref-for-dom-serialportrequestoptions-filters-3\"><code>filters</code></a>\"]\n              if present and <var data-type=\"list&lt;SerialPort&gt;\">allPorts</var> otherwise."
+              "html": "<p>Prompt the user to grant the site access to a serial port by presenting\nthem with a list of ports in <var>allPorts</var> that <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#match-any-filter\" id=\"ref-for-match-any-filter\">match any filter</a> in\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportrequestoptions-filters\" id=\"ref-for-dom-serialportrequestoptions-filters②\">filters</a></code>\"] if present and\n<var>allPorts</var> otherwise.</p>"
             },
             {
-              "html": "If the user does not choose a port, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a>\n              on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-1\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n              \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+              "html": "<p>If the user does not choose a port, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror①\">NotFoundError</a></code>\"\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> and abort these steps.</p>"
             },
             {
-              "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-5\"><code>SerialPort</code></a> representing the\n              port chosen by the user."
+              "html": "<p>Let <var>port</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport④\">SerialPort</a></code> representing the port chosen by the user.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-2\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var data-type=\"SerialPort\">port</var>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with\n<var>port</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var data-type=\"Promise\">promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
       "name": "matches the filter",
-      "href": "https://serial.spec.whatwg.org/#dfn-matches-the-filter",
-      "html": "A serial port <var data-type=\"SerialPort\">port</var> <dfn id=\"dfn-matches-the-filter\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches the filter</dfn>\n            <var data-type=\"SerialPortFilter\">filter</var> if these steps return <code>true</code>:",
-      "rationale": "let",
+      "href": "https://serial.spec.whatwg.org/#matches-the-filter",
+      "html": "A serial port <var>port</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches-the-filter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches the filter</dfn> <var>filter</var> if these steps\nreturn <code>true</code>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"SerialPortInfo\">info</var> be the result of calling\n            <var data-type=\"SerialPort\">port</var>.<a data-link-type=\"idl\" data-lt=\"getInfo()\" href=\"https://serial.spec.whatwg.org/#dom-serialport-getinfo\" class=\"internalDFN\" id=\"ref-for-dom-serialport-getinfo-1\"><code>getInfo</code></a><code>()</code>."
+          "html": "<p>Let <var>info</var> be the result of calling <var>port</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-getinfo\" id=\"ref-for-dom-serialport-getinfo\">getInfo()</a></code>.</p>"
         },
         {
-          "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid-3\"><code>bluetoothServiceClassId</code></a>\"] is\n            present:",
+          "html": "If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid②\">bluetoothServiceClassId</a></code>\"] is present:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If the serial port is not part of a Bluetooth device,\n                return <code>false</code>."
+              "html": "<p>If the serial port is not part of a Bluetooth device, return <code>false</code>.</p>"
             },
             {
-              "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid-4\"><code>bluetoothServiceClassId</code></a>\"]\n                is equal to\n                <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-bluetoothserviceclassid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-bluetoothserviceclassid-1\"><code>bluetoothServiceClassId</code></a>\"], return\n                <code>true</code>."
+              "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-bluetoothserviceclassid\" id=\"ref-for-dom-serialportfilter-bluetoothserviceclassid③\">bluetoothServiceClassId</a></code>\"] is equal to\n<var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-bluetoothserviceclassid\" id=\"ref-for-dom-serialportinfo-bluetoothserviceclassid\">bluetoothServiceClassId</a></code>\"], return <code>true</code>.</p>"
             },
             {
-              "html": "Otherwise, return <code>false</code>."
+              "html": "<p>Otherwise, return <code>false</code>.</p>"
             }
           ]
         },
         {
-          "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbvendorid-5\"><code>usbVendorId</code></a>\"] is not present,\n            return <code>true</code>."
+          "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" id=\"ref-for-dom-serialportfilter-usbvendorid④\">usbVendorId</a></code>\"] is not present, return\n<code>true</code>.</p>"
         },
         {
-          "html": "If the serial port is not part of a USB device, return <code>false</code>."
+          "html": "<p>If the serial port is not part of a USB device, return <code>false</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-usbvendorid-1\"><code>usbVendorId</code></a>\"] is not equal to\n            <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbvendorid-6\"><code>usbVendorId</code></a>\"], return <code>false</code>."
+          "html": "<p>If <var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbvendorid\" id=\"ref-for-dom-serialportinfo-usbvendorid\">usbVendorId</a></code>\"] is not equal to\n<var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbvendorid\" id=\"ref-for-dom-serialportfilter-usbvendorid⑤\">usbVendorId</a></code>\"], return <code>false</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbproductid-4\"><code>usbProductId</code></a>\"] is not\n            present, return <code>true</code>."
+          "html": "<p>If <var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" id=\"ref-for-dom-serialportfilter-usbproductid③\">usbProductId</a></code>\"] is not present, return\n<code>true</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbproductid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-usbproductid-1\"><code>usbProductId</code></a>\"] is not equal to\n            <var data-type=\"SerialPortFilter\">filter</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-usbproductid-5\"><code>usbProductId</code></a>\"], return <code>false</code>."
+          "html": "<p>If <var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbproductid\" id=\"ref-for-dom-serialportinfo-usbproductid\">usbProductId</a></code>\"] is not equal to\n<var>filter</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter-usbproductid\" id=\"ref-for-dom-serialportfilter-usbproductid④\">usbProductId</a></code>\"], return <code>false</code>.</p>"
         },
         {
-          "html": "Otherwise, return <code>true</code>."
+          "html": "<p>Otherwise, return <code>true</code>.</p>"
         }
       ]
     },
     {
       "name": "match any filter",
-      "href": "https://serial.spec.whatwg.org/#dfn-match-any-filter",
-      "html": "A serial port <var data-type=\"SerialPort\">port</var> <dfn data-lt=\"match any filter|matches any filter\" id=\"dfn-match-any-filter\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">matches any filter</dfn> in a sequence of\n            <a data-link-type=\"idl\" data-lt=\"SerialPortFilter\" href=\"https://serial.spec.whatwg.org/#dom-serialportfilter\" class=\"internalDFN\" id=\"ref-for-dom-serialportfilter-4\"><code>SerialPortFilter</code></a> if these steps return <code>true</code>:",
-      "rationale": "for",
+      "href": "https://serial.spec.whatwg.org/#match-any-filter",
+      "html": "A serial port <var>port</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"match any filter|matches any filter\" data-noexport=\"\" id=\"match-any-filter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches any\nfilter</dfn> in a sequence of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dictdef-serialportfilter\" id=\"ref-for-dictdef-serialportfilter④\">SerialPortFilter</a></code> if these steps return <code>true</code>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "For each <var data-type=\"SerialPortFilter\">filter</var> in the sequence, run these sub-steps:",
+          "html": "For each <var>filter</var> in the sequence, run these sub-steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var data-type=\"SerialPort\">port</var> <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-matches-the-filter\" class=\"internalDFN\" id=\"ref-for-dfn-matches-the-filter-1\">matches the filter</a> <var data-type=\"SerialPortFilter\">filter</var>, return <code>true</code>."
+              "html": "<p>If <var>port</var> <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#matches-the-filter\" id=\"ref-for-matches-the-filter\">matches the filter</a> <var>filter</var>, return <code>true</code>.</p>"
             }
           ]
         },
         {
-          "html": "Return <code>false</code>."
+          "html": "<p>Return <code>false</code>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"getPorts()\" href=\"https://serial.spec.whatwg.org/#dom-serial-getports\" class=\"internalDFN\" id=\"ref-for-dom-serial-getports-2\"><code>getPorts</code></a><code>()</code> method steps are:",
-      "rationale": "let",
+      "name": "Serial.getPorts()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-getports\" id=\"ref-for-dom-serial-getports①\">getPorts()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> named <code>\"serial\"</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with a\n          \"<a data-link-type=\"exception\" data-lt=\"SecurityError\" href=\"https://webidl.spec.whatwg.org/#securityerror\"><code>SecurityError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return <var data-type=\"Promise\">promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named <code>\"serial\"</code>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror②\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> and return\n<var>promise</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>availablePorts</var> be the sequence of <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-available\" class=\"internalDFN\" id=\"ref-for-dfn-available-2\">available</a> serial\n              ports which the user has allowed the site to access\n              as the result of a previous call to <a data-link-type=\"idl\" data-lt=\"requestPort()\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" class=\"internalDFN\" id=\"ref-for-dom-serial-requestport-4\"><code>requestPort</code></a><code>()</code>."
+              "html": "<p>Let <var>availablePorts</var> be the sequence of <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#available\" id=\"ref-for-available①\">available</a> serial ports which\nthe user has allowed the site to access as the result of a previous call\nto <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" id=\"ref-for-dom-serial-requestport③\">requestPort()</a></code>.</p>"
             },
             {
-              "html": "Let <var>ports</var> be the sequence of the <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-6\"><code>SerialPort</code></a>s\n              representing the ports in <var>availablePorts</var>."
+              "html": "<p>Let <var>ports</var> be the sequence of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport⑤\">SerialPort</a></code>s representing the\nports in <var>availablePorts</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-3\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var>ports</var>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source②\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with\n<var>ports</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var data-type=\"Promise\">promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
-      "html": "When a serial port that the user has allowed the site to access as the\n          result of a previous call to <a data-link-type=\"idl\" data-lt=\"requestPort()\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" class=\"internalDFN\" id=\"ref-for-dom-serial-requestport-5\"><code>requestPort</code></a><code>()</code> becomes\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-logically-connected\" class=\"internalDFN\" id=\"ref-for-dfn-logically-connected-1\">logically connected</a>, run the following steps:",
-      "rationale": "let",
+      "name": "SerialPort onconnect",
+      "html": "When a serial port that the user has allowed the site to access as the result of\na previous call to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" id=\"ref-for-dom-serial-requestport④\">requestPort()</a></code> becomes <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#logically-connected\" id=\"ref-for-logically-connected\">logically connected</a>, run\nthe following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-12\"><code>SerialPort</code></a> representing the port."
+          "html": "<p>Let <var>port</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport①①\">SerialPort</a></code> representing the port.</p>"
         },
         {
-          "html": "Set <var data-type=\"SerialPort\">port</var>.<a data-link-type=\"attribute\" data-lt=\"[[connected]]\" href=\"https://serial.spec.whatwg.org/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-1\"><code>[[connected]]</code></a> to <code>true</code>."
+          "html": "<p>Set <var>port</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-connected-slot\" id=\"ref-for-dom-serialport-connected-slot\">[[connected]]</a></code> to <code>true</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"connect\" href=\"https://serial.spec.whatwg.org/#dfn-connect\" class=\"internalDFN\" id=\"ref-for-dfn-connect-2\"><code>connect</code></a> at <var data-type=\"SerialPort\">port</var> with its\n          <a data-link-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\"><code>bubbles</code></a> attribute initialized to <code>true</code>."
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dfn-connect\" id=\"ref-for-dfn-connect①\">connect</a></code> at <var>port</var> with its\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code> attribute initialized to <code>true</code>.</p>"
         }
       ]
     },
     {
-      "html": "When a serial port that the user has allowed the site to access as the\n          result of a previous call to <a data-link-type=\"idl\" data-lt=\"requestPort()\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" class=\"internalDFN\" id=\"ref-for-dom-serial-requestport-6\"><code>requestPort</code></a><code>()</code> is no longer\n          <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-logically-connected\" class=\"internalDFN\" id=\"ref-for-dfn-logically-connected-2\">logically connected</a>, run the following steps:",
-      "rationale": "let",
+      "name": "SerialPort ondisconnect",
+      "html": "When a serial port that the user has allowed the site to access as the result of\na previous call to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" id=\"ref-for-dom-serial-requestport⑤\">requestPort()</a></code> is no longer <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#logically-connected\" id=\"ref-for-logically-connected①\">logically connected</a>, run the following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"SerialPort\">port</var> be a <a data-link-type=\"idl\" data-lt=\"SerialPort\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" class=\"internalDFN\" id=\"ref-for-dom-serialport-13\"><code>SerialPort</code></a> representing the port."
+          "html": "<p>Let <var>port</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport\" id=\"ref-for-dom-serialport①②\">SerialPort</a></code> representing the port.</p>"
         },
         {
-          "html": "Set <var data-type=\"SerialPort\">port</var>.<a data-link-type=\"attribute\" data-lt=\"[[connected]]\" href=\"https://serial.spec.whatwg.org/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-2\"><code>[[connected]]</code></a> to <code>false</code>."
+          "html": "<p>Set <var>port</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-connected-slot\" id=\"ref-for-dom-serialport-connected-slot①\">[[connected]]</a></code> to <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-lt=\"disconnect\" href=\"https://serial.spec.whatwg.org/#dfn-disconnect\" class=\"internalDFN\" id=\"ref-for-dfn-disconnect-2\"><code>disconnect</code></a> at <var data-type=\"SerialPort\">port</var> with its\n          <a data-link-type=\"attribute\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\"><code>bubbles</code></a> attribute initialized to <code>true</code>."
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dfn-disconnect\" id=\"ref-for-dfn-disconnect①\">disconnect</a></code> at <var>port</var> with its\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles①\">bubbles</a></code> attribute initialized to <code>true</code>.</p>"
         }
       ]
     },
     {
-      "rationale": "let",
+      "name": "SerialPort.getInfo()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-getinfo\" id=\"ref-for-dom-serialport-getinfo②\">getInfo()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"SerialPortInfo\">info</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
+          "html": "<p>Let <var>info</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">ordered map</a>.</p>"
         },
         {
           "html": "If the port is part of a USB device, perform the following steps:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbvendorid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-usbvendorid-2\"><code>usbVendorId</code></a>\"] to the vendor ID\n              of the device."
+              "html": "<p>Set <var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbvendorid\" id=\"ref-for-dom-serialportinfo-usbvendorid①\">usbVendorId</a></code>\"] to the vendor ID of the\ndevice.</p>"
             },
             {
-              "html": "Set <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbproductid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-usbproductid-2\"><code>usbProductId</code></a>\"] to the product\n              ID of the device."
+              "html": "<p>Set <var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-usbproductid\" id=\"ref-for-dom-serialportinfo-usbproductid①\">usbProductId</a></code>\"] to the product ID of the\ndevice.</p>"
             }
           ]
         },
         {
-          "html": "If the port is a service on a Bluetooth device, perform the\n          following steps:",
+          "html": "If the port is a service on a Bluetooth device, perform the following steps:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var data-type=\"SerialPortInfo\">info</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-bluetoothserviceclassid\" class=\"internalDFN\" id=\"ref-for-dom-serialportinfo-bluetoothserviceclassid-2\"><code>bluetoothServiceClassId</code></a>\"] to\n              the service class UUID of the Bluetooth service."
+              "html": "<p>Set <var>info</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialportinfo-bluetoothserviceclassid\" id=\"ref-for-dom-serialportinfo-bluetoothserviceclassid①\">bluetoothServiceClassId</a></code>\"] to the service\nclass UUID of the Bluetooth service.</p>"
             }
           ]
         },
         {
-          "html": "Return <var data-type=\"SerialPortInfo\">info</var>."
+          "html": "<p>Return <var>info</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"open()\" href=\"https://serial.spec.whatwg.org/#dom-serialport-open\" class=\"internalDFN\" id=\"ref-for-dom-serialport-open-3\"><code>open</code></a><code>()</code> method steps are:",
-      "rationale": "let",
+      "name": "SerialPort.open()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-open\" id=\"ref-for-dom-serialport-open②\">open()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\"><code>[[state]]</code></a> is not <code>\"closed\"</code>, reject\n          <var>promise</var> with an \"<a data-link-type=\"exception\" data-lt=\"InvalidStateError\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n          <var>promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot\">[[state]]</a></code> is not <code>\"closed\"</code>, reject <var>promise</var>\nwith an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-baudrate\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-baudrate-1\"><code>baudRate</code></a>\"] is 0, reject <var>promise</var>\n          with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-baudrate\" id=\"ref-for-dom-serialoptions-baudrate\">baudRate</a></code>\"] is 0, reject <var>promise</var> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-databits\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-databits-1\"><code>dataBits</code></a>\"] is not 7 or 8, reject\n          <var>promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-databits\" id=\"ref-for-dom-serialoptions-databits\">dataBits</a></code>\"] is not 7 or 8, reject <var>promise</var>\nwith a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-stopbits\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-stopbits-1\"><code>stopBits</code></a>\"] is not 1 or 2, reject\n          <var>promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-stopbits\" id=\"ref-for-dom-serialoptions-stopbits\">stopBits</a></code>\"] is not 1 or 2, reject <var>promise</var>\nwith a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-buffersize-1\"><code>bufferSize</code></a>\"] is 0, reject\n          <var>promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" id=\"ref-for-dom-serialoptions-buffersize\">bufferSize</a></code>\"] is 0, reject <var>promise</var> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "Optionally, if <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-buffersize-2\"><code>bufferSize</code></a>\"] is\n          larger than the implementation is able to support, reject <var>promise</var>\n          with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>Optionally, if <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" id=\"ref-for-dom-serialoptions-buffersize①\">bufferSize</a></code>\"] is larger than the\nimplementation is able to support, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑦\">TypeError</a></code> and\nreturn <var>promise</var>.</p>"
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-2\"><code>[[state]]</code></a> to <code>\"opening\"</code>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot①\">[[state]]</a></code> to <code>\"opening\"</code>.</p>"
         },
         {
-          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>.",
+          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.",
           "rationale": "invoke",
           "steps": [
             {
-              "html": "Invoke the operating system to open the serial port using the\n              connection parameters (or their defaults) specified in <var>options</var>."
+              "html": "<p>Invoke the operating system to open the serial port using the connection\nparameters (or their defaults) specified in <var>options</var>.</p>"
             },
             {
-              "html": "If this fails for any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-4\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with a \"<a data-link-type=\"exception\" data-lt=\"NetworkError\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+              "html": "<p>If this fails for any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source③\">serial port task source</a> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and\nabort these steps.</p>"
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-3\"><code>[[state]]</code></a> to <code>\"opened\"</code>."
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot②\">[[state]]</a></code> to <code>\"opened\"</code>.</p>"
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[bufferSize]]\" href=\"https://serial.spec.whatwg.org/#dfn-buffersize\" class=\"internalDFN\" id=\"ref-for-dfn-buffersize-1\"><code>[[bufferSize]]</code></a> to\n              <var>options</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" class=\"internalDFN\" id=\"ref-for-dom-serialoptions-buffersize-3\"><code>bufferSize</code></a>\"]."
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-buffersize-slot\" id=\"ref-for-dom-serialport-buffersize-slot\">[[bufferSize]]</a></code> to\n<var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoptions-buffersize\" id=\"ref-for-dom-serialoptions-buffersize②\">bufferSize</a></code>\"].</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-5\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var>promise</var> with <code>undefined</code>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source④\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with\n<code>undefined</code>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var>promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-connected\" class=\"internalDFN\" id=\"ref-for-dom-serialport-connected-2\"><code>connected</code></a> getter steps are:",
-      "rationale": "return",
+      "name": "SerialPort.connected",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-connected\" id=\"ref-for-dom-serialport-connected①\">connected</a></code> getter steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[connected]]\" href=\"https://serial.spec.whatwg.org/#dfn-connected\" class=\"internalDFN\" id=\"ref-for-dfn-connected-3\"><code>[[connected]]</code></a>."
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-connected-slot\" id=\"ref-for-dom-serialport-connected-slot②\">[[connected]]</a></code>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable\" class=\"internalDFN\" id=\"ref-for-dom-serialport-readable-6\"><code>readable</code></a> getter steps are:",
-      "rationale": "if",
+      "name": "SerialPort.readable",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable\" id=\"ref-for-dom-serialport-readable⑤\">readable</a></code> getter steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-1\"><code>[[readable]]</code></a> is not <code>null</code>, return\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-2\"><code>[[readable]]</code></a>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot\">[[readable]]</a></code> is not <code>null</code>, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①\">[[readable]]</a></code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-4\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, return\n          <code>null</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot③\">[[state]]</a></code> is not <code>\"opened\"</code>, return <code>null</code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-readfatal\" class=\"internalDFN\" id=\"ref-for-dfn-readfatal-1\"><code>[[readFatal]]</code></a> is <code>true</code>, return\n          <code>null</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readfatal-slot\" id=\"ref-for-dom-serialport-readfatal-slot\">[[readFatal]]</a></code> is <code>true</code>, return <code>null</code>.</p>"
         },
         {
-          "html": "Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> <a data-link-type=\"interface\" data-lt=\"ReadableStream\" href=\"https://streams.spec.whatwg.org/#readablestream\"><code>ReadableStream</code></a>."
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream③\">ReadableStream</a></code>.</p>"
         },
         {
           "html": "Let <var>pullAlgorithm</var> be the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>desiredSize</var> be the <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-desired-size-to-fill-up-to-the-high-water-mark\">desired size to fill up to the high water mark</a> for\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-3\"><code>[[readable]]</code></a>."
+              "html": "<p>Let <var>desiredSize</var> be the <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-desired-size-to-fill-up-to-the-high-water-mark\" id=\"ref-for-readablestream-desired-size-to-fill-up-to-the-high-water-mark\">desired size to fill up to the high water mark</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot②\">[[readable]]</a></code>.</p>"
             },
             {
-              "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-4\"><code>[[readable]]</code></a>'s\n              <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a> is non-null, then\n              set <var>desiredSize</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-5\"><code>[[readable]]</code></a>'s\n              <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a>'s\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\">byte length</a>."
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot③\">[[readable]]</a></code>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view\">current BYOB request view</a> is non-null, then set <var>desiredSize</var> to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot④\">[[readable]]</a></code>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view①\">current BYOB request view</a>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a>.</p>"
             },
             {
-              "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+              "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
             },
             {
-              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to read up to <var>desiredSize</var>\n                  bytes from the port, putting the result in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a> <var>bytes</var>."
+                  "html": "<p>Invoke the operating system to read up to <var>desiredSize</var> bytes from\nthe port, putting the result in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>bytes</var>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-6\">serial port task source</a> to run the\n                  following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source⑤\">serial port task source</a> to run the following\nsteps:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -364,46 +373,46 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-6\"><code>[[readable]]</code></a>'s\n                          <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a> is\n                          non-null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write\">write</a> <var>bytes</var> into\n                          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-7\"><code>[[readable]]</code></a>'s\n                          <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a>, and set\n                          <var>view</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-8\"><code>[[readable]]</code></a>'s\n                          <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a>."
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot⑤\">[[readable]]</a></code>’s\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view②\">current BYOB request view</a> is non-null,\nthen <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-write\" id=\"ref-for-arraybufferview-write\">write</a> <var>bytes</var> into\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot⑥\">[[readable]]</a></code>’s\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view③\">current BYOB request view</a>, and set <var>view</var>\nto <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot⑦\">[[readable]]</a></code>’s\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view④\">current BYOB request view</a>.</p>"
                         },
                         {
-                          "html": "Otherwise, set <var>view</var> to the result of\n                          <a data-link-type=\"dfn\" data-lt=\"create\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-create\">creating</a> a <a data-link-type=\"interface\" data-lt=\"Uint8Array\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\"><code>Uint8Array</code></a>\n                          from <var>bytes</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant Realm</a>."
+                          "html": "<p>Otherwise, set <var>view</var> to the result of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#arraybufferview-create\" id=\"ref-for-arraybufferview-create\">creating</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array①\">Uint8Array</a></code> from\n<var>bytes</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
                         },
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\">Enqueue</a> <var>view</var> into\n                          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-9\"><code>[[readable]]</code></a>."
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\" id=\"ref-for-readablestream-enqueue\">Enqueue</a> <var>view</var> into\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot⑧\">[[readable]]</a></code>.</p>"
                         },
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var>promise</var> with <code>undefined</code>."
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">Resolve</a> <var>promise</var> with <code>undefined</code>.</p>"
                         }
                       ]
                     },
                     {
-                      "html": "If a buffer overrun condition was encountered, invoke\n                      <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-10\"><code>[[readable]]</code></a> with a\n                      \"<code>BufferOverrunError</code>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and\n                      invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-1\">handle closing the readable stream</a>."
+                      "html": "<p>If a buffer overrun condition was encountered, invoke\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot⑨\">[[readable]]</a></code>\nwith a \"<code>BufferOverrunError</code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> and\ninvoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "If a break condition was encountered, invoke\n                      <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-11\"><code>[[readable]]</code></a> with a\n                      \"<code>BreakError</code>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and invoke the\n                      steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-2\">handle closing the readable stream</a>."
+                      "html": "<p>If a break condition was encountered, invoke\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error①\">error</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⓪\">[[readable]]</a></code>\nwith a \"<code>BreakError</code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> and invoke the\nsteps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream①\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "If a framing error was encountered, invoke\n                      <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-12\"><code>[[readable]]</code></a> with a\n                      \"<code>FramingError</code>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and invoke\n                      the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-3\">handle closing the readable stream</a>."
+                      "html": "<p>If a framing error was encountered, invoke\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error②\">error</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①①\">[[readable]]</a></code>\nwith a \"<code>FramingError</code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> and invoke\nthe steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream②\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "If a parity error was encountered, invoke\n                      <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-13\"><code>[[readable]]</code></a> with a\n                      \"<code>ParityError</code>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and invoke\n                      the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-4\">handle closing the readable stream</a>."
+                      "html": "<p>If a parity error was encountered, invoke\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error③\">error</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①②\">[[readable]]</a></code>\nwith a \"<code>ParityError</code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> and invoke\nthe steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream③\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "If an operating system error was encountered, invoke\n                      <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-14\"><code>[[readable]]</code></a> with an\n                      \"<a data-link-type=\"exception\" data-lt=\"UnknownError\" href=\"https://webidl.spec.whatwg.org/#unknownerror\"><code>UnknownError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and invoke the steps\n                      to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-5\">handle closing the readable stream</a>."
+                      "html": "<p>If an operating system error was encountered, invoke\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error④\">error</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①③\">[[readable]]</a></code>\nwith an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">UnknownError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code> and invoke the steps\nto <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream④\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "If <var>the port was disconnected</var>, run the following\n                      steps:",
+                      "html": "If <var>the port was disconnected</var>, run the following steps:",
                       "rationale": "set",
                       "steps": [
                         {
-                          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-readfatal\" class=\"internalDFN\" id=\"ref-for-dfn-readfatal-2\"><code>[[readFatal]]</code></a> to\n                          <code>true</code>,"
+                          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readfatal-slot\" id=\"ref-for-dom-serialport-readfatal-slot①\">[[readFatal]]</a></code> to <code>true</code>,</p>"
                         },
                         {
-                          "html": "Invoke <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\">error</a> on\n                          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-15\"><code>[[readable]]</code></a> with a\n                          \"<a data-link-type=\"exception\" data-lt=\"NetworkError\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑤\">error</a> on\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①④\">[[readable]]</a></code> with a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror①\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>.</p>"
                         },
                         {
-                          "html": "Invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-6\">handle closing the readable stream</a>."
+                          "html": "<p>Invoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream⑤\">handle closing the readable stream</a>.</p>"
                         }
                       ]
                     }
@@ -412,7 +421,7 @@
               ]
             },
             {
-              "html": "Return <var>promise</var>."
+              "html": "<p>Return <var>promise</var>.</p>"
             }
           ]
         },
@@ -421,133 +430,136 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+              "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a>.</p>"
             },
             {
-              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>.",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to discard the contents of\n                  all software and hardware receive buffers for the port."
+                  "html": "<p>Invoke the operating system to discard the contents of all software\nand hardware receive buffers for the port.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-7\">serial port task source</a> to run the\n                  following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⓪\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source⑥\">serial port task source</a> to run the following\nsteps:",
                   "rationale": "invoke",
                   "steps": [
                     {
-                      "html": "Invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-readable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-readable-stream-7\">handle closing the readable stream</a>."
+                      "html": "<p>Invoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-readable-stream\" id=\"ref-for-handle-closing-the-readable-stream⑥\">handle closing the readable stream</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var>promise</var> with <code>undefined</code>."
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve④\">Resolve</a> <var>promise</var> with <code>undefined</code>.</p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "Return <var>promise</var>."
+              "html": "<p>Return <var>promise</var>.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support\">Set up with byte reading support</a> <var>stream</var> with\n          <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-pullalgorithm\">pullAlgorithm</a></i> set to <var>pullAlgorithm</var>,\n          <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-cancelalgorithm\">cancelAlgorithm</a></i> set to <var>cancelAlgorithm</var>, and\n          <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-highwatermark\">highWaterMark</a></i> set to\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[bufferSize]]\" href=\"https://serial.spec.whatwg.org/#dfn-buffersize\" class=\"internalDFN\" id=\"ref-for-dfn-buffersize-2\"><code>[[bufferSize]]</code></a>."
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support\" id=\"ref-for-readablestream-set-up-with-byte-reading-support\">Set up with byte reading support</a> <var>stream</var> with\n<i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-pullalgorithm\" id=\"ref-for-readablestream-set-up-with-byte-reading-support-pullalgorithm\">pullAlgorithm</a></i> set\nto <var>pullAlgorithm</var>, <i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-cancelalgorithm\" id=\"ref-for-readablestream-set-up-with-byte-reading-support-cancelalgorithm\">cancelAlgorithm</a></i> set to <var>cancelAlgorithm</var>, and\n<i><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-highwatermark\" id=\"ref-for-readablestream-set-up-with-byte-reading-support-highwatermark\">highWaterMark</a></i> set\nto <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-buffersize-slot\" id=\"ref-for-dom-serialport-buffersize-slot①\">[[bufferSize]]</a></code>.</p>"
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-16\"><code>[[readable]]</code></a> to <var>stream</var>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⑤\">[[readable]]</a></code> to <var>stream</var>.</p>"
         },
         {
-          "html": "Return <var>stream</var>."
+          "html": "<p>Return <var>stream</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable\" class=\"internalDFN\" id=\"ref-for-dom-serialport-readable-6\"><code>readable</code></a> getter steps are:",
-      "rationale": "set",
+      "name": "handle closing the readable stream",
+      "href": "https://serial.spec.whatwg.org/#handle-closing-the-readable-stream",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-closing-the-readable-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle closing the readable stream</dfn> perform the following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-17\"><code>[[readable]]</code></a> to <code>null</code>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⑥\">[[readable]]</a></code> to <code>null</code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-1\"><code>[[writable]]</code></a> is <code>null</code> and\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-1\"><code>[[pendingClosePromise]]</code></a> is not <code>null</code>,\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-2\"><code>[[pendingClosePromise]]</code></a> with\n          <code>undefined</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot\">[[writable]]</a></code> is <code>null</code> and\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot\">[[pendingClosePromise]]</a></code> is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a>\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot①\">[[pendingClosePromise]]</a></code> with <code>undefined</code>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable\" class=\"internalDFN\" id=\"ref-for-dom-serialport-writable-4\"><code>writable</code></a> getter steps are:",
-      "rationale": "if",
+      "name": "SerialPort.writable",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable\" id=\"ref-for-dom-serialport-writable③\">writable</a></code> getter steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-2\"><code>[[writable]]</code></a> is not <code>null</code>, return\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-3\"><code>[[writable]]</code></a>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot①\">[[writable]]</a></code> is not <code>null</code>, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot②\">[[writable]]</a></code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-6\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, return\n          <code>null</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot⑤\">[[state]]</a></code> is not <code>\"opened\"</code>, return <code>null</code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writeFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-writefatal\" class=\"internalDFN\" id=\"ref-for-dfn-writefatal-1\"><code>[[writeFatal]]</code></a> is <code>true</code>, return\n          <code>null</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writefatal-slot\" id=\"ref-for-dom-serialport-writefatal-slot\">[[writeFatal]]</a></code> is <code>true</code>, return <code>null</code>.</p>"
         },
         {
-          "html": "Let <var data-type=\"WritableStream\">stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\">new</a> <a data-link-type=\"interface\" data-lt=\"WritableStream\" href=\"https://streams.spec.whatwg.org/#writablestream\"><code>WritableStream</code></a>."
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#writablestream\" id=\"ref-for-writablestream③\">WritableStream</a></code>.</p>"
         },
         {
-          "html": "Let <var data-type=\"AbortSignal\">signal</var> be <var data-type=\"WritableStream\">stream</var>'s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-signal\">signal</a>."
+          "html": "<p>Let <var>signal</var> be <var>stream</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-signal\" id=\"ref-for-writablestream-signal\">signal</a>.</p>"
         },
         {
           "html": "Let <var>writeAlgorithm</var> be the following steps, given <var>chunk</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+              "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
             },
             {
-              "html": "Assert: <var data-type=\"AbortSignal\">signal</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>."
+              "html": "<p class=\"assertion\">Assert: <var>signal</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>.</p>"
             },
             {
-              "html": "If <var>chunk</var> cannot be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type\n              <a data-link-type=\"typedef\" data-lt=\"BufferSource\" href=\"https://webidl.spec.whatwg.org/#BufferSource\"><code>BufferSource</code></a>, reject <var data-type=\"Promise\">promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and\n              return <var data-type=\"Promise\">promise</var>. Otherwise, save the result of the conversion in\n              <var data-type=\"BufferSource\">source</var>."
+              "html": "<p>If <var>chunk</var> cannot be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-ecmascript-to-idl-value\" id=\"ref-for-dfn-convert-ecmascript-to-idl-value\">converted to an IDL value</a> of type\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource\">BufferSource</a></code>, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑧\">TypeError</a></code> and return\n<var>promise</var>. Otherwise, save the result of the conversion in <var>source</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">Get a copy of the buffer source</a> <var data-type=\"BufferSource\">source</var> and save the\n              result in <var>bytes</var>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\" id=\"ref-for-dfn-get-buffer-source-copy\">Get a copy of the buffer source</a> <var>source</var> and save the result in\n<var>bytes</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">In parallel</a>, run the following steps:",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to write <var>bytes</var> to the port.\n                  Alternately, store the chunk for future coalescing."
+                  "html": "<p>Invoke the operating system to write <var>bytes</var> to the port.\nAlternately, store the chunk for future coalescing.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-8\">serial port task source</a> to run the\n                  following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①①\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source⑦\">serial port task source</a> to run the following\nsteps:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If the chunk was successfully written, or was stored\n                      for future coalescing, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with\n                      <code>undefined</code>."
+                      "html": "<p>If the chunk was successfully written, or was stored for future\ncoalescing, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑥\">resolve</a> <var>promise</var> with <code>undefined</code>.</p>"
                     },
                     {
-                      "html": "If an operating system error was encountered,\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var data-type=\"Promise\">promise</var> with an \"<a data-link-type=\"exception\" data-lt=\"UnknownError\" href=\"https://webidl.spec.whatwg.org/#unknownerror\"><code>UnknownError</code></a>\"\n                      <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                      "html": "<p>If an operating system error was encountered, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a>\n<var>promise</var> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror①\">UnknownError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>.</p>"
                     },
                     {
-                      "html": "If <var>the port was disconnected</var>, run the following\n                      steps:",
+                      "html": "If <var>the port was disconnected</var>, run the following steps:",
                       "rationale": "set",
                       "steps": [
                         {
-                          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writeFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-writefatal\" class=\"internalDFN\" id=\"ref-for-dfn-writefatal-2\"><code>[[writeFatal]]</code></a> to\n                          <code>true</code>."
+                          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writefatal-slot\" id=\"ref-for-dom-serialport-writefatal-slot①\">[[writeFatal]]</a></code> to <code>true</code>.</p>"
                         },
                         {
-                          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">Reject</a> <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"exception\" data-lt=\"NetworkError\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n                          <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">Reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror②\">NetworkError</a></code>\"\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
                         },
                         {
-                          "html": "Invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-writable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-writable-stream-1\">handle closing the writable stream</a>."
+                          "html": "<p>Invoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-writable-stream\" id=\"ref-for-handle-closing-the-writable-stream\">handle closing the writable stream</a>.</p>"
                         }
                       ]
                     },
                     {
-                      "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                      <var data-type=\"Promise\">promise</var> with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a>."
+                      "html": "<p>If <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①\">aborted</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">reject</a> <var>promise</var>\nwith <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "Return <var data-type=\"Promise\">promise</var>."
+              "html": "<p>Return <var>promise</var>.</p>"
             }
           ]
         },
@@ -556,31 +568,31 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+              "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑥\">a new promise</a>.</p>"
             },
             {
-              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>.",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to discard the contents of\n                  all software and hardware transmit buffers for the port."
+                  "html": "<p>Invoke the operating system to discard the contents of all software\nand hardware transmit buffers for the port.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-9\">serial port task source</a> to run the\n                  following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①②\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source⑧\">serial port task source</a> to run the following\nsteps:",
                   "rationale": "invoke",
                   "steps": [
                     {
-                      "html": "Invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-writable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-writable-stream-2\">handle closing the writable stream</a>."
+                      "html": "<p>Invoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-writable-stream\" id=\"ref-for-handle-closing-the-writable-stream①\">handle closing the writable stream</a>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑦\">Resolve</a> <var>promise</var> with <code>undefined</code>.</p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "Return <var data-type=\"Promise\">promise</var>."
+              "html": "<p>Return <var>promise</var>.</p>"
             }
           ]
         },
@@ -589,282 +601,289 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+              "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑦\">a new promise</a>.</p>"
             },
             {
-              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>.",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to flush the contents of all\n                  software and hardware transmit buffers for the port."
+                  "html": "<p>Invoke the operating system to flush the contents of all software\nand hardware transmit buffers for the port.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-10\">serial port task source</a> to run the\n                  following steps:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source⑨\">serial port task source</a> to run the following\nsteps:",
                   "rationale": "invoke",
                   "steps": [
                     {
-                      "html": "Invoke the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-handle-closing-the-writable-stream\" class=\"internalDFN\" id=\"ref-for-dfn-handle-closing-the-writable-stream-3\">handle closing the writable stream</a>."
+                      "html": "<p>Invoke the steps to <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#handle-closing-the-writable-stream\" id=\"ref-for-handle-closing-the-writable-stream②\">handle closing the writable stream</a>.</p>"
                     },
                     {
-                      "html": "If <var data-type=\"AbortSignal\">signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\">aborted</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a>\n                      <var data-type=\"Promise\">promise</var> with <var data-type=\"AbortSignal\">signal</var>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\">abort reason</a>."
+                      "html": "<p>If <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted②\">aborted</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">reject</a> <var>promise</var>\nwith <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
                     },
                     {
-                      "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var data-type=\"Promise\">promise</var> with <code>undefined</code>."
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑧\">resolve</a> <var>promise</var> with <code>undefined</code>.</p>"
                     }
                   ]
                 }
               ]
             },
             {
-              "html": "Return <var data-type=\"Promise\">promise</var>."
+              "html": "<p>Return <var>promise</var>.</p>"
             }
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up\">Set up</a> <var data-type=\"WritableStream\">stream</var> with <a href=\"https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm\">\n            writeAlgorithm</a> set to <var>writeAlgorithm</var>, <a href=\"https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm\">\n            abortAlgorithm</a> set to <var>abortAlgorithm</var>, <a href=\"https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm\">\n            closeAlgorithm</a> set to <var>closeAlgorithm</var>, <a href=\"https://streams.spec.whatwg.org/#writablestream-set-up-highwatermark\">\n            highWaterMark</a> set to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[bufferSize]]\" href=\"https://serial.spec.whatwg.org/#dfn-buffersize\" class=\"internalDFN\" id=\"ref-for-dfn-buffersize-3\"><code>[[bufferSize]]</code></a>,\n            and <a href=\"https://streams.spec.whatwg.org/#writablestream-set-up-sizealgorithm\">\n            sizeAlgorithm</a> set to a byte-counting size algorithm."
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up\" id=\"ref-for-writablestream-set-up\">Set up</a> <var>stream</var> with\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm\" id=\"ref-for-writablestream-set-up-writealgorithm\">writeAlgorithm</a> set to <var>writeAlgorithm</var>,\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm\" id=\"ref-for-writablestream-set-up-abortalgorithm\">abortAlgorithm</a> set to <var>abortAlgorithm</var>,\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm\" id=\"ref-for-writablestream-set-up-closealgorithm\">closeAlgorithm</a> set to <var>closeAlgorithm</var>,\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-highwatermark\" id=\"ref-for-writablestream-set-up-highwatermark\">highWaterMark</a> set to\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-buffersize-slot\" id=\"ref-for-dom-serialport-buffersize-slot②\">[[bufferSize]]</a></code>, and\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-set-up-sizealgorithm\" id=\"ref-for-writablestream-set-up-sizealgorithm\">sizeAlgorithm</a> set to a byte-counting size\nalgorithm.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\">Add</a> the following abort steps to <var data-type=\"AbortSignal\">signal</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add</a> the following abort steps to <var>signal</var>:",
           "rationale": "cause",
           "steps": [
             {
-              "html": "Cause any invocation of the operating system to write to the\n              port to return as soon as possible no matter how much data has\n              been written."
+              "html": "<p>Cause any invocation of the operating system to write to the port to\nreturn as soon as possible no matter how much data has been written.</p>"
             }
           ]
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-4\"><code>[[writable]]</code></a> to <var data-type=\"WritableStream\">stream</var>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot③\">[[writable]]</a></code> to <var>stream</var>.</p>"
         },
         {
-          "html": "Return <var data-type=\"WritableStream\">stream</var>."
+          "html": "<p>Return <var>stream</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable\" class=\"internalDFN\" id=\"ref-for-dom-serialport-writable-4\"><code>writable</code></a> getter steps are:",
-      "rationale": "set",
+      "name": "handle closing the writable stream",
+      "href": "https://serial.spec.whatwg.org/#handle-closing-the-writable-stream",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-closing-the-writable-stream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle closing the writable stream</dfn> perform the following steps:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-5\"><code>[[writable]]</code></a> to <code>null</code>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot④\">[[writable]]</a></code> to <code>null</code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-18\"><code>[[readable]]</code></a> is <code>null</code> and\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-3\"><code>[[pendingClosePromise]]</code></a> is not <code>null</code>,\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-4\"><code>[[pendingClosePromise]]</code></a> with\n          <code>undefined</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⑦\">[[readable]]</a></code> is <code>null</code> and\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot②\">[[pendingClosePromise]]</a></code> is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑨\">resolve</a>\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot③\">[[pendingClosePromise]]</a></code> with <code>undefined</code>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"setSignals()\" href=\"https://serial.spec.whatwg.org/#dom-serialport-setsignals\" class=\"internalDFN\" id=\"ref-for-dom-serialport-setsignals-2\"><code>setSignals</code></a><code>()</code> method steps are:",
-      "rationale": "let",
+      "name": "SerialPort.setSignals()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-setsignals\" id=\"ref-for-dom-serialport-setsignals①\">setSignals()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑧\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-8\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, reject\n          <var>promise</var> with an \"<a data-link-type=\"exception\" data-lt=\"InvalidStateError\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n          <var>promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot⑦\">[[state]]</a></code> is not <code>\"opened\"</code>, reject <var>promise</var>\nwith an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "If all of the specified members of <var>signals</var> are not present\n          reject <var>promise</var> with a <a data-link-type=\"exception\" data-lt=\"TypeError\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a> and return <var>promise</var>."
+          "html": "<p>If all of the specified members of <var>signals</var> are not present reject\n<var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑨\">TypeError</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>signals</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-dataterminalready\" class=\"internalDFN\" id=\"ref-for-dom-serialoutputsignals-dataterminalready-1\"><code>dataTerminalReady</code></a>\"] is\n              present, invoke the operating system to either assert (if <code>true</code>)\n              or deassert (if <code>false</code>) the \"data terminal ready\" or \"DTR\"\n              signal on the serial port."
+              "html": "<p>If <var>signals</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-dataterminalready\" id=\"ref-for-dom-serialoutputsignals-dataterminalready\">dataTerminalReady</a></code>\"] is present,\ninvoke the operating system to either assert (if <code>true</code>) or deassert (if\n<code>false</code>) the \"data terminal ready\" or \"DTR\" signal on the serial port.</p>"
             },
             {
-              "html": "If <var>signals</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-requesttosend\" class=\"internalDFN\" id=\"ref-for-dom-serialoutputsignals-requesttosend-1\"><code>requestToSend</code></a>\"] is\n              present, invoke the operating system to either assert (if <code>true</code>)\n              or deassert (if <code>false</code>) the \"request to send\" or \"RTS\" signal on\n              the serial port."
+              "html": "<p>If <var>signals</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-requesttosend\" id=\"ref-for-dom-serialoutputsignals-requesttosend\">requestToSend</a></code>\"] is present, invoke\nthe operating system to either assert (if <code>true</code>) or deassert (if\n<code>false</code>) the \"request to send\" or \"RTS\" signal on the serial port.</p>"
             },
             {
-              "html": "If <var>signals</var>[\"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-break\" class=\"internalDFN\" id=\"ref-for-dom-serialoutputsignals-break-1\"><code>break</code></a>\"] is present,\n              invoke the operating system to either assert (if <code>true</code>) or\n              deassert (if <code>false</code>) the \"break\" signal on the serial port."
+              "html": "<p>If <var>signals</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialoutputsignals-break\" id=\"ref-for-dom-serialoutputsignals-break\">break</a></code>\"] is present, invoke the\noperating system to either assert (if <code>true</code>) or deassert (if <code>false</code>)\nthe \"break\" signal on the serial port.</p>"
             },
             {
-              "html": "If the operating system fails to change the state of any of\n              these signals for any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-11\">serial port task source</a> to reject <var>promise</var> with a \"<a data-link-type=\"exception\" data-lt=\"NetworkError\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+              "html": "<p>If the operating system fails to change the state of any of these\nsignals for any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①⓪\">serial port task source</a> to reject\n<var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror③\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥\">DOMException</a></code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-12\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var>promise</var> with <code>undefined</code>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑤\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑧\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①①\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①⓪\">resolve</a> <var>promise</var> with\n<code>undefined</code>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var>promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
-      "rationale": "let",
+      "name": "SerialPort.getSignals()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-getsignals\" id=\"ref-for-dom-serialport-getsignals①\">getSignals()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑨\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-9\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, reject\n          <var data-type=\"Promise\">promise</var> with an \"<a data-link-type=\"exception\" data-lt=\"InvalidStateError\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n          <var data-type=\"Promise\">promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot⑧\">[[state]]</a></code> is not <code>\"opened\"</code>, reject <var>promise</var>\nwith an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Perform the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">in parallel</a>:",
           "rationale": "query",
           "steps": [
             {
-              "html": "Query the operating system for the status of the control\n              signals that may be asserted by the device connected to the\n              serial port."
+              "html": "<p>Query the operating system for the status of the control signals that\nmay be asserted by the device connected to the serial port.</p>"
             },
             {
-              "html": "If the operating system fails to determine the status of\n              these signals for any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-13\">serial port task source</a> to reject <var data-type=\"Promise\">promise</var> with a \"<a data-link-type=\"exception\" data-lt=\"NetworkError\" href=\"https://webidl.spec.whatwg.org/#networkerror\"><code>NetworkError</code></a>\"\n              <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
+              "html": "<p>If the operating system fails to determine the status of these signals\nfor any reason, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①②\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑥\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⓪\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①②\">serial port task source</a> to reject\n<var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#networkerror\" id=\"ref-for-networkerror④\">NetworkError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code> and abort these\nsteps.</p>"
             },
             {
-              "html": "Let <var>dataCarrierDetect</var> be <code>true</code> if the \"data carrier\n              detect\" or \"DCD\" signal has been asserted by the device, and\n              <code>false</code> otherwise."
+              "html": "<p>Let <var>dataCarrierDetect</var> be <code>true</code> if the \"data carrier detect\" or \"DCD\"\nsignal has been asserted by the device, and <code>false</code> otherwise.</p>"
             },
             {
-              "html": "Let <var>clearToSend</var> be <code>true</code> if the \"clear to send\" or \"CTS\"\n              signal has been asserted by the device, and <code>false</code> otherwise."
+              "html": "<p>Let <var>clearToSend</var> be <code>true</code> if the \"clear to send\" or \"CTS\" signal has\nbeen asserted by the device, and <code>false</code> otherwise.</p>"
             },
             {
-              "html": "Let <var>ringIndicator</var> be <code>true</code> if the \"ring indicator\" or \"RI\"\n              signal has been asserted by the device, and <code>false</code> otherwise."
+              "html": "<p>Let <var>ringIndicator</var> be <code>true</code> if the \"ring indicator\" or \"RI\" signal has\nbeen asserted by the device, and <code>false</code> otherwise.</p>"
             },
             {
-              "html": "Let <var>dataSetReady</var> be <code>true</code> if the \"data set ready\" or \"DSR\"\n              signal has been asserted by the device, and <code>false</code> otherwise."
+              "html": "<p>Let <var>dataSetReady</var> be <code>true</code> if the \"data set ready\" or \"DSR\" signal has\nbeen asserted by the device, and <code>false</code> otherwise.</p>"
             },
             {
-              "html": "Let <var>signals</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> «[\n              \"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-datacarrierdetect\" class=\"internalDFN\" id=\"ref-for-dom-serialinputsignals-datacarrierdetect-1\"><code>dataCarrierDetect</code></a>\" → <var>dataCarrierDetect</var>,\n              \"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-cleartosend\" class=\"internalDFN\" id=\"ref-for-dom-serialinputsignals-cleartosend-1\"><code>clearToSend</code></a>\" → <var>clearToSend</var>,\n              \"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-ringindicator\" class=\"internalDFN\" id=\"ref-for-dom-serialinputsignals-ringindicator-1\"><code>ringIndicator</code></a>\" → <var>ringIndicator</var>,\n              \"<a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-datasetready\" class=\"internalDFN\" id=\"ref-for-dom-serialinputsignals-datasetready-1\"><code>dataSetReady</code></a>\" → <var>dataSetReady</var> ]»."
+              "html": "<p>Let <var>signals</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">ordered map</a> «[\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-datacarrierdetect\" id=\"ref-for-dom-serialinputsignals-datacarrierdetect\">dataCarrierDetect</a></code>\" → <var>dataCarrierDetect</var>,\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-cleartosend\" id=\"ref-for-dom-serialinputsignals-cleartosend\">clearToSend</a></code>\" → <var>clearToSend</var>,\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-ringindicator\" id=\"ref-for-dom-serialinputsignals-ringindicator\">ringIndicator</a></code>\" → <var>ringIndicator</var>,\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialinputsignals-datasetready\" id=\"ref-for-dom-serialinputsignals-datasetready\">dataSetReady</a></code>\" → <var>dataSetReady</var> ]».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-14\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var data-type=\"Promise\">promise</var> with <var>signals</var>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑦\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥①\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①③\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①①\">resolve</a> <var>promise</var> with\n<var>signals</var>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var data-type=\"Promise\">promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"close()\" href=\"https://serial.spec.whatwg.org/#dom-serialport-close\" class=\"internalDFN\" id=\"ref-for-dom-serialport-close-7\"><code>close</code></a><code>()</code> method steps are:",
-      "rationale": "let",
+      "name": "SerialPort.close()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-close\" id=\"ref-for-dom-serialport-close⑥\">close()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①⓪\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-10\"><code>[[state]]</code></a> is not <code>\"opened\"</code>, reject\n          <var>promise</var> with an \"<a data-link-type=\"exception\" data-lt=\"InvalidStateError\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and return\n          <var>promise</var>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot⑨\">[[state]]</a></code> is not <code>\"opened\"</code>, reject <var>promise</var>\nwith an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑨\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
-          "html": "Let <var data-type=\"Promise\">cancelPromise</var> be the result of invoking\n          <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-cancel\">cancel</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-19\"><code>[[readable]]</code></a> or\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\">a promise resolved with</a> <code>undefined</code> if\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-20\"><code>[[readable]]</code></a> is <code>null</code>."
+          "html": "<p>Let <var>cancelPromise</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-cancel\" id=\"ref-for-readablestream-cancel\">cancel</a> on\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⑧\">[[readable]]</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a>\n<code>undefined</code> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot①⑨\">[[readable]]</a></code> is <code>null</code>.</p>"
         },
         {
-          "html": "Let <var data-type=\"Promise\">abortPromise</var> be the result of invoking\n          <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-abort\">abort</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-6\"><code>[[writable]]</code></a> or\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\">a promise resolved with</a> <code>undefined</code> if\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-7\"><code>[[writable]]</code></a> is <code>null</code>."
+          "html": "<p>Let <var>abortPromise</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-abort\" id=\"ref-for-writablestream-abort\">abort</a> on\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑤\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot⑤\">[[writable]]</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with①\">a promise resolved with</a>\n<code>undefined</code> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot⑥\">[[writable]]</a></code> is <code>null</code>.</p>"
         },
         {
-          "html": "Let <var>pendingClosePromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>Let <var>pendingClosePromise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①①\">a new promise</a>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://serial.spec.whatwg.org/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-21\"><code>[[readable]]</code></a> and\n          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writable]]\" href=\"https://serial.spec.whatwg.org/#dfn-writable\" class=\"internalDFN\" id=\"ref-for-dfn-writable-8\"><code>[[writable]]</code></a> are <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n          <var>pendingClosePromise</var> with <code>undefined</code>."
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑦\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readable-slot\" id=\"ref-for-dom-serialport-readable-slot②⓪\">[[readable]]</a></code> and\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writable-slot\" id=\"ref-for-dom-serialport-writable-slot⑦\">[[writable]]</a></code> are <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①②\">resolve</a>\n<var>pendingClosePromise</var> with <code>undefined</code>.</p>"
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-5\"><code>[[pendingClosePromise]]</code></a> to\n          <var>pendingClosePromise</var>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑨\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot④\">[[pendingClosePromise]]</a></code> to\n<var>pendingClosePromise</var>.</p>"
         },
         {
-          "html": "Let <var data-type=\"Promise\">combinedPromise</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#waiting-for-all-promise\">getting a promise to wait for all</a> with «<var data-type=\"Promise\">cancelPromise</var>, <var data-type=\"Promise\">abortPromise</var>,\n          <var>pendingClosePromise</var>»."
+          "html": "<p>Let <var>combinedPromise</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#waiting-for-all-promise\" id=\"ref-for-waiting-for-all-promise\">getting a promise to wait for all</a>\nwith «<var>cancelPromise</var>, <var>abortPromise</var>, <var>pendingClosePromise</var>».</p>"
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-11\"><code>[[state]]</code></a> to <code>\"closing\"</code>."
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot①⓪\">[[state]]</a></code> to <code>\"closing\"</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"Promise\">combinedPromise</var> was fulfilled, then:",
+          "html": "If <var>combinedPromise</var> was fulfilled, then:",
           "rationale": "run",
           "steps": [
             {
-              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+              "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">in parallel</a>:",
               "rationale": "invoke",
               "steps": [
                 {
-                  "html": "Invoke the operating system to close the serial port\n                      and release any associated resources."
+                  "html": "<p>Invoke the operating system to close the serial port and release\nany associated resources.</p>"
                 },
                 {
-                  "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-12\"><code>[[state]]</code></a> to <code>\"closed\"</code>."
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot①①\">[[state]]</a></code> to <code>\"closed\"</code>.</p>"
                 },
                 {
-                  "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-readfatal\" class=\"internalDFN\" id=\"ref-for-dfn-readfatal-3\"><code>[[readFatal]]</code></a> and\n                      <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[writeFatal]]\" href=\"https://serial.spec.whatwg.org/#dfn-writefatal\" class=\"internalDFN\" id=\"ref-for-dfn-writefatal-3\"><code>[[writeFatal]]</code></a> to <code>false</code>."
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-readfatal-slot\" id=\"ref-for-dom-serialport-readfatal-slot②\">[[readFatal]]</a></code> and\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-writefatal-slot\" id=\"ref-for-dom-serialport-writefatal-slot②\">[[writeFatal]]</a></code> to <code>false</code>.</p>"
                 },
                 {
-                  "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-6\"><code>[[pendingClosePromise]]</code></a>\n                      to <code>null</code>."
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦④\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot⑤\">[[pendingClosePromise]]</a></code> to <code>null</code>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-15\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with <code>undefined</code>."
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑧\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑤\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①④\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①③\">resolve</a>\n<var>promise</var> with <code>undefined</code>.</p>"
                 }
               ]
             }
           ],
           "additional": [
             {
-              "html": "If <var data-type=\"Promise\">combinedPromise</var> was rejected with reason <var>r</var>, then:",
+              "html": "If <var>combinedPromise</var> was rejected with reason <var>r</var>, then:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[pendingClosePromise]]\" href=\"https://serial.spec.whatwg.org/#dfn-pendingclosepromise\" class=\"internalDFN\" id=\"ref-for-dfn-pendingclosepromise-7\"><code>[[pendingClosePromise]]</code></a> to\n                  <code>null</code>."
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑥\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-pendingclosepromise-slot\" id=\"ref-for-dom-serialport-pendingclosepromise-slot⑥\">[[pendingClosePromise]]</a></code> to <code>null</code>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>\n                  of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-16\">serial port task source</a> to\n                  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with <var>r</var>."
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑨\">relevant global object</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑦\">this</a> using the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①⑤\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">reject</a>\n<var>promise</var> with <var>r</var>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "Return <var>promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-lt=\"forget()\" href=\"https://serial.spec.whatwg.org/#dom-serialport-forget\" class=\"internalDFN\" id=\"ref-for-dom-serialport-forget-2\"><code>forget</code></a><code>()</code> method steps are:",
-      "rationale": "if",
+      "name": "SerialPort.forget()",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-forget\" id=\"ref-for-dom-serialport-forget①\">forget()</a></code> method steps are:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the user agent can't perform this action (e.g. permission was\n          granted by administrator policy), return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\">a promise resolved with</a>\n          <code>undefined</code>."
+          "html": "<p>If the user agent can’t perform this action (e.g. permission was granted by\nadministrator policy), return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with②\">a promise resolved with</a> <code>undefined</code>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">in parallel</a>:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-13\"><code>[[state]]</code></a> to <code>\"forgetting\"</code>."
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑧\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot①②\">[[state]]</a></code> to <code>\"forgetting\"</code>.</p>"
             },
             {
-              "html": "Remove <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> from the sequence of serial ports\n              on the system which the user has allowed the site to access as\n              the result of a previous call to <a data-link-type=\"idl\" data-lt=\"requestPort()\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" class=\"internalDFN\" id=\"ref-for-dom-serial-requestport-7\"><code>requestPort</code></a><code>()</code>."
+              "html": "<p>Remove <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦⑨\">this</a> from the sequence of serial ports on the system which\nthe user has allowed the site to access as the result of a previous call\nto <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serial-requestport\" id=\"ref-for-dom-serial-requestport⑥\">requestPort()</a></code>.</p>"
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://serial.spec.whatwg.org/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-14\"><code>[[state]]</code></a> to <code>\"forgotten\"</code>."
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧⓪\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://serial.spec.whatwg.org/#dom-serialport-state-slot\" id=\"ref-for-dom-serialport-state-slot①③\">[[state]]</a></code> to <code>\"forgotten\"</code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-task-source-17\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a>\n              <var>promise</var> with <code>undefined</code>."
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②⓪\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧①\">this</a>\nusing the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-task-source\" id=\"ref-for-serial-port-task-source①⑥\">serial port task source</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①④\">resolve</a> <var>promise</var> with\n<code>undefined</code>.</p>"
             }
           ]
         },
         {
-          "html": "Return <var>promise</var>."
+          "html": "<p>Return <var>promise</var>.</p>"
         }
       ]
     },
     {
       "name": "blocked Bluetooth service class UUID",
-      "href": "https://serial.spec.whatwg.org/#dfn-blocked-bluetooth-service-class-uuid",
-      "html": "A <a data-link-type=\"typedef\" data-lt=\"BluetoothServiceUUID\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid\"><code>BluetoothServiceUUID</code></a> <var data-type=\"BluetoothServiceUUID\">serviceUuid</var> is a\n        <dfn id=\"dfn-blocked-bluetooth-service-class-uuid\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">blocked Bluetooth service class UUID</dfn> if the following steps\n        return <code>true</code>:",
-      "rationale": "let",
+      "href": "https://serial.spec.whatwg.org/#blocked-bluetooth-service-class-uuid",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://bluetooth.spec.whatwg.org/#typedefdef-bluetoothserviceuuid\" id=\"ref-for-typedefdef-bluetoothserviceuuid①⓪\">BluetoothServiceUUID</a></code> <var>serviceUuid</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"blocked Bluetooth service class UUID\" data-noexport=\"\" id=\"blocked-bluetooth-service-class-uuid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocked Bluetooth service\nclass UUID</dfn> if the following steps return <code>true</code>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"UUID\">uuid</var> be the result of calling\n        <a data-link-type=\"interface\" data-lt=\"BluetoothUUID\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid\"><code>BluetoothUUID</code></a>.<a data-link-type=\"method\" data-lt=\"getService()\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice\"><code>getService</code></a><code>()</code> with <var data-type=\"BluetoothServiceUUID\">serviceUuid</var>."
+          "html": "<p>Let <var>uuid</var> be the result of calling\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://bluetooth.spec.whatwg.org/#bluetoothuuid\" id=\"ref-for-bluetoothuuid\">BluetoothUUID</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://bluetooth.spec.whatwg.org/#dom-bluetoothuuid-getservice\" id=\"ref-for-dom-bluetoothuuid-getservice\">getService()</a></code> with <var>serviceUuid</var>.</p>"
         },
         {
-          "html": "Let <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> be the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-parsing-the-bluetooth-service-class-id-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-bluetooth-service-class-id-blocklist-1\">parsing the Bluetooth service class ID blocklist</a> at <a href=\"https://github.com/WICG/serial/blob/main/bluetooth-service-blocklist.txt\">https://github.com/WICG/serial/blob/main/bluetooth-service-blocklist.txt</a>."
+          "html": "<p>Let <var>blocklist</var> be the result of <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#parsing-the-bluetooth-service-class-id-blocklist\" id=\"ref-for-parsing-the-bluetooth-service-class-id-blocklist\">parsing the Bluetooth service class ID blocklist</a> at\n<a href=\"https://github.com/whatwg/serial/blob/main/bluetooth-service-blocklist.txt\">https://github.com/whatwg/serial/blob/main/bluetooth-service-blocklist.txt</a>.</p>"
         },
         {
-          "html": "If <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> <var data-type=\"UUID\">uuid</var>, return <code>true</code>."
+          "html": "<p>If <var>blocklist</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>uuid</var>, return <code>true</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"UUID\">uuid</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\">is</a> the <a data-link-type=\"dfn|abstract-op\" href=\"https://serial.spec.whatwg.org/#dfn-serial-port-profile-service-class-id\" class=\"internalDFN\" id=\"ref-for-dfn-serial-port-profile-service-class-id-2\">Serial Port Profile service class ID</a>, return <code>false</code>."
+          "html": "<p>If <var>uuid</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> the <a data-link-type=\"dfn\" href=\"https://serial.spec.whatwg.org/#serial-port-profile-service-class-id\" id=\"ref-for-serial-port-profile-service-class-id①\">Serial Port Profile service class ID</a>, return\n<code>false</code>.</p>"
         },
         {
-          "html": "If <var data-type=\"UUID\">uuid</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\">ends with</a> \"<code>-0000-1000-8000-00805f9b34fb</code>\",\n        return <code>true</code>."
+          "html": "<p>If <var>uuid</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with\">ends with</a> \"<code>-0000-1000-8000-00805f9b34fb</code>\", return\n<code>true</code>.</p>"
         },
         {
-          "html": "Otherwise, return <code>false</code>."
+          "html": "<p>Otherwise, return <code>false</code>.</p>"
         }
       ]
     }

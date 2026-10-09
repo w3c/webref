@@ -1,0 +1,640 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Inference Rules",
+    "url": "https://www.w3.org/TR/shacl12-inference-rules/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-rule",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-rule",
+      "linkingText": [
+        "rule",
+        "rules",
+        "SHACL rule",
+        "SHACL rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntax",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#syntax",
+        "title": "Syntax of SHACL Rules",
+        "alternateIds": [
+          "x3-syntax-of-shacl-rules"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-type",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-rule-type",
+      "linkingText": [
+        "rule type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-types",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rule-types",
+        "title": "Rule Types",
+        "alternateIds": [
+          "x3-1-rule-types"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-execution-instructions",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-execution-instructions",
+      "linkingText": [
+        "execution instructions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-types",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rule-types",
+        "title": "Rule Types",
+        "alternateIds": [
+          "x3-1-rule-types"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shape-rule",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-shape-rule",
+      "linkingText": [
+        "shape rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-rules",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#global-rules",
+        "title": "Shape Rules and Global Rules (sh:rule)",
+        "alternateIds": [
+          "x3-2-shape-rules-and-global-rules-sh-rule"
+        ],
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-global",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-global",
+      "linkingText": [
+        "global",
+        "global rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-rules",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#global-rules",
+        "title": "Shape Rules and Global Rules (sh:rule)",
+        "alternateIds": [
+          "x3-2-shape-rules-and-global-rules-sh-rule"
+        ],
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-layer",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-layer",
+      "linkingText": [
+        "layer",
+        "layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-layers",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rule-layers",
+        "title": "Grouping of Rules into Layers (sh:layer)",
+        "alternateIds": [
+          "x3-5-grouping-of-rules-into-layers-sh-layer"
+        ],
+        "number": "3.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-execution-order",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-execution-order",
+      "linkingText": [
+        "execution order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-order",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rule-order",
+        "title": "Ordering of Rules (sh:order)",
+        "alternateIds": [
+          "x3-6-ordering-of-rules-sh-order"
+        ],
+        "number": "3.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-run-once-rule",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-run-once-rule",
+      "linkingText": [
+        "run-once rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "run-once",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#run-once",
+        "title": "Run-once Rules (sh:runOnce)",
+        "alternateIds": [
+          "x3-7-run-once-rules-sh-runonce"
+        ],
+        "number": "3.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-iterating-rules",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-iterating-rules",
+      "linkingText": [
+        "iterating rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "run-once",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#run-once",
+        "title": "Run-once Rules (sh:runOnce)",
+        "alternateIds": [
+          "x3-7-run-once-rules-sh-runonce"
+        ],
+        "number": "3.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-derived-value-nodes",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-derived-value-nodes",
+      "linkingText": [
+        "derived value nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expectedPredicate",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#expectedPredicate",
+        "title": "Expected Derived Triples (sh:expectedPredicate)",
+        "alternateIds": [
+          "x3-8-expected-derived-triples-sh-expectedpredicate"
+        ],
+        "number": "3.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-derived-triples",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-derived-triples",
+      "linkingText": [
+        "derived triples"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expectedPredicate",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#expectedPredicate",
+        "title": "Expected Derived Triples (sh:expectedPredicate)",
+        "alternateIds": [
+          "x3-8-expected-derived-triples-sh-expectedpredicate"
+        ],
+        "number": "3.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-expected-derived-triples",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-expected-derived-triples",
+      "linkingText": [
+        "expected derived triples"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expectedPredicate",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#expectedPredicate",
+        "title": "Expected Derived Triples (sh:expectedPredicate)",
+        "alternateIds": [
+          "x3-8-expected-derived-triples-sh-expectedpredicate"
+        ],
+        "number": "3.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-set",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-rule-set",
+      "linkingText": [
+        "rule set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ruleSet",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#ruleSet",
+        "title": "Rule Sets",
+        "alternateIds": [
+          "x4-rule-sets"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-default-rule-set",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-default-rule-set",
+      "linkingText": [
+        "default rule set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ruleSet",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#ruleSet",
+        "title": "Rule Sets",
+        "alternateIds": [
+          "x4-rule-sets"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rules-graph",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-rules-graph",
+      "linkingText": [
+        "rules graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-graph",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-graph",
+        "title": "Rules Graph",
+        "alternateIds": [
+          "x5-rules-graph"
+        ],
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-shacl-rules-entailment-regime",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-shacl-rules-entailment-regime",
+      "linkingText": [
+        "SHACL rules entailment regime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "RulesEntailment",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#RulesEntailment",
+        "title": "The sh:RulesEntailment Regime",
+        "alternateIds": [
+          "x6-the-sh-rulesentailment-regime"
+        ],
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-temporary-triple",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-temporary-triple",
+      "linkingText": [
+        "temporary triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tempTriple",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#tempTriple",
+        "title": "Temporary Triples",
+        "alternateIds": [
+          "x7-temporary-triples"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rules-engine",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-rules-engine",
+      "linkingText": [
+        "rules engine",
+        "SHACL rules engine"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-base-graph",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-base-graph",
+      "linkingText": [
+        "base graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-inferring",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-inferring",
+      "linkingText": [
+        "inferring",
+        "infer",
+        "inferred"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-inference-graph",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-inference-graph",
+      "linkingText": [
+        "inference graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-evaluation-graph",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-evaluation-graph",
+      "linkingText": [
+        "evaluation graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-execution",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-execution",
+      "linkingText": [
+        "execution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-iterate",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-iterate",
+      "linkingText": [
+        "iterate",
+        "iteration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-execution-of-a-rule-set",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-execution-of-a-rule-set",
+      "linkingText": [
+        "execution of a rule set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-execution",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#rules-execution",
+        "title": "General Execution Instructions for SHACL Rules",
+        "alternateIds": [
+          "x8-general-execution-instructions-for-shacl-rules"
+        ],
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-sparql-rules",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-sparql-rules",
+      "linkingText": [
+        "SPARQL rules",
+        "SHACL SPARQL rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "SPARQLRule",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#SPARQLRule",
+        "title": "SHACL SPARQL Rules",
+        "alternateIds": [
+          "x11-1-shacl-sparql-rules"
+        ],
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-triple-rule",
+      "href": "https://www.w3.org/TR/shacl12-inference-rules/#dfn-triple-rule",
+      "linkingText": [
+        "triple rule",
+        "triple rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "TripleRule",
+        "href": "https://www.w3.org/TR/shacl12-inference-rules/#TripleRule",
+        "title": "Triple Rules",
+        "alternateIds": [
+          "x11-2-triple-rules"
+        ],
+        "number": "11.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

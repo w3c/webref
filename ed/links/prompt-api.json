@@ -14,6 +14,7 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.es/ecma402/": {},
       "https://w3c.github.io/FileAPI/": {},
+      "https://w3c.github.io/rdf-concepts/spec/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
       "https://webaudio.github.io/web-audio-api/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -69,8 +70,8 @@
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
-          "concept-relevant-global",
           "concept-relevant-realm",
+          "concept-relevant-global",
           "event-loop",
           "queue-a-global-task"
         ]
@@ -79,20 +80,28 @@
         "anchors": [
           "map-exists",
           "list-iterate",
+          "list-is-empty",
+          "ordered-set",
+          "string",
+          "list-contain",
+          "set-append",
+          "serialize-a-javascript-value-to-a-json-string",
           "list",
           "assert",
           "implementation-defined",
           "list-append",
-          "string",
-          "iteration-break",
-          "list-contain",
-          "list-is-empty",
-          "set-append"
+          "iteration-break"
         ]
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
           "readablestream"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+        "anchors": [
+          "sec-get-o-p",
+          "sec-isarray"
         ]
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
@@ -104,6 +113,11 @@
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-Blob"
+        ]
+      },
+      "https://w3c.github.io/rdf-concepts/spec/": {
+        "anchors": [
+          "dfn-object"
         ]
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
@@ -120,29 +134,33 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "idl-DOMString",
+          "idl-sequence",
           "Exposed",
           "SecureContext",
           "idl-promise",
-          "idl-DOMString",
           "idl-undefined",
           "idl-double",
           "idl-unrestricted-double",
           "idl-unsigned-long",
           "idl-float",
-          "idl-any",
           "idl-object",
-          "idl-sequence",
           "idl-boolean",
           "BufferSource",
+          "idl-any",
+          "idl-frozen-array",
           "exceptiondef-typeerror",
           "notsupportederror",
           "quotaexceedederror-requested",
           "quotaexceedederror-quota",
           "operationerror",
           "this",
+          "dfn-perform-steps-once-promise-is-settled",
           "idl-DOMException",
           "domexception-name",
           "syntaxerror",
+          "dfn-platform-object",
+          "dataerror",
           "notallowederror",
           "notreadableerror",
           "unknownerror",
@@ -150,7 +168,8 @@
           "invalidstateerror",
           "a-new-promise",
           "reject",
-          "resolve"
+          "resolve",
+          "dfn-create-frozen-array"
         ]
       },
       "https://webmachinelearning.github.io/writing-assistance-apis/": {
