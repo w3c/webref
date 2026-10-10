@@ -7,15 +7,17 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
-      "https://github.com/w3c/csswg-drafts/issues/11461": {},
-      "https://github.com/w3c/csswg-drafts/issues/11937": {},
-      "https://github.com/w3c/csswg-drafts/issues/12102": {},
-      "https://github.com/w3c/csswg-drafts/issues/12106": {},
-      "https://github.com/w3c/csswg-drafts/issues/12920": {},
+      "https://github.com/w3c/csswg-drafts/issues/12289": {},
+      "https://github.com/w3c/csswg-drafts/issues/13089": {},
+      "https://github.com/w3c/csswg-drafts/issues/13421": {},
+      "https://github.com/w3c/csswg-drafts/issues/14008": {},
+      "https://github.com/w3c/csswg-drafts/issues/7641": {},
+      "https://github.com/w3c/csswg-drafts/issues/7655": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://tc39.es/ecma426/": {},
+      "https://web-platform-tests.org/": {},
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2025/WD-css-align-3-20250311/": {
@@ -23,6 +25,7 @@
           "changes"
         ]
       },
+      "https://www.w3.org/TR/2026/WD-css-align-3-20260130/": {},
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "partial",
@@ -63,10 +66,9 @@
           "ignore"
         ]
       },
+      "https://www.w3.org/TR/css-align-3/": {},
       "https://www.w3.org/TR/css-anchor-position-1/": {},
       "https://www.w3.org/TR/css-box-4/": {},
-      "https://www.w3.org/TR/css-break-3/": {},
-      "https://www.w3.org/TR/css-break-4/": {},
       "https://www.w3.org/TR/css-cascade-5/": {},
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
@@ -84,17 +86,19 @@
           "abspos-items"
         ]
       },
-      "https://www.w3.org/TR/css-flexbox/": {},
       "https://www.w3.org/TR/css-fonts-4/": {},
+      "https://www.w3.org/TR/css-gaps-1/": {
+        "anchors": [
+          "gaps"
+        ]
+      },
       "https://www.w3.org/TR/css-grid-1/": {
         "anchors": [
           "grid-item-sizing",
-          "gutters",
           "static-position"
         ]
       },
       "https://www.w3.org/TR/css-grid-2/": {},
-      "https://www.w3.org/TR/css-grid/": {},
       "https://www.w3.org/TR/css-inline-3/": {
         "anchors": [
           "baseline-synthesis"
@@ -115,11 +119,7 @@
           "generated-content"
         ]
       },
-      "https://www.w3.org/TR/css-sizing-3/": {
-        "anchors": [
-          "percentage-sizing"
-        ]
-      },
+      "https://www.w3.org/TR/css-sizing-3/": {},
       "https://www.w3.org/TR/css-sizing-4/": {},
       "https://www.w3.org/TR/css-text-3/": {},
       "https://www.w3.org/TR/css-values-3/": {
@@ -140,6 +140,11 @@
         ]
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {},
+      "https://www.w3.org/TR/css/": {
+        "anchors": [
+          "partial"
+        ]
+      },
       "https://www.w3.org/TR/css3-flexbox/": {
         "anchors": [
           "flex-baselines"
@@ -150,7 +155,6 @@
           "grid-baselines"
         ]
       },
-      "https://www.w3.org/TR/css3-multicol/": {},
       "https://www.w3.org/TR/css3-writing-modes/": {
         "anchors": [
           "line-left",
@@ -188,19 +192,15 @@
       }
     },
     "autolinks": {
-      "https://drafts.csswg.org/css-multicol-2/": {
+      "https://drafts.csswg.org/css-overflow-3/": {
         "anchors": [
-          "propdef-column-height"
+          "scrollable-axis",
+          "block-axis-scroll-container"
         ]
       },
       "https://tc39.es/ecma426/": {
         "anchors": [
           "sec-terms-and-definitions-colun"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/tables.html": {
-        "anchors": [
-          "propdef-border-spacing"
         ]
       },
       "https://www.w3.org/TR/CSS2/visudet.html": {
@@ -217,9 +217,15 @@
           "line-box"
         ]
       },
+      "https://www.w3.org/TR/css-align-3/": {
+        "anchors": [
+          "gutter",
+          "propdef-gap"
+        ]
+      },
       "https://www.w3.org/TR/css-anchor-position-1/": {
         "anchors": [
-          "propdef-position-area"
+          "default-anchor-box"
         ]
       },
       "https://www.w3.org/TR/css-box-4/": {
@@ -229,14 +235,7 @@
           "box-box-edge",
           "margin",
           "margin-box",
-          "propdef-margin",
-          "propdef-padding",
           "content-edge"
-        ]
-      },
-      "https://www.w3.org/TR/css-break-4/": {
-        "anchors": [
-          "fragmentation-break"
         ]
       },
       "https://www.w3.org/TR/css-cascade-5/": {
@@ -245,7 +244,6 @@
           "shorthand-property",
           "computed-value",
           "inherited-value",
-          "legacy-name-alias",
           "initial-value"
         ]
       },
@@ -262,6 +260,7 @@
           "establish-an-independent-formatting-context",
           "in-flow",
           "out-of-flow",
+          "formatting-context",
           "non-replaced",
           "containing-block",
           "block-formatting-context",
@@ -269,7 +268,6 @@
           "replaced-element",
           "block-level",
           "inline-level",
-          "formatting-context",
           "inline-level-box"
         ]
       },
@@ -331,8 +329,7 @@
       },
       "https://www.w3.org/TR/css-multicol-1/": {
         "anchors": [
-          "multi-column-container",
-          "column-box"
+          "multi-column-container"
         ]
       },
       "https://www.w3.org/TR/css-multicol-2/": {
@@ -346,8 +343,7 @@
         "anchors": [
           "scroll-container",
           "scrollable-overflow-region",
-          "unreachable-scrollable-overflow-region",
-          "propdef-overflow"
+          "unreachable-scrollable-overflow-region"
         ]
       },
       "https://www.w3.org/TR/css-position-3/": {
@@ -357,6 +353,7 @@
           "absolute-position",
           "inset-modified-containing-block",
           "original-containing-block",
+          "fixed-position",
           "static-position-containing-block",
           "propdef-top",
           "propdef-right",
@@ -374,17 +371,18 @@
           "propdef-width",
           "propdef-height",
           "valdef-width-auto",
+          "valdef-width-fit-content",
           "automatic-size",
+          "valdef-width-stretch",
           "fit-content-size",
           "available",
-          "stretch-fit-size",
-          "cyclic-percentage-size"
+          "inline-size",
+          "stretch-fit-size"
         ]
       },
       "https://www.w3.org/TR/css-sizing-4/": {
         "anchors": [
-          "valdef-width-fit-content",
-          "valdef-width-stretch"
+          "valdef-column-width-fit-content"
         ]
       },
       "https://www.w3.org/TR/css-text-3/": {
@@ -397,8 +395,7 @@
           "css-wide-keywords",
           "comb-one",
           "mult-opt",
-          "comb-all",
-          "typedef-length-percentage"
+          "comb-all"
         ]
       },
       "https://www.w3.org/TR/css-writing-modes-3/": {
@@ -420,7 +417,6 @@
           "vertical-writing-mode",
           "line-left",
           "line-right",
-          "inline-size",
           "valdef-direction-ltr",
           "valdef-direction-rtl",
           "inline-start",

@@ -1439,7 +1439,7 @@
               ]
             },
             {
-              "html": "<p>If <var>matched events</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-equal\" id=\"ref-for-set-equal\">equal</a> to <var>event names</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
+              "html": "<p>If <var>matched events</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-unordered-equal\" id=\"ref-for-set-unordered-equal\">equal</a> to <var>event names</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
             },
             {
               "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-subscriptions\" id=\"ref-for-event-subscriptions⑦\">subscriptions</a> to <var>new subscriptions</var>.</p>"
@@ -10635,7 +10635,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details\">get exception details</a> given\n  <var>realm</var>, <var>function body evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑨\">map</a> matching the <code>script.EvaluateResultException</code>\n  production, with the <code>exceptionDetails</code> field set to\n  <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①①⑨\">map</a> matching the <code>script.EvaluationResultException</code>\n  production, with the <code>exceptionDetails</code> field set to\n  <var>exception details</var>.</p>"
             }
           ]
         },
@@ -10680,7 +10680,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details①\">get exception details</a> given\n <var>realm</var>, <var>evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⓪\">map</a> matching the <code>script.EvaluateResultException</code>\n production, with the <code>exceptionDetails</code> field set to\n <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⓪\">map</a> matching the <code>script.EvaluationResultException</code>\n production, with the <code>exceptionDetails</code> field set to\n <var>exception details</var>.</p>"
             }
           ]
         },
@@ -10691,7 +10691,7 @@
           "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑧\">serialize as a remote value</a> with\n <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②①\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②②\">map</a> matching the <code>script.EvaluateResultSuccess</code>\n production, with the <code>realm</code> field set to <var>realm id</var>,\n and the <code>result</code> field set to <var>result</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②②\">map</a> matching the <code>script.EvaluationResultSuccess</code>\n production, with the <code>realm</code> field set to <var>realm id</var>,\n and the <code>result</code> field set to <var>result</var>.</p>"
         }
       ]
     },
@@ -10762,7 +10762,7 @@
               "html": "<p>Let <var>exception details</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-exception-details\" id=\"ref-for-get-exception-details②\">get exception details</a> with\n <var>realm</var>, <var>evaluation status</var>, <var>result ownership</var> and <var>session</var>.</p>"
             },
             {
-              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a> matching the <code>script.EvaluateResultException</code>\n production, with the <code>realm</code> field set to <var>realm id</var>, and the\n <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
+              "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②④\">map</a> matching the <code>script.EvaluationResultException</code>\n production, with the <code>realm</code> field set to <var>realm id</var>, and the\n <code>exceptionDetails</code> field set to <var>exception details</var>.</p>"
             }
           ]
         },
@@ -10773,7 +10773,7 @@
           "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#serialize-as-a-remote-value\" id=\"ref-for-serialize-as-a-remote-value⑨\">serialize as a remote value</a> with\n <var>evaluation status</var>.[[Value]], <var>serialization options</var>, <var>result ownership</var>,\n a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑤\">map</a> as serialization internal map, <var>realm</var> and <var>session</var>.</p>"
         },
         {
-          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑥\">map</a> matching the <code>script.EvaluateResultSuccess</code>\n production, with the with the <code>realm</code> field set to <var>realm id</var>, and\n the <code>result</code> field set to <var>result</var>.</p>"
+          "html": "<p>Return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①②⑥\">map</a> matching the <code>script.EvaluationResultSuccess</code>\n production, with the with the <code>realm</code> field set to <var>realm id</var>, and\n the <code>result</code> field set to <var>result</var>.</p>"
         }
       ]
     },

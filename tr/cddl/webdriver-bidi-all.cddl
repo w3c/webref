@@ -1712,18 +1712,18 @@ script.ChannelProperties = {
   ? ownership: script.ResultOwnership,
 }
 
-script.EvaluateResult = (
-  script.EvaluateResultSuccess /
-  script.EvaluateResultException
+script.EvaluationResult = (
+  script.EvaluationResultSuccess /
+  script.EvaluationResultException
 )
 
-script.EvaluateResultSuccess = {
+script.EvaluationResultSuccess = {
   type: "success",
   result: script.RemoteValue,
   realm: script.Realm
 }
 
-script.EvaluateResultException = {
+script.EvaluationResultException = {
   type: "exception",
   exceptionDetails: script.ExceptionDetails
   realm: script.Realm
@@ -2176,7 +2176,7 @@ script.CallFunctionParameters = {
   ? userActivation: bool .default false,
 }
 
-script.CallFunctionResult = script.EvaluateResult
+script.CallFunctionResult = script.EvaluationResult
 
 script.Evaluate = (
   method: "script.evaluate",
@@ -2191,6 +2191,8 @@ script.EvaluateParameters = {
   ? serializationOptions: script.SerializationOptions,
   ? userActivation: bool .default false,
 }
+
+script.EvaluateResult = script.EvaluationResult
 
 script.GetRealms = (
   method: "script.getRealms",
