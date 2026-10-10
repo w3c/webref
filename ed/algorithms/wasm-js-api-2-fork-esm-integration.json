@@ -235,46 +235,13 @@
           "html": "<p>If <var>module</var>.<a data-link-type=\"dfn\" data-refhint-key=\"32e497d6\" href=\"https://webassembly.github.io/spec/core/syntax/modules.html#syntax-module\" id=\"ref-for-syntax-module①\">imports</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>, and <var>importObject</var> is undefined, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map « ».</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>builtinSetQualifiedName</var> be <var>builtinSetName</var> prefixed with \"wasm:\"</p>"
-            },
-            {
-              "html": "<p class=\"assertion\">Assert: <var>builtinOrStringImports</var> does not contain <var>builtinSetQualifiedName</var></p>"
-            },
-            {
-              "html": "<p>If <var>builtinSetName</var> does not refer to a builtin set, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
-            },
-            {
-              "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-a-builtin-set\" id=\"ref-for-instantiate-a-builtin-set\">instantiate a builtin set</a> with <var>builtinSetName</var></p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>builtinOrStringImports</var>[<var>builtinSetQualifiedName</var>] to <var>exportsObject</var></p>"
-            }
-          ]
-        },
-        {
-          "html": "If <var>importedStringModule</var> is not null,",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-imported-strings\" id=\"ref-for-instantiate-imported-strings\">instantiate imported strings</a> with <var>module</var> and <var>importedStringModule</var></p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>builtinOrStringImports</var>[<var>importedStringModule</var>] to <var>exportsObject</var></p>"
-            }
-          ]
+          "html": "<p>Let <var>builtinOrStringImports</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-the-builtin-and-string-imports\" id=\"ref-for-instantiate-the-builtin-and-string-imports\">instantiate the builtin and string imports</a> of <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var>.</p>"
         },
         {
           "html": "<p>Let <var>imports</var> be « ».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> (<var>moduleName</var>, <var>componentName</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports②\">module_imports</a>(<var>module</var>),",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> (<var>moduleName</var>, <var>componentName</var>, <var>externtype</var>) of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports②\">module_imports</a>(<var>module</var>),",
           "rationale": "if",
           "steps": [
             {
@@ -311,165 +278,223 @@
               "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p②\">Get</a>(<var>o</var>, <var>componentName</var>).</p>"
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types\">func</a> <var>functype</var>,",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable\">IsCallable</a>(<var>v</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror\">LinkError</a></code> exception.</p>"
-                },
-                {
-                  "html": "If <var>v</var> has a [[FunctionAddress]] internal slot, and therefore is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#exported-function\" id=\"ref-for-exported-function①\">Exported Function</a>,",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "Otherwise,",
-                  "rationale": "create",
-                  "steps": [
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>. This value <var>index</var> is known as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-of-the-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index of the host function</dfn> <var>funcaddr</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①\">global</a> <var>mut</var> <var>valtype</var>,",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#global\" id=\"ref-for-global①\">Global</a></code>,",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>globaladdr</var> be <var>v</var>.[[Global]].</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "Otherwise,",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype\">i64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"ref-for-sec-ecmascript-language-types-bigint-type\">is not a BigInt</a>,",
-                      "rationale": "throw",
-                      "steps": [
-                        {
-                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①\">LinkError</a></code> exception.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "If <var>valtype</var> is one of <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①\">i32</a>, <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②\">f32</a> or <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype③\">f64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is not a Number</a>,",
-                      "rationale": "throw",
-                      "steps": [
-                        {
-                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror②\">LinkError</a></code> exception.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types\">v128</a>,",
-                      "rationale": "throw",
-                      "steps": [
-                        {
-                          "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror③\">LinkError</a></code> exception.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue\">ToWebAssemblyValue</a>(<var>v</var>, <var>valtype</var>). If this operation throws a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code>, catch it, and throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror④\">LinkError</a></code> exception.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store\">associated store</a>.</p>"
-                    },
-                    {
-                      "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc\">global_alloc</a>(<var>store</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut\">const</a> <var>valtype</var>, <var>value</var>).</p>"
-                    },
-                    {
-                      "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store①\">associated store</a> to <var>store</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"2be47a22\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types②\">mem</a> <var>memtype</var>,",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#memory\" id=\"ref-for-memory②\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑤\">LinkError</a></code> exception.</p>"
-                },
-                {
-                  "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"eb9c1b7f\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types③\">table</a> <var>tabletype</var>,",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#table\" id=\"ref-for-table①\">Table</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑥\">LinkError</a></code> exception.</p>"
-                },
-                {
-                  "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
-                },
-                {
-                  "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">tag</a> <var>attribute</var> <var>functype</var>,",
-              "rationale": "assert",
-              "steps": [
-                {
-                  "html": "<p class=\"assertion\">Assert: <var>attribute</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tagtype\" id=\"ref-for-syntax-tagtype\">exception</a>.</p>"
-                },
-                {
-                  "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements③\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#tag\" id=\"ref-for-tag②\">Tag</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑦\">LinkError</a></code> exception.</p>"
-                },
-                {
-                  "html": "<p>Let <var>tagaddr</var> be <var>v</var>.[[Address]].</p>"
-                },
-                {
-                  "html": "<p>Let <var>externtag</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑦\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"c77be4cb\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑧\">tag</a> <var>tagaddr</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>externtag</var> to <var>imports</var>.</p>"
-                }
-              ]
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#read-an-import-value\" id=\"ref-for-read-an-import-value\">Read an import value</a> <var>v</var> of type <var>externtype</var> into <var>imports</var>.</p>"
             }
           ]
         },
         {
           "html": "<p>Return <var>imports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "instantiate the builtin and string imports",
+      "href": "https://webassembly.github.io/esm-integration/js-api/#instantiate-the-builtin-and-string-imports",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"instantiate-the-builtin-and-string-imports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">instantiate the builtin and string imports</dfn> of a WebAssembly module <var>module</var> with enabled builtins <var>builtinSetNames</var> and <var>importedStringModule</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>builtinOrStringImports</var> be the ordered map « ».</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>builtinSetName</var> of <var>builtinSetNames</var>,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>builtinSetQualifiedName</var> be <var>builtinSetName</var> prefixed with \"wasm:\"</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>builtinOrStringImports</var> does not contain <var>builtinSetQualifiedName</var></p>"
+            },
+            {
+              "html": "<p>If <var>builtinSetName</var> does not refer to a builtin set, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-a-builtin-set\" id=\"ref-for-instantiate-a-builtin-set\">instantiate a builtin set</a> with <var>builtinSetName</var></p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>builtinOrStringImports</var>[<var>builtinSetQualifiedName</var>] to <var>exportsObject</var></p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>importedStringModule</var> is not null,",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>exportsObject</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-imported-strings\" id=\"ref-for-instantiate-imported-strings\">instantiate imported strings</a> with <var>module</var> and <var>importedStringModule</var></p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> <var>builtinOrStringImports</var>[<var>importedStringModule</var>] to <var>exportsObject</var></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>builtinOrStringImports</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "read an import value",
+      "href": "https://webassembly.github.io/esm-integration/js-api/#read-an-import-value",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-an-import-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read an import value</dfn> <var>v</var> of type <var>externtype</var> into imports list <var>imports</var>, perform the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types\">func</a> <var>functype</var>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable\">IsCallable</a>(<var>v</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror\">LinkError</a></code> exception.</p>"
+            },
+            {
+              "html": "If <var>v</var> has a [[FunctionAddress]] internal slot, and therefore is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#exported-function\" id=\"ref-for-exported-function①\">Exported Function</a>,",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise,",
+              "rationale": "create",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
+                },
+                {
+                  "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>. This value <var>index</var> is known as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"index-of-the-host-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">index of the host function</dfn> <var>funcaddr</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①\">func</a> <var>funcaddr</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①\">global</a> <var>mut</var> <var>valtype</var>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#global\" id=\"ref-for-global①\">Global</a></code>,",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>globaladdr</var> be <var>v</var>.[[Global]].</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise,",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype\">i64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"ref-for-sec-ecmascript-language-types-bigint-type\">is not a BigInt</a>,",
+                  "rationale": "throw",
+                  "steps": [
+                    {
+                      "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①\">LinkError</a></code> exception.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>valtype</var> is one of <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①\">i32</a>, <a data-link-type=\"dfn\" data-refhint-key=\"a4646532\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②\">f32</a> or <a data-link-type=\"dfn\" data-refhint-key=\"487b76fe\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype③\">f64</a> and <var>v</var> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"ref-for-sec-ecmascript-language-types-number-type\">is not a Number</a>,",
+                  "rationale": "throw",
+                  "steps": [
+                    {
+                      "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror②\">LinkError</a></code> exception.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types\">v128</a>,",
+                  "rationale": "throw",
+                  "steps": [
+                    {
+                      "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror③\">LinkError</a></code> exception.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue\">ToWebAssemblyValue</a>(<var>v</var>, <var>valtype</var>). If this operation throws a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code>, catch it, and throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror④\">LinkError</a></code> exception.</p>"
+                },
+                {
+                  "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store\">associated store</a>.</p>"
+                },
+                {
+                  "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc\">global_alloc</a>(<var>store</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut\">const</a> <var>valtype</var>, <var>value</var>).</p>"
+                },
+                {
+                  "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store①\">associated store</a> to <var>store</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②\">global</a> <var>globaladdr</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"2be47a22\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types②\">mem</a> <var>memtype</var>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#memory\" id=\"ref-for-memory②\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑤\">LinkError</a></code> exception.</p>"
+            },
+            {
+              "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval④\">mem</a> <var>v</var>.[[Memory]].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"eb9c1b7f\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types③\">table</a> <var>tabletype</var>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements②\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#table\" id=\"ref-for-table①\">Table</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑥\">LinkError</a></code> exception.</p>"
+            },
+            {
+              "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
+            },
+            {
+              "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑥\">table</a> <var>tableaddr</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"a5c9608b\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types④\">tag</a> <var>attribute</var> <var>functype</var>,",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <var>attribute</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-tagtype\" id=\"ref-for-syntax-tagtype\">exception</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements③\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#tag\" id=\"ref-for-tag②\">Tag</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror⑦\">LinkError</a></code> exception.</p>"
+            },
+            {
+              "html": "<p>Let <var>tagaddr</var> be <var>v</var>.[[Address]].</p>"
+            },
+            {
+              "html": "<p>Let <var>externtag</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑦\">external value</a> <a data-link-type=\"dfn\" data-refhint-key=\"c77be4cb\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval⑧\">tag</a> <var>tagaddr</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">Append</a> <var>externtag</var> to <var>imports</var>.</p>"
+            }
+          ]
         }
       ]
     },
@@ -3902,6 +3927,9 @@
           "html": "<p>Let <var>importedStringModule</var> be \"wasm:js/string-constants\".</p>"
         },
         {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#validate-builtins-and-imported-string-for-a-webassembly-module\" id=\"ref-for-validate-builtins-and-imported-string-for-a-webassembly-module③\">validating builtins and imported strings</a> for <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var> is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror⑦\">CompileError</a></code> exception.</p>"
+        },
+        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#construct-a-webassembly-module-object\" id=\"ref-for-construct-a-webassembly-module-object①\">Construct a WebAssembly module object</a> from <var>module</var>, <var>bytes</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>module</var> be the result.</p>"
         },
         {
@@ -4079,6 +4107,9 @@
           "html": "<p>Let <var>importedStringModule</var> be <var>moduleObject</var>.[[ImportedStringModule]].</p>"
         },
         {
+          "html": "<p>Let <var>builtinOrStringImports</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#instantiate-the-builtin-and-string-imports\" id=\"ref-for-instantiate-the-builtin-and-string-imports①\">instantiate the builtin and string imports</a> of <var>module</var> with <var>builtinSetNames</var> and <var>importedStringModule</var>.</p>"
+        },
+        {
           "html": "<p>Let <var>imports</var> be « ».</p>"
         },
         {
@@ -4086,63 +4117,24 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>importedStringModule</var> is not null and <var>importedModuleName</var> equals <var>importedStringModule</var>,",
-              "rationale": "assert",
-              "steps": [
-                {
-                  "html": "<p class=\"assertion\">Assert: <var>importtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①⑤\">global</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut④\">const</a> <var>valtype</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦④\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①④\">ToWebAssemblyValue</a>(<var>name</var>, <var>valtype</var>).</p>"
-                },
-                {
-                  "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc②\">global_alloc</a>(<var>store</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut⑤\">const</a> <var>valtype</var>, <var>value</var>).</p>"
-                },
-                {
-                  "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑥\">associated store</a> to <var>store</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑨\">global</a> <var>globaladdr</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑥\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "If <var>builtinSetNames</var> is not null,",
+              "html": "If <var>builtinOrStringImports</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">contains</a> <var>importedModuleName</var>,",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>maybeBuiltin</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#find-a-builtin\" id=\"ref-for-find-a-builtin②\">finding a builtin</a> for (<var>importedModuleName</var>, <var>name</var>, <var>importtype</var>) and <var>builtinSetNames</var>.</p>"
+                  "html": "<p>Let <var>o</var> be <var>builtinOrStringImports</var>[<var>importedModuleName</var>].</p>"
                 },
                 {
-                  "html": "If <var>maybeBuiltin</var> is not null,",
+                  "html": "If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty\" id=\"ref-for-sec-hasproperty①\">HasProperty</a>(<var>o</var>, <var>name</var>) is true,",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>funcType</var> be <var>maybeBuiltin</var>[1][1].</p>"
+                      "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p③\">Get</a>(<var>o</var>, <var>name</var>).</p>"
                     },
                     {
-                      "html": "<p>Let <var>steps</var> be <var>maybeBuiltin</var>[1][2].</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#read-an-import-value\" id=\"ref-for-read-an-import-value①\">Read an import value</a> <var>v</var> of type <var>importtype</var> into <var>imports</var>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>funcaddr</var> be the result of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#create-a-builtin-function\" id=\"ref-for-create-a-builtin-function①\">create a builtin function</a> with <var>funcType</var> and <var>steps</var>.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⓪\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②①\">func</a> <var>funcaddr</var>.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑦\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
                     }
                   ]
                 }
@@ -4198,7 +4190,7 @@
                   "html": "<p>If <var>importtype</var> is not an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/types.html#match-externtype\" id=\"ref-for-match-externtype\">extern subtype</a> of <var>externtype</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①④\">LinkError</a></code> exception.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑧\">Append</a> <var>externval</var> to <var>imports</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑥\">Append</a> <var>externval</var> to <var>imports</var>.</p>"
                 }
               ]
             },
@@ -4213,127 +4205,7 @@
                   "html": "<p>Let <var>v</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⑤\">?</a> <var>env</var>.GetBindingValue(<var>resolvedName</var>, true).</p>"
                 },
                 {
-                  "html": "If <var>importtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"cf0d7dd8\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#heap-types\" id=\"ref-for-heap-types③\">func</a> <var>functype</var>,",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable③\">IsCallable</a>(<var>v</var>) is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①⑤\">LinkError</a></code> exception.</p>"
-                    },
-                    {
-                      "html": "If <var>v</var> has a [[FunctionAddress]] internal slot, and therefore is an <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#exported-function\" id=\"ref-for-exported-function③\">Exported Function</a>,",
-                      "rationale": "let",
-                      "steps": [
-                        {
-                          "html": "<p>Let <var>funcaddr</var> be the value of <var>v</var>’s [[FunctionAddress]] internal slot.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "Otherwise,",
-                      "rationale": "create",
-                      "steps": [
-                        {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#create-a-host-function\" id=\"ref-for-create-a-host-function①\">Create a host function</a> from <var>v</var> and <var>functype</var>, and let <var>funcaddr</var> be the result.</p>"
-                        },
-                        {
-                          "html": "<p>Let <var>index</var> be the number of external functions in <var>imports</var>, defining the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#index-of-the-host-function\" id=\"ref-for-index-of-the-host-function①\">index of the host function</a> <var>funcaddr</var>.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>Let <var>externfunc</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②②\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②③\">func</a> <var>funcaddr</var>.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑨\">Append</a> <var>externfunc</var> to <var>imports</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "If <var>importtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①⑥\">global</a> <var>mut</var> <var>valtype</var>,",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑤\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑦\">associated store</a>.</p>"
-                    },
-                    {
-                      "html": "If <var>v</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements⑤\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#global\" id=\"ref-for-global⑧\">Global</a></code>,",
-                      "rationale": "let",
-                      "steps": [
-                        {
-                          "html": "<p>Let <var>globaladdr</var> be <var>v</var>.[[Global]].</p>"
-                        },
-                        {
-                          "html": "Let <var>targetmut</var> <var>valuetype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-type\" id=\"ref-for-embed-global-type②\">global_type</a>(<var>store</var>, <var>globaladdr</var>).",
-                          "rationale": "if",
-                          "steps": [
-                            {
-                              "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut⑥\">const</a> and <var>targetmut</var> is <a data-link-type=\"dfn\" data-refhint-key=\"e638887d\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut⑦\">var</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①⑥\">LinkError</a></code> exception.</p>"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "html": "Otherwise,",
-                      "rationale": "if",
-                      "steps": [
-                        {
-                          "html": "<p>If <var>valtype</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①⓪\">v128</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①⑦\">LinkError</a></code> exception.</p>"
-                        },
-                        {
-                          "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" data-refhint-key=\"e638887d\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut⑧\">var</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①⑧\">LinkError</a></code> exception.</p>"
-                        },
-                        {
-                          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⑥\">?</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①⑤\">ToWebAssemblyValue</a>(<var>v</var>, <var>valtype</var>).</p>"
-                        },
-                        {
-                          "html": "<p>Let (<var>store</var>, <var>globaladdr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-alloc\" id=\"ref-for-embed-global-alloc③\">global_alloc</a>(<var>store</var>, <var>mut</var> <var>valtype</var>, <var>value</var>).</p>"
-                        },
-                        {
-                          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑧\">associated store</a> to <var>store</var>.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>Let <var>externglobal</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②④\">global</a> <var>globaladdr</var>.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⓪\">Append</a> <var>externglobal</var> to <var>imports</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "If <var>importtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"2be47a22\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①⑦\">mem</a> <var>memtype</var>,",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements⑥\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#memory\" id=\"ref-for-memory⑨\">Memory</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror①⑨\">LinkError</a></code> exception.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>externmem</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⑤\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⑥\">mem</a> <var>v</var>.[[Memory]].</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②①\">Append</a> <var>externmem</var> to <var>imports</var>.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "If <var>importtype</var> is of the form <u class=\"link-error\" data-lt=\"table\" title=\"LINK ERROR: Ambiguous for-less link for 'table', please see &lt;https://speced.github.io/bikeshed/#ambi-for&gt; for instructions:\nLocal references:\nspec:webassembly; type:dfn; for:external-type; text:table\nfor-less references:\nspec:css2; type:dfn; for:/; text:tables\">table</u> <var>tabletype</var>,",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>v</var> does not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements⑦\">implement</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#table\" id=\"ref-for-table⑦\">Table</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-linkerror\" id=\"ref-for-exceptiondef-linkerror②⓪\">LinkError</a></code> exception.</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>tableaddr</var> be <var>v</var>.[[Table]].</p>"
-                    },
-                    {
-                      "html": "<p>Let <var>externtable</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⑦\">external value</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⑧\">table</a> <var>tableaddr</var>.</p>"
-                    },
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②②\">Append</a> <var>externtable</var> to <var>imports</var>.</p>"
-                    }
-                  ]
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#read-an-import-value\" id=\"ref-for-read-an-import-value②\">Read an import value</a> <var>v</var> of type <var>importtype</var> into <var>imports</var>.</p>"
                 }
               ]
             }
@@ -4362,23 +4234,23 @@
               "html": "<p class=\"assertion\">Assert: <var>externval</var> is not <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error②①\">error</a>.</p>"
             },
             {
-              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①⑧\">global</a> <var>mut</var> <var>globaltype</var>,",
+              "html": "If <var>externtype</var> is of the form <a data-link-type=\"dfn\" data-refhint-key=\"82295e1c\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#external-types\" id=\"ref-for-external-types①⑤\">global</a> <var>mut</var> <var>globaltype</var>,",
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⑨\">global</a> <var>globaladdr</var>.</p>"
+                  "html": "<p class=\"assertion\">Assert: <var>externval</var> is of the form <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval①⑨\">global</a> <var>globaladdr</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval③⓪\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
+                  "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-externval\" id=\"ref-for-syntax-externval②⓪\">global</a> <var>globaladdr</var> be <var>externval</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑨\">associated store</a>.</p>"
+                  "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>global_value</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read①\">global_read</a>(<var>store</var>, <var>globaladdr</var>).</p>"
                 },
                 {
-                  "html": "<p>If <var>globaltype</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype⑧\">matches</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①①\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②⓪\">exnref</a>,</p>",
+                  "html": "<p>If <var>globaltype</var> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/matching.html#match-valtype\" id=\"ref-for-match-valtype⑧\">matches</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#vector-types\" id=\"ref-for-vector-types①⓪\">v128</a> or <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②⓪\">exnref</a>,</p>",
                   "ignored": [
                     ""
                   ]
@@ -4388,10 +4260,10 @@
                   "rationale": "perform",
                   "steps": [
                     {
-                      "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⑦\">!</a> <var>record</var>.[[Environment]].InitializeBinding(<var>name</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①④\">ToJSValue</a>(<var>global_value</var>)).</p>"
+                      "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⑥\">!</a> <var>record</var>.[[Environment]].InitializeBinding(<var>name</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①④\">ToJSValue</a>(<var>global_value</var>)).</p>"
                     },
                     {
-                      "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" data-refhint-key=\"e638887d\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut⑨\">var</a>, then associate all future mutations of <var>globaladdr</var> with the ECMA-262 binding record for <var>name</var> in\n<var>record</var>.[[Environment]], such that <var>record</var>.[[Environment]].GetBindingValue(<var>name</var>, true)\nalways returns <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①⑤\">ToJSValue</a>(<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read②\">global_read</a>(<var>store</var>, <var>globaladdr</var>)) for the current <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑧\">surrounding agent</a>’s\n<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store⑤⓪\">associated store</a> <var>store</var>.</p>"
+                      "html": "<p>If <var>mut</var> is <a data-link-type=\"dfn\" data-refhint-key=\"e638887d\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-mut\" id=\"ref-for-syntax-mut④\">var</a>, then associate all future mutations of <var>globaladdr</var> with the ECMA-262 binding record for <var>name</var> in\n<var>record</var>.[[Environment]], such that <var>record</var>.[[Environment]].GetBindingValue(<var>name</var>, true)\nalways returns <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①⑤\">ToJSValue</a>(<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-global-read\" id=\"ref-for-embed-global-read②\">global_read</a>(<var>store</var>, <var>globaladdr</var>)) for the current <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥④\">surrounding agent</a>’s\n<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#associated-store\" id=\"ref-for-associated-store④⑥\">associated store</a> <var>store</var>.</p>"
                     }
                   ]
                 }
