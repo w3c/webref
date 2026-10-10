@@ -1,8 +1,27 @@
+name: Crawl specs and update the main branch
+
 on:
   schedule:
-    - cron: '30 */6 * * *'
+    - cron: '30 */6 * * *' # Every 6 hours for "ed" (nightly) crawls
+    - cron: '0 1 * * *'    # Once per day for "tr" (release) crawls
   workflow_dispatch:
-name: Update ED report
+    inputs:
+      crawlType:
+        description: 'What to crawl'
+        required: true
+        default: 'ed'
+        type: choice
+        options:
+          - ed
+          - tr
+
+concurrency:
+  group: update
+  queue: max
+
+env:
+  CRAWL_TYPE: ${{ (github.event.schedule == '30 */6 * * *' || (inputs.crawlType == 'ed')) && 'ed' || 'tr' }}
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -26,12 +45,15 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    # Note command to Reffy explicitly mentions a few discontinued specs,
-    # kept in the crawl for cross-referencing purpose.
-    - name: Run Reffy's crawler
+    # Note: When we crawl nightly versions of specs, we'll also crawl a few
+    # additional discontinued specs, kept for cross-referencing purpose.
+    - name: Crawl specs with Reffy
+      env:
+        RELEASE: ${{ (env.CRAWL_TYPE == 'tr') && '--release' || '' }}
+        SPECS: ${{ (env.CRAWL_TYPE == 'ed') && 'all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt rfc7230 rfc7231 rfc7232 rfc7233 rfc7234 rfc7235' || 'all' }}
       run: |
         mkdir report
-        node_modules/.bin/reffy --post csscomplete --post cssdangling --post annotatelinks --post patchdfns --output report --fallback ed/index.json --spec all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt rfc7230 rfc7231 rfc7232 rfc7233 rfc7234 rfc7235
+        node_modules/.bin/reffy --post csscomplete --post cssdangling --post annotatelinks --post patchdfns --output report --fallback ${{env.CRAWL_TYPE}}/index.json --spec ${{env.SPECS}} ${{env.RELEASE}}
 
     # Update another Webref checkout to reduce the chances that the version we
     # checked out is no longer in sync with origin by the time the crawl is over
@@ -41,10 +63,10 @@ jobs:
         path: webref
 
     - name: Copy report
-      run: rsync -av report/ webref/ed/
+      run: rsync -av report/ webref/${{env.CRAWL_TYPE}}/
 
     - name: Drop extract files from specs that are no longer crawled
-      run: node tools/clean-dropped-specs-files.js ed
+      run: node tools/clean-dropped-specs-files.js ${{env.CRAWL_TYPE}}
       working-directory: webref
 
     - name: Bump minor version of packages if needed
@@ -58,14 +80,6 @@ jobs:
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add -A
         REFFY_SHA=$(../node_modules/.bin/reffy --version)
-        git commit -m "Update of ED report from new reffy run" -m "Using reffy commit $REFFY_SHA."
+        git commit -m "Update of ${{env.CRAWL_TYPE}} report from new reffy run" -m "Using reffy commit $REFFY_SHA."
         git push origin HEAD:main
       working-directory: webref
-
-    - name: Notify webref-analysis that it should update itself
-      run: |
-        curl -X POST \
-          -H "Authorization: Bearer ${{secrets.WEBREF_ANALYSIS_TOKEN}}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/w3c/webref-analysis/actions/workflows/analyze.yml/dispatches \
-          -d '{"ref": "main"}'
