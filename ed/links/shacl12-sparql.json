@@ -15,15 +15,7 @@
       "https://github.com/w3c/data-shapes/issues/426": {},
       "https://github.com/w3c/data-shapes/issues/573": {},
       "https://github.com/w3c/data-shapes/issues/647": {},
-      "https://github.com/w3c/data-shapes/issues/999": {},
-      "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Propose+Closing%22": {},
-      "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22SPARQL%22": {},
       "https://w3c.github.io/data-shapes/shacl12-cs/": {},
-      "https://w3c.github.io/data-shapes/shacl12-inference-rules/": {
-        "anchors": [
-          "SPARQLRule"
-        ]
-      },
       "https://w3c.github.io/data-shapes/shacl12-overview/": {},
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
@@ -85,6 +77,7 @@
           "dfn-node-expression-function",
           "dfn-function-name",
           "dfn-output-nodes",
+          "dfn-evaluation-failure",
           "dfn-focus-graph",
           "dfn-conform",
           "dfn-failure",
@@ -96,10 +89,12 @@
           "dfn-well-formed",
           "dfn-ill-formed",
           "conformance",
+          "deactivated",
           "validation-definition",
           "message",
           "core-components",
           "PatternConstraintComponent",
+          "subClassOfInShapesGraph",
           "targetClass",
           "targetSubjectsOf",
           "targetObjectsOf",
@@ -117,11 +112,16 @@
           "security"
         ]
       },
+      "https://www.w3.org/TR/shacl12-inference-rules/": {
+        "anchors": [
+          "SPARQLRule"
+        ]
+      },
       "https://www.w3.org/TR/shacl12-node-expr/": {
         "anchors": [
-          "custom-list-parameter-functions",
-          "dfn-output-nodes",
-          "dfn-evaluation-failure"
+          "sparql-functions",
+          "NamedParameterFunctions",
+          "custom-node-expressions"
         ]
       },
       "https://www.w3.org/TR/shacl12-profiling/": {},
@@ -194,23 +194,25 @@
           "dfn-validation-result",
           "dfn-property-shape",
           "dfn-shape",
-          "dfn-shacl-property-path",
+          "dfn-node-expression",
+          "dfn-output-nodes",
+          "dfn-node-shape",
+          "dfn-data-graph",
           "dfn-focus-node",
+          "dfn-shacl-property-path",
           "dfn-value-node",
           "dfn-constraint",
           "dfn-mandatory-parameter",
           "dfn-optional-parameter",
-          "dfn-node-shape",
           "dfn-shacl-type",
           "dfn-parameter",
           "dfn-shacl-subclass",
           "dfn-conform",
           "dfn-node-expression-function",
-          "dfn-node-expression",
           "dfn-function-name",
           "dfn-well-formed",
-          "dfn-output-nodes",
           "dfn-focus-graph",
+          "dfn-evaluation-failure",
           "dfn-target"
         ]
       },
