@@ -135,7 +135,7 @@
                 "title": "HTML Standard",
                 "url": "https://html.spec.whatwg.org/multipage/"
               },
-              "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
+              "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined appendHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined prependHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined appendHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined prependHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
             },
             {
               "spec": {
@@ -293,7 +293,15 @@
                 "fragment": "interface mixin NonDocumentTypeChildNode {\n  readonly attribute Element? previousElementSibling;\n  readonly attribute Element? nextElementSibling;\n};",
                 "href": "https://dom.spec.whatwg.org/#nondocumenttypechildnode"
               },
-              "extended": [],
+              "extended": [
+                {
+                  "spec": {
+                    "title": "HTML Standard",
+                    "url": "https://html.spec.whatwg.org/multipage/"
+                  },
+                  "fragment": "partial interface mixin NonDocumentTypeChildNode {\n  [CEReactions] undefined beforeHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined afterHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined replaceWithHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined beforeHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined afterHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined replaceWithHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n};"
+                }
+              ],
               "inheritance": null,
               "includes": []
             },

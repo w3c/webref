@@ -3,3 +3,13 @@ interface mixin NonDocumentTypeChildNode {
   readonly attribute Element? previousElementSibling;
   readonly attribute Element? nextElementSibling;
 };
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+partial interface mixin NonDocumentTypeChildNode {
+  [CEReactions] undefined beforeHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions] undefined afterHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions] undefined replaceWithHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions] undefined beforeHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [CEReactions] undefined afterHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [CEReactions] undefined replaceWithHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+};

@@ -63,7 +63,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblyinstantiatedsource"
       },
       "WebAssemblyCompileOptions": {
-        "fragment": "dictionary WebAssemblyCompileOptions {\n    USVString? importedStringConstants;\n    sequence<USVString> builtins;\n};",
+        "fragment": "dictionary WebAssemblyCompileOptions {\n    USVString? importedStringConstants = null;\n    sequence<USVString> builtins = [];\n};",
         "type": "dictionary",
         "name": "WebAssemblyCompileOptions",
         "inheritance": null,
@@ -80,7 +80,9 @@
               "union": false,
               "idlType": "USVString"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false,
             "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblycompileoptions-importedstringconstants"
           },
@@ -105,7 +107,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false,
             "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblycompileoptions-builtins"
           }

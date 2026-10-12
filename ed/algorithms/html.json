@@ -38460,52 +38460,242 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>target</var> be <a id=\"html-parsing-methods:this\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:template-contents\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> if\n   <a id=\"html-parsing-methods:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> is a <code id=\"html-parsing-methods:the-template-element\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element; otherwise <a id=\"html-parsing-methods:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html\">Set and filter HTML</a> given <var>target</var>, <var>html</var>,\n   <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe\">Safe</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html\">Filter and set HTML</a> given <var>target</var>, <var>html</var>,\n   <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe\">Safe</a>.</p>"
         }
       ]
     },
     {
-      "name": "ShadowRoot/setHTML(html, options)",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtml",
-      "html": "<code id=\"html-parsing-methods:shadowroot\"><a data-x-internal=\"shadowroot\" href=\"https://dom.spec.whatwg.org/#interface-shadowroot\">ShadowRoot</a></code>'s <dfn data-dfn-for=\"ShadowRoot\" id=\"dom-shadowroot-sethtml\" data-dfn-type=\"method\"><code>setHTML(<var>html</var>, <var>options</var>)</code></dfn> method\n  steps are:",
-      "rationale": "set",
+      "name": "Element/appendHTML(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-appendhtml",
+      "html": "<code id=\"html-parsing-methods:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-appendhtml\" data-dfn-type=\"method\"><code>appendHTML(<var>html</var>, <var>options</var>)</code></dfn>\n  method steps are:",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html-2\">Set and filter HTML</a> given <a id=\"html-parsing-methods:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <var>html</var>,\n   <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-2\">Safe</a>.</p>"
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion-2\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html\">Filter and pre-insert HTML</a> given <var>target</var>, null, <var>html</var>,\n   <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-2\">Safe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/prependHTML(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-prependhtml",
+      "html": "<code id=\"html-parsing-methods:element-3\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-prependhtml\" data-dfn-type=\"method\"><code>prependHTML(<var>html</var>, <var>options</var>)</code></dfn>\n  method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion-3\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-2\">Filter and pre-insert HTML</a> given <var>target</var>, <var>target</var>'s\n   <a id=\"html-parsing-methods:first-child\" href=\"https://dom.spec.whatwg.org/#concept-tree-first-child\" data-x-internal=\"first-child\">first child</a>, <var>html</var>, <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-3\">Safe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/beforeHTML(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-beforehtml",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-2\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-beforehtml\" data-dfn-type=\"method\"><code>beforeHTML(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-5\">Filter and pre-insert HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-9\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>,\n   <var>html</var>, <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-7\">Safe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/afterHTML(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-afterhtml",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-3\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-afterhtml\" data-dfn-type=\"method\"><code>afterHTML(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion-2\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-10\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-6\">Filter and pre-insert HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s\n   <a id=\"html-parsing-methods:next-sibling\" href=\"https://dom.spec.whatwg.org/#concept-tree-next-sibling\" data-x-internal=\"next-sibling\">next sibling</a>, <var>html</var>, <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-8\">Safe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/replaceWithHTML(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-replacewithhtml",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-4\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-replacewithhtml\" data-dfn-type=\"method\"><code>replaceWithHTML(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion-3\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-12\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-replace-with-html\" id=\"html-parsing-methods:filter-and-replace-with-html\">Filter and replace with HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-13\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>,\n   <var>html</var>, <var>options</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-safe\" id=\"html-parsing-methods:fragment-parser-mode-safe-9\">Safe</a>.</p>"
         }
       ]
     },
     {
       "name": "Element/setHTMLUnsafe(html, options)",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe",
-      "html": "<code id=\"html-parsing-methods:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-sethtmlunsafe\" data-dfn-type=\"method\"><code>setHTMLUnsafe(<var>html</var>, <var>options</var>)</code></dfn>\n  method steps are:",
+      "html": "<code id=\"html-parsing-methods:element-5\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-sethtmlunsafe\" data-dfn-type=\"method\"><code>setHTMLUnsafe(<var>html</var>, <var>options</var>)</code></dfn>\n  method steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Element setHTMLUnsafe</code>\".</p>"
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-14\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Element setHTMLUnsafe</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be <a id=\"html-parsing-methods:this-6\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> if\n   <a id=\"html-parsing-methods:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> is a <code id=\"html-parsing-methods:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element; otherwise <a id=\"html-parsing-methods:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion-4\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-15\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html-3\">Set and filter HTML</a> given <var>target</var>, <var>compliantHTML</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe\">Unsafe</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html-3\">Filter and set HTML</a> given <var>target</var>, <var>compliantHTML</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/appendHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-appendhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:element-6\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-appendhtmlunsafe\" data-dfn-type=\"method\"><code>appendHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-2\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-16\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Element appendHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion-5\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-17\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-7\">Filter and pre-insert HTML</a> given <var>target</var>, null,\n   <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-2\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Element/prependHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-prependhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:element-7\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <dfn data-dfn-for=\"Element\" id=\"dom-element-prependhtmlunsafe\" data-dfn-type=\"method\"><code>prependHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-3\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-18\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Element prependHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"html-parsing-methods:target-for-html-insertion-6\">target for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-19\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-8\">Filter and pre-insert HTML</a> given <var>target</var>, <var>target</var>'s\n   <a id=\"html-parsing-methods:first-child-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-first-child\" data-x-internal=\"first-child\">first child</a>, <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-3\">Unsafe</a>.</p>"
         }
       ]
     },
     {
       "name": "ShadowRoot/setHTMLUnsafe(html, options)",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe",
-      "html": "<code id=\"html-parsing-methods:shadowroot-2\"><a data-x-internal=\"shadowroot\" href=\"https://dom.spec.whatwg.org/#interface-shadowroot\">ShadowRoot</a></code>'s <dfn data-dfn-for=\"ShadowRoot\" id=\"dom-shadowroot-sethtmlunsafe\" data-dfn-type=\"method\"><code>setHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "html": "<code id=\"html-parsing-methods:shadowroot-4\"><a data-x-internal=\"shadowroot\" href=\"https://dom.spec.whatwg.org/#interface-shadowroot\">ShadowRoot</a></code>'s <dfn data-dfn-for=\"ShadowRoot\" id=\"dom-shadowroot-sethtmlunsafe\" data-dfn-type=\"method\"><code>setHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-2\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-9\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>ShadowRoot setHTMLUnsafe</code>\".</p>"
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-4\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-20\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>ShadowRoot setHTMLUnsafe</code>\".</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html-4\">Set and filter HTML</a> given <a id=\"html-parsing-methods:this-10\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <var>compliantHTML</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-2\">Unsafe</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"html-parsing-methods:set-and-filter-html-4\">Filter and set HTML</a> given <a id=\"html-parsing-methods:this-21\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <var>compliantHTML</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-4\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ShadowRoot/appendHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-appendhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:shadowroot-5\"><a data-x-internal=\"shadowroot\" href=\"https://dom.spec.whatwg.org/#interface-shadowroot\">ShadowRoot</a></code>'s <dfn data-dfn-for=\"ShadowRoot\" id=\"dom-shadowroot-appendhtmlunsafe\" data-dfn-type=\"method\"><code>appendHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-5\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-22\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-5\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>ShadowRoot appendHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-9\">Filter and pre-insert HTML</a> given <a id=\"html-parsing-methods:this-23\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, null,\n   <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-5\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ShadowRoot/prependHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-prependhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:shadowroot-6\"><a data-x-internal=\"shadowroot\" href=\"https://dom.spec.whatwg.org/#interface-shadowroot\">ShadowRoot</a></code>'s <dfn data-dfn-for=\"ShadowRoot\" id=\"dom-shadowroot-prependhtmlunsafe\" data-dfn-type=\"method\"><code>prependHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-6\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-24\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-6\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>ShadowRoot prependHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-10\">Filter and pre-insert HTML</a> given <a id=\"html-parsing-methods:this-25\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <a id=\"html-parsing-methods:this-26\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s\n   <a id=\"html-parsing-methods:first-child-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-first-child\" data-x-internal=\"first-child\">first child</a>, <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-6\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/beforeHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-beforehtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-5\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-beforehtmlunsafe\" data-dfn-type=\"method\"><code>beforeHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-7\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-27\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-7\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Node beforeHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion-4\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-28\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-11\">Filter and pre-insert HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-29\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>,\n   <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-7\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/afterHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-afterhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-6\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-afterhtmlunsafe\" data-dfn-type=\"method\"><code>afterHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-8\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-30\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-8\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Node afterHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion-5\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-31\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html\" id=\"html-parsing-methods:filter-and-pre-insert-html-12\">Filter and pre-insert HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-32\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s\n   <a id=\"html-parsing-methods:next-sibling-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-next-sibling\" data-x-internal=\"next-sibling\">next sibling</a>, <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-8\">Unsafe</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "NonDocumentTypeChildNode/replaceWithHTMLUnsafe(html, options)",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-replacewithhtmlunsafe",
+      "html": "<code id=\"html-parsing-methods:nondocumenttypechildnode-7\"><a data-x-internal=\"nondocumenttypechildnode\" href=\"https://dom.spec.whatwg.org/#interface-nondocumenttypechildnode\">NonDocumentTypeChildNode</a></code>'s <dfn data-dfn-for=\"NonDocumentTypeChildNode\" id=\"dom-nondocumenttypechildnode-replacewithhtmlunsafe\" data-dfn-type=\"method\"><code>replaceWithHTMLUnsafe(<var>html</var>,\n  <var>options</var>)</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-9\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"html-parsing-methods:this-33\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-9\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, <var>html</var>, <var>options</var>, and\n   \"<code>Node replaceWithHTMLUnsafe</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>parent</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion\" id=\"html-parsing-methods:parent-for-html-insertion-6\">parent for HTML insertion</a> given\n   <a id=\"html-parsing-methods:this-34\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-replace-with-html\" id=\"html-parsing-methods:filter-and-replace-with-html-2\">Filter and replace with HTML</a> given <var>parent</var>, <a id=\"html-parsing-methods:this-35\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>,\n   <var>compliantHTML</var>, <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-unsafe\" id=\"html-parsing-methods:fragment-parser-mode-unsafe-9\">Unsafe</a>.</p>"
         }
       ]
     },
@@ -38516,7 +38706,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>document</var> be a new <code id=\"html-parsing-methods:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, whose <a href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"html-parsing-methods:concept-document-content-type\" data-x-internal=\"concept-document-content-type\">content type</a> is \"<code>text/html</code>\" and <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin\" data-x-internal=\"concept-document-origin\">origin</a> is\n    <a id=\"html-parsing-methods:this-11\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-3\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"html-parsing-methods:concept-document-window\">associated <code>Document</code></a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-2\" data-x-internal=\"concept-document-origin\">origin</a>.</p>"
+          "html": "<p>Let <var>document</var> be a new <code id=\"html-parsing-methods:document-9\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, whose <a href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"html-parsing-methods:concept-document-content-type\" data-x-internal=\"concept-document-content-type\">content type</a> is \"<code>text/html</code>\" and <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin\" data-x-internal=\"concept-document-origin\">origin</a> is\n    <a id=\"html-parsing-methods:this-36\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-10\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"html-parsing-methods:concept-document-window\">associated <code>Document</code></a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-2\" data-x-internal=\"concept-document-origin\">origin</a>.</p>"
         },
         {
           "html": "<p>Set <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-allow-declarative-shadow-roots\" id=\"html-parsing-methods:concept-document-allow-declarative-shadow-roots\" data-x-internal=\"concept-document-allow-declarative-shadow-roots\">allow declarative shadow roots</a> to\n   true.</p>"
@@ -38531,7 +38721,7 @@
           "html": "<p><a id=\"html-parsing-methods:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>sanitizer</var> is non-null.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitize\" id=\"html-parsing-methods:sanitize-7\">Sanitize</a> <var>document</var> with <var>sanitizer</var> and true.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitize\" id=\"html-parsing-methods:sanitize-21\">Sanitize</a> <var>document</var> with <var>sanitizer</var> and true.</p>"
         },
         {
           "html": "<p>Return <var>document</var>.</p>"
@@ -38545,10 +38735,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-3\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with the\n   <a id=\"html-parsing-methods:current-global-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>, <var>html</var>, <var>options</var>, and \"<code>Document parseHTMLUnsafe</code>\".</p>"
+          "html": "<p>Let (<var>compliantHTML</var>, <var>compliantOptions</var>) be the result of invoking the\n   <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"html-parsing-methods:tt-getcompliantinput-10\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with the\n   <a id=\"html-parsing-methods:current-global-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>, <var>html</var>, <var>options</var>, and \"<code>Document parseHTMLUnsafe</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>document</var> be a new <code id=\"html-parsing-methods:document-4\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, whose <a href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"html-parsing-methods:concept-document-content-type-2\" data-x-internal=\"concept-document-content-type\">content type</a> is \"<code>text/html</code>\" and <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-3\" data-x-internal=\"concept-document-origin\">origin</a> is\n    <a id=\"html-parsing-methods:this-12\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-4\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"html-parsing-methods:concept-document-window-2\">associated <code>Document</code></a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-4\" data-x-internal=\"concept-document-origin\">origin</a>.</p>"
+          "html": "<p>Let <var>document</var> be a new <code id=\"html-parsing-methods:document-10\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, whose <a href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"html-parsing-methods:concept-document-content-type-2\" data-x-internal=\"concept-document-content-type\">content type</a> is \"<code>text/html</code>\" and <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-3\" data-x-internal=\"concept-document-origin\">origin</a> is\n    <a id=\"html-parsing-methods:this-37\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"html-parsing-methods:concept-relevant-global-11\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"html-parsing-methods:concept-document-window-2\">associated <code>Document</code></a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"html-parsing-methods:concept-document-origin-4\" data-x-internal=\"concept-document-origin\">origin</a>.</p>"
         },
         {
           "html": "<p>Set <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-allow-declarative-shadow-roots\" id=\"html-parsing-methods:concept-document-allow-declarative-shadow-roots-2\" data-x-internal=\"concept-document-allow-declarative-shadow-roots\">allow declarative shadow roots</a> to\n   true.</p>"
@@ -38560,7 +38750,7 @@
           "html": "<p>Let <var>sanitizer</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#get-a-sanitizer-instance-from-options\" id=\"html-parsing-methods:get-a-sanitizer-instance-from-options-2\">getting a sanitizer instance from options</a> given <var>compliantOptions</var> and\n   false.</p>"
         },
         {
-          "html": "<p>If <var>sanitizer</var> is not null, then <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitize\" id=\"html-parsing-methods:sanitize-8\">sanitize</a> <var>document</var> with\n   <var>sanitizer</var> and false.</p>"
+          "html": "<p>If <var>sanitizer</var> is not null, then <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitize\" id=\"html-parsing-methods:sanitize-22\">sanitize</a> <var>document</var> with\n   <var>sanitizer</var> and false.</p>"
         },
         {
           "html": "<p>Return <var>document</var>.</p>"
@@ -38585,9 +38775,94 @@
       ]
     },
     {
-      "name": "set and filter HTML",
+      "name": "target for HTML insertion",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion",
+      "html": "To get the <dfn id=\"target-for-html-insertion\">target for HTML insertion</dfn>, given an <code id=\"the-innerhtml-property:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>\n  <var>element</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var> is a <code id=\"the-innerhtml-property:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then return <var>element</var>'s\n   <a id=\"the-innerhtml-property:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parent for HTML insertion",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-insertion",
+      "html": "To get the <dfn id=\"parent-for-html-insertion\">parent for HTML insertion</dfn>, given a <code id=\"the-innerhtml-property:node\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> <var>node</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>parent</var> be <var>node</var>'s <a id=\"the-innerhtml-property:parent\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is null, then return null.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is a <code id=\"the-innerhtml-property:the-template-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then throw a\n   <a id=\"the-innerhtml-property:hierarchyrequesterror\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a> <code id=\"the-innerhtml-property:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>parent</var> is an <code id=\"the-innerhtml-property:element-3\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>, or a <code id=\"the-innerhtml-property:documentfragment-2\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> with a\n   non-null <a href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"the-innerhtml-property:concept-documentfragment-host\" data-x-internal=\"concept-documentfragment-host\">host</a>, then return\n   <var>parent</var>.</p>"
+        },
+        {
+          "html": "<p>Throw a <a id=\"the-innerhtml-property:hierarchyrequesterror-2\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a>\n   <code id=\"the-innerhtml-property:domexception-4\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "filter and set HTML",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html",
-      "html": "To <dfn id=\"set-and-filter-html\">set and filter HTML</dfn>, given an <code id=\"the-innerhtml-property:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-2\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>target</var>, a string <var>html</var>, a\n  <code id=\"the-innerhtml-property:sethtmloptions\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object <var>options</var>,\n  and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode\">fragment parser mode</a> <var>mode</var>:",
+      "html": "To <dfn id=\"set-and-filter-html\">filter and set HTML</dfn>, given an <code id=\"the-innerhtml-property:element-5\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-4\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>target</var>, a string <var>html</var>, a\n  <code id=\"the-innerhtml-property:sethtmloptions\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object <var>options</var>,\n  and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode\">fragment parser mode</a> <var>mode</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>fragment</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parse-html-for-insertion\" id=\"the-innerhtml-property:parse-html-for-insertion\">parsing\n   HTML for insertion</a> given <var>target</var>, <var>html</var>, <var>options</var>, and\n   <var>mode</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>fragment</var> is non-null, then <a href=\"https://dom.spec.whatwg.org/#concept-node-replace-all\" id=\"the-innerhtml-property:concept-node-replace-all\" data-x-internal=\"concept-node-replace-all\">replace\n   all</a> with <var>fragment</var> within <var>target</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "filter and pre-insert HTML",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-pre-insert-html",
+      "html": "To <dfn id=\"filter-and-pre-insert-html\">filter and pre-insert HTML</dfn>, given an <code id=\"the-innerhtml-property:element-6\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-5\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>parent</var>, a <code id=\"the-innerhtml-property:node-2\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code>-or-null <var>child</var>, a\n  string <var>html</var>, a <code id=\"the-innerhtml-property:sethtmloptions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code>\n  dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-2\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object\n  <var>options</var>, and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode-2\">fragment parser mode</a> <var>mode</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>parent</var> is an <code id=\"the-innerhtml-property:the-html-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element, then throw a\n   <a id=\"the-innerhtml-property:hierarchyrequesterror-4\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a> <code id=\"the-innerhtml-property:domexception-7\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fragment</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parse-html-for-insertion\" id=\"the-innerhtml-property:parse-html-for-insertion-2\">parsing\n   HTML for insertion</a> given <var>parent</var>, <var>html</var>, <var>options</var>, and\n   <var>mode</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>fragment</var> is non-null, then <a id=\"the-innerhtml-property:pre-insert\" href=\"https://dom.spec.whatwg.org/#concept-node-pre-insert\" data-x-internal=\"pre-insert\">pre-insert</a> <var>fragment</var> into\n   <var>parent</var> before <var>child</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "filter and replace with HTML",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#filter-and-replace-with-html",
+      "html": "To <dfn id=\"filter-and-replace-with-html\">filter and replace with HTML</dfn>, given an <code id=\"the-innerhtml-property:element-7\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-6\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>parent</var>, a <code id=\"the-innerhtml-property:node-3\"><a data-x-internal=\"node\" href=\"https://dom.spec.whatwg.org/#interface-node\">Node</a></code> <var>node</var>, a string\n  <var>html</var>, a <code id=\"the-innerhtml-property:sethtmloptions-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or\n  a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-3\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object\n  <var>options</var>, and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode-3\">fragment parser mode</a> <var>mode</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>parent</var> is an <code id=\"the-innerhtml-property:the-html-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-html-element\">html</a></code> element, then throw a\n   <a id=\"the-innerhtml-property:hierarchyrequesterror-5\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a> <code id=\"the-innerhtml-property:domexception-8\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>fragment</var> be the result of <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parse-html-for-insertion\" id=\"the-innerhtml-property:parse-html-for-insertion-3\">parsing\n   HTML for insertion</a> given <var>parent</var>, <var>html</var>, <var>options</var>, and\n   <var>mode</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>fragment</var> is non-null, then <a href=\"https://dom.spec.whatwg.org/#concept-node-replace\" id=\"the-innerhtml-property:concept-node-replace\" data-x-internal=\"concept-node-replace\">replace</a> <var>node</var> with <var>fragment</var> within\n   <var>parent</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse HTML for insertion",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parse-html-for-insertion",
+      "html": "To <dfn id=\"parse-html-for-insertion\">parse HTML for insertion</dfn>, given an <code id=\"the-innerhtml-property:element-8\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-7\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>target</var>, a string <var>html</var>, a\n  <code id=\"the-innerhtml-property:sethtmloptions-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-4\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object <var>options</var>,\n  and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode-4\">fragment parser mode</a> <var>mode</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -38595,28 +38870,25 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>context</var> be <var>target</var> if <var>target</var> is an\n     <code id=\"the-innerhtml-property:element-3\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>; otherwise <var>target</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"the-innerhtml-property:concept-documentfragment-host\" data-x-internal=\"concept-documentfragment-host\">host</a>.</p>"
+              "html": "<p>Let <var>context</var> be <var>target</var> if <var>target</var> is an\n     <code id=\"the-innerhtml-property:element-9\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>; otherwise <var>target</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"the-innerhtml-property:concept-documentfragment-host-2\" data-x-internal=\"concept-documentfragment-host\">host</a>.</p>"
             },
             {
               "html": "<p><a id=\"the-innerhtml-property:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>context</var> is non-null.</p>"
             },
             {
-              "html": "<p>If all of the following are true:</p>\n\n      <ul class=\"brief\"><li><p><var>context</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"the-innerhtml-property:concept-element-local-name\" data-x-internal=\"concept-element-local-name\">local name</a> is\n       \"<code id=\"the-innerhtml-property:the-script-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code>\"; and</p></li><li><p><var>context</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"the-innerhtml-property:concept-element-namespace\" data-x-internal=\"concept-element-namespace\">namespace</a> is the\n       <a id=\"the-innerhtml-property:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a> or the <a id=\"the-innerhtml-property:svg-namespace\" href=\"https://infra.spec.whatwg.org/#svg-namespace\" data-x-internal=\"svg-namespace\">SVG namespace</a>,</p></li></ul>\n\n      <p>then return.</p>"
+              "html": "<p>If all of the following are true:</p>\n\n      <ul class=\"brief\"><li><p><var>context</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"the-innerhtml-property:concept-element-local-name\" data-x-internal=\"concept-element-local-name\">local name</a> is\n       \"<code id=\"the-innerhtml-property:the-script-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element\">script</a></code>\"; and</p></li><li><p><var>context</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"the-innerhtml-property:concept-element-namespace\" data-x-internal=\"concept-element-namespace\">namespace</a> is the\n       <a id=\"the-innerhtml-property:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a> or the <a id=\"the-innerhtml-property:svg-namespace\" href=\"https://infra.spec.whatwg.org/#svg-namespace\" data-x-internal=\"svg-namespace\">SVG namespace</a>,</p></li></ul>\n\n      <p>then return null.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>fragment</var> be the result of invoking the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parsing-algorithm-steps\" id=\"the-innerhtml-property:fragment-parsing-algorithm-steps\">fragment parsing algorithm\n   steps</a> given <var>target</var>, <var>html</var>, <var>options</var>, and\n   <var>mode</var>.</p>"
-        },
-        {
-          "html": "<p><a href=\"https://dom.spec.whatwg.org/#concept-node-replace-all\" id=\"the-innerhtml-property:concept-node-replace-all\" data-x-internal=\"concept-node-replace-all\">Replace all</a> with <var>fragment</var> within\n   <var>target</var>.</p>"
+          "html": "<p>Return the result of invoking the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parsing-algorithm-steps\" id=\"the-innerhtml-property:fragment-parsing-algorithm-steps\">fragment parsing algorithm steps</a> given\n   <var>target</var>, <var>html</var>, <var>options</var>, and <var>mode</var>.</p>"
         }
       ]
     },
     {
       "name": "fragment parsing algorithm steps",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parsing-algorithm-steps",
-      "html": "The <dfn id=\"fragment-parsing-algorithm-steps\" data-export=\"\">fragment parsing algorithm steps</dfn>, given an <code id=\"the-innerhtml-property:element-4\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-3\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>target</var>, a string <var>markup</var>, a\n  <code id=\"the-innerhtml-property:sethtmloptions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions-2\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-2\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object <var>options</var>,\n  and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode-2\">fragment parser mode</a> <var>mode</var>, are:",
+      "html": "The <dfn id=\"fragment-parsing-algorithm-steps\" data-export=\"\">fragment parsing algorithm steps</dfn>, given an <code id=\"the-innerhtml-property:element-10\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> or\n  <code id=\"the-innerhtml-property:documentfragment-8\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> <var>target</var>, a string <var>markup</var>, a\n  <code id=\"the-innerhtml-property:sethtmloptions-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions\">SetHTMLOptions</a></code> or <code id=\"the-innerhtml-property:sethtmlunsafeoptions-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, or a <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-5\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code> object <var>options</var>,\n  and a <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode\" id=\"the-innerhtml-property:fragment-parser-mode-5\">fragment parser mode</a> <var>mode</var>, are:",
       "rationale": "if",
       "steps": [
         {
@@ -38632,7 +38904,7 @@
           "html": "<p>Let <var>scriptingMode</var> be <a href=\"https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-inert\" id=\"the-innerhtml-property:scripting-mode-inert\">Inert</a>.</p>"
         },
         {
-          "html": "<p>Let <var>runScripts</var> be <var>options</var>'s <a href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedhtmlparseroptions-runscripts\" id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-runscripts\" data-x-internal=\"tt-trustedhtmlparseroptions-runscripts\">runScripts</a> if <var>options</var> is a\n   <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-3\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code>; otherwise\n   <var>options</var>[\"<code id=\"the-innerhtml-property:dom-sethtmlunsafeoptions-runscripts\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-runscripts\">runScripts</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"the-innerhtml-property:map-with-default\" data-x-internal=\"map-with-default\">with default</a> false.</p>"
+          "html": "<p>Let <var>runScripts</var> be <var>options</var>'s <a href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedhtmlparseroptions-runscripts\" id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-runscripts\" data-x-internal=\"tt-trustedhtmlparseroptions-runscripts\">runScripts</a> if <var>options</var> is a\n   <code id=\"the-innerhtml-property:tt-trustedhtmlparseroptions-6\"><a data-x-internal=\"tt-trustedhtmlparseroptions\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trusted-html-parser-options\">TrustedHTMLParserOptions</a></code>; otherwise\n   <var>options</var>[\"<code id=\"the-innerhtml-property:dom-sethtmlunsafeoptions-runscripts\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-runscripts\">runScripts</a></code>\"] <a href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"the-innerhtml-property:map-with-default\" data-x-internal=\"map-with-default\">with default</a> false.</p>"
         },
         {
           "html": "If <var>runScripts</var> is true:",
@@ -38661,17 +38933,17 @@
       ]
     },
     {
-      "html": "<code id=\"the-innerhtml-property:element-6\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <code id=\"the-innerhtml-property:dom-element-innerhtml-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml\">innerHTML</a></code> setter steps\n  are:",
+      "html": "<code id=\"the-innerhtml-property:element-12\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>'s <code id=\"the-innerhtml-property:dom-element-innerhtml-5\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-innerhtml\">innerHTML</a></code> setter steps\n  are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let (<var>compliantString</var>, <var>compliantOptions</var>) be the result of invoking\n   the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"the-innerhtml-property:tt-getcompliantinput\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"the-innerhtml-property:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, the given value, a new\n   <code id=\"the-innerhtml-property:sethtmlunsafeoptions-3\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, \"<code>Element innerHTML</code>\",\n   <a id=\"the-innerhtml-property:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-type\" id=\"the-innerhtml-property:concept-document-type\" data-x-internal=\"concept-document-type\">type</a>, and false.</p>"
+          "html": "<p>Let (<var>compliantString</var>, <var>compliantOptions</var>) be the result of invoking\n   the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"the-innerhtml-property:tt-getcompliantinput\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"the-innerhtml-property:this-3\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, the given value, a new\n   <code id=\"the-innerhtml-property:sethtmlunsafeoptions-6\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, \"<code>Element innerHTML</code>\",\n   <a id=\"the-innerhtml-property:this-4\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-type\" id=\"the-innerhtml-property:concept-document-type\" data-x-internal=\"concept-document-type\">type</a>, and false.</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be <a id=\"the-innerhtml-property:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> if\n   <a id=\"the-innerhtml-property:this-6\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a> is a <code id=\"the-innerhtml-property:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element; otherwise <a id=\"the-innerhtml-property:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+          "html": "<p>Let <var>target</var> be the <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#target-for-html-insertion\" id=\"the-innerhtml-property:target-for-html-insertion\">target for HTML insertion</a> given\n   <a id=\"the-innerhtml-property:this-5\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"the-innerhtml-property:set-and-filter-html\">Set and filter HTML</a> given <var>target</var>, <var>compliantString</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-legacy\" id=\"the-innerhtml-property:fragment-parser-mode-legacy-3\">Legacy</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"the-innerhtml-property:set-and-filter-html\">Filter and set HTML</a> given <var>target</var>, <var>compliantString</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-legacy\" id=\"the-innerhtml-property:fragment-parser-mode-legacy-3\">Legacy</a>.</p>"
         }
       ]
     },
@@ -38680,10 +38952,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let (<var>compliantString</var>, <var>compliantOptions</var>) be the result of invoking\n   the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"the-innerhtml-property:tt-getcompliantinput-2\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"the-innerhtml-property:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, the given value, a new\n   <code id=\"the-innerhtml-property:sethtmlunsafeoptions-4\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, \"<code>ShadowRoot innerHTML</code>\",\n   <a id=\"the-innerhtml-property:this-9\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-type\" id=\"the-innerhtml-property:concept-document-type-2\" data-x-internal=\"concept-document-type\">type</a>, and false.</p>"
+          "html": "<p>Let (<var>compliantString</var>, <var>compliantOptions</var>) be the result of invoking\n   the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-input\" id=\"the-innerhtml-property:tt-getcompliantinput-2\" data-x-internal=\"tt-getcompliantinput\">get trusted type compliant input</a> algorithm with\n   <a id=\"the-innerhtml-property:this-6\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:concept-relevant-global-2\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>, the given value, a new\n   <code id=\"the-innerhtml-property:sethtmlunsafeoptions-7\"><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions\">SetHTMLUnsafeOptions</a></code> dictionary, \"<code>ShadowRoot innerHTML</code>\",\n   <a id=\"the-innerhtml-property:this-7\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-innerhtml-property:node-document-4\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-type\" id=\"the-innerhtml-property:concept-document-type-2\" data-x-internal=\"concept-document-type\">type</a>, and false.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"the-innerhtml-property:set-and-filter-html-2\">Set and filter HTML</a> given <a id=\"the-innerhtml-property:this-10\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <var>compliantString</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-legacy\" id=\"the-innerhtml-property:fragment-parser-mode-legacy-4\">Legacy</a>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html\" id=\"the-innerhtml-property:set-and-filter-html-2\">Filter and set HTML</a> given <a id=\"the-innerhtml-property:this-8\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>, <var>compliantString</var>,\n   <var>compliantOptions</var>, and <a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#fragment-parser-mode-legacy\" id=\"the-innerhtml-property:fragment-parser-mode-legacy-4\">Legacy</a>.</p>"
         }
       ]
     },
@@ -40407,6 +40679,9 @@
             },
             {
               "html": "<p>Set <var>handler</var> to the result of invoking the <a href=\"https://w3c.github.io/trusted-types/dist/spec/#get-trusted-type-compliant-string\" id=\"timers:tt-getcompliantstring\" data-x-internal=\"tt-getcompliantstring\">get trusted type compliant string</a> algorithm with <code id=\"timers:tt-trustedscript-2\"><a data-x-internal=\"tt-trustedscript\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedscript\">TrustedScript</a></code>, <var>global</var>, <var>handler</var>,\n     <var>sink</var>, and \"<code>script</code>\".</p>"
+            },
+            {
+              "html": "<p>Perform <a href=\"https://w3c.github.io/webappsec-csp/#can-compile-strings\" id=\"timers:csp-ensurecspdoesnotblockstringcompilation\" data-x-internal=\"csp-ensurecspdoesnotblockstringcompilation\">EnsureCSPDoesNotBlockStringCompilation</a>(<var>global</var>'s\n     <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"timers:concept-relevant-realm\">relevant realm</a>, « », <var>handler</var>,\n     <var>handler</var>, timer, « », <var>handler</var>). If this throws an exception, catch it and\n     return 0.</p>"
             }
           ]
         },
@@ -40424,9 +40699,6 @@
         },
         {
           "html": "<p>If <var>nestingLevel</var> is greater than 5, and <var>timeout</var> is less than 4, then\n   set <var>timeout</var> to 4.</p>"
-        },
-        {
-          "html": "<p>Let <var>realm</var> be <var>global</var>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"timers:concept-relevant-realm\">relevant\n   realm</a>.</p>"
         },
         {
           "html": "<p>Let <var>initiating script</var> be the <a id=\"timers:active-script\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#active-script\">active script</a>.</p>"
@@ -40465,9 +40737,6 @@
               "steps": [
                 {
                   "html": "<p><a id=\"timers:assert-2\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>handler</var> is a string.</p>"
-                },
-                {
-                  "html": "<p>Perform <a href=\"https://w3c.github.io/webappsec-csp/#can-compile-strings\" id=\"timers:csp-ensurecspdoesnotblockstringcompilation\" data-x-internal=\"csp-ensurecspdoesnotblockstringcompilation\">EnsureCSPDoesNotBlockStringCompilation</a>(<var>realm</var>,\n       « », <var>handler</var>, <var>handler</var>, timer, « », <var>handler</var>). If this throws\n       an exception, catch it, <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-an-exception\" id=\"timers:report-an-exception\">report</a> it for\n       <var>global</var>, and abort these steps.</p>"
                 },
                 {
                   "html": "<p>Let <var>fetch options</var> be the <a id=\"timers:default-script-fetch-options\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#default-script-fetch-options\">default script fetch\n       options</a>.</p>"
