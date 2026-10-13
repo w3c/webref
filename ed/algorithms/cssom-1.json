@@ -26,13 +26,13 @@
           "html": "<p>Let <var>s</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">Serialize an identifier</a> from <var>func</var>’s name,\nASCII lowercased,\nand append the result to <var>s</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">Serialize an identifier</a> from <var>func</var>’s name,\n   ASCII lowercased,\n   and append the result to <var>s</var>.</p>"
         },
         {
           "html": "<p>Append \"(\" (U+0028) to <var>s</var>.</p>"
         },
         {
-          "html": "<p>Serialize <var>func</var>’s contents,\neither as specified by the definition of <var>func</var>,\nor in the shortest form possible\n(akin to the principles captured by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value\">serialize a CSS value</a>).\nAppend the result to <var>s</var>.</p>"
+          "html": "<p>Serialize <var>func</var>’s contents,\n   either as specified by the definition of <var>func</var>,\n   or in the shortest form possible\n   (akin to the principles captured by <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value\">serialize a CSS value</a>).\n   Append the result to <var>s</var>.</p>"
         },
         {
           "html": "<p>Append \")\" (U+0029) to <var>s</var>.</p>"
@@ -1223,7 +1223,7 @@
     {
       "name": "serialize a CSS declaration block",
       "href": "https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-declaration-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS declaration block</dfn> <var>declaration block</var>,\n\trun the following steps.\n\tIt will return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> representing the serialization of all the declarations in <var>declaration block</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-css-declaration-block\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSS declaration block</dfn> <var>declaration block</var>,\n run the following steps.\n It will return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> representing the serialization of all the declarations in <var>declaration block</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1264,7 +1264,7 @@
     {
       "name": "serialize into a shorthand form",
       "href": "https://drafts.csswg.org/cssom-1/#serialize-into-a-shorthand-form",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-into-a-shorthand-form\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize into a shorthand form</dfn> a property <var>property</var>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> <var>decls</var>\n\tand a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set\" id=\"ref-for-set①\">set</a> of already-serialized declarations <var>already serialized</var>,\n\trun the following steps.\n\tIt will return either a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> representing the serialization of a shorthand that <var>property</var> is part of,\n\tor <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure\">failure</a>,\n\tand will mutate <var>already serialized</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"serialize-into-a-shorthand-form\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize into a shorthand form</dfn> a property <var>property</var>,\n given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-declaration\" id=\"ref-for-css-declaration④\">CSS declarations</a> <var>decls</var>\n and a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#set\" id=\"ref-for-set①\">set</a> of already-serialized declarations <var>already serialized</var>,\n run the following steps.\n It will return either a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> representing the serialization of a shorthand that <var>property</var> is part of,\n or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure\">failure</a>,\n and will mutate <var>already serialized</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1314,7 +1314,7 @@
     {
       "name": "intermixed properties",
       "href": "https://drafts.csswg.org/cssom-1/#intermixed-properties",
-      "html": "To get a list of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intermixed-properties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intermixed properties</dfn>\n\tin a list of declarations <var>decls</var>\n\tbetween a set of properties <var>props</var>:",
+      "html": "To get a list of <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intermixed-properties\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intermixed properties</dfn>\n in a list of declarations <var>decls</var>\n between a set of properties <var>props</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1393,7 +1393,7 @@
     {
       "name": "preferred shorthand order",
       "href": "https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-shorthands-preferred-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred shorthand order</dfn> \n\tof a list of shorthand properties <var>shorthands</var> is as follows:\n\n\n    \n     \t\tretaining their relative order.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-shorthands-preferred-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">preferred shorthand order</dfn>\n of a list of shorthand properties <var>shorthands</var> is as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1409,7 +1409,7 @@
           "html": "<p>Move all items in <var>shorthands</var> that begin with \"<code>-</code>\" (U+002D)\nbut do not begin with \"<code>-webkit-</code>\" last in the list,\nretaining their relative order.</p>"
         },
         {
-          "html": "<p>Order <var>shorthands</var> by the number of longhand properties that map to it,\nwith the greatest number first,</p>"
+          "html": "<p>Order <var>shorthands</var> by the number of longhand properties that map to it,\nwith the greatest number first,\n retaining their relative order.</p>"
         }
       ]
     },
@@ -1734,27 +1734,27 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>shorthand</var> be the first shorthand property,\nin <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order①\">preferred shorthand order</a>,\nthat exactly maps to all of the longhand properties in <var>list</var>.</p>"
+              "html": "<p>Let <var>shorthand</var> be the first shorthand property,\n   in <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#concept-shorthands-preferred-order\" id=\"ref-for-concept-shorthands-preferred-order①\">preferred shorthand order</a>,\n   that exactly maps to all of the longhand properties in <var>list</var>.</p>"
             },
             {
-              "html": "<p>If there is no such shorthand or\n <var>shorthand</var> cannot exactly represent the values of all the properties in <var>list</var>,\nreturn the empty string.</p>"
+              "html": "<p>If there is no such shorthand or\n    <var>shorthand</var> cannot exactly represent the values of all the properties in <var>list</var>,\n   return the empty string.</p>"
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value⑤\">serialize a CSS value</a>\nfrom a hypothetical declaration of the property <var>shorthand</var>\nwith its value representing the combined values of the declarations in <var>list</var>.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-value\" id=\"ref-for-serialize-a-css-value⑤\">serialize a CSS value</a>\n   from a hypothetical declaration of the property <var>shorthand</var>\n   with its value representing the combined values of the declarations in <var>list</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Represent the value of the <var>declaration</var>\nas a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of CSS component values <var>components</var>\nthat, when <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsed</a> according to the property’s grammar,\nwould represent that value.\nAdditionally, unless otherwise specified:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If certain component values can appear in any order\nwithout changing the meaning of the value\n(a pattern typically represented by a double bar <a data-link-type=\"grammar\" href=\"https://drafts.csswg.org/css-values-4/#comb-any\" id=\"ref-for-comb-any\">||</a> in the value syntax),\nreorder the component values to use the canonical order of component values\nas given in the property definition table.</p>\n      </li><li data-md=\"\">\n       <p>If component values can be omitted or replaced with a shorter representation\nwithout changing the meaning of the value,\nomit/replace them.</p>\n      </li><li data-md=\"\">\n       <p>If either of the above syntactic translations would be less backwards-compatible,\ndo not perform them.</p>\n     </li></ul>"
+          "html": "<p>Represent the value of the <var>declaration</var>\n   as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of CSS component values <var>components</var>\n   that, when <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsed</a> according to the property’s grammar,\n   would represent that value.\n   Additionally, unless otherwise specified:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>If certain component values can appear in any order\n   without changing the meaning of the value\n   (a pattern typically represented by a double bar <a data-link-type=\"grammar\" href=\"https://drafts.csswg.org/css-values-4/#comb-any\" id=\"ref-for-comb-any\">||</a> in the value syntax),\n   reorder the component values to use the canonical order of component values\n   as given in the property definition table.</p>\n      </li><li data-md=\"\">\n       <p>If component values can be omitted or replaced with a shorter representation\n   without changing the meaning of the value,\n   omit/replace them.</p>\n      </li><li data-md=\"\">\n       <p>If either of the above syntactic translations would be less backwards-compatible,\n   do not perform them.</p>\n     </li></ul>"
         },
         {
           "html": "<p>Remove any <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token\">&lt;whitespace-token&gt;</a>s from <var>components</var>.</p>"
         },
         {
-          "html": "<p>Replace each component value in <var>components</var>\nwith the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-component-value\" id=\"ref-for-serialize-a-css-component-value\">serialize a CSS component value</a>.</p>"
+          "html": "<p>Replace each component value in <var>components</var>\n   with the result of invoking <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-component-value\" id=\"ref-for-serialize-a-css-component-value\">serialize a CSS component value</a>.</p>"
         },
         {
-          "html": "<p>Join the items of <var>components</var> into a single string,\ninserting \" \" (U+0020 SPACE) between each pair of items\nunless the second item is a \",\" (U+002C COMMA)\nReturn the result.</p>"
+          "html": "<p>Join the items of <var>components</var> into a single string,\n   inserting \" \" (U+0020 SPACE) between each pair of items\n   unless the second item is a \",\" (U+002C COMMA)\n   Return the result.</p>"
         }
       ]
     },
@@ -1777,7 +1777,7 @@
             },
             {
               "case": "<color>",
-              "html": "If &lt;color&gt; is a component of a resolved value, see <a href=\"https://drafts.csswg.org/css-color-4/#resolving-color-values\"><cite>CSS Color 4</cite> §  15. Resolving &lt;color&gt; Values</a>.\n\n\n     <p>If &lt;color&gt; is a component of a computed value, see <a href=\"https://drafts.csswg.org/css-color-4/#serializing-color-values\"><cite>CSS Color 4</cite> §  16. Serializing &lt;color&gt; Values</a>.</p>\n     <p>If <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-color\" id=\"ref-for-typedef-color①\" title=\"Expands to: &lt;alpha-value&gt; | aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | none | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen\">&lt;color&gt;</a> is a component of a declared value, then\nfor sRGB values, see\n<a href=\"https://drafts.csswg.org/css-color-4/#resolving-sRGB-values\"><cite>CSS Color 4</cite> § 15.1 Resolving sRGB values</a>.\nFor other color functions, see\n<a href=\"https://drafts.csswg.org/css-color-4/#resolving-color-values\"><cite>CSS Color 4</cite> §  15. Resolving &lt;color&gt; Values</a>.</p>"
+              "html": "If &lt;color&gt; is a component of a resolved value, see <a href=\"https://drafts.csswg.org/css-color-4/#resolving-color-values\"><cite>CSS Color 4</cite> §  15. Resolving &lt;color&gt; Values</a>.\n\n\n     <p>If &lt;color&gt; is a component of a computed value, see <a href=\"https://drafts.csswg.org/css-color-4/#serializing-color-values\"><cite>CSS Color 4</cite> §  16. Serializing &lt;color&gt; Values</a>.</p>\n     <p>If <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-5/#typedef-color\" id=\"ref-for-typedef-color①\" title=\"Expands to: &lt;alpha-value&gt; | aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | none | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen\">&lt;color&gt;</a> is a component of a declared value, then</p>\n     \nfor sRGB values, see\n<a href=\"https://drafts.csswg.org/css-color-4/#resolving-sRGB-values\"><cite>CSS Color 4</cite> § 15.1 Resolving sRGB values</a>.\nFor other color functions, see\n<a href=\"https://drafts.csswg.org/css-color-4/#resolving-color-values\"><cite>CSS Color 4</cite> §  15. Resolving &lt;color&gt; Values</a>."
             },
             {
               "case": "<alpha-value>",

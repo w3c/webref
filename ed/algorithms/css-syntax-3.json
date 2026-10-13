@@ -285,35 +285,27 @@
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream③\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-stylesheets-contents\" id=\"ref-for-consume-a-stylesheets-contents①\">Consume a stylesheet’s contents</a> from <var>input</var>,\n\t\t\t\tand return the result."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-stylesheets-contents\" id=\"ref-for-consume-a-stylesheets-contents②\">Consume a stylesheet’s contents</a> from <var>input</var>,\n\t\t\t\tand return the result."
         }
       ]
     },
     {
-      "name": "parse a block’s contents",
-      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-blocks-contents",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-blocks-contents\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a block’s contents</dfn> from <var>input</var>:",
+      "name": "parse a list of declarations",
+      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-declarations",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-list-of-declarations\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a list of declarations</dfn> from <var>input</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream④\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-blocks-contents\" id=\"ref-for-consume-a-blocks-contents\">Consume a block’s contents</a> from <var>input</var>,\n\t\t\t\tand return the result."
-        }
-      ]
-    },
-    {
-      "name": "parse a style attribute",
-      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-style-attribute",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-style-attribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a style attribute</dfn> from <var>input</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑤\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+          "html": "Let <var>decls</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-style-attribute\" id=\"ref-for-consume-a-style-attribute\">Consume a style attribute</a> from <var>input</var>,\n\t\t\t\tand return the result."
+          "html": "While <var>input</var> is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty②\">empty</a>:\n\n\n      <p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace\">Discard whitespace</a> from <var>input</var>.</p>\n      <ul>\n       <li data-md=\"\">\n        <p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token④\">next token</a> from <var>input</var> is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token\" id=\"ref-for-typedef-semicolon-token②\">&lt;semicolon-token&gt;</a>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-a-token\" id=\"ref-for-token-stream-discard-a-token①\">discard a token</a> from <var>input</var>.</p>\n       </li><li data-md=\"\">\n        <p>Otherwise, if the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token⑤\">next token</a> from <var>input</var> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token\" id=\"ref-for-typedef-at-keyword-token⑤\">&lt;at-keyword-token&gt;</a>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-an-at-rule\" id=\"ref-for-consume-an-at-rule\">consume an at-rule</a> from <var>input</var>\nand discard the result.</p>\n       </li><li data-md=\"\">\n        <p>Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-declaration\" id=\"ref-for-consume-a-declaration①\">consume a declaration</a>.\nIf anything was returned,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> it to <var>decls</var>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "Return <var>decls</var>."
         }
       ]
     },
@@ -324,19 +316,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑥\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace\">Discard whitespace</a> from <var>input</var>."
-        },
-        {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token④\">next token</a> from <var>input</var> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑤\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn a syntax error.\n\n\n      <p>Otherwise,\n\t\t\t\tif the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token⑤\">next token</a> from <var>input</var> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token\" id=\"ref-for-typedef-at-keyword-token⑤\">&lt;at-keyword-token&gt;</a>,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-an-at-rule\" id=\"ref-for-consume-an-at-rule\">consume an at-rule</a> from <var>input</var>,\n\t\t\t\tand let <var>rule</var> be the return value.</p>\n      <p>Otherwise,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-qualified-rule\" id=\"ref-for-consume-a-qualified-rule\">consume a qualified rule</a> from <var>input</var>\n\t\t\t\tand let <var>rule</var> be the return value.\n\t\t\t\tIf nothing or an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#invalid-rule-error\" id=\"ref-for-invalid-rule-error\">invalid rule error</a> was returned,\n\t\t\t\treturn a syntax error.</p>"
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑤\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace①\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token⑥\">next token</a> from <var>input</var> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-eof-token\" id=\"ref-for-typedef-eof-token⑥\">&lt;EOF-token&gt;</a>,\n\t\t\t\treturn <var>rule</var>.\n\t\t\t\tOtherwise, return a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty③\">empty</a>,\n\t\t\t\treturn a syntax error.\n\n\n      <p>Otherwise,\n\t\t\t\tif the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token⑥\">next token</a> from <var>input</var> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token\" id=\"ref-for-typedef-at-keyword-token⑥\">&lt;at-keyword-token&gt;</a>,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-an-at-rule\" id=\"ref-for-consume-an-at-rule①\">consume an at-rule</a> from <var>input</var>,\n\t\t\t\tand let <var>rule</var> be the return value.</p>\n      <p>Otherwise,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-qualified-rule\" id=\"ref-for-consume-a-qualified-rule\">consume a qualified rule</a> from <var>input</var>\n\t\t\t\tand let <var>rule</var> be the return value.\n\t\t\t\tIf nothing or an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#invalid-rule-error\" id=\"ref-for-invalid-rule-error\">invalid rule error</a> was returned,\n\t\t\t\treturn a syntax error.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace②\">Discard whitespace</a> from <var>input</var>."
+        },
+        {
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty④\">empty</a>,\n\t\t\t\treturn <var>rule</var>.\n\t\t\t\tOtherwise, return a syntax error."
         }
       ]
     },
@@ -347,13 +339,22 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑦\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑥\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace②\">Discard whitespace</a> from <var>input</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace③\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-declaration\" id=\"ref-for-consume-a-declaration①\">Consume a declaration</a> from <var>input</var>.\n\t\t\t\tIf anything was returned, return it.\n\t\t\t\tOtherwise, return a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty⑤\">empty</a>,\n\t\t\t\treturn a syntax error."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-declaration\" id=\"ref-for-consume-a-declaration②\">Consume a declaration</a> from <var>input</var>.\n\t\t\t\tIf anything was returned,\n\t\t\t\tlet <var>value</var> be the return value.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace④\">Discard whitespace</a> from <var>input</var>."
+        },
+        {
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty⑥\">empty</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
         }
       ]
     },
@@ -364,22 +365,22 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑧\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑦\">Normalize</a> <var>input</var>,\n\t\t\t\tand set <var>input</var> to the result."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace③\">Discard whitespace</a> from <var>input</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑤\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty②\">empty</a>,\n\t\t\t\treturn a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty⑦\">empty</a>,\n\t\t\t\treturn a syntax error."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-component-value\" id=\"ref-for-consume-a-component-value\">Consume a component value</a> from <var>input</var>\n\t\t\t\tand let <var>value</var> be the return value."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace④\">Discard whitespace</a> from <var>input</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑥\">Discard whitespace</a> from <var>input</var>."
         },
         {
-          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty③\">empty</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
+          "html": "If <var>input</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty⑧\">empty</a>,\n\t\t\t\treturn <var>value</var>.\n\t\t\t\tOtherwise,\n\t\t\t\treturn a syntax error."
         }
       ]
     },
@@ -390,7 +391,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑨\">Normalize</a> <var>input</var>,\nand set <var>input</var> to the result.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑧\">Normalize</a> <var>input</var>,\nand set <var>input</var> to the result.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-component-values\" id=\"ref-for-consume-a-list-of-component-values\">Consume a list of component values</a> from <var>input</var>,\nand return the result.</p>"
@@ -404,20 +405,20 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream①⓪\">Normalize</a> <var>input</var>,\nand set <var>input</var> to the result.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#normalize-into-a-token-stream\" id=\"ref-for-normalize-into-a-token-stream⑨\">Normalize</a> <var>input</var>,\nand set <var>input</var> to the result.</p>"
         },
         {
-          "html": "<p>Let <var>groups</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+          "html": "<p>Let <var>groups</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
         },
         {
-          "html": "While <var>input</var> is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty④\">empty</a>:",
+          "html": "While <var>input</var> is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-empty\" id=\"ref-for-token-stream-empty⑨\">empty</a>:",
           "rationale": "consume",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-component-values\" id=\"ref-for-consume-a-list-of-component-values①\">Consume a list of component values</a> from <var>input</var>,\nwith <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-comma-token\" id=\"ref-for-typedef-comma-token①\">&lt;comma-token&gt;</a> as the stop token,\nand append the result to <var>groups</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-a-token\" id=\"ref-for-token-stream-discard-a-token①\">Discard a token</a> from <var>input</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-a-token\" id=\"ref-for-token-stream-discard-a-token②\">Discard a token</a> from <var>input</var>.</p>"
             }
           ]
         },
@@ -427,7 +428,7 @@
       ]
     },
     {
-      "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-restore-a-mark\" id=\"ref-for-token-stream-restore-a-mark\">restore a mark</a> from <var>input</var>,\n\t\t\tthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-qualified-rule\" id=\"ref-for-consume-a-qualified-rule②\">consume a qualified rule</a> from <var>input</var>,\n\t\t\twith <var>nested</var> set to true,\n\t\t\tand <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token\" id=\"ref-for-typedef-semicolon-token④\">&lt;semicolon-token&gt;</a> as the <var>stop token</var>.",
+      "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-restore-a-mark\" id=\"ref-for-token-stream-restore-a-mark\">restore a mark</a> from <var>input</var>,\n\t\t\tthen <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-qualified-rule\" id=\"ref-for-consume-a-qualified-rule②\">consume a qualified rule</a> from <var>input</var>,\n\t\t\twith <var>nested</var> set to true,\n\t\t\tand <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token\" id=\"ref-for-typedef-semicolon-token⑤\">&lt;semicolon-token&gt;</a> as the <var>stop token</var>.",
       "rationale": ".switch",
       "steps": [
         {
@@ -439,43 +440,43 @@
             },
             {
               "case": "If an invalid rule error was returned",
-              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①①\">declarations</a>.\n(Otherwise, do nothing.)</p>"
+              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①①\">declarations</a>.\n(Otherwise, do nothing.)</p>"
             },
             {
               "case": "If a rule was returned",
-              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①②\">declarations</a>.\nAppend the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-rule\" id=\"ref-for-css-rule①⓪\">rule</a> to <var>rules</var>.</p>"
+              "html": "<p>If <var>decls</var> is not empty,\nappend <var>decls</var> to <var>rules</var>,\nand set <var>decls</var> to a fresh empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a> of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①②\">declarations</a>.\nAppend the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-rule\" id=\"ref-for-css-rule①⓪\">rule</a> to <var>rules</var>.</p>"
             }
           ]
         }
       ]
     },
     {
-      "html": "Let <var>decl</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①⑥\">declaration</a>,\n\twith an initially empty name\n\tand a value set to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a>.",
+      "html": "Let <var>decl</var> be a new <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration①③\">declaration</a>,\n\twith an initially empty name\n\tand a value set to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>.",
       "rationale": "if",
       "steps": [
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token⑨\">next token</a> is an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-ident-token\" id=\"ref-for-typedef-ident-token⑧\">&lt;ident-token&gt;</a>,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-consume-a-token\" id=\"ref-for-token-stream-consume-a-token③\">consume a token</a> from <var>input</var>\n\t\t\tand set <var>decl</var>'s name\n\t\t\tto the token’s value.\n\n\n     <p>Otherwise,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-the-remnants-of-a-bad-declaration\" id=\"ref-for-consume-the-remnants-of-a-bad-declaration①\">consume the remnants of a bad declaration</a> from <var>input</var>,\n\t\t\twith <var>nested</var>,\n\t\t\tand return nothing.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑤\">Discard whitespace</a> from <var>input</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑦\">Discard whitespace</a> from <var>input</var>."
         },
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-next-token\" id=\"ref-for-token-stream-next-token①⓪\">next token</a> is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-colon-token\" id=\"ref-for-typedef-colon-token③\">&lt;colon-token&gt;</a>,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-a-token\" id=\"ref-for-token-stream-discard-a-token⑨\">discard a token</a> from <var>input</var>.\n\n\n     <p>Otherwise,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-the-remnants-of-a-bad-declaration\" id=\"ref-for-consume-the-remnants-of-a-bad-declaration②\">consume the remnants of a bad declaration</a> from <var>input</var>,\n\t\t\twith <var>nested</var>,\n\t\t\tand return nothing.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑥\">Discard whitespace</a> from <var>input</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#token-stream-discard-whitespace\" id=\"ref-for-token-stream-discard-whitespace⑧\">Discard whitespace</a> from <var>input</var>."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-component-values\" id=\"ref-for-consume-a-list-of-component-values②\">Consume a list of component values</a> from <var>input</var>,\n\t\t\twith <var>nested</var>,\n\t\t\tand with <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token\" id=\"ref-for-typedef-semicolon-token⑥\">&lt;semicolon-token&gt;</a> as the stop token,\n\t\t\tand set <var>decl</var>’s value to the result."
         },
         {
-          "html": "If the last two non-<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑧\">&lt;whitespace-token&gt;</a>s in <var>decl</var>’s value are\n\t\t\ta <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-delim-token\" id=\"ref-for-typedef-delim-token⑨\">&lt;delim-token&gt;</a> with the value \"!\"\n\t\t\tfollowed by an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-ident-token\" id=\"ref-for-typedef-ident-token⑨\">&lt;ident-token&gt;</a> with a value that is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for \"important\",\n\t\t\tremove them from <var>decl</var>’s value\n\t\t\tand set <var>decl</var>’s <var>important</var> flag."
+          "html": "If the last two non-<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑦\">&lt;whitespace-token&gt;</a>s in <var>decl</var>’s value are\n\t\t\ta <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-delim-token\" id=\"ref-for-typedef-delim-token⑨\">&lt;delim-token&gt;</a> with the value \"!\"\n\t\t\tfollowed by an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-ident-token\" id=\"ref-for-typedef-ident-token⑨\">&lt;ident-token&gt;</a> with a value that is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for \"important\",\n\t\t\tremove them from <var>decl</var>’s value\n\t\t\tand set <var>decl</var>’s <var>important</var> flag."
         },
         {
-          "html": "While the last item in <var>decl</var>’s value is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑨\">&lt;whitespace-token&gt;</a>,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> that token."
+          "html": "While the last item in <var>decl</var>’s value is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑧\">&lt;whitespace-token&gt;</a>,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> that token."
         },
         {
-          "html": "If <var>decl</var>’s name is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string\" id=\"ref-for-custom-property-name-string\">custom property name string</a>,\n\t\t\tthen set <var>decl</var>’s <var>original text</var>\n\t\t\tto the segment of the original source text string\n\t\t\tcorresponding to the tokens\n\t\t\tof <var>decl</var>’s value.\n\n\n     <p>Otherwise, if <var>decl</var>’s value contains a top-level <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#simple-block\" id=\"ref-for-simple-block②\">simple block</a>\n\t\t\twith an associated token of <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#tokendef-open-curly\" id=\"ref-for-tokendef-open-curly②\">&lt;{-token&gt;</a>,\n\t\t\tand also contains <em>any other</em> non-<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token①⓪\">&lt;whitespace-token&gt;</a> value,\n\t\t\treturn nothing.\n\t\t\t(That is, a top-level {}-block is only allowed\n\t\t\tas the entire value of a non-custom property.)</p>\n     <p>Otherwise, if <var>decl</var>’s name is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match for \"unicode-range\",\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-the-value-of-a-unicode-range-descriptor\" id=\"ref-for-consume-the-value-of-a-unicode-range-descriptor①\">consume the value of a unicode-range descriptor</a>\n\t\t\tfrom the segment of the original source text string\n\t\t\tcorresponding to the tokens\n\t\t\treturned by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-component-values\" id=\"ref-for-consume-a-list-of-component-values③\">consume a list of component values</a> call,\n\t\t\tand replace <var>decl</var>’s value with the result.</p>"
+          "html": "If <var>decl</var>’s name is a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#custom-property-name-string\" id=\"ref-for-custom-property-name-string\">custom property name string</a>,\n\t\t\tthen set <var>decl</var>’s <var>original text</var>\n\t\t\tto the segment of the original source text string\n\t\t\tcorresponding to the tokens\n\t\t\tof <var>decl</var>’s value.\n\n\n     <p>Otherwise, if <var>decl</var>’s value contains a top-level <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#simple-block\" id=\"ref-for-simple-block②\">simple block</a>\n\t\t\twith an associated token of <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#tokendef-open-curly\" id=\"ref-for-tokendef-open-curly②\">&lt;{-token&gt;</a>,\n\t\t\tand also contains <em>any other</em> non-<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token\" id=\"ref-for-typedef-whitespace-token⑨\">&lt;whitespace-token&gt;</a> value,\n\t\t\treturn nothing.\n\t\t\t(That is, a top-level {}-block is only allowed\n\t\t\tas the entire value of a non-custom property.)</p>\n     <p>Otherwise, if <var>decl</var>’s name is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match for \"unicode-range\",\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-the-value-of-a-unicode-range-descriptor\" id=\"ref-for-consume-the-value-of-a-unicode-range-descriptor①\">consume the value of a unicode-range descriptor</a>\n\t\t\tfrom the segment of the original source text string\n\t\t\tcorresponding to the tokens\n\t\t\treturned by the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-component-values\" id=\"ref-for-consume-a-list-of-component-values③\">consume a list of component values</a> call,\n\t\t\tand replace <var>decl</var>’s value with the result.</p>"
         },
         {
           "html": "If <var>decl</var> is valid in the current context,\n\t\t\treturn it;\n\t\t\totherwise return nothing."
@@ -499,7 +500,7 @@
     {
       "name": "parse a CSS stylesheet",
       "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-css-stylesheet",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-css-stylesheet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a CSS stylesheet</dfn>,\n\tfirst <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#parse-a-stylesheet\" id=\"ref-for-parse-a-stylesheet①\">parse a stylesheet</a>.\n\tInterpret all of the resulting top-level <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#qualified-rule\" id=\"ref-for-qualified-rule①⑥\">qualified rules</a> as <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#style-rule\" id=\"ref-for-style-rule③\">style rules</a>, defined below.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"parse-a-css-stylesheet\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a CSS stylesheet</dfn>,\n\tfirst <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#parse-a-stylesheet\" id=\"ref-for-parse-a-stylesheet①\">parse a stylesheet</a>.\n\tInterpret all of the resulting top-level <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#qualified-rule\" id=\"ref-for-qualified-rule①⑤\">qualified rules</a> as <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#style-rule\" id=\"ref-for-style-rule③\">style rules</a>, defined below.",
       "rationale": "To <dfn>"
     },
     {
