@@ -198,8 +198,8 @@
       "title": "Credential and Presentation Objects in API Descriptions"
     },
     {
-      "id": "payload-sizes-0",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#payload-sizes-0",
+      "id": "payload-sizes",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#payload-sizes",
       "level": 4,
       "title": "Payload Sizes"
     },
@@ -702,14 +702,76 @@
       "number": "3.8.1"
     },
     {
+      "id": "threat-model",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#threat-model",
+      "level": 2,
+      "title": "Threat Model",
+      "alternateIds": [
+        "a-threat-model"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "target-threats",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#target-threats",
+      "level": 3,
+      "title": "Target Threats",
+      "alternateIds": [
+        "a-1-target-threats"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "implementation-threats",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#implementation-threats",
+      "level": 3,
+      "title": "Implementation Threats",
+      "alternateIds": [
+        "a-2-implementation-threats"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "external-threats",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#external-threats",
+      "level": 3,
+      "title": "External Threats",
+      "alternateIds": [
+        "a-3-external-threats"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "dependency-threats",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#dependency-threats",
+      "level": 3,
+      "title": "Dependency Threats",
+      "alternateIds": [
+        "a-4-dependency-threats"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "security-considerations-0",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#security-considerations-0",
+      "level": 3,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "privacy-considerations-0",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#privacy-considerations-0",
+      "level": 3,
+      "title": "Privacy Considerations"
+    },
+    {
       "id": "privacy-considerations",
       "href": "https://www.w3.org/TR/vcalm-1.0/#privacy-considerations",
       "level": 2,
       "title": "Privacy Considerations",
       "alternateIds": [
-        "a-privacy-considerations"
+        "b-privacy-considerations"
       ],
-      "number": "A"
+      "number": "B"
     },
     {
       "id": "delegation",
@@ -717,9 +779,9 @@
       "level": 3,
       "title": "Delegation",
       "alternateIds": [
-        "a-1-delegation"
+        "b-1-delegation"
       ],
-      "number": "A.1"
+      "number": "B.1"
     },
     {
       "id": "phoning-home-considered-harmful",
@@ -727,9 +789,9 @@
       "level": 3,
       "title": "\"Phoning Home\" Considered Harmful",
       "alternateIds": [
-        "a-2-phoning-home-considered-harmful"
+        "b-2-phoning-home-considered-harmful"
       ],
-      "number": "A.2"
+      "number": "B.2"
     },
     {
       "id": "security-considerations",
@@ -737,9 +799,9 @@
       "level": 2,
       "title": "Security Considerations",
       "alternateIds": [
-        "b-security-considerations"
+        "c-security-considerations"
       ],
-      "number": "B"
+      "number": "C"
     },
     {
       "id": "unknown-proof-types",
@@ -747,189 +809,191 @@
       "level": 3,
       "title": "Unknown Proof Types",
       "alternateIds": [
-        "b-1-unknown-proof-types"
-      ],
-      "number": "B.1"
-    },
-    {
-      "id": "use-of-https-for-interaction-urls",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#use-of-https-for-interaction-urls",
-      "level": 3,
-      "title": "Use of HTTPS for Interaction URLs",
-      "alternateIds": [
-        "b-2-use-of-https-for-interaction-urls"
-      ],
-      "number": "B.2"
-    },
-    {
-      "id": "deletion",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#deletion",
-      "level": 3,
-      "title": "Deletion",
-      "alternateIds": [
-        "b-3-deletion"
-      ],
-      "number": "B.3"
-    },
-    {
-      "id": "payload-sizes",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#payload-sizes",
-      "level": 3,
-      "title": "Payload Sizes",
-      "alternateIds": [
-        "b-4-payload-sizes"
-      ],
-      "number": "B.4"
-    },
-    {
-      "id": "additional-validation",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#additional-validation",
-      "level": 3,
-      "title": "Additional Validation",
-      "alternateIds": [
-        "b-5-additional-validation"
-      ],
-      "number": "B.5"
-    },
-    {
-      "id": "secure-coding-practices",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#secure-coding-practices",
-      "level": 3,
-      "title": "Secure Coding Practices",
-      "alternateIds": [
-        "b-6-secure-coding-practices"
-      ],
-      "number": "B.6"
-    },
-    {
-      "id": "threat-model",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#threat-model",
-      "level": 3,
-      "title": "Threat Model",
-      "alternateIds": [
-        "b-7-threat-model"
-      ],
-      "number": "B.7"
-    },
-    {
-      "id": "other-security-considerations",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#other-security-considerations",
-      "level": 3,
-      "title": "Other Security Considerations",
-      "alternateIds": [
-        "b-8-other-security-considerations"
-      ],
-      "number": "B.8"
-    },
-    {
-      "id": "status-list-management",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#status-list-management",
-      "level": 2,
-      "title": "Status List Management",
-      "alternateIds": [
-        "c-status-list-management"
-      ],
-      "number": "C"
-    },
-    {
-      "id": "create-status-list",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#create-status-list",
-      "level": 3,
-      "title": "Create Status List",
-      "alternateIds": [
-        "c-1-create-status-list"
+        "c-1-unknown-proof-types"
       ],
       "number": "C.1"
     },
     {
-      "id": "get-status-list",
-      "href": "https://www.w3.org/TR/vcalm-1.0/#get-status-list",
+      "id": "security-considerations-1",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#security-considerations-1",
+      "level": 4,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "privacy-considerations-1",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#privacy-considerations-1",
+      "level": 4,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "status-list-management",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#status-list-management",
       "level": 3,
-      "title": "Get Status List",
+      "title": "Status List Management",
       "alternateIds": [
-        "c-2-get-status-list"
+        "c-2-status-list-management"
       ],
       "number": "C.2"
     },
     {
+      "id": "create-status-list",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#create-status-list",
+      "level": 4,
+      "title": "Create Status List",
+      "alternateIds": [
+        "c-2-1-create-status-list"
+      ],
+      "number": "C.2.1"
+    },
+    {
+      "id": "get-status-list",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#get-status-list",
+      "level": 4,
+      "title": "Get Status List",
+      "alternateIds": [
+        "c-2-2-get-status-list"
+      ],
+      "number": "C.2.2"
+    },
+    {
       "id": "update-status",
       "href": "https://www.w3.org/TR/vcalm-1.0/#update-status",
-      "level": 3,
+      "level": 4,
       "title": "Update Status",
       "alternateIds": [
-        "c-3-update-status"
+        "c-2-3-update-status"
       ],
-      "number": "C.3"
+      "number": "C.2.3"
     },
     {
       "id": "workflow-step-and-template-examples",
       "href": "https://www.w3.org/TR/vcalm-1.0/#workflow-step-and-template-examples",
-      "level": 2,
+      "level": 3,
       "title": "Workflow Step and Template Examples",
       "alternateIds": [
-        "d-workflow-step-and-template-examples"
+        "c-3-workflow-step-and-template-examples"
       ],
-      "number": "D"
+      "number": "C.3"
     },
     {
       "id": "minimum-viable-step-and-credential-templates",
       "href": "https://www.w3.org/TR/vcalm-1.0/#minimum-viable-step-and-credential-templates",
-      "level": 3,
+      "level": 4,
       "title": "Minimum Viable Step and Credential Templates",
       "alternateIds": [
-        "d-1-minimum-viable-step-and-credential-templates"
+        "c-3-1-minimum-viable-step-and-credential-templates"
       ],
-      "number": "D.1"
+      "number": "C.3.1"
     },
     {
       "id": "complex-examples",
       "href": "https://www.w3.org/TR/vcalm-1.0/#complex-examples",
-      "level": 3,
+      "level": 4,
       "title": "Complex Examples",
       "alternateIds": [
-        "d-2-complex-examples"
+        "c-3-2-complex-examples"
       ],
-      "number": "D.2"
+      "number": "C.3.2"
+    },
+    {
+      "id": "swimlane-examples-for-issuance-verification-and-presentation",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#swimlane-examples-for-issuance-verification-and-presentation",
+      "level": 3,
+      "title": "Swimlane Examples for Issuance, Verification, and Presentation",
+      "alternateIds": [
+        "c-4-swimlane-examples-for-issuance-verification-and-presentation"
+      ],
+      "number": "C.4"
+    },
+    {
+      "id": "issuance-of-a-vc-to-a-requesting-holder",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#issuance-of-a-vc-to-a-requesting-holder",
+      "level": 4,
+      "title": "Issuance of a VC to a requesting holder",
+      "alternateIds": [
+        "c-4-1-issuance-of-a-vc-to-a-requesting-holder"
+      ],
+      "number": "C.4.1"
+    },
+    {
+      "id": "verification-of-a-single-vc",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verification-of-a-single-vc",
+      "level": 4,
+      "title": "Verification of a single VC",
+      "alternateIds": [
+        "c-4-2-verification-of-a-single-vc"
+      ],
+      "number": "C.4.2"
+    },
+    {
+      "id": "verification-of-multiple-vcs",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#verification-of-multiple-vcs",
+      "level": 4,
+      "title": "Verification of multiple VCs",
+      "alternateIds": [
+        "c-4-3-verification-of-multiple-vcs"
+      ],
+      "number": "C.4.3"
+    },
+    {
+      "id": "presentation-of-a-vc-in-person",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#presentation-of-a-vc-in-person",
+      "level": 4,
+      "title": "Presentation of a VC in person",
+      "alternateIds": [
+        "c-4-4-presentation-of-a-vc-in-person"
+      ],
+      "number": "C.4.4"
+    },
+    {
+      "id": "presentation-of-a-vp-in-person",
+      "href": "https://www.w3.org/TR/vcalm-1.0/#presentation-of-a-vp-in-person",
+      "level": 4,
+      "title": "Presentation of a VP in person",
+      "alternateIds": [
+        "c-4-5-presentation-of-a-vp-in-person"
+      ],
+      "number": "C.4.5"
     },
     {
       "id": "relationship-to-other-specifications",
       "href": "https://www.w3.org/TR/vcalm-1.0/#relationship-to-other-specifications",
-      "level": 2,
+      "level": 3,
       "title": "Relationship to Other Specifications",
       "alternateIds": [
-        "e-relationship-to-other-specifications"
+        "c-5-relationship-to-other-specifications"
       ],
-      "number": "E"
+      "number": "C.5"
     },
     {
       "id": "iana-considerations",
       "href": "https://www.w3.org/TR/vcalm-1.0/#iana-considerations",
-      "level": 2,
+      "level": 3,
       "title": "IANA Considerations",
       "alternateIds": [
-        "f-iana-considerations"
+        "c-6-iana-considerations"
       ],
-      "number": "F"
+      "number": "C.6"
     },
     {
       "id": "uri-scheme-registration",
       "href": "https://www.w3.org/TR/vcalm-1.0/#uri-scheme-registration",
-      "level": 3,
+      "level": 4,
       "title": "URI Scheme Registration",
       "alternateIds": [
-        "f-1-uri-scheme-registration"
+        "c-6-1-uri-scheme-registration"
       ],
-      "number": "F.1"
+      "number": "C.6.1"
     },
     {
       "id": "acknowledgements",
       "href": "https://www.w3.org/TR/vcalm-1.0/#acknowledgements",
-      "level": 2,
+      "level": 3,
       "title": "Acknowledgements",
       "alternateIds": [
-        "g-acknowledgements"
+        "c-7-acknowledgements"
       ],
-      "number": "G"
+      "number": "C.7"
     },
     {
       "id": "references",
@@ -937,9 +1001,9 @@
       "level": 2,
       "title": "References",
       "alternateIds": [
-        "h-references"
+        "d-references"
       ],
-      "number": "H"
+      "number": "D"
     },
     {
       "id": "normative-references",
@@ -947,9 +1011,9 @@
       "level": 3,
       "title": "Normative references",
       "alternateIds": [
-        "h-1-normative-references"
+        "d-1-normative-references"
       ],
-      "number": "H.1"
+      "number": "D.1"
     },
     {
       "id": "informative-references",
@@ -957,9 +1021,9 @@
       "level": 3,
       "title": "Informative references",
       "alternateIds": [
-        "h-2-informative-references"
+        "d-2-informative-references"
       ],
-      "number": "H.2"
+      "number": "D.2"
     }
   ]
 }
