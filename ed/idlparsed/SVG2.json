@@ -6982,7 +6982,7 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#InterfaceSVGTSpanElement"
       },
       "SVGTextPathElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGTextPathElement : SVGTextContentElement {\n\n  // textPath Method Types\n  const unsigned short TEXTPATH_METHODTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_METHODTYPE_ALIGN = 1;\n  const unsigned short TEXTPATH_METHODTYPE_STRETCH = 2;\n\n  // textPath Spacing Types\n  const unsigned short TEXTPATH_SPACINGTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_SPACINGTYPE_AUTO = 1;\n  const unsigned short TEXTPATH_SPACINGTYPE_EXACT = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength startOffset;\n  [SameObject] readonly attribute SVGAnimatedEnumeration method;\n  [SameObject] readonly attribute SVGAnimatedEnumeration spacing;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGTextPathElement : SVGTextContentElement {\n\n  // textPath Method Types\n  const unsigned short TEXTPATH_METHODTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_METHODTYPE_ALIGN = 1;\n  const unsigned short TEXTPATH_METHODTYPE_STRETCH = 2;\n\n  // textPath Spacing Types\n  const unsigned short TEXTPATH_SPACINGTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_SPACINGTYPE_AUTO = 1;\n  const unsigned short TEXTPATH_SPACINGTYPE_EXACT = 2;\n\n  // textPath Side Types\n  const unsigned short TEXTPATH_SIDETYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_SIDETYPE_LEFT = 1;\n  const unsigned short TEXTPATH_SIDETYPE_RIGHT = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength startOffset;\n  [SameObject] readonly attribute SVGAnimatedEnumeration method;\n  [SameObject] readonly attribute SVGAnimatedEnumeration spacing;\n  [SameObject] readonly attribute SVGAnimatedEnumeration side;\n};",
         "type": "interface",
         "name": "SVGTextPathElement",
         "inheritance": "SVGTextContentElement",
@@ -7096,6 +7096,60 @@
             "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_EXACT"
           },
           {
+            "type": "const",
+            "name": "TEXTPATH_SIDETYPE_UNKNOWN",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0"
+            },
+            "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SIDETYPE_UNKNOWN"
+          },
+          {
+            "type": "const",
+            "name": "TEXTPATH_SIDETYPE_LEFT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            },
+            "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SIDETYPE_LEFT"
+          },
+          {
+            "type": "const",
+            "name": "TEXTPATH_SIDETYPE_RIGHT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            },
+            "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SIDETYPE_RIGHT"
+          },
+          {
             "type": "attribute",
             "name": "startOffset",
             "idlType": {
@@ -7163,6 +7217,29 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__spacing"
+          },
+          {
+            "type": "attribute",
+            "name": "side",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SVGAnimatedEnumeration"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextPathElement__side"
           }
         ],
         "extAttrs": [
