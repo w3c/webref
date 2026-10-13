@@ -10,7 +10,7 @@
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://fs.spec.whatwg.org/": {},
-      "https://github.com/w3c/secure-payment-confirmation/blob/main/bbk-requirements.md": {},
+      "https://github.com/w3c/secure-payment-confirmation/blob/main/requirements/browser-bound-keys.md": {},
       "https://github.com/w3c/secure-payment-confirmation/issues": {},
       "https://github.com/w3c/secure-payment-confirmation/issues/288": {},
       "https://github.com/w3c/webauthn/issues/1545": {},
@@ -36,6 +36,11 @@
       "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment.https.html": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/system-state.html": {
+        "anchors": [
+          "language-preferences"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {},
       "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-portal": {},
       "https://lists.w3.org/Archives/Public/public-payments-wg/": {},
@@ -58,20 +63,7 @@
         ]
       },
       "https://w3c.github.io/webappsec-dbsc/": {},
-      "https://w3c.github.io/webauthn/": {
-        "anchors": [
-          "sctn-usecase-consumer-mdc",
-          "sctn-getAssertion",
-          "sctn-createCredential",
-          "sctn-assertion-privacy",
-          "sctn-attested-credential-data",
-          "sctn-verifying-assertion",
-          "sctn-automation",
-          "sctn-security-considerations",
-          "sctn-privacy-considerations",
-          "sctn-accessiblility-considerations"
-        ]
-      },
+      "https://w3c.github.io/webauthn/": {},
       "https://w3c.github.io/webcrypto/": {},
       "https://w3c.github.io/webdriver/": {
         "anchors": [
@@ -122,9 +114,8 @@
           "algorithms"
         ]
       },
+      "https://www.rfc-editor.org/info/bcp47": {},
       "https://www.rfc-editor.org/info/rfc2397/": {},
-      "https://www.rfc-editor.org/info/rfc4647/": {},
-      "https://www.rfc-editor.org/info/rfc5646/": {},
       "https://www.rfc-editor.org/info/rfc8809/": {},
       "https://www.rfc-editor.org/rfc/rfc8809.html": {},
       "https://www.w3.org/2023/05/03-webauthn-minutes": {
@@ -145,6 +136,20 @@
       "https://www.w3.org/TR/international-specs/": {
         "anchors": [
           "inline_changes"
+        ]
+      },
+      "https://www.w3.org/TR/webauthn-3/": {
+        "anchors": [
+          "sctn-usecase-consumer-mdc",
+          "sctn-getAssertion",
+          "sctn-createCredential",
+          "sctn-assertion-privacy",
+          "sctn-attested-credential-data",
+          "sctn-verifying-assertion",
+          "sctn-automation",
+          "sctn-security-considerations",
+          "sctn-privacy-considerations",
+          "sctn-accessiblility-considerations"
         ]
       },
       "https://www.w3.org/groups/wg/payments": {},
@@ -201,6 +206,7 @@
           "map-exists",
           "map-is-empty",
           "list-is-empty",
+          "ascii-case-insensitive",
           "list-append",
           "list-empty",
           "map-set",
@@ -226,7 +232,8 @@
       },
       "https://w3c.github.io/i18n-glossary/": {
         "anchors": [
-          "dfn-language-priority-list",
+          "dfn-language-tag",
+          "dfn-language-subtag",
           "dfn-language-negotiation",
           "dfn-bidi-isolation"
         ]
@@ -250,9 +257,9 @@
           "dfn-payment-handler",
           "dom-paymentrequest-constructor",
           "dom-paymentrequest-show",
+          "dom-paymentrequest-canmakepayment",
           "dfn-additional-data-type",
           "dfn-payment",
-          "dom-paymentrequest-canmakepayment",
           "dfn-steps-to-validate-payment-method-data",
           "dfn-steps-to-check-if-a-payment-can-be-made",
           "dom-paymentcurrencyamount-currency",
@@ -368,6 +375,7 @@
           "idl-sequence",
           "idl-unsigned-long",
           "idl-boolean",
+          "notsupportederror",
           "idl-promise",
           "idl-record",
           "idl-DOMString",
