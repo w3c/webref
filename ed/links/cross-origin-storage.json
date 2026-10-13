@@ -28,6 +28,7 @@
       "https://w3c.github.io/web-locks/": {},
       "https://w3c.github.io/webappsec-csp/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webappsec-subresource-integrity/": {},
       "https://w3c.github.io/webcrypto/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -141,6 +142,7 @@
           "concept-relevant-global",
           "queue-a-global-task",
           "dom-manipulation-task-source",
+          "secure-context",
           "environment-settings-object",
           "concept-settings-object-global",
           "global-object"
@@ -194,7 +196,8 @@
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
-          "concept-basic-url-parser"
+          "concept-basic-url-parser",
+          "concept-url-scheme"
         ]
       },
       "https://w3c.github.io/FileAPI/": {
@@ -212,6 +215,11 @@
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-origin"
         ]
       },
       "https://w3c.github.io/webcrypto/": {
