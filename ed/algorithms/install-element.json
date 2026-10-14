@@ -90,7 +90,7 @@
           "html": "If <var>document</var> is not the\n          <a data-cite=\"html/document-sequences.html#active-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#active-document\">\n          active document</a> of a\n          <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>, return false."
         },
         {
-          "html": "If <var>document</var> is a\n          <a href=\"https://wicg.github.io/fenced-frame/#fenced-frame\">\n          fenced frame</a> document, return false."
+          "html": "If the <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\">traversable navigable</a> of\n          <var>document</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> is a\n          <a data-cite=\"!FENCED-FRAME#fenced-navigable-container-fenced-navigable\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\">\n          fenced navigable</a>, return false."
         },
         {
           "html": "If <var>document</var>'s\n          <a data-cite=\"html/browsers.html#active-sandboxing-flag-set\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\">\n          active sandboxing flag set</a> is not empty, return false."
@@ -383,7 +383,13 @@
           "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/interaction.html\" data-cite-frag=\"consume-user-activation\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\">Consume user activation</a> of <var>document</var>."
         },
         {
-          "html": "Let <var>manifestURL</var> be the result of the\n            <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n            <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifest\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifest-2\"><code>manifest</code></a> with\n            <var>document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-document-url\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a> as base URL."
+          "html": "Let <var>manifestValue</var> be the result of\n            <a data-cite=\"infra#strip-leading-and-trailing-ascii-whitespace\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\">\n            stripping leading and trailing ASCII whitespace</a> from\n            <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifest\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifest-2\"><code>manifest</code></a>."
+        },
+        {
+          "html": "If <var>manifestValue</var> is the empty string, throw a\n            <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "Let <var>manifestURL</var> be the result of the\n            <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on <var>manifestValue</var> with\n            <var>document</var>'s\n            <a data-cite=\"html/urls-and-fetching.html#document-base-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\">\n            document base URL</a> as base URL."
         },
         {
           "html": "If <var>manifestURL</var> is failure, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
@@ -393,10 +399,16 @@
         },
         {
           "html": "If <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifestid\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifestid-2\"><code>manifestId</code></a> is not null:",
-          "rationale": "set",
+          "rationale": "let",
           "steps": [
             {
-              "html": "Set <var>manifestID</var> to the result of the\n                <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n                <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifestid\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifestid-3\"><code>manifestId</code></a> with no base\n                URL."
+              "html": "Let <var>manifestIDValue</var> be the result of\n                <a data-cite=\"infra#strip-leading-and-trailing-ascii-whitespace\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\">\n                stripping leading and trailing ASCII whitespace</a> from\n                <var>options</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"InstallParams\" data-xref-for=\"InstallParams\" href=\"https://wicg.github.io/install-element/#dom-installparams-manifestid\" class=\"internalDFN\" id=\"ref-for-dom-installparams-manifestid-3\"><code>manifestId</code></a>."
+            },
+            {
+              "html": "If <var>manifestIDValue</var> is the empty string, throw a\n                <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            },
+            {
+              "html": "Set <var>manifestID</var> to the result of the\n                <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on <var>manifestIDValue</var> with\n                <var>document</var>'s\n                <a data-cite=\"html/urls-and-fetching.html#document-base-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\">\n                document base URL</a> as base URL."
             },
             {
               "html": "If <var>manifestID</var> is failure, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
@@ -450,6 +462,32 @@
       ]
     },
     {
+      "name": "context blocker reason",
+      "href": "https://wicg.github.io/install-element/#dfn-context-blocker-reason",
+      "html": "To determine an\n          <code>&lt;<a data-link-type=\"element\" href=\"https://wicg.github.io/install-element/#dfn-install\" class=\"internalDFN\" id=\"ref-for-dfn-install-13\"><code>install</code></a>&gt;</code>\n          element's <dfn id=\"dfn-context-blocker-reason\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">context blocker reason</dfn>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>document</var> be the element's <a data-link-type=\"dfn\" data-link-for=\"Node\" data-xref-for=\"Node\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\">traversable navigable</a> of\n            <var>document</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"node-navigable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\">node navigable</a> is a\n            <a data-cite=\"!FENCED-FRAME#fenced-navigable-container-fenced-navigable\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\">\n            fenced navigable</a>, return <code>illegal_subframe</code>."
+        },
+        {
+          "html": "If the <code>web-app-installation</code>\n            <a data-link-type=\"dfn\" data-cite=\"permissions-policy\" data-cite-path=\"\" data-cite-frag=\"policy-controlled-feature\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\">policy-controlled feature</a> is disabled in\n            <var>document</var>, return <code>illegal_subframe</code>."
+        },
+        {
+          "html": "If <var>document</var>'s\n            <a data-cite=\"html/browsers.html#active-sandboxing-flag-set\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#active-sandboxing-flag-set\">\n            active sandboxing flag set</a> is not empty, return\n            <code>illegal_sandbox</code>."
+        },
+        {
+          "html": "If <var>document</var> is not the\n            <a data-cite=\"html/document-sequences.html#active-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#active-document\">\n            active document</a> of a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a>, return\n            <code>illegal_subframe</code>."
+        },
+        {
+          "html": "Return the empty string."
+        }
+      ]
+    },
+    {
       "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"HTMLInstallElement\" data-xref-for=\"HTMLInstallElement\" data-lt=\"constructor()\" href=\"https://wicg.github.io/install-element/#dom-htmlinstallelement-constructor\" class=\"internalDFN\" id=\"ref-for-dom-htmlinstallelement-constructor-1\"><code>constructor</code></a><code>()</code> steps are:",
       "rationale": ".algorithm",
       "steps": [
@@ -477,14 +515,14 @@
       ]
     },
     {
-      "html": "The <code>&lt;<a data-link-type=\"element\" href=\"https://wicg.github.io/install-element/#dfn-install\" class=\"internalDFN\" id=\"ref-for-dfn-install-16\"><code>install</code></a>&gt;</code>\n          element's <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a> given an <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"event\" href=\"https://dom.spec.whatwg.org/#event\"><code>Event</code></a>\n          <var>event</var> is:",
+      "html": "The <code>&lt;<a data-link-type=\"element\" href=\"https://wicg.github.io/install-element/#dfn-install\" class=\"internalDFN\" id=\"ref-for-dfn-install-18\"><code>install</code></a>&gt;</code>\n          element's <a data-link-type=\"dfn\" data-link-for=\"EventTarget\" data-xref-for=\"EventTarget\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"eventtarget-activation-behavior\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\">activation behavior</a> given an <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"event\" href=\"https://dom.spec.whatwg.org/#event\"><code>Event</code></a>\n          <var>event</var> is:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "If <var>event</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-istrusted\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\"><code>isTrusted</code></a> is false, return."
         },
         {
-          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ActivationBlockersMixin\" data-xref-for=\"ActivationBlockersMixin\" href=\"https://wicg.github.io/install-element/#dom-activationblockersmixin-isvalid\" class=\"internalDFN\" id=\"ref-for-dom-activationblockersmixin-isvalid-2\"><code>isValid</code></a> is false, return."
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ActivationBlockersMixin\" data-xref-for=\"ActivationBlockersMixin\" href=\"https://wicg.github.io/install-element/#dom-activationblockersmixin-isvalid\" class=\"internalDFN\" id=\"ref-for-dom-activationblockersmixin-isvalid-3\"><code>isValid</code></a> is false, return."
         },
         {
           "html": "Let <var>document</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n            <a data-cite=\"dom#concept-node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>."
@@ -499,23 +537,41 @@
           "html": "Let <var>manifestID</var> be null."
         },
         {
-          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-4\"><code>manifestid</code></a></code> attribute but no\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-4\"><code>manifest</code></a></code> attribute,\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-1\">queue an install result</a> of <code>invalid_data</code> at\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+          "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-4\"><code>manifestid</code></a></code> attribute but no\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-4\"><code>manifest</code></a></code> attribute,\n            <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-1\">queue an install result</a> of <code>invalid-data</code> at\n            <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
         },
         {
           "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n            <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-5\"><code>manifest</code></a></code> attribute:",
-          "rationale": "set",
+          "rationale": "let",
           "steps": [
             {
-              "html": "Set <var>manifestURL</var> to the result of the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a>\n                on the attribute's value with <var>document</var>'s\n                <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-document-url\" href=\"https://dom.spec.whatwg.org/#concept-document-url\">URL</a> as base."
+              "html": "Let <var>manifestValue</var> be the result of\n                <a data-cite=\"infra#strip-leading-and-trailing-ascii-whitespace\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\">\n                stripping leading and trailing ASCII whitespace</a> from the\n                <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifest-0\" class=\"internalDFN\" id=\"ref-for-dfn-manifest-0-6\"><code>manifest</code></a></code> attribute's value."
             },
             {
-              "html": "If <var>manifestURL</var> is failure,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-2\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+              "html": "If <var>manifestValue</var> is the empty string,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-2\">queue an install result</a> of <code>invalid-data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
             },
             {
-              "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n                <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-5\"><code>manifestid</code></a></code> attribute, set\n                <var>manifestID</var> to the result of the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on\n                that attribute's value with no base URL."
+              "html": "Set <var>manifestURL</var> to the result of the <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a>\n                on <var>manifestValue</var> with <var>document</var>'s\n                <a data-cite=\"html/urls-and-fetching.html#document-base-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\">\n                document base URL</a> as base."
             },
             {
-              "html": "If <var>manifestID</var> is failure,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-3\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+              "html": "If <var>manifestURL</var> is failure,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-3\">queue an install result</a> of <code>invalid-data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+            },
+            {
+              "html": "If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has a\n                <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-5\"><code>manifestid</code></a></code> attribute:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>manifestIDValue</var> be the result of\n                    <a data-cite=\"infra#strip-leading-and-trailing-ascii-whitespace\" href=\"https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace\">\n                    stripping leading and trailing ASCII whitespace</a> from\n                    the <code><a data-link-type=\"element-attr\" data-link-for=\"install\" href=\"https://wicg.github.io/install-element/#dfn-manifestid\" class=\"internalDFN\" id=\"ref-for-dfn-manifestid-6\"><code>manifestid</code></a></code> attribute's\n                    value."
+                },
+                {
+                  "html": "If <var>manifestIDValue</var> is the empty string,\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-4\">queue an install result</a> of\n                    <code>invalid-data</code> at <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+                },
+                {
+                  "html": "Set <var>manifestID</var> to the result of the\n                    <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">URL parser</a> on <var>manifestIDValue</var> with\n                    <var>document</var>'s\n                    <a data-cite=\"html/urls-and-fetching.html#document-base-url\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url\">\n                    document base URL</a> as base."
+                },
+                {
+                  "html": "If <var>manifestID</var> is failure,\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-5\">queue an install result</a> of\n                    <code>invalid-data</code> at <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and return."
+                }
+              ]
             }
           ]
         },
@@ -530,13 +586,13 @@
               "html": "Let <var>outcome</var> be the result of\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-run-a-web-install-request\" class=\"internalDFN\" id=\"ref-for-dfn-run-a-web-install-request-2\">run a web install request</a> with <var>request</var>."
             },
             {
-              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-4\">installation succeeded</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-4\">queue an install result</a> of <code>success</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
+              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-installation-succeeded\" class=\"internalDFN\" id=\"ref-for-dfn-installation-succeeded-4\">installation succeeded</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-6\">queue an install result</a> of <code>success</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
             },
             {
-              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-18\">invalid install data</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-5\">queue an install result</a> of <code>invalid_data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
+              "html": "If <var>outcome</var> is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-invalid-install-data\" class=\"internalDFN\" id=\"ref-for-dfn-invalid-install-data-18\">invalid install data</a>,\n                <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-7\">queue an install result</a> of <code>invalid-data</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and abort these substeps."
             },
             {
-              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-6\">Queue an install result</a> of <code>aborted</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/install-element/#dfn-queue-an-install-result\" class=\"internalDFN\" id=\"ref-for-dfn-queue-an-install-result-8\">Queue an install result</a> of <code>aborted</code> at\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
             }
           ]
         }
