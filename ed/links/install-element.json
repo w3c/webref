@@ -23,6 +23,11 @@
           "active-sandboxing-flag-set"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "active-document"
@@ -41,12 +46,21 @@
           "attr-tabindex"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "document-base-url"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/window-object.html": {
         "anchors": [
           "concept-document-window"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "strip-leading-and-trailing-ascii-whitespace"
+        ]
+      },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "json-mime-type"
@@ -64,7 +78,7 @@
       },
       "https://wicg.github.io/fenced-frame/": {
         "anchors": [
-          "fenced-frame"
+          "fenced-navigable-container-fenced-navigable"
         ]
       },
       "https://wicg.github.io/local-network-access/": {
@@ -117,6 +131,7 @@
           "concept-document-url",
           "event",
           "dictdef-eventinit",
+          "concept-node-document",
           "dom-event-istrusted",
           "dom-event-type",
           "dom-event-bubbles",
@@ -140,6 +155,11 @@
           "concept-origin"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "xattr-reflecturl"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
         "anchors": [
           "cereactions"
@@ -148,7 +168,9 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "top-level-traversable",
-          "fully-active"
+          "fully-active",
+          "nav-traversable",
+          "node-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -184,6 +206,7 @@
           "concept-relevant-global",
           "queue-a-global-task",
           "user-interaction-task-source",
+          "globaleventhandlers",
           "eventhandler",
           "queue-an-element-task"
         ]

@@ -83,6 +83,11 @@ partial interface mixin GlobalEventHandlers {
   attribute EventHandler onfencedtreeclick;
 };
 
+// Source: Web Install (https://wicg.github.io/install-element/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler oninstallresult;
+};
+
 // Source: CSS Animations Module Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onanimationstart;

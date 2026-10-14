@@ -3,9 +3,8 @@
 interface HTMLInstallElement : HTMLElement {
   [HTMLConstructor] constructor();
 
-  [CEReactions] attribute USVString? manifest;
-  [CEReactions] attribute USVString? manifestId;
-  attribute EventHandler oninstallresult;
+  [CEReactions, ReflectURL] attribute USVString manifest;
+  [CEReactions, ReflectURL] attribute USVString manifestId;
 };
 
 // Source: Web Install (https://wicg.github.io/install-element/)

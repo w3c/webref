@@ -3750,7 +3750,25 @@
     "type": "installresult",
     "targets": [
       {
-        "target": "HTMLInstallElement",
+        "target": "HTMLElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "SVGElement",
         "bubbles": true,
         "bubblingPath": [
           "Node",

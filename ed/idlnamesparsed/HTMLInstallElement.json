@@ -6,7 +6,7 @@
       "title": "Web Install",
       "url": "https://wicg.github.io/install-element/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLInstallElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString? manifest;\n  [CEReactions] attribute USVString? manifestId;\n  attribute EventHandler oninstallresult;\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLInstallElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectURL] attribute USVString manifest;\n  [CEReactions, ReflectURL] attribute USVString manifestId;\n};",
     "href": "https://wicg.github.io/install-element/#dom-htmlinstallelement"
   },
   "extended": [
@@ -435,6 +435,13 @@
               "url": "https://wicg.github.io/fenced-frame/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onfencedtreeclick;\n};"
+          },
+          {
+            "spec": {
+              "title": "Web Install",
+              "url": "https://wicg.github.io/install-element/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler oninstallresult;\n};"
           },
           {
             "spec": {
