@@ -267,15 +267,14 @@
       "https://webassembly.github.io/spec/core/syntax/types.html": {
         "anchors": [
           "external-types",
-          "syntax-numtype",
-          "vector-types",
-          "syntax-mut",
-          "syntax-memtype",
-          "syntax-addrtype",
-          "syntax-tabletype",
-          "syntax-limits",
           "syntax-reftype",
           "heap-types",
+          "syntax-numtype",
+          "vector-types",
+          "syntax-memtype",
+          "syntax-tabletype",
+          "syntax-mut",
+          "syntax-comptype",
           "syntax-tagtype"
         ]
       },
@@ -283,6 +282,12 @@
         "anchors": [
           "syntax-float",
           "syntax-int"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/conventions.html": {
+        "anchors": [
+          "aux-expand-deftype",
+          "syntax-deftype"
         ]
       },
       "https://webassembly.github.io/spec/core/valid/matching.html": {
@@ -326,6 +331,7 @@
           "dfn-associated-realm",
           "EnforceRange",
           "idl-unsigned-long",
+          "dfn-convert-idl-to-javascript-value",
           "abstract-opdef-converttoint",
           "js-unsigned-long",
           "dfn-namespace-object",
