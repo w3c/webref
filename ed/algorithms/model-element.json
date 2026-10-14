@@ -11,7 +11,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>With the model scene loaded, set the animation to the first frame if present.</p>"
+          "html": "<p>With the model scene loaded and normalized to <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-space\" id=\"ref-for-model-space③\">model space</a>, set the animation to\nthe first frame if present.</p>"
         },
         {
           "html": "<p>let <var>max</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"ref-for-dompoint\">DOMPoint</a></code> with values of <code>-Infinity</code>.</p>"
@@ -50,50 +50,21 @@
           ]
         },
         {
-          "html": "<p>Set the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter\" id=\"ref-for-dom-htmlmodelelement-boundingboxcenter\">boundingBoxCenter</a></code> to be the mean of each values\nof <var>min</var> and <var>max</var>.</p>"
+          "html": "<p>Set the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter\" id=\"ref-for-dom-htmlmodelelement-boundingboxcenter①\">boundingBoxCenter</a></code> to be the mean of each values\nof <var>min</var> and <var>max</var>.</p>"
         },
         {
-          "html": "<p>Set the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents\" id=\"ref-for-dom-htmlmodelelement-boundingboxextents\">boundingBoxExtents</a></code> to be each value of <var>min</var>\nsubtracted from <var>max</var>.</p>"
+          "html": "<p>Set the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents\" id=\"ref-for-dom-htmlmodelelement-boundingboxextents①\">boundingBoxExtents</a></code> to be each value of <var>min</var>\nsubtracted from <var>max</var>.</p>"
         }
       ]
     },
     {
       "name": "model fit algorithm",
       "href": "https://immersive-web.github.io/model-element/#model-fit-algorithm",
-      "html": "The initial <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"model-fit-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">model fit algorithm</dfn> consists of the following steps.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"model-fit-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">model fit algorithm</dfn> takes a <var>rotation</var> argument and consists of the\nfollowing steps.",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Retrieve the bounds of the smallest axis-aligned box that contains the geometry of the\nobject using the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#bounding-box-calculation-algorithm\" id=\"ref-for-bounding-box-calculation-algorithm\">bounding box calculation algorithm</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>extents</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents\" id=\"ref-for-dom-htmlmodelelement-boundingboxextents①\">boundingBoxExtents</a></code> of the resource.</p>"
-        },
-        {
-          "html": "<p>Let <var>center</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter\" id=\"ref-for-dom-htmlmodelelement-boundingboxcenter①\">boundingBoxCenter</a></code> of the resource.</p>"
-        },
-        {
-          "html": "<p>Divide <var>extents</var>.x by the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-width\" id=\"ref-for-element-attrdef-model-width③\">width</a></code> in the viewport. This is the X-scale.</p>"
-        },
-        {
-          "html": "<p>Divide <var>extents</var>.y by the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-height\" id=\"ref-for-element-attrdef-model-height③\">height</a></code> in the viewport. This is the Y-scale.</p>"
-        },
-        {
-          "html": "<p>scale the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑤\">entityTransform</a></code> to be the minimum of the X-scale and Y-scale.</p>"
-        },
-        {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑥\">entityTransform</a></code> to be centered on <var>center.x</var>, <var>center.y</var> and\nset back from <var>center.z</var> by <var>extents.z / 2</var>, so that the full extents are visible and\nset directly behind the viewport.</p>"
-        }
-      ]
-    },
-    {
-      "name": "orbit fit algorithm",
-      "href": "https://immersive-web.github.io/model-element/#orbit-fit-algorithm",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#orbit-fit-algorithm\" id=\"ref-for-orbit-fit-algorithm\">orbit fit algorithm</a> is triggered when the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-stagemode\" id=\"ref-for-element-attrdef-model-stagemode①\">stagemode</a></code> is set to <code>orbit</code>.\nThe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"orbit-fit-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">orbit fit algorithm</dfn> consists of the following steps.",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<p>Retrieve the bounds of the smallest axis-aligned box that contains the geometry of the object.</p>"
+          "html": "<p>Retrieve the resource’s stored bounds, previously calculated using the\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#bounding-box-calculation-algorithm\" id=\"ref-for-bounding-box-calculation-algorithm②\">bounding box calculation algorithm</a>.</p>"
         },
         {
           "html": "<p>Let <var>extents</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents\" id=\"ref-for-dom-htmlmodelelement-boundingboxextents②\">boundingBoxExtents</a></code> of the resource.</p>"
@@ -102,19 +73,72 @@
           "html": "<p>Let <var>center</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter\" id=\"ref-for-dom-htmlmodelelement-boundingboxcenter②\">boundingBoxCenter</a></code> of the resource.</p>"
         },
         {
-          "html": "<p>Let <var>length</var> be the <em>length</em> of the extents of <var>extents</var>.</p>"
+          "html": "<p>Let <var>width</var> and <var>height</var> be the laid-out content-box dimensions in CSS pixels, each\nmultiplied by <code>0.0254 / 96</code> to obtain <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#css-derived-meter\" id=\"ref-for-css-derived-meter③\">CSS-derived meters</a> in <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#element-space\" id=\"ref-for-element-space④\">element space</a>.</p>"
         },
         {
-          "html": "<p>Divide <var>length</var> by the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-width\" id=\"ref-for-element-attrdef-model-width⑤\">width</a></code> in the viewport. This is the X-scale.</p>"
+          "html": "<p>Let <var>xScale</var> be <var>width</var> divided by <var>extents</var>.x, or positive infinity if <var>extents</var>.x is zero.</p>"
         },
         {
-          "html": "<p>Divide <var>length</var> by the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-height\" id=\"ref-for-element-attrdef-model-height⑤\">height</a></code> in the viewport. This is the Y-scale.</p>"
+          "html": "<p>Let <var>yScale</var> be <var>height</var> divided by <var>extents</var>.y, or positive infinity if <var>extents</var>.y is zero.</p>"
         },
         {
-          "html": "<p>scale the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑨\">entityTransform</a></code> to be the minimum of the X-scale and Y-scale.</p>"
+          "html": "<p>Let <var>scale</var> be the minimum of <var>xScale</var> and <var>yScale</var>. If both are positive infinity, set\n<var>scale</var> to 1. If either viewport dimension is zero, set <var>scale</var> to 0.</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①⓪\">entityTransform</a></code> to be centered on <var>center.x</var>, <var>center.y</var> and\nset back from <var>center.z</var> by <var>extents.z / 2</var>, so that the full extents are visible and set\ndirectly behind the viewport, and will remain in view at any orientation.</p>"
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑨\">entityTransform</a></code> to a uniform scale of <var>scale</var> and the supplied\n<var>rotation</var>.</p>"
+        },
+        {
+          "html": "<p>Translate the model so that <var>center</var>, after applying the scale and rotation, is aligned\nwith the center of the viewport in X and Y, and is <var>scale</var> × <var>extents</var>.z / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>. With the identity rotation used for initial fitting, the front face of\nthe scaled bounding box lies on the viewport plane and the rest lies behind it.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When either dimension of the loaded model element’s content box changes after layout,\nthe user agent MUST perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#automatic-fitting-enabled\" id=\"ref-for-automatic-fitting-enabled②\">automatic fitting enabled</a> is false, preserve\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①②\">entityTransform</a></code> and return.</p>"
+        },
+        {
+          "html": "<p>If the element is in <code>orbit</code> mode, apply the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#orbit-fit-algorithm\" id=\"ref-for-orbit-fit-algorithm②\">orbit fit algorithm</a>, preserving the\ncurrent rotation.</p>"
+        },
+        {
+          "html": "<p>Otherwise, apply the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-fit-algorithm\" id=\"ref-for-model-fit-algorithm①\">model fit algorithm</a> with the current rotation as its <var>rotation</var>\nargument.</p>"
+        }
+      ]
+    },
+    {
+      "name": "orbit fit algorithm",
+      "href": "https://immersive-web.github.io/model-element/#orbit-fit-algorithm",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#orbit-fit-algorithm\" id=\"ref-for-orbit-fit-algorithm③\">orbit fit algorithm</a> is used when the model’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-stagemode\" id=\"ref-for-element-attrdef-model-stagemode①\">stagemode</a></code> enters <code>orbit</code>\nmode and for automatic fitting while that mode is active.\nThe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"orbit-fit-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">orbit fit algorithm</dfn> consists of the following steps.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Retrieve the resource’s stored bounds, previously calculated using the\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#bounding-box-calculation-algorithm\" id=\"ref-for-bounding-box-calculation-algorithm③\">bounding box calculation algorithm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>extents</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents\" id=\"ref-for-dom-htmlmodelelement-boundingboxextents③\">boundingBoxExtents</a></code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>center</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter\" id=\"ref-for-dom-htmlmodelelement-boundingboxcenter③\">boundingBoxCenter</a></code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>diameter</var> be the Euclidean length of <var>extents</var>:\n<code>sqrt(extents.x² + extents.y² + extents.z²)</code>. This is the diameter of a sphere\ncentered on <var>center</var> that encloses the bounding box.</p>"
+        },
+        {
+          "html": "<p>Let <var>width</var> and <var>height</var> be the laid-out content-box dimensions in CSS pixels, each\nmultiplied by <code>0.0254 / 96</code> to obtain <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#css-derived-meter\" id=\"ref-for-css-derived-meter④\">CSS-derived meters</a> in <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#element-space\" id=\"ref-for-element-space⑤\">element space</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scale</var> be the minimum of <var>width</var> and <var>height</var>, divided by <var>diameter</var>. If <var>diameter</var>\nis zero, set <var>scale</var> to 1. If either viewport dimension is zero, set <var>scale</var> to 0.</p>"
+        },
+        {
+          "html": "<p>Preserve the model’s current rotation and replace the scale in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①④\">entityTransform</a></code> with a uniform scale of <var>scale</var>.</p>"
+        },
+        {
+          "html": "<p>Translate the model so that <var>center</var>, after applying the scale and rotation, is aligned\nwith the center of the viewport in X and Y, and is <var>scale</var> × <var>diameter</var> / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>, so that the enclosing sphere lies entirely behind the viewport plane.</p>"
+        },
+        {
+          "html": "<p>Apply subsequent orbit rotations about this fitted center, preserving its position.\nThe enclosing sphere then remains within the viewport at any orientation.</p>"
         }
       ]
     }
