@@ -2748,6 +2748,9 @@
           "html": "<p>Let <var>deep</var> be false.</p>"
         },
         {
+          "html": "<p>Let <var>sameAgentCluster</var> be false.</p>"
+        },
+        {
           "html": "<p>If <var>value</var> is undefined, null, <a href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-boolean-type\" id=\"structuredserializeinternal:js-boolean\" data-x-internal=\"js-boolean\">a Boolean</a>, <a href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-number-type\" id=\"structuredserializeinternal:js-number\" data-x-internal=\"js-number\">a Number</a>, <a href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-bigint-type\" id=\"structuredserializeinternal:js-bigint\" data-x-internal=\"js-bigint\">a BigInt</a>, or <a href=\"https://tc39.es/ecma262/#sec-ecmascript-language-types-string-type\" id=\"structuredserializeinternal:js-string\" data-x-internal=\"js-string\">a String</a>, then return { [[Type]]: \"primitive\", [[Value]]:\n   <var>value</var> }.</p>"
         },
         {
@@ -2786,13 +2789,13 @@
                   "html": "<p>If the <a id=\"structuredserializeinternal:current-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability\" id=\"structuredserializeinternal:concept-settings-object-cross-origin-isolated-capability\">cross-origin isolated\n        capability</a> is false, then throw a <a id=\"structuredserializeinternal:datacloneerror-2\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a>\n        <code id=\"structuredserializeinternal:domexception-2\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
                 },
                 {
-                  "html": "<p>If <var>forStorage</var> is true, then throw a\n       <a id=\"structuredserializeinternal:datacloneerror-3\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+                  "html": "<p>If <var>value</var> has an [[ArrayBufferMaxByteLength]] internal slot, then set\n       <var>serialized</var> to { [[Type]]: \"GrowableSharedArrayBuffer\", [[ArrayBufferData]]:\n       <var>value</var>.[[ArrayBufferData]], [[ArrayBufferByteLengthData]]:\n       <var>value</var>.[[ArrayBufferByteLengthData]], [[ArrayBufferMaxByteLength]]:\n       <var>value</var>.[[ArrayBufferMaxByteLength]] }.</p>"
                 },
                 {
-                  "html": "<p>If <var>value</var> has an [[ArrayBufferMaxByteLength]] internal slot, then set\n       <var>serialized</var> to { [[Type]]: \"GrowableSharedArrayBuffer\", [[ArrayBufferData]]:\n       <var>value</var>.[[ArrayBufferData]], [[ArrayBufferByteLengthData]]:\n       <var>value</var>.[[ArrayBufferByteLengthData]], [[ArrayBufferMaxByteLength]]:\n       <var>value</var>.[[ArrayBufferMaxByteLength]], [[AgentCluster]]: the <a id=\"structuredserializeinternal:surrounding-agent\" href=\"https://tc39.es/ecma262/#surrounding-agent\" data-x-internal=\"surrounding-agent\">surrounding\n       agent</a>'s <a id=\"structuredserializeinternal:agent-cluster-2\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> }.</p>"
+                  "html": "<p>Otherwise, set <var>serialized</var> to { [[Type]]: \"SharedArrayBuffer\",\n       [[ArrayBufferData]]: <var>value</var>.[[ArrayBufferData]], [[ArrayBufferByteLength]]:\n       <var>value</var>.[[ArrayBufferByteLength]] }.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, set <var>serialized</var> to { [[Type]]: \"SharedArrayBuffer\",\n       [[ArrayBufferData]]: <var>value</var>.[[ArrayBufferData]], [[ArrayBufferByteLength]]:\n       <var>value</var>.[[ArrayBufferByteLength]], [[AgentCluster]]: the <a id=\"structuredserializeinternal:surrounding-agent-2\" href=\"https://tc39.es/ecma262/#surrounding-agent\" data-x-internal=\"surrounding-agent\">surrounding\n       agent</a>'s <a id=\"structuredserializeinternal:agent-cluster-3\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> }.</p>"
+                  "html": "<p>Set <var>sameAgentCluster</var> to true.</p>"
                 }
               ]
             },
@@ -2801,7 +2804,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <a id=\"structuredserializeinternal:isdetachedbuffer\" href=\"https://tc39.es/ecma262/#sec-isdetachedbuffer\" data-x-internal=\"isdetachedbuffer\">IsDetachedBuffer</a>(<var>value</var>) is true, then throw a\n       <a id=\"structuredserializeinternal:datacloneerror-4\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-4\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+                  "html": "<p>If <a id=\"structuredserializeinternal:isdetachedbuffer\" href=\"https://tc39.es/ecma262/#sec-isdetachedbuffer\" data-x-internal=\"isdetachedbuffer\">IsDetachedBuffer</a>(<var>value</var>) is true, then throw a\n       <a id=\"structuredserializeinternal:datacloneerror-3\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
                 },
                 {
                   "html": "<p>Let <var>size</var> be <var>value</var>.[[ArrayBufferByteLength]].</p>"
@@ -2827,7 +2830,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a id=\"structuredserializeinternal:isarraybufferviewoutofbounds\" href=\"https://tc39.es/ecma262/#sec-isarraybufferviewoutofbounds\" data-x-internal=\"isarraybufferviewoutofbounds\">IsArrayBufferViewOutOfBounds</a>(<var>value</var>) is true, then throw a\n     <a id=\"structuredserializeinternal:datacloneerror-5\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-5\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+              "html": "<p>If <a id=\"structuredserializeinternal:isarraybufferviewoutofbounds\" href=\"https://tc39.es/ecma262/#sec-isarraybufferviewoutofbounds\" data-x-internal=\"isarraybufferviewoutofbounds\">IsArrayBufferViewOutOfBounds</a>(<var>value</var>) is true, then throw a\n     <a id=\"structuredserializeinternal:datacloneerror-4\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-4\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>buffer</var> be the value of <var>value</var>'s [[ViewedArrayBuffer]] internal\n     slot.</p>"
@@ -2929,7 +2932,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>value</var> has a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"structuredserializeinternal:detached\">[[Detached]]</a> internal slot whose value is true,\n     then throw a <a id=\"structuredserializeinternal:datacloneerror-6\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-6\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+              "html": "<p>If <var>value</var> has a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"structuredserializeinternal:detached\">[[Detached]]</a> internal slot whose value is true,\n     then throw a <a id=\"structuredserializeinternal:datacloneerror-5\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-5\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>typeString</var> be the identifier of the <a id=\"structuredserializeinternal:primary-interface\" href=\"https://webidl.spec.whatwg.org/#dfn-primary-interface\" data-x-internal=\"primary-interface\">primary interface</a> of\n     <var>value</var>.</p>"
@@ -2938,21 +2941,24 @@
               "html": "<p>Set <var>serialized</var> to { [[Type]]: <var>typeString</var> }.</p>"
             },
             {
+              "html": "<p>If <var>value</var>'s <a id=\"structuredserializeinternal:primary-interface-2\" href=\"https://webidl.spec.whatwg.org/#dfn-primary-interface\" data-x-internal=\"primary-interface\">primary interface</a> is decorated with <code id=\"structuredserializeinternal:sameagentcluster\"><a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sameagentcluster\">[SameAgentCluster]</a></code>, then set <var>sameAgentCluster</var> to\n     true.</p>"
+            },
+            {
               "html": "<p>Set <var>deep</var> to true.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, if <var>value</var> is a <a id=\"structuredserializeinternal:platform-object-3\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" data-x-internal=\"platform-object\">platform object</a>, then throw a\n   <a id=\"structuredserializeinternal:datacloneerror-7\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-7\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <var>value</var> is a <a id=\"structuredserializeinternal:platform-object-3\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" data-x-internal=\"platform-object\">platform object</a>, then throw a\n   <a id=\"structuredserializeinternal:datacloneerror-6\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-6\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <a id=\"structuredserializeinternal:iscallable\" href=\"https://tc39.es/ecma262/#sec-iscallable\" data-x-internal=\"iscallable\">IsCallable</a>(<var>value</var>) is true, then throw a\n   <a id=\"structuredserializeinternal:datacloneerror-8\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-8\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <a id=\"structuredserializeinternal:iscallable\" href=\"https://tc39.es/ecma262/#sec-iscallable\" data-x-internal=\"iscallable\">IsCallable</a>(<var>value</var>) is true, then throw a\n   <a id=\"structuredserializeinternal:datacloneerror-7\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-7\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>value</var> has any internal slot other than [[Prototype]],\n    [[Extensible]], or [[PrivateElements]], then throw a <a id=\"structuredserializeinternal:datacloneerror-9\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a>\n    <code id=\"structuredserializeinternal:domexception-9\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <var>value</var> has any internal slot other than [[Prototype]],\n    [[Extensible]], or [[PrivateElements]], then throw a <a id=\"structuredserializeinternal:datacloneerror-8\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a>\n    <code id=\"structuredserializeinternal:domexception-8\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>value</var> is an exotic object and <var>value</var> is not the\n    <a id=\"structuredserializeinternal:object.prototype\" href=\"https://tc39.es/ecma262/#sec-properties-of-the-object-prototype-object\" data-x-internal=\"object.prototype\">%Object.prototype%</a> intrinsic object associated with any <a id=\"structuredserializeinternal:realm-2\" href=\"https://tc39.es/ecma262/#sec-code-realms\" data-x-internal=\"realm\">realm</a>, then\n    throw a <a id=\"structuredserializeinternal:datacloneerror-10\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-10\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <var>value</var> is an exotic object and <var>value</var> is not the\n    <a id=\"structuredserializeinternal:object.prototype\" href=\"https://tc39.es/ecma262/#sec-properties-of-the-object-prototype-object\" data-x-internal=\"object.prototype\">%Object.prototype%</a> intrinsic object associated with any <a id=\"structuredserializeinternal:realm-2\" href=\"https://tc39.es/ecma262/#sec-code-realms\" data-x-internal=\"realm\">realm</a>, then\n    throw a <a id=\"structuredserializeinternal:datacloneerror-9\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-9\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "Otherwise:",
@@ -2965,6 +2971,9 @@
               "html": "<p>Set <var>deep</var> to true.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>If <var>sameAgentCluster</var> is true, then <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#restrict-to-the-same-agent-cluster\" id=\"structuredserializeinternal:restrict-to-the-same-agent-cluster\">restrict</a> <var>serialized</var> to the same agent cluster; otherwise, set\n   <var>serialized</var>.[[AgentCluster]] to null.</p>"
         },
         {
           "html": "<p><a href=\"https://infra.spec.whatwg.org/#map-set\" id=\"structuredserializeinternal:map-set\" data-x-internal=\"map-set\">Set</a> <var>memory</var>[<var>value</var>] to\n   <var>serialized</var>.</p>"
@@ -3040,7 +3049,7 @@
               ]
             },
             {
-              "html": "<p>Otherwise, if <var>value</var> is a <a id=\"structuredserializeinternal:platform-object-4\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" data-x-internal=\"platform-object\">platform object</a> that is a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"structuredserializeinternal:serializable-objects-2\">serializable object</a>, then perform the <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"structuredserializeinternal:serialization-steps\">serialization\n      steps</a> for <var>value</var>'s <a id=\"structuredserializeinternal:primary-interface-2\" href=\"https://webidl.spec.whatwg.org/#dfn-primary-interface\" data-x-internal=\"primary-interface\">primary interface</a>, given <var>value</var>,\n      <var>serialized</var>, and <var>forStorage</var>.</p>\n\n      <p>The <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"structuredserializeinternal:serialization-steps-2\">serialization steps</a> may need to perform a <dfn id=\"sub-serialization\" data-export=\"\">sub-serialization</dfn>. This is an operation which takes as input a value\n      <var>subValue</var>, and returns <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeinternal\" id=\"structuredserializeinternal:structuredserializeinternal-6\">StructuredSerializeInternal</a>(<var>subValue</var>,\n      <var>forStorage</var>, <var>memory</var>). (In other words, a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"structuredserializeinternal:sub-serialization\">sub-serialization</a>\n      is a specialization of <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeinternal\" id=\"structuredserializeinternal:structuredserializeinternal-7\">StructuredSerializeInternal</a> to be consistent within this\n      invocation.)</p>"
+              "html": "<p>Otherwise, if <var>value</var> is a <a id=\"structuredserializeinternal:platform-object-4\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" data-x-internal=\"platform-object\">platform object</a> that is a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"structuredserializeinternal:serializable-objects-2\">serializable object</a>, then perform the <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"structuredserializeinternal:serialization-steps\">serialization\n      steps</a> for <var>value</var>'s <a id=\"structuredserializeinternal:primary-interface-3\" href=\"https://webidl.spec.whatwg.org/#dfn-primary-interface\" data-x-internal=\"primary-interface\">primary interface</a>, given <var>value</var>,\n      <var>serialized</var>, and <var>forStorage</var>.</p>\n\n      <p>The <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"structuredserializeinternal:serialization-steps-2\">serialization steps</a> may need to perform a <dfn id=\"sub-serialization\" data-export=\"\">sub-serialization</dfn>. This is an operation which takes as input a value\n      <var>subValue</var>, and returns <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeinternal\" id=\"structuredserializeinternal:structuredserializeinternal-6\">StructuredSerializeInternal</a>(<var>subValue</var>,\n      <var>forStorage</var>, <var>memory</var>). (In other words, a <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"structuredserializeinternal:sub-serialization\">sub-serialization</a>\n      is a specialization of <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeinternal\" id=\"structuredserializeinternal:structuredserializeinternal-7\">StructuredSerializeInternal</a> to be consistent within this\n      invocation.)</p>"
             },
             {
               "html": "Otherwise, for each <var>key</var> in !\n      <a id=\"structuredserializeinternal:enumerableownproperties\" href=\"https://tc39.es/ecma262/#sec-enumerableownproperties\" data-x-internal=\"enumerableownproperties\">EnumerableOwnProperties</a>(<var>value</var>, key):",
@@ -3066,6 +3075,9 @@
           ]
         },
         {
+          "html": "<p>If <var>forStorage</var> is true and <var>serialized</var>.[[AgentCluster]] is not null, then\n    throw a <a id=\"structuredserializeinternal:datacloneerror-10\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializeinternal:domexception-10\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
           "html": "<p>Return <var>serialized</var>.</p>"
         }
       ]
@@ -3073,7 +3085,7 @@
     {
       "name": "StructuredSerialize",
       "href": "https://html.spec.whatwg.org/multipage/#structuredserialize",
-      "html": "<h4 id=\"structuredserialize\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerialize\"><span class=\"secno\">2.7.4</span> <dfn>StructuredSerialize</dfn> ( <var>value</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserialize\" class=\"self-link\"></a></h4>",
+      "html": "<h4 id=\"structuredserialize\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerialize\"><span class=\"secno\">2.7.5</span> <dfn>StructuredSerialize</dfn> ( <var>value</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserialize\" class=\"self-link\"></a></h4>",
       "rationale": "return",
       "steps": [
         {
@@ -3084,7 +3096,7 @@
     {
       "name": "StructuredSerializeForStorage",
       "href": "https://html.spec.whatwg.org/multipage/#structuredserializeforstorage",
-      "html": "<h4 id=\"structuredserializeforstorage\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerializeForStorage\"><span class=\"secno\">2.7.5</span> <dfn>StructuredSerializeForStorage</dfn> ( <var>value</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserializeforstorage\" class=\"self-link\"></a></h4>",
+      "html": "<h4 id=\"structuredserializeforstorage\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerializeForStorage\"><span class=\"secno\">2.7.6</span> <dfn>StructuredSerializeForStorage</dfn> ( <var>value</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserializeforstorage\" class=\"self-link\"></a></h4>",
       "rationale": "return",
       "steps": [
         {
@@ -3103,16 +3115,19 @@
           "html": "<p>If <var>memory</var>[<var>serialized</var>] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"structureddeserialize:map-exists\" data-x-internal=\"map-exists\">exists</a>, then\n   return <var>memory</var>[<var>serialized</var>].</p>"
         },
         {
+          "html": "<p>If <var>serialized</var>.[[Type]] is \"primitive\", then return\n   <var>serialized</var>.[[Value]].</p>"
+        },
+        {
+          "html": "<p>If <var>serialized</var>.[[AgentCluster]] is not null and <var>targetRealm</var>'s\n   corresponding <a id=\"structureddeserialize:agent-cluster\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> is not <var>serialized</var>.[[AgentCluster]], then\n   throw a <a id=\"structureddeserialize:datacloneerror\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
           "html": "<p>Let <var>deep</var> be false.</p>"
         },
         {
           "html": "<p>Let <var>value</var> be an uninitialized value.</p>"
         },
         {
-          "html": "<p>If <var>serialized</var>.[[Type]] is \"primitive\", then set <var>value</var> to\n   <var>serialized</var>.[[Value]].</p>"
-        },
-        {
-          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"Boolean\", then set <var>value</var> to a\n   new Boolean object in <var>targetRealm</var> whose [[BooleanData]] internal slot value is\n   <var>serialized</var>.[[BooleanData]].</p>"
+          "html": "<p>If <var>serialized</var>.[[Type]] is \"Boolean\", then set <var>value</var> to a new\n   Boolean object in <var>targetRealm</var> whose [[BooleanData]] internal slot value is\n   <var>serialized</var>.[[BooleanData]].</p>"
         },
         {
           "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"Number\", then set <var>value</var> to a\n   new Number object in <var>targetRealm</var> whose [[NumberData]] internal slot value is\n   <var>serialized</var>.[[NumberData]].</p>"
@@ -3130,34 +3145,16 @@
           "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"RegExp\", then set <var>value</var> to a\n   new RegExp object in <var>targetRealm</var> whose [[RegExpMatcher]] internal slot value is\n   <var>serialized</var>.[[RegExpMatcher]], whose [[OriginalSource]] internal slot value is\n   <var>serialized</var>.[[OriginalSource]], and whose [[OriginalFlags]] internal slot value is\n   <var>serialized</var>.[[OriginalFlags]].</p>"
         },
         {
-          "html": "Otherwise, if <var>serialized</var>.[[Type]] is \"SharedArrayBuffer\":",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>targetRealm</var>'s corresponding <a id=\"structureddeserialize:agent-cluster\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> is not\n     <var>serialized</var>.[[AgentCluster]], then throw a\n     <a id=\"structureddeserialize:datacloneerror\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, set <var>value</var> to a new SharedArrayBuffer object in\n     <var>targetRealm</var> whose [[ArrayBufferData]] internal slot value is\n     <var>serialized</var>.[[ArrayBufferData]] and whose [[ArrayBufferByteLength]] internal slot\n     value is <var>serialized</var>.[[ArrayBufferByteLength]].</p>"
-            }
-          ]
+          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"SharedArrayBuffer\", then set\n   <var>value</var> to a new SharedArrayBuffer object in <var>targetRealm</var> whose\n   [[ArrayBufferData]] internal slot value is <var>serialized</var>.[[ArrayBufferData]] and whose\n   [[ArrayBufferByteLength]] internal slot value is\n   <var>serialized</var>.[[ArrayBufferByteLength]].</p>"
         },
         {
-          "html": "Otherwise, if <var>serialized</var>.[[Type]] is \"GrowableSharedArrayBuffer\":",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>targetRealm</var>'s corresponding <a id=\"structureddeserialize:agent-cluster-2\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> is not\n     <var>serialized</var>.[[AgentCluster]], then throw a\n     <a id=\"structureddeserialize:datacloneerror-2\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-2\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, set <var>value</var> to a new SharedArrayBuffer object in\n     <var>targetRealm</var> whose [[ArrayBufferData]] internal slot value is\n     <var>serialized</var>.[[ArrayBufferData]], whose [[ArrayBufferByteLengthData]] internal slot\n     value is <var>serialized</var>.[[ArrayBufferByteLengthData]], and whose\n     [[ArrayBufferMaxByteLength]] internal slot value is\n     <var>serialized</var>.[[ArrayBufferMaxByteLength]].</p>"
-            }
-          ]
+          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"GrowableSharedArrayBuffer\", then set\n   <var>value</var> to a new SharedArrayBuffer object in <var>targetRealm</var> whose\n   [[ArrayBufferData]] internal slot value is <var>serialized</var>.[[ArrayBufferData]], whose\n   [[ArrayBufferByteLengthData]] internal slot value is\n   <var>serialized</var>.[[ArrayBufferByteLengthData]], and whose [[ArrayBufferMaxByteLength]]\n   internal slot value is <var>serialized</var>.[[ArrayBufferMaxByteLength]].</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"ArrayBuffer\", then set <var>value</var> to a\n    new ArrayBuffer object in <var>targetRealm</var> whose [[ArrayBufferData]] internal slot value\n    is <var>serialized</var>.[[ArrayBufferData]], and whose [[ArrayBufferByteLength]] internal slot\n    value is <var>serialized</var>.[[ArrayBufferByteLength]].</p>\n\n    <p>If this throws an exception, catch it, and then throw a\n    <a id=\"structureddeserialize:datacloneerror-3\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"ArrayBuffer\", then set <var>value</var> to a\n    new ArrayBuffer object in <var>targetRealm</var> whose [[ArrayBufferData]] internal slot value\n    is <var>serialized</var>.[[ArrayBufferData]], and whose [[ArrayBufferByteLength]] internal slot\n    value is <var>serialized</var>.[[ArrayBufferByteLength]].</p>\n\n    <p>If this throws an exception, catch it, and then throw a\n    <a id=\"structureddeserialize:datacloneerror-2\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-2\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"ResizableArrayBuffer\", then set\n    <var>value</var> to a new ArrayBuffer object in <var>targetRealm</var> whose [[ArrayBufferData]]\n    internal slot value is <var>serialized</var>.[[ArrayBufferData]], whose\n    [[ArrayBufferByteLength]] internal slot value is\n    <var>serialized</var>.[[ArrayBufferByteLength]], and whose [[ArrayBufferMaxByteLength]] internal\n    slot value is <var>serialized</var>.[[ArrayBufferMaxByteLength]].</p>\n\n    <p>If this throws an exception, catch it, and then throw a\n    <a id=\"structureddeserialize:datacloneerror-4\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-4\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>Otherwise, if <var>serialized</var>.[[Type]] is \"ResizableArrayBuffer\", then set\n    <var>value</var> to a new ArrayBuffer object in <var>targetRealm</var> whose [[ArrayBufferData]]\n    internal slot value is <var>serialized</var>.[[ArrayBufferData]], whose\n    [[ArrayBufferByteLength]] internal slot value is\n    <var>serialized</var>.[[ArrayBufferByteLength]], and whose [[ArrayBufferMaxByteLength]] internal\n    slot value is <var>serialized</var>.[[ArrayBufferMaxByteLength]].</p>\n\n    <p>If this throws an exception, catch it, and then throw a\n    <a id=\"structureddeserialize:datacloneerror-3\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "Otherwise, if <var>serialized</var>.[[Type]] is \"ArrayBufferView\":",
@@ -3278,7 +3275,7 @@
               "html": "<p>Let <var>interfaceName</var> be <var>serialized</var>.[[Type]].</p>"
             },
             {
-              "html": "<p>If the interface identified by <var>interfaceName</var> is not\n     <a href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"structureddeserialize:idl-exposed\" data-x-internal=\"idl-exposed\">exposed</a> in <var>targetRealm</var>, then throw a\n     <a id=\"structureddeserialize:datacloneerror-5\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-5\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+              "html": "<p>If the interface identified by <var>interfaceName</var> is not\n     <a href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"structureddeserialize:idl-exposed\" data-x-internal=\"idl-exposed\">exposed</a> in <var>targetRealm</var>, then throw a\n     <a id=\"structureddeserialize:datacloneerror-4\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserialize:domexception-4\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p>Set <var>value</var> to a new instance of the interface identified by\n     <var>interfaceName</var>, created in <var>targetRealm</var>.</p>"
@@ -3374,7 +3371,7 @@
     {
       "name": "StructuredSerializeWithTransfer",
       "href": "https://html.spec.whatwg.org/multipage/#structuredserializewithtransfer",
-      "html": "<h4 id=\"structuredserializewithtransfer\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerializeWithTransfer\"><span class=\"secno\">2.7.7</span> <dfn>StructuredSerializeWithTransfer</dfn> ( <var>value</var>, <var>transferList</var>\n  )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserializewithtransfer\" class=\"self-link\"></a></h4>",
+      "html": "<h4 id=\"structuredserializewithtransfer\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredSerializeWithTransfer\"><span class=\"secno\">2.7.8</span> <dfn>StructuredSerializeWithTransfer</dfn> ( <var>value</var>, <var>transferList</var>\n  )<a href=\"https://html.spec.whatwg.org/multipage/#structuredserializewithtransfer\" class=\"self-link\"></a></h4>",
       "rationale": "let",
       "steps": [
         {
@@ -3394,7 +3391,7 @@
               "html": "<p>If <var>memory</var>[<var>transferable</var>] <a href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"structuredserializewithtransfer:map-exists\" data-x-internal=\"map-exists\">exists</a>,\n     then throw a <a id=\"structuredserializewithtransfer:datacloneerror-3\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structuredserializewithtransfer:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
             },
             {
-              "html": "<p><a href=\"https://infra.spec.whatwg.org/#map-set\" id=\"structuredserializewithtransfer:map-set\" data-x-internal=\"map-set\">Set</a> <var>memory</var>[<var>transferable</var>] to {\n      [[Type]]: an uninitialized value }.</p>"
+              "html": "<p><a href=\"https://infra.spec.whatwg.org/#map-set\" id=\"structuredserializewithtransfer:map-set\" data-x-internal=\"map-set\">Set</a> <var>memory</var>[<var>transferable</var>] to {\n      [[Type]]: an uninitialized value, [[AgentCluster]]: null }.</p>"
             }
           ]
         },
@@ -3473,6 +3470,9 @@
                   "html": "<p>Set <var>dataHolder</var>.[[Type]] to <var>interfaceName</var>.</p>"
                 },
                 {
+                  "html": "<p>If <var>transferable</var>'s <a id=\"structuredserializewithtransfer:primary-interface-2\" href=\"https://webidl.spec.whatwg.org/#dfn-primary-interface\" data-x-internal=\"primary-interface\">primary interface</a> is decorated with <code id=\"structuredserializewithtransfer:sameagentcluster\"><a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sameagentcluster\">[SameAgentCluster]</a></code>, then <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#restrict-to-the-same-agent-cluster\" id=\"structuredserializewithtransfer:restrict-to-the-same-agent-cluster\">restrict</a> <var>dataHolder</var> to the same agent\n       cluster.</p>"
+                },
+                {
                   "html": "<p>Perform the appropriate <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transfer-steps\" id=\"structuredserializewithtransfer:transfer-steps\">transfer steps</a> for the interface identified by\n       <var>interfaceName</var>, given <var>transferable</var> and <var>dataHolder</var>.</p>"
                 },
                 {
@@ -3486,24 +3486,51 @@
           ]
         },
         {
-          "html": "<p>Return { [[Serialized]]: <var>serialized</var>, [[TransferDataHolders]]:\n   <var>transferDataHolders</var> }.</p>"
+          "html": "<p>Let <var>result</var> be { [[Serialized]]: <var>serialized</var>,\n   [[TransferDataHolders]]: <var>transferDataHolders</var>, [[InterfaceNames]]: an empty <a href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"structuredserializewithtransfer:set\" data-x-internal=\"set\">ordered set</a>, [[AgentCluster]]: null }.</p>"
+        },
+        {
+          "html": "<a href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"structuredserializewithtransfer:map-iterate\" data-x-internal=\"map-iterate\">For each</a> <var>object</var> → <var>record</var> of\n    <var>memory</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>object</var> is a <a id=\"structuredserializewithtransfer:platform-object-2\" href=\"https://webidl.spec.whatwg.org/#dfn-platform-object\" data-x-internal=\"platform-object\">platform object</a>, then <a href=\"https://infra.spec.whatwg.org/#set-append\" id=\"structuredserializewithtransfer:set-append\" data-x-internal=\"set-append\">append</a> <var>record</var>.[[Type]] to\n     <var>result</var>.[[InterfaceNames]].</p>"
+            },
+            {
+              "html": "<p>If <var>record</var>.[[AgentCluster]] is not null, then <a href=\"https://html.spec.whatwg.org/multipage/structured-data.html#restrict-to-the-same-agent-cluster\" id=\"structuredserializewithtransfer:restrict-to-the-same-agent-cluster-2\">restrict</a> <var>result</var> to the same agent cluster.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
         }
       ]
     },
     {
       "name": "StructuredDeserializeWithTransfer",
       "href": "https://html.spec.whatwg.org/multipage/#structureddeserializewithtransfer",
-      "html": "<h4 id=\"structureddeserializewithtransfer\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredDeserializeWithTransfer\"><span class=\"secno\">2.7.8</span> <dfn>StructuredDeserializeWithTransfer</dfn> ( <var>serializeWithTransferResult</var>,\n  <var>targetRealm</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structureddeserializewithtransfer\" class=\"self-link\"></a></h4>",
+      "html": "<h4 id=\"structureddeserializewithtransfer\" data-dfn-type=\"abstract-op\" data-lt=\"StructuredDeserializeWithTransfer\"><span class=\"secno\">2.7.9</span> <dfn>StructuredDeserializeWithTransfer</dfn> ( <var>serializeWithTransferResult</var>,\n  <var>targetRealm</var> )<a href=\"https://html.spec.whatwg.org/multipage/#structureddeserializewithtransfer\" class=\"self-link\"></a></h4>",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>memory</var> be an empty <a href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"structureddeserializewithtransfer:ordered-map\" data-x-internal=\"ordered-map\">map</a>.</p>"
         },
         {
+          "html": "<p>If <var>serializeWithTransferResult</var>.[[AgentCluster]] is not null and\n   <var>targetRealm</var>'s corresponding <a id=\"structureddeserializewithtransfer:agent-cluster\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" data-x-internal=\"agent-cluster\">agent cluster</a> is not\n   <var>serializeWithTransferResult</var>.[[AgentCluster]], then throw a\n   <a id=\"structureddeserializewithtransfer:datacloneerror\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserializewithtransfer:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"structureddeserializewithtransfer:list-iterate\" data-x-internal=\"list-iterate\">For each</a> <var>interfaceName</var> of\n    <var>serializeWithTransferResult</var>.[[InterfaceNames]]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the interface identified by <var>interfaceName</var> is not <a href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"structureddeserializewithtransfer:idl-exposed\" data-x-internal=\"idl-exposed\">exposed</a> in <var>targetRealm</var>, then throw a\n     <a id=\"structureddeserializewithtransfer:datacloneerror-2\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a> <code id=\"structureddeserializewithtransfer:domexception-2\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Let <var>transferredValues</var> be a new empty <a href=\"https://tc39.es/ecma262/#sec-list-and-record-specification-type\" id=\"structureddeserializewithtransfer:js-list\" data-x-internal=\"js-list\">List</a>.</p>"
         },
         {
-          "html": "<a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"structureddeserializewithtransfer:list-iterate\" data-x-internal=\"list-iterate\">For each</a> <var>transferDataHolder</var> of\n    <var>serializeWithTransferResult</var>.[[TransferDataHolders]]:",
+          "html": "<a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"structureddeserializewithtransfer:list-iterate-2\" data-x-internal=\"list-iterate\">For each</a> <var>transferDataHolder</var> of\n    <var>serializeWithTransferResult</var>.[[TransferDataHolders]]:",
           "rationale": "let",
           "steps": [
             {
@@ -3521,9 +3548,6 @@
               "steps": [
                 {
                   "html": "<p>Let <var>interfaceName</var> be <var>transferDataHolder</var>.[[Type]].</p>"
-                },
-                {
-                  "html": "<p>If the interface identified by <var>interfaceName</var> is not exposed in\n       <var>targetRealm</var>, then throw a <a id=\"structureddeserializewithtransfer:datacloneerror\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" data-x-internal=\"datacloneerror\">\"<code>DataCloneError</code>\"</a>\n       <code id=\"structureddeserializewithtransfer:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
                 },
                 {
                   "html": "<p>Set <var>value</var> to a new instance of the interface identified by\n       <var>interfaceName</var>, created in <var>targetRealm</var>.</p>"
