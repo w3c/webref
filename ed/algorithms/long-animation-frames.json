@@ -119,7 +119,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>window</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/managing-memory.html#sec-weakrefderef\" id=\"ref-for-sec-weakrefderef\">deref</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info②②\">timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-window\" id=\"ref-for-script-timing-info-window①\">window</a>.</p>"
+          "html": "<p>Let <var>window</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/managing-memory.html#sec-weakrefderef\" id=\"ref-for-sec-weakrefderef\">deref</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#performancescripttiming-timing-info\" id=\"ref-for-performancescripttiming-timing-info②④\">timing info</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-window\" id=\"ref-for-script-timing-info-window①\">window</a>.</p>"
         },
         {
           "html": "<p>If <var>window</var> is undefined, then return null; Otherwise return <var>window</var>.</p>"
@@ -570,6 +570,12 @@
         },
         {
           "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-character-position\" id=\"ref-for-script-timing-info-source-character-position①\">source character position</a> to the character position where <var>callback</var> was defined.</p>"
+        },
+        {
+          "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-line-number\" id=\"ref-for-script-timing-info-source-line-number①\">source line number</a> to the line number where <var>callback</var> was defined.</p>"
+        },
+        {
+          "html": "<p>The user agent may set <var>scriptTimingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#script-timing-info-source-column-number\" id=\"ref-for-script-timing-info-source-column-number①\">source column number</a> to the column number where <var>callback</var> was defined</p>"
         }
       ]
     },
