@@ -9,8 +9,10 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developers.google.com/web/fundamentals/performance/rail": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-conditional-5/": {},
       "https://drafts.csswg.org/cssom-view/": {},
       "https://drafts.csswg.org/cssom/": {},
+      "https://drafts.csswg.org/resize-observer/": {},
       "https://en.wikipedia.org/wiki/Real_user_monitoring": {},
       "https://github.com/w3c/long-animation-frames": {},
       "https://github.com/w3c/long-animation-frames/issues": {},
@@ -53,6 +55,11 @@
           "dom-event-timestamp"
         ]
       },
+      "https://drafts.csswg.org/css-conditional-5/": {
+        "anchors": [
+          "container-size-query"
+        ]
+      },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "dom-window-getcomputedstyle"
@@ -61,6 +68,11 @@
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "dom-element-getboundingclientrect"
+        ]
+      },
+      "https://drafts.csswg.org/resize-observer-1/": {
+        "anchors": [
+          "resizeobserver"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {
@@ -85,6 +97,11 @@
           "fully-active"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-iframe-element"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "dom-document-hidden"
@@ -105,12 +122,15 @@
           "environment-settings-object",
           "concept-settings-object-global",
           "relevant-settings-object",
+          "concept-settings-object-cross-origin-isolated-capability",
           "concept-realm-settings-object",
           "concept-script",
+          "classic-script",
           "concept-script-base-url",
           "settings-object",
-          "classic-script",
-          "module-script"
+          "module-script",
+          "concept-agent-event-loop",
+          "update-the-rendering"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -121,10 +141,21 @@
           "list-contain",
           "list-append",
           "string-concatenate",
-          "implementation-defined",
           "struct",
           "struct-item",
-          "assert"
+          "stack",
+          "assert",
+          "list-is-empty",
+          "list-empty",
+          "stack-push",
+          "stack-pop",
+          "implementation-defined",
+          "stack-peek"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+        "anchors": [
+          "surrounding-agent"
         ]
       },
       "https://tc39.es/ecma262/multipage/managing-memory.html": {
@@ -147,7 +178,8 @@
           "monotonic-clock-unsafe-current-time",
           "dfn-coarsen-time",
           "dfn-unsafe-shared-current-time",
-          "dfn-current-high-resolution-time"
+          "dfn-current-high-resolution-time",
+          "dfn-coarsened-shared-current-time"
         ]
       },
       "https://w3c.github.io/longtasks/": {
@@ -158,6 +190,7 @@
       "https://w3c.github.io/paint-timing/": {
         "anchors": [
           "painttimingmixin",
+          "dom-painttimingmixin-painttime",
           "paint-timing-info",
           "painttimingmixin-paint-timing-info"
         ]

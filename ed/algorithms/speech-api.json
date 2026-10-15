@@ -122,13 +122,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>langs</var> is an empty sequence, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-unavailable\" id=\"ref-for-dom-availabilitystatus-unavailable①\">unavailable</a></code>.</p>"
+              "html": "<p>If <var>langs</var> is an empty sequence, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-unavailable\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-unavailable①\">unavailable</a></code>.</p>"
             },
             {
-              "html": "<p>Else if speech recognition (which may be remote) is available for all <var>language</var> in <var>langs</var>, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-available\" id=\"ref-for-dom-availabilitystatus-available①\">available</a></code>.</p>"
+              "html": "<p>Else if speech recognition (which may be remote) is available for all <var>language</var> in <var>langs</var>, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-available\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-available①\">available</a></code>.</p>"
             },
             {
-              "html": "<p>Else, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-unavailable\" id=\"ref-for-dom-availabilitystatus-unavailable②\">unavailable</a></code>.</p>"
+              "html": "<p>Else, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-unavailable\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-unavailable②\">unavailable</a></code>.</p>"
             }
           ]
         },
@@ -137,14 +137,14 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>langs</var> is an empty sequence, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-unavailable\" id=\"ref-for-dom-availabilitystatus-unavailable③\">unavailable</a></code>."
+              "html": "If <var>langs</var> is an empty sequence, let <var>status</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-unavailable\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-unavailable③\">unavailable</a></code>."
             },
             {
               "html": "Else:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>finalStatus</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-available\" id=\"ref-for-dom-availabilitystatus-available②\">available</a></code>."
+                  "html": "Let <var>finalStatus</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-available\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-available②\">available</a></code>."
                 },
                 {
                   "html": "For each <var>language</var> in <var>langs</var>:",
@@ -154,19 +154,19 @@
                       "html": "Let <var>currentLanguageStatus</var>."
                     },
                     {
-                      "html": "If on-device speech recognition for <var>language</var> is installed, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-available\" id=\"ref-for-dom-availabilitystatus-available③\">available</a></code>."
+                      "html": "If on-device speech recognition for <var>language</var> is installed, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-available\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-available③\">available</a></code>."
                     },
                     {
-                      "html": "Else if on-device speech recognition for <var>language</var> is currently being downloaded, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-downloading\" id=\"ref-for-dom-availabilitystatus-downloading①\">downloading</a></code>."
+                      "html": "Else if on-device speech recognition for <var>language</var> is currently being downloaded, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-downloading\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-downloading①\">downloading</a></code>."
                     },
                     {
-                      "html": "Else if on-device speech recognition for <var>language</var> is supported by the user agent but not yet installed, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-downloadable\" id=\"ref-for-dom-availabilitystatus-downloadable①\">downloadable</a></code>."
+                      "html": "Else if on-device speech recognition for <var>language</var> is supported by the user agent but not yet installed, set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-downloadable\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-downloadable①\">downloadable</a></code>."
                     },
                     {
-                      "html": "Else (on-device speech recognition for <var>language</var> is not supported), set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-availabilitystatus-unavailable\" id=\"ref-for-dom-availabilitystatus-unavailable④\">unavailable</a></code>."
+                      "html": "Else (on-device speech recognition for <var>language</var> is not supported), set <var>currentLanguageStatus</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-speech-api/#dom-speechrecognitionavailabilitystatus-unavailable\" id=\"ref-for-dom-speechrecognitionavailabilitystatus-unavailable④\">unavailable</a></code>."
                     },
                     {
-                      "html": "If <var>currentLanguageStatus</var> comes after <var>finalStatus</var> in the ordered list <code>[{{AvailabilityStatus/available}}, {{AvailabilityStatus/downloading}}, {{AvailabilityStatus/downloadable}}, {{AvailabilityStatus/unavailable}}]</code>, set <var>finalStatus</var> to <var>currentLanguageStatus</var>."
+                      "html": "If <var>currentLanguageStatus</var> comes after <var>finalStatus</var> in the ordered list <code>[{{SpeechRecognitionAvailabilityStatus/available}}, {{SpeechRecognitionAvailabilityStatus/downloading}}, {{SpeechRecognitionAvailabilityStatus/downloadable}}, {{SpeechRecognitionAvailabilityStatus/unavailable}}]</code>, set <var>finalStatus</var> to <var>currentLanguageStatus</var>."
                     }
                   ]
                 },
