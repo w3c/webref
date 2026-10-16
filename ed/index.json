@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-10-16T12:55:02.374Z",
+  "date": "2026-10-16T13:58:38.308Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -72,22 +72,31 @@
       "ESSL",
       "ANGLE_instanced_arrays",
       "EXT_blend_minmax",
+      "EXT_clip_control",
       "EXT_color_buffer_float",
       "EXT_color_buffer_half_float",
+      "EXT_conservative_depth",
+      "EXT_depth_clamp",
       "EXT_disjoint_timer_query_webgl2",
       "EXT_disjoint_timer_query",
       "EXT_float_blend",
       "EXT_frag_depth",
+      "EXT_polygon_offset_clamp",
+      "EXT_render_snorm",
       "EXT_shader_texture_lod",
       "EXT_sRGB",
       "EXT_texture_compression_bptc",
       "EXT_texture_compression_rgtc",
       "EXT_texture_filter_anisotropic",
+      "EXT_texture_mirror_clamp_to_edge",
       "EXT_texture_norm16",
       "KHR_parallel_shader_compile",
+      "NV_shader_noperspective_interpolation",
       "OES_draw_buffers_indexed",
       "OES_element_index_uint",
       "OES_fbo_render_mipmap",
+      "OES_sample_variables",
+      "OES_shader_multisample_interpolation",
       "OES_standard_derivatives",
       "OES_texture_float_linear",
       "OES_texture_float",
@@ -96,6 +105,7 @@
       "OES_vertex_array_object",
       "OVR_multiview2",
       "WEBGL_blend_equation_advanced_coherent",
+      "WEBGL_blend_func_extended",
       "WEBGL_clip_cull_distance",
       "WEBGL_color_buffer_float",
       "WEBGL_compressed_texture_astc",
@@ -112,7 +122,11 @@
       "WEBGL_lose_context",
       "WEBGL_multi_draw_instanced_base_vertex_base_instance",
       "WEBGL_multi_draw",
+      "WEBGL_polygon_mode",
       "WEBGL_provoking_vertex",
+      "WEBGL_render_shared_exponent",
+      "WEBGL_shader_pixel_local_storage",
+      "WEBGL_stencil_texturing",
       "webgl1",
       "webgl2",
       "captured-mouse-events",
@@ -125,14 +139,12 @@
       "ecma-402",
       "ecma-426",
       "tc39-async-explicit-resource-management",
-      "tc39-atomics-microwait",
       "tc39-await-dictionary",
       "tc39-canonical-tz",
       "tc39-decorators",
       "tc39-defer-import-eval",
       "tc39-dynamic-code-brand-checks",
       "tc39-error-stack-accessor",
-      "tc39-explicit-resource-management",
       "tc39-import-text",
       "tc39-intl-duration-format",
       "tc39-intl-era-monthcode",
@@ -140,9 +152,6 @@
       "tc39-intl-locale-info",
       "tc39-iterator-chunking",
       "tc39-iterator-includes",
-      "tc39-iterator-join",
-      "tc39-joint-iteration",
-      "tc39-json-parse-with-source",
       "tc39-nonextensible-applies-to-private",
       "tc39-regexp-buffer-boundaries",
       "tc39-shadowrealm",
@@ -159,6 +168,7 @@
       "mathml-aam",
       "pdf-aam",
       "at-driver",
+      "container-timing",
       "shacl12-cs",
       "execCommand",
       "element-timing",
@@ -214,7 +224,6 @@
       "capability-delegation",
       "client-hints-infrastructure",
       "connection-allowlists",
-      "container-timing",
       "content-index",
       "cpu-performance",
       "crash-reporting",
@@ -794,10 +803,10 @@
     ]
   },
   "stats": {
-    "crawled": 762,
-    "errors": 47
+    "crawled": 771,
+    "errors": 61
   },
-  "crawler": "reffy-21.2.0",
+  "crawler": "reffy-21.2.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -2533,7 +2542,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shadow-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "28 April 2026",
@@ -2846,7 +2855,7 @@
       ],
       "crawled": "https://drafts.csswg.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "2 October 2026",
@@ -4590,6 +4599,50 @@
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_clip_control/",
+      "seriesComposition": "full",
+      "shortname": "EXT_clip_control",
+      "series": {
+        "shortname": "EXT_clip_control",
+        "currentSpecification": "EXT_clip_control",
+        "title": "WebGL EXT_clip_control Extension Specification",
+        "shortTitle": "WebGL EXT_clip_control Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_clip_control/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_clip_control/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_clip_control/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_clip_control Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_clip_control Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_clip_control/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_clip_control/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "seriesComposition": "full",
       "shortname": "EXT_color_buffer_float",
@@ -4692,6 +4745,94 @@
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "cddl": [],
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_conservative_depth/",
+      "seriesComposition": "full",
+      "shortname": "EXT_conservative_depth",
+      "series": {
+        "shortname": "EXT_conservative_depth",
+        "currentSpecification": "EXT_conservative_depth",
+        "title": "WebGL EXT_conservative_depth Extension Specification",
+        "shortTitle": "WebGL EXT_conservative_depth Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_conservative_depth/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_conservative_depth/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_conservative_depth/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_conservative_depth Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_conservative_depth Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_conservative_depth/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_conservative_depth/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_depth_clamp/",
+      "seriesComposition": "full",
+      "shortname": "EXT_depth_clamp",
+      "series": {
+        "shortname": "EXT_depth_clamp",
+        "currentSpecification": "EXT_depth_clamp",
+        "title": "WebGL EXT_depth_clamp Extension Specification",
+        "shortTitle": "WebGL EXT_depth_clamp Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_depth_clamp/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_depth_clamp/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_depth_clamp/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_depth_clamp Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_depth_clamp Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_depth_clamp/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_depth_clamp/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -4902,6 +5043,94 @@
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_frag_depth/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_polygon_offset_clamp/",
+      "seriesComposition": "full",
+      "shortname": "EXT_polygon_offset_clamp",
+      "series": {
+        "shortname": "EXT_polygon_offset_clamp",
+        "currentSpecification": "EXT_polygon_offset_clamp",
+        "title": "WebGL EXT_polygon_offset_clamp Extension Specification",
+        "shortTitle": "WebGL EXT_polygon_offset_clamp Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_polygon_offset_clamp/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_polygon_offset_clamp/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_polygon_offset_clamp/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_polygon_offset_clamp Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_polygon_offset_clamp Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_polygon_offset_clamp/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_polygon_offset_clamp/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_render_snorm/",
+      "seriesComposition": "full",
+      "shortname": "EXT_render_snorm",
+      "series": {
+        "shortname": "EXT_render_snorm",
+        "currentSpecification": "EXT_render_snorm",
+        "title": "WebGL EXT_render_snorm Extension Specification",
+        "shortTitle": "WebGL EXT_render_snorm Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_render_snorm/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_render_snorm/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_render_snorm/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_render_snorm Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_render_snorm Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_render_snorm/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_render_snorm/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "seriesComposition": "full",
       "shortname": "EXT_shader_texture_lod",
@@ -4951,7 +5180,7 @@
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 72)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
@@ -5162,6 +5391,50 @@
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_mirror_clamp_to_edge/",
+      "seriesComposition": "full",
+      "shortname": "EXT_texture_mirror_clamp_to_edge",
+      "series": {
+        "shortname": "EXT_texture_mirror_clamp_to_edge",
+        "currentSpecification": "EXT_texture_mirror_clamp_to_edge",
+        "title": "WebGL EXT_texture_mirror_clamp_to_edge Extension Specification",
+        "shortTitle": "WebGL EXT_texture_mirror_clamp_to_edge Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/EXT_texture_mirror_clamp_to_edge/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_mirror_clamp_to_edge/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/EXT_texture_mirror_clamp_to_edge/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL EXT_texture_mirror_clamp_to_edge Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL EXT_texture_mirror_clamp_to_edge Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/EXT_texture_mirror_clamp_to_edge/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/EXT_texture_mirror_clamp_to_edge/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
       "url": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "seriesComposition": "full",
       "shortname": "EXT_texture_norm16",
@@ -5264,6 +5537,50 @@
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "cddl": [],
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/NV_shader_noperspective_interpolation/",
+      "seriesComposition": "full",
+      "shortname": "NV_shader_noperspective_interpolation",
+      "series": {
+        "shortname": "NV_shader_noperspective_interpolation",
+        "currentSpecification": "NV_shader_noperspective_interpolation",
+        "title": "WebGL NV_shader_noperspective_interpolation Extension Specification",
+        "shortTitle": "WebGL NV_shader_noperspective_interpolation Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/NV_shader_noperspective_interpolation/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/NV_shader_noperspective_interpolation/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/NV_shader_noperspective_interpolation/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL NV_shader_noperspective_interpolation Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL NV_shader_noperspective_interpolation Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/NV_shader_noperspective_interpolation/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/NV_shader_noperspective_interpolation/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
@@ -5419,7 +5736,95 @@
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 81)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/OES_sample_variables/",
+      "seriesComposition": "full",
+      "shortname": "OES_sample_variables",
+      "series": {
+        "shortname": "OES_sample_variables",
+        "currentSpecification": "OES_sample_variables",
+        "title": "WebGL OES_sample_variables Extension Specification",
+        "shortTitle": "WebGL OES_sample_variables Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/OES_sample_variables/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/OES_sample_variables/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/OES_sample_variables/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL OES_sample_variables Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL OES_sample_variables Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/OES_sample_variables/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_sample_variables/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/OES_shader_multisample_interpolation/",
+      "seriesComposition": "full",
+      "shortname": "OES_shader_multisample_interpolation",
+      "series": {
+        "shortname": "OES_shader_multisample_interpolation",
+        "currentSpecification": "OES_shader_multisample_interpolation",
+        "title": "WebGL OES_shader_multisample_interpolation Extension Specification",
+        "shortTitle": "WebGL OES_shader_multisample_interpolation Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/OES_shader_multisample_interpolation/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/OES_shader_multisample_interpolation/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/OES_shader_multisample_interpolation/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL OES_shader_multisample_interpolation Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL OES_shader_multisample_interpolation Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/OES_shader_multisample_interpolation/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_shader_multisample_interpolation/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
@@ -5471,7 +5876,7 @@
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 82)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
@@ -5838,6 +6243,50 @@
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_func_extended/",
+      "seriesComposition": "full",
+      "shortname": "WEBGL_blend_func_extended",
+      "series": {
+        "shortname": "WEBGL_blend_func_extended",
+        "currentSpecification": "WEBGL_blend_func_extended",
+        "title": "WebGL WEBGL_blend_func_extended Extension Specification",
+        "shortTitle": "WebGL WEBGL_blend_func_extended Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_func_extended/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_func_extended/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/WEBGL_blend_func_extended/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL WEBGL_blend_func_extended Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL WEBGL_blend_func_extended Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/WEBGL_blend_func_extended/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_blend_func_extended/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "seriesComposition": "full",
       "shortname": "WEBGL_clip_cull_distance",
@@ -6147,7 +6596,7 @@
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 95)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
@@ -6199,7 +6648,7 @@
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 96)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -6251,7 +6700,7 @@
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 97)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
@@ -6303,7 +6752,7 @@
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 98)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
@@ -6355,7 +6804,7 @@
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 99)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
@@ -6407,7 +6856,7 @@
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 100)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
@@ -6459,7 +6908,7 @@
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 101)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
@@ -6667,7 +7116,51 @@
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 115)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_polygon_mode/",
+      "seriesComposition": "full",
+      "shortname": "WEBGL_polygon_mode",
+      "series": {
+        "shortname": "WEBGL_polygon_mode",
+        "currentSpecification": "WEBGL_polygon_mode",
+        "title": "WebGL WEBGL_polygon_mode Extension Specification",
+        "shortTitle": "WebGL WEBGL_polygon_mode Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_polygon_mode/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/WEBGL_polygon_mode/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/WEBGL_polygon_mode/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL WEBGL_polygon_mode Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL WEBGL_polygon_mode Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/WEBGL_polygon_mode/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_polygon_mode/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
@@ -6720,6 +7213,138 @@
       "idl": "idl/WEBGL_provoking_vertex.idl",
       "cddl": [],
       "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_render_shared_exponent/",
+      "seriesComposition": "full",
+      "shortname": "WEBGL_render_shared_exponent",
+      "series": {
+        "shortname": "WEBGL_render_shared_exponent",
+        "currentSpecification": "WEBGL_render_shared_exponent",
+        "title": "WebGL WEBGL_render_shared_exponent Extension Specification",
+        "shortTitle": "WebGL WEBGL_render_shared_exponent Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_render_shared_exponent/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/WEBGL_render_shared_exponent/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/WEBGL_render_shared_exponent/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL WEBGL_render_shared_exponent Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL WEBGL_render_shared_exponent Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/WEBGL_render_shared_exponent/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_render_shared_exponent/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 118)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/",
+      "seriesComposition": "full",
+      "shortname": "WEBGL_shader_pixel_local_storage",
+      "series": {
+        "shortname": "WEBGL_shader_pixel_local_storage",
+        "currentSpecification": "WEBGL_shader_pixel_local_storage",
+        "title": "WebGL WEBGL_shader_pixel_local_storage Extension Draft Specification",
+        "shortTitle": "WebGL WEBGL_shader_pixel_local_storage Extension Draft",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/WEBGL_shader_pixel_local_storage/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL WEBGL_shader_pixel_local_storage Extension Draft Specification",
+      "source": "spec",
+      "shortTitle": "WebGL WEBGL_shader_pixel_local_storage Extension Draft",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 119)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+    },
+    {
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_stencil_texturing/",
+      "seriesComposition": "full",
+      "shortname": "WEBGL_stencil_texturing",
+      "series": {
+        "shortname": "WEBGL_stencil_texturing",
+        "currentSpecification": "WEBGL_stencil_texturing",
+        "title": "WebGL WEBGL_stencil_texturing Extension Specification",
+        "shortTitle": "WebGL WEBGL_stencil_texturing Extension",
+        "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_stencil_texturing/"
+      },
+      "organization": "Khronos Group",
+      "groups": [
+        {
+          "name": "WebGL Working Group",
+          "url": "https://www.khronos.org/webgl/"
+        }
+      ],
+      "nightly": {
+        "url": "https://registry.khronos.org/webgl/extensions/WEBGL_stencil_texturing/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "sourcePath": "extensions/WEBGL_stencil_texturing/extension.xml",
+        "filename": "index.html"
+      },
+      "title": "WebGL WEBGL_stencil_texturing Extension Specification",
+      "source": "spec",
+      "shortTitle": "WebGL WEBGL_stencil_texturing Extension",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
+      "versions": [
+        "https://registry.khronos.org/webgl/extensions/WEBGL_stencil_texturing/"
+      ],
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_stencil_texturing/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 120)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://registry.khronos.org/webgl/specs/latest/1.0/",
@@ -6777,7 +7402,7 @@
       "headings": "headings/webgl1.json",
       "ids": "ids/webgl1.json",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/1.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/1.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 121)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://registry.khronos.org/webgl/specs/latest/2.0/",
@@ -6835,7 +7460,7 @@
       "headings": "headings/webgl2.json",
       "ids": "ids/webgl2.json",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/2.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/2.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 122)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://screen-share.github.io/captured-mouse-events/",
@@ -6968,7 +7593,7 @@
         "status": "Living Standard",
         "alternateUrls": [],
         "repository": "https://github.com/whatwg/serial",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "WebSerial Standard",
@@ -7256,7 +7881,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 Oct 2026 21:36:15 GMT"
+        "lastModified": "Thu, 15 Oct 2026 21:36:13 GMT"
       },
       "date": "15 October 2026",
       "links": "links/ecmascript.json",
@@ -7415,52 +8040,6 @@
       "links": "links/tc39-async-explicit-resource-management.json",
       "headings": "headings/tc39-async-explicit-resource-management.json",
       "ids": "ids/tc39-async-explicit-resource-management.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-atomics-microwait/",
-      "seriesComposition": "full",
-      "shortname": "tc39-atomics-microwait",
-      "series": {
-        "shortname": "tc39-atomics-microwait",
-        "currentSpecification": "tc39-atomics-microwait",
-        "title": "Atomics.pause",
-        "shortTitle": "Atomics.pause",
-        "nightlyUrl": "https://tc39.es/proposal-atomics-microwait/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-atomics-microwait/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-atomics-microwait",
-        "sourcePath": "spec/index.html",
-        "filename": "index.html"
-      },
-      "title": "Atomics.pause",
-      "source": "spec",
-      "shortTitle": "Atomics.pause",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-atomics-microwait/"
-      ],
-      "crawled": "https://tc39.es/proposal-atomics-microwait/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 16:43:08 GMT"
-      },
-      "date": "2 June 2026",
-      "links": "links/tc39-atomics-microwait.json",
-      "headings": "headings/tc39-atomics-microwait.json",
-      "ids": "ids/tc39-atomics-microwait.json",
       "cddl": []
     },
     {
@@ -7732,58 +8311,12 @@
       ],
       "crawled": "https://tc39.es/proposal-error-stack-accessor/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 21 May 2026 12:13:08 GMT"
+        "lastModified": "Thu, 21 May 2026 12:13:04 GMT"
       },
       "date": "21 May 2026",
       "links": "links/tc39-error-stack-accessor.json",
       "headings": "headings/tc39-error-stack-accessor.json",
       "ids": "ids/tc39-error-stack-accessor.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-explicit-resource-management/",
-      "seriesComposition": "full",
-      "shortname": "tc39-explicit-resource-management",
-      "series": {
-        "shortname": "tc39-explicit-resource-management",
-        "currentSpecification": "tc39-explicit-resource-management",
-        "title": "ECMAScript Explicit Resource Management",
-        "shortTitle": "ECMAScript Explicit Resource Management",
-        "nightlyUrl": "https://tc39.es/proposal-explicit-resource-management/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-explicit-resource-management/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-explicit-resource-management",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "ECMAScript Explicit Resource Management",
-      "source": "spec",
-      "shortTitle": "ECMAScript Explicit Resource Management",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-explicit-resource-management/"
-      ],
-      "crawled": "https://tc39.es/proposal-explicit-resource-management/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 15 Jun 2024 21:25:59 GMT"
-      },
-      "date": "15 June 2024",
-      "links": "links/tc39-explicit-resource-management.json",
-      "headings": "headings/tc39-explicit-resource-management.json",
-      "ids": "ids/tc39-explicit-resource-management.json",
       "cddl": []
     },
     {
@@ -8102,150 +8635,12 @@
       ],
       "crawled": "https://tc39.es/proposal-iterator-includes/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 08 Aug 2026 23:45:05 GMT"
+        "lastModified": "Sat, 08 Aug 2026 23:45:04 GMT"
       },
       "date": "8 August 2026",
       "links": "links/tc39-iterator-includes.json",
       "headings": "headings/tc39-iterator-includes.json",
       "ids": "ids/tc39-iterator-includes.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-iterator-join/",
-      "seriesComposition": "full",
-      "shortname": "tc39-iterator-join",
-      "series": {
-        "shortname": "tc39-iterator-join",
-        "currentSpecification": "tc39-iterator-join",
-        "title": "Proposal Iterator Join",
-        "shortTitle": "Proposal Iterator Join",
-        "nightlyUrl": "https://tc39.es/proposal-iterator-join/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-iterator-join/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-iterator-join",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Proposal Iterator Join",
-      "source": "spec",
-      "shortTitle": "Proposal Iterator Join",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-iterator-join/"
-      ],
-      "crawled": "https://tc39.es/proposal-iterator-join/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Oct 2026 23:34:39 GMT"
-      },
-      "date": "10 October 2026",
-      "links": "links/tc39-iterator-join.json",
-      "headings": "headings/tc39-iterator-join.json",
-      "ids": "ids/tc39-iterator-join.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-joint-iteration/",
-      "seriesComposition": "full",
-      "shortname": "tc39-joint-iteration",
-      "series": {
-        "shortname": "tc39-joint-iteration",
-        "currentSpecification": "tc39-joint-iteration",
-        "title": "Joint Iteration",
-        "shortTitle": "Joint Iteration",
-        "nightlyUrl": "https://tc39.es/proposal-joint-iteration/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-joint-iteration/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-joint-iteration",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "Joint Iteration",
-      "source": "spec",
-      "shortTitle": "Joint Iteration",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-joint-iteration/"
-      ],
-      "crawled": "https://tc39.es/proposal-joint-iteration/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 29 May 2026 21:09:49 GMT"
-      },
-      "date": "29 May 2026",
-      "links": "links/tc39-joint-iteration.json",
-      "headings": "headings/tc39-joint-iteration.json",
-      "ids": "ids/tc39-joint-iteration.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-json-parse-with-source/",
-      "seriesComposition": "full",
-      "shortname": "tc39-json-parse-with-source",
-      "series": {
-        "shortname": "tc39-json-parse-with-source",
-        "currentSpecification": "tc39-json-parse-with-source",
-        "title": "JSON.parse source text access",
-        "shortTitle": "JSON.parse source text access",
-        "nightlyUrl": "https://tc39.es/proposal-json-parse-with-source/"
-      },
-      "standing": "good",
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-json-parse-with-source/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-json-parse-with-source",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "JSON.parse source text access",
-      "source": "spec",
-      "shortTitle": "JSON.parse source text access",
-      "categories": [
-        "browser"
-      ],
-      "versions": [
-        "https://tc39.es/proposal-json-parse-with-source/"
-      ],
-      "crawled": "https://tc39.es/proposal-json-parse-with-source/",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 23 Nov 2025 22:13:47 GMT"
-      },
-      "date": "23 November 2025",
-      "links": "links/tc39-json-parse-with-source.json",
-      "headings": "headings/tc39-json-parse-with-source.json",
-      "ids": "ids/tc39-json-parse-with-source.json",
       "cddl": []
     },
     {
@@ -8903,7 +9298,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/css-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -9079,6 +9474,58 @@
           "file": "cddl/at-driver-local-cddl.cddl"
         }
       ]
+    },
+    {
+      "url": "https://w3c.github.io/container-timing/",
+      "seriesComposition": "full",
+      "shortname": "container-timing",
+      "series": {
+        "shortname": "container-timing",
+        "currentSpecification": "container-timing",
+        "title": "Container Timing API",
+        "shortTitle": "Container Timing API",
+        "nightlyUrl": "https://w3c.github.io/container-timing/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/container-timing/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/container-timing",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Container Timing API",
+      "source": "spec",
+      "shortTitle": "Container Timing API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/container-timing/"
+      ],
+      "crawled": "https://w3c.github.io/container-timing/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 01 Oct 2026 20:13:28 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "1 October 2026",
+      "revision": "fd27cad3686340ee8a3d8cae10a9598e8b54de61",
+      "algorithms": "algorithms/container-timing.json",
+      "links": "links/container-timing.json",
+      "refs": "refs/container-timing.json",
+      "idl": "idl/container-timing.idl",
+      "dfns": "dfns/container-timing.json",
+      "headings": "headings/container-timing.json",
+      "ids": "ids/container-timing.json",
+      "cddl": []
     },
     {
       "url": "https://w3c.github.io/data-shapes/shacl12-cs/",
@@ -11677,7 +12124,7 @@
       ],
       "crawled": "https://wicg.github.io/autofill-event/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Oct 2026 14:20:17 GMT"
+        "lastModified": "Fri, 09 Oct 2026 14:20:16 GMT"
       },
       "generator": "bikeshed",
       "date": "9 October 2026",
@@ -11975,55 +12422,6 @@
       "dfns": "dfns/connection-allowlists.json",
       "headings": "headings/connection-allowlists.json",
       "ids": "ids/connection-allowlists.json",
-      "cddl": []
-    },
-    {
-      "url": "https://wicg.github.io/container-timing/",
-      "seriesComposition": "full",
-      "shortname": "container-timing",
-      "series": {
-        "shortname": "container-timing",
-        "currentSpecification": "container-timing",
-        "title": "Container Timing API",
-        "shortTitle": "Container Timing API",
-        "nightlyUrl": "https://wicg.github.io/container-timing/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/container-timing/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/container-timing",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "Container Timing API",
-      "source": "spec",
-      "shortTitle": "Container Timing API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://wicg.github.io/container-timing/"
-      ],
-      "crawled": "https://w3c.github.io/container-timing/",
-      "generator": "bikeshed",
-      "date": "1 October 2026",
-      "revision": "fd27cad3686340ee8a3d8cae10a9598e8b54de61",
-      "algorithms": "algorithms/container-timing.json",
-      "links": "links/container-timing.json",
-      "refs": "refs/container-timing.json",
-      "idl": "idl/container-timing.idl",
-      "dfns": "dfns/container-timing.json",
-      "headings": "headings/container-timing.json",
-      "ids": "ids/container-timing.json",
       "cddl": []
     },
     {
@@ -13362,7 +13760,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Sep 2024 07:54:59 GMT"
+        "lastModified": "Mon, 16 Sep 2024 07:54:58 GMT"
       },
       "generator": "bikeshed",
       "date": "16 September 2024",
@@ -13469,7 +13867,7 @@
       ],
       "crawled": "https://wicg.github.io/install-element/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Oct 2026 21:39:26 GMT"
+        "lastModified": "Tue, 13 Oct 2026 21:39:25 GMT"
       },
       "generator": "respec",
       "date": "13 October 2026",
@@ -16347,7 +16745,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc3229/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:30:34 GMT"
+        "lastModified": "Fri, 16 Oct 2026 13:36:41 GMT"
       },
       "date": "16 October 2026",
       "links": "links/rfc3229.json",
@@ -16392,9 +16790,6 @@
         "https://www.rfc-editor.org/info/rfc4120/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc4120/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:36:36 GMT"
-      },
       "date": "16 October 2026",
       "links": "links/rfc4120.json",
       "headings": "headings/rfc4120.json",
@@ -16635,9 +17030,6 @@
         "https://www.rfc-editor.org/info/rfc6454/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6454/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:33:40 GMT"
-      },
       "date": "16 October 2026",
       "links": "links/rfc6454.json",
       "headings": "headings/rfc6454.json",
@@ -16682,7 +17074,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6455/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:37:43 GMT"
+        "lastModified": "Fri, 16 Oct 2026 13:44:05 GMT"
       },
       "date": "16 October 2026",
       "links": "links/rfc6455.json",
@@ -16728,7 +17120,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6797/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:43:53 GMT"
+        "lastModified": "Fri, 16 Oct 2026 13:37:26 GMT"
       },
       "date": "16 October 2026",
       "links": "links/rfc6797.json",
@@ -16816,6 +17208,9 @@
         "https://www.rfc-editor.org/info/rfc7239/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7239/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 16 Oct 2026 13:34:48 GMT"
+      },
       "date": "16 October 2026",
       "links": "links/rfc7239.json",
       "headings": "headings/rfc7239.json",
@@ -16954,9 +17349,6 @@
         "https://www.rfc-editor.org/info/rfc7578/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7578/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 12:29:25 GMT"
-      },
       "date": "16 October 2026",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
@@ -20194,7 +20586,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -20441,7 +20833,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2026/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2026",
@@ -22028,7 +22420,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "8 October 2026",
@@ -22167,7 +22559,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "8 October 2026",
@@ -22307,7 +22699,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-contain-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "9 October 2026",
@@ -22720,7 +23112,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2025",
@@ -22788,7 +23180,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2026",
@@ -22857,7 +23249,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "8 October 2026",
@@ -23678,7 +24070,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-image-animation-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "10 September 2026",
@@ -23817,7 +24209,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "8 October 2026",
@@ -23887,7 +24279,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "11 August 2026",
@@ -24147,7 +24539,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-lists-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "28 April 2026",
@@ -24216,7 +24608,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-logical-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -24284,7 +24676,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "28 April 2026",
@@ -24493,7 +24885,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "16 February 2026",
@@ -25039,7 +25431,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "3 March 2026",
@@ -27442,7 +27834,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
       },
       "generator": "bikeshed",
       "date": "4 September 2026",
@@ -27512,7 +27904,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:04 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "9 October 2026",
@@ -27649,7 +28041,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-view-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "31 August 2026",
@@ -27721,7 +28113,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
       },
       "generator": "bikeshed",
       "date": "29 August 2026",
@@ -28861,7 +29253,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/dpub-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -28921,7 +29313,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/dpub-aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -30786,7 +31178,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/graphics-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -30977,7 +31369,7 @@
       ],
       "crawled": "https://w3c.github.io/hr-time/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Sep 2026 18:55:07 GMT"
+        "lastModified": "Tue, 01 Sep 2026 18:55:06 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2026",
@@ -31043,7 +31435,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/html-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -31221,7 +31613,7 @@
       ],
       "crawled": "https://w3c.github.io/html-ruby/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Aug 2026 12:14:42 GMT"
+        "lastModified": "Tue, 25 Aug 2026 12:14:41 GMT"
       },
       "generator": "bikeshed",
       "date": "25 August 2026",
@@ -31767,7 +32159,7 @@
       ],
       "crawled": "https://w3c.github.io/json-ld-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 07 Oct 2026 16:01:20 GMT"
+        "lastModified": "Wed, 07 Oct 2026 16:01:19 GMT"
       },
       "generator": "respec",
       "date": "07 October 2026",
@@ -33400,7 +33792,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -33817,7 +34209,7 @@
       ],
       "crawled": "https://w3c.github.io/openscreenprotocol/application.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 Oct 2026 09:36:50 GMT"
+        "lastModified": "Thu, 15 Oct 2026 09:36:49 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2026",
@@ -36175,7 +36567,7 @@
       ],
       "crawled": "https://w3c.github.io/resource-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Sep 2026 16:30:46 GMT"
+        "lastModified": "Tue, 01 Sep 2026 16:30:45 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2026",
@@ -36570,7 +36962,7 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Oct 2026 17:47:45 GMT"
+        "lastModified": "Tue, 13 Oct 2026 17:47:44 GMT"
       },
       "generator": "bikeshed",
       "date": "13 October 2026",
@@ -36904,7 +37296,7 @@
       ],
       "crawled": "https://w3c.github.io/server-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Apr 2026 04:24:19 GMT"
+        "lastModified": "Tue, 07 Apr 2026 04:24:18 GMT"
       },
       "generator": "bikeshed",
       "date": "7 April 2026",
@@ -38046,7 +38438,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/svg-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -39540,7 +39932,7 @@
       ],
       "crawled": "https://w3c.github.io/vc-confidence-method/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 10 Sep 2026 17:03:04 GMT"
+        "lastModified": "Thu, 10 Sep 2026 17:03:03 GMT"
       },
       "generator": "respec",
       "date": "10 September 2026",
@@ -40955,7 +41347,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -41031,7 +41423,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Oct 2026 08:50:50 GMT"
+        "lastModified": "Mon, 12 Oct 2026 08:50:49 GMT"
       },
       "generator": "respec",
       "date": "12 October 2026",
@@ -41500,7 +41892,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Oct 2026 10:17:05 GMT"
+        "lastModified": "Fri, 16 Oct 2026 10:17:06 GMT"
       },
       "generator": "bikeshed",
       "date": "8 October 2026",
@@ -44704,7 +45096,7 @@
       ],
       "crawled": "https://w3c.github.io/wot-architecture/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jun 2024 12:29:40 GMT"
+        "lastModified": "Wed, 05 Jun 2024 12:29:39 GMT"
       },
       "generator": "respec",
       "date": "05 June 2024",

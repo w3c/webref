@@ -7,8 +7,12 @@
     "rawlinks": {
       "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7329&rep=rep1&type=pdf": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/navigation-timing/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -33,25 +37,45 @@
           "event-load"
         ]
       },
-      "https://httpwg.org/specs/rfc9111.html": {},
+      "https://httpwg.org/specs/rfc9111.html": {
+        "specShortname": "rfc9111"
+      },
       "https://httpwg.org/specs/rfc9112.html": {
         "anchors": [
           "persistent.connections"
-        ]
+        ],
+        "specShortname": "rfc9112"
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/performance-timeline/": {},
-      "https://w3c.github.io/resource-timing/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "specShortname": "performance-timeline"
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "specShortname": "resource-timing"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/TR/navigation-timing-2/": {
         "anchors": [
           "dom-performancenavigationtiming-redirectcount"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
-      "https://www.w3.org/TR/navigation-timing/": {},
+      "https://www.w3.org/TR/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
           "dom-performanceresourcetiming-nexthopprotocol",
@@ -59,7 +83,8 @@
           "dom-performanceresourcetiming-encodedbodysize",
           "dom-performanceresourcetiming-decodedbodysize",
           "dom-performanceresourcetiming-secureconnectionstart"
-        ]
+        ],
+        "specShortname": "resource-timing"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -69,7 +94,8 @@
           "concept-document",
           "document",
           "dom-document-url"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -78,7 +104,8 @@
           "fetch-timing-info",
           "response-body-info",
           "concept-request-method"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -159,16 +186,20 @@
           "window"
         ]
       },
-      "https://httpwg.org/specs/rfc9111.html": {},
+      "https://httpwg.org/specs/rfc9111.html": {
+        "specShortname": "rfc9111"
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -177,21 +208,24 @@
           "dfn-service-worker",
           "fetchevent",
           "service-worker-timing-info"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "typedefdef-domhighrestimestamp",
           "dom-performance-timeorigin",
           "performance"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
           "performanceentry",
           "dom-performanceentry-starttime",
           "dom-performanceentry-duration"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://w3c.github.io/resource-timing/": {
         "anchors": [
@@ -205,7 +239,8 @@
           "dom-performanceresourcetiming-responseend",
           "dom-performanceresourcetiming-connectstart",
           "dom-performanceresourcetiming-connectend"
-        ]
+        ],
+        "specShortname": "resource-timing"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -220,18 +255,21 @@
           "idl-double",
           "idl-unsigned-long-long",
           "SameObject"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
           "supportedentrytypes-attribute",
           "dfn-performance-entry-buffer"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
           "dfn-setup-the-resource-timing-entry"
-        ]
+        ],
+        "specShortname": "resource-timing"
       }
     }
   }

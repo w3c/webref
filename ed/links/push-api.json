@@ -5,20 +5,42 @@
   },
   "links": {
     "rawlinks": {
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://httpwg.org/specs/rfc9110.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://notifications.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc9110.html": {
+        "specShortname": "rfc9110"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://notifications.spec.whatwg.org/": {
+        "specShortname": "notifications"
+      },
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      },
       "https://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+X9.62%3a2005": {},
-      "https://wicg.github.io/background-sync/spec/": {},
+      "https://wicg.github.io/background-sync/spec/": {
+        "specShortname": "background-sync"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc4648/": {},
@@ -28,17 +50,26 @@
       "https://www.rfc-editor.org/info/rfc8291/": {},
       "https://www.rfc-editor.org/info/rfc8292/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/FileAPI/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/permissions/": {},
-      "https://www.w3.org/TR/service-workers/": {},
+      "https://www.w3.org/TR/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "specShortname": "service-workers"
+      },
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -47,13 +78,15 @@
         "anchors": [
           "concept-document-url",
           "concept-event-constructor-ext"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-decode",
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -104,7 +137,8 @@
           "byte",
           "parse-json-bytes-to-a-javascript-value",
           "boolean"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://notifications.spec.whatwg.org/": {
         "anchors": [
@@ -120,7 +154,6 @@
           "dom-notificationoptions-image",
           "dom-notificationoptions-icon",
           "dom-notificationoptions-badge",
-          "dom-notificationoptions-vibrate",
           "dom-notificationoptions-timestamp",
           "dom-notificationoptions-renotify",
           "dom-notificationoptions-silent",
@@ -139,17 +172,20 @@
           "service-worker-registration",
           "notification-show-steps",
           "service-worker-registration-has-shownotification-been-successfully-invoked"
-        ]
+        ],
+        "specShortname": "notifications"
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
         "anchors": [
           "sec-reference-record-specification-type"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-json.stringify"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -159,7 +195,8 @@
           "concept-basic-url-parser",
           "concept-url-scheme",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -189,18 +226,21 @@
           "dfn-json-types",
           "idl-Uint8Array",
           "idl-any"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "typedefdef-epochtimestamp",
           "dfn-current-wall-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
@@ -214,7 +254,8 @@
           "dom-permissionstate-denied",
           "dfn-permission-state",
           "dfn-express-permission"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
@@ -228,7 +269,8 @@
           "dictdef-extendableeventinit",
           "fire-functional-event",
           "extendableevent-extend-lifetime-promises"
-        ]
+        ],
+        "specShortname": "service-workers"
       }
     }
   }

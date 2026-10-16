@@ -46,25 +46,49 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL_static": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL_static": {},
       "https://developers.google.com/gears/?csw=1": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/FileAPI/issues/104": {},
       "https://github.com/w3c/FileAPI/issues/119": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/workers.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webapi/": {},
       "https://lists.w3.org/Archives/Public/public-webapps/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
-      "https://storage.spec.whatwg.org/": {},
-      "https://streams.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/media-source/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
+      "https://storage.spec.whatwg.org/": {
+        "specShortname": "storage"
+      },
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/media-source/": {
+        "specShortname": "media-source-2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wpt.fyi/results/FileAPI": {},
-      "https://www.rfc-editor.org/info/rfc2397/": {},
+      "https://www.rfc-editor.org/info/rfc2397/": {
+        "specShortname": "rfc2397"
+      },
       "https://www.rfc-editor.org/info/rfc9562/": {},
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
@@ -72,11 +96,14 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {},
       "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": {},
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "http://tc39.github.io/ecma262/": {
@@ -88,14 +115,16 @@
       "http://w3c.github.io/media-source/": {
         "anchors": [
           "mediasource"
-        ]
+        ],
+        "specShortname": "media-source-2"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "eventtarget",
           "concept-event-fire",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
@@ -106,14 +135,16 @@
           "utf-8",
           "concept-encoding-get",
           "decode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-fetch",
           "dom-body-text",
           "concept-network-error"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -214,21 +245,24 @@
           "assert",
           "map-exists",
           "map-value"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "parsable-mime-type",
           "parse-a-mime-type",
           "parameters"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "storage-key",
           "obtain-a-storage-key-for-non-storage-purposes",
           "storage-key-equal"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -241,7 +275,8 @@
           "readablestreamdefaultreader-read-all-bytes",
           "readablestream-pipe-through",
           "readablestreamdefaultreader-read-a-chunk"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -253,7 +288,8 @@
           "empty-host",
           "concept-url-path",
           "concept-url-serializer"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -282,14 +318,16 @@
           "notreadableerror",
           "securityerror",
           "dfn-throw"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://xhr.spec.whatwg.org/": {
         "anchors": [
           "xmlhttprequest",
           "dom-xmlhttprequest-send",
           "progressevent"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }

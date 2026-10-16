@@ -5,7 +5,9 @@
   },
   "links": {
     "rawlinks": {
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://github.com/w3c/payment-request/issues/842": {},
       "https://github.com/w3c/web-based-payment-handler/issues": {},
       "https://github.com/w3c/web-based-payment-handler/issues/115": {},
@@ -22,27 +24,34 @@
         "anchors": [
           "sec-object-internal-methods-and-internal-slots",
           "sec-json.stringify"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-parser"
-        ]
+        ],
+        "specShortname": "url"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/WebCryptoAPI/": {},
-      "https://www.w3.org/TR/payment-method-id/": {},
+      "https://www.w3.org/TR/payment-method-id/": {
+        "specShortname": "payment-method-id"
+      },
       "https://www.w3.org/TR/payment-method-manifest/": {
         "anchors": [
           "payment-method-manifest",
           "ingest-payment-method-manifests",
           "parsed-payment-method-manifest",
           "parsed-payment-method-manifest-supported-origins"
-        ]
+        ],
+        "specShortname": "payment-method-manifest"
       },
       "https://www.w3.org/TR/payment-request/": {
         "anchors": [
@@ -81,7 +90,8 @@
           "payment-method-changed-algorithm",
           "paymentrequest-updated-algorithm",
           "dfn-json-serialize"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
@@ -101,7 +111,8 @@
           "extendableevent-interface",
           "dictdef-extendableeventinit",
           "dfn-scope-url"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://www.w3.org/groups/wg/payments": {},
       "https://www.w3.org/groups/wg/payments/ipr": {},
@@ -109,7 +120,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -120,7 +132,8 @@
           "dispatch-flag",
           "stop-propagation-flag",
           "stop-immediate-propagation-flag"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -150,7 +163,8 @@
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -173,13 +187,15 @@
           "upon-fulfillment",
           "dfn-convert-ecmascript-to-idl-value",
           "this"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/payment-method-id/": {
         "anchors": [
           "dfn-url-based-payment-method-identifier",
           "dfn-pmi"
-        ]
+        ],
+        "specShortname": "payment-method-id"
       },
       "https://www.w3.org/TR/payment-method-manifest/": {
         "anchors": [
@@ -187,7 +203,8 @@
           "ingest-payment-method-manifests",
           "parsed-payment-method-manifest",
           "parsed-payment-method-manifest-supported-origins"
-        ]
+        ],
+        "specShortname": "payment-method-manifest"
       },
       "https://www.w3.org/TR/payment-request/": {
         "anchors": [
@@ -218,7 +235,8 @@
           "user-accepts-the-payment-request-algorithm",
           "dfn-payment-handler-indicates-an-internal-error-algorithm",
           "dfn-user-aborts-the-payment-request-algorithm"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
@@ -233,7 +251,8 @@
           "extendableevent-pending-promises-count",
           "dfn-containing-service-worker-registration",
           "try-activate-algorithm"
-        ]
+        ],
+        "specShortname": "service-workers"
       }
     }
   }

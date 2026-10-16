@@ -49,8 +49,12 @@
       "http://wpt.live/portals/xfo/portals-xfo-deny.sub.html": {},
       "http://wpt.live/portals/xfo/portals-xfo-sameorigin.html": {},
       "http://www.w3.org/community/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/WICG/portals": {
         "anchors": [
           "readme"
@@ -111,10 +115,14 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://tc39.es/ecma262/": {},
       "https://tools.ietf.org/html/rfc2119": {},
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://wpt.fyi/results/portals/about-blank-cannot-host.html": {},
       "https://wpt.fyi/results/portals/csp/frame-ancestors.sub.html": {},
       "https://wpt.fyi/results/portals/csp/frame-src.sub.html": {},
@@ -167,14 +175,18 @@
           "match-response-to-source-list",
           "directive-default-src",
           "directive-fallback-list"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/fetch-metadata/": {
         "anchors": [
           "abstract-opdef-set-mode"
-        ]
+        ],
+        "specShortname": "fetch-metadata"
       },
-      "https://www.w3.org/TR/referrer-policy/": {},
+      "https://www.w3.org/TR/referrer-policy/": {
+        "specShortname": "referrer-policy"
+      },
       "https://www.w3.org/TR/service-workers-1/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
@@ -203,7 +215,8 @@
           "event",
           "dictdef-eventinit",
           "concept-event-constructor-ext"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -215,7 +228,8 @@
           "concept-response-status",
           "concept-response",
           "concept-request-reserved-client"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
@@ -386,18 +400,21 @@
           "assert",
           "html-namespace",
           "boolean"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "serviceworker"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
@@ -408,12 +425,14 @@
           "directive-pre-request-check",
           "directive-value",
           "directive-post-request-check"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
           "referrer-policy"
-        ]
+        ],
+        "specShortname": "referrer-policy"
       }
     }
   }

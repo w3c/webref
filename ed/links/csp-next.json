@@ -12,23 +12,33 @@
       },
       "https://ai.google/research/pubs/pub45542": {},
       "https://csp.withgoogle.com/docs/strict-csp.html": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/tc39/ecma262/issues/938": {},
       "https://github.com/w3c/webappsec": {},
       "https://github.com/w3c/webappsec-subresource-integrity/issues/44": {},
       "https://github.com/whatwg/html/issues/4926": {},
       "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
       "https://mikewest.github.io/artur-yes/": {},
       "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure": {},
       "https://tools.ietf.org/html/rfc2119": {},
       "https://tools.ietf.org/html/rfc3864": {},
       "https://tools.ietf.org/html/rfc4648": {},
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://www.w3.org/2004/01/pp-impl/49309/status": {},
       "https://www.w3.org/2011/webappsec/": {},
       "https://www.w3.org/2020/Process-20200915/": {},
@@ -43,11 +53,16 @@
         "anchors": [
           "external-hash",
           "strict-dynamic-usage"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/SRI/": {},
-      "https://www.w3.org/TR/SVG2/": {},
-      "https://www.w3.org/TR/reporting-1/": {},
+      "https://www.w3.org/TR/SVG2/": {
+        "specShortname": "SVG2"
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "specShortname": "reporting-1"
+      },
       "https://www.w3.org/TR/service-workers-1/": {}
     },
     "autolinks": {
@@ -58,12 +73,14 @@
           "concept-node-document",
           "concept-element",
           "concept-element-attributes-change-ext"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -76,7 +93,8 @@
           "concept-request",
           "concept-response-url",
           "concept-request-client"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
@@ -178,7 +196,8 @@
           "list-contain",
           "list-item",
           "javascript-string-convert"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
       "https://svgwg.org/svg2-draft/interact.html": {
@@ -210,12 +229,14 @@
           "concept-url-scheme",
           "concept-url",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "serviceworker"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/reporting/": {
         "anchors": [
@@ -225,13 +246,15 @@
           "visible-to-reportingobservers",
           "report-body",
           "reportbody"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "content-security-policy",
           "can-compile-strings"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-trusted-types/dist/spec/": {
         "anchors": [

@@ -5,7 +5,9 @@
   },
   "links": {
     "rawlinks": {
-      "https://compression.spec.whatwg.org/": {},
+      "https://compression.spec.whatwg.org/": {
+        "specShortname": "compression"
+      },
       "https://creativecommons.org/licenses/by/4.0/": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy": {},
@@ -88,10 +90,16 @@
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator": {},
       "https://developer.mozilla.org/en-US/docs/Web/https://developer.mozilla.org/en-US/docs/Glossary/Transferable_objects": {},
       "https://docs.google.com/document/d/1La1ehXw76HP6n1uUeks-WJGFgAnpX2tCjKts7QFJ57Y/edit": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://domenic.me/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/heycam/webidl/issues/819": {},
       "https://github.com/ricea/websocketstream-explainer/blob/master/README.md": {},
       "https://github.com/tc39/proposal-weakrefs/": {},
@@ -107,7 +115,9 @@
       "https://google.com/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://ieeexplore.ieee.org/document/8766229": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://nodejs.org/api/fs.html": {
         "anchors": [
           "fs_filehandle_write_buffer_offset_length_position"
@@ -119,18 +129,31 @@
         ]
       },
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/webrtc-encoded-transform/": {},
-      "https://webassembly.github.io/spec/js-api/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {}
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/webrtc-encoded-transform/": {
+        "specShortname": "webrtc-encoded-transform"
+      },
+      "https://webassembly.github.io/spec/js-api/": {
+        "specShortname": "wasm-js-api-2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      }
     },
     "autolinks": {
       "https://compression.spec.whatwg.org/": {
         "anchors": [
           "compressionstream"
-        ]
+        ],
+        "specShortname": "compression"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
@@ -142,19 +165,22 @@
           "abortsignal-remove",
           "abortcontroller-signal",
           "abortcontroller-signal-abort"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "textdecoderstream"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "response",
           "dom-global-fetch",
           "concept-request-body"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
@@ -221,7 +247,8 @@
           "iteration-break",
           "byte-sequence",
           "byte-sequence-length"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -254,35 +281,41 @@
           "sec-createdataproperty",
           "sec-get-o-p",
           "sec-samevalue"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
         "anchors": [
           "sec-completion-record-specification-type",
           "sec-ecmascript-language-types-number-type",
           "sec-copydatablockbytes"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-properties-of-the-object-prototype-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/indexed-collections.html": {
         "anchors": [
           "sec-typedarray-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
           "sec-number-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
         "anchors": [
           "sec-createbuiltinfunction",
           "sec-ordinaryobjectcreate"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
@@ -291,23 +324,27 @@
           "sec-arraybuffer-constructor",
           "sec-clonearraybuffer",
           "sec-detacharraybuffer"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "service-worker-global-scope-fetch-event"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/webrtc-encoded-transform/": {
         "anchors": [
           "rtcrtpscripttransformer"
-        ]
+        ],
+        "specShortname": "webrtc-encoded-transform"
       },
       "https://webassembly.github.io/spec/js-api/": {
         "anchors": [
           "memory",
           "dom-memory-buffer"
-        ]
+        ],
+        "specShortname": "wasm-js-api-2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -360,13 +397,15 @@
           "dfn-get-buffer-source-copy",
           "include",
           "constructor-steps"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
           "websocket",
           "dom-websocket-bufferedamount"
-        ]
+        ],
+        "specShortname": "websockets"
       }
     }
   }

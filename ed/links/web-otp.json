@@ -6,9 +6,13 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://en.wikipedia.org/wiki/Clickjacking": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/tabatkins/bikeshed": {},
       "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -18,15 +22,24 @@
         ]
       },
       "https://tools.ietf.org/html/rfc2119": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://wicg.github.io/sms-one-time-codes/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://wicg.github.io/sms-one-time-codes/": {
+        "specShortname": "sms-one-time-codes"
+      },
       "https://www.w3.org/2001/tag/doc/promises-guide": {
         "anchors": [
           "errors"
-        ]
+        ],
+        "specShortname": "promises-guide"
       },
-      "https://www.w3.org/TR/credential-management-1/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/TR/credential-management-1/": {
+        "specShortname": "credential-management-1"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -36,12 +49,14 @@
           "concept-documentfragment-host",
           "abortsignal-aborted-flag",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "credentials"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
@@ -89,7 +104,8 @@
           "concept-ipv6",
           "opaque-host",
           "empty-host"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
@@ -104,18 +120,21 @@
           "dictdef-credentialrequestoptions",
           "same-origin-with-its-ancestors",
           "dom-credentialrequestoptions-signal"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature",
           "default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://wicg.github.io/sms-one-time-codes/": {
         "anchors": [
           "origin-bound-one-time-code-message"
-        ]
+        ],
+        "specShortname": "sms-one-time-codes"
       }
     }
   }

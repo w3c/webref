@@ -7,10 +7,18 @@
     "rawlinks": {
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://drafts.csswg.org/mediaqueries-5/": {},
-      "https://fullscreen.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "specShortname": "fullscreen"
+      },
       "https://github.com/whatwg/html/issues/421": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/interaction.html": {
@@ -24,9 +32,15 @@
           "concept-origin"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -41,7 +55,8 @@
           "concept-document-mode",
           "concept-event-fire",
           "concept-document-origin"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
@@ -49,18 +64,21 @@
           "dom-window-moveby",
           "dom-window-resizeto",
           "dom-window-resizeby"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://drafts.csswg.org/mediaqueries-5/": {
         "anchors": [
           "valdef-media-display-mode-picture-in-picture"
-        ]
+        ],
+        "specShortname": "mediaqueries-5"
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "dom-element-requestfullscreen",
           "fullscreen-is-supported"
-        ]
+        ],
+        "specShortname": "fullscreen"
       },
       "https://html.spec.whatwg.org/": {
         "anchors": [
@@ -144,13 +162,15 @@
         "anchors": [
           "implementation-defined",
           "list-extend"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://w3c.github.io/picture-in-picture/": {
         "anchors": [
           "dom-documentorshadowroot-pictureinpictureelement",
           "exit-picture-in-picture-algorithm"
-        ]
+        ],
+        "specShortname": "picture-in-picture"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -169,7 +189,8 @@
           "notallowederror",
           "exceptiondef-rangeerror",
           "a-promise-resolved-with"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

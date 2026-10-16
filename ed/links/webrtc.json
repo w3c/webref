@@ -9,11 +9,14 @@
       "https://datatracker.ietf.org/doc/html/draft-holmberg-mmusic-t140-usage-data-channel": {},
       "https://datatracker.ietf.org/wg/mmusic/": {},
       "https://datatracker.ietf.org/wg/rtcweb/": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-cors-check"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/w3c/webrtc-pc/issues/1283": {},
       "https://github.com/w3c/webrtc-pc/pull/2708": {},
@@ -203,26 +206,34 @@
           "websocket"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
       "https://tc39.github.io/ecma262/": {
         "anchors": [
           "eqn-floor"
         ]
       },
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html": {},
       "https://w3ctag.github.io/design-principles/": {
         "anchors": [
           "js-rtc"
-        ]
+        ],
+        "specShortname": "design-principles"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "dfn-convert-ecmascript-to-idl-value"
-        ]
+        ],
+        "specShortname": "webidl"
       },
-      "https://websockets.spec.whatwg.org/": {},
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      },
       "https://www.ecfr.gov/cgi-bin/text-idx?SID=ada7cebd65433a9e05c35426a2bc76b8&mc=true&node=pt47.3.67&rgn=div5": {},
       "https://www.iana.org/assignments/hash-function-text-names/hash-function-text-names.xml": {},
       "https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml": {
@@ -320,8 +331,12 @@
       "https://www.w3.org/2024/10/webrtc-amendments-interop.html": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2021/REC-webrtc-20210126/": {},
-      "https://www.w3.org/TR/FileAPI/": {},
-      "https://www.w3.org/TR/IndexedDB/": {},
+      "https://www.w3.org/TR/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://www.w3.org/TR/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
       "https://www.w3.org/TR/WebCryptoAPI/": {
         "anchors": [
           "dfn-AlgorithmIdentifier",
@@ -333,19 +348,25 @@
           "dfn-supportedAlgorithms"
         ]
       },
-      "https://www.w3.org/TR/design-principles/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/design-principles/": {
+        "specShortname": "design-principles"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
           "track-ended"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://www.w3.org/TR/webrtc-stats/": {
         "anchors": [
           "dfn-stats-object",
           "dfn-monitored-object",
           "lifetime-considerations-for-monitored-objects"
-        ]
+        ],
+        "specShortname": "webrtc-stats"
       },
       "https://www.w3.org/community/ortc/": {},
       "https://www.w3.org/groups/wg/webrtc": {},
@@ -354,19 +375,23 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/": {
         "anchors": [
           "candidate-changes"
-        ]
+        ],
+        "specShortname": "w3c-process"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "allow-new-features"
         ]
       },
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -376,12 +401,14 @@
           "eventtarget",
           "event",
           "dictdef-eventinit"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "block-bad-port"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -455,7 +482,8 @@
           "ordered-map",
           "list-append",
           "list-remove"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -467,7 +495,8 @@
           "concept-url-path",
           "concept-url-username",
           "concept-url-password"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -513,7 +542,8 @@
           "idl-long",
           "dom-domexception-name",
           "dom-domexception-code"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
@@ -521,12 +551,14 @@
           "enumdef-binarytype",
           "dom-binarytype-arraybuffer",
           "dom-websocket-binarytype"
-        ]
+        ],
+        "specShortname": "websockets"
       },
       "https://www.w3.org/TR/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://www.w3.org/TR/WebCryptoAPI/": {
         "anchors": [
@@ -540,7 +572,8 @@
           "dom-performance-now",
           "typedefdef-epochtimestamp",
           "typedefdef-domhighrestimestamp"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
@@ -553,7 +586,8 @@
           "dom-mediatracksettings",
           "dom-constrainulong",
           "dom-constraindouble"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://www.w3.org/TR/webrtc-stats/": {
         "anchors": [
@@ -667,12 +701,14 @@
           "dom-rtccertificatestats-fingerprintalgorithm",
           "dom-rtccertificatestats-base64certificate",
           "dom-rtccertificatestats-issuercertificateid"
-        ]
+        ],
+        "specShortname": "webrtc-stats"
       },
       "https://xhr.spec.whatwg.org/": {
         "anchors": [
           "xmlhttprequest"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }

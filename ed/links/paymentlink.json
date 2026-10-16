@@ -7,7 +7,9 @@
     "rawlinks": {
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://github.com/WICG/paymentlink/blob/main/README.md": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/semantics.html": {
@@ -20,9 +22,15 @@
           "delay-the-load-event"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/payment-request/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/payment-request/": {
+        "specShortname": "payment-request"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -30,7 +38,8 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-node-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
@@ -77,17 +86,20 @@
           "ordered-set",
           "list-size",
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/payment-request/": {
         "anchors": [
           "dfn-payment"
-        ]
+        ],
+        "specShortname": "payment-request"
       }
     }
   }

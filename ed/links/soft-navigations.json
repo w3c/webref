@@ -6,8 +6,12 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-display-4/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "specShortname": "css-display-4"
+      },
       "https://explainers-by-googlers.github.io/user-dictionary-leaks/": {},
       "https://github.com/WICG/container-timing": {},
       "https://github.com/explainers-by-googlers/Partitioning-visited-links-history": {},
@@ -24,15 +28,33 @@
           "shared-history-push/replace-steps"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://w3c.github.io/event-timing/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/largest-contentful-paint/": {},
-      "https://w3c.github.io/navigation-timing/": {},
-      "https://w3c.github.io/paint-timing/": {},
-      "https://w3c.github.io/performance-timeline/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://www.w3.org/TR/navigation-timing/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://w3c.github.io/event-timing/": {
+        "specShortname": "event-timing"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/largest-contentful-paint/": {
+        "specShortname": "largest-contentful-paint"
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
+      "https://w3c.github.io/paint-timing/": {
+        "specShortname": "paint-timing"
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "specShortname": "performance-timeline"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://www.w3.org/TR/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -51,12 +73,14 @@
           "concept-node-insert",
           "concept-event-dispatch",
           "element"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
           "containing-block"
-        ]
+        ],
+        "specShortname": "css-display-4"
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
@@ -97,7 +121,8 @@
           "map-with-default",
           "map-remove",
           "string"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html": {
         "anchors": [
@@ -115,12 +140,14 @@
         "anchors": [
           "dom-performanceeventtiming-interactionid",
           "performanceeventtiming"
-        ]
+        ],
+        "specShortname": "event-timing"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "dfn-current-high-resolution-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/largest-contentful-paint/": {
         "anchors": [
@@ -130,12 +157,14 @@
           "create-a-largestcontentfulpaint-entry",
           "compute-a-new-largest-contentful-paint-candidate",
           "report-largest-contentful-paint"
-        ]
+        ],
+        "specShortname": "largest-contentful-paint"
       },
       "https://w3c.github.io/navigation-timing/": {
         "anchors": [
           "performancenavigationtiming"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
       "https://w3c.github.io/paint-timing/": {
         "anchors": [
@@ -148,7 +177,8 @@
           "timing-eligible",
           "dom-painttimingmixin-presentationtime",
           "mark-paint-timing"
-        ]
+        ],
+        "specShortname": "paint-timing"
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
@@ -159,7 +189,8 @@
           "dom-performanceentry-entrytype",
           "dom-performanceentry-duration",
           "performance-entry-buffer"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -169,7 +200,8 @@
           "Default",
           "idl-object",
           "default-tojson-steps"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

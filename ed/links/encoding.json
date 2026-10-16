@@ -29,12 +29,22 @@
       "https://github.com/whatwg/encoding/issues/8": {},
       "https://github.com/whatwg/infra/issues/319": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://streams.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.apple.com/": {},
       "https://www.google.com/": {},
       "https://www.iana.org/assignments/character-sets/character-sets.xhtml": {},
@@ -96,7 +106,8 @@
           "code-unit",
           "javascript-string-convert",
           "scalar-value-string"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -114,12 +125,14 @@
           "transformstream-set-up-flushalgorithm",
           "generictransformstream-transform",
           "transformstream-enqueue"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "realm"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -144,7 +157,8 @@
           "arraybufferview-write-startingoffset",
           "new",
           "dfn-convert-ecmascript-to-idl-value"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

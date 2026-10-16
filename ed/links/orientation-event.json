@@ -41,11 +41,14 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/deviceorientation_event": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Window/deviceorientationabsolute_event": {},
       "https://doi.org/10.1109/SP.2019.00072": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-transforms-2/": {
         "anchors": [
           "transform-rendering"
-        ]
+        ],
+        "specShortname": "css-transforms-2"
       },
       "https://drafts.fxtf.org/geometry/": {},
       "https://en.wikipedia.org/wiki/Euler_angles": {},
@@ -58,7 +61,9 @@
       "https://github.com/w3c/deviceorientation/issues/87": {},
       "https://github.com/w3c/deviceorientation/issues/new": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://learn.microsoft.com/en-us/uwp/api/windows.devices.sensors.sensorreadingtype": {
         "anchors": [
           "remarks"
@@ -67,26 +72,45 @@
       "https://lists.w3.org/Archives/Public/public-device-apis/": {},
       "https://lists.w3.org/Archives/Public/public-geolocation/": {},
       "https://lists.w3.org/Archives/Public/public-webapps/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://w3c.github.io/accelerometer/": {},
-      "https://w3c.github.io/gyroscope/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://w3c.github.io/accelerometer/": {
+        "specShortname": "accelerometer"
+      },
+      "https://w3c.github.io/gyroscope/": {
+        "specShortname": "gyroscope"
+      },
       "https://w3c.github.io/motion-sensors/": {
         "anchors": [
           "accelerometer",
           "linear-acceleration-sensor"
         ]
       },
-      "https://w3c.github.io/orientation-sensor/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/screen-orientation/": {},
+      "https://w3c.github.io/orientation-sensor/": {
+        "specShortname": "orientation-sensor"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/screen-orientation/": {
+        "specShortname": "screen-orientation"
+      },
       "https://w3c.github.io/sensors/": {
         "anchors": [
           "automation"
-        ]
+        ],
+        "specShortname": "generic-sensor"
       },
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webdriver/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webdriver/": {
+        "specShortname": "webdriver2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wpt.fyi/results/orientation-event/idlharness.https.window.html": {},
       "https://wpt.fyi/results/orientation-event/motion/requestPermission.https.window.html": {},
       "https://wpt.fyi/results/orientation-event/orientation/requestPermission.https.window.html": {},
@@ -102,9 +126,12 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
-      "https://www.w3.org/policies/process/": {},
+      "https://www.w3.org/policies/process/": {
+        "specShortname": "w3c-process"
+      },
       "https://www.w3.org/policies/process/20231103/": {}
     },
     "autolinks": {
@@ -114,7 +141,8 @@
           "event",
           "dictdef-eventinit",
           "concept-event-fire"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.fxtf.org/geometry-1/": {
         "anchors": [
@@ -184,27 +212,32 @@
           "map-entry",
           "map-key",
           "map-value"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-object-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
           "sec-number-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://w3c.github.io/accelerometer/": {
         "anchors": [
           "device-coordinate-system"
-        ]
+        ],
+        "specShortname": "accelerometer"
       },
       "https://w3c.github.io/orientation-sensor/": {
         "anchors": [
           "earths-reference-coordinate-system"
-        ]
+        ],
+        "specShortname": "orientation-sensor"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -219,7 +252,8 @@
           "dom-permissionstate-denied",
           "dfn-getting-the-current-permission-state",
           "dfn-express-permission"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/sensors/": {
         "anchors": [
@@ -231,20 +265,23 @@
           "virtual-sensor-metadata",
           "virtual-sensor-metadata-reading-parsing-algorithm",
           "parse-xyz-reading"
-        ]
+        ],
+        "specShortname": "generic-sensor"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist-self"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
           "dfn-extension-commands",
           "dfn-getting-properties"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -261,12 +298,14 @@
           "idl-DOMException",
           "resolve",
           "new"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/policies/process/": {
         "anchors": [
           "at-risk"
-        ]
+        ],
+        "specShortname": "w3c-process"
       }
     }
   }

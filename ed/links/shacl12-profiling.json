@@ -82,8 +82,12 @@
       "https://linked.data.gov.au/org/idn": {},
       "https://pypi.org/project/pyshacl": {},
       "https://schema.org/": {},
-      "https://w3c.github.io/data-shapes/shacl12-core/": {},
-      "https://w3c.github.io/data-shapes/shacl12-cs/": {},
+      "https://w3c.github.io/data-shapes/shacl12-core/": {
+        "specShortname": "shacl12-core"
+      },
+      "https://w3c.github.io/data-shapes/shacl12-cs/": {
+        "specShortname": "shacl12-cs"
+      },
       "https://w3c.github.io/data-shapes/shacl12-overview/": {
         "anchors": [
           "shacl-shacl"
@@ -108,9 +112,12 @@
           "Role:schema",
           "Role:validation",
           "Role:mapping"
-        ]
+        ],
+        "specShortname": "dx-prof-1.0"
       },
-      "https://www.w3.org/TR/dx-prof/": {},
+      "https://www.w3.org/TR/dx-prof/": {
+        "specShortname": "dx-prof-1.0"
+      },
       "https://www.w3.org/TR/owl-ref/": {
         "anchors": [
           "Ontology-def",
@@ -134,19 +141,23 @@
           "wasGeneratedBy"
         ]
       },
-      "https://www.w3.org/TR/rdf-schema/": {},
+      "https://www.w3.org/TR/rdf-schema/": {
+        "specShortname": "rdf12-schema"
+      },
       "https://www.w3.org/TR/rdf12-concepts/": {
         "anchors": [
           "dfn-named-graph",
           "dfn-iri"
-        ]
+        ],
+        "specShortname": "rdf12-concepts"
       },
       "https://www.w3.org/TR/rdf12-schema/": {
         "anchors": [
           "ch_resource",
           "ch_member",
           "ch_isdefinedby"
-        ]
+        ],
+        "specShortname": "rdf12-schema"
       },
       "https://www.w3.org/TR/shacl12-core/": {
         "anchors": [
@@ -167,24 +178,41 @@
           "usedDataGraph",
           "usedShapesGraph",
           "shapes"
-        ]
+        ],
+        "specShortname": "shacl12-core"
       },
-      "https://www.w3.org/TR/shacl12-inference-rules/": {},
-      "https://www.w3.org/TR/shacl12-node-expr/": {},
+      "https://www.w3.org/TR/shacl12-inference-rules/": {
+        "specShortname": "shacl12-inference-rules"
+      },
+      "https://www.w3.org/TR/shacl12-node-expr/": {
+        "specShortname": "shacl12-node-expr"
+      },
       "https://www.w3.org/TR/shacl12-overview": {
         "anchors": [
           "shacl-shacl"
         ]
       },
-      "https://www.w3.org/TR/shacl12-profiling/": {},
-      "https://www.w3.org/TR/shacl12-sparql/": {},
-      "https://www.w3.org/TR/shacl12-ui/": {},
+      "https://www.w3.org/TR/shacl12-profiling/": {
+        "specShortname": "shacl12-profiling"
+      },
+      "https://www.w3.org/TR/shacl12-sparql/": {
+        "specShortname": "shacl12-sparql"
+      },
+      "https://www.w3.org/TR/shacl12-ui/": {
+        "specShortname": "shacl12-ui"
+      },
       "https://www.w3.org/TR/skos-reference/": {},
-      "https://www.w3.org/TR/sparql12-query/": {},
-      "https://www.w3.org/TR/sparql12-rl/": {},
+      "https://www.w3.org/TR/sparql12-query/": {
+        "specShortname": "sparql12-query"
+      },
+      "https://www.w3.org/TR/sparql12-rl/": {
+        "specShortname": "sparql12-rl"
+      },
       "https://www.w3.org/TR/turtle/": {},
       "https://www.w3.org/TR/vocab-data-cube/": {},
-      "https://www.w3.org/TR/vocab-dcat-3/": {},
+      "https://www.w3.org/TR/vocab-dcat-3/": {
+        "specShortname": "vocab-dcat-3"
+      },
       "https://www.w3.org/TR/xmlschema11-2/": {
         "anchors": [
           "boolean"
@@ -197,7 +225,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {},
       "https://www.w3.org/wiki/LinkedData": {}

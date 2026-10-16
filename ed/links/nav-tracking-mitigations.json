@@ -12,8 +12,12 @@
       "https://brave.com/": {},
       "https://datatracker.ietf.org/doc/html/draft-cutler-httpbis-partitioned-cookies": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/privacycg/meetings/": {},
       "https://github.com/privacycg/nav-tracking-mitigations": {},
       "https://github.com/privacycg/nav-tracking-mitigations/blob/main/explainers/bounce-tracking-mitigations.md": {},
@@ -33,18 +37,42 @@
           "user-activation-processing-model"
         ]
       },
-      "https://httpwg.org/specs/rfc6265.html": {},
-      "https://httpwg.org/specs/rfc9111.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://privacycg.github.io/nav-tracking-mitigations/": {},
-      "https://storage.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/dnt/drafts/tracking-dnt.html": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/webappsec-clear-site-data/": {},
-      "https://w3c.github.io/webauthn/": {},
-      "https://w3c.github.io/webdriver/": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
+      "https://httpwg.org/specs/rfc9111.html": {
+        "specShortname": "rfc9111"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://privacycg.github.io/nav-tracking-mitigations/": {
+        "specShortname": "nav-tracking-mitigations"
+      },
+      "https://storage.spec.whatwg.org/": {
+        "specShortname": "storage"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/dnt/drafts/tracking-dnt.html": {
+        "specShortname": "tracking-dnt"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/webappsec-clear-site-data/": {
+        "specShortname": "clear-site-data"
+      },
+      "https://w3c.github.io/webauthn/": {
+        "specShortname": "webauthn-4"
+      },
+      "https://w3c.github.io/webdriver/": {
+        "specShortname": "webdriver2"
+      },
       "https://webkit.org/tracking-prevention/": {
         "anchors": [
           "classification-as-having-cross-site-tracking-capabilities",
@@ -74,7 +102,8 @@
           "concept-document",
           "concept-document-origin",
           "concept-node-insert"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -85,7 +114,8 @@
           "concept-request-client",
           "concept-request-reserved-client",
           "concept-response-url-list"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -168,7 +198,8 @@
       "https://httpwg.org/specs/rfc7231.html": {
         "anchors": [
           "status.3xx"
-        ]
+        ],
+        "specShortname": "rfc7231"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
@@ -184,14 +215,16 @@
           "map-iterate",
           "map-exists",
           "iteration-continue"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "storage-shed",
           "storage-key",
           "storage-key-origin"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://tools.ietf.org/html/rfc6265/": {
         "anchors": [
@@ -212,12 +245,14 @@
           "concept-host",
           "empty-host",
           "concept-host-equals"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "handle-fetch"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
@@ -226,13 +261,15 @@
           "dfn-duration",
           "dfn-eso-current-wall-time",
           "wall-clock-unsafe-current-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/webauthn/": {
         "anchors": [
           "publickeycredential",
           "dom-publickeycredential-discoverfromexternalsource-slot"
-        ]
+        ],
+        "specShortname": "webauthn-4"
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
@@ -242,13 +279,15 @@
           "dfn-unsupported-operation",
           "dfn-unknown-error",
           "dfn-success"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://wiki.mozilla.org/Security/Anti_tracking_policy": {},
       "https://www.w3.org/TR/tracking-dnt/": {
         "anchors": [
           "dfn-tracking"
-        ]
+        ],
+        "specShortname": "tracking-dnt"
       }
     }
   }

@@ -8,8 +8,12 @@
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://datatracker.ietf.org/wg/privacypass/about/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
@@ -17,20 +21,37 @@
           "navigation-params"
         ]
       },
-      "https://httpwg.org/specs/rfc6265.html": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
       "https://httpwg.org/specs/rfc8941.html": {},
-      "https://httpwg.org/specs/rfc9110.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc9110.html": {
+        "specShortname": "rfc9110"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "ui-guidelines"
-        ]
+        ],
+        "specShortname": "storage"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.ietf.org/archive/id/draft-ietf-privacypass-architecture-10.html": {},
       "https://www.ietf.org/archive/id/draft-ietf-privacypass-auth-scheme-10.html": {},
       "https://www.ietf.org/archive/id/draft-ietf-privacypass-protocol-10.html": {},
@@ -42,13 +63,16 @@
       "https://www.rfc-editor.org/rfc/rfc8536": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {},
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -71,7 +95,8 @@
           "concept-response-header-list",
           "concept-header-list-get",
           "concept-header-list-delete"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -134,7 +159,8 @@
           "assert",
           "iteration-continue",
           "map-iterate"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tools.ietf.org/html/rfc8941": {
         "anchors": [
@@ -148,24 +174,28 @@
           "concept-url-parser",
           "concept-url-scheme",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "dfn-duration"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "should-request-be-allowed-to-use-feature",
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -185,7 +215,8 @@
           "a-new-promise",
           "reject",
           "resolve"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.ietf.org/archive/id/draft-irtf-cfrg-voprf-21.html": {
         "anchors": [
@@ -206,7 +237,8 @@
           "concept-xmlhttprequest-state",
           "send-flag",
           "dom-xmlhttprequest-send"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }

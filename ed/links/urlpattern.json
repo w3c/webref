@@ -26,11 +26,19 @@
           "speculation-rules"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.google.com/": {},
       "https://www.rfc-editor.org/info/rfc9651/": {},
       "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document": {}
@@ -87,7 +95,8 @@
           "parse-a-json-string-to-an-infra-value",
           "string",
           "map-iterate"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -99,19 +108,22 @@
         "anchors": [
           "sec-get-o-p",
           "sec-tostring"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "realm"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/text-processing.html": {
         "anchors": [
           "sec-regexp-regular-expression-objects",
           "sec-regexpbuiltinexec",
           "sec-regexpcreate"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -144,7 +156,8 @@
           "fragment-state",
           "url-opaque-path",
           "url"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -162,7 +175,8 @@
           "new",
           "dfn-identifier",
           "dfn-inherited-dictionaries"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

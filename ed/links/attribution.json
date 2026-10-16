@@ -51,8 +51,12 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://doi.org/10.1016/B978-0-12-385514-5.00006-9": {},
       "https://doi.org/10.1561/0400000042": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/attribution/issues": {},
       "https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html": {
         "anchors": [
@@ -60,32 +64,49 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://httpwg.org/specs/rfc6265.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-patwg/": {},
       "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3581396": {},
       "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4430334": {},
-      "https://privacycg.github.io/nav-tracking-mitigations/": {},
-      "https://storage.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://privacycg.github.io/nav-tracking-mitigations/": {
+        "specShortname": "nav-tracking-mitigations"
+      },
+      "https://storage.spec.whatwg.org/": {
+        "specShortname": "storage"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/indexed-collections.html": {
         "anchors": [
           "table-the-typedarray-constructors"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
           "sec-math.ceil",
           "sec-math.log2"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-numerictorawbytes"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.bea.gov/research/papers/2017/measuring-free-digital-economy-within-gdp-and-productivity-accounts": {},
       "https://www.ccadb.org/": {},
       "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {},
@@ -96,26 +117,42 @@
       "https://www.rfc-editor.org/info/rfc9180/": {},
       "https://www.w3.org/2001/tag/doc/web-without-3p-cookies/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/": {
+        "specShortname": "CSS2"
+      },
       "https://www.w3.org/TR/clear-site-data/": {
         "anchors": [
           "header",
           "clear-response"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
-      "https://www.w3.org/TR/css-2025/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
-      "https://www.w3.org/TR/fedcm-1/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/secure-contexts/": {},
+      "https://www.w3.org/TR/css-2025/": {
+        "specShortname": "css-2025"
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
+      "https://www.w3.org/TR/fedcm-1/": {
+        "specShortname": "fedcm-1"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
       "https://www.w3.org/groups/wg/pat": {},
       "https://www.w3.org/groups/wg/pat/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -127,7 +164,8 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -152,7 +190,8 @@
           "concept-header-list-get",
           "concept-response-header-list",
           "concept-http-network-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/": {
         "anchors": [
@@ -290,12 +329,14 @@
           "16-bit-unsigned-integer",
           "isomorphic-encode",
           "byte"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "storage-key"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -315,7 +356,8 @@
           "concept-url-serializer",
           "url-serializer-exclude-fragment",
           "concept-host-serializer"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3ctag.github.io/privacy-principles/": {
         "anchors": [
@@ -323,7 +365,8 @@
           "collective-privacy",
           "dfn-cross-site-recognition",
           "dfn-same-site-recognition"
-        ]
+        ],
+        "specShortname": "privacy-principles"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -348,7 +391,8 @@
           "resolve",
           "exceptiondef-referenceerror",
           "upon-fulfillment"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.rfc-editor.org/info/rfc2119/": {
         "anchors": [
@@ -361,27 +405,32 @@
       "https://www.w3.org/TR/CSS2/conform.html": {
         "anchors": [
           "x6"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://www.w3.org/TR/clear-site-data/": {
         "anchors": [
           "http-headerdef-clear-site-data"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
       "https://www.w3.org/TR/css-2025/": {
         "anchors": [
           "user"
-        ]
+        ],
+        "specShortname": "css-2025"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "integer"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/fingerprinting-guidance/": {
         "anchors": [
           "dfn-browser-fingerprinting"
-        ]
+        ],
+        "specShortname": "fingerprinting-guidance"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
@@ -394,21 +443,26 @@
           "dfn-current-wall-time",
           "dfn-eso-current-wall-time",
           "dfn-monotonic-clock"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://www.w3.org/TR/secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
-      "https://www.w3.org/policies/patent-policy/": {}
+      "https://www.w3.org/policies/patent-policy/": {
+        "specShortname": "w3c-patent-policy"
+      }
     }
   }
 }

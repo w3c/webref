@@ -6,9 +6,15 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-images-3/": {},
-      "https://drafts.csswg.org/geometry/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "specShortname": "css-images-3"
+      },
+      "https://drafts.csswg.org/geometry/": {
+        "specShortname": "geometry-1"
+      },
       "https://github.com/w3c/webcodecs/issues": {},
       "https://github.com/w3c/webcodecs/issues/166": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -18,34 +24,65 @@
           "serializable-objects"
         ]
       },
-      "https://httpwg.org/specs/rfc9110.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc9110.html": {
+        "specShortname": "rfc9110"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-media-wg/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
-      "https://streams.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
       "https://tc39.es/ecma262/": {
         "anchors": [
           "sec-detacharraybuffer"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://w3c.github.io/media-capabilities/": {},
-      "https://w3c.github.io/media-source/": {},
-      "https://w3c.github.io/mediacapture-record/": {},
-      "https://w3c.github.io/mst-content-hint/": {},
-      "https://w3c.github.io/svgwg/svg2-draft/": {},
-      "https://w3c.github.io/webcodecs/codec_registry.html": {},
-      "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html": {},
-      "https://w3c.github.io/webrtc-pc/": {},
-      "https://w3c.github.io/webrtc-svc/": {},
-      "https://webaudio.github.io/web-audio-api/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://w3c.github.io/media-capabilities/": {
+        "specShortname": "media-capabilities"
+      },
+      "https://w3c.github.io/media-source/": {
+        "specShortname": "media-source-2"
+      },
+      "https://w3c.github.io/mediacapture-record/": {
+        "specShortname": "mediastream-recording"
+      },
+      "https://w3c.github.io/mst-content-hint/": {
+        "specShortname": "mst-content-hint"
+      },
+      "https://w3c.github.io/svgwg/svg2-draft/": {
+        "specShortname": "SVG2"
+      },
+      "https://w3c.github.io/webcodecs/codec_registry.html": {
+        "specShortname": "webcodecs-codec-registry"
+      },
+      "https://w3c.github.io/webcodecs/video_frame_metadata_registry.html": {
+        "specShortname": "webcodecs-video-frame-metadata-registry"
+      },
+      "https://w3c.github.io/webrtc-pc/": {
+        "specShortname": "webrtc"
+      },
+      "https://w3c.github.io/webrtc-svc/": {
+        "specShortname": "webrtc-svc"
+      },
+      "https://webaudio.github.io/web-audio-api/": {
+        "specShortname": "webaudio-1.0"
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-octet",
           "idl-short",
           "idl-long",
           "idl-float"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.itu.int/rec/T-REC-H.273/en": {},
       "https://www.rfc-editor.org/info/rfc6381/": {},
@@ -56,7 +93,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -66,14 +104,16 @@
           "eventtarget",
           "dom-node-ownerdocument",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-images-3/": {
         "anchors": [
           "natural-dimensions",
           "natural-width",
           "natural-height"
-        ]
+        ],
+        "specShortname": "css-images-3"
       },
       "https://drafts.csswg.org/geometry-1/": {
         "anchors": [
@@ -92,7 +132,8 @@
           "dom-domrect-y",
           "dom-domrect-width",
           "dom-domrect-height"
-        ]
+        ],
+        "specShortname": "geometry-1"
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
@@ -186,13 +227,15 @@
           "byte-sequence",
           "ordered-map",
           "list-is-empty"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "mime-type",
           "valid-mime-type"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -204,7 +247,8 @@
           "read-request-error-steps",
           "is-readable-stream-disturbed",
           "readablestream-locked"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -215,36 +259,42 @@
         "anchors": [
           "dom-mediacapabilities-decodinginfo",
           "dom-mediacapabilitiesinfo-powerefficient"
-        ]
+        ],
+        "specShortname": "media-capabilities"
       },
       "https://w3c.github.io/media-source/": {
         "anchors": [
           "dom-mediasource-istypesupported"
-        ]
+        ],
+        "specShortname": "media-source-2"
       },
       "https://w3c.github.io/mediacapture-record/": {
         "anchors": [
           "enumdef-bitratemode",
           "dom-bitratemode-constant",
           "dom-bitratemode-variable"
-        ]
+        ],
+        "specShortname": "mediastream-recording"
       },
       "https://w3c.github.io/svgwg/svg2-draft/embedded.html": {
         "anchors": [
           "InterfaceSVGImageElement"
-        ]
+        ],
+        "specShortname": "SVG2"
       },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dom-rtcrtpsender-getcapabilities",
           "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
-        ]
+        ],
+        "specShortname": "webrtc"
       },
       "https://webaudio.github.io/web-audio-api/": {
         "anchors": [
           "AudioBuffer",
           "AudioWorklet"
-        ]
+        ],
+        "specShortname": "webaudio-1.0"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -286,19 +336,24 @@
           "idl-unrestricted-float",
           "the-given-value",
           "quotaexceedederror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/mst-content-hint/": {
         "anchors": [
           "video-content-hints"
-        ]
+        ],
+        "specShortname": "mst-content-hint"
       },
       "https://www.w3.org/TR/webrtc-svc/": {
         "anchors": [
           "scalabilitymodes*"
-        ]
+        ],
+        "specShortname": "webrtc-svc"
       },
-      "https://www.w3.org/policies/patent-policy/": {}
+      "https://www.w3.org/policies/patent-policy/": {
+        "specShortname": "w3c-patent-policy"
+      }
     }
   }
 }

@@ -12,13 +12,16 @@
       "https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.chrome.com/blog/pna-on-hold": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request-client",
           "concept-fetch",
           "concept-request-policy-container"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/w3c/webappsec-permissions-policy/issues/207": {},
       "https://github.com/wicg/local-network-access/issues/103": {},
@@ -33,27 +36,42 @@
           "coep"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://link.springer.com/chapter/10.1007/978-3-540-77048-0_38": {},
       "https://localmess.github.io/": {},
       "https://plex.tv/": {},
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "dfn-service-worker",
           "soft-update"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/webappsec-mixed-content/": {},
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/webappsec-mixed-content/": {
+        "specShortname": "mixed-content"
+      },
       "https://w3c.github.io/webappsec-mixed-content/level2.html": {
         "anchors": [
           "upgrade-algorithm"
         ]
       },
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wicg.github.io/private-network-access/": {},
       "https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml": {},
       "https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml": {},
@@ -74,7 +92,8 @@
       "https://www.w3.org/TR/webtransport/": {
         "anchors": [
           "obtain-a-webtransport-connection"
-        ]
+        ],
+        "specShortname": "webtransport"
       }
     },
     "autolinks": {
@@ -82,7 +101,8 @@
         "anchors": [
           "document",
           "concept-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -107,7 +127,8 @@
           "request",
           "dom-request",
           "network-partition-key"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -151,7 +172,8 @@
           "map-value",
           "map-exists",
           "struct"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -159,7 +181,8 @@
           "ip-address",
           "concept-url-host",
           "host-public-suffix"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -169,34 +192,40 @@
           "dfn-denied",
           "dfn-granted",
           "dfn-prompt-the-user-to-choose"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/webappsec-mixed-content/": {
         "anchors": [
           "should-block-fetch"
-        ]
+        ],
+        "specShortname": "mixed-content"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist-self"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "this"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
           "websocket-opening-handshake"
-        ]
+        ],
+        "specShortname": "websockets"
       }
     }
   }

@@ -32,14 +32,21 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory": {},
       "https://github.com/tabatkins/bikeshed": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "fileReadingTaskSource"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -97,7 +104,8 @@
         "anchors": [
           "strictly-split",
           "list"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -110,7 +118,8 @@
           "dfn-file",
           "dfn-name",
           "dfn-filereader"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -129,7 +138,8 @@
           "securityerror",
           "idl-sequence",
           "invalidstateerror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

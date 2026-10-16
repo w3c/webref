@@ -6,14 +6,21 @@
   "links": {
     "rawlinks": {
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://w3c.github.io/mediacapture-main/": {
         "anchors": [
           "dfn-source"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
@@ -21,14 +28,18 @@
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
           "dfn-device-change-notification-steps"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
           "set-permission-command"
-        ]
+        ],
+        "specShortname": "permissions"
       },
-      "https://www.w3.org/TR/screen-capture/": {},
+      "https://www.w3.org/TR/screen-capture/": {
+        "specShortname": "screen-capture"
+      },
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
           "dfn-error-code",
@@ -38,7 +49,8 @@
           "dfn-handle-any-user-prompts",
           "dfn-url-variables",
           "dfn-getting-properties"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://www.w3.org/groups/wg/webrtc": {},
       "https://www.w3.org/groups/wg/webrtc/ipr": {},
@@ -46,7 +58,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -59,7 +72,8 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -67,7 +81,8 @@
           "idl-DOMString",
           "idl-double",
           "idl-unsigned-long"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
@@ -83,7 +98,8 @@
           "dom-mediatracksupportedconstraints-framerate",
           "dom-mediatracksupportedconstraints-facingmode",
           "dom-mediatracksupportedconstraints-samplerate"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
@@ -91,12 +107,14 @@
           "dfn-permission-state",
           "dom-permissionstate-prompt",
           "dfn-prompt-the-user-to-choose"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://www.w3.org/TR/screen-capture/": {
         "anchors": [
           "dom-mediadevices-getdisplaymedia"
-        ]
+        ],
+        "specShortname": "screen-capture"
       },
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
@@ -106,7 +124,8 @@
           "dfn-remote-end-steps",
           "dfn-error",
           "dfn-invalid-argument"
-        ]
+        ],
+        "specShortname": "webdriver2"
       }
     }
   }

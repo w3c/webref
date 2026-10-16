@@ -8,7 +8,9 @@
       "https://eprint.iacr.org/2020/1244": {},
       "https://eprint.iacr.org/2020/823": {},
       "https://github.com/w3c/vc-di-eddsa/issues/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-vc-comments/": {},
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf": {},
       "https://www.rfc-editor.org/info/bcp14": {},
@@ -26,26 +28,30 @@
           "Multikey",
           "multibase-0",
           "retrieve-verification-method"
-        ]
+        ],
+        "specShortname": "cid-1.0"
       },
       "https://www.w3.org/TR/json-ld11-api/": {
         "anchors": [
           "expansion-algorithm",
           "deserialize-json-ld-to-rdf-algorithm"
-        ]
+        ],
+        "specShortname": "json-ld11-api"
       },
       "https://www.w3.org/TR/rdf-canon/": {
         "anchors": [
           "canon-algorithm",
           "dfn-serialized-canonical-form"
-        ]
+        ],
+        "specShortname": "rdf-canon"
       },
       "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
           "CryptosuiteCommonAlgorithms",
           "create-proof",
           "verify-proof-0"
-        ]
+        ],
+        "specShortname": "vc-data-integrity-1.1"
       },
       "https://www.w3.org/TR/vc-data-integrity/": {
         "anchors": [
@@ -64,11 +70,18 @@
           "PROOF_GENERATION_ERROR",
           "algorithms",
           "add-proof-set-chain"
-        ]
+        ],
+        "specShortname": "vc-data-integrity"
       },
-      "https://www.w3.org/TR/vc-data-model-2.0/": {},
-      "https://www.w3.org/TR/vc-di-bbs/": {},
-      "https://www.w3.org/TR/vc-di-ecdsa/": {},
+      "https://www.w3.org/TR/vc-data-model-2.0/": {
+        "specShortname": "vc-data-model-2.0"
+      },
+      "https://www.w3.org/TR/vc-di-bbs/": {
+        "specShortname": "vc-di-bbs"
+      },
+      "https://www.w3.org/TR/vc-di-ecdsa/": {
+        "specShortname": "vc-di-ecdsa"
+      },
       "https://www.w3.org/TR/xmlschema11-2/": {},
       "https://www.w3.org/groups/wg/vc": {},
       "https://www.w3.org/groups/wg/vc/ipr": {},
@@ -76,7 +89,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -85,18 +99,21 @@
         "anchors": [
           "ordered-map",
           "struct"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://www.w3.org/TR/vc-data-integrity-1.1/": {
         "anchors": [
           "dfn-data-integrity-cryptographic-suite-instance"
-        ]
+        ],
+        "specShortname": "vc-data-integrity-1.1"
       },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "dfn-selective-disclosure",
           "dfn-unlinkable-disclosure"
-        ]
+        ],
+        "specShortname": "vc-data-model-2.0"
       }
     }
   }

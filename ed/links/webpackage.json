@@ -8,10 +8,18 @@
       "http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css2/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "specShortname": "CSS2"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/WICG/webpackage/issues/141": {},
       "https://github.com/httpwg/http-extensions/issues/744": {},
       "https://github.com/w3c/resource-hints/issues/77": {},
@@ -29,22 +37,46 @@
         ]
       },
       "https://httpwg.org/http-extensions/draft-ietf-httpbis-variants.html": {},
-      "https://httpwg.org/specs/rfc7230.html": {},
-      "https://httpwg.org/specs/rfc7231.html": {},
-      "https://httpwg.org/specs/rfc8288.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
-      "https://streams.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc7230.html": {
+        "specShortname": "rfc7230"
+      },
+      "https://httpwg.org/specs/rfc7231.html": {
+        "specShortname": "rfc7231"
+      },
+      "https://httpwg.org/specs/rfc8288.html": {
+        "specShortname": "rfc8288"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
       "https://tools.ietf.org/html/draft-ietf-tls-tls13": {},
       "https://tools.ietf.org/html/draft-thomson-http-mice-03": {},
       "https://tools.ietf.org/html/draft-yasskin-httpbis-origin-signed-exchanges-impl-02": {},
       "https://tools.ietf.org/html/draft-yasskin-httpbis-origin-signed-exchanges-impl-03": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/network-error-logging/": {},
-      "https://w3c.github.io/webappsec-csp/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/network-error-logging/": {
+        "specShortname": "network-error-logging"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html": {},
       "https://wicg.github.io/webpackage/draft-yasskin-wpack-use-cases.html": {
         "anchors": [
@@ -69,17 +101,20 @@
           "document",
           "concept-event-fire",
           "concept-node-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "viewport"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-decode-without-bom-or-fail"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -134,7 +169,8 @@
           "concept-body",
           "concept-request-method",
           "concept-header"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -230,14 +266,16 @@
           "set-intersection",
           "list-empty",
           "list-contain"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "mime-type",
           "mime-type-essence",
           "parameters"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -256,7 +294,8 @@
           "readablestream-need-more-data",
           "readablestream-close",
           "readablestream-error"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-07": {
         "anchors": [
@@ -345,7 +384,8 @@
           "concept-url-origin",
           "concept-url-fragment",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -353,22 +393,26 @@
           "fetchevent",
           "dom-fetchevent-preloadresponse",
           "dom-fetchevent-request"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/network-error-logging/": {
         "anchors": [
           "dfn-nel-policies"
-        ]
+        ],
+        "specShortname": "network-error-logging"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "grammardef-hash-source"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -376,7 +420,8 @@
           "sequence-type",
           "idl-Uint8Array",
           "idl-ArrayBuffer"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://wicg.github.io/webpackage/draft-yasskin-http-origin-signed-responses.html": {
         "anchors": [

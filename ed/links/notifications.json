@@ -8,8 +8,12 @@
       "http://robert.ocallahan.org/2011/06/permissions-for-web-applications_30.html": {},
       "https://annevankesteren.nl/": {},
       "https://creativecommons.org/licenses/by/4.0/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/whatwg/html/issues/4474": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/images.html": {
@@ -20,15 +24,28 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "tracking-vector"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/push-api/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/push-api/": {
+        "specShortname": "push-api"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.apple.com/": {},
       "https://www.google.com/": {},
       "https://www.rfc-editor.org/info/bcp47": {},
@@ -41,7 +58,8 @@
           "dom-event-cancelable",
           "eventtarget",
           "concept-event-listener"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -58,7 +76,8 @@
           "fetch-useparallelqueue",
           "process-response-end-of-body",
           "concept-response"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -125,7 +144,8 @@
           "list-contain",
           "list-empty",
           "boolean"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -138,7 +158,8 @@
           "concept-url",
           "concept-url-parser",
           "concept-url-serializer"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -150,14 +171,16 @@
           "dictdef-extendableeventinit",
           "dfn-active-worker",
           "fire-functional-event"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "typedefdef-epochtimestamp",
           "dfn-unix-epoch",
           "dfn-eso-current-wall-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -166,7 +189,8 @@
           "dfn-getting-the-current-permission-state",
           "dom-permissions-query",
           "dfn-request-permission-to-use"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -191,7 +215,8 @@
           "dfn-create-frozen-array",
           "reject",
           "new"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

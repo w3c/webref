@@ -12,8 +12,12 @@
       "https://creativecommons.org/licenses/by/4.0/": {},
       "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/privacycg/proposals/issues/2": {},
       "https://github.com/privacycg/storage-access/issues": {},
       "https://github.com/privacycg/storage-access/issues/": {},
@@ -26,17 +30,37 @@
       },
       "https://google.com/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://httpwg.org/specs/rfc6265.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://mozilla.org/": {},
-      "https://privacycg.github.io/storage-access/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c-fedid.github.io/FedCM/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/webappsec-credential-management/": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webdriver/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://privacycg.github.io/storage-access/": {
+        "specShortname": "storage-access"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c-fedid.github.io/FedCM/": {
+        "specShortname": "fedcm-1"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "specShortname": "credential-management-1"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webdriver/": {
+        "specShortname": "webdriver2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://webkit.org/": {},
       "https://webkit.org/blog/8124/introducing-storage-access-api/": {},
       "https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/": {},
@@ -57,7 +81,8 @@
         "anchors": [
           "document",
           "concept-document-origin"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -70,7 +95,8 @@
           "concept-http-redirect-fetch",
           "concept-request-current-url",
           "concept-http-network-or-cache-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -157,7 +183,8 @@
           "user-agent",
           "string",
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tools.ietf.org/html/rfc6265": {
         "anchors": [
@@ -168,12 +195,14 @@
         "anchors": [
           "concept-url-origin",
           "concept-url-parser"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c-fedid.github.io/FedCM/": {
         "anchors": [
           "browser-connected-accounts-set"
-        ]
+        ],
+        "specShortname": "fedcm-1"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -193,20 +222,23 @@
           "dfn-permission-key",
           "dfn-permission-key-generation-algorithm",
           "dfn-permission-key-comparison-algorithm"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "concept-credential-store",
           "origin-prevent-silent-access-flag"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "should-request-be-allowed-to-use-feature",
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webdriver/webdriver-spec.html": {
         "anchors": [
@@ -233,7 +265,8 @@
           "idl-DOMException",
           "resolve",
           "notallowederror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

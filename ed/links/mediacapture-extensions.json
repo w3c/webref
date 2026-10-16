@@ -5,7 +5,9 @@
   },
   "links": {
     "rawlinks": {
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://github.com/w3c/mediacapture-extensions/issues/129": {},
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -22,14 +24,21 @@
           "global-attributes"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://w3ctag.github.io/design-principles/": {
         "anchors": [
           "js-rtc"
-        ]
+        ],
+        "specShortname": "design-principles"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc3550/": {},
@@ -40,26 +49,42 @@
         ]
       },
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/design-principles/": {},
-      "https://www.w3.org/TR/geometry-1/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/image-capture/": {},
+      "https://www.w3.org/TR/design-principles/": {
+        "specShortname": "design-principles"
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "specShortname": "geometry-1"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/image-capture/": {
+        "specShortname": "image-capture"
+      },
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
           "dfn-selectsettings",
           "dfn-required-constraints"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
-      "https://www.w3.org/TR/permissions/": {},
-      "https://www.w3.org/TR/screen-capture/": {},
-      "https://www.w3.org/TR/webcodecs/": {},
+      "https://www.w3.org/TR/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://www.w3.org/TR/screen-capture/": {
+        "specShortname": "screen-capture"
+      },
+      "https://www.w3.org/TR/webcodecs/": {
+        "specShortname": "webcodecs"
+      },
       "https://www.w3.org/groups/wg/webrtc": {},
       "https://www.w3.org/groups/wg/webrtc/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -71,7 +96,8 @@
           "event",
           "eventtarget-activation-behavior",
           "dom-event-istrusted"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
@@ -127,13 +153,15 @@
           "user-agent",
           "assert",
           "list-size"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "surrounding-agent",
           "sec-agent-clusters"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -156,12 +184,14 @@
           "invalidstateerror",
           "dfn-perform-steps-once-promise-is-settled",
           "dfn-dictionary"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/geometry-1/": {
         "anchors": [
           "dictdef-domrectinit"
-        ]
+        ],
+        "specShortname": "geometry-1"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
@@ -169,14 +199,16 @@
           "dom-performance-now",
           "typedefdef-domhighrestimestamp",
           "dom-performance-timeorigin"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/image-capture/": {
         "anchors": [
           "dictdef-point2d",
           "dom-point2d-x",
           "dom-point2d-y"
-        ]
+        ],
+        "specShortname": "image-capture"
       },
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
@@ -216,7 +248,8 @@
           "dfn-track-set",
           "dom-mediastreamconstraints-video",
           "dom-mediastreamconstraints-audio"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
@@ -226,19 +259,22 @@
           "dom-permissiondescriptor",
           "dom-permissiondescriptor-name",
           "dom-permissionstate-granted"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://www.w3.org/TR/screen-capture/": {
         "anchors": [
           "dom-mediadevices-getdisplaymedia"
-        ]
+        ],
+        "specShortname": "screen-capture"
       },
       "https://www.w3.org/TR/webcodecs/": {
         "anchors": [
           "dictdef-videoframemetadata",
           "dom-videoframe-timestamp",
           "videoframe"
-        ]
+        ],
+        "specShortname": "webcodecs"
       }
     }
   }

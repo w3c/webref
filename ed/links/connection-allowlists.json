@@ -6,13 +6,18 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
-      "https://bluetooth.spec.whatwg.org/": {},
+      "https://bluetooth.spec.whatwg.org/": {
+        "specShortname": "bluetooth"
+      },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "main-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/WICG/connection-allowlists/issues/1": {},
       "https://github.com/WICG/connection-allowlists/pull/26": {
@@ -21,39 +26,64 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://urlpattern.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/reporting/": {},
-      "https://w3c.github.io/webappsec-csp/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://urlpattern.spec.whatwg.org/": {
+        "specShortname": "urlpattern"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/reporting/": {
+        "specShortname": "reporting-1"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
       "https://w3c.github.io/webappsec-cspee/": {
         "anchors": [
           "allow-csp-from-header",
           "html-integration"
-        ]
+        ],
+        "specShortname": "csp-embedded-enforcement"
       },
-      "https://w3c.github.io/webrtc-pc/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {},
-      "https://wicg.github.io/web-smart-card/": {},
+      "https://w3c.github.io/webrtc-pc/": {
+        "specShortname": "webrtc"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      },
+      "https://wicg.github.io/web-smart-card/": {
+        "specShortname": "web-smart-card"
+      },
       "https://www.rfc-editor.org/info/rfc9651/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {},
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "https://bluetooth.spec.whatwg.org/": {
         "anchors": [
           "bluetoothdatafilterinit-matches"
-        ]
+        ],
+        "specShortname": "bluetooth"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document",
           "concept-node-document",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -80,7 +110,8 @@
           "concept-connection-obtain",
           "concept-request-header-list",
           "concept-network-error"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -183,7 +214,8 @@
           "list-contain",
           "equal",
           "string-length"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -191,7 +223,8 @@
           "concept-url",
           "concept-host",
           "concept-url-parser"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://urlpattern.spec.whatwg.org/": {
         "anchors": [
@@ -202,7 +235,8 @@
           "dom-urlpatterninit-hostname",
           "url-pattern-hostname-component",
           "url-pattern-create"
-        ]
+        ],
+        "specShortname": "urlpattern"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -210,7 +244,8 @@
           "dom-windowclient-navigate",
           "dom-clients-openwindow",
           "dfn-service-worker"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/reporting/": {
         "anchors": [
@@ -219,19 +254,22 @@
           "reportbody",
           "strip-url-for-use-in-reports",
           "generate-and-queue-a-report"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "fetch-directives",
           "grammardef-host-source",
           "sandbox"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dfn-administratively-prohibited"
-        ]
+        ],
+        "specShortname": "webrtc"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -241,17 +279,20 @@
           "this",
           "securityerror",
           "idl-DOMException"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
           "concept-websocket-establish"
-        ]
+        ],
+        "specShortname": "websockets"
       },
       "https://wicg.github.io/web-smart-card/": {
         "anchors": [
           "transaction-state-promise"
-        ]
+        ],
+        "specShortname": "web-smart-card"
       },
       "https://www.rfc-editor.org/rfc/rfc9651": {
         "anchors": [
@@ -266,7 +307,8 @@
       "https://xhr.spec.whatwg.org/": {
         "anchors": [
           "xmlhttprequest"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }
