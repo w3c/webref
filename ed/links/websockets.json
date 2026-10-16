@@ -30,16 +30,30 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/readyState": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/url": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://google.com/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/FileAPI/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/rfc/rfc6455": {},
       "https://www.rfc-editor.org/rfc/rfc6797": {},
       "https://www.unicode.org/versions/latest/": {}
@@ -71,13 +85,15 @@
           "event",
           "dictdef-eventinit",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode",
           "utf-8-decode-without-bom"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -101,7 +117,8 @@
           "concept-network-error",
           "concept-response-status",
           "extract-header-list-values"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/comms.html": {
         "anchors": [
@@ -136,7 +153,8 @@
         "anchors": [
           "forgiving-base64-encode",
           "isomorphic-encode"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -150,12 +168,14 @@
           "concept-url-parser",
           "concept-url-serializer",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -177,7 +197,8 @@
           "the-given-value",
           "invalidstateerror",
           "idl-boolean"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

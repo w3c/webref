@@ -12,7 +12,9 @@
       },
       "http://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
       "https://ariya.io/2011/08/hall-of-api-shame-boolean-trap": {},
-      "https://console.spec.whatwg.org/": {},
+      "https://console.spec.whatwg.org/": {
+        "specShortname": "console"
+      },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://datatracker.ietf.org/doc/html/rfc8942": {
         "anchors": [
@@ -25,35 +27,63 @@
         "anchors": [
           "domimplementation",
           "dispatching-events"
-        ]
+        ],
+        "specShortname": "dom"
       },
-      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-backgrounds/": {
+        "specShortname": "css-backgrounds-3"
+      },
       "https://drafts.csswg.org/css-cascade-3/": {
         "anchors": [
           "inherited-property"
-        ]
+        ],
+        "specShortname": "css-cascade-3"
       },
-      "https://drafts.csswg.org/css-cascade-5/": {},
-      "https://drafts.csswg.org/css-conditional-3/": {},
-      "https://drafts.csswg.org/css-fonts-4/": {},
-      "https://drafts.csswg.org/css-fonts-5/": {},
-      "https://drafts.csswg.org/css-grid-1/": {},
-      "https://drafts.csswg.org/css-inline-3/": {},
-      "https://drafts.csswg.org/css-values-4/": {},
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "specShortname": "css-fonts-4"
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "specShortname": "css-fonts-5"
+      },
+      "https://drafts.csswg.org/css-grid-1/": {
+        "specShortname": "css-grid-1"
+      },
+      "https://drafts.csswg.org/css-inline-3/": {
+        "specShortname": "css-inline-3"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "blockwidth"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://drafts.csswg.org/cssom/": {},
-      "https://drafts.csswg.org/filter-effects-2/": {},
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/cssom/": {
+        "specShortname": "cssom-1"
+      },
+      "https://drafts.csswg.org/filter-effects-2/": {
+        "specShortname": "filter-effects-2"
+      },
       "https://drafts.csswg.org/resize-observer/": {
         "anchors": [
           "resize-observer-interface"
-        ]
+        ],
+        "specShortname": "resize-observer-1"
       },
-      "https://drafts.csswg.org/web-animations-2/": {},
+      "https://drafts.csswg.org/web-animations-2/": {
+        "specShortname": "web-animations-2"
+      },
       "https://en.wikipedia.org/wiki/Command%E2%80%93query_separation": {},
       "https://en.wikipedia.org/wiki/Idempotence": {},
       "https://en.wikipedia.org/wiki/Liskov_substitution_principle": {},
@@ -65,13 +95,15 @@
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "specification-hooks"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://esdiscuss.org/topic/frozen-date-objects": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "fetch-elsewhere"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/WICG/aom/blob/gh-pages/explainer.md": {
         "anchors": [
@@ -149,9 +181,12 @@
       "https://httpwg.org/specs/rfc8288.html": {
         "anchors": [
           "procedure"
-        ]
+        ],
+        "specShortname": "rfc8288"
       },
-      "https://httpwg.org/specs/rfc9110.html": {},
+      "https://httpwg.org/specs/rfc9110.html": {
+        "specShortname": "rfc9110"
+      },
       "https://httpwg.org/specs/rfc9205.html": {
         "anchors": [
           "section-4.7"
@@ -160,7 +195,8 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "algorithms"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://lists.w3.org/Archives/Public/public-script-coord/2013OctDec/0302.html": {},
       "https://lists.w3.org/Archives/Public/public-webapps/2011JulSep/0779.html": {},
@@ -169,12 +205,14 @@
         "anchors": [
           "image-type-pattern-matching-algorithm",
           "mime-type-representation"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
           "readable-stream-pipe-to"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tantek.com/2011/238/b1/many-ways-slice-url-name-pieces": {},
       "https://tc39.es/ecma262/": {
@@ -182,23 +220,37 @@
           "sec-static-semantics-constructormethod"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
         "anchors": [
           "sec-promisereaction-records"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tools.ietf.org/html/rfc8890": {},
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "url-apis-elsewhere"
-        ]
+        ],
+        "specShortname": "url"
       },
-      "https://w3c.github.io/FileAPI/": {},
-      "https://w3c.github.io/IndexedDB/": {},
-      "https://w3c.github.io/IntersectionObserver": {},
-      "https://w3c.github.io/IntersectionObserver/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
+      "https://w3c.github.io/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
+      "https://w3c.github.io/IntersectionObserver": {
+        "specShortname": "intersection-observer"
+      },
+      "https://w3c.github.io/IntersectionObserver/": {
+        "specShortname": "intersection-observer"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
       "https://w3c.github.io/apa/fast/": {},
       "https://w3c.github.io/bp-i18n-specdev/": {
         "anchors": [
@@ -208,51 +260,98 @@
       "https://w3c.github.io/encrypted-media/": {
         "anchors": [
           "dfn-cdm"
-        ]
+        ],
+        "specShortname": "encrypted-media-2"
       },
       "https://w3c.github.io/fingerprinting-guidance/": {
         "anchors": [
           "standardization"
-        ]
+        ],
+        "specShortname": "fingerprinting-guidance"
       },
-      "https://w3c.github.io/gamepad/": {},
+      "https://w3c.github.io/gamepad/": {
+        "specShortname": "gamepad"
+      },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "sec-tools"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
-      "https://w3c.github.io/i18n-glossary/": {},
-      "https://w3c.github.io/image-resource/": {},
-      "https://w3c.github.io/manifest/": {},
-      "https://w3c.github.io/mediacapture-screen-share/": {},
-      "https://w3c.github.io/payment-request/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/pointerevents/": {},
-      "https://w3c.github.io/remote-playback/": {},
-      "https://w3c.github.io/requestidlecallback/": {},
-      "https://w3c.github.io/uievents/": {},
-      "https://w3c.github.io/web-locks/": {},
-      "https://w3c.github.io/web-share/": {},
-      "https://w3c.github.io/webappsec-credential-management/": {},
-      "https://w3c.github.io/webappsec-csp/": {},
-      "https://w3c.github.io/webappsec-referrer-policy/": {},
-      "https://w3c.github.io/webcrypto/": {},
-      "https://w3c.github.io/webrtc-pc/": {},
-      "https://w3c.github.io/webtransport/": {},
+      "https://w3c.github.io/i18n-glossary/": {
+        "specShortname": "i18n-glossary"
+      },
+      "https://w3c.github.io/image-resource/": {
+        "specShortname": "image-resource"
+      },
+      "https://w3c.github.io/manifest/": {
+        "specShortname": "appmanifest"
+      },
+      "https://w3c.github.io/mediacapture-screen-share/": {
+        "specShortname": "screen-capture"
+      },
+      "https://w3c.github.io/payment-request/": {
+        "specShortname": "payment-request"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/pointerevents/": {
+        "specShortname": "pointerevents3"
+      },
+      "https://w3c.github.io/remote-playback/": {
+        "specShortname": "remote-playback"
+      },
+      "https://w3c.github.io/requestidlecallback/": {
+        "specShortname": "requestidlecallback"
+      },
+      "https://w3c.github.io/uievents/": {
+        "specShortname": "uievents"
+      },
+      "https://w3c.github.io/web-locks/": {
+        "specShortname": "web-locks"
+      },
+      "https://w3c.github.io/web-share/": {
+        "specShortname": "web-share"
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "specShortname": "credential-management-1"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "specShortname": "referrer-policy"
+      },
+      "https://w3c.github.io/webcrypto/": {
+        "specShortname": "webcrypto-2"
+      },
+      "https://w3c.github.io/webrtc-pc/": {
+        "specShortname": "webrtc"
+      },
+      "https://w3c.github.io/webtransport/": {
+        "specShortname": "webtransport"
+      },
       "https://w3ctag.github.io/bfcache-guide/": {},
-      "https://w3ctag.github.io/ethical-web-principles/": {},
+      "https://w3ctag.github.io/ethical-web-principles/": {
+        "specShortname": "ethical-web-principles"
+      },
       "https://w3ctag.github.io/privacy-principles/": {
         "anchors": [
           "sensitive-information"
-        ]
+        ],
+        "specShortname": "privacy-principles"
       },
-      "https://webaudio.github.io/web-audio-api/": {},
+      "https://webaudio.github.io/web-audio-api/": {
+        "specShortname": "webaudio-1.0"
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-constructors",
           "idl-enums",
           "es-integer-types"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://wicg.github.io/aom/": {},
       "https://wicg.github.io/origin-policy/": {},
@@ -285,7 +384,8 @@
       "https://www.w3.org/2001/tag/doc/promises-guide": {
         "anchors": [
           "one-time-events"
-        ]
+        ],
+        "specShortname": "promises-guide"
       },
       "https://www.w3.org/2001/tag/doc/the-web-is-unversioned/": {},
       "https://www.w3.org/Bugs/Public/show_bug.cgi?id=22824": {},
@@ -306,31 +406,39 @@
           "legacy-mutationevent-events"
         ]
       },
-      "https://www.w3.org/TR/IndexedDB/": {},
-      "https://www.w3.org/TR/appmanifest/": {},
+      "https://www.w3.org/TR/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
+      "https://www.w3.org/TR/appmanifest/": {
+        "specShortname": "appmanifest"
+      },
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
           "applies-to",
           "inherited-property",
           "computed"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "funcdef-lab"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
           "percentages"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/cssom/": {
         "anchors": [
           "serializing-css-values"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/ethical-web-principles/": {
         "anchors": [
@@ -343,15 +451,21 @@
           "render",
           "transparent",
           "expression"
-        ]
+        ],
+        "specShortname": "ethical-web-principles"
       },
-      "https://www.w3.org/TR/fingerprinting-guidance/": {},
-      "https://www.w3.org/TR/generic-sensor/": {},
+      "https://www.w3.org/TR/fingerprinting-guidance/": {
+        "specShortname": "fingerprinting-guidance"
+      },
+      "https://www.w3.org/TR/generic-sensor/": {
+        "specShortname": "generic-sensor"
+      },
       "https://www.w3.org/TR/geolocation-API/": {},
       "https://www.w3.org/TR/geolocation/": {
         "anchors": [
           "dom-geolocationposition"
-        ]
+        ],
+        "specShortname": "geolocation"
       },
       "https://www.w3.org/TR/html-design-principles/": {},
       "https://www.w3.org/TR/html401/": {},
@@ -360,24 +474,34 @@
           "type-links"
         ]
       },
-      "https://www.w3.org/TR/mediacapture-streams/": {},
-      "https://www.w3.org/TR/payment-method-manifest/": {},
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "specShortname": "mediacapture-streams"
+      },
+      "https://www.w3.org/TR/payment-method-manifest/": {
+        "specShortname": "payment-method-manifest"
+      },
       "https://www.w3.org/TR/payment-request/": {
         "anchors": [
           "show-method",
           "dfn-user-aborts-the-payment-request"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
-      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/TR/permissions/": {
+        "specShortname": "permissions"
+      },
       "https://www.w3.org/TR/privacy-principles/": {
         "anchors": [
           "consent-principles",
           "identity",
           "data-minimization",
           "dfn-data"
-        ]
+        ],
+        "specShortname": "privacy-principles"
       },
-      "https://www.w3.org/TR/pub-manifest/": {},
+      "https://www.w3.org/TR/pub-manifest/": {
+        "specShortname": "pub-manifest"
+      },
       "https://www.w3.org/TR/qaframe-spec/": {
         "anchors": [
           "extensions"
@@ -400,30 +524,38 @@
       "https://www.w3.org/TR/web-animations-1/": {
         "anchors": [
           "use-cases"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       },
       "https://www.w3.org/TR/web-animations/": {
         "anchors": [
           "animation-type"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       },
       "https://www.w3.org/TR/web-share/": {
         "anchors": [
           "dom-sharedata"
-        ]
+        ],
+        "specShortname": "web-share"
       },
       "https://www.w3.org/TR/xml-names/": {},
       "https://www.w3.org/community/autowebplatform/": {},
       "https://www.w3.org/community/web-bluetooth/": {},
       "https://www.w3.org/groups/other/tag/": {},
-      "https://www.w3.org/policies/patent-policy/": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "specShortname": "w3c-patent-policy"
+      },
       "https://www.w3.org/policies/process/": {
         "anchors": [
           "registries"
-        ]
+        ],
+        "specShortname": "w3c-process"
       },
       "https://www.w3.org/policies/process/20250818/": {},
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "http://microformats.org/wiki/existing-rel-values": {
@@ -434,7 +566,8 @@
       "https://console.spec.whatwg.org/": {
         "anchors": [
           "namespacedef-console"
-        ]
+        ],
+        "specShortname": "console"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
@@ -469,12 +602,14 @@
           "namednodemap",
           "nonelementparentnode",
           "dom-nonelementparentnode-getelementbyid"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
           "propdef-background-image"
-        ]
+        ],
+        "specShortname": "css-backgrounds-3"
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
@@ -482,29 +617,34 @@
           "css-inheritance",
           "used-value",
           "actual-value"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://drafts.csswg.org/css-conditional-3/": {
         "anchors": [
           "at-ruledef-supports"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
           "propdef-font-size",
           "propdef-font-size-adjust"
-        ]
+        ],
+        "specShortname": "css-fonts-4"
       },
       "https://drafts.csswg.org/css-fonts-5/": {
         "anchors": [
           "valdef-font-size-adjust-none"
-        ]
+        ],
+        "specShortname": "css-fonts-5"
       },
       "https://drafts.csswg.org/css-inline-3/": {
         "anchors": [
           "propdef-initial-letter",
           "propdef-initial-letter-align"
-        ]
+        ],
+        "specShortname": "css-inline-3"
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
@@ -512,47 +652,55 @@
           "length-value",
           "comb-one",
           "mult-opt"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "propdef-line-height"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "resolved-value",
           "dom-window-getcomputedstyle"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "dom-element-scrolltop",
           "dom-htmlelement-offsettop",
           "dom-element-getboundingclientrect"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://drafts.csswg.org/filter-effects-2/": {
         "anchors": [
           "propdef-backdrop-filter"
-        ]
+        ],
+        "specShortname": "filter-effects-2"
       },
       "https://drafts.csswg.org/web-animations-2/": {
         "anchors": [
           "dom-animationtimeline-currenttime"
-        ]
+        ],
+        "specShortname": "web-animations-2"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "textencoder"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-http-fetch",
           "body",
           "dom-body-json"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
@@ -777,28 +925,33 @@
           "surrogate",
           "implementation-defined",
           "ascii-code-point"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
         "anchors": [
           "sec-promise.prototype.then"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "sec-execution-contexts"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-error-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/managing-memory.html": {
         "anchors": [
           "sec-weak-ref-objects",
           "sec-finalization-registry-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
@@ -806,7 +959,8 @@
           "sec-number-objects",
           "sec-bigint-objects",
           "sec-date-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -814,125 +968,149 @@
           "concept-url",
           "dom-urlsearchparams-delete",
           "dom-urlsearchparams-has"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://w3c.github.io/IndexedDB/": {
         "anchors": [
           "idbdatabase"
-        ]
+        ],
+        "specShortname": "IndexedDB-3"
       },
       "https://w3c.github.io/IntersectionObserver/": {
         "anchors": [
           "intersectionobserver"
-        ]
+        ],
+        "specShortname": "intersection-observer"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "dom-fetchevent-respondwith",
           "dfn-service-worker-registration-task-queue"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/gamepad/": {
         "anchors": [
           "dom-gamepad"
-        ]
+        ],
+        "specShortname": "gamepad"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "dom-performance-now",
           "typedefdef-domhighrestimestamp"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/i18n-glossary/": {
         "anchors": [
           "dfn-percent-encoding"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       },
       "https://w3c.github.io/manifest/": {
         "anchors": [
           "dfn-short_name"
-        ]
+        ],
+        "specShortname": "appmanifest"
       },
       "https://w3c.github.io/mediacapture-screen-share/": {
         "anchors": [
           "dom-capturecontroller-setfocusbehavior",
           "dom-mediadevices-getdisplaymedia"
-        ]
+        ],
+        "specShortname": "screen-capture"
       },
       "https://w3c.github.io/payment-request/": {
         "anchors": [
           "dom-paymentrequest",
           "dfn-state",
           "dom-paymentrequest-show"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
           "dfn-request-permission-to-use",
           "dfn-prompt-the-user-to-choose"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/pointerevents/": {
         "anchors": [
           "dom-pointerevent",
           "dom-mouseevent",
           "dom-pointerevent-pointerid"
-        ]
+        ],
+        "specShortname": "pointerevents3"
       },
       "https://w3c.github.io/remote-playback/": {
         "anchors": [
           "dom-remoteplayback",
           "dfn-remote-playback-devices"
-        ]
+        ],
+        "specShortname": "remote-playback"
       },
       "https://w3c.github.io/requestidlecallback/": {
         "anchors": [
           "dom-idledeadline-timeremaining"
-        ]
+        ],
+        "specShortname": "requestidlecallback"
       },
       "https://w3c.github.io/uievents/": {
         "anchors": [
           "keyboardevent",
           "inputevent",
           "dom-inputevent-inputtype"
-        ]
+        ],
+        "specShortname": "uievents"
       },
       "https://w3c.github.io/web-locks/": {
         "anchors": [
           "lockmanager"
-        ]
+        ],
+        "specShortname": "web-locks"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "dom-credential-id"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
           "dom-referrerpolicy-no-referrer-when-downgrade"
-        ]
+        ],
+        "specShortname": "referrer-policy"
       },
       "https://w3c.github.io/webcrypto/": {
         "anchors": [
           "dfn-Crypto"
-        ]
+        ],
+        "specShortname": "webcrypto-2"
       },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dom-rtcdtmfsender"
-        ]
+        ],
+        "specShortname": "webrtc"
       },
-      "https://w3ctag.github.io/privacy-principles/": {},
+      "https://w3ctag.github.io/privacy-principles/": {
+        "specShortname": "privacy-principles"
+      },
       "https://webaudio.github.io/web-audio-api/": {
         "anchors": [
           "ScriptProcessorNode",
           "AudioWorklet"
-        ]
+        ],
+        "specShortname": "webaudio-1.0"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -969,7 +1147,8 @@
           "idl-SharedArrayBuffer",
           "dfn-partial-interface",
           "dfn-partial-dictionary"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.iana.org/assignments/link-relations/": {},
       "https://www.rfc-editor.org/info/rfc1866/": {},
@@ -989,7 +1168,8 @@
           "dom-progressevent-loaded",
           "dom-progressevent-total",
           "xmlhttprequesteventtarget"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }

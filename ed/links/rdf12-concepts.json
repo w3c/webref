@@ -18,7 +18,8 @@
         "anchors": [
           "interface-documentfragment",
           "node"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://en.wikipedia.org/wiki/Robustness_principle": {},
       "https://en.wikipedia.org/wiki/Set_(mathematics)": {},
@@ -37,7 +38,8 @@
           "section-2.7.1",
           "http-URI",
           "section-2.7"
-        ]
+        ],
+        "specShortname": "rfc7230"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
@@ -48,14 +50,19 @@
           "map-key",
           "map-value",
           "ordered-map"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://oag.ca.gov/privacy/ccpa": {},
       "https://termly.io/resources/infographics/privacy-laws-around-the-world/": {},
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://w3c.github.io/rdf-interop/spec/": {},
       "https://w3c.github.io/rdf-new/spec/": {},
-      "https://w3c.github.io/sparql-concepts/spec/": {},
+      "https://w3c.github.io/sparql-concepts/spec/": {
+        "specShortname": "sparql12-concepts"
+      },
       "https://w3c.github.io/sparql-new/spec/": {},
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/bcp47": {
@@ -135,13 +142,15 @@
           "dfn-case-sensitive",
           "dfn-ascii-case-insensitive",
           "dfn-spillover-effects"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       },
       "https://www.w3.org/TR/json-ld11/": {
         "anchors": [
           "the-i18n-namespace",
           "the-rdf-json-datatype"
-        ]
+        ],
+        "specShortname": "json-ld11"
       },
       "https://www.w3.org/TR/owl2-overview/": {},
       "https://www.w3.org/TR/owl2-syntax/": {
@@ -152,7 +161,8 @@
       "https://www.w3.org/TR/rdf-canon/": {
         "anchors": [
           "dataset-poisoning"
-        ]
+        ],
+        "specShortname": "rdf-canon"
       },
       "https://www.w3.org/TR/rdf11-concepts/": {},
       "https://www.w3.org/TR/rdf11-datasets/": {},
@@ -160,10 +170,16 @@
       "https://www.w3.org/TR/rdf11-semantics/": {},
       "https://www.w3.org/TR/rdf11-testcases/": {},
       "https://www.w3.org/TR/rdf12-interop/": {},
-      "https://www.w3.org/TR/rdf12-n-quads/": {},
-      "https://www.w3.org/TR/rdf12-n-triples/": {},
+      "https://www.w3.org/TR/rdf12-n-quads/": {
+        "specShortname": "rdf12-n-quads"
+      },
+      "https://www.w3.org/TR/rdf12-n-triples/": {
+        "specShortname": "rdf12-n-triples"
+      },
       "https://www.w3.org/TR/rdf12-primer/": {},
-      "https://www.w3.org/TR/rdf12-schema/": {},
+      "https://www.w3.org/TR/rdf12-schema/": {
+        "specShortname": "rdf12-schema"
+      },
       "https://www.w3.org/TR/rdf12-semantics/": {
         "anchors": [
           "dfn-interpretation",
@@ -172,35 +188,59 @@
           "dfn-semantic-extension",
           "skolemization",
           "simple_entailment_properties"
-        ]
+        ],
+        "specShortname": "rdf12-semantics"
       },
-      "https://www.w3.org/TR/rdf12-trig/": {},
+      "https://www.w3.org/TR/rdf12-trig/": {
+        "specShortname": "rdf12-trig"
+      },
       "https://www.w3.org/TR/rdf12-turtle/": {
         "anchors": [
           "sec-version"
-        ]
+        ],
+        "specShortname": "rdf12-turtle"
       },
       "https://www.w3.org/TR/rdf12-xml/": {
         "anchors": [
           "parseTypeLiteralPropertyElt"
-        ]
+        ],
+        "specShortname": "rdf12-xml"
       },
       "https://www.w3.org/TR/rdfa-core/": {},
       "https://www.w3.org/TR/sparql11-query/": {},
-      "https://www.w3.org/TR/sparql12-entailment/": {},
-      "https://www.w3.org/TR/sparql12-federated-query/": {},
-      "https://www.w3.org/TR/sparql12-graph-store-protocol/": {},
-      "https://www.w3.org/TR/sparql12-protocol/": {},
+      "https://www.w3.org/TR/sparql12-entailment/": {
+        "specShortname": "sparql12-entailment"
+      },
+      "https://www.w3.org/TR/sparql12-federated-query/": {
+        "specShortname": "sparql12-federated-query"
+      },
+      "https://www.w3.org/TR/sparql12-graph-store-protocol/": {
+        "specShortname": "sparql12-graph-store-protocol"
+      },
+      "https://www.w3.org/TR/sparql12-protocol/": {
+        "specShortname": "sparql12-protocol"
+      },
       "https://www.w3.org/TR/sparql12-query/": {
         "anchors": [
           "sparqlDataset"
-        ]
+        ],
+        "specShortname": "sparql12-query"
       },
-      "https://www.w3.org/TR/sparql12-results-csv-tsv/": {},
-      "https://www.w3.org/TR/sparql12-results-json/": {},
-      "https://www.w3.org/TR/sparql12-results-xml/": {},
-      "https://www.w3.org/TR/sparql12-service-description/": {},
-      "https://www.w3.org/TR/sparql12-update/": {},
+      "https://www.w3.org/TR/sparql12-results-csv-tsv/": {
+        "specShortname": "sparql12-results-csv-tsv"
+      },
+      "https://www.w3.org/TR/sparql12-results-json/": {
+        "specShortname": "sparql12-results-json"
+      },
+      "https://www.w3.org/TR/sparql12-results-xml/": {
+        "specShortname": "sparql12-results-xml"
+      },
+      "https://www.w3.org/TR/sparql12-service-description/": {
+        "specShortname": "sparql12-service-description"
+      },
+      "https://www.w3.org/TR/sparql12-update/": {
+        "specShortname": "sparql12-update"
+      },
       "https://www.w3.org/TR/string-meta/": {},
       "https://www.w3.org/TR/swbp-n-aryRelations/": {},
       "https://www.w3.org/TR/swbp-xsch-datatypes/": {
@@ -284,7 +324,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -297,19 +338,22 @@
         "anchors": [
           "dom-node-isequalnode",
           "dom-node-normalize"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://www.w3.org/TR/i18n-glossary/": {
         "anchors": [
           "dfn-unicode-normalization-form-c",
           "dfn-unicode-bidi-algorithm",
           "dfn-bidi-isolation"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       },
       "https://www.w3.org/TR/rdf12-semantics/": {
         "anchors": [
           "dfn-entailment-regime"
-        ]
+        ],
+        "specShortname": "rdf12-semantics"
       }
     }
   }

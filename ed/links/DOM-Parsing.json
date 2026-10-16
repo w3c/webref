@@ -6,7 +6,9 @@
   "links": {
     "rawlinks": {
       "http://w3c-test.org/domparsing/": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/LC2_comments.html": {},
       "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/implementationReport.html": {},
       "https://dvcs.w3.org/hg/innerhtml/summary/": {},
@@ -34,16 +36,23 @@
           "fragment-serializing-algorithm-steps"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://w3c.github.io/DOM-Parsing/": {
         "anchors": [
           "xml-serializing-an-element-node",
           "generating-namespace-prefixes",
           "dfn-found"
-        ]
+        ],
+        "specShortname": "DOM-Parsing"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/html5/single-page.html": {
         "anchors": [
@@ -69,7 +78,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -105,7 +115,8 @@
           "concept-doctype-systemid",
           "html-document",
           "concept-pi-target"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
         "anchors": [
@@ -145,14 +156,16 @@
           "set-append",
           "map-set",
           "ascii-case-insensitive"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "invalidstateerror",
           "idl-DOMException",
           "exceptiondef-typeerror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

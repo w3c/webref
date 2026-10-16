@@ -14,13 +14,16 @@
           "html": "<p>Let <var>result</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>origin</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s associated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>.</p>"
+          "html": "<p>Let <var>origin</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s associated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>partition</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#crossoriginstoragemanager-partition\" id=\"ref-for-crossoriginstoragemanager-partition\">partition</a>.</p>"
         },
         {
           "html": "If the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#check-cross-origin-storage-permission\" id=\"ref-for-check-cross-origin-storage-permission\">check Cross-Origin Storage permission</a> given <var>global</var> is\n false, then:",
@@ -67,7 +70,7 @@
               "rationale": "run",
               "steps": [
                 {
-                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#complete-a-read-request\" id=\"ref-for-complete-a-read-request\">complete a read request</a> given <var>result</var>, <var>hash</var>, <var>origin</var>, <var>global</var>, and <var>realm</var>.</p>"
+                  "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#complete-a-read-request\" id=\"ref-for-complete-a-read-request\">complete a read request</a> given <var>result</var>, <var>hash</var>, <var>origin</var>, <var>partition</var>,\n <var>global</var>, and <var>realm</var>.</p>"
                 }
               ]
             }
@@ -95,7 +98,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>candidates</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragegetfilehandleoptions-origins\" id=\"ref-for-dom-crossoriginstoragegetfilehandleoptions-origins⑤\">origins</a></code>\"],\n  with a single <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> treated as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a> of one.</p>"
+              "html": "<p>Let <var>candidates</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragegetfilehandleoptions-origins\" id=\"ref-for-dom-crossoriginstoragegetfilehandleoptions-origins⑤\">origins</a></code>\"],\n  with a single <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> treated as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a> of one.</p>"
             },
             {
               "html": "<p>If <var>candidates</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than the user agent’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#maximum-origins-list-length\" id=\"ref-for-maximum-origins-list-length\">maximum origins list length</a>, return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
@@ -125,14 +128,14 @@
     {
       "name": "complete a read request",
       "href": "https://wicg.github.io/cross-origin-storage/#complete-a-read-request",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-read-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">complete a read request</dfn> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a promise</a> <var>result</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-hash\" id=\"ref-for-cos-hash⑦\">COS hash</a> <var>hash</var>, an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>origin</var>, a global object <var>global</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm\">Realm</a> <var>realm</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"complete-a-read-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">complete a read request</dfn> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a promise</a> <var>result</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-hash\" id=\"ref-for-cos-hash⑦\">COS hash</a> <var>hash</var>, an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>origin</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site\">site</a> <var>partition</var>, a global object <var>global</var>, and a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm\">Realm</a> <var>realm</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>entry</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry②\">COS entry</a> in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-registry\" id=\"ref-for-cos-registry②\">COS registry</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash⑤\">hash</a>\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-hash-equal\" id=\"ref-for-cos-hash-equal③\">equals</a> <var>hash</var>, if any, or null otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>disclosableEntry</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#apply-availability-gating\" id=\"ref-for-apply-availability-gating①\">apply availability gating</a> given <var>entry</var>\n and <var>origin</var>.</p>"
+          "html": "<p>Let <var>disclosableEntry</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#apply-availability-gating\" id=\"ref-for-apply-availability-gating①\">apply availability gating</a> given <var>entry</var>,\n <var>origin</var>, and <var>partition</var>.</p>"
         },
         {
           "html": "If <var>disclosableEntry</var> is null:",
@@ -166,23 +169,23 @@
     {
       "name": "determine COS disclosure",
       "href": "https://wicg.github.io/cross-origin-storage/#determine-cos-disclosure",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-cos-disclosure\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine COS disclosure</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry③\">COS entry</a> or null <var>entry</var>, and an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>origin</var>, return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry④\">COS entry</a> or null:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-cos-disclosure\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine COS disclosure</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry③\">COS entry</a> or null <var>entry</var>, an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>origin</var>, and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site①\">site</a> <var>partition</var>, return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry④\">COS entry</a> or null:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>entry</var> is null, return null.</p>"
         },
         {
-          "html": "<p>If <var>origin</var> is in <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑥\">storing origins</a>, return <var>entry</var>.</p>"
+          "html": "<p>Let <var>firstParty</var> be true if the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from <var>origin</var> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑧\">same site</a> with <var>partition</var>, and false otherwise.</p>"
         },
         {
-          "html": "<p>If <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑥\">same site</a> with some item of <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑦\">storing origins</a>, return\n <var>entry</var>.</p>"
+          "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑤\">storing origins</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant\" id=\"ref-for-cos-grant②\">COS grant</a> whose\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-origin\" id=\"ref-for-cos-grant-origin②\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑨\">same site</a> with <var>origin</var> and whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-partition\" id=\"ref-for-cos-grant-partition②\">partition</a> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①⓪\">same site</a> with <var>partition</var>, return <var>entry</var>.</p>"
         },
         {
-          "html": "<p>If <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑦\">same site</a> with some item of <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins⑤\">origins</a>, return\n <var>entry</var>.</p>"
+          "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins⑥\">origins</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant\" id=\"ref-for-cos-grant③\">COS grant</a> whose\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-origin\" id=\"ref-for-cos-grant-origin③\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①①\">same site</a> with <var>origin</var>, and either whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-partition\" id=\"ref-for-cos-grant-partition③\">partition</a> is\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①②\">same site</a> with <var>partition</var>, or whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-first-party\" id=\"ref-for-cos-grant-first-party②\">first-party</a> and <var>firstParty</var> are both\n true, return <var>entry</var>.</p>"
         },
         {
-          "html": "If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑤\">globally disclosable</a> is true:",
+          "html": "If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑥\">globally disclosable</a> is true:",
           "rationale": "if",
           "steps": [
             {
@@ -204,11 +207,11 @@
     {
       "name": "apply availability gating",
       "href": "https://wicg.github.io/cross-origin-storage/#apply-availability-gating",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-availability-gating\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply availability gating</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑤\">COS entry</a> or null <var>entry</var>, and an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑧\">origin</a> <var>origin</var>, return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑥\">COS entry</a> or null:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-availability-gating\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply availability gating</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑤\">COS entry</a> or null <var>entry</var>, an\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑧\">origin</a> <var>origin</var>, and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site②\">site</a> <var>partition</var>, return a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑥\">COS entry</a> or null:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#determine-cos-disclosure\" id=\"ref-for-determine-cos-disclosure①\">determine COS disclosure</a> given <var>entry</var> and <var>origin</var>.</p>"
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#determine-cos-disclosure\" id=\"ref-for-determine-cos-disclosure②\">determine COS disclosure</a> given <var>entry</var>, <var>origin</var>, and\n <var>partition</var>.</p>"
         }
       ]
     },
@@ -222,7 +225,7 @@
           "html": "<p>Let <var>requestedOrigins</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#normalize-requested-origins\" id=\"ref-for-normalize-requested-origins\">normalize requested origins</a> given\n <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragegetfilehandleoptions-origins\" id=\"ref-for-dom-crossoriginstoragegetfilehandleoptions-origins⑦\">origins</a></code>\"].</p>"
         },
         {
-          "html": "<p>If <var>requestedOrigins</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>, set <var>requestedOrigins</var> to the result of running\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#apply-a-cos-scope-ceiling\" id=\"ref-for-apply-a-cos-scope-ceiling①\">apply a COS scope ceiling</a> given <var>requestedOrigins</var> and the result of running\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#obtain-the-cos-scope-ceiling\" id=\"ref-for-obtain-the-cos-scope-ceiling\">obtain the COS scope ceiling</a> given <var>global</var>.</p>"
+          "html": "<p>If <var>requestedOrigins</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>, set <var>requestedOrigins</var> to the result of running\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#apply-a-cos-scope-ceiling\" id=\"ref-for-apply-a-cos-scope-ceiling①\">apply a COS scope ceiling</a> given <var>requestedOrigins</var> and the result of running\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#obtain-the-cos-scope-ceiling\" id=\"ref-for-obtain-the-cos-scope-ceiling\">obtain the COS scope ceiling</a> given <var>global</var>.</p>"
         },
         {
           "html": "<p>Let <var>handle</var> be the result of <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#creating-a-new-filesystemfilehandle\" id=\"ref-for-creating-a-new-filesystemfilehandle①\">creating a new <code>FileSystemFileHandle</code></a> <a data-link-type=\"biblio\" href=\"https://wicg.github.io/cross-origin-storage/#biblio-fs\" title=\"File System Standard\">[FS]</a> whose\n <a data-link-type=\"dfn\" href=\"https://fs.spec.whatwg.org/#filesystemhandle-locator\" id=\"ref-for-filesystemhandle-locator①\">locator</a> addresses <var>hash</var> within the\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-file-system\" id=\"ref-for-cross-origin-storage-file-system②\">Cross-Origin Storage file system</a>, in <var>realm</var>.</p>"
@@ -231,7 +234,7 @@
           "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-cos-hash\" id=\"ref-for-filesystemfilehandle-cos-hash①\">COS hash</a> to <var>hash</var>.</p>"
         },
         {
-          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-cos-origin\" id=\"ref-for-filesystemfilehandle-cos-origin①\">COS origin</a> to <var>global</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+          "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-cos-origin\" id=\"ref-for-filesystemfilehandle-cos-origin①\">COS origin</a> to <var>global</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a>.</p>"
         },
         {
           "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-requested-origins\" id=\"ref-for-filesystemfilehandle-requested-origins\">requested origins</a> to <var>requestedOrigins</var>.</p>"
@@ -247,7 +250,7 @@
     {
       "name": "normalize requested origins",
       "href": "https://wicg.github.io/cross-origin-storage/#normalize-requested-origins",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalize-requested-origins\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalize requested origins</dfn> given a (DOMString or sequence&lt;DOMString&gt;) or\nundefined <var>origins</var>, return \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⓪\">origins</a>, or null:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"normalize-requested-origins\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">normalize requested origins</dfn> given a (DOMString or sequence&lt;DOMString&gt;) or\nundefined <var>origins</var>, return \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①⓪\">origins</a>, or null:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -260,14 +263,14 @@
           "html": "<p>Let <var>list</var> be « ».</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>candidate</var> of <var>origins</var> (a single <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> is treated as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a> of\n one):",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>candidate</var> of <var>origins</var> (a single <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> is treated as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a> of\n one):",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>candidateOrigin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①①\">origin</a> resulting from running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①\">basic URL parser</a>\n  on <var>candidate</var>.</p>"
             },
             {
-              "html": "<p>If <var>list</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>candidateOrigin</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>candidateOrigin</var>\n  to <var>list</var>.</p>"
+              "html": "<p>If <var>list</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contain</a> <var>candidateOrigin</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>candidateOrigin</var>\n  to <var>list</var>.</p>"
             }
           ]
         },
@@ -279,9 +282,18 @@
     {
       "name": "verify and store",
       "href": "https://wicg.github.io/cross-origin-storage/#verify-and-store",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"verify-and-store\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify and store</dfn> steps, given the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemfilehandle\" id=\"ref-for-filesystemfilehandle④\">FileSystemFileHandle</a></code> <var>handle</var> whose stream was\nclosed, the complete written <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>bytes</var>, and the closing operation’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a> <var>origin</var>, are:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"verify-and-store\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify and store</dfn> steps, given the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fs.spec.whatwg.org/#filesystemfilehandle\" id=\"ref-for-filesystemfilehandle④\">FileSystemFileHandle</a></code> <var>handle</var> whose stream was\nclosed, the complete written <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>bytes</var>, and the closing operation’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a> <var>settings</var>, are:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>partition</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-partition\" id=\"ref-for-cos-partition⑤\">COS partition</a> of <var>settings</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>firstParty</var> be true if <var>settings</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#first-party-cos-context\" id=\"ref-for-first-party-cos-context③\">first-party COS context</a>, and false otherwise.</p>"
+        },
         {
           "html": "<p>Let <var>hash</var> be <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-cos-hash\" id=\"ref-for-filesystemfilehandle-cos-hash②\">COS hash</a>.</p>"
         },
@@ -312,7 +324,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>entry</var> to a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑨\">COS entry</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash①②\">hash</a> is <var>hash</var>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-bytes\" id=\"ref-for-cos-entry-bytes\">bytes</a> is <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①②\">origins</a> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑦\">globally disclosable</a> is false, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑨\">storing origins</a> is an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a>.</p>"
+                  "html": "<p>Set <var>entry</var> to a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry⑨\">COS entry</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash①②\">hash</a> is <var>hash</var>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-bytes\" id=\"ref-for-cos-entry-bytes\">bytes</a> is <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①③\">origins</a> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑧\">globally disclosable</a> is false, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑦\">storing origins</a> is an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-registry\" id=\"ref-for-cos-registry⑨\">COS registry</a>[<var>hash</var>] to <var>entry</var>.</p>"
@@ -320,10 +332,10 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>origin</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins①⓪\">storing origins</a>, if not already present.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant\" id=\"ref-for-cos-grant④\">COS grant</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-origin\" id=\"ref-for-cos-grant-origin④\">origin</a> is <var>origin</var>,\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-partition\" id=\"ref-for-cos-grant-partition④\">partition</a> is <var>partition</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-first-party\" id=\"ref-for-cos-grant-first-party③\">first-party</a> is <var>firstParty</var> to\n  <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑧\">storing origins</a>, if no equal grant is already present.</p>"
             },
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility\" id=\"ref-for-upgrade-resource-visibility①\">upgrade resource visibility</a> given <var>entry</var> and <var>handle</var>’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-requested-origins\" id=\"ref-for-filesystemfilehandle-requested-origins①\">requested origins</a>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility\" id=\"ref-for-upgrade-resource-visibility①\">upgrade resource visibility</a> given <var>entry</var>, <var>handle</var>’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-requested-origins\" id=\"ref-for-filesystemfilehandle-requested-origins①\">requested origins</a>, <var>partition</var>, and <var>firstParty</var>.</p>"
             },
             {
               "html": "<p>Set <var>handle</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-may-read\" id=\"ref-for-filesystemfilehandle-may-read②\">may read</a> to true.</p>"
@@ -335,7 +347,7 @@
     {
       "name": "store a fetched resource in Cross-Origin Storage",
       "href": "https://wicg.github.io/cross-origin-storage/#store-a-fetched-resource-in-cross-origin-storage",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"store-a-fetched-resource-in-cross-origin-storage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">store a fetched resource in Cross-Origin Storage</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>\n<var>response</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> <var>bytes</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-hash\" id=\"ref-for-cos-hash①②\">COS hash</a> <var>hash</var>, \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">strings</a>,\nor null <var>origins</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"store-a-fetched-resource-in-cross-origin-storage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">store a fetched resource in Cross-Origin Storage</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>\n<var>response</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a> <var>bytes</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-hash\" id=\"ref-for-cos-hash①②\">COS hash</a> <var>hash</var>, \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">strings</a>,\nor null <var>origins</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①\">environment settings object</a> <var>settings</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -357,7 +369,7 @@
           "html": "<p>Let <var>requestedOrigins</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#normalize-requested-origins\" id=\"ref-for-normalize-requested-origins①\">normalize requested origins</a> given\n <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragegetfilehandleoptions-origins\" id=\"ref-for-dom-crossoriginstoragegetfilehandleoptions-origins⑨\">origins</a></code>\"].</p>"
         },
         {
-          "html": "If <var>requestedOrigins</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>:",
+          "html": "If <var>requestedOrigins</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -369,7 +381,13 @@
           ]
         },
         {
-          "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>.</p>"
+          "html": "<p>Let <var>origin</var> be <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin④\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>partition</var> be the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-partition\" id=\"ref-for-cos-partition⑥\">COS partition</a> of <var>settings</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>firstParty</var> be true if <var>settings</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#first-party-cos-context\" id=\"ref-for-first-party-cos-context④\">first-party COS context</a>, and false otherwise.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps③\">Enqueue the following steps</a> to the\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cross-origin-storage-queue\" id=\"ref-for-cross-origin-storage-queue②\">Cross-Origin Storage queue</a>:",
@@ -383,7 +401,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>entry</var> to a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry①①\">COS entry</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash①④\">hash</a> is <var>hash</var>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-bytes\" id=\"ref-for-cos-entry-bytes①\">bytes</a> is <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①④\">origins</a> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑧\">globally disclosable</a> is false, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins①①\">storing origins</a> is an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>.</p>"
+                  "html": "<p>Set <var>entry</var> to a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry①①\">COS entry</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-hash\" id=\"ref-for-cos-entry-hash①④\">hash</a> is <var>hash</var>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-bytes\" id=\"ref-for-cos-entry-bytes①\">bytes</a> is <var>bytes</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑤\">origins</a> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>,\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑨\">globally disclosable</a> is false, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins⑨\">storing origins</a> is an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">Set</a> the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-registry\" id=\"ref-for-cos-registry①③\">COS registry</a>[<var>hash</var>] to <var>entry</var>.</p>"
@@ -391,10 +409,10 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>origin</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins①②\">storing origins</a>, if not already present.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant\" id=\"ref-for-cos-grant⑤\">COS grant</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-origin\" id=\"ref-for-cos-grant-origin⑤\">origin</a> is <var>origin</var>,\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-partition\" id=\"ref-for-cos-grant-partition⑤\">partition</a> is <var>partition</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-first-party\" id=\"ref-for-cos-grant-first-party④\">first-party</a> is <var>firstParty</var> to\n  <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins\" id=\"ref-for-cos-entry-storing-origins①⓪\">storing origins</a>, if no equal grant is already present.</p>"
             },
             {
-              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility\" id=\"ref-for-upgrade-resource-visibility②\">upgrade resource visibility</a> given <var>entry</var> and <var>requestedOrigins</var>.</p>"
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility\" id=\"ref-for-upgrade-resource-visibility②\">upgrade resource visibility</a> given <var>entry</var>, <var>requestedOrigins</var>, <var>partition</var>, and\n  <var>firstParty</var>.</p>"
             }
           ]
         }
@@ -403,7 +421,7 @@
     {
       "name": "upgrade resource visibility",
       "href": "https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"upgrade-resource-visibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">upgrade resource visibility</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry①③\">COS entry</a> <var>entry</var> and \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①②\">origins</a>, or null <var>requestedOrigins</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"upgrade-resource-visibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">upgrade resource visibility</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry\" id=\"ref-for-cos-entry①③\">COS entry</a> <var>entry</var>, \"<code>*</code>\", a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①②\">origins</a>, or null <var>requestedOrigins</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#site\" id=\"ref-for-site③\">site</a> <var>partition</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②\">boolean</a> <var>firstParty</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -414,7 +432,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable⑨\">globally disclosable</a> to true.</p>"
+              "html": "<p>Set <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-globally-disclosable\" id=\"ref-for-cos-entry-globally-disclosable①⓪\">globally disclosable</a> to true.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -423,16 +441,19 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>candidateOrigin</var> of <var>requestedOrigins</var>:",
-          "rationale": "if",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑦\">origins</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>candidateOrigin</var>, then\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>Let <var>grant</var> be a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant\" id=\"ref-for-cos-grant⑥\">COS grant</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-origin\" id=\"ref-for-cos-grant-origin⑥\">origin</a> is <var>candidateOrigin</var>,\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-partition\" id=\"ref-for-cos-grant-partition⑥\">partition</a> is <var>partition</var>, and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-grant-first-party\" id=\"ref-for-cos-grant-first-party⑤\">first-party</a> is <var>firstParty</var>.</p>"
             },
             {
-              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑧\">origins</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> equals the user agent’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#maximum-origins-list-length\" id=\"ref-for-maximum-origins-list-length①\">maximum origins list length</a>, then break.</p>"
+              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑧\">origins</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> a grant equal to <var>grant</var>, then\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>candidateOrigin</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑨\">origins</a>.</p>"
+              "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins①⑨\">origins</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> equals the user agent’s\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#maximum-origins-list-length\" id=\"ref-for-maximum-origins-list-length①\">maximum origins list length</a>, then break.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>grant</var> to <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#cos-entry-origins\" id=\"ref-for-cos-entry-origins②⓪\">origins</a>.</p>"
             }
           ]
         }
@@ -458,7 +479,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>serialized</var>.[[COSOrigin]] is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>realm</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object②\">environment settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin④\">origin</a>, then throw a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>serialized</var>.[[COSOrigin]] is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>realm</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object③\">environment settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin⑤\">origin</a>, then throw a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-cos-hash\" id=\"ref-for-filesystemfilehandle-cos-hash⑥\">COS hash</a> to <var>serialized</var>.[[COSHash]].</p>"
@@ -474,7 +495,7 @@
     {
       "name": "check Cross-Origin Storage permission",
       "href": "https://wicg.github.io/cross-origin-storage/#check-cross-origin-storage-permission",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-cross-origin-storage-permission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check Cross-Origin Storage permission</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> <var>global</var>, return a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean①\">boolean</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-cross-origin-storage-permission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check Cross-Origin Storage permission</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> <var>global</var>, return a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③\">boolean</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -530,7 +551,7 @@
     {
       "name": "parse a COS scope ceiling",
       "href": "https://wicg.github.io/cross-origin-storage/#parse-a-cos-scope-ceiling",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> <var>headers</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑥\">origins</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> <var>headers</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑤\">origins</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -556,10 +577,10 @@
               "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser②\">basic URL parser</a> on <var>token</var>.</p>"
             },
             {
-              "html": "<p>If <var>url</var> is failure, <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is neither \"<code>http</code>\" nor \"<code>https</code>\", or\n  <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑦\">origin</a> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin②\">potentially trustworthy origin</a>, return an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑦\">set</a>.</p>"
+              "html": "<p>If <var>url</var> is failure, <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is neither \"<code>http</code>\" nor \"<code>https</code>\", or\n  <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑥\">origin</a> is not a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin\" id=\"ref-for-potentially-trustworthy-origin②\">potentially trustworthy origin</a>, return an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑦\">set</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑧\">origin</a> to <var>ceiling</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑦\">origin</a> to <var>ceiling</var>.</p>"
             }
           ]
         },
@@ -571,7 +592,7 @@
     {
       "name": "obtain the COS scope ceiling",
       "href": "https://wicg.github.io/cross-origin-storage/#obtain-the-cos-scope-ceiling",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object④\">global object</a> <var>global</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">set</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③⓪\">origins</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object④\">global object</a> <var>global</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">set</a> of\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②⑨\">origins</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -633,11 +654,11 @@
     {
       "name": "apply a COS scope ceiling",
       "href": "https://wicg.github.io/cross-origin-storage/#apply-a-cos-scope-ceiling",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-a-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply a COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③①\">origins</a> <var>requestedOrigins</var> and a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①④\">set</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③②\">origins</a> <var>ceiling</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑤\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③③\">origins</a> or null:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"apply-a-cos-scope-ceiling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">apply a COS scope ceiling</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③③\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③⓪\">origins</a> <var>requestedOrigins</var> and a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①④\">set</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③①\">origins</a> <var>ceiling</var>, return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③②\">origins</a> or null:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> from <var>requestedOrigins</var> each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③④\">origin</a> that <var>ceiling</var> does not\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contain</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> from <var>requestedOrigins</var> each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③③\">origin</a> that <var>ceiling</var> does not\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contain</a>.</p>"
         },
         {
           "html": "<p>If <var>requestedOrigins</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a>, return null.</p>"

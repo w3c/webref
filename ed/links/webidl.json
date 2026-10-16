@@ -12,10 +12,18 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/DOMException/DOMException": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/DOMException/message": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/DOMException/name": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-conditional-3/": {},
-      "https://drafts.csswg.org/cssom/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://drafts.csswg.org/cssom/": {
+        "specShortname": "cssom-1"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/domenic/promises-unwrapping/issues/85": {},
       "https://github.com/whatwg/webidl/issues/432": {},
       "https://github.com/whatwg/webidl/issues/674": {},
@@ -30,26 +38,35 @@
       "https://github.com/whatwg/webidl/issues/new?title=Intent%20to%20use%20constructor%20steps": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://ieeexplore.ieee.org/document/8766229": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://mcc.id.au/": {},
       "https://opensource.org/licenses/BSD-3-Clause": {},
-      "https://streams.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/notational-conventions.html": {
         "anchors": [
           "sec-algorithm-conventions"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
         "anchors": [
           "sec-ordinary-object-internal-methods-and-internal-slots",
           "sec-built-in-function-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma402/": {
         "anchors": [
           "numberformat-objects"
-        ]
+        ],
+        "specShortname": "ecma-402"
       },
       "https://tc39.es/proposal-float16array/": {},
       "https://tc39.github.io/ecma262/": {
@@ -57,11 +74,21 @@
           "sec-promise-objects"
         ]
       },
-      "https://w3c.github.io/IndexedDB/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3ctag.github.io/design-principles/": {},
-      "https://webassembly.github.io/spec/js-api/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://w3c.github.io/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3ctag.github.io/design-principles/": {
+        "specShortname": "design-principles"
+      },
+      "https://webassembly.github.io/spec/js-api/": {
+        "specShortname": "wasm-js-api-2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.mozilla.org/": {},
       "https://www.tobie.me/": {},
       "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document": {},
@@ -79,24 +106,28 @@
           "dom-document-createelement",
           "document",
           "dom-document-implementation"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-conditional-3/": {
         "anchors": [
           "dom-css-supports",
           "dom-css-supports-conditiontext"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "namespacedef-css"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "response",
           "dom-global-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
@@ -220,12 +251,14 @@
           "list-extend",
           "assert",
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
           "default-writer-closed"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -301,7 +334,8 @@
           "sec-getfunctionrealm",
           "sec-canonicalnumericindexstring",
           "sec-isconstructor"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
         "anchors": [
@@ -315,7 +349,8 @@
           "sec-generatoryield",
           "sec-yield",
           "sec-createiteratorfromclosure"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
         "anchors": [
@@ -329,13 +364,15 @@
           "sec-topropertydescriptor",
           "sec-isaccessordescriptor",
           "sec-frompropertydescriptor"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "realm",
           "sec-agent-clusters"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
@@ -347,12 +384,14 @@
           "sec-native-error-types-used-in-this-standard-typeerror",
           "sec-properties-of-the-function-prototype-object",
           "sec-properties-of-the-error-prototype-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/indexed-collections.html": {
         "anchors": [
           "sec-properties-of-the-array-prototype-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/keyed-collections.html": {
         "anchors": [
@@ -360,12 +399,14 @@
           "sec-set-objects",
           "sec-%25mapiteratorprototype%25-object",
           "sec-%25setiteratorprototype%25-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
           "sec-bigint-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
         "anchors": [
@@ -382,7 +423,8 @@
           "sec-ordinarydefineownproperty",
           "proxy-exotic-object",
           "sec-proxycreate"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
@@ -398,18 +440,21 @@
           "sec-getvaluefrombuffer",
           "sec-setvalueinbuffer",
           "sec-detacharraybuffer"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://webassembly.github.io/spec/js-api/": {
         "anchors": [
           "memory",
           "dom-memory-buffer"
-        ]
+        ],
+        "specShortname": "wasm-js-api-2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-any"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

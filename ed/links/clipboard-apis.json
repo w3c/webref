@@ -23,8 +23,12 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/Element/cut_event": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Element/paste_event": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
       "https://github.com/w3c/clipboard-apis": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/interaction.html": {
@@ -32,19 +36,32 @@
           "sticky-activation"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
       "https://msdn.microsoft.com/en-us/ie/ms537658(v=vs.94)": {},
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "obtain-a-storage-key-for-non-storage-purposes"
-        ]
+        ],
+        "specShortname": "storage"
       },
-      "https://w3c.github.io/FileAPI/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://w3c.github.io/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/rfc/rfc2392": {},
-      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/SVG11/": {
+        "specShortname": "SVG11"
+      },
       "https://www.w3.org/TR/html5/": {},
       "https://www.w3.org/groups/wg/webediting": {},
       "https://www.w3.org/groups/wg/webediting/ipr": {},
@@ -52,7 +69,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -73,13 +91,15 @@
           "eventtarget",
           "dom-event-istrusted",
           "dom-event-composed"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode",
           "utf-8-decode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/dnd.html": {
         "anchors": [
@@ -144,7 +164,8 @@
           "map-exists",
           "map-set",
           "list-size"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
@@ -152,12 +173,14 @@
           "mime-type",
           "serialize-a-mime-type",
           "mime-type-essence"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "storage-key"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
@@ -166,7 +189,8 @@
           "dfn-file",
           "dfn-name",
           "dfn-lastModified"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -178,7 +202,8 @@
           "dfn-permission-state",
           "dom-permissionstate-granted",
           "dfn-request-permission-to-use"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -204,7 +229,8 @@
           "dfn-perform-steps-once-promise-is-settled",
           "idl-undefined",
           "notallowederror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

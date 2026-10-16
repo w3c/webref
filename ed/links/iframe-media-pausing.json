@@ -7,11 +7,19 @@
     "rawlinks": {
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://webaudio.github.io/web-audio-api/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://webaudio.github.io/web-audio-api/": {
+        "specShortname": "webaudio-1.0"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
@@ -20,7 +28,8 @@
         "anchors": [
           "document",
           "concept-node-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
@@ -69,7 +78,8 @@
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://webaudio.github.io/web-audio-api/": {
         "anchors": [
@@ -82,14 +92,16 @@
           "dom-audiocontextstate-running",
           "dom-audiocontext-interruption-start",
           "dom-audiocontext-interruption-end"
-        ]
+        ],
+        "specShortname": "webaudio-1.0"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "notallowederror",
           "idl-DOMException",
           "invalidstateerror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

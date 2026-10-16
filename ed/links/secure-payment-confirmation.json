@@ -7,9 +7,15 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.apple.com/documentation/cryptokit/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
-      "https://fs.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
+      "https://fs.spec.whatwg.org/": {
+        "specShortname": "fs"
+      },
       "https://github.com/w3c/secure-payment-confirmation/blob/main/requirements/browser-bound-keys.md": {},
       "https://github.com/w3c/secure-payment-confirmation/issues": {},
       "https://github.com/w3c/secure-payment-confirmation/issues/288": {},
@@ -41,36 +47,63 @@
           "language-preferences"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-portal": {},
       "https://lists.w3.org/Archives/Public/public-payments-wg/": {},
       "https://source.android.com/docs/security/features/keystore": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-json-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/i18n-glossary/": {},
-      "https://w3c.github.io/image-resource/": {},
-      "https://w3c.github.io/payment-method-id/": {},
-      "https://w3c.github.io/payment-request/": {},
-      "https://w3c.github.io/secure-payment-confirmation/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/i18n-glossary/": {
+        "specShortname": "i18n-glossary"
+      },
+      "https://w3c.github.io/image-resource/": {
+        "specShortname": "image-resource"
+      },
+      "https://w3c.github.io/payment-method-id/": {
+        "specShortname": "payment-method-id"
+      },
+      "https://w3c.github.io/payment-request/": {
+        "specShortname": "payment-request"
+      },
+      "https://w3c.github.io/secure-payment-confirmation/": {
+        "specShortname": "secure-payment-confirmation"
+      },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "sctn-cred-type-registry"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
-      "https://w3c.github.io/webappsec-dbsc/": {},
-      "https://w3c.github.io/webauthn/": {},
-      "https://w3c.github.io/webcrypto/": {},
+      "https://w3c.github.io/webappsec-dbsc/": {
+        "specShortname": "dbsc-1"
+      },
+      "https://w3c.github.io/webauthn/": {
+        "specShortname": "webauthn-4"
+      },
+      "https://w3c.github.io/webcrypto/": {
+        "specShortname": "webcrypto-2"
+      },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
           "security"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wpt.fyi/results/secure-payment-confirmation/authentication-accepted-bbk-created.https.html": {},
       "https://wpt.fyi/results/secure-payment-confirmation/authentication-accepted-bbk-per-passkey.https.html": {},
       "https://wpt.fyi/results/secure-payment-confirmation/authentication-accepted-bbk-reused.https.html": {},
@@ -115,7 +148,9 @@
         ]
       },
       "https://www.rfc-editor.org/info/bcp47": {},
-      "https://www.rfc-editor.org/info/rfc2397/": {},
+      "https://www.rfc-editor.org/info/rfc2397/": {
+        "specShortname": "rfc2397"
+      },
       "https://www.rfc-editor.org/info/rfc8809/": {},
       "https://www.rfc-editor.org/rfc/rfc8809.html": {},
       "https://www.w3.org/2023/05/03-webauthn-minutes": {
@@ -150,7 +185,8 @@
           "sctn-security-considerations",
           "sctn-privacy-considerations",
           "sctn-accessiblility-considerations"
-        ]
+        ],
+        "specShortname": "webauthn-3"
       },
       "https://www.w3.org/groups/wg/payments": {},
       "https://www.w3.org/groups/wg/payments/ipr": {}
@@ -159,17 +195,20 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://fs.spec.whatwg.org/": {
         "anchors": [
           "dom-filesystemsyncaccesshandle-write"
-        ]
+        ],
+        "specShortname": "fs"
       },
       "https://github.com/w3c/webauthn/issues/1545": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -215,7 +254,8 @@
           "list-remove",
           "list-size",
           "list"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -228,7 +268,8 @@
           "concept-url-parser",
           "concept-url-scheme",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/i18n-glossary/": {
         "anchors": [
@@ -236,19 +277,22 @@
           "dfn-language-subtag",
           "dfn-language-negotiation",
           "dfn-bidi-isolation"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       },
       "https://w3c.github.io/image-resource/": {
         "anchors": [
           "dfn-fetching-an-image-resource",
           "dom-imageresource-src"
-        ]
+        ],
+        "specShortname": "image-resource"
       },
       "https://w3c.github.io/payment-method-id/": {
         "anchors": [
           "dfn-standardized-payment-method-identifier",
           "registry"
-        ]
+        ],
+        "specShortname": "payment-method-id"
       },
       "https://w3c.github.io/payment-request/": {
         "anchors": [
@@ -271,7 +315,8 @@
           "dom-paymentdetailsinit-total",
           "dom-paymentcurrencyamount",
           "accessibility-considerations"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
@@ -280,7 +325,8 @@
           "dom-credentialscontainer-get",
           "credential-type-registry-create-permissions-policy",
           "dom-credential-id"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webauthn/": {
         "anchors": [
@@ -345,12 +391,14 @@
           "dom-collectedclientdata-origin",
           "largeblob",
           "extension-identifier"
-        ]
+        ],
+        "specShortname": "webauthn-4"
       },
       "https://w3c.github.io/webcrypto/": {
         "anchors": [
           "dfn-Crypto-method-getRandomValues"
-        ]
+        ],
+        "specShortname": "webcrypto-2"
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
@@ -362,7 +410,8 @@
           "dfn-getting-properties",
           "dfn-undefined",
           "dfn-success"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -388,12 +437,14 @@
           "idl-ArrayBuffer",
           "invalidstateerror",
           "quotaexceedederror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/i18n-glossary/": {
         "anchors": [
           "dfn-locale"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       }
     }
   }

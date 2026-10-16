@@ -5,11 +5,19 @@
   },
   "links": {
     "rawlinks": {
-      "https://console.spec.whatwg.org/": {},
+      "https://console.spec.whatwg.org/": {
+        "specShortname": "console"
+      },
       "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-no-vary-search": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
-      "https://fullscreen.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "specShortname": "fullscreen"
+      },
       "https://github.com/WICG/nav-speculation/issues/319": {},
       "https://github.com/shivanigithub/fenced-frame": {},
       "https://github.com/w3c/webdriver-bidi/issues/321": {},
@@ -40,57 +48,141 @@
         "anchors": [
           "name-security-considerations",
           "name-privacy-considerations"
-        ]
+        ],
+        "specShortname": "no-vary-search"
       },
       "https://httpwg.org/specs/rfc8941.html": {},
-      "https://immersive-web.github.io/webxr/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://notifications.spec.whatwg.org/": {},
-      "https://storage.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/battery/": {},
-      "https://w3c.github.io/clipboard-apis/": {},
-      "https://w3c.github.io/encrypted-media/": {},
-      "https://w3c.github.io/gamepad/": {},
-      "https://w3c.github.io/geolocation/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/mediacapture-main/": {},
-      "https://w3c.github.io/mediacapture-output/": {},
-      "https://w3c.github.io/mediacapture-screen-share/": {},
-      "https://w3c.github.io/navigation-timing/": {},
-      "https://w3c.github.io/payment-request/": {},
-      "https://w3c.github.io/picture-in-picture/": {},
-      "https://w3c.github.io/pointerlock/": {},
-      "https://w3c.github.io/presentation-api/": {},
-      "https://w3c.github.io/push-api/": {},
-      "https://w3c.github.io/screen-orientation/": {},
-      "https://w3c.github.io/screen-wake-lock/": {},
-      "https://w3c.github.io/sensors/": {},
-      "https://w3c.github.io/web-locks/": {},
+      "https://immersive-web.github.io/webxr/": {
+        "specShortname": "webxr"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://notifications.spec.whatwg.org/": {
+        "specShortname": "notifications"
+      },
+      "https://storage.spec.whatwg.org/": {
+        "specShortname": "storage"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/battery/": {
+        "specShortname": "battery-status"
+      },
+      "https://w3c.github.io/clipboard-apis/": {
+        "specShortname": "clipboard-apis"
+      },
+      "https://w3c.github.io/encrypted-media/": {
+        "specShortname": "encrypted-media-2"
+      },
+      "https://w3c.github.io/gamepad/": {
+        "specShortname": "gamepad"
+      },
+      "https://w3c.github.io/geolocation/": {
+        "specShortname": "geolocation"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/mediacapture-main/": {
+        "specShortname": "mediacapture-streams"
+      },
+      "https://w3c.github.io/mediacapture-output/": {
+        "specShortname": "audio-output"
+      },
+      "https://w3c.github.io/mediacapture-screen-share/": {
+        "specShortname": "screen-capture"
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
+      "https://w3c.github.io/payment-request/": {
+        "specShortname": "payment-request"
+      },
+      "https://w3c.github.io/picture-in-picture/": {
+        "specShortname": "picture-in-picture"
+      },
+      "https://w3c.github.io/pointerlock/": {
+        "specShortname": "pointerlock-2"
+      },
+      "https://w3c.github.io/presentation-api/": {
+        "specShortname": "presentation-api"
+      },
+      "https://w3c.github.io/push-api/": {
+        "specShortname": "push-api"
+      },
+      "https://w3c.github.io/screen-orientation/": {
+        "specShortname": "screen-orientation"
+      },
+      "https://w3c.github.io/screen-wake-lock/": {
+        "specShortname": "screen-wake-lock"
+      },
+      "https://w3c.github.io/sensors/": {
+        "specShortname": "generic-sensor"
+      },
+      "https://w3c.github.io/web-locks/": {
+        "specShortname": "web-locks"
+      },
       "https://w3c.github.io/web-nfc/": {},
-      "https://w3c.github.io/web-share/": {},
+      "https://w3c.github.io/web-share/": {
+        "specShortname": "web-share"
+      },
       "https://w3c.github.io/webappsec-clear-site-data/": {
         "anchors": [
           "header"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
-      "https://w3c.github.io/webappsec-credential-management/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://w3c.github.io/webcrypto/": {},
-      "https://w3c.github.io/webdriver-bidi/": {},
-      "https://webaudio.github.io/web-audio-api/": {},
-      "https://webaudio.github.io/web-midi-api/": {},
-      "https://webaudio.github.io/web-speech-api/": {},
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "specShortname": "credential-management-1"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://w3c.github.io/webcrypto/": {
+        "specShortname": "webcrypto-2"
+      },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "specShortname": "webdriver-bidi"
+      },
+      "https://webaudio.github.io/web-audio-api/": {
+        "specShortname": "webaudio-1.0"
+      },
+      "https://webaudio.github.io/web-midi-api/": {
+        "specShortname": "webmidi"
+      },
+      "https://webaudio.github.io/web-speech-api/": {
+        "specShortname": "speech-api"
+      },
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://wicg.github.io/background-fetch/": {},
-      "https://wicg.github.io/background-sync/spec/": {},
-      "https://wicg.github.io/client-hints-infrastructure/": {},
-      "https://wicg.github.io/file-system-access/": {},
-      "https://wicg.github.io/idle-detection/": {},
-      "https://wicg.github.io/keyboard-lock/": {},
-      "https://wicg.github.io/nav-speculation/prefetch.html": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://wicg.github.io/background-fetch/": {
+        "specShortname": "background-fetch"
+      },
+      "https://wicg.github.io/background-sync/spec/": {
+        "specShortname": "background-sync"
+      },
+      "https://wicg.github.io/client-hints-infrastructure/": {
+        "specShortname": "client-hints-infrastructure"
+      },
+      "https://wicg.github.io/file-system-access/": {
+        "specShortname": "file-system-access"
+      },
+      "https://wicg.github.io/idle-detection/": {
+        "specShortname": "idle-detection"
+      },
+      "https://wicg.github.io/keyboard-lock/": {
+        "specShortname": "keyboard-lock"
+      },
+      "https://wicg.github.io/nav-speculation/prefetch.html": {
+        "specShortname": "prefetch"
+      },
       "https://wicg.github.io/serial/": {},
       "https://wicg.github.io/webhid/": {},
       "https://wicg.github.io/webusb/": {},
@@ -102,7 +194,8 @@
       "https://console.spec.whatwg.org/": {
         "anchors": [
           "report-a-warning-to-the-console"
-        ]
+        ],
+        "specShortname": "console"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
@@ -114,7 +207,8 @@
           "concept-document-url",
           "concept-event-fire",
           "concept-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -131,12 +225,14 @@
           "concept-network-error",
           "concept-header-list-get-structured-header",
           "concept-response-header-list"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "dom-element-requestfullscreen"
-        ]
+        ],
+        "specShortname": "fullscreen"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -354,12 +450,14 @@
           "iref-default-url-search-variance",
           "name-http-header-field-definitio",
           "name-obtain-a-url-search-varianc"
-        ]
+        ],
+        "specShortname": "no-vary-search"
       },
       "https://immersive-web.github.io/webxr/": {
         "anchors": [
           "dom-xrsystem-requestsession"
-        ]
+        ],
+        "specShortname": "webxr"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
@@ -385,7 +483,8 @@
           "list-empty",
           "ordered-map",
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://notifications.spec.whatwg.org/": {
         "anchors": [
@@ -393,12 +492,14 @@
           "dom-notification-notification",
           "dom-notification-permission",
           "get-the-notifications-permission-state"
-        ]
+        ],
+        "specShortname": "notifications"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "dom-storagemanager-persist"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -410,13 +511,15 @@
           "concept-url",
           "concept-url-scheme",
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c-cg.github.io/web-nfc/": {
         "anchors": [
           "dom-ndefreader-write",
           "dom-ndefreader-scan"
-        ]
+        ],
+        "specShortname": "web-nfc"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -425,13 +528,15 @@
           "dom-serviceworkercontainer-register",
           "dom-serviceworker-postmessage",
           "dom-serviceworker-postmessage-message-options"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/battery/": {
         "anchors": [
           "dom-navigator-getbattery",
           "dfn-batterypromise"
-        ]
+        ],
+        "specShortname": "battery-status"
       },
       "https://w3c.github.io/clipboard-apis/": {
         "anchors": [
@@ -439,12 +544,14 @@
           "dom-clipboard-readtext",
           "dom-clipboard-write",
           "dom-clipboard-writetext"
-        ]
+        ],
+        "specShortname": "clipboard-apis"
       },
       "https://w3c.github.io/encrypted-media/": {
         "anchors": [
           "dom-navigator-requestmediakeysystemaccess"
-        ]
+        ],
+        "specShortname": "encrypted-media-2"
       },
       "https://w3c.github.io/gamepad/": {
         "anchors": [
@@ -454,20 +561,23 @@
           "dom-gamepadevent",
           "dom-gamepadevent-gamepad",
           "dom-gamepad"
-        ]
+        ],
+        "specShortname": "gamepad"
       },
       "https://w3c.github.io/geolocation/": {
         "anchors": [
           "dom-geolocation-getcurrentposition",
           "dom-geolocation-watchposition",
           "dom-geolocation-clearwatch"
-        ]
+        ],
+        "specShortname": "geolocation"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "typedefdef-domhighrestimestamp",
           "dfn-current-high-resolution-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/mediacapture-main/": {
         "anchors": [
@@ -475,48 +585,57 @@
           "dom-mediadevices-enumeratedevices",
           "dom-mediadevices",
           "dfn-device-change-notification-steps"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://w3c.github.io/mediacapture-output/": {
         "anchors": [
           "dom-mediadevices-selectaudiooutput"
-        ]
+        ],
+        "specShortname": "audio-output"
       },
       "https://w3c.github.io/mediacapture-screen-share/": {
         "anchors": [
           "dom-mediadevices-getdisplaymedia"
-        ]
+        ],
+        "specShortname": "screen-capture"
       },
       "https://w3c.github.io/navigation-timing/": {
         "anchors": [
           "performancenavigationtiming"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
       "https://w3c.github.io/payment-request/": {
         "anchors": [
           "dom-paymentrequest-show"
-        ]
+        ],
+        "specShortname": "payment-request"
       },
       "https://w3c.github.io/picture-in-picture/": {
         "anchors": [
           "request-picture-in-picture-algorithm",
           "dom-htmlvideoelement-requestpictureinpicture"
-        ]
+        ],
+        "specShortname": "picture-in-picture"
       },
       "https://w3c.github.io/pointerlock/": {
         "anchors": [
           "dom-element-requestpointerlock"
-        ]
+        ],
+        "specShortname": "pointerlock-2"
       },
       "https://w3c.github.io/presentation-api/": {
         "anchors": [
           "dom-presentationrequest-start"
-        ]
+        ],
+        "specShortname": "presentation-api"
       },
       "https://w3c.github.io/push-api/": {
         "anchors": [
           "dom-pushmanager-subscribe"
-        ]
+        ],
+        "specShortname": "push-api"
       },
       "https://w3c.github.io/screen-orientation/": {
         "anchors": [
@@ -524,59 +643,69 @@
           "dfn-pre-lock-conditions",
           "dom-screenorientation-unlock",
           "dom-screenorientation-lock"
-        ]
+        ],
+        "specShortname": "screen-orientation"
       },
       "https://w3c.github.io/screen-wake-lock/": {
         "anchors": [
           "dom-wakelock-request"
-        ]
+        ],
+        "specShortname": "screen-wake-lock"
       },
       "https://w3c.github.io/sensors/": {
         "anchors": [
           "dom-sensor-start",
           "dom-sensor-state-slot",
           "dom-sensor-stop"
-        ]
+        ],
+        "specShortname": "generic-sensor"
       },
       "https://w3c.github.io/web-locks/": {
         "anchors": [
           "dom-lockmanager-request",
           "dom-lockmanager-request-name-options-callback",
           "dom-lockmanager-query"
-        ]
+        ],
+        "specShortname": "web-locks"
       },
       "https://w3c.github.io/web-share/": {
         "anchors": [
           "dom-navigator-share"
-        ]
+        ],
+        "specShortname": "web-share"
       },
       "https://w3c.github.io/webappsec-clear-site-data/": {
         "anchors": [
           "abstract-opdef-parse-responses-clear-site-data-header",
           "abstract-opdef-clear-site-data-for-response"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "dom-credentialscontainer-get",
           "dom-credentialscontainer-store",
           "dom-credentialscontainer-create"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://w3c.github.io/webcrypto/": {
         "anchors": [
           "dfn-generate-a-random-uuid"
-        ]
+        ],
+        "specShortname": "webcrypto-2"
       },
       "https://w3c.github.io/webdriver-bidi/": {
         "anchors": [
           "webdriver-bidi-navigation-started"
-        ]
+        ],
+        "specShortname": "webdriver-bidi"
       },
       "https://webaudio.github.io/web-audio-api/": {
         "anchors": [
@@ -592,12 +721,14 @@
           "dom-audioscheduledsourcenode-start",
           "AudioBufferSourceNode",
           "dom-audiobuffersourcenode-start"
-        ]
+        ],
+        "specShortname": "webaudio-1.0"
       },
       "https://webaudio.github.io/web-midi-api/": {
         "anchors": [
           "dom-navigator-requestmidiaccess"
-        ]
+        ],
+        "specShortname": "webmidi"
       },
       "https://webaudio.github.io/web-speech-api/": {
         "anchors": [
@@ -608,7 +739,8 @@
           "dom-speechrecognition-start",
           "dom-speechrecognition-stop",
           "dom-speechrecognition-abort"
-        ]
+        ],
+        "specShortname": "speech-api"
       },
       "https://webbluetoothcg.github.io/web-bluetooth/": {
         "anchors": [
@@ -635,17 +767,20 @@
           "idl-DOMException",
           "reject",
           "notsupportederror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://wicg.github.io/background-fetch/": {
         "anchors": [
           "dom-backgroundfetchmanager-fetch"
-        ]
+        ],
+        "specShortname": "background-fetch"
       },
       "https://wicg.github.io/background-sync/spec/": {
         "anchors": [
           "dom-syncmanager-register"
-        ]
+        ],
+        "specShortname": "background-sync"
       },
       "https://wicg.github.io/client-hints-infrastructure": {
         "anchors": [
@@ -661,18 +796,21 @@
           "dom-window-showopenfilepicker",
           "dom-window-showsavefilepicker",
           "dom-window-showdirectorypicker"
-        ]
+        ],
+        "specShortname": "file-system-access"
       },
       "https://wicg.github.io/idle-detection/": {
         "anchors": [
           "dom-idledetector-start",
           "dom-idledetector-requestpermission"
-        ]
+        ],
+        "specShortname": "idle-detection"
       },
       "https://wicg.github.io/keyboard-lock/": {
         "anchors": [
           "dom-keyboard-lock"
-        ]
+        ],
+        "specShortname": "keyboard-lock"
       },
       "https://wicg.github.io/nav-speculation/prefetch.html": {
         "anchors": [
@@ -687,7 +825,8 @@
           "prefetch-record-is-expected-to-match-a-url",
           "prefetch-record-start-time",
           "prefetch-record-cancel-and-discard"
-        ]
+        ],
+        "specShortname": "prefetch"
       },
       "https://wicg.github.io/serial/": {
         "anchors": [
@@ -717,7 +856,8 @@
       "https://www.w3.org/TR/mediacapture-streams/": {
         "anchors": [
           "dom-navigator-getusermedia"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       }
     }
   }

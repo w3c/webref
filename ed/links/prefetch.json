@@ -6,10 +6,16 @@
   "links": {
     "rawlinks": {
       "https://buettner.github.io/private-prefetch-proxy/traffic-advice.html": {},
-      "https://console.spec.whatwg.org/": {},
+      "https://console.spec.whatwg.org/": {
+        "specShortname": "console"
+      },
       "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-no-vary-search": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/privacycg/storage-partitioning": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
@@ -23,28 +29,57 @@
           "speculative-loading-privacy"
         ]
       },
-      "https://httpwg.org/specs/rfc6265.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://privacycg.github.io/storage-partitioning/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/navigation-timing/": {},
-      "https://w3c.github.io/resource-timing/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "specShortname": "resource-timing"
+      },
       "https://w3c.github.io/webappsec-clear-site-data/": {
         "anchors": [
           "header"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
-      "https://w3c.github.io/webappsec-csp/": {},
-      "https://w3c.github.io/webappsec-referrer-policy/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://w3c.github.io/webdriver-bidi/": {},
-      "https://wicg.github.io/nav-speculation/prerendering.html": {},
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "specShortname": "referrer-policy"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "specShortname": "webdriver-bidi"
+      },
+      "https://wicg.github.io/nav-speculation/prerendering.html": {
+        "specShortname": "prerendering-revamped"
+      },
       "https://www.ietf.org/archive/id/draft-geohash-hint-00.html": {},
-      "https://www.rfc-editor.org/info/rfc8610/": {},
+      "https://www.rfc-editor.org/info/rfc8610/": {
+        "specShortname": "rfc8610"
+      },
       "https://www.rfc-editor.org/info/rfc9651/": {},
-      "https://www.w3.org/TR/navigation-timing/": {},
+      "https://www.w3.org/TR/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
       "https://www.w3.org/community/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
@@ -53,7 +88,8 @@
       "https://console.spec.whatwg.org/": {
         "anchors": [
           "report-a-warning-to-the-console"
-        ]
+        ],
+        "specShortname": "console"
       },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
@@ -61,7 +97,8 @@
           "concept-document-url",
           "concept-document-origin",
           "concept-element-local-name"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -118,7 +155,8 @@
           "concept-response-status",
           "redirect-status",
           "ok-status"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -288,13 +326,15 @@
           "name-obtain-a-url-search-varianc",
           "name-http-header-field-definitio",
           "name-comparing"
-        ]
+        ],
+        "specShortname": "no-vary-search"
       },
       "https://httpwg.org/specs/rfc6265.html": {
         "anchors": [
           "set-cookie",
           "storage-model"
-        ]
+        ],
+        "specShortname": "rfc6265"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
@@ -319,7 +359,8 @@
           "list-size",
           "list-clone",
           "ordered-map"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -327,7 +368,8 @@
           "concept-url-origin",
           "concept-url-scheme",
           "concept-url-fragment"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -337,48 +379,56 @@
           "dom-fetchevent-resultingclientid",
           "dom-clients-matchall",
           "fetchevent"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "typedefdef-domhighrestimestamp",
           "dfn-current-high-resolution-time",
           "dfn-unsafe-shared-current-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/navigation-timing/": {
         "anchors": [
           "enumdef-navigationtimingtype",
           "create-the-navigation-timing-entry"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
       "https://w3c.github.io/resource-timing/": {
         "anchors": [
           "performanceresourcetiming",
           "dfn-delivery-type",
           "setup-the-resource-timing-entry"
-        ]
+        ],
+        "specShortname": "resource-timing"
       },
       "https://w3c.github.io/webappsec-clear-site-data/": {
         "anchors": [
           "abstract-opdef-parse-responses-clear-site-data-header",
           "abstract-opdef-clear-site-data-for-response"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "should-block-navigation-request"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
           "referrer-policy"
-        ]
+        ],
+        "specShortname": "referrer-policy"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://w3c.github.io/webdriver-bidi/": {
         "anchors": [
@@ -386,17 +436,20 @@
           "navigable-id",
           "set-of-sessions-for-which-an-event-is-enabled",
           "emit-an-event"
-        ]
+        ],
+        "specShortname": "webdriver-bidi"
       },
       "https://wicg.github.io/nav-speculation/prerendering.html": {
         "anchors": [
           "prerendering-traversable-update-the-successor-for-activation"
-        ]
+        ],
+        "specShortname": "prerendering-revamped"
       },
       "https://www.rfc-editor.org/info/rfc8610/": {
         "anchors": [
           "appendix-D"
-        ]
+        ],
+        "specShortname": "rfc8610"
       },
       "https://www.rfc-editor.org/rfc/rfc9651.html": {
         "anchors": [

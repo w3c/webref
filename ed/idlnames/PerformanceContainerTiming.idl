@@ -1,4 +1,4 @@
-// Source: Container Timing API (https://wicg.github.io/container-timing/)
+// Source: Container Timing API (https://w3c.github.io/container-timing/)
 [Exposed=Window]
 interface PerformanceContainerTiming : PerformanceEntry {
     readonly attribute DOMString identifier;
@@ -11,5 +11,5 @@ interface PerformanceContainerTiming : PerformanceEntry {
     [Default] object toJSON();
 };
 
-// Source: Container Timing API (https://wicg.github.io/container-timing/)
+// Source: Container Timing API (https://w3c.github.io/container-timing/)
 PerformanceContainerTiming includes PaintTimingMixin;

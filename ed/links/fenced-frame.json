@@ -14,15 +14,21 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "inner-event-creation-steps"
-        ]
+        ],
+        "specShortname": "dom"
       },
-      "https://drafts.csswg.org/css2/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
+      "https://drafts.csswg.org/css2/": {
+        "specShortname": "CSS2"
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "network-partition-key",
           "destination-table"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/WICG/fenced-frame/blob/master/explainer/TAG_Security_Privacy_Questionnaire.md": {},
       "https://github.com/WICG/fenced-frame/blob/master/explainer/interaction_with_content_security_policy.md": {
@@ -202,55 +208,81 @@
         ]
       },
       "https://httpwg.org/specs/rfc8941.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/wpt_internal/fenced_frame/": {},
       "https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/wpt_internal/fenced_frame/disable-untrusted-network-ongoing-navigation.https.html": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/reporting/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/reporting/": {
+        "specShortname": "reporting-1"
+      },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "frame-src-pre-request",
           "frame-src-post-request",
           "directive-frame-src",
           "directive-fallback-list"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
-      "https://w3c.github.io/webappsec-cspee/": {},
-      "https://w3c.github.io/webappsec-mixed-content/": {},
+      "https://w3c.github.io/webappsec-cspee/": {
+        "specShortname": "csp-embedded-enforcement"
+      },
+      "https://w3c.github.io/webappsec-mixed-content/": {
+        "specShortname": "mixed-content"
+      },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "iframe-allow-attribute"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
-      "https://w3c.github.io/webappsec-referrer-policy/": {},
-      "https://w3c.github.io/webrtc-pc/": {},
-      "https://w3c.github.io/webtransport/": {},
+      "https://w3c.github.io/webappsec-referrer-policy/": {
+        "specShortname": "referrer-policy"
+      },
+      "https://w3c.github.io/webrtc-pc/": {
+        "specShortname": "webrtc"
+      },
+      "https://w3c.github.io/webtransport/": {
+        "specShortname": "webtransport"
+      },
       "https://w3ctag.github.io/web-without-3p-cookies/": {
         "anchors": [
           "introduction"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      },
       "https://wicg.github.io/anonymous-iframe/": {
         "anchors": [
           "spec-network-partition-key",
           "spec-navigation-partition-nonce",
           "spec-window-partition-nonce"
-        ]
+        ],
+        "specShortname": "anonymous-iframe"
       },
       "https://wicg.github.io/attribution-reporting-api/": {
         "anchors": [
           "ref-for-request-service-workers-mode"
         ]
       },
-      "https://wicg.github.io/nav-speculation/prerendering.html": {},
+      "https://wicg.github.io/nav-speculation/prerendering.html": {
+        "specShortname": "prerendering-revamped"
+      },
       "https://wicg.github.io/shared-storage/": {},
       "https://wicg.github.io/turtledove/": {},
       "https://wicg.github.io/webpackage/loading.html": {
         "anchors": [
           "mp-http-fetch"
-        ]
+        ],
+        "specShortname": "webpackage"
       },
       "https://wpt.fyi/results/fenced-frame/allow-attribute-src.https.html": {},
       "https://wpt.fyi/results/fenced-frame/ancestor-throttle.https.html": {},
@@ -452,13 +484,15 @@
           "concept-element",
           "element",
           "concept-tree-ancestor"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "dom-element-scrollintoview",
           "scroll-a-target-into-view"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -505,7 +539,8 @@
           "concept-response-header-list",
           "network-partition-key",
           "concept-request-reserved-client"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -831,7 +866,8 @@
           "set-union",
           "set-subset",
           "tuple"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -839,12 +875,14 @@
           "concept-url-origin",
           "concept-url-parser",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/reporting/": {
         "anchors": [
           "generate-and-queue-a-report"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
@@ -865,18 +903,21 @@
           "grammardef-self",
           "worker-src",
           "effective-directive-for-a-request"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-cspee/": {
         "anchors": [
           "browsing-context-required-csp",
           "process-response"
-        ]
+        ],
+        "specShortname": "csp-embedded-enforcement"
       },
       "https://w3c.github.io/webappsec-mixed-content/": {
         "anchors": [
           "should-block-fetch"
-        ]
+        ],
+        "specShortname": "mixed-content"
       },
       "https://w3c.github.io/webappsec-permissions-policy": {
         "anchors": [
@@ -890,7 +931,8 @@
           "policy-directive",
           "matches",
           "declared-origin"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
@@ -906,26 +948,30 @@
           "create-from-response",
           "process-policy-attributes",
           "is-feature-enabled"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-referrer-policy/": {
         "anchors": [
           "referrer-policy-no-referrer",
           "referrer-policy"
-        ]
+        ],
+        "specShortname": "referrer-policy"
       },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dom-rtcpeerconnection",
           "dom-peerconnection"
-        ]
+        ],
+        "specShortname": "webrtc"
       },
       "https://w3c.github.io/webtransport": {
         "anchors": [
           "webtransport-cleanup",
           "initialize-webtransport-over-http",
           "webtransport-queue-a-network-task"
-        ]
+        ],
+        "specShortname": "webtransport"
       },
       "https://w3c.github.io/webtransport/": {
         "anchors": [
@@ -933,7 +979,8 @@
           "webtransporterror",
           "dom-webtransporterroroptions-source",
           "dictdef-webtransportcloseinfo"
-        ]
+        ],
+        "specShortname": "webtransport"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -961,13 +1008,15 @@
           "reject",
           "dfn-create-exception",
           "notallowederror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://websockets.spec.whatwg.org/": {
         "anchors": [
           "websocket",
           "concept-websocket-establish"
-        ]
+        ],
+        "specShortname": "websockets"
       },
       "https://wicg.github.io/anonymous-iframe/": {
         "anchors": [
@@ -975,7 +1024,8 @@
           "navigation-credentialless",
           "environment-partition-nonce",
           "navigation-params-credentialless"
-        ]
+        ],
+        "specShortname": "anonymous-iframe"
       },
       "https://wicg.github.io/attribution-reporting-api/": {
         "anchors": [
@@ -994,7 +1044,8 @@
           "navigable-loading-mode",
           "http-headerdef-supports-loading-mode",
           "get-the-supported-loading-modes"
-        ]
+        ],
+        "specShortname": "prerendering-revamped"
       },
       "https://wicg.github.io/shared-storage/": {
         "anchors": [
@@ -1010,7 +1061,8 @@
       "https://wicg.github.io/webpackage/loading.html": {
         "anchors": [
           "wait-and-queue-a-report-for"
-        ]
+        ],
+        "specShortname": "webpackage"
       },
       "https://www.ietf.org/rfc/rfc4122.txt": {
         "anchors": [
@@ -1027,7 +1079,8 @@
       "https://www.w3.org/TR/CSS2/syndata.html": {
         "anchors": [
           "x21"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://www.w3.org/TR/CSS21/visuren.html": {
         "anchors": [

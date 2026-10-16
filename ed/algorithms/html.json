@@ -1541,33 +1541,24 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>document</var> has no <a id=\"document-base-urls:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <code id=\"document-base-urls:the-base-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> element that has\n   an <code id=\"document-base-urls:attr-base-href\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\">href</a></code> attribute, then return <var>document</var>'s\n   <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fallback-base-url\" id=\"document-base-urls:fallback-base-url\">fallback base URL</a>.</p>"
+          "html": "<p>If <var>document</var> has a <a id=\"document-base-urls:descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-descendant\" data-x-internal=\"descendant\">descendant</a> <code id=\"document-base-urls:the-base-element\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> element that has an\n   <code id=\"document-base-urls:attr-base-href\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\">href</a></code> attribute, then return the <a id=\"document-base-urls:frozen-base-url\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#frozen-base-url\">frozen base URL</a>\n   of the first such <code id=\"document-base-urls:the-base-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> element in <a id=\"document-base-urls:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>.</p>"
         },
         {
-          "html": "<p>Otherwise, return the <a id=\"document-base-urls:frozen-base-url\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#frozen-base-url\">frozen base URL</a> of the first <code id=\"document-base-urls:the-base-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> element\n   in <var>document</var> that has an <code id=\"document-base-urls:attr-base-href-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\">href</a></code> attribute, in\n   <a id=\"document-base-urls:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>.</p>"
+          "html": "<p>If <var>document</var>'s <a id=\"document-base-urls:base-url-override\" href=\"https://dom.spec.whatwg.org/#document-base-url-override\" data-x-internal=\"base-url-override\">base URL override</a> is non-null, then return\n   <var>document</var>'s <a id=\"document-base-urls:base-url-override-2\" href=\"https://dom.spec.whatwg.org/#document-base-url-override\" data-x-internal=\"base-url-override\">base URL override</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fallback-base-url\" id=\"document-base-urls:fallback-base-url\">fallback base URL</a>.</p>"
         }
       ]
     },
     {
       "name": "fallback base URL",
       "href": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fallback-base-url",
-      "html": "The <dfn id=\"fallback-base-url\">fallback base URL</dfn> of a <code id=\"document-base-urls:document-2\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object <var>document</var> is the\n  <a id=\"document-base-urls:url-record-2\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL record</a> obtained by running these steps:",
+      "html": "The <dfn id=\"fallback-base-url\">fallback base URL</dfn> of a <code id=\"document-base-urls:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> object <var>document</var> is the\n  <a id=\"document-base-urls:url-record-2\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL record</a> obtained by running these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>document</var> is <a href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#an-iframe-srcdoc-document\" id=\"document-base-urls:an-iframe-srcdoc-document\">an <code>iframe</code>\n    <code>srcdoc</code> document</a>:",
-          "rationale": "assert",
-          "steps": [
-            {
-              "html": "<p><a id=\"document-base-urls:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url\">about base URL</a> is non-null.</p>"
-            },
-            {
-              "html": "<p>Return <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url-2\">about base\n     URL</a>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>If <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"document-base-urls:the-document's-address\" data-x-internal=\"the-document's-address\">URL</a> <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#matches-about:blank\" id=\"document-base-urls:matches-about:blank\">matches\n   <code>about:blank</code></a> and <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url-3\">about base URL</a> is non-null, then return\n   <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url-4\">about base\n   URL</a>.</p>"
+          "html": "<p>If <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"document-base-urls:the-document's-address\" data-x-internal=\"the-document's-address\">URL</a> <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#matches-about:blank\" id=\"document-base-urls:matches-about:blank\">matches\n   <code>about:blank</code></a> or <a href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#matches-about:srcdoc\" id=\"document-base-urls:matches-about:srcdoc\">matches <code>about:srcdoc</code></a>, and\n   <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url\">about base URL</a> is\n   non-null, then return <var>document</var>'s <a href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-about-base-url\" id=\"document-base-urls:concept-document-about-base-url-2\">about base URL</a>.</p>"
         },
         {
           "html": "<p>Return <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-url\" id=\"document-base-urls:the-document's-address-2\" data-x-internal=\"the-document's-address\">URL</a>.</p>"
@@ -1577,7 +1568,7 @@
     {
       "name": "set the URL",
       "href": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#set-the-url",
-      "html": "To <dfn id=\"set-the-url\">set the URL</dfn> for a <code id=\"document-base-urls:document-3\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> <var>document</var> to a <a id=\"document-base-urls:url-record-3\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL\n  record</a> <var>url</var>:",
+      "html": "To <dfn id=\"set-the-url\">set the URL</dfn> for a <code id=\"document-base-urls:document-4\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> <var>document</var> to a <a id=\"document-base-urls:url-record-3\" href=\"https://url.spec.whatwg.org/#concept-url\" data-x-internal=\"url-record\">URL\n  record</a> <var>url</var>:",
       "rationale": "set",
       "steps": [
         {
@@ -1591,7 +1582,7 @@
     {
       "name": "respond to base URL changes",
       "href": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#respond-to-base-url-changes",
-      "html": "To <dfn id=\"respond-to-base-url-changes\">respond to base URL changes</dfn> for a\n  <code id=\"document-base-urls:document-4\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> <var>document</var>:",
+      "html": "To <dfn id=\"respond-to-base-url-changes\">respond to base URL changes</dfn> for a\n  <code id=\"document-base-urls:document-5\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code> <var>document</var>:",
       "rationale": "ensure",
       "steps": [
         {

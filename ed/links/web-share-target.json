@@ -6,8 +6,12 @@
   "links": {
     "rawlinks": {
       "https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/web-share-target/issues/26": {},
       "https://github.com/w3c/web-share-target/issues/?q=is%3Aissue+is%3Aopen+label%3A%22enhancement%22": {},
       "https://html.spec.whatwg.org/multipage/": {
@@ -15,14 +19,19 @@
           "creating-a-new-browsing-context"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://paul.kinlan.me/": {},
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-decodeuricomponent-encodeduricomponent"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
@@ -32,17 +41,26 @@
           "section-7"
         ]
       },
-      "https://www.w3.org/TR/appmanifest/": {},
-      "https://www.w3.org/TR/secure-contexts/": {},
-      "https://www.w3.org/TR/service-workers/": {},
-      "https://www.w3.org/TR/web-share/": {}
+      "https://www.w3.org/TR/appmanifest/": {
+        "specShortname": "appmanifest"
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "specShortname": "service-workers"
+      },
+      "https://www.w3.org/TR/web-share/": {
+        "specShortname": "web-share"
+      }
     },
     "autolinks": {
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode",
           "utf-8"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -51,7 +69,8 @@
           "concept-method",
           "concept-headers-header-list",
           "concept-header-list-append"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
@@ -85,7 +104,8 @@
           "list",
           "list-append",
           "tuple"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -97,7 +117,8 @@
           "valid-url-string",
           "concept-urlencoded-serializer",
           "concept-url-query"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://www.rfc-editor.org/info/rfc8259/": {
         "anchors": [
@@ -111,17 +132,20 @@
           "dfn-processing-a-manifest",
           "dfn-within-scope",
           "dfn-installed-web-application"
-        ]
+        ],
+        "specShortname": "appmanifest"
       },
       "https://www.w3.org/TR/secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
           "dfn-service-worker"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://www.w3.org/TR/web-share/": {
         "anchors": [
@@ -129,7 +153,8 @@
           "dfn-share-target",
           "dom-navigator-share",
           "dom-sharedata-url"
-        ]
+        ],
+        "specShortname": "web-share"
       }
     }
   }

@@ -8,9 +8,15 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
-      "https://fullscreen.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "specShortname": "fullscreen"
+      },
       "https://github.com/w3c/webappsec": {},
       "https://github.com/w3c/webappsec-feature-policy/pull/": {},
       "https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md": {},
@@ -33,14 +39,28 @@
         ]
       },
       "https://httpwg.org/specs/rfc8941.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/mediacapture-main/": {},
-      "https://w3c.github.io/permissions/": {},
-      "https://w3c.github.io/reporting/": {},
-      "https://w3c.github.io/webappsec-csp/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/mediacapture-main/": {
+        "specShortname": "mediacapture-streams"
+      },
+      "https://w3c.github.io/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://w3c.github.io/reporting/": {
+        "specShortname": "reporting-1"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/info/rfc3864/": {},
       "https://www.w3.org/Mail/Request": {},
       "https://www.w3.org/TR/html5/": {},
@@ -50,7 +70,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -70,7 +91,8 @@
           "concept-node-document",
           "clone-a-node-document",
           "concept-element"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -80,12 +102,14 @@
           "concept-request",
           "concept-request-client",
           "concept-request-origin"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "dom-element-requestfullscreen"
-        ]
+        ],
+        "specShortname": "fullscreen"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -162,23 +186,27 @@
           "ascii-case-insensitive",
           "map-exists",
           "map-set"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-origin",
           "concept-url-parser"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/mediacapture-main/": {
         "anchors": [
           "dom-mediadevices-getusermedia"
-        ]
+        ],
+        "specShortname": "mediacapture-streams"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
           "dfn-powerful-feature"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/reporting/": {
         "anchors": [
@@ -188,7 +216,8 @@
           "report-body",
           "generate-and-queue-a-report",
           "report"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
@@ -196,7 +225,8 @@
           "match-url-to-source-expression",
           "grammardef-scheme-source",
           "grammardef-host-source"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -208,7 +238,8 @@
           "Default",
           "idl-object",
           "idl-long"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

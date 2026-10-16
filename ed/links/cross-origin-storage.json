@@ -7,9 +7,15 @@
     "rawlinks": {
       "http://www.w3.org/community/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
-      "https://fs.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
+      "https://fs.spec.whatwg.org/": {
+        "specShortname": "fs"
+      },
       "https://github.com/WICG/file-system-access/issues/214": {},
       "https://github.com/tc39/proposal-import-attributes": {},
       "https://github.com/w3c/csswg-drafts/issues/14056": {},
@@ -17,22 +23,52 @@
       "https://github.com/whatwg/html/issues/12770": {},
       "https://github.com/whatwg/html/issues/12771": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://streams.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tools.ietf.org/html/draft-ietf-tls-grease": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/FileAPI/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/resource-timing/": {},
-      "https://w3c.github.io/web-locks/": {},
-      "https://w3c.github.io/webappsec-csp/": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://w3c.github.io/webappsec-subresource-integrity/": {},
-      "https://w3c.github.io/webcrypto/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://wicg.github.io/ua-client-hints/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "specShortname": "resource-timing"
+      },
+      "https://w3c.github.io/web-locks/": {
+        "specShortname": "web-locks"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://w3c.github.io/webappsec-subresource-integrity/": {
+        "specShortname": "sri-2"
+      },
+      "https://w3c.github.io/webcrypto/": {
+        "specShortname": "webcrypto-2"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://wicg.github.io/ua-client-hints/": {
+        "specShortname": "ua-client-hints"
+      },
       "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
@@ -41,7 +77,8 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -55,7 +92,8 @@
           "concept-header-list-get-decode-split",
           "dom-requestinit-integrity",
           "response"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://fs.spec.whatwg.org/": {
         "anchors": [
@@ -80,13 +118,16 @@
           "dom-filesystemdirectoryhandle-removeentry",
           "dom-filesystemfilehandle-createsyncaccesshandle",
           "filesystemsyncaccesshandle"
-        ]
+        ],
+        "specShortname": "fs"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "concept-origin",
+          "obtain-a-site",
           "same-site",
+          "concept-origin",
           "concept-origin-opaque",
+          "site",
           "same-origin"
         ]
       },
@@ -137,14 +178,15 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "relevant-settings-object",
+          "environment-settings-object",
+          "concept-environment-top-level-origin",
           "concept-settings-object-origin",
+          "relevant-settings-object",
           "concept-relevant-realm",
           "concept-relevant-global",
           "queue-a-global-task",
           "dom-manipulation-task-source",
           "secure-context",
-          "environment-settings-object",
           "concept-settings-object-global",
           "global-object"
         ]
@@ -163,10 +205,10 @@
           "struct-item",
           "string",
           "ascii-case-insensitive",
+          "boolean",
           "ordered-map",
           "byte-sequence",
           "list",
-          "boolean",
           "ordered-set",
           "set-append",
           "list-iterate",
@@ -182,13 +224,15 @@
           "set-intersection",
           "strip-leading-and-trailing-ascii-whitespace",
           "list-remove"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
           "ws-close",
           "rs-pipe-to"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -199,35 +243,41 @@
         "anchors": [
           "concept-basic-url-parser",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/FileAPI/": {
         "anchors": [
           "dfn-file"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
           "serviceworkerglobalscope",
           "dfn-service-worker-client",
           "dom-serviceworkercontainer-register"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://w3c.github.io/webcrypto/": {
         "anchors": [
           "dom-hashalgorithmidentifier",
           "dfn-Algorithm"
-        ]
+        ],
+        "specShortname": "webcrypto-2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -250,7 +300,8 @@
           "invalidstateerror",
           "datacloneerror",
           "quotaexceedederror"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

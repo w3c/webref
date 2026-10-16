@@ -61,14 +61,21 @@
         ]
       },
       "https://unicode.org/reports/tr15/": {},
-      "https://w3c-fedid.github.io/digital-credentials/": {},
-      "https://w3c.github.io/webappsec-credential-management/": {},
+      "https://w3c-fedid.github.io/digital-credentials/": {
+        "specShortname": "digital-credentials"
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "specShortname": "credential-management-1"
+      },
       "https://w3c.github.io/webauthn/": {
         "anchors": [
           "sctn-extension-id"
-        ]
+        ],
+        "specShortname": "webauthn-4"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.android.com/": {},
       "https://www.bluetooth.com/specifications/adopted-specifications": {},
       "https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=229737": {},
@@ -102,12 +109,15 @@
           "script"
         ]
       },
-      "https://www.w3.org/TR/secure-payment-confirmation/": {},
+      "https://www.w3.org/TR/secure-payment-confirmation/": {
+        "specShortname": "secure-payment-confirmation"
+      },
       "https://www.w3.org/TR/webauthn-2/": {},
       "https://www.w3.org/TR/webauthn/": {
         "anchors": [
           "enumdef-authenticatortransport"
-        ]
+        ],
+        "specShortname": "webauthn-4"
       }
     },
     "autolinks": {
@@ -120,7 +130,8 @@
         "anchors": [
           "dom-credentialscontainer-create",
           "dom-credentialscontainer-get"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webauthn/": {
         "anchors": [
@@ -137,14 +148,16 @@
           "dom-publickeycredentialuserentity-displayname",
           "dictdef-authenticationextensionsclientinputs",
           "dictdef-authenticationextensionsclientoutputs"
-        ]
+        ],
+        "specShortname": "webauthn-4"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-USVString",
           "idl-boolean",
           "idl-ArrayBuffer"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/2025/WD-digital-credentials-20250701/": {
         "anchors": [
@@ -187,7 +200,8 @@
         "anchors": [
           "unsigned-extension-output",
           "sctn-large-blob-extension"
-        ]
+        ],
+        "specShortname": "webauthn-3"
       }
     }
   }

@@ -14,12 +14,24 @@
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc7258": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-color-4/": {},
-      "https://drafts.csswg.org/css-color-5/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://drafts.csswg.org/css-color-5/": {
+        "specShortname": "css-color-5"
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/fedidcg/FedCM/issues/218": {},
       "https://github.com/fedidcg/FedCM/issues/230": {
         "anchors": [
@@ -70,46 +82,71 @@
       "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html": {
         "anchors": [
           "name-the-samesite-attribute-2"
-        ]
+        ],
+        "specShortname": "rfc6265bis"
       },
       "https://httpwg.org/specs/rfc9110.html": {
         "anchors": [
           "field.referer",
           "field.location"
-        ]
+        ],
+        "specShortname": "rfc9110"
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-fedid-wg/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
       "https://openid.net/specs/openid-connect-account-porting-1_0.html": {},
       "https://openid.net/specs/openid-connect-core-1_0.html": {
         "anchors": [
           "IDTokenValidation"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/overview.html": {
         "anchors": [
           "sec-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c-fedid.github.io/login-status/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c-fedid.github.io/login-status/": {
+        "specShortname": "login-status"
+      },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "algorithm-request"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "directive-connect-src"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
-      "https://w3c.github.io/webappsec-fetch-metadata/": {},
-      "https://w3c.github.io/webappsec-permissions-policy": {},
-      "https://w3c.github.io/webappsec-permissions-policy/": {},
-      "https://w3c.github.io/webappsec-secure-contexts/": {},
-      "https://w3c.github.io/webdriver/": {},
+      "https://w3c.github.io/webappsec-fetch-metadata/": {
+        "specShortname": "fetch-metadata"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://w3c.github.io/webdriver/": {
+        "specShortname": "webdriver2"
+      },
       "https://w3cping.github.io/privacy-threat-model/": {
         "anchors": [
           "hl-intrusion"
@@ -118,7 +155,8 @@
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-any"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/": {},
       "https://wiki.mozilla.org/Identity/Persona_AAR": {},
@@ -131,7 +169,8 @@
       "https://www.w3.org/TR/appmanifest/": {
         "anchors": [
           "icon-masks"
-        ]
+        ],
+        "specShortname": "appmanifest"
       },
       "https://www.w3.org/groups/wg/fedid": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
@@ -139,7 +178,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -150,7 +190,8 @@
         "anchors": [
           "concept-document-origin",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-color-4/": {
         "anchors": [
@@ -159,22 +200,26 @@
           "funcdef-hsl",
           "funcdef-rgb",
           "typedef-named-color"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://drafts.csswg.org/css-color-5/": {
         "anchors": [
           "typedef-color"
-        ]
+        ],
+        "specShortname": "css-color-5"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "set-up-browsing-context-features"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -204,7 +249,8 @@
           "concept-response-header-list",
           "http-origin",
           "forbidden-request-header"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/michaelkleber/privacy-model": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -290,12 +336,14 @@
           "parse-json-bytes-to-a-javascript-value",
           "list-append",
           "boolean"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "json-mime-type"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -315,7 +363,8 @@
           "url-query-string",
           "concept-url-parser",
           "concept-url-query"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c-fedid.github.io/login-status": {
         "anchors": [
@@ -344,26 +393,34 @@
           "dom-credentialmediationrequirement-silent",
           "origin-requires-user-mediation",
           "dom-credentialmediationrequirement-required"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
-      "https://w3c.github.io/webappsec-csp/": {},
+      "https://w3c.github.io/webappsec-csp/": {
+        "specShortname": "CSP3"
+      },
       "https://w3c.github.io/webappsec-fetch-metadata/": {
         "anchors": [
           "http-headerdef-sec-fetch-dest"
-        ]
+        ],
+        "specShortname": "fetch-metadata"
       },
-      "https://w3c.github.io/webappsec-permissions-policy": {},
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "specShortname": "permissions-policy-1"
+      },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin",
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
@@ -379,7 +436,8 @@
           "dfn-no-such-alert",
           "dfn-success",
           "dfn-getting-properties"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -406,7 +464,8 @@
           "idl-unsigned-long",
           "a-promise-rejected-with",
           "dfn-dictionary"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

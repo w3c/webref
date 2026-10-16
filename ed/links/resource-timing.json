@@ -32,8 +32,12 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/transferSize": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/workerStart": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-values-4/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-status",
@@ -44,7 +48,8 @@
           "origin-header",
           "http-new-header-syntax",
           "tao-check"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/w3c/resource-timing/issues": {},
       "https://github.com/w3c/resource-timing/issues/221": {},
@@ -77,13 +82,18 @@
           "concept-script"
         ]
       },
-      "https://httpwg.org/specs/rfc8297.html": {},
+      "https://httpwg.org/specs/rfc8297.html": {
+        "specShortname": "rfc8297"
+      },
       "https://httpwg.org/specs/rfc9110.html": {
         "anchors": [
           "rfc.section.5.6.1"
-        ]
+        ],
+        "specShortname": "rfc9110"
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://tools.ietf.org/html/rfc2397": {},
       "https://tools.ietf.org/html/rfc3864": {
         "anchors": [
@@ -95,55 +105,82 @@
           "section-4.3.4"
         ]
       },
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/beacon/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/navigation-timing/": {},
-      "https://w3c.github.io/performance-timeline/": {},
-      "https://w3c.github.io/svgwg/svg2-draft/": {},
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/beacon/": {
+        "specShortname": "beacon"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/navigation-timing/": {
+        "specShortname": "navigation-timing-2"
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "specShortname": "performance-timeline"
+      },
+      "https://w3c.github.io/svgwg/svg2-draft/": {
+        "specShortname": "SVG2"
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "es-environment"
-        ]
+        ],
+        "specShortname": "webidl"
       },
-      "https://www.rfc-editor.org/info/rfc2397/": {},
+      "https://www.rfc-editor.org/info/rfc2397/": {
+        "specShortname": "rfc2397"
+      },
       "https://www.rfc-editor.org/info/rfc5234/": {},
       "https://www.w3.org/": {},
-      "https://www.w3.org/TR/IFT/": {},
-      "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/IFT/": {
+        "specShortname": "IFT"
+      },
+      "https://www.w3.org/TR/SVG11/": {
+        "specShortname": "SVG11"
+      },
       "https://www.w3.org/TR/SVG11/struct.html": {
         "anchors": [
           "SVGElement"
-        ]
+        ],
+        "specShortname": "SVG11"
       },
       "https://www.w3.org/TR/SVG2/embedded.html": {
         "anchors": [
           "ImageElement"
-        ]
+        ],
+        "specShortname": "SVG2"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "funcdef-url"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dom-performance"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/navigation-timing-2/": {
         "anchors": [
           "performanceentry"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
       "https://www.w3.org/policies/process/20250818/": {},
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-event-fire"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -182,7 +219,8 @@
           "create-an-opaque-timing-info",
           "concept-response",
           "fetch-timing-info-start-time"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
@@ -271,7 +309,8 @@
         "anchors": [
           "isomorphic-decode",
           "string"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -281,20 +320,23 @@
           "service-worker-timing-info-worker-final-router-source",
           "dfn-service-worker",
           "dom-fetchevent-respondwith"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
           "typedefdef-domhighrestimestamp",
           "performance",
           "dfn-relative-high-resolution-coarse-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
           "performanceentry",
           "dom-performanceobserver-supportedentrytypes"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -309,12 +351,14 @@
           "this",
           "idl-undefined",
           "idl-unsigned-long"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/beacon/": {
         "anchors": [
           "dom-navigator-sendbeacon"
-        ]
+        ],
+        "specShortname": "beacon"
       },
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
@@ -323,12 +367,14 @@
           "dfn-performance-timeline-task-source",
           "dfn-queue-a-performanceentry",
           "dfn-initialize-a-performanceentry"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://xhr.spec.whatwg.org/": {
         "anchors": [
           "xmlhttprequest"
-        ]
+        ],
+        "specShortname": "xhr"
       }
     }
   }

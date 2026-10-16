@@ -6,12 +6,22 @@
   "links": {
     "rawlinks": {
       "https://annevankesteren.nl/": {},
-      "https://console.spec.whatwg.org/": {},
+      "https://console.spec.whatwg.org/": {
+        "specShortname": "console"
+      },
       "https://creativecommons.org/licenses/by/4.0/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://drafts.csswg.org/selectors/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fullscreen.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/selectors/": {
+        "specShortname": "selectors-4"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fullscreen.spec.whatwg.org/": {
+        "specShortname": "fullscreen"
+      },
       "https://github.com/w3c/webcomponents": {},
       "https://github.com/whatwg/dom/issues": {},
       "https://github.com/whatwg/dom/issues/181": {},
@@ -20,22 +30,50 @@
       "https://github.com/whatwg/dom/issues/67": {},
       "https://github.com/whatwg/webidl/issues/135": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://opensource.org/licenses/BSD-3-Clause": {},
       "https://software.hixie.ch/utilities/js/live-dom-viewer/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/DOM-Parsing/": {},
-      "https://w3c.github.io/IndexedDB/": {},
-      "https://w3c.github.io/ServiceWorker/": {},
-      "https://w3c.github.io/deviceorientation/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/long-animation-frames/": {},
-      "https://w3c.github.io/pointerevents/": {},
-      "https://w3c.github.io/touch-events/": {},
-      "https://w3c.github.io/trusted-types/dist/spec/": {},
-      "https://w3c.github.io/uievents/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/DOM-Parsing/": {
+        "specShortname": "DOM-Parsing"
+      },
+      "https://w3c.github.io/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/deviceorientation/": {
+        "specShortname": "orientation-event"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/long-animation-frames/": {
+        "specShortname": "long-animation-frames"
+      },
+      "https://w3c.github.io/pointerevents/": {
+        "specShortname": "pointerevents3"
+      },
+      "https://w3c.github.io/touch-events/": {
+        "specShortname": "touch-events"
+      },
+      "https://w3c.github.io/trusted-types/dist/spec/": {
+        "specShortname": "trusted-types"
+      },
+      "https://w3c.github.io/uievents/": {
+        "specShortname": "uievents"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://whatwg.org/": {},
       "https://www.apple.com/": {},
       "https://www.w3.org/2008/webapps/": {},
@@ -51,13 +89,15 @@
       "https://console.spec.whatwg.org/": {
         "anchors": [
           "report-a-warning-to-the-console"
-        ]
+        ],
+        "specShortname": "console"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "dom-range-getclientrects",
           "dom-range-getboundingclientrect"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
@@ -66,14 +106,16 @@
           "scoping-root",
           "defined-pseudo",
           "match-a-selector-against-an-element"
-        ]
+        ],
+        "specShortname": "selectors-4"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "encoding",
           "utf-8",
           "name"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -190,11 +232,6 @@
           "timer-task-source"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
-        "anchors": [
-          "document-base-url"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-global",
@@ -270,7 +307,8 @@
           "map-getting-the-keys",
           "tuple",
           "set-replace"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -283,12 +321,14 @@
         "anchors": [
           "concept-url-serializer",
           "concept-url"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/DOM-Parsing/": {
         "anchors": [
           "dom-range-createcontextualfragment"
-        ]
+        ],
+        "specShortname": "DOM-Parsing"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -298,7 +338,8 @@
           "dfn-has-ever-been-evaluated-flag",
           "dfn-service-worker-events",
           "dfn-set-of-event-types-to-handle"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/deviceorientation/spec-source-orientation.html": {
         "anchors": [
@@ -311,30 +352,35 @@
           "dfn-relative-high-resolution-coarse-time",
           "dfn-unsafe-shared-current-time",
           "dfn-current-high-resolution-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/long-animation-frames/": {
         "anchors": [
           "record-timing-info-for-event-listener",
           "start-recording-task-time-if-needed",
           "record-task-end-time"
-        ]
+        ],
+        "specShortname": "long-animation-frames"
       },
       "https://w3c.github.io/pointerevents/": {
         "anchors": [
           "dom-mouseevent"
-        ]
+        ],
+        "specShortname": "pointerevents3"
       },
       "https://w3c.github.io/touch-events/": {
         "anchors": [
           "idl-def-touchevent"
-        ]
+        ],
+        "specShortname": "touch-events"
       },
       "https://w3c.github.io/trusted-types/dist/spec/": {
         "anchors": [
           "typedefdef-trustedtype",
           "get-trusted-type-compliant-attribute-value"
-        ]
+        ],
+        "specShortname": "trusted-types"
       },
       "https://w3c.github.io/uievents/": {
         "anchors": [
@@ -344,7 +390,8 @@
           "keyboardevent",
           "textevent",
           "uievent"
-        ]
+        ],
+        "specShortname": "uievents"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -402,7 +449,8 @@
           "idl-short",
           "wrongdocumenterror",
           "idl-unrestricted-double"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/xml-stylesheet/": {
         "anchors": [

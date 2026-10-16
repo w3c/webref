@@ -8,31 +8,58 @@
       "http://crypto.stanford.edu/~dabo/papers/webtiming.pdf": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developers.google.com/web/fundamentals/performance/rail": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-conditional-5/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://drafts.csswg.org/cssom/": {},
-      "https://drafts.csswg.org/resize-observer/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-conditional-5/": {
+        "specShortname": "css-conditional-5"
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/cssom/": {
+        "specShortname": "cssom-1"
+      },
+      "https://drafts.csswg.org/resize-observer/": {
+        "specShortname": "resize-observer-1"
+      },
       "https://en.wikipedia.org/wiki/Real_user_monitoring": {},
       "https://github.com/w3c/long-animation-frames": {},
       "https://github.com/w3c/long-animation-frames/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tom.vg/papers/timing-attacks_ccs2015.pdf": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/hr-time/": {},
-      "https://w3c.github.io/longtasks/": {},
-      "https://w3c.github.io/paint-timing/": {},
-      "https://w3c.github.io/performance-timeline/": {},
-      "https://w3c.github.io/uievents/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/hr-time/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://w3c.github.io/longtasks/": {
+        "specShortname": "longtasks-1"
+      },
+      "https://w3c.github.io/paint-timing/": {
+        "specShortname": "paint-timing"
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "specShortname": "performance-timeline"
+      },
+      "https://w3c.github.io/uievents/": {
+        "specShortname": "uievents"
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "a-new-promise",
           "resolve",
           "reject",
           "invoke-a-callback-function"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/policies/process/20250818/": {}
     },
@@ -53,27 +80,32 @@
           "concept-element-attributes-get-by-name",
           "event-listener-callback",
           "dom-event-timestamp"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-conditional-5/": {
         "anchors": [
           "container-size-query"
-        ]
+        ],
+        "specShortname": "css-conditional-5"
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "dom-window-getcomputedstyle"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "dom-element-getboundingclientrect"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://drafts.csswg.org/resize-observer-1/": {
         "anchors": [
           "resizeobserver"
-        ]
+        ],
+        "specShortname": "resize-observer-1"
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -151,24 +183,28 @@
           "stack-pop",
           "implementation-defined",
           "stack-peek"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "surrounding-agent"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/managing-memory.html": {
         "anchors": [
           "sec-weakrefderef",
           "sec-weak-ref-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
@@ -180,12 +216,14 @@
           "dfn-unsafe-shared-current-time",
           "dfn-current-high-resolution-time",
           "dfn-coarsened-shared-current-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://w3c.github.io/longtasks/": {
         "anchors": [
           "long-task"
-        ]
+        ],
+        "specShortname": "longtasks-1"
       },
       "https://w3c.github.io/paint-timing/": {
         "anchors": [
@@ -193,7 +231,8 @@
           "dom-painttimingmixin-painttime",
           "paint-timing-info",
           "painttimingmixin-paint-timing-info"
-        ]
+        ],
+        "specShortname": "paint-timing"
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
@@ -201,12 +240,14 @@
           "dom-performanceentry-starttime",
           "supportedentrytypes-attribute",
           "dfn-queue-a-performanceentry"
-        ]
+        ],
+        "specShortname": "performance-timeline"
       },
       "https://w3c.github.io/uievents/": {
         "anchors": [
           "uievent"
-        ]
+        ],
+        "specShortname": "uievents"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -224,7 +265,8 @@
           "idl-promise",
           "dfn-interface",
           "dfn-attribute"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

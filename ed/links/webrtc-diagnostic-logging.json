@@ -7,9 +7,15 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://w3c.github.io/webrtc-pc/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://w3c.github.io/webrtc-pc/": {
+        "specShortname": "webrtc"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/info/rfc9562/": {},
       "https://www.w3.org/community/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
@@ -33,12 +39,14 @@
           "map-size",
           "map-entry",
           "string-length"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dom-rtcpeerconnection"
-        ]
+        ],
+        "specShortname": "webrtc"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -51,7 +59,8 @@
           "dfn-throw",
           "invalidstateerror",
           "idl-DOMException"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

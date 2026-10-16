@@ -6,8 +6,12 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/ServiceWorker/pull/1348": {},
       "https://github.com/w3c/manifest/pull/710": {},
       "https://github.com/whatwg/fetch/issues/536": {
@@ -18,13 +22,18 @@
       "https://github.com/whatwg/infra/issues/189": {},
       "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
           "usage-and-quota"
-        ]
+        ],
+        "specShortname": "storage"
       },
-      "https://streams.spec.whatwg.org/": {},
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
       "https://tc39.es/ecma262/": {},
       "https://tools.ietf.org/html/rfc2119": {},
       "https://tools.ietf.org/html/rfc7233": {
@@ -32,9 +41,15 @@
           "section-3.1"
         ]
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://www.w3.org/TR/image-resource/": {},
-      "https://www.w3.org/TR/permissions/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://www.w3.org/TR/image-resource/": {
+        "specShortname": "image-resource"
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "specShortname": "permissions"
+      },
       "https://www.w3.org/TR/service-workers-1/": {
         "anchors": [
           "service-worker-lifetime"
@@ -52,7 +67,8 @@
           "event",
           "dom-event-istrusted",
           "concept-document-url"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -92,7 +108,8 @@
           "concept-response-response",
           "response-headers",
           "requestinfo"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
@@ -164,7 +181,8 @@
           "list-empty",
           "iteration-continue",
           "map-getting-the-keys"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -174,7 +192,8 @@
           "readablestream-close",
           "readablestream-error",
           "readablestream-readable"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -189,7 +208,8 @@
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-origin"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
@@ -208,7 +228,8 @@
           "extendableevent",
           "dictdef-extendableeventinit",
           "match-service-worker-registration"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://w3c.github.io/image-resource/": {
         "anchors": [
@@ -216,7 +237,8 @@
           "image-resource",
           "processing-an-imageresource-from-an-api",
           "dfn-src"
-        ]
+        ],
+        "specShortname": "image-resource"
       },
       "https://w3c.github.io/permissions/": {
         "anchors": [
@@ -224,7 +246,8 @@
           "dictdef-permissiondescriptor",
           "dom-permissiondescriptor-name",
           "new-information-about-the-users-intent"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
@@ -238,7 +261,8 @@
           "dfn-no-such-window",
           "dfn-url-variables",
           "dfn-success"
-        ]
+        ],
+        "specShortname": "webdriver2"
       }
     }
   }
