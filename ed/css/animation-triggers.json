@@ -352,7 +352,15 @@
       "name": "<event-function>",
       "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-function",
       "type": "type",
-      "value": "<click()> | <dblclick()> | <pointerenter()> | <pointerleave()> | <pointerup()> | <pointerdown()> | <keypress()> | <focusin()> | <focusout()> | <input()> | <change()>"
+      "value": "<click()> | <dblclick()> | <pointerenter()> | <pointerleave()> | <pointerup()> | <pointerdown()> | <keypress()> | <focusin()> | <focusout()> | <input()> | <change()>",
+      "values": [
+        {
+          "name": "keypress()",
+          "value": "keypress( <string>? )",
+          "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-event-function-keypress",
+          "type": "function"
+        }
+      ]
     },
     {
       "name": "click()",
@@ -469,17 +477,6 @@
           "value": "replay"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "keypress()",
-      "value": "keypress( <string>? )",
-      "pureSyntax": false,
-      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-event-function-keypress",
-      "type": "function",
-      "for": "event-function"
     }
   ]
 }
