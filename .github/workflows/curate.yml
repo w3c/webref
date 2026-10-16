@@ -7,7 +7,7 @@ on:
   # the need to react on "workflow_run".
   workflow_run:
     workflows:
-      - "Update ED report"
+      - "Crawl specs and update the main branch"
     types:
       - completed
   push:
