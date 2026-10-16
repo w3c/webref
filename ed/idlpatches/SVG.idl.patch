@@ -1,4 +1,4 @@
-From 11a29c538c7b48419fa1cb3936f01bd7a2219f24 Mon Sep 17 00:00:00 2001
+From f50c86378b134b8b1081445e13df9500fac6626b Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
 Date: Wed, 16 Sep 2026 10:10:49 +0200
 Subject: [PATCH] Patch IDL of SVG spec
@@ -9,25 +9,24 @@ https://github.com/w3c/svgwg/issues/824
 Also drop the `hreflang` and `type` attributes for `SVGAElement`, pending:
 https://github.com/w3c/svgwg/pull/1108
 ---
- ed/idl/SVG.idl | 6 ------
- 1 file changed, 6 deletions(-)
+ ed/idl/SVG.idl | 5 -----
+ 1 file changed, 5 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 5c067c3644..ef4d5a7fd6 100644
+index 8853565a1..427ddd0ab 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -411,10 +411,6 @@ interface SVGAnimatedPreserveAspectRatio {
+@@ -370,9 +370,6 @@ interface SVGAnimatedPreserveAspectRatio {
    [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
- 
--[Exposed=Window]
+ [Exposed=Window]
 -interface SVGPathElement : SVGGeometryElement {
 -};
--
- [Exposed=Window]
+-[Exposed=Window]
  interface SVGRectElement : SVGGeometryElement {
    [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -657,8 +653,6 @@ interface SVGAElement : SVGGraphicsElement {
+   [SameObject] readonly attribute SVGAnimatedLength y;
+@@ -602,8 +599,6 @@ interface SVGAElement : SVGGraphicsElement {
    [Reflect] attribute USVString ping;
    [Reflect] attribute DOMString rel;
    [Reflect="rel", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
@@ -37,5 +36,5 @@ index 5c067c3644..ef4d5a7fd6 100644
    attribute DOMString referrerPolicy;
  };
 -- 
-2.55.0
+2.56.0
 
