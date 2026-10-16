@@ -22,7 +22,6 @@ interface Notification : EventTarget {
   readonly attribute USVString image;
   readonly attribute USVString icon;
   readonly attribute USVString badge;
-  [SameObject] readonly attribute FrozenArray<unsigned long> vibrate;
   readonly attribute EpochTimeStamp timestamp;
   readonly attribute boolean renotify;
   readonly attribute boolean? silent;

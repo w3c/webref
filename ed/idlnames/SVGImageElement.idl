@@ -7,6 +7,7 @@ interface SVGImageElement : SVGGraphicsElement {
   [SameObject] readonly attribute SVGAnimatedLength height;
   [SameObject] readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;
   attribute DOMString? crossOrigin;
+  attribute DOMString referrerPolicy;
 };
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)

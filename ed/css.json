@@ -1640,6 +1640,15 @@
       "extended": []
     },
     {
+      "for": [
+        "<event-function>"
+      ],
+      "name": "keypress()",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-event-function-keypress",
+      "syntax": "keypress( <string>? )",
+      "extended": []
+    },
+    {
       "name": "lab()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
       "syntax": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
@@ -6433,18 +6442,10 @@
     {
       "name": "color-interpolation",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ColorInterpolationProperty",
-      "initial": "sRGB",
-      "appliesTo": "container elements, graphics elements, gradient elements, ‘use’ and ‘animate’",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "color-interpolation",
         "colorInterpolation"
       ],
-      "syntax": "auto | sRGB | linearRGB",
       "extended": []
     },
     {
@@ -7148,10 +7149,10 @@
         "corner"
       ],
       "longhands": [
-        "border-radius",
-        "corner-shape"
+        "corner-shape",
+        "border-radius"
       ],
-      "syntax": "<'border-radius'> || <'corner-shape'>",
+      "syntax": "<'corner-shape'> || <'border-radius'>",
       "extended": []
     },
     {
@@ -7172,7 +7173,7 @@
         "border-block-end-radius",
         "corner-block-end-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7214,7 +7215,7 @@
         "border-block-start-radius",
         "corner-block-start-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7256,7 +7257,7 @@
         "border-bottom-radius",
         "corner-bottom-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7277,7 +7278,7 @@
         "border-bottom-left-radius",
         "corner-bottom-left-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7316,7 +7317,7 @@
         "border-bottom-right-radius",
         "corner-bottom-right-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7376,7 +7377,7 @@
         "border-end-end-radius",
         "corner-end-end-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7415,7 +7416,7 @@
         "border-end-start-radius",
         "corner-end-start-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7454,7 +7455,7 @@
         "border-inline-end-radius",
         "corner-inline-end-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7496,7 +7497,7 @@
         "border-inline-start-radius",
         "corner-inline-start-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7538,7 +7539,7 @@
         "border-left-radius",
         "corner-left-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7580,7 +7581,7 @@
         "border-right-radius",
         "corner-right-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7645,7 +7646,7 @@
         "border-start-end-radius",
         "corner-start-end-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7684,7 +7685,7 @@
         "border-start-start-radius",
         "corner-start-start-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7723,7 +7724,7 @@
         "border-top-radius",
         "corner-top-shape"
       ],
-      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
+      "syntax": "<'corner-top-shape'> || <'border-top-radius'>",
       "extended": []
     },
     {
@@ -7744,7 +7745,7 @@
         "border-top-left-radius",
         "corner-top-left-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7783,7 +7784,7 @@
         "border-top-right-radius",
         "corner-top-right-shape"
       ],
-      "syntax": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "syntax": "<'corner-top-left-shape'> || <'border-top-left-radius'>",
       "extended": []
     },
     {
@@ -7949,49 +7950,25 @@
     {
       "name": "cx",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CxProperty",
-      "initial": "0",
-      "appliesTo": "‘circle’ and ‘ellipse’ elements",
-      "inherited": "no",
-      "percentages": "refer to the width of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "cx"
       ],
-      "syntax": "<length-percentage>",
       "extended": []
     },
     {
       "name": "cy",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CyProperty",
-      "initial": "0",
-      "appliesTo": "‘circle’ and ‘ellipse’ elements",
-      "inherited": "no",
-      "percentages": "refer to the height of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "cy"
       ],
-      "syntax": "<length-percentage>",
       "extended": []
     },
     {
       "name": "d",
       "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#DProperty",
-      "initial": "none",
-      "appliesTo": "‘path’",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "See prose",
       "styleDeclaration": [
         "d"
       ],
-      "syntax": "none | <string>",
       "extended": []
     },
     {
@@ -8151,17 +8128,9 @@
     {
       "name": "fill",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
-      "initial": "black",
-      "appliesTo": "shapes and text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "fill"
       ],
-      "syntax": "<paint>",
       "extended": []
     },
     {
@@ -10693,13 +10662,6 @@
     {
       "name": "marker",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
-      "initial": "not defined for shorthand properties",
-      "appliesTo": "shapes",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "see individual properties",
-      "animationType": "discrete",
       "styleDeclaration": [
         "marker"
       ],
@@ -10708,41 +10670,24 @@
         "marker-mid",
         "marker-end"
       ],
-      "syntax": "none | <marker-ref>",
       "extended": []
     },
     {
       "name": "marker-end",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerEndProperty",
-      "initial": "none",
-      "appliesTo": "shapes",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete",
       "styleDeclaration": [
         "marker-end",
         "markerEnd"
       ],
-      "syntax": "none | <marker-ref>",
       "extended": []
     },
     {
       "name": "marker-mid",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerMidProperty",
-      "initial": "none",
-      "appliesTo": "shapes",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete",
       "styleDeclaration": [
         "marker-mid",
         "markerMid"
       ],
-      "syntax": "none | <marker-ref>",
       "extended": []
     },
     {
@@ -10765,18 +10710,10 @@
     {
       "name": "marker-start",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerStartProperty",
-      "initial": "none",
-      "appliesTo": "shapes",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete",
       "styleDeclaration": [
         "marker-start",
         "markerStart"
       ],
-      "syntax": "none | <marker-ref>",
       "extended": []
     },
     {
@@ -12512,35 +12449,19 @@
     {
       "name": "paint-order",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrderProperty",
-      "initial": "normal",
-      "appliesTo": "shapes and text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "paint-order",
         "paintOrder"
       ],
-      "syntax": "normal | [ fill || stroke || markers ]",
       "extended": []
     },
     {
       "name": "path-length",
       "href": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthCSSProperty",
-      "initial": "none",
-      "appliesTo": "‘path’, ‘circle’, ‘ellipse’, ‘line’, ‘polygon’, ‘polyline’, ‘rect’",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "the keyword none, or an absolute length",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "path-length",
         "pathLength"
       ],
-      "syntax": "none | <length> [0,∞]",
       "extended": []
     },
     {
@@ -12696,18 +12617,10 @@
     {
       "name": "pointer-events",
       "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#PointerEventsProperty",
-      "initial": "auto",
-      "appliesTo": "container elements, graphics elements and ‘use’",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "pointer-events",
         "pointerEvents"
       ],
-      "syntax": "auto | bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
       "extended": []
     },
     {
@@ -12925,17 +12838,9 @@
     {
       "name": "r",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RProperty",
-      "initial": "0",
-      "appliesTo": "‘circle’ element",
-      "inherited": "no",
-      "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "r"
       ],
-      "syntax": "<length-percentage>",
       "extended": []
     },
     {
@@ -13708,33 +13613,17 @@
     {
       "name": "rx",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty",
-      "initial": "auto",
-      "appliesTo": "‘ellipse’, ‘rect’ elements",
-      "inherited": "no",
-      "percentages": "refer to the width of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "rx"
       ],
-      "syntax": "<length-percentage> | auto",
       "extended": []
     },
     {
       "name": "ry",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty",
-      "initial": "auto",
-      "appliesTo": "‘ellipse’, ‘rect’",
-      "inherited": "no",
-      "percentages": "refer to the height of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animatableType": "by computed value",
       "styleDeclaration": [
         "ry"
       ],
-      "syntax": "<length-percentage> | auto",
       "extended": []
     },
     {
@@ -14501,18 +14390,10 @@
     {
       "name": "shape-rendering",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ShapeRenderingProperty",
-      "initial": "auto",
-      "appliesTo": "shapes",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "shape-rendering",
         "shapeRendering"
       ],
-      "syntax": "auto | optimizeSpeed | crispEdges | geometricPrecision",
       "extended": []
     },
     {
@@ -14676,17 +14557,9 @@
     {
       "name": "stroke",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeProperty",
-      "initial": "none",
-      "appliesTo": "shapes and text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "stroke"
       ],
-      "syntax": "<paint>",
       "extended": []
     },
     {
@@ -15138,18 +15011,10 @@
     {
       "name": "text-anchor",
       "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextAnchorProperty",
-      "initial": "start",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "text-anchor",
         "textAnchor"
       ],
-      "syntax": "start | middle | end",
       "extended": []
     },
     {
@@ -15630,18 +15495,10 @@
     {
       "name": "text-rendering",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TextRenderingProperty",
-      "initial": "auto",
-      "appliesTo": "‘text’",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "text-rendering",
         "textRendering"
       ],
-      "syntax": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
       "extended": []
     },
     {
@@ -16309,18 +16166,10 @@
     {
       "name": "vector-effect",
       "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#VectorEffectProperty",
-      "initial": "none",
-      "appliesTo": "graphics elements and ‘use’",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "animationType": "discrete",
       "styleDeclaration": [
         "vector-effect",
         "vectorEffect"
       ],
-      "syntax": "none | non-scaling-stroke | non-scaling-size | non-rotation | fixed-position",
       "extended": []
     },
     {
@@ -16929,33 +16778,17 @@
     {
       "name": "x",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
-      "initial": "0",
-      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’ elements",
-      "inherited": "no",
-      "percentages": "refer to the width of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "x"
       ],
-      "syntax": "<length-percentage>",
       "extended": []
     },
     {
       "name": "y",
       "href": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
-      "initial": "0",
-      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’ elements",
-      "inherited": "no",
-      "percentages": "refer to the height of the current SVG viewport (see Units)",
-      "media": "visual",
-      "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value",
       "styleDeclaration": [
         "y"
       ],
-      "syntax": "<length-percentage>",
       "extended": []
     },
     {
@@ -16996,10 +16829,24 @@
   ],
   "selectors": [
     {
+      "name": "::after",
+      "prose": "Represents a styleable child pseudo-element immediately after the originating element’s actual content.",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-after",
+      "syntax": "::after",
+      "extended": []
+    },
+    {
       "name": "::backdrop",
       "prose": "Each element rendered in the top layer has a ::backdrop pseudo-element, for which it is the originating element.",
       "href": "https://drafts.csswg.org/css-position-4/#selectordef-backdrop",
       "syntax": "::backdrop",
+      "extended": []
+    },
+    {
+      "name": "::before",
+      "prose": "Represents a styleable child pseudo-element immediately before the originating element’s actual content.",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-before",
+      "syntax": "::before",
       "extended": []
     },
     {
@@ -17120,7 +16967,7 @@
     },
     {
       "name": "::interest-button",
-      "prose": "The ::interest-button pseudo-element represents a button which, when pressed, \"shows interest\" in the originating element. This pseudo-element only exists on valid interest invokers. (See interest-delay for more discussion of this feature, and the HTML interestfor attribute.)",
+      "prose": "The ::interest-button pseudo-element represents a button which, when pressed, shows interest in the originating element. This pseudo-element only exists on valid interest sources. (See interest-delay, :interest-source, and :interest-target for more discussion of this feature, and the HTML interestfor attribute.)",
       "href": "https://drafts.csswg.org/css-pseudo-4/#selectordef-interest-button",
       "syntax": "::interest-button",
       "extended": []
@@ -17585,14 +17432,14 @@
     },
     {
       "name": ":interest-source",
-      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently \"showing interest\" in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
+      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-interest-source",
       "syntax": ":interest-source",
       "extended": []
     },
     {
       "name": ":interest-target",
-      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently \"showing interest\" in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
+      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-interest-target",
       "syntax": ":interest-target",
       "extended": []

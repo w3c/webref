@@ -96,11 +96,18 @@
       "https://www.w3.org/2001/sw/wiki/QSKOS": {},
       "https://www.w3.org/2003/01/geo/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/dx-prof-0.9/": {},
+      "https://www.w3.org/TR/dx-prof-0.9/": {
+        "anchors": [
+          "dfn-profile"
+        ]
+      },
       "https://www.w3.org/TR/dx-prof-1.0/": {
         "anchors": [
           "dfn-null-profile",
-          "Role:specification"
+          "Role:specification",
+          "Role:schema",
+          "Role:validation",
+          "Role:mapping"
         ]
       },
       "https://www.w3.org/TR/dx-prof/": {},
@@ -127,6 +134,7 @@
           "wasGeneratedBy"
         ]
       },
+      "https://www.w3.org/TR/rdf-schema/": {},
       "https://www.w3.org/TR/rdf12-concepts/": {
         "anchors": [
           "dfn-named-graph",
@@ -144,7 +152,8 @@
         "anchors": [
           "shapes-graph",
           "data-graph",
-          "dfn-profile",
+          "results-graph",
+          "validation-report",
           "syntactic-variations-of-shapes-and-classes",
           "dfn-property-shape",
           "dfn-blank-node",
@@ -152,17 +161,12 @@
           "dfn-processor",
           "validation-definition",
           "Role:validation",
-          "Role:specification",
-          "Role:schema",
-          "Role:mapping",
-          "validation-report",
           "conforms",
           "validationAgent",
           "validationActivity",
           "usedDataGraph",
           "usedShapesGraph",
-          "shapes",
-          "dfn-standard"
+          "shapes"
         ]
       },
       "https://www.w3.org/TR/shacl12-inference-rules/": {},

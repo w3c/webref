@@ -6,7 +6,7 @@
       "title": "Scalable Vector Graphics (SVG) 2",
       "url": "https://www.w3.org/TR/SVG2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGImageElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n  [SameObject] readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n  attribute DOMString? crossOrigin;\n};",
+    "fragment": "[Exposed=Window]\ninterface SVGImageElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n  [SameObject] readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n  attribute DOMString? crossOrigin;\n  attribute DOMString referrerPolicy;\n};",
     "href": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#InterfaceSVGImageElement"
   },
   "extended": [
