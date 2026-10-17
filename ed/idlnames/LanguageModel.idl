@@ -3,7 +3,7 @@
 interface LanguageModel : EventTarget {
   static Promise<LanguageModel> create(optional LanguageModelCreateOptions options = {});
   static Promise<Availability> availability(optional LanguageModelCreateCoreOptions options = {});
-  // **EXPERIMENTAL**: Only available in extension and experimental contexts.
+  // **DEPRECATED**: This method will be removed; use samplingMode instead. Only available in extension contexts.
   static Promise<LanguageModelParams?> params();
 
   // These will throw a TypeError if role = "system"
@@ -40,9 +40,9 @@ interface LanguageModel : EventTarget {
   // **DEPRECATED**: This attribute is only available in extension contexts.
   attribute EventHandler onquotaoverflow;
 
-  // **DEPRECATED**: This attribute is only available in extension contexts.
+  // **DEPRECATED**: This attribute will be removed; use samplingMode instead. Only available in extension contexts.
   readonly attribute unsigned long topK;
-  // **DEPRECATED**: This attribute is only available in extension contexts.
+  // **DEPRECATED**: This attribute will be removed; use samplingMode instead. Only available in extension contexts.
   readonly attribute float temperature;
 
   // **EXPERIMENTAL**: Only available in experimental contexts.
