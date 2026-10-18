@@ -6,20 +6,28 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "viewport"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "page-zoom"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
-      "https://drafts.csswg.org/cssom-view/": {},
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
       "https://en.wikipedia.org/wiki/Extended_Display_Identification_Data": {},
-      "https://fullscreen.spec.whatwg.org/": {},
+      "https://fullscreen.spec.whatwg.org/": {
+        "specShortname": "fullscreen"
+      },
       "https://github.com/asankah/ephemeral-fingerprinting": {},
       "https://github.com/speced/bikeshed": {},
       "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md": {
@@ -55,33 +63,61 @@
           "user-activation-gated-apis"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://w3c.github.io/fingerprinting-guidance/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://w3c.github.io/fingerprinting-guidance/": {
+        "specShortname": "fingerprinting-guidance"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://webscreens.github.io/form-factors/": {},
       "https://www.w3.org/2004/01/pp-impl/74168/status": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/appmanifest/": {},
-      "https://www.w3.org/TR/css-conditional-3/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "specShortname": "appmanifest"
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
           "web-exposed-screen-information",
           "the-screen-interface"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://www.w3.org/TR/design-principles/": {
         "anchors": [
           "device-enumeration"
-        ]
+        ],
+        "specShortname": "design-principles"
       },
-      "https://www.w3.org/TR/fingerprinting-guidance/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/mediaqueries-5/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/permissions/": {},
-      "https://www.w3.org/TR/screen-orientation/": {},
+      "https://www.w3.org/TR/fingerprinting-guidance/": {
+        "specShortname": "fingerprinting-guidance"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://www.w3.org/TR/permissions/": {
+        "specShortname": "permissions"
+      },
+      "https://www.w3.org/TR/screen-orientation/": {
+        "specShortname": "screen-orientation"
+      },
       "https://www.w3.org/community/webscreens/": {},
       "https://www.w3.org/groups/wg/secondscreen": {},
       "https://www.w3.org/policies/patent-policy/20200915/": {
@@ -102,18 +138,21 @@
           "eventtarget",
           "concept-event-fire",
           "concept-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "px"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "dictdef-fullscreenoptions",
           "dom-element-requestfullscreen"
-        ]
+        ],
+        "specShortname": "fullscreen"
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -165,7 +204,8 @@
           "list",
           "list-append",
           "list-sort-in-ascending-order"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -189,18 +229,21 @@
           "idl-long",
           "idl-float",
           "idl-DOMString"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/appmanifest/": {
         "anchors": [
           "dfn-installed-web-application",
           "dfn-application-context"
-        ]
+        ],
+        "specShortname": "appmanifest"
       },
       "https://www.w3.org/TR/css-conditional-3/": {
         "anchors": [
           "at-ruledef-media"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
@@ -217,29 +260,34 @@
           "dom-window-moveby",
           "dom-window-resizeto",
           "dom-window-resizeby"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://www.w3.org/TR/fingerprinting-guidance/": {
         "anchors": [
           "dfn-active-fingerprinting"
-        ]
+        ],
+        "specShortname": "fingerprinting-guidance"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "typedefdef-domhighrestimestamp",
           "dfn-current-high-resolution-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/mediaqueries-5/": {
         "anchors": [
           "boolean-context"
-        ]
+        ],
+        "specShortname": "mediaqueries-5"
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://www.w3.org/TR/permissions/": {
         "anchors": [
@@ -247,7 +295,8 @@
           "dom-permissionstate-denied",
           "dfn-default-powerful-feature",
           "dfn-name"
-        ]
+        ],
+        "specShortname": "permissions"
       },
       "https://www.w3.org/policies/patent-policy/20200915/": {}
     }

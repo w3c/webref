@@ -13,9 +13,15 @@
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dl.acm.org/doi/10.1145/2976749.2978363": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Minichallenge-3:-%22Sh*t,-it%27s-CSP!%22": {
         "anchors": [
           "107-bytes"
@@ -27,9 +33,15 @@
       "https://github.com/whatwg/html/issues/968": {},
       "https://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://httpwg.org/specs/rfc8288.html": {},
-      "https://httpwg.org/specs/rfc9110.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc8288.html": {
+        "specShortname": "rfc8288"
+      },
+      "https://httpwg.org/specs/rfc9110.html": {
+        "specShortname": "rfc9110"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
       "https://lists.w3.org/Archives/Public/public-webappsec/2014Feb/0036.html": {},
       "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": {},
@@ -41,10 +53,16 @@
           "section-5.6.1"
         ]
       },
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://web.dev/strict-csp/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://websockets.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "specShortname": "websockets"
+      },
       "https://wicg.github.io/reporting/": {},
       "https://www.rfc-editor.org/info/rfc3492/": {},
       "https://www.rfc-editor.org/info/rfc3864/": {},
@@ -56,19 +74,41 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/CSP2/": {},
       "https://www.w3.org/TR/UISecurity/": {},
-      "https://www.w3.org/TR/appmanifest/": {},
-      "https://www.w3.org/TR/beacon/": {},
-      "https://www.w3.org/TR/css-cascade-5/": {},
-      "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/appmanifest/": {
+        "specShortname": "appmanifest"
+      },
+      "https://www.w3.org/TR/beacon/": {
+        "specShortname": "beacon"
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
       "https://www.w3.org/TR/eventsource/": {},
       "https://www.w3.org/TR/html-design-principles/": {},
-      "https://www.w3.org/TR/mixed-content/": {},
-      "https://www.w3.org/TR/reporting-1/": {},
-      "https://www.w3.org/TR/service-workers/": {},
-      "https://www.w3.org/TR/sri-2/": {},
-      "https://www.w3.org/TR/trusted-types/": {},
-      "https://www.w3.org/TR/upgrade-insecure-requests/": {},
-      "https://www.w3.org/TR/webrtc/": {},
+      "https://www.w3.org/TR/mixed-content/": {
+        "specShortname": "mixed-content"
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "specShortname": "reporting-1"
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "specShortname": "service-workers"
+      },
+      "https://www.w3.org/TR/sri-2/": {
+        "specShortname": "sri-2"
+      },
+      "https://www.w3.org/TR/trusted-types/": {
+        "specShortname": "trusted-types"
+      },
+      "https://www.w3.org/TR/upgrade-insecure-requests/": {
+        "specShortname": "upgrade-insecure-requests"
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "specShortname": "webrtc"
+      },
       "https://www.w3.org/TR/xslt-10/": {},
       "https://www.w3.org/groups/wg/webappsec": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
@@ -76,14 +116,17 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "recs-and-notes"
         ]
       },
-      "https://xhr.spec.whatwg.org/": {}
+      "https://xhr.spec.whatwg.org/": {
+        "specShortname": "xhr"
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -102,12 +145,14 @@
           "dom-event-target",
           "concept-document-origin",
           "concept-element-attribute"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -144,7 +189,8 @@
           "is-local",
           "concept-request-integrity-metadata",
           "concept-request-redirect-count"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/": {
         "anchors": [
@@ -328,7 +374,8 @@
           "string-ends-with",
           "ascii-digit",
           "javascript-string-convert"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
       "https://tc39.github.io/ecma262": {
@@ -385,23 +432,27 @@
           "concept-url-port",
           "concept-url-path",
           "string-percent-decode"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/reporting/": {
         "anchors": [
           "report-type",
           "visible-to-reportingobservers"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://w3c.github.io/webappsec-subresource-integrity": {
         "anchors": [
           "apply-algorithm-to-response"
-        ]
+        ],
+        "specShortname": "sri-2"
       },
       "https://webassembly.github.io/content-security-policy/js-api/": {
         "anchors": [
           "host-ensure-can-compile-wasm-bytes"
-        ]
+        ],
+        "specShortname": "wasm-js-api-2-fork-content-security-policy"
       },
       "https://webassembly.github.io/spec/js-api/": {
         "anchors": [
@@ -409,13 +460,15 @@
           "dom-module-module",
           "dom-webassembly-compile",
           "dom-webassembly-instantiate"
-        ]
+        ],
+        "specShortname": "wasm-js-api-2"
       },
       "https://webassembly.github.io/spec/web-api/": {
         "anchors": [
           "dom-webassembly-compilestreaming",
           "dom-webassembly-instantiatestreaming"
-        ]
+        ],
+        "specShortname": "wasm-web-api-2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -426,12 +479,14 @@
           "idl-unsigned-short",
           "idl-unsigned-long",
           "Exposed"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "at-ruledef-import"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
@@ -439,24 +494,28 @@
           "parse-a-css-rule",
           "parse-a-css-declaration-block",
           "parse-a-group-of-selectors"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/reporting-1/": {
         "anchors": [
           "generate-and-queue-a-report",
           "reportbody",
           "endpoint"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
           "serviceworker"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://www.w3.org/TR/sri-2/": {
         "anchors": [
           "parse-metadata"
-        ]
+        ],
+        "specShortname": "sri-2"
       },
       "https://www.w3.org/TR/trusted-types/": {
         "anchors": [
@@ -464,12 +523,14 @@
           "trustedscript-data",
           "get-trusted-type-compliant-string",
           "does-sink-type-require-trusted-types"
-        ]
+        ],
+        "specShortname": "trusted-types"
       },
       "https://www.w3.org/TR/webrtc/": {
         "anchors": [
           "dfn-administratively-prohibited"
-        ]
+        ],
+        "specShortname": "webrtc"
       }
     }
   }

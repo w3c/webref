@@ -13,7 +13,8 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "http-network-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc9110.html": {
@@ -27,17 +28,27 @@
           "status.200",
           "field.etag",
           "field.if-none-match"
-        ]
+        ],
+        "specShortname": "rfc9110"
       },
       "https://httpwg.org/specs/rfc9112.html": {
         "anchors": [
           "persistent.connections"
-        ]
+        ],
+        "specShortname": "rfc9112"
       },
-      "https://infra.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/reporting/network-reporting.html": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/reporting/network-reporting.html": {
+        "specShortname": "network-reporting"
+      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc1034": {
         "anchors": [
@@ -57,25 +68,39 @@
       },
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "specShortname": "CSP3"
+      },
       "https://www.w3.org/TR/capability-urls/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/mixed-content/": {},
-      "https://www.w3.org/TR/referrer-policy/": {},
-      "https://www.w3.org/TR/reporting-1/": {},
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/mixed-content/": {
+        "specShortname": "mixed-content"
+      },
+      "https://www.w3.org/TR/referrer-policy/": {
+        "specShortname": "referrer-policy"
+      },
+      "https://www.w3.org/TR/reporting-1/": {
+        "specShortname": "reporting-1"
+      },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
           "dom-performanceresourcetiming-nexthopprotocol"
-        ]
+        ],
+        "specShortname": "resource-timing"
       },
-      "https://www.w3.org/TR/secure-contexts/": {},
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
       "https://www.w3.org/groups/wg/webperf": {},
       "https://www.w3.org/groups/wg/webperf/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
@@ -99,7 +124,8 @@
           "header-list-contains",
           "concept-response-header-list",
           "concept-request-client"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -119,12 +145,14 @@
           "fields",
           "field.if-none-match",
           "field.etag"
-        ]
+        ],
+        "specShortname": "rfc9110"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -133,13 +161,15 @@
           "concept-url-path",
           "concept-url-query",
           "concept-url-serializer"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/reporting/network-reporting.html": {
         "anchors": [
           "endpoint-group",
           "generate-a-network-report"
-        ]
+        ],
+        "specShortname": "network-reporting"
       },
       "https://www.rfc-editor.org/rfc/rfc1034": {
         "anchors": [
@@ -151,17 +181,20 @@
           "dfn-duration-from",
           "dfn-wall-clock",
           "wall-clock-unsafe-current-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/mixed-content/": {
         "anchors": [
           "mixed-content"
-        ]
+        ],
+        "specShortname": "mixed-content"
       },
       "https://www.w3.org/TR/referrer-policy/": {
         "anchors": [
           "referrer-policy"
-        ]
+        ],
+        "specShortname": "referrer-policy"
       },
       "https://www.w3.org/TR/reporting-1/": {
         "anchors": [
@@ -169,13 +202,15 @@
           "report-type",
           "visible-to-reportingobservers",
           "report-body"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
       "https://www.w3.org/TR/secure-contexts/": {
         "anchors": [
           "is-origin-trustworthy",
           "potentially-trustworthy-origin"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       }
     }
   }

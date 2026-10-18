@@ -6,7 +6,9 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://en.wikipedia.org/wiki/Graphics_processing_unit": {},
       "https://en.wikipedia.org/wiki/IEEE_754": {},
       "https://en.wikipedia.org/wiki/Row_hammer": {},
@@ -16,7 +18,8 @@
       "https://gpuweb.github.io/gpuweb/wgsl/": {
         "anchors": [
           "input-output-locations"
-        ]
+        ],
+        "specShortname": "WGSL"
       },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/canvas.html": {
@@ -47,7 +50,8 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "tracking-vector"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://lists.w3.org/Archives/Public/public-gpu/": {},
       "https://pcisig.com/": {},
@@ -59,8 +63,12 @@
           "primsrast-lines-bresenham"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.khronos.org/registry/vulkan/specs/1.2-extensions/man/html/vkCreateDescriptorSetLayout.html": {},
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {},
       "https://www.khronos.org/webgl/": {},
@@ -72,22 +80,38 @@
           "dpdxFine-builtin",
           "dpdyFine-builtin",
           "fwidthFine-builtin"
-        ]
+        ],
+        "specShortname": "WGSL"
       },
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/i18n-glossary/": {},
-      "https://www.w3.org/TR/mediaqueries-5/": {},
-      "https://www.w3.org/TR/service-workers/": {},
-      "https://www.w3.org/TR/webcodecs/": {},
-      "https://www.w3.org/TR/webxr/": {},
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/i18n-glossary/": {
+        "specShortname": "i18n-glossary"
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://www.w3.org/TR/service-workers/": {
+        "specShortname": "service-workers"
+      },
+      "https://www.w3.org/TR/webcodecs/": {
+        "specShortname": "webcodecs"
+      },
+      "https://www.w3.org/TR/webxr/": {
+        "specShortname": "webxr"
+      },
       "https://www.w3.org/groups/wg/gpu/": {},
       "https://www.w3.org/groups/wg/gpu/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -104,7 +128,8 @@
           "concept-event-fire",
           "event",
           "dictdef-eventinit"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://gpuweb.github.io/gpuweb/wgsl/": {
         "anchors": [
@@ -181,7 +206,8 @@
           "subgroup-size-attr",
           "extension-subgroup_size_control",
           "extension-atomic_vec2u_min_max"
-        ]
+        ],
+        "specShortname": "WGSL"
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
@@ -300,7 +326,8 @@
           "map-clear",
           "byte-sequence-length",
           "list-item"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://registry.khronos.org/DataFormat/specs/1.3/dataformat.1.3.html": {
         "anchors": [
@@ -324,7 +351,8 @@
       "https://tc39.es/ecma262/multipage/indexed-collections.html": {
         "anchors": [
           "sec-typedarray-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://w3c.github.io/string-meta/": {
         "anchors": [
@@ -383,7 +411,8 @@
           "dfn-get-buffer-source-copy",
           "idl-DataView",
           "invalidstateerror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
         "anchors": [
@@ -400,35 +429,41 @@
           "interpolation-sampling",
           "interpolation-sampling-either",
           "interpolation-sampling-sample"
-        ]
+        ],
+        "specShortname": "WGSL"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "valdef-color-srgb",
           "valdef-color-srgb-linear"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dfn-coarsen-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/i18n-glossary/": {
         "anchors": [
           "dfn-localizable-text",
           "dfn-valid"
-        ]
+        ],
+        "specShortname": "i18n-glossary"
       },
       "https://www.w3.org/TR/mediaqueries-5/": {
         "anchors": [
           "descdef-media-dynamic-range",
           "valdef-media-dynamic-range-high"
-        ]
+        ],
+        "specShortname": "mediaqueries-5"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
           "serviceworkerglobalscope"
-        ]
+        ],
+        "specShortname": "service-workers"
       },
       "https://www.w3.org/TR/webcodecs/": {
         "anchors": [
@@ -438,14 +473,18 @@
           "dom-videodecoder-decode",
           "dom-videoframe-displaywidth",
           "dom-videoframe-displayheight"
-        ]
+        ],
+        "specShortname": "webcodecs"
       },
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
           "session"
-        ]
+        ],
+        "specShortname": "webxr"
       },
-      "https://www.w3.org/policies/patent-policy/": {}
+      "https://www.w3.org/policies/patent-policy/": {
+        "specShortname": "w3c-patent-policy"
+      }
     }
   }
 }

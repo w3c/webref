@@ -210,9 +210,13 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://en.wikipedia.org/wiki/Object-capability_model": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
       "https://github.com/w3c/trusted-types/issues/507": {},
       "https://github.com/w3c/trusted-types/issues/520": {},
@@ -424,26 +428,36 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-object.create"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tools.ietf.org/html/rfc5234": {
         "anchors": [
           "appendix-B.1"
         ]
       },
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "grammardef-required-ascii-whitespace"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wicg.github.io/origin-policy/": {},
       "https://wicg.github.io/webcomponents/spec/imports/": {},
       "https://wpt.fyi/results/trusted-types/DOMParser-parseFromString-regression.html": {},
@@ -672,10 +686,15 @@
           "create-violation-for-global",
           "report-violation",
           "security-inherit-csp"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
-      "https://www.w3.org/TR/FileAPI/": {},
-      "https://www.w3.org/TR/SVG2/": {},
+      "https://www.w3.org/TR/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://www.w3.org/TR/SVG2/": {
+        "specShortname": "SVG2"
+      },
       "https://www.w3.org/TR/html-design-principles/": {},
       "https://www.w3.org/TR/html5/": {},
       "https://www.w3.org/groups/wg/webappsec": {},
@@ -684,7 +703,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -701,7 +721,8 @@
           "concept-child-text-content",
           "concept-node-document",
           "concept-element-namespace"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -709,7 +730,8 @@
           "concept-request-url",
           "concept-request-client",
           "local-scheme"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/": {
         "anchors": [
@@ -787,14 +809,16 @@
           "list-contain",
           "xlink-namespace",
           "string-concatenate"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-scheme",
           "concept-url-serializer",
           "concept-url-parser"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -806,7 +830,8 @@
           "this",
           "exceptiondef-typeerror",
           "invoke-a-callback-function"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
@@ -823,17 +848,20 @@
           "content-security-policy-object-disposition",
           "violation-resource",
           "violation-sample"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/FileAPI/": {
         "anchors": [
           "dfn-Blob"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://www.w3.org/TR/SVG2/interact.html": {
         "anchors": [
           "InterfaceSVGScriptElement"
-        ]
+        ],
+        "specShortname": "SVG2"
       }
     }
   }

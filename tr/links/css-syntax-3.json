@@ -54,9 +54,12 @@
       "https://drafts.csswg.org/cssom/": {
         "anchors": [
           "requirements-on-user-agents-implementing-the-xml-stylesheet-processing-instruction"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
-      "https://encoding.spec.whatwg.org/": {},
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
       "https://github.com/w3c/csswg-drafts/commit/64becb59fe678760608a6f2a8d6bfb3a334500c9": {
         "anchors": [
           "diff-9d409f899ee6e2cc8cd87356d0e2a0ff739c5aa9663d83f49c951c379a38f1f6"
@@ -131,7 +134,9 @@
           "link-type-stylesheet"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
@@ -140,7 +145,9 @@
           "Figure_Code_Point_Categories_for_Identifier_Parsing"
         ]
       },
-      "https://url.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://web.archive.org/web/20220323175009/https://blog.rust-lang.org/2021/11/01/cve-2021-42574.html": {},
       "https://whatwg.org/html": {},
       "https://wpt.fyi/results/css/css-syntax/anb-parsing.html": {},
@@ -196,12 +203,15 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/": {
+        "specShortname": "CSS2"
+      },
       "https://www.w3.org/TR/CSS2/syndata.html": {
         "anchors": [
           "rule-sets",
           "unexpected-eof"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
@@ -210,49 +220,98 @@
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/css-animations-1/": {},
+      "https://www.w3.org/TR/css-animations-1/": {
+        "specShortname": "css-animations-1"
+      },
       "https://www.w3.org/TR/css-cascade-3/": {
         "anchors": [
           "at-import"
-        ]
+        ],
+        "specShortname": "css-cascade-3"
       },
-      "https://www.w3.org/TR/css-cascade-5/": {},
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/css-color-5/": {},
-      "https://www.w3.org/TR/css-conditional-3/": {},
-      "https://www.w3.org/TR/css-counter-styles-3/": {},
-      "https://www.w3.org/TR/css-fonts-4/": {},
-      "https://www.w3.org/TR/css-fonts-5/": {},
-      "https://www.w3.org/TR/css-namespaces-3/": {},
-      "https://www.w3.org/TR/css-nesting-1/": {},
-      "https://www.w3.org/TR/css-page-3/": {},
-      "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-text-decor-3/": {},
-      "https://www.w3.org/TR/css-text-decor-4/": {},
-      "https://www.w3.org/TR/css-transforms-1/": {},
-      "https://www.w3.org/TR/css-typed-om-1/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/css-color-5/": {
+        "specShortname": "css-color-5"
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://www.w3.org/TR/css-counter-styles-3/": {
+        "specShortname": "css-counter-styles-3"
+      },
+      "https://www.w3.org/TR/css-fonts-4/": {
+        "specShortname": "css-fonts-4"
+      },
+      "https://www.w3.org/TR/css-fonts-5/": {
+        "specShortname": "css-fonts-5"
+      },
+      "https://www.w3.org/TR/css-namespaces-3/": {
+        "specShortname": "css-namespaces-3"
+      },
+      "https://www.w3.org/TR/css-nesting-1/": {
+        "specShortname": "css-nesting-1"
+      },
+      "https://www.w3.org/TR/css-page-3/": {
+        "specShortname": "css-page-3"
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://www.w3.org/TR/css-text-decor-3/": {
+        "specShortname": "css-text-decor-3"
+      },
+      "https://www.w3.org/TR/css-text-decor-4/": {
+        "specShortname": "css-text-decor-4"
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "specShortname": "css-transforms-1"
+      },
+      "https://www.w3.org/TR/css-typed-om-1/": {
+        "specShortname": "css-typed-om-1"
+      },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "value-defs"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
-      "https://www.w3.org/TR/css-values-5/": {},
-      "https://www.w3.org/TR/css-variables-1/": {},
+      "https://www.w3.org/TR/css-values-5/": {
+        "specShortname": "css-values-5"
+      },
+      "https://www.w3.org/TR/css-variables-1/": {
+        "specShortname": "css-variables-1"
+      },
       "https://www.w3.org/TR/css3-values/": {
         "anchors": [
           "value-defs"
         ]
       },
-      "https://www.w3.org/TR/cssom-1/": {},
-      "https://www.w3.org/TR/mediaqueries-4/": {},
-      "https://www.w3.org/TR/mediaqueries-5/": {},
-      "https://www.w3.org/TR/selectors-3/": {},
-      "https://www.w3.org/TR/selectors-4/": {},
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
+      "https://www.w3.org/TR/mediaqueries-4/": {
+        "specShortname": "mediaqueries-4"
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://www.w3.org/TR/selectors-3/": {
+        "specShortname": "selectors-3"
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "specShortname": "selectors-4"
+      },
       "https://www.w3.org/TR/selectors-api/": {},
       "https://www.w3.org/TR/selectors/": {
         "anchors": [
           "id-selectors"
-        ]
+        ],
+        "specShortname": "selectors-4"
       },
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {},
@@ -273,7 +332,8 @@
         "anchors": [
           "decode",
           "concept-encoding-get"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
         "anchors": [
@@ -319,71 +379,83 @@
           "list-iterate",
           "list-remove",
           "scalar-value"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://www.w3.org/TR/css-animations-1/": {
         "anchors": [
           "at-ruledef-keyframes",
           "typedef-keyframe-selector",
           "propdef-animation-timing-function"
-        ]
+        ],
+        "specShortname": "css-animations-1"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "at-ruledef-import",
           "css-property"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "propdef-color",
           "valdef-color-blue"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-color-5/": {
         "anchors": [
           "typedef-color"
-        ]
+        ],
+        "specShortname": "css-color-5"
       },
       "https://www.w3.org/TR/css-conditional-3/": {
         "anchors": [
           "at-ruledef-media",
           "at-ruledef-supports",
           "conditional-group-rule"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://www.w3.org/TR/css-counter-styles-3/": {
         "anchors": [
           "counter-style"
-        ]
+        ],
+        "specShortname": "css-counter-styles-3"
       },
       "https://www.w3.org/TR/css-fonts-4/": {
         "anchors": [
           "descdef-font-face-unicode-range",
           "propdef-font"
-        ]
+        ],
+        "specShortname": "css-fonts-4"
       },
       "https://www.w3.org/TR/css-fonts-5/": {
         "anchors": [
           "at-font-face-rule"
-        ]
+        ],
+        "specShortname": "css-fonts-5"
       },
       "https://www.w3.org/TR/css-nesting-1/": {
         "anchors": [
           "nested-declarations-rule",
           "cssnesteddeclarations"
-        ]
+        ],
+        "specShortname": "css-nesting-1"
       },
       "https://www.w3.org/TR/css-page-3/": {
         "anchors": [
           "at-ruledef-page",
           "valdef-page-left"
-        ]
+        ],
+        "specShortname": "css-page-3"
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
@@ -391,27 +463,32 @@
           "non-ascii-code-point",
           "typedef-style-block",
           "typedef-urange"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-text-decor-3/": {
         "anchors": [
           "propdef-text-decoration"
-        ]
+        ],
+        "specShortname": "css-text-decor-3"
       },
       "https://www.w3.org/TR/css-text-decor-4/": {
         "anchors": [
           "valdef-text-decoration-line-underline"
-        ]
+        ],
+        "specShortname": "css-text-decor-4"
       },
       "https://www.w3.org/TR/css-transforms-1/": {
         "anchors": [
           "funcdef-transform-translatex"
-        ]
+        ],
+        "specShortname": "css-transforms-1"
       },
       "https://www.w3.org/TR/css-typed-om-1/": {
         "anchors": [
           "custom-property-name-string"
-        ]
+        ],
+        "specShortname": "css-typed-om-1"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
@@ -419,18 +496,21 @@
           "string-value",
           "comb-one",
           "mult-opt"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css-values-5/": {
         "anchors": [
           "funcdef-attr"
-        ]
+        ],
+        "specShortname": "css-values-5"
       },
       "https://www.w3.org/TR/css-variables-1/": {
         "anchors": [
           "custom-property",
           "funcdef-var"
-        ]
+        ],
+        "specShortname": "css-variables-1"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
@@ -439,13 +519,15 @@
           "dom-cssstyledeclaration-csstext",
           "concept-css-style-sheet-location",
           "cssstyledeclaration"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/mediaqueries-5/": {
         "anchors": [
           "media-type",
           "typedef-general-enclosed"
-        ]
+        ],
+        "specShortname": "mediaqueries-5"
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
@@ -453,7 +535,8 @@
           "selectordef-adjacent",
           "selector-list",
           "typedef-selector-list"
-        ]
+        ],
+        "specShortname": "selectors-4"
       }
     }
   }

@@ -6,8 +6,12 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-borders-4/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "specShortname": "css-borders-4"
+      },
       "https://github.com/WICG/view-transitions/issues/200": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10334": {},
@@ -31,11 +35,15 @@
           "user-navigation-involvement"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2024/WD-css-view-transitions-2-20240516/": {},
@@ -54,42 +62,77 @@
         ]
       },
       "https://www.w3.org/TR/CSS22/": {},
-      "https://www.w3.org/TR/css-backgrounds-3/": {},
-      "https://www.w3.org/TR/css-box-4/": {},
-      "https://www.w3.org/TR/css-cascade-5/": {},
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "specShortname": "css-backgrounds-3"
+      },
+      "https://www.w3.org/TR/css-box-4/": {
+        "specShortname": "css-box-4"
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
           "applies-to",
           "inherited-property",
           "computed"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/css-conditional-3/": {},
-      "https://www.w3.org/TR/css-contain-2/": {},
-      "https://www.w3.org/TR/css-images-3/": {},
-      "https://www.w3.org/TR/css-masking-1/": {},
-      "https://www.w3.org/TR/css-overflow-3/": {},
-      "https://www.w3.org/TR/css-position-3/": {},
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://www.w3.org/TR/css-contain-2/": {
+        "specShortname": "css-contain-2"
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "specShortname": "css-images-3"
+      },
+      "https://www.w3.org/TR/css-masking-1/": {
+        "specShortname": "css-masking-1"
+      },
+      "https://www.w3.org/TR/css-overflow-3/": {
+        "specShortname": "css-overflow-3"
+      },
+      "https://www.w3.org/TR/css-position-3/": {
+        "specShortname": "css-position-3"
+      },
       "https://www.w3.org/TR/css-pseudo/": {
         "anchors": [
           "generated-content"
-        ]
+        ],
+        "specShortname": "css-pseudo-4"
       },
       "https://www.w3.org/TR/css-scoping-1/": {},
       "https://www.w3.org/TR/css-shadow-parts-1/": {},
-      "https://www.w3.org/TR/css-sizing-3/": {},
-      "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-transforms-1/": {},
-      "https://www.w3.org/TR/css-transforms-2/": {},
-      "https://www.w3.org/TR/css-ui-4/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-sizing-3/": {
+        "specShortname": "css-sizing-3"
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "specShortname": "css-transforms-1"
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "specShortname": "css-transforms-2"
+      },
+      "https://www.w3.org/TR/css-ui-4/": {
+        "specShortname": "css-ui-4"
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
           "percentages"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css-view-transitions-1/": {
         "anchors": [
@@ -98,23 +141,38 @@
           "capture-new-state-algorithm",
           "setup-transition-pseudo-elements-algorithm",
           "style-transition-pseudo-elements-algorithm"
-        ]
+        ],
+        "specShortname": "css-view-transitions-1"
       },
-      "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
       "https://www.w3.org/TR/cssom/": {
         "anchors": [
           "serializing-css-values"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
-      "https://www.w3.org/TR/filter-effects-1/": {},
-      "https://www.w3.org/TR/geometry-1/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/selectors-3/": {},
-      "https://www.w3.org/TR/selectors-4/": {},
+      "https://www.w3.org/TR/filter-effects-1/": {
+        "specShortname": "filter-effects-1"
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "specShortname": "geometry-1"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/selectors-3/": {
+        "specShortname": "selectors-3"
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "specShortname": "selectors-4"
+      },
       "https://www.w3.org/TR/web-animations/": {
         "anchors": [
           "animation-type"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       },
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {},
@@ -143,7 +201,8 @@
           "concept-document-origin",
           "element",
           "concept-tree-ancestor"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-borders-4/": {
         "anchors": [
@@ -153,12 +212,14 @@
           "propdef-border-top",
           "propdef-border-bottom",
           "propdef-border-right"
-        ]
+        ],
+        "specShortname": "css-borders-4"
       },
       "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
           "element-contents"
-        ]
+        ],
+        "specShortname": "css-contain-2"
       },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
@@ -171,12 +232,14 @@
           "callbackdef-viewtransitionupdatecallback",
           "view-transition-page-visibility-change-steps",
           "document-scoped-view-transition-name"
-        ]
+        ],
+        "specShortname": "css-view-transitions-1"
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "element"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -277,7 +340,8 @@
           "map-clone",
           "list-append",
           "string-concatenate"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -293,14 +357,16 @@
           "idl-DOMException",
           "aborterror",
           "resolve"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/css-backgrounds-3/": {
         "anchors": [
           "propdef-background",
           "propdef-border-image",
           "propdef-border"
-        ]
+        ],
+        "specShortname": "css-backgrounds-3"
       },
       "https://www.w3.org/TR/css-box-4/": {
         "anchors": [
@@ -309,47 +375,55 @@
           "padding-box",
           "content-box",
           "padding-edge"
-        ]
+        ],
+        "specShortname": "css-box-4"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "used-value",
           "computed-value"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "propdef-opacity"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-conditional-3/": {
         "anchors": [
           "conditional-group-rule",
           "at-ruledef-media",
           "at-ruledef-supports"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://www.w3.org/TR/css-images-3/": {
         "anchors": [
           "natural-dimensions"
-        ]
+        ],
+        "specShortname": "css-images-3"
       },
       "https://www.w3.org/TR/css-masking-1/": {
         "anchors": [
           "propdef-clip-path",
           "propdef-mask-image",
           "propdef-mask"
-        ]
+        ],
+        "specShortname": "css-masking-1"
       },
       "https://www.w3.org/TR/css-overflow-3/": {
         "anchors": [
           "propdef-overflow"
-        ]
+        ],
+        "specShortname": "css-overflow-3"
       },
       "https://www.w3.org/TR/css-position-3/": {
         "anchors": [
           "valdef-position-relative"
-        ]
+        ],
+        "specShortname": "css-position-3"
       },
       "https://www.w3.org/TR/css-shadow-parts-1/": {
         "anchors": [
@@ -361,29 +435,34 @@
           "propdef-box-sizing",
           "valdef-box-sizing-border-box",
           "valdef-box-sizing-content-box"
-        ]
+        ],
+        "specShortname": "css-sizing-3"
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
           "typedef-declaration-list"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-transforms-1/": {
         "anchors": [
           "propdef-transform",
           "identity-transform-function"
-        ]
+        ],
+        "specShortname": "css-transforms-1"
       },
       "https://www.w3.org/TR/css-transforms-2/": {
         "anchors": [
           "propdef-transform-style",
           "propdef-perspective"
-        ]
+        ],
+        "specShortname": "css-transforms-2"
       },
       "https://www.w3.org/TR/css-ui-4/": {
         "anchors": [
           "propdef-outline"
-        ]
+        ],
+        "specShortname": "css-ui-4"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
@@ -392,7 +471,8 @@
           "mult-comma",
           "mult-one-plus",
           "mult-opt"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css-view-transitions-1/": {
         "anchors": [
@@ -432,34 +512,40 @@
           "captured-element-old-height",
           "captured-element-group-styles-rule",
           "capture-the-image"
-        ]
+        ],
+        "specShortname": "css-view-transitions-1"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
           "cssrule",
           "cssomstring"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/filter-effects-1/": {
         "anchors": [
           "propdef-filter"
-        ]
+        ],
+        "specShortname": "filter-effects-1"
       },
       "https://www.w3.org/TR/geometry-1/": {
         "anchors": [
           "matrix",
           "multiply"
-        ]
+        ],
+        "specShortname": "geometry-1"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dfn-duration"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/selectors-3/": {
         "anchors": [
           "x"
-        ]
+        ],
+        "specShortname": "selectors-3"
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
@@ -467,7 +553,8 @@
           "class-selector",
           "selector",
           "type-selector"
-        ]
+        ],
+        "specShortname": "selectors-4"
       }
     }
   }

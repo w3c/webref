@@ -230,7 +230,9 @@
       "http://wpt.live/css/css-variables/vars-font-shorthand-001.html": {},
       "http://wpt.live/css/css-variables/wide-keyword-fallback.html": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://drafts.csswg.org/css-extensions/": {},
+      "https://drafts.csswg.org/css-extensions/": {
+        "specShortname": "css-extensions-1"
+      },
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/774": {
         "anchors": [
@@ -460,7 +462,9 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-variables/vars-border-shorthand-serialize.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-variables/vars-font-shorthand-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-variables/wide-keyword-fallback.html": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://wpt.fyi/results/css/css-variables/css-variable-change-style-001.html": {},
@@ -715,7 +719,8 @@
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
           "property-defs"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://www.w3.org/TR/CSS21/": {},
       "https://www.w3.org/TR/CSS21/conform.html": {
@@ -726,57 +731,90 @@
         ]
       },
       "https://www.w3.org/TR/charmod-norm/": {},
-      "https://www.w3.org/TR/css-animations-1/": {},
-      "https://www.w3.org/TR/css-backgrounds-3/": {},
-      "https://www.w3.org/TR/css-box-4/": {},
+      "https://www.w3.org/TR/css-animations-1/": {
+        "specShortname": "css-animations-1"
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "specShortname": "css-backgrounds-3"
+      },
+      "https://www.w3.org/TR/css-box-4/": {
+        "specShortname": "css-box-4"
+      },
       "https://www.w3.org/TR/css-cascade-4/": {
         "anchors": [
           "defaulting-keywords"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
-      "https://www.w3.org/TR/css-cascade-5/": {},
-      "https://www.w3.org/TR/css-cascade-6/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://www.w3.org/TR/css-cascade-6/": {
+        "specShortname": "css-cascade-6"
+      },
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
           "applies-to",
           "inherited-property",
           "computed"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/css-conditional-3/": {},
-      "https://www.w3.org/TR/css-fonts-4/": {},
-      "https://www.w3.org/TR/css-properties-values-api-1/": {},
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://www.w3.org/TR/css-fonts-4/": {
+        "specShortname": "css-fonts-4"
+      },
+      "https://www.w3.org/TR/css-properties-values-api-1/": {
+        "specShortname": "css-properties-values-api-1"
+      },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
           "tokenization"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-values-3/": {
         "anchors": [
           "value-defs"
-        ]
+        ],
+        "specShortname": "css-values-3"
       },
-      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
           "percentages"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
-      "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
       "https://www.w3.org/TR/cssom/": {
         "anchors": [
           "serializing-css-values"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
-      "https://www.w3.org/TR/selectors-4/": {},
-      "https://www.w3.org/TR/web-animations-1/": {},
+      "https://www.w3.org/TR/selectors-4/": {
+        "specShortname": "selectors-4"
+      },
+      "https://www.w3.org/TR/web-animations-1/": {
+        "specShortname": "web-animations-1"
+      },
       "https://www.w3.org/TR/web-animations/": {
         "anchors": [
           "animation-type"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       },
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {}
@@ -786,29 +824,34 @@
         "anchors": [
           "registered-custom-property",
           "universal-syntax-definition"
-        ]
+        ],
+        "specShortname": "css-properties-values-api-1"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ascii-case-insensitive",
           "string-is"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://www.w3.org/TR/css-animations-1/": {
         "anchors": [
           "at-ruledef-keyframes"
-        ]
+        ],
+        "specShortname": "css-animations-1"
       },
       "https://www.w3.org/TR/css-backgrounds-3/": {
         "anchors": [
           "propdef-background-color",
           "propdef-background"
-        ]
+        ],
+        "specShortname": "css-backgrounds-3"
       },
       "https://www.w3.org/TR/css-box-4/": {
         "anchors": [
           "propdef-margin-top"
-        ]
+        ],
+        "specShortname": "css-box-4"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
@@ -818,23 +861,27 @@
           "valdef-all-unset",
           "shorthand-property",
           "longhand"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-cascade-6/": {
         "anchors": [
           "cascade"
-        ]
+        ],
+        "specShortname": "css-cascade-6"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "valdef-color-transparent",
           "propdef-color"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-fonts-4/": {
         "anchors": [
           "propdef-font-size"
-        ]
+        ],
+        "specShortname": "css-fonts-4"
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
@@ -846,7 +893,8 @@
           "tokendef-close-curly",
           "typedef-semicolon-token",
           "typedef-delim-token"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
@@ -857,7 +905,8 @@
           "em",
           "comb-comma",
           "funcdef-calc"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css3-conditional/": {
         "anchors": [
@@ -869,17 +918,20 @@
           "cssstyledeclaration-declarations",
           "css-declaration-case-sensitive-flag",
           "dom-cssstyledeclaration-getpropertyvalue"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
           "lang-pseudo"
-        ]
+        ],
+        "specShortname": "selectors-4"
       },
       "https://www.w3.org/TR/web-animations-1/": {
         "anchors": [
           "not-animatable"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       }
     }
   }

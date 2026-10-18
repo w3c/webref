@@ -5,8 +5,12 @@
   },
   "links": {
     "rawlinks": {
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
       "https://github.com/w3c/encrypted-media/commits/main": {},
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
@@ -22,19 +26,27 @@
           "timed-text-tracks"
         ]
       },
-      "https://httpwg.org/specs/rfc6265.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
+      "https://httpwg.org/specs/rfc6265.html": {
+        "specShortname": "rfc6265"
+      },
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-time-values-and-time-range"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "dfn-get-buffer-source-copy",
           "idl-DOMException-error-names"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.iso.org/obp/ui/": {
         "anchors": [
@@ -50,21 +62,38 @@
       "https://www.rfc-editor.org/info/rfc8174/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/": {},
-      "https://www.w3.org/TR/eme-hdcp-version-registry/": {},
-      "https://www.w3.org/TR/eme-initdata-keyids/": {},
-      "https://www.w3.org/TR/eme-initdata-registry/": {},
-      "https://www.w3.org/TR/eme-stream-registry/": {},
-      "https://www.w3.org/TR/media-source-2/": {},
-      "https://www.w3.org/TR/mixed-content/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/webaudio-1.1/": {},
+      "https://www.w3.org/TR/eme-hdcp-version-registry/": {
+        "specShortname": "eme-hdcp-version-registry"
+      },
+      "https://www.w3.org/TR/eme-initdata-keyids/": {
+        "specShortname": "eme-initdata-keyids"
+      },
+      "https://www.w3.org/TR/eme-initdata-registry/": {
+        "specShortname": "eme-initdata-registry"
+      },
+      "https://www.w3.org/TR/eme-stream-registry/": {
+        "specShortname": "eme-stream-registry"
+      },
+      "https://www.w3.org/TR/media-source-2/": {
+        "specShortname": "media-source-2"
+      },
+      "https://www.w3.org/TR/mixed-content/": {
+        "specShortname": "mixed-content"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://www.w3.org/TR/webaudio-1.1/": {
+        "specShortname": "webaudio-1.1"
+      },
       "https://www.w3.org/groups/wg/media": {},
       "https://www.w3.org/groups/wg/media/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -80,13 +109,15 @@
           "event",
           "dictdef-eventinit",
           "concept-event-fire"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "textdecoder",
           "textencoder"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -140,13 +171,15 @@
         "anchors": [
           "map-exists",
           "user-agent"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "parse-a-mime-type",
           "type"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -168,24 +201,28 @@
           "idl-unsigned-long",
           "idl-ArrayBuffer",
           "dfn-simple-exception"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/mixed-content/": {
         "anchors": [
           "mixed-content"
-        ]
+        ],
+        "specShortname": "mixed-content"
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://www.w3.org/TR/webaudio-1.1/": {
         "anchors": [
           "AudioContext",
           "MediaElementAudioSourceNode"
-        ]
+        ],
+        "specShortname": "webaudio-1.1"
       }
     }
   }

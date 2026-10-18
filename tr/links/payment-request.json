@@ -28,8 +28,12 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/PaymentResponse/retry": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/payment": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/payment": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/payment-request/commit/0273c79": {},
       "https://github.com/w3c/payment-request/commit/0358fb3": {},
       "https://github.com/w3c/payment-request/commit/046bcea": {},
@@ -167,24 +171,33 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "assert"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://lists.w3.org/Archives/Public/public-payments-wg/2021Jun/0000.html": {},
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-json.parse",
           "sec-object-internal-methods-and-internal-slots"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma402/": {
         "anchors": [
           "sec-iswellformedcurrencycode"
-        ]
+        ],
+        "specShortname": "ecma-402"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/contact-picker/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/contact-picker/": {
+        "specShortname": "contact-picker"
+      },
       "https://w3c.github.io/test-results/payment-request/all.html": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wpt.live/payment-request/": {},
       "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-E.164-201011-I!!PDF-E&type=items": {},
       "https://www.rfc-editor.org/info/bcp14": {},
@@ -198,11 +211,21 @@
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2022/REC-payment-request-20220908/": {},
-      "https://www.w3.org/TR/contact-picker/": {},
-      "https://www.w3.org/TR/payment-method-id/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/secure-contexts/": {},
-      "https://www.w3.org/TR/web-based-payment-handler/": {},
+      "https://www.w3.org/TR/contact-picker/": {
+        "specShortname": "contact-picker"
+      },
+      "https://www.w3.org/TR/payment-method-id/": {
+        "specShortname": "payment-method-id"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://www.w3.org/TR/web-based-payment-handler/": {
+        "specShortname": "web-based-payment-handler"
+      },
       "https://www.w3.org/community/wicg/": {},
       "https://www.w3.org/groups/wg/payments": {},
       "https://www.w3.org/groups/wg/payments/ipr": {},
@@ -210,7 +233,8 @@
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -237,12 +261,14 @@
           "concept-event-create",
           "dom-event-type",
           "concept-event-dispatch"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -311,28 +337,33 @@
           "string",
           "code-point",
           "ascii-uppercase"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/multipage/": {
         "anchors": [
           "sec-object-internal-methods-and-internal-slots"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
         "anchors": [
           "sec-native-error-types-used-in-this-standard-typeerror"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-json.parse"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-basic-url-parser",
           "host-registrable-domain"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -366,7 +397,8 @@
           "Default",
           "notallowederror",
           "operationerror"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/contact-picker/": {
         "anchors": [
@@ -392,7 +424,8 @@
           "physical-address-sorting-code",
           "dom-contactaddress-sortingcode",
           "contactsmanager-create-a-contactaddress-from-user-provided-input"
-        ]
+        ],
+        "specShortname": "contact-picker"
       },
       "https://www.w3.org/TR/payment-method-id/": {
         "anchors": [
@@ -400,14 +433,16 @@
           "dfn-validate-a-payment-method-identifier",
           "dfn-standardized-payment-method-identifier",
           "dfn-url-based-payment-method-identifier"
-        ]
+        ],
+        "specShortname": "payment-method-id"
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist-self"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       }
     }
   }

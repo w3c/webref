@@ -6,7 +6,9 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://github.com/immersive-web/layers/issues": {},
       "https://github.com/immersive-web/layers/pull/234": {},
       "https://github.com/immersive-web/layers/pull/241": {},
@@ -26,9 +28,15 @@
       "https://github.com/immersive-web/layers/pull/271": {},
       "https://github.com/immersive-web/layers/pull/284": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://webidl.spec.whatwg.org/": {},
-      "https://wicg.github.io/permissions-request/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://wicg.github.io/permissions-request/": {
+        "specShortname": "permissions-request"
+      },
       "https://www.khronos.org/registry/OpenGL/specs/es/3.0/es_spec_3.0.pdf": {
         "anchors": [
           "nameddest=section-3.8.4"
@@ -37,17 +45,26 @@
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/": {},
-      "https://www.w3.org/TR/compositing-1/": {},
-      "https://www.w3.org/TR/geometry-1/": {},
-      "https://www.w3.org/TR/webxr-ar-module-1/": {},
-      "https://www.w3.org/TR/webxr/": {},
+      "https://www.w3.org/TR/compositing-1/": {
+        "specShortname": "compositing-1"
+      },
+      "https://www.w3.org/TR/geometry-1/": {
+        "specShortname": "geometry-1"
+      },
+      "https://www.w3.org/TR/webxr-ar-module-1/": {
+        "specShortname": "webxr-ar-module-1"
+      },
+      "https://www.w3.org/TR/webxr/": {
+        "specShortname": "webxr"
+      },
       "https://www.w3.org/groups/wg/immersive-web": {},
       "https://www.w3.org/groups/wg/immersive-web/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -61,7 +78,8 @@
           "concept-event-fire",
           "event",
           "dictdef-eventinit"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/canvas.html": {
         "anchors": [
@@ -105,12 +123,14 @@
           "SecureContext",
           "idl-DOMString",
           "idl-frozen-array"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://wicg.github.io/permissions-request/": {
         "anchors": [
           "dom-permissions-request"
-        ]
+        ],
+        "specShortname": "permissions-request"
       },
       "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/": {
         "anchors": [
@@ -165,19 +185,22 @@
       "https://www.w3.org/TR/compositing-1/": {
         "anchors": [
           "porterduffcompositingoperators_srcover"
-        ]
+        ],
+        "specShortname": "compositing-1"
       },
       "https://www.w3.org/TR/geometry-1/": {
         "anchors": [
           "dictdef-dompointinit",
           "dompointreadonly",
           "dom-dompointreadonly-frompoint"
-        ]
+        ],
+        "specShortname": "geometry-1"
       },
       "https://www.w3.org/TR/webxr-ar-module-1/": {
         "anchors": [
           "dom-xrsessionmode-immersive-ar"
-        ]
+        ],
+        "specShortname": "webxr-ar-module-1"
       },
       "https://www.w3.org/TR/webxr/": {
         "anchors": [
@@ -249,7 +272,8 @@
           "dom-xreye-left",
           "xrsession-interface",
           "shut-down-the-session"
-        ]
+        ],
+        "specShortname": "webxr"
       }
     }
   }

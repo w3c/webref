@@ -6,10 +6,16 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/bcp14": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/payment-request-info/wiki/PaymentMethodPractice": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://url.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
       "https://w3c.github.io/test-results/payment-method-id/all.html": {},
       "https://wpt.live/payment-method-id/": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
@@ -36,8 +42,12 @@
       "https://www.w3.org/Consortium/Process/": {},
       "https://www.w3.org/Consortium/join": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/payment-method-manifest/": {},
-      "https://www.w3.org/TR/payment-request/": {},
+      "https://www.w3.org/TR/payment-method-manifest/": {
+        "specShortname": "payment-method-manifest"
+      },
+      "https://www.w3.org/TR/payment-request/": {
+        "specShortname": "payment-request"
+      },
       "https://www.w3.org/groups/wg/payments": {},
       "https://www.w3.org/groups/wg/payments/ipr": {}
     },
@@ -45,12 +55,14 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-fetch"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "string-is"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -60,7 +72,8 @@
           "concept-url-username",
           "concept-url-password",
           "concept-url-equals"
-        ]
+        ],
+        "specShortname": "url"
       }
     }
   }

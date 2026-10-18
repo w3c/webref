@@ -11,8 +11,12 @@
       "http://www.northropgrumman.com/Capabilities/CybersecurityResearchConsortium/": {},
       "http://www.secg.org/sec1-v2.pdf": {},
       "https://datatracker.ietf.org/doc/draft-irtf-cfrg-det-sigs-with-noise/": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
       "https://github.com/WICG/webcrypto-secure-curves/issues/27": {},
       "https://github.com/WICG/webcrypto-secure-curves/issues/28": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -21,9 +25,13 @@
           "event-loop-for-spec-authors"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tools.ietf.org/html/draft-ietf-rtcweb-jsep/": {},
       "https://w3cping.github.io/privacy-threat-model/": {
         "anchors": [
@@ -31,7 +39,9 @@
           "global-identifier"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wiki.whatwg.org/wiki/Crypto": {},
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
@@ -66,14 +76,17 @@
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.rfc-editor.org/rfc/rfc8410": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/IndexedDB/": {},
+      "https://www.w3.org/TR/IndexedDB/": {
+        "specShortname": "IndexedDB-3"
+      },
       "https://www.w3.org/groups/wg/webappsec": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
@@ -85,7 +98,8 @@
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
@@ -116,7 +130,8 @@
           "byte-sequence-length",
           "string-concatenate",
           "ascii-lower-hex-digit"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -159,7 +174,8 @@
           "EnforceRange",
           "idl-octet",
           "idl-unsigned-short"
-        ]
+        ],
+        "specShortname": "webidl"
       }
     }
   }

@@ -107,8 +107,12 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/WindowClient/visibilityState": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/caches": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Service-Worker-Navigation-Preload": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/ServiceWorker/issues/1374": {},
       "https://github.com/w3c/ServiceWorker/issues/765": {},
       "https://github.com/whatwg/html/pull/2809": {},
@@ -127,8 +131,12 @@
       },
       "https://httpwg.org/specs/rfc7230.html": {},
       "https://httpwg.org/specs/rfc7231.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
       "https://notifications.spec.whatwg.org/": {
         "anchors": [
           "dom-serviceworkerglobalscope-onnotificationclick",
@@ -136,20 +144,32 @@
           "activating-a-notification",
           "dom-serviceworkerglobalscope-onnotificationclose",
           "closing-a-notification"
-        ]
+        ],
+        "specShortname": "notifications"
       },
-      "https://storage.spec.whatwg.org/": {},
-      "https://streams.spec.whatwg.org/": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://urlpattern.spec.whatwg.org/": {},
+      "https://storage.spec.whatwg.org/": {
+        "specShortname": "storage"
+      },
+      "https://streams.spec.whatwg.org/": {
+        "specShortname": "streams"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://urlpattern.spec.whatwg.org/": {
+        "specShortname": "urlpattern"
+      },
       "https://w3c.github.io/ServiceWorker/v1/": {},
       "https://w3c.github.io/push-api/": {
         "anchors": [
           "pushevent-interface",
           "dom-pushevent",
           "receiving-a-push-message"
-        ]
+        ],
+        "specShortname": "push-api"
       },
       "https://w3c.github.io/web-based-payment-handler/": {
         "anchors": [
@@ -159,23 +179,32 @@
           "the-paymentrequestevent",
           "dom-paymentrequestevent",
           "dfn-handling-a-paymentrequestevent"
-        ]
+        ],
+        "specShortname": "web-based-payment-handler"
       },
       "https://w3c.github.io/webappsec-secure-contexts/": {
         "anchors": [
           "localhost",
           "threat-risks"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wicg.github.io/background-sync/spec/": {
         "anchors": [
           "syncevent",
           "fire-a-sync-event"
-        ]
+        ],
+        "specShortname": "background-sync"
       },
-      "https://wicg.github.io/csp-next/scripting-policy.html": {},
-      "https://wicg.github.io/page-lifecycle/": {},
+      "https://wicg.github.io/csp-next/scripting-policy.html": {
+        "specShortname": "csp-next"
+      },
+      "https://wicg.github.io/page-lifecycle/": {
+        "specShortname": "page-lifecycle"
+      },
       "https://www.rfc-editor.org/info/rfc5234/": {},
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
       "https://www.w3.org/TR/": {},
@@ -184,21 +213,38 @@
           "appcache"
         ]
       },
-      "https://www.w3.org/TR/CSP3/": {},
-      "https://www.w3.org/TR/FileAPI/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/navigation-timing-2/": {},
-      "https://www.w3.org/TR/resource-timing/": {},
-      "https://www.w3.org/TR/screen-capture/": {},
-      "https://www.w3.org/TR/secure-contexts/": {},
-      "https://www.w3.org/TR/trusted-types/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "specShortname": "CSP3"
+      },
+      "https://www.w3.org/TR/FileAPI/": {
+        "specShortname": "FileAPI"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/navigation-timing-2/": {
+        "specShortname": "navigation-timing-2"
+      },
+      "https://www.w3.org/TR/resource-timing/": {
+        "specShortname": "resource-timing"
+      },
+      "https://www.w3.org/TR/screen-capture/": {
+        "specShortname": "screen-capture"
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
+      "https://www.w3.org/TR/trusted-types/": {
+        "specShortname": "trusted-types"
+      },
       "https://www.w3.org/groups/wg/webapps": {},
       "https://www.w3.org/groups/wg/webapps/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -241,7 +287,8 @@
           "dom-event-cancelable",
           "canceled-flag",
           "abortcontroller-signal-abort"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -323,7 +370,8 @@
           "concept-request-mode",
           "header-list-contains",
           "concept-header-list-combine"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -559,12 +607,14 @@
           "string-is",
           "abort-when",
           "if-aborted"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "javascript-mime-type"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://storage.spec.whatwg.org/": {
         "anchors": [
@@ -572,7 +622,8 @@
           "obtain-a-storage-key",
           "storage-key-equal",
           "obtain-a-local-storage-bottle-map"
-        ]
+        ],
+        "specShortname": "storage"
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
@@ -598,7 +649,8 @@
           "readablestream-locked",
           "readablestreamdefaultreader-read-all-bytes",
           "readablestream-cancel"
-        ]
+        ],
+        "specShortname": "streams"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -620,7 +672,8 @@
       "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
         "anchors": [
           "surrounding-agent"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
@@ -633,7 +686,8 @@
           "concept-url-path",
           "concept-url-equals",
           "concept-url-query"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://urlpattern.spec.whatwg.org/": {
         "anchors": [
@@ -642,12 +696,14 @@
           "build-a-url-pattern-from-a-web-idl-value",
           "url-pattern-has-regexp-groups",
           "url-pattern-match"
-        ]
+        ],
+        "specShortname": "urlpattern"
       },
       "https://w3c.github.io/push-api/": {
         "anchors": [
           "pushevent-interface"
-        ]
+        ],
+        "specShortname": "push-api"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -695,27 +751,32 @@
           "new",
           "networkerror",
           "resolve"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://wicg.github.io/csp-next/scripting-policy.html": {
         "anchors": [
           "scripting-policy-pair-enforced"
-        ]
+        ],
+        "specShortname": "csp-next"
       },
       "https://wicg.github.io/page-lifecycle/": {
         "anchors": [
           "discarded"
-        ]
+        ],
+        "specShortname": "page-lifecycle"
       },
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
           "run-global-object-csp-initialization"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/FileAPI/": {
         "anchors": [
           "blob-url"
-        ]
+        ],
+        "specShortname": "FileAPI"
       },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
@@ -723,34 +784,40 @@
           "dfn-unsafe-shared-current-time",
           "dfn-coarsen-time",
           "dfn-coarsened-shared-current-time"
-        ]
+        ],
+        "specShortname": "hr-time-3"
       },
       "https://www.w3.org/TR/navigation-timing-2/": {
         "anchors": [
           "performancenavigationtiming"
-        ]
+        ],
+        "specShortname": "navigation-timing-2"
       },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
           "performanceresourcetiming"
-        ]
+        ],
+        "specShortname": "resource-timing"
       },
       "https://www.w3.org/TR/screen-capture/": {
         "anchors": [
           "dfn-monitor"
-        ]
+        ],
+        "specShortname": "screen-capture"
       },
       "https://www.w3.org/TR/secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin",
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://www.w3.org/TR/trusted-types/": {
         "anchors": [
           "trustedscripturl",
           "get-trusted-type-compliant-string"
-        ]
+        ],
+        "specShortname": "trusted-types"
       }
     }
   }

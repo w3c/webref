@@ -7,14 +7,26 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/csp": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-      "https://url.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.rfc-editor.org/rfc/rfc3864": {},
       "https://www.rfc-editor.org/rfc/rfc5234": {},
       "https://www.w3.org/Mail/Request": {},
@@ -27,16 +39,20 @@
           "match-hosts",
           "match-ports",
           "match-paths"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
-      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
       "https://www.w3.org/groups/wg/webappsec": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -55,12 +71,14 @@
           "concept-element",
           "concept-attribute",
           "concept-node-document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -76,7 +94,8 @@
           "concept-response",
           "local-scheme",
           "concept-response-header-list"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -139,25 +158,29 @@
           "ascii-case-insensitive",
           "string-is",
           "list"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url-origin",
           "concept-url-scheme"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "content-security-policy-object-directive-set",
           "parse-serialized-csp",
           "content-security-policy-object-disposition"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
@@ -195,12 +218,14 @@
           "port-part-matches",
           "source-list-allows-all-inline-behavior",
           "frame-ancestors"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "mult-zero-plus"
-        ]
+        ],
+        "specShortname": "css-values-4"
       }
     }
   }

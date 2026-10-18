@@ -7,7 +7,9 @@
     "rawlinks": {
       "https://arxiv.org/abs/1502.07373": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://en.wikipedia.org/wiki/Clock_drift": {},
       "https://github.com/w3c/hr-time/issues": {},
       "https://github.com/w3c/hr-time/issues/79": {},
@@ -33,25 +35,37 @@
           "run-a-worker"
         ]
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://spectreattack.com/spectre.pdf": {},
-      "https://tc39.es/ecma262/multipage/": {},
-      "https://tc39.es/proposal-temporal/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
+      "https://tc39.es/proposal-temporal/": {
+        "specShortname": "tc39-temporal"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/reporting/": {
         "anchors": [
           "report-timestamp"
-        ]
+        ],
+        "specShortname": "reporting-1"
       },
-      "https://www.w3.org/TR/service-workers/": {},
+      "https://www.w3.org/TR/service-workers/": {
+        "specShortname": "service-workers"
+      },
       "https://www.w3.org/groups/wg/webperf": {},
       "https://www.w3.org/groups/wg/webperf/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
@@ -65,7 +79,8 @@
           "dom-event-timestamp",
           "eventtarget",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
@@ -100,7 +115,8 @@
           "user-agent",
           "tracking-vector",
           "implementation-defined"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://tc39.es/ecma262/": {
         "anchors": [
@@ -112,12 +128,14 @@
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
         "anchors": [
           "sec-date-objects"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
       "https://tc39.es/proposal-temporal/": {
         "anchors": [
           "sec-temporal-instant-constructor"
-        ]
+        ],
+        "specShortname": "tc39-temporal"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -129,12 +147,14 @@
           "idl-object",
           "default-tojson-steps",
           "Replaceable"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/service-workers/": {
         "anchors": [
           "serviceworker"
-        ]
+        ],
+        "specShortname": "service-workers"
       }
     }
   }

@@ -6,13 +6,18 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/cssom/": {
         "anchors": [
           "documentorshadowroot-final-css-style-sheets"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
-      "https://fetch.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10042": {},
       "https://github.com/w3c/csswg-drafts/issues/10795": {},
@@ -37,7 +42,9 @@
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2021/WD-css-cascade-6-20211221/": {},
@@ -49,7 +56,9 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/cascade.html": {},
+      "https://www.w3.org/TR/CSS2/cascade.html": {
+        "specShortname": "CSS2"
+      },
       "https://www.w3.org/TR/CSS21/": {},
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
@@ -58,12 +67,17 @@
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/css-animations-1/": {},
-      "https://www.w3.org/TR/css-cascade-3/": {},
+      "https://www.w3.org/TR/css-animations-1/": {
+        "specShortname": "css-animations-1"
+      },
+      "https://www.w3.org/TR/css-cascade-3/": {
+        "specShortname": "css-cascade-3"
+      },
       "https://www.w3.org/TR/css-cascade-4/": {
         "anchors": [
           "aliasing"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
@@ -71,12 +85,21 @@
           "importance",
           "layering",
           "layer-ordering"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
-      "https://www.w3.org/TR/css-conditional-5/": {},
-      "https://www.w3.org/TR/css-fonts-5/": {},
-      "https://www.w3.org/TR/css-nesting-1/": {},
-      "https://www.w3.org/TR/css-nesting/": {},
+      "https://www.w3.org/TR/css-conditional-5/": {
+        "specShortname": "css-conditional-5"
+      },
+      "https://www.w3.org/TR/css-fonts-5/": {
+        "specShortname": "css-fonts-5"
+      },
+      "https://www.w3.org/TR/css-nesting-1/": {
+        "specShortname": "css-nesting-1"
+      },
+      "https://www.w3.org/TR/css-nesting/": {
+        "specShortname": "css-nesting-1"
+      },
       "https://www.w3.org/TR/css-scoping-1/": {
         "anchors": [
           "shadow-dom"
@@ -85,18 +108,32 @@
       "https://www.w3.org/TR/css-style-attr/": {
         "anchors": [
           "interpret"
-        ]
+        ],
+        "specShortname": "css-style-attr"
       },
-      "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-transitions-1/": {},
-      "https://www.w3.org/TR/css-values-3/": {},
-      "https://www.w3.org/TR/cssom-1/": {},
-      "https://www.w3.org/TR/selectors-3/": {},
-      "https://www.w3.org/TR/selectors-4/": {},
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://www.w3.org/TR/css-transitions-1/": {
+        "specShortname": "css-transitions-1"
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "specShortname": "css-values-3"
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
+      "https://www.w3.org/TR/selectors-3/": {
+        "specShortname": "selectors-3"
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "specShortname": "selectors-4"
+      },
       "https://www.w3.org/TR/selectors/": {
         "anchors": [
           "specificity"
-        ]
+        ],
+        "specShortname": "selectors-4"
       },
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {},
@@ -123,12 +160,14 @@
           "concept-node-tree",
           "concept-tree-root",
           "concept-shadow-root"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-nesting-1/": {
         "anchors": [
           "contain-the-nesting-selector"
-        ]
+        ],
+        "specShortname": "css-nesting-1"
       },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
@@ -138,7 +177,8 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "cors-protocol"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
@@ -153,7 +193,8 @@
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/CSS21/selector.html": {
         "anchors": [
@@ -169,7 +210,8 @@
       "https://www.w3.org/TR/css-animations-1/": {
         "anchors": [
           "at-ruledef-keyframes"
-        ]
+        ],
+        "specShortname": "css-animations-1"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
@@ -186,22 +228,26 @@
           "propdef-all",
           "valdef-all-initial",
           "valdef-all-unset"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-conditional-5/": {
         "anchors": [
           "funcdef-supports"
-        ]
+        ],
+        "specShortname": "css-conditional-5"
       },
       "https://www.w3.org/TR/css-fonts-5/": {
         "anchors": [
           "at-font-face-rule"
-        ]
+        ],
+        "specShortname": "css-fonts-5"
       },
       "https://www.w3.org/TR/css-nesting-1/": {
         "anchors": [
           "selectordef-"
-        ]
+        ],
+        "specShortname": "css-nesting-1"
       },
       "https://www.w3.org/TR/css-scoping-1/": {
         "anchors": [
@@ -215,12 +261,14 @@
           "style-rule",
           "at-rule",
           "typedef-rule-list"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-values-3/": {
         "anchors": [
           "mult-opt"
-        ]
+        ],
+        "specShortname": "css-values-3"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
@@ -228,7 +276,8 @@
           "cssstyledeclaration-owner-node",
           "cssgroupingrule",
           "cssomstring"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
@@ -241,7 +290,8 @@
           "typedef-relative-selector-list",
           "relative-selector",
           "descendant-combinator"
-        ]
+        ],
+        "specShortname": "selectors-4"
       }
     }
   }

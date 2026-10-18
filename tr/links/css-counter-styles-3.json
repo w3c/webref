@@ -24,7 +24,9 @@
       "https://github.com/w3c/csswg-drafts/issues/6201": {},
       "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
@@ -65,19 +67,43 @@
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/css-cascade-5/": {},
-      "https://www.w3.org/TR/css-content-3/": {},
-      "https://www.w3.org/TR/css-images-3/": {},
-      "https://www.w3.org/TR/css-lists-3/": {},
-      "https://www.w3.org/TR/css-pseudo-4/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://www.w3.org/TR/css-content-3/": {
+        "specShortname": "css-content-3"
+      },
+      "https://www.w3.org/TR/css-images-3/": {
+        "specShortname": "css-images-3"
+      },
+      "https://www.w3.org/TR/css-lists-3/": {
+        "specShortname": "css-lists-3"
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "specShortname": "css-pseudo-4"
+      },
       "https://www.w3.org/TR/css-scoping-1/": {},
-      "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-text-3/": {},
-      "https://www.w3.org/TR/css-text-decor-4/": {},
-      "https://www.w3.org/TR/css-values-3/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
-      "https://www.w3.org/TR/css-writing-modes-4/": {},
-      "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://www.w3.org/TR/css-text-3/": {
+        "specShortname": "css-text-3"
+      },
+      "https://www.w3.org/TR/css-text-decor-4/": {
+        "specShortname": "css-text-decor-4"
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "specShortname": "css-values-3"
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
+      "https://www.w3.org/TR/css-writing-modes-4/": {
+        "specShortname": "css-writing-modes-4"
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
       "https://www.w3.org/TR/predefined-counter-styles/": {}
     },
     "autolinks": {
@@ -90,12 +116,14 @@
       "https://drafts.csswg.org/css-text-decor-4/": {
         "anchors": [
           "valdef-text-emphasis-skip-symbols"
-        ]
+        ],
+        "specShortname": "css-text-decor-4"
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "cssomstring"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
@@ -112,23 +140,27 @@
         "anchors": [
           "ascii-case-insensitive",
           "iteration-continue"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "computed-value"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-content-3/": {
         "anchors": [
           "propdef-content"
-        ]
+        ],
+        "specShortname": "css-content-3"
       },
       "https://www.w3.org/TR/css-images-3/": {
         "anchors": [
           "typedef-image",
           "default-object-size"
-        ]
+        ],
+        "specShortname": "css-images-3"
       },
       "https://www.w3.org/TR/css-lists-3/": {
         "anchors": [
@@ -138,12 +170,14 @@
           "valdef-list-style-type-none",
           "valdef-list-style-position-inside",
           "propdef-list-style"
-        ]
+        ],
+        "specShortname": "css-lists-3"
       },
       "https://www.w3.org/TR/css-pseudo-4/": {
         "anchors": [
           "selectordef-marker"
-        ]
+        ],
+        "specShortname": "css-pseudo-4"
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
@@ -151,18 +185,21 @@
           "at-rule",
           "parse-a-list-of-component-values",
           "css-parse-something-according-to-a-css-grammar"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-text-3/": {
         "anchors": [
           "grapheme-cluster",
           "content-language"
-        ]
+        ],
+        "specShortname": "css-text-3"
       },
       "https://www.w3.org/TR/css-values-3/": {
         "anchors": [
           "css-identifier"
-        ]
+        ],
+        "specShortname": "css-values-3"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
@@ -177,17 +214,20 @@
           "mult-one-plus",
           "string-value",
           "css-bracketed-range-notation"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {
         "anchors": [
           "writing-mode"
-        ]
+        ],
+        "specShortname": "css-writing-modes-4"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
           "cssrule"
-        ]
+        ],
+        "specShortname": "cssom-1"
       }
     }
   }

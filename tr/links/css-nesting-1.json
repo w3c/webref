@@ -108,7 +108,9 @@
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://sass-lang.com/": {},
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://wpt.fyi/results/css/css-nesting/block-skipping.html": {},
       "https://wpt.fyi/results/css/css-nesting/conditional-properties.html": {},
       "https://wpt.fyi/results/css/css-nesting/conditional-rules.html": {},
@@ -163,7 +165,9 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/": {
+        "specShortname": "CSS2"
+      },
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
@@ -171,22 +175,45 @@
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/css-backgrounds-3/": {},
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "specShortname": "css-backgrounds-3"
+      },
       "https://www.w3.org/TR/css-cascade-4/": {
         "anchors": [
           "cascade-sort"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
-      "https://www.w3.org/TR/css-cascade-5/": {},
-      "https://www.w3.org/TR/css-cascade-6/": {},
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/css-conditional-3/": {},
-      "https://www.w3.org/TR/css-conditional-5/": {},
-      "https://www.w3.org/TR/css-pseudo-4/": {},
-      "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-ui-4/": {},
-      "https://www.w3.org/TR/cssom-1/": {},
-      "https://www.w3.org/TR/selectors-4/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://www.w3.org/TR/css-cascade-6/": {
+        "specShortname": "css-cascade-6"
+      },
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://www.w3.org/TR/css-conditional-5/": {
+        "specShortname": "css-conditional-5"
+      },
+      "https://www.w3.org/TR/css-pseudo-4/": {
+        "specShortname": "css-pseudo-4"
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://www.w3.org/TR/css-ui-4/": {
+        "specShortname": "css-ui-4"
+      },
+      "https://www.w3.org/TR/cssom-1/": {
+        "specShortname": "cssom-1"
+      },
+      "https://www.w3.org/TR/selectors-4/": {
+        "specShortname": "selectors-4"
+      },
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {},
       "https://www.w3.org/policies/patent-policy/20200915/": {
@@ -206,13 +233,15 @@
         "anchors": [
           "typedef-block-contents",
           "css-rule"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "cssstyleproperties",
           "cssstyledeclaration-readonly-flag"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -220,46 +249,54 @@
           "SameObject",
           "PutForwards",
           "this"
-        ]
+        ],
+        "specShortname": "webidl"
       },
       "https://www.w3.org/TR/css-backgrounds-3/": {
         "anchors": [
           "propdef-background"
-        ]
+        ],
+        "specShortname": "css-backgrounds-3"
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "at-ruledef-layer"
-        ]
+        ],
+        "specShortname": "css-cascade-5"
       },
       "https://www.w3.org/TR/css-cascade-6/": {
         "anchors": [
           "at-ruledef-scope",
           "typedef-scope-start"
-        ]
+        ],
+        "specShortname": "css-cascade-6"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
           "propdef-color"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-conditional-3/": {
         "anchors": [
           "conditional-group-rule",
           "at-ruledef-media",
           "at-ruledef-supports"
-        ]
+        ],
+        "specShortname": "css-conditional-3"
       },
       "https://www.w3.org/TR/css-conditional-5/": {
         "anchors": [
           "at-ruledef-container"
-        ]
+        ],
+        "specShortname": "css-conditional-5"
       },
       "https://www.w3.org/TR/css-pseudo-4/": {
         "anchors": [
           "selectordef-before",
           "selectordef-after"
-        ]
+        ],
+        "specShortname": "css-pseudo-4"
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
@@ -268,12 +305,14 @@
           "css-parse-something-according-to-a-css-grammar",
           "typedef-delim-token",
           "typedef-rule-list"
-        ]
+        ],
+        "specShortname": "css-syntax-3"
       },
       "https://www.w3.org/TR/css-ui-4/": {
         "anchors": [
           "valdef-caret-shape-bar"
-        ]
+        ],
+        "specShortname": "css-ui-4"
       },
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
@@ -290,7 +329,8 @@
           "css-declaration-block",
           "serialize-a-css-declaration-block",
           "dom-cssgroupingrule-insertrule"
-        ]
+        ],
+        "specShortname": "cssom-1"
       },
       "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
@@ -308,7 +348,8 @@
           "featureless",
           "compound",
           "type-selector"
-        ]
+        ],
+        "specShortname": "selectors-4"
       }
     }
   }

@@ -9,9 +9,15 @@
       "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://datatracker.ietf.org/doc/html/rfc7258": {},
-      "https://dom.spec.whatwg.org/": {},
-      "https://encoding.spec.whatwg.org/": {},
-      "https://fetch.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://encoding.spec.whatwg.org/": {
+        "specShortname": "encoding"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
+      },
       "https://github.com/fedidcg/FedCM/issues/218": {},
       "https://github.com/fedidcg/FedCM/issues/230": {
         "anchors": [
@@ -63,38 +69,55 @@
       "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html": {
         "anchors": [
           "name-the-samesite-attribute-2"
-        ]
+        ],
+        "specShortname": "rfc6265bis"
       },
       "https://httpwg.org/specs/rfc9110.html": {
         "anchors": [
           "field.referer",
           "field.location"
-        ]
+        ],
+        "specShortname": "rfc9110"
       },
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-fedid-wg/": {},
-      "https://mimesniff.spec.whatwg.org/": {},
+      "https://mimesniff.spec.whatwg.org/": {
+        "specShortname": "mimesniff"
+      },
       "https://openid.net/specs/openid-connect-account-porting-1_0.html": {},
       "https://openid.net/specs/openid-connect-core-1_0.html": {
         "anchors": [
           "IDTokenValidation"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
+      },
       "https://tc39.es/ecma262/multipage/structured-data.html": {
         "anchors": [
           "sec-json-object"
-        ]
+        ],
+        "specShortname": "ecmascript"
       },
-      "https://url.spec.whatwg.org/": {},
-      "https://w3c.github.io/webappsec-credential-management/": {},
-      "https://w3c.github.io/webappsec-permissions-policy": {},
+      "https://url.spec.whatwg.org/": {
+        "specShortname": "url"
+      },
+      "https://w3c.github.io/webappsec-credential-management/": {
+        "specShortname": "credential-management-1"
+      },
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "specShortname": "permissions-policy-1"
+      },
       "https://w3cping.github.io/privacy-threat-model/": {
         "anchors": [
           "hl-intrusion"
         ]
       },
-      "https://webidl.spec.whatwg.org/": {},
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
       "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/": {},
       "https://wiki.mozilla.org/Identity/Persona_AAR": {},
       "https://www.rfc-editor.org/rfc/rfc6973": {
@@ -107,34 +130,54 @@
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
           "directive-connect-src"
-        ]
+        ],
+        "specShortname": "CSP3"
       },
       "https://www.w3.org/TR/appmanifest/": {
         "anchors": [
           "icon-masks"
-        ]
+        ],
+        "specShortname": "appmanifest"
       },
-      "https://www.w3.org/TR/clear-site-data/": {},
+      "https://www.w3.org/TR/clear-site-data/": {
+        "specShortname": "clear-site-data"
+      },
       "https://www.w3.org/TR/credential-management-1/": {
         "anchors": [
           "algorithm-request"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
-      "https://www.w3.org/TR/css-color-4/": {},
-      "https://www.w3.org/TR/css-color-5/": {},
-      "https://www.w3.org/TR/cssom-view-1/": {},
-      "https://www.w3.org/TR/fetch-metadata/": {},
-      "https://www.w3.org/TR/permissions-policy-1/": {},
-      "https://www.w3.org/TR/secure-contexts/": {},
+      "https://www.w3.org/TR/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://www.w3.org/TR/css-color-5/": {
+        "specShortname": "css-color-5"
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://www.w3.org/TR/fetch-metadata/": {
+        "specShortname": "fetch-metadata"
+      },
+      "https://www.w3.org/TR/permissions-policy-1/": {
+        "specShortname": "permissions-policy-1"
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
       "https://www.w3.org/TR/webdriver1/": {},
-      "https://www.w3.org/TR/webdriver2/": {},
+      "https://www.w3.org/TR/webdriver2/": {
+        "specShortname": "webdriver2"
+      },
       "https://www.w3.org/groups/wg/fedid/": {},
       "https://www.w3.org/groups/wg/fedid/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
-        ]
+        ],
+        "specShortname": "w3c-patent-policy"
       },
       "https://www.w3.org/policies/process/20231103/": {
         "anchors": [
@@ -149,17 +192,20 @@
         "anchors": [
           "concept-document-origin",
           "document"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "set-up-browsing-context-features"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://encoding.spec.whatwg.org/": {
         "anchors": [
           "utf-8-encode"
-        ]
+        ],
+        "specShortname": "encoding"
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
@@ -194,7 +240,8 @@
           "concept-response-header-list",
           "http-origin",
           "forbidden-request-header"
-        ]
+        ],
+        "specShortname": "fetch"
       },
       "https://github.com/michaelkleber/privacy-model": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -280,12 +327,14 @@
           "list-append",
           "list-empty",
           "boolean"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://mimesniff.spec.whatwg.org/": {
         "anchors": [
           "json-mime-type"
-        ]
+        ],
+        "specShortname": "mimesniff"
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
@@ -303,15 +352,19 @@
           "concept-url-path",
           "concept-url-parser",
           "concept-url-query"
-        ]
+        ],
+        "specShortname": "url"
       },
       "https://w3c.github.io/webappsec-credential-management/": {
         "anchors": [
           "same-origin-with-its-ancestors",
           "origin-requires-user-mediation"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
-      "https://w3c.github.io/webappsec-permissions-policy": {},
+      "https://w3c.github.io/webappsec-permissions-policy": {
+        "specShortname": "permissions-policy-1"
+      },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
           "dfn-extension-capability",
@@ -321,7 +374,8 @@
           "dfn-matching-capabilities",
           "dfn-no-such-alert",
           "dfn-getting-properties"
-        ]
+        ],
+        "specShortname": "webdriver2"
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -344,14 +398,18 @@
           "idl-unsigned-long",
           "a-promise-rejected-with",
           "dfn-dictionary"
-        ]
+        ],
+        "specShortname": "webidl"
       },
-      "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "specShortname": "CSP3"
+      },
       "https://www.w3.org/TR/clear-site-data/": {
         "anchors": [
           "http-headerdef-clear-site-data",
           "abstract-opdef-clear-cookies-for-origin"
-        ]
+        ],
+        "specShortname": "clear-site-data"
       },
       "https://www.w3.org/TR/credential-management-1/": {
         "anchors": [
@@ -369,7 +427,8 @@
           "dom-credentialrequestoptions-mediation",
           "dom-credentialmediationrequirement-silent",
           "dom-credentialmediationrequirement-required"
-        ]
+        ],
+        "specShortname": "credential-management-1"
       },
       "https://www.w3.org/TR/css-color-4/": {
         "anchors": [
@@ -377,29 +436,34 @@
           "funcdef-hsl",
           "funcdef-rgb",
           "typedef-named-color"
-        ]
+        ],
+        "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-color-5/": {
         "anchors": [
           "typedef-color"
-        ]
+        ],
+        "specShortname": "css-color-5"
       },
       "https://www.w3.org/TR/fetch-metadata/": {
         "anchors": [
           "http-headerdef-sec-fetch-dest"
-        ]
+        ],
+        "specShortname": "fetch-metadata"
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
         "anchors": [
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist"
-        ]
+        ],
+        "specShortname": "permissions-policy-1"
       },
       "https://www.w3.org/TR/secure-contexts/": {
         "anchors": [
           "potentially-trustworthy-origin",
           "potentially-trustworthy-url"
-        ]
+        ],
+        "specShortname": "secure-contexts"
       },
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
@@ -408,7 +472,8 @@
           "dfn-invalid-argument",
           "dfn-remote-end-steps",
           "dfn-success"
-        ]
+        ],
+        "specShortname": "webdriver2"
       }
     }
   }

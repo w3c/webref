@@ -6,29 +6,35 @@
   "links": {
     "rawlinks": {
       "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-      "https://dom.spec.whatwg.org/": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-cascade/": {
         "anchors": [
           "initial-values",
           "inherited-property",
           "computed"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
       "https://drafts.csswg.org/css-pseudo/": {
         "anchors": [
           "generated-content"
-        ]
+        ],
+        "specShortname": "css-pseudo-4"
       },
       "https://drafts.csswg.org/css-values/": {
         "anchors": [
           "value-defs",
           "percentages"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://drafts.csswg.org/web-animations/": {
         "anchors": [
           "animation-type"
-        ]
+        ],
+        "specShortname": "web-animations-1"
       },
       "https://extensiblewebmanifesto.org/": {},
       "https://github.com/WICG/inert": {},
@@ -40,7 +46,9 @@
       "https://github.com/w3c/csswg-drafts/issues/3387": {},
       "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://infra.spec.whatwg.org/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://tools.ietf.org/html/rfc2119": {},
@@ -64,33 +72,55 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/": {},
+      "https://www.w3.org/TR/CSS2/": {
+        "specShortname": "CSS2"
+      },
       "https://www.w3.org/TR/CSS2/conform.html": {
         "anchors": [
           "style-sheet",
           "user-agent",
           "ignore"
-        ]
+        ],
+        "specShortname": "CSS2"
       },
       "https://www.w3.org/TR/WICD/": {
         "anchors": [
           "focus-handling"
         ]
       },
-      "https://www.w3.org/TR/css-break-4/": {},
-      "https://www.w3.org/TR/css-cascade-4/": {},
-      "https://www.w3.org/TR/css-display-3/": {},
-      "https://www.w3.org/TR/css-overflow-3/": {},
-      "https://www.w3.org/TR/css-position-3/": {},
-      "https://www.w3.org/TR/css-scroll-snap-1/": {},
-      "https://www.w3.org/TR/css-transforms-1/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
-      "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/TR/css-break-4/": {
+        "specShortname": "css-break-4"
+      },
+      "https://www.w3.org/TR/css-cascade-4/": {
+        "specShortname": "css-cascade-4"
+      },
+      "https://www.w3.org/TR/css-display-3/": {
+        "specShortname": "css-display-3"
+      },
+      "https://www.w3.org/TR/css-overflow-3/": {
+        "specShortname": "css-overflow-3"
+      },
+      "https://www.w3.org/TR/css-position-3/": {
+        "specShortname": "css-position-3"
+      },
+      "https://www.w3.org/TR/css-scroll-snap-1/": {
+        "specShortname": "css-scroll-snap-1"
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "specShortname": "css-transforms-1"
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {
+        "specShortname": "cssom-view-1"
+      },
       "https://www.w3.org/TR/feature-policy-1/": {},
       "https://www.w3.org/TR/uievents/": {
         "anchors": [
           "event-order"
-        ]
+        ],
+        "specShortname": "uievents"
       }
     },
     "autolinks": {
@@ -107,7 +137,8 @@
           "concept-node-document",
           "boundary-point-node",
           "document-element"
-        ]
+        ],
+        "specShortname": "dom"
       },
       "https://drafts.csswg.org/css-overscroll-behavior-1/": {
         "anchors": [
@@ -188,13 +219,15 @@
           "ordered-set",
           "list-remove",
           "list-empty"
-        ]
+        ],
+        "specShortname": "infra"
       },
       "https://w3c.github.io/uievents/": {
         "anchors": [
           "keydown",
           "event-target"
-        ]
+        ],
+        "specShortname": "uievents"
       },
       "https://w3c.github.io/webappsec-feature-policy/": {
         "anchors": [
@@ -210,18 +243,21 @@
       "https://www.w3.org/TR/css-break-4/": {
         "anchors": [
           "box-fragment"
-        ]
+        ],
+        "specShortname": "css-break-4"
       },
       "https://www.w3.org/TR/css-cascade-4/": {
         "anchors": [
           "propdef-all"
-        ]
+        ],
+        "specShortname": "css-cascade-4"
       },
       "https://www.w3.org/TR/css-display-3/": {
         "anchors": [
           "box",
           "principal-box"
-        ]
+        ],
+        "specShortname": "css-display-3"
       },
       "https://www.w3.org/TR/css-overflow-3/": {
         "anchors": [
@@ -230,19 +266,22 @@
           "propdef-overflow-y",
           "valdef-overflow-hidden",
           "propdef-overflow-x"
-        ]
+        ],
+        "specShortname": "css-overflow-3"
       },
       "https://www.w3.org/TR/css-scroll-snap-1/": {
         "anchors": [
           "optimal-viewing-region",
           "valdef-scroll-snap-type-mandatory"
-        ]
+        ],
+        "specShortname": "css-scroll-snap-1"
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "mult-one-plus",
           "comb-one"
-        ]
+        ],
+        "specShortname": "css-values-4"
       },
       "https://www.w3.org/TR/css3-positioning/": {
         "anchors": [
@@ -252,7 +291,8 @@
       "https://www.w3.org/TR/cssom-view/": {
         "anchors": [
           "scroll-an-element"
-        ]
+        ],
+        "specShortname": "cssom-view-1"
       },
       "https://www.w3.org/TR/uievents/": {
         "anchors": [
@@ -260,7 +300,8 @@
           "dictdef-uieventinit",
           "keyboardevent",
           "dom-keyboardevent-key"
-        ]
+        ],
+        "specShortname": "uievents"
       }
     }
   }
