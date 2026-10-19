@@ -5,18 +5,18 @@
   },
   "events": [
     {
-      "type": "installresult",
+      "type": "validationstatuschange",
       "targets": [
-        "GlobalEventHandlers"
+        "HTMLInstallElement"
       ],
       "src": {
         "format": "IDL eventHandler"
       }
     },
     {
-      "type": "validationstatuschange",
+      "type": "installresult",
       "targets": [
-        "ActivationBlockersMixin"
+        "GlobalEventHandlers"
       ],
       "src": {
         "format": "IDL eventHandler"
