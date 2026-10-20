@@ -122,11 +122,12 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "fully-active",
           "node-navigable",
           "ancestor-navigables",
           "nav-top",
           "nav-document",
-          "fully-active"
+          "concept-document-bc"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -136,11 +137,12 @@
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
-          "dom-document-hidden"
+          "visibility-state"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
+          "concept-document-window",
           "window",
           "dom-document-2"
         ]
@@ -150,34 +152,36 @@
           "concept-task",
           "concept-relevant-global",
           "concept-relevant-realm",
+          "classic-script",
+          "concept-script",
+          "concept-script-base-url",
           "relevant-agent",
           "environment-settings-object",
           "concept-settings-object-global",
           "relevant-settings-object",
           "concept-settings-object-cross-origin-isolated-capability",
+          "concept-settings-object-time-origin",
           "concept-realm-settings-object",
-          "concept-script",
-          "classic-script",
-          "concept-script-base-url",
           "settings-object",
           "module-script",
           "concept-agent-event-loop",
-          "update-the-rendering"
+          "update-the-rendering",
+          "perform-a-microtask-checkpoint"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list-sort-in-descending-order",
+          "list-is-empty",
+          "list-append",
           "list-iterate",
           "list",
           "list-contain",
-          "list-append",
           "string-concatenate",
           "struct",
           "struct-item",
           "stack",
           "assert",
-          "list-is-empty",
           "list-empty",
           "stack-push",
           "stack-pop",
@@ -202,7 +206,8 @@
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "concept-url",
-          "concept-url-scheme"
+          "concept-url-scheme",
+          "concept-url-serializer"
         ],
         "specShortname": "url"
       },
@@ -211,8 +216,11 @@
           "idl-def-domhighrestimestamp",
           "dfn-relative-high-resolution-time",
           "dfn-duration",
+          "dfn-relative-high-resolution-coarse-time",
           "monotonic-clock-unsafe-current-time",
           "dfn-coarsen-time",
+          "dfn-moment",
+          "dfn-monotonic-clock",
           "dfn-unsafe-shared-current-time",
           "dfn-current-high-resolution-time",
           "dfn-coarsened-shared-current-time"
@@ -230,6 +238,7 @@
           "painttimingmixin",
           "dom-painttimingmixin-painttime",
           "paint-timing-info",
+          "paint-timing-eligible",
           "painttimingmixin-paint-timing-info"
         ],
         "specShortname": "paint-timing"
@@ -238,6 +247,7 @@
         "anchors": [
           "the-performanceentry-interface",
           "dom-performanceentry-starttime",
+          "dom-performanceentry-duration",
           "supportedentrytypes-attribute",
           "dfn-queue-a-performanceentry"
         ],
@@ -263,8 +273,12 @@
           "dfn-identifier",
           "Function",
           "idl-promise",
+          "dfn-attribute",
+          "dfn-regular-operation",
+          "dfn-static-operation",
           "dfn-interface",
-          "dfn-attribute"
+          "resolve",
+          "reject"
         ],
         "specShortname": "webidl"
       }
