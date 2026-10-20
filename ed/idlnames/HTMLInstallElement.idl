@@ -5,7 +5,8 @@ interface HTMLInstallElement : HTMLElement {
 
   [CEReactions, ReflectURL] attribute USVString manifest;
   [CEReactions, ReflectURL] attribute USVString manifestId;
-};
 
-// Source: Web Install (https://wicg.github.io/install-element/)
-HTMLInstallElement includes ActivationBlockersMixin;
+  readonly attribute boolean isValid;
+  readonly attribute DOMString invalidReason;
+  attribute EventHandler onvalidationstatuschange;
+};

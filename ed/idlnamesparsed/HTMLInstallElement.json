@@ -6,18 +6,10 @@
       "title": "Web Install",
       "url": "https://wicg.github.io/install-element/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLInstallElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectURL] attribute USVString manifest;\n  [CEReactions, ReflectURL] attribute USVString manifestId;\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLInstallElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, ReflectURL] attribute USVString manifest;\n  [CEReactions, ReflectURL] attribute USVString manifestId;\n\n  readonly attribute boolean isValid;\n  readonly attribute DOMString invalidReason;\n  attribute EventHandler onvalidationstatuschange;\n};",
     "href": "https://wicg.github.io/install-element/#dom-htmlinstallelement"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Web Install",
-        "url": "https://wicg.github.io/install-element/"
-      },
-      "fragment": "HTMLInstallElement includes ActivationBlockersMixin;"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "HTMLElement",
     "type": "interface",
@@ -559,21 +551,5 @@
       }
     ]
   },
-  "includes": [
-    {
-      "name": "ActivationBlockersMixin",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "The HTML Geolocation Element",
-          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
-        },
-        "fragment": "interface mixin ActivationBlockersMixin {\n  readonly attribute boolean isValid;\n  readonly attribute ActivationBlockersMixinBlockerReason invalidReason;\n  attribute EventHandler onvalidationstatuschange;\n};",
-        "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    }
-  ]
+  "includes": []
 }

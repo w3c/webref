@@ -162,7 +162,7 @@
         "title": "Web Install",
         "url": "https://wicg.github.io/install-element/"
       },
-      "fragment": "partial interface Navigator {\n  Promise<WebInstallResult> install();\n  Promise<WebInstallResult> install(InstallParams options);\n};"
+      "fragment": "partial interface Navigator {\n  [SecureContext] Promise<WebInstallResult> install();\n  [SecureContext] Promise<WebInstallResult> install(InstallParams options);\n};"
     },
     {
       "spec": {

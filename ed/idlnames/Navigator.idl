@@ -110,8 +110,8 @@ partial interface Navigator {
 
 // Source: Web Install (https://wicg.github.io/install-element/)
 partial interface Navigator {
-  Promise<WebInstallResult> install();
-  Promise<WebInstallResult> install(InstallParams options);
+  [SecureContext] Promise<WebInstallResult> install();
+  [SecureContext] Promise<WebInstallResult> install(InstallParams options);
 };
 
 // Source: Early detection of input events (https://wicg.github.io/is-input-pending/)
