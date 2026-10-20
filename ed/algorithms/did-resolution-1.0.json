@@ -161,275 +161,22 @@
       ]
     },
     {
-      "name": "dereferencing cycle",
-      "href": "https://w3c.github.io/did-resolution/#dfn-dereferencing-cycle",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Validate that the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> conforms to the <code>did-url</code>\nrule of the <a href=\"https://www.w3.org/TR/did-core/#did-url-syntax\">DID URL Syntax</a>.\nIf not, the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencers\">DID URL dereferencer</a> <em class=\"rfc2119\">MUST</em> return the following result:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "<b>dereferencingMetadata</b>: <var>error object</var> with\ntype set to <code><a href=\"https://w3c.github.io/did-resolution/#INVALID_DID_URL\">https://www.w3.org/ns/did#INVALID_DID_URL</a></code>"
-            },
-            {
-              "html": "<b>contentStream</b>: <code>null</code>"
-            },
-            {
-              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
-            }
-          ]
+          "html": "<a href=\"https://w3c.github.io/did-resolution/#prepare-for-resolution\">Prepare for\nResolution</a>"
         },
         {
-          "html": "Obtain the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a> for the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-decentralized-identifiers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> by executing\nthe <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> algorithm as defined in <a href=\"https://w3c.github.io/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>.\nAll <var>dereferencing options</var> and all <a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameters</a>\nof the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> <em class=\"rfc2119\">MUST</em> be passed as\n<var>resolution options</var> to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID Resolution</a> algorithm."
+          "html": "<a href=\"https://w3c.github.io/did-resolution/#resolve-the-did\">Resolve the DID</a>"
         },
         {
-          "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-decentralized-identifiers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> does not\nexist in the VDR, the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencers\">DID URL dereferencer</a> <em class=\"rfc2119\">MUST</em> return\nthe following result:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "<b>dereferencingMetadata</b>: <var>error object</var> with\ntype set to <code><a href=\"https://w3c.github.io/did-resolution/#NOT_FOUND\">https://www.w3.org/ns/did#NOT_FOUND</a></code>"
-            },
-            {
-              "html": "<b>contentStream</b>: <code>null</code>"
-            },
-            {
-              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
-            }
-          ]
+          "html": "<a href=\"https://w3c.github.io/did-resolution/#determine-handling-strategy\">Determine Handling\n        Strategy</a>"
         },
         {
-          "html": "Otherwise, the <b>didDocument</b> result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> algorithm is called the\n<var>resolved <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var>."
+          "html": "<a href=\"https://w3c.github.io/did-resolution/#invoke-the-handler\">Invoke the Handler</a>"
         },
         {
-          "html": "If present, separate the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a> from the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> and continue with\nthe adjusted <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
-        },
-        {
-          "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nno <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-paths\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-paths\">DID path</a> and no\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-queries\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-queries\">DID query</a>:\n\nThe <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencers\">DID URL dereferencer</a> <em class=\"rfc2119\">MUST</em> return the\n<var>resolved <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var> and\n<var>resolved <a href=\"https://w3c.github.io/did-resolution/#did-document-metadata\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>DID Document Metadata</a></var> as follows:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
-            },
-            {
-              "html": "<b>contentStream</b>: <code>resolved DID document</code>"
-            },
-            {
-              "html": "<b>contentMetadata</b>:\n<code>«[ <code>resolved DID document metadata</code> ]»</code>"
-            }
-          ]
-        },
-        {
-          "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://w3c.github.io/did-resolution/#did-parameters\"> DID parameter</a> <code>service</code> and/or\nthe <a href=\"https://w3c.github.io/did-resolution/#did-parameters\"> DID parameter</a> <code>serviceType</code>, and\noptionally the <a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameter</a>\n<code>relativeRef</code>:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "From the <var>resolved <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var>,\nselect all <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">services</a> which fulfill the\nfollowing conditions:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameter</a> <code>service</code>:\nSelect the <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its\n<code>id</code> property matches the value of the\n<code>service</code> DID parameter. If the\n<code>id</code> property or the <code>service</code> DID\nparameter or both contain relative references, the\ncorresponding absolute URIs <em class=\"rfc2119\">MUST</em> be resolved and used for\ndetermining the match, using the rules specified in\n<a data-cite=\"RFC3986#section-5\" href=\"https://www.rfc-editor.org/info/rfc3986/#section-5\">RFC3986 Section 5: Reference Resolution</a> and in section\n<a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-cite=\"DID-CORE\" data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
-                },
-                {
-                  "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameter</a>\n<code>serviceType</code>: Select the\n<a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its\n<code>type</code> property matches the value of the\n<code>serviceType</code> DID parameter."
-                }
-              ]
-            },
-            {
-              "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains the\n<a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameter</a> <code>relativeRef</code>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "For each <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-3\">service</a></var>:",
-                  "rationale": ".algorithm",
-                  "steps": [
-                    {
-                      "html": "If the value of the <code>serviceEndpoint</code> property of the\n<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-4\">service</a></var> is\na <a data-cite=\"INFRA#maps\" href=\"https://infra.spec.whatwg.org/#maps\">map</a>, skip this\n<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-5\">service</a></var>."
-                    },
-                    {
-                      "html": "If the value of the <code>serviceEndpoint</code> property of the\n<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-6\">service</a></var>\nis a <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, add this value\nto a list of\n<var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URLs</var>."
-                    },
-                    {
-                      "html": "If the value of the <code>serviceEndpoint</code> property of the\n<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-7\">service</a></var> is\na <a data-cite=\"INFRA#sets\" href=\"https://infra.spec.whatwg.org/#sets\">set</a>, add all its items\nthat are <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">strings</a> to a list of\n<var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URLs</var>."
-                    }
-                  ]
-                },
-                {
-                  "html": "Dereferencing a <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> —\nparticularly one that is a DID — might result in a\n<dfn id=\"dfn-dereferencing-cycle\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dereferencing cycle</dfn>, which is a set of\nsteps that result in an infinite loop. For example, a\n<a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> might indirectly point back\nthrough a sequence of dereferencing processes to a\npreviously dereferenced identifier. A\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencers\">DID URL dereferencer</a> recursively\ndereferencing a <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> is advised to\ndetect and handle such a cycle to prevent an infinite\nloop or dereferencing failure. For further guidance,\nsee Section <a href=\"https://w3c.github.io/did-resolution/#security-cycles-dereferencing\">Dereferencing Cycles</a>.",
-                  "rationale": ".algorithm",
-                  "steps": [
-                    {
-                      "html": "The <strong>base URI</strong> value is the\n<var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var>."
-                    },
-                    {
-                      "html": "The <strong>relative reference</strong> is the value\nof the <a href=\"https://w3c.github.io/did-resolution/#did-parameters\">DID parameter</a>\n<code>relativeRef</code>."
-                    },
-                    {
-                      "html": "Update the\n<var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var> to\nthe result of the \"Reference Resolution\" algorithm."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "If the <b>accept</b>\n<var>input <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-options\">DID URL dereferencing option</a></var>\nis missing, or if its value is the Media Type of a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-representations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-representations-8\">representation</a> of a\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "Update the <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-8\">services</a> in the <var>resolved <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var> to\ncontain only the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-9\">services</a></var>."
-                },
-                {
-                  "html": "Return the following result:",
-                  "rationale": ".algorithm",
-                  "steps": [
-                    {
-                      "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
-                    },
-                    {
-                      "html": "<b>content</b>:\n<code>resolved DID document with selected services</code>"
-                    },
-                    {
-                      "html": "<b>contentMetadata</b>:\n<code>«[ <code>resolved DID document metadata</code> ]»</code>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "If the value of the <b>accept</b>\n<var>input <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-options\">DID URL deferencing option</a></var> is\n<b>text/uri-list</b>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "Return the following result:",
-                  "rationale": ".algorithm",
-                  "steps": [
-                    {
-                      "html": "<b>dereferencingMetadata</b>: <code>«[ ... ]»</code>"
-                    },
-                    {
-                      "html": "<b>content</b>:\n<code>« selected service endpoint URLs »</code>"
-                    },
-                    {
-                      "html": "<b>contentMetadata</b>:\n<code>«[ \"contentType\" → \"text/uri-list\", ... ]»</code>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "Otherwise, return the following result:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "<b>dereferencingMetadata</b>: <var>error object</var> with\ntype set to <code><a href=\"https://w3c.github.io/did-resolution/#REPRESENTATION_NOT_SUPPORTED\">https://www.w3.org/ns/did#REPRESENTATION_NOT_SUPPORTED</a></code>"
-                },
-                {
-                  "html": "<b>content</b>: <code>null</code>"
-                },
-                {
-                  "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "Otherwise, if the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains a\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-paths\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-paths\">DID path</a> and/or\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-queries\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-queries\">DID query</a>:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "The applicable <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-methods\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-methods\">DID method</a> <em class=\"rfc2119\">MAY</em> specify how\nto dereference the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-paths\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-paths\">DID path</a> and/or <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-queries\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-queries\">DID query</a> of the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
-            },
-            {
-              "html": "An extension specification <em class=\"rfc2119\">MAY</em> specify how to dereference the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-paths\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-paths\">DID path</a> of the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
-            },
-            {
-              "html": "An extension specification <em class=\"rfc2119\">MAY</em> specify how to dereference the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-queries\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-queries\">DID query</a> of the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
-            },
-            {
-              "html": "The client <em class=\"rfc2119\">MAY</em> be able to dereference the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> in an\napplication-specific way."
-            }
-          ]
-        },
-        {
-          "html": "If neither this algorithm, nor the applicable\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-methods\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-methods\">DID method</a>, nor an extension, nor the client\nis able to dereference the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>, return the\nfollowing result:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "<b>dereferencingMetadata</b>: <var>error object</var> with\ntype set to <code><a href=\"https://w3c.github.io/did-resolution/#NOT_FOUND\">https://www.w3.org/ns/did#NOT_FOUND</a></code>"
-            },
-            {
-              "html": "<b>contentStream</b>: <code>null</code>"
-            },
-            {
-              "html": "<b>contentMetadata</b>: <code>«[ ]»</code>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "html": "If the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains a\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a>, then dereferencing of the fragment\nis dependent on the media type ([<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc2046\" title=\"Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types\">RFC2046</a></cite>]) of the resource, i.e.,\non the result of <a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.4.1 </bdi>Dereferencing the Resource</a>.",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "If the result of <a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.4.1 </bdi>Dereferencing the Resource</a> is an\n<var>output <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var>, and the\n<var>input <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-options\">DID URL dereferencing options</a></var>\ncontain the <code>verificationRelationship</code> option:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "Let <var>verificationRelationship</var> be the value of the\n<code>verificationRelationship</code>\noption."
-            },
-            {
-              "html": "Let <var>verificationMethod</var> be the result of\ndereferencing the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a> from the\n<var>output <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var> according to\nthe rules of the media type of the <var>DID document</var>."
-            },
-            {
-              "html": "If <var>verificationMethod</var> is not a\n<a data-cite=\"cid#dfn-conforming-verification-method\" href=\"https://www.w3.org/TR/cid-1.0/#dfn-conforming-verification-method\">conforming verification method</a>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"cid#INVALID_VERIFICATION_METHOD\" href=\"https://www.w3.org/TR/cid-1.0/#INVALID_VERIFICATION_METHOD\">INVALID_VERIFICATION_METHOD</a>."
-            },
-            {
-              "html": "If <var>verificationMethod</var> is not associated, either by\nreference (URL) or by value (object), with the\n<a data-cite=\"cid#dfn-verification-relationship\" href=\"https://www.w3.org/TR/cid-1.0/#dfn-verification-relationship\">verification relationship</a> array in the\n<var>output <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var> identified\nby <var>verificationRelationship</var>, an error <em class=\"rfc2119\">MUST</em> be\nraised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"cid#INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD\" href=\"https://www.w3.org/TR/cid-1.0/#INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD\">INVALID_RELATIONSHIP_FOR_VERIFICATION_METHOD</a>."
-            },
-            {
-              "html": "Return the <var>verificationMethod</var>."
-            }
-          ]
-        },
-        {
-          "html": "If the result of <a href=\"https://w3c.github.io/did-resolution/#dereferencing-algorithm-resource\" class=\"sec-ref\"><bdi class=\"secno\">5.4.1 </bdi>Dereferencing the Resource</a> is a\n<var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var>, and the\n<var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains a <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a>:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "If the <var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var> contains a\n<code>fragment</code> component, raise an error."
-            },
-            {
-              "html": "Append the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a> to the\n<var>select <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var>. In other\nwords, the <var>select <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var> \"inherits\" the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-fragments\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-fragments\">DID fragment</a> of the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
-            },
-            {
-              "html": "Return the <var>select <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var>."
-            }
-          ]
-        },
-        {
-          "html": "Otherwise, dereference the DID fragment as defined by the media\ntype ([<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc2046\" title=\"Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types\">RFC2046</a></cite>]) of the resource. For example, if the resource\nis a representation of a DID document with media type\n<code>application/did</code>, then the fragment is treated\naccording to the rules associated with the\n<a href=\"https://www.w3.org/TR/json-ld11/#iana-considerations\">JSON-LD 1.1: application/ld+json media type</a> [JSON-LD11]."
-        }
-      ]
-    },
-    {
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<a href=\"https://w3c.github.io/did-resolution/#prepare-for-resolution-provisional\">Prepare for\nResolution</a>"
-        },
-        {
-          "html": "<a href=\"https://w3c.github.io/did-resolution/#resolve-the-did-provisional\">Resolve the DID</a>"
-        },
-        {
-          "html": "<a href=\"https://w3c.github.io/did-resolution/#determine-handling-strategy-provisional\">Determine Handling\n        Strategy</a>"
-        },
-        {
-          "html": "<a href=\"https://w3c.github.io/did-resolution/#invoke-the-handler-provisional\">Invoke the Handler</a>"
-        },
-        {
-          "html": "<a href=\"https://w3c.github.io/did-resolution/#use-the-handler-result-provisional\">Use the Handler\n            Result</a>"
+          "html": "<a href=\"https://w3c.github.io/did-resolution/#use-the-handler-result\">Use the Handler\n            Result</a>"
         }
       ]
     },
@@ -465,29 +212,29 @@
       ]
     },
     {
-      "html": "Using the result from resolution, execute the following steps\nstarting with the <a href=\"https://w3c.github.io/did-resolution/#services-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-services-step-provisional-1\">Services Step</a> until a handling strategy is\ndetermined. End processing as soon as a strategy is set.",
+      "html": "Using the result from resolution, execute the following steps\nstarting with the <a href=\"https://w3c.github.io/did-resolution/#services-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-services-step-1\">Services Step</a> until a handling strategy is\ndetermined. End processing as soon as a strategy is set.",
       "rationale": "query",
       "steps": [
         {
-          "html": "<dfn id=\"services-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Services Step</dfn> \n              <p>\nIf <code>service</code> is present as a DID query Parameter,\nfirst check whether multiple service parameters are present in the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If there are, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_service_parameters\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_service_parameters-1\">DEREFERENCING_ERROR_MULTIPLE_SERVICE_PARAMETERS</a> and continue to \nthe <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-1\">Default DID Document step</a>. If there is just\none service parameter, use the <a href=\"https://w3c.github.io/did-resolution/#service-selection-algorithm-provisional\">service\nselection algorithm</a> to select the appropriate service\nobject. Then, if there is no matching service object, raise an\nerror <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_service_not_found\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_service_not_found-1\">DEREFERENCING_ERROR_SERVICE_NOT_FOUND</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-2\">Default DID Document Step</a>. If\nthe selected object's service type has defined a handling\nstrategy, set the strategy to that. If the service type does not\ndefine a handling strategy, set strategy to the <a href=\"https://w3c.github.io/did-resolution/#default-service-handler-provisional\">Default\nService Handler</a> Strategy. Otherwise, continue with the\n<a href=\"https://w3c.github.io/did-resolution/#pathhandlers-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-pathhandlers-step-provisional-1\">PathHandlers Step</a>. \n              </p>"
+          "html": "<dfn id=\"services-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Services Step</dfn> \n              <p>\nIf <code>service</code> is present as a DID query Parameter,\nfirst check whether multiple service parameters are present in the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If there are, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_service_parameters\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_service_parameters-1\">DEREFERENCING_ERROR_MULTIPLE_SERVICE_PARAMETERS</a> and continue to \nthe <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-1\">Default DID Document step</a>. If there is just\none service parameter, use the <a href=\"https://w3c.github.io/did-resolution/#service-selection-algorithm\">service\nselection algorithm</a> to select the appropriate service\nobject. Then, if there is no matching service object, raise an\nerror <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_service_not_found\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_service_not_found-1\">DEREFERENCING_ERROR_SERVICE_NOT_FOUND</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-2\">Default DID Document Step</a>. If\nthe selected object's service type has defined a handling\nstrategy, set the strategy to that. If the service type does not\ndefine a handling strategy, set strategy to the <a href=\"https://w3c.github.io/did-resolution/#default-service-handler\">Default\nService Handler</a> Strategy. Otherwise, continue with the\n<a href=\"https://w3c.github.io/did-resolution/#pathhandlers-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-pathhandlers-step-1\">PathHandlers Step</a>. \n              </p>"
         },
         {
-          "html": "<dfn id=\"pathhandlers-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">PathHandlers Step</dfn>\n              <p>\nIf the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a> contains a non-empty path part, then use\nthe <a href=\"https://w3c.github.io/did-resolution/#pathHandler-path-matching-algorithm-provisional\">PathHandler\nPath Matching Algorithm</a> to select a path handler object. If\nno path handler objects are selected, continue to the <a href=\"https://w3c.github.io/did-resolution/#document-properties-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-document-properties-step-provisional-1\">Document Properties step</a>. If there are multiple handler objects selected,\nraise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_matching_path_handlers\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_matching_path_handlers-1\">DEREFERENCING_ERROR_MULTIPLE_MATCHING_PATH_HANDLERS</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-3\">Default DID Document Step</a>. If the sole selected path handling object has a\nsecondary type that defines a handler strategy, set the strategy\nto that strategy. If it doesn't, raise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_path_handler_handler_not_defined\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_path_handler_handler_not_defined-1\">DEREFERENCING_ERROR_PATH_HANDLER_HANDLER_NOT_DEFINED</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-4\">Default DID Document Step</a>. \n              </p>"
+          "html": "<dfn id=\"pathhandlers-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">PathHandlers Step</dfn>\n              <p>\nIf the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a> contains a non-empty path part, then use\nthe <a href=\"https://w3c.github.io/did-resolution/#pathHandler-path-matching-algorithm\">PathHandler\nPath Matching Algorithm</a> to select a path handler object. If\nno path handler objects are selected, continue to the <a href=\"https://w3c.github.io/did-resolution/#document-properties-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-document-properties-step-1\">Document Properties step</a>. If there are multiple handler objects selected,\nraise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_matching_path_handlers\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_matching_path_handlers-1\">DEREFERENCING_ERROR_MULTIPLE_MATCHING_PATH_HANDLERS</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-3\">Default DID Document Step</a>. If the sole selected path handling object has a\nsecondary type that defines a handler strategy, set the strategy\nto that strategy. If it doesn't, raise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_path_handler_handler_not_defined\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_path_handler_handler_not_defined-1\">DEREFERENCING_ERROR_PATH_HANDLER_HANDLER_NOT_DEFINED</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-4\">Default DID Document Step</a>. \n              </p>"
         },
         {
-          "html": "<dfn id=\"document-properties-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Document Properties Step</dfn>\n              <p>\nIf the DID document contains any properties known to define a\nhandler strategy, check whether any of those properties\napply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If not, continue with the\n<a href=\"https://w3c.github.io/did-resolution/#method-specific-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-method-specific-step-provisional-1\">Method-Specific Step</a>. If the DID document\ncontains multiple properties that apply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>,\nraise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_document_properties\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_document_properties-1\">DEREFERENCING_ERROR_MULTIPLE_DOCUMENT_PROPERTIES</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-5\">Default DID Document\nStep</a>. If the DID document contains a single\nproperty with a known handler strategy that applies to the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>, set the strategy to the strategy defined\nby that property. Otherwise, continue to the\n<a href=\"https://w3c.github.io/did-resolution/#method-specific-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-method-specific-step-provisional-2\">Method-Specific Step</a>.\n              </p>"
+          "html": "<dfn id=\"document-properties-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Document Properties Step</dfn>\n              <p>\nIf the DID document contains any properties known to define a\nhandler strategy, check whether any of those properties\napply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If not, continue with the\n<a href=\"https://w3c.github.io/did-resolution/#method-specific-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-method-specific-step-1\">Method-Specific Step</a>. If the DID document\ncontains multiple properties that apply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>,\nraise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_document_properties\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_document_properties-1\">DEREFERENCING_ERROR_MULTIPLE_DOCUMENT_PROPERTIES</a> and continue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-5\">Default DID Document\nStep</a>. If the DID document contains a single\nproperty with a known handler strategy that applies to the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>, set the strategy to the strategy defined\nby that property. Otherwise, continue to the\n<a href=\"https://w3c.github.io/did-resolution/#method-specific-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-method-specific-step-2\">Method-Specific Step</a>.\n              </p>"
         },
         {
-          "html": "<dfn id=\"method-specific-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Method-Specific Step</dfn>\n              <p>\nIf the DID method defines a method-specific handler strategy,\ncheck whether that handler applies to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If\nit does, set the handler strategy to that specified by the DID\nmethod. If there is no applicable method-specific handler\nstrategy, continue with the <a href=\"https://w3c.github.io/did-resolution/#query-parameters-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-query-parameters-step-provisional-1\">Query Parameters Step</a>. \n              </p>"
+          "html": "<dfn id=\"method-specific-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Method-Specific Step</dfn>\n              <p>\nIf the DID method defines a method-specific handler strategy,\ncheck whether that handler applies to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If\nit does, set the handler strategy to that specified by the DID\nmethod. If there is no applicable method-specific handler\nstrategy, continue with the <a href=\"https://w3c.github.io/did-resolution/#query-parameters-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-query-parameters-step-1\">Query Parameters Step</a>. \n              </p>"
         },
         {
-          "html": "<dfn id=\"query-parameters-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Query Parameters Step</dfn>\n              <p>\nIf there are query parameters that require a specific handling strategy, check\nto see if there are more than one. If there are, then raise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_query_parameters\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_query_parameters-1\">DEREFERENCING_ERROR_MULTIPLE_QUERY_PARAMETERS</a> and\ncontinue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-6\">Default DID Document Step</a>. If there is only one such\nquery parameter, set the strategy to that defined by the query parameter\nspecification. Otherwise, continue with the <a href=\"https://w3c.github.io/did-resolution/#metadata-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-metadata-step-provisional-1\">Metadata Step</a>. \n</p>\n<p class=\"NOTE\">Not all query parameters will change the handling strategy. For\nexample, <code>versionTime</code> and <code>versionId</code> only change the resolution result, but\ndo not impact the dereferencing step.</p>"
+          "html": "<dfn id=\"query-parameters-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Query Parameters Step</dfn>\n              <p>\nIf there are query parameters that require a specific handling strategy, check\nto see if there are more than one. If there are, then raise an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_query_parameters\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_query_parameters-1\">DEREFERENCING_ERROR_MULTIPLE_QUERY_PARAMETERS</a> and\ncontinue to the <a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-6\">Default DID Document Step</a>. If there is only one such\nquery parameter, set the strategy to that defined by the query parameter\nspecification. Otherwise, continue with the <a href=\"https://w3c.github.io/did-resolution/#metadata-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-metadata-step-1\">Metadata Step</a>. \n</p>\n<p class=\"NOTE\">Not all query parameters will change the handling strategy. For\nexample, <code>versionTime</code> and <code>versionId</code> only change the resolution result, but\ndo not impact the dereferencing step.</p>"
         },
         {
-          "html": "<dfn id=\"metadata-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Metadata Step</dfn> \n              <p>\nIf either the DID resolution metadata or DID document metadata contain any\nproperties known to define a handler strategy, check to see if any of those\nproperties apply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If there is only one such property, set\nthe strategy to the strategy defined by that property. If there are multiple\napplicable properties, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_metadata_properties\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_metadata_properties-1\">DEREFERENCING_ERROR_MULTIPLE_METADATA_PROPERTIES</a> and continue to the\n<a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-7\">Default DID Document Step</a>. Otherwise, continue to\n<a href=\"https://w3c.github.io/did-resolution/#default-did-document-step-provisional\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-provisional-8\">Default DID Document Step</a>.\n              </p>"
+          "html": "<dfn id=\"metadata-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Metadata Step</dfn> \n              <p>\nIf either the DID resolution metadata or DID document metadata contain any\nproperties known to define a handler strategy, check to see if any of those\nproperties apply to the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>. If there is only one such property, set\nthe strategy to the strategy defined by that property. If there are multiple\napplicable properties, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_metadata_properties\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_metadata_properties-1\">DEREFERENCING_ERROR_MULTIPLE_METADATA_PROPERTIES</a> and continue to the\n<a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-7\">Default DID Document Step</a>. Otherwise, continue to\n<a href=\"https://w3c.github.io/did-resolution/#default-did-document-step\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-default-did-document-step-8\">Default DID Document Step</a>.\n              </p>"
         },
         {
-          "html": "<dfn id=\"default-did-document-step-provisional\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Default DID Document Step</dfn>\nIf no other handler strategy has been determined, set the \nstrategy to <a href=\"https://w3c.github.io/did-resolution/#return-did-document-dereferencing-algorithm-provisional\">Return DID Document</a>."
+          "html": "<dfn id=\"default-did-document-step\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Default DID Document Step</dfn>\nIf no other handler strategy has been determined, set the \nstrategy to <a href=\"https://w3c.github.io/did-resolution/#return-did-document-dereferencing-algorithm\">Return DID Document</a>."
         }
       ]
     },
@@ -513,7 +260,7 @@
           "html": "If more than one service matches, stop further processing and raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_matching_services\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_matching_services-1\">DEREFERENCING_ERROR_MULTIPLE_MATCHING_SERVICES</a>;\nno service is selected."
         },
         {
-          "html": "If a single service matches, that service is selected. Continue with the <a href=\"https://w3c.github.io/did-resolution/#services-step-provisional\" id=\"ref-for-services-step-provisional-2\">Services Step</a>."
+          "html": "If a single service matches, that service is selected. Continue with the <a href=\"https://w3c.github.io/did-resolution/#services-step\" id=\"ref-for-services-step-2\">Services Step</a>."
         }
       ]
     },
@@ -565,7 +312,7 @@
               "html": "Append the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-decentralized-identifiers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> to\nthe <var>request HTTP(S) URL</var>."
             },
             {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-resolution</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID Resolution Result</a>, OR"
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-resolution</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
             },
             {
               "html": "set the <code>Accept</code> <var>HTTP request header</var> to\nthe value of the <b>accept</b> <var>resolution option</var> to\nrequest only the <b>didDocument</b> value of the result."
@@ -580,7 +327,7 @@
               "html": "Append the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> to\nthe <var>request HTTP(S) URL</var>."
             },
             {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-url-dereferencing</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">10. </bdi>DID URL Dereferencing Result</a>, OR"
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-url-dereferencing</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>, OR"
             },
             {
               "html": "set the <code>Accept</code> <var>HTTP request header</var> to\nthe value of the <b>accept</b>\n<var>dereferencing option</var> to request only the\n<b>contentStream</b> value of the result."
@@ -647,7 +394,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID Resolution Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function."
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function."
                 }
               ]
             },
@@ -677,7 +424,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found-0\">DID URL dereferencing result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">10. </bdi>DID URL Dereferencing Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function."
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found-0\">DID URL dereferencing result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function."
                 }
               ]
             },
@@ -704,7 +451,7 @@
                   "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>200</code>."
                 },
                 {
-                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code>\n<var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value\nof the <b>contentType</b> metadata property in the\n<b>dereferencingMetadata</b> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-metadata\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>DID URL Dereferencing Metadata</a>)."
+                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code>\n<var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value\nof the <b>contentType</b> metadata property in the\n<b>dereferencingMetadata</b> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-metadata\" class=\"respec-offending-element\" title=\"No matching id in document: did-url-dereferencing-metadata.\" id=\"respec-offender-no-matching-id-in-document-did-url-dereferencing-metadata\">#did-url-dereferencing-metadata</a>)."
                 },
                 {
                   "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the\n<b>contentStream</b> that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function, in the\nrepresentation corresponding to the\n<code>Content-Type</code> <var>HTTP response header</var>."
