@@ -411,7 +411,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>data</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata②\">AudioData</a></code>, initialized as follows:",
+                  "html": "Let <var>data</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③\">AudioData</a></code>, initialized as follows:",
                   "rationale": "assign",
                   "steps": [
                     {
@@ -427,7 +427,7 @@
                       "html": "<p>Assign <var>resourceReference</var> to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot\">[[resource reference]]</a></code>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>timestamp</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-timestamp-slot\" id=\"ref-for-dom-encodedaudiochunk-timestamp-slot\">[[timestamp]]</a></code> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①\">EncodedAudioChunk</a></code> associated with <var>output</var>.</p>"
+                      "html": "<p>Let <var>timestamp</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-timestamp-slot\" id=\"ref-for-dom-encodedaudiochunk-timestamp-slot\">[[timestamp]]</a></code> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk②\">EncodedAudioChunk</a></code> associated with <var>output</var>.</p>"
                     },
                     {
                       "html": "If <var>discardedFrames</var> is greater than 0:",
@@ -893,7 +893,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>timestamp</var> and <var>duration</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunk-timestamp\" id=\"ref-for-dom-encodedvideochunk-timestamp\">timestamp</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunk-duration\" id=\"ref-for-dom-encodedvideochunk-duration\">duration</a></code>\nfrom the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk②\">EncodedVideoChunk</a></code> associated with <var>output</var>.</p>"
+              "html": "<p>Let <var>timestamp</var> and <var>duration</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunk-timestamp\" id=\"ref-for-dom-encodedvideochunk-timestamp\">timestamp</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunk-duration\" id=\"ref-for-dom-encodedvideochunk-duration\">duration</a></code>\nfrom the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk③\">EncodedVideoChunk</a></code> associated with <var>output</var>.</p>"
             },
             {
               "html": "<p>Let <var>displayAspectWidth</var> and <var>displayAspectHeight</var> be undefined.</p>"
@@ -1352,7 +1352,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk④\">EncodedAudioChunk</a></code> constructed with\n<var>chunkInit</var>.</p>"
+              "html": "<p>Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk⑤\">EncodedAudioChunk</a></code> constructed with\n<var>chunkInit</var>.</p>"
             },
             {
               "html": "<p>Let <var>chunkMetadata</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-encodedaudiochunkmetadata\" id=\"ref-for-dictdef-encodedaudiochunkmetadata①\">EncodedAudioChunkMetadata</a></code>.</p>"
@@ -1836,15 +1836,15 @@
                   "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-type\" id=\"ref-for-dom-encodedvideochunkinit-type\">type</a></code> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#enumdef-encodedvideochunktype\" id=\"ref-for-enumdef-encodedvideochunktype\">EncodedVideoChunkType</a></code> of <var>output</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-timestamp\" id=\"ref-for-dom-encodedvideochunkinit-timestamp\">timestamp</a></code> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot\">[[timestamp]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥\">VideoFrame</a></code>\nassociated with <var>output</var>.</p>"
+                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-timestamp\" id=\"ref-for-dom-encodedvideochunkinit-timestamp\">timestamp</a></code> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-timestamp-slot\" id=\"ref-for-dom-videoframe-timestamp-slot\">[[timestamp]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑦\">VideoFrame</a></code>\nassociated with <var>output</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-duration\" id=\"ref-for-dom-encodedvideochunkinit-duration\">duration</a></code> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot\">[[duration]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑦\">VideoFrame</a></code> associated\nwith <var>output</var>.</p>"
+                  "html": "<p>Let <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedvideochunkinit-duration\" id=\"ref-for-dom-encodedvideochunkinit-duration\">duration</a></code> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-duration-slot\" id=\"ref-for-dom-videoframe-duration-slot\">[[duration]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑧\">VideoFrame</a></code> associated\nwith <var>output</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk⑤\">EncodedVideoChunk</a></code> constructed with\n<var>chunkInit</var>.</p>"
+              "html": "<p>Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk⑥\">EncodedVideoChunk</a></code> constructed with\n<var>chunkInit</var>.</p>"
             },
             {
               "html": "<p>Let <var>chunkMetadata</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkmetadata\" id=\"ref-for-dictdef-encodedvideochunkmetadata①\">EncodedVideoChunkMetadata</a></code>.</p>"
@@ -1872,10 +1872,10 @@
                   "html": "<p>Assign <code>encoderConfig.displayHeight</code> to\n<code>outputConfig.displayAspectHeight</code>.</p>"
                 },
                 {
-                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot③\">[[rotation]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑧\">VideoFrame</a></code>\nassociated with <var>output</var> to <code>outputConfig.rotation</code>.</p>"
+                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-rotation-slot\" id=\"ref-for-dom-videoframe-rotation-slot③\">[[rotation]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑨\">VideoFrame</a></code>\nassociated with <var>output</var> to <code>outputConfig.rotation</code>.</p>"
                 },
                 {
-                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot③\">[[flip]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑨\">VideoFrame</a></code>\nassociated with <var>output</var> to <code>outputConfig.flip</code>.</p>"
+                  "html": "<p>Assign <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-flip-slot\" id=\"ref-for-dom-videoframe-flip-slot③\">[[flip]]</a></code> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe①⓪\">VideoFrame</a></code>\nassociated with <var>output</var> to <code>outputConfig.flip</code>.</p>"
                 },
                 {
                   "html": "<p>Assign the remaining keys of <code>outputConfig</code> as determined by\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-codec-implementation-slot\" id=\"ref-for-dom-videoencoder-codec-implementation-slot①①\">[[codec implementation]]</a></code>. The User Agent\n<em class=\"rfc2119\">MUST</em> ensure that the configuration is\ncompletely described such that <var>outputConfig</var> could be used to\ncorrectly decode <var>output</var>.</p>"
@@ -2169,7 +2169,7 @@
           ]
         },
         {
-          "html": "Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk⑦\">EncodedAudioChunk</a></code> object, initialized as follows",
+          "html": "Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk⑧\">EncodedAudioChunk</a></code> object, initialized as follows",
           "rationale": "assign",
           "steps": [
             {
@@ -2225,7 +2225,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-byte-length-slot\" id=\"ref-for-dom-encodedaudiochunk-byte-length-slot②\">[[byte length]]</a></code> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk⑧\">EncodedAudioChunk</a></code> is\ngreater than in <var>destination</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⓪\">TypeError</a></code>.</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-byte-length-slot\" id=\"ref-for-dom-encodedaudiochunk-byte-length-slot②\">[[byte length]]</a></code> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk⑨\">EncodedAudioChunk</a></code> is\ngreater than in <var>destination</var>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①⓪\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Copy the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-encodedaudiochunk-internal-data-slot\" id=\"ref-for-dom-encodedaudiochunk-internal-data-slot③\">[[internal data]]</a></code> into <var>destination</var>.</p>"
@@ -2240,7 +2240,7 @@
           "html": "<p>If <var>forStorage</var> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror②\">DataCloneError</a></code>.</p>"
         },
         {
-          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①⓪\">EncodedAudioChunk</a></code> internal slot in <var>value</var>, assign the value\nof each internal slot to a field in <var>serialized</var> with the same name as\nthe internal slot.</p>"
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①①\">EncodedAudioChunk</a></code> internal slot in <var>value</var>, assign the value\nof each internal slot to a field in <var>serialized</var> with the same name as\nthe internal slot.</p>"
         }
       ]
     },
@@ -2249,7 +2249,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named field\nto the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①②\">EncodedAudioChunk</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named field\nto the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedaudiochunk\" id=\"ref-for-encodedaudiochunk①③\">EncodedAudioChunk</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -2270,7 +2270,7 @@
           ]
         },
         {
-          "html": "Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk①⑦\">EncodedVideoChunk</a></code> object, initialized as follows",
+          "html": "Let <var>chunk</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk①⑧\">EncodedVideoChunk</a></code> object, initialized as follows",
           "rationale": "assign",
           "steps": [
             {
@@ -2341,7 +2341,7 @@
           "html": "<p>If <var>forStorage</var> is <code>true</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror⑤\">DataCloneError</a></code>.</p>"
         },
         {
-          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk①⑨\">EncodedVideoChunk</a></code> internal slot in <var>value</var>, assign the value\nof each internal slot to a field in <var>serialized</var> with the same name as\nthe internal slot.</p>"
+          "html": "<p>For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk②⓪\">EncodedVideoChunk</a></code> internal slot in <var>value</var>, assign the value\nof each internal slot to a field in <var>serialized</var> with the same name as\nthe internal slot.</p>"
         }
       ]
     },
@@ -2350,12 +2350,12 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named field\nto the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk②①\">EncodedVideoChunk</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named field\nto the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#encodedvideochunk\" id=\"ref-for-encodedvideochunk②②\">EncodedVideoChunk</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
     {
-      "html": "Serializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①①\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑦\">VideoFrame</a></code> effectively clones (as in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-clone\" id=\"ref-for-dom-videoframe-clone①\">clone()</a></code>) the source object, resulting in two objects that\nreference the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①①\">media resource</a>. Authors <em class=\"rfc2119\">MAY</em> use\nthis facility to clone an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①②\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑧\">VideoFrame</a></code> to another realm\nwithout copying the underlying <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①②\">media resource</a>.",
+      "html": "Serializing an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①②\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑧\">VideoFrame</a></code> effectively clones (as in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-clone\" id=\"ref-for-dom-videoframe-clone①\">clone()</a></code>) the source object, resulting in two objects that\nreference the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①①\">media resource</a>. Authors <em class=\"rfc2119\">MAY</em> use\nthis facility to clone an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata①③\">AudioData</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe②⑨\">VideoFrame</a></code> to another realm\nwithout copying the underlying <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①②\">media resource</a>.",
       "rationale": "if",
       "steps": [
         {
@@ -2374,7 +2374,7 @@
           ]
         },
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata②⓪\">AudioData</a></code> object, initialized as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata②①\">AudioData</a></code> object, initialized as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -2587,7 +2587,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata②⑧\">AudioData</a></code> initialized as follows:",
+          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata②⑨\">AudioData</a></code> initialized as follows:",
           "rationale": "let",
           "steps": [
             {
@@ -2684,7 +2684,7 @@
           "html": "<p>If <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached①④\">[[Detached]]</a></code> is <code>true</code>, throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror⑧\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⑦\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③⓪\">AudioData</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③①\">AudioData</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-audiodata\" id=\"ref-for-close-audiodata①\">Close AudioData</a> algorithm with <var>value</var>.</p>"
@@ -2696,7 +2696,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③②\">AudioData</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③③\">AudioData</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -2720,7 +2720,7 @@
           "html": "<p>Assign <var>newReference</var> to |serialized.resource reference|.</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③④\">AudioData</a></code> internal slots (excluding\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot⑧\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③⑤\">AudioData</a></code> internal slots (excluding\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodata-resource-reference-slot\" id=\"ref-for-dom-audiodata-resource-reference-slot⑧\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -2729,7 +2729,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③⑥\">AudioData</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#audiodata\" id=\"ref-for-audiodata③⑦\">AudioData</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -2746,10 +2746,10 @@
           "html": "<p>If <var>image</var> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/canvas.html#the-image-argument-is-not-origin-clean\" id=\"ref-for-the-image-argument-is-not-origin-clean\">is not origin-clean</a>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③⓪\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④①\">VideoFrame</a></code>.</p>"
+          "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⓪\">VideoFrame</a></code>.</p>"
         },
         {
-          "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/embedded.html#InterfaceSVGImageElement\" id=\"ref-for-InterfaceSVGImageElement\">SVGImageElement</a></code>",
+          "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/embedded.html#svgimageelement\" id=\"ref-for-svgimageelement\">SVGImageElement</a></code>",
           "rationale": "if",
           "steps": [
             {
@@ -2783,7 +2783,7 @@
                   "html": "<p>If <var>image</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-networkstate\" id=\"ref-for-dom-media-networkstate\">networkState</a></code> attribute is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/media.html#dom-media-network_empty\" id=\"ref-for-dom-media-network_empty\">NETWORK_EMPTY</a></code>, then throw an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③②\">DOMException</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④③\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current playback position</a>.</p>"
+                  "html": "<p>Let <var>currentPlaybackFrame</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④②\">VideoFrame</a></code> at the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#current-playback-position\" id=\"ref-for-current-playback-position\">current playback position</a>.</p>"
                 },
                 {
                   "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframeinit-metadata\" id=\"ref-for-dom-videoframeinit-metadata\">metadata</a></code> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exist</a> in <var>init</var>,\nassign <var>currentPlaybackFrame</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-metadata-slot\" id=\"ref-for-dom-videoframe-metadata-slot\">[[metadata]]</a></code> to it.</p>"
@@ -2812,7 +2812,7 @@
               ]
             },
             {
-              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④④\">VideoFrame</a></code>",
+              "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④③\">VideoFrame</a></code>",
               "rationale": "run",
               "steps": [
                 {
@@ -2918,7 +2918,7 @@
           "html": "<p>Let <var>resourceVisibleTop</var> be the top offset for the visible rectangle of\n<var>resource</var>.</p>"
         },
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④⑤\">VideoFrame</a></code> object initialized as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④④\">VideoFrame</a></code> object initialized as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3250,7 +3250,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤④\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤①\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -3600,7 +3600,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑤\">VideoFrame</a></code> initialized as follows:",
+          "html": "Let <var>clone</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤②\">VideoFrame</a></code> initialized as follows:",
           "rationale": "let",
           "steps": [
             {
@@ -3984,7 +3984,7 @@
           "html": "<p>This algorithm <em class=\"rfc2119\">MUST</em> be called only if <var>format</var>\nis equal to one of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgba\" id=\"ref-for-dom-videopixelformat-rgba③\">RGBA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-rgbx\" id=\"ref-for-dom-videopixelformat-rgbx②\">RGBX</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgra\" id=\"ref-for-dom-videopixelformat-bgra②\">BGRA</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videopixelformat-bgrx\" id=\"ref-for-dom-videopixelformat-bgrx②\">BGRX</a></code>.</p>"
         },
         {
-          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑥\">VideoFrame</a></code>, constructed as follows:",
+          "html": "Let <var>convertedFrame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤③\">VideoFrame</a></code>, constructed as follows:",
           "rationale": "assign",
           "steps": [
             {
@@ -4046,7 +4046,7 @@
           "html": "<p>If <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached②⑧\">[[Detached]]</a></code> is <code>true</code>, throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①③\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④①\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑨\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑥\">VideoFrame</a></code> internal slots in <var>value</var>, assign the value of\neach internal slot to a field in <var>dataHolder</var> with the same name as the\ninternal slot.</p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe①\">Close VideoFrame</a> algorithm with <var>value</var>.</p>"
@@ -4058,7 +4058,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥①\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>dataHolder</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤⑧\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -4082,7 +4082,7 @@
           "html": "<p>Assign <var>newReference</var> to |serialized.resource reference|.</p>"
         },
         {
-          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥③\">VideoFrame</a></code> internal slots (excluding\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①③\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
+          "html": "<p>For all remaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⓪\">VideoFrame</a></code> internal slots (excluding\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot\" id=\"ref-for-dom-videoframe-resource-reference-slot①③\">[[resource reference]]</a></code>) in <var>value</var>, assign the value of\neach internal slot to a field in <var>serialized</var> with the same name as the\ninternal slot.</p>"
         }
       ]
     },
@@ -4091,7 +4091,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥⑤\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
+          "html": "<p>For all named fields in <var>serialized</var>, assign the value of each named\nfield to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥②\">VideoFrame</a></code> internal slot in <var>value</var> with the same name\nas the named field.</p>"
         }
       ]
     },
@@ -4728,7 +4728,7 @@
               "html": "<p>Let <var>duration</var> be the presentation duration for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not have a\nduration, assign <code>null</code> to <var>duration</var>.</p>"
             },
             {
-              "html": "Let <var>timestamp</var> be the presentation timestamp for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not have a\ntimestamp:",
+              "html": "Let <var>timestamp</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#presentation-timestamp\" id=\"ref-for-presentation-timestamp⑥\">presentation timestamp</a> for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not have a\ntimestamp:",
               "rationale": "if",
               "steps": [
                 {
@@ -4846,7 +4846,7 @@
           "html": "<p>Let <var>duration</var> be the presentation duration for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not describe a\nduration, assign <code>null</code> to <var>duration</var>.</p>"
         },
         {
-          "html": "Let <var>timestamp</var> be the presentation timestamp for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not have a\ntimestamp:",
+          "html": "Let <var>timestamp</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#presentation-timestamp\" id=\"ref-for-presentation-timestamp⑦\">presentation timestamp</a> for <var>output</var> as\ndescribed by <var>encodedFrame</var>. If <var>encodedFrame</var> does not have a\ntimestamp:",
           "rationale": "if",
           "steps": [
             {
