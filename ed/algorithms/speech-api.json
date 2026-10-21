@@ -37,7 +37,7 @@
           "html": "<p>Let <var>requestMicrophonePermission</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#start-session-algorithm\" id=\"ref-for-start-session-algorithm①\">start session algorithm</a> with <var>requestMicrophonePermission</var>.</p>"
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-speech-api/#start-session-algorithm\" id=\"ref-for-start-session-algorithm①\">start session algorithm</a> with <var>requestMicrophonePermission</var> and <var>audioTrack</var>.</p>"
         }
       ]
     },
@@ -185,7 +185,7 @@
     {
       "name": "start session algorithm",
       "href": "https://webaudio.github.io/web-speech-api/#start-session-algorithm",
-      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with\n<var>requestMicrophonePermission</var> is invoked, the user agent MUST run the\nfollowing steps:",
+      "html": "When the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"start-session-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start session algorithm</dfn> with\n<var>requestMicrophonePermission</var> and <var>audioTrack</var> (if provided) is invoked, the user agent MUST run the\nfollowing steps:",
       "rationale": "if",
       "steps": [
         {
@@ -238,6 +238,9 @@
               "html": "<p>Abort these steps.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Begin consuming audio from the audio source (the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack④\">MediaStreamTrack</a></code> if one was provided, or the microphone otherwise), buffering frames if the recognition service is not yet ready.\nThis establishes the recognition session’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"session-audio-timeline\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">session audio timeline</dfn>, which measures elapsed audio duration in seconds starting at <code>0.0</code> at the first audio frame consumed and advancing with the duration of each subsequent audio frame consumed.</p>"
         },
         {
           "html": "<p>Once the system is successfully listening to the recognition, queue a task to\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://webaudio.github.io/web-speech-api/#eventdef-speechrecognition-start\" id=\"ref-for-eventdef-speechrecognition-start\">start</a> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
