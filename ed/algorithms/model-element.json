@@ -142,6 +142,36 @@
           "html": "<p>Apply subsequent orbit rotations about this fitted center, preserving its position.\nThe enclosing sphere then remains within the viewport at any orientation.</p>"
         }
       ]
+    },
+    {
+      "name": "model-adopting-steps",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-adopt-ext\" id=\"ref-for-concept-node-adopt-ext\">adopting steps</a> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③②\">model</a></code> element, given <var>node</var> and\n<var>oldDocument</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-resource-loading-is-permitted\" id=\"ref-for-model-resource-loading-is-permitted②\">model resource loading is permitted</a> is false for <var>node</var>,\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#block-model-resource-loading\" id=\"ref-for-block-model-resource-loading①\">block model resource loading</a> for <var>node</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "block-model-resource-loading",
+      "href": "https://immersive-web.github.io/model-element/#block-model-resource-loading",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"block-model-resource-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">block model resource loading</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③③\">model</a></code> element\n<var>element</var>, the user agent MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Abort any pending model or environment-map fetch and decoding operations for\n<var>element</var>, and MUST NOT start new ones while loading remains blocked.</p>"
+        },
+        {
+          "html": "<p>Stop rendering <var>element</var>’s model and environment map, including any\npreviously loaded content.</p>"
+        },
+        {
+          "html": "<p>Reject any unsettled <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready\" id=\"ref-for-dom-htmlmodelelement-ready①\">ready</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-environmentmapready\" id=\"ref-for-dom-htmlmodelelement-environmentmapready①\">environmentMapReady</a></code> promises of <var>element</var>, if they\nexist, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Make <var>element</var> represent its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#fallback-content\" id=\"ref-for-fallback-content①\">fallback content</a> instead of\nthe model.</p>"
+        }
+      ]
     }
   ]
 }

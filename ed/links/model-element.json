@@ -8,6 +8,9 @@
       "http://accessibility.linuxfoundation.org/a11yspecs/ia2/docs/html/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.apple.com/reference/appkit/nsaccessibility": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-box-3/": {
         "specShortname": "css-box-3"
       },
@@ -34,6 +37,9 @@
       },
       "https://drafts.csswg.org/selectors/": {
         "specShortname": "selectors-4"
+      },
+      "https://fetch.spec.whatwg.org/": {
+        "specShortname": "fetch"
       },
       "https://fullscreen.spec.whatwg.org/": {
         "specShortname": "fullscreen"
@@ -130,6 +136,12 @@
       "https://w3c.github.io/html-aria/": {
         "specShortname": "html-aria"
       },
+      "https://w3c.github.io/webappsec-mixed-content/": {
+        "specShortname": "mixed-content"
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "specShortname": "secure-contexts"
+      },
       "https://webidl.spec.whatwg.org/": {
         "specShortname": "webidl"
       },
@@ -140,6 +152,14 @@
       }
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-node-document",
+          "concept-node-adopt-ext",
+          "concept-node-adopt"
+        ],
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-box-3/": {
         "anchors": [
           "content-box"
@@ -250,6 +270,13 @@
           "valid-non-empty-url-potentially-surrounded-by-spaces"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "secure-context",
+          "relevant-settings-object",
+          "dom-issecurecontext"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "list",
@@ -262,11 +289,13 @@
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
+          "SecureContext",
           "idl-promise",
           "idl-USVString",
           "idl-undefined",
           "idl-DOMString",
-          "new"
+          "new",
+          "securityerror"
         ],
         "specShortname": "webidl"
       }
