@@ -1,5 +1,5 @@
 // Source: The <model> element (https://immersive-web.github.io/model-element/)
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface HTMLModelElement : HTMLElement {
   readonly attribute Promise<HTMLModelElement> ready;
   readonly attribute DOMPointReadOnly boundingBoxCenter;
