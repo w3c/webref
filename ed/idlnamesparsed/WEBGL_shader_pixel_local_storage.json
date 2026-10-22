@@ -1,0 +1,14 @@
+{
+  "name": "WEBGL_shader_pixel_local_storage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGL WEBGL_shader_pixel_local_storage Extension Specification",
+      "url": "https://registry.khronos.org/webgl/extensions/WEBGL_shader_pixel_local_storage/"
+    },
+    "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_shader_pixel_local_storage {\n  const GLenum MAX_PIXEL_LOCAL_STORAGE_PLANES_WEBGL = 0x96E0;\n  const GLenum MAX_COMBINED_DRAW_BUFFERS_AND_PIXEL_LOCAL_STORAGE_PLANES_WEBGL = 0x96E1;\n  const GLenum PIXEL_LOCAL_STORAGE_ACTIVE_PLANES_WEBGL = 0x96E2;\n  const GLenum LOAD_OP_ZERO_WEBGL = 0x96E3;\n  const GLenum LOAD_OP_CLEAR_WEBGL = 0x96E4;\n  const GLenum LOAD_OP_LOAD_WEBGL = 0x96E5;\n  const GLenum STORE_OP_STORE_WEBGL = 0x96E6;\n  const GLenum PIXEL_LOCAL_INTERNAL_FORMAT_WEBGL = 0x96E7;\n  const GLenum PIXEL_LOCAL_TEXTURE_NAME_WEBGL = 0x96E8;\n  const GLenum PIXEL_LOCAL_TEXTURE_LEVEL_WEBGL = 0x96E9;\n  const GLenum PIXEL_LOCAL_TEXTURE_LAYER_WEBGL = 0x96EA;\n  const GLenum PIXEL_LOCAL_USAGE_WEBGL = 0x96EB;\n  const GLenum PIXEL_LOCAL_CLEAR_VALUE_FLOAT_WEBGL = 0x96EC;\n  const GLenum PIXEL_LOCAL_CLEAR_VALUE_INT_WEBGL = 0x96ED;\n  const GLenum PIXEL_LOCAL_CLEAR_VALUE_UNSIGNED_INT_WEBGL = 0x96EE;\n  const GLenum PIXEL_LOCAL_USAGE_ALWAYS_NONCOHERENT_BIT_WEBGL = 0x1;\n  GLboolean isCoherent();\n  undefined framebufferTexturePixelLocalStorageWEBGL(GLint plane,\n                                                     WebGLTexture? texture,\n                                                     GLint level,\n                                                     GLint layer,\n                                                     GLbitfield usage);\n  undefined framebufferPixelLocalClearValuefvWEBGL(GLint plane,\n                                                   Float32List value,\n                                                   optional unsigned long long srcOffset = 0);\n  undefined framebufferPixelLocalClearValueivWEBGL(GLint plane,\n                                                   Int32List value,\n                                                   optional unsigned long long srcOffset = 0);\n  undefined framebufferPixelLocalClearValueuivWEBGL(GLint plane,\n                                                    Uint32List value,\n                                                    optional unsigned long long srcOffset = 0);\n  undefined beginPixelLocalStorageWEBGL(sequence<GLenum> loadops);\n  undefined endPixelLocalStorageWEBGL(sequence<GLenum> storeops);\n  undefined pixelLocalStorageBarrierWEBGL();\n  any getFramebufferPixelLocalStorageParameterWEBGL(GLint plane, GLenum pname);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

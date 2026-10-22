@@ -1,0 +1,14 @@
+{
+  "name": "EXT_clip_control",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGL EXT_clip_control Extension Specification",
+      "url": "https://registry.khronos.org/webgl/extensions/EXT_clip_control/"
+    },
+    "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_clip_control {\n    const GLenum LOWER_LEFT_EXT = 0x8CA1;\n    const GLenum UPPER_LEFT_EXT = 0x8CA2;\n\n    const GLenum NEGATIVE_ONE_TO_ONE_EXT = 0x935E;\n    const GLenum ZERO_TO_ONE_EXT         = 0x935F;\n\n    const GLenum CLIP_ORIGIN_EXT     = 0x935C;\n    const GLenum CLIP_DEPTH_MODE_EXT = 0x935D;\n\n    undefined clipControlEXT(GLenum origin, GLenum depth);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
