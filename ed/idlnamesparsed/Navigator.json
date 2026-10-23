@@ -583,7 +583,7 @@
           "title": "Cross-Origin Storage",
           "url": "https://wicg.github.io/cross-origin-storage/"
         },
-        "fragment": "interface mixin NavigatorCrossOriginStorage {\n  [SameObject, SecureContext] readonly attribute CrossOriginStorageManager crossOriginStorage;\n};",
+        "fragment": "interface mixin NavigatorCrossOriginStorage {\n  [Exposed=(Window,DedicatedWorker,SharedWorker), SameObject, SecureContext]\n  readonly attribute CrossOriginStorageManager crossOriginStorage;\n};",
         "href": "https://wicg.github.io/cross-origin-storage/#navigatorcrossoriginstorage"
       },
       "extended": [],
