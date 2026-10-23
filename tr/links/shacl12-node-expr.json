@@ -5,17 +5,10 @@
   },
   "links": {
     "rawlinks": {
-      "https://github.com/w3c/data-shapes/tree/gh-pages/shacl12-test-suite": {},
       "https://w3c.github.io/data-shapes/shacl12-cs/": {
         "specShortname": "shacl12-cs"
       },
       "https://w3c.github.io/data-shapes/shacl12-overview/": {},
-      "https://w3c.github.io/data-shapes/shacl12-profiling/": {
-        "specShortname": "shacl12-profiling"
-      },
-      "https://w3c.github.io/data-shapes/shacl12-ui/": {
-        "specShortname": "shacl12-ui"
-      },
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
@@ -30,6 +23,7 @@
           "dfn-node",
           "dfn-datatype",
           "dfn-rdf-term",
+          "dfn-triple-term",
           "dfn-rdf-term-equality",
           "dfn-subject",
           "dfn-predicate",
@@ -77,6 +71,7 @@
           "dfn-shacl-list",
           "dfn-members",
           "dfn-well-formed",
+          "dfn-ill-formed",
           "dfn-deep-copy",
           "conformance",
           "NodeConstraintComponent",
@@ -84,16 +79,25 @@
         ],
         "specShortname": "shacl12-core"
       },
+      "https://www.w3.org/TR/shacl12-inference-rules/": {
+        "specShortname": "shacl12-inference-rules"
+      },
       "https://www.w3.org/TR/shacl12-node-expr/": {
         "specShortname": "shacl12-node-expr"
       },
-      "https://www.w3.org/TR/shacl12-rules/": {},
+      "https://www.w3.org/TR/shacl12-profiling/": {
+        "specShortname": "shacl12-profiling"
+      },
       "https://www.w3.org/TR/shacl12-sparql/": {
         "anchors": [
           "SelectExpression",
-          "sparql-node-expressions"
+          "sparql-node-expressions",
+          "sparql-functions"
         ],
         "specShortname": "shacl12-sparql"
+      },
+      "https://www.w3.org/TR/shacl12-ui/": {
+        "specShortname": "shacl12-ui"
       },
       "https://www.w3.org/TR/sparql12-query/": {
         "anchors": [
@@ -167,6 +171,9 @@
         ],
         "specShortname": "sparql12-query"
       },
+      "https://www.w3.org/TR/sparql12-rl/": {
+        "specShortname": "sparql12-rl"
+      },
       "https://www.w3.org/TR/vocab-data-cube/": {},
       "https://www.w3.org/groups/wg/data-shapes": {},
       "https://www.w3.org/groups/wg/data-shapes/ipr": {},
@@ -179,8 +186,7 @@
       },
       "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
-          "recs-and-notes",
-          "allow-new-features"
+          "recs-and-notes"
         ]
       }
     },
@@ -232,7 +238,8 @@
           "dfn-deep-copy",
           "dfn-node-shape",
           "dfn-conformance-checking",
-          "dfn-constraint"
+          "dfn-constraint",
+          "dfn-ill-formed"
         ],
         "specShortname": "shacl12-core"
       }
