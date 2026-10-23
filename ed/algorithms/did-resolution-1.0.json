@@ -298,7 +298,7 @@
       ]
     },
     {
-      "html": "Using this binding, the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function (see\n<a href=\"https://w3c.github.io/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>) and/or <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function\n(see <a href=\"https://w3c.github.io/did-resolution/#dereferencing\" class=\"sec-ref\"><bdi class=\"secno\">5. </bdi>DID URL Dereferencing</a>) can be executed as follows:",
+      "html": "Using this binding, the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function (see\n<a href=\"https://w3c.github.io/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>) can be executed as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -320,26 +320,11 @@
           ]
         },
         {
-          "html": "For the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "Append the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> to\nthe <var>request HTTP(S) URL</var>."
-            },
-            {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-url-dereferencing</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>, OR"
-            },
-            {
-              "html": "set the <code>Accept</code> <var>HTTP request header</var> to\nthe value of the <b>accept</b>\n<var>dereferencing option</var> to request only the\n<b>contentStream</b> value of the result."
-            }
-          ]
-        },
-        {
           "html": "For the HTTP(S) GET binding:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If any other <var>resolution options</var> or\n<var>dereferencing options</var> than <b>accept</b> are\nprovided:",
+              "html": "If any other <var>resolution options</var> than <b>accept</b> are\nprovided:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -351,7 +336,7 @@
               ]
             },
             {
-              "html": "Execute an HTTP <code>GET</code> request on the\n<var>request HTTP(S) URL</var>. This invokes the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> or\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function at the remote\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolvers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolvers\">DID resolver</a>."
+              "html": "Execute an HTTP <code>GET</code> request on the\n<var>request HTTP(S) URL</var>. This invokes the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function at the remote\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolvers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolvers\">DID resolver</a>."
             }
           ]
         },
@@ -360,7 +345,7 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If any other <var>resolution options</var> or\n<var>dereferencing options</var> than <b>accept</b> are\nprovided:",
+              "html": "If any other <var>resolution options</var> than <b>accept</b> are\nprovided:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -369,15 +354,15 @@
               ]
             },
             {
-              "html": "Execute an HTTP <code>POST</code> request on the\n<var>request HTTP(S) URL</var>. This invokes the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> or\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function at the remote\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolvers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolvers\">DID resolver</a>."
+              "html": "Execute an HTTP <code>POST</code> request on the\n<var>request HTTP(S) URL</var>. This invokes the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function at the remote\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolvers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolvers\">DID resolver</a>."
             }
           ]
         },
         {
-          "html": "If the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> or\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function returns an\n<b>error</b> metadata property in the\n<b>didResolutionMetadata</b> or <b>dereferencingMetadata</b>, then\nthe HTTP response status code <em class=\"rfc2119\">MUST</em> correspond to the\n<code>type</code> property of the <b>error object</b>, according to\nthe following table:\n<table class=\"simple\">\n\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\t\terror <code>type</code> URI\n\t\t\t\t\t\t</th>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\t\tHTTP status code\n\t\t\t\t\t\t</th>\n\t\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID\">https://www.w3.org/ns/did#INVALID_DID</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID_URL\">https://www.w3.org/ns/did#INVALID_DID_URL</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_OPTIONS\">https://www.w3.org/ns/did#INVALID_OPTIONS</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#NOT_FOUND\">https://www.w3.org/ns/did#NOT_FOUND</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>404</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#REPRESENTATION_NOT_SUPPORTED\">https://www.w3.org/ns/did#REPRESENTATION_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>406</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID_DOCUMENT\">https://www.w3.org/ns/did#INVALID_DID_DOCUMENT</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#METHOD_NOT_SUPPORTED\">https://www.w3.org/ns/did#METHOD_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#FEATURE_NOT_SUPPORTED\">https://www.w3.org/ns/did#FEATURE_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INTERNAL_ERROR\">https://www.w3.org/ns/did#INTERNAL_ERROR</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t</tbody>\n</table>\n<p>\nIf the <code>type</code> property of the <b>error object</b> does not appear in\nthe table above, then the HTTP response status code is determined by the\nimplementation.\n</p>"
+          "html": "If the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function returns an\n<b>error</b> metadata property in the\n<b>didResolutionMetadata</b>, then\nthe HTTP response status code <em class=\"rfc2119\">MUST</em> correspond to the\n<code>type</code> property of the <b>error object</b>, according to\nthe following table:\n<table class=\"simple\">\n\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\t\terror <code>type</code> URI\n\t\t\t\t\t\t</th>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\t\tHTTP status code\n\t\t\t\t\t\t</th>\n\t\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID\">https://www.w3.org/ns/did#INVALID_DID</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID_URL\">https://www.w3.org/ns/did#INVALID_DID_URL</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_OPTIONS\">https://www.w3.org/ns/did#INVALID_OPTIONS</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#NOT_FOUND\">https://www.w3.org/ns/did#NOT_FOUND</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>404</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#REPRESENTATION_NOT_SUPPORTED\">https://www.w3.org/ns/did#REPRESENTATION_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>406</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INVALID_DID_DOCUMENT\">https://www.w3.org/ns/did#INVALID_DID_DOCUMENT</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#METHOD_NOT_SUPPORTED\">https://www.w3.org/ns/did#METHOD_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#FEATURE_NOT_SUPPORTED\">https://www.w3.org/ns/did#FEATURE_NOT_SUPPORTED</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code><a href=\"https://www.w3.org/ns/did#INTERNAL_ERROR\">https://www.w3.org/ns/did#INTERNAL_ERROR</a></code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t</tbody>\n</table>\n<p>\nIf the <code>type</code> property of the <b>error object</b> does not appear in\nthe table above, then the HTTP response status code is determined by the\nimplementation.\n</p>"
         },
         {
-          "html": "If the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> or\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function returns a\n<b>deactivated</b> metadata property with the value\n<code>true</code> in the <b>didDocumentMetadata</b> or\n<b>contentMetadata</b>:",
+          "html": "If the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function returns a\n<b>deactivated</b> metadata property with the value\n<code>true</code> in the <b>didDocumentMetadata</b>:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -410,51 +395,6 @@
                 },
                 {
                   "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the\n<b>didDocument</b> that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function, in the\nrepresentation corresponding to the\n<code>Content-Type</code> <var>HTTP response header</var>."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "html": "For the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var>\nis <code>application/did-url-dereferencing</code>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found-0\">DID URL dereferencing result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function."
-                }
-              ]
-            },
-            {
-              "html": "If the function is successful and returns a\n<b>contentStream</b> and a <b>contentType</b> metadata property\nwith the value <code>text/uri-list</code> in the\n<b>dereferencingMetadata</b>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>303</code>."
-                },
-                {
-                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain an\n<code>Location</code> header. The value of this header <em class=\"rfc2119\">MUST</em>\nbe the <var>selected <a data-link-type=\"dfn\" data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-service-endpoints\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> URL</var>."
-                },
-                {
-                  "html": "the HTTP response body <em class=\"rfc2119\">MUST</em> be empty."
-                }
-              ]
-            },
-            {
-              "html": "If the function is successful and returns a\n<b>contentStream</b> with any other <b>contentType</b>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>200</code>."
-                },
-                {
-                  "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code>\n<var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value\nof the <b>contentType</b> metadata property in the\n<b>dereferencingMetadata</b> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-metadata\" class=\"respec-offending-element\" title=\"No matching id in document: did-url-dereferencing-metadata.\" id=\"respec-offender-no-matching-id-in-document-did-url-dereferencing-metadata\">#did-url-dereferencing-metadata</a>)."
-                },
-                {
-                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the\n<b>contentStream</b> that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-url-dereferencing\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencing\">DID URL dereferencing</a> function, in the\nrepresentation corresponding to the\n<code>Content-Type</code> <var>HTTP response header</var>."
                 }
               ]
             }
