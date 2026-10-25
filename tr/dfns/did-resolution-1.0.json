@@ -93,29 +93,6 @@
       "links": []
     },
     {
-      "id": "dfn-conforming-network-based-did-url-dereferencer",
-      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-conforming-network-based-did-url-dereferencer",
-      "linkingText": [
-        "conforming network-based DID URL dereferencer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conformance",
-        "href": "https://www.w3.org/TR/did-resolution-1.0/#conformance",
-        "title": "Conformance",
-        "alternateIds": [
-          "x1-2-conformance"
-        ],
-        "number": "1.2"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "dfn-binding",
       "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-binding",
       "linkingText": [
@@ -143,6 +120,29 @@
       "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-client",
       "linkingText": [
         "client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x2-terminology"
+        ],
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-did-enabled-application",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-did-enabled-application",
+      "linkingText": [
+        "DID-enabled application"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -537,10 +537,10 @@
       "links": []
     },
     {
-      "id": "dfn-dereferencingmetadata",
-      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencingmetadata",
+      "id": "services-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#services-step",
       "linkingText": [
-        "dereferencingMetadata"
+        "Services Step"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -548,22 +548,22 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "dereferencing",
-        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing",
-        "title": "DID URL Dereferencing",
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
         "alternateIds": [
-          "x5-did-url-dereferencing"
+          "x5-1-3-determine-handling-strategy"
         ],
-        "number": "5"
+        "number": "5.1.3"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-contentstream",
-      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-contentstream",
+      "id": "pathhandlers-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#pathhandlers-step",
       "linkingText": [
-        "contentStream"
+        "PathHandlers Step"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -571,22 +571,22 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "dereferencing",
-        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing",
-        "title": "DID URL Dereferencing",
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
         "alternateIds": [
-          "x5-did-url-dereferencing"
+          "x5-1-3-determine-handling-strategy"
         ],
-        "number": "5"
+        "number": "5.1.3"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-contentmetadata",
-      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-contentmetadata",
+      "id": "document-properties-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#document-properties-step",
       "linkingText": [
-        "contentMetadata"
+        "Document Properties Step"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -594,38 +594,406 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "dereferencing",
-        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing",
-        "title": "DID URL Dereferencing",
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
         "alternateIds": [
-          "x5-did-url-dereferencing"
+          "x5-1-3-determine-handling-strategy"
         ],
-        "number": "5"
+        "number": "5.1.3"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-dereferencing-cycle",
-      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing-cycle",
+      "id": "method-specific-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#method-specific-step",
       "linkingText": [
-        "dereferencing cycle"
+        "Method-Specific Step"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
-        "id": "dereferencing-algorithm-resource",
-        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-algorithm-resource",
-        "title": "Dereferencing the Resource",
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
         "alternateIds": [
-          "x5-4-1-dereferencing-the-resource"
+          "x5-1-3-determine-handling-strategy"
         ],
-        "number": "5.4.1"
+        "number": "5.1.3"
       },
-      "definedIn": "note",
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "query-parameters-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#query-parameters-step",
+      "linkingText": [
+        "Query Parameters Step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
+        "alternateIds": [
+          "x5-1-3-determine-handling-strategy"
+        ],
+        "number": "5.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "metadata-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#metadata-step",
+      "linkingText": [
+        "Metadata Step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
+        "alternateIds": [
+          "x5-1-3-determine-handling-strategy"
+        ],
+        "number": "5.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "default-did-document-step",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#default-did-document-step",
+      "linkingText": [
+        "Default DID Document Step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determine-handling-strategy",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#determine-handling-strategy",
+        "title": "Determine Handling Strategy",
+        "alternateIds": [
+          "x5-1-3-determine-handling-strategy"
+        ],
+        "number": "5.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_failed",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_failed",
+      "linkingText": [
+        "DEREFERENCING_ERROR_FAILED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_handler_not_found",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_handler_not_found",
+      "linkingText": [
+        "DEREFERENCING_ERROR_HANDLER_NOT_FOUND"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_document_properties",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_document_properties",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_DOCUMENT_PROPERTIES"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_matching_path_handlers",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_matching_path_handlers",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_MATCHING_PATH_HANDLERS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_metadata_properties",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_metadata_properties",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_METADATA_PROPERTIES"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_query_parameters",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_query_parameters",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_QUERY_PARAMETERS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_service_parameters",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_service_parameters",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_SERVICE_PARAMETERS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_multiple_matching_services",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_multiple_matching_services",
+      "linkingText": [
+        "DEREFERENCING_ERROR_MULTIPLE_MATCHING_SERVICES"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_no_service_endpoints_succeed",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_no_service_endpoints_succeed",
+      "linkingText": [
+        "DEREFERENCING_ERROR_NO_SERVICE_ENDPOINTS_SUCCEED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereference_error_path_normalization_error",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereference_error_path_normalization_error",
+      "linkingText": [
+        "DEREFERENCE_ERROR_PATH_NORMALIZATION_ERROR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_path_handler_handler_not_defined",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_path_handler_handler_not_defined",
+      "linkingText": [
+        "DEREFERENCING_ERROR_PATH_HANDLER_HANDLER_NOT_DEFINED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_resolution_error",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_resolution_error",
+      "linkingText": [
+        "DEREFERENCING_ERROR_RESOLUTION_ERROR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-dereferencing_error_service_not_found",
+      "href": "https://www.w3.org/TR/did-resolution-1.0/#dfn-dereferencing_error_service_not_found",
+      "linkingText": [
+        "DEREFERENCING_ERROR_SERVICE_NOT_FOUND"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dereferencing-errors",
+        "href": "https://www.w3.org/TR/did-resolution-1.0/#dereferencing-errors",
+        "title": "Dereferencing Errors",
+        "alternateIds": [
+          "x5-6-dereferencing-errors"
+        ],
+        "number": "5.6"
+      },
+      "definedIn": "dt",
       "links": []
     }
   ]
