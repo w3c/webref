@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "WebHID API",
+    "title": "WebHID Standard",
     "url": "https://hid.spec.whatwg.org/"
   },
   "dfns": [
@@ -10,9 +10,7 @@
       "linkingText": [
         "hid"
       ],
-      "localLinkingText": [
-        "Navigator.hid"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Navigator"
@@ -23,9 +21,6 @@
         "id": "hid-attribute",
         "href": "https://hid.spec.whatwg.org/#hid-attribute",
         "title": "hid attribute",
-        "alternateIds": [
-          "x4-1-hid-attribute"
-        ],
         "number": "4.1"
       },
       "definedIn": "heading",
@@ -37,9 +32,7 @@
       "linkingText": [
         "hid"
       ],
-      "localLinkingText": [
-        "WorkerNavigator.hid"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "WorkerNavigator"
@@ -50,9 +43,6 @@
         "id": "hid-attribute-0",
         "href": "https://hid.spec.whatwg.org/#hid-attribute-0",
         "title": "hid attribute",
-        "alternateIds": [
-          "x5-1-hid-attribute"
-        ],
         "number": "5.1"
       },
       "definedIn": "heading",
@@ -73,17 +63,36 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
+        "number": "6"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-hid-requestdevice-options-options",
+      "href": "https://hid.spec.whatwg.org/#dom-hid-requestdevice-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HID/requestDevice(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://hid.spec.whatwg.org/#hid-interface",
+        "title": "HID interface",
         "number": "6"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "dfn-devices",
-      "href": "https://hid.spec.whatwg.org/#dfn-devices",
+      "id": "dom-hid-devices-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hid-devices-slot",
       "linkingText": [
         "[[devices]]"
       ],
@@ -92,15 +101,12 @@
       "for": [
         "HID"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "table",
@@ -112,9 +118,7 @@
       "linkingText": [
         "onconnect"
       ],
-      "localLinkingText": [
-        "HID.onconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HID"
@@ -125,9 +129,6 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "dt",
@@ -140,17 +141,16 @@
         "connect"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "HID"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "prose",
@@ -162,9 +162,7 @@
       "linkingText": [
         "ondisconnect"
       ],
-      "localLinkingText": [
-        "HID.ondisconnect"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HID"
@@ -175,9 +173,6 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "dt",
@@ -190,17 +185,16 @@
         "disconnect"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "HID"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "prose",
@@ -221,20 +215,17 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-parsing-the-report-descriptor",
-      "href": "https://hid.spec.whatwg.org/#dfn-parsing-the-report-descriptor",
+      "id": "parse-the-report-descriptor",
+      "href": "https://hid.spec.whatwg.org/#parse-the-report-descriptor",
       "linkingText": [
-        "parsing the report descriptor",
-        "parse the report descriptor"
+        "parse the report descriptor",
+        "parsing the report descriptor"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -245,17 +236,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-main-items",
-      "href": "https://hid.spec.whatwg.org/#dfn-main-items",
+      "id": "main-items",
+      "href": "https://hid.spec.whatwg.org/#main-items",
       "linkingText": [
         "Main items"
       ],
@@ -268,17 +256,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-global-items",
-      "href": "https://hid.spec.whatwg.org/#dfn-global-items",
+      "id": "global-items",
+      "href": "https://hid.spec.whatwg.org/#global-items",
       "linkingText": [
         "Global items"
       ],
@@ -291,17 +276,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-local-items",
-      "href": "https://hid.spec.whatwg.org/#dfn-local-items",
+      "id": "local-items",
+      "href": "https://hid.spec.whatwg.org/#local-items",
       "linkingText": [
         "Local items"
       ],
@@ -314,17 +296,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-item-data-field",
-      "href": "https://hid.spec.whatwg.org/#dfn-item-data-field",
+      "id": "item-data-field",
+      "href": "https://hid.spec.whatwg.org/#item-data-field",
       "linkingText": [
         "item data field"
       ],
@@ -337,17 +316,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-bsize-field",
-      "href": "https://hid.spec.whatwg.org/#dfn-bsize-field",
+      "id": "bsize-field",
+      "href": "https://hid.spec.whatwg.org/#bsize-field",
       "linkingText": [
         "bSize field"
       ],
@@ -360,17 +336,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-input-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-input-tag",
+      "id": "input-tag",
+      "href": "https://hid.spec.whatwg.org/#input-tag",
       "linkingText": [
         "Input tag"
       ],
@@ -383,17 +356,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-output-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-output-tag",
+      "id": "output-tag",
+      "href": "https://hid.spec.whatwg.org/#output-tag",
       "linkingText": [
         "Output tag"
       ],
@@ -406,17 +376,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-feature-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-feature-tag",
+      "id": "feature-tag",
+      "href": "https://hid.spec.whatwg.org/#feature-tag",
       "linkingText": [
         "Feature tag"
       ],
@@ -429,17 +396,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-collection-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-collection-tag",
+      "id": "collection-tag",
+      "href": "https://hid.spec.whatwg.org/#collection-tag",
       "linkingText": [
         "Collection tag"
       ],
@@ -452,17 +416,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-collection-type",
-      "href": "https://hid.spec.whatwg.org/#dfn-collection-type",
+      "id": "collection-type",
+      "href": "https://hid.spec.whatwg.org/#collection-type",
       "linkingText": [
         "collection type"
       ],
@@ -475,17 +436,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-end-collection-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-end-collection-tag",
+      "id": "end-collection-tag",
+      "href": "https://hid.spec.whatwg.org/#end-collection-tag",
       "linkingText": [
         "End Collection tag"
       ],
@@ -498,17 +456,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-usage-page-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-page-tag",
+      "id": "usage-page-tag",
+      "href": "https://hid.spec.whatwg.org/#usage-page-tag",
       "linkingText": [
         "Usage Page tag"
       ],
@@ -521,17 +476,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-logical-minimum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-logical-minimum-tag",
+      "id": "logical-minimum-tag",
+      "href": "https://hid.spec.whatwg.org/#logical-minimum-tag",
       "linkingText": [
         "Logical Minimum tag"
       ],
@@ -544,17 +496,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-logical-maximum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-logical-maximum-tag",
+      "id": "logical-maximum-tag",
+      "href": "https://hid.spec.whatwg.org/#logical-maximum-tag",
       "linkingText": [
         "Logical Maximum tag"
       ],
@@ -567,17 +516,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-physical-minimum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-physical-minimum-tag",
+      "id": "physical-minimum-tag",
+      "href": "https://hid.spec.whatwg.org/#physical-minimum-tag",
       "linkingText": [
         "Physical Minimum tag"
       ],
@@ -590,17 +536,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-physical-maximum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-physical-maximum-tag",
+      "id": "physical-maximum-tag",
+      "href": "https://hid.spec.whatwg.org/#physical-maximum-tag",
       "linkingText": [
         "Physical Maximum tag"
       ],
@@ -613,17 +556,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-unit-exponent-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-unit-exponent-tag",
+      "id": "unit-exponent-tag",
+      "href": "https://hid.spec.whatwg.org/#unit-exponent-tag",
       "linkingText": [
         "Unit Exponent tag"
       ],
@@ -636,17 +576,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-unit-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-unit-tag",
+      "id": "unit-tag",
+      "href": "https://hid.spec.whatwg.org/#unit-tag",
       "linkingText": [
         "Unit tag"
       ],
@@ -659,17 +596,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-report-size-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-report-size-tag",
+      "id": "report-size-tag",
+      "href": "https://hid.spec.whatwg.org/#report-size-tag",
       "linkingText": [
         "Report Size tag"
       ],
@@ -682,17 +616,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-report-id-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-report-id-tag",
+      "id": "report-id-tag",
+      "href": "https://hid.spec.whatwg.org/#report-id-tag",
       "linkingText": [
         "Report ID tag"
       ],
@@ -705,17 +636,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-report-count-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-report-count-tag",
+      "id": "report-count-tag",
+      "href": "https://hid.spec.whatwg.org/#report-count-tag",
       "linkingText": [
         "Report Count tag"
       ],
@@ -728,17 +656,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-push-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-push-tag",
+      "id": "push-tag",
+      "href": "https://hid.spec.whatwg.org/#push-tag",
       "linkingText": [
         "Push tag"
       ],
@@ -751,17 +676,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-pop-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-pop-tag",
+      "id": "pop-tag",
+      "href": "https://hid.spec.whatwg.org/#pop-tag",
       "linkingText": [
         "Pop tag"
       ],
@@ -774,17 +696,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-usage-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-tag",
+      "id": "usage-tag",
+      "href": "https://hid.spec.whatwg.org/#usage-tag",
       "linkingText": [
         "Usage tag"
       ],
@@ -797,17 +716,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-usage-minimum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-minimum-tag",
+      "id": "usage-minimum-tag",
+      "href": "https://hid.spec.whatwg.org/#usage-minimum-tag",
       "linkingText": [
         "Usage Minimum tag"
       ],
@@ -820,17 +736,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-usage-maximum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-maximum-tag",
+      "id": "usage-maximum-tag",
+      "href": "https://hid.spec.whatwg.org/#usage-maximum-tag",
       "linkingText": [
         "Usage Maximum tag"
       ],
@@ -843,17 +756,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-string-index-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-string-index-tag",
+      "id": "string-index-tag",
+      "href": "https://hid.spec.whatwg.org/#string-index-tag",
       "linkingText": [
         "String Index tag"
       ],
@@ -866,17 +776,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-string-minimum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-string-minimum-tag",
+      "id": "string-minimum-tag",
+      "href": "https://hid.spec.whatwg.org/#string-minimum-tag",
       "linkingText": [
         "String Minimum tag"
       ],
@@ -889,17 +796,14 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-string-maximum-tag",
-      "href": "https://hid.spec.whatwg.org/#dfn-string-maximum-tag",
+      "id": "string-maximum-tag",
+      "href": "https://hid.spec.whatwg.org/#string-maximum-tag",
       "linkingText": [
         "String Maximum tag"
       ],
@@ -912,20 +816,17 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "note",
       "links": []
     },
     {
-      "id": "dfn-creating-a-hid-report-item",
-      "href": "https://hid.spec.whatwg.org/#dfn-creating-a-hid-report-item",
+      "id": "create-a-hid-report-item",
+      "href": "https://hid.spec.whatwg.org/#create-a-hid-report-item",
       "linkingText": [
-        "creating a HID report item",
-        "create a HID report item"
+        "create a HID report item",
+        "creating a HID report item"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -936,9 +837,6 @@
         "id": "hid-interface",
         "href": "https://hid.spec.whatwg.org/#hid-interface",
         "title": "HID interface",
-        "alternateIds": [
-          "x6-hid-interface"
-        ],
         "number": "6"
       },
       "definedIn": "prose",
@@ -950,11 +848,7 @@
       "linkingText": [
         "getDevices()"
       ],
-      "localLinkingText": [
-        "HID.getDevices",
-        "HID.getDevices()",
-        "getDevices"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HID"
@@ -965,9 +859,6 @@
         "id": "getdevices-method",
         "href": "https://hid.spec.whatwg.org/#getdevices-method",
         "title": "getDevices() method",
-        "alternateIds": [
-          "x6-1-getdevices-method"
-        ],
         "number": "6.1"
       },
       "definedIn": "heading",
@@ -977,14 +868,10 @@
       "id": "dom-hid-requestdevice",
       "href": "https://hid.spec.whatwg.org/#dom-hid-requestdevice",
       "linkingText": [
-        "requestDevice()",
-        "requestDevice(options)"
+        "requestDevice(options)",
+        "requestDevice()"
       ],
-      "localLinkingText": [
-        "HID.requestDevice",
-        "HID.requestDevice()",
-        "requestDevice"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HID"
@@ -995,9 +882,6 @@
         "id": "requestdevice-method",
         "href": "https://hid.spec.whatwg.org/#requestdevice-method",
         "title": "requestDevice() method",
-        "alternateIds": [
-          "x6-2-requestdevice-method"
-        ],
         "number": "6.2"
       },
       "definedIn": "heading",
@@ -1018,9 +902,6 @@
         "id": "hiddevicerequestoptions-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicerequestoptions-dictionary",
         "title": "HIDDeviceRequestOptions dictionary",
-        "alternateIds": [
-          "x6-2-1-hiddevicerequestoptions-dictionary"
-        ],
         "number": "6.2.1"
       },
       "definedIn": "heading",
@@ -1043,9 +924,6 @@
         "id": "hiddevicerequestoptions-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicerequestoptions-dictionary",
         "title": "HIDDeviceRequestOptions dictionary",
-        "alternateIds": [
-          "x6-2-1-hiddevicerequestoptions-dictionary"
-        ],
         "number": "6.2.1"
       },
       "definedIn": "dt",
@@ -1068,9 +946,6 @@
         "id": "hiddevicerequestoptions-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicerequestoptions-dictionary",
         "title": "HIDDeviceRequestOptions dictionary",
-        "alternateIds": [
-          "x6-2-1-hiddevicerequestoptions-dictionary"
-        ],
         "number": "6.2.1"
       },
       "definedIn": "dt",
@@ -1091,9 +966,6 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "heading",
@@ -1116,9 +988,6 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "dt",
@@ -1141,9 +1010,6 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "dt",
@@ -1166,9 +1032,6 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "dt",
@@ -1191,17 +1054,14 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-a-valid-filter",
-      "href": "https://hid.spec.whatwg.org/#dfn-a-valid-filter",
+      "id": "a-valid-filter",
+      "href": "https://hid.spec.whatwg.org/#a-valid-filter",
       "linkingText": [
         "a valid filter"
       ],
@@ -1214,20 +1074,17 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-match-any-filter",
-      "href": "https://hid.spec.whatwg.org/#dfn-match-any-filter",
+      "id": "matches-any-filter",
+      "href": "https://hid.spec.whatwg.org/#matches-any-filter",
       "linkingText": [
-        "match any filter",
-        "matches any filter"
+        "matches any filter",
+        "match any filter"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1238,17 +1095,14 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-matches-the-device-ids",
-      "href": "https://hid.spec.whatwg.org/#dfn-matches-the-device-ids",
+      "id": "matches-the-device-ids",
+      "href": "https://hid.spec.whatwg.org/#matches-the-device-ids",
       "linkingText": [
         "matches the device IDs"
       ],
@@ -1261,17 +1115,14 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-matches-any-collection",
-      "href": "https://hid.spec.whatwg.org/#dfn-matches-any-collection",
+      "id": "matches-any-collection",
+      "href": "https://hid.spec.whatwg.org/#matches-any-collection",
       "linkingText": [
         "matches any collection"
       ],
@@ -1284,17 +1135,14 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-matches-the-collection",
-      "href": "https://hid.spec.whatwg.org/#dfn-matches-the-collection",
+      "id": "matches-the-collection",
+      "href": "https://hid.spec.whatwg.org/#matches-the-collection",
       "linkingText": [
         "matches the collection"
       ],
@@ -1307,9 +1155,6 @@
         "id": "hiddevicefilter-dictionary",
         "href": "https://hid.spec.whatwg.org/#hiddevicefilter-dictionary",
         "title": "HIDDeviceFilter dictionary",
-        "alternateIds": [
-          "x6-2-2-hiddevicefilter-dictionary"
-        ],
         "number": "6.2.2"
       },
       "definedIn": "prose",
@@ -1330,17 +1175,124 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
+        "number": "7"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-hiddevice-sendreport-reportid-data-reportid",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendreport-reportid-data-reportid",
+      "linkingText": [
+        "reportId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDDevice/sendReport(reportId, data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
+        "title": "HIDDevice interface",
         "number": "7"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "dfn-hid-device-task-source",
-      "href": "https://hid.spec.whatwg.org/#dfn-hid-device-task-source",
+      "id": "dom-hiddevice-sendreport-reportid-data-data",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendreport-reportid-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDDevice/sendReport(reportId, data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hiddevice-sendfeaturereport-reportid-data-reportid",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendfeaturereport-reportid-data-reportid",
+      "linkingText": [
+        "reportId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDDevice/sendFeatureReport(reportId, data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hiddevice-sendfeaturereport-reportid-data-data",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendfeaturereport-reportid-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDDevice/sendFeatureReport(reportId, data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hiddevice-receivefeaturereport-reportid-reportid",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-receivefeaturereport-reportid-reportid",
+      "linkingText": [
+        "reportId"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDDevice/receiveFeatureReport(reportId)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "hid-device-task-source",
+      "href": "https://hid.spec.whatwg.org/#hid-device-task-source",
       "linkingText": [
         "HID device task source"
       ],
@@ -1353,17 +1305,14 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-state",
-      "href": "https://hid.spec.whatwg.org/#dfn-state",
+      "id": "dom-hiddevice-state-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-state-slot",
       "linkingText": [
         "[[state]]"
       ],
@@ -1372,23 +1321,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-vendorid",
-      "href": "https://hid.spec.whatwg.org/#dfn-vendorid",
+      "id": "dom-hiddevice-vendorid-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-vendorid-slot",
       "linkingText": [
         "[[vendorId]]"
       ],
@@ -1397,23 +1343,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-productid",
-      "href": "https://hid.spec.whatwg.org/#dfn-productid",
+      "id": "dom-hiddevice-productid-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-productid-slot",
       "linkingText": [
         "[[productId]]"
       ],
@@ -1422,23 +1365,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-productname",
-      "href": "https://hid.spec.whatwg.org/#dfn-productname",
+      "id": "dom-hiddevice-productname-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-productname-slot",
       "linkingText": [
         "[[productName]]"
       ],
@@ -1447,23 +1387,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-collections",
-      "href": "https://hid.spec.whatwg.org/#dfn-collections",
+      "id": "dom-hiddevice-collections-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-collections-slot",
       "linkingText": [
         "[[collections]]"
       ],
@@ -1472,23 +1409,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-pendingsendreportpromises",
-      "href": "https://hid.spec.whatwg.org/#dfn-pendingsendreportpromises",
+      "id": "dom-hiddevice-pendingsendreportpromises-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-pendingsendreportpromises-slot",
       "linkingText": [
         "[[pendingSendReportPromises]]"
       ],
@@ -1497,23 +1431,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-pendingsendfeaturereportpromises",
-      "href": "https://hid.spec.whatwg.org/#dfn-pendingsendfeaturereportpromises",
+      "id": "dom-hiddevice-pendingsendfeaturereportpromises-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-pendingsendfeaturereportpromises-slot",
       "linkingText": [
         "[[pendingSendFeatureReportPromises]]"
       ],
@@ -1522,23 +1453,20 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
       "links": []
     },
     {
-      "id": "dfn-pendingreceivefeaturereportpromises",
-      "href": "https://hid.spec.whatwg.org/#dfn-pendingreceivefeaturereportpromises",
+      "id": "dom-hiddevice-pendingreceivefeaturereportpromises-slot",
+      "href": "https://hid.spec.whatwg.org/#dom-hiddevice-pendingreceivefeaturereportpromises-slot",
       "linkingText": [
         "[[pendingReceiveFeatureReportPromises]]"
       ],
@@ -1547,15 +1475,12 @@
       "for": [
         "HIDDevice"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "table",
@@ -1567,9 +1492,7 @@
       "linkingText": [
         "oninputreport"
       ],
-      "localLinkingText": [
-        "HIDDevice.oninputreport"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1580,9 +1503,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
@@ -1595,17 +1515,16 @@
         "inputreport"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "prose",
@@ -1617,9 +1536,7 @@
       "linkingText": [
         "opened"
       ],
-      "localLinkingText": [
-        "HIDDevice.opened"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1630,9 +1547,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
@@ -1644,9 +1558,7 @@
       "linkingText": [
         "vendorId"
       ],
-      "localLinkingText": [
-        "HIDDevice.vendorId"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1657,17 +1569,14 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-vendor-id",
-      "href": "https://hid.spec.whatwg.org/#dfn-vendor-id",
+      "id": "vendor-id",
+      "href": "https://hid.spec.whatwg.org/#vendor-id",
       "linkingText": [
         "vendor ID"
       ],
@@ -1680,9 +1589,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "prose",
@@ -1694,9 +1600,7 @@
       "linkingText": [
         "productId"
       ],
-      "localLinkingText": [
-        "HIDDevice.productId"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1707,17 +1611,14 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-product-id",
-      "href": "https://hid.spec.whatwg.org/#dfn-product-id",
+      "id": "product-id",
+      "href": "https://hid.spec.whatwg.org/#product-id",
       "linkingText": [
         "product ID"
       ],
@@ -1730,9 +1631,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "prose",
@@ -1744,9 +1642,7 @@
       "linkingText": [
         "productName"
       ],
-      "localLinkingText": [
-        "HIDDevice.productName"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1757,17 +1653,14 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-product-name",
-      "href": "https://hid.spec.whatwg.org/#dfn-product-name",
+      "id": "product-name",
+      "href": "https://hid.spec.whatwg.org/#product-name",
       "linkingText": [
         "product name"
       ],
@@ -1780,9 +1673,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "prose",
@@ -1794,9 +1684,7 @@
       "linkingText": [
         "collections"
       ],
-      "localLinkingText": [
-        "HIDDevice.collections"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDDevice"
@@ -1807,17 +1695,14 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-top-level-collections",
-      "href": "https://hid.spec.whatwg.org/#dfn-top-level-collections",
+      "id": "top-level-collections",
+      "href": "https://hid.spec.whatwg.org/#top-level-collections",
       "linkingText": [
         "Top-level collections"
       ],
@@ -1830,9 +1715,6 @@
         "id": "hiddevice-interface",
         "href": "https://hid.spec.whatwg.org/#hiddevice-interface",
         "title": "HIDDevice interface",
-        "alternateIds": [
-          "x7-hiddevice-interface"
-        ],
         "number": "7"
       },
       "definedIn": "note",
@@ -1844,11 +1726,7 @@
       "linkingText": [
         "open()"
       ],
-      "localLinkingText": [
-        "HIDDevice.open",
-        "HIDDevice.open()",
-        "open"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -1859,9 +1737,6 @@
         "id": "open-method",
         "href": "https://hid.spec.whatwg.org/#open-method",
         "title": "open() method",
-        "alternateIds": [
-          "x7-1-open-method"
-        ],
         "number": "7.1"
       },
       "definedIn": "heading",
@@ -1873,11 +1748,7 @@
       "linkingText": [
         "close()"
       ],
-      "localLinkingText": [
-        "HIDDevice.close",
-        "HIDDevice.close()",
-        "close"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -1888,9 +1759,6 @@
         "id": "close-method",
         "href": "https://hid.spec.whatwg.org/#close-method",
         "title": "close() method",
-        "alternateIds": [
-          "x7-2-close-method"
-        ],
         "number": "7.2"
       },
       "definedIn": "heading",
@@ -1902,11 +1770,7 @@
       "linkingText": [
         "forget()"
       ],
-      "localLinkingText": [
-        "HIDDevice.forget",
-        "HIDDevice.forget()",
-        "forget"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -1917,9 +1781,6 @@
         "id": "forget-method",
         "href": "https://hid.spec.whatwg.org/#forget-method",
         "title": "forget() method",
-        "alternateIds": [
-          "x7-3-forget-method"
-        ],
         "number": "7.3"
       },
       "definedIn": "heading",
@@ -1929,14 +1790,10 @@
       "id": "dom-hiddevice-sendreport",
       "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendreport",
       "linkingText": [
-        "sendReport()",
-        "sendReport(reportId, data)"
+        "sendReport(reportId, data)",
+        "sendReport()"
       ],
-      "localLinkingText": [
-        "HIDDevice.sendReport",
-        "HIDDevice.sendReport()",
-        "sendReport"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -1947,9 +1804,6 @@
         "id": "sendreport-method",
         "href": "https://hid.spec.whatwg.org/#sendreport-method",
         "title": "sendReport() method",
-        "alternateIds": [
-          "x7-4-sendreport-method"
-        ],
         "number": "7.4"
       },
       "definedIn": "heading",
@@ -1959,14 +1813,10 @@
       "id": "dom-hiddevice-sendfeaturereport",
       "href": "https://hid.spec.whatwg.org/#dom-hiddevice-sendfeaturereport",
       "linkingText": [
-        "sendFeatureReport()",
-        "sendFeatureReport(reportId, data)"
+        "sendFeatureReport(reportId, data)",
+        "sendFeatureReport()"
       ],
-      "localLinkingText": [
-        "HIDDevice.sendFeatureReport",
-        "HIDDevice.sendFeatureReport()",
-        "sendFeatureReport"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -1977,9 +1827,6 @@
         "id": "sendfeaturereport-method",
         "href": "https://hid.spec.whatwg.org/#sendfeaturereport-method",
         "title": "sendFeatureReport() method",
-        "alternateIds": [
-          "x7-5-sendfeaturereport-method"
-        ],
         "number": "7.5"
       },
       "definedIn": "heading",
@@ -1989,14 +1836,10 @@
       "id": "dom-hiddevice-receivefeaturereport",
       "href": "https://hid.spec.whatwg.org/#dom-hiddevice-receivefeaturereport",
       "linkingText": [
-        "receiveFeatureReport()",
-        "receiveFeatureReport(reportId)"
+        "receiveFeatureReport(reportId)",
+        "receiveFeatureReport()"
       ],
-      "localLinkingText": [
-        "HIDDevice.receiveFeatureReport",
-        "HIDDevice.receiveFeatureReport()",
-        "receiveFeatureReport"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "HIDDevice"
@@ -2007,9 +1850,6 @@
         "id": "receivefeaturereport-method",
         "href": "https://hid.spec.whatwg.org/#receivefeaturereport-method",
         "title": "receiveFeatureReport() method",
-        "alternateIds": [
-          "x7-6-receivefeaturereport-method"
-        ],
         "number": "7.6"
       },
       "definedIn": "heading",
@@ -2030,26 +1870,19 @@
         "id": "hidconnectionevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidconnectionevent-interface",
         "title": "HIDConnectionEvent interface",
-        "alternateIds": [
-          "x8-hidconnectionevent-interface"
-        ],
         "number": "8"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-hidconnectionevent-constructor",
-      "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-constructor",
+      "id": "dom-hidconnectionevent-hidconnectionevent",
+      "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-hidconnectionevent",
       "linkingText": [
-        "constructor()",
+        "HIDConnectionEvent(type, eventInitDict)",
         "constructor(type, eventInitDict)"
       ],
-      "localLinkingText": [
-        "HIDConnectionEvent.constructor",
-        "HIDConnectionEvent.constructor()",
-        "constructor"
-      ],
+      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "HIDConnectionEvent"
@@ -2060,9 +1893,52 @@
         "id": "hidconnectionevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidconnectionevent-interface",
         "title": "HIDConnectionEvent interface",
-        "alternateIds": [
-          "x8-hidconnectionevent-interface"
-        ],
+        "number": "8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hidconnectionevent-hidconnectionevent-type-eventinitdict-type",
+      "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-hidconnectionevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDConnectionEvent/HIDConnectionEvent(type, eventInitDict)",
+        "HIDConnectionEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidconnectionevent-interface",
+        "href": "https://hid.spec.whatwg.org/#hidconnectionevent-interface",
+        "title": "HIDConnectionEvent interface",
+        "number": "8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hidconnectionevent-hidconnectionevent-type-eventinitdict-eventinitdict",
+      "href": "https://hid.spec.whatwg.org/#dom-hidconnectionevent-hidconnectionevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDConnectionEvent/HIDConnectionEvent(type, eventInitDict)",
+        "HIDConnectionEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidconnectionevent-interface",
+        "href": "https://hid.spec.whatwg.org/#hidconnectionevent-interface",
+        "title": "HIDConnectionEvent interface",
         "number": "8"
       },
       "definedIn": "pre",
@@ -2074,9 +1950,7 @@
       "linkingText": [
         "device"
       ],
-      "localLinkingText": [
-        "HIDConnectionEvent.device"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDConnectionEvent"
@@ -2087,9 +1961,6 @@
         "id": "hidconnectionevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidconnectionevent-interface",
         "title": "HIDConnectionEvent interface",
-        "alternateIds": [
-          "x8-hidconnectionevent-interface"
-        ],
         "number": "8"
       },
       "definedIn": "dt",
@@ -2110,12 +1981,9 @@
         "id": "hidconnectioneventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidconnectioneventinit-dictionary",
         "title": "HIDConnectionEventInit dictionary",
-        "alternateIds": [
-          "x8-1-hidconnectioneventinit-dictionary"
-        ],
         "number": "8.1"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
@@ -2135,9 +2003,6 @@
         "id": "hidconnectioneventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidconnectioneventinit-dictionary",
         "title": "HIDConnectionEventInit dictionary",
-        "alternateIds": [
-          "x8-1-hidconnectioneventinit-dictionary"
-        ],
         "number": "8.1"
       },
       "definedIn": "dt",
@@ -2158,26 +2023,19 @@
         "id": "hidinputreportevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
         "title": "HIDInputReportEvent interface",
-        "alternateIds": [
-          "x9-hidinputreportevent-interface"
-        ],
         "number": "9"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dom-hidinputreportevent-constructor",
-      "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-constructor",
+      "id": "dom-hidinputreportevent-hidinputreportevent",
+      "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-hidinputreportevent",
       "linkingText": [
-        "constructor()",
+        "HIDInputReportEvent(type, eventInitDict)",
         "constructor(type, eventInitDict)"
       ],
-      "localLinkingText": [
-        "HIDInputReportEvent.constructor",
-        "HIDInputReportEvent.constructor()",
-        "constructor"
-      ],
+      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "HIDInputReportEvent"
@@ -2188,9 +2046,52 @@
         "id": "hidinputreportevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
         "title": "HIDInputReportEvent interface",
-        "alternateIds": [
-          "x9-hidinputreportevent-interface"
-        ],
+        "number": "9"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hidinputreportevent-hidinputreportevent-type-eventinitdict-type",
+      "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-hidinputreportevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDInputReportEvent/HIDInputReportEvent(type, eventInitDict)",
+        "HIDInputReportEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidinputreportevent-interface",
+        "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "9"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-hidinputreportevent-hidinputreportevent-type-eventinitdict-eventinitdict",
+      "href": "https://hid.spec.whatwg.org/#dom-hidinputreportevent-hidinputreportevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HIDInputReportEvent/HIDInputReportEvent(type, eventInitDict)",
+        "HIDInputReportEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidinputreportevent-interface",
+        "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
         "number": "9"
       },
       "definedIn": "pre",
@@ -2202,9 +2103,7 @@
       "linkingText": [
         "device"
       ],
-      "localLinkingText": [
-        "HIDInputReportEvent.device"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDInputReportEvent"
@@ -2215,9 +2114,6 @@
         "id": "hidinputreportevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
         "title": "HIDInputReportEvent interface",
-        "alternateIds": [
-          "x9-hidinputreportevent-interface"
-        ],
         "number": "9"
       },
       "definedIn": "dt",
@@ -2229,9 +2125,7 @@
       "linkingText": [
         "reportId"
       ],
-      "localLinkingText": [
-        "HIDInputReportEvent.reportId"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDInputReportEvent"
@@ -2242,9 +2136,6 @@
         "id": "hidinputreportevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
         "title": "HIDInputReportEvent interface",
-        "alternateIds": [
-          "x9-hidinputreportevent-interface"
-        ],
         "number": "9"
       },
       "definedIn": "dt",
@@ -2256,9 +2147,7 @@
       "linkingText": [
         "data"
       ],
-      "localLinkingText": [
-        "HIDInputReportEvent.data"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "HIDInputReportEvent"
@@ -2269,9 +2158,6 @@
         "id": "hidinputreportevent-interface",
         "href": "https://hid.spec.whatwg.org/#hidinputreportevent-interface",
         "title": "HIDInputReportEvent interface",
-        "alternateIds": [
-          "x9-hidinputreportevent-interface"
-        ],
         "number": "9"
       },
       "definedIn": "dt",
@@ -2292,12 +2178,9 @@
         "id": "hidinputreporteventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidinputreporteventinit-dictionary",
         "title": "HIDInputReportEventInit dictionary",
-        "alternateIds": [
-          "x9-1-hidinputreporteventinit-dictionary"
-        ],
         "number": "9.1"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
@@ -2317,9 +2200,6 @@
         "id": "hidinputreporteventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidinputreporteventinit-dictionary",
         "title": "HIDInputReportEventInit dictionary",
-        "alternateIds": [
-          "x9-1-hidinputreporteventinit-dictionary"
-        ],
         "number": "9.1"
       },
       "definedIn": "dt",
@@ -2342,9 +2222,6 @@
         "id": "hidinputreporteventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidinputreporteventinit-dictionary",
         "title": "HIDInputReportEventInit dictionary",
-        "alternateIds": [
-          "x9-1-hidinputreporteventinit-dictionary"
-        ],
         "number": "9.1"
       },
       "definedIn": "dt",
@@ -2367,9 +2244,6 @@
         "id": "hidinputreporteventinit-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidinputreporteventinit-dictionary",
         "title": "HIDInputReportEventInit dictionary",
-        "alternateIds": [
-          "x9-1-hidinputreporteventinit-dictionary"
-        ],
         "number": "9.1"
       },
       "definedIn": "dt",
@@ -2389,17 +2263,14 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
-      "id": "dfn-report-descriptor",
-      "href": "https://hid.spec.whatwg.org/#dfn-report-descriptor",
+      "id": "report-descriptor",
+      "href": "https://hid.spec.whatwg.org/#report-descriptor",
       "linkingText": [
         "Report descriptor"
       ],
@@ -2411,10 +2282,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "prose",
       "links": []
@@ -2435,17 +2303,14 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-hid-usages",
-      "href": "https://hid.spec.whatwg.org/#dfn-hid-usages",
+      "id": "hid-usages",
+      "href": "https://hid.spec.whatwg.org/#hid-usages",
       "linkingText": [
         "HID usages"
       ],
@@ -2457,17 +2322,14 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-usage-page",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-page",
+      "id": "usage-page",
+      "href": "https://hid.spec.whatwg.org/#usage-page",
       "linkingText": [
         "usage page"
       ],
@@ -2479,17 +2341,14 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-usage-id",
-      "href": "https://hid.spec.whatwg.org/#dfn-usage-id",
+      "id": "usage-id",
+      "href": "https://hid.spec.whatwg.org/#usage-id",
       "linkingText": [
         "usage ID"
       ],
@@ -2501,10 +2360,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "prose",
       "links": []
@@ -2525,10 +2381,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2549,10 +2402,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2573,10 +2423,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2597,10 +2444,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2621,10 +2465,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2645,10 +2486,7 @@
       "heading": {
         "id": "hidcollectioninfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidcollectioninfo-dictionary",
-        "title": "10. HIDCollectionInfo dictionary",
-        "alternateIds": [
-          "x10-hidcollectioninfo-dictionary"
-        ]
+        "title": "10. HIDCollectionInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2667,12 +2505,9 @@
       "heading": {
         "id": "hidreportinfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportinfo-dictionary",
-        "title": "11. HIDReportInfo dictionary",
-        "alternateIds": [
-          "x11-hidreportinfo-dictionary"
-        ]
+        "title": "11. HIDReportInfo dictionary"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
@@ -2691,20 +2526,17 @@
       "heading": {
         "id": "hidreportinfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportinfo-dictionary",
-        "title": "11. HIDReportInfo dictionary",
-        "alternateIds": [
-          "x11-hidreportinfo-dictionary"
-        ]
+        "title": "11. HIDReportInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-use-report-ids",
-      "href": "https://hid.spec.whatwg.org/#dfn-use-report-ids",
+      "id": "uses-report-ids",
+      "href": "https://hid.spec.whatwg.org/#uses-report-ids",
       "linkingText": [
-        "use report IDs",
-        "uses report IDs"
+        "uses report IDs",
+        "use report IDs"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2714,10 +2546,7 @@
       "heading": {
         "id": "hidreportinfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportinfo-dictionary",
-        "title": "11. HIDReportInfo dictionary",
-        "alternateIds": [
-          "x11-hidreportinfo-dictionary"
-        ]
+        "title": "11. HIDReportInfo dictionary"
       },
       "definedIn": "prose",
       "links": []
@@ -2738,10 +2567,7 @@
       "heading": {
         "id": "hidreportinfo-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportinfo-dictionary",
-        "title": "11. HIDReportInfo dictionary",
-        "alternateIds": [
-          "x11-hidreportinfo-dictionary"
-        ]
+        "title": "11. HIDReportInfo dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2760,12 +2586,9 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
       "links": []
     },
     {
@@ -2784,10 +2607,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2808,10 +2628,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2832,10 +2649,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2856,10 +2670,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2880,10 +2691,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2904,10 +2712,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2928,10 +2733,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2952,10 +2754,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -2976,10 +2775,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3000,10 +2796,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3024,10 +2817,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3048,10 +2838,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3072,10 +2859,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3096,10 +2880,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3120,10 +2901,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3144,10 +2922,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3168,10 +2943,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3192,10 +2964,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3216,10 +2985,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3240,10 +3006,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3264,10 +3027,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3288,10 +3048,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3312,10 +3069,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3336,10 +3090,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3360,10 +3111,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3384,10 +3132,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3408,10 +3153,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3432,10 +3174,7 @@
       "heading": {
         "id": "hidreportitem-dictionary",
         "href": "https://hid.spec.whatwg.org/#hidreportitem-dictionary",
-        "title": "12. HIDReportItem dictionary",
-        "alternateIds": [
-          "x12-hidreportitem-dictionary"
-        ]
+        "title": "12. HIDReportItem dictionary"
       },
       "definedIn": "dt",
       "links": []
@@ -3454,10 +3193,7 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
       "definedIn": "heading",
       "links": []
@@ -3466,7 +3202,7 @@
       "id": "dom-hidunitsystem-none",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-none",
       "linkingText": [
-        "none"
+        "\"none\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3478,19 +3214,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-si-linear",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-si-linear",
       "linkingText": [
-        "si-linear"
+        "\"si-linear\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3502,19 +3235,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-si-rotation",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-si-rotation",
       "linkingText": [
-        "si-rotation"
+        "\"si-rotation\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3526,19 +3256,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-english-linear",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-english-linear",
       "linkingText": [
-        "english-linear"
+        "\"english-linear\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3550,19 +3277,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-english-rotation",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-english-rotation",
       "linkingText": [
-        "english-rotation"
+        "\"english-rotation\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3574,19 +3298,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-vendor-defined",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-vendor-defined",
       "linkingText": [
-        "vendor-defined"
+        "\"vendor-defined\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3598,19 +3319,16 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
       "id": "dom-hidunitsystem-reserved",
       "href": "https://hid.spec.whatwg.org/#dom-hidunitsystem-reserved",
       "linkingText": [
-        "reserved"
+        "\"reserved\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3622,171 +3340,14 @@
       "heading": {
         "id": "hidunitsystem-enum",
         "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dfn-none",
-      "href": "https://hid.spec.whatwg.org/#dfn-none",
-      "linkingText": [
-        "\"none\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
+        "title": "13. HIDUnitSystem enum"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-si-linear",
-      "href": "https://hid.spec.whatwg.org/#dfn-si-linear",
-      "linkingText": [
-        "\"si-linear\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-si-rotation",
-      "href": "https://hid.spec.whatwg.org/#dfn-si-rotation",
-      "linkingText": [
-        "\"si-rotation\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-english-linear",
-      "href": "https://hid.spec.whatwg.org/#dfn-english-linear",
-      "linkingText": [
-        "\"english-linear\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-english-rotation",
-      "href": "https://hid.spec.whatwg.org/#dfn-english-rotation",
-      "linkingText": [
-        "\"english-rotation\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-vendor-defined",
-      "href": "https://hid.spec.whatwg.org/#dfn-vendor-defined",
-      "linkingText": [
-        "\"vendor-defined\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-reserved",
-      "href": "https://hid.spec.whatwg.org/#dfn-reserved",
-      "linkingText": [
-        "\"reserved\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidunitsystem-enum",
-        "href": "https://hid.spec.whatwg.org/#hidunitsystem-enum",
-        "title": "13. HIDUnitSystem enum",
-        "alternateIds": [
-          "x13-hidunitsystem-enum"
-        ]
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dfn-parsing-the-blocklist",
-      "href": "https://hid.spec.whatwg.org/#dfn-parsing-the-blocklist",
+      "id": "parsing-the-blocklist",
+      "href": "https://hid.spec.whatwg.org/#parsing-the-blocklist",
       "linkingText": [
         "parsing the blocklist"
       ],
@@ -3798,17 +3359,14 @@
       "heading": {
         "id": "blocklist",
         "href": "https://hid.spec.whatwg.org/#blocklist",
-        "title": "15. The HID Blocklist",
-        "alternateIds": [
-          "x15-the-hid-blocklist"
-        ]
+        "title": "15. The HID Blocklist"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-hid-blocklist",
-      "href": "https://hid.spec.whatwg.org/#dfn-hid-blocklist",
+      "id": "hid-blocklist",
+      "href": "https://hid.spec.whatwg.org/#hid-blocklist",
       "linkingText": [
         "HID blocklist"
       ],
@@ -3820,17 +3378,14 @@
       "heading": {
         "id": "blocklist",
         "href": "https://hid.spec.whatwg.org/#blocklist",
-        "title": "15. The HID Blocklist",
-        "alternateIds": [
-          "x15-the-hid-blocklist"
-        ]
+        "title": "15. The HID Blocklist"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-blocked-report",
-      "href": "https://hid.spec.whatwg.org/#dfn-blocked-report",
+      "id": "blocked-report",
+      "href": "https://hid.spec.whatwg.org/#blocked-report",
       "linkingText": [
         "blocked report"
       ],
@@ -3842,17 +3397,14 @@
       "heading": {
         "id": "blocklist",
         "href": "https://hid.spec.whatwg.org/#blocklist",
-        "title": "15. The HID Blocklist",
-        "alternateIds": [
-          "x15-the-hid-blocklist"
-        ]
+        "title": "15. The HID Blocklist"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-blocked-by-a-blocklist-rule",
-      "href": "https://hid.spec.whatwg.org/#dfn-blocked-by-a-blocklist-rule",
+      "id": "blocked-by-a-blocklist-rule",
+      "href": "https://hid.spec.whatwg.org/#blocked-by-a-blocklist-rule",
       "linkingText": [
         "blocked by a blocklist rule"
       ],
@@ -3864,10 +3416,29 @@
       "heading": {
         "id": "blocklist",
         "href": "https://hid.spec.whatwg.org/#blocklist",
-        "title": "15. The HID Blocklist",
-        "alternateIds": [
-          "x15-the-hid-blocklist"
-        ]
+        "title": "15. The HID Blocklist"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "policy-controlled-feature-hid",
+      "href": "https://hid.spec.whatwg.org/#policy-controlled-feature-hid",
+      "linkingText": [
+        "hid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy-controlled feature"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy",
+        "href": "https://hid.spec.whatwg.org/#permissions-policy",
+        "title": "Permissions Policy",
+        "number": "16.1"
       },
       "definedIn": "prose",
       "links": []

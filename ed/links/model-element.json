@@ -86,7 +86,7 @@
       "https://github.com/immersive-web/model-element/commit/fa2bf50618332766ff347e0e615eefb00631d5b5": {},
       "https://github.com/immersive-web/model-element/commits/main/": {},
       "https://github.com/immersive-web/model-element/issues/13": {},
-      "https://github.com/immersive-web/model-element/issues/14": {},
+      "https://github.com/immersive-web/model-element/issues/130": {},
       "https://github.com/immersive-web/model-element/issues/15": {},
       "https://github.com/immersive-web/model-element/issues/155": {},
       "https://github.com/immersive-web/model-element/issues/16": {},
@@ -117,6 +117,11 @@
       "https://html.spec.whatwg.org/multipage/links.html": {
         "anchors": [
           "link-type-preload"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/media.html": {
+        "anchors": [
+          "attr-video-poster"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -210,6 +215,19 @@
         ],
         "specShortname": "selectors-4"
       },
+      "https://fetch.spec.whatwg.org/": {
+        "anchors": [
+          "concept-request",
+          "concept-request-url",
+          "concept-request-client",
+          "concept-request-destination",
+          "request-initiator-type",
+          "concept-request-credentials-mode",
+          "concept-request-use-url-credentials-flag",
+          "concept-fetch"
+        ],
+        "specShortname": "fetch"
+      },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
           "css-pc-fullscreen"
@@ -223,12 +241,19 @@
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
+          "reflect",
+          "xattr-reflecturl",
           "xattr-reflect"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
         "anchors": [
           "valid-non-negative-integer"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -260,14 +285,21 @@
         "anchors": [
           "video",
           "media-element",
+          "attr-video-poster",
           "expose-a-user-interface-to-the-user",
           "audio",
           "the-track-element"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/parsing.html": {
+        "anchors": [
+          "delay-the-load-event"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
         "anchors": [
-          "valid-non-empty-url-potentially-surrounded-by-spaces"
+          "valid-non-empty-url-potentially-surrounded-by-spaces",
+          "encoding-parsing-a-url"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -290,8 +322,8 @@
         "anchors": [
           "Exposed",
           "SecureContext",
-          "idl-promise",
           "idl-USVString",
+          "idl-promise",
           "idl-undefined",
           "idl-DOMString",
           "new",

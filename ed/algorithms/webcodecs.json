@@ -2400,7 +2400,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>resource</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①④\">media resource</a> referencing sample data\n   in <var>data</var>.</p>"
+                  "html": "<p>Let <var>resource</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①④\">media resource</a> referencing sample data\nin <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data①\">data</a></code>.</p>"
                 }
               ]
             },
@@ -2409,7 +2409,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>resource</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①⑤\">media resource</a> containing a copy of\n<var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data①\">data</a></code>.</p>"
+                  "html": "<p>Let <var>resource</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#media-resource\" id=\"ref-for-media-resource①⑤\">media resource</a> containing a copy of\n<var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data②\">data</a></code>.</p>"
                 }
               ]
             },
@@ -2651,7 +2651,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-numberofchannels\" id=\"ref-for-dom-audiodatainit-numberofchannels①\">numberOfChannels</a></code> = <code>0</code>, return <code>false</code>.</p>"
         },
         {
-          "html": "Verify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data②\">data</a></code> has enough data by running the following\nsteps:",
+          "html": "Verify <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data③\">data</a></code> has enough data by running the following\nsteps:",
           "rationale": "let",
           "steps": [
             {
@@ -2664,7 +2664,7 @@
               "html": "<p>Let <var>totalSize</var> be the product of multiplying <var>bytesPerSample</var> with\n<var>totalSamples</var>.</p>"
             },
             {
-              "html": "<p>Let <var>dataSize</var> be the size in bytes of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data③\">data</a></code>.</p>"
+              "html": "<p>Let <var>dataSize</var> be the size in bytes of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audiodatainit-data\" id=\"ref-for-dom-audiodatainit-data④\">data</a></code>.</p>"
             },
             {
               "html": "<p>If <var>dataSize</var> is less than <var>totalSize</var>, return false.</p>"
