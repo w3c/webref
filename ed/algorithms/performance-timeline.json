@@ -246,13 +246,19 @@
           "html": "Let <var>tuple</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#relevant-performance-entry-tuple\" id=\"ref-for-relevant-performance-entry-tuple①\">relevant performance entry tuple</a>\n  of <var>entryType</var> and <var>relevantGlobal</var>."
         },
         {
-          "html": "Let <var>isBufferFull</var> be the return value of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-determine-if-a-performance-entry-buffer-is-full\" id=\"ref-for-dfn-determine-if-a-performance-entry-buffer-is-full\">determine if a performance entry buffer is full</a> algorithm with <var>tuple</var> as input."
-        },
-        {
           "html": "Let <var>shouldAdd</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\" id=\"ref-for-dfn-should-add-entry②\">should add entry</a> with <var>newEntry</var> as input."
         },
         {
-          "html": "If <var>isBufferFull</var> is false and <var>shouldAdd</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a>\n  <var>newEntry</var> to <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer①\">performance entry buffer</a>."
+          "html": "If <var>shouldAdd</var> is true:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>isBufferFull</var> be the return value of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-determine-if-a-performance-entry-buffer-is-full\" id=\"ref-for-dfn-determine-if-a-performance-entry-buffer-is-full\">determine if a performance entry buffer is full</a> algorithm with <var>tuple</var> as input."
+            },
+            {
+              "html": "If <var>isBufferFull</var> is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a>\n      <var>newEntry</var> to <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer①\">performance entry buffer</a>."
+            }
+          ]
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task\" id=\"ref-for-dfn-queue-the-performanceobserver-task①\">Queue the PerformanceObserver task</a> with\n  <var>relevantGlobal</var> as input."

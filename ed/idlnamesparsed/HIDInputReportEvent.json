@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "WebHID API",
+      "title": "WebHID Standard",
       "url": "https://hid.spec.whatwg.org/"
     },
     "fragment": "[Exposed=(DedicatedWorker,ServiceWorker,Window), SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",

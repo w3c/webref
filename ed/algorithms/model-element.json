@@ -5,6 +5,35 @@
   },
   "algorithms": [
     {
+      "name": "determine-model-poster-frame",
+      "href": "https://immersive-web.github.io/model-element/#determine-a-model-poster-frame",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-a-model-poster-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine a model poster frame</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model①⑦\">model</a></code> element <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Abort any existing instance of this algorithm for <var>element</var> without changing\nits <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame\">poster frame</a>. Results from an aborted instance MUST NOT\nsubsequently change the poster frame.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-poster\" id=\"ref-for-element-attrdef-model-poster③\">poster</a></code> attribute is absent or its value is the empty\nstring, set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame①\">poster frame</a> to null and return.</p>"
+        },
+        {
+          "html": "<p>Let <var>url</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#encoding-parsing-a-url\" id=\"ref-for-encoding-parsing-a-url\">encoding-parsing a URL</a> given the\n<code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-poster\" id=\"ref-for-element-attrdef-model-poster④\">poster</a></code> attribute’s value, relative to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var> is failure, set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame②\">poster frame</a> to null and return.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>url</var>,\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is <code>\"image\"</code>,\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type\">initiator type</a> is <code>\"model\"</code>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is\n<code>\"include\"</code>, and whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-URL-credentials flag</a> is set.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var>. This MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event\" id=\"ref-for-delay-the-load-event\">delay the load event</a>\nof <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a> until this instance of the algorithm\ncompletes or is aborted.</p>"
+        },
+        {
+          "html": "<p>When fetching and image decoding complete, if an image is obtained, set\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame③\">poster frame</a> to that image. Otherwise, set it to null.</p>"
+        }
+      ]
+    },
+    {
       "name": "bounding-box-calculation",
       "href": "https://immersive-web.github.io/model-element/#bounding-box-calculation-algorithm",
       "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bounding-box-calculation-algorithm\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">bounding box calculation algorithm</dfn> consists of the following steps.",
@@ -144,19 +173,37 @@
       ]
     },
     {
+      "html": "A <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model②③\">model</a></code> element MUST represent the content given by the first matching\ncondition below:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-resource-loading-is-permitted\" id=\"ref-for-model-resource-loading-is-permitted\">model resource loading is permitted</a> is false, one or more model sources\nwere specified but source selection has finished without finding a supported\nresource, or the selected model resource cannot be loaded or decoded, the\nelement represents its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#fallback-content\" id=\"ref-for-fallback-content①\">fallback content</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-content-is-available\" id=\"ref-for-model-content-is-available\">model content is available</a>, the element represents that\nmodel content.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if its <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame④\">poster frame</a> is not null, the element represents\nthat poster frame.</p>"
+        },
+        {
+          "html": "<p>Otherwise, the element represents transparent black with no natural\ndimensions.</p>"
+        }
+      ]
+    },
+    {
       "name": "model-adopting-steps",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-adopt-ext\" id=\"ref-for-concept-node-adopt-ext\">adopting steps</a> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③②\">model</a></code> element, given <var>node</var> and\n<var>oldDocument</var>, are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-adopt-ext\" id=\"ref-for-concept-node-adopt-ext\">adopting steps</a> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③⑥\">model</a></code> element, given <var>node</var> and\n<var>oldDocument</var>, are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-resource-loading-is-permitted\" id=\"ref-for-model-resource-loading-is-permitted②\">model resource loading is permitted</a> is false for <var>node</var>,\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#block-model-resource-loading\" id=\"ref-for-block-model-resource-loading①\">block model resource loading</a> for <var>node</var>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-resource-loading-is-permitted\" id=\"ref-for-model-resource-loading-is-permitted③\">model resource loading is permitted</a> is false for <var>node</var>,\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#block-model-resource-loading\" id=\"ref-for-block-model-resource-loading①\">block model resource loading</a> for <var>node</var>.</p>"
         }
       ]
     },
     {
       "name": "block-model-resource-loading",
       "href": "https://immersive-web.github.io/model-element/#block-model-resource-loading",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"block-model-resource-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">block model resource loading</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③③\">model</a></code> element\n<var>element</var>, the user agent MUST run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"block-model-resource-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">block model resource loading</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③⑦\">model</a></code> element\n<var>element</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -166,10 +213,10 @@
           "html": "<p>Stop rendering <var>element</var>’s model and environment map, including any\npreviously loaded content.</p>"
         },
         {
-          "html": "<p>Reject any unsettled <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready\" id=\"ref-for-dom-htmlmodelelement-ready①\">ready</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-environmentmapready\" id=\"ref-for-dom-htmlmodelelement-environmentmapready①\">environmentMapReady</a></code> promises of <var>element</var>, if they\nexist, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> exception.</p>"
+          "html": "<p>Reject any unsettled <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready\" id=\"ref-for-dom-htmlmodelelement-ready③\">ready</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-environmentmapready\" id=\"ref-for-dom-htmlmodelelement-environmentmapready①\">environmentMapReady</a></code> promises of <var>element</var>, if they\nexist, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> exception.</p>"
         },
         {
-          "html": "<p>Make <var>element</var> represent its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#fallback-content\" id=\"ref-for-fallback-content①\">fallback content</a> instead of\nthe model.</p>"
+          "html": "<p>Make <var>element</var> represent its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#fallback-content\" id=\"ref-for-fallback-content②\">fallback content</a> instead of\nthe model.</p>"
         }
       ]
     }
