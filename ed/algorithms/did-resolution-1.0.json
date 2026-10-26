@@ -366,7 +366,7 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>410</code>."
+              "html": "The HTTP response status code <em class=\"rfc2119\">MUST</em> be <code>410</code>,\neven if a step below requires a different status code."
             }
           ]
         },
@@ -379,12 +379,15 @@
               "rationale": ".algorithm",
               "steps": [
                 {
+                  "html": "If the function is successful, the HTTP response status code <em class=\"rfc2119\">MUST</em> be\n<code>200</code>."
+                },
+                {
                   "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function."
                 }
               ]
             },
             {
-              "html": "If the function is successful and returns a <b>didDocument</b>:",
+              "html": "Otherwise, if the function is successful and returns a <b>didDocument</b>:",
               "rationale": ".algorithm",
               "steps": [
                 {
