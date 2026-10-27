@@ -6,6 +6,9 @@
   "links": {
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-extensions-1/": {
         "specShortname": "css-extensions-1"
       },
@@ -38,6 +41,7 @@
       },
       "https://github.com/w3c/csswg-drafts/issues/12622": {},
       "https://github.com/w3c/csswg-drafts/issues/12973": {},
+      "https://github.com/w3c/csswg-drafts/issues/14541": {},
       "https://github.com/w3c/csswg-drafts/issues/2463": {},
       "https://github.com/w3c/csswg-drafts/issues/3576": {},
       "https://github.com/w3c/csswg-drafts/issues/5984": {
@@ -45,7 +49,6 @@
           "issuecomment-2112977366"
         ]
       },
-      "https://github.com/w3c/csswg-drafts/issues/6205": {},
       "https://github.com/w3c/csswg-drafts/issues/6400": {
         "anchors": [
           "issuecomment-3200664309"
@@ -276,6 +279,12 @@
       }
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "element"
+        ],
+        "specShortname": "dom"
+      },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
           "cascade-dependent-keyword"
@@ -327,7 +336,13 @@
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
-          "idl-frozen-array"
+          "idl-frozen-array",
+          "NewObject",
+          "dfn-throw",
+          "syntaxerror",
+          "idl-DOMException",
+          "this",
+          "idl-boolean"
         ],
         "specShortname": "webidl"
       },
@@ -498,7 +513,8 @@
           "typedef-rule-list",
           "declaration",
           "typedef-declaration-value",
-          "typedef-block-contents"
+          "typedef-block-contents",
+          "css-parse-something-according-to-a-css-grammar"
         ],
         "specShortname": "css-syntax-3"
       },
@@ -572,9 +588,7 @@
       },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
-          "run-snapshot-post-layout-state-steps",
-          "dom-window-matchmedia",
-          "mediaquerylist"
+          "run-snapshot-post-layout-state-steps"
         ],
         "specShortname": "cssom-view-1"
       },

@@ -141,6 +141,37 @@
           "html": "<p>Return <var>result</var>.</p>"
         }
       ]
+    },
+    {
+      "name": "Element/matchContainer(query)",
+      "href": "https://drafts.csswg.org/css-conditional-5/#dom-element-matchcontainer",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-element-matchcontainer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code class=\"highlight\"><c- nf=\"\">matchContainer</c-><c- p=\"\">(</c-><var>query</var><c- p=\"\">)</c-></code></dfn> method, when invoked, must run these steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>parsed container query list</var> be the result of\n\t\t\t<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsing</a> <var>query</var> as a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-query-list\" id=\"ref-for-typedef-container-query-list②\">&lt;container-query-list&gt;</a>."
+        },
+        {
+          "html": "If <var>parsed container query list</var> is failure,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>."
+        },
+        {
+          "html": "Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist\" id=\"ref-for-containerquerylist②\">ContainerQueryList</a></code> object,\n\t\t\twith <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-element\" id=\"ref-for-containerquerylist-element\">element</a>\n\t\t\tand the <var>parsed container query list</var>\n\t\t\tas its associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-container-query-list\" id=\"ref-for-containerquerylist-container-query-list④\">container query list</a>."
+        }
+      ]
+    },
+    {
+      "name": "serialize a container query list",
+      "href": "https://drafts.csswg.org/css-conditional-5/#serialize-a-container-query-list",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-container-query-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a container query list</dfn> run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-container-query-list\" id=\"ref-for-containerquerylist-container-query-list⑦\">container query list</a> is empty, then return the empty string."
+        },
+        {
+          "html": "Serialize each <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-condition\" id=\"ref-for-typedef-container-condition⑧\">&lt;container-condition&gt;</a> in the list, in the order they appear,\n\t\t\tand return the results as a comma-separated list.\n\t\t\tEach <span class=\"production\" id=\"ref-for-typedef-container-condition⑨\">&lt;container-condition&gt;</span> is serialized as specified,\n\t\t\twith whitespace simplification but no logical simplification,\n\t\t\tin the same manner as the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containername\" id=\"ref-for-dom-csscontainerrule-containername①\">containerName</a></code> and\n\t\t\t<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containerquery\" id=\"ref-for-dom-csscontainerrule-containerquery①\">containerQuery</a></code> attributes."
+        }
+      ]
     }
   ]
 }
