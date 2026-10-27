@@ -377,7 +377,7 @@
           "html": "<p>Set <var>reportItem</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hidreportitem-islinear\" id=\"ref-for-dom-hidreportitem-islinear\">isLinear</a></code>\"] to !<var>bitfield</var>[4].</p>"
         },
         {
-          "html": "<p>Set <var>reportItem</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hidreportitem-haspreferredstate\" id=\"ref-for-dom-hidreportitem-haspreferredstate\">hasPreferredState</a></code>\"] to\n<var>bitfield</var>[5].</p>"
+          "html": "<p>Set <var>reportItem</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hidreportitem-haspreferredstate\" id=\"ref-for-dom-hidreportitem-haspreferredstate\">hasPreferredState</a></code>\"] to\n!<var>bitfield</var>[5].</p>"
         },
         {
           "html": "<p>Set <var>reportItem</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hidreportitem-hasnull\" id=\"ref-for-dom-hidreportitem-hasnull\">hasNull</a></code>\"] to <var>bitfield</var>[6].</p>"
@@ -848,7 +848,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hiddevice-state-slot\" id=\"ref-for-dom-hiddevice-state-slot⑥\">[[state]]</a></code> is either <code>\"forgotten\"</code> or\n<code>\"forgetting\"</code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var> with a\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>promise</var>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hiddevice-state-slot\" id=\"ref-for-dom-hiddevice-state-slot⑥\">[[state]]</a></code> is one of <code>\"forgotten\"</code>,\n<code>\"forgetting\"</code>, <code>\"opening\"</code>, or <code>\"closing\"</code>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>promise</var>\nwith a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> and return <var>promise</var>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://hid.spec.whatwg.org/#dom-hiddevice-state-slot\" id=\"ref-for-dom-hiddevice-state-slot⑦\">[[state]]</a></code> to <code>\"closing\"</code>.</p>"

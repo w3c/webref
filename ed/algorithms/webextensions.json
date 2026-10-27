@@ -12,7 +12,7 @@
           "html": "<p>Let <var>url</var> be the document’s URL.</p>"
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme\">scheme</a> of <var>url</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> of <var>url</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
           "rationale": "return",
           "steps": [
             {
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a> of <var>url</var> is <code>blob</code>, <code>data</code> or <code>filesystem</code>, or if <var>url</var> is <code>about:blank</code> or <code>about:srcdoc</code>:",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> of <var>url</var> is <code>blob</code>, <code>data</code> or <code>filesystem</code>, or if <var>url</var> is <code>about:blank</code> or <code>about:srcdoc</code>:",
           "rationale": "if",
           "steps": [
             {
@@ -33,10 +33,10 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>document-origin</var> be the <a href=\"https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin\">serialization</a> of the document’s origin.</p>"
+                      "html": "<p>Let <var>document-origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialization</a> of the document’s origin.</p>"
                     },
                     {
-                      "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a> of <var>document-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+                      "html": "If the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> of <var>document-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
                       "rationale": "return",
                       "steps": [
                         {
@@ -54,10 +54,10 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>precursor-origin</var> be the <a href=\"https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin\">serialization</a> of the document’s precursor origin, if any.</p>"
+                      "html": "<p>Let <var>precursor-origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">serialization</a> of the document’s precursor origin, if any.</p>"
                     },
                     {
-                      "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme③\">scheme</a> of <var>precursor-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+                      "html": "If the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> of <var>precursor-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
                       "rationale": "return",
                       "steps": [
                         {
@@ -84,7 +84,7 @@
                       "html": "<p>Let <var>opener</var> be the active document of document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#opener-browsing-context\" id=\"ref-for-opener-browsing-context\">opener browsing context</a>.</p>"
                     },
                     {
-                      "html": "<p>If all of the following conditions are true:</p>\n           <ul>\n            <li data-md=\"\">\n             <p><var>opener</var> is not null</p>\n            </li><li data-md=\"\">\n             <p><var>opener</var>’s origin is still the same as the document’s <u class=\"link-error\" data-lt=\"opener origin at creation\" title=\"LINK ERROR: No 'dfn' refs found for 'opener origin at creation' that are marked for export.\n  (Possible specs this could be from: html)\">opener origin at creation</u></p>\n            </li><li data-md=\"\">\n             <p>The algorithm has not been repeated for <var>opener</var> yet.</p>\n           </li></ul>\n           <p>Then repeat the algorithm for <var>opener</var>.</p>"
+                      "html": "<p>If all of the following conditions are true:</p>\n           <ul>\n            <li data-md=\"\">\n             <p><var>opener</var> is not null</p>\n            </li><li data-md=\"\">\n             <p><var>opener</var>’s origin is still the same as the document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#opener-origin-at-creation\" id=\"ref-for-opener-origin-at-creation\">opener origin at creation</a></p>\n            </li><li data-md=\"\">\n             <p>The algorithm has not been repeated for <var>opener</var> yet.</p>\n           </li></ul>\n           <p>Then repeat the algorithm for <var>opener</var>.</p>"
                     }
                   ]
                 }
