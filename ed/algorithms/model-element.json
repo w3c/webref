@@ -5,9 +5,26 @@
   },
   "algorithms": [
     {
+      "name": "initialize-model-animation-playback",
+      "href": "https://immersive-web.github.io/model-element/#initialize-model-animation-playback",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-model-animation-playback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize model animation playback</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model①③\">model</a></code> element\n<var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var>’s loaded model resource contains no animation, return.</p>"
+        },
+        {
+          "html": "<p>Set the animation to its first frame and initialize playback in the paused\nstate.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var> has an <code><a data-link-type=\"element-sub\" href=\"https://immersive-web.github.io/model-element/#element-attrdef-model-autoplay\" id=\"ref-for-element-attrdef-model-autoplay②\">autoplay</a></code> attribute, begin animation playback.</p>"
+        }
+      ]
+    },
+    {
       "name": "determine-model-poster-frame",
       "href": "https://immersive-web.github.io/model-element/#determine-a-model-poster-frame",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-a-model-poster-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine a model poster frame</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model①⑦\">model</a></code> element <var>element</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-a-model-poster-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine a model poster frame</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model①⑧\">model</a></code> element <var>element</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -23,13 +40,65 @@
           "html": "<p>If <var>url</var> is failure, set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame②\">poster frame</a> to null and return.</p>"
         },
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>url</var>,\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>’s\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is <code>\"image\"</code>,\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-initiator-type\" id=\"ref-for-request-initiator-type\">initiator type</a> is <code>\"model\"</code>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is\n<code>\"include\"</code>, and whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-use-url-credentials-flag\" id=\"ref-for-concept-request-use-url-credentials-flag\">use-URL-credentials flag</a> is set.</p>"
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>url</var> and\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is <code>\"image\"</code>, configured as specified in <a href=\"https://immersive-web.github.io/model-element/#cors\">§ 17.2 CORS</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var>. This MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event\" id=\"ref-for-delay-the-load-event\">delay the load event</a>\nof <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a> until this instance of the algorithm\ncompletes or is aborted.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var>. This MUST <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#delay-the-load-event\" id=\"ref-for-delay-the-load-event\">delay the load event</a>\nof <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a> until this instance of the algorithm\ncompletes or is aborted.</p>"
         },
         {
           "html": "<p>When fetching and image decoding complete, if an image is obtained, set\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-poster-frame\" id=\"ref-for-model-poster-frame③\">poster frame</a> to that image. Otherwise, set it to null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get-model-entity-transform",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform④\">entityTransform</a></code> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return this element’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#stored-entity-transform\" id=\"ref-for-stored-entity-transform\">stored entity transform</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set-model-entity-transform",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑥\">entityTransform</a></code> setter steps, given <var>value</var>, are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>element</var> be this <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model②③\">model</a></code> element.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var> is in <code>orbit</code> mode, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#model-renderer\" id=\"ref-for-model-renderer\">model renderer</a> is null, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#unknownerror\" id=\"ref-for-unknownerror\">UnknownError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>matrix</var> be a copy of <var>value</var>’s 16 matrix components.</p>"
+        },
+        {
+          "html": "<p>If <var>matrix</var> does not satisfy the matrix restrictions above, throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#update-the-model-entity-transform\" id=\"ref-for-update-the-model-entity-transform\">Update the model entity transform</a> for <var>element</var>, given <var>matrix</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#automatic-fitting-enabled\" id=\"ref-for-automatic-fitting-enabled\">automatic fitting enabled</a> flag to false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "update-model-entity-transform",
+      "href": "https://immersive-web.github.io/model-element/#update-the-model-entity-transform",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-model-entity-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the model entity transform</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model②④\">model</a></code> element\n<var>element</var>, given a matrix <var>matrix</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>transform</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dommatrixreadonly\" id=\"ref-for-dommatrixreadonly③\">DOMMatrixReadOnly</a></code> initialized with the 16\ncomponents of <var>matrix</var>, with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-dommatrixreadonly-is2d\" id=\"ref-for-dom-dommatrixreadonly-is2d①\">is2D</a></code> set to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#stored-entity-transform\" id=\"ref-for-stored-entity-transform②\">stored entity transform</a> to <var>transform</var>.</p>"
         }
       ]
     },
@@ -114,10 +183,13 @@
           "html": "<p>Let <var>scale</var> be the minimum of <var>xScale</var> and <var>yScale</var>. If both are positive infinity, set\n<var>scale</var> to 1. If either viewport dimension is zero, set <var>scale</var> to 0.</p>"
         },
         {
-          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform⑨\">entityTransform</a></code> to a uniform scale of <var>scale</var> and the supplied\n<var>rotation</var>.</p>"
+          "html": "<p>Let <var>transform</var> be a matrix with a uniform scale of <var>scale</var> and the supplied\n<var>rotation</var>.</p>"
         },
         {
-          "html": "<p>Translate the model so that <var>center</var>, after applying the scale and rotation, is aligned\nwith the center of the viewport in X and Y, and is <var>scale</var> × <var>extents</var>.z / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>. With the identity rotation used for initial fitting, the front face of\nthe scaled bounding box lies on the viewport plane and the rest lies behind it.</p>"
+          "html": "<p>Set the translation in <var>transform</var> so that <var>center</var>, after applying the scale\nand rotation, is aligned with the center of the viewport in X and Y, and is\n<var>scale</var> × <var>extents</var>.z / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>. With the identity rotation used for initial fitting, the front face of\nthe scaled bounding box lies on the viewport plane and the rest lies behind it.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#update-the-model-entity-transform\" id=\"ref-for-update-the-model-entity-transform①\">Update the model entity transform</a> for the model element, given <var>transform</var>.</p>"
         }
       ]
     },
@@ -127,7 +199,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#automatic-fitting-enabled\" id=\"ref-for-automatic-fitting-enabled②\">automatic fitting enabled</a> is false, preserve\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①②\">entityTransform</a></code> and return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#automatic-fitting-enabled\" id=\"ref-for-automatic-fitting-enabled⑤\">automatic fitting enabled</a> is false, preserve\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①④\">entityTransform</a></code> and return.</p>"
         },
         {
           "html": "<p>If the element is in <code>orbit</code> mode, apply the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#orbit-fit-algorithm\" id=\"ref-for-orbit-fit-algorithm②\">orbit fit algorithm</a>, preserving the\ncurrent rotation.</p>"
@@ -162,18 +234,21 @@
           "html": "<p>Let <var>scale</var> be the minimum of <var>width</var> and <var>height</var>, divided by <var>diameter</var>. If <var>diameter</var>\nis zero, set <var>scale</var> to 1. If either viewport dimension is zero, set <var>scale</var> to 0.</p>"
         },
         {
-          "html": "<p>Preserve the model’s current rotation and replace the scale in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform\" id=\"ref-for-dom-htmlmodelelement-entitytransform①④\">entityTransform</a></code> with a uniform scale of <var>scale</var>.</p>"
+          "html": "<p>Let <var>transform</var> be a matrix preserving the rotation of the model’s current\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#stored-entity-transform\" id=\"ref-for-stored-entity-transform④\">stored entity transform</a> and using a uniform scale of <var>scale</var>.</p>"
         },
         {
-          "html": "<p>Translate the model so that <var>center</var>, after applying the scale and rotation, is aligned\nwith the center of the viewport in X and Y, and is <var>scale</var> × <var>diameter</var> / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>, so that the enclosing sphere lies entirely behind the viewport plane.</p>"
+          "html": "<p>Set the translation in <var>transform</var> so that <var>center</var>, after applying the scale\nand rotation, is aligned with the center of the viewport in X and Y, and is\n<var>scale</var> × <var>diameter</var> / 2 behind\nthe viewport plane. The translation must account for the scaled and rotated position\nof <var>center</var>, so that the enclosing sphere lies entirely behind the viewport plane.</p>"
         },
         {
-          "html": "<p>Apply subsequent orbit rotations about this fitted center, preserving its position.\nThe enclosing sphere then remains within the viewport at any orientation.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#update-the-model-entity-transform\" id=\"ref-for-update-the-model-entity-transform②\">Update the model entity transform</a> for the model element, given <var>transform</var>.</p>"
+        },
+        {
+          "html": "<p>Apply subsequent orbit rotations about this fitted center, preserving its position.\nReflect each resulting matrix by\n<a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/model-element/#update-the-model-entity-transform\" id=\"ref-for-update-the-model-entity-transform③\">updating the model entity transform</a>\nfor the model element, given that matrix. The enclosing sphere then remains\nwithin the viewport at any orientation.</p>"
         }
       ]
     },
     {
-      "html": "A <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model②③\">model</a></code> element MUST represent the content given by the first matching\ncondition below:",
+      "html": "A <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model②⑦\">model</a></code> element MUST represent the content given by the first matching\ncondition below:",
       "rationale": "if",
       "steps": [
         {
@@ -192,7 +267,7 @@
     },
     {
       "name": "model-adopting-steps",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-adopt-ext\" id=\"ref-for-concept-node-adopt-ext\">adopting steps</a> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③⑥\">model</a></code> element, given <var>node</var> and\n<var>oldDocument</var>, are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-adopt-ext\" id=\"ref-for-concept-node-adopt-ext\">adopting steps</a> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model④⓪\">model</a></code> element, given <var>node</var> and\n<var>oldDocument</var>, are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -203,7 +278,7 @@
     {
       "name": "block-model-resource-loading",
       "href": "https://immersive-web.github.io/model-element/#block-model-resource-loading",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"block-model-resource-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">block model resource loading</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model③⑦\">model</a></code> element\n<var>element</var>, the user agent MUST run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"block-model-resource-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">block model resource loading</dfn> for a <code><a data-link-type=\"element\" href=\"https://immersive-web.github.io/model-element/#elementdef-model\" id=\"ref-for-elementdef-model④①\">model</a></code> element\n<var>element</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -213,7 +288,7 @@
           "html": "<p>Stop rendering <var>element</var>’s model and environment map, including any\npreviously loaded content.</p>"
         },
         {
-          "html": "<p>Reject any unsettled <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready\" id=\"ref-for-dom-htmlmodelelement-ready③\">ready</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-environmentmapready\" id=\"ref-for-dom-htmlmodelelement-environmentmapready①\">environmentMapReady</a></code> promises of <var>element</var>, if they\nexist, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> exception.</p>"
+          "html": "<p>Reject any unsettled <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready\" id=\"ref-for-dom-htmlmodelelement-ready⑤\">ready</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/model-element/#dom-htmlmodelelement-environmentmapready\" id=\"ref-for-dom-htmlmodelelement-environmentmapready①\">environmentMapReady</a></code> promises of <var>element</var>, if they\nexist, with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code> exception.</p>"
         },
         {
           "html": "<p>Make <var>element</var> represent its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#fallback-content\" id=\"ref-for-fallback-content②\">fallback content</a> instead of\nthe model.</p>"

@@ -5,6 +5,8 @@
 
 [Exposed=Window, SecureContext]
 interface HTMLModelElement : HTMLElement {
+  [CEReactions, Reflect] attribute boolean autoplay;
+  [CEReactions] attribute DOMString? crossOrigin;
   [CEReactions, ReflectURL] attribute USVString poster;
 
   readonly attribute Promise<HTMLModelElement> ready;

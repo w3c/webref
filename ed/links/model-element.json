@@ -17,6 +17,12 @@
       "https://drafts.csswg.org/css-cascade-5/": {
         "specShortname": "css-cascade-5"
       },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "font-fetching-requirements"
+        ],
+        "specShortname": "css-fonts-4"
+      },
       "https://drafts.csswg.org/css-sizing-3/": {
         "specShortname": "css-sizing-3"
       },
@@ -87,9 +93,7 @@
       "https://github.com/immersive-web/model-element/commits/main/": {},
       "https://github.com/immersive-web/model-element/issues/13": {},
       "https://github.com/immersive-web/model-element/issues/130": {},
-      "https://github.com/immersive-web/model-element/issues/15": {},
       "https://github.com/immersive-web/model-element/issues/155": {},
-      "https://github.com/immersive-web/model-element/issues/16": {},
       "https://github.com/immersive-web/model-element/issues/17": {},
       "https://github.com/immersive-web/model-element/issues/18": {},
       "https://github.com/immersive-web/model-element/issues/2": {},
@@ -99,7 +103,6 @@
       "https://github.com/immersive-web/model-element/issues/29": {},
       "https://github.com/immersive-web/model-element/issues/30": {},
       "https://github.com/immersive-web/model-element/issues/31": {},
-      "https://github.com/immersive-web/model-element/issues/35": {},
       "https://github.com/immersive-web/model-element/issues/36": {},
       "https://github.com/immersive-web/model-element/issues/37": {},
       "https://github.com/immersive-web/model-element/issues/38": {},
@@ -124,6 +127,11 @@
           "attr-video-poster"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "fetch-a-single-module-script"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "specShortname": "infra"
       },
@@ -140,6 +148,12 @@
       },
       "https://w3c.github.io/html-aria/": {
         "specShortname": "html-aria"
+      },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "effective-directive-for-a-request"
+        ],
+        "specShortname": "CSP3"
       },
       "https://w3c.github.io/webappsec-mixed-content/": {
         "specShortname": "mixed-content"
@@ -202,6 +216,7 @@
         "anchors": [
           "dompointreadonly",
           "dommatrixreadonly",
+          "dom-dommatrixreadonly-is2d",
           "transform-a-point-with-a-matrix",
           "dompoint"
         ],
@@ -219,12 +234,16 @@
         "anchors": [
           "concept-request",
           "concept-request-url",
-          "concept-request-client",
           "concept-request-destination",
-          "request-initiator-type",
+          "concept-fetch",
+          "concept-request-mode",
+          "concept-request-client",
           "concept-request-credentials-mode",
-          "concept-request-use-url-credentials-flag",
-          "concept-fetch"
+          "request-initiator-type",
+          "cors-protocol",
+          "destination-type",
+          "requestdestination",
+          "concept-network-error"
         ],
         "specShortname": "fetch"
       },
@@ -242,12 +261,14 @@
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
           "reflect",
-          "xattr-reflecturl",
-          "xattr-reflect"
+          "limited-to-only-known-values",
+          "xattr-reflect",
+          "xattr-reflecturl"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
         "anchors": [
+          "boolean-attribute",
           "valid-non-negative-integer"
         ]
       },
@@ -298,6 +319,8 @@
       },
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
         "anchors": [
+          "cors-settings-attribute",
+          "cors-settings-attribute-credentials-mode",
           "valid-non-empty-url-potentially-surrounded-by-spaces",
           "encoding-parsing-a-url"
         ]
@@ -318,16 +341,28 @@
         ],
         "specShortname": "infra"
       },
+      "https://w3c.github.io/webappsec-csp/": {
+        "anchors": [
+          "media-src",
+          "img-src"
+        ],
+        "specShortname": "CSP3"
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed",
           "SecureContext",
+          "idl-boolean",
+          "idl-DOMString",
           "idl-USVString",
           "idl-promise",
           "idl-undefined",
-          "idl-DOMString",
+          "invalidstateerror",
+          "unknownerror",
+          "notsupportederror",
           "new",
-          "securityerror"
+          "securityerror",
+          "exceptiondef-typeerror"
         ],
         "specShortname": "webidl"
       }
