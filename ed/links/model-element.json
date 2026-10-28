@@ -17,17 +17,29 @@
       "https://drafts.csswg.org/css-cascade-5/": {
         "specShortname": "css-cascade-5"
       },
+      "https://drafts.csswg.org/css-display/": {
+        "specShortname": "css-display-3"
+      },
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
           "font-fetching-requirements"
         ],
         "specShortname": "css-fonts-4"
       },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "sizing"
+        ],
+        "specShortname": "css-images-3"
+      },
       "https://drafts.csswg.org/css-sizing-3/": {
         "specShortname": "css-sizing-3"
       },
       "https://drafts.csswg.org/css-values-4/": {
         "specShortname": "css-values-4"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "specShortname": "CSS2"
       },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
@@ -98,7 +110,6 @@
       "https://github.com/immersive-web/model-element/issues/18": {},
       "https://github.com/immersive-web/model-element/issues/2": {},
       "https://github.com/immersive-web/model-element/issues/24": {},
-      "https://github.com/immersive-web/model-element/issues/27": {},
       "https://github.com/immersive-web/model-element/issues/28": {},
       "https://github.com/immersive-web/model-element/issues/29": {},
       "https://github.com/immersive-web/model-element/issues/30": {},
@@ -108,7 +119,6 @@
       "https://github.com/immersive-web/model-element/issues/38": {},
       "https://github.com/immersive-web/model-element/issues/39": {},
       "https://github.com/immersive-web/model-element/issues/43": {},
-      "https://github.com/immersive-web/model-element/issues/44": {},
       "https://github.com/immersive-web/model-element/issues/50": {},
       "https://gnome.pages.gitlab.gnome.org/atk/": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -124,7 +134,14 @@
       },
       "https://html.spec.whatwg.org/multipage/media.html": {
         "anchors": [
+          "attr-media-loop",
           "attr-video-poster"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "embedded-content-rendering-rules",
+          "dimRendering"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -191,6 +208,19 @@
         ],
         "specShortname": "css-cascade-5"
       },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "replaced-element"
+        ],
+        "specShortname": "css-display-3"
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "natural-dimensions",
+          "default-object-size"
+        ],
+        "specShortname": "css-images-3"
+      },
       "https://drafts.csswg.org/css-sizing-3/": {
         "anchors": [
           "sizing-property"
@@ -236,11 +266,10 @@
           "concept-request-url",
           "concept-request-destination",
           "concept-fetch",
-          "concept-request-mode",
           "concept-request-client",
+          "concept-request-mode",
           "concept-request-credentials-mode",
           "request-initiator-type",
-          "cors-protocol",
           "destination-type",
           "requestdestination",
           "concept-network-error"
@@ -260,15 +289,16 @@
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
-          "reflect",
-          "limited-to-only-known-values",
           "xattr-reflect",
-          "xattr-reflecturl"
+          "xattr-reflecturl",
+          "reflect",
+          "limited-to-only-known-values"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
         "anchors": [
           "boolean-attribute",
+          "enumerated-attribute",
           "valid-non-negative-integer"
         ]
       },
@@ -284,15 +314,16 @@
           "phrasing-content-2",
           "interactive-content-2",
           "palpable-content-2",
-          "fallback-content",
-          "htmlelement"
+          "transparent",
+          "script-supporting-elements-2",
+          "htmlelement",
+          "fallback-content"
         ]
       },
       "https://html.spec.whatwg.org/multipage/embedded-content.html": {
         "anchors": [
           "the-source-element",
           "the-picture-element",
-          "the-img-element",
           "attr-source-srcset"
         ]
       },
@@ -302,10 +333,14 @@
           "the-figure-element"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "the-object-element"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/media.html": {
         "anchors": [
           "video",
-          "media-element",
           "attr-video-poster",
           "expose-a-user-interface-to-the-user",
           "audio",
@@ -352,6 +387,7 @@
         "anchors": [
           "Exposed",
           "SecureContext",
+          "idl-unsigned-long",
           "idl-boolean",
           "idl-DOMString",
           "idl-USVString",
