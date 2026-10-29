@@ -4111,8 +4111,11 @@
       "steps": [
         {
           "html": "If a <code>toJSON</code> operation with a [<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#Default\" id=\"ref-for-Default⑧\">Default</a></code>] <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-extended-attribute\" id=\"ref-for-dfn-extended-attribute①④③\">extended attribute</a> is declared\non <var>I</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">for each</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exposed\" id=\"ref-for-dfn-exposed①③\">exposed</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-attribute\" id=\"ref-for-dfn-regular-attribute②⑨\">regular attribute</a> <var>attr</var> that is an\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-member\" id=\"ref-for-dfn-interface-member②④\">interface member</a> of <var>I</var>, in order:",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>attr</var>’s type is not a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-json-types\" id=\"ref-for-dfn-json-types①③\">JSON type</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+            },
             {
               "html": "<p>Let <var>id</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑧⑥\">identifier</a> of <var>attr</var>.</p>"
             },
@@ -4120,7 +4123,7 @@
               "html": "<p>Let <var>value</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#getter-steps\" id=\"ref-for-getter-steps⑥\">getter steps</a> of <var>attr</var> with <var>object</var> as\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>.</p>"
             },
             {
-              "html": "<p>If <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-json-types\" id=\"ref-for-dfn-json-types①③\">JSON type</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">set</a> <var>map</var>[<var>id</var>] to <var>value</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑤\">Set</a> <var>map</var>[<var>id</var>] to <var>value</var>.</p>"
             }
           ]
         }

@@ -236,7 +236,7 @@
           "html": "if the Lightness of <var>origin_OkLCh</var> is greater than or equal to 100%,\n\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "if the Lightness of <var>origin_OkLCh</var> is less than than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OkLCh</var> is less than or equal to 0%,\n\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "let inGamut(<var>color</var>) be a function which returns true if, when passed a color,\n\t\tthat color is inside the gamut of <var>destination</var>.\n\t\tFor HSL and HWB, it returns true if the color is inside the gamut of sRGB."
@@ -667,7 +667,7 @@
           "html": "if the Lightness of <var>origin_OkLCh</var> is greater than or equal to 100%,\n\t\t\tconvert `oklab(1 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
-          "html": "if the Lightness of <var>origin_OkLCh</var> is less than than or equal to 0%,\n\t\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
+          "html": "if the Lightness of <var>origin_OkLCh</var> is less than or equal to 0%,\n\t\t\tconvert `oklab(0 0 0 / origin.alpha)` to <var>destination</var> and return it as the gamut mapped color"
         },
         {
           "html": "let <var>l_origin</var> be the OkLCh lightness component of <var>origin_OkLCh</var>"
@@ -740,7 +740,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specifed value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-2\"></a>\n\t\t\t1.0 represents the maximum in-gamut channel value,\n\t\t\tand it is assumed all channels have the same maximum."
@@ -758,7 +758,7 @@
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-6\"></a>\n\t\t\tFor typical RGB spaces\n\t\t\twhere the gamut bounds are 0 and 1 for each component\n\t\t\tthis simplifies to a single constant\n\t\t\trather than a 3-element array."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specifed value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-8\"></a>\n\t\t\tfavoring the first intersection in the direction <var>start</var> -&gt; <var>end</var> ."
