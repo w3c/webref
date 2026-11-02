@@ -1939,7 +1939,10 @@
           "css-parse-a-comma-separated-list-according-to-a-css-grammar",
           "typedef-unicode-range-token",
           "typedef-declaration-rule-list",
-          "at-rule"
+          "at-rule",
+          "css-rule",
+          "declaration",
+          "css-parse-something-according-to-a-css-grammar"
         ],
         "specShortname": "css-syntax-3"
       },
@@ -1987,6 +1990,7 @@
           "typedef-dashed-ident",
           "math-function",
           "funcdef-calc",
+          "css-keyword",
           "ch"
         ],
         "specShortname": "css-values-4"
@@ -2021,7 +2025,11 @@
           "cssstyledeclaration-declarations",
           "cssstyledeclaration",
           "cssomstring",
-          "cssrule"
+          "cssrule",
+          "serialize-a-css-rule",
+          "serialize-a-css-component-value",
+          "serialize-a-css-declaration",
+          "serialize-an-identifier"
         ],
         "specShortname": "cssom-1"
       },
@@ -2040,7 +2048,15 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "tuple",
-          "code-unit"
+          "code-unit",
+          "string",
+          "ascii-lowercase",
+          "list",
+          "map-set",
+          "list-iterate",
+          "map-iterate",
+          "list-append",
+          "string-concatenate"
         ],
         "specShortname": "infra"
       },
@@ -2061,6 +2077,7 @@
           "idl-sequence",
           "idl-unsigned-long",
           "idl-undefined",
+          "dfn-map-entries",
           "invalidaccesserror"
         ],
         "specShortname": "webidl"

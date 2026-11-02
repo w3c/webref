@@ -252,6 +252,155 @@
           "html": "<p>Font features implied by the value of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings\" id=\"ref-for-propdef-font-feature-settings①③\">font-feature-settings</a> property are applied.</p>"
         }
       ]
+    },
+    {
+      "name": "get the feature value map attribute",
+      "href": "https://drafts.csswg.org/css-fonts-4/#get-the-feature-value-map-attribute",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-feature-value-map-attribute\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the feature value map attribute</dfn>,\n\tgiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>type</var> naming a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#font-feature-value-block\" id=\"ref-for-font-feature-value-block⑧\">feature value block</a> without the leading U+0040 (@):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>type</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ASCII lowercasing</a> <var>type</var>.</p>"
+        },
+        {
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#om-fontfeaturevalues\" id=\"ref-for-om-fontfeaturevalues③\">CSSFontFeatureValuesRule</a></code> attribute indicated by <var>type</var> in the following table:</p>\n      <div class=\"overlarge\"><table class=\"data\">\n       <thead>\n        <tr>\n         <th><var>type</var>\n         </th><th>Attribute\n\t\n       </th></tr></thead><tbody>\n        <tr>\n         <td>\"<code class=\"highlight\">swash</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-swash\" id=\"ref-for-dom-cssfontfeaturevaluesrule-swash\">swash</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">stylistic</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-stylistic\" id=\"ref-for-dom-cssfontfeaturevaluesrule-stylistic\">stylistic</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">ornaments</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-ornaments\" id=\"ref-for-dom-cssfontfeaturevaluesrule-ornaments\">ornaments</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">annotation</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-annotation\" id=\"ref-for-dom-cssfontfeaturevaluesrule-annotation①\">annotation</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">character-variant</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-charactervariant\" id=\"ref-for-dom-cssfontfeaturevaluesrule-charactervariant\">characterVariant</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">styleset</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-styleset\" id=\"ref-for-dom-cssfontfeaturevaluesrule-styleset\">styleset</a></code>\n\t\t\n        </td></tr><tr>\n         <td>\"<code class=\"highlight\">historical-forms</code>\"\n         </td><td><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-historicalforms\" id=\"ref-for-dom-cssfontfeaturevaluesrule-historicalforms\">historicalForms</a></code>\n\n      </td></tr></tbody></table></div>"
+        }
+      ]
+    },
+    {
+      "name": "populate font feature value maps",
+      "href": "https://drafts.csswg.org/css-fonts-4/#populate-font-feature-value-maps",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"populate-font-feature-value-maps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">populate font feature value maps</dfn>,\n\tgiven a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#om-fontfeaturevalues\" id=\"ref-for-om-fontfeaturevalues⑤\">CSSFontFeatureValuesRule</a></code> <var>rule</var>\n\tand a parsed <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values\" id=\"ref-for-at-ruledef-font-feature-values②④\">@font-feature-values</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#at-rule\" id=\"ref-for-at-rule②\">at-rule</a> <var>parsedRule</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For each valid <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#font-feature-value-block\" id=\"ref-for-font-feature-value-block⑨\">feature value block</a> <var>block</var> in <var>parsedRule</var>’s list of child <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-rule\" id=\"ref-for-css-rule\">rules</a>, in source order:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>type</var> be <var>block</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#at-rule\" id=\"ref-for-at-rule③\">at-rule</a> name.</p>"
+            },
+            {
+              "html": "<p>Let <var>attribute</var> be the result of running <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#get-the-feature-value-map-attribute\" id=\"ref-for-get-the-feature-value-map-attribute\">get the feature value map attribute</a> given <var>type</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>map</var> be <var>rule</var>’s <var>attribute</var> attribute’s value’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries\">map entries</a>.</p>"
+            },
+            {
+              "html": "For each valid <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#font-feature-value-declaration\" id=\"ref-for-font-feature-value-declaration②\">font feature value declaration</a> <var>decl</var> in <var>block</var>’s list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations\" id=\"ref-for-cssstyledeclaration-declarations①\">declarations</a>, in source order:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>name</var> be <var>decl</var>’s name, as defined for a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#declaration\" id=\"ref-for-declaration\">declaration</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>indexes</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> containing the numeric value of each <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-fonts-4/#font-feature-index-value\" id=\"ref-for-font-feature-index-value①②\">&lt;font-feature-index&gt;</a>\nin <var>decl</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsed</a> value, in order.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>map</var>[<var>name</var>] to <var>indexes</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "serialize a font feature values rule",
+      "html": "To <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-rule\" id=\"ref-for-serialize-a-css-rule\">serialize a CSS rule</a> representing an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values\" id=\"ref-for-at-ruledef-font-feature-values②⑤\">@font-feature-values</a> rule <var>rule</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>s</var> be \"<code class=\"highlight\"><c- n=\"\">@font-feature-values</c-></code>\".</p>"
+        },
+        {
+          "html": "<p>Append U+0020 SPACE to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append the value of <var>rule</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-fonts-4/#dom-cssfontfeaturevaluesrule-fontfamily\" id=\"ref-for-dom-cssfontfeaturevaluesrule-fontfamily①\">fontFamily</a></code> attribute to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Append U+0020 SPACE followed by U+007B ({) to <var>s</var>.</p>"
+        },
+        {
+          "html": "If <var>rule</var> has any valid <a class=\"css property\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-feature-values-font-display\" id=\"ref-for-descdef-font-feature-values-font-display③\">font-display</a> declarations:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>decl</var> be the last such declaration in source order.</p>"
+            },
+            {
+              "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-component-value\" id=\"ref-for-serialize-a-css-component-value\">serializing a CSS component value</a>\ngiven <var>decl</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①\">parsed</a> value as a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#css-keyword\" id=\"ref-for-css-keyword\">keyword</a>.</p>"
+            },
+            {
+              "html": "<p>Append U+0020 SPACE to <var>s</var>.</p>"
+            },
+            {
+              "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration\" id=\"ref-for-serialize-a-css-declaration\">serializing a CSS declaration</a>\nwith property name \"<code class=\"highlight\">font-display</code>\" and value <var>value</var> to <var>s</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>type</var> of «\n\"<code class=\"highlight\">swash</code>\",\n\"<code class=\"highlight\">stylistic</code>\",\n\"<code class=\"highlight\">ornaments</code>\",\n\"<code class=\"highlight\">annotation</code>\",\n\"<code class=\"highlight\">character-variant</code>\",\n\"<code class=\"highlight\">styleset</code>\",\n\"<code class=\"highlight\">historical-forms</code>\"\n»:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>attribute</var> be the result of running <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#get-the-feature-value-map-attribute\" id=\"ref-for-get-the-feature-value-map-attribute①\">get the feature value map attribute</a> given <var>type</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>map</var> be <var>rule</var>’s <var>attribute</var> attribute’s value’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-map-entries\" id=\"ref-for-dfn-map-entries①\">map entries</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>map</var> is empty, continue.</p>"
+            },
+            {
+              "html": "<p>Append U+0020 SPACE, U+0040 (@), <var>type</var>, U+0020 SPACE, and U+007B ({) to <var>s</var>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>name</var> → <var>indexes</var> of <var>map</var>:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append U+0020 SPACE to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serializing an identifier</a> given <var>name</var> to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Append U+003A (:) followed by U+0020 SPACE to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>serializedIndexes</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>index</var> of <var>indexes</var>:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-component-value\" id=\"ref-for-serialize-a-css-component-value①\">serializing a CSS component value</a>\ngiven <var>index</var> as an <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#integer-value\" id=\"ref-for-integer-value⑥\">&lt;integer&gt;</a> to <var>serializedIndexes</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate\">concatenating</a> <var>serializedIndexes</var>\nwith separator U+0020 SPACE to <var>s</var>.</p>"
+                },
+                {
+                  "html": "<p>Append U+003B (;) to <var>s</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append U+0020 SPACE followed by U+007D (}) to <var>s</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Append U+0020 SPACE followed by U+007D (}) to <var>s</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>s</var>.</p>"
+        }
+      ]
     }
   ]
 }

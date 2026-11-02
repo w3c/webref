@@ -16799,7 +16799,7 @@
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostensurecancompilestrings",
       "linkingText": [
         "HostEnsureCanCompileStrings",
-        "HostEnsureCanCompileStrings(calleeRealm, paramStrings, bodyString, compilationType)"
+        "HostEnsureCanCompileStrings(calleeRealm, paramStrings, bodyString, codeString, compilationType, paramArgs, bodyArg)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -16809,8 +16809,29 @@
       "heading": {
         "id": "sec-hostensurecancompilestrings",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostensurecancompilestrings",
-        "title": "HostEnsureCanCompileStrings ( calleeRealm, paramStrings, bodyString, compilationType )",
+        "title": "HostEnsureCanCompileStrings ( calleeRealm, paramStrings, bodyString, codeString, compilationType, paramArgs, bodyArg )",
         "number": "19.2.1.2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "sec-hostgetcodeforeval",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostgetcodeforeval",
+      "linkingText": [
+        "HostGetCodeForEval",
+        "HostGetCodeForEval(arg)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-hostgetcodeforeval",
+        "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostgetcodeforeval",
+        "title": "HostGetCodeForEval ( arg )",
+        "number": "19.2.1.3"
       },
       "definedIn": "heading",
       "links": []
@@ -16831,7 +16852,7 @@
         "id": "sec-evaldeclarationinstantiation",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-evaldeclarationinstantiation",
         "title": "EvalDeclarationInstantiation ( body, variableEnv, lexicalEnv, privateEnv, strict )",
-        "number": "19.2.1.3"
+        "number": "19.2.1.4"
       },
       "definedIn": "heading",
       "links": []
