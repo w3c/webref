@@ -16799,7 +16799,7 @@
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostensurecancompilestrings",
       "linkingText": [
         "HostEnsureCanCompileStrings",
-        "HostEnsureCanCompileStrings(calleeRealm, paramStrings, bodyString, direct)"
+        "HostEnsureCanCompileStrings(calleeRealm, paramStrings, bodyString, compilationType)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -16809,7 +16809,7 @@
       "heading": {
         "id": "sec-hostensurecancompilestrings",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostensurecancompilestrings",
-        "title": "HostEnsureCanCompileStrings ( calleeRealm, paramStrings, bodyString, direct )",
+        "title": "HostEnsureCanCompileStrings ( calleeRealm, paramStrings, bodyString, compilationType )",
         "number": "19.2.1.2"
       },
       "definedIn": "heading",
@@ -30332,11 +30332,11 @@
       "links": []
     },
     {
-      "id": "sec-initializetypedarrayfromlist",
-      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromlist",
+      "id": "sec-initializetypedarrayfromelements",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromelements",
       "linkingText": [
-        "InitializeTypedArrayFromList",
-        "InitializeTypedArrayFromList(obj, values)"
+        "InitializeTypedArrayFromElements",
+        "InitializeTypedArrayFromElements(obj, source)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -30344,31 +30344,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-initializetypedarrayfromlist",
-        "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromlist",
-        "title": "InitializeTypedArrayFromList ( obj, values )",
+        "id": "sec-initializetypedarrayfromelements",
+        "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromelements",
+        "title": "InitializeTypedArrayFromElements ( obj, source )",
         "number": "23.2.5.1.4"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "sec-initializetypedarrayfromarraylike",
-      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraylike",
-      "linkingText": [
-        "InitializeTypedArrayFromArrayLike",
-        "InitializeTypedArrayFromArrayLike(obj, arrayLike)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-initializetypedarrayfromarraylike",
-        "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraylike",
-        "title": "InitializeTypedArrayFromArrayLike ( obj, arrayLike )",
-        "number": "23.2.5.1.5"
       },
       "definedIn": "heading",
       "links": []
@@ -30389,7 +30368,7 @@
         "id": "sec-allocatetypedarraybuffer",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-allocatetypedarraybuffer",
         "title": "AllocateTypedArrayBuffer ( obj, length )",
-        "number": "23.2.5.1.6"
+        "number": "23.2.5.1.5"
       },
       "definedIn": "heading",
       "links": []
