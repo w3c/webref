@@ -676,7 +676,7 @@
           "html": "let <var>h_origin</var> be the OkLCh hue component of <var>origin_OkLCh</var>"
         },
         {
-          "html": "let <var>anchor</var> be an achromatic OkLCh color formed with\n\t\t\t<var>l_origin</var> as lightness, 0 as chroma and <var>h_origin</var> as hue,\n\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>"
+          "html": "let <var>anchor</var> be an achromatic OkLCh color formed with\n\t\t\t<var>l_origin</var> as lightness, 0 as chroma and <var>h_origin</var> as hue,\n\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>\n\t\t\tand clamped to the gamut\n\t\t\t<a href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-10\"><sup>10</sup></a>"
         },
         {
           "html": "let <var>origin_rgb</var> be <var>origin_OkLCh</var>\n\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>"
@@ -714,7 +714,16 @@
           "html": "let <var>direction</var> be a 3-element array"
         },
         {
-          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>\n         if abs(<var>d</var>) &gt; 1E-12 <a href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n\t\t\t\t\t\n         <ul>\n          <li>let <var>inv_d</var> be 1 / <var>d</var>\n          </li><li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n          </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n         </li></ul>\n        </li><li>\n         else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n         <ul>\n          <li>return INTERSECTION NOT FOUND\n         </li></ul>\n       </li></ul>"
+          "html": "let <var>length</var> be 0"
+        },
+        {
+          "html": "let <var>magnitude</var> be 0"
+        },
+        {
+          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>let <var>length</var> be max(<var>length</var>, abs(<var>d</var>))\n        </li><li>let <var>magnitude</var> be max(<var>magnitude</var>, abs(<var>a</var>), abs(<var>b</var>))\n        </li><li>\n         if <var>d</var> is not zero <a href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n\t\t\t\t\t\n         <ul>\n          <li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) / <var>d</var> \n          </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) / <var>d</var> \n          </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n          </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n         </li></ul>\n        </li><li>\n         else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n         <ul>\n          <li>return INTERSECTION NOT FOUND\n         </li></ul>\n       </li></ul>"
+        },
+        {
+          "html": "if <var>length</var> is less than or equal to <var>magnitude</var> * 1E-12\n\t\t\t<a href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-9\"><sup>9</sup></a>\n\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
         },
         {
           "html": "if (<var>tnear</var> &gt; <var>tfar</var> or <var>tfar</var> &lt; 0)\n\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
@@ -740,7 +749,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-5 should be used."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-2\"></a>\n\t\t\t1.0 represents the maximum in-gamut channel value,\n\t\t\tand it is assumed all channels have the same maximum."
@@ -758,10 +767,16 @@
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-6\"></a>\n\t\t\tFor typical RGB spaces\n\t\t\twhere the gamut bounds are 0 and 1 for each component\n\t\t\tthis simplifies to a single constant\n\t\t\trather than a 3-element array."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tOnly an exactly-zero component is parallel to that pair of faces.\n\t\t\tA small component still limits the ray when <var>start</var> is close to the face,\n\t\t\tand skipping it returns a point outside the gamut,\n\t\t\twhich the final clip turns into a different color."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-8\"></a>\n\t\t\tfavoring the first intersection in the direction <var>start</var> -&gt; <var>end</var> ."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-9\"></a>\n\t\t\tThe endpoints differ by no more than their own rounding error.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specified value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#raytrace-footnote-10\"></a>\n\t\t\tRounding can leave the anchor slightly outside the cube,\n\t\t\tso the ray starts outside the gamut."
         }
       ]
     },
