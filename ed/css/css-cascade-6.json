@@ -7,14 +7,14 @@
   "atrules": [
     {
       "name": "@import",
-      "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
+      "prose": "The @importInfo about the '@import' reference.#at-ruledef-importReferenced in:2. Importing Style Sheets: the @import rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 2.1. Conditional @import Rules (2) 3.1. Cascade Sorting Order (2) 5.4. Additions Since Level 4 5.5. Additions Since Level 3 7. Security Considerations (2) Possible linking syntaxes:''@import''''/@import'' rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-import",
       "descriptors": [],
-      "value": "@import [ <url> | <string> ] [[ layer | layer( <layer-name> ) ] || [ scope | scope( <scope-start> | <scope-boundaries> ) ] || <supports-import-condition>]? <media-import-condition> ;"
+      "value": "@import [ <url> | <string> ] [[ layer | layer( <layer-name> ) ] || [ scope | scope( <scope-start> | <scope-boundaries> ) ] || <supports-import-condition>]? <media-import-condition> ; <supports-import-condition>Info about the '<supports-import-condition>' reference.#typedef-supports-import-conditionReferenced in:2. Importing Style Sheets: the @import rule (2) Possible linking"
     },
     {
       "name": "@scope",
-      "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
+      "prose": "Scoped styles are described in CSS using the @scopeInfo about the '@scope' reference.#at-ruledef-scopeReferenced in:2. Importing Style Sheets: the @import rule 3.5. Scoping Styles: the @scope rule (2) 3.5.1. Effects of @scope (2) (3) (4) (5) (6) (7) 3.5.2. Syntax of @scope (2) 3.5.4. Identifying Scoping Roots and Limits (2) 3.5.5. Scope Nesting (2) (3) (4) (5) (6) (7) (8) (9) 3.5.6. Scoped Declarations (2) 4.1. The CSSScopeRule interface 5.1. Changes since the 21 March 2023 Working Draft (2) 5.2. Changes since the 21 December 2021 First Public Working Draft (2) (3) (4) 5.3. Additions Since Level 5 Possible linking syntaxes:''@scope''''/@scope'' block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope",
       "descriptors": [],
       "value": "@scope <scope-boundaries>? { <block-contents> }"
@@ -25,32 +25,46 @@
     {
       "name": "<supports-import-condition>",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-supports-import-condition",
-      "type": "type",
-      "value": "supports( [ <supports-condition> | <declaration> ] )"
+      "type": "type"
     },
     {
       "name": "<media-import-condition>",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-media-import-condition",
-      "type": "type",
-      "value": "<media-query-list>"
+      "type": "type"
     },
     {
       "name": "<scope-boundaries>",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-boundaries",
-      "type": "type",
-      "value": "[ [ ( <scope-start> ) ]? [ to ( <scope-end> ) ]? ]!"
+      "type": "type"
     },
     {
       "name": "<scope-start>",
-      "prose": "<scope-start> is a <selector-list> selector used to identify the scoping root(s).",
+      "prose": "<scope-start>Info about the '<scope-start>' reference.#typedef-scope-startReferenced in:2. Importing Style Sheets: the @import rule 3.5.2. Syntax of @scope (2) (3) 3.5.4. Identifying Scoping Roots and Limits (2) (3) (4) 3.5.5. Scope Nesting 4.1. The CSSScopeRule interface (2) 5.1. Changes since the 21 March 2023 Working Draft (2) 5.2. Changes since the 21 December 2021 First Public Working Draft 5.3. Additions Since Level 5 Possible linking syntaxes:<<scope-start>><</scope-start>> is a <selector-list> selector used to identify the scoping root(s).",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-start",
       "type": "type"
     },
     {
       "name": "<scope-end>",
-      "prose": "<scope-end> is a <selector-list> selector used to identify any scoping limits.",
+      "prose": "<scope-end>Info about the '<scope-end>' reference.#typedef-scope-endReferenced in:3.5.2. Syntax of @scope (2) (3) 3.5.4. Identifying Scoping Roots and Limits 3.5.5. Scope Nesting 4.1. The CSSScopeRule interface (2) 5.1. Changes since the 21 March 2023 Working Draft 5.3. Additions Since Level 5 Possible linking syntaxes:<<scope-end>><</scope-end>> is a <selector-list> selector used to identify any scoping limits.",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-end",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-import-condition>><</supports-import-condition>>",
+      "value": "supports( [ <supports-condition> | <declaration> ] ) <media-import-condition>Info about the '<media-import-condition>' reference.#typedef-media-import-conditionReferenced in:2. Importing Style Sheets: the @import rule (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-import-condition>><</media-import-condition>>",
+      "value": "<media-query-list>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<scope-boundaries>><</scope-boundaries>>",
+      "value": "[ [ ( <scope-start> ) ]? [ to ( <scope-end> ) ]? ]!"
     }
   ]
 }

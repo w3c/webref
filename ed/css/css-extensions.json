@@ -8,28 +8,47 @@
     {
       "name": "@custom-selector",
       "href": "https://drafts.csswg.org/css-extensions-1/#at-ruledef-custom-selector",
-      "descriptors": [],
-      "value": "@custom-selector <custom-selector> <selector-list> ;"
+      "descriptors": []
     }
   ],
   "selectors": [],
   "values": [
     {
       "name": "<extension-name>",
-      "prose": "All extensions defined in this specification use a common syntax for defining their ”names”: the <extension-name> production. An <extension-name> is any identifier that starts with two dashes (U+002D HYPHEN-MINUS), like --foo, or even exotic names like -- or ------. The CSS language will never use identifiers of this form for any language-defined purpose, so it’s safe to use them for author-defined purposes without ever having to worry about colliding with CSS-defined names.",
+      "prose": "All extensions defined in this specification use a common syntax for defining their ”names”: the <extension-name> production. An <extension-name>Info about the '<extension-name>' reference.#typedef-extension-nameReferenced in:2. Extension Names 3. Custom Selectors (2) (3) Possible linking syntaxes:<<extension-name>><</extension-name>> is any identifier that starts with two dashes (U+002D HYPHEN-MINUS), like --foo, or even exotic names like -- or ------. The CSS language will never use identifiers of this form for any language-defined purpose, so it’s safe to use them for author-defined purposes without ever having to worry about colliding with CSS-defined names.",
       "href": "https://drafts.csswg.org/css-extensions-1/#typedef-extension-name",
       "type": "type"
     },
     {
       "name": "<custom-selector>",
       "href": "https://drafts.csswg.org/css-extensions-1/#typedef-custom-selector",
-      "type": "type",
-      "value": "<custom-arg>? : <extension-name> [ ( <custom-arg>+#? ) ]?"
+      "type": "type"
     },
     {
       "name": "<custom-arg>",
       "href": "https://drafts.csswg.org/css-extensions-1/#typedef-custom-arg",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "@custom-selectorInfo",
+      "value": "@custom-selectorInfo about the '@custom-selector' reference.#at-ruledef-custom-selectorReferenced in:3. Custom Selectors Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@custom-selector''''/@custom-selector''",
+      "value": "@custom-selector <custom-selector> <selector-list> ; <custom-selector>Info about the '<custom-selector>' reference.#typedef-custom-selectorReferenced in:3. Custom Selectors Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<custom-selector>><</custom-selector>>",
+      "value": "<custom-arg>? : <extension-name> [ ( <custom-arg>+#? ) ]? <custom-arg>Info about the '<custom-arg>' reference.#typedef-custom-argReferenced in:3. Custom Selectors (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<custom-arg>><</custom-arg>>",
       "value": "'$' <ident-token>"
     }
   ]

@@ -10,7 +10,7 @@
         "format": "summary table",
         "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-mediaquerylist-change"
       },
-      "type": "change",
+      "type": "changeInfo about the 'change'  reference.#eventdef-mediaquerylist-changeReferenced in:4.2. The MediaQueryList Interface (2) Possible linking syntaxes:{{MediaQueryList/change}}",
       "targets": [
         "MediaQueryList"
       ],
@@ -22,7 +22,7 @@
         "format": "summary table",
         "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-window-resize"
       },
-      "type": "resize",
+      "type": "resizeInfo about the 'resize'  reference.#eventdef-window-resizeReferenced in:12.1. The VisualViewport Interface 13.1. Resizing viewports (2) Changes since the 17 December 2013 Working Draft Changes since the 04 August 2011 Working Draft Possible linking syntaxes:{{Window/resize}}{{VisualViewport/resize}}",
       "targets": [
         "Window",
         "VisualViewport"
@@ -35,7 +35,7 @@
         "format": "summary table",
         "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll"
       },
-      "type": "scroll",
+      "type": "scrollInfo about the 'scroll'  reference.#eventdef-document-scrollReferenced in:12.1. The VisualViewport Interface Changes since the 17 December 2013 Working Draft Changes since the 04 August 2011 Working Draft Possible linking syntaxes:{{Document/scroll}}{{Element/scroll}}{{VisualViewport/scroll}}",
       "targets": [
         "Document",
         "Element",
@@ -49,13 +49,64 @@
         "format": "summary table",
         "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
       },
-      "type": "scrollend",
+      "type": "scrollendInfo about the 'scrollend'  reference.#eventdef-document-scrollendReferenced in:3.1. Scrolling (2) 12.1. The VisualViewport Interface Changes since the 17 March 2016 Working Draft Possible linking syntaxes:{{Document/scrollend}}{{Element/scrollend}}{{VisualViewport/scrollend}}",
       "targets": [
         "Document",
         "Element",
         "VisualViewport"
       ],
       "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://drafts.csswg.org/cssom-view-1/#ref-for-concept-event-fire"
+      },
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-mediaquerylist-change",
+      "type": "change",
+      "targets": [
+        "MediaQueryList"
+      ],
+      "interface": "MediaQueryListEvent"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://drafts.csswg.org/cssom-view-1/#ref-for-concept-event-fire%E2%91%A0"
+      },
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-window-resize",
+      "type": "resize",
+      "targets": [
+        "Window",
+        "VisualViewport"
+      ],
+      "interface": "Event"
+    },
+    {
+      "type": "scroll",
+      "targets": [
+        "Document",
+        "Element",
+        "VisualViewport"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll"
+      },
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll"
+    },
+    {
+      "type": "scrollend",
+      "targets": [
+        "Document",
+        "Element",
+        "VisualViewport"
+      ],
+      "src": {
+        "format": "dfn",
+        "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
+      },
+      "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
     }
   ]
 }

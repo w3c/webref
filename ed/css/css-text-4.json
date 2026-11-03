@@ -576,7 +576,7 @@
         },
         {
           "name": "break-word",
-          "prose": "For compatibility with legacy content, the word-break property also supports a deprecated break-word keyword. When specified, this has the same effect as word-break: normal and overflow-wrap: anywhere, regardless of the actual value of the overflow-wrap property.",
+          "prose": "For compatibility with legacy content, the word-break property also supports a deprecated break-wordInfo about the 'break-word' reference.#valdef-word-break-break-wordPossible linking syntaxes:''word-break/break-word'' keyword. When specified, this has the same effect as word-break: normal and overflow-wrap: anywhere, regardless of the actual value of the overflow-wrap property.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-word-break-break-word",
           "type": "value",
           "value": "break-word"
@@ -740,7 +740,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "If three values are specified, the first value is the required minimum for the total characters in a word, the second value is the minimum for characters before the hyphenation point, and the third value is the minimum for characters after the hyphenation point. If the third value is missing, it is the same as the second. If the second value is missing, then it is auto. The auto value means that the UA chooses a value that adapts to the current layout.",
+          "prose": "If three values are specified, the first value is the required minimum for the total characters in a word, the second value is the minimum for characters before the hyphenation point, and the third value is the minimum for characters after the hyphenation point. If the third value is missing, it is the same as the second. If the second value is missing, then it is auto. The autoInfo about the 'auto' reference.#valdef-hyphenate-limit-chars-autoReferenced in:6.3.4. Hyphenation Character Limits: the hyphenate-limit-chars property (2) (3) Possible linking syntaxes:''hyphenate-limit-chars/auto'' value means that the UA chooses a value that adapts to the current layout.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-hyphenate-limit-chars-auto",
           "type": "value",
           "value": "auto"
@@ -908,7 +908,7 @@
         },
         {
           "name": "<string>",
-          "prose": "The string must be a single character; otherwise the declaration is invalid and must be ignored. When applied to a table cell, specifies the alignment character around which the cell’s contents will align. See below for further details and how this value combines with keywords.",
+          "prose": "The string must be a single character; otherwise the declaration is invalid and must be ignored. When applied to a table cell, specifies the alignment characterInfo about the 'alignment character' reference.#valdef-text-align-alignment-characterPossible linking syntaxes:''text-align/alignment character'' around which the cell’s contents will align. See below for further details and how this value combines with keywords.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-string",
           "type": "value",
           "value": "<string>"
@@ -976,7 +976,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "If auto is specified, content on the affected line is aligned per text-align-all unless text-align-all is set to justify, in which case it is start-aligned. All other values are interpreted as described for text-align.",
+          "prose": "If autoInfo about the 'auto' reference.#valdef-text-align-last-autoReferenced in:7.1. Text Alignment: the text-align shorthand 7.3. Default Text Alignment: the text-align-all property Possible linking syntaxes:''text-align-last/auto'' is specified, content on the affected line is aligned per text-align-all unless text-align-all is set to justify, in which case it is start-aligned. All other values are interpreted as described for text-align.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-align-last-auto",
           "type": "value",
           "value": "auto"
@@ -1022,14 +1022,14 @@
         },
         {
           "name": "inter-character",
-          "prose": "Justification adjusts spacing between each pair of adjacent typographic character units (effectively varying the used letter-spacing on the line). This value is sometimes used in East Asian systems such as Japanese. Mixed-script text with text-justify: inter-character For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
+          "prose": "Justification adjusts spacing between each pair of adjacent typographic character units (effectively varying the used letter-spacing on the line). This value is sometimes used in East Asian systems such as Japanese. Mixed-script text with text-justify: inter-character For legacy reasons, UAs must also support the alternate keyword distributeInfo about the 'distribute' reference.#valdef-text-justify-distributeReferenced in:7.5. Justification Method: the text-justify property Changes Possible linking syntaxes:''text-justify/distribute'' which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-justify-inter-character",
           "type": "value",
           "value": "inter-character"
         },
         {
           "name": "distribute",
-          "prose": "For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
+          "prose": "For legacy reasons, UAs must also support the alternate keyword distributeInfo about the 'distribute' reference.#valdef-text-justify-distributeReferenced in:7.5. Justification Method: the text-justify property Changes Possible linking syntaxes:''text-justify/distribute'' which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
           "href": "https://drafts.csswg.org/css-text-4/#valdef-text-justify-distribute",
           "type": "value",
           "value": "distribute"
@@ -1531,13 +1531,23 @@
     {
       "name": "<autospace>",
       "href": "https://drafts.csswg.org/css-text-4/#typedef-autospace",
-      "type": "type",
-      "value": "no-autospace | [ ideograph-alpha || ideograph-numeric || punctuation ] || [ insert | replace ]"
+      "type": "type"
     },
     {
       "name": "<spacing-trim>",
       "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<autospace>><</autospace>>",
+      "value": "no-autospace | [ ideograph-alpha || ideograph-numeric || punctuation ] || [ insert | replace ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<spacing-trim>><</spacing-trim>>",
       "value": "[ trim-start | space-start | space-first ] || [ trim-adjacent | space-adjacent ] || [ trim-end | space-end | allow-end ] | trim-both | space-all | trim-all"
     }
   ]

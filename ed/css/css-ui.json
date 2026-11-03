@@ -121,19 +121,18 @@
       "values": [
         {
           "name": "<cursor-image>",
-          "value": "[ <url> | <url-set> ] <number>{2}?",
           "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-cursor-image",
-          "type": "value"
+          "type": "value",
+          "value": "<cursor-image>"
         },
         {
           "name": "<cursor-image>",
           "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-cursor-image",
-          "type": "type",
-          "value": "[ <url> | <url-set> ] <number>{2}?"
+          "type": "type"
         },
         {
           "name": "<url-set>",
-          "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
+          "prose": "<url-set>Info about the '<url-set>' reference.#typedef-cursor-url-setReferenced in:5.1.1. Styling the Cursor: the cursor property (2) (3) Changes from the 16 March 2021 Working Draft Changes from CSS UI Level 3 Possible linking syntaxes:<<url-set>><<cursor/url-set>> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
           "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
           "type": "type"
         },
@@ -860,7 +859,7 @@
         },
         {
           "name": "<compat-auto>",
-          "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
+          "value": "searchfieldInfo about the 'searchfield' reference.#valdef-appearance-searchfieldPossible linking syntaxes:''appearance/searchfield'' | textareaInfo about the 'textarea' reference.#valdef-appearance-textareaPossible linking syntaxes:''appearance/textarea'' | checkboxInfo about the 'checkbox' reference.#valdef-appearance-checkboxPossible linking syntaxes:''appearance/checkbox'' | radioInfo about the 'radio' reference.#valdef-appearance-radioPossible linking syntaxes:''appearance/radio'' | menulistInfo about the 'menulist' reference.#valdef-appearance-menulistPossible linking syntaxes:''appearance/menulist'' | listboxInfo about the 'listbox' reference.#valdef-appearance-listboxPossible linking syntaxes:''appearance/listbox'' | meterInfo about the 'meter' reference.#valdef-appearance-meterPossible linking syntaxes:''appearance/meter'' | progress-barInfo about the 'progress-bar' reference.#valdef-appearance-progress-barPossible linking syntaxes:''appearance/progress-bar'' | buttonInfo about the 'button' reference.#valdef-appearance-buttonPossible linking syntaxes:''appearance/button''",
           "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
           "type": "type"
         },
@@ -920,7 +919,7 @@
         },
         {
           "name": "<compat-special>",
-          "value": "textfield | menulist-button",
+          "value": "textfieldInfo about the 'textfield' reference.#valdef-appearance-textfieldReferenced in:7.2. Switching appearance: the appearance property Possible linking syntaxes:''appearance/textfield'' | menulist-buttonInfo about the 'menulist-button' reference.#valdef-appearance-menulist-buttonReferenced in:7.2. Switching appearance: the appearance property Possible linking syntaxes:''appearance/menulist-button''",
           "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
           "type": "type"
         },
@@ -998,15 +997,14 @@
   "values": [
     {
       "name": "<outline-line-style>",
-      "prose": "<outline-line-style> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto.",
+      "prose": "<outline-line-style>Info about the '<outline-line-style>' reference.#typedef-outline-line-styleReferenced in:3.3. Outline Patterns: the outline-style property (2) Possible linking syntaxes:<<outline-line-style>><</outline-line-style>> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-outline-line-style",
       "type": "type"
     },
     {
       "name": "<cursor-predefined>",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-predefined",
-      "type": "type",
-      "value": "auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out"
+      "type": "type"
     },
     {
       "name": "<id>",
@@ -1019,6 +1017,18 @@
       "prose": "The <target-name> parameter indicates the target frame for the focus navigation. It is a <string> and it MUST NOT start with the underscore \"_\" character. Error handling: if it does start with an underscore, \"_parent\" navigates to the parent frame, \"_root\" is treated as root, and other values navigate to a frame by that name if it exists. If the specified target frame does not exist, the parameter will be treated as the keyword current, which means to simply use the frame that the element is in. The keyword root indicates that the user agent should target the full window.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-target-name",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<cursor-image>><<cursor/cursor-image>>",
+      "value": "[ <url> | <url-set> ] <number>{2}?"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<cursor-predefined>><</cursor-predefined>>",
+      "value": "auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out"
     }
   ]
 }

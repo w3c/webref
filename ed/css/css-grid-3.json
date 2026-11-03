@@ -41,7 +41,7 @@
       "values": [
         {
           "name": "<length-percentage>",
-          "prose": "Specifies the tie threshold for the grid lanes container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+          "prose": "Specifies the tie thresholdInfo about the 'tie threshold' reference.#grid-lanes-tie-thresholdReferenced in:4.2. Placement Precision: the fit-tolerance property 4.4. Grid Lanes Layout and Placement Algorithm (2) Possible linking syntaxes:[=tie threshold=][=grid lanes/tie threshold=] for the grid lanes container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
           "href": "https://drafts.csswg.org/css-grid-3/#valdef-fit-tolerance-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
@@ -73,15 +73,19 @@
     {
       "name": "<auto-repeat>",
       "href": "https://drafts.csswg.org/css-grid-3/#typedef-auto-repeat",
-      "type": "type",
-      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <track-size> ]+ <line-names>? )"
+      "type": "type"
     }
   ],
   "warnings": [
     {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<auto-repeat>><</auto-repeat>>",
+      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <track-size> ]+ <line-names>? )"
+    },
+    {
       "msg": "Dangling value",
       "name": "normal",
-      "prose": "The initial value of this property is normal, which determines the orientation from the grid-template-* properties:",
+      "prose": "The initial value of this property is normalInfo about the 'normal' reference.#valdef-grid-auto-flow-normalPossible linking syntaxes:''grid-auto-flow/normal'', which determines the orientation from the grid-template-* properties:",
       "href": "https://drafts.csswg.org/css-grid-3/#valdef-grid-auto-flow-normal",
       "type": "value",
       "value": "normal",

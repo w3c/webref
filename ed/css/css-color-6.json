@@ -9,28 +9,28 @@
   "values": [
     {
       "name": "contrast-color()",
-      "prose": "The contrast-color() functional notation identifies a sufficiently contrasting color against a specified background or foreground color without requiring manual computation.",
+      "prose": "The contrast-color()Info about the 'contrast-color()' reference.#funcdef-contrast-colorReferenced in:1. Introduction 2. Computing a Contrasting Color: the contrast-color() function (2) (3) 4.1. Resolving contrast-color() values (2) 5. Serialization 5.1. Serializing contrast-color() (2) 9.1. Changes from Colors 5 Possible linking syntaxes:''contrast-color()''''/contrast-color()'' functional notation identifies a sufficiently contrasting color against a specified background or foreground color without requiring manual computation.",
       "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color",
       "type": "function",
       "value": "contrast-color( [ [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>? ] | [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>, <color># ] ] )",
       "values": [
         {
           "name": "text",
-          "prose": "The tbd-fg and tbd-bg keywords indicate the role of the base color in calculating the contrast: as text against a list of candidate background colors (text) or as a background against a list of candidate text colors. (The effective contrast of a pair of colors depends on their usage.)",
+          "prose": "The tbd-fg and tbd-bg keywords indicate the role of the base color in calculating the contrast: as text against a list of candidate background colors (textInfo about the 'text' reference.#valdef-contrast-color-textPossible linking syntaxes:''contrast-color()/text'') or as a background against a list of candidate text colors. (The effective contrast of a pair of colors depends on their usage.)",
           "href": "https://drafts.csswg.org/css-color-6/#valdef-contrast-color-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "wcag2",
-          "prose": "The wcag2 keyword and wcag2() functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
+          "prose": "The wcag2Info about the 'wcag2' reference.#valdef-contrast-color-wcag2Referenced in:2.2.1. WCAG 2.1: the wcag2 keyword and wcag2() function Possible linking syntaxes:''contrast-color()/wcag2'' keyword and wcag2()Info about the 'wcag2()' reference.#funcdef-contrast-color-wcag2Referenced in:2.2.1. WCAG 2.1: the wcag2 keyword and wcag2() function Possible linking syntaxes:''wcag2()''''contrast-color()/wcag2()'' functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
           "href": "https://drafts.csswg.org/css-color-6/#valdef-contrast-color-wcag2",
           "type": "value",
           "value": "wcag2"
         },
         {
           "name": "wcag2()",
-          "prose": "The wcag2 keyword and wcag2() functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
+          "prose": "The wcag2Info about the 'wcag2' reference.#valdef-contrast-color-wcag2Referenced in:2.2.1. WCAG 2.1: the wcag2 keyword and wcag2() function Possible linking syntaxes:''contrast-color()/wcag2'' keyword and wcag2()Info about the 'wcag2()' reference.#funcdef-contrast-color-wcag2Referenced in:2.2.1. WCAG 2.1: the wcag2 keyword and wcag2() function Possible linking syntaxes:''wcag2()''''contrast-color()/wcag2()'' functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
           "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2",
           "type": "function"
         }
@@ -38,7 +38,7 @@
     },
     {
       "name": "<target-contrast>",
-      "prose": "The <target-contrast> argument specifies the contrast algorithm(s) to use. If no color candidates have been provided, <target-contrast> may be omitted, in which case a UA-chosen algorithm is used.",
+      "prose": "The <target-contrast>Info about the '<target-contrast>' reference.#typedef-target-contrastReferenced in:2. Computing a Contrasting Color: the contrast-color() function (2) (3) (4) (5) (6) Possible linking syntaxes:<<target-contrast>><</target-contrast>> argument specifies the contrast algorithm(s) to use. If no color candidates have been provided, <target-contrast> may be omitted, in which case a UA-chosen algorithm is used.",
       "href": "https://drafts.csswg.org/css-color-6/#typedef-target-contrast",
       "type": "type",
       "value": "<wcag2>"
@@ -46,15 +46,21 @@
     {
       "name": "<wcag2>",
       "href": "https://drafts.csswg.org/css-color-6/#typedef-wcag2",
-      "type": "type",
-      "value": "wcag2 | wcag2([<number> | [ aa | aaa ] && large? ])"
+      "type": "type"
     },
     {
       "name": "color-layers()",
-      "prose": "The color-layers() functional notation takes an optional <blend-mode> followed by a list of two or more <color> layers.",
+      "prose": "The color-layers()Info about the 'color-layers()' reference.#funcdef-color-layersReferenced in:1. Introduction 3. Layering Multiple Colors: the color-layers() function (2) 4.2. Resolving color-layers() values (2) 9.1. Changes from Colors 5 Possible linking syntaxes:''color-layers()''''/color-layers()'' functional notation takes an optional <blend-mode> followed by a list of two or more <color> layers.",
       "href": "https://drafts.csswg.org/css-color-6/#funcdef-color-layers",
       "type": "function",
       "value": "color-layers([ <blend-mode>, ]? <color># )"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<wcag2>><</wcag2>>",
+      "value": "wcag2 | wcag2([<number> | [ aa | aaa ] && large? ])"
     }
   ]
 }

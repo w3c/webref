@@ -10,18 +10,16 @@
     {
       "name": "<easing-function>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-easing-function",
-      "type": "type",
-      "value": "<linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>"
+      "type": "type"
     },
     {
       "name": "<linear-easing-function>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-linear-easing-function",
-      "type": "type",
-      "value": "linear | <linear()>"
+      "type": "type"
     },
     {
       "name": "linear()",
-      "value": "linear( [ <number> && <percentage>{0,2} ]# )",
+      "value": "linear()",
       "href": "https://drafts.csswg.org/css-easing-2/#funcdef-linear",
       "type": "function"
     },
@@ -29,7 +27,6 @@
       "name": "<cubic-bezier-easing-function>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-cubic-bezier-easing-function",
       "type": "type",
-      "value": "ease | ease-in | ease-out | ease-in-out | <cubic-bezier()>",
       "values": [
         {
           "name": "ease-in",
@@ -63,7 +60,7 @@
     },
     {
       "name": "cubic-bezier()",
-      "value": "cubic-bezier( [ <number [0,1]>, <number> ]#{2} )",
+      "value": "cubic-bezier()",
       "href": "https://drafts.csswg.org/css-easing-2/#funcdef-cubic-bezier",
       "type": "function"
     },
@@ -71,13 +68,6 @@
       "name": "<step-easing-function>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-step-easing-function",
       "type": "type",
-      "value": "step-start | step-end | <steps()>"
-    },
-    {
-      "name": "steps()",
-      "value": "steps( <integer>, <step-position>?)",
-      "href": "https://drafts.csswg.org/css-easing-2/#funcdef-steps",
-      "type": "function",
       "values": [
         {
           "name": "step-start",
@@ -96,10 +86,73 @@
       ]
     },
     {
+      "name": "steps()",
+      "value": "steps()",
+      "href": "https://drafts.csswg.org/css-easing-2/#funcdef-steps",
+      "type": "function",
+      "values": [
+        {
+          "name": "step-start",
+          "prose": "Jumps from the starting to the ending value at the start of the easing interval. Computes to steps(1, start)",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-easing-function-step-start",
+          "type": "value",
+          "value": "step-start"
+        },
+        {
+          "name": "step-end",
+          "prose": "Jumps from the starting to the ending value at the end of the easing interval. Computes to steps(1, end) Example step easing function keyword values.",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-easing-function-step-end",
+          "type": "value",
+          "value": "step-end"
+        },
+        {
+          "name": "jump-start",
+          "prose": "The first interval has an output progress value of 1/steps, and subsequent intervals rise by 1/steps. (It \"jumps at the start\", with no step returning 0.)",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-jump-start",
+          "type": "value",
+          "value": "jump-start"
+        },
+        {
+          "name": "jump-end",
+          "prose": "The first interval has an output progress value of 0, and subsequent intervals rise by 1/steps. (It \"jumps at the end\", with no step returning 1.)",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-jump-end",
+          "type": "value",
+          "value": "jump-end"
+        },
+        {
+          "name": "jump-none",
+          "prose": "The first interval has an output progress value of 0, and subsequent intervals rise by 1/(steps-1). (It \"never jumps\", with steps returning both 0 and 1.)",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-jump-none",
+          "type": "value",
+          "value": "jump-none"
+        },
+        {
+          "name": "jump-both",
+          "prose": "The first interval has an output progress value of 1/(steps+1), and subsequent intervals rise by 1/(steps+1). (It \"jumps at both ends\", with no steps returning 0 or 1.)",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-jump-both",
+          "type": "value",
+          "value": "jump-both"
+        },
+        {
+          "name": "start",
+          "prose": "Behaves as jump-start.",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-start",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Behaves as jump-end.",
+          "href": "https://drafts.csswg.org/css-easing-2/#valdef-step-position-end",
+          "type": "value",
+          "value": "end"
+        }
+      ]
+    },
+    {
       "name": "<step-position>",
       "href": "https://drafts.csswg.org/css-easing-2/#typedef-step-position",
       "type": "type",
-      "value": "jump-start | jump-end | jump-none | jump-both | start | end",
       "values": [
         {
           "name": "jump-start",
@@ -144,6 +197,48 @@
           "value": "end"
         }
       ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<easing-function>><</easing-function>>",
+      "value": "<linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<linear-easing-function>><</linear-easing-function>>",
+      "value": "linear | <linear()> linear()Info about the 'linear()' reference.#funcdef-linearReferenced in:2.1. Linear Easing Functions: linear, linear() (2) (3) 2.1.3. Examples (2) (3) 3.2. Additions Since Level 1 Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''linear()''''/linear()''",
+      "value": "linear( [ <number> && <percentage>{0,2} ]# )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<cubic-bezier-easing-function>><</cubic-bezier-easing-function>>",
+      "value": "ease | ease-in | ease-out | ease-in-out | <cubic-bezier()> cubic-bezier()Info about the 'cubic-bezier()' reference.#funcdef-cubic-bezierReferenced in:2.2. Cubic Bézier Easing Functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier() (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''cubic-bezier()''''/cubic-bezier()''",
+      "value": "cubic-bezier( [ <number [0,1]>, <number> ]#{2} )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<step-easing-function>><</step-easing-function>>",
+      "value": "step-start | step-end | <steps()> steps()Info about the 'steps()' reference.#funcdef-stepsReferenced in:2.3. Step Easing Functions: step-start, step-end, steps() (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''steps()''''/steps()''",
+      "value": "steps( <integer>, <step-position>?) <step-position>Info about the '<step-position>' reference.#typedef-step-positionReferenced in:2.3. Step Easing Functions: step-start, step-end, steps() (2) (3) (4) (5) 2.3.2. Output Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<step-position>><</step-position>>",
+      "value": "jump-start | jump-end | jump-none | jump-both | start | end"
     }
   ]
 }

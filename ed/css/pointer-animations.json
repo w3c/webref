@@ -148,10 +148,10 @@
   "values": [
     {
       "name": "pointer()",
-      "prose": "The pointer() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a pointer progress timeline. Its syntax is",
+      "prose": "The pointer()Info about the 'pointer()' reference.#funcdef-pointerReferenced in:2. Pointer Progress Timelines 2.3.1. The pointer() notation (2) (3) (4) (5) 2.4.2. Axis of a Pointer Progress Timeline: the pointer-timeline-axis property Possible linking syntaxes:''pointer()''''/pointer()'' functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a pointer progress timeline. Its syntax is",
       "href": "https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer",
       "type": "function",
-      "value": "pointer( [ <source> || <axis> ]? )",
+      "value": "pointer( [ <source> || <axis> ]? ) <axis>Info about the '<axis>' reference.#typedef-axisReferenced in:2.3.1. The pointer() notation (2) 2.3.2. The PointerTimeline Interface Possible linking",
       "values": [
         {
           "name": "block",
@@ -207,18 +207,16 @@
     {
       "name": "<axis>",
       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-axis",
-      "type": "type",
-      "value": "block | inline | x | y"
+      "type": "type"
     },
     {
       "name": "<source>",
       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-source",
-      "type": "type",
-      "value": "root | nearest | self"
+      "type": "type"
     },
     {
       "name": "<timeline-range-center-subject>",
-      "prose": "The animation range center subject is the element whose principal box is the range relative to which the center of the active range is calculated, and is represented by the <timeline-range-center-subject> value type, which indicates a CSS identifier representing one of the following:",
+      "prose": "The animation range center subjectInfo about the 'animation range center subject' reference.#animation-range-center-subjectReferenced in:Specifying an Animation’s Timeline Range Center: the animation-range-center property Possible linking syntaxes:[=animation range center subject=][=/animation range center subject=] is the element whose principal box is the range relative to which the center of the active range is calculated, and is represented by the <timeline-range-center-subject>Info about the '<timeline-range-center-subject>' reference.#typedef-timeline-range-center-subjectReferenced in:Appendix A: Animation Range Centering Specifying an Animation’s Timeline Range Center: the animation-range-center property Possible linking syntaxes:<<timeline-range-center-subject>><</timeline-range-center-subject>> value type, which indicates a CSS identifier representing one of the following:",
       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject",
       "type": "type",
       "values": [
@@ -240,6 +238,16 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<axis>><</axis>>",
+      "value": "block | inline | x | y <source>Info about the '<source>' reference.#typedef-sourceReferenced in:2.3.1. The pointer() notation (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<source>><</source>>",
+      "value": "root | nearest | self"
+    },
     {
       "msg": "Dangling value",
       "name": "fill",

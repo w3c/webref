@@ -17,13 +17,12 @@
           "initial": "n/a (see prose)"
         }
       ],
-      "value": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+      "value": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> } <function-parameter>Info about the '<function-parameter>' reference.#typedef-function-parameterReferenced in:2.1. The @function Rule (2) 2.1.1. The Function Prelude 5.1. The @mixin rule 5.1.1. The Mixin Prelude Possible linking",
       "values": [
         {
           "name": "type()",
           "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
-          "type": "function",
-          "value": "type( <syntax> )"
+          "type": "function"
         }
       ]
     },
@@ -57,26 +56,45 @@
     {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
-      "type": "type",
-      "value": "<custom-property-name> <css-type>? [ : <default-value> ]?"
+      "type": "type"
     },
     {
       "name": "<css-type>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-css-type",
-      "type": "type",
-      "value": "<syntax-component> | <type()>"
+      "type": "type"
     },
     {
       "name": "<default-value>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-default-value",
-      "type": "type",
-      "value": "<declaration-value>"
+      "type": "type"
     },
     {
       "name": "<dashed-function>",
-      "prose": "A <dashed-function> is a functional notation whose function name starts with two dashes (U+002D HYPHEN-MINUS). Its argument grammar is:",
+      "prose": "A <dashed-function>Info about the '<dashed-function>' reference.#typedef-dashed-functionReferenced in:2. Defining Custom Functions (2) 2.2. The result Descriptor (2) 3. Using Custom Functions (2) (3) (4) (5) (6) (7) (8) (9) 3.1. Evaluating Custom Functions 5.3. The @contents Rule 5.4. The @apply Rule (2) (3) (4) 7.4. The CSSApplyBlockRule Interface Possible linking syntaxes:<<dashed-function>><</dashed-function>> is a functional notation whose function name starts with two dashes (U+002D HYPHEN-MINUS). Its argument grammar is:",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-dashed-function",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<function-parameter>><</function-parameter>>",
+      "value": "<custom-property-name> <css-type>? [ : <default-value> ]? <css-type>Info about the '<css-type>' reference.#typedef-css-typeReferenced in:2.1. The @function Rule (2) (3) 2.1.1. The Function Prelude (2) 7.1. The CSSFunctionRule Interface Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<css-type>><</css-type>>",
+      "value": "<syntax-component> | <type()> <default-value>Info about the '<default-value>' reference.#typedef-default-valueReferenced in:2.1. The @function Rule (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<default-value>><</default-value>>",
+      "value": "<declaration-value> <type()>Info about the '<type()>' reference.#funcdef-function-typeReferenced in:2.1. The @function Rule 2.1.1. The Function Prelude (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''type()''''@function/type()''",
+      "value": "type( <syntax> )"
     }
   ]
 }

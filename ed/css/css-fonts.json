@@ -150,7 +150,7 @@
         },
         {
           "name": "<percentage [0,∞]>",
-          "prose": "<percentage [0,∞]> values represent the fractional width of the glyphs, with 100% representing “normal” glyph widths (as defined by the font designer). Values less than 0% are invalid.",
+          "prose": "<percentage [0,∞]>Info about the '<percentage [0,∞]>' reference.#valdef-font-width-percentage-0Possible linking syntaxes:''font-width/<percentage [0,∞]>'' values represent the fractional width of the glyphs, with 100% representing “normal” glyph widths (as defined by the font designer). Values less than 0% are invalid.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-width-percentage-0",
           "type": "value",
           "value": "<percentage [0,∞]>"
@@ -974,14 +974,14 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normalInfo about the 'normal' reference.#font-variant-normal-valueReferenced in:2.7. Shorthand font property: the font property (2) Possible linking syntaxes:''font-variant/normal'' resets all subproperties of font-variant to their initial value. The noneInfo about the 'none' reference.#font-variant-none-valuePossible linking syntaxes:''font-variant/none'' value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-normal-value",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "none",
-          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normalInfo about the 'normal' reference.#font-variant-normal-valueReferenced in:2.7. Shorthand font property: the font property (2) Possible linking syntaxes:''font-variant/normal'' resets all subproperties of font-variant to their initial value. The noneInfo about the 'none' reference.#font-variant-none-valuePossible linking syntaxes:''font-variant/none'' value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-none-value",
           "type": "value",
           "value": "none"
@@ -1006,7 +1006,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "A value of normal means that no change in glyph selection or positioning occurs due to this property.",
+          "prose": "A value of normalInfo about the 'normal' reference.#font-feature-settings-normal-valuePossible linking syntaxes:''font-feature-settings/normal'' means that no change in glyph selection or positioning occurs due to this property.",
           "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-normal-value",
           "type": "value",
           "value": "normal"
@@ -1015,18 +1015,17 @@
           "name": "<feature-tag-value>",
           "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value",
           "type": "type",
-          "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?",
           "values": [
             {
               "name": "on",
-              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of on is synonymous with 1 and off is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
+              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of onInfo about the 'on' reference.#valdef-feature-tag-value-onPossible linking syntaxes:''<feature-tag-value>/on'' is synonymous with 1 and offInfo about the 'off' reference.#valdef-feature-tag-value-offPossible linking syntaxes:''<feature-tag-value>/off'' is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
               "href": "https://drafts.csswg.org/css-fonts-4/#valdef-feature-tag-value-on",
               "type": "value",
               "value": "on"
             },
             {
               "name": "off",
-              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of on is synonymous with 1 and off is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
+              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of onInfo about the 'on' reference.#valdef-feature-tag-value-onPossible linking syntaxes:''<feature-tag-value>/on'' is synonymous with 1 and offInfo about the 'off' reference.#valdef-feature-tag-value-offPossible linking syntaxes:''<feature-tag-value>/off'' is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
               "href": "https://drafts.csswg.org/css-fonts-4/#valdef-feature-tag-value-off",
               "type": "value",
               "value": "off"
@@ -1391,65 +1390,57 @@
           "name": "@stylistic",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-stylistic",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@stylistic { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@historical-forms",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-historical-forms",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@historical-forms { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@styleset",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-styleset",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@styleset { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@character-variant",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-character-variant",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@character-variant { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@swash",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-swash",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@swash { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@ornaments",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-ornaments",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@ornaments { <declaration-list> }"
+          "for": "@font-feature-values"
         },
         {
           "name": "@annotation",
           "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-annotation",
           "type": "at-rule",
-          "for": "@font-feature-values",
-          "value": "@annotation { <declaration-list> }"
+          "for": "@font-feature-values"
         }
       ],
-      "value": "@font-feature-values <font-family-name># { <declaration-rule-list> }",
+      "value": "@font-feature-values <font-family-name># { <declaration-rule-list> } <font-feature-value-type>Info about the '<font-feature-value-type>' reference.#typedef-font-feature-values-font-feature-value-typeReferenced in:6.9.1. Basic syntax (2) 18.1. Changes from the 1 February 2024 working draft Possible linking",
       "values": [
         {
           "name": "<font-feature-value-type>",
           "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-feature-values-font-feature-value-type",
-          "type": "type",
-          "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
+          "type": "type"
         }
       ]
     },
     {
       "name": "@font-palette-values",
-      "prose": "The @font-palette-values rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary <color>s to use inside a color font rather than being limited to the preexisting palettes inside font files.",
+      "prose": "The @font-palette-valuesInfo about the '@font-palette-values' reference.#at-ruledef-font-palette-valuesReferenced in:9. Color Font Support 9.1. Controlling Color Font Palettes: The font-palette property (2) 9.2. User-defined font color palettes: The @font-palette-values rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) 9.2.1. Font family: the font-family descriptor 9.2.2. Specifying the base palette: the base-palette descriptor (2) (3) (4) (5) (6) (7) (8) (9) 9.2.3. Overriding a colors from a palette: The override-colors descriptor (2) (3) 12.3. The CSSFontPaletteValuesRule interface Possible linking syntaxes:''@font-palette-values''''/@font-palette-values'' rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary <color>s to use inside a color font rather than being limited to the preexisting palettes inside font files.",
       "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values",
       "descriptors": [
         {
@@ -1520,7 +1511,6 @@
       "name": "<generic-font-family>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-family",
       "type": "type",
-      "value": "<generic-font-script-specific>| <generic-font-complete> | <generic-font-incomplete>",
       "values": [
         {
           "name": "serif",
@@ -1621,26 +1611,22 @@
     {
       "name": "<generic-font-script-specific>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-script-specific",
-      "type": "type",
-      "value": "generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)"
+      "type": "type"
     },
     {
       "name": "<generic-font-complete>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-complete",
-      "type": "type",
-      "value": "serif | sans-serif | system-ui | cursive | fantasy | math | monospace"
+      "type": "type"
     },
     {
       "name": "<generic-font-incomplete>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-incomplete",
-      "type": "type",
-      "value": "ui-serif | ui-sans-serif | ui-monospace | ui-rounded"
+      "type": "type"
     },
     {
       "name": "<font-weight-absolute>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-weight-absolute-values",
-      "type": "type",
-      "value": "[ normal | bold | <number [1,1000]> ]"
+      "type": "type"
     },
     {
       "name": "<absolute-size>",
@@ -1657,56 +1643,51 @@
     {
       "name": "<font-variant-css2>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-css21-values",
-      "type": "type",
-      "value": "normal | small-caps"
+      "type": "type"
     },
     {
       "name": "<font-width-css3>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-width-css3-values",
-      "type": "type",
-      "value": "normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded"
+      "type": "type"
     },
     {
       "name": "<font-src-list>",
-      "prose": "To parse a <font-src-list> production, parse a list of <font-src>s.",
+      "prose": "To parse a <font-src-list>Info about the '<font-src-list>' reference.#typedef-font-src-listReferenced in:4.3. Font reference: the src descriptor 4.3.1. Parsing the src descriptor Possible linking syntaxes:<<font-src-list>><</font-src-list>> production, parse a list of <font-src>s.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src-list",
       "type": "type"
     },
     {
       "name": "<font-src>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src",
-      "type": "type",
-      "value": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <font-family-name> )"
+      "type": "type"
     },
     {
       "name": "<font-format>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-format-values",
-      "type": "type",
-      "value": "[ <string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+      "type": "type"
     },
     {
       "name": "<font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-values",
       "type": "type",
-      "value": "[ <font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
       "values": [
         {
           "name": "variations",
-          "prose": "The variations tech refers to the support of font variations, commonly implemented in [OPENTYPE] with the avar, cvar, fvar, gvar, HVAR, MVAR, STAT, and VVAR tables, as well as in [AAT-FEATURES] using the avar, cvar, fvar, gvar tables. The section on § 2 Basic Font Properties as well as the section on § 8 Font Variation Properties describe properties that interact with these facilities.",
+          "prose": "The variationsInfo about the 'variations' reference.#valdef-font-tech-variationsPossible linking syntaxes:''<font-tech>/variations'' tech refers to the support of font variations, commonly implemented in [OPENTYPE] with the avar, cvar, fvar, gvar, HVAR, MVAR, STAT, and VVAR tables, as well as in [AAT-FEATURES] using the avar, cvar, fvar, gvar tables. The section on § 2 Basic Font Properties as well as the section on § 8 Font Variation Properties describe properties that interact with these facilities.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-variations",
           "type": "value",
           "value": "variations"
         },
         {
           "name": "palettes",
-          "prose": "The palettes tech refers to support for font palettes, commonly implemented in the [OPENTYPE] and [AAT-FEATURES] with the CPAL table. The section on § 9 Color Font Support describes properties that interact with these facilities.",
+          "prose": "The palettesInfo about the 'palettes' reference.#valdef-font-tech-palettesPossible linking syntaxes:''<font-tech>/palettes'' tech refers to support for font palettes, commonly implemented in the [OPENTYPE] and [AAT-FEATURES] with the CPAL table. The section on § 9 Color Font Support describes properties that interact with these facilities.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-palettes",
           "type": "value",
           "value": "palettes"
         },
         {
           "name": "incremental",
-          "prose": "The incremental tech refers to client support for incremental font transfer [IFT].",
+          "prose": "The incrementalInfo about the 'incremental' reference.#valdef-font-tech-incrementalPossible linking syntaxes:''<font-tech>/incremental'' tech refers to client support for incremental font transfer [IFT].",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-incremental",
           "type": "value",
           "value": "incremental"
@@ -1717,25 +1698,24 @@
       "name": "<font-features-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-values",
       "type": "type",
-      "value": "[ features-opentype | features-aat | features-graphite ]",
       "values": [
         {
           "name": "features-opentype",
-          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "prose": "The features-opentypeInfo about the 'features-opentype' reference.#valdef-font-features-tech-features-opentypePossible linking syntaxes:''<font-features-tech>/features-opentype'', features-aatInfo about the 'features-aat' reference.#valdef-font-features-tech-features-aatPossible linking syntaxes:''<font-features-tech>/features-aat'' and features-graphiteInfo about the 'features-graphite' reference.#valdef-font-features-tech-features-graphitePossible linking syntaxes:''<font-features-tech>/features-graphite'' techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-opentype",
           "type": "value",
           "value": "features-opentype"
         },
         {
           "name": "features-aat",
-          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "prose": "The features-opentypeInfo about the 'features-opentype' reference.#valdef-font-features-tech-features-opentypePossible linking syntaxes:''<font-features-tech>/features-opentype'', features-aatInfo about the 'features-aat' reference.#valdef-font-features-tech-features-aatPossible linking syntaxes:''<font-features-tech>/features-aat'' and features-graphiteInfo about the 'features-graphite' reference.#valdef-font-features-tech-features-graphitePossible linking syntaxes:''<font-features-tech>/features-graphite'' techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-aat",
           "type": "value",
           "value": "features-aat"
         },
         {
           "name": "features-graphite",
-          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "prose": "The features-opentypeInfo about the 'features-opentype' reference.#valdef-font-features-tech-features-opentypePossible linking syntaxes:''<font-features-tech>/features-opentype'', features-aatInfo about the 'features-aat' reference.#valdef-font-features-tech-features-aatPossible linking syntaxes:''<font-features-tech>/features-aat'' and features-graphiteInfo about the 'features-graphite' reference.#valdef-font-features-tech-features-graphitePossible linking syntaxes:''<font-features-tech>/features-graphite'' techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-graphite",
           "type": "value",
           "value": "features-graphite"
@@ -1746,39 +1726,38 @@
       "name": "<color-font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-values",
       "type": "type",
-      "value": "[ color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]",
       "values": [
         {
           "name": "color-colrv0",
-          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "prose": "The color-colrv0Info about the 'color-colrv0' reference.#valdef-color-font-tech-color-colrv0Possible linking syntaxes:''<color-font-tech>/color-colrv0'', color-colrv1Info about the 'color-colrv1' reference.#valdef-color-font-tech-color-colrv1Possible linking syntaxes:''<color-font-tech>/color-colrv1'', color-svgInfo about the 'color-svg' reference.#valdef-color-font-tech-color-svgPossible linking syntaxes:''<color-font-tech>/color-svg'', color-sbixInfo about the 'color-sbix' reference.#valdef-color-font-tech-color-sbixPossible linking syntaxes:''<color-font-tech>/color-sbix'' and color-cbdtInfo about the 'color-cbdt' reference.#valdef-color-font-tech-color-cbdtPossible linking syntaxes:''<color-font-tech>/color-cbdt'' technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-colrv0",
           "type": "value",
           "value": "color-colrv0"
         },
         {
           "name": "color-colrv1",
-          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "prose": "The color-colrv0Info about the 'color-colrv0' reference.#valdef-color-font-tech-color-colrv0Possible linking syntaxes:''<color-font-tech>/color-colrv0'', color-colrv1Info about the 'color-colrv1' reference.#valdef-color-font-tech-color-colrv1Possible linking syntaxes:''<color-font-tech>/color-colrv1'', color-svgInfo about the 'color-svg' reference.#valdef-color-font-tech-color-svgPossible linking syntaxes:''<color-font-tech>/color-svg'', color-sbixInfo about the 'color-sbix' reference.#valdef-color-font-tech-color-sbixPossible linking syntaxes:''<color-font-tech>/color-sbix'' and color-cbdtInfo about the 'color-cbdt' reference.#valdef-color-font-tech-color-cbdtPossible linking syntaxes:''<color-font-tech>/color-cbdt'' technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-colrv1",
           "type": "value",
           "value": "color-colrv1"
         },
         {
           "name": "color-svg",
-          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "prose": "The color-colrv0Info about the 'color-colrv0' reference.#valdef-color-font-tech-color-colrv0Possible linking syntaxes:''<color-font-tech>/color-colrv0'', color-colrv1Info about the 'color-colrv1' reference.#valdef-color-font-tech-color-colrv1Possible linking syntaxes:''<color-font-tech>/color-colrv1'', color-svgInfo about the 'color-svg' reference.#valdef-color-font-tech-color-svgPossible linking syntaxes:''<color-font-tech>/color-svg'', color-sbixInfo about the 'color-sbix' reference.#valdef-color-font-tech-color-sbixPossible linking syntaxes:''<color-font-tech>/color-sbix'' and color-cbdtInfo about the 'color-cbdt' reference.#valdef-color-font-tech-color-cbdtPossible linking syntaxes:''<color-font-tech>/color-cbdt'' technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-svg",
           "type": "value",
           "value": "color-svg"
         },
         {
           "name": "color-sbix",
-          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "prose": "The color-colrv0Info about the 'color-colrv0' reference.#valdef-color-font-tech-color-colrv0Possible linking syntaxes:''<color-font-tech>/color-colrv0'', color-colrv1Info about the 'color-colrv1' reference.#valdef-color-font-tech-color-colrv1Possible linking syntaxes:''<color-font-tech>/color-colrv1'', color-svgInfo about the 'color-svg' reference.#valdef-color-font-tech-color-svgPossible linking syntaxes:''<color-font-tech>/color-svg'', color-sbixInfo about the 'color-sbix' reference.#valdef-color-font-tech-color-sbixPossible linking syntaxes:''<color-font-tech>/color-sbix'' and color-cbdtInfo about the 'color-cbdt' reference.#valdef-color-font-tech-color-cbdtPossible linking syntaxes:''<color-font-tech>/color-cbdt'' technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-sbix",
           "type": "value",
           "value": "color-sbix"
         },
         {
           "name": "color-cbdt",
-          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "prose": "The color-colrv0Info about the 'color-colrv0' reference.#valdef-color-font-tech-color-colrv0Possible linking syntaxes:''<color-font-tech>/color-colrv0'', color-colrv1Info about the 'color-colrv1' reference.#valdef-color-font-tech-color-colrv1Possible linking syntaxes:''<color-font-tech>/color-colrv1'', color-svgInfo about the 'color-svg' reference.#valdef-color-font-tech-color-svgPossible linking syntaxes:''<color-font-tech>/color-svg'', color-sbixInfo about the 'color-sbix' reference.#valdef-color-font-tech-color-sbixPossible linking syntaxes:''<color-font-tech>/color-sbix'' and color-cbdtInfo about the 'color-cbdt' reference.#valdef-color-font-tech-color-cbdtPossible linking syntaxes:''<color-font-tech>/color-cbdt'' technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-cbdt",
           "type": "value",
           "value": "color-cbdt"
@@ -1788,84 +1767,237 @@
     {
       "name": "<common-lig-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#common-lig-values",
-      "type": "type",
-      "value": "[ common-ligatures | no-common-ligatures ]"
+      "type": "type"
     },
     {
       "name": "<discretionary-lig-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#discretionary-lig-values",
-      "type": "type",
-      "value": "[ discretionary-ligatures | no-discretionary-ligatures ]"
+      "type": "type"
     },
     {
       "name": "<historical-lig-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#historical-lig-values",
-      "type": "type",
-      "value": "[ historical-ligatures | no-historical-ligatures ]"
+      "type": "type"
     },
     {
       "name": "<contextual-alt-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#contextual-alt-values",
-      "type": "type",
-      "value": "[ contextual | no-contextual ]"
+      "type": "type"
     },
     {
       "name": "<numeric-figure-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#numeric-figure-values",
-      "type": "type",
-      "value": "[ lining-nums | oldstyle-nums ]"
+      "type": "type"
     },
     {
       "name": "<numeric-spacing-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#numeric-spacing-values",
-      "type": "type",
-      "value": "[ proportional-nums | tabular-nums ]"
+      "type": "type"
     },
     {
       "name": "<numeric-fraction-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#numeric-fraction-values",
-      "type": "type",
-      "value": "[ diagonal-fractions | stacked-fractions ]"
+      "type": "type"
     },
     {
       "name": "<font-feature-index>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-index-value",
-      "type": "type",
-      "value": "<integer>"
+      "type": "type"
     },
     {
       "name": "<font-feature-value-name>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-value-name-value",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     },
     {
       "name": "<east-asian-variant-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#east-asian-variant-values",
-      "type": "type",
-      "value": "[ jis78 | jis83 | jis90 | jis04 | simplified | traditional ]"
+      "type": "type"
     },
     {
       "name": "<east-asian-width-values>",
       "href": "https://drafts.csswg.org/css-fonts-4/#east-asian-width-values",
-      "type": "type",
-      "value": "[ full-width | proportional-width ]"
+      "type": "type"
     },
     {
       "name": "<opentype-tag>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-opentype-tag",
-      "type": "type",
-      "value": "<string>"
+      "type": "type"
     },
     {
       "name": "palette-mix()",
-      "prose": "With the palette-mix() function defined as follows:",
+      "prose": "With the palette-mix()Info about the 'palette-mix()' reference.#funcdef-palette-mixReferenced in:9.1. Controlling Color Font Palettes: The font-palette property (2) (3) (4) (5) (6) (7) Possible linking syntaxes:''palette-mix()''''/palette-mix()'' function defined as follows:",
       "href": "https://drafts.csswg.org/css-fonts-4/#funcdef-palette-mix",
       "type": "function",
       "value": "palette-mix( <color-interpolation-method>? , [ <'font-palette'> && <percentage [0,100]>? ]# )"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<generic-font-family>><</generic-font-family>>",
+      "value": "<generic-font-script-specific>| <generic-font-complete> | <generic-font-incomplete> <generic-font-script-specific>Info about the '<generic-font-script-specific>' reference.#typedef-generic-font-script-specificReferenced in:2.1.2. Syntax of <generic-font-family> (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<generic-font-script-specific>><</generic-font-script-specific>>",
+      "value": "generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq) <generic-font-complete>Info about the '<generic-font-complete>' reference.#typedef-generic-font-completeReferenced in:2.1.2. Syntax of <generic-font-family> (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<generic-font-complete>><</generic-font-complete>>",
+      "value": "serif | sans-serif | system-ui | cursive | fantasy | math | monospace <generic-font-incomplete>Info about the '<generic-font-incomplete>' reference.#typedef-generic-font-incompleteReferenced in:2.1.2. Syntax of <generic-font-family> (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<generic-font-incomplete>><</generic-font-incomplete>>",
+      "value": "ui-serif | ui-sans-serif | ui-monospace | ui-rounded"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-weight-absolute>><</font-weight-absolute>>",
+      "value": "[ normal | bold | <number [1,1000]> ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-variant-css2>><</font-variant-css2>>",
+      "value": "normal | small-caps"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-width-css3>><</font-width-css3>>",
+      "value": "normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-src>><</font-src>>",
+      "value": "<url> [ format( <font-format> )Info about the 'format( <font-format> )' reference.#format()Possible linking syntaxes:''@font-face/src/format( <font-format> )'' ]? [ tech( <font-tech># )Info about the 'tech( <font-tech># )' reference.#tech()Referenced in:11.1. Font tech Possible linking syntaxes:''@font-face/src/tech( <font-tech># )'' ]? | local( <font-family-name> )Info about the 'local( <font-family-name> )' reference.#local()Possible linking syntaxes:''@font-face/src/local( <font-family-name> )''"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-format>><</font-format>>",
+      "value": "[ <string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-tech>><</font-tech>>",
+      "value": "[ <font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-features-tech>><</font-features-tech>>",
+      "value": "[ features-opentype | features-aat | features-graphite ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<color-font-tech>><</color-font-tech>>",
+      "value": "[ color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<common-lig-values>><</common-lig-values>>",
+      "value": "[ common-ligatures | no-common-ligatures ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<discretionary-lig-values>><</discretionary-lig-values>>",
+      "value": "[ discretionary-ligatures | no-discretionary-ligatures ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<historical-lig-values>><</historical-lig-values>>",
+      "value": "[ historical-ligatures | no-historical-ligatures ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<contextual-alt-values>><</contextual-alt-values>>",
+      "value": "[ contextual | no-contextual ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<numeric-figure-values>><</numeric-figure-values>>",
+      "value": "[ lining-nums | oldstyle-nums ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<numeric-spacing-values>><</numeric-spacing-values>>",
+      "value": "[ proportional-nums | tabular-nums ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<numeric-fraction-values>><</numeric-fraction-values>>",
+      "value": "[ diagonal-fractions | stacked-fractions ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-feature-index>><</font-feature-index>>",
+      "value": "<integer>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-feature-value-name>><</font-feature-value-name>>",
+      "value": "<ident>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-feature-value-type>><<@font-feature-values/font-feature-value-type>>",
+      "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation> @stylisticInfo about the '@stylistic' reference.#at-ruledef-font-feature-values-stylisticReferenced in:6.9.1. Basic syntax (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@stylistic''''@font-feature-values/@stylistic''",
+      "value": "@stylistic { <declaration-list> } @historical-formsInfo about the '@historical-forms' reference.#at-ruledef-font-feature-values-historical-formsReferenced in:6.9.1. Basic syntax Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@historical-forms''''@font-feature-values/@historical-forms''",
+      "value": "@historical-forms { <declaration-list> } @stylesetInfo about the '@styleset' reference.#at-ruledef-font-feature-values-stylesetReferenced in:6.9.1. Basic syntax (2) 6.9.2. Multi-valued feature value definitions Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@styleset''''@font-feature-values/@styleset''",
+      "value": "@styleset { <declaration-list> } @character-variantInfo about the '@character-variant' reference.#at-ruledef-font-feature-values-character-variantReferenced in:6.9.1. Basic syntax (2) 6.9.2. Multi-valued feature value definitions (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@character-variant''''@font-feature-values/@character-variant''",
+      "value": "@character-variant { <declaration-list> } @swashInfo about the '@swash' reference.#at-ruledef-font-feature-values-swashReferenced in:6.9.1. Basic syntax (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@swash''''@font-feature-values/@swash''",
+      "value": "@swash { <declaration-list> } @ornamentsInfo about the '@ornaments' reference.#at-ruledef-font-feature-values-ornamentsReferenced in:6.9.1. Basic syntax (2) 12.2. The CSSFontFeatureValuesRule interface Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@ornaments''''@font-feature-values/@ornaments''",
+      "value": "@ornaments { <declaration-list> } @annotationInfo about the '@annotation' reference.#at-ruledef-font-feature-values-annotationReferenced in:6.9.1. Basic syntax (2) 12.2. The CSSFontFeatureValuesRule interface Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@annotation''''@font-feature-values/@annotation''",
+      "value": "@annotation { <declaration-list> }"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<east-asian-variant-values>><</east-asian-variant-values>>",
+      "value": "[ jis78 | jis83 | jis90 | jis04 | simplified | traditional ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<east-asian-width-values>><</east-asian-width-values>>",
+      "value": "[ full-width | proportional-width ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<feature-tag-value>><<font-feature-settings/feature-tag-value>>",
+      "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]? <opentype-tag>Info about the '<opentype-tag>' reference.#typedef-opentype-tagReferenced in:6.12. Low-level font feature settings control: the font-feature-settings property 8.2. Low-level font variation settings control: the font-variation-settings property (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<opentype-tag>><</opentype-tag>>",
+      "value": "<string>"
+    },
     {
       "msg": "Dangling value",
       "name": "normal",

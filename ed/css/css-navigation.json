@@ -7,13 +7,13 @@
   "atrules": [
     {
       "name": "@location",
-      "prose": "The @location rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "prose": "The @locationInfo about the '@location' reference.#at-ruledef-locationReferenced in:1.1. The <navigation-location> value type 1.2. Declaring named URL patterns: the @location rule (2) (3) (4) (5) (6) 1.3. The url-pattern() function Possible linking syntaxes:''@location''''/@location'' rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-location",
       "descriptors": []
     },
     {
       "name": "@navigation",
-      "prose": "The @navigation rule is a conditional group rule whose condition tests characteristics of the current URL or of the state of navigation between two URLs. These queries are called navigation queries.",
+      "prose": "The @navigationInfo about the '@navigation' reference.#at-ruledef-navigationReferenced in:1.2. Declaring named URL patterns: the @location rule 1.3. The url-pattern() function 3.1. Navigation queries: the @navigation rule (2) (3) (4) (5) (6) (7) Possible linking syntaxes:''@navigation''''/@navigation'' rule is a conditional group rule whose condition tests characteristics of the current URL or of the state of navigation between two URLs. These queries are called navigation queriesInfo about the 'navigation queries' reference.#navigation-queriesPossible linking syntaxes:[=navigation queries=][=/navigation queries=].",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-navigation",
       "descriptors": [],
       "value": "@navigation <navigation-condition> { <rule-list> }"
@@ -22,12 +22,12 @@
   "selectors": [
     {
       "name": ":link-to()",
-      "prose": "This specification defines a new :link-to() functional pseudo-class that matches link elements that link to a certain URL.",
+      "prose": "This specification defines a new :link-to()Info about the ':link-to()' reference.#link-to-pseudoReferenced in:1.2. Declaring named URL patterns: the @location rule 2.1. The :link-to() pseudo-class (2) (3) (4) (5) Possible linking syntaxes:'':link-to()''''/:link-to()'' functional pseudo-class that matches link elements that link to a certain URL.",
       "href": "https://drafts.csswg.org/css-navigation-1/#link-to-pseudo"
     },
     {
       "name": ":navigation-source",
-      "prose": "This specification defines a :navigation-source pseudo-class, matching the element that triggered the current navigation. It is a CSS reflection of the sourceElement property in the Navigation API. The trigger element can be an [^a^], [^area^], [^form^], a [^input/type/submit^] input, or a [^button^].",
+      "prose": "This specification defines a :navigation-sourceInfo about the ':navigation-source' reference.#navigation-source-pseudoReferenced in:2.2. The :navigation-source pseudo-class (2) (3) (4) (5) Possible linking syntaxes:'':navigation-source''''/:navigation-source'' pseudo-class, matching the element that triggered the current navigation. It is a CSS reflection of the sourceElement property in the Navigation API. The trigger element can be an [^a^], [^area^], [^form^], a [^input/type/submit^] input, or a [^button^].",
       "href": "https://drafts.csswg.org/css-navigation-1/#navigation-source-pseudo",
       "value": ":navigation-source"
     }
@@ -36,54 +36,46 @@
     {
       "name": "<navigation-location>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
-      "type": "type",
-      "value": "<url> | [ <location-name> | <url-pattern()> ]"
+      "type": "type"
     },
     {
       "name": "<location-name>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-name",
-      "type": "type",
-      "value": "<dashed-ident>"
+      "type": "type"
     },
     {
       "name": "<location-rule>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-rule",
-      "type": "type",
-      "value": "@location <dashed-ident> { <declaration-list> }"
+      "type": "type"
     },
     {
       "name": "<location-descriptor>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-location-descriptor",
-      "type": "type",
-      "value": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>"
+      "type": "type"
     },
     {
       "name": "<pattern-descriptor>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptor",
-      "type": "type",
-      "value": "pattern : <url-pattern()>"
+      "type": "type"
     },
     {
       "name": "<init-descriptor>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor",
-      "type": "type",
-      "value": "<init-descriptor-name> : <string>"
+      "type": "type"
     },
     {
       "name": "<init-descriptor-name>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor-name",
-      "type": "type",
-      "value": "protocol | hostname | port | pathname | search | hash"
+      "type": "type"
     },
     {
       "name": "<base-descriptor>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-base-descriptor",
-      "type": "type",
-      "value": "base-url : stylesheet | document | <url>"
+      "type": "type"
     },
     {
       "name": "url-pattern()",
-      "prose": "The url-pattern() function represents a URL pattern, which can be used to match URLs.",
+      "prose": "The url-pattern()Info about the 'url-pattern()' reference.#funcdef-url-patternReferenced in:1.1. The <navigation-location> value type (2) 1.2. Declaring named URL patterns: the @location rule (2) (3) 1.3. The url-pattern() function (2) (3) (4) (5) (6) (7) 2.1. The :link-to() pseudo-class Possible linking syntaxes:''url-pattern()''''/url-pattern()'' function represents a URL pattern, which can be used to match URLs.",
       "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern",
       "type": "function",
       "value": "url-pattern( <string> )"
@@ -91,69 +83,159 @@
     {
       "name": "<navigation-condition>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-condition",
-      "type": "type",
-      "value": "not <navigation-in-parens> | <navigation-in-parens> [ and <navigation-in-parens> ]* | <navigation-in-parens> [ or <navigation-in-parens> ]*"
+      "type": "type"
     },
     {
       "name": "<navigation-in-parens>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-in-parens",
-      "type": "type",
-      "value": "( <navigation-condition> ) | ( <navigation-test> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<navigation-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
-      "type": "type",
-      "value": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test> | <navigation-phase-test>"
+      "type": "type"
     },
     {
       "name": "<navigation-location-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
-      "type": "type",
-      "value": "<navigation-relation> : <navigation-location>"
+      "type": "type"
     },
     {
       "name": "<navigation-relation>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation",
-      "type": "type",
-      "value": "at | from | to"
+      "type": "type"
     },
     {
       "name": "<navigation-location-between-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
-      "type": "type",
-      "value": "between : <navigation-location> and <navigation-location>"
+      "type": "type"
     },
     {
       "name": "<navigation-type-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-type-test",
-      "type": "type",
-      "value": "history : <navigation-type-keyword>"
+      "type": "type"
     },
     {
       "name": "<navigation-type-keyword>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-type-keyword",
-      "type": "type",
-      "value": "traverse | back | forward | reload"
+      "type": "type"
     },
     {
       "name": "<navigation-phase-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-test",
-      "type": "type",
-      "value": "phase : <navigation-phase-keyword>"
+      "type": "type"
     },
     {
       "name": "<navigation-phase-keyword>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-keyword",
-      "type": "type",
-      "value": "loading | ready | committed"
+      "type": "type"
     }
   ],
   "warnings": [
     {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-location>><</navigation-location>>",
+      "value": "<url> | [ <location-name> | <url-pattern()> ] <location-name>Info about the '<location-name>' reference.#typedef-location-nameReferenced in:1.1. The <navigation-location> value type (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<location-name>><</location-name>>",
+      "value": "<dashed-ident>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<location-rule>><</location-rule>>",
+      "value": "@location <dashed-ident> { <declaration-list> }"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<location-descriptor>><</location-descriptor>>",
+      "value": "<pattern-descriptor> | <init-descriptor> | <base-descriptor> <pattern-descriptor>Info about the '<pattern-descriptor>' reference.#typedef-pattern-descriptorReferenced in:1.2. Declaring named URL patterns: the @location rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<pattern-descriptor>><</pattern-descriptor>>",
+      "value": "pattern : <url-pattern()> <init-descriptor>Info about the '<init-descriptor>' reference.#typedef-init-descriptorReferenced in:1.2. Declaring named URL patterns: the @location rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<init-descriptor>><</init-descriptor>>",
+      "value": "<init-descriptor-name> : <string> <init-descriptor-name>Info about the '<init-descriptor-name>' reference.#typedef-init-descriptor-nameReferenced in:1.2. Declaring named URL patterns: the @location rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<init-descriptor-name>><</init-descriptor-name>>",
+      "value": "protocol | hostname | port | pathname | search | hash <base-descriptor>Info about the '<base-descriptor>' reference.#typedef-base-descriptorReferenced in:1.2. Declaring named URL patterns: the @location rule (2) (3) (4) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<base-descriptor>><</base-descriptor>>",
+      "value": "base-url : stylesheet | document | <url>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-condition>><</navigation-condition>>",
+      "value": "not <navigation-in-parens> | <navigation-in-parens> [ and <navigation-in-parens> ]* | <navigation-in-parens> [ or <navigation-in-parens> ]* <navigation-in-parens>Info about the '<navigation-in-parens>' reference.#typedef-navigation-in-parensReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-in-parens>><</navigation-in-parens>>",
+      "value": "( <navigation-condition> ) | ( <navigation-test> ) | <general-enclosed> <navigation-test>Info about the '<navigation-test>' reference.#typedef-navigation-testReferenced in:3.1. Navigation queries: the @navigation rule (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-test>><</navigation-test>>",
+      "value": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test> | <navigation-phase-test> <navigation-location-test>Info about the '<navigation-location-test>' reference.#typedef-navigation-location-testReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-location-test>><</navigation-location-test>>",
+      "value": "<navigation-relation> : <navigation-location> <navigation-relation>Info about the '<navigation-relation>' reference.#typedef-navigation-relationReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) 4. Processing model Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-relation>><</navigation-relation>>",
+      "value": "at | from | to <navigation-location-between-test>Info about the '<navigation-location-between-test>' reference.#typedef-navigation-location-between-testReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-location-between-test>><</navigation-location-between-test>>",
+      "value": "between : <navigation-location> and <navigation-location> <navigation-type-test>Info about the '<navigation-type-test>' reference.#typedef-navigation-type-testReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-type-test>><</navigation-type-test>>",
+      "value": "history : <navigation-type-keyword> <navigation-type-keyword>Info about the '<navigation-type-keyword>' reference.#typedef-navigation-type-keywordReferenced in:3.1. Navigation queries: the @navigation rule (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-type-keyword>><</navigation-type-keyword>>",
+      "value": "traverse | back | forward | reload <navigation-phase-test>Info about the '<navigation-phase-test>' reference.#typedef-navigation-phase-testReferenced in:3.1. Navigation queries: the @navigation rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-phase-test>><</navigation-phase-test>>",
+      "value": "phase : <navigation-phase-keyword> <navigation-phase-keyword>Info about the '<navigation-phase-keyword>' reference.#typedef-navigation-phase-keywordReferenced in:3.1. Navigation queries: the @navigation rule (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<navigation-phase-keyword>><</navigation-phase-keyword>>",
+      "value": "loading | ready | committed"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''navigation()''''@when/navigation()''",
+      "value": "navigation( <navigation-condition> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''navigation()''''if()/navigation()''",
+      "value": "navigation( <navigation-condition> )"
+    },
+    {
       "msg": "Dangling value",
       "name": "navigation()",
-      "value": "navigation( <navigation-condition> )",
+      "value": "navigation()",
       "pureSyntax": false,
       "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-when-navigation",
       "type": "function",
@@ -162,7 +244,7 @@
     {
       "msg": "Dangling value",
       "name": "navigation()",
-      "value": "navigation( <navigation-condition> )",
+      "value": "navigation()",
       "pureSyntax": false,
       "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-if-navigation",
       "type": "function",

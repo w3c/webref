@@ -7,7 +7,7 @@
   "atrules": [
     {
       "name": "@counter-style",
-      "prose": "The @counter-style rule allows authors to define a custom counter style. The components of a counter style are specified by descriptors in the @counter-style rule. The algorithm is specified implicitly by a combination of the system, symbols, and additive-symbols properties.",
+      "prose": "The @counter-styleInfo about the '@counter-style' reference.#at-ruledef-counter-styleReferenced in:1. Introduction (2) 2.1. Counter Style Names 3. Defining Custom Counter Styles: the @counter-style rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 3.1. Counter algorithms: the system descriptor (2) 3.1.6. Accumulating Numerals: the additive system (2) 3.1.7. Building from Existing Counter Styles: the extends system (2) 3.2. Formatting negative values: the negative descriptor 3.3. Symbols before the marker: the prefix descriptor 3.4. Symbols after the marker: the suffix descriptor 3.5. Limiting the counter scope: the range descriptor 3.6. Zero-Padding and Constant-Width Representations: the pad descriptor 3.7. Defining fallback: the fallback descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors (2) (3) (4) (5) 3.9. Speech Synthesis: the speak-as descriptor 4. Defining Anonymous Counter Styles: the symbols() function (2) (3) 6. Simple Predefined Counter Styles 6.1. Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan 7. Complex Predefined Counter Styles (2) 7.1. Longhand East Asian Counter Styles 8. Additional “Ready-made” Counter Styles 9.2. The CSSCounterStyleRule interface (2) Changes since the December 2017 Candidate Recommendation Changes since the June 2015 Candidate Recommendation Changes since the Feb 2015 Candidate Recommendation Possible linking syntaxes:''@counter-style''''/@counter-style'' rule allows authors to define a custom counter style. The components of a counter style are specified by descriptors in the @counter-style rule. The algorithm is specified implicitly by a combination of the system, symbols, and additive-symbols properties.",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style",
       "descriptors": [
         {
@@ -19,49 +19,49 @@
           "values": [
             {
               "name": "cyclic",
-              "prose": "The cyclic counter system cycles repeatedly through its provided symbols, looping back to the beginning when it reaches the end of the list. It can be used for simple bullets (just provide a single counter symbol), or for cycling through multiple symbols. The first counter symbol is used as the representation of the value 1, the second counter symbol (if it exists) is used as the representation of the value 2, etc.",
+              "prose": "The cyclicInfo about the 'cyclic' reference.#valdef-counter-style-system-cyclicReferenced in:3.1. Counter algorithms: the system descriptor 3.1.1. Cycling Symbols: the cyclic system (2) 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors 3.9. Speech Synthesis: the speak-as descriptor Possible linking syntaxes:''@counter-style/system/cyclic'' counter system cycles repeatedly through its provided symbols, looping back to the beginning when it reaches the end of the list. It can be used for simple bullets (just provide a single counter symbol), or for cycling through multiple symbols. The first counter symbol is used as the representation of the value 1, the second counter symbol (if it exists) is used as the representation of the value 2, etc.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-cyclic",
               "type": "value",
               "value": "cyclic"
             },
             {
               "name": "fixed",
-              "prose": "The fixed counter system runs through its list of counter symbols once, then falls back. It is useful for representing counter styles that only have a finite number of representations. For example, Unicode defines several limited-length runs of special characters meant for lists, such as circled digits.",
+              "prose": "The fixedInfo about the 'fixed' reference.#valdef-counter-style-system-fixedReferenced in:3.1.2. Exhaustible Symbols: the fixed system (2) 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors 4. Defining Anonymous Counter Styles: the symbols() function 9.2. The CSSCounterStyleRule interface Possible linking syntaxes:''@counter-style/system/fixed'' counter system runs through its list of counter symbols once, then falls back. It is useful for representing counter styles that only have a finite number of representations. For example, Unicode defines several limited-length runs of special characters meant for lists, such as circled digits.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-fixed",
               "type": "value",
               "value": "fixed"
             },
             {
               "name": "symbolic",
-              "prose": "The symbolic counter system cycles repeatedly through its provided symbols, doubling, tripling, etc. the symbols on each successive pass through the list. For example, if the original symbols were \"*\" and \"†\", then on the second pass they would instead be \"**\" and \"††\", while on the third they would be \"***\"and \"†††\", etc. It can be used for footnote-style markers, and is also sometimes used for alphabetic-style lists for a slightly different presentation than what the alphabetic system presents.",
+              "prose": "The symbolicInfo about the 'symbolic' reference.#valdef-system-symbolicReferenced in:2.2. Generating a Counter String 3.1.3. Repeating Symbols: the symbolic system (2) 3.2. Formatting negative values: the negative descriptor 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors 4. Defining Anonymous Counter Styles: the symbols() function Possible linking syntaxes:''system/symbolic'' counter system cycles repeatedly through its provided symbols, doubling, tripling, etc. the symbols on each successive pass through the list. For example, if the original symbols were \"*\" and \"†\", then on the second pass they would instead be \"**\" and \"††\", while on the third they would be \"***\"and \"†††\", etc. It can be used for footnote-style markers, and is also sometimes used for alphabetic-style lists for a slightly different presentation than what the alphabetic system presents.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-system-symbolic",
               "type": "value",
               "value": "symbolic"
             },
             {
               "name": "alphabetic",
-              "prose": "The alphabetic counter system interprets the list of counter symbols as digits to an alphabetic numbering system, similar to the default lower-alpha counter style, which wraps from \"a\", \"b\", \"c\", to \"aa\", \"ab\", \"ac\". Alphabetic numbering systems do not contain a digit representing 0; so the first value when a new digit is added is composed solely of the first digit. Alphabetic numbering systems are commonly used for lists, and also appear in many spreadsheet programs to number columns. The first counter symbol in the list is interpreted as the digit 1, the second as the digit 2, and so on.",
+              "prose": "The alphabeticInfo about the 'alphabetic' reference.#valdef-counter-style-system-alphabeticReferenced in:3.1.3. Repeating Symbols: the symbolic system 3.1.4. Bijective Numerals: the alphabetic system (2) 3.2. Formatting negative values: the negative descriptor 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors 3.9. Speech Synthesis: the speak-as descriptor (2) 4. Defining Anonymous Counter Styles: the symbols() function Possible linking syntaxes:''@counter-style/system/alphabetic'' counter system interprets the list of counter symbols as digits to an alphabetic numbering system, similar to the default lower-alpha counter style, which wraps from \"a\", \"b\", \"c\", to \"aa\", \"ab\", \"ac\". Alphabetic numbering systems do not contain a digit representing 0; so the first value when a new digit is added is composed solely of the first digit. Alphabetic numbering systems are commonly used for lists, and also appear in many spreadsheet programs to number columns. The first counter symbol in the list is interpreted as the digit 1, the second as the digit 2, and so on.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-alphabetic",
               "type": "value",
               "value": "alphabetic"
             },
             {
               "name": "numeric",
-              "prose": "The numeric counter system interprets the list of counter symbols as digits to a \"place-value\" numbering system, similar to the default decimal counter style. The first counter symbol in the list is interpreted as the digit 0, the second as the digit 1, and so on.",
+              "prose": "The numericInfo about the 'numeric' reference.#valdef-counter-style-system-numericReferenced in:3.1. Counter algorithms: the system descriptor 3.1.5. Positional Numerals: the numeric system (2) 3.2. Formatting negative values: the negative descriptor 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors 4. Defining Anonymous Counter Styles: the symbols() function Possible linking syntaxes:''@counter-style/system/numeric'' counter system interprets the list of counter symbols as digits to a \"place-value\" numbering system, similar to the default decimal counter style. The first counter symbol in the list is interpreted as the digit 0, the second as the digit 1, and so on.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-numeric",
               "type": "value",
               "value": "numeric"
             },
             {
               "name": "additive",
-              "prose": "The additive counter system is used to represent \"sign-value\" numbering systems, which, rather than reusing digits in different positions to change their value, define additional digits with much larger values, so that the value of the number can be obtained by adding all the digits together. This is used in Roman numerals and other numbering systems around the world.",
+              "prose": "The additiveInfo about the 'additive' reference.#valdef-counter-style-system-additiveReferenced in:2.2. Generating a Counter String 3.1.6. Accumulating Numerals: the additive system (2) 3.2. Formatting negative values: the negative descriptor 3.5. Limiting the counter scope: the range descriptor 3.8. Marker characters: the symbols and additive-symbols descriptors Possible linking syntaxes:''@counter-style/system/additive'' counter system is used to represent \"sign-value\" numbering systems, which, rather than reusing digits in different positions to change their value, define additional digits with much larger values, so that the value of the number can be obtained by adding all the digits together. This is used in Roman numerals and other numbering systems around the world.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-additive",
               "type": "value",
               "value": "additive"
             },
             {
               "name": "extends",
-              "prose": "The extends system allows an author to use the algorithm of another counter style, but alter other aspects, such as the negative sign or the suffix. If a counter style uses the extends system, any unspecified descriptors must be taken from the extended counter style specified, rather than taking their initial values.",
+              "prose": "The extendsInfo about the 'extends' reference.#valdef-counter-style-system-extendsReferenced in:3.1.7. Building from Existing Counter Styles: the extends system (2) (3) (4) 3.2. Formatting negative values: the negative descriptor 3.5. Limiting the counter scope: the range descriptor 3.9. Speech Synthesis: the speak-as descriptor 7. Complex Predefined Counter Styles Possible linking syntaxes:''@counter-style/system/extends'' system allows an author to use the algorithm of another counter style, but alter other aspects, such as the negative sign or the suffix. If a counter style uses the extends system, any unspecified descriptors must be taken from the extended counter style specified, rather than taking their initial values.",
               "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-extends",
               "type": "value",
               "value": "extends"
@@ -192,7 +192,7 @@
   "values": [
     {
       "name": "<counter-style-name>",
-      "prose": "Counter styles are referenced by name, and represented syntactically by <counter-style-name>, which is a <custom-ident> specifying a tree-scoped name. The keyword none (including any ASCII case-insensitive permutation of it) is not a valid <counter-style-name>.",
+      "prose": "Counter styles are referenced by name, and represented syntactically by <counter-style-name>Info about the '<counter-style-name>' reference.#typedef-counter-style-nameReferenced in:2.1. Counter Style Names 3. Defining Custom Counter Styles: the @counter-style rule 3.1. Counter algorithms: the system descriptor 3.1.7. Building from Existing Counter Styles: the extends system 3.7. Defining fallback: the fallback descriptor 3.9. Speech Synthesis: the speak-as descriptor (2) 5. Extending list-style-type, counter(), and counters() (2) (3) 9.2. The CSSCounterStyleRule interface Possible linking syntaxes:<<counter-style-name>><</counter-style-name>>, which is a <custom-ident> specifying a tree-scoped name. The keyword none (including any ASCII case-insensitive permutation of it) is not a valid <counter-style-name>.",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style-name",
       "type": "type",
       "values": [
@@ -506,42 +506,42 @@
         },
         {
           "name": "japanese-informal",
-          "prose": "japanese-informal is an alias for japanese",
+          "prose": "japanese-informalInfo about the 'japanese-informal' reference.#valdef-counter-style-name-japanese-informalPossible linking syntaxes:''<counter-style-name>/japanese-informal'' is an alias for japanese",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-japanese-informal",
           "type": "value",
           "value": "japanese-informal"
         },
         {
-          "name": "korean-hangul-format",
-          "prose": "korean-hangul-format is an alias for korean-hangul",
-          "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-korean-hangul-format",
+          "name": "korean-hangul-formal",
+          "prose": "korean-hangul-formalInfo about the 'korean-hangul-formal' reference.#valdef-counter-style-name-korean-hangul-formalPossible linking syntaxes:''<counter-style-name>/korean-hangul-formal'' is an alias for korean-hangul",
+          "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-korean-hangul-formal",
           "type": "value",
-          "value": "korean-hangul-format"
+          "value": "korean-hangul-formal"
         },
         {
           "name": "korean-hanja-informal",
-          "prose": "korean-hanja-informal is an alias for korean-hanja",
+          "prose": "korean-hanja-informalInfo about the 'korean-hanja-informal' reference.#valdef-counter-style-name-korean-hanja-informalPossible linking syntaxes:''<counter-style-name>/korean-hanja-informal'' is an alias for korean-hanja",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-korean-hanja-informal",
           "type": "value",
           "value": "korean-hanja-informal"
         },
         {
           "name": "simp-chinese-informal",
-          "prose": "simp-chinese-informal is an alias for simp-chinese",
+          "prose": "simp-chinese-informalInfo about the 'simp-chinese-informal' reference.#valdef-counter-style-name-simp-chinese-informalPossible linking syntaxes:''<counter-style-name>/simp-chinese-informal'' is an alias for simp-chinese",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-simp-chinese-informal",
           "type": "value",
           "value": "simp-chinese-informal"
         },
         {
           "name": "trad-chinese-informal",
-          "prose": "trad-chinese-informal is an alias for trad-chinese",
+          "prose": "trad-chinese-informalInfo about the 'trad-chinese-informal' reference.#valdef-counter-style-name-trad-chinese-informalPossible linking syntaxes:''<counter-style-name>/trad-chinese-informal'' is an alias for trad-chinese",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-trad-chinese-informal",
           "type": "value",
           "value": "trad-chinese-informal"
         },
         {
           "name": "cjk-ideographic",
-          "prose": "cjk-ideographic is an alias for trad-chinese",
+          "prose": "cjk-ideographicInfo about the 'cjk-ideographic' reference.#valdef-counter-style-name-cjk-ideographicPossible linking syntaxes:''<counter-style-name>/cjk-ideographic'' is an alias for trad-chinese",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-cjk-ideographic",
           "type": "value",
           "value": "cjk-ideographic"
@@ -583,14 +583,14 @@
         },
         {
           "name": "ethiopic-numeric",
-          "prose": "The ethiopic-numeric counter style is defined for all positive non-zero numbers. The following algorithm converts decimal digits to ethiopic numbers:",
+          "prose": "The ethiopic-numericInfo about the 'ethiopic-numeric' reference.#valdef-counter-style-name-ethiopic-numericReferenced in:7.2. Ethiopic Numeric Counter Style: ethiopic-numeric Possible linking syntaxes:''<counter-style-name>/ethiopic-numeric'' counter style is defined for all positive non-zero numbers. The following algorithm converts decimal digits to ethiopic numbers:",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-ethiopic-numeric",
           "type": "value",
           "value": "ethiopic-numeric"
         },
         {
           "name": "nko-ordinal",
-          "prose": "The nko-ordinal counter style is defined for all numbers. It is identical to the nko-cardinal style defined in [predefined-counter-styles], except the final digit has a combining dot either above or below it, depending on that digit’s value.",
+          "prose": "The nko-ordinalInfo about the 'nko-ordinal' reference.#valdef-counter-style-name-nko-ordinalReferenced in:7.3. N’Ko Numeric Counter Style: nko-ordinal Possible linking syntaxes:''<counter-style-name>/nko-ordinal'' counter style is defined for all numbers. It is identical to the nko-cardinal style defined in [predefined-counter-styles], except the final digit has a combining dot either above or below it, depending on that digit’s value.",
           "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-name-nko-ordinal",
           "type": "value",
           "value": "nko-ordinal"
@@ -600,26 +600,23 @@
     {
       "name": "<symbol>",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-symbol",
-      "type": "type",
-      "value": "<string> | <image> | <custom-ident>"
+      "type": "type"
     },
     {
       "name": "symbols()",
-      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ )",
+      "value": "symbols()",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#funcdef-symbols",
       "type": "function"
     },
     {
       "name": "<symbols-type>",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-symbols-type",
-      "type": "type",
-      "value": "cyclic | numeric | alphabetic | symbolic | fixed"
+      "type": "type"
     },
     {
       "name": "<counter-style>",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style",
       "type": "type",
-      "value": "<counter-style-name> | <symbols()>",
       "values": [
         {
           "name": "simp-chinese",
@@ -654,7 +651,33 @@
     {
       "name": "<symbolic-glyph>",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-symbolic-glyph",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<symbol>><</symbol>>",
+      "value": "<string> | <image> | <custom-ident>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''symbols()''''/symbols()''",
+      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ ) <symbols-type>Info about the '<symbols-type>' reference.#typedef-symbols-typeReferenced in:4. Defining Anonymous Counter Styles: the symbols() function Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<symbols-type>><</symbols-type>>",
+      "value": "cyclic | numeric | alphabetic | symbolic | fixed"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<counter-style>><</counter-style>>",
+      "value": "<counter-style-name> | <symbols()>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<symbolic-glyph>><</symbolic-glyph>>",
       "value": "disc | circle | square | disclosure-open | disclosure-closed"
     }
   ]

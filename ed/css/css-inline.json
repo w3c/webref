@@ -226,21 +226,21 @@
       "values": [
         {
           "name": "baseline",
-          "prose": "This property specifies the box’s alignment baseline: the baseline used to align the box prior to applying its post-alignment shift (if applicable). Values have the same meanings as for dominant-baseline; the baseline keyword uses the dominant baseline choice of the parent.",
+          "prose": "This property specifies the box’s alignment baselineInfo about the 'alignment baseline' reference.#alignment-baselineReferenced in:3.3. Baselines of Glyphs and Boxes (2) 4. Baseline Alignment (2) (3) (4) 4.1. Dominant Baselines: the dominant-baseline property 4.2. Transverse Box Alignment: the vertical-align property Possible linking syntaxes:[=alignment baseline=][=/alignment baseline=]: the baseline used to align the box prior to applying its post-alignment shift (if applicable). Values have the same meanings as for dominant-baseline; the baselineInfo about the 'baseline' reference.#valdef-alignment-baseline-baselineReferenced in:Changes Possible linking syntaxes:''alignment-baseline/baseline'' keyword uses the dominant baseline choice of the parent.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-baseline",
           "type": "value",
           "value": "baseline"
         },
         {
           "name": "text-before-edge",
-          "prose": "text-before-edge aliasing text-top",
+          "prose": "text-before-edgeInfo about the 'text-before-edge' reference.#valdef-alignment-baseline-text-before-edgePossible linking syntaxes:''alignment-baseline/text-before-edge'' aliasing text-top",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-before-edge",
           "type": "value",
           "value": "text-before-edge"
         },
         {
           "name": "text-after-edge",
-          "prose": "text-after-edge aliasing text-bottom",
+          "prose": "text-after-edgeInfo about the 'text-after-edge' reference.#valdef-alignment-baseline-text-after-edgePossible linking syntaxes:''alignment-baseline/text-after-edge'' aliasing text-bottom",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-after-edge",
           "type": "value",
           "value": "text-after-edge"
@@ -314,7 +314,7 @@
         },
         {
           "name": "baseline",
-          "prose": "User agents may additionally support the keyword baseline as computing to 0 if is necessary for them to support legacy SVG content. This value is not allowed in the vertical-align shorthand.",
+          "prose": "User agents may additionally support the keyword baselineInfo about the 'baseline' reference.#valdef-baseline-shift-baselineReferenced in:4.2.3.1. Legacy Values for SVG Possible linking syntaxes:''baseline-shift/baseline'' as computing to 0 if is necessary for them to support legacy SVG content. This value is not allowed in the vertical-align shorthand.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-baseline",
           "type": "value",
           "value": "baseline"
@@ -452,7 +452,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "If the single keyword normal is specified, it sets text-box-trim to none and text-box-edge to auto. Otherwise, omitting the text-box-trim value sets it to trim-both (not the initial value), while omitting the text-box-edge value sets it to auto (the initial value).",
+          "prose": "If the single keyword normalInfo about the 'normal' reference.#valdef-text-box-normalPossible linking syntaxes:''text-box/normal'' is specified, it sets text-box-trim to none and text-box-edge to auto. Otherwise, omitting the text-box-trim value sets it to trim-both (not the initial value), while omitting the text-box-edge value sets it to auto (the initial value).",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-normal",
           "type": "value",
           "value": "normal"
@@ -523,7 +523,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the auto keyword uses the value of line-fit-edge, interpreting leading (the initial value) as text.",
+          "prose": "This property specifies the metrics to use for text-box-trim effects. Values have the same meanings as for line-fit-edge; the autoInfo about the 'auto' reference.#valdef-text-box-edge-autoReferenced in:6.1. Shorthand for Text Box Trimming: the text-box property (2) Possible linking syntaxes:''text-box-edge/auto'' keyword uses the value of line-fit-edge, interpreting leading (the initial value) as text.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-text-box-edge-auto",
           "type": "value",
           "value": "auto"
@@ -587,14 +587,14 @@
         },
         {
           "name": "<number [1,∞]>",
-          "prose": "This first argument defines the size of the initial letter in terms of how many lines it occupies. Values less than one are invalid.",
+          "prose": "This first argument defines the sizeInfo about the 'size' reference.#initial-letter-initial-letter-sizeReferenced in:7.3. Creating Initial Letters: the initial-letter property (2) 7.5.3. Font Sizing of Initial Letters 7.6.1. Block-axis Positioning (2) (3) Possible linking syntaxes:[=initial letter size=][=initial-letter/initial letter size=] of the initial letter in terms of how many lines it occupies. Values less than one are invalid.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letter-number-1",
           "type": "value",
           "value": "<number [1,∞]>"
         },
         {
           "name": "<integer [1,∞]>",
-          "prose": "This optional second argument defines the number of lines the initial letter should sink. A value of 1 indicates a raised initial; values greater than 1 indicate a sunken initial. Values less than one are invalid.",
+          "prose": "This optional second argument defines the number of lines the initial letter should sinkInfo about the 'sink' reference.#initial-letter-initial-letter-sinkReferenced in:7.3. Creating Initial Letters: the initial-letter property (2) (3) (4) 7.5.5. Sizing the Initial Letter Box (2) 7.6.1. Block-axis Positioning (2) (3) (4) (5) Possible linking syntaxes:[=initial letter sink=][=initial-letter/initial letter sink=]. A value of 1 indicates a raised initial; values greater than 1 indicate a sunken initial. Values less than one are invalid.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letter-integer-1",
           "type": "value",
           "value": "<integer [1,∞]>"
@@ -738,7 +738,7 @@
   "values": [
     {
       "name": "<baseline-metric>",
-      "prose": "The <baseline-metric> value, which identifies specific baseline metrics, expands to",
+      "prose": "The <baseline-metric>Info about the '<baseline-metric>' reference.#typedef-baseline-metricReferenced in:4.1. Dominant Baselines: the dominant-baseline property (2) (3) 4.2.2. Alignment Baseline Type: the alignment-baseline longhand Changes Possible linking syntaxes:<<baseline-metric>><</baseline-metric>> value, which identifies specific baseline metrics, expands to",
       "href": "https://drafts.csswg.org/css-inline-3/#typedef-baseline-metric",
       "type": "type",
       "value": "text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
@@ -810,7 +810,7 @@
     },
     {
       "name": "<text-edge>",
-      "prose": "The <text-edge> value, which identifies specific font metrics, expands to",
+      "prose": "The <text-edge>Info about the '<text-edge>' reference.#typedef-text-edgeReferenced in:5.2. Text Edge Metrics: the line-fit-edge property (2) (3) 6.3. Text Trimming Metrics: the text-box-edge property Changes Possible linking syntaxes:<<text-edge>><</text-edge>> value, which identifies specific font metrics, expands to",
       "href": "https://drafts.csswg.org/css-inline-3/#typedef-text-edge",
       "type": "type",
       "value": "[ text | ideographic | ideographic-ink ] | [ text | ideographic | ideographic-ink | cap | ex ] [ text | ideographic | ideographic-ink | alphabetic ]",

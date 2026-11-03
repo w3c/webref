@@ -18,42 +18,42 @@
       "values": [
         {
           "name": "initial",
-          "prose": "The initial CSS-wide keyword represents the value defined as the property’s initial value.",
+          "prose": "The initialInfo about the 'initial' reference.#valdef-all-initialReferenced in:7. Defaulting 7.3.1. Resetting a Property: the initial keyword (2) 7.3.3. Erasing All Declarations: the unset keyword (2) 9.9. Additions Since Level 2 Possible linking syntaxes:''all/initial'' CSS-wide keyword represents the value defined as the property’s initial value.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-initial",
           "type": "value",
           "value": "initial"
         },
         {
           "name": "inherit",
-          "prose": "The inherit CSS-wide keyword represents the property’s computed value on the parent element.",
+          "prose": "The inheritInfo about the 'inherit' reference.#valdef-all-inheritReferenced in:7. Defaulting 7.2. Inheritance 7.3.2. Explicit Inheritance: the inherit keyword (2) 7.3.3. Erasing All Declarations: the unset keyword (2) Possible linking syntaxes:''all/inherit'' CSS-wide keyword represents the property’s computed value on the parent element.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit",
           "type": "value",
           "value": "inherit"
         },
         {
           "name": "unset",
-          "prose": "The unset CSS-wide keyword acts as either inherit or initial, depending on whether the property is inherited or not.",
+          "prose": "The unsetInfo about the 'unset' reference.#valdef-all-unsetReferenced in:7.3.3. Erasing All Declarations: the unset keyword (2) 7.3.4. Rolling Back Cascade Origins: the revert keyword 9.9. Additions Since Level 2 Possible linking syntaxes:''all/unset'' CSS-wide keyword acts as either inherit or initial, depending on whether the property is inherited or not.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-unset",
           "type": "value",
           "value": "unset"
         },
         {
           "name": "revert",
-          "prose": "The revert CSS-wide keyword rolls back the cascade to the cascaded value of the earlier origin.",
+          "prose": "The revertInfo about the 'revert' reference.#valdef-all-revertReferenced in:6.5. Precedence of Non-CSS Presentational Hints 7.3. Explicit Defaulting 7.3.4. Rolling Back Cascade Origins: the revert keyword (2) (3) (4) 7.3.5. Rolling Back Cascade Layers: the revert-layer keyword (2) 7.3.6. Rolling Back Rules: the revert-rule keyword 9.1. Changes since the 13 Jan 2022 Candidate Recommendation Snapshot 9.8. Additions Since Level 3 Possible linking syntaxes:''all/revert'' CSS-wide keyword rolls back the cascade to the cascaded value of the earlier origin.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert",
           "type": "value",
           "value": "revert"
         },
         {
           "name": "revert-layer",
-          "prose": "The revert-layer CSS-wide keyword rolls back the cascade similar to revert, except it works by cascade layer rather than by cascade origin.",
+          "prose": "The revert-layerInfo about the 'revert-layer' reference.#valdef-all-revert-layerReferenced in:6.5. Precedence of Non-CSS Presentational Hints 7.3. Explicit Defaulting 7.3.5. Rolling Back Cascade Layers: the revert-layer keyword (2) (3) (4) (5) 7.3.6. Rolling Back Rules: the revert-rule keyword (2) 9.1. Changes since the 13 Jan 2022 Candidate Recommendation Snapshot 9.2. Changes since the 15 Oct 2021 Working Draft 9.6. Changes since the 19 January 2021 Working Draft 9.7. Additions Since Level 4 Possible linking syntaxes:''all/revert-layer'' CSS-wide keyword rolls back the cascade similar to revert, except it works by cascade layer rather than by cascade origin.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer",
           "type": "value",
           "value": "revert-layer"
         },
         {
           "name": "revert-rule",
-          "prose": "The revert-rule CSS-wide keyword rolls back the cascade similar to revert and revert-layer, except it works by style rule rather than cascade origin or cascade layer.",
+          "prose": "The revert-ruleInfo about the 'revert-rule' reference.#valdef-all-revert-ruleReferenced in:7.3. Explicit Defaulting 7.3.6. Rolling Back Rules: the revert-rule keyword (2) (3) (4) 9.1. Changes since the 13 Jan 2022 Candidate Recommendation Snapshot Possible linking syntaxes:''all/revert-rule'' CSS-wide keyword rolls back the cascade similar to revert and revert-layer, except it works by style rule rather than cascade origin or cascade layer.",
           "href": "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-rule",
           "type": "value",
           "value": "revert-rule"
@@ -67,14 +67,14 @@
   "atrules": [
     {
       "name": "@import",
-      "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
+      "prose": "The @importInfo about the '@import' reference.#at-ruledef-importReferenced in:2. Importing Style Sheets: the @import rule (2) (3) (4) (5) (6) (7) (8) (9) (10) 2.1. Conditional @import Rules (2) 6.1. Cascade Sorting Order (2) 6.4.1. Declaring Cascade Layers 6.4.2. Layer Naming and Nesting (2) 6.4.2.1. Anonymous Layers 6.4.4.1. Assigning Styles Inline: the @layer block at-rule 6.4.4.2. Declaring Without Styles: the @layer statement at-rule (2) (3) (4) (5) (6) (7) 9.1. Changes since the 13 Jan 2022 Candidate Recommendation Snapshot 9.2. Changes since the 15 Oct 2021 Working Draft 9.4. Changes since the 8 June 2021 Working Draft 9.6. Changes since the 19 January 2021 Working Draft 9.7. Additions Since Level 4 9.8. Additions Since Level 3 Privacy Considerations Security Considerations Possible linking syntaxes:''@import''''/@import'' rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
       "href": "https://drafts.csswg.org/css-cascade-5/#at-ruledef-import",
       "descriptors": [],
-      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ;"
+      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ; <import-conditions>Info about the '<import-conditions>' reference.#typedef-import-conditionsReferenced in:2. Importing Style Sheets: the @import rule (2) Possible linking"
     },
     {
       "name": "@layer",
-      "prose": "The @layer rule declares a cascade layer, with the option to assign style rules.",
+      "prose": "The @layerInfo about the '@layer' reference.#at-ruledef-layerReferenced in:2. Importing Style Sheets: the @import rule 6.4.2. Layer Naming and Nesting (2) (3) (4) 6.4.2.1. Anonymous Layers 6.4.3. Layer Ordering 6.4.4. Declaring Layers Inline: the @layer rule 6.4.4.1. Assigning Styles Inline: the @layer block at-rule (2) (3) (4) (5) 6.4.4.2. Declaring Without Styles: the @layer statement at-rule (2) (3) (4) (5) (6) (7) 8.1. The CSSLayerBlockRule interface (2) 8.2. The CSSLayerStatementRule interface 9.1. Changes since the 13 Jan 2022 Candidate Recommendation Snapshot (2) 9.4. Changes since the 8 June 2021 Working Draft (2) 9.6. Changes since the 19 January 2021 Working Draft 9.7. Additions Since Level 4 Possible linking syntaxes:''@layer''''/@layer'' rule declares a cascade layer, with the option to assign style rules.",
       "href": "https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer",
       "descriptors": [],
       "value": "@layer <layer-name>? { <rule-list> } | @layer <layer-name>#;"
@@ -85,13 +85,23 @@
     {
       "name": "<import-conditions>",
       "href": "https://drafts.csswg.org/css-cascade-5/#typedef-import-conditions",
-      "type": "type",
-      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
+      "type": "type"
     },
     {
       "name": "<layer-name>",
       "href": "https://drafts.csswg.org/css-cascade-5/#typedef-layer-name",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<import-conditions>><</import-conditions>>",
+      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<layer-name>><</layer-name>>",
       "value": "<ident> [ '.' <ident> ]*"
     }
   ]

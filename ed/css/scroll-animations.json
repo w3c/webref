@@ -373,10 +373,10 @@
   "values": [
     {
       "name": "scroll()",
-      "prose": "The scroll() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a scroll progress timeline. Its syntax is",
+      "prose": "The scroll()Info about the 'scroll()' reference.#funcdef-scrollReferenced in:2. Scroll Progress Timelines 2.2.1. The scroll() notation (2) (3) (4) (5) (6) 2.3.2. Axis of a Scroll Progress Timeline: the scroll-timeline-axis property 3.3.1. The view() notation Possible linking syntaxes:''scroll()''''/scroll()'' functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a scroll progress timeline. Its syntax is",
       "href": "https://drafts.csswg.org/scroll-animations-1/#funcdef-scroll",
       "type": "function",
-      "value": "scroll( [ <scroller> || <axis> ]? )",
+      "value": "scroll( [ <scroller> || <axis> ]? ) <axis>Info about the '<axis>' reference.#typedef-axisReferenced in:2.2.1. The scroll() notation (2) (3) (4) 2.2.2. The ScrollTimeline Interface 3.3.1. The view() notation (2) (3) 3.3.2. The ViewTimeline Interface Possible linking",
       "values": [
         {
           "name": "block",
@@ -432,30 +432,38 @@
     {
       "name": "<axis>",
       "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-axis",
-      "type": "type",
-      "value": "block | inline | x | y"
+      "type": "type"
     },
     {
       "name": "<scroller>",
       "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-scroller",
-      "type": "type",
-      "value": "root | nearest | self"
+      "type": "type"
     },
     {
       "name": "view()",
-      "prose": "The view() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container that’s scrollable in the specified axis. Its syntax is",
+      "prose": "The view()Info about the 'view()' reference.#funcdef-viewReferenced in:3. View Progress Timelines 3.3.1. The view() notation (2) (3) (4) (5) (6) 3.4.2. Axis of a View Progress Timeline: the view-timeline-axis property Possible linking syntaxes:''view()''''/view()'' functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container that’s scrollable in the specified axis. Its syntax is",
       "href": "https://drafts.csswg.org/scroll-animations-1/#funcdef-view",
       "type": "function",
       "value": "view( [ <axis> || <'view-timeline-inset'> ]? )"
     },
     {
       "name": "<timeline-range-name>",
-      "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be associated with a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges.",
+      "prose": "A named timeline rangeInfo about the 'named timeline range' reference.#named-timeline-rangeReferenced in:3.1. View Progress Timeline Ranges 5.1. HTML Processing Model: Event loop Appendix A: Timeline Ranges Named Timeline Ranges (2) (3) (4) (5) Named Timeline Range Keyframe Selectors (2) (3) (4) (5) (6) Specifying an Animation’s Timeline Range Start: the animation-range-start property (2) Specifying an Animation’s Timeline Range End: the animation-range-end property (2) Possible linking syntaxes:[=named timeline range=][=/named timeline range=] is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be associated with a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name>Info about the '<timeline-range-name>' reference.#typedef-timeline-range-nameReferenced in:Named Timeline Ranges Named Timeline Range Keyframe Selectors (2) Specifying an Animation’s Timeline Range: the animation-range shorthand (2) Specifying an Animation’s Timeline Range Start: the animation-range-start property (2) Specifying an Animation’s Timeline Range End: the animation-range-end property (2) Possible linking syntaxes:<<timeline-range-name>><</timeline-range-name>> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges.",
       "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-timeline-range-name",
       "type": "type"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<axis>><</axis>>",
+      "value": "block | inline | x | y <scroller>Info about the '<scroller>' reference.#typedef-scrollerReferenced in:2.2.1. The scroll() notation (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<scroller>><</scroller>>",
+      "value": "root | nearest | self"
+    },
     {
       "msg": "Missing definition",
       "name": "<keyframe-selector>",

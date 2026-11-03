@@ -142,21 +142,21 @@
       "values": [
         {
           "name": "<'flex-grow'>",
-          "prose": "This <number [0,∞]> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
+          "prose": "This <number [0,∞]> component sets flex-grow longhand and specifies the flex grow factorInfo about the 'flex grow factor' reference.#flex-flex-grow-factorReferenced in:7. Flexibility 7.1. The flex Shorthand 7.2.1. The flex-grow property 9.8. Resolving Flexible Lengths (2) 9.10.1.1. Ideal Algorithm: Max-content Size and Min-content Single-line Size (2) (3) (4) (5) (6) Possible linking syntaxes:[=flex grow factor=][=flex/flex grow factor=], which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-grow",
           "type": "value",
           "value": "<'flex-grow'>"
         },
         {
           "name": "<'flex-shrink'>",
-          "prose": "This <number [0,∞]> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
+          "prose": "This <number [0,∞]> component sets flex-shrink longhand and specifies the flex shrink factorInfo about the 'flex shrink factor' reference.#flex-flex-shrink-factorReferenced in:7. Flexibility 7.1. The flex Shorthand (2) 7.2.2. The flex-shrink property 9.8. Resolving Flexible Lengths (2) 9.10.1.1. Ideal Algorithm: Max-content Size and Min-content Single-line Size Possible linking syntaxes:[=flex shrink factor=][=flex/flex shrink factor=], which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-shrink",
           "type": "value",
           "value": "<'flex-shrink'>"
         },
         {
           "name": "<'flex-basis'>",
-          "prose": "This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors. <'flex-basis'> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
+          "prose": "This component sets the flex-basis longhand, which specifies the flex basisInfo about the 'flex basis' reference.#flex-flex-basisReferenced in:7.1. The flex Shorthand 7.1.1. Basic Values of flex 7.2.3. The flex-basis property 9.2. Line Length Determination (2) (3) (4) (5) 9.9. Definite and Indefinite Sizes Possible linking syntaxes:[=flex basis=][=flex/flex basis=]: the initial main size of the flex item, before free space is distributed according to the flex factors. <'flex-basis'> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-basis",
           "type": "value",
           "value": "<'flex-basis'>"
@@ -187,7 +187,7 @@
       "values": [
         {
           "name": "<number>",
-          "prose": "The flex-grow property sets the flex grow factor to the provided <number>. Negative values are not allowed.",
+          "prose": "The flex-grow property sets the flex grow factor to the provided <number>Info about the '<number>' reference.#valdef-flex-grow-numberPossible linking syntaxes:''flex-grow/<number>''. Negative values are not allowed.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-grow-number",
           "type": "value",
           "value": "<number>"
@@ -212,7 +212,7 @@
       "values": [
         {
           "name": "<number>",
-          "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>. Negative values are not allowed.",
+          "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>Info about the '<number>' reference.#valdef-flex-shrink-numberPossible linking syntaxes:''flex-shrink/<number>''. Negative values are not allowed.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-shrink-number",
           "type": "value",
           "value": "<number>"
@@ -350,14 +350,14 @@
         },
         {
           "name": "baseline",
-          "prose": "The flex item participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
+          "prose": "The flex item participates in baseline alignmentInfo about the 'participates in baseline alignment' reference.#baseline-participationReferenced in:8.5. Flex Container Baselines (2) Possible linking syntaxes:[=participates in baseline alignment=][=align-items/participates in baseline alignment=][=align-self/participates in baseline alignment=]: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-baseline",
           "type": "value",
           "value": "baseline"
         },
         {
           "name": "stretch",
-          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretchedInfo about the 'stretched' reference.#stretchedReferenced in:9.9. Definite and Indefinite Sizes Possible linking syntaxes:[=stretched=][=/stretched=]. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-stretch",
           "type": "value",
           "value": "stretch"
@@ -410,14 +410,14 @@
         },
         {
           "name": "baseline",
-          "prose": "The flex item participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
+          "prose": "The flex item participates in baseline alignmentInfo about the 'participates in baseline alignment' reference.#baseline-participationReferenced in:8.5. Flex Container Baselines (2) Possible linking syntaxes:[=participates in baseline alignment=][=align-items/participates in baseline alignment=][=align-self/participates in baseline alignment=]: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-baseline",
           "type": "value",
           "value": "baseline"
         },
         {
           "name": "stretch",
-          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretchedInfo about the 'stretched' reference.#stretchedReferenced in:9.9. Definite and Indefinite Sizes Possible linking syntaxes:[=stretched=][=/stretched=]. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
           "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-stretch",
           "type": "value",
           "value": "stretch"

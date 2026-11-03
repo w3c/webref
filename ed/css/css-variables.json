@@ -9,20 +9,31 @@
   "values": [
     {
       "name": "<custom-property-name>",
-      "prose": "A custom property is any property whose name starts with two dashes (U+002D HYPHEN-MINUS), like --foo. The <custom-property-name> production corresponds to this: it’s defined as any <dashed-ident> (a valid identifier that starts with two dashes), except -- itself, which is reserved for future use by CSS. Custom properties are solely for use by authors and users; CSS will never give them a meaning beyond what is presented here.",
+      "prose": "A custom propertyInfo about the 'custom property' reference.#custom-propertyReferenced in:1. Introduction (2) 2. Defining Custom Properties: the --* family of properties (2) (3) (4) (5) (6) (7) 2.1. Custom Property Value Syntax (2) (3) 2.2. Guaranteed-Invalid Values (2) (3) 3. Using Cascading Variables: the var() notation (2) (3) (4) (5) (6) (7) (8) (9) 3.1. Variable Units (2) (3) (4) (5) (6) 4. APIs 4.1. Serializing Custom Properties (2) Possible linking syntaxes:[=custom property=][=/custom property=] is any property whose name starts with two dashes (U+002D HYPHEN-MINUS), like --foo. The <custom-property-name>Info about the '<custom-property-name>' reference.#typedef-custom-property-nameReferenced in:3. Using Cascading Variables: the var() notation (2) (3) Possible linking syntaxes:<<custom-property-name>><</custom-property-name>> production corresponds to this: it’s defined as any <dashed-ident> (a valid identifier that starts with two dashes), except -- itself, which is reserved for future use by CSS. Custom properties are solely for use by authors and users; CSS will never give them a meaning beyond what is presented here.",
       "href": "https://drafts.csswg.org/css-variables-2/#typedef-custom-property-name",
       "type": "type"
     },
     {
       "name": "var()",
-      "value": "var( <custom-property-name> , <declaration-value>? )",
+      "value": "var()",
       "href": "https://drafts.csswg.org/css-variables-2/#funcdef-var",
       "type": "function"
     },
     {
       "name": "<var-args>",
       "href": "https://drafts.csswg.org/css-variables-2/#typedef-var-args",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''var()''''/var()''",
+      "value": "var( <custom-property-name> , <declaration-value>? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<var-args>><</var-args>>",
       "value": "var( <declaration-value> , <declaration-value>? )"
     }
   ]

@@ -7,10 +7,10 @@
   "atrules": [
     {
       "name": "@namespace",
-      "prose": "The @namespace at-rule declares a namespace prefix and associates it with a given namespace name (a string). This namespace prefix can then be used in namespace-qualified names such as the CSS qualified names defined below.",
+      "prose": "The @namespaceInfo about the '@namespace' reference.#at-ruledef-namespaceReferenced in:1. Introduction (2) 2. Declaring namespaces: the @namespace rule (2) 2.1. Syntax (2) (3) (4) (5) 2.2. Scope Possible linking syntaxes:''@namespace''''/@namespace'' at-rule declares a namespace prefix and associates it with a given namespace name (a string). This namespace prefix can then be used in namespace-qualified names such as the CSS qualified names defined below.",
       "href": "https://drafts.csswg.org/css-namespaces-3/#at-ruledef-namespace",
       "descriptors": [],
-      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ;"
+      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ; <namespace-prefix>Info about the '<namespace-prefix>' reference.#typedef-namespace-prefixReferenced in:2.1. Syntax Possible linking"
     }
   ],
   "selectors": [],
@@ -18,7 +18,13 @@
     {
       "name": "<namespace-prefix>",
       "href": "https://drafts.csswg.org/css-namespaces-3/#typedef-namespace-prefix",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<namespace-prefix>><</namespace-prefix>>",
       "value": "<ident>"
     }
   ]

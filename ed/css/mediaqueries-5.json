@@ -9,18 +9,17 @@
       "name": "@custom-media",
       "href": "https://drafts.csswg.org/mediaqueries-5/#at-ruledef-custom-media",
       "descriptors": [],
-      "value": "@custom-media <extension-name> [ <media-query-list> | true | false ] ;",
       "values": [
         {
           "name": "true",
-          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If true or false is given, the custom media query evaluates to true or false, respectively.",
+          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If trueInfo about the 'true' reference.#valdef-custom-media-trueReferenced in:11. CSSOM Possible linking syntaxes:''@custom-media/true'' or falseInfo about the 'false' reference.#valdef-custom-media-falseReferenced in:11. CSSOM Possible linking syntaxes:''@custom-media/false'' is given, the custom media query evaluates to true or false, respectively.",
           "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-true",
           "type": "value",
           "value": "true"
         },
         {
           "name": "false",
-          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If true or false is given, the custom media query evaluates to true or false, respectively.",
+          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If trueInfo about the 'true' reference.#valdef-custom-media-trueReferenced in:11. CSSOM Possible linking syntaxes:''@custom-media/true'' or falseInfo about the 'false' reference.#valdef-custom-media-falseReferenced in:11. CSSOM Possible linking syntaxes:''@custom-media/false'' is given, the custom media query evaluates to true or false, respectively.",
           "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false",
           "type": "value",
           "value": "false"
@@ -201,7 +200,7 @@
           "values": [
             {
               "name": "infinite",
-              "prose": "For output mediums that have no physical constraints on resolution (such as outputting to vector graphics), this feature must match the infinite value. For the purpose of evaluating this media feature in the range context, infinite must be treated as larger than any possible <resolution>. (That is, a query like (resolution > 1000dpi) will be true for an infinite media.)",
+              "prose": "For output mediums that have no physical constraints on resolution (such as outputting to vector graphics), this feature must match the infiniteInfo about the 'infinite' reference.#valdef-media-resolution-infiniteReferenced in:5.1. Display Resolution: the resolution feature (2) Possible linking syntaxes:''@media/resolution/infinite'' value. For the purpose of evaluating this media feature in the range context, infinite must be treated as larger than any possible <resolution>. (That is, a query like (resolution > 1000dpi) will be true for an infinite media.)",
               "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-resolution-infinite",
               "type": "value",
               "value": "infinite"
@@ -729,14 +728,14 @@
       "values": [
         {
           "name": "not",
-          "prose": "An individual media query can have its result negated by prefixing it with the keyword not. If the media query would normally evaluate to true, prefixing it with not makes it evaluate to false, and vice versa.",
+          "prose": "An individual media query can have its result negated by prefixing it with the keyword notInfo about the 'not' reference.#valdef-media-notReferenced in:2.2.1. Negating a Media Query: the not keyword (2) 2.2.2. Hiding a Media Query From Legacy user agents: the only keyword 2.5. Combining Media Features (2) 3. Syntax (2) 3.2. Error Handling Possible linking syntaxes:''@media/not''. If the media query would normally evaluate to true, prefixing it with not makes it evaluate to false, and vice versa.",
           "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-not",
           "type": "value",
           "value": "not"
         },
         {
           "name": "only",
-          "prose": "To hide these media queries from legacy user agents, the media query can be prefixed with the keyword only. The only keyword has no effect on the media query’s result, but will cause the media query to be parsed by legacy user agents as specifying the unknown media type “only”, and thus be ignored.",
+          "prose": "To hide these media queries from legacy user agents, the media query can be prefixed with the keyword onlyInfo about the 'only' reference.#valdef-media-onlyReferenced in:2.2.2. Hiding a Media Query From Legacy user agents: the only keyword (2) (3) (4) 3. Syntax Possible linking syntaxes:''@media/only''. The only keyword has no effect on the media query’s result, but will cause the media query to be parsed by legacy user agents as specifying the unknown media type “only”, and thus be ignored.",
           "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-only",
           "type": "value",
           "value": "only"
@@ -817,129 +816,217 @@
   "values": [
     {
       "name": "<media-query-list>",
-      "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced.",
+      "prose": "To parse a <media-query-list>Info about the '<media-query-list>' reference.#typedef-media-query-listReferenced in:3. Syntax (2) 10. Custom Media Queries (2) (3) 11. CSSOM Possible linking syntaxes:<<media-query-list>><</media-query-list>> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced.",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list",
       "type": "type"
     },
     {
       "name": "<media-query>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query",
-      "type": "type",
-      "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?"
+      "type": "type"
     },
     {
       "name": "<media-type>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-type",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     },
     {
       "name": "<media-condition>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition",
-      "type": "type",
-      "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]"
+      "type": "type"
     },
     {
       "name": "<media-condition-without-or>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition-without-or",
-      "type": "type",
-      "value": "<media-not> | <media-in-parens> <media-and>*"
+      "type": "type"
     },
     {
       "name": "<media-not>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-not",
-      "type": "type",
-      "value": "not <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-and>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-and",
-      "type": "type",
-      "value": "and <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-or>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-or",
-      "type": "type",
-      "value": "or <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-in-parens>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-in-parens",
-      "type": "type",
-      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<media-feature>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-feature",
-      "type": "type",
-      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]"
+      "type": "type"
     },
     {
       "name": "<mf-plain>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-plain",
-      "type": "type",
-      "value": "<mf-name> : <mf-value>"
+      "type": "type"
     },
     {
       "name": "<mf-boolean>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-boolean",
-      "type": "type",
-      "value": "<mf-name>"
+      "type": "type"
     },
     {
       "name": "<mf-range>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-range",
-      "type": "type",
-      "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>"
+      "type": "type"
     },
     {
       "name": "<mf-name>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-name",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     },
     {
       "name": "<mf-value>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-value",
-      "type": "type",
-      "value": "<number> | <dimension> | <ident> | <ratio>"
+      "type": "type"
     },
     {
       "name": "<mf-lt>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-lt",
-      "type": "type",
-      "value": "'<' '='?"
+      "type": "type"
     },
     {
       "name": "<mf-gt>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-gt",
-      "type": "type",
-      "value": "'>' '='?"
+      "type": "type"
     },
     {
       "name": "<mf-eq>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-eq",
-      "type": "type",
-      "value": "'='"
+      "type": "type"
     },
     {
       "name": "<mf-comparison>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-comparison",
-      "type": "type",
-      "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+      "type": "type"
     },
     {
       "name": "<general-enclosed>",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
-      "type": "type",
-      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+      "type": "type"
     },
     {
       "name": "<mq-boolean>",
-      "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
+      "prose": "The <mq-boolean>Info about the '<mq-boolean>' reference.#typedef-mq-booleanReferenced in:5.3. Detecting Console Displays: the grid feature (2) (3) Possible linking syntaxes:<<mq-boolean>><</mq-boolean>> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "@custom-mediaInfo",
+      "value": "@custom-mediaInfo about the '@custom-media' reference.#at-ruledef-custom-mediaReferenced in:10. Custom Media Queries (2) (3) 11. CSSOM (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''@custom-media''''/@custom-media''",
+      "value": "@custom-media <extension-name> [ <media-query-list> | true | false ] ;"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-query>><</media-query>>",
+      "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]? <media-type>Info about the '<media-type>' reference.#typedef-media-typeReferenced in:3. Syntax (2) 3.2. Error Handling (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-type>><</media-type>>",
+      "value": "<ident> <media-condition>Info about the '<media-condition>' reference.#typedef-media-conditionReferenced in:3. Syntax (2) 3.1. Evaluating Media Queries (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-condition>><</media-condition>>",
+      "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ] <media-condition-without-or>Info about the '<media-condition-without-or>' reference.#typedef-media-condition-without-orReferenced in:3. Syntax 3.1. Evaluating Media Queries (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-condition-without-or>><</media-condition-without-or>>",
+      "value": "<media-not> | <media-in-parens> <media-and>* <media-not>Info about the '<media-not>' reference.#typedef-media-notReferenced in:3. Syntax (2) 3.1. Evaluating Media Queries Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-not>><</media-not>>",
+      "value": "not <media-in-parens> <media-and>Info about the '<media-and>' reference.#typedef-media-andReferenced in:3. Syntax (2) 3.1. Evaluating Media Queries (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-and>><</media-and>>",
+      "value": "and <media-in-parens> <media-or>Info about the '<media-or>' reference.#typedef-media-orReferenced in:3. Syntax 3.1. Evaluating Media Queries (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-or>><</media-or>>",
+      "value": "or <media-in-parens> <media-in-parens>Info about the '<media-in-parens>' reference.#typedef-media-in-parensReferenced in:3. Syntax (2) (3) (4) (5) (6) 3.1. Evaluating Media Queries (2) (3) (4) (5) (6) (7) (8) (9) (10) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-in-parens>><</media-in-parens>>",
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed> <media-feature>Info about the '<media-feature>' reference.#typedef-media-featureReferenced in:3. Syntax 3.1. Evaluating Media Queries Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<media-feature>><</media-feature>>",
+      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ] <mf-plain>Info about the '<mf-plain>' reference.#typedef-mf-plainReferenced in:3. Syntax Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-plain>><</mf-plain>>",
+      "value": "<mf-name> : <mf-value> <mf-boolean>Info about the '<mf-boolean>' reference.#typedef-mf-booleanReferenced in:3. Syntax Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-boolean>><</mf-boolean>>",
+      "value": "<mf-name> <mf-range>Info about the '<mf-range>' reference.#typedef-mf-rangeReferenced in:3. Syntax Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-range>><</mf-range>>",
+      "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value> <mf-name>Info about the '<mf-name>' reference.#typedef-mf-nameReferenced in:3. Syntax (2) (3) (4) (5) (6) 3.2. Error Handling Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-name>><</mf-name>>",
+      "value": "<ident> <mf-value>Info about the '<mf-value>' reference.#typedef-mf-valueReferenced in:3. Syntax (2) (3) (4) (5) (6) (7) 3.2. Error Handling Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-value>><</mf-value>>",
+      "value": "<number> | <dimension> | <ident> | <ratio> <mf-lt>Info about the '<mf-lt>' reference.#typedef-mf-ltReferenced in:3. Syntax (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-lt>><</mf-lt>>",
+      "value": "'<' '='? <mf-gt>Info about the '<mf-gt>' reference.#typedef-mf-gtReferenced in:3. Syntax (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-gt>><</mf-gt>>",
+      "value": "'>' '='? <mf-eq>Info about the '<mf-eq>' reference.#typedef-mf-eqReferenced in:3. Syntax Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-eq>><</mf-eq>>",
+      "value": "'=' <mf-comparison>Info about the '<mf-comparison>' reference.#typedef-mf-comparisonReferenced in:3. Syntax (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<mf-comparison>><</mf-comparison>>",
+      "value": "<mf-lt> | <mf-gt> | <mf-eq> <general-enclosed>Info about the '<general-enclosed>' reference.#typedef-general-enclosedReferenced in:3. Syntax (2) (3) 3.1. Evaluating Media Queries (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<general-enclosed>><</general-enclosed>>",
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
     }
   ]
 }

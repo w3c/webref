@@ -133,7 +133,7 @@
   "selectors": [
     {
       "name": ":nth()",
-      "value": ":nth( <a-n-plus-b> [of <custom-ident>]? )",
+      "value": ":nth()",
       "href": "https://drafts.csswg.org/css-gcpm-3/#selectordef-nth"
     }
   ],
@@ -141,26 +141,52 @@
     {
       "name": "<content-list>",
       "href": "https://drafts.csswg.org/css-gcpm-3/#content-list",
-      "type": "type",
-      "value": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+"
+      "type": "type"
     },
     {
       "name": "content()",
-      "value": "content([text | before | after | first-letter ])",
+      "value": "content()",
       "href": "https://drafts.csswg.org/css-gcpm-3/#funcdef-content",
       "type": "function"
     },
     {
       "name": "running()",
-      "value": "running( <custom-ident> )",
+      "value": "running()",
       "href": "https://drafts.csswg.org/css-gcpm-3/#funcdef-running",
       "type": "function"
     },
     {
       "name": "element()",
-      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )",
+      "value": "element()",
       "href": "https://drafts.csswg.org/css-gcpm-3/#funcdef-element",
       "type": "function"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<content-list>><</content-list>>",
+      "value": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''content()''''/content()''",
+      "value": "content([text | before | after | first-letter ])"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''running()''''/running()''",
+      "value": "running( <custom-ident> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''element()''''/element()''",
+      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:'':nth()''''/:nth()''",
+      "value": ":nth( <a-n-plus-b> [of <custom-ident>]? )"
     }
   ]
 }

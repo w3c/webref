@@ -32,20 +32,17 @@
     {
       "name": "<anchored-query>",
       "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-query",
-      "type": "type",
-      "value": "not <anchored-in-parens> | <anchored-in-parens> [ [ and <anchored-in-parens> ]* | [ or <anchored-in-parens> ]* ] | <anchored-feature>"
+      "type": "type"
     },
     {
       "name": "<anchored-in-parens>",
       "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-in-parens",
-      "type": "type",
-      "value": "( <anchored-query> ) | ( <anchored-feature> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<position-area-query>",
       "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-position-area-query",
       "type": "type",
-      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all | any ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all | any ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all | any ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all | any ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all | any ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all | any ] | [ start | center | end | span-start | span-end | span-all | any ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all | any ]{1,2} ]",
       "values": [
         {
           "name": "any",
@@ -411,7 +408,22 @@
     {
       "msg": "Missing definition",
       "name": "<query-in-parens>",
-      "value": "... | anchored( <anchored-query> )"
+      "value": "... | anchored( <anchored-query> ) <anchored-query>Info about the '<anchored-query>' reference.#typedef-anchored-queryReferenced in:2.2. Extending @container syntax for anchored queries (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<anchored-query>><</anchored-query>>",
+      "value": "not <anchored-in-parens> | <anchored-in-parens> [ [ and <anchored-in-parens> ]* | [ or <anchored-in-parens> ]* ] | <anchored-feature> <anchored-in-parens>Info about the '<anchored-in-parens>' reference.#typedef-anchored-in-parensReferenced in:2.2. Extending @container syntax for anchored queries (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<anchored-in-parens>><</anchored-in-parens>>",
+      "value": "( <anchored-query> ) | ( <anchored-feature> ) | <general-enclosed>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<position-area-query>><</position-area-query>>",
+      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all | any ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all | any ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all | any ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all | any ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all | any ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all | any ] | [ start | center | end | span-start | span-end | span-all | any ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all | any ]{1,2} ]"
     },
     {
       "msg": "Dangling value",

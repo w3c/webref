@@ -466,15 +466,14 @@
     {
       "name": "<box-size>",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-box-size",
-      "type": "type",
-      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | stretch(<length-percentage [0,∞]>) | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
+      "type": "type"
     },
     {
       "name": "calc-size()",
-      "prose": "The calc-size() function allows math and transition/animation to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
+      "prose": "The calc-size()Info about the 'calc-size()' reference.#funcdef-calc-sizeReferenced in:3.2. New Sizing Values: the contain, stretch(), fit-content(), and calc-size() values (2) (3) 7. Calculating With Intrinsic Sizes: the calc-size() function (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21) (22) (23) (24) 7.1. Resolving calc-size() (2) (3) (4) (5) 7.2. Interpolating calc-size() (2) (3) (4) (5) (6) (7) (8) (9) 7.2.1. Simplifying calc-size() (2) (3) (4) (5) (6) (7) 7.3. Automatically interpolating sizing keywords: the interpolate-size property (2) Changes since 4 September 2026 Working Draft Possible linking syntaxes:''calc-size()''''/calc-size()'' function allows math and transition/animation to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
       "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-calc-size",
       "type": "function",
-      "value": "calc-size( <calc-size-basis>, <calc-sum> )",
+      "value": "calc-size( <calc-size-basis>, <calc-sum> ) <calc-size-basis>Info about the '<calc-size-basis>' reference.#typedef-calc-size-basisReferenced in:7. Calculating With Intrinsic Sizes: the calc-size() function (2) Possible linking",
       "values": [
         {
           "name": "<size-keyword>",
@@ -505,7 +504,7 @@
         },
         {
           "name": "size",
-          "prose": "Within the calc-size calculation, the size is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
+          "prose": "Within the calc-size calculation, the sizeInfo about the 'size' reference.#valdef-calc-size-sizeReferenced in:7. Calculating With Intrinsic Sizes: the calc-size() function (2) (3) (4) (5) (6) (7) 7.1. Resolving calc-size() 7.2.1. Simplifying calc-size() (2) Possible linking syntaxes:''calc-size()/size''''calc()/size'' is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-calc-size-size",
           "type": "value",
           "value": "size"
@@ -515,11 +514,20 @@
     {
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-sizing-4/#typedef-calc-size-basis",
-      "type": "type",
-      "value": "[ <size-keyword> | <calc-sum> | <calc-size()> | any ]"
+      "type": "type"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<box-size>><</box-size>>",
+      "value": "<length-percentage [0,∞]> | stretch | contain | min-content | max-content | fit-content | stretch(<length-percentage [0,∞]>) | fit-content(<length-percentage [0,∞]>) | <calc-size()>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<calc-size-basis>><</calc-size-basis>>",
+      "value": "[ <size-keyword> | <calc-sum> | <calc-size()> | any ]"
+    },
     {
       "msg": "Dangling value",
       "name": "stretch()",
@@ -685,7 +693,7 @@
     {
       "msg": "Dangling value",
       "name": "size",
-      "prose": "Within the calc-size calculation, the size is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
+      "prose": "Within the calc-size calculation, the sizeInfo about the 'size' reference.#valdef-calc-size-sizeReferenced in:7. Calculating With Intrinsic Sizes: the calc-size() function (2) (3) (4) (5) (6) (7) 7.1. Resolving calc-size() 7.2.1. Simplifying calc-size() (2) Possible linking syntaxes:''calc-size()/size''''calc()/size'' is a <calc-keyword> which is a <length>, and resolves at used value time to the size specified above.",
       "href": "https://drafts.csswg.org/css-sizing-4/#valdef-calc-size-size",
       "type": "value",
       "value": "size",

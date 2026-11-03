@@ -215,14 +215,12 @@
     {
       "name": "<content-replacement>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-replacement",
-      "type": "type",
-      "value": "<image>"
+      "type": "type"
     },
     {
       "name": "<content-list>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-list",
       "type": "type",
-      "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-glyph> ]+",
       "values": [
         {
           "name": "<string>",
@@ -252,6 +250,34 @@
           "value": "contents"
         },
         {
+          "name": "open-quote",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for open-quote) or decrements (for close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-open-quote",
+          "type": "value",
+          "value": "open-quote"
+        },
+        {
+          "name": "close-quote",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for open-quote) or decrements (for close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-close-quote",
+          "type": "value",
+          "value": "close-quote"
+        },
+        {
+          "name": "no-open-quote",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-open-quote",
+          "type": "value",
+          "value": "no-open-quote"
+        },
+        {
+          "name": "no-close-quote",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-close-quote",
+          "type": "value",
+          "value": "no-close-quote"
+        },
+        {
           "name": "leader()",
           "value": "leader( <leader-type> )",
           "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
@@ -262,14 +288,12 @@
     {
       "name": "<alt-text>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-alt-text",
-      "type": "type",
-      "value": "[ <string> | <counter> | <attr()> ]+"
+      "type": "type"
     },
     {
       "name": "<quote>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-quote",
       "type": "type",
-      "value": "open-quote | close-quote | no-open-quote | no-close-quote",
       "values": [
         {
           "name": "open-quote",
@@ -303,7 +327,7 @@
     },
     {
       "name": "leader()",
-      "value": "leader( <leader-type> )",
+      "value": "leader()",
       "href": "https://drafts.csswg.org/css-content-3/#funcdef-leader",
       "type": "function",
       "values": [
@@ -340,36 +364,34 @@
     {
       "name": "<leader-type>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-leader-type",
-      "type": "type",
-      "value": "dotted | solid | space | <string>"
+      "type": "type"
     },
     {
       "name": "<target>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-target",
-      "type": "type",
-      "value": "<target-counter()> | <target-counters()> | <target-text()>"
+      "type": "type"
     },
     {
       "name": "target-counter()",
-      "value": "target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? )",
+      "value": "target-counter()",
       "href": "https://drafts.csswg.org/css-content-3/#funcdef-target-counter",
       "type": "function"
     },
     {
       "name": "target-counters()",
-      "value": "target-counters( [ <string> | <url> ] , <custom-ident> , <string> , <counter-style>? )",
+      "value": "target-counters()",
       "href": "https://drafts.csswg.org/css-content-3/#funcdef-target-counters",
       "type": "function"
     },
     {
       "name": "target-text()",
-      "value": "target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? )",
+      "value": "target-text()",
       "href": "https://drafts.csswg.org/css-content-3/#target-text-function",
       "type": "function"
     },
     {
       "name": "string()",
-      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )",
+      "value": "string()",
       "href": "https://drafts.csswg.org/css-content-3/#funcdef-string",
       "type": "function",
       "values": [
@@ -405,7 +427,7 @@
     },
     {
       "name": "content()",
-      "value": "content( [ text | before | after | first-letter | marker ]? )",
+      "value": "content()",
       "href": "https://drafts.csswg.org/css-content-3/#funcdef-content",
       "type": "function",
       "values": [
@@ -445,6 +467,68 @@
           "value": "marker"
         }
       ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<content-replacement>><</content-replacement>>",
+      "value": "<image> <content-list>Info about the '<content-list>' reference.#typedef-content-listReferenced in:1. Inserting and Replacing Content: the content property (2) (3) (4) (5) 1.2. Alternative Text for Accessibility 8.2. Labelling a Bookmark: the bookmark-label property (2) (3) (4) 9. Changes Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<content-list>><</content-list>>",
+      "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> | <symbolic-glyph> ]+ <alt-text>Info about the '<alt-text>' reference.#typedef-alt-textReferenced in:1. Inserting and Replacing Content: the content property (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<alt-text>><</alt-text>>",
+      "value": "[ <string> | <counter> | <attr()> ]+"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<quote>><</quote>>",
+      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''leader()''''/leader()''",
+      "value": "leader( <leader-type> ) <leader-type>Info about the '<leader-type>' reference.#typedef-leader-typeReferenced in:5.1. The leader() function (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<leader-type>><</leader-type>>",
+      "value": "dotted | solid | space | <string>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<target>><</target>>",
+      "value": "<target-counter()> | <target-counters()> | <target-text()>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''target-counter()''''/target-counter()''",
+      "value": "target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''target-counters()''''/target-counters()''",
+      "value": "target-counters( [ <string> | <url> ] , <custom-ident> , <string> , <counter-style>? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''target-text()''''/target-text()''",
+      "value": "target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''string()''''/string()''",
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''content()''''/content()''",
+      "value": "content( [ text | before | after | first-letter | marker ]? )"
     }
   ]
 }

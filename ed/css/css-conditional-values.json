@@ -10,45 +10,39 @@
     {
       "name": "<boolean-constant>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-boolean-constant",
-      "type": "type",
-      "value": "'true' | 'false'"
+      "type": "type"
     },
     {
       "name": "<condition>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-condition",
-      "type": "type",
-      "value": "not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]*"
+      "type": "type"
     },
     {
       "name": "<condition-in-parens>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-condition-in-parens",
-      "type": "type",
-      "value": "( <condition> ) | <atomic-condition>"
+      "type": "type"
     },
     {
       "name": "<atomic-condition>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-atomic-condition",
-      "type": "type",
-      "value": "<comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant>"
+      "type": "type"
     },
     {
       "name": "<comparison-operand>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-comparison-operand",
-      "type": "type",
-      "value": "<dimension> | <number> | <percentage> | <ident>"
+      "type": "type"
     },
     {
       "name": "<comparison-operator>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-comparison-operator",
-      "type": "type",
-      "value": "[ '=' | '>=' | '>' | '<' | '<=' ]"
+      "type": "type"
     },
     {
       "name": "if()",
-      "prose": "The if() function allows authors to set a property value (or parts thereof) to different values based on certain conditions.",
+      "prose": "The if()Info about the 'if()' reference.#funcdef-ifReferenced in:3. Inline conditionals: The if() function (2) (3) (4) (5) (6) Possible linking syntaxes:''if()''''/if()'' function allows authors to set a property value (or parts thereof) to different values based on certain conditions.",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#funcdef-if",
       "type": "function",
-      "value": "if( <condition>, <consequent>, <antecedent>? ) | if( <condition> then <consequent> [else <antecedent>]?)"
+      "value": "if( <condition>, <consequent>, <antecedent>? ) <consequent>Info about the '<consequent>' reference.#typedef-consequentReferenced in:3. Inline conditionals: The if() function (2) (3) (4) Possible linking | if( <condition> then <consequent> [else <antecedent>]?)"
     },
     {
       "name": "<consequent>",
@@ -60,6 +54,48 @@
       "name": "<antecedent>",
       "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-antecedent",
       "type": "type",
+      "value": "<declaration-value>"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<boolean-constant>><</boolean-constant>>",
+      "value": "'true'Info about the ''true'' reference.#truePossible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<condition>><</condition>>",
+      "value": "not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]* <condition-in-parens>Info about the '<condition-in-parens>' reference.#typedef-condition-in-parensReferenced in:2.2. Logical comparisons: The <condition> type (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<condition-in-parens>><</condition-in-parens>>",
+      "value": "( <condition> ) | <atomic-condition> <atomic-condition>Info about the '<atomic-condition>' reference.#typedef-atomic-conditionReferenced in:2.2. Logical comparisons: The <condition> type (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<atomic-condition>><</atomic-condition>>",
+      "value": "<comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant> <comparison-operand>Info about the '<comparison-operand>' reference.#typedef-comparison-operandReferenced in:2.2. Logical comparisons: The <condition> type (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<comparison-operand>><</comparison-operand>>",
+      "value": "<dimension> | <number> | <percentage> | <ident> <comparison-operator>Info about the '<comparison-operator>' reference.#typedef-comparison-operatorReferenced in:2.2. Logical comparisons: The <condition> type Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<comparison-operator>><</comparison-operator>>",
+      "value": "[ '=' | '>=' | '>' | '<' | '<=' ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<consequent>><</consequent>>",
+      "value": "<declaration-value> <antecedent>Info about the '<antecedent>' reference.#typedef-antecedentReferenced in:3. Inline conditionals: The if() function (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<antecedent>><</antecedent>>",
       "value": "<declaration-value>"
     }
   ]

@@ -26,16 +26,15 @@
   "values": [
     {
       "name": "param()",
-      "prose": "All three methods of setting link parameters share the same syntax for defining a parameter, using the param() function:",
+      "prose": "All three methods of setting link parameters share the same syntax for defining a parameter, using the param()Info about the 'param()' reference.#funcdef-paramReferenced in:2. Setting a Link Parameter (2) 2.1. The param() Function (2) (3) (4) (5) (6) 2.2. For An Entire Element: the link-parameters property (2) (3) 2.3. For A Single URL: the <url-modifier> (2) 2.4. Outside Of CSS: in the URL itself (2) 3.1. Tainting Possible linking syntaxes:''param()''''/param()'' function:",
       "href": "https://drafts.csswg.org/css-link-params-1/#funcdef-param",
       "type": "function",
-      "value": "param( <param-spec> , <declaration-value>? )"
+      "value": "param( <param-spec> , <declaration-value>? ) <param-spec>Info about the '<param-spec>' reference.#typedef-param-specReferenced in:2.1. The param() Function (2) (3) Possible linking"
     },
     {
       "name": "<param-spec>",
       "href": "https://drafts.csswg.org/css-link-params-1/#typedef-param-spec",
       "type": "type",
-      "value": "color | accent-color | [ <dashed-ident> <css-type>? ]",
       "values": [
         {
           "name": "color",
@@ -59,6 +58,13 @@
           "value": "<dashed-ident>"
         }
       ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<param-spec>><</param-spec>>",
+      "value": "color | accent-color | [ <dashed-ident> <css-type>? ]"
     }
   ]
 }

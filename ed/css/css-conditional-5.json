@@ -101,21 +101,21 @@
   "atrules": [
     {
       "name": "@when",
-      "prose": "The @when at-rule is a conditional group rule that generalizes the individual conditional group rules such as @media and @supports. It is defined as:",
+      "prose": "The @whenInfo about the '@when' reference.#at-ruledef-whenReferenced in:1. Introduction (2) 3. Generalized Conditional Rules: the @when rule 4. Chained Conditionals: the @else rule (2) 8. Defining Custom Support Queries: the @supports-condition rule Additions since Level 4 Acknowledgments Possible linking syntaxes:''@when''''/@when'' at-rule is a conditional group rule that generalizes the individual conditional group rules such as @media and @supports. It is defined as:",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-when",
       "descriptors": [],
       "value": "@when <boolean-condition> { <rule-list> }"
     },
     {
       "name": "@else",
-      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional group rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
+      "prose": "The @elseInfo about the '@else' reference.#at-ruledef-elseReferenced in:1. Introduction 4. Chained Conditionals: the @else rule (2) (3) (4) (5) (6) (7) Additions since Level 4 Acknowledgments Possible linking syntaxes:''@else''''/@else'' rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional group rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-else",
       "descriptors": [],
       "value": "@else <boolean-condition>? { <rule-list> }"
     },
     {
       "name": "@container",
-      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
+      "prose": "The @containerInfo about the '@container' reference.#at-ruledef-containerReferenced in:5. Container Queries 5.2. Naming Query Containers: the container-name property 5.4. Container Queries: the @container rule (2) (3) 6.1.1. Width: the width feature 6.1.2. Height: the height feature 6.1.3. Inline-size: the inline-size feature 6.1.4. Block-size: the block-size feature 6.1.5. Aspect-ratio: the aspect-ratio feature 6.1.6. Orientation: the orientation feature 6.3.2. Sticky positioning: the stuck feature 6.3.3. Scroll snapping: the snapped feature 6.3.4. Scrollable: the scrollable feature 6.3.5. Scrolled: the scrolled feature 9.1. The CSSContainerRule interface Possible linking syntaxes:''@container''''/@container'' rule is a conditional group rule whose condition contains a container queryInfo about the 'container query' reference.#container-queryReferenced in:5. Container Queries 5.1. Creating Query Containers: the container-type property 5.4. Container Queries: the @container rule (2) (3) (4) (5) (6) (7) (8) 5.5. Animated Containers 6.1. Size Container Features 7. Container Relative Lengths: the cqw, cqh, cqi, cqb, cqmin, cqmax units (2) Possible linking syntaxes:[=container query=][=/container query=], which is a boolean combination of container size queries and/or container style queries. Style declarations within the @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-container",
       "descriptors": [
         {
@@ -504,7 +504,7 @@
     },
     {
       "name": "@supports-condition",
-      "prose": "The @supports-condition at-rule is a conditional group rule that allows authors to define and name a supports query for later reuse, creating a named supports condition. This enables complex or frequently-used feature queries to be referenced by name, improving maintainability and readability.",
+      "prose": "The @supports-conditionInfo about the '@supports-condition' reference.#at-ruledef-supports-conditionReferenced in:8. Defining Custom Support Queries: the @supports-condition rule (2) (3) 9.4. The CSSSupportsConditionRule interface Changes since the Working Draft of 5 November 2024 Additions since Level 4 Possible linking syntaxes:''@supports-condition''''/@supports-condition'' at-rule is a conditional group rule that allows authors to define and name a supports query for later reuse, creating a named supports conditionInfo about the 'named supports condition' reference.#named-supports-conditionReferenced in:2.1.4. Named conditions 9.4. The CSSSupportsConditionRule interface Possible linking syntaxes:[=named supports condition=][=/named supports condition=]. This enables complex or frequently-used feature queries to be referenced by name, improving maintainability and readability.",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-supports-condition",
       "descriptors": [],
       "value": "@supports-condition <supports-condition-name> { <block-contents> }"
@@ -515,185 +515,279 @@
     {
       "name": "<supports-feature>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
-      "type": "type",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-named-feature-fn> | <supports-env-fn> | <supports-decl>"
+      "type": "type"
     },
     {
       "name": "<supports-decl>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-decl",
-      "type": "type",
-      "value": "( [ <declaration> | <supports-condition-name> ] )"
+      "type": "type"
     },
     {
       "name": "<supports-font-tech-fn>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-font-tech-fn",
-      "type": "type",
-      "value": "font-tech( <font-tech> )"
+      "type": "type"
     },
     {
       "name": "<supports-font-format-fn>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-font-format-fn",
-      "type": "type",
-      "value": "font-format( <font-format> )"
+      "type": "type"
     },
     {
       "name": "<supports-at-rule-fn>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn",
-      "type": "type",
-      "value": "at-rule( <at-keyword-token> )"
+      "type": "type"
     },
     {
       "name": "<supports-named-feature-fn>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn",
-      "type": "type",
-      "value": "named-feature( <ident> )"
+      "type": "type"
     },
     {
       "name": "<supports-env-fn>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-env-fn",
-      "type": "type",
-      "value": "env( <ident> )"
+      "type": "type"
     },
     {
       "name": "<declaration>",
-      "prose": "<declaration> here matches anything that would be successfully parsed by consume a declaration, ignoring the context-validation check at the end of that algorithm. Notably, this includes a trailing !important, which is valid but ignored for the purpose of @supports.",
+      "prose": "<declaration>Info about the '<declaration>' reference.#typedef-declarationReferenced in:2. Extensions to the @supports rule 3. Generalized Conditional Rules: the @when rule Possible linking syntaxes:<<declaration>><</declaration>> here matches anything that would be successfully parsed by consume a declaration, ignoring the context-validation check at the end of that algorithm. Notably, this includes a trailing !important, which is valid but ignored for the purpose of @supports.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-declaration",
       "type": "type"
     },
     {
       "name": "<boolean-condition>",
-      "prose": "Where <boolean-condition> is a boolean algebra a la Media Queries 4 § 3 Syntax, but with media() and supports() functions as leaves.",
+      "prose": "Where <boolean-condition>Info about the '<boolean-condition>' reference.#typedef-boolean-conditionReferenced in:3. Generalized Conditional Rules: the @when rule (2) 4. Chained Conditionals: the @else rule (2) Possible linking syntaxes:<<boolean-condition>><</boolean-condition>> is a boolean algebra a la Media Queries 4 § 3 Syntax, but with media() and supports() functions as leaves.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-boolean-condition",
       "type": "type"
     },
     {
       "name": "media()",
-      "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] )",
+      "value": "media()",
       "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-media",
       "type": "function"
     },
     {
       "name": "supports()",
-      "value": "supports( <declaration> )",
+      "value": "supports()",
       "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports",
       "type": "function"
     },
     {
       "name": "<container-query-list>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-query-list",
-      "type": "type",
-      "value": "<container-condition>#"
+      "type": "type"
     },
     {
       "name": "<container-condition>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-condition",
-      "type": "type",
-      "value": "[ <container-name>? <container-query>? ]!"
+      "type": "type"
     },
     {
       "name": "<container-name>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-name",
-      "type": "type",
-      "value": "<custom-ident>"
+      "type": "type"
     },
     {
       "name": "<container-query>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-query",
-      "type": "type",
-      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
+      "type": "type"
     },
     {
       "name": "<query-in-parens>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-query-in-parens",
-      "type": "type",
-      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | scroll-state( <scroll-state-query> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<style-query>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-query",
-      "type": "type",
-      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>"
+      "type": "type"
     },
     {
       "name": "<style-in-parens>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-in-parens",
-      "type": "type",
-      "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<style-feature>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature",
-      "type": "type",
-      "value": "<style-feature-plain> | <style-feature-boolean> | <style-range>"
+      "type": "type"
     },
     {
       "name": "<style-feature-plain>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-plain",
-      "type": "type",
-      "value": "<style-feature-name> : <style-feature-value>"
+      "type": "type"
     },
     {
       "name": "<style-feature-boolean>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-boolean",
-      "type": "type",
-      "value": "<style-feature-name>"
+      "type": "type"
     },
     {
       "name": "<style-range>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range",
-      "type": "type",
-      "value": "<style-range-value> <mf-comparison> <style-range-value> | <style-range-value> <mf-lt> <style-range-value> <mf-lt> <style-range-value> | <style-range-value> <mf-gt> <style-range-value> <mf-gt> <style-range-value>"
+      "type": "type"
     },
     {
       "name": "<style-range-value>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-range-value",
-      "type": "type",
-      "value": "<custom-property-name> | <style-feature-value>"
+      "type": "type"
     },
     {
       "name": "<scroll-state-query>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-query",
-      "type": "type",
-      "value": "not <scroll-state-in-parens> | <scroll-state-in-parens> [ [ and <scroll-state-in-parens> ]* | [ or <scroll-state-in-parens> ]* ] | <scroll-state-feature>"
+      "type": "type"
     },
     {
       "name": "<scroll-state-in-parens>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-in-parens",
-      "type": "type",
-      "value": "( <scroll-state-query> ) | ( <scroll-state-feature> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<size-feature>",
-      "prose": "A container size query allows querying the size of the query container’s principal box. It is a boolean combination of individual size features (<size-feature>) that each query a single, specific dimensional feature of the query container. The syntax of a <size-feature> is the same as for a media feature: a feature name, a comparator, and a value. [mediaqueries-5] The boolean syntax and logic combining size features into a size query is the same as for CSS feature queries. (See @supports. [css-conditional-3])",
+      "prose": "A container size queryInfo about the 'container size query' reference.#container-size-queryReferenced in:5. Container Queries (2) (3) 5.1. Creating Query Containers: the container-type property (2) (3) 5.4. Container Queries: the @container rule 6.1. Size Container Features (2) 7. Container Relative Lengths: the cqw, cqh, cqi, cqb, cqmin, cqmax units (2) Possible linking syntaxes:[=container size query=][=/container size query=] allows querying the size of the query container’s principal box. It is a boolean combination of individual size featuresInfo about the 'size features' reference.#size-featuresReferenced in:6.1. Size Container Features (2) (3) (4) Possible linking syntaxes:[=size features=][=/size features=] (<size-feature>) that each query a single, specific dimensional feature of the query container. The syntax of a <size-feature>Info about the '<size-feature>' reference.#typedef-size-featureReferenced in:5.4. Container Queries: the @container rule 6.1. Size Container Features (2) Possible linking syntaxes:<<size-feature>><</size-feature>> is the same as for a media feature: a feature name, a comparator, and a value. [mediaqueries-5] The boolean syntax and logic combining size features into a size query is the same as for CSS feature queries. (See @supports. [css-conditional-3])",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-size-feature",
       "type": "type"
     },
     {
       "name": "<style-feature-name>",
-      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range (<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "prose": "A container style queryInfo about the 'container style query' reference.#container-style-queryReferenced in:5. Container Queries 5.1. Creating Query Containers: the container-type property (2) 5.4. Container Queries: the @container rule (2) (3) (4) (5) 6.2. Style Container Features (2) Possible linking syntaxes:[=container style query=][=/container style query=] allows querying the computed values of the query container. It is a boolean combination of individual style featuresInfo about the 'style features' reference.#style-featuresReferenced in:6.2. Style Container Features (2) (3) (4) Possible linking syntaxes:[=style features=][=/style features=] (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style rangeInfo about the 'style range' reference.#style-rangePossible linking syntaxes:[=style range=][=/style range=] (<style-range>). The <style-feature-name>Info about the '<style-feature-name>' reference.#typedef-style-feature-nameReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features (2) Possible linking syntaxes:<<style-feature-name>><</style-feature-name>> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value>Info about the '<style-feature-value>' reference.#typedef-style-feature-valueReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features Possible linking syntaxes:<<style-feature-value>><</style-feature-value>> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-name",
       "type": "type"
     },
     {
       "name": "<style-feature-value>",
-      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range (<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "prose": "A container style queryInfo about the 'container style query' reference.#container-style-queryReferenced in:5. Container Queries 5.1. Creating Query Containers: the container-type property (2) 5.4. Container Queries: the @container rule (2) (3) (4) (5) 6.2. Style Container Features (2) Possible linking syntaxes:[=container style query=][=/container style query=] allows querying the computed values of the query container. It is a boolean combination of individual style featuresInfo about the 'style features' reference.#style-featuresReferenced in:6.2. Style Container Features (2) (3) (4) Possible linking syntaxes:[=style features=][=/style features=] (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style rangeInfo about the 'style range' reference.#style-rangePossible linking syntaxes:[=style range=][=/style range=] (<style-range>). The <style-feature-name>Info about the '<style-feature-name>' reference.#typedef-style-feature-nameReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features (2) Possible linking syntaxes:<<style-feature-name>><</style-feature-name>> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value>Info about the '<style-feature-value>' reference.#typedef-style-feature-valueReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features Possible linking syntaxes:<<style-feature-value>><</style-feature-value>> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-value",
       "type": "type"
     },
     {
       "name": "<scroll-state-feature>",
-      "prose": "A container scroll-state query allows querying a container for state that depends on scroll position. It is a boolean combination of individual scroll-state features (<scroll-state-feature>) that each query a single feature of the query container. The syntax of a <scroll-state-feature> is the same as for a media feature: a feature name, a comparator, and a value.",
+      "prose": "A container scroll-state queryInfo about the 'container scroll-state query' reference.#container-scroll-state-queryReferenced in:5. Container Queries 5.1. Creating Query Containers: the container-type property (2) Possible linking syntaxes:[=container scroll-state query=][=/container scroll-state query=] allows querying a container for state that depends on scroll position. It is a boolean combination of individual scroll-state featuresInfo about the 'scroll-state features' reference.#scroll-state-featureReferenced in:6.3. Scroll State Container Features Possible linking syntaxes:[=scroll-state feature=][=/scroll-state feature=] (<scroll-state-feature>) that each query a single feature of the query container. The syntax of a <scroll-state-feature>Info about the '<scroll-state-feature>' reference.#typedef-scroll-state-featureReferenced in:5.4. Container Queries: the @container rule (2) 6.3. Scroll State Container Features (2) Possible linking syntaxes:<<scroll-state-feature>><</scroll-state-feature>> is the same as for a media feature: a feature name, a comparator, and a value.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature",
       "type": "type"
     },
     {
       "name": "<supports-condition-name>",
-      "prose": "Where <supports-condition-name> is an <extension-name> that defines the name of the supports query.",
+      "prose": "Where <supports-condition-name>Info about the '<supports-condition-name>' reference.#typedef-supports-condition-nameReferenced in:2. Extensions to the @supports rule (2) 8. Defining Custom Support Queries: the @supports-condition rule (2) Possible linking syntaxes:<<supports-condition-name>><</supports-condition-name>> is an <extension-name> that defines the name of the supports query.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-condition-name",
       "type": "type"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-feature>><</supports-feature>>",
+      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-named-feature-fn> | <supports-env-fn> | <supports-decl> <supports-decl>Info about the '<supports-decl>' reference.#typedef-supports-declReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-decl>><</supports-decl>>",
+      "value": "( [ <declaration> | <supports-condition-name> ] ) <supports-font-tech-fn>Info about the '<supports-font-tech-fn>' reference.#typedef-supports-font-tech-fnReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-font-tech-fn>><</supports-font-tech-fn>>",
+      "value": "font-tech( <font-tech> ) <supports-font-format-fn>Info about the '<supports-font-format-fn>' reference.#typedef-supports-font-format-fnReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-font-format-fn>><</supports-font-format-fn>>",
+      "value": "font-format( <font-format> ) <supports-at-rule-fn>Info about the '<supports-at-rule-fn>' reference.#typedef-supports-at-rule-fnReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-at-rule-fn>><</supports-at-rule-fn>>",
+      "value": "at-rule( <at-keyword-token> ) <supports-named-feature-fn>Info about the '<supports-named-feature-fn>' reference.#typedef-supports-named-feature-fnReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-named-feature-fn>><</supports-named-feature-fn>>",
+      "value": "named-feature( <ident> ) <supports-env-fn>Info about the '<supports-env-fn>' reference.#typedef-supports-env-fnReferenced in:2. Extensions to the @supports rule Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<supports-env-fn>><</supports-env-fn>>",
+      "value": "env( <ident> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''media()''''/media()''",
+      "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] ) supports()Info about the 'supports()' reference.#funcdef-supportsReferenced in:3. Generalized Conditional Rules: the @when rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:''supports()''''/supports()''",
+      "value": "supports( <declaration> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<container-query-list>><</container-query-list>>",
+      "value": "<container-condition># <container-condition>Info about the '<container-condition>' reference.#typedef-container-conditionReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) (6) (7) 9.1. The CSSContainerRule interface 9.3.1. Serializing Container Query Lists (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<container-condition>><</container-condition>>",
+      "value": "[ <container-name>? <container-query>? ]! <container-name>Info about the '<container-name>' reference.#typedef-container-nameReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) 9.1. The CSSContainerRule interface Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<container-name>><</container-name>>",
+      "value": "<custom-ident> <container-query>Info about the '<container-query>' reference.#typedef-container-queryReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) (6) (7) 9.1. The CSSContainerRule interface Changes since the Working Draft of 5 November 2024 Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<container-query>><</container-query>>",
+      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ] <query-in-parens>Info about the '<query-in-parens>' reference.#typedef-query-in-parensReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<query-in-parens>><</query-in-parens>>",
+      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | scroll-state( <scroll-state-query> ) | <general-enclosed> <style-query>Info about the '<style-query>' reference.#typedef-style-queryReferenced in:5.4. Container Queries: the @container rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-query>><</style-query>>",
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature> <style-in-parens>Info about the '<style-in-parens>' reference.#typedef-style-in-parensReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-in-parens>><</style-in-parens>>",
+      "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed> <style-feature>Info about the '<style-feature>' reference.#typedef-style-featureReferenced in:5.4. Container Queries: the @container rule (2) (3) 6.2. Style Container Features (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-feature>><</style-feature>>",
+      "value": "<style-feature-plain> | <style-feature-boolean> | <style-range> <style-feature-plain>Info about the '<style-feature-plain>' reference.#typedef-style-feature-plainReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-feature-plain>><</style-feature-plain>>",
+      "value": "<style-feature-name> : <style-feature-value> <style-feature-boolean>Info about the '<style-feature-boolean>' reference.#typedef-style-feature-booleanReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-feature-boolean>><</style-feature-boolean>>",
+      "value": "<style-feature-name> <style-range>Info about the '<style-range>' reference.#typedef-style-rangeReferenced in:5.4. Container Queries: the @container rule (2) 6.2. Style Container Features (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-range>><</style-range>>",
+      "value": "<style-range-value> <mf-comparison> <style-range-value> | <style-range-value> <mf-lt> <style-range-value> <mf-lt> <style-range-value> | <style-range-value> <mf-gt> <style-range-value> <mf-gt> <style-range-value> <style-range-value>Info about the '<style-range-value>' reference.#typedef-style-range-valueReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) (6) (7) (8) (9) 6.2. Style Container Features (2) (3) (4) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<style-range-value>><</style-range-value>>",
+      "value": "<custom-property-name> | <style-feature-value> <scroll-state-query>Info about the '<scroll-state-query>' reference.#typedef-scroll-state-queryReferenced in:5.4. Container Queries: the @container rule (2) (3) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<scroll-state-query>><</scroll-state-query>>",
+      "value": "not <scroll-state-in-parens> | <scroll-state-in-parens> [ [ and <scroll-state-in-parens> ]* | [ or <scroll-state-in-parens> ]* ] | <scroll-state-feature> <scroll-state-in-parens>Info about the '<scroll-state-in-parens>' reference.#typedef-scroll-state-in-parensReferenced in:5.4. Container Queries: the @container rule (2) (3) (4) (5) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<scroll-state-in-parens>><</scroll-state-in-parens>>",
+      "value": "( <scroll-state-query> ) | ( <scroll-state-feature> ) | <general-enclosed>"
+    },
     {
       "msg": "Dangling value",
       "name": "font-tech()",

@@ -222,7 +222,7 @@
   "values": [
     {
       "name": "<box>",
-      "prose": "The following <box> CSS keywords are defined for use in properties (such as transform-box and background-clip) that need to refer to various box edges:",
+      "prose": "The following <box>Info about the '<box>' reference.#typedef-boxReferenced in:2.3. Box-edge Keywords (2) Possible linking syntaxes:<<box>><</box>> CSS keywords are defined for use in properties (such as transform-box and background-clip) that need to refer to various box edges:",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-box",
       "type": "type",
       "values": [
@@ -270,7 +270,7 @@
         },
         {
           "name": "view-box",
-          "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+          "prose": "Refers to the nearest SVG viewport’s origin boxInfo about the 'origin box' reference.#svg-viewport-origin-boxReferenced in:2.3. Box-edge Keywords Possible linking syntaxes:[=SVG viewport origin box=][=/SVG viewport origin box=], which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
           "href": "https://drafts.csswg.org/css-box-4/#valdef-box-view-box",
           "type": "value",
           "value": "view-box"
@@ -281,7 +281,6 @@
       "name": "<visual-box>",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-visual-box",
       "type": "type",
-      "value": "content-box | padding-box | border-box",
       "values": [
         {
           "name": "content-box",
@@ -310,8 +309,28 @@
       "name": "<layout-box>",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-layout-box",
       "type": "type",
-      "value": "<visual-box> | margin-box",
       "values": [
+        {
+          "name": "content-box",
+          "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-content-box",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-padding-box",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-border-box",
+          "type": "value",
+          "value": "border-box"
+        },
         {
           "name": "margin-box",
           "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
@@ -325,8 +344,28 @@
       "name": "<paint-box>",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-paint-box",
       "type": "type",
-      "value": "<visual-box> | fill-box | stroke-box",
       "values": [
+        {
+          "name": "content-box",
+          "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-content-box",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-padding-box",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-border-box",
+          "type": "value",
+          "value": "border-box"
+        },
         {
           "name": "fill-box",
           "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
@@ -347,11 +386,45 @@
       "name": "<coord-box>",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-coord-box",
       "type": "type",
-      "value": "<paint-box> | view-box",
       "values": [
         {
+          "name": "content-box",
+          "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-content-box",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-padding-box",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-border-box",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "fill-box",
+          "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-fill-box",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+          "href": "https://drafts.csswg.org/css-box-4/#valdef-box-stroke-box",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
           "name": "view-box",
-          "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+          "prose": "Refers to the nearest SVG viewport’s origin boxInfo about the 'origin box' reference.#svg-viewport-origin-boxReferenced in:2.3. Box-edge Keywords Possible linking syntaxes:[=SVG viewport origin box=][=/SVG viewport origin box=], which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
           "href": "https://drafts.csswg.org/css-box-4/#valdef-box-view-box",
           "type": "value",
           "value": "view-box"
@@ -360,6 +433,26 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<visual-box>><</visual-box>>",
+      "value": "content-box | padding-box | border-box <layout-box>Info about the '<layout-box>' reference.#typedef-layout-boxReferenced in:2.3. Box-edge Keywords Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<layout-box>><</layout-box>>",
+      "value": "<visual-box> | margin-box <paint-box>Info about the '<paint-box>' reference.#typedef-paint-boxReferenced in:2.3. Box-edge Keywords (2) Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<paint-box>><</paint-box>>",
+      "value": "<visual-box> | fill-box | stroke-box <coord-box>Info about the '<coord-box>' reference.#typedef-coord-boxReferenced in:2.3. Box-edge Keywords Possible linking"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<coord-box>><</coord-box>>",
+      "value": "<paint-box> | view-box"
+    },
     {
       "msg": "Dangling value",
       "name": "margin-box",
@@ -390,7 +483,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin boxInfo about the 'origin box' reference.#svg-viewport-origin-boxReferenced in:2.3. Box-edge Keywords Possible linking syntaxes:[=SVG viewport origin box=][=/SVG viewport origin box=], which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "href": "https://drafts.csswg.org/css-box-4/#valdef-box-view-box",
       "type": "value",
       "value": "view-box",
