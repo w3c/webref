@@ -280,6 +280,7 @@ const MANUAL_EXPANSIONS = {
   'rule-break': ['column-rule-break', 'row-rule-break'],
   'rule-color': ['column-rule-color', 'row-rule-color'],
   'rule-style': ['column-rule-style', 'row-rule-style'],
+  'rule-visibility-items': ['column-rule-visibility-items', 'row-rule-visibility-items'],
   'rule-inset-cap': ['column-rule-inset-cap', 'row-rule-inset-cap'],
   'rule-inset-junction': ['column-rule-inset-junction', 'row-rule-inset-junction'],
   'rule-inset': ['column-rule-inset', 'row-rule-inset'],
