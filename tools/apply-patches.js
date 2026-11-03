@@ -4,13 +4,13 @@
  * The output folder gets created if it does not exist yet.
  *
  * node tools/apply-patches.js [raw folder] [output folder] [type]
- * 
+ *
  * ... where:
  * - [raw folder] is the name of the folder that contains the raw data and the
  * patches (default is "ed");
  * - [output folder] the name of the folder that is to contain the results of
  * applying the patches (default is "curated");
- * - [type] is the type of patches to apply: "css", "elements", "idl", or "all"
+ * - [type] is the type of patches to apply: "cddl", "css", "elements", "idl", or "all"
  * (default is "all").
  */
 
@@ -23,7 +23,7 @@ import { createFolderIfNeeded, loadJSON, getTargetedExtracts } from './utils.js'
 const execFile = util.promisify(execCb);
 
 async function applyPatches(rawFolder, outputFolder, type) {
-  type = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
+  type = (type === 'all') ? ['cddl', 'css', 'elements', 'idl'] : [type];
 
   const packages = [
     {
@@ -195,7 +195,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const rawFolder = process.argv[2] ?? 'ed';
   const outputFolder = process.argv[3] ?? 'curated';
   const type = process.argv[4] ?? 'all';
-  
+
   applyPatches(rawFolder, outputFolder, type).catch(e => {
     console.error(e);
     process.exit(1);
