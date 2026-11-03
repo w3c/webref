@@ -4,7 +4,7 @@
  * or need other web platform information to match our package goals
  *
  * node tools/amend-event-data.js [folder]
- * 
+ *
  * ... where:
  * - [folder] is the name of the folder that contains the data to parse
  * and update (default is "curated")
@@ -280,7 +280,7 @@ const patches = {
     {
       pattern: { type: "change", targets: "HTMLElement"},
       matched: 1,
-      change: { targets: ["HTMLInputElement", "HTMLSelectElement" ]}
+      change: { targets: ["HTMLInputElement", "HTMLSelectElement", "HTMLTextAreaElement" ]}
     },
     {
       pattern: { type: /^context(lost|restored)$/},
