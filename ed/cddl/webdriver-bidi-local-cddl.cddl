@@ -3,29 +3,29 @@
 ; (https://github.com/w3c/webref)
 ; Source: WebDriver BiDi (https://w3c.github.io/webdriver-bidi/)
 
-Message = (
+MessageInfo about the 'Message'  reference.#cddl-type-message = (
   CommandResponse /
   ErrorResponse /
   Event
 )
 
-CommandResponse = {
-  type: "success",
-  id: js-uint,
-  result: ResultData,
+CommandResponseInfo about the 'CommandResponse'  reference.#cddl-type-commandresponseReferenced in:3.1. Definition  = {
+  typeInfo about the 'type'  reference.#cddl-key-commandresponse-type: "success"Info about the '"success"'  reference.#cddl-value-commandresponse-type-success,
+  idInfo about the 'id'  reference.#cddl-key-commandresponse-id: js-uint,
+  resultInfo about the 'result'  reference.#cddl-key-commandresponse-result: ResultData,
   Extensible
 }
 
-ErrorResponse = {
-  type: "error",
-  id: js-uint / null,
-  error: ErrorCode,
-  message: text,
-  ? stacktrace: text,
+ErrorResponseInfo about the 'ErrorResponse'  reference.#cddl-type-errorresponseReferenced in:3.1. Definition  = {
+  typeInfo about the 'type'  reference.#cddl-key-errorresponse-type: "error"Info about the '"error"'  reference.#cddl-value-errorresponse-type-error,
+  idInfo about the 'id'  reference.#cddl-key-errorresponse-id: js-uint / null,
+  errorInfo about the 'error'  reference.#cddl-key-errorresponse-error: ErrorCode,
+  messageInfo about the 'message'  reference.#cddl-key-errorresponse-message: text,
+  ? stacktraceInfo about the 'stacktrace'  reference.#cddl-key-errorresponse-stacktrace: text,
   Extensible
 }
 
-ResultData = (
+ResultDataInfo about the 'ResultData'  reference.#cddl-type-resultdataReferenced in:3.1. Definition  = (
   BrowserResult /
   BrowsingContextResult /
   EmulationResult /
@@ -37,17 +37,17 @@ ResultData = (
   WebExtensionResult
 )
 
-EmptyResult = {
+EmptyResultInfo about the 'EmptyResult'  reference.#cddl-type-emptyresultReferenced in:7.1.3.3. The session.end Command 7.1.3.5. The session.unsubscribe Command 7.2.4.1. The browser.close Command 7.2.4.5. The browser.removeUserContext Command 7.2.4.7. The browser.setDownloadBehavior Command 7.3.3.1. The browsingContext.activate Command 7.3.3.3. The browsingContext.close Command 7.3.3.6. The browsingContext.handleUserPrompt Command 7.3.3.11. The browsingContext.setBypassCSP Command 7.3.3.12. The browsingContext.setViewport Command 7.3.3.15. The browsingContext.traverseHistory Command 7.4.2.1. The emulation.setForcedColorsModeThemeOverride Command 7.4.2.2. The emulation.setGeolocationOverride Command 7.4.2.3. The emulation.setLocaleOverride Command 7.4.2.4. The emulation.setMediaFeaturesOverride Command 7.4.2.5. The emulation.setNetworkConditions Command 7.4.2.6. The emulation.setScreenSettingsOverride Command 7.4.2.7. The emulation.setScreenOrientationOverride Command 7.4.2.8. The emulation.setUserAgentOverride Command 7.4.2.9. The emulation.setViewportMetaOverride Command 7.4.2.10. The emulation.setScriptingEnabled Command 7.4.2.11. The emulation.setScrollbarTypeOverride Command 7.4.2.12. The emulation.setTextLayoutModeOverride Command 7.4.2.13. The emulation.setTimezoneOverride Command 7.4.2.14. The emulation.setTouchOverride Command 7.5.5.3. The network.continueRequest Command 7.5.5.4. The network.continueResponse Command 7.5.5.5. The network.continueWithAuth Command 7.5.5.6. The network.disownData Command 7.5.5.7. The network.failRequest Command 7.5.5.9. The network.provideResponse Command 7.5.5.10. The network.removeDataCollector Command 7.5.5.11. The network.removeIntercept Command 7.5.5.12. The network.setCacheBehavior Command 7.5.5.13. The network.setExtraHeaders Command 7.6.4.2. The script.disown Command 7.6.4.6. The script.removePreloadScript Command 7.9.3.1. The input.performActions Command 7.9.3.2. The input.releaseActions Command 7.9.3.3. The input.setFiles Command 7.10.3.2. The webExtension.uninstall Command  = {
   Extensible
 }
 
-Event = {
-  type: "event",
+EventInfo about the 'Event'  reference.#cddl-type-eventReferenced in:3.1. Definition  = {
+  typeInfo about the 'type'  reference.#cddl-key-event-type: "event"Info about the '"event"'  reference.#cddl-value-event-type-event,
   EventData,
   Extensible
 }
 
-EventData = (
+EventDataInfo about the 'EventData'  reference.#cddl-type-eventdataReferenced in:3.1. Definition  = (
   BrowsingContextEvent //
   InputEvent //
   LogEvent //
@@ -55,43 +55,43 @@ EventData = (
   ScriptEvent
 )
 
-Extensible = (*text => any)
+ExtensibleInfo about the 'Extensible'  reference.#cddl-type-extensibleReferenced in:3.1. Definition (2) (3) (4) (5) (6) 7.1.2.2. The session.CapabilityRequest Type 7.1.2.3. The session.CapabilityResponse Type 7.1.2.4. The session.ProxyConfiguration Type (2) (3) (4) (5) 7.5.4.7. The network.Cookie Type 7.6.3.13. The script.RemoteReference Type (2) 7.7.2.1. The storage.PartitionKey Type 7.7.3.1. The storage.getCookies Command (2) 7.7.3.2. The storage.setCookie Command  = (*text => any)
 
-js-int = -9007199254740991..9007199254740991
-js-uint = 0..9007199254740991
+js-intInfo about the 'js-int'  reference.#cddl-type-js-intReferenced in:7.2.3.2. The browser.ClientWindowInfo Type (2) 7.2.4.6. The browser.setClientWindowState Command (2) 7.3.3.15. The browsingContext.traverseHistory Command 7.5.4.18. The network.SetCookieHeader Type 7.9.3.1. The input.performActions Command (2) (3) (4)  = -9007199254740991..9007199254740991
+js-uintInfo about the 'js-uint'  reference.#cddl-type-js-uintReferenced in:3.1. Definition (2) (3) 7.2.3.2. The browser.ClientWindowInfo Type (2) 7.2.4.6. The browser.setClientWindowState Command (2) 7.3.2.3. The browsingContext.Locator Type 7.3.2.6. The browsingContext.NavigationInfo Type 7.3.3.2. The browsingContext.captureScreenshot Command (2) 7.3.3.5. The browsingContext.getTree Command 7.3.3.7. The browsingContext.locateNodes Command 7.3.3.9. The browsingContext.print Command 7.3.3.12. The browsingContext.setViewport Command (2) 7.3.3.13. The browsingContext.startScreencast Command (2) (3) 7.3.4.5. The browsingContext.historyUpdated Event 7.4.2.4. The emulation.setMediaFeaturesOverride Command (2) (3) (4) (5) 7.4.2.6. The emulation.setScreenSettingsOverride Command (2) 7.4.2.14. The emulation.setTouchOverride Command 7.5.4.3. The network.BaseParameters Type (2) 7.5.4.7. The network.Cookie Type (2) 7.5.4.12. The network.Initiator Type (2) 7.5.4.15. The network.RequestData Type (2) 7.5.4.16. The network.ResponseContent Type 7.5.4.17. The network.ResponseData Type (2) (3) (4) 7.5.5.1. The network.addDataCollector Command 7.5.5.4. The network.continueResponse Command 7.5.5.9. The network.provideResponse Command 7.6.3.4. The script.ExceptionDetails Type (2) 7.6.3.14. The script.RemoteValue Type (2) 7.6.3.16. The script.SerializationOptions Type (2) 7.6.3.18. The script.StackFrame Type (2) 7.7.3.1. The storage.getCookies Command (2) 7.7.3.2. The storage.setCookie Command 7.8.2.1. log.LogEntry 7.9.3.1. The input.performActions Command (2) (3) (4) (5) (6) (7)  = 0..9007199254740991
 
-ErrorCode = "invalid argument" /
-"invalid selector" /
-"invalid session id" /
-"invalid web extension" /
-"move target out of bounds" /
-"no such alert" /
-"no such network collector" /
-"no such element" /
-"no such frame" /
-"no such handle" /
-"no such history entry" /
-"no such intercept" /
-"no such network data" /
-"no such node" /
-"no such request" /
-"no such screencast" /
-"no such script" /
-"no such storage partition" /
-"no such user context" /
-"no such web extension" /
-"session not created" /
-"unable to capture screen" /
-"unable to close browser" /
-"unable to set cookie" /
-"unable to set file input" /
-"unavailable network data" /
-"underspecified storage partition" /
-"unknown command" /
-"unknown error" /
-"unsupported operation"
+ErrorCodeInfo about the 'ErrorCode'  reference.#cddl-type-errorcodeReferenced in:3.1. Definition  = "invalid argument"Info about the '"invalid argument"'  reference.#cddl-value-errorcode-invalid-argument /
+"invalid selector"Info about the '"invalid selector"'  reference.#cddl-value-errorcode-invalid-selector /
+"invalid session id"Info about the '"invalid session id"'  reference.#cddl-value-errorcode-invalid-session-id /
+"invalid web extension"Info about the '"invalid web extension"'  reference.#cddl-value-errorcode-invalid-web-extension /
+"move target out of bounds"Info about the '"move target out of bounds"'  reference.#cddl-value-errorcode-move-target-out-of-bounds /
+"no such alert"Info about the '"no such alert"'  reference.#cddl-value-errorcode-no-such-alert /
+"no such network collector"Info about the '"no such network collector"'  reference.#cddl-value-errorcode-no-such-network-collector /
+"no such element"Info about the '"no such element"'  reference.#cddl-value-errorcode-no-such-element /
+"no such frame"Info about the '"no such frame"'  reference.#cddl-value-errorcode-no-such-frame /
+"no such handle"Info about the '"no such handle"'  reference.#cddl-value-errorcode-no-such-handle /
+"no such history entry"Info about the '"no such history entry"'  reference.#cddl-value-errorcode-no-such-history-entry /
+"no such intercept"Info about the '"no such intercept"'  reference.#cddl-value-errorcode-no-such-intercept /
+"no such network data"Info about the '"no such network data"'  reference.#cddl-value-errorcode-no-such-network-data /
+"no such node"Info about the '"no such node"'  reference.#cddl-value-errorcode-no-such-node /
+"no such request"Info about the '"no such request"'  reference.#cddl-value-errorcode-no-such-request /
+"no such screencast"Info about the '"no such screencast"'  reference.#cddl-value-errorcode-no-such-screencast /
+"no such script"Info about the '"no such script"'  reference.#cddl-value-errorcode-no-such-script /
+"no such storage partition"Info about the '"no such storage partition"'  reference.#cddl-value-errorcode-no-such-storage-partition /
+"no such user context"Info about the '"no such user context"'  reference.#cddl-value-errorcode-no-such-user-context /
+"no such web extension"Info about the '"no such web extension"'  reference.#cddl-value-errorcode-no-such-web-extension /
+"session not created"Info about the '"session not created"'  reference.#cddl-value-errorcode-session-not-created /
+"unable to capture screen"Info about the '"unable to capture screen"'  reference.#cddl-value-errorcode-unable-to-capture-screen /
+"unable to close browser"Info about the '"unable to close browser"'  reference.#cddl-value-errorcode-unable-to-close-browser /
+"unable to set cookie"Info about the '"unable to set cookie"'  reference.#cddl-value-errorcode-unable-to-set-cookie /
+"unable to set file input"Info about the '"unable to set file input"'  reference.#cddl-value-errorcode-unable-to-set-file-input /
+"unavailable network data"Info about the '"unavailable network data"'  reference.#cddl-value-errorcode-unavailable-network-data /
+"underspecified storage partition"Info about the '"underspecified storage partition"'  reference.#cddl-value-errorcode-underspecified-storage-partition /
+"unknown command"Info about the '"unknown command"'  reference.#cddl-value-errorcode-unknown-command /
+"unknown error"Info about the '"unknown error"'  reference.#cddl-value-errorcode-unknown-error /
+"unsupported operation"Info about the '"unsupported operation"'  reference.#cddl-value-errorcode-unsupported-operation
 
-SessionResult = (
+SessionResultInfo about the 'SessionResult'  reference.#cddl-type-sessionresultReferenced in:3.1. Definition  = (
   session.EndResult /
   session.NewResult /
   session.StatusResult /
@@ -99,35 +99,35 @@ SessionResult = (
   session.UnsubscribeResult
 )
 
-session.CapabilitiesRequest = {
-  ? alwaysMatch: session.CapabilityRequest,
-  ? firstMatch: [*session.CapabilityRequest]
+session.CapabilitiesRequestInfo about the 'session.CapabilitiesRequest'  reference.#cddl-type-sessioncapabilitiesrequestReferenced in:7.1.3.2. The session.new Command  = {
+  ? alwaysMatchInfo about the 'alwaysMatch'  reference.#cddl-key-sessioncapabilitiesrequest-alwaysmatch: session.CapabilityRequest,
+  ? firstMatchInfo about the 'firstMatch'  reference.#cddl-key-sessioncapabilitiesrequest-firstmatch: [*session.CapabilityRequest]
 }
 
-session.CapabilityRequest = {
-  ? acceptInsecureCerts: bool,
-  ? browserName: text,
-  ? browserVersion: text,
-  ? platformName: text,
-  ? proxy: session.ProxyConfiguration,
-  ? unhandledPromptBehavior: session.UserPromptHandler,
+session.CapabilityRequestInfo about the 'session.CapabilityRequest'  reference.#cddl-type-sessioncapabilityrequestReferenced in:7.1.2.1. The session.CapabilitiesRequest Type (2)  = {
+  ? acceptInsecureCertsInfo about the 'acceptInsecureCerts'  reference.#cddl-key-sessioncapabilityrequest-acceptinsecurecerts: bool,
+  ? browserNameInfo about the 'browserName'  reference.#cddl-key-sessioncapabilityrequest-browsername: text,
+  ? browserVersionInfo about the 'browserVersion'  reference.#cddl-key-sessioncapabilityrequest-browserversion: text,
+  ? platformNameInfo about the 'platformName'  reference.#cddl-key-sessioncapabilityrequest-platformname: text,
+  ? proxyInfo about the 'proxy'  reference.#cddl-key-sessioncapabilityrequest-proxy: session.ProxyConfiguration,
+  ? unhandledPromptBehaviorInfo about the 'unhandledPromptBehavior'  reference.#cddl-key-sessioncapabilityrequest-unhandledpromptbehavior: session.UserPromptHandler,
   Extensible
 }
 
-session.CapabilityResponse = {
-  acceptInsecureCerts: bool,
-  browserName: text,
-  browserVersion: text,
-  platformName: text,
-  setWindowRect: bool,
-  userAgent: text,
-  ? proxy: session.ProxyConfiguration,
-  ? unhandledPromptBehavior: session.UserPromptHandler,
-  ? webSocketUrl: text,
+session.CapabilityResponseInfo about the 'session.CapabilityResponse'  reference.#cddl-type-sessioncapabilityresponseReferenced in:7.1.3.2. The session.new Command  = {
+  acceptInsecureCertsInfo about the 'acceptInsecureCerts'  reference.#cddl-key-sessioncapabilityresponse-acceptinsecurecerts: bool,
+  browserNameInfo about the 'browserName'  reference.#cddl-key-sessioncapabilityresponse-browsername: text,
+  browserVersionInfo about the 'browserVersion'  reference.#cddl-key-sessioncapabilityresponse-browserversion: text,
+  platformNameInfo about the 'platformName'  reference.#cddl-key-sessioncapabilityresponse-platformname: text,
+  setWindowRectInfo about the 'setWindowRect'  reference.#cddl-key-sessioncapabilityresponse-setwindowrect: bool,
+  userAgentInfo about the 'userAgent'  reference.#cddl-key-sessioncapabilityresponse-useragent: text,
+  ? proxyInfo about the 'proxy'  reference.#cddl-key-sessioncapabilityresponse-proxy: session.ProxyConfiguration,
+  ? unhandledPromptBehaviorInfo about the 'unhandledPromptBehavior'  reference.#cddl-key-sessioncapabilityresponse-unhandledpromptbehavior: session.UserPromptHandler,
+  ? webSocketUrlInfo about the 'webSocketUrl'  reference.#cddl-key-sessioncapabilityresponse-websocketurl: text,
   Extensible
 }
 
-session.ProxyConfiguration = {
+session.ProxyConfigurationInfo about the 'session.ProxyConfiguration'  reference.#cddl-type-sessionproxyconfigurationReferenced in:7.1.2.2. The session.CapabilityRequest Type 7.1.2.3. The session.CapabilityResponse Type 7.2.4.2. The browser.createUserContext Command  = {
    session.AutodetectProxyConfiguration //
    session.DirectProxyConfiguration //
    session.ManualProxyConfiguration //
@@ -135,73 +135,73 @@ session.ProxyConfiguration = {
    session.SystemProxyConfiguration
 }
 
-session.AutodetectProxyConfiguration = (
-   proxyType: "autodetect",
+session.AutodetectProxyConfigurationInfo about the 'session.AutodetectProxyConfiguration'  reference.#cddl-type-sessionautodetectproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   proxyTypeInfo about the 'proxyType'  reference.#cddl-key-sessionautodetectproxyconfiguration-proxytype: "autodetect"Info about the '"autodetect"'  reference.#cddl-value-sessionautodetectproxyconfiguration-proxytype-autodetect,
    Extensible
 )
 
-session.DirectProxyConfiguration = (
-   proxyType: "direct",
+session.DirectProxyConfigurationInfo about the 'session.DirectProxyConfiguration'  reference.#cddl-type-sessiondirectproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   proxyTypeInfo about the 'proxyType'  reference.#cddl-key-sessiondirectproxyconfiguration-proxytype: "direct"Info about the '"direct"'  reference.#cddl-value-sessiondirectproxyconfiguration-proxytype-direct,
    Extensible
 )
 
-session.ManualProxyConfiguration = (
-   proxyType: "manual",
-   ? httpProxy: text,
-   ? sslProxy: text,
+session.ManualProxyConfigurationInfo about the 'session.ManualProxyConfiguration'  reference.#cddl-type-sessionmanualproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   proxyTypeInfo about the 'proxyType'  reference.#cddl-key-sessionmanualproxyconfiguration-proxytype: "manual"Info about the '"manual"'  reference.#cddl-value-sessionmanualproxyconfiguration-proxytype-manual,
+   ? httpProxyInfo about the 'httpProxy'  reference.#cddl-key-sessionmanualproxyconfiguration-httpproxy: text,
+   ? sslProxyInfo about the 'sslProxy'  reference.#cddl-key-sessionmanualproxyconfiguration-sslproxy: text,
    ? session.SocksProxyConfiguration,
-   ? noProxy: [*text],
+   ? noProxyInfo about the 'noProxy'  reference.#cddl-key-sessionmanualproxyconfiguration-noproxy: [*text],
    Extensible
 )
 
-session.SocksProxyConfiguration = (
-   socksProxy: text,
-   socksVersion: 0..255,
+session.SocksProxyConfigurationInfo about the 'session.SocksProxyConfiguration'  reference.#cddl-type-sessionsocksproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   socksProxyInfo about the 'socksProxy'  reference.#cddl-key-sessionsocksproxyconfiguration-socksproxy: text,
+   socksVersionInfo about the 'socksVersion'  reference.#cddl-key-sessionsocksproxyconfiguration-socksversion: 0..255,
 )
 
-session.PacProxyConfiguration = (
-   proxyType: "pac",
-   proxyAutoconfigUrl: text,
+session.PacProxyConfigurationInfo about the 'session.PacProxyConfiguration'  reference.#cddl-type-sessionpacproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   proxyTypeInfo about the 'proxyType'  reference.#cddl-key-sessionpacproxyconfiguration-proxytype: "pac"Info about the '"pac"'  reference.#cddl-value-sessionpacproxyconfiguration-proxytype-pac,
+   proxyAutoconfigUrlInfo about the 'proxyAutoconfigUrl'  reference.#cddl-key-sessionpacproxyconfiguration-proxyautoconfigurl: text,
    Extensible
 )
 
-session.SystemProxyConfiguration = (
-   proxyType: "system",
+session.SystemProxyConfigurationInfo about the 'session.SystemProxyConfiguration'  reference.#cddl-type-sessionsystemproxyconfigurationReferenced in:7.1.2.4. The session.ProxyConfiguration Type  = (
+   proxyTypeInfo about the 'proxyType'  reference.#cddl-key-sessionsystemproxyconfiguration-proxytype: "system"Info about the '"system"'  reference.#cddl-value-sessionsystemproxyconfiguration-proxytype-system,
    Extensible
 )
 
-session.UserPromptHandler = {
-  ? alert: session.UserPromptHandlerType,
-  ? beforeUnload: session.UserPromptHandlerType,
-  ? confirm: session.UserPromptHandlerType,
-  ? default: session.UserPromptHandlerType,
-  ? file: session.UserPromptHandlerType,
-  ? prompt: session.UserPromptHandlerType,
+session.UserPromptHandlerInfo about the 'session.UserPromptHandler'  reference.#cddl-type-sessionuserprompthandlerReferenced in:7.1.2.2. The session.CapabilityRequest Type 7.1.2.3. The session.CapabilityResponse Type 7.2.4.2. The browser.createUserContext Command  = {
+  ? alertInfo about the 'alert'  reference.#cddl-key-sessionuserprompthandler-alert: session.UserPromptHandlerType,
+  ? beforeUnloadInfo about the 'beforeUnload'  reference.#cddl-key-sessionuserprompthandler-beforeunload: session.UserPromptHandlerType,
+  ? confirmInfo about the 'confirm'  reference.#cddl-key-sessionuserprompthandler-confirm: session.UserPromptHandlerType,
+  ? defaultInfo about the 'default'  reference.#cddl-key-sessionuserprompthandler-default: session.UserPromptHandlerType,
+  ? fileInfo about the 'file'  reference.#cddl-key-sessionuserprompthandler-file: session.UserPromptHandlerType,
+  ? promptInfo about the 'prompt'  reference.#cddl-key-sessionuserprompthandler-prompt: session.UserPromptHandlerType,
 }
 
-session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
+session.UserPromptHandlerTypeInfo about the 'session.UserPromptHandlerType'  reference.#cddl-type-sessionuserprompthandlertypeReferenced in:7.1.2.5. The session.UserPromptHandler Type (2) (3) (4) (5) (6) 7.3.4.14. The browsingContext.userPromptOpened Event  = "accept"Info about the '"accept"'  reference.#cddl-value-sessionuserprompthandlertype-accept / "dismiss"Info about the '"dismiss"'  reference.#cddl-value-sessionuserprompthandlertype-dismiss / "ignore"Info about the '"ignore"'  reference.#cddl-value-sessionuserprompthandlertype-ignore;
 
-session.Subscription = text
+session.SubscriptionInfo about the 'session.Subscription'  reference.#cddl-type-sessionsubscriptionReferenced in:7.1.2.9. The session.UnsubscribeByIDRequest Type 7.1.3.4. The session.subscribe Command  = text
 
-session.StatusResult = {
-  ready: bool,
-  message: text,
+session.StatusResultInfo about the 'session.StatusResult'  reference.#cddl-type-sessionstatusresultReferenced in:7.1.1. Definition  = {
+  readyInfo about the 'ready'  reference.#cddl-key-sessionstatusresult-ready: bool,
+  messageInfo about the 'message'  reference.#cddl-key-sessionstatusresult-message: text,
 }
 
-session.NewResult = {
-  sessionId: text,
-  capabilities: session.CapabilityResponse
+session.NewResultInfo about the 'session.NewResult'  reference.#cddl-type-sessionnewresultReferenced in:7.1.1. Definition  = {
+  sessionIdInfo about the 'sessionId'  reference.#cddl-key-sessionnewresult-sessionid: text,
+  capabilitiesInfo about the 'capabilities'  reference.#cddl-key-sessionnewresult-capabilities: session.CapabilityResponse
 }
 
-session.EndResult = EmptyResult
+session.EndResultInfo about the 'session.EndResult'  reference.#cddl-type-sessionendresultReferenced in:7.1.1. Definition  = EmptyResult
 
-session.SubscribeResult = {
-  subscription: session.Subscription,
+session.SubscribeResultInfo about the 'session.SubscribeResult'  reference.#cddl-type-sessionsubscriberesultReferenced in:7.1.1. Definition  = {
+  subscriptionInfo about the 'subscription'  reference.#cddl-key-sessionsubscriberesult-subscription: session.Subscription,
 }
 
-session.UnsubscribeResult = EmptyResult
+session.UnsubscribeResultInfo about the 'session.UnsubscribeResult'  reference.#cddl-type-sessionunsubscriberesultReferenced in:7.1.1. Definition  = EmptyResult
 
-BrowserResult = (
+BrowserResultInfo about the 'BrowserResult'  reference.#cddl-type-browserresultReferenced in:3.1. Definition  = (
   browser.CloseResult /
   browser.CreateUserContextResult /
   browser.GetClientWindowsResult /
@@ -211,43 +211,43 @@ BrowserResult = (
   browser.SetDownloadBehaviorResult
 )
 
-browser.ClientWindow = text;
+browser.ClientWindowInfo about the 'browser.ClientWindow'  reference.#cddl-type-browserclientwindowReferenced in:7.2.3.2. The browser.ClientWindowInfo Type 7.2.4.6. The browser.setClientWindowState Command 7.3.2.2. The browsingContext.Info Type  = text;
 
-browser.ClientWindowInfo = {
-  active: bool,
-  clientWindow: browser.ClientWindow,
-  height: js-uint,
-  state: "fullscreen" / "maximized" / "minimized" / "normal",
-  width: js-uint,
-  x: js-int,
-  y: js-int,
+browser.ClientWindowInfoInfo about the 'browser.ClientWindowInfo'  reference.#cddl-type-browserclientwindowinfoReferenced in:7.2.4.3. The browser.getClientWindows Command 7.2.4.6. The browser.setClientWindowState Command  = {
+  activeInfo about the 'active'  reference.#cddl-key-browserclientwindowinfo-active: bool,
+  clientWindowInfo about the 'clientWindow'  reference.#cddl-key-browserclientwindowinfo-clientwindow: browser.ClientWindow,
+  heightInfo about the 'height'  reference.#cddl-key-browserclientwindowinfo-height: js-uint,
+  stateInfo about the 'state'  reference.#cddl-key-browserclientwindowinfo-state: "fullscreen"Info about the '"fullscreen"'  reference.#cddl-value-browserclientwindowinfo-state-fullscreen / "maximized"Info about the '"maximized"'  reference.#cddl-value-browserclientwindowinfo-state-maximized / "minimized"Info about the '"minimized"'  reference.#cddl-value-browserclientwindowinfo-state-minimized / "normal"Info about the '"normal"'  reference.#cddl-value-browserclientwindowinfo-state-normal,
+  widthInfo about the 'width'  reference.#cddl-key-browserclientwindowinfo-width: js-uint,
+  xInfo about the 'x'  reference.#cddl-key-browserclientwindowinfo-x: js-int,
+  yInfo about the 'y'  reference.#cddl-key-browserclientwindowinfo-y: js-int,
 }
 
-browser.UserContext = text;
+browser.UserContextInfo about the 'browser.UserContext'  reference.#cddl-type-browserusercontextReferenced in:7.1.2.8. The session.SubscribeParameters Type 7.2.3.4. The browser.UserContextInfo Type 7.2.4.5. The browser.removeUserContext Command 7.2.4.7. The browser.setDownloadBehavior Command 7.3.2.2. The browsingContext.Info Type 7.3.2.6. The browsingContext.NavigationInfo Type 7.3.3.4. The browsingContext.create Command (2) 7.3.3.11. The browsingContext.setBypassCSP Command 7.3.3.12. The browsingContext.setViewport Command 7.3.4.5. The browsingContext.historyUpdated Event 7.3.4.13. The browsingContext.userPromptClosed Event 7.3.4.14. The browsingContext.userPromptOpened Event 7.4.2.1. The emulation.setForcedColorsModeThemeOverride Command 7.4.2.2. The emulation.setGeolocationOverride Command 7.4.2.3. The emulation.setLocaleOverride Command 7.4.2.4. The emulation.setMediaFeaturesOverride Command 7.4.2.5. The emulation.setNetworkConditions Command 7.4.2.6. The emulation.setScreenSettingsOverride Command 7.4.2.7. The emulation.setScreenOrientationOverride Command 7.4.2.8. The emulation.setUserAgentOverride Command 7.4.2.9. The emulation.setViewportMetaOverride Command 7.4.2.10. The emulation.setScriptingEnabled Command 7.4.2.11. The emulation.setScrollbarTypeOverride Command 7.4.2.12. The emulation.setTextLayoutModeOverride Command 7.4.2.13. The emulation.setTimezoneOverride Command 7.4.2.14. The emulation.setTouchOverride Command 7.5.4.3. The network.BaseParameters Type 7.5.5.1. The network.addDataCollector Command 7.5.5.13. The network.setExtraHeaders Command 7.6.3.11. The script.RealmInfo Type 7.6.3.20. The script.Source Type 7.6.4.1. The script.addPreloadScript Command 7.9.4.1. The input.fileDialogOpened Event  = text;
 
-browser.UserContextInfo = {
-  userContext: browser.UserContext
+browser.UserContextInfoInfo about the 'browser.UserContextInfo'  reference.#cddl-type-browserusercontextinfoReferenced in:7.2.4.2. The browser.createUserContext Command 7.2.4.4. The browser.getUserContexts Command  = {
+  userContextInfo about the 'userContext'  reference.#cddl-key-browserusercontextinfo-usercontext: browser.UserContext
 }
 
-browser.CloseResult = EmptyResult
+browser.CloseResultInfo about the 'browser.CloseResult'  reference.#cddl-type-browsercloseresultReferenced in:7.2.1. Definition  = EmptyResult
 
-browser.CreateUserContextResult = browser.UserContextInfo
+browser.CreateUserContextResultInfo about the 'browser.CreateUserContextResult'  reference.#cddl-type-browsercreateusercontextresultReferenced in:7.2.1. Definition  = browser.UserContextInfo
 
-browser.GetClientWindowsResult = {
-  clientWindows: [ * browser.ClientWindowInfo]
+browser.GetClientWindowsResultInfo about the 'browser.GetClientWindowsResult'  reference.#cddl-type-browsergetclientwindowsresultReferenced in:7.2.1. Definition  = {
+  clientWindowsInfo about the 'clientWindows'  reference.#cddl-key-browsergetclientwindowsresult-clientwindows: [ * browser.ClientWindowInfo]
 }
 
-browser.GetUserContextsResult = {
-  userContexts: [ + browser.UserContextInfo]
+browser.GetUserContextsResultInfo about the 'browser.GetUserContextsResult'  reference.#cddl-type-browsergetusercontextsresultReferenced in:7.2.1. Definition  = {
+  userContextsInfo about the 'userContexts'  reference.#cddl-key-browsergetusercontextsresult-usercontexts: [ + browser.UserContextInfo]
 }
 
-browser.RemoveUserContextResult = EmptyResult
+browser.RemoveUserContextResultInfo about the 'browser.RemoveUserContextResult'  reference.#cddl-type-browserremoveusercontextresultReferenced in:7.2.1. Definition  = EmptyResult
 
-browser.SetClientWindowStateResult = browser.ClientWindowInfo
+browser.SetClientWindowStateResultInfo about the 'browser.SetClientWindowStateResult'  reference.#cddl-type-browsersetclientwindowstateresultReferenced in:7.2.1. Definition  = browser.ClientWindowInfo
 
-browser.SetDownloadBehaviorResult = EmptyResult
+browser.SetDownloadBehaviorResultInfo about the 'browser.SetDownloadBehaviorResult'  reference.#cddl-type-browsersetdownloadbehaviorresultReferenced in:7.2.1. Definition  = EmptyResult
 
-BrowsingContextResult = (
+BrowsingContextResultInfo about the 'BrowsingContextResult'  reference.#cddl-type-browsingcontextresultReferenced in:3.1. Definition  = (
   browsingContext.ActivateResult /
   browsingContext.CaptureScreenshotResult /
   browsingContext.CloseResult /
@@ -265,7 +265,7 @@ BrowsingContextResult = (
   browsingContext.TraverseHistoryResult
 )
 
-BrowsingContextEvent = (
+BrowsingContextEventInfo about the 'BrowsingContextEvent'  reference.#cddl-type-browsingcontexteventReferenced in:3.1. Definition  = (
   browsingContext.ContextCreated //
   browsingContext.ContextDestroyed //
   browsingContext.DomContentLoaded //
@@ -282,25 +282,25 @@ BrowsingContextEvent = (
   browsingContext.UserPromptOpened
 )
 
-browsingContext.BrowsingContext = text;
+browsingContext.BrowsingContextInfo about the 'browsingContext.BrowsingContext'  reference.#cddl-type-browsingcontextbrowsingcontextReferenced in:7.1.2.8. The session.SubscribeParameters Type 7.3.2.2. The browsingContext.Info Type (2) (3) 7.3.2.3. The browsingContext.Locator Type 7.3.2.6. The browsingContext.NavigationInfo Type 7.3.3.1. The browsingContext.activate Command 7.3.3.2. The browsingContext.captureScreenshot Command 7.3.3.3. The browsingContext.close Command 7.3.3.4. The browsingContext.create Command (2) 7.3.3.5. The browsingContext.getTree Command 7.3.3.6. The browsingContext.handleUserPrompt Command 7.3.3.7. The browsingContext.locateNodes Command 7.3.3.8. The browsingContext.navigate Command 7.3.3.9. The browsingContext.print Command 7.3.3.10. The browsingContext.reload Command 7.3.3.11. The browsingContext.setBypassCSP Command 7.3.3.12. The browsingContext.setViewport Command 7.3.3.13. The browsingContext.startScreencast Command 7.3.3.15. The browsingContext.traverseHistory Command 7.3.4.5. The browsingContext.historyUpdated Event 7.3.4.13. The browsingContext.userPromptClosed Event 7.3.4.14. The browsingContext.userPromptOpened Event 7.4.2.1. The emulation.setForcedColorsModeThemeOverride Command 7.4.2.2. The emulation.setGeolocationOverride Command 7.4.2.3. The emulation.setLocaleOverride Command 7.4.2.4. The emulation.setMediaFeaturesOverride Command 7.4.2.5. The emulation.setNetworkConditions Command 7.4.2.6. The emulation.setScreenSettingsOverride Command 7.4.2.7. The emulation.setScreenOrientationOverride Command 7.4.2.8. The emulation.setUserAgentOverride Command 7.4.2.9. The emulation.setViewportMetaOverride Command 7.4.2.10. The emulation.setScriptingEnabled Command 7.4.2.11. The emulation.setScrollbarTypeOverride Command 7.4.2.12. The emulation.setTextLayoutModeOverride Command 7.4.2.13. The emulation.setTimezoneOverride Command 7.4.2.14. The emulation.setTouchOverride Command 7.5.4.3. The network.BaseParameters Type 7.5.5.1. The network.addDataCollector Command 7.5.5.2. The network.addIntercept Command 7.5.5.12. The network.setCacheBehavior Command 7.5.5.13. The network.setExtraHeaders Command 7.6.3.11. The script.RealmInfo Type 7.6.3.14. The script.RemoteValue Type 7.6.3.20. The script.Source Type 7.6.3.21. The script.Target Type 7.6.4.1. The script.addPreloadScript Command 7.6.4.5. The script.getRealms Command 7.7.3.1. The storage.getCookies Command 7.9.3.1. The input.performActions Command 7.9.3.2. The input.releaseActions Command 7.9.3.3. The input.setFiles Command 7.9.4.1. The input.fileDialogOpened Event  = text;
 
-browsingContext.InfoList = [*browsingContext.Info]
+browsingContext.InfoListInfo about the 'browsingContext.InfoList'  reference.#cddl-type-browsingcontextinfolistReferenced in:7.3.2.2. The browsingContext.Info Type 7.3.3.5. The browsingContext.getTree Command  = [*browsingContext.Info]
 
-browsingContext.BaseInfo = (
-  children: browsingContext.InfoList / null,
-  clientWindow: browser.ClientWindow,
-  context: browsingContext.BrowsingContext,
-  originalOpener: browsingContext.BrowsingContext / null,
-  url: text,
-  userContext: browser.UserContext,
-  ? parent: browsingContext.BrowsingContext / null,
+browsingContext.BaseInfoInfo about the 'browsingContext.BaseInfo'  reference.#cddl-type-browsingcontextbaseinfoReferenced in:7.3.2.2. The browsingContext.Info Type 7.3.4.1. The browsingContext.contextCreated Event  = (
+  childrenInfo about the 'children'  reference.#cddl-key-browsingcontextbaseinfo-children: browsingContext.InfoList / null,
+  clientWindowInfo about the 'clientWindow'  reference.#cddl-key-browsingcontextbaseinfo-clientwindow: browser.ClientWindow,
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontextbaseinfo-context: browsingContext.BrowsingContext,
+  originalOpenerInfo about the 'originalOpener'  reference.#cddl-key-browsingcontextbaseinfo-originalopener: browsingContext.BrowsingContext / null,
+  urlInfo about the 'url'  reference.#cddl-key-browsingcontextbaseinfo-url: text,
+  userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontextbaseinfo-usercontext: browser.UserContext,
+  ? parentInfo about the 'parent'  reference.#cddl-key-browsingcontextbaseinfo-parent: browsingContext.BrowsingContext / null,
 )
 
-browsingContext.Info = {
+browsingContext.InfoInfo about the 'browsingContext.Info'  reference.#cddl-type-browsingcontextinfoReferenced in:7.3.2.2. The browsingContext.Info Type 7.3.4.2. The browsingContext.contextDestroyed Event  = {
   browsingContext.BaseInfo
 }
 
-browsingContext.Locator = (
+browsingContext.LocatorInfo about the 'browsingContext.Locator'  reference.#cddl-type-browsingcontextlocatorReferenced in:7.3.3.7. The browsingContext.locateNodes Command  = (
    browsingContext.AccessibilityLocator /
    browsingContext.CssLocator /
    browsingContext.ContextLocator /
@@ -308,235 +308,235 @@ browsingContext.Locator = (
    browsingContext.XPathLocator
 )
 
-browsingContext.AccessibilityLocator = {
-   type: "accessibility",
-   value: {
-    ? name: text,
-    ? role: text,
+browsingContext.AccessibilityLocatorInfo about the 'browsingContext.AccessibilityLocator'  reference.#cddl-type-browsingcontextaccessibilitylocatorReferenced in:7.3.2.3. The browsingContext.Locator Type  = {
+   typeInfo about the 'type'  reference.#cddl-key-browsingcontextaccessibilitylocator-type: "accessibility"Info about the '"accessibility"'  reference.#cddl-value-browsingcontextaccessibilitylocator-type-accessibility,
+   valueInfo about the 'value'  reference.#cddl-key-browsingcontextaccessibilitylocator-value: {
+    ? nameInfo about the 'name'  reference.#cddl-key-browsingcontextaccessibilitylocator-value-name: text,
+    ? roleInfo about the 'role'  reference.#cddl-key-browsingcontextaccessibilitylocator-value-role: text,
    }
 }
 
-browsingContext.CssLocator = {
-   type: "css",
-   value: text
+browsingContext.CssLocatorInfo about the 'browsingContext.CssLocator'  reference.#cddl-type-browsingcontextcsslocatorReferenced in:7.3.2.3. The browsingContext.Locator Type  = {
+   typeInfo about the 'type'  reference.#cddl-key-browsingcontextcsslocator-type: "css"Info about the '"css"'  reference.#cddl-value-browsingcontextcsslocator-type-css,
+   valueInfo about the 'value'  reference.#cddl-key-browsingcontextcsslocator-value: text
 }
 
-browsingContext.ContextLocator = {
-  type: "context",
-  value: {
-    context: browsingContext.BrowsingContext,
+browsingContext.ContextLocatorInfo about the 'browsingContext.ContextLocator'  reference.#cddl-type-browsingcontextcontextlocatorReferenced in:7.3.2.3. The browsingContext.Locator Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-browsingcontextcontextlocator-type: "context"Info about the '"context"'  reference.#cddl-value-browsingcontextcontextlocator-type-context,
+  valueInfo about the 'value'  reference.#cddl-key-browsingcontextcontextlocator-value: {
+    contextInfo about the 'context'  reference.#cddl-key-browsingcontextcontextlocator-value-context: browsingContext.BrowsingContext,
   }
 }
 
-browsingContext.InnerTextLocator = {
-   type: "innerText",
-   value: text,
-   ? ignoreCase: bool
-   ? matchType: "full" / "partial",
-   ? maxDepth: js-uint,
+browsingContext.InnerTextLocatorInfo about the 'browsingContext.InnerTextLocator'  reference.#cddl-type-browsingcontextinnertextlocatorReferenced in:7.3.2.3. The browsingContext.Locator Type  = {
+   typeInfo about the 'type'  reference.#cddl-key-browsingcontextinnertextlocator-type: "innerText"Info about the '"innerText"'  reference.#cddl-value-browsingcontextinnertextlocator-type-innertext,
+   valueInfo about the 'value'  reference.#cddl-key-browsingcontextinnertextlocator-value: text,
+   ? ignoreCaseInfo about the 'ignoreCase'  reference.#cddl-key-browsingcontextinnertextlocator-ignorecase: bool
+   ? matchTypeInfo about the 'matchType'  reference.#cddl-key-browsingcontextinnertextlocator-matchtype: "full"Info about the '"full"'  reference.#cddl-value-browsingcontextinnertextlocator-matchtype-full / "partial"Info about the '"partial"'  reference.#cddl-value-browsingcontextinnertextlocator-matchtype-partial,
+   ? maxDepthInfo about the 'maxDepth'  reference.#cddl-key-browsingcontextinnertextlocator-maxdepth: js-uint,
 }
 
-browsingContext.XPathLocator = {
-   type: "xpath",
-   value: text
+browsingContext.XPathLocatorInfo about the 'browsingContext.XPathLocator'  reference.#cddl-type-browsingcontextxpathlocatorReferenced in:7.3.2.3. The browsingContext.Locator Type  = {
+   typeInfo about the 'type'  reference.#cddl-key-browsingcontextxpathlocator-type: "xpath"Info about the '"xpath"'  reference.#cddl-value-browsingcontextxpathlocator-type-xpath,
+   valueInfo about the 'value'  reference.#cddl-key-browsingcontextxpathlocator-value: text
 }
 
-browsingContext.Navigation = text;
+browsingContext.NavigationInfo about the 'browsingContext.Navigation'  reference.#cddl-type-browsingcontextnavigationReferenced in:7.3.2.6. The browsingContext.NavigationInfo Type 7.3.3.8. The browsingContext.navigate Command 7.5.4.3. The network.BaseParameters Type  = text;
 
-browsingContext.Download = text;
+browsingContext.DownloadInfo about the 'browsingContext.Download'  reference.#cddl-type-browsingcontextdownloadReferenced in:7.3.4.8. The browsingContext.downloadWillBegin Event 7.3.4.9. The browsingContext.downloadEnd Event (2)  = text;
 
-browsingContext.BaseNavigationInfo = (
-  context: browsingContext.BrowsingContext,
-  navigation: browsingContext.Navigation / null,
-  timestamp: js-uint,
-  url: text,
-  ? userContext: browser.UserContext,
+browsingContext.BaseNavigationInfoInfo about the 'browsingContext.BaseNavigationInfo'  reference.#cddl-type-browsingcontextbasenavigationinfoReferenced in:7.3.2.6. The browsingContext.NavigationInfo Type 7.3.4.8. The browsingContext.downloadWillBegin Event 7.3.4.9. The browsingContext.downloadEnd Event (2)  = (
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontextbasenavigationinfo-context: browsingContext.BrowsingContext,
+  navigationInfo about the 'navigation'  reference.#cddl-key-browsingcontextbasenavigationinfo-navigation: browsingContext.Navigation / null,
+  timestampInfo about the 'timestamp'  reference.#cddl-key-browsingcontextbasenavigationinfo-timestamp: js-uint,
+  urlInfo about the 'url'  reference.#cddl-key-browsingcontextbasenavigationinfo-url: text,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontextbasenavigationinfo-usercontext: browser.UserContext,
 )
 
-browsingContext.NavigationInfo = {
+browsingContext.NavigationInfoInfo about the 'browsingContext.NavigationInfo'  reference.#cddl-type-browsingcontextnavigationinfoReferenced in:7.3.4.3. The browsingContext.navigationStarted Event 7.3.4.4. The browsingContext.fragmentNavigated Event 7.3.4.6. The browsingContext.domContentLoaded Event 7.3.4.7. The browsingContext.load Event 7.3.4.10. The browsingContext.navigationAborted Event 7.3.4.11. The browsingContext.navigationCommitted Event 7.3.4.12. The browsingContext.navigationFailed Event  = {
   browsingContext.BaseNavigationInfo
 }
 
-browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
+browsingContext.UserPromptTypeInfo about the 'browsingContext.UserPromptType'  reference.#cddl-type-browsingcontextuserprompttypeReferenced in:7.3.4.13. The browsingContext.userPromptClosed Event 7.3.4.14. The browsingContext.userPromptOpened Event  = "alert"Info about the '"alert"'  reference.#cddl-value-browsingcontextuserprompttype-alert / "beforeunload"Info about the '"beforeunload"'  reference.#cddl-value-browsingcontextuserprompttype-beforeunload / "confirm"Info about the '"confirm"'  reference.#cddl-value-browsingcontextuserprompttype-confirm / "prompt"Info about the '"prompt"'  reference.#cddl-value-browsingcontextuserprompttype-prompt;
 
-browsingContext.ActivateResult = EmptyResult
+browsingContext.ActivateResultInfo about the 'browsingContext.ActivateResult'  reference.#cddl-type-browsingcontextactivateresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.CaptureScreenshotResult = {
-  data: text
+browsingContext.CaptureScreenshotResultInfo about the 'browsingContext.CaptureScreenshotResult'  reference.#cddl-type-browsingcontextcapturescreenshotresultReferenced in:7.3.1. Definition  = {
+  dataInfo about the 'data'  reference.#cddl-key-browsingcontextcapturescreenshotresult-data: text
 }
 
-browsingContext.CloseResult = EmptyResult
+browsingContext.CloseResultInfo about the 'browsingContext.CloseResult'  reference.#cddl-type-browsingcontextcloseresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.CreateResult = {
-  context: browsingContext.BrowsingContext,
-  ? userContext: browser.UserContext
+browsingContext.CreateResultInfo about the 'browsingContext.CreateResult'  reference.#cddl-type-browsingcontextcreateresultReferenced in:7.3.1. Definition  = {
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontextcreateresult-context: browsingContext.BrowsingContext,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontextcreateresult-usercontext: browser.UserContext
 }
 
-browsingContext.GetTreeResult = {
-  contexts: browsingContext.InfoList
+browsingContext.GetTreeResultInfo about the 'browsingContext.GetTreeResult'  reference.#cddl-type-browsingcontextgettreeresultReferenced in:7.3.1. Definition  = {
+  contextsInfo about the 'contexts'  reference.#cddl-key-browsingcontextgettreeresult-contexts: browsingContext.InfoList
 }
 
-browsingContext.HandleUserPromptResult = EmptyResult
+browsingContext.HandleUserPromptResultInfo about the 'browsingContext.HandleUserPromptResult'  reference.#cddl-type-browsingcontexthandleuserpromptresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.LocateNodesResult = {
-    nodes: [ * script.NodeRemoteValue ]
+browsingContext.LocateNodesResultInfo about the 'browsingContext.LocateNodesResult'  reference.#cddl-type-browsingcontextlocatenodesresultReferenced in:7.3.1. Definition  = {
+    nodesInfo about the 'nodes'  reference.#cddl-key-browsingcontextlocatenodesresult-nodes: [ * script.NodeRemoteValue ]
 }
 
-browsingContext.NavigateResult = {
-  navigation: browsingContext.Navigation / null,
-  url: text,
+browsingContext.NavigateResultInfo about the 'browsingContext.NavigateResult'  reference.#cddl-type-browsingcontextnavigateresultReferenced in:7.3.1. Definition 7.3.3.10. The browsingContext.reload Command  = {
+  navigationInfo about the 'navigation'  reference.#cddl-key-browsingcontextnavigateresult-navigation: browsingContext.Navigation / null,
+  urlInfo about the 'url'  reference.#cddl-key-browsingcontextnavigateresult-url: text,
 }
 
-browsingContext.PrintResult = {
-  data: text
+browsingContext.PrintResultInfo about the 'browsingContext.PrintResult'  reference.#cddl-type-browsingcontextprintresultReferenced in:7.3.1. Definition  = {
+  dataInfo about the 'data'  reference.#cddl-key-browsingcontextprintresult-data: text
 }
 
-browsingContext.ReloadResult = browsingContext.NavigateResult
+browsingContext.ReloadResultInfo about the 'browsingContext.ReloadResult'  reference.#cddl-type-browsingcontextreloadresultReferenced in:7.3.1. Definition  = browsingContext.NavigateResult
 
-browsingContext.SetBypassCSPResult = EmptyResult
+browsingContext.SetBypassCSPResultInfo about the 'browsingContext.SetBypassCSPResult'  reference.#cddl-type-browsingcontextsetbypasscspresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.SetViewportResult = EmptyResult
+browsingContext.SetViewportResultInfo about the 'browsingContext.SetViewportResult'  reference.#cddl-type-browsingcontextsetviewportresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.StartScreencastResult = {
-   screencast: browsingContext.Screencast,
-   path: text
+browsingContext.StartScreencastResultInfo about the 'browsingContext.StartScreencastResult'  reference.#cddl-type-browsingcontextstartscreencastresultReferenced in:7.3.1. Definition  = {
+   screencastInfo about the 'screencast'  reference.#cddl-key-browsingcontextstartscreencastresult-screencast: browsingContext.Screencast,
+   pathInfo about the 'path'  reference.#cddl-key-browsingcontextstartscreencastresult-path: text
 }
 
-browsingContext.Screencast = text
+browsingContext.ScreencastInfo about the 'browsingContext.Screencast'  reference.#cddl-type-browsingcontextscreencastReferenced in:7.3.3.13. The browsingContext.startScreencast Command 7.3.3.14. The browsingContext.stopScreencast Command  = text
 
-browsingContext.StopScreencastResult = {
-   path: text,
-   ? error: text
+browsingContext.StopScreencastResultInfo about the 'browsingContext.StopScreencastResult'  reference.#cddl-type-browsingcontextstopscreencastresultReferenced in:7.3.1. Definition  = {
+   pathInfo about the 'path'  reference.#cddl-key-browsingcontextstopscreencastresult-path: text,
+   ? errorInfo about the 'error'  reference.#cddl-key-browsingcontextstopscreencastresult-error: text
 }
 
-browsingContext.TraverseHistoryResult = EmptyResult
+browsingContext.TraverseHistoryResultInfo about the 'browsingContext.TraverseHistoryResult'  reference.#cddl-type-browsingcontexttraversehistoryresultReferenced in:7.3.1. Definition  = EmptyResult
 
-browsingContext.ContextCreated = (
- method: "browsingContext.contextCreated",
- params: browsingContext.ContextCreatedParameters
+browsingContext.ContextCreatedInfo about the 'browsingContext.ContextCreated'  reference.#cddl-type-browsingcontextcontextcreatedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextcontextcreated-method: "browsingContext.contextCreated"Info about the '"browsingContext.contextCreated"'  reference.#cddl-value-browsingcontextcontextcreated-method-browsingcontextcontextcreated,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextcontextcreated-params: browsingContext.ContextCreatedParameters
 )
 
-browsingContext.ContextCreatedParameters = {
+browsingContext.ContextCreatedParametersInfo about the 'browsingContext.ContextCreatedParameters'  reference.#cddl-type-browsingcontextcontextcreatedparametersReferenced in:7.3.4.1. The browsingContext.contextCreated Event  = {
  browsingContext.BaseInfo,
- hasPlannedNavigation: bool,
+ hasPlannedNavigationInfo about the 'hasPlannedNavigation'  reference.#cddl-key-browsingcontextcontextcreatedparameters-hasplannednavigation: bool,
 }
 
-browsingContext.ContextDestroyed = (
- method: "browsingContext.contextDestroyed",
- params: browsingContext.Info
+browsingContext.ContextDestroyedInfo about the 'browsingContext.ContextDestroyed'  reference.#cddl-type-browsingcontextcontextdestroyedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextcontextdestroyed-method: "browsingContext.contextDestroyed"Info about the '"browsingContext.contextDestroyed"'  reference.#cddl-value-browsingcontextcontextdestroyed-method-browsingcontextcontextdestroyed,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextcontextdestroyed-params: browsingContext.Info
 )
 
-browsingContext.NavigationStarted = (
- method: "browsingContext.navigationStarted",
- params: browsingContext.NavigationInfo
+browsingContext.NavigationStartedInfo about the 'browsingContext.NavigationStarted'  reference.#cddl-type-browsingcontextnavigationstartedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextnavigationstarted-method: "browsingContext.navigationStarted"Info about the '"browsingContext.navigationStarted"'  reference.#cddl-value-browsingcontextnavigationstarted-method-browsingcontextnavigationstarted,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextnavigationstarted-params: browsingContext.NavigationInfo
 )
 
-browsingContext.FragmentNavigated = (
- method: "browsingContext.fragmentNavigated",
- params: browsingContext.NavigationInfo
+browsingContext.FragmentNavigatedInfo about the 'browsingContext.FragmentNavigated'  reference.#cddl-type-browsingcontextfragmentnavigatedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextfragmentnavigated-method: "browsingContext.fragmentNavigated"Info about the '"browsingContext.fragmentNavigated"'  reference.#cddl-value-browsingcontextfragmentnavigated-method-browsingcontextfragmentnavigated,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextfragmentnavigated-params: browsingContext.NavigationInfo
 )
 
-browsingContext.HistoryUpdated = (
-  method: "browsingContext.historyUpdated",
-  params: browsingContext.HistoryUpdatedParameters
+browsingContext.HistoryUpdatedInfo about the 'browsingContext.HistoryUpdated'  reference.#cddl-type-browsingcontexthistoryupdatedReferenced in:7.3.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-browsingcontexthistoryupdated-method: "browsingContext.historyUpdated"Info about the '"browsingContext.historyUpdated"'  reference.#cddl-value-browsingcontexthistoryupdated-method-browsingcontexthistoryupdated,
+  paramsInfo about the 'params'  reference.#cddl-key-browsingcontexthistoryupdated-params: browsingContext.HistoryUpdatedParameters
 )
 
-browsingContext.HistoryUpdatedParameters = {
-  context: browsingContext.BrowsingContext,
-  timestamp: js-uint,
-  url: text,
-  ? userContext: browser.UserContext
+browsingContext.HistoryUpdatedParametersInfo about the 'browsingContext.HistoryUpdatedParameters'  reference.#cddl-type-browsingcontexthistoryupdatedparametersReferenced in:7.3.4.5. The browsingContext.historyUpdated Event  = {
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontexthistoryupdatedparameters-context: browsingContext.BrowsingContext,
+  timestampInfo about the 'timestamp'  reference.#cddl-key-browsingcontexthistoryupdatedparameters-timestamp: js-uint,
+  urlInfo about the 'url'  reference.#cddl-key-browsingcontexthistoryupdatedparameters-url: text,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontexthistoryupdatedparameters-usercontext: browser.UserContext
 }
 
-browsingContext.DomContentLoaded = (
- method: "browsingContext.domContentLoaded",
- params: browsingContext.NavigationInfo
+browsingContext.DomContentLoadedInfo about the 'browsingContext.DomContentLoaded'  reference.#cddl-type-browsingcontextdomcontentloadedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextdomcontentloaded-method: "browsingContext.domContentLoaded"Info about the '"browsingContext.domContentLoaded"'  reference.#cddl-value-browsingcontextdomcontentloaded-method-browsingcontextdomcontentloaded,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextdomcontentloaded-params: browsingContext.NavigationInfo
 )
 
-browsingContext.Load = (
- method: "browsingContext.load",
- params: browsingContext.NavigationInfo
+browsingContext.LoadInfo about the 'browsingContext.Load'  reference.#cddl-type-browsingcontextloadReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextload-method: "browsingContext.load"Info about the '"browsingContext.load"'  reference.#cddl-value-browsingcontextload-method-browsingcontextload,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextload-params: browsingContext.NavigationInfo
 )
 
-browsingContext.DownloadWillBegin = (
- method: "browsingContext.downloadWillBegin",
- params: browsingContext.DownloadWillBeginParams
+browsingContext.DownloadWillBeginInfo about the 'browsingContext.DownloadWillBegin'  reference.#cddl-type-browsingcontextdownloadwillbeginReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextdownloadwillbegin-method: "browsingContext.downloadWillBegin"Info about the '"browsingContext.downloadWillBegin"'  reference.#cddl-value-browsingcontextdownloadwillbegin-method-browsingcontextdownloadwillbegin,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextdownloadwillbegin-params: browsingContext.DownloadWillBeginParams
 )
 
-browsingContext.DownloadWillBeginParams = {
-  download: browsingContext.Download,
-  suggestedFilename: text,
+browsingContext.DownloadWillBeginParamsInfo about the 'browsingContext.DownloadWillBeginParams'  reference.#cddl-type-browsingcontextdownloadwillbeginparamsReferenced in:7.3.4.8. The browsingContext.downloadWillBegin Event  = {
+  downloadInfo about the 'download'  reference.#cddl-key-browsingcontextdownloadwillbeginparams-download: browsingContext.Download,
+  suggestedFilenameInfo about the 'suggestedFilename'  reference.#cddl-key-browsingcontextdownloadwillbeginparams-suggestedfilename: text,
   browsingContext.BaseNavigationInfo
 }
 
-browsingContext.DownloadEnd = (
-  method: "browsingContext.downloadEnd",
-  params: browsingContext.DownloadEndParams
+browsingContext.DownloadEndInfo about the 'browsingContext.DownloadEnd'  reference.#cddl-type-browsingcontextdownloadendReferenced in:7.3.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-browsingcontextdownloadend-method: "browsingContext.downloadEnd"Info about the '"browsingContext.downloadEnd"'  reference.#cddl-value-browsingcontextdownloadend-method-browsingcontextdownloadend,
+  paramsInfo about the 'params'  reference.#cddl-key-browsingcontextdownloadend-params: browsingContext.DownloadEndParams
 )
 
-browsingContext.DownloadEndParams = {
+browsingContext.DownloadEndParamsInfo about the 'browsingContext.DownloadEndParams'  reference.#cddl-type-browsingcontextdownloadendparamsReferenced in:7.3.4.9. The browsingContext.downloadEnd Event  = {
   (
     browsingContext.DownloadCanceledParams //
     browsingContext.DownloadCompleteParams
   )
 }
 
-browsingContext.DownloadCanceledParams = (
-  status: "canceled",
-  download: browsingContext.Download,
+browsingContext.DownloadCanceledParamsInfo about the 'browsingContext.DownloadCanceledParams'  reference.#cddl-type-browsingcontextdownloadcanceledparamsReferenced in:7.3.4.9. The browsingContext.downloadEnd Event  = (
+  statusInfo about the 'status'  reference.#cddl-key-browsingcontextdownloadcanceledparams-status: "canceled"Info about the '"canceled"'  reference.#cddl-value-browsingcontextdownloadcanceledparams-status-canceled,
+  downloadInfo about the 'download'  reference.#cddl-key-browsingcontextdownloadcanceledparams-download: browsingContext.Download,
   browsingContext.BaseNavigationInfo
 )
 
-browsingContext.DownloadCompleteParams = (
-  status: "complete",
-  download: browsingContext.Download,
-  filepath: text / null,
+browsingContext.DownloadCompleteParamsInfo about the 'browsingContext.DownloadCompleteParams'  reference.#cddl-type-browsingcontextdownloadcompleteparamsReferenced in:7.3.4.9. The browsingContext.downloadEnd Event  = (
+  statusInfo about the 'status'  reference.#cddl-key-browsingcontextdownloadcompleteparams-status: "complete"Info about the '"complete"'  reference.#cddl-value-browsingcontextdownloadcompleteparams-status-complete,
+  downloadInfo about the 'download'  reference.#cddl-key-browsingcontextdownloadcompleteparams-download: browsingContext.Download,
+  filepathInfo about the 'filepath'  reference.#cddl-key-browsingcontextdownloadcompleteparams-filepath: text / null,
   browsingContext.BaseNavigationInfo
 )
 
-browsingContext.NavigationAborted = (
- method: "browsingContext.navigationAborted",
- params: browsingContext.NavigationInfo
+browsingContext.NavigationAbortedInfo about the 'browsingContext.NavigationAborted'  reference.#cddl-type-browsingcontextnavigationabortedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextnavigationaborted-method: "browsingContext.navigationAborted"Info about the '"browsingContext.navigationAborted"'  reference.#cddl-value-browsingcontextnavigationaborted-method-browsingcontextnavigationaborted,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextnavigationaborted-params: browsingContext.NavigationInfo
 )
 
-browsingContext.NavigationCommitted = (
- method: "browsingContext.navigationCommitted",
- params: browsingContext.NavigationInfo
+browsingContext.NavigationCommittedInfo about the 'browsingContext.NavigationCommitted'  reference.#cddl-type-browsingcontextnavigationcommittedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextnavigationcommitted-method: "browsingContext.navigationCommitted"Info about the '"browsingContext.navigationCommitted"'  reference.#cddl-value-browsingcontextnavigationcommitted-method-browsingcontextnavigationcommitted,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextnavigationcommitted-params: browsingContext.NavigationInfo
 )
 
-browsingContext.NavigationFailed = (
- method: "browsingContext.navigationFailed",
- params: browsingContext.NavigationInfo
+browsingContext.NavigationFailedInfo about the 'browsingContext.NavigationFailed'  reference.#cddl-type-browsingcontextnavigationfailedReferenced in:7.3.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-browsingcontextnavigationfailed-method: "browsingContext.navigationFailed"Info about the '"browsingContext.navigationFailed"'  reference.#cddl-value-browsingcontextnavigationfailed-method-browsingcontextnavigationfailed,
+ paramsInfo about the 'params'  reference.#cddl-key-browsingcontextnavigationfailed-params: browsingContext.NavigationInfo
 )
 
-browsingContext.UserPromptClosed = (
-  method: "browsingContext.userPromptClosed",
-  params: browsingContext.UserPromptClosedParameters
+browsingContext.UserPromptClosedInfo about the 'browsingContext.UserPromptClosed'  reference.#cddl-type-browsingcontextuserpromptclosedReferenced in:7.3.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-browsingcontextuserpromptclosed-method: "browsingContext.userPromptClosed"Info about the '"browsingContext.userPromptClosed"'  reference.#cddl-value-browsingcontextuserpromptclosed-method-browsingcontextuserpromptclosed,
+  paramsInfo about the 'params'  reference.#cddl-key-browsingcontextuserpromptclosed-params: browsingContext.UserPromptClosedParameters
 )
 
-browsingContext.UserPromptClosedParameters = {
-  context: browsingContext.BrowsingContext,
-  accepted: bool,
-  type: browsingContext.UserPromptType,
-  ? userContext: browser.UserContext,
-  ? userText: text
+browsingContext.UserPromptClosedParametersInfo about the 'browsingContext.UserPromptClosedParameters'  reference.#cddl-type-browsingcontextuserpromptclosedparametersReferenced in:7.3.4.13. The browsingContext.userPromptClosed Event  = {
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontextuserpromptclosedparameters-context: browsingContext.BrowsingContext,
+  acceptedInfo about the 'accepted'  reference.#cddl-key-browsingcontextuserpromptclosedparameters-accepted: bool,
+  typeInfo about the 'type'  reference.#cddl-key-browsingcontextuserpromptclosedparameters-type: browsingContext.UserPromptType,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontextuserpromptclosedparameters-usercontext: browser.UserContext,
+  ? userTextInfo about the 'userText'  reference.#cddl-key-browsingcontextuserpromptclosedparameters-usertext: text
 }
 
-browsingContext.UserPromptOpened = (
-  method: "browsingContext.userPromptOpened",
-  params: browsingContext.UserPromptOpenedParameters
+browsingContext.UserPromptOpenedInfo about the 'browsingContext.UserPromptOpened'  reference.#cddl-type-browsingcontextuserpromptopenedReferenced in:7.3.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-browsingcontextuserpromptopened-method: "browsingContext.userPromptOpened"Info about the '"browsingContext.userPromptOpened"'  reference.#cddl-value-browsingcontextuserpromptopened-method-browsingcontextuserpromptopened,
+  paramsInfo about the 'params'  reference.#cddl-key-browsingcontextuserpromptopened-params: browsingContext.UserPromptOpenedParameters
 )
 
-browsingContext.UserPromptOpenedParameters = {
-  context: browsingContext.BrowsingContext,
-  handler: session.UserPromptHandlerType,
-  message: text,
-  type: browsingContext.UserPromptType,
-  ? userContext: browser.UserContext,
-  ? defaultValue: text
+browsingContext.UserPromptOpenedParametersInfo about the 'browsingContext.UserPromptOpenedParameters'  reference.#cddl-type-browsingcontextuserpromptopenedparametersReferenced in:7.3.4.14. The browsingContext.userPromptOpened Event  = {
+  contextInfo about the 'context'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-context: browsingContext.BrowsingContext,
+  handlerInfo about the 'handler'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-handler: session.UserPromptHandlerType,
+  messageInfo about the 'message'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-message: text,
+  typeInfo about the 'type'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-type: browsingContext.UserPromptType,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-usercontext: browser.UserContext,
+  ? defaultValueInfo about the 'defaultValue'  reference.#cddl-key-browsingcontextuserpromptopenedparameters-defaultvalue: text
 }
 
-EmulationResult = (
+EmulationResultInfo about the 'EmulationResult'  reference.#cddl-type-emulationresultReferenced in:3.1. Definition  = (
   emulation.SetForcedColorsModeThemeOverrideResult /
   emulation.SetGeolocationOverrideResult /
   emulation.SetLocaleOverrideResult /
@@ -551,35 +551,35 @@ EmulationResult = (
   emulation.SetViewportMetaOverrideResult
 )
 
-emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
+emulation.SetForcedColorsModeThemeOverrideResultInfo about the 'emulation.SetForcedColorsModeThemeOverrideResult'  reference.#cddl-type-emulationsetforcedcolorsmodethemeoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetGeolocationOverrideResult = EmptyResult
+emulation.SetGeolocationOverrideResultInfo about the 'emulation.SetGeolocationOverrideResult'  reference.#cddl-type-emulationsetgeolocationoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetLocaleOverrideResult = EmptyResult
+emulation.SetLocaleOverrideResultInfo about the 'emulation.SetLocaleOverrideResult'  reference.#cddl-type-emulationsetlocaleoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetMediaFeaturesOverrideResult = EmptyResult
+emulation.SetMediaFeaturesOverrideResultInfo about the 'emulation.SetMediaFeaturesOverrideResult'  reference.#cddl-type-emulationsetmediafeaturesoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetNetworkConditionsResult = EmptyResult
+emulation.SetNetworkConditionsResultInfo about the 'emulation.SetNetworkConditionsResult'  reference.#cddl-type-emulationsetnetworkconditionsresult = EmptyResult
 
-emulation.SetScreenSettingsOverrideResult = EmptyResult
+emulation.SetScreenSettingsOverrideResultInfo about the 'emulation.SetScreenSettingsOverrideResult'  reference.#cddl-type-emulationsetscreensettingsoverrideresult = EmptyResult
 
-emulation.SetScreenOrientationOverrideResult = EmptyResult
+emulation.SetScreenOrientationOverrideResultInfo about the 'emulation.SetScreenOrientationOverrideResult'  reference.#cddl-type-emulationsetscreenorientationoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetUserAgentOverrideResult = EmptyResult
+emulation.SetUserAgentOverrideResultInfo about the 'emulation.SetUserAgentOverrideResult'  reference.#cddl-type-emulationsetuseragentoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetViewportMetaOverrideResult = EmptyResult
+emulation.SetViewportMetaOverrideResultInfo about the 'emulation.SetViewportMetaOverrideResult'  reference.#cddl-type-emulationsetviewportmetaoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetScriptingEnabledResult = EmptyResult
+emulation.SetScriptingEnabledResultInfo about the 'emulation.SetScriptingEnabledResult'  reference.#cddl-type-emulationsetscriptingenabledresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetScrollbarTypeOverrideResult = EmptyResult
+emulation.SetScrollbarTypeOverrideResultInfo about the 'emulation.SetScrollbarTypeOverrideResult'  reference.#cddl-type-emulationsetscrollbartypeoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetTextLayoutModeOverrideResult = EmptyResult
+emulation.SetTextLayoutModeOverrideResultInfo about the 'emulation.SetTextLayoutModeOverrideResult'  reference.#cddl-type-emulationsettextlayoutmodeoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetTimezoneOverrideResult = EmptyResult
+emulation.SetTimezoneOverrideResultInfo about the 'emulation.SetTimezoneOverrideResult'  reference.#cddl-type-emulationsettimezoneoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-emulation.SetTouchOverrideResult = EmptyResult
+emulation.SetTouchOverrideResultInfo about the 'emulation.SetTouchOverrideResult'  reference.#cddl-type-emulationsettouchoverrideresultReferenced in:7.4.1. Definition  = EmptyResult
 
-NetworkResult = (
+NetworkResultInfo about the 'NetworkResult'  reference.#cddl-type-networkresultReferenced in:3.1. Definition  = (
   network.AddDataCollectorResult /
   network.AddInterceptResult /
   network.ContinueRequestResult /
@@ -595,7 +595,7 @@ NetworkResult = (
   network.SetExtraHeadersResult
 )
 
-NetworkEvent = (
+NetworkEventInfo about the 'NetworkEvent'  reference.#cddl-type-networkeventReferenced in:3.1. Definition  = (
     network.AuthRequired //
     network.BeforeRequestSent //
     network.FetchError //
@@ -603,205 +603,205 @@ NetworkEvent = (
     network.ResponseStarted
 )
 
-network.AuthChallenge = {
-  scheme: text,
-  realm: text,
+network.AuthChallengeInfo about the 'network.AuthChallenge'  reference.#cddl-type-networkauthchallengeReferenced in:7.5.4.17. The network.ResponseData Type  = {
+  schemeInfo about the 'scheme'  reference.#cddl-key-networkauthchallenge-scheme: text,
+  realmInfo about the 'realm'  reference.#cddl-key-networkauthchallenge-realm: text,
 }
 
-network.BaseParameters = (
-    context: browsingContext.BrowsingContext / null,
-    isBlocked: bool,
-    navigation: browsingContext.Navigation / null,
-    redirectCount: js-uint,
-    request: network.RequestData,
-    timestamp: js-uint,
-    ? userContext: browser.UserContext / null,
-    ? intercepts: [+network.Intercept]
+network.BaseParametersInfo about the 'network.BaseParameters'  reference.#cddl-type-networkbaseparametersReferenced in:7.5.6.1. The network.authRequired Event 7.5.6.2. The network.beforeRequestSent Event 7.5.6.3. The network.fetchError Event 7.5.6.4. The network.responseCompleted Event 7.5.6.5. The network.responseStarted Event  = (
+    contextInfo about the 'context'  reference.#cddl-key-networkbaseparameters-context: browsingContext.BrowsingContext / null,
+    isBlockedInfo about the 'isBlocked'  reference.#cddl-key-networkbaseparameters-isblocked: bool,
+    navigationInfo about the 'navigation'  reference.#cddl-key-networkbaseparameters-navigation: browsingContext.Navigation / null,
+    redirectCountInfo about the 'redirectCount'  reference.#cddl-key-networkbaseparameters-redirectcount: js-uint,
+    requestInfo about the 'request'  reference.#cddl-key-networkbaseparameters-request: network.RequestData,
+    timestampInfo about the 'timestamp'  reference.#cddl-key-networkbaseparameters-timestamp: js-uint,
+    ? userContextInfo about the 'userContext'  reference.#cddl-key-networkbaseparameters-usercontext: browser.UserContext / null,
+    ? interceptsInfo about the 'intercepts'  reference.#cddl-key-networkbaseparameters-intercepts: [+network.Intercept]
 )
 
-network.BytesValue = network.StringValue / network.Base64Value;
+network.BytesValueInfo about the 'network.BytesValue'  reference.#cddl-type-networkbytesvalueReferenced in:7.5.4.7. The network.Cookie Type 7.5.4.8. The network.CookieHeader Type 7.5.4.11. The network.Header Type 7.5.4.18. The network.SetCookieHeader Type 7.5.5.3. The network.continueRequest Command 7.5.5.8. The network.getData Command 7.5.5.9. The network.provideResponse Command 7.7.3.1. The storage.getCookies Command 7.7.3.2. The storage.setCookie Command  = network.StringValue / network.Base64Value;
 
-network.StringValue = {
-  type: "string",
-  value: text,
+network.StringValueInfo about the 'network.StringValue'  reference.#cddl-type-networkstringvalueReferenced in:7.5.4.4. The network.BytesValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-networkstringvalue-type: "string"Info about the '"string"'  reference.#cddl-value-networkstringvalue-type-string,
+  valueInfo about the 'value'  reference.#cddl-key-networkstringvalue-value: text,
 }
 
-network.Base64Value = {
-  type: "base64",
-  value: text,
+network.Base64ValueInfo about the 'network.Base64Value'  reference.#cddl-type-networkbase64valueReferenced in:7.5.4.4. The network.BytesValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-networkbase64value-type: "base64"Info about the '"base64"'  reference.#cddl-value-networkbase64value-type-base64,
+  valueInfo about the 'value'  reference.#cddl-key-networkbase64value-value: text,
 }
 
-network.Collector = text
+network.CollectorInfo about the 'network.Collector'  reference.#cddl-type-networkcollectorReferenced in:7.5.5.1. The network.addDataCollector Command 7.5.5.6. The network.disownData Command 7.5.5.8. The network.getData Command 7.5.5.10. The network.removeDataCollector Command  = text
 
-network.CollectorType = "blob"
+network.CollectorTypeInfo about the 'network.CollectorType'  reference.#cddl-type-networkcollectortypeReferenced in:7.5.5.1. The network.addDataCollector Command  = "blob"Info about the '"blob"'  reference.#cddl-value-networkcollectortype-blob
 
-network.SameSite = "strict" / "lax" / "none" / "default"
+network.SameSiteInfo about the 'network.SameSite'  reference.#cddl-type-networksamesiteReferenced in:7.5.4.7. The network.Cookie Type 7.5.4.18. The network.SetCookieHeader Type 7.7.3.1. The storage.getCookies Command 7.7.3.2. The storage.setCookie Command  = "strict"Info about the '"strict"'  reference.#cddl-value-networksamesite-strict / "lax"Info about the '"lax"'  reference.#cddl-value-networksamesite-lax / "none"Info about the '"none"'  reference.#cddl-value-networksamesite-none / "default"Info about the '"default"'  reference.#cddl-value-networksamesite-default
 
-network.Cookie = {
-    name: text,
-    value: network.BytesValue,
-    domain: text,
-    path: text,
-    size: js-uint,
-    httpOnly: bool,
-    secure: bool,
-    sameSite: network.SameSite,
-    ? expiry: js-uint,
+network.CookieInfo about the 'network.Cookie'  reference.#cddl-type-networkcookieReferenced in:7.5.4.15. The network.RequestData Type 7.7.3.1. The storage.getCookies Command  = {
+    nameInfo about the 'name'  reference.#cddl-key-networkcookie-name: text,
+    valueInfo about the 'value'  reference.#cddl-key-networkcookie-value: network.BytesValue,
+    domainInfo about the 'domain'  reference.#cddl-key-networkcookie-domain: text,
+    pathInfo about the 'path'  reference.#cddl-key-networkcookie-path: text,
+    sizeInfo about the 'size'  reference.#cddl-key-networkcookie-size: js-uint,
+    httpOnlyInfo about the 'httpOnly'  reference.#cddl-key-networkcookie-httponly: bool,
+    secureInfo about the 'secure'  reference.#cddl-key-networkcookie-secure: bool,
+    sameSiteInfo about the 'sameSite'  reference.#cddl-key-networkcookie-samesite: network.SameSite,
+    ? expiryInfo about the 'expiry'  reference.#cddl-key-networkcookie-expiry: js-uint,
     Extensible,
 }
 
-network.DataType = "request" / "response"
+network.DataTypeInfo about the 'network.DataType'  reference.#cddl-type-networkdatatypeReferenced in:7.5.5.1. The network.addDataCollector Command 7.5.5.6. The network.disownData Command 7.5.5.8. The network.getData Command  = "request"Info about the '"request"'  reference.#cddl-value-networkdatatype-request / "response"Info about the '"response"'  reference.#cddl-value-networkdatatype-response
 
-network.FetchTimingInfo = {
-    timeOrigin: float,
-    requestTime: float,
-    redirectStart: float,
-    redirectEnd: float,
-    fetchStart: float,
-    dnsStart: float,
-    dnsEnd: float,
-    connectStart: float,
-    connectEnd: float,
-    tlsStart: float,
+network.FetchTimingInfoInfo about the 'network.FetchTimingInfo'  reference.#cddl-type-networkfetchtiminginfoReferenced in:7.5.4.15. The network.RequestData Type  = {
+    timeOriginInfo about the 'timeOrigin'  reference.#cddl-key-networkfetchtiminginfo-timeorigin: float,
+    requestTimeInfo about the 'requestTime'  reference.#cddl-key-networkfetchtiminginfo-requesttime: float,
+    redirectStartInfo about the 'redirectStart'  reference.#cddl-key-networkfetchtiminginfo-redirectstart: float,
+    redirectEndInfo about the 'redirectEnd'  reference.#cddl-key-networkfetchtiminginfo-redirectend: float,
+    fetchStartInfo about the 'fetchStart'  reference.#cddl-key-networkfetchtiminginfo-fetchstart: float,
+    dnsStartInfo about the 'dnsStart'  reference.#cddl-key-networkfetchtiminginfo-dnsstart: float,
+    dnsEndInfo about the 'dnsEnd'  reference.#cddl-key-networkfetchtiminginfo-dnsend: float,
+    connectStartInfo about the 'connectStart'  reference.#cddl-key-networkfetchtiminginfo-connectstart: float,
+    connectEndInfo about the 'connectEnd'  reference.#cddl-key-networkfetchtiminginfo-connectend: float,
+    tlsStartInfo about the 'tlsStart'  reference.#cddl-key-networkfetchtiminginfo-tlsstart: float,
 
-    requestStart: float,
-    responseStart: float,
+    requestStartInfo about the 'requestStart'  reference.#cddl-key-networkfetchtiminginfo-requeststart: float,
+    responseStartInfo about the 'responseStart'  reference.#cddl-key-networkfetchtiminginfo-responsestart: float,
 
-    responseEnd: float,
+    responseEndInfo about the 'responseEnd'  reference.#cddl-key-networkfetchtiminginfo-responseend: float,
 }
 
-network.Header = {
-  name: text,
-  value: network.BytesValue,
+network.HeaderInfo about the 'network.Header'  reference.#cddl-type-networkheaderReferenced in:7.5.4.15. The network.RequestData Type 7.5.4.17. The network.ResponseData Type 7.5.5.3. The network.continueRequest Command 7.5.5.4. The network.continueResponse Command 7.5.5.9. The network.provideResponse Command 7.5.5.13. The network.setExtraHeaders Command  = {
+  nameInfo about the 'name'  reference.#cddl-key-networkheader-name: text,
+  valueInfo about the 'value'  reference.#cddl-key-networkheader-value: network.BytesValue,
 }
 
-network.Initiator = {
-    ? columnNumber: js-uint,
-    ? lineNumber: js-uint,
-    ? request: network.Request,
-    ? stackTrace: script.StackTrace,
-    ? type: "parser" / "script" / "preflight" / "other"
+network.InitiatorInfo about the 'network.Initiator'  reference.#cddl-type-networkinitiatorReferenced in:7.5.6.2. The network.beforeRequestSent Event  = {
+    ? columnNumberInfo about the 'columnNumber'  reference.#cddl-key-networkinitiator-columnnumber: js-uint,
+    ? lineNumberInfo about the 'lineNumber'  reference.#cddl-key-networkinitiator-linenumber: js-uint,
+    ? requestInfo about the 'request'  reference.#cddl-key-networkinitiator-request: network.Request,
+    ? stackTraceInfo about the 'stackTrace'  reference.#cddl-key-networkinitiator-stacktrace: script.StackTrace,
+    ? typeInfo about the 'type'  reference.#cddl-key-networkinitiator-type: "parser"Info about the '"parser"'  reference.#cddl-value-networkinitiator-type-parser / "script"Info about the '"script"'  reference.#cddl-value-networkinitiator-type-script / "preflight"Info about the '"preflight"'  reference.#cddl-value-networkinitiator-type-preflight / "other"Info about the '"other"'  reference.#cddl-value-networkinitiator-type-other
 }
 
-network.Intercept = text
+network.InterceptInfo about the 'network.Intercept'  reference.#cddl-type-networkinterceptReferenced in:7.5.4.3. The network.BaseParameters Type 7.5.5.2. The network.addIntercept Command 7.5.5.11. The network.removeIntercept Command  = text
 
-network.Request = text;
+network.RequestInfo about the 'network.Request'  reference.#cddl-type-networkrequestReferenced in:7.5.4.12. The network.Initiator Type 7.5.4.15. The network.RequestData Type 7.5.5.3. The network.continueRequest Command 7.5.5.4. The network.continueResponse Command 7.5.5.5. The network.continueWithAuth Command 7.5.5.6. The network.disownData Command 7.5.5.7. The network.failRequest Command 7.5.5.8. The network.getData Command 7.5.5.9. The network.provideResponse Command  = text;
 
-network.RequestData = {
-    request: network.Request,
-    url: text,
-    method: text,
-    headers: [*network.Header],
-    cookies: [*network.Cookie],
-    headersSize: js-uint,
-    bodySize: js-uint / null,
-    destination: text,
-    initiatorType: text / null,
-    timings: network.FetchTimingInfo,
+network.RequestDataInfo about the 'network.RequestData'  reference.#cddl-type-networkrequestdataReferenced in:7.5.4.3. The network.BaseParameters Type  = {
+    requestInfo about the 'request'  reference.#cddl-key-networkrequestdata-request: network.Request,
+    urlInfo about the 'url'  reference.#cddl-key-networkrequestdata-url: text,
+    methodInfo about the 'method'  reference.#cddl-key-networkrequestdata-method: text,
+    headersInfo about the 'headers'  reference.#cddl-key-networkrequestdata-headers: [*network.Header],
+    cookiesInfo about the 'cookies'  reference.#cddl-key-networkrequestdata-cookies: [*network.Cookie],
+    headersSizeInfo about the 'headersSize'  reference.#cddl-key-networkrequestdata-headerssize: js-uint,
+    bodySizeInfo about the 'bodySize'  reference.#cddl-key-networkrequestdata-bodysize: js-uint / null,
+    destinationInfo about the 'destination'  reference.#cddl-key-networkrequestdata-destination: text,
+    initiatorTypeInfo about the 'initiatorType'  reference.#cddl-key-networkrequestdata-initiatortype: text / null,
+    timingsInfo about the 'timings'  reference.#cddl-key-networkrequestdata-timings: network.FetchTimingInfo,
 }
 
-network.ResponseContent = {
-    size: js-uint
+network.ResponseContentInfo about the 'network.ResponseContent'  reference.#cddl-type-networkresponsecontentReferenced in:7.5.4.17. The network.ResponseData Type  = {
+    sizeInfo about the 'size'  reference.#cddl-key-networkresponsecontent-size: js-uint
 }
 
-network.ResponseData = {
-    url: text,
-    protocol: text,
-    status: js-uint,
-    statusText: text,
-    fromCache: bool,
-    headers: [*network.Header],
-    mimeType: text,
-    bytesReceived: js-uint,
-    headersSize: js-uint / null,
-    bodySize: js-uint / null,
-    content: network.ResponseContent,
-    ?authChallenges: [*network.AuthChallenge],
+network.ResponseDataInfo about the 'network.ResponseData'  reference.#cddl-type-networkresponsedataReferenced in:7.5.6.1. The network.authRequired Event 7.5.6.4. The network.responseCompleted Event 7.5.6.5. The network.responseStarted Event  = {
+    urlInfo about the 'url'  reference.#cddl-key-networkresponsedata-url: text,
+    protocolInfo about the 'protocol'  reference.#cddl-key-networkresponsedata-protocol: text,
+    statusInfo about the 'status'  reference.#cddl-key-networkresponsedata-status: js-uint,
+    statusTextInfo about the 'statusText'  reference.#cddl-key-networkresponsedata-statustext: text,
+    fromCacheInfo about the 'fromCache'  reference.#cddl-key-networkresponsedata-fromcache: bool,
+    headersInfo about the 'headers'  reference.#cddl-key-networkresponsedata-headers: [*network.Header],
+    mimeTypeInfo about the 'mimeType'  reference.#cddl-key-networkresponsedata-mimetype: text,
+    bytesReceivedInfo about the 'bytesReceived'  reference.#cddl-key-networkresponsedata-bytesreceived: js-uint,
+    headersSizeInfo about the 'headersSize'  reference.#cddl-key-networkresponsedata-headerssize: js-uint / null,
+    bodySizeInfo about the 'bodySize'  reference.#cddl-key-networkresponsedata-bodysize: js-uint / null,
+    contentInfo about the 'content'  reference.#cddl-key-networkresponsedata-content: network.ResponseContent,
+    ?authChallengesInfo about the 'authChallenges'  reference.#cddl-key-networkresponsedata-authchallenges: [*network.AuthChallenge],
 }
 
-network.AddDataCollectorResult = {
-  collector: network.Collector
+network.AddDataCollectorResultInfo about the 'network.AddDataCollectorResult'  reference.#cddl-type-networkadddatacollectorresultReferenced in:7.5.1. Definition  = {
+  collectorInfo about the 'collector'  reference.#cddl-key-networkadddatacollectorresult-collector: network.Collector
 }
 
-network.AddInterceptResult = {
-  intercept: network.Intercept
+network.AddInterceptResultInfo about the 'network.AddInterceptResult'  reference.#cddl-type-networkaddinterceptresultReferenced in:7.5.1. Definition  = {
+  interceptInfo about the 'intercept'  reference.#cddl-key-networkaddinterceptresult-intercept: network.Intercept
 }
 
-network.ContinueRequestResult = EmptyResult
+network.ContinueRequestResultInfo about the 'network.ContinueRequestResult'  reference.#cddl-type-networkcontinuerequestresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.ContinueResponseResult = EmptyResult
+network.ContinueResponseResultInfo about the 'network.ContinueResponseResult'  reference.#cddl-type-networkcontinueresponseresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.ContinueWithAuthResult = EmptyResult
+network.ContinueWithAuthResultInfo about the 'network.ContinueWithAuthResult'  reference.#cddl-type-networkcontinuewithauthresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.DisownDataResult = EmptyResult
+network.DisownDataResultInfo about the 'network.DisownDataResult'  reference.#cddl-type-networkdisowndataresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.FailRequestResult = EmptyResult
+network.FailRequestResultInfo about the 'network.FailRequestResult'  reference.#cddl-type-networkfailrequestresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.GetDataResult = {
-  bytes: network.BytesValue,
+network.GetDataResultInfo about the 'network.GetDataResult'  reference.#cddl-type-networkgetdataresultReferenced in:7.5.1. Definition  = {
+  bytesInfo about the 'bytes'  reference.#cddl-key-networkgetdataresult-bytes: network.BytesValue,
 }
 
-network.ProvideResponseResult = EmptyResult
+network.ProvideResponseResultInfo about the 'network.ProvideResponseResult'  reference.#cddl-type-networkprovideresponseresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.RemoveDataCollectorResult = EmptyResult
+network.RemoveDataCollectorResultInfo about the 'network.RemoveDataCollectorResult'  reference.#cddl-type-networkremovedatacollectorresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.RemoveInterceptResult = EmptyResult
+network.RemoveInterceptResultInfo about the 'network.RemoveInterceptResult'  reference.#cddl-type-networkremoveinterceptresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.SetCacheBehaviorResult = EmptyResult
+network.SetCacheBehaviorResultInfo about the 'network.SetCacheBehaviorResult'  reference.#cddl-type-networksetcachebehaviorresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.SetExtraHeadersResult = EmptyResult
+network.SetExtraHeadersResultInfo about the 'network.SetExtraHeadersResult'  reference.#cddl-type-networksetextraheadersresultReferenced in:7.5.1. Definition  = EmptyResult
 
-network.AuthRequired = (
-  method: "network.authRequired",
-  params: network.AuthRequiredParameters
+network.AuthRequiredInfo about the 'network.AuthRequired'  reference.#cddl-type-networkauthrequiredReferenced in:7.5.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-networkauthrequired-method: "network.authRequired"Info about the '"network.authRequired"'  reference.#cddl-value-networkauthrequired-method-networkauthrequired,
+  paramsInfo about the 'params'  reference.#cddl-key-networkauthrequired-params: network.AuthRequiredParameters
 )
 
-network.AuthRequiredParameters = {
+network.AuthRequiredParametersInfo about the 'network.AuthRequiredParameters'  reference.#cddl-type-networkauthrequiredparametersReferenced in:7.5.6.1. The network.authRequired Event  = {
   network.BaseParameters,
-  response: network.ResponseData
+  responseInfo about the 'response'  reference.#cddl-key-networkauthrequiredparameters-response: network.ResponseData
 }
 
-network.BeforeRequestSent = (
-  method: "network.beforeRequestSent",
-  params: network.BeforeRequestSentParameters
+network.BeforeRequestSentInfo about the 'network.BeforeRequestSent'  reference.#cddl-type-networkbeforerequestsentReferenced in:7.5.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-networkbeforerequestsent-method: "network.beforeRequestSent"Info about the '"network.beforeRequestSent"'  reference.#cddl-value-networkbeforerequestsent-method-networkbeforerequestsent,
+  paramsInfo about the 'params'  reference.#cddl-key-networkbeforerequestsent-params: network.BeforeRequestSentParameters
  )
 
-network.BeforeRequestSentParameters = {
+network.BeforeRequestSentParametersInfo about the 'network.BeforeRequestSentParameters'  reference.#cddl-type-networkbeforerequestsentparametersReferenced in:7.5.6.2. The network.beforeRequestSent Event  = {
   network.BaseParameters,
-  ? initiator: network.Initiator,
+  ? initiatorInfo about the 'initiator'  reference.#cddl-key-networkbeforerequestsentparameters-initiator: network.Initiator,
 }
 
-network.FetchError = (
-  method: "network.fetchError",
-  params: network.FetchErrorParameters
+network.FetchErrorInfo about the 'network.FetchError'  reference.#cddl-type-networkfetcherrorReferenced in:7.5.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-networkfetcherror-method: "network.fetchError"Info about the '"network.fetchError"'  reference.#cddl-value-networkfetcherror-method-networkfetcherror,
+  paramsInfo about the 'params'  reference.#cddl-key-networkfetcherror-params: network.FetchErrorParameters
  )
 
-network.FetchErrorParameters = {
+network.FetchErrorParametersInfo about the 'network.FetchErrorParameters'  reference.#cddl-type-networkfetcherrorparametersReferenced in:7.5.6.3. The network.fetchError Event  = {
   network.BaseParameters,
-  errorText: text,
+  errorTextInfo about the 'errorText'  reference.#cddl-key-networkfetcherrorparameters-errortext: text,
 }
 
-network.ResponseCompleted = (
-  method: "network.responseCompleted",
-  params: network.ResponseCompletedParameters
+network.ResponseCompletedInfo about the 'network.ResponseCompleted'  reference.#cddl-type-networkresponsecompletedReferenced in:7.5.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-networkresponsecompleted-method: "network.responseCompleted"Info about the '"network.responseCompleted"'  reference.#cddl-value-networkresponsecompleted-method-networkresponsecompleted,
+  paramsInfo about the 'params'  reference.#cddl-key-networkresponsecompleted-params: network.ResponseCompletedParameters
  )
 
-network.ResponseCompletedParameters = {
+network.ResponseCompletedParametersInfo about the 'network.ResponseCompletedParameters'  reference.#cddl-type-networkresponsecompletedparametersReferenced in:7.5.6.4. The network.responseCompleted Event  = {
   network.BaseParameters,
-  response: network.ResponseData,
+  responseInfo about the 'response'  reference.#cddl-key-networkresponsecompletedparameters-response: network.ResponseData,
 }
 
-network.ResponseStarted = (
-  method: "network.responseStarted",
-  params: network.ResponseStartedParameters
+network.ResponseStartedInfo about the 'network.ResponseStarted'  reference.#cddl-type-networkresponsestartedReferenced in:7.5.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-networkresponsestarted-method: "network.responseStarted"Info about the '"network.responseStarted"'  reference.#cddl-value-networkresponsestarted-method-networkresponsestarted,
+  paramsInfo about the 'params'  reference.#cddl-key-networkresponsestarted-params: network.ResponseStartedParameters
  )
 
-network.ResponseStartedParameters = {
+network.ResponseStartedParametersInfo about the 'network.ResponseStartedParameters'  reference.#cddl-type-networkresponsestartedparametersReferenced in:7.5.6.5. The network.responseStarted Event  = {
   network.BaseParameters,
-  response: network.ResponseData,
+  responseInfo about the 'response'  reference.#cddl-key-networkresponsestartedparameters-response: network.ResponseData,
 }
 
-ScriptResult = (
+ScriptResultInfo about the 'ScriptResult'  reference.#cddl-type-scriptresultReferenced in:3.1. Definition  = (
   script.AddPreloadScriptResult /
   script.CallFunctionResult /
   script.DisownResult /
@@ -810,55 +810,55 @@ ScriptResult = (
   script.RemovePreloadScriptResult
 )
 
-ScriptEvent = (
+ScriptEventInfo about the 'ScriptEvent'  reference.#cddl-type-scripteventReferenced in:3.1. Definition  = (
   script.Message //
   script.RealmCreated //
   script.RealmDestroyed
 )
 
-script.Channel = text;
+script.ChannelInfo about the 'script.Channel'  reference.#cddl-type-scriptchannelReferenced in:7.6.3.2. The script.ChannelValue Type 7.6.5.1. The script.message Event  = text;
 
-script.ChannelValue = {
-  type: "channel",
-  value: script.ChannelProperties,
+script.ChannelValueInfo about the 'script.ChannelValue'  reference.#cddl-type-scriptchannelvalueReferenced in:7.6.3.7. The script.LocalValue Type 7.6.4.1. The script.addPreloadScript Command  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptchannelvalue-type: "channel"Info about the '"channel"'  reference.#cddl-value-scriptchannelvalue-type-channel,
+  valueInfo about the 'value'  reference.#cddl-key-scriptchannelvalue-value: script.ChannelProperties,
 }
 
-script.ChannelProperties = {
-  channel: script.Channel,
-  ? serializationOptions: script.SerializationOptions,
-  ? ownership: script.ResultOwnership,
+script.ChannelPropertiesInfo about the 'script.ChannelProperties'  reference.#cddl-type-scriptchannelpropertiesReferenced in:7.6.3.2. The script.ChannelValue Type  = {
+  channelInfo about the 'channel'  reference.#cddl-key-scriptchannelproperties-channel: script.Channel,
+  ? serializationOptionsInfo about the 'serializationOptions'  reference.#cddl-key-scriptchannelproperties-serializationoptions: script.SerializationOptions,
+  ? ownershipInfo about the 'ownership'  reference.#cddl-key-scriptchannelproperties-ownership: script.ResultOwnership,
 }
 
-script.EvaluationResult = (
+script.EvaluationResultInfo about the 'script.EvaluationResult'  reference.#cddl-type-scriptevaluationresultReferenced in:7.6.4.3. The script.callFunction Command 7.6.4.4. The script.evaluate Command  = (
   script.EvaluationResultSuccess /
   script.EvaluationResultException
 )
 
-script.EvaluationResultSuccess = {
-  type: "success",
-  result: script.RemoteValue,
-  realm: script.Realm
+script.EvaluationResultSuccessInfo about the 'script.EvaluationResultSuccess'  reference.#cddl-type-scriptevaluationresultsuccessReferenced in:7.6.3.3. The script.EvaluationResult Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptevaluationresultsuccess-type: "success"Info about the '"success"'  reference.#cddl-value-scriptevaluationresultsuccess-type-success,
+  resultInfo about the 'result'  reference.#cddl-key-scriptevaluationresultsuccess-result: script.RemoteValue,
+  realmInfo about the 'realm'  reference.#cddl-key-scriptevaluationresultsuccess-realm: script.Realm
 }
 
-script.EvaluationResultException = {
-  type: "exception",
-  exceptionDetails: script.ExceptionDetails
-  realm: script.Realm
+script.EvaluationResultExceptionInfo about the 'script.EvaluationResultException'  reference.#cddl-type-scriptevaluationresultexceptionReferenced in:7.6.3.3. The script.EvaluationResult Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptevaluationresultexception-type: "exception"Info about the '"exception"'  reference.#cddl-value-scriptevaluationresultexception-type-exception,
+  exceptionDetailsInfo about the 'exceptionDetails'  reference.#cddl-key-scriptevaluationresultexception-exceptiondetails: script.ExceptionDetails
+  realmInfo about the 'realm'  reference.#cddl-key-scriptevaluationresultexception-realm: script.Realm
 }
 
-script.ExceptionDetails = {
-  columnNumber: js-uint,
-  exception: script.RemoteValue,
-  lineNumber: js-uint,
-  stackTrace: script.StackTrace,
-  text: text,
+script.ExceptionDetailsInfo about the 'script.ExceptionDetails'  reference.#cddl-type-scriptexceptiondetailsReferenced in:7.6.3.3. The script.EvaluationResult Type  = {
+  columnNumberInfo about the 'columnNumber'  reference.#cddl-key-scriptexceptiondetails-columnnumber: js-uint,
+  exceptionInfo about the 'exception'  reference.#cddl-key-scriptexceptiondetails-exception: script.RemoteValue,
+  lineNumberInfo about the 'lineNumber'  reference.#cddl-key-scriptexceptiondetails-linenumber: js-uint,
+  stackTraceInfo about the 'stackTrace'  reference.#cddl-key-scriptexceptiondetails-stacktrace: script.StackTrace,
+  textInfo about the 'text'  reference.#cddl-key-scriptexceptiondetails-text: text,
 }
 
-script.Handle = text;
+script.HandleInfo about the 'script.Handle'  reference.#cddl-type-scripthandleReferenced in:7.6.3.13. The script.RemoteReference Type (2) 7.6.3.14. The script.RemoteValue Type (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) 7.6.4.2. The script.disown Command  = text;
 
-script.InternalId = text;
+script.InternalIdInfo about the 'script.InternalId'  reference.#cddl-type-scriptinternalidReferenced in:7.6.3.14. The script.RemoteValue Type (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20)  = text;
 
-script.LocalValue = (
+script.LocalValueInfo about the 'script.LocalValue'  reference.#cddl-type-scriptlocalvalueReferenced in:7.6.3.7. The script.LocalValue Type (2) (3) 7.6.4.3. The script.callFunction Command (2)  = (
   script.RemoteReference /
   script.PrimitiveProtocolValue /
   script.ChannelValue /
@@ -870,50 +870,50 @@ script.LocalValue = (
   script.SetLocalValue
 )
 
-script.ListLocalValue = [*script.LocalValue];
+script.ListLocalValueInfo about the 'script.ListLocalValue'  reference.#cddl-type-scriptlistlocalvalueReferenced in:7.6.3.7. The script.LocalValue Type (2)  = [*script.LocalValue];
 
-script.ArrayLocalValue = {
-  type: "array",
-  value: script.ListLocalValue,
+script.ArrayLocalValueInfo about the 'script.ArrayLocalValue'  reference.#cddl-type-scriptarraylocalvalueReferenced in:7.6.3.7. The script.LocalValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptarraylocalvalue-type: "array"Info about the '"array"'  reference.#cddl-value-scriptarraylocalvalue-type-array,
+  valueInfo about the 'value'  reference.#cddl-key-scriptarraylocalvalue-value: script.ListLocalValue,
 }
 
-script.DateLocalValue = (
-  type: "date",
-  value: text
+script.DateLocalValueInfo about the 'script.DateLocalValue'  reference.#cddl-type-scriptdatelocalvalueReferenced in:7.6.3.7. The script.LocalValue Type 7.6.3.14. The script.RemoteValue Type  = (
+  typeInfo about the 'type'  reference.#cddl-key-scriptdatelocalvalue-type: "date"Info about the '"date"'  reference.#cddl-value-scriptdatelocalvalue-type-date,
+  valueInfo about the 'value'  reference.#cddl-key-scriptdatelocalvalue-value: text
 )
 
-script.MappingLocalValue = [*[(script.LocalValue / text), script.LocalValue]];
+script.MappingLocalValueInfo about the 'script.MappingLocalValue'  reference.#cddl-type-scriptmappinglocalvalueReferenced in:7.6.3.7. The script.LocalValue Type (2)  = [*[(script.LocalValue / text), script.LocalValue]];
 
-script.MapLocalValue = {
-  type: "map",
-  value: script.MappingLocalValue,
+script.MapLocalValueInfo about the 'script.MapLocalValue'  reference.#cddl-type-scriptmaplocalvalueReferenced in:7.6.3.7. The script.LocalValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptmaplocalvalue-type: "map"Info about the '"map"'  reference.#cddl-value-scriptmaplocalvalue-type-map,
+  valueInfo about the 'value'  reference.#cddl-key-scriptmaplocalvalue-value: script.MappingLocalValue,
 }
 
-script.ObjectLocalValue = {
-  type: "object",
-  value: script.MappingLocalValue,
+script.ObjectLocalValueInfo about the 'script.ObjectLocalValue'  reference.#cddl-type-scriptobjectlocalvalueReferenced in:7.6.3.7. The script.LocalValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptobjectlocalvalue-type: "object"Info about the '"object"'  reference.#cddl-value-scriptobjectlocalvalue-type-object,
+  valueInfo about the 'value'  reference.#cddl-key-scriptobjectlocalvalue-value: script.MappingLocalValue,
 }
 
-script.RegExpValue = {
-  pattern: text,
-  ? flags: text,
+script.RegExpValueInfo about the 'script.RegExpValue'  reference.#cddl-type-scriptregexpvalueReferenced in:7.6.3.7. The script.LocalValue Type  = {
+  patternInfo about the 'pattern'  reference.#cddl-key-scriptregexpvalue-pattern: text,
+  ? flagsInfo about the 'flags'  reference.#cddl-key-scriptregexpvalue-flags: text,
 }
 
-script.RegExpLocalValue = (
-  type: "regexp",
-  value: script.RegExpValue,
+script.RegExpLocalValueInfo about the 'script.RegExpLocalValue'  reference.#cddl-type-scriptregexplocalvalueReferenced in:7.6.3.7. The script.LocalValue Type 7.6.3.14. The script.RemoteValue Type  = (
+  typeInfo about the 'type'  reference.#cddl-key-scriptregexplocalvalue-type: "regexp"Info about the '"regexp"'  reference.#cddl-value-scriptregexplocalvalue-type-regexp,
+  valueInfo about the 'value'  reference.#cddl-key-scriptregexplocalvalue-value: script.RegExpValue,
 )
 
-script.SetLocalValue = {
-  type: "set",
-  value: script.ListLocalValue,
+script.SetLocalValueInfo about the 'script.SetLocalValue'  reference.#cddl-type-scriptsetlocalvalueReferenced in:7.6.3.7. The script.LocalValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptsetlocalvalue-type: "set"Info about the '"set"'  reference.#cddl-value-scriptsetlocalvalue-type-set,
+  valueInfo about the 'value'  reference.#cddl-key-scriptsetlocalvalue-value: script.ListLocalValue,
 }
 
-script.PreloadScript = text;
+script.PreloadScriptInfo about the 'script.PreloadScript'  reference.#cddl-type-scriptpreloadscriptReferenced in:7.6.4.1. The script.addPreloadScript Command 7.6.4.6. The script.removePreloadScript Command  = text;
 
-script.Realm = text;
+script.RealmInfo about the 'script.Realm'  reference.#cddl-type-scriptrealmReferenced in:7.6.3.3. The script.EvaluationResult Type (2) 7.6.3.11. The script.RealmInfo Type (2) 7.6.3.20. The script.Source Type 7.6.3.21. The script.Target Type 7.6.5.3. The script.realmDestroyed Event  = text;
 
-script.PrimitiveProtocolValue = (
+script.PrimitiveProtocolValueInfo about the 'script.PrimitiveProtocolValue'  reference.#cddl-type-scriptprimitiveprotocolvalueReferenced in:7.6.3.7. The script.LocalValue Type 7.6.3.14. The script.RemoteValue Type  = (
   script.UndefinedValue /
   script.NullValue /
   script.StringValue /
@@ -922,37 +922,37 @@ script.PrimitiveProtocolValue = (
   script.BigIntValue
 )
 
-script.UndefinedValue = {
-  type: "undefined",
+script.UndefinedValueInfo about the 'script.UndefinedValue'  reference.#cddl-type-scriptundefinedvalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptundefinedvalue-type: "undefined"Info about the '"undefined"'  reference.#cddl-value-scriptundefinedvalue-type-undefined,
 }
 
-script.NullValue = {
-  type: "null",
+script.NullValueInfo about the 'script.NullValue'  reference.#cddl-type-scriptnullvalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptnullvalue-type: "null"Info about the '"null"'  reference.#cddl-value-scriptnullvalue-type-null,
 }
 
-script.StringValue = {
-  type: "string",
-  value: text,
+script.StringValueInfo about the 'script.StringValue'  reference.#cddl-type-scriptstringvalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptstringvalue-type: "string"Info about the '"string"'  reference.#cddl-value-scriptstringvalue-type-string,
+  valueInfo about the 'value'  reference.#cddl-key-scriptstringvalue-value: text,
 }
 
-script.SpecialNumber = "NaN" / "-0" / "Infinity" / "-Infinity";
+script.SpecialNumberInfo about the 'script.SpecialNumber'  reference.#cddl-type-scriptspecialnumberReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = "NaN"Info about the '"NaN"'  reference.#cddl-value-scriptspecialnumber-nan / "-0"Info about the '"-0"'  reference.#cddl-value-scriptspecialnumber--0 / "Infinity"Info about the '"Infinity"'  reference.#cddl-value-scriptspecialnumber-infinity / "-Infinity"Info about the '"-Infinity"'  reference.#cddl-value-scriptspecialnumber--infinity;
 
-script.NumberValue = {
-  type: "number",
-  value: number / script.SpecialNumber,
+script.NumberValueInfo about the 'script.NumberValue'  reference.#cddl-type-scriptnumbervalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptnumbervalue-type: "number"Info about the '"number"'  reference.#cddl-value-scriptnumbervalue-type-number,
+  valueInfo about the 'value'  reference.#cddl-key-scriptnumbervalue-value: number / script.SpecialNumber,
 }
 
-script.BooleanValue = {
-  type: "boolean",
-  value: bool,
+script.BooleanValueInfo about the 'script.BooleanValue'  reference.#cddl-type-scriptbooleanvalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptbooleanvalue-type: "boolean"Info about the '"boolean"'  reference.#cddl-value-scriptbooleanvalue-type-boolean,
+  valueInfo about the 'value'  reference.#cddl-key-scriptbooleanvalue-value: bool,
 }
 
-script.BigIntValue = {
-  type: "bigint",
-  value: text,
+script.BigIntValueInfo about the 'script.BigIntValue'  reference.#cddl-type-scriptbigintvalueReferenced in:7.6.3.10. The script.PrimitiveProtocolValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptbigintvalue-type: "bigint"Info about the '"bigint"'  reference.#cddl-value-scriptbigintvalue-type-bigint,
+  valueInfo about the 'value'  reference.#cddl-key-scriptbigintvalue-value: text,
 }
 
-script.RealmInfo = (
+script.RealmInfoInfo about the 'script.RealmInfo'  reference.#cddl-type-scriptrealminfoReferenced in:7.6.4.5. The script.getRealms Command 7.6.5.2. The script.realmCreated Event  = (
   script.WindowRealmInfo /
   script.DedicatedWorkerRealmInfo /
   script.SharedWorkerRealmInfo /
@@ -963,78 +963,78 @@ script.RealmInfo = (
   script.WorkletRealmInfo
 )
 
-script.BaseRealmInfo = (
-  realm: script.Realm,
-  origin: text
+script.BaseRealmInfoInfo about the 'script.BaseRealmInfo'  reference.#cddl-type-scriptbaserealminfoReferenced in:7.6.3.11. The script.RealmInfo Type (2) (3) (4) (5) (6) (7) (8)  = (
+  realmInfo about the 'realm'  reference.#cddl-key-scriptbaserealminfo-realm: script.Realm,
+  originInfo about the 'origin'  reference.#cddl-key-scriptbaserealminfo-origin: text
 )
 
-script.WindowRealmInfo = {
+script.WindowRealmInfoInfo about the 'script.WindowRealmInfo'  reference.#cddl-type-scriptwindowrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "window",
-  context: browsingContext.BrowsingContext,
-  ? userContext: browser.UserContext,
-  ? sandbox: text
+  typeInfo about the 'type'  reference.#cddl-key-scriptwindowrealminfo-type: "window"Info about the '"window"'  reference.#cddl-value-scriptwindowrealminfo-type-window,
+  contextInfo about the 'context'  reference.#cddl-key-scriptwindowrealminfo-context: browsingContext.BrowsingContext,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-scriptwindowrealminfo-usercontext: browser.UserContext,
+  ? sandboxInfo about the 'sandbox'  reference.#cddl-key-scriptwindowrealminfo-sandbox: text
 }
 
-script.DedicatedWorkerRealmInfo = {
+script.DedicatedWorkerRealmInfoInfo about the 'script.DedicatedWorkerRealmInfo'  reference.#cddl-type-scriptdedicatedworkerrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "dedicated-worker",
-  owners: [script.Realm]
+  typeInfo about the 'type'  reference.#cddl-key-scriptdedicatedworkerrealminfo-type: "dedicated-worker"Info about the '"dedicated-worker"'  reference.#cddl-value-scriptdedicatedworkerrealminfo-type-dedicated-worker,
+  ownersInfo about the 'owners'  reference.#cddl-key-scriptdedicatedworkerrealminfo-owners: [script.Realm]
 }
 
-script.SharedWorkerRealmInfo = {
+script.SharedWorkerRealmInfoInfo about the 'script.SharedWorkerRealmInfo'  reference.#cddl-type-scriptsharedworkerrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "shared-worker"
+  typeInfo about the 'type'  reference.#cddl-key-scriptsharedworkerrealminfo-type: "shared-worker"Info about the '"shared-worker"'  reference.#cddl-value-scriptsharedworkerrealminfo-type-shared-worker
 }
 
-script.ServiceWorkerRealmInfo = {
+script.ServiceWorkerRealmInfoInfo about the 'script.ServiceWorkerRealmInfo'  reference.#cddl-type-scriptserviceworkerrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "service-worker"
+  typeInfo about the 'type'  reference.#cddl-key-scriptserviceworkerrealminfo-type: "service-worker"Info about the '"service-worker"'  reference.#cddl-value-scriptserviceworkerrealminfo-type-service-worker
 }
 
-script.WorkerRealmInfo = {
+script.WorkerRealmInfoInfo about the 'script.WorkerRealmInfo'  reference.#cddl-type-scriptworkerrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "worker"
+  typeInfo about the 'type'  reference.#cddl-key-scriptworkerrealminfo-type: "worker"Info about the '"worker"'  reference.#cddl-value-scriptworkerrealminfo-type-worker
 }
 
-script.PaintWorkletRealmInfo = {
+script.PaintWorkletRealmInfoInfo about the 'script.PaintWorkletRealmInfo'  reference.#cddl-type-scriptpaintworkletrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "paint-worklet"
+  typeInfo about the 'type'  reference.#cddl-key-scriptpaintworkletrealminfo-type: "paint-worklet"Info about the '"paint-worklet"'  reference.#cddl-value-scriptpaintworkletrealminfo-type-paint-worklet
 }
 
-script.AudioWorkletRealmInfo = {
+script.AudioWorkletRealmInfoInfo about the 'script.AudioWorkletRealmInfo'  reference.#cddl-type-scriptaudioworkletrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "audio-worklet"
+  typeInfo about the 'type'  reference.#cddl-key-scriptaudioworkletrealminfo-type: "audio-worklet"Info about the '"audio-worklet"'  reference.#cddl-value-scriptaudioworkletrealminfo-type-audio-worklet
 }
 
-script.WorkletRealmInfo = {
+script.WorkletRealmInfoInfo about the 'script.WorkletRealmInfo'  reference.#cddl-type-scriptworkletrealminfoReferenced in:7.6.3.11. The script.RealmInfo Type  = {
   script.BaseRealmInfo,
-  type: "worklet"
+  typeInfo about the 'type'  reference.#cddl-key-scriptworkletrealminfo-type: "worklet"Info about the '"worklet"'  reference.#cddl-value-scriptworkletrealminfo-type-worklet
 }
 
-script.RealmType = "window" / "dedicated-worker" / "shared-worker" / "service-worker" /
-"worker" / "paint-worklet" / "audio-worklet" / "worklet"
+script.RealmTypeInfo about the 'script.RealmType'  reference.#cddl-type-scriptrealmtypeReferenced in:7.6.4.5. The script.getRealms Command  = "window"Info about the '"window"'  reference.#cddl-value-scriptrealmtype-window / "dedicated-worker"Info about the '"dedicated-worker"'  reference.#cddl-value-scriptrealmtype-dedicated-worker / "shared-worker"Info about the '"shared-worker"'  reference.#cddl-value-scriptrealmtype-shared-worker / "service-worker"Info about the '"service-worker"'  reference.#cddl-value-scriptrealmtype-service-worker /
+"worker"Info about the '"worker"'  reference.#cddl-value-scriptrealmtype-worker / "paint-worklet"Info about the '"paint-worklet"'  reference.#cddl-value-scriptrealmtype-paint-worklet / "audio-worklet"Info about the '"audio-worklet"'  reference.#cddl-value-scriptrealmtype-audio-worklet / "worklet"Info about the '"worklet"'  reference.#cddl-value-scriptrealmtype-worklet
 
-script.RemoteReference = (
+script.RemoteReferenceInfo about the 'script.RemoteReference'  reference.#cddl-type-scriptremotereferenceReferenced in:7.6.3.7. The script.LocalValue Type  = (
   script.SharedReference /
   script.RemoteObjectReference
 )
 
-script.SharedReference = {
-   sharedId: script.SharedId
+script.SharedReferenceInfo about the 'script.SharedReference'  reference.#cddl-type-scriptsharedreferenceReferenced in:7.3.3.2. The browsingContext.captureScreenshot Command 7.3.3.7. The browsingContext.locateNodes Command 7.6.3.13. The script.RemoteReference Type 7.9.2.1. input.ElementOrigin 7.9.3.3. The input.setFiles Command 7.9.4.1. The input.fileDialogOpened Event  = {
+   sharedIdInfo about the 'sharedId'  reference.#cddl-key-scriptsharedreference-sharedid: script.SharedId
 
-   ? handle: script.Handle,
+   ? handleInfo about the 'handle'  reference.#cddl-key-scriptsharedreference-handle: script.Handle,
    Extensible
 }
 
-script.RemoteObjectReference = {
-   handle: script.Handle,
+script.RemoteObjectReferenceInfo about the 'script.RemoteObjectReference'  reference.#cddl-type-scriptremoteobjectreferenceReferenced in:7.6.3.13. The script.RemoteReference Type  = {
+   handleInfo about the 'handle'  reference.#cddl-key-scriptremoteobjectreference-handle: script.Handle,
 
-   ? sharedId: script.SharedId
+   ? sharedIdInfo about the 'sharedId'  reference.#cddl-key-scriptremoteobjectreference-sharedid: script.SharedId
    Extensible
 }
 
-script.RemoteValue = (
+script.RemoteValueInfo about the 'script.RemoteValue'  reference.#cddl-type-scriptremotevalueReferenced in:7.6.3.3. The script.EvaluationResult Type 7.6.3.4. The script.ExceptionDetails Type 7.6.3.14. The script.RemoteValue Type (2) (3) 7.6.5.1. The script.message Event 7.8.2.1. log.LogEntry  = (
   script.PrimitiveProtocolValue /
   script.SymbolRemoteValue /
   script.ArrayRemoteValue /
@@ -1058,327 +1058,327 @@ script.RemoteValue = (
   script.WindowProxyRemoteValue
 )
 
-script.ListRemoteValue = [*script.RemoteValue];
+script.ListRemoteValueInfo about the 'script.ListRemoteValue'  reference.#cddl-type-scriptlistremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type (2) (3) (4)  = [*script.RemoteValue];
 
-script.MappingRemoteValue = [*[(script.RemoteValue / text), script.RemoteValue]];
+script.MappingRemoteValueInfo about the 'script.MappingRemoteValue'  reference.#cddl-type-scriptmappingremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type (2)  = [*[(script.RemoteValue / text), script.RemoteValue]];
 
-script.SymbolRemoteValue = {
-  type: "symbol",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.SymbolRemoteValueInfo about the 'script.SymbolRemoteValue'  reference.#cddl-type-scriptsymbolremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptsymbolremotevalue-type: "symbol"Info about the '"symbol"'  reference.#cddl-value-scriptsymbolremotevalue-type-symbol,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptsymbolremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptsymbolremotevalue-internalid: script.InternalId,
 }
 
-script.ArrayRemoteValue = {
-  type: "array",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.ListRemoteValue,
+script.ArrayRemoteValueInfo about the 'script.ArrayRemoteValue'  reference.#cddl-type-scriptarrayremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptarrayremotevalue-type: "array"Info about the '"array"'  reference.#cddl-value-scriptarrayremotevalue-type-array,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptarrayremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptarrayremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptarrayremotevalue-value: script.ListRemoteValue,
 }
 
-script.ObjectRemoteValue = {
-  type: "object",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.MappingRemoteValue,
+script.ObjectRemoteValueInfo about the 'script.ObjectRemoteValue'  reference.#cddl-type-scriptobjectremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptobjectremotevalue-type: "object"Info about the '"object"'  reference.#cddl-value-scriptobjectremotevalue-type-object,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptobjectremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptobjectremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptobjectremotevalue-value: script.MappingRemoteValue,
 }
 
-script.FunctionRemoteValue = {
-  type: "function",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.FunctionRemoteValueInfo about the 'script.FunctionRemoteValue'  reference.#cddl-type-scriptfunctionremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptfunctionremotevalue-type: "function"Info about the '"function"'  reference.#cddl-value-scriptfunctionremotevalue-type-function,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptfunctionremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptfunctionremotevalue-internalid: script.InternalId,
 }
 
-script.RegExpRemoteValue = {
+script.RegExpRemoteValueInfo about the 'script.RegExpRemoteValue'  reference.#cddl-type-scriptregexpremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
   script.RegExpLocalValue,
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptregexpremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptregexpremotevalue-internalid: script.InternalId,
 }
 
-script.DateRemoteValue = {
+script.DateRemoteValueInfo about the 'script.DateRemoteValue'  reference.#cddl-type-scriptdateremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
   script.DateLocalValue,
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptdateremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptdateremotevalue-internalid: script.InternalId,
 }
 
-script.MapRemoteValue = {
-  type: "map",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.MappingRemoteValue,
+script.MapRemoteValueInfo about the 'script.MapRemoteValue'  reference.#cddl-type-scriptmapremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptmapremotevalue-type: "map"Info about the '"map"'  reference.#cddl-value-scriptmapremotevalue-type-map,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptmapremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptmapremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptmapremotevalue-value: script.MappingRemoteValue,
 }
 
-script.SetRemoteValue = {
-  type: "set",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.ListRemoteValue
+script.SetRemoteValueInfo about the 'script.SetRemoteValue'  reference.#cddl-type-scriptsetremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptsetremotevalue-type: "set"Info about the '"set"'  reference.#cddl-value-scriptsetremotevalue-type-set,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptsetremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptsetremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptsetremotevalue-value: script.ListRemoteValue
 }
 
-script.WeakMapRemoteValue = {
-  type: "weakmap",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.WeakMapRemoteValueInfo about the 'script.WeakMapRemoteValue'  reference.#cddl-type-scriptweakmapremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptweakmapremotevalue-type: "weakmap"Info about the '"weakmap"'  reference.#cddl-value-scriptweakmapremotevalue-type-weakmap,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptweakmapremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptweakmapremotevalue-internalid: script.InternalId,
 }
 
-script.WeakSetRemoteValue = {
-  type: "weakset",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.WeakSetRemoteValueInfo about the 'script.WeakSetRemoteValue'  reference.#cddl-type-scriptweaksetremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptweaksetremotevalue-type: "weakset"Info about the '"weakset"'  reference.#cddl-value-scriptweaksetremotevalue-type-weakset,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptweaksetremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptweaksetremotevalue-internalid: script.InternalId,
 }
 
-script.GeneratorRemoteValue = {
-  type: "generator",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.GeneratorRemoteValueInfo about the 'script.GeneratorRemoteValue'  reference.#cddl-type-scriptgeneratorremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptgeneratorremotevalue-type: "generator"Info about the '"generator"'  reference.#cddl-value-scriptgeneratorremotevalue-type-generator,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptgeneratorremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptgeneratorremotevalue-internalid: script.InternalId,
 }
 
-script.ErrorRemoteValue = {
-  type: "error",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.ErrorRemoteValueInfo about the 'script.ErrorRemoteValue'  reference.#cddl-type-scripterrorremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scripterrorremotevalue-type: "error"Info about the '"error"'  reference.#cddl-value-scripterrorremotevalue-type-error,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scripterrorremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scripterrorremotevalue-internalid: script.InternalId,
 }
 
-script.ProxyRemoteValue = {
-  type: "proxy",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.ProxyRemoteValueInfo about the 'script.ProxyRemoteValue'  reference.#cddl-type-scriptproxyremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptproxyremotevalue-type: "proxy"Info about the '"proxy"'  reference.#cddl-value-scriptproxyremotevalue-type-proxy,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptproxyremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptproxyremotevalue-internalid: script.InternalId,
 }
 
-script.PromiseRemoteValue = {
-  type: "promise",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.PromiseRemoteValueInfo about the 'script.PromiseRemoteValue'  reference.#cddl-type-scriptpromiseremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptpromiseremotevalue-type: "promise"Info about the '"promise"'  reference.#cddl-value-scriptpromiseremotevalue-type-promise,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptpromiseremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptpromiseremotevalue-internalid: script.InternalId,
 }
 
-script.TypedArrayRemoteValue = {
-  type: "typedarray",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.TypedArrayRemoteValueInfo about the 'script.TypedArrayRemoteValue'  reference.#cddl-type-scripttypedarrayremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scripttypedarrayremotevalue-type: "typedarray"Info about the '"typedarray"'  reference.#cddl-value-scripttypedarrayremotevalue-type-typedarray,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scripttypedarrayremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scripttypedarrayremotevalue-internalid: script.InternalId,
 }
 
-script.ArrayBufferRemoteValue = {
-  type: "arraybuffer",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
+script.ArrayBufferRemoteValueInfo about the 'script.ArrayBufferRemoteValue'  reference.#cddl-type-scriptarraybufferremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptarraybufferremotevalue-type: "arraybuffer"Info about the '"arraybuffer"'  reference.#cddl-value-scriptarraybufferremotevalue-type-arraybuffer,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptarraybufferremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptarraybufferremotevalue-internalid: script.InternalId,
 }
 
-script.NodeListRemoteValue = {
-  type: "nodelist",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.ListRemoteValue,
+script.NodeListRemoteValueInfo about the 'script.NodeListRemoteValue'  reference.#cddl-type-scriptnodelistremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptnodelistremotevalue-type: "nodelist"Info about the '"nodelist"'  reference.#cddl-value-scriptnodelistremotevalue-type-nodelist,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptnodelistremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptnodelistremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptnodelistremotevalue-value: script.ListRemoteValue,
 }
 
-script.HTMLCollectionRemoteValue = {
-  type: "htmlcollection",
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.ListRemoteValue,
+script.HTMLCollectionRemoteValueInfo about the 'script.HTMLCollectionRemoteValue'  reference.#cddl-type-scripthtmlcollectionremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scripthtmlcollectionremotevalue-type: "htmlcollection"Info about the '"htmlcollection"'  reference.#cddl-value-scripthtmlcollectionremotevalue-type-htmlcollection,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scripthtmlcollectionremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scripthtmlcollectionremotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scripthtmlcollectionremotevalue-value: script.ListRemoteValue,
 }
 
-script.NodeRemoteValue = {
-  type: "node",
-  ? sharedId: script.SharedId,
-  ? handle: script.Handle,
-  ? internalId: script.InternalId,
-  ? value: script.NodeProperties,
+script.NodeRemoteValueInfo about the 'script.NodeRemoteValue'  reference.#cddl-type-scriptnoderemotevalueReferenced in:7.3.3.7. The browsingContext.locateNodes Command 7.6.3.14. The script.RemoteValue Type (2) (3)  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptnoderemotevalue-type: "node"Info about the '"node"'  reference.#cddl-value-scriptnoderemotevalue-type-node,
+  ? sharedIdInfo about the 'sharedId'  reference.#cddl-key-scriptnoderemotevalue-sharedid: script.SharedId,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptnoderemotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptnoderemotevalue-internalid: script.InternalId,
+  ? valueInfo about the 'value'  reference.#cddl-key-scriptnoderemotevalue-value: script.NodeProperties,
 }
 
-script.NodeProperties = {
-  nodeType: js-uint,
-  childNodeCount: js-uint,
-  ? attributes: {*text => text},
-  ? children: [*script.NodeRemoteValue],
-  ? localName: text,
-  ? mode: "open" / "closed",
-  ? namespaceURI: text,
-  ? nodeValue: text,
-  ? shadowRoot: script.NodeRemoteValue / null,
+script.NodePropertiesInfo about the 'script.NodeProperties'  reference.#cddl-type-scriptnodepropertiesReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  nodeTypeInfo about the 'nodeType'  reference.#cddl-key-scriptnodeproperties-nodetype: js-uint,
+  childNodeCountInfo about the 'childNodeCount'  reference.#cddl-key-scriptnodeproperties-childnodecount: js-uint,
+  ? attributesInfo about the 'attributes'  reference.#cddl-key-scriptnodeproperties-attributes: {*text => text},
+  ? childrenInfo about the 'children'  reference.#cddl-key-scriptnodeproperties-children: [*script.NodeRemoteValue],
+  ? localNameInfo about the 'localName'  reference.#cddl-key-scriptnodeproperties-localname: text,
+  ? modeInfo about the 'mode'  reference.#cddl-key-scriptnodeproperties-mode: "open"Info about the '"open"'  reference.#cddl-value-scriptnodeproperties-mode-open / "closed"Info about the '"closed"'  reference.#cddl-value-scriptnodeproperties-mode-closed,
+  ? namespaceURIInfo about the 'namespaceURI'  reference.#cddl-key-scriptnodeproperties-namespaceuri: text,
+  ? nodeValueInfo about the 'nodeValue'  reference.#cddl-key-scriptnodeproperties-nodevalue: text,
+  ? shadowRootInfo about the 'shadowRoot'  reference.#cddl-key-scriptnodeproperties-shadowroot: script.NodeRemoteValue / null,
 }
 
-script.WindowProxyRemoteValue = {
-  type: "window",
-  value: script.WindowProxyProperties,
-  ? handle: script.Handle,
-  ? internalId: script.InternalId
+script.WindowProxyRemoteValueInfo about the 'script.WindowProxyRemoteValue'  reference.#cddl-type-scriptwindowproxyremotevalueReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  typeInfo about the 'type'  reference.#cddl-key-scriptwindowproxyremotevalue-type: "window"Info about the '"window"'  reference.#cddl-value-scriptwindowproxyremotevalue-type-window,
+  valueInfo about the 'value'  reference.#cddl-key-scriptwindowproxyremotevalue-value: script.WindowProxyProperties,
+  ? handleInfo about the 'handle'  reference.#cddl-key-scriptwindowproxyremotevalue-handle: script.Handle,
+  ? internalIdInfo about the 'internalId'  reference.#cddl-key-scriptwindowproxyremotevalue-internalid: script.InternalId
 }
 
-script.WindowProxyProperties = {
-  context: browsingContext.BrowsingContext
+script.WindowProxyPropertiesInfo about the 'script.WindowProxyProperties'  reference.#cddl-type-scriptwindowproxypropertiesReferenced in:7.6.3.14. The script.RemoteValue Type  = {
+  contextInfo about the 'context'  reference.#cddl-key-scriptwindowproxyproperties-context: browsingContext.BrowsingContext
 }
 
-script.ResultOwnership = "root" / "none"
+script.ResultOwnershipInfo about the 'script.ResultOwnership'  reference.#cddl-type-scriptresultownershipReferenced in:7.6.3.2. The script.ChannelValue Type 7.6.4.3. The script.callFunction Command 7.6.4.4. The script.evaluate Command  = "root"Info about the '"root"'  reference.#cddl-value-scriptresultownership-root / "none"Info about the '"none"'  reference.#cddl-value-scriptresultownership-none
 
-script.SerializationOptions = {
-  ? maxDomDepth: (js-uint / null) .default 0,
-  ? maxObjectDepth: (js-uint / null) .default null,
-  ? includeShadowTree: ("none" / "open" / "all") .default "none",
+script.SerializationOptionsInfo about the 'script.SerializationOptions'  reference.#cddl-type-scriptserializationoptionsReferenced in:7.3.3.7. The browsingContext.locateNodes Command 7.6.3.2. The script.ChannelValue Type 7.6.4.3. The script.callFunction Command 7.6.4.4. The script.evaluate Command  = {
+  ? maxDomDepthInfo about the 'maxDomDepth'  reference.#cddl-key-scriptserializationoptions-maxdomdepth: (js-uint / null) .default 0,
+  ? maxObjectDepthInfo about the 'maxObjectDepth'  reference.#cddl-key-scriptserializationoptions-maxobjectdepth: (js-uint / null) .default null,
+  ? includeShadowTreeInfo about the 'includeShadowTree'  reference.#cddl-key-scriptserializationoptions-includeshadowtree: ("none"Info about the '"none"'  reference.#cddl-value-scriptserializationoptions-includeshadowtree-none / "open"Info about the '"open"'  reference.#cddl-value-scriptserializationoptions-includeshadowtree-open / "all"Info about the '"all"'  reference.#cddl-value-scriptserializationoptions-includeshadowtree-all) .default "none",
 }
 
-script.SharedId = text;
+script.SharedIdInfo about the 'script.SharedId'  reference.#cddl-type-scriptsharedidReferenced in:7.6.3.13. The script.RemoteReference Type (2) 7.6.3.14. The script.RemoteValue Type  = text;
 
-script.StackFrame = {
-  columnNumber: js-uint,
-  functionName: text,
-  lineNumber: js-uint,
-  url: text,
+script.StackFrameInfo about the 'script.StackFrame'  reference.#cddl-type-scriptstackframeReferenced in:7.6.3.19. The script.StackTrace Type  = {
+  columnNumberInfo about the 'columnNumber'  reference.#cddl-key-scriptstackframe-columnnumber: js-uint,
+  functionNameInfo about the 'functionName'  reference.#cddl-key-scriptstackframe-functionname: text,
+  lineNumberInfo about the 'lineNumber'  reference.#cddl-key-scriptstackframe-linenumber: js-uint,
+  urlInfo about the 'url'  reference.#cddl-key-scriptstackframe-url: text,
 }
 
-script.StackTrace = {
-  callFrames: [*script.StackFrame],
+script.StackTraceInfo about the 'script.StackTrace'  reference.#cddl-type-scriptstacktraceReferenced in:7.5.4.12. The network.Initiator Type 7.6.3.4. The script.ExceptionDetails Type 7.8.2.1. log.LogEntry  = {
+  callFramesInfo about the 'callFrames'  reference.#cddl-key-scriptstacktrace-callframes: [*script.StackFrame],
 }
 
-script.Source = {
-  realm: script.Realm,
-  ? context: browsingContext.BrowsingContext,
-  ? userContext: browser.UserContext
+script.SourceInfo about the 'script.Source'  reference.#cddl-type-scriptsourceReferenced in:7.6.5.1. The script.message Event 7.8.2.1. log.LogEntry  = {
+  realmInfo about the 'realm'  reference.#cddl-key-scriptsource-realm: script.Realm,
+  ? contextInfo about the 'context'  reference.#cddl-key-scriptsource-context: browsingContext.BrowsingContext,
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-scriptsource-usercontext: browser.UserContext
 }
 
-script.AddPreloadScriptResult = {
-  script: script.PreloadScript
+script.AddPreloadScriptResultInfo about the 'script.AddPreloadScriptResult'  reference.#cddl-type-scriptaddpreloadscriptresultReferenced in:7.6.1. Definition  = {
+  scriptInfo about the 'script'  reference.#cddl-key-scriptaddpreloadscriptresult-script: script.PreloadScript
 }
 
-script.DisownResult = EmptyResult
+script.DisownResultInfo about the 'script.DisownResult'  reference.#cddl-type-scriptdisownresultReferenced in:7.6.1. Definition  = EmptyResult
 
-script.CallFunctionResult = script.EvaluationResult
+script.CallFunctionResultInfo about the 'script.CallFunctionResult'  reference.#cddl-type-scriptcallfunctionresultReferenced in:7.6.1. Definition  = script.EvaluationResult
 
-script.EvaluateResult = script.EvaluationResult
+script.EvaluateResultInfo about the 'script.EvaluateResult'  reference.#cddl-type-scriptevaluateresultReferenced in:7.6.1. Definition  = script.EvaluationResult
 
-script.GetRealmsResult = {
-  realms: [*script.RealmInfo]
+script.GetRealmsResultInfo about the 'script.GetRealmsResult'  reference.#cddl-type-scriptgetrealmsresultReferenced in:7.6.1. Definition  = {
+  realmsInfo about the 'realms'  reference.#cddl-key-scriptgetrealmsresult-realms: [*script.RealmInfo]
 }
 
-script.RemovePreloadScriptResult = EmptyResult
+script.RemovePreloadScriptResultInfo about the 'script.RemovePreloadScriptResult'  reference.#cddl-type-scriptremovepreloadscriptresultReferenced in:7.6.1. Definition  = EmptyResult
 
-script.Message = (
-  method: "script.message",
-  params: script.MessageParameters
+script.MessageInfo about the 'script.Message'  reference.#cddl-type-scriptmessageReferenced in:7.6.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-scriptmessage-method: "script.message"Info about the '"script.message"'  reference.#cddl-value-scriptmessage-method-scriptmessage,
+  paramsInfo about the 'params'  reference.#cddl-key-scriptmessage-params: script.MessageParameters
  )
 
-script.MessageParameters = {
-  channel: script.Channel,
-  data: script.RemoteValue,
-  source: script.Source,
+script.MessageParametersInfo about the 'script.MessageParameters'  reference.#cddl-type-scriptmessageparametersReferenced in:7.6.5.1. The script.message Event  = {
+  channelInfo about the 'channel'  reference.#cddl-key-scriptmessageparameters-channel: script.Channel,
+  dataInfo about the 'data'  reference.#cddl-key-scriptmessageparameters-data: script.RemoteValue,
+  sourceInfo about the 'source'  reference.#cddl-key-scriptmessageparameters-source: script.Source,
 }
 
-script.RealmCreated = (
- method: "script.realmCreated",
- params: script.RealmInfo
+script.RealmCreatedInfo about the 'script.RealmCreated'  reference.#cddl-type-scriptrealmcreatedReferenced in:7.6.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-scriptrealmcreated-method: "script.realmCreated"Info about the '"script.realmCreated"'  reference.#cddl-value-scriptrealmcreated-method-scriptrealmcreated,
+ paramsInfo about the 'params'  reference.#cddl-key-scriptrealmcreated-params: script.RealmInfo
 )
 
-script.RealmDestroyed = (
-  method: "script.realmDestroyed",
-  params: script.RealmDestroyedParameters
+script.RealmDestroyedInfo about the 'script.RealmDestroyed'  reference.#cddl-type-scriptrealmdestroyedReferenced in:7.6.1. Definition  = (
+  methodInfo about the 'method'  reference.#cddl-key-scriptrealmdestroyed-method: "script.realmDestroyed"Info about the '"script.realmDestroyed"'  reference.#cddl-value-scriptrealmdestroyed-method-scriptrealmdestroyed,
+  paramsInfo about the 'params'  reference.#cddl-key-scriptrealmdestroyed-params: script.RealmDestroyedParameters
 )
 
-script.RealmDestroyedParameters = {
-  realm: script.Realm
+script.RealmDestroyedParametersInfo about the 'script.RealmDestroyedParameters'  reference.#cddl-type-scriptrealmdestroyedparametersReferenced in:7.6.5.3. The script.realmDestroyed Event  = {
+  realmInfo about the 'realm'  reference.#cddl-key-scriptrealmdestroyedparameters-realm: script.Realm
 }
 
-StorageResult = (
+StorageResultInfo about the 'StorageResult'  reference.#cddl-type-storageresultReferenced in:3.1. Definition  = (
   storage.DeleteCookiesResult /
   storage.GetCookiesResult /
   storage.SetCookieResult
 )
 
-storage.PartitionKey = {
-  ? userContext: text,
-  ? sourceOrigin: text,
+storage.PartitionKeyInfo about the 'storage.PartitionKey'  reference.#cddl-type-storagepartitionkeyReferenced in:7.7.3.1. The storage.getCookies Command 7.7.3.2. The storage.setCookie Command 7.7.3.3. The storage.deleteCookies Command  = {
+  ? userContextInfo about the 'userContext'  reference.#cddl-key-storagepartitionkey-usercontext: text,
+  ? sourceOriginInfo about the 'sourceOrigin'  reference.#cddl-key-storagepartitionkey-sourceorigin: text,
   Extensible,
 }
 
-storage.GetCookiesResult = {
-  cookies: [*network.Cookie],
-  partitionKey: storage.PartitionKey,
+storage.GetCookiesResultInfo about the 'storage.GetCookiesResult'  reference.#cddl-type-storagegetcookiesresultReferenced in:7.7.1. Definition  = {
+  cookiesInfo about the 'cookies'  reference.#cddl-key-storagegetcookiesresult-cookies: [*network.Cookie],
+  partitionKeyInfo about the 'partitionKey'  reference.#cddl-key-storagegetcookiesresult-partitionkey: storage.PartitionKey,
 }
 
-storage.SetCookieResult = {
-  partitionKey: storage.PartitionKey
+storage.SetCookieResultInfo about the 'storage.SetCookieResult'  reference.#cddl-type-storagesetcookieresultReferenced in:7.7.1. Definition  = {
+  partitionKeyInfo about the 'partitionKey'  reference.#cddl-key-storagesetcookieresult-partitionkey: storage.PartitionKey
 }
 
-storage.DeleteCookiesResult = {
-  partitionKey: storage.PartitionKey
+storage.DeleteCookiesResultInfo about the 'storage.DeleteCookiesResult'  reference.#cddl-type-storagedeletecookiesresultReferenced in:7.7.1. Definition  = {
+  partitionKeyInfo about the 'partitionKey'  reference.#cddl-key-storagedeletecookiesresult-partitionkey: storage.PartitionKey
 }
 
-LogEvent = (
+LogEventInfo about the 'LogEvent'  reference.#cddl-type-logeventReferenced in:3.1. Definition  = (
   log.EntryAdded
 )
 
-log.Level = "debug" / "info" / "warn" / "error"
+log.LevelInfo about the 'log.Level'  reference.#cddl-type-loglevelReferenced in:7.8.2.1. log.LogEntry  = "debug"Info about the '"debug"'  reference.#cddl-value-loglevel-debug / "info"Info about the '"info"'  reference.#cddl-value-loglevel-info / "warn"Info about the '"warn"'  reference.#cddl-value-loglevel-warn / "error"Info about the '"error"'  reference.#cddl-value-loglevel-error
 
-log.Entry = (
+log.EntryInfo about the 'log.Entry'  reference.#cddl-type-logentryReferenced in:7.8.3.1. The log.entryAdded Event  = (
   log.GenericLogEntry /
   log.ConsoleLogEntry /
   log.JavascriptLogEntry
 )
 
-log.BaseLogEntry = (
-  level: log.Level,
-  source: script.Source,
-  text: text / null,
-  timestamp: js-uint,
-  ? stackTrace: script.StackTrace,
+log.BaseLogEntryInfo about the 'log.BaseLogEntry'  reference.#cddl-type-logbaselogentryReferenced in:7.8.2.1. log.LogEntry (2) (3)  = (
+  levelInfo about the 'level'  reference.#cddl-key-logbaselogentry-level: log.Level,
+  sourceInfo about the 'source'  reference.#cddl-key-logbaselogentry-source: script.Source,
+  textInfo about the 'text'  reference.#cddl-key-logbaselogentry-text: text / null,
+  timestampInfo about the 'timestamp'  reference.#cddl-key-logbaselogentry-timestamp: js-uint,
+  ? stackTraceInfo about the 'stackTrace'  reference.#cddl-key-logbaselogentry-stacktrace: script.StackTrace,
 )
 
-log.GenericLogEntry = {
+log.GenericLogEntryInfo about the 'log.GenericLogEntry'  reference.#cddl-type-loggenericlogentryReferenced in:7.8.2.1. log.LogEntry  = {
   log.BaseLogEntry,
-  type: text,
+  typeInfo about the 'type'  reference.#cddl-key-loggenericlogentry-type: text,
 }
 
-log.ConsoleLogEntry = {
+log.ConsoleLogEntryInfo about the 'log.ConsoleLogEntry'  reference.#cddl-type-logconsolelogentryReferenced in:7.8.2.1. log.LogEntry  = {
   log.BaseLogEntry,
-  type: "console",
-  method: text,
-  args: [*script.RemoteValue],
+  typeInfo about the 'type'  reference.#cddl-key-logconsolelogentry-type: "console"Info about the '"console"'  reference.#cddl-value-logconsolelogentry-type-console,
+  methodInfo about the 'method'  reference.#cddl-key-logconsolelogentry-method: text,
+  argsInfo about the 'args'  reference.#cddl-key-logconsolelogentry-args: [*script.RemoteValue],
 }
 
-log.JavascriptLogEntry = {
+log.JavascriptLogEntryInfo about the 'log.JavascriptLogEntry'  reference.#cddl-type-logjavascriptlogentryReferenced in:7.8.2.1. log.LogEntry  = {
   log.BaseLogEntry,
-  type: "javascript",
+  typeInfo about the 'type'  reference.#cddl-key-logjavascriptlogentry-type: "javascript"Info about the '"javascript"'  reference.#cddl-value-logjavascriptlogentry-type-javascript,
 }
 
-log.EntryAdded = (
- method: "log.entryAdded",
- params: log.Entry,
+log.EntryAddedInfo about the 'log.EntryAdded'  reference.#cddl-type-logentryaddedReferenced in:7.8.1. Definition  = (
+ methodInfo about the 'method'  reference.#cddl-key-logentryadded-method: "log.entryAdded"Info about the '"log.entryAdded"'  reference.#cddl-value-logentryadded-method-logentryadded,
+ paramsInfo about the 'params'  reference.#cddl-key-logentryadded-params: log.Entry,
 )
 
-InputResult = (
+InputResultInfo about the 'InputResult'  reference.#cddl-type-inputresultReferenced in:3.1. Definition  = (
   input.PerformActionsResult /
   input.ReleaseActionsResult /
   input.SetFilesResult
 )
 
-InputEvent = (
+InputEventInfo about the 'InputEvent'  reference.#cddl-type-inputeventReferenced in:3.1. Definition  = (
   input.FileDialogOpened
 )
 
-input.PerformActionsResult = EmptyResult
+input.PerformActionsResultInfo about the 'input.PerformActionsResult'  reference.#cddl-type-inputperformactionsresultReferenced in:7.9.1. Definition  = EmptyResult
 
-input.ReleaseActionsResult = EmptyResult
+input.ReleaseActionsResultInfo about the 'input.ReleaseActionsResult'  reference.#cddl-type-inputreleaseactionsresultReferenced in:7.9.1. Definition  = EmptyResult
 
-input.SetFilesResult = EmptyResult
+input.SetFilesResultInfo about the 'input.SetFilesResult'  reference.#cddl-type-inputsetfilesresultReferenced in:7.9.1. Definition  = EmptyResult
 
-input.FileDialogOpened = (
-   method: "input.fileDialogOpened",
-   params: input.FileDialogInfo
+input.FileDialogOpenedInfo about the 'input.FileDialogOpened'  reference.#cddl-type-inputfiledialogopenedReferenced in:7.9.1. Definition  = (
+   methodInfo about the 'method'  reference.#cddl-key-inputfiledialogopened-method: "input.fileDialogOpened"Info about the '"input.fileDialogOpened"'  reference.#cddl-value-inputfiledialogopened-method-inputfiledialogopened,
+   paramsInfo about the 'params'  reference.#cddl-key-inputfiledialogopened-params: input.FileDialogInfo
 )
 
-input.FileDialogInfo = {
-   context: browsingContext.BrowsingContext,
-   ? userContext: browser.UserContext,
-   ? element: script.SharedReference,
-   multiple: bool,
+input.FileDialogInfoInfo about the 'input.FileDialogInfo'  reference.#cddl-type-inputfiledialoginfoReferenced in:7.9.4.1. The input.fileDialogOpened Event  = {
+   contextInfo about the 'context'  reference.#cddl-key-inputfiledialoginfo-context: browsingContext.BrowsingContext,
+   ? userContextInfo about the 'userContext'  reference.#cddl-key-inputfiledialoginfo-usercontext: browser.UserContext,
+   ? elementInfo about the 'element'  reference.#cddl-key-inputfiledialoginfo-element: script.SharedReference,
+   multipleInfo about the 'multiple'  reference.#cddl-key-inputfiledialoginfo-multiple: bool,
 }
 
-WebExtensionResult = (
+WebExtensionResultInfo about the 'WebExtensionResult'  reference.#cddl-type-webextensionresultReferenced in:3.1. Definition  = (
   webExtension.InstallResult /
   webExtension.UninstallResult
 )
 
-webExtension.Extension = text
+webExtension.ExtensionInfo about the 'webExtension.Extension'  reference.#cddl-type-webextensionextensionReferenced in:7.10.3.1. The webExtension.install Command 7.10.3.2. The webExtension.uninstall Command  = text
 
-webExtension.InstallResult = {
-  extension: webExtension.Extension
+webExtension.InstallResultInfo about the 'webExtension.InstallResult'  reference.#cddl-type-webextensioninstallresultReferenced in:7.10.1. Definition  = {
+  extensionInfo about the 'extension'  reference.#cddl-key-webextensioninstallresult-extension: webExtension.Extension
 }
 
-webExtension.UninstallResult = EmptyResult
+webExtension.UninstallResultInfo about the 'webExtension.UninstallResult'  reference.#cddl-type-webextensionuninstallresultReferenced in:7.10.1. Definition  = EmptyResult
