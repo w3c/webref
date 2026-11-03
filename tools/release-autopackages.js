@@ -122,8 +122,8 @@ async function releaseXrefPackage(minorBump) {
   console.log('Tag released commit');
   const prefix = '@webref/xref@';
   const tag = prefix + pubResult.version;
-  execSync('git tag ${tag}');
-  execSync('git push origin ${tag}');
+  execSync(`git tag ${tag}`);
+  execSync(`git push origin ${tag}`);
 
   console.log();
   console.log('Update @webref/xref@latest branch');
