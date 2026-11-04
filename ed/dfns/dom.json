@@ -19588,13 +19588,13 @@
       "links": []
     },
     {
-      "id": "dom-range-startcontainer",
-      "href": "https://dom.spec.whatwg.org/#dom-range-startcontainer",
+      "id": "abstractrange-get-start-offset",
+      "href": "https://dom.spec.whatwg.org/#abstractrange-get-start-offset",
       "linkingText": [
-        "startContainer"
+        "get start offset"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "AbstractRange"
       ],
@@ -19607,20 +19607,51 @@
         "number": "5.3"
       },
       "definedIn": "prose",
-      "links": [
-        {
-          "type": "dev",
-          "id": "ref-for-dom-range-startcontainer①",
-          "name": "node = range . startContainer",
-          "href": "https://dom.spec.whatwg.org/#ref-for-dom-range-startcontainer%E2%91%A0",
-          "heading": {
-            "id": "interface-abstractrange",
-            "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
-            "title": "Interface AbstractRange",
-            "number": "5.3"
-          }
-        }
-      ]
+      "links": []
+    },
+    {
+      "id": "abstractrange-get-end-offset",
+      "href": "https://dom.spec.whatwg.org/#abstractrange-get-end-offset",
+      "linkingText": [
+        "get end offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AbstractRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-abstractrange",
+        "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+        "title": "Interface AbstractRange",
+        "number": "5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstractrange-get-collapsed",
+      "href": "https://dom.spec.whatwg.org/#abstractrange-get-collapsed",
+      "linkingText": [
+        "get collapsed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AbstractRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-abstractrange",
+        "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
+        "title": "Interface AbstractRange",
+        "number": "5.3"
+      },
+      "definedIn": "prose",
+      "links": []
     },
     {
       "id": "dom-range-startoffset",
@@ -19648,41 +19679,6 @@
           "id": "ref-for-dom-range-startoffset①",
           "name": "offset = range . startOffset",
           "href": "https://dom.spec.whatwg.org/#ref-for-dom-range-startoffset%E2%91%A0",
-          "heading": {
-            "id": "interface-abstractrange",
-            "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
-            "title": "Interface AbstractRange",
-            "number": "5.3"
-          }
-        }
-      ]
-    },
-    {
-      "id": "dom-range-endcontainer",
-      "href": "https://dom.spec.whatwg.org/#dom-range-endcontainer",
-      "linkingText": [
-        "endContainer"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AbstractRange"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-abstractrange",
-        "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
-        "title": "Interface AbstractRange",
-        "number": "5.3"
-      },
-      "definedIn": "prose",
-      "links": [
-        {
-          "type": "dev",
-          "id": "ref-for-dom-range-endcontainer①",
-          "name": "node = range . endContainer",
-          "href": "https://dom.spec.whatwg.org/#ref-for-dom-range-endcontainer%E2%91%A0",
           "heading": {
             "id": "interface-abstractrange",
             "href": "https://dom.spec.whatwg.org/#interface-abstractrange",
@@ -19763,6 +19759,96 @@
       ]
     },
     {
+      "id": "noderange",
+      "href": "https://dom.spec.whatwg.org/#noderange",
+      "linkingText": [
+        "NodeRange"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-noderange",
+        "href": "https://dom.spec.whatwg.org/#interface-noderange",
+        "title": "Interface NodeRange",
+        "number": "5.4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-range-startcontainer",
+      "href": "https://dom.spec.whatwg.org/#dom-range-startcontainer",
+      "linkingText": [
+        "startContainer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NodeRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-noderange",
+        "href": "https://dom.spec.whatwg.org/#interface-noderange",
+        "title": "Interface NodeRange",
+        "number": "5.4"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-range-startcontainer①",
+          "name": "node = range . startContainer",
+          "href": "https://dom.spec.whatwg.org/#ref-for-dom-range-startcontainer%E2%91%A0",
+          "heading": {
+            "id": "interface-noderange",
+            "href": "https://dom.spec.whatwg.org/#interface-noderange",
+            "title": "Interface NodeRange",
+            "number": "5.4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-range-endcontainer",
+      "href": "https://dom.spec.whatwg.org/#dom-range-endcontainer",
+      "linkingText": [
+        "endContainer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NodeRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-noderange",
+        "href": "https://dom.spec.whatwg.org/#interface-noderange",
+        "title": "Interface NodeRange",
+        "number": "5.4"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-range-endcontainer①",
+          "name": "node = range . endContainer",
+          "href": "https://dom.spec.whatwg.org/#ref-for-dom-range-endcontainer%E2%91%A0",
+          "heading": {
+            "id": "interface-noderange",
+            "href": "https://dom.spec.whatwg.org/#interface-noderange",
+            "title": "Interface NodeRange",
+            "number": "5.4"
+          }
+        }
+      ]
+    },
+    {
       "id": "dictdef-staticrangeinit",
       "href": "https://dom.spec.whatwg.org/#dictdef-staticrangeinit",
       "linkingText": [
@@ -19777,7 +19863,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19799,7 +19885,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19821,7 +19907,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19843,7 +19929,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19865,7 +19951,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19885,7 +19971,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19908,7 +19994,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "pre",
       "links": []
@@ -19931,7 +20017,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose",
       "links": [
@@ -19944,7 +20030,7 @@
             "id": "interface-staticrange",
             "href": "https://dom.spec.whatwg.org/#interface-staticrange",
             "title": "Interface StaticRange",
-            "number": "5.4"
+            "number": "5.5"
           }
         }
       ]
@@ -19966,7 +20052,7 @@
         "id": "interface-staticrange",
         "href": "https://dom.spec.whatwg.org/#interface-staticrange",
         "title": "Interface StaticRange",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -19986,7 +20072,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20008,7 +20094,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20030,7 +20116,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20052,7 +20138,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20074,7 +20160,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20096,7 +20182,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20118,7 +20204,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20140,7 +20226,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20162,7 +20248,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20185,7 +20271,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20207,7 +20293,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20229,7 +20315,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20251,7 +20337,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20273,7 +20359,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20295,7 +20381,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20317,7 +20403,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20339,7 +20425,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20361,7 +20447,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20383,7 +20469,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20405,7 +20491,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20427,7 +20513,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20449,7 +20535,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20471,7 +20557,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20493,7 +20579,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20515,7 +20601,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "pre",
       "links": []
@@ -20535,7 +20621,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20557,7 +20643,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20579,7 +20665,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20601,7 +20687,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20621,7 +20707,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20644,7 +20730,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": [
@@ -20657,7 +20743,7 @@
             "id": "interface-range",
             "href": "https://dom.spec.whatwg.org/#interface-range",
             "title": "Interface Range",
-            "number": "5.5"
+            "number": "5.6"
           }
         }
       ]
@@ -20677,7 +20763,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20699,7 +20785,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": [
@@ -20712,7 +20798,7 @@
             "id": "interface-range",
             "href": "https://dom.spec.whatwg.org/#interface-range",
             "title": "Interface Range",
-            "number": "5.5"
+            "number": "5.6"
           }
         }
       ]
@@ -20735,7 +20821,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20757,7 +20843,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20779,7 +20865,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20801,7 +20887,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20823,7 +20909,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20845,7 +20931,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20867,7 +20953,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20890,7 +20976,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20912,7 +20998,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20934,7 +21020,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20956,7 +21042,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -20978,7 +21064,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21000,7 +21086,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21022,7 +21108,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21044,7 +21130,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21067,7 +21153,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21089,7 +21175,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21111,7 +21197,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21133,7 +21219,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21155,7 +21241,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21177,7 +21263,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21199,7 +21285,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21221,7 +21307,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
@@ -21243,7 +21329,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": [
@@ -21256,7 +21342,7 @@
             "id": "interface-range",
             "href": "https://dom.spec.whatwg.org/#interface-range",
             "title": "Interface Range",
-            "number": "5.5"
+            "number": "5.6"
           }
         }
       ]
@@ -21278,7 +21364,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": [
@@ -21291,7 +21377,7 @@
             "id": "interface-range",
             "href": "https://dom.spec.whatwg.org/#interface-range",
             "title": "Interface Range",
-            "number": "5.5"
+            "number": "5.6"
           }
         }
       ]
@@ -21313,7 +21399,7 @@
         "id": "interface-range",
         "href": "https://dom.spec.whatwg.org/#interface-range",
         "title": "Interface Range",
-        "number": "5.5"
+        "number": "5.6"
       },
       "definedIn": "prose",
       "links": []
