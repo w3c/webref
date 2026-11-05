@@ -209,6 +209,94 @@
       ]
     },
     {
+      "name": "horizontally kern",
+      "href": "https://drafts.csswg.org/css-fonts-4/#horizontally-kern",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"horizontally-kern\"><button class=\"dfn-panelbutton\" popovertarget=\"infopanel-for-horizontally-kern\">horizontally kern</button></dfn><dialog class=\"dfn-panel\" id=\"infopanel-for-horizontally-kern\" popover=\"hint\" data-for=\"horizontally-kern\" aria-labelledby=\"infopaneltitle-for-horizontally-kern\"><span id=\"infopaneltitle-for-horizontally-kern\" style=\"display:none\">Info about the 'horizontally kern'  reference.</span><a href=\"https://drafts.csswg.org/css-fonts-4/#horizontally-kern\" class=\"dfn-link\">#horizontally-kern</a><ul></ul><b>Possible linking syntaxes:</b><ul><li><div class=\"link-item\"><button class=\"copy-icon\" title=\"Copy\" type=\"button\" tabindex=\"0\"><span class=\"icon\"></span></button><span>[=horizontally kern=]</span></div></li><li><div class=\"link-item\"><button class=\"copy-icon\" title=\"Copy\" type=\"button\" tabindex=\"0\"><span class=\"icon\"></span></button><span>[=/horizontally kern=]</span></div></li></ul></dialog> text using a <var>font</var>,\n\t\tmaking Japanese characters proportional and applying kerning to proportional, non-joining characters:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>font</var> <strong>does not</strong> support <span class=\"tag\">palt</span>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">kern</span>, use <span class=\"tag\">kern</span>, otherwise, do nothing</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>font</var> <strong>does</strong> support <span class=\"tag\">palt</span>",
+          "rationale": "apply",
+          "steps": [
+            {
+              "html": "<p>Apply <span class=\"tag\">palt</span></p>"
+            },
+            {
+              "html": "If <var>font</var> <strong>does</strong> support <span class=\"tag\">apkn</span>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">kern</span>, apply <span class=\"tag\">palt</span>, <span class=\"tag\">apkn</span> and <span class=\"tag\">kern</span>, otherwise, apply <span class=\"tag\">palt</span> and <span class=\"tag\">apkn</span></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>font</var> <strong>does not</strong> support <span class=\"tag\">apkn</span>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">kern</span>, apply <span class=\"tag\">palt</span> and <span class=\"tag\">kern</span>, otherwise, apply only <span class=\"tag\">palt</span></p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vertically kern",
+      "href": "https://drafts.csswg.org/css-fonts-4/#vertically-kern",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"vertically-kern\"><button class=\"dfn-panelbutton\" popovertarget=\"infopanel-for-vertically-kern\">vertically kern</button></dfn><dialog class=\"dfn-panel\" id=\"infopanel-for-vertically-kern\" popover=\"hint\" data-for=\"vertically-kern\" aria-labelledby=\"infopaneltitle-for-vertically-kern\"><span id=\"infopaneltitle-for-vertically-kern\" style=\"display:none\">Info about the 'vertically kern'  reference.</span><a href=\"https://drafts.csswg.org/css-fonts-4/#vertically-kern\" class=\"dfn-link\">#vertically-kern</a><ul></ul><b>Possible linking syntaxes:</b><ul><li><div class=\"link-item\"><button class=\"copy-icon\" title=\"Copy\" type=\"button\" tabindex=\"0\"><span class=\"icon\"></span></button><span>[=vertically kern=]</span></div></li><li><div class=\"link-item\"><button class=\"copy-icon\" title=\"Copy\" type=\"button\" tabindex=\"0\"><span class=\"icon\"></span></button><span>[=/vertically kern=]</span></div></li></ul></dialog> text using a <var>font</var>,\n\t\tmaking Japanese characters proportional and applying kerning to proportional, non-joining characters:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>font</var> <strong>does not</strong> support <span class=\"tag\">vpal</span>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">vkrn</span>, use <span class=\"tag\">vkrn</span>, otherwise, do nothing</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>font</var> <strong>does</strong> support <span class=\"tag\">vpal</span>",
+          "rationale": "apply",
+          "steps": [
+            {
+              "html": "<p>Apply <span class=\"tag\">vpal</span></p>"
+            },
+            {
+              "html": "If <var>font</var> <strong>does</strong> support <span class=\"tag\">vapk</span>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">vkrn</span>, apply <span class=\"tag\">vpal</span>, <span class=\"tag\">vapk</span> and <span class=\"tag\">vkrn</span>, otherwise, apply <span class=\"tag\">vpal</span> and <span class=\"tag\">vapk</span></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>font</var> <strong>does not</strong> support <span class=\"tag\">vapk</span>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>font</var> <strong>does</strong> support <span class=\"tag\">vkrn</span>, apply <span class=\"tag\">vpal</span> and <span class=\"tag\">vkrn</span>, otherwise, apply only <span class=\"tag\">vpal</span></p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "html": "General and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-fonts-4/#font-specific\" id=\"ref-for-font-specific⑧\">font specific</a> font feature property settings are\n\tresolved in the order below, in ascending order of precedence.  This ordering is\n\tused to construct a combined list of font features that affect a given\n\ttext run.",
       "rationale": "if",
       "steps": [
