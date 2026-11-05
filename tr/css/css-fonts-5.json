@@ -32,7 +32,7 @@
         },
         {
           "name": "ex-height",
-          "prose": "Normalize the aspect value of the fonts, using the x-height divided by the font size.",
+          "prose": "Normalize the aspect valueInfo about the 'aspect value' reference.#font-size-adjust-aspect-valueReferenced in:3.4. Relative sizing: the font-size-adjust property (2) (3) (4) (5) (6) Possible linking syntaxes:[=aspect value=][=font-size-adjust/aspect value=] of the fonts, using the x-height divided by the font size.",
           "href": "https://www.w3.org/TR/css-fonts-5/#valdef-font-size-adjust-ex-height",
           "type": "value",
           "value": "ex-height"
@@ -178,24 +178,21 @@
     {
       "name": "<font-format>",
       "href": "https://www.w3.org/TR/css-fonts-5/#font-format-values",
-      "type": "type",
-      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+      "type": "type"
     },
     {
       "name": "<font-tech>",
       "href": "https://www.w3.org/TR/css-fonts-5/#font-tech-values",
-      "type": "type",
-      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "type": "type"
     },
     {
       "name": "<font-features-tech>",
       "href": "https://www.w3.org/TR/css-fonts-5/#font-features-tech-values",
       "type": "type",
-      "value": "[features-opentype | features-aat | features-graphite]",
       "values": [
         {
           "name": "avar2",
-          "prose": "The avar2 tech refers to support for version 2 of OpenType axis variations [avar2], for flexible variation axis remapping.",
+          "prose": "The avar2Info about the 'avar2' reference.#valdef-font-features-tech-avar2Possible linking syntaxes:''<font-features-tech>/avar2'' tech refers to support for version 2 of OpenType axis variations [avar2], for flexible variation axis remapping.",
           "href": "https://www.w3.org/TR/css-fonts-5/#valdef-font-features-tech-avar2",
           "type": "value",
           "value": "avar2"
@@ -205,11 +202,30 @@
     {
       "name": "<color-font-tech>",
       "href": "https://www.w3.org/TR/css-fonts-5/#color-font-tech-values",
-      "type": "type",
-      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+      "type": "type"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-format>><</font-format>>",
+      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-tech>><</font-tech>>",
+      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<font-features-tech>><</font-features-tech>>",
+      "value": "[features-opentype | features-aat | features-graphite]"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "syntaxes:<<color-font-tech>><</color-font-tech>>",
+      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+    },
     {
       "msg": "Dangling value",
       "name": "xxx",

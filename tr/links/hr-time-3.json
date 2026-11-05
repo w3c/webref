@@ -58,6 +58,9 @@
       "https://www.w3.org/TR/service-workers/": {
         "specShortname": "service-workers"
       },
+      "https://www.w3.org/TR/webaudio-1.1/": {
+        "specShortname": "webaudio-1.1"
+      },
       "https://www.w3.org/groups/wg/webperf": {},
       "https://www.w3.org/groups/wg/webperf/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -101,7 +104,8 @@
           "relevant-settings-object",
           "global-object",
           "concept-relevant-global",
-          "windoworworkerglobalscope"
+          "windoworworkerglobalscope",
+          "concept-relevant-realm"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -146,7 +150,8 @@
           "Default",
           "idl-object",
           "default-tojson-steps",
-          "Replaceable"
+          "Replaceable",
+          "new"
         ],
         "specShortname": "webidl"
       },
@@ -155,6 +160,12 @@
           "serviceworker"
         ],
         "specShortname": "service-workers"
+      },
+      "https://www.w3.org/TR/webaudio-1.1/": {
+        "anchors": [
+          "AudioWorkletGlobalScope"
+        ],
+        "specShortname": "webaudio-1.1"
       }
     }
   }
