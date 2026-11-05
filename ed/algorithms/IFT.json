@@ -111,10 +111,10 @@
           "html": "<p>For each candidate entry: compute the set intersection between the total subset definition and the target subset definition.</p>"
         },
         {
-          "html": "<p>Find an entry whose intersection from step 2 is not a strict subset of any other intersection.</p>"
+          "html": "<p>Find an entry whose intersection from step 3 is not a strict subset of any other intersection.</p>"
         },
         {
-          "html": "<p>Locate any additional entries that are in the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#patch-map\" id=\"ref-for-patch-map③\">patch map</a> and have the same intersection as the entry found in step 3. From the this set of\n entries (including the step 3 pick) the final selection is the entry which is listed first in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#patch-map\" id=\"ref-for-patch-map④\">patch map</a> (the entry that appears first in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#mapping-entries-entries\" id=\"ref-for-mapping-entries-entries①\">entries</a> array).</p>"
+          "html": "<p>Locate any additional entries that are in the same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#patch-map\" id=\"ref-for-patch-map③\">patch map</a> and have the same intersection as the entry found in step 4. From the this set of\n entries (including the step 4 pick) the final selection is the entry which is listed first in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#patch-map\" id=\"ref-for-patch-map④\">patch map</a> (the entry that appears first in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/IFT/Overview.html#mapping-entries-entries\" id=\"ref-for-mapping-entries-entries①\">entries</a> array).</p>"
         }
       ]
     },
@@ -243,7 +243,7 @@
           "html": "<p>Remove the next <var>B</var> bits from the <var>treeData</var> bit string. The first removed bit is <i>v<sub>1</sub></i>,\n the second is <i>v<sub>2</sub></i>, and so on until the last removed bit which is <i>v<sub>B</sub></i>. If prior to removal there\n were less than <var>B</var> bits left in <var>treeData</var>, then <var>treeData</var> is malformed, return an error.</p>"
         },
         {
-          "html": "<p>If all bits <i>v<sub>1</sub></i> through <i>v<sub>B</sub></i> are 0, then insert all integers in the interval\n[<var>start</var> + <var>bias</var>, <var>start</var> + <var>bias</var> + <var>B</var><sup><var>H</var> - <var>depth</var> + 1</sup>)\ninto <var>S</var>. Go to step 5.</p>"
+          "html": "<p>If all bits <i>v<sub>1</sub></i> through <i>v<sub>B</sub></i> are 0, then insert all integers in the interval\n[<var>start</var> + <var>bias</var>, <var>start</var> + <var>bias</var> + <var>B</var><sup><var>H</var> - <var>depth</var> + 1</sup>)\ninto <var>S</var>. Go to step 8.</p>"
         },
         {
           "html": "<p>For each <i>v<sub>i</sub></i> which is equal to 1 in <i>v<sub>1</sub></i> through <i>v<sub>B</sub></i>:\n If <var>depth</var> is equal to <var>H</var> add\n integer <var>start</var> + <var>bias</var> + <i>i</i> - 1 to <var>S</var>. Otherwise, insert the tuple\n (<var>start</var> + (i - 1) * <var>B</var><sup><var>H</var> - <var>depth</var></sup>, <var>depth</var> + 1)\n into <var>Q</var>.</p>"

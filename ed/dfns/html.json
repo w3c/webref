@@ -48773,6 +48773,26 @@
       "links": []
     },
     {
+      "id": "intended-document",
+      "href": "https://html.spec.whatwg.org/multipage/scripting.html#intended-document",
+      "linkingText": [
+        "intended document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "script-processing-model",
+        "href": "https://html.spec.whatwg.org/multipage/scripting.html#script-processing-model",
+        "title": "Processing model",
+        "number": "4.12.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "script-force-async",
       "href": "https://html.spec.whatwg.org/multipage/scripting.html#script-force-async",
       "linkingText": [
@@ -102703,7 +102723,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         },
         {
@@ -102715,7 +102735,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         }
       ]
@@ -102750,7 +102770,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         },
         {
@@ -102762,7 +102782,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         }
       ]
@@ -103658,6 +103678,696 @@
       ]
     },
     {
+      "id": "html-streaming-methods-2",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods-2",
+      "linkingText": [
+        "HTML streaming methods"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-element-streamhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamhtml",
+      "linkingText": [
+        "streamHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamhtml-dev",
+          "name": "stream = element.streamHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-streamappendhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamappendhtml",
+      "linkingText": [
+        "streamAppendHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamappendhtml-dev",
+          "name": "stream = element.streamAppendHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamappendhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-streamprependhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamprependhtml",
+      "linkingText": [
+        "streamPrependHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamprependhtml-dev",
+          "name": "stream = element.streamPrependHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamprependhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-streamhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamhtmlunsafe",
+      "linkingText": [
+        "streamHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamhtmlunsafe-dev",
+          "name": "stream = element.streamHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-streamappendhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamappendhtmlunsafe",
+      "linkingText": [
+        "streamAppendHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamappendhtmlunsafe-dev",
+          "name": "stream = element.streamAppendHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamappendhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-streamprependhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamprependhtmlunsafe",
+      "linkingText": [
+        "streamPrependHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-streamprependhtmlunsafe-dev",
+          "name": "stream = element.streamPrependHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-streamprependhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamhtml",
+      "linkingText": [
+        "streamHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamhtml-dev",
+          "name": "stream = shadowRoot.streamHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamappendhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamappendhtml",
+      "linkingText": [
+        "streamAppendHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamappendhtml-dev",
+          "name": "stream = shadowRoot.streamAppendHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamappendhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamprependhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamprependhtml",
+      "linkingText": [
+        "streamPrependHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamprependhtml-dev",
+          "name": "stream = shadowRoot.streamPrependHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamprependhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamhtmlunsafe",
+      "linkingText": [
+        "streamHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamhtmlunsafe-dev",
+          "name": "stream = shadowRoot.streamHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamappendhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamappendhtmlunsafe",
+      "linkingText": [
+        "streamAppendHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamappendhtmlunsafe-dev",
+          "name": "stream = shadowRoot.streamAppendHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamappendhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-streamprependhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamprependhtmlunsafe",
+      "linkingText": [
+        "streamPrependHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-streamprependhtmlunsafe-dev",
+          "name": "stream = shadowRoot.streamPrependHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-streamprependhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streambeforehtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streambeforehtml",
+      "linkingText": [
+        "streamBeforeHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streambeforehtml-dev",
+          "name": "stream = node.streamBeforeHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streambeforehtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streamafterhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamafterhtml",
+      "linkingText": [
+        "streamAfterHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streamafterhtml-dev",
+          "name": "stream = node.streamAfterHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamafterhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streamreplacewithhtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamreplacewithhtml",
+      "linkingText": [
+        "streamReplaceWithHTML(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streamreplacewithhtml-dev",
+          "name": "stream = node.streamReplaceWithHTML([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamreplacewithhtml-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streambeforehtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streambeforehtmlunsafe",
+      "linkingText": [
+        "streamBeforeHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streambeforehtmlunsafe-dev",
+          "name": "stream = node.streamBeforeHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streambeforehtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streamafterhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamafterhtmlunsafe",
+      "linkingText": [
+        "streamAfterHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streamafterhtmlunsafe-dev",
+          "name": "stream = node.streamAfterHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamafterhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-nondocumenttypechildnode-streamreplacewithhtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamreplacewithhtmlunsafe",
+      "linkingText": [
+        "streamReplaceWithHTMLUnsafe(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NonDocumentTypeChildNode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-nondocumenttypechildnode-streamreplacewithhtmlunsafe-dev",
+          "name": "stream = node.streamReplaceWithHTMLUnsafe([options])",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-nondocumenttypechildnode-streamreplacewithhtmlunsafe-dev",
+          "heading": {
+            "id": "html-streaming-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+            "title": "HTML streaming methods",
+            "number": "8.5.3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parent-for-html-streaming",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parent-for-html-streaming",
+      "linkingText": [
+        "parent for HTML streaming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "stream-html",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#stream-html",
+      "linkingText": [
+        "stream HTML"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-streaming-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-streaming-methods",
+        "title": "HTML streaming methods",
+        "number": "8.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dom-element-gethtml",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-gethtml",
       "linkingText": [
@@ -103674,7 +104384,7 @@
         "id": "html-serialization-methods",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
         "title": "HTML serialization methods",
-        "number": "8.5.3"
+        "number": "8.5.4"
       },
       "definedIn": "prose",
       "links": [
@@ -103687,7 +104397,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         }
       ]
@@ -103709,7 +104419,7 @@
         "id": "html-serialization-methods",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
         "title": "HTML serialization methods",
-        "number": "8.5.3"
+        "number": "8.5.4"
       },
       "definedIn": "prose",
       "links": [
@@ -103722,7 +104432,7 @@
             "id": "html-serialization-methods",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
             "title": "HTML serialization methods",
-            "number": "8.5.3"
+            "number": "8.5.4"
           }
         }
       ]
@@ -103742,7 +104452,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103762,7 +104472,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103784,7 +104494,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "dt",
       "links": []
@@ -103806,7 +104516,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "dt",
       "links": []
@@ -103828,7 +104538,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "dt",
       "links": []
@@ -103848,7 +104558,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103868,7 +104578,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103888,7 +104598,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103908,7 +104618,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103928,7 +104638,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103948,7 +104658,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103968,7 +104678,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": []
@@ -103990,7 +104700,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": [
@@ -104003,7 +104713,7 @@
             "id": "the-innerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
             "title": "The innerHTML property",
-            "number": "8.5.4"
+            "number": "8.5.5"
           }
         },
         {
@@ -104015,7 +104725,7 @@
             "id": "the-innerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
             "title": "The innerHTML property",
-            "number": "8.5.4"
+            "number": "8.5.5"
           }
         }
       ]
@@ -104037,7 +104747,7 @@
         "id": "the-innerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
         "title": "The innerHTML property",
-        "number": "8.5.4"
+        "number": "8.5.5"
       },
       "definedIn": "prose",
       "links": [
@@ -104050,7 +104760,7 @@
             "id": "the-innerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
             "title": "The innerHTML property",
-            "number": "8.5.4"
+            "number": "8.5.5"
           }
         },
         {
@@ -104062,7 +104772,7 @@
             "id": "the-innerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-innerhtml-property",
             "title": "The innerHTML property",
-            "number": "8.5.4"
+            "number": "8.5.5"
           }
         }
       ]
@@ -104084,7 +104794,7 @@
         "id": "the-outerhtml-property",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-outerhtml-property",
         "title": "The outerHTML property",
-        "number": "8.5.5"
+        "number": "8.5.6"
       },
       "definedIn": "prose",
       "links": [
@@ -104097,7 +104807,7 @@
             "id": "the-outerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-outerhtml-property",
             "title": "The outerHTML property",
-            "number": "8.5.5"
+            "number": "8.5.6"
           }
         },
         {
@@ -104109,7 +104819,7 @@
             "id": "the-outerhtml-property",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-outerhtml-property",
             "title": "The outerHTML property",
-            "number": "8.5.5"
+            "number": "8.5.6"
           }
         }
       ]
@@ -104131,7 +104841,7 @@
         "id": "the-insertadjacenthtml()-method",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-insertadjacenthtml()-method",
         "title": "The insertAdjacentHTML() method",
-        "number": "8.5.6"
+        "number": "8.5.7"
       },
       "definedIn": "prose",
       "links": [
@@ -104144,7 +104854,7 @@
             "id": "the-insertadjacenthtml()-method",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-insertadjacenthtml()-method",
             "title": "The insertAdjacentHTML() method",
-            "number": "8.5.6"
+            "number": "8.5.7"
           }
         }
       ]
@@ -104166,7 +104876,7 @@
         "id": "the-createcontextualfragment()-method",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-createcontextualfragment()-method",
         "title": "The createContextualFragment() method",
-        "number": "8.5.7"
+        "number": "8.5.8"
       },
       "definedIn": "prose",
       "links": [
@@ -104179,7 +104889,7 @@
             "id": "the-createcontextualfragment()-method",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-createcontextualfragment()-method",
             "title": "The createContextualFragment() method",
-            "number": "8.5.7"
+            "number": "8.5.8"
           }
         }
       ]
@@ -104199,7 +104909,7 @@
         "id": "the-xmlserializer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface",
         "title": "The XMLSerializer interface",
-        "number": "8.5.8"
+        "number": "8.5.9"
       },
       "definedIn": "pre",
       "links": []
@@ -104219,7 +104929,7 @@
         "id": "the-xmlserializer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface",
         "title": "The XMLSerializer interface",
-        "number": "8.5.8"
+        "number": "8.5.9"
       },
       "definedIn": "prose",
       "links": [
@@ -104232,7 +104942,7 @@
             "id": "the-xmlserializer-interface",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface",
             "title": "The XMLSerializer interface",
-            "number": "8.5.8"
+            "number": "8.5.9"
           }
         }
       ]
@@ -104254,7 +104964,7 @@
         "id": "the-xmlserializer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface",
         "title": "The XMLSerializer interface",
-        "number": "8.5.8"
+        "number": "8.5.9"
       },
       "definedIn": "prose",
       "links": [
@@ -104267,7 +104977,7 @@
             "id": "the-xmlserializer-interface",
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-xmlserializer-interface",
             "title": "The XMLSerializer interface",
-            "number": "8.5.8"
+            "number": "8.5.9"
           }
         }
       ]
@@ -117663,10 +118373,10 @@
       "links": []
     },
     {
-      "id": "scripting-mode",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode",
+      "id": "parser-scripting-disabled",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#parser-scripting-disabled",
       "linkingText": [
-        "scripting mode"
+        "parser scripting disabled"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117683,10 +118393,10 @@
       "links": []
     },
     {
-      "id": "parser-scripting-mode",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#parser-scripting-mode",
+      "id": "script-target-document",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#script-target-document",
       "linkingText": [
-        "parser scripting mode"
+        "script target document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117703,10 +118413,10 @@
       "links": []
     },
     {
-      "id": "scripting-mode-normal",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-normal",
+      "id": "fragment-parser-running",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#fragment-parser-running",
       "linkingText": [
-        "Normal"
+        "fragment parser running"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117719,14 +118429,14 @@
         "title": "Other parsing state flags",
         "number": "13.2.4.5"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "scripting-mode-disabled",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-disabled",
+      "id": "parser-aborted",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#parser-aborted",
       "linkingText": [
-        "Disabled"
+        "aborted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117739,14 +118449,14 @@
         "title": "Other parsing state flags",
         "number": "13.2.4.5"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "scripting-mode-inert",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-inert",
+      "id": "fragment-parser-abort-requested",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#fragment-parser-abort-requested",
       "linkingText": [
-        "Inert"
+        "fragment parser abort requested"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117759,14 +118469,14 @@
         "title": "Other parsing state flags",
         "number": "13.2.4.5"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "scripting-mode-fragment",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#scripting-mode-fragment",
+      "id": "fragment-parser-close-promise",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#fragment-parser-close-promise",
       "linkingText": [
-        "Fragment"
+        "fragment parser close promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -117779,7 +118489,7 @@
         "title": "Other parsing state flags",
         "number": "13.2.4.5"
       },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -117847,6 +118557,26 @@
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#insertion-target-redirection-map",
       "linkingText": [
         "insertion target redirection map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "other-parsing-state-flags",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#other-parsing-state-flags",
+        "title": "Other parsing state flags",
+        "number": "13.2.4.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "invalid-reference-child-steps",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#invalid-reference-child-steps",
+      "linkingText": [
+        "invalid reference child steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -120943,10 +121673,90 @@
       "links": []
     },
     {
+      "id": "execute-the-deferred-scripts",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#execute-the-deferred-scripts",
+      "linkingText": [
+        "execute the deferred scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-end",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end",
+        "title": "The end",
+        "number": "13.2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "execute-the-pending-parsing-blocking-scripts",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#execute-the-pending-parsing-blocking-scripts",
+      "linkingText": [
+        "execute the pending parsing-blocking scripts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-end",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end",
+        "title": "The end",
+        "number": "13.2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "abort-a-parser",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#abort-a-parser",
       "linkingText": [
         "abort a parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-end",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end",
+        "title": "The end",
+        "number": "13.2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "run-a-fragment-parser",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#run-a-fragment-parser",
+      "linkingText": [
+        "run a fragment parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-end",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-end",
+        "title": "The end",
+        "number": "13.2.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abort-a-fragment-parser",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#abort-a-fragment-parser",
+      "linkingText": [
+        "abort a fragment parser"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -121283,6 +122093,66 @@
       "links": []
     },
     {
+      "id": "determine-the-parser-context-element",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#determine-the-parser-context-element",
+      "linkingText": [
+        "determine the parser context element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-html-fragments",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments",
+        "title": "Parsing HTML fragments",
+        "number": "13.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "initialize-an-html-fragment-parser",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#initialize-an-html-fragment-parser",
+      "linkingText": [
+        "initialize an HTML fragment parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-html-fragments",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments",
+        "title": "Parsing HTML fragments",
+        "number": "13.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "concept-frag-parse-context",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context",
+      "linkingText": [
+        "contextElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-html-fragments",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments",
+        "title": "Parsing HTML fragments",
+        "number": "13.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "html-fragment-parsing-algorithm",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algorithm",
       "linkingText": [
@@ -121320,26 +122190,6 @@
         "number": "13.4"
       },
       "definedIn": "note",
-      "links": []
-    },
-    {
-      "id": "concept-frag-parse-context",
-      "href": "https://html.spec.whatwg.org/multipage/parsing.html#concept-frag-parse-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "parsing-html-fragments",
-        "href": "https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments",
-        "title": "Parsing HTML fragments",
-        "number": "13.4"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {

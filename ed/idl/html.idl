@@ -2369,9 +2369,15 @@ partial interface Element {
   [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined appendHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined prependHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions, NewObject] WritableStream streamHTML(optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamAppendHTML(optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamPrependHTML(optional SetHTMLOptions options = {});
   [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined appendHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined prependHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [CEReactions, NewObject] WritableStream streamHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamAppendHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamPrependHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
@@ -2383,9 +2389,15 @@ partial interface ShadowRoot {
   [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined appendHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined prependHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions, NewObject] WritableStream streamHTML(optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamAppendHTML(optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamPrependHTML(optional SetHTMLOptions options = {});
   [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined appendHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined prependHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [CEReactions, NewObject] WritableStream streamHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamAppendHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamPrependHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
@@ -2395,9 +2407,15 @@ partial interface mixin NonDocumentTypeChildNode {
   [CEReactions] undefined beforeHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined afterHTML(DOMString html, optional SetHTMLOptions options = {});
   [CEReactions] undefined replaceWithHTML(DOMString html, optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamBeforeHTML(optional SetHTMLOptions options = {});
+  [NewObject] WritableStream streamAfterHTML(optional SetHTMLOptions options = {});
+  [CEReactions, NewObject] WritableStream streamReplaceWithHTML(optional SetHTMLOptions options = {});
   [CEReactions] undefined beforeHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined afterHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
   [CEReactions] undefined replaceWithHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamBeforeHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [NewObject] WritableStream streamAfterHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
+  [CEReactions, NewObject] WritableStream streamReplaceWithHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});
 };
 
 enum SanitizerPresets { "default" };
