@@ -3,19 +3,19 @@
 ; (https://github.com/w3c/webref)
 ; Source: Prefetch (https://wicg.github.io/nav-speculation/prefetch.html)
 
-speculation.PreloadingStatus = "pending" / "ready" / "success" / "failure"
+speculation.PreloadingStatusInfo about the 'speculation.PreloadingStatus'  reference.#cddl-type-speculationpreloadingstatusReferenced in:9.1.2.1. The speculation.prefetchStatusUpdated Event (2)  = "pending" / "ready" / "success" / "failure"
 
-SpeculationEvent = (
+SpeculationEventInfo about the 'SpeculationEvent'  reference.#cddl-type-speculationevent = (
   speculation.PrefetchStatusUpdated
 )
 
-speculation.PrefetchStatusUpdated = (
-   method: "speculation.prefetchStatusUpdated",
-   params: speculation.PrefetchStatusUpdatedParameters
+speculation.PrefetchStatusUpdatedInfo about the 'speculation.PrefetchStatusUpdated'  reference.#cddl-type-speculationprefetchstatusupdatedReferenced in:9.1.2. Events  = (
+   methodInfo about the 'method'  reference.#cddl-key-speculationprefetchstatusupdated-method: "speculation.prefetchStatusUpdated"Info about the '"speculation.prefetchStatusUpdated"'  reference.#cddl-value-speculationprefetchstatusupdated-method-speculationprefetchstatusupdated,
+   paramsInfo about the 'params'  reference.#cddl-key-speculationprefetchstatusupdated-params: speculation.PrefetchStatusUpdatedParameters
 )
 
-speculation.PrefetchStatusUpdatedParameters = {
-   context: text,
-   url: text,
-   status: speculation.PreloadingStatus
+speculation.PrefetchStatusUpdatedParametersInfo about the 'speculation.PrefetchStatusUpdatedParameters'  reference.#cddl-type-speculationprefetchstatusupdatedparametersReferenced in:9.1.2.1. The speculation.prefetchStatusUpdated Event  = {
+   contextInfo about the 'context'  reference.#cddl-key-speculationprefetchstatusupdatedparameters-context: text,
+   urlInfo about the 'url'  reference.#cddl-key-speculationprefetchstatusupdatedparameters-url: text,
+   statusInfo about the 'status'  reference.#cddl-key-speculationprefetchstatusupdatedparameters-status: speculation.PreloadingStatus
 }
