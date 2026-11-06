@@ -3,61 +3,61 @@
 ; (https://github.com/w3c/webref)
 ; Source: Autofill Event (https://wicg.github.io/autofill-event/)
 
-AutofillCommand = (
+AutofillCommandInfo about the 'AutofillCommand'  reference.#cddl-type-autofillcommand = (
   autofill.Trigger
 )
 
-autofill.Trigger = (
-  method: "autofill.trigger",
-  params: autofill.TriggerParameters
+autofill.TriggerInfo about the 'autofill.Trigger'  reference.#cddl-type-autofilltriggerReferenced in:7.1. The autofill Module  = (
+  methodInfo about the 'method'  reference.#cddl-key-autofilltrigger-method: "autofill.trigger"Info about the '"autofill.trigger"'  reference.#cddl-value-autofilltrigger-method-autofilltrigger,
+  paramsInfo about the 'params'  reference.#cddl-key-autofilltrigger-params: autofill.TriggerParameters
 )
 
-autofill.TriggerParameters = {
-  context: browsingContext.BrowsingContext,
-  element: script.SharedReference,
-  ? card: autofill.Card,
-  ? address: autofill.Address
+autofill.TriggerParametersInfo about the 'autofill.TriggerParameters'  reference.#cddl-type-autofilltriggerparametersReferenced in:7.1.1. The autofill.trigger Command  = {
+  contextInfo about the 'context'  reference.#cddl-key-autofilltriggerparameters-context: browsingContext.BrowsingContext,
+  elementInfo about the 'element'  reference.#cddl-key-autofilltriggerparameters-element: script.SharedReference,
+  ? cardInfo about the 'card'  reference.#cddl-key-autofilltriggerparameters-card: autofill.Card,
+  ? addressInfo about the 'address'  reference.#cddl-key-autofilltriggerparameters-address: autofill.Address
 }
 
-autofill.Card = {
-  number: text,
-  name: text,
-  expiryMonth: text,
-  expiryYear: text,
-  cvc: text
+autofill.CardInfo about the 'autofill.Card'  reference.#cddl-type-autofillcardReferenced in:7.1.1. The autofill.trigger Command  = {
+  numberInfo about the 'number'  reference.#cddl-key-autofillcard-number: text,
+  nameInfo about the 'name'  reference.#cddl-key-autofillcard-name: text,
+  expiryMonthInfo about the 'expiryMonth'  reference.#cddl-key-autofillcard-expirymonth: text,
+  expiryYearInfo about the 'expiryYear'  reference.#cddl-key-autofillcard-expiryyear: text,
+  cvcInfo about the 'cvc'  reference.#cddl-key-autofillcard-cvc: text
 }
 
-autofill.Address = {
-  fields: [* autofill.Field]
+autofill.AddressInfo about the 'autofill.Address'  reference.#cddl-type-autofilladdressReferenced in:7.1.1. The autofill.trigger Command  = {
+  fieldsInfo about the 'fields'  reference.#cddl-key-autofilladdress-fields: [* autofill.Field]
 }
 
-autofill.Field = {
-  name: autofill.FieldName,
-  value: text
+autofill.FieldInfo about the 'autofill.Field'  reference.#cddl-type-autofillfieldReferenced in:7.1.1. The autofill.trigger Command  = {
+  nameInfo about the 'name'  reference.#cddl-key-autofillfield-name: autofill.FieldName,
+  valueInfo about the 'value'  reference.#cddl-key-autofillfield-value: text
 }
 
-autofill.FieldName = "name" /
-                     "honorific-prefix" /
-                     "given-name" /
-                     "additional-name" /
-                     "family-name" /
-                     "honorific-suffix" /
-                     "nickname" /
-                     "organization" /
-                     "street-address" /
-                     "address-line1" /
-                     "address-line2" /
-                     "address-line3" /
-                     "address-level4" /
-                     "address-level3" /
-                     "address-level2" /
-                     "address-level1" /
-                     "country" /
-                     "country-name" /
-                     "postal-code" /
-                     "tel" /
-                     "tel-country-code" /
-                     "tel-national" /
-                     "tel-area-code" /
-                     "tel-local" /
-                     "email"
+autofill.FieldNameInfo about the 'autofill.FieldName'  reference.#cddl-type-autofillfieldnameReferenced in:7.1.1. The autofill.trigger Command  = "name"Info about the '"name"'  reference.#cddl-value-autofillfieldname-name /
+                     "honorific-prefix"Info about the '"honorific-prefix"'  reference.#cddl-value-autofillfieldname-honorific-prefix /
+                     "given-name"Info about the '"given-name"'  reference.#cddl-value-autofillfieldname-given-name /
+                     "additional-name"Info about the '"additional-name"'  reference.#cddl-value-autofillfieldname-additional-name /
+                     "family-name"Info about the '"family-name"'  reference.#cddl-value-autofillfieldname-family-name /
+                     "honorific-suffix"Info about the '"honorific-suffix"'  reference.#cddl-value-autofillfieldname-honorific-suffix /
+                     "nickname"Info about the '"nickname"'  reference.#cddl-value-autofillfieldname-nickname /
+                     "organization"Info about the '"organization"'  reference.#cddl-value-autofillfieldname-organization /
+                     "street-address"Info about the '"street-address"'  reference.#cddl-value-autofillfieldname-street-address /
+                     "address-line1"Info about the '"address-line1"'  reference.#cddl-value-autofillfieldname-address-line1 /
+                     "address-line2"Info about the '"address-line2"'  reference.#cddl-value-autofillfieldname-address-line2 /
+                     "address-line3"Info about the '"address-line3"'  reference.#cddl-value-autofillfieldname-address-line3 /
+                     "address-level4"Info about the '"address-level4"'  reference.#cddl-value-autofillfieldname-address-level4 /
+                     "address-level3"Info about the '"address-level3"'  reference.#cddl-value-autofillfieldname-address-level3 /
+                     "address-level2"Info about the '"address-level2"'  reference.#cddl-value-autofillfieldname-address-level2 /
+                     "address-level1"Info about the '"address-level1"'  reference.#cddl-value-autofillfieldname-address-level1 /
+                     "country"Info about the '"country"'  reference.#cddl-value-autofillfieldname-country /
+                     "country-name"Info about the '"country-name"'  reference.#cddl-value-autofillfieldname-country-name /
+                     "postal-code"Info about the '"postal-code"'  reference.#cddl-value-autofillfieldname-postal-code /
+                     "tel"Info about the '"tel"'  reference.#cddl-value-autofillfieldname-tel /
+                     "tel-country-code"Info about the '"tel-country-code"'  reference.#cddl-value-autofillfieldname-tel-country-code /
+                     "tel-national"Info about the '"tel-national"'  reference.#cddl-value-autofillfieldname-tel-national /
+                     "tel-area-code"Info about the '"tel-area-code"'  reference.#cddl-value-autofillfieldname-tel-area-code /
+                     "tel-local"Info about the '"tel-local"'  reference.#cddl-value-autofillfieldname-tel-local /
+                     "email"Info about the '"email"'  reference.#cddl-value-autofillfieldname-email
