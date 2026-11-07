@@ -7695,6 +7695,9 @@
           ]
         },
         {
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#update-the-source-set\" id=\"updating-the-image-data:update-the-source-set\">Update the source set</a> for <var>element</var>.</p>"
+        },
+        {
           "html": "<p>If the user agent cannot support images, or its support for images has been disabled, then\n   <a href=\"https://html.spec.whatwg.org/multipage/images.html#abort-the-image-request\" id=\"updating-the-image-data:abort-the-image-request\">abort the image request</a> for the <a href=\"https://html.spec.whatwg.org/multipage/images.html#current-request\" id=\"updating-the-image-data:current-request\">current request</a> and the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"updating-the-image-data:pending-request\">pending\n   request</a>, set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#current-request\" id=\"updating-the-image-data:current-request-2\">current request</a>'s <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-req-state\" id=\"updating-the-image-data:img-req-state\">state</a> to\n   <a href=\"https://html.spec.whatwg.org/multipage/images.html#img-none\" id=\"updating-the-image-data:img-none\">unavailable</a>, set the <a href=\"https://html.spec.whatwg.org/multipage/images.html#pending-request\" id=\"updating-the-image-data:pending-request-2\">pending request</a> to null, and\n   return.</p>"
         },
         {
@@ -8180,10 +8183,19 @@
           "html": "<p>Let <var>elements</var> be « <var>el</var> ».</p>"
         },
         {
-          "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element whose parent node is a\n   <code id=\"updating-the-source-set:the-picture-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element\">picture</a></code> element, then <a href=\"https://infra.spec.whatwg.org/#list-replace\" id=\"updating-the-source-set:list-replace\" data-x-internal=\"list-replace\">replace</a> the contents of\n   <var>elements</var> with <var>el</var>'s parent node's child elements, retaining relative\n   order.</p>"
+          "html": "<p>Let <var>img</var> be <var>el</var> if <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element,\n   otherwise null.</p>"
         },
         {
-          "html": "<p>Let <var>img</var> be <var>el</var> if <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element,\n   otherwise null.</p>"
+          "html": "If <var>img</var> is not null:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>img</var>'s <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#concept-img-dimension-attribute-source\" id=\"updating-the-source-set:concept-img-dimension-attribute-source\">dimension\n     attribute source</a> to <var>img</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>img</var>'s parent node is a <code id=\"updating-the-source-set:the-picture-element\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element\">picture</a></code> element, then <a href=\"https://infra.spec.whatwg.org/#list-replace\" id=\"updating-the-source-set:list-replace\" data-x-internal=\"list-replace\">replace</a> the contents of <var>elements</var> with <var>img</var>'s\n     parent node's child elements, retaining relative order.</p>"
+            }
+          ]
         },
         {
           "html": "<a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"updating-the-source-set:list-iterate\" data-x-internal=\"list-iterate\">For each</a> <var>child</var> in <var>elements</var>:",
@@ -8203,19 +8215,19 @@
                   "html": "<p>Let <var>sizes</var> be the empty string.</p>"
                 },
                 {
-                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-srcset\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset\">srcset</a></code> attribute, then set <var>srcset</var> to that\n       attribute's value.</p>"
+                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-srcset\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset\">srcset</a></code> attribute, then set <var>srcset</var> to that\n       attribute's value.</p>"
                 },
                 {
                   "html": "<p>Otherwise, if <var>el</var> is a <code id=\"updating-the-source-set:the-link-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> element that has an <code id=\"updating-the-source-set:attr-link-imagesrcset\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset\">imagesrcset</a></code> attribute, then set <var>srcset</var> to\n       that attribute's value.</p>"
                 },
                 {
-                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-sizes\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes\">sizes</a></code> attribute, then set <var>sizes</var> to that attribute's\n       value.</p>"
+                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-sizes\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes\">sizes</a></code> attribute, then set <var>sizes</var> to that attribute's\n       value.</p>"
                 },
                 {
                   "html": "<p>Otherwise, if <var>el</var> is a <code id=\"updating-the-source-set:the-link-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> element that has an <code id=\"updating-the-source-set:attr-link-imagesizes\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes\">imagesizes</a></code> attribute, then set <var>sizes</var> to that\n       attribute's value.</p>"
                 },
                 {
-                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-6\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-src\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src\">src</a></code> attribute, then set <var>default source</var> to that\n       attribute's value.</p>"
+                  "html": "<p>If <var>el</var> is an <code id=\"updating-the-source-set:the-img-element-5\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element\">img</a></code> element that has a <code id=\"updating-the-source-set:attr-img-src\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src\">src</a></code> attribute, then set <var>default source</var> to that\n       attribute's value.</p>"
                 },
                 {
                   "html": "<p>Otherwise, if <var>el</var> is a <code id=\"updating-the-source-set:the-link-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-link-element\">link</a></code> element that has an <code id=\"updating-the-source-set:attr-link-href\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href\">href</a></code> attribute, then set <var>default source</var> to that\n       attribute's value.</p>"
@@ -8250,7 +8262,7 @@
               "html": "<p>If <var>child</var> has a <code id=\"updating-the-source-set:attr-source-type\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type\">type</a></code> attribute, and its\n     value is an unknown or unsupported <a id=\"updating-the-source-set:mime-type\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" data-x-internal=\"mime-type\">MIME type</a>, <a id=\"updating-the-source-set:continue-5\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" data-x-internal=\"continue\">continue</a> to the next child.</p>"
             },
             {
-              "html": "<p>If <var>child</var> has <code id=\"updating-the-source-set:attr-dim-width\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width\">width</a></code> or <code id=\"updating-the-source-set:attr-dim-height\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height\">height</a></code> attributes, set <var>el</var>'s <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#concept-img-dimension-attribute-source\" id=\"updating-the-source-set:concept-img-dimension-attribute-source\">dimension attribute source</a> to\n     <var>child</var>. Otherwise, set <var>el</var>'s <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#concept-img-dimension-attribute-source\" id=\"updating-the-source-set:concept-img-dimension-attribute-source-2\">dimension attribute source</a> to\n     <var>el</var>.</p>"
+              "html": "<p>If <var>child</var> has <code id=\"updating-the-source-set:attr-dim-width\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width\">width</a></code> or <code id=\"updating-the-source-set:attr-dim-height\"><a href=\"https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height\">height</a></code> attributes, set <var>el</var>'s <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#concept-img-dimension-attribute-source\" id=\"updating-the-source-set:concept-img-dimension-attribute-source-2\">dimension attribute source</a> to\n     <var>child</var>.</p>"
             },
             {
               "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/images.html#normalise-the-source-densities\" id=\"updating-the-source-set:normalise-the-source-densities\">Normalize the source densities</a> of <var>source set</var>.</p>"
