@@ -91,7 +91,7 @@
               "html": "Set <code>state</code> to the result of passing <code>state</code> to\n<a href=\"https://w3c.github.io/cbor-ld/#initialize-conversion-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.1 </bdi>Initialize Conversion Algorithm</a>."
             },
             {
-              "html": "Set <code>input</code> to the result of decoding <code>suffix. If the result is not a map or an array, throw an error \n</code>ERR_INVALID_PAYLOAD_STRUCTURE`."
+              "html": "Set <code>input</code> to the result of decoding <code>suffix</code>. If the result is not a map or an array, throw an error \n<code>ERR_INVALID_PAYLOAD_STRUCTURE</code>."
             },
             {
               "html": "Set <code>jsonldDocument</code> to the result of passing <code>state</code> and <code>input</code> as <code>inputDocuments</code>\nto <a href=\"https://w3c.github.io/cbor-ld/#convert-document-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.2 </bdi>Convert Document Algorithm</a>."
@@ -186,7 +186,7 @@
           "html": "Otherwise, set <code>objectTypes</code> to the result of\n<a href=\"https://w3c.github.io/cbor-ld/#get-object-types-for-decompression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.6.4 </bdi>Get Object Types for Decompression Algorithm</a>,\npassing <code>state</code>, <code>activeContext</code>, and <code>input</code>."
         },
         {
-          "html": "Set <code>activeContext</code> to the result of passing <code>activeContext</code> and <code>objectTypes</code> to\n<a href=\"https://w3c.github.io/cbor-ld/#apply-type-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.4 </bdi>Apply Type Scoped Contexts Algorithm</a>."
+          "html": "Pass <code>state, </code>activeContext<code>, and </code>objectTypes` to\n<a href=\"https://w3c.github.io/cbor-ld/#apply-type-scoped-contexts-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.3.4 </bdi>Apply Type-Scoped Contexts Algorithm</a>, and, from the returned object <code>result</code>, \nset <code>activeContext</code> to <code>result.activeContext</code> and <code>state</code> to <code>result.state</code>."
         },
         {
           "html": "If <code>state.strategy</code> is set to \"compression\", set\n<code>termEntries</code> to the result of\n<a href=\"https://w3c.github.io/cbor-ld/#get-input-entries-for-compression-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">6.2.5.3 </bdi>Get Input Entries for Compression Algorithm</a>, passing <code>state</code>,\n<code>input</code>, and <code>activeContext</code>."
@@ -595,31 +595,19 @@
               "html": "Otherwise, set <code>termId</code> to the value of <code>term</code> in <code>state</code>.<code>termToId</code>."
             },
             {
-              "html": "If neither <code>termId</code> nor <code>termId</code> plus 1 are present in <code>input</code>, continue."
+              "html": "If <code>termId</code> is present in <code>input</code>, set <code>value</code> to the value of <code>termId</code> in <code>input</code>, and set <code>plural</code> to false."
             },
             {
-              "html": "Otherwise, if <code>termId</code> is present in <code>input</code>, set <code>value</code> to the value of <code>termId</code> in <code>input</code>."
+              "html": "Otherwise, if <code>termId</code> is a number and <code>termId</code> plus 1 is  present in <code>input</code>, set <code>value</code> to the value of <code>termId</code> plus 1 in <code>input</code>, and set <code>plural</code> to <code>true</code>."
             },
             {
-              "html": "Otherwise, set <code>value</code> to the value of <code>termId</code> plus 1 in <code>input</code>."
+              "html": "Otherwise, continue with the next iteration on <code>term</code>."
             },
             {
-              "html": "If <code>key</code> is a string, set <code>plural</code> to false and <code>term</code> to <code>key</code>."
+              "html": "<i>This step intentionally left blank.</i>"
             },
             {
-              "html": "Otherwise:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "If <code>key</code> is odd, set <code>plural</code> to true. Otherwise, set <code>plural</code> to false."
-                },
-                {
-                  "html": "If <code>plural</code> is <code>true</code>, set <code>term</code> to the value of <code>id</code> minus 1 in <code>state</code>.<code>idToTerm</code>.\nIf that value does not have an entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
-                },
-                {
-                  "html": "Otherwise, set <code>term</code> to the value of <code>id</code> in <code>state</code>.<code>idToTerm</code>. If that value does not have\nan entry, throw an error <code>ERR_UNKNOWN_CBORLD_TERM_ID</code>."
-                }
-              ]
+              "html": "<i>This step intentionally left blank.</i>"
             },
             {
               "html": "Set <code>definition</code> to the value of <code>term</code> in <code>activeContext</code>.<code>termMap</code>."
