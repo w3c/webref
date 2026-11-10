@@ -65,9 +65,6 @@
           "html": "<p>\n                If <var>notificationInput</var>[\"<code>badge</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a string, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-badge\"><code>badge</code></a>\"] to\n                <var>notificationInput</var>[\"<code>badge</code>\"], <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\">converted</a>.\n              </p>"
         },
         {
-          "html": "<p>\n                If <var>notificationInput</var>[\"<code>vibrate</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> of\n                which each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\">32-bit unsigned integer</a>, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-vibrate\"><code>vibrate</code></a>\"] to\n                <var>notificationInput</var>[\"<code>vibrate</code>\"].\n              </p>"
-        },
-        {
           "html": "<p>\n                If <var>notificationInput</var>[\"<code>timestamp</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#64-bit-unsigned-integer\">64-bit unsigned integer</a>, then set\n                <var>notificationOptions</var>[\"<a data-link-type=\"dict-member\" href=\"https://notifications.spec.whatwg.org/#dom-notificationoptions-timestamp\"><code>timestamp</code></a>\"] to\n                <var>notificationInput</var>[\"<code>timestamp</code>\"].\n              </p>"
         },
         {
@@ -384,13 +381,13 @@
               ]
             },
             {
-              "html": "If <var>subscription</var> is null, then resolve <var>promise</var> with null."
+              "html": "If <var>subscription</var> is null, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with null and terminate these steps."
             },
             {
-              "html": "If there is an error with <var>subscription</var>, reject <var>promise</var> with a <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>\n            whose name is \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" and terminate these steps."
+              "html": "If there is an error with <var>subscription</var>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">queue a global task</a> on the\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <var>promise</var> with an\n            \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#aborterror\"><code>AbortError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and terminate these steps."
             },
             {
-              "html": "Resolve <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-12\"><code>PushSubscription</code></a> corresponding to <var>subscription</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> using <var>global</var> to\n            <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">resolve</a> <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"PushSubscription\" href=\"https://www.w3.org/TR/push-api/#dom-pushsubscription\" class=\"internalDFN\" id=\"ref-for-dom-pushsubscription-12\"><code>PushSubscription</code></a> corresponding to <var>subscription</var>."
             }
           ]
         },
