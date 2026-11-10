@@ -906,10 +906,11 @@
       "name": "<inset-value>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-inset-value",
       "type": "type",
+      "value": "<length-percentage> | overlap-join",
       "values": [
         {
           "name": "overlap-join",
-          "prose": "The overlap-joinInfo about the 'overlap-join' reference.#valdef-inset-value-overlap-joinReferenced in:3.3. Adjusting gap decoration endpoints: The rule-inset properties (2) (3) (4) (5) (6) 8.2. Changes since the 27 February 2026 Working Draft Possible linking syntaxes:''<inset-value>/overlap-join'' keyword produces neat joins between gap decorations that meet at the same gap junction:",
+          "prose": "The overlap-join keyword produces neat joins between gap decorations that meet at the same gap junction:",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-inset-value-overlap-join",
           "type": "value",
           "value": "overlap-join"
@@ -919,32 +920,36 @@
     {
       "name": "<line-color-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-color-or-repeat>#"
     },
     {
       "name": "<auto-line-color-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-color-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-color-or-repeat>#? , <auto-repeat-line-color> , <line-color-or-repeat>#?"
     },
     {
       "name": "<line-color-or-repeat>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat",
-      "type": "type"
+      "type": "type",
+      "value": "[ <color> | <repeat-line-color> ]"
     },
     {
       "name": "<repeat-line-color>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-color",
       "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -957,16 +962,17 @@
       "name": "<auto-repeat-line-color>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-color",
       "type": "type",
+      "value": "repeat( auto , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -978,32 +984,36 @@
     {
       "name": "<line-style-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-style-or-repeat>#"
     },
     {
       "name": "<auto-line-style-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-style-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-style-or-repeat>#? , <auto-repeat-line-style> , <line-style-or-repeat>#?"
     },
     {
       "name": "<line-style-or-repeat>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-or-repeat",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-style> | <repeat-line-style> ]"
     },
     {
       "name": "<repeat-line-style>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-style",
       "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -1016,16 +1026,17 @@
       "name": "<auto-repeat-line-style>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-style",
       "type": "type",
+      "value": "repeat( auto , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -1037,32 +1048,36 @@
     {
       "name": "<line-width-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-width-or-repeat>#"
     },
     {
       "name": "<auto-line-width-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-width-list",
-      "type": "type"
+      "type": "type",
+      "value": "<line-width-or-repeat>#? , <auto-repeat-line-width> , <line-width-or-repeat>#?"
     },
     {
       "name": "<line-width-or-repeat>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-or-repeat",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-width> | <repeat-line-width> ]"
     },
     {
       "name": "<repeat-line-width>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-width",
       "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -1075,16 +1090,17 @@
       "name": "<auto-repeat-line-width>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-width",
       "type": "type",
+      "value": "repeat( auto , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "Such a list may contain repeat()Info about the 'repeat()' reference.#funcdef-repeat-line-color-repeatReferenced in:4.5. Lists of values and the repeat() notation (2) (3) (4) (5) (6) 4.6. Assigning gap decoration values to gaps 4.7. Interpolation of list values 4.8. Serialization (2) Possible linking syntaxes:''repeat()''''<repeat-line-color>/repeat()''''<auto-repeat-line-color>/repeat()''''<repeat-line-style>/repeat()''''<auto-repeat-line-style>/repeat()''''<repeat-line-width>/repeat()''''<auto-repeat-line-width>/repeat()'' notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto",
-              "prose": "Specifies an auto repeaterInfo about the 'auto repeater' reference.#auto-repeaterReferenced in:4.5. Lists of values and the repeat() notation (2) 4.6. Assigning gap decoration values to gaps (2) (3) (4) (5) 4.7. Interpolation of list values (2) (3) (4) (5) 4.8. Serialization Possible linking syntaxes:[=auto repeater=][=/auto repeater=]. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
               "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
               "type": "value",
               "value": "auto"
@@ -1096,143 +1112,37 @@
     {
       "name": "<gap-rule-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-list",
-      "type": "type"
+      "type": "type",
+      "value": "<gap-rule-or-repeat>#"
     },
     {
       "name": "<gap-auto-rule-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-rule-list",
-      "type": "type"
+      "type": "type",
+      "value": "<gap-rule-or-repeat>#? , <gap-auto-repeat-rule> , <gap-rule-or-repeat>#?"
     },
     {
       "name": "<gap-rule-or-repeat>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule-or-repeat",
-      "type": "type"
+      "type": "type",
+      "value": "<gap-rule> | <gap-repeat-rule>"
     },
     {
       "name": "<gap-repeat-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-repeat-rule",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( <integer [1,∞]> , <gap-rule># )"
     },
     {
       "name": "<gap-auto-repeat-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-auto-repeat-rule",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( auto , <gap-rule># )"
     },
     {
       "name": "<gap-rule>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-gap-rule",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<inset-value>><</inset-value>>",
-      "value": "<length-percentage> | overlap-join"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-color-list>><</line-color-list>>",
-      "value": "<line-color-or-repeat># <auto-line-color-list>Info about the '<auto-line-color-list>' reference.#typedef-auto-line-color-listReferenced in:4.1. Gap decoration color: The column-rule-color, row-rule-color, and rule-color properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-line-color-list>><</auto-line-color-list>>",
-      "value": "<line-color-or-repeat>#? , <auto-repeat-line-color> , <line-color-or-repeat>#? <line-color-or-repeat>Info about the '<line-color-or-repeat>' reference.#typedef-line-color-or-repeatReferenced in:4.1. Gap decoration color: The column-rule-color, row-rule-color, and rule-color properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-color-or-repeat>><</line-color-or-repeat>>",
-      "value": "[ <color> | <repeat-line-color> ] <repeat-line-color>Info about the '<repeat-line-color>' reference.#typedef-repeat-line-colorReferenced in:4.1. Gap decoration color: The column-rule-color, row-rule-color, and rule-color properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<repeat-line-color>><</repeat-line-color>>",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]# ) <auto-repeat-line-color>Info about the '<auto-repeat-line-color>' reference.#typedef-auto-repeat-line-colorReferenced in:4.1. Gap decoration color: The column-rule-color, row-rule-color, and rule-color properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-repeat-line-color>><</auto-repeat-line-color>>",
-      "value": "repeat( auto , [ <color> ]# )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-style-list>><</line-style-list>>",
-      "value": "<line-style-or-repeat># <auto-line-style-list>Info about the '<auto-line-style-list>' reference.#typedef-auto-line-style-listReferenced in:4.2. Gap decoration style: The column-rule-style, row-rule-style, and rule-style properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-line-style-list>><</auto-line-style-list>>",
-      "value": "<line-style-or-repeat>#? , <auto-repeat-line-style> , <line-style-or-repeat>#? <line-style-or-repeat>Info about the '<line-style-or-repeat>' reference.#typedef-line-style-or-repeatReferenced in:4.2. Gap decoration style: The column-rule-style, row-rule-style, and rule-style properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-style-or-repeat>><</line-style-or-repeat>>",
-      "value": "[ <line-style> | <repeat-line-style> ] <repeat-line-style>Info about the '<repeat-line-style>' reference.#typedef-repeat-line-styleReferenced in:4.2. Gap decoration style: The column-rule-style, row-rule-style, and rule-style properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<repeat-line-style>><</repeat-line-style>>",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]# ) <auto-repeat-line-style>Info about the '<auto-repeat-line-style>' reference.#typedef-auto-repeat-line-styleReferenced in:4.2. Gap decoration style: The column-rule-style, row-rule-style, and rule-style properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-repeat-line-style>><</auto-repeat-line-style>>",
-      "value": "repeat( auto , [ <line-style> ]# )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-width-list>><</line-width-list>>",
-      "value": "<line-width-or-repeat># <auto-line-width-list>Info about the '<auto-line-width-list>' reference.#typedef-auto-line-width-listReferenced in:4.3. Gap decoration width: The column-rule-width, row-rule-width, and rule-width properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-line-width-list>><</auto-line-width-list>>",
-      "value": "<line-width-or-repeat>#? , <auto-repeat-line-width> , <line-width-or-repeat>#? <line-width-or-repeat>Info about the '<line-width-or-repeat>' reference.#typedef-line-width-or-repeatReferenced in:4.3. Gap decoration width: The column-rule-width, row-rule-width, and rule-width properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-width-or-repeat>><</line-width-or-repeat>>",
-      "value": "[ <line-width> | <repeat-line-width> ] <repeat-line-width>Info about the '<repeat-line-width>' reference.#typedef-repeat-line-widthReferenced in:4.3. Gap decoration width: The column-rule-width, row-rule-width, and rule-width properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<repeat-line-width>><</repeat-line-width>>",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]# ) <auto-repeat-line-width>Info about the '<auto-repeat-line-width>' reference.#typedef-auto-repeat-line-widthReferenced in:4.3. Gap decoration width: The column-rule-width, row-rule-width, and rule-width properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-repeat-line-width>><</auto-repeat-line-width>>",
-      "value": "repeat( auto , [ <line-width> ]# )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-rule-list>><</gap-rule-list>>",
-      "value": "<gap-rule-or-repeat># <gap-auto-rule-list>Info about the '<gap-auto-rule-list>' reference.#typedef-gap-auto-rule-listReferenced in:4.4. Gap decoration shorthands: The column-rule, row-rule, and rule properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-auto-rule-list>><</gap-auto-rule-list>>",
-      "value": "<gap-rule-or-repeat>#? , <gap-auto-repeat-rule> , <gap-rule-or-repeat>#? <gap-rule-or-repeat>Info about the '<gap-rule-or-repeat>' reference.#typedef-gap-rule-or-repeatReferenced in:4.4. Gap decoration shorthands: The column-rule, row-rule, and rule properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-rule-or-repeat>><</gap-rule-or-repeat>>",
-      "value": "<gap-rule> | <gap-repeat-rule> <gap-repeat-rule>Info about the '<gap-repeat-rule>' reference.#typedef-gap-repeat-ruleReferenced in:4.4. Gap decoration shorthands: The column-rule, row-rule, and rule properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-repeat-rule>><</gap-repeat-rule>>",
-      "value": "repeat( <integer [1,∞]> , <gap-rule># ) <gap-auto-repeat-rule>Info about the '<gap-auto-repeat-rule>' reference.#typedef-gap-auto-repeat-ruleReferenced in:4.4. Gap decoration shorthands: The column-rule, row-rule, and rule properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-auto-repeat-rule>><</gap-auto-repeat-rule>>",
-      "value": "repeat( auto , <gap-rule># ) <gap-rule>Info about the '<gap-rule>' reference.#typedef-gap-ruleReferenced in:4.4. Gap decoration shorthands: The column-rule, row-rule, and rule properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gap-rule>><</gap-rule>>",
+      "type": "type",
       "value": "<line-width> || <line-style> || <color>"
     }
   ]

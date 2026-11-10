@@ -5,31 +5,37 @@
   },
   "events": [
     {
-      "type": "statechange",
-      "targets": [
-        "MIDIAccess"
-      ],
       "src": {
-        "format": "IDL eventHandler"
-      }
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
+      "type": "statechange",
+      "interface": "MIDIConnectionEvent"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiport-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
       "type": "statechange",
       "targets": [
         "MIDIPort"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
+      "interface": "MIDIConnectionEvent"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface"
+      },
+      "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
       "type": "midimessage",
+      "interface": "MIDIMessageEvent",
       "targets": [
         "MIDIInput"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
+      ]
     }
   ]
 }

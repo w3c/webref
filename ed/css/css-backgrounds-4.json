@@ -34,7 +34,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "A value of noneInfo about the 'none' reference.#valdef-background-image-noneReferenced in:2.2. Image Sources: the background-image property 3. Layering Multiple Background Images 4.2. The Canvas Background and the HTML <body> Element Possible linking syntaxes:''background-image/none'' counts as a background image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
+          "prose": "A value of none counts as a background image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
           "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-image-none",
           "type": "value",
           "value": "none"
@@ -592,39 +592,45 @@
     {
       "name": "<bg-image>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-image",
-      "type": "type"
+      "type": "type",
+      "value": "<image> | none"
     },
     {
       "name": "<repetition>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-repetition",
-      "type": "type"
+      "type": "type",
+      "value": "repeat | space | round | no-repeat"
     },
     {
       "name": "<repeat-style>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style",
-      "type": "type"
+      "type": "type",
+      "value": "repeat-x | repeat-y | repeat-block | repeat-inline | <repetition>{1,2}"
     },
     {
       "name": "<attachment>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-attachment",
-      "type": "type"
+      "type": "type",
+      "value": "scroll | fixed | local"
     },
     {
       "name": "<bg-position>",
-      "prose": "Its value is given as a comma-separated list of <bg-position>Info about the '<bg-position>' reference.#typedef-bg-positionReferenced in:2.7. Background Positioning Shorthand: the background-position shorthand property (2) (3) 2.7.1. Serialization of background-position values 2.12. Backgrounds Shorthand: the background property (2) 5.1. Additions since [CSS3BG] Possible linking syntaxes:<<bg-position>><</bg-position>> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
+      "prose": "Its value is given as a comma-separated list of <bg-position> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
       "type": "type",
-      "value": "<position> | <position-three> <position-three>Info about the '<position-three>' reference.#typedef-position-threeReferenced in:2.7. Background Positioning Shorthand: the background-position shorthand property (2) (3) Possible linking"
+      "value": "<position> | <position-three>"
     },
     {
       "name": "<position-three>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-position-three",
-      "type": "type"
+      "type": "type",
+      "value": "[ [ left | center | right ] && [ [ top | bottom ] <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ top | center | bottom ] ]"
     },
     {
       "name": "<bg-clip>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-clip",
       "type": "type",
+      "value": "<visual-box> | [ border-area || text ]",
       "values": [
         {
           "name": "<visual-box>",
@@ -652,63 +658,19 @@
     {
       "name": "<bg-size>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-size",
-      "type": "type"
+      "type": "type",
+      "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
     },
     {
       "name": "<bg-layer>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-layer",
-      "type": "type"
+      "type": "type",
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <bg-clip>"
     },
     {
       "name": "<final-bg-layer>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-final-bg-layer",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<bg-image>><</bg-image>>",
-      "value": "<image> | none"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<repetition>><</repetition>>",
-      "value": "repeat | space | round | no-repeat"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<repeat-style>><</repeat-style>>",
-      "value": "repeat-x | repeat-y | repeat-block | repeat-inline | <repetition>{1,2}"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<attachment>><</attachment>>",
-      "value": "scroll | fixed | local"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<position-three>><</position-three>>",
-      "value": "[ [ left | center | right ] && [ [ top | bottom ] <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ top | center | bottom ] ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<bg-clip>><</bg-clip>>",
-      "value": "<visual-box> | [ border-area || text ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<bg-size>><</bg-size>>",
-      "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<bg-layer>><</bg-layer>>",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <bg-clip> <final-bg-layer>Info about the '<final-bg-layer>' reference.#typedef-final-bg-layerReferenced in:2.12. Backgrounds Shorthand: the background property (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<final-bg-layer>><</final-bg-layer>>",
+      "type": "type",
       "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <bg-clip> || <'background-color'>"
     }
   ]

@@ -7,7 +7,7 @@
   "atrules": [
     {
       "name": "@color-profile",
-      "prose": "The @color-profileInfo about the '@color-profile' reference.#at-ruledef-profileReferenced in:5.1. Relative Color-Function Colors (2) 5.2. Custom Color Spaces 5.3. Specifying a Color Profile: the @color-profile at-rule (2) (3) (4) (5) (6) (7) 5.4. CSS and Print: Using Calibrated CMYK and Other Printed Color Spaces 6. Uncalibrated CMYK Colors: the device-cmyk() Function (2) (3) 9.1. Color Space for Interpolation 12.1. The CSSColorProfileRule interface 18.9. Changes from CSS Color 4 Possible linking syntaxes:''@color-profile''''/@color-profile'' rule defines and names a color profileInfo about the 'color profile' reference.#css-color-profileReferenced in:5.1. Relative Color-Function Colors 5.3. Specifying a Color Profile: the @color-profile at-rule (2) 12.1. The CSSColorProfileRule interface Possible linking syntaxes:[=CSS color profile=][=/CSS color profile=] which can later be used in the color() function to specify a color.",
+      "prose": "The @color-profile rule defines and names a color profile which can later be used in the color() function to specify a color.",
       "href": "https://drafts.csswg.org/css-color-5/#at-ruledef-profile",
       "descriptors": [
         {
@@ -69,77 +69,83 @@
   "values": [
     {
       "name": "<color>",
-      "prose": "Colors in CSS are represented by the <color>Info about the '<color>' reference.#typedef-colorReferenced in:2. The <color> syntax (2) (3) 3. Mixing Colors: the color-mix() Function (2) 4.2. Relative Color Syntax 4.3. Relative sRGB Colors (2) 4.4. Relative HSL Colors (2) 4.5. Relative HWB Colors 4.6. Relative Lab Colors 4.7. Relative Oklab Colors 4.8. Relative LCH Colors 4.9. Relative OkLCh Colors 4.10. Relative Alpha Colors 5. Specifying Predefined and Custom Color Spaces: the color() Function 7. Reacting to the used color-scheme: the light-dark() Function (2) 8. Dynamically specifying a text color with adequate contrast: the contrast-color() Function 10. Resolving <color> Values 10.1. Resolving color-mix() Values (2) 10.2. Resolving Relative Color Syntax Values (2) (3) 11.1. Serializing color-mix() (2) 11.3. Serializing Relative Color Functions Possible linking syntaxes:<<color>><</color>> type:",
+      "prose": "Colors in CSS are represented by the <color> type:",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color",
       "type": "type",
-      "value": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark-color> <color-base>Info about the '<color-base>' reference.#typedef-color-baseReferenced in:2. The <color> syntax Possible linking"
+      "value": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark-color>"
     },
     {
       "name": "<color-base>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color-base",
-      "type": "type"
+      "type": "type",
+      "value": "<hex-color> | <color-function> | <named-color> | <color-mix()> | transparent"
     },
     {
       "name": "<color-function>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color-function",
-      "type": "type"
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <alpha()> | <color()>"
     },
     {
       "name": "color-mix()",
-      "value": "color-mix()",
+      "value": "color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-mix",
       "type": "function"
     },
     {
       "name": "<modern-rgb-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgb-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "<modern-rgba-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgba-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "<modern-hsl-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsl-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "<modern-hsla-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsla-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "hwb()",
-      "value": "hwb()",
+      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-hwb",
       "type": "function",
       "values": [
         {
           "name": "h",
-          "prose": "hInfo about the 'h' reference.#valdef-hwb-hPossible linking syntaxes:''hwb()/h'' is a <number> that corresponds to the origin color’s HWB hue, in degrees, after conversion, if required to sRGB, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "prose": "h is a <number> that corresponds to the origin color’s HWB hue, in degrees, after conversion, if required to sRGB, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-h",
           "type": "value",
           "value": "h"
         },
         {
           "name": "w",
-          "prose": "wInfo about the 'w' reference.#valdef-hwb-wPossible linking syntaxes:''hwb()/w'' and bInfo about the 'b' reference.#valdef-hwb-bPossible linking syntaxes:''hwb()/b'' are <number>s that correspond to the origin color’s HWB whiteness and blackness after conversion, if required to sRGB. 100 is equivalent to 100%.",
+          "prose": "w and b are <number>s that correspond to the origin color’s HWB whiteness and blackness after conversion, if required to sRGB. 100 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-w",
           "type": "value",
           "value": "w"
         },
         {
           "name": "b",
-          "prose": "wInfo about the 'w' reference.#valdef-hwb-wPossible linking syntaxes:''hwb()/w'' and bInfo about the 'b' reference.#valdef-hwb-bPossible linking syntaxes:''hwb()/b'' are <number>s that correspond to the origin color’s HWB whiteness and blackness after conversion, if required to sRGB. 100 is equivalent to 100%.",
+          "prose": "w and b are <number>s that correspond to the origin color’s HWB whiteness and blackness after conversion, if required to sRGB. 100 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-b",
           "type": "value",
           "value": "b"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-hwb-alphaPossible linking syntaxes:''hwb()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-hwb-alpha",
           "type": "value",
           "value": "alpha"
@@ -148,34 +154,34 @@
     },
     {
       "name": "lab()",
-      "value": "lab()",
+      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
       "type": "function",
       "values": [
         {
           "name": "l",
-          "prose": "lInfo about the 'l' reference.#valdef-lab-lPossible linking syntaxes:''lab()/l'' is a <number> that corresponds to the origin color’s CIE Lightness after conversion, if required, to CIE Lab. 100 is equivalent to 100%.",
+          "prose": "l is a <number> that corresponds to the origin color’s CIE Lightness after conversion, if required, to CIE Lab. 100 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-l",
           "type": "value",
           "value": "l"
         },
         {
           "name": "a",
-          "prose": "aInfo about the 'a' reference.#valdef-lab-aPossible linking syntaxes:''lab()/a'' and bInfo about the 'b' reference.#valdef-lab-bPossible linking syntaxes:''lab()/b'' are <number>s that correspond to the origin color’s CIE Lab a and b axes after conversion, if required, to CIE Lab. 125 is equivalent to 100%, while -125 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s CIE Lab a and b axes after conversion, if required, to CIE Lab. 125 is equivalent to 100%, while -125 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-a",
           "type": "value",
           "value": "a"
         },
         {
           "name": "b",
-          "prose": "aInfo about the 'a' reference.#valdef-lab-aPossible linking syntaxes:''lab()/a'' and bInfo about the 'b' reference.#valdef-lab-bPossible linking syntaxes:''lab()/b'' are <number>s that correspond to the origin color’s CIE Lab a and b axes after conversion, if required, to CIE Lab. 125 is equivalent to 100%, while -125 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s CIE Lab a and b axes after conversion, if required, to CIE Lab. 125 is equivalent to 100%, while -125 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-b",
           "type": "value",
           "value": "b"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-lab-alphaPossible linking syntaxes:''lab()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lab-alpha",
           "type": "value",
           "value": "alpha"
@@ -184,34 +190,34 @@
     },
     {
       "name": "oklab()",
-      "value": "oklab()",
+      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklab",
       "type": "function",
       "values": [
         {
           "name": "l",
-          "prose": "lInfo about the 'l' reference.#valdef-oklab-lPossible linking syntaxes:''oklab()/l'' is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to Oklab. 1.0 is equivalent to 100%.",
+          "prose": "l is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to Oklab. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-l",
           "type": "value",
           "value": "l"
         },
         {
           "name": "a",
-          "prose": "aInfo about the 'a' reference.#valdef-oklab-aPossible linking syntaxes:''oklab()/a'' and bInfo about the 'b' reference.#valdef-oklab-bPossible linking syntaxes:''oklab()/b'' are <number>s that correspond to the origin color’s Oklab a and b axes after conversion, if required, to Oklab. 0.4 is equivalent to 100%, while -0.4 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s Oklab a and b axes after conversion, if required, to Oklab. 0.4 is equivalent to 100%, while -0.4 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-a",
           "type": "value",
           "value": "a"
         },
         {
           "name": "b",
-          "prose": "aInfo about the 'a' reference.#valdef-oklab-aPossible linking syntaxes:''oklab()/a'' and bInfo about the 'b' reference.#valdef-oklab-bPossible linking syntaxes:''oklab()/b'' are <number>s that correspond to the origin color’s Oklab a and b axes after conversion, if required, to Oklab. 0.4 is equivalent to 100%, while -0.4 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s Oklab a and b axes after conversion, if required, to Oklab. 0.4 is equivalent to 100%, while -0.4 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-b",
           "type": "value",
           "value": "b"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-oklab-alphaPossible linking syntaxes:''oklab()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklab-alpha",
           "type": "value",
           "value": "alpha"
@@ -220,34 +226,34 @@
     },
     {
       "name": "lch()",
-      "value": "lch()",
+      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-lch",
       "type": "function",
       "values": [
         {
           "name": "l",
-          "prose": "lInfo about the 'l' reference.#valdef-lch-lPossible linking syntaxes:''lch()/l'' is a <number> that corresponds to the origin color’s CIE Lightness after conversion, if required, to CIE LCH. 100 is equivalent to 100%.",
+          "prose": "l is a <number> that corresponds to the origin color’s CIE Lightness after conversion, if required, to CIE LCH. 100 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-l",
           "type": "value",
           "value": "l"
         },
         {
           "name": "c",
-          "prose": "cInfo about the 'c' reference.#valdef-lch-cPossible linking syntaxes:''lch()/c'' is a <number> that corresponds to the origin color’s LCH chroma after conversion, if required, to CIE LCH. 150 is equivalent to 100%.",
+          "prose": "c is a <number> that corresponds to the origin color’s LCH chroma after conversion, if required, to CIE LCH. 150 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-c",
           "type": "value",
           "value": "c"
         },
         {
           "name": "h",
-          "prose": "hInfo about the 'h' reference.#valdef-lch-hPossible linking syntaxes:''lch()/h'' is a <number> that corresponds to the origin color’s LCH hue, in degrees, after conversion, if required, to CIE LCH, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "prose": "h is a <number> that corresponds to the origin color’s LCH hue, in degrees, after conversion, if required, to CIE LCH, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-h",
           "type": "value",
           "value": "h"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-lch-alphaPossible linking syntaxes:''lch()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-lch-alpha",
           "type": "value",
           "value": "alpha"
@@ -256,34 +262,34 @@
     },
     {
       "name": "oklch()",
-      "value": "oklch()",
+      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklch",
       "type": "function",
       "values": [
         {
           "name": "l",
-          "prose": "lInfo about the 'l' reference.#valdef-oklch-lPossible linking syntaxes:''oklch()/l'' is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to OkLCh. 1.0 is equivalent to 100%.",
+          "prose": "l is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to OkLCh. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-l",
           "type": "value",
           "value": "l"
         },
         {
           "name": "c",
-          "prose": "cInfo about the 'c' reference.#valdef-oklch-cPossible linking syntaxes:''oklch()/c'' is a <number> that corresponds to the origin color’s OkLCh chroma after conversion, if required, to OkLCh. 0.4 is equivalent to 100%.",
+          "prose": "c is a <number> that corresponds to the origin color’s OkLCh chroma after conversion, if required, to OkLCh. 0.4 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-c",
           "type": "value",
           "value": "c"
         },
         {
           "name": "h",
-          "prose": "hInfo about the 'h' reference.#valdef-oklch-hPossible linking syntaxes:''oklch()/h'' is a <number> that corresponds to the origin color’s OkLCh hue, in degrees, after conversion, if required, to OkLCh, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "prose": "h is a <number> that corresponds to the origin color’s OkLCh hue, in degrees, after conversion, if required, to OkLCh, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-h",
           "type": "value",
           "value": "h"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-oklch-alphaPossible linking syntaxes:''oklch()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-oklch-alpha",
           "type": "value",
           "value": "alpha"
@@ -292,13 +298,13 @@
     },
     {
       "name": "alpha()",
-      "value": "alpha()",
+      "value": "alpha(from <color> / [<alpha-value> | none])",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-alpha",
       "type": "function",
       "values": [
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-alpha-alphaPossible linking syntaxes:''alpha()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-alpha-alpha",
           "type": "value",
           "value": "alpha"
@@ -307,55 +313,55 @@
     },
     {
       "name": "color()",
-      "value": "color()",
+      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-color",
       "type": "function",
       "values": [
         {
           "name": "r",
-          "prose": "rInfo about the 'r' reference.#valdef-color-rPossible linking syntaxes:''color()/r'', gInfo about the 'g' reference.#valdef-color-gPossible linking syntaxes:''color()/g'', and bInfo about the 'b' reference.#valdef-color-bPossible linking syntaxes:''color()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
+          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-r",
           "type": "value",
           "value": "r"
         },
         {
           "name": "g",
-          "prose": "rInfo about the 'r' reference.#valdef-color-rPossible linking syntaxes:''color()/r'', gInfo about the 'g' reference.#valdef-color-gPossible linking syntaxes:''color()/g'', and bInfo about the 'b' reference.#valdef-color-bPossible linking syntaxes:''color()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
+          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-g",
           "type": "value",
           "value": "g"
         },
         {
           "name": "b",
-          "prose": "rInfo about the 'r' reference.#valdef-color-rPossible linking syntaxes:''color()/r'', gInfo about the 'g' reference.#valdef-color-gPossible linking syntaxes:''color()/g'', and bInfo about the 'b' reference.#valdef-color-bPossible linking syntaxes:''color()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
+          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to the predefined RGB color space. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-b",
           "type": "value",
           "value": "b"
         },
         {
           "name": "x",
-          "prose": "xInfo about the 'x' reference.#valdef-color-xPossible linking syntaxes:''color()/x'', yInfo about the 'y' reference.#valdef-color-yPossible linking syntaxes:''color()/y'', zInfo about the 'z' reference.#valdef-color-zPossible linking syntaxes:''color()/z'' are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
+          "prose": "x, y, z are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-x",
           "type": "value",
           "value": "x"
         },
         {
           "name": "y",
-          "prose": "xInfo about the 'x' reference.#valdef-color-xPossible linking syntaxes:''color()/x'', yInfo about the 'y' reference.#valdef-color-yPossible linking syntaxes:''color()/y'', zInfo about the 'z' reference.#valdef-color-zPossible linking syntaxes:''color()/z'' are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
+          "prose": "x, y, z are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-y",
           "type": "value",
           "value": "y"
         },
         {
           "name": "z",
-          "prose": "xInfo about the 'x' reference.#valdef-color-xPossible linking syntaxes:''color()/x'', yInfo about the 'y' reference.#valdef-color-yPossible linking syntaxes:''color()/y'', zInfo about the 'z' reference.#valdef-color-zPossible linking syntaxes:''color()/z'' are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
+          "prose": "x, y, z are all <number>s that correspond to the origin color’s X, Y and Z components after conversion, if required to relative CIE XYZ color space adapted to the relevant white point. The value 1.0 corresponds to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-z",
           "type": "value",
           "value": "z"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-color-alphaPossible linking syntaxes:''color()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-color-alpha",
           "type": "value",
           "value": "alpha"
@@ -365,58 +371,66 @@
     {
       "name": "<colorspace-params>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-colorspace-params",
-      "type": "type"
+      "type": "type",
+      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
     },
     {
       "name": "<custom-params>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-custom-params",
-      "type": "type"
+      "type": "type",
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]+"
     },
     {
       "name": "<predefined-rgb-params>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params",
-      "type": "type"
+      "type": "type",
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020"
     },
     {
       "name": "<xyz-params>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-xyz-params",
-      "type": "type"
+      "type": "type",
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "device-cmyk()",
-      "value": "device-cmyk()",
+      "value": "<legacy-device-cmyk-syntax> | <modern-device-cmyk-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-device-cmyk",
       "type": "function"
     },
     {
       "name": "<legacy-device-cmyk-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "device-cmyk( <number>#{4} )"
     },
     {
       "name": "<modern-device-cmyk-syntax>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-device-cmyk-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "device-cmyk( <cmyk-component>{4} [ / [ <alpha-value> | none ] ]? )"
     },
     {
       "name": "<cmyk-component>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-cmyk-component",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <percentage> | none"
     },
     {
       "name": "light-dark()",
-      "value": "light-dark()",
+      "value": "<light-dark-color> | <light-dark-image>",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-light-dark",
       "type": "function",
       "values": [
         {
           "name": "none",
-          "prose": "The noneInfo about the 'none' reference.#valdef-light-dark-noneReferenced in:4.2. Relative Color Syntax (2) Possible linking syntaxes:''light-dark()/none'' keyword computes to image(transparent) (a fully transparent image with no natural size).",
+          "prose": "The none keyword computes to image(transparent) (a fully transparent image with no natural size).",
           "href": "https://drafts.csswg.org/css-color-5/#valdef-light-dark-none",
           "type": "value",
           "value": "none"
@@ -426,220 +440,63 @@
     {
       "name": "<light-dark-color>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-light-dark-color",
-      "type": "type"
+      "type": "type",
+      "value": "light-dark(<color>, <color>)"
     },
     {
       "name": "<light-dark-image>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image",
-      "type": "type"
+      "type": "type",
+      "value": "light-dark( [ <image> | none ] , [ <image> | none ] )"
     },
     {
       "name": "contrast-color()",
-      "value": "contrast-color()",
+      "value": "contrast-color( <color> )",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-contrast-color",
       "type": "function"
     },
     {
       "name": "<color-space>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color-space",
-      "type": "type"
+      "type": "type",
+      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space>"
     },
     {
       "name": "<rectangular-color-space>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>"
     },
     {
       "name": "<polar-color-space>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-polar-color-space",
-      "type": "type"
+      "type": "type",
+      "value": "hsl | hwb | lch | oklch"
     },
     {
       "name": "<custom-color-space>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-custom-color-space",
-      "type": "type"
+      "type": "type",
+      "value": "<dashed-ident>"
     },
     {
       "name": "<hue-interpolation-method>",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method",
-      "type": "type"
+      "type": "type",
+      "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
     {
       "name": "<color-interpolation-method>",
       "href": "https://drafts.csswg.org/css-color-5/#color-interpolation-method",
-      "type": "type"
+      "type": "type",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
     }
   ],
   "warnings": [
     {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-base>><</color-base>>",
-      "value": "<hex-color> | <color-function> | <named-color> | <color-mix()> | transparent <color-function>Info about the '<color-function>' reference.#typedef-color-functionReferenced in:2. The <color> syntax Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-function>><</color-function>>",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <alpha()> | <color()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''color-mix()''''/color-mix()''",
-      "value": "color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<modern-rgb-syntax>><</modern-rgb-syntax>>",
-      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? ) <modern-rgba-syntax>Info about the '<modern-rgba-syntax>' reference.#typedef-modern-rgba-syntaxReferenced in:4.3. Relative sRGB Colors Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<modern-rgba-syntax>><</modern-rgba-syntax>>",
-      "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<modern-hsl-syntax>><</modern-hsl-syntax>>",
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) <modern-hsla-syntax>Info about the '<modern-hsla-syntax>' reference.#typedef-modern-hsla-syntaxReferenced in:4.4. Relative HSL Colors Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<modern-hsla-syntax>><</modern-hsla-syntax>>",
-      "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''hwb()''''/hwb()''",
-      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''lab()''''/lab()''",
-      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''oklab()''''/oklab()''",
-      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''lch()''''/lch()''",
-      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''oklch()''''/oklch()''",
-      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''alpha()''''/alpha()''",
-      "value": "alpha(from <color> / [<alpha-value> | none])"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''color()''''/color()''",
-      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? ) <colorspace-params>Info about the '<colorspace-params>' reference.#typedef-colorspace-paramsReferenced in:5. Specifying Predefined and Custom Color Spaces: the color() Function Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<colorspace-params>><</colorspace-params>>",
-      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>] <custom-params>Info about the '<custom-params>' reference.#typedef-custom-paramsReferenced in:5. Specifying Predefined and Custom Color Spaces: the color() Function 5.1. Relative Color-Function Colors Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<custom-params>><</custom-params>>",
-      "value": "<dashed-ident> [ <number> | <percentage> | none ]+ <predefined-rgb-params>Info about the '<predefined-rgb-params>' reference.#typedef-predefined-rgb-paramsReferenced in:5. Specifying Predefined and Custom Color Spaces: the color() Function 5.1. Relative Color-Function Colors (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<predefined-rgb-params>><</predefined-rgb-params>>",
-      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3} <predefined-rgb>Info about the '<predefined-rgb>' reference.#typedef-predefined-rgbReferenced in:5. Specifying Predefined and Custom Color Spaces: the color() Function Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<predefined-rgb>><</predefined-rgb>>",
-      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 <xyz-params>Info about the '<xyz-params>' reference.#typedef-xyz-paramsReferenced in:5. Specifying Predefined and Custom Color Spaces: the color() Function 5.1. Relative Color-Function Colors (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<xyz-params>><</xyz-params>>",
-      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''device-cmyk()''''/device-cmyk()''",
-      "value": "<legacy-device-cmyk-syntax> | <modern-device-cmyk-syntax> <legacy-device-cmyk-syntax>Info about the '<legacy-device-cmyk-syntax>' reference.#typedef-legacy-device-cmyk-syntaxReferenced in:6. Uncalibrated CMYK Colors: the device-cmyk() Function Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<legacy-device-cmyk-syntax>><</legacy-device-cmyk-syntax>>",
-      "value": "device-cmyk( <number>#{4} ) <modern-device-cmyk-syntax>Info about the '<modern-device-cmyk-syntax>' reference.#typedef-modern-device-cmyk-syntaxReferenced in:6. Uncalibrated CMYK Colors: the device-cmyk() Function Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<modern-device-cmyk-syntax>><</modern-device-cmyk-syntax>>",
-      "value": "device-cmyk( <cmyk-component>{4} [ / [ <alpha-value> | none ] ]? ) <cmyk-component>Info about the '<cmyk-component>' reference.#typedef-cmyk-componentReferenced in:6. Uncalibrated CMYK Colors: the device-cmyk() Function Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<cmyk-component>><</cmyk-component>>",
-      "value": "<number> | <percentage> | none"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''light-dark()''''/light-dark()''",
-      "value": "<light-dark-color> | <light-dark-image> <light-dark-color>Info about the '<light-dark-color>' reference.#typedef-light-dark-colorReferenced in:2. The <color> syntax (2) 7. Reacting to the used color-scheme: the light-dark() Function (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<light-dark-color>><</light-dark-color>>",
-      "value": "light-dark(<color>, <color>) <light-dark-image>Info about the '<light-dark-image>' reference.#typedef-light-dark-imageReferenced in:7. Reacting to the used color-scheme: the light-dark() Function (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<light-dark-image>><</light-dark-image>>",
-      "value": "light-dark( [ <image> | none ] , [ <image> | none ] )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''contrast-color()''''/contrast-color()''",
-      "value": "contrast-color( <color> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-space>><</color-space>>",
-      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space> <rectangular-color-space>Info about the '<rectangular-color-space>' reference.#typedef-rectangular-color-spaceReferenced in:9.1. Color Space for Interpolation (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<rectangular-color-space>><</rectangular-color-space>>",
-      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space> <polar-color-space>Info about the '<polar-color-space>' reference.#typedef-polar-color-spaceReferenced in:9.1. Color Space for Interpolation (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<polar-color-space>><</polar-color-space>>",
-      "value": "hsl | hwb | lch | oklch <custom-color-space>Info about the '<custom-color-space>' reference.#typedef-custom-color-spaceReferenced in:9.1. Color Space for Interpolation (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<custom-color-space>><</custom-color-space>>",
-      "value": "<dashed-ident> <hue-interpolation-method>Info about the '<hue-interpolation-method>' reference.#typedef-hue-interpolation-methodReferenced in:3.3. Calculating the Result of color-mix (2) 9.1. Color Space for Interpolation 11.1. Serializing color-mix() (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<hue-interpolation-method>><</hue-interpolation-method>>",
-      "value": "[ shorter | longer | increasing | decreasing ] hue <color-interpolation-method>Info about the '<color-interpolation-method>' reference.#color-interpolation-methodReferenced in:3. Mixing Colors: the color-mix() Function 9.1. Color Space for Interpolation (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-interpolation-method>><</color-interpolation-method>>",
-      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
-    },
-    {
       "msg": "Dangling value",
       "name": "r",
-      "prose": "rInfo about the 'r' reference.#valdef-rgb-rPossible linking syntaxes:''rgb()/r'', gInfo about the 'g' reference.#valdef-rgb-gPossible linking syntaxes:''rgb()/g'', and bInfo about the 'b' reference.#valdef-rgb-bPossible linking syntaxes:''rgb()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-r",
       "type": "value",
       "value": "r",
@@ -648,7 +505,7 @@
     {
       "msg": "Dangling value",
       "name": "g",
-      "prose": "rInfo about the 'r' reference.#valdef-rgb-rPossible linking syntaxes:''rgb()/r'', gInfo about the 'g' reference.#valdef-rgb-gPossible linking syntaxes:''rgb()/g'', and bInfo about the 'b' reference.#valdef-rgb-bPossible linking syntaxes:''rgb()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-g",
       "type": "value",
       "value": "g",
@@ -657,7 +514,7 @@
     {
       "msg": "Dangling value",
       "name": "b",
-      "prose": "rInfo about the 'r' reference.#valdef-rgb-rPossible linking syntaxes:''rgb()/r'', gInfo about the 'g' reference.#valdef-rgb-gPossible linking syntaxes:''rgb()/g'', and bInfo about the 'b' reference.#valdef-rgb-bPossible linking syntaxes:''rgb()/b'' are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue components after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-b",
       "type": "value",
       "value": "b",
@@ -666,7 +523,7 @@
     {
       "msg": "Dangling value",
       "name": "alpha",
-      "prose": "alphaInfo about the 'alpha' reference.#valdef-rgb-alphaPossible linking syntaxes:''rgb()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+      "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-rgb-alpha",
       "type": "value",
       "value": "alpha",
@@ -675,7 +532,7 @@
     {
       "msg": "Dangling value",
       "name": "h",
-      "prose": "hInfo about the 'h' reference.#valdef-hsl-hPossible linking syntaxes:''hsl()/h'' is a <number> that corresponds to the origin color’s HSL hue, in degrees, after conversion, if required to sRGB, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+      "prose": "h is a <number> that corresponds to the origin color’s HSL hue, in degrees, after conversion, if required to sRGB, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-h",
       "type": "value",
       "value": "h",
@@ -684,7 +541,7 @@
     {
       "msg": "Dangling value",
       "name": "s",
-      "prose": "sInfo about the 's' reference.#valdef-hsl-sPossible linking syntaxes:''hsl()/s'' and lInfo about the 'l' reference.#valdef-hsl-lPossible linking syntaxes:''hsl()/l'' are <number>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB. 100 is equivalent to 100%.",
+      "prose": "s and l are <number>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB. 100 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-s",
       "type": "value",
       "value": "s",
@@ -693,7 +550,7 @@
     {
       "msg": "Dangling value",
       "name": "l",
-      "prose": "sInfo about the 's' reference.#valdef-hsl-sPossible linking syntaxes:''hsl()/s'' and lInfo about the 'l' reference.#valdef-hsl-lPossible linking syntaxes:''hsl()/l'' are <number>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB. 100 is equivalent to 100%.",
+      "prose": "s and l are <number>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB. 100 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-l",
       "type": "value",
       "value": "l",
@@ -702,7 +559,7 @@
     {
       "msg": "Dangling value",
       "name": "alpha",
-      "prose": "alphaInfo about the 'alpha' reference.#valdef-hsl-alphaPossible linking syntaxes:''hsl()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency 1.0 is equivalent to 100%.",
+      "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency 1.0 is equivalent to 100%.",
       "href": "https://drafts.csswg.org/css-color-5/#valdef-hsl-alpha",
       "type": "value",
       "value": "alpha",

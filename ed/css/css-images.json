@@ -172,46 +172,75 @@
     {
       "name": "<image>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-image",
-      "type": "type"
+      "type": "type",
+      "value": "<url> | <gradient>"
     },
     {
       "name": "<gradient>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-gradient",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
     },
     {
       "name": "linear-gradient()",
-      "prose": "The linear-gradient()Info about the 'linear-gradient()' reference.#funcdef-linear-gradientReferenced in:3. Gradients 3.1. Linear Gradients: the linear-gradient() notation 3.1.1. linear-gradient() syntax 3.1.2. Linear Gradient Examples 3.2. Radial Gradients: the radial-gradient() notation 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations Changes Since the 17 April 2012 Candidate Recommendation Possible linking syntaxes:''linear-gradient()''''/linear-gradient()'' notation specifies a linear gradient in CSS. Its syntax is as follows:",
+      "prose": "The linear-gradient() notation specifies a linear gradient in CSS. Its syntax is as follows:",
       "href": "https://drafts.csswg.org/css-images-3/#funcdef-linear-gradient",
       "type": "function",
-      "value": "linear-gradient( [ <linear-gradient-syntax> ] ) <linear-gradient-syntax>Info about the '<linear-gradient-syntax>' reference.#typedef-linear-gradient-syntaxReferenced in:3.1.1. linear-gradient() syntax 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations Possible linking"
+      "value": "linear-gradient( [ <linear-gradient-syntax> ] )"
     },
     {
       "name": "<linear-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-gradient-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "[ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-side-or-corner",
-      "type": "type"
+      "type": "type",
+      "value": "[left | right] || [top | bottom]"
     },
     {
       "name": "radial-gradient()",
-      "prose": "The radial-gradient()Info about the 'radial-gradient()' reference.#funcdef-radial-gradientReferenced in:3. Gradients 3.2. Radial Gradients: the radial-gradient() notation 3.2.1. radial-gradient() Syntax 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations Possible linking syntaxes:''radial-gradient()''''/radial-gradient()'' notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shapeInfo about the 'ending shape' reference.#ending-shapeReferenced in:3.2. Radial Gradients: the radial-gradient() notation 3.2.1. radial-gradient() Syntax (2) (3) (4) (5) (6) (7) (8) (9) 3.2.2. Placing Color Stops 3.2.3. Degenerate Radial Gradients (2) (3) (4) (5) (6) Possible linking syntaxes:[=ending shape=][=/ending shape=] (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
+      "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
       "href": "https://drafts.csswg.org/css-images-3/#funcdef-radial-gradient",
       "type": "function",
-      "value": "radial-gradient( [ <radial-gradient-syntax> ] ) <radial-gradient-syntax>Info about the '<radial-gradient-syntax>' reference.#typedef-radial-gradient-syntaxReferenced in:3.2.1. radial-gradient() Syntax 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations Possible linking"
+      "value": "radial-gradient( [ <radial-gradient-syntax> ] )",
+      "values": [
+        {
+          "name": "<position>",
+          "prose": "Determines the center of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-position",
+          "type": "value",
+          "value": "<position>"
+        },
+        {
+          "name": "<radial-shape>",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <radial-shape> is omitted, the ending shape defaults to a circle if the <radial-size> is a single <length>, and to an ellipse otherwise.",
+          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-shape",
+          "type": "value",
+          "value": "<radial-shape>"
+        },
+        {
+          "name": "<radial-size>",
+          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <radial-extent> values: If <radial-shape> is specified as circle or is omitted, the <radial-size> may be given explicitly as: If <radial-shape> is specified as ellipse or is omitted, <radial-size> may instead be given explicitly as:",
+          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-size",
+          "type": "value",
+          "value": "<radial-size>"
+        }
+      ]
     },
     {
       "name": "<radial-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-gradient-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>"
     },
     {
       "name": "<radial-size>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-size",
       "type": "type",
+      "value": "<radial-extent> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
       "values": [
         {
           "name": "<length [0,∞]>",
@@ -233,6 +262,7 @@
       "name": "<radial-extent>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-extent",
       "type": "type",
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side",
       "values": [
         {
           "name": "closest-side",
@@ -268,6 +298,7 @@
       "name": "<radial-shape>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-shape",
       "type": "type",
+      "value": "circle | ellipse",
       "values": [
         {
           "name": "circle",
@@ -285,28 +316,28 @@
     },
     {
       "name": "repeating-linear-gradient()",
-      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient()Info about the 'repeating-linear-gradient()' reference.#funcdef-repeating-linear-gradientReferenced in:3. Gradients 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations (2) Possible linking syntaxes:''repeating-linear-gradient()''''/repeating-linear-gradient()'' and repeating-radial-gradient()Info about the 'repeating-radial-gradient()' reference.#funcdef-repeating-radial-gradientReferenced in:3. Gradients 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations (2) Possible linking syntaxes:''repeating-radial-gradient()''''/repeating-radial-gradient()'' values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-linear-gradient",
       "type": "function",
       "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )"
     },
     {
       "name": "repeating-radial-gradient()",
-      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient()Info about the 'repeating-linear-gradient()' reference.#funcdef-repeating-linear-gradientReferenced in:3. Gradients 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations (2) Possible linking syntaxes:''repeating-linear-gradient()''''/repeating-linear-gradient()'' and repeating-radial-gradient()Info about the 'repeating-radial-gradient()' reference.#funcdef-repeating-radial-gradientReferenced in:3. Gradients 3.3. Repeating Gradients: the repeating-linear-gradient() and repeating-radial-gradient() notations (2) Possible linking syntaxes:''repeating-radial-gradient()''''/repeating-radial-gradient()'' values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-radial-gradient",
       "type": "function",
       "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )",
       "values": [
         {
           "name": "<position>",
-          "prose": "Determines the centerInfo about the 'center' reference.#radial-gradient-gradient-centerReferenced in:3.2. Radial Gradients: the radial-gradient() notation Possible linking syntaxes:[=gradient center=][=radial-gradient()/gradient center=][=repeating-radial-gradient()/gradient center=] of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "prose": "Determines the center of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
           "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-position",
           "type": "value",
           "value": "<position>"
         },
         {
           "name": "<radial-shape>",
-          "prose": "Can be either circleInfo about the 'circle' reference.#valdef-radial-shape-circleReferenced in:3.2.1. radial-gradient() Syntax (2) Possible linking syntaxes:''<radial-shape>/circle'' or ellipseInfo about the 'ellipse' reference.#valdef-radial-shape-ellipseReferenced in:3.2.1. radial-gradient() Syntax (2) Possible linking syntaxes:''<radial-shape>/ellipse''; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <radial-shape> is omitted, the ending shape defaults to a circle if the <radial-size> is a single <length>, and to an ellipse otherwise.",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <radial-shape> is omitted, the ending shape defaults to a circle if the <radial-size> is a single <length>, and to an ellipse otherwise.",
           "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-shape",
           "type": "value",
           "value": "<radial-shape>"
@@ -317,107 +348,25 @@
           "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-gradient-radial-size",
           "type": "value",
           "value": "<radial-size>"
-        },
-        {
-          "name": "closest-side",
-          "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
-          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-closest-side",
-          "type": "value",
-          "value": "closest-side"
-        },
-        {
-          "name": "farthest-side",
-          "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
-          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-farthest-side",
-          "type": "value",
-          "value": "farthest-side"
-        },
-        {
-          "name": "closest-corner",
-          "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
-          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-closest-corner",
-          "type": "value",
-          "value": "closest-corner"
-        },
-        {
-          "name": "farthest-corner",
-          "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
-          "href": "https://drafts.csswg.org/css-images-3/#valdef-radial-extent-farthest-corner",
-          "type": "value",
-          "value": "farthest-corner"
         }
       ]
     },
     {
       "name": "<color-stop-list>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-color-stop-list",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#?"
     },
     {
       "name": "<linear-color-stop>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-stop",
-      "type": "type"
+      "type": "type",
+      "value": "<color> <length-percentage>?"
     },
     {
       "name": "<linear-color-hint>",
       "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-hint",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<image>><</image>>",
-      "value": "<url> | <gradient>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gradient>><</gradient>>",
-      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-gradient-syntax>><</linear-gradient-syntax>>",
-      "value": "[ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list> <side-or-corner>Info about the '<side-or-corner>' reference.#typedef-side-or-cornerReferenced in:3.1.1. linear-gradient() syntax Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<side-or-corner>><</side-or-corner>>",
-      "value": "[left | right] || [top | bottom]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<radial-gradient-syntax>><</radial-gradient-syntax>>",
-      "value": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list> <radial-size>Info about the '<radial-size>' reference.#typedef-radial-sizeReferenced in:3.2.1. radial-gradient() Syntax (2) (3) (4) (5) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<radial-size>><</radial-size>>",
-      "value": "<radial-extent> | <length [0,∞]> | <length-percentage [0,∞]>{2} <radial-extent>Info about the '<radial-extent>' reference.#typedef-radial-extentReferenced in:3.2.1. radial-gradient() Syntax (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<radial-extent>><</radial-extent>>",
-      "value": "closest-corner | closest-side | farthest-corner | farthest-side <radial-shape>Info about the '<radial-shape>' reference.#typedef-radial-shapeReferenced in:3.2.1. radial-gradient() Syntax (2) (3) (4) (5) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<radial-shape>><</radial-shape>>",
-      "value": "circle | ellipse"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-stop-list>><</color-stop-list>>",
-      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#? <linear-color-stop>Info about the '<linear-color-stop>' reference.#typedef-linear-color-stopReferenced in:3.4.1. Color Stop Lists (2) Changes Since the 10 October 2019 Candidate Recommendation Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-color-stop>><</linear-color-stop>>",
-      "value": "<color> <length-percentage>? <linear-color-hint>Info about the '<linear-color-hint>' reference.#typedef-linear-color-hintReferenced in:3.4.1. Color Stop Lists Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-color-hint>><</linear-color-hint>>",
+      "type": "type",
       "value": "<length-percentage>"
     }
   ]

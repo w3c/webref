@@ -25,14 +25,14 @@
         },
         {
           "name": "<track-list> | <auto-track-list>",
-          "prose": "Specifies the track list as a series of track sizing functions and line names. Each track sizing functionInfo about the 'track sizing function' reference.#grid-template-rows-track-sizing-functionReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.1. Track Sizes 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 7.2.4. Flexible Lengths: the fr unit 12.1. Grid Sizing Algorithm (2) 12.5. Resolve Intrinsic Track Sizes (2) 12.5.1. Distributing Extra Space Across Spanned Tracks Possible linking syntaxes:[=track sizing function=][=sizing function=][=grid-template-rows/track sizing function=][=grid-template-columns/track sizing function=] can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. It can also be specified as a range using the minmax() notation, which can combine any of the previously mentioned mechanisms to specify separate min and max track sizing functions for the column or row.",
+          "prose": "Specifies the track list as a series of track sizing functions and line names. Each track sizing function can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. It can also be specified as a range using the minmax() notation, which can combine any of the previously mentioned mechanisms to specify separate min and max track sizing functions for the column or row.",
           "href": "https://drafts.csswg.org/css-grid-2/#track-listing",
           "type": "value",
           "value": "<track-list> | <auto-track-list>"
         },
         {
           "name": "subgrid <line-name-list>?",
-          "prose": "The subgridInfo about the 'subgrid' reference.#valdef-grid-template-rows-subgridReferenced in:3.4. Nested vs. Subgridded Items 7.2.3.1. Syntax of repeat() 7.2.5. Computed Value of a Track Listing (2) (3) 7.2.6.2. Resolved Value of a Subgridded Track Listing 16.3. Additions Since Level 1 Possible linking syntaxes:''grid-template-rows/subgrid''''grid-template-columns/subgrid'' value indicates that the grid will adopt the spanned portion of its parent grid in that axis (the subgridded axisInfo about the 'subgridded axis' reference.#subgridded-axisReferenced in:3.4. Nested vs. Subgridded Items (2) 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 8. Placing Grid Items 9. Subgrids (2) (3) (4) (5) (6) (7) (8) (9) 12.1. Grid Sizing Algorithm Possible linking syntaxes:[=subgridded axis=][=/subgridded axis=]). Rather than being specified explicitly, the sizes of the grid rows/columns will be taken from the parent grid’s definition, and the subgrid’s items will participate in the intrinsic size calculations (CSS Grid Layout 1 § 11.5 Resolve Intrinsic Track Sizes) of any tracks shared with the parent grid. Essentially, subgrids provide the ability to pass grid parameters down through nested elements, and content-based sizing information back up to their parent grid. The <line-name-list> argument allows local naming of the grid lines shared with the parent grid: if a <line-name-list> is given, the specified <line-names>s are assigned to the lines of the subgrid’s explicit grid, one per line, starting with line 1. Excess <line-names> are ignored. If there is no parent grid, or if the grid container is otherwise forced to establish an independent formatting context (for example, due to layout containment [CSS-CONTAIN-2] or absolute positioning [CSS-POSITION-3]), the used value is the initial value, none, and the grid container is not a subgrid. An axis that is not subgridded is a standalone axisInfo about the 'standalone axis' reference.#standalone-axisReferenced in:7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions (2) 7.2.6.1. Resolved Value of a Standalone Track Listing Possible linking syntaxes:[=standalone axis=][=/standalone axis=].",
+          "prose": "The subgrid value indicates that the grid will adopt the spanned portion of its parent grid in that axis (the subgridded axis). Rather than being specified explicitly, the sizes of the grid rows/columns will be taken from the parent grid’s definition, and the subgrid’s items will participate in the intrinsic size calculations (CSS Grid Layout 1 § 11.5 Resolve Intrinsic Track Sizes) of any tracks shared with the parent grid. Essentially, subgrids provide the ability to pass grid parameters down through nested elements, and content-based sizing information back up to their parent grid. The <line-name-list> argument allows local naming of the grid lines shared with the parent grid: if a <line-name-list> is given, the specified <line-names>s are assigned to the lines of the subgrid’s explicit grid, one per line, starting with line 1. Excess <line-names> are ignored. If there is no parent grid, or if the grid container is otherwise forced to establish an independent formatting context (for example, due to layout containment [CSS-CONTAIN-2] or absolute positioning [CSS-POSITION-3]), the used value is the initial value, none, and the grid container is not a subgrid. An axis that is not subgridded is a standalone axis.",
           "href": "https://drafts.csswg.org/css-grid-2/#subgrid-listing",
           "type": "value",
           "value": "subgrid <line-name-list>?"
@@ -52,7 +52,7 @@
         },
         {
           "name": "<flex [0,∞]>",
-          "prose": "A non-negative dimension with the unit fr specifying the track’s flex factorInfo about the 'flex factor' reference.#grid-template-columns-flex-factorReferenced in:7.2.1. Track Sizes (2) (3) 7.2.4. Flexible Lengths: the fr unit (2) (3) (4) 12.7. Expand Flexible Tracks (2) (3) 12.7.1. Find the Size of an fr (2) Possible linking syntaxes:[=flex factor=][=grid-template-columns/flex factor=][=grid-template-rows/flex factor=]. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. minmax(auto, <flex>)).",
+          "prose": "A non-negative dimension with the unit fr specifying the track’s flex factor. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. minmax(auto, <flex>)).",
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-flex-0",
           "type": "value",
           "value": "<flex [0,∞]>"
@@ -117,14 +117,14 @@
         },
         {
           "name": "<track-list> | <auto-track-list>",
-          "prose": "Specifies the track list as a series of track sizing functions and line names. Each track sizing functionInfo about the 'track sizing function' reference.#grid-template-rows-track-sizing-functionReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.1. Track Sizes 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 7.2.4. Flexible Lengths: the fr unit 12.1. Grid Sizing Algorithm (2) 12.5. Resolve Intrinsic Track Sizes (2) 12.5.1. Distributing Extra Space Across Spanned Tracks Possible linking syntaxes:[=track sizing function=][=sizing function=][=grid-template-rows/track sizing function=][=grid-template-columns/track sizing function=] can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. It can also be specified as a range using the minmax() notation, which can combine any of the previously mentioned mechanisms to specify separate min and max track sizing functions for the column or row.",
+          "prose": "Specifies the track list as a series of track sizing functions and line names. Each track sizing function can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. It can also be specified as a range using the minmax() notation, which can combine any of the previously mentioned mechanisms to specify separate min and max track sizing functions for the column or row.",
           "href": "https://drafts.csswg.org/css-grid-2/#track-listing",
           "type": "value",
           "value": "<track-list> | <auto-track-list>"
         },
         {
           "name": "subgrid <line-name-list>?",
-          "prose": "The subgridInfo about the 'subgrid' reference.#valdef-grid-template-rows-subgridReferenced in:3.4. Nested vs. Subgridded Items 7.2.3.1. Syntax of repeat() 7.2.5. Computed Value of a Track Listing (2) (3) 7.2.6.2. Resolved Value of a Subgridded Track Listing 16.3. Additions Since Level 1 Possible linking syntaxes:''grid-template-rows/subgrid''''grid-template-columns/subgrid'' value indicates that the grid will adopt the spanned portion of its parent grid in that axis (the subgridded axisInfo about the 'subgridded axis' reference.#subgridded-axisReferenced in:3.4. Nested vs. Subgridded Items (2) 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 8. Placing Grid Items 9. Subgrids (2) (3) (4) (5) (6) (7) (8) (9) 12.1. Grid Sizing Algorithm Possible linking syntaxes:[=subgridded axis=][=/subgridded axis=]). Rather than being specified explicitly, the sizes of the grid rows/columns will be taken from the parent grid’s definition, and the subgrid’s items will participate in the intrinsic size calculations (CSS Grid Layout 1 § 11.5 Resolve Intrinsic Track Sizes) of any tracks shared with the parent grid. Essentially, subgrids provide the ability to pass grid parameters down through nested elements, and content-based sizing information back up to their parent grid. The <line-name-list> argument allows local naming of the grid lines shared with the parent grid: if a <line-name-list> is given, the specified <line-names>s are assigned to the lines of the subgrid’s explicit grid, one per line, starting with line 1. Excess <line-names> are ignored. If there is no parent grid, or if the grid container is otherwise forced to establish an independent formatting context (for example, due to layout containment [CSS-CONTAIN-2] or absolute positioning [CSS-POSITION-3]), the used value is the initial value, none, and the grid container is not a subgrid. An axis that is not subgridded is a standalone axisInfo about the 'standalone axis' reference.#standalone-axisReferenced in:7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions (2) 7.2.6.1. Resolved Value of a Standalone Track Listing Possible linking syntaxes:[=standalone axis=][=/standalone axis=].",
+          "prose": "The subgrid value indicates that the grid will adopt the spanned portion of its parent grid in that axis (the subgridded axis). Rather than being specified explicitly, the sizes of the grid rows/columns will be taken from the parent grid’s definition, and the subgrid’s items will participate in the intrinsic size calculations (CSS Grid Layout 1 § 11.5 Resolve Intrinsic Track Sizes) of any tracks shared with the parent grid. Essentially, subgrids provide the ability to pass grid parameters down through nested elements, and content-based sizing information back up to their parent grid. The <line-name-list> argument allows local naming of the grid lines shared with the parent grid: if a <line-name-list> is given, the specified <line-names>s are assigned to the lines of the subgrid’s explicit grid, one per line, starting with line 1. Excess <line-names> are ignored. If there is no parent grid, or if the grid container is otherwise forced to establish an independent formatting context (for example, due to layout containment [CSS-CONTAIN-2] or absolute positioning [CSS-POSITION-3]), the used value is the initial value, none, and the grid container is not a subgrid. An axis that is not subgridded is a standalone axis.",
           "href": "https://drafts.csswg.org/css-grid-2/#subgrid-listing",
           "type": "value",
           "value": "subgrid <line-name-list>?"
@@ -144,7 +144,7 @@
         },
         {
           "name": "<flex [0,∞]>",
-          "prose": "A non-negative dimension with the unit fr specifying the track’s flex factorInfo about the 'flex factor' reference.#grid-template-columns-flex-factorReferenced in:7.2.1. Track Sizes (2) (3) 7.2.4. Flexible Lengths: the fr unit (2) (3) (4) 12.7. Expand Flexible Tracks (2) (3) 12.7.1. Find the Size of an fr (2) Possible linking syntaxes:[=flex factor=][=grid-template-columns/flex factor=][=grid-template-rows/flex factor=]. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. minmax(auto, <flex>)).",
+          "prose": "A non-negative dimension with the unit fr specifying the track’s flex factor. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. minmax(auto, <flex>)).",
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-flex-0",
           "type": "value",
           "value": "<flex [0,∞]>"
@@ -209,7 +209,7 @@
         },
         {
           "name": "<string>+",
-          "prose": "A row is created for every separate string listed for the grid-template-areas property, and a column is created for each cell in the string, when parsed as follows: Tokenize the string into a list of the following tokens, using longest-match semantics: A sequence of ident code points, representing a named cell tokenInfo about the 'named cell token' reference.#grid-template-areas-named-cell-tokenReferenced in:7.3. Named Areas: the grid-template-areas property (2) (3) Possible linking syntaxes:[=named cell token=][=grid-template-areas/named cell token=] with a name consisting of its code points. A sequence of one or more \".\" (U+002E FULL STOP), representing a null cell tokenInfo about the 'null cell token' reference.#grid-template-areas-null-cell-tokenReferenced in:7.3. Named Areas: the grid-template-areas property (2) 7.3.1. Serialization Of Template Strings Possible linking syntaxes:[=null cell token=][=grid-template-areas/null cell token=]. A sequence of whitespace, representing nothing (do not produce a token). A sequence of any other characters, representing a trash tokenInfo about the 'trash token' reference.#grid-template-areas-trash-tokenReferenced in:7.3. Named Areas: the grid-template-areas property Possible linking syntaxes:[=trash token=][=grid-template-areas/trash token=]. A null cell token represents an unnamed area in the grid container. A named cell token creates a named grid area with the same name. Multiple named cell tokens within and between rows create a single named grid area that spans the corresponding grid cells. A trash token is a syntax error, and makes the declaration invalid. All strings must define the same number of cell tokens (named cell tokens and/or null cell tokens), and at least one cell token, or else the declaration is invalid. If a named grid area spans multiple grid cells, but those cells do not form a single filled-in rectangle, the declaration is invalid.",
+          "prose": "A row is created for every separate string listed for the grid-template-areas property, and a column is created for each cell in the string, when parsed as follows: Tokenize the string into a list of the following tokens, using longest-match semantics: A sequence of ident code points, representing a named cell token with a name consisting of its code points. A sequence of one or more \".\" (U+002E FULL STOP), representing a null cell token. A sequence of whitespace, representing nothing (do not produce a token). A sequence of any other characters, representing a trash token. A null cell token represents an unnamed area in the grid container. A named cell token creates a named grid area with the same name. Multiple named cell tokens within and between rows create a single named grid area that spans the corresponding grid cells. A trash token is a syntax error, and makes the declaration invalid. All strings must define the same number of cell tokens (named cell tokens and/or null cell tokens), and at least one cell token, or else the declaration is invalid. If a named grid area spans multiple grid cells, but those cells do not form a single filled-in rectangle, the declaration is invalid.",
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-areas-string",
           "type": "value",
           "value": "<string>+"
@@ -377,6 +377,7 @@
           "name": "<grid-line>",
           "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -430,6 +431,7 @@
           "name": "<grid-line>",
           "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -483,6 +485,7 @@
           "name": "<grid-line>",
           "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -536,6 +539,7 @@
           "name": "<grid-line>",
           "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -628,74 +632,85 @@
     {
       "name": "<track-list>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-list",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>?"
     },
     {
       "name": "<auto-track-list>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-track-list",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat> [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>?"
     },
     {
       "name": "<explicit-track-list>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-explicit-track-list",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? <track-size> ]+ <line-names>?"
     },
     {
       "name": "<line-name-list>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-name-list",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names> | <name-repeat> ]+"
     },
     {
       "name": "<track-size>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-size",
-      "type": "type"
+      "type": "type",
+      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage [0,∞]> )"
     },
     {
       "name": "<fixed-size>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-size",
-      "type": "type"
+      "type": "type",
+      "value": "<fixed-breadth> | minmax( <fixed-breadth> , <track-breadth> ) | minmax( <inflexible-breadth> , <fixed-breadth> )"
     },
     {
       "name": "<track-breadth>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-breadth",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage [0,∞]> | <flex [0,∞]> | min-content | max-content | auto"
     },
     {
       "name": "<inflexible-breadth>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-inflexible-breadth",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage [0,∞]> | min-content | max-content | auto"
     },
     {
       "name": "<fixed-breadth>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-breadth",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage [0,∞]>"
     },
     {
       "name": "<line-names>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-names",
-      "type": "type"
+      "type": "type",
+      "value": "'[' <custom-ident>* ']'"
     },
     {
       "name": "<track-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-repeat",
       "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "The repeat()Info about the 'repeat()' reference.#funcdef-track-repeat-repeatReferenced in:7.2.3. Repeating Rows and Columns: the repeat() notation 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) 7.2.3.3. Interpolation/Combination of repeat() (2) 7.2.5. Computed Value of a Track Listing 7.2.6.1. Resolved Value of a Standalone Track Listing 7.2.6.2. Resolved Value of a Subgridded Track Listing 7.4. Explicit Grid Shorthand: the grid-template property Possible linking syntaxes:''repeat()''''<track-repeat>/repeat()''''<auto-repeat>/repeat()''''<fixed-repeat>/repeat()'' notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto-fill",
-              "prose": "Otherwise on a standalone axis, when auto-fillInfo about the 'auto-fill' reference.#valdef-repeat-auto-fillReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions (2) (3) Possible linking syntaxes:''repeat()/auto-fill'' is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
               "type": "value",
               "value": "auto-fill"
             },
             {
               "name": "auto-fit",
-              "prose": "The auto-fitInfo about the 'auto-fit' reference.#valdef-repeat-auto-fitReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions Possible linking syntaxes:''repeat()/auto-fit'' keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
               "type": "value",
               "value": "auto-fit"
@@ -708,23 +723,24 @@
       "name": "<auto-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-repeat",
       "type": "type",
+      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "The repeat()Info about the 'repeat()' reference.#funcdef-track-repeat-repeatReferenced in:7.2.3. Repeating Rows and Columns: the repeat() notation 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) 7.2.3.3. Interpolation/Combination of repeat() (2) 7.2.5. Computed Value of a Track Listing 7.2.6.1. Resolved Value of a Standalone Track Listing 7.2.6.2. Resolved Value of a Subgridded Track Listing 7.4. Explicit Grid Shorthand: the grid-template property Possible linking syntaxes:''repeat()''''<track-repeat>/repeat()''''<auto-repeat>/repeat()''''<fixed-repeat>/repeat()'' notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto-fill",
-              "prose": "Otherwise on a standalone axis, when auto-fillInfo about the 'auto-fill' reference.#valdef-repeat-auto-fillReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions (2) (3) Possible linking syntaxes:''repeat()/auto-fill'' is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
               "type": "value",
               "value": "auto-fill"
             },
             {
               "name": "auto-fit",
-              "prose": "The auto-fitInfo about the 'auto-fit' reference.#valdef-repeat-auto-fitReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions Possible linking syntaxes:''repeat()/auto-fit'' keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
               "type": "value",
               "value": "auto-fit"
@@ -737,23 +753,24 @@
       "name": "<fixed-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-repeat",
       "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )",
       "values": [
         {
           "name": "repeat()",
-          "prose": "The repeat()Info about the 'repeat()' reference.#funcdef-track-repeat-repeatReferenced in:7.2.3. Repeating Rows and Columns: the repeat() notation 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) 7.2.3.3. Interpolation/Combination of repeat() (2) 7.2.5. Computed Value of a Track Listing 7.2.6.1. Resolved Value of a Standalone Track Listing 7.2.6.2. Resolved Value of a Subgridded Track Listing 7.4. Explicit Grid Shorthand: the grid-template property Possible linking syntaxes:''repeat()''''<track-repeat>/repeat()''''<auto-repeat>/repeat()''''<fixed-repeat>/repeat()'' notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
+          "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
           "type": "function",
           "values": [
             {
               "name": "auto-fill",
-              "prose": "Otherwise on a standalone axis, when auto-fillInfo about the 'auto-fill' reference.#valdef-repeat-auto-fillReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions (2) (3) Possible linking syntaxes:''repeat()/auto-fill'' is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
+              "prose": "Otherwise on a standalone axis, when auto-fill is given as the repetition number, if the grid container has a definite preferred size or maximum size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow the content box of its grid container taking gap into account; if any number of repetitions would overflow, then 1 repetition. Otherwise, if the grid container has a definite minimum size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
               "type": "value",
               "value": "auto-fill"
             },
             {
               "name": "auto-fit",
-              "prose": "The auto-fitInfo about the 'auto-fit' reference.#valdef-repeat-auto-fitReferenced in:7.2.3.1. Syntax of repeat() 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions Possible linking syntaxes:''repeat()/auto-fit'' keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
+              "prose": "The auto-fit keyword behaves the same as auto-fill, except that after grid item placement any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they’re all empty.)",
               "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
               "type": "value",
               "value": "auto-fit"
@@ -765,24 +782,25 @@
     {
       "name": "<name-repeat>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-name-repeat",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
     },
     {
       "name": "<flex>",
-      "prose": "A flexible lengthInfo about the 'flexible length' reference.#flexible-lengthPossible linking syntaxes:[=flexible length=][=/flexible length=] or <flex>Info about the '<flex>' reference.#typedef-flexReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.1. Track Sizes (2) (3) (4) (5) (6) 7.2.4. Flexible Lengths: the fr unit (2) (3) (4) 11.3. Inline-axis Alignment: the justify-self and justify-items properties 11.4. Block-axis Alignment: the align-self and align-items properties 12.1. Grid Sizing Algorithm 12.2. Track Sizing Terminology Possible linking syntaxes:<<flex>><</flex>> is a dimension with the frInfo about the 'fr' reference.#valdef-flex-frReferenced in:2.1. Declaring the Grid (2) 7.2.1. Track Sizes 7.2.4. Flexible Lengths: the fr unit (2) (3) 12.7. Expand Flexible Tracks 12.7.1. Find the Size of an fr (2) 13.1. Sample Fragmentation Algorithm Possible linking syntaxes:''<flex>/fr'' unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracksInfo about the 'flexible tracks' reference.#flexible-tracksReferenced in:6.6. Automatic Minimum Size of Grid Items 12.5. Resolve Intrinsic Track Sizes (2) (3) (4) 12.7. Expand Flexible Tracks (2) 12.7.1. Find the Size of an fr (2) Possible linking syntaxes:[=flexible tracks=][=/flexible tracks=] as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
+      "prose": "A flexible length or <flex> is a dimension with the fr unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracks as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-flex",
       "type": "type",
       "values": [
         {
           "name": "fr",
-          "prose": "A flexible lengthInfo about the 'flexible length' reference.#flexible-lengthPossible linking syntaxes:[=flexible length=][=/flexible length=] or <flex>Info about the '<flex>' reference.#typedef-flexReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.1. Track Sizes (2) (3) (4) (5) (6) 7.2.4. Flexible Lengths: the fr unit (2) (3) (4) 11.3. Inline-axis Alignment: the justify-self and justify-items properties 11.4. Block-axis Alignment: the align-self and align-items properties 12.1. Grid Sizing Algorithm 12.2. Track Sizing Terminology Possible linking syntaxes:<<flex>><</flex>> is a dimension with the frInfo about the 'fr' reference.#valdef-flex-frReferenced in:2.1. Declaring the Grid (2) 7.2.1. Track Sizes 7.2.4. Flexible Lengths: the fr unit (2) (3) 12.7. Expand Flexible Tracks 12.7.1. Find the Size of an fr (2) 13.1. Sample Fragmentation Algorithm Possible linking syntaxes:''<flex>/fr'' unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracksInfo about the 'flexible tracks' reference.#flexible-tracksReferenced in:6.6. Automatic Minimum Size of Grid Items 12.5. Resolve Intrinsic Track Sizes (2) (3) (4) 12.7. Expand Flexible Tracks (2) 12.7.1. Find the Size of an fr (2) Possible linking syntaxes:[=flexible tracks=][=/flexible tracks=] as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
+          "prose": "A flexible length or <flex> is a dimension with the fr unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracks as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
           "type": "value",
           "value": "fr"
         },
         {
           "name": "fr unit",
-          "prose": "A flexible lengthInfo about the 'flexible length' reference.#flexible-lengthPossible linking syntaxes:[=flexible length=][=/flexible length=] or <flex>Info about the '<flex>' reference.#typedef-flexReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.1. Track Sizes (2) (3) (4) (5) (6) 7.2.4. Flexible Lengths: the fr unit (2) (3) (4) 11.3. Inline-axis Alignment: the justify-self and justify-items properties 11.4. Block-axis Alignment: the align-self and align-items properties 12.1. Grid Sizing Algorithm 12.2. Track Sizing Terminology Possible linking syntaxes:<<flex>><</flex>> is a dimension with the frInfo about the 'fr' reference.#valdef-flex-frReferenced in:2.1. Declaring the Grid (2) 7.2.1. Track Sizes 7.2.4. Flexible Lengths: the fr unit (2) (3) 12.7. Expand Flexible Tracks 12.7.1. Find the Size of an fr (2) 13.1. Sample Fragmentation Algorithm Possible linking syntaxes:''<flex>/fr'' unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracksInfo about the 'flexible tracks' reference.#flexible-tracksReferenced in:6.6. Automatic Minimum Size of Grid Items 12.5. Resolve Intrinsic Track Sizes (2) (3) (4) 12.7. Expand Flexible Tracks (2) 12.7.1. Find the Size of an fr (2) Possible linking syntaxes:[=flexible tracks=][=/flexible tracks=] as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
+          "prose": "A flexible length or <flex> is a dimension with the fr unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracks as they flex in response to leftover space similar to how flex items with a zero base size fill space in a flex container.",
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
           "type": "value",
           "value": "fr unit"
@@ -791,81 +809,6 @@
     }
   ],
   "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<track-list>><</track-list>>",
-      "value": "[ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>? <auto-track-list>Info about the '<auto-track-list>' reference.#typedef-auto-track-listReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-track-list>><</auto-track-list>>",
-      "value": "[ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat> [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <explicit-track-list>Info about the '<explicit-track-list>' reference.#typedef-explicit-track-listReferenced in:7.4. Explicit Grid Shorthand: the grid-template property (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<explicit-track-list>><</explicit-track-list>>",
-      "value": "[ <line-names>? <track-size> ]+ <line-names>? <line-name-list>Info about the '<line-name-list>' reference.#typedef-line-name-listReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 8. Placing Grid Items 9. Subgrids Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-name-list>><</line-name-list>>",
-      "value": "[ <line-names> | <name-repeat> ]+ <track-size>Info about the '<track-size>' reference.#typedef-track-sizeReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() (2) 7.4. Explicit Grid Shorthand: the grid-template property (2) (3) 7.6. Implicit Track Sizing: the grid-auto-rows and grid-auto-columns properties Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<track-size>><</track-size>>",
-      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage [0,∞]> ) <fixed-size>Info about the '<fixed-size>' reference.#typedef-fixed-sizeReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<fixed-size>><</fixed-size>>",
-      "value": "<fixed-breadth> | minmax( <fixed-breadth> , <track-breadth> ) | minmax( <inflexible-breadth> , <fixed-breadth> ) <track-breadth>Info about the '<track-breadth>' reference.#typedef-track-breadthReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<track-breadth>><</track-breadth>>",
-      "value": "<length-percentage [0,∞]> | <flex [0,∞]> | min-content | max-content | auto <inflexible-breadth>Info about the '<inflexible-breadth>' reference.#typedef-inflexible-breadthReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<inflexible-breadth>><</inflexible-breadth>>",
-      "value": "<length-percentage [0,∞]> | min-content | max-content | auto <fixed-breadth>Info about the '<fixed-breadth>' reference.#typedef-fixed-breadthReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<fixed-breadth>><</fixed-breadth>>",
-      "value": "<length-percentage [0,∞]> <line-names>Info about the '<line-names>' reference.#typedef-line-namesReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 7.2.2. Naming Grid Lines: the [<custom-ident>*] syntax 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) (6) (7) (8) 7.4. Explicit Grid Shorthand: the grid-template property (2) (3) (4) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<line-names>><</line-names>>",
-      "value": "'[' <custom-ident>* ']'"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<track-repeat>><</track-repeat>>",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? ) <auto-repeat>Info about the '<auto-repeat>' reference.#typedef-auto-repeatReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<auto-repeat>><</auto-repeat>>",
-      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <fixed-repeat>Info about the '<fixed-repeat>' reference.#typedef-fixed-repeatReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<fixed-repeat>><</fixed-repeat>>",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <name-repeat>Info about the '<name-repeat>' reference.#typedef-name-repeatReferenced in:7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<name-repeat>><</name-repeat>>",
-      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<grid-line>><<grid-row-start/grid-line>><<grid-column-start/grid-line>><<grid-row-end/grid-line>><<grid-column-end/grid-line>>",
-      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]"
-    },
     {
       "msg": "Dangling value",
       "name": "grid",

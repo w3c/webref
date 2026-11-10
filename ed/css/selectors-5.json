@@ -8,48 +8,48 @@
   "selectors": [
     {
       "name": ":local-link",
-      "prose": "The :local-linkInfo about the ':local-link' reference.#local-link-pseudoReferenced in:3.1. The Local Link Pseudo-class :local-link (2) 12.2. Changes Since Level 4 Possible linking syntaxes:'':local-link''''/:local-link'' pseudo-class allows authors to style hyperlinks based on the users current location within a site and to differentiate site-internal versus site-external links.",
+      "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site and to differentiate site-internal versus site-external links.",
       "href": "https://drafts.csswg.org/selectors-5/#local-link-pseudo",
       "value": ":local-link"
     },
     {
       "name": ":interest-source",
-      "prose": "The :interest-sourceInfo about the ':interest-source' reference.#selectordef-interest-sourceReferenced in:4.1. The Interest Pseudo-classes: :interest-source and :interest-target (2) (3) 12.2. Changes Since Level 4 Possible linking syntaxes:'':interest-source''''/:interest-source'' pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-targetInfo about the ':interest-target' reference.#selectordef-interest-targetReferenced in:4.1. The Interest Pseudo-classes: :interest-source and :interest-target (2) 12.2. Changes Since Level 4 Possible linking syntaxes:'':interest-target''''/:interest-target'' pseudo-class applies to the associated interest target of an element matching :interest-source.",
+      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-interest-source",
       "value": ":interest-source"
     },
     {
       "name": ":interest-target",
-      "prose": "The :interest-sourceInfo about the ':interest-source' reference.#selectordef-interest-sourceReferenced in:4.1. The Interest Pseudo-classes: :interest-source and :interest-target (2) (3) 12.2. Changes Since Level 4 Possible linking syntaxes:'':interest-source''''/:interest-source'' pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-targetInfo about the ':interest-target' reference.#selectordef-interest-targetReferenced in:4.1. The Interest Pseudo-classes: :interest-source and :interest-target (2) 12.2. Changes Since Level 4 Possible linking syntaxes:'':interest-target''''/:interest-target'' pseudo-class applies to the associated interest target of an element matching :interest-source.",
+      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently showing interest in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-interest-target",
       "value": ":interest-target"
     },
     {
       "name": ":blank",
-      "prose": "The :blankInfo about the ':blank' reference.#blank-pseudoReferenced in:5.1.1. The Empty-Value Pseudo-class: :blank (2) (3) (4) (5) (6) (7) 12.2. Changes Since Level 4 Possible linking syntaxes:'':blank''''/:blank'' pseudo-class applies to user-input elements whose input value is empty (consists of the empty string or otherwise null input).",
+      "prose": "The :blank pseudo-class applies to user-input elements whose input value is empty (consists of the empty string or otherwise null input).",
       "href": "https://drafts.csswg.org/selectors-5/#blank-pseudo",
       "value": ":blank"
     },
     {
       "name": ":current",
-      "prose": "The :currentInfo about the ':current' reference.#current-pseudoReferenced in:6. Time-dimensional Pseudo-classes (2) (3) 6.1. The Current-element Pseudo-class: :current (2) (3) (4) 6.2. The Past-element Pseudo-class: :past (2) 6.3. The Future-element Pseudo-class: :future (2) Possible linking syntaxes:'':current''''/:current'' pseudo-class represents the element, or an ancestor of the element, that is currently being displayed.",
+      "prose": "The :current pseudo-class represents the element, or an ancestor of the element, that is currently being displayed.",
       "href": "https://drafts.csswg.org/selectors-5/#current-pseudo",
       "value": ":current"
     },
     {
       "name": ":current()",
-      "prose": "Its alternate form :current()Info about the ':current()' reference.#selectordef-currentPossible linking syntaxes:'':current()''''/:current()'' takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
+      "prose": "Its alternate form :current() takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-current"
     },
     {
       "name": ":past",
-      "prose": "The :pastInfo about the ':past' reference.#past-pseudoReferenced in:6. Time-dimensional Pseudo-classes (2) (3) 6.2. The Past-element Pseudo-class: :past (2) Possible linking syntaxes:'':past''''/:past'' pseudo-class represents any element that is defined to occur entirely prior to a :current element. For example, the WebVTT spec defines the :past pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) previous sibling of a :current element.",
+      "prose": "The :past pseudo-class represents any element that is defined to occur entirely prior to a :current element. For example, the WebVTT spec defines the :past pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) previous sibling of a :current element.",
       "href": "https://drafts.csswg.org/selectors-5/#past-pseudo",
       "value": ":past"
     },
     {
       "name": ":future",
-      "prose": "The :futureInfo about the ':future' reference.#future-pseudoReferenced in:6. Time-dimensional Pseudo-classes (2) (3) 6.3. The Future-element Pseudo-class: :future (2) Possible linking syntaxes:'':future''''/:future'' pseudo-class represents any element that is defined to occur entirely after a :current element. For example, the WebVTT spec defines the :future pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) next sibling of a :current element.",
+      "prose": "The :future pseudo-class represents any element that is defined to occur entirely after a :current element. For example, the WebVTT spec defines the :future pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) next sibling of a :current element.",
       "href": "https://drafts.csswg.org/selectors-5/#future-pseudo",
       "value": ":future"
     },
@@ -60,19 +60,19 @@
     },
     {
       "name": ":heading",
-      "prose": "The (non-functional) :headingInfo about the ':heading' reference.#heading-pseudoReferenced in:8. Heading Structures: the heading pseudo-classes :heading, and :heading() (2) 12.2. Changes Since Level 4 Possible linking syntaxes:'':heading''''/:heading'' pseudo-class matches an element which has a heading level, with respect to the semantics defined by the document language (e.g. [HTML5]).",
+      "prose": "The (non-functional) :heading pseudo-class matches an element which has a heading level, with respect to the semantics defined by the document language (e.g. [HTML5]).",
       "href": "https://drafts.csswg.org/selectors-5/#heading-pseudo",
       "value": ":heading"
     },
     {
       "name": ":heading()",
-      "prose": "As a functional pseudo-class, :heading()Info about the ':heading()' reference.#heading-functional-pseudoReferenced in:8. Heading Structures: the heading pseudo-classes :heading, and :heading() (2) 12.2. Changes Since Level 4 Possible linking syntaxes:'':heading()''''/:heading()'' notation represents elements that have a heading level among matching any of the provided integer values. The syntax is:",
+      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among matching any of the provided integer values. The syntax is:",
       "href": "https://drafts.csswg.org/selectors-5/#heading-functional-pseudo",
       "value": ":heading( <level># )"
     },
     {
       "name": "||",
-      "prose": "The column combinatorInfo about the 'column combinator' reference.#column-combinatorReferenced in:9. Grid-Structural Selectors Possible linking syntaxes:[=column combinator=][=/column combinator=], which consists of two pipes (||Info about the '||' reference.#selectordef-columnPossible linking syntaxes:''||''''/||'') represents the relationship of a column element to a cell element belonging to the column it represents. Column membership is determined based on the semantics of the document language only: whether and how the elements are presented is not considered. If a cell element belongs to more than one column, it is represented by a selector indicating membership in any of those columns.",
+      "prose": "The column combinator, which consists of two pipes (||) represents the relationship of a column element to a cell element belonging to the column it represents. Column membership is determined based on the semantics of the document language only: whether and how the elements are presented is not considered. If a cell element belongs to more than one column, it is represented by a selector indicating membership in any of those columns.",
       "href": "https://drafts.csswg.org/selectors-5/#selectordef-column",
       "value": "'|' '|'"
     },
@@ -90,30 +90,20 @@
   "values": [
     {
       "name": "<level>",
-      "prose": "where <level>Info about the '<level>' reference.#typedef-levelReferenced in:8. Heading Structures: the heading pseudo-classes :heading, and :heading() Possible linking syntaxes:<<level>><</level>> is a <number-token> with its type flag set to \"integer\".",
+      "prose": "where <level> is a <number-token> with its type flag set to \"integer\".",
       "href": "https://drafts.csswg.org/selectors-5/#typedef-level",
       "type": "type"
     },
     {
       "name": "<combinator>",
       "href": "https://drafts.csswg.org/selectors-5/#typedef-combinator",
-      "type": "type"
+      "type": "type",
+      "value": "'>' | '+' | '~' | [ '|' '|' ] | [ / <wq-name> / ]"
     },
     {
       "name": "<class-selector>",
       "href": "https://drafts.csswg.org/selectors-5/#typedef-class-selector",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<combinator>><</combinator>>",
-      "value": "'>' | '+' | '~' | [ '|' '|' ] | [ / <wq-name> / ] <class-selector>Info about the '<class-selector>' reference.#typedef-class-selectorReferenced in:11. Grammar (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<class-selector>><</class-selector>>",
+      "type": "type",
       "value": "'.' <ident-token> '*'?"
     }
   ]

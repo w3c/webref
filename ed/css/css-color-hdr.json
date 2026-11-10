@@ -49,45 +49,46 @@
   "values": [
     {
       "name": "dynamic-range-limit-mix()",
-      "value": "dynamic-range-limit-mix()",
+      "value": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]# )",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-dynamic-range-limit-mix",
       "type": "function"
     },
     {
       "name": "<color-function>",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function",
-      "type": "type"
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <alpha()> | <color()> | <hdr-color()>"
     },
     {
       "name": "ictcp()",
-      "value": "ictcp()",
+      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-ictcp",
       "type": "function",
       "values": [
         {
           "name": "i",
-          "prose": "iInfo about the 'i' reference.#valdef-ictcp-iPossible linking syntaxes:''ictcp()/i'' is a <number> that corresponds to the origin color’s I (Lightness) after conversion, if required, to ictcp. 1.0 is equivalent to 100%.",
+          "prose": "i is a <number> that corresponds to the origin color’s I (Lightness) after conversion, if required, to ictcp. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-i",
           "type": "value",
           "value": "i"
         },
         {
           "name": "ct",
-          "prose": "ctInfo about the 'ct' reference.#valdef-ictcp-ctPossible linking syntaxes:''ictcp()/ct'' and cpInfo about the 'cp' reference.#valdef-ictcp-cpPossible linking syntaxes:''ictcp()/cp'' are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-ct",
           "type": "value",
           "value": "ct"
         },
         {
           "name": "cp",
-          "prose": "ctInfo about the 'ct' reference.#valdef-ictcp-ctPossible linking syntaxes:''ictcp()/ct'' and cpInfo about the 'cp' reference.#valdef-ictcp-cpPossible linking syntaxes:''ictcp()/cp'' are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-cp",
           "type": "value",
           "value": "cp"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-ictcp-alphaPossible linking syntaxes:''ictcp()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-ictcp-alpha",
           "type": "value",
           "value": "alpha"
@@ -96,34 +97,34 @@
     },
     {
       "name": "jzazbz()",
-      "value": "jzazbz()",
+      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz",
       "type": "function",
       "values": [
         {
           "name": "j",
-          "prose": "jInfo about the 'j' reference.#valdef-jzazbz-jPossible linking syntaxes:''jzazbz()/j'' is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzazbz. 1.0 is equivalent to 100%.",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzazbz. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-j",
           "type": "value",
           "value": "j"
         },
         {
           "name": "a",
-          "prose": "aInfo about the 'a' reference.#valdef-jzazbz-aPossible linking syntaxes:''jzazbz()/a'' and bInfo about the 'b' reference.#valdef-jzazbz-bPossible linking syntaxes:''jzazbz()/b'' are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-a",
           "type": "value",
           "value": "a"
         },
         {
           "name": "b",
-          "prose": "aInfo about the 'a' reference.#valdef-jzazbz-aPossible linking syntaxes:''jzazbz()/a'' and bInfo about the 'b' reference.#valdef-jzazbz-bPossible linking syntaxes:''jzazbz()/b'' are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-b",
           "type": "value",
           "value": "b"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-jzazbz-alphaPossible linking syntaxes:''jzazbz()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzazbz-alpha",
           "type": "value",
           "value": "alpha"
@@ -132,34 +133,34 @@
     },
     {
       "name": "jzczhz()",
-      "value": "jzczhz()",
+      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz",
       "type": "function",
       "values": [
         {
           "name": "j",
-          "prose": "jInfo about the 'j' reference.#valdef-jzczhz-jPossible linking syntaxes:''jzczhz()/j'' is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzczhz. 100 is equivalent to 100%.",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzczhz. 100 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-j",
           "type": "value",
           "value": "j"
         },
         {
           "name": "c",
-          "prose": "cInfo about the 'c' reference.#valdef-jzczhz-cPossible linking syntaxes:''jzczhz()/c'' is a <number> that corresponds to the origin color’s Cz (chroma) after conversion, if required, to jzczhz. 0.26 is equivalent to 100%.",
+          "prose": "c is a <number> that corresponds to the origin color’s Cz (chroma) after conversion, if required, to jzczhz. 0.26 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-c",
           "type": "value",
           "value": "c"
         },
         {
           "name": "h",
-          "prose": "hInfo about the 'h' reference.#valdef-jzczhz-hPossible linking syntaxes:''jzczhz()/h'' is a <number> that corresponds to the origin color’s hz (hue), in degrees, after conversion, if required, to jzczhz, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "prose": "h is a <number> that corresponds to the origin color’s hz (hue), in degrees, after conversion, if required, to jzczhz, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-h",
           "type": "value",
           "value": "h"
         },
         {
           "name": "alpha",
-          "prose": "alphaInfo about the 'alpha' reference.#valdef-jzczhz-alphaPossible linking syntaxes:''jzczhz()/alpha'' is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://drafts.csswg.org/css-color-hdr-1/#valdef-jzczhz-alpha",
           "type": "value",
           "value": "alpha"
@@ -168,50 +169,14 @@
     },
     {
       "name": "hdr-color()",
-      "value": "hdr-color()",
+      "value": "color-hdr([ <color> && <number [0,∞]>? ]#{2})",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#funcdef-hdr-color",
       "type": "function"
     },
     {
       "name": "<predefined-rgb>",
       "href": "https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''dynamic-range-limit-mix()''''/dynamic-range-limit-mix()''",
-      "value": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]# )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-function>><</color-function>>",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <alpha()> | <color()> | <hdr-color()> ictcp()Info about the 'ictcp()' reference.#funcdef-ictcpReferenced in:4. The <color> syntax 6.3. ICtCp Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''ictcp()''''/ictcp()''",
-      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) jzazbz()Info about the 'jzazbz()' reference.#funcdef-jzazbzReferenced in:4. The <color> syntax 6.4. Jzazbz Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''jzazbz()''''/jzazbz()''",
-      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) jzczhz()Info about the 'jzczhz()' reference.#funcdef-jzczhzReferenced in:4. The <color> syntax 6.5. JzCzhz Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''jzczhz()''''/jzczhz()''",
-      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''hdr-color()''''/hdr-color()''",
-      "value": "color-hdr([ <color> && <number [0,∞]>? ]#{2})"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<predefined-rgb>><</predefined-rgb>>",
+      "type": "type",
       "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
     }
   ]

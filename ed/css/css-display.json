@@ -18,7 +18,7 @@
       "values": [
         {
           "name": "list-item",
-          "prose": "The list-itemInfo about the 'list-item' reference.#valdef-display-list-itemReferenced in:2. Box Layout Modes: the display property (2) (3) 2.3. Generating Marker Boxes: the list-item keyword Appendix A: Glossary Possible linking syntaxes:''display/list-item''''<display-list-item>/list-item'' keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
+          "prose": "The list-item keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-list-item",
           "type": "value",
           "value": "list-item"
@@ -42,7 +42,7 @@
       "values": [
         {
           "name": "<integer>",
-          "prose": "Specifically, the order property controls the order in which flex items or grid items appear within their container, by assigning them to ordinal groups. It takes a single <integer>Info about the '<integer>' reference.#valdef-order-integerPossible linking syntaxes:''order/<integer>'' value, which specifies which ordinal group the item belongs to.",
+          "prose": "Specifically, the order property controls the order in which flex items or grid items appear within their container, by assigning them to ordinal groups. It takes a single <integer> value, which specifies which ordinal group the item belongs to.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-order-integer",
           "type": "value",
           "value": "<integer>"
@@ -133,7 +133,7 @@
       "values": [
         {
           "name": "<integer>",
-          "prose": "The reading-order property lets the author change where in the reading flow an item is visited, overriding the position set by the reading-flow property on its parent. It takes a single <integer>Info about the '<integer>' reference.#valdef-reading-order-integerPossible linking syntaxes:''reading-order/<integer>'' value, which specifies which ordinal group the item belongs to. Sibling elements are ordered starting from the lowest numbered ordinal group and going up.",
+          "prose": "The reading-order property lets the author change where in the reading flow an item is visited, overriding the position set by the reading-flow property on its parent. It takes a single <integer> value, which specifies which ordinal group the item belongs to. Sibling elements are ordered starting from the lowest numbered ordinal group and going up.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-integer",
           "type": "value",
           "value": "<integer>"
@@ -180,7 +180,7 @@
         },
         {
           "name": "collapse",
-          "prose": "Indicates that the box is collapsedInfo about the 'collapsed' reference.#collapsedPossible linking syntaxes:[=collapsed=][=/collapsed=], which can cause it to take up less space than otherwise in a formatting-context–specific way. See dynamic row and column effects in tables [CSS2] and collapsed flex items in flex layout [CSS-FLEXBOX-1]. In all other cases, however, (i.e. unless otherwise specified) this simply makes the box invisible, just like hidden.",
+          "prose": "Indicates that the box is collapsed, which can cause it to take up less space than otherwise in a formatting-context–specific way. See dynamic row and column effects in tables [CSS2] and collapsed flex items in flex layout [CSS-FLEXBOX-1]. In all other cases, however, (i.e. unless otherwise specified) this simply makes the box invisible, just like hidden.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-visibility-collapse",
           "type": "value",
           "value": "collapse"
@@ -198,17 +198,18 @@
       "name": "<display-outside>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-outside",
       "type": "type",
+      "value": "block | inline | run-in",
       "values": [
         {
           "name": "block",
-          "prose": "The element generates a box that is block-levelInfo about the 'block-level' reference.#block-level-boxReferenced in:Appendix A: Glossary (2) (3) Possible linking syntaxes:[=block-level box=][=/block-level box=] when placed in flow layout. [CSS2]",
+          "prose": "The element generates a box that is block-level when placed in flow layout. [CSS2]",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "inline",
-          "prose": "The element generates a box that is inline-levelInfo about the 'inline-level' reference.#inline-level-boxReferenced in:2.1. Outer Display Roles for Flow Layout: the block, inline, and run-in keywords 6. Run-In Layout Appendix A: Glossary Possible linking syntaxes:[=inline-level box=][=/inline-level box=] when placed in flow layout. [CSS2]",
+          "prose": "The element generates a box that is inline-level when placed in flow layout. [CSS2]",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-inline",
           "type": "value",
           "value": "inline"
@@ -226,10 +227,11 @@
       "name": "<display-inside>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-inside",
       "type": "type",
+      "value": "flow | flow-root | table | flex | grid | ruby",
       "values": [
         {
           "name": "flow",
-          "prose": "The element lays out its contents using flow layoutInfo about the 'flow layout' reference.#flow-layoutReferenced in:2. Box Layout Modes: the display property 2.1. Outer Display Roles for Flow Layout: the block, inline, and run-in keywords (2) (3) 2.2. Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords 2.3. Generating Marker Boxes: the list-item keyword Possible linking syntaxes:[=flow layout=][=/flow layout=] (block-and-inline layout). If its outer display type is inline or run-in, and it is participating in a block or inline formatting context, then it generates an inline box. Otherwise it generates a block container box. Depending on the value of other properties (such as position, float, or overflow) and whether it is itself participating in a block or inline formatting context, it either establishes a new block formatting context for its contents or integrates its contents into its parent formatting context. See CSS2.1 Chapter 9. [CSS2] A block container that establishes a new block formatting context is considered to have a used inner display type of flow-root.",
+          "prose": "The element lays out its contents using flow layout (block-and-inline layout). If its outer display type is inline or run-in, and it is participating in a block or inline formatting context, then it generates an inline box. Otherwise it generates a block container box. Depending on the value of other properties (such as position, float, or overflow) and whether it is itself participating in a block or inline formatting context, it either establishes a new block formatting context for its contents or integrates its contents into its parent formatting context. See CSS2.1 Chapter 9. [CSS2] A block container that establishes a new block formatting context is considered to have a used inner display type of flow-root.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-flow",
           "type": "value",
           "value": "flow"
@@ -274,93 +276,95 @@
     {
       "name": "<display-listitem>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-listitem",
-      "type": "type"
+      "type": "type",
+      "value": "<display-outside>? && [ flow | flow-root ]? && list-item"
     },
     {
       "name": "<display-internal>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-internal",
       "type": "type",
+      "value": "table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container",
       "values": [
         {
           "name": "table-row-group",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-row-group",
           "type": "value",
           "value": "table-row-group"
         },
         {
           "name": "table-header-group",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-header-group",
           "type": "value",
           "value": "table-header-group"
         },
         {
           "name": "table-footer-group",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-footer-group",
           "type": "value",
           "value": "table-footer-group"
         },
         {
           "name": "table-row",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-row",
           "type": "value",
           "value": "table-row"
         },
         {
           "name": "table-cell",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-cell",
           "type": "value",
           "value": "table-cell"
         },
         {
           "name": "table-column-group",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-column-group",
           "type": "value",
           "value": "table-column-group"
         },
         {
           "name": "table-column",
-          "prose": "The element is an internal table elementInfo about the 'internal table element' reference.#internal-table-elementReferenced in:2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking syntaxes:[=internal table element=][=/internal table element=]. It generates the appropriate internal table boxInfo about the 'internal table box' reference.#internal-table-boxPossible linking syntaxes:[=internal table box=][=/internal table box=] which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
+          "prose": "The element is an internal table element. It generates the appropriate internal table box which participates in a table formatting context. See CSS2§17.2 [CSS2]. table-cell boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-column",
           "type": "value",
           "value": "table-column"
         },
         {
           "name": "table-caption",
-          "prose": "The element generates a table caption boxInfo about the 'table caption box' reference.#table-caption-boxPossible linking syntaxes:[=table caption box=][=/table caption box=], which is a block box with special behavior with respect to table and table wrapper boxes. See CSS2§17.2 [CSS2]. table-caption boxes have a flow-root inner display type.",
+          "prose": "The element generates a table caption box, which is a block box with special behavior with respect to table and table wrapper boxes. See CSS2§17.2 [CSS2]. table-caption boxes have a flow-root inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-table-caption",
           "type": "value",
           "value": "table-caption"
         },
         {
           "name": "ruby-base",
-          "prose": "The element is an internal ruby elementInfo about the 'internal ruby element' reference.#internal-ruby-elementPossible linking syntaxes:[=internal ruby element=][=/internal ruby element=]. It generates the appropriate internal ruby boxInfo about the 'internal ruby box' reference.#internal-ruby-boxPossible linking syntaxes:[=internal ruby box=][=/internal ruby box=] which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
+          "prose": "The element is an internal ruby element. It generates the appropriate internal ruby box which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-ruby-base",
           "type": "value",
           "value": "ruby-base"
         },
         {
           "name": "ruby-text",
-          "prose": "The element is an internal ruby elementInfo about the 'internal ruby element' reference.#internal-ruby-elementPossible linking syntaxes:[=internal ruby element=][=/internal ruby element=]. It generates the appropriate internal ruby boxInfo about the 'internal ruby box' reference.#internal-ruby-boxPossible linking syntaxes:[=internal ruby box=][=/internal ruby box=] which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
+          "prose": "The element is an internal ruby element. It generates the appropriate internal ruby box which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-ruby-text",
           "type": "value",
           "value": "ruby-text"
         },
         {
           "name": "ruby-base-container",
-          "prose": "The element is an internal ruby elementInfo about the 'internal ruby element' reference.#internal-ruby-elementPossible linking syntaxes:[=internal ruby element=][=/internal ruby element=]. It generates the appropriate internal ruby boxInfo about the 'internal ruby box' reference.#internal-ruby-boxPossible linking syntaxes:[=internal ruby box=][=/internal ruby box=] which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
+          "prose": "The element is an internal ruby element. It generates the appropriate internal ruby box which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-ruby-base-container",
           "type": "value",
           "value": "ruby-base-container"
         },
         {
           "name": "ruby-text-container",
-          "prose": "The element is an internal ruby elementInfo about the 'internal ruby element' reference.#internal-ruby-elementPossible linking syntaxes:[=internal ruby element=][=/internal ruby element=]. It generates the appropriate internal ruby boxInfo about the 'internal ruby box' reference.#internal-ruby-boxPossible linking syntaxes:[=internal ruby box=][=/internal ruby box=] which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
+          "prose": "The element is an internal ruby element. It generates the appropriate internal ruby box which participates in a ruby formatting context. [CSS-RUBY-1] ruby-base and ruby-text have a flow inner display type.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-ruby-text-container",
           "type": "value",
           "value": "ruby-text-container"
@@ -371,6 +375,7 @@
       "name": "<display-box>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-box",
       "type": "type",
+      "value": "contents | none",
       "values": [
         {
           "name": "contents",
@@ -392,6 +397,7 @@
       "name": "<display-legacy>",
       "href": "https://drafts.csswg.org/css-display-4/#typedef-display-legacy",
       "type": "type",
+      "value": "inline-block | inline-table | inline-flex | inline-grid",
       "values": [
         {
           "name": "inline-block",
@@ -426,39 +432,9 @@
   ],
   "warnings": [
     {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-outside>><</display-outside>>",
-      "value": "block | inline | run-in <display-inside>Info about the '<display-inside>' reference.#typedef-display-insideReferenced in:2. Box Layout Modes: the display property 2.1. Outer Display Roles for Flow Layout: the block, inline, and run-in keywords 2.2. Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-inside>><</display-inside>>",
-      "value": "flow | flow-root | table | flex | grid | ruby <display-listitem>Info about the '<display-listitem>' reference.#typedef-display-listitemReferenced in:2. Box Layout Modes: the display property Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-listitem>><</display-listitem>>",
-      "value": "<display-outside>? && [ flow | flow-root ]? && list-item <display-internal>Info about the '<display-internal>' reference.#typedef-display-internalReferenced in:2. Box Layout Modes: the display property (2) (3) 2.4. Layout-Internal Display Types: the table-* and ruby-* keywords Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-internal>><</display-internal>>",
-      "value": "table-row-group | table-header-group | table-footer-group | table-row | table-cell | table-column-group | table-column | table-caption | ruby-base | ruby-text | ruby-base-container | ruby-text-container <display-box>Info about the '<display-box>' reference.#typedef-display-boxReferenced in:2. Box Layout Modes: the display property (2) 2.5. Box Generation: the none and contents keywords Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-box>><</display-box>>",
-      "value": "contents | none <display-legacy>Info about the '<display-legacy>' reference.#typedef-display-legacyReferenced in:2. Box Layout Modes: the display property 2.6. Precomposed Inline-level Display Values Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<display-legacy>><</display-legacy>>",
-      "value": "inline-block | inline-table | inline-flex | inline-grid"
-    },
-    {
       "msg": "Dangling value",
       "name": "list-item",
-      "prose": "The list-itemInfo about the 'list-item' reference.#valdef-display-list-itemReferenced in:2. Box Layout Modes: the display property (2) (3) 2.3. Generating Marker Boxes: the list-item keyword Appendix A: Glossary Possible linking syntaxes:''display/list-item''''<display-list-item>/list-item'' keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
+      "prose": "The list-item keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
       "href": "https://drafts.csswg.org/css-display-4/#valdef-display-list-item",
       "type": "value",
       "value": "list-item",

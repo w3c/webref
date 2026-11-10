@@ -62,6 +62,7 @@
       "name": "<blend-mode>",
       "href": "https://drafts.csswg.org/compositing-2/#ltblendmodegt",
       "type": "type",
+      "value": "normal | darken | multiply | color-burn | lighten | screen | color-dodge | overlay | soft-light | hard-light | difference | exclusion | hue | saturation | color | luminosity",
       "values": [
         {
           "name": "normal",
@@ -164,28 +165,13 @@
     {
       "name": "<isolation-mode>",
       "href": "https://drafts.csswg.org/compositing-2/#isolated-propid",
-      "type": "type"
+      "type": "type",
+      "value": "auto | isolate"
     },
     {
       "name": "<composite-mode>",
       "href": "https://drafts.csswg.org/compositing-2/#compositemode",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<blend-mode>><</blend-mode>>",
-      "value": "normal | darken | multiply | color-burn | lighten | screen | color-dodge | overlay | soft-light | hard-light | difference | exclusion | hue | saturation | color | luminosity"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<isolation-mode>><</isolation-mode>>",
-      "value": "auto | isolate"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<composite-mode>><</composite-mode>>",
+      "type": "type",
       "value": "clear | copy | source-over | destination-over | source-in | destination-in | source-out | destination-out | source-atop | destination-atop | xor | lighter | plus-darker | plus-lighter"
     }
   ]

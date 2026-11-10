@@ -9,38 +9,38 @@
   "values": [
     {
       "name": "<ident>",
-      "prose": "CSS identifiersInfo about the 'identifiers' reference.#css-css-identifierReferenced in:2.1. Component Value Types 4. Textual Data Types 4.1. Pre-defined Keywords 4.2. Unprefixed Author-defined Identifiers: the <custom-ident> type 5.4. Numbers with Units: dimension values Possible linking syntaxes:[=CSS identifier=][=CSS ident=][=identifier=][=ident=][=CSS/CSS identifier=], generically denoted by <ident>Info about the '<ident>' reference.#typedef-identReferenced in:4. Textual Data Types 4.5.3. URL Modifiers Possible linking syntaxes:<<ident>><</ident>>, represent names, and are written as an unquoted sequence of (potentially escaped) characters corresponding to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
+      "prose": "CSS identifiers, generically denoted by <ident>, represent names, and are written as an unquoted sequence of (potentially escaped) characters corresponding to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-ident",
       "type": "type"
     },
     {
       "name": "<custom-ident>",
-      "prose": "Some properties accept arbitrary author-defined identifiers as a component value. This generic data type is denoted by <custom-ident>Info about the '<custom-ident>' reference.#identifier-valueReferenced in:2.1. Component Value Types (2) (3) 4. Textual Data Types 4.2. Unprefixed Author-defined Identifiers: the <custom-ident> type (2) (3) (4) (5) (6) (7) (8) (9) 4.3. Prefixed Author-defined Identifiers: the <dashed-ident> type Possible linking syntaxes:<<custom-ident>><</custom-ident>>, and represents any valid CSS identifier that would not be misinterpreted as a pre-defined keyword in that property’s value definition. Such identifiers are fully case-sensitive (meaning they’re compared using the \"identical to\" operation), even in the ASCII range (e.g. example and EXAMPLE are two different, unrelated user-defined identifiers).",
+      "prose": "Some properties accept arbitrary author-defined identifiers as a component value. This generic data type is denoted by <custom-ident>, and represents any valid CSS identifier that would not be misinterpreted as a pre-defined keyword in that property’s value definition. Such identifiers are fully case-sensitive (meaning they’re compared using the \"identical to\" operation), even in the ASCII range (e.g. example and EXAMPLE are two different, unrelated user-defined identifiers).",
       "href": "https://drafts.csswg.org/css-values-4/#identifier-value",
       "type": "type"
     },
     {
       "name": "<dashed-ident>",
-      "prose": "The <dashed-ident>Info about the '<dashed-ident>' reference.#typedef-dashed-identReferenced in:4.2. Unprefixed Author-defined Identifiers: the <custom-ident> type 4.3. Prefixed Author-defined Identifiers: the <dashed-ident> type (2) (3) (4) (5) (6) (7) (8) (9) Additions Since Level 3 Possible linking syntaxes:<<dashed-ident>><</dashed-ident>> production is a <custom-ident>, with all the case-sensitivity that implies, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS).",
+      "prose": "The <dashed-ident> production is a <custom-ident>, with all the case-sensitivity that implies, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS).",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-dashed-ident",
       "type": "type"
     },
     {
       "name": "<string>",
-      "prose": "Strings, denoted by <string>Info about the '<string>' reference.#string-valueReferenced in:4. Textual Data Types 4.4. Quoted Strings: the <string> type 4.5. Resource Locators: the <url> type (2) (3) (4) Possible linking syntaxes:<<string>><</string>>, are sequences of characters representing arbitrary textual data. When written literally, they are delimited by double quotes or single quotes, and correspond to the <string-token> production. [CSS-SYNTAX-3].",
+      "prose": "Strings, denoted by <string>, are sequences of characters representing arbitrary textual data. When written literally, they are delimited by double quotes or single quotes, and correspond to the <string-token> production. [CSS-SYNTAX-3].",
       "href": "https://drafts.csswg.org/css-values-4/#string-value",
       "type": "type"
     },
     {
       "name": "url()",
-      "prose": "The <url> type, written with the url()Info about the 'url()' reference.#funcdef-urlReferenced in:4.5. Resource Locators: the <url> type (2) (3) (4) (5) (6) 4.5.1.1. Fragment URLs 4.5.2. Empty URLs (2) (3) 4.5.3. URL Modifiers Recent Changes (2) Security Considerations Privacy Considerations Possible linking syntaxes:''url()''''/url()'' and src()Info about the 'src()' reference.#funcdef-srcReferenced in:4.5. Resource Locators: the <url> type (2) Recent Changes Additions Since Level 3 Security Considerations Privacy Considerations Possible linking syntaxes:''src()''''/src()'' functions, represents a URL, which is a pointer to a resource.",
+      "prose": "The <url> type, written with the url() and src() functions, represents a URL, which is a pointer to a resource.",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-url",
       "type": "function",
       "value": "url( <string> <url-modifier>* ) | <url-token>"
     },
     {
       "name": "src()",
-      "prose": "The <url> type, written with the url()Info about the 'url()' reference.#funcdef-urlReferenced in:4.5. Resource Locators: the <url> type (2) (3) (4) (5) (6) 4.5.1.1. Fragment URLs 4.5.2. Empty URLs (2) (3) 4.5.3. URL Modifiers Recent Changes (2) Security Considerations Privacy Considerations Possible linking syntaxes:''url()''''/url()'' and src()Info about the 'src()' reference.#funcdef-srcReferenced in:4.5. Resource Locators: the <url> type (2) Recent Changes Additions Since Level 3 Security Considerations Privacy Considerations Possible linking syntaxes:''src()''''/src()'' functions, represents a URL, which is a pointer to a resource.",
+      "prose": "The <url> type, written with the url() and src() functions, represents a URL, which is a pointer to a resource.",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-src",
       "type": "function",
       "value": "src( <string> <url-modifier>* )"
@@ -48,41 +48,42 @@
     {
       "name": "<url>",
       "href": "https://drafts.csswg.org/css-values-4/#url-value",
-      "type": "type"
+      "type": "type",
+      "value": "<url()> | <src()>"
     },
     {
       "name": "<url-modifier>",
-      "prose": "<url>s support specifying additional <url-modifier>Info about the '<url-modifier>' reference.#typedef-url-modifierReferenced in:4.5. Resource Locators: the <url> type (2) (3) 4.5.3. URL Modifiers (2) (3) Possible linking syntaxes:<<url-modifier>><</url-modifier>>s, which change the meaning or the interpretation of the URL somehow. A <url-modifier> is either an <ident> or a functional notation.",
+      "prose": "<url>s support specifying additional <url-modifier>s, which change the meaning or the interpretation of the URL somehow. A <url-modifier> is either an <ident> or a functional notation.",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-url-modifier",
       "type": "type"
     },
     {
       "name": "<integer>",
-      "prose": "Integer values are denoted by <integer>Info about the '<integer>' reference.#integer-valueReferenced in:2.1. Component Value Types (2) (3) 5. Numeric Data Types 5.1. Range Restrictions and Range Definition Notation 5.2. Integers: the <integer> type 5.2.1. Computation and Combination of <integer> (2) (3) (4) (5) 9.1. Numeric Functions 10. Mathematical Expressions 10.9. Type Checking (2) (3) Recent Changes Additions Since Level 3 Possible linking syntaxes:<<integer>><</integer>>.",
+      "prose": "Integer values are denoted by <integer>.",
       "href": "https://drafts.csswg.org/css-values-4/#integer-value",
       "type": "type"
     },
     {
       "name": "<number>",
-      "prose": "Number values are denoted by <number>Info about the '<number>' reference.#number-valueReferenced in:5. Numeric Data Types 5.2.1. Computation and Combination of <integer> 5.3. Real Numbers: the <number> type (2) 5.3.1. Computation and Combination of <number> (2) (3) (4) 5.6. Mixing Percentages and Dimensions 5.7. Ratios: the <ratio> type (2) (3) 6. Distance Units: the <length> type (2) (3) 10. Mathematical Expressions 10.2. Comparison Functions: min(), max(), and clamp() 10.3. Stepped Value Functions: round(), mod(), and rem() (2) (3) 10.4. Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (2) (3) (4) 10.5. Exponential Functions: pow(), sqrt(), hypot(), log(), exp() (2) (3) (4) (5) (6) (7) (8) (9) 10.6. Sign-Related Functions: abs(), sign() 10.7.1. Numeric Constants: e, pi 10.7.2. Degenerate Numeric Constants: infinity, -infinity, NaN (2) 10.7.3. Numeric Variables (2) 10.8. Syntax 10.9. Type Checking (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) 10.13. Serialization Recent Changes (2) Possible linking syntaxes:<<number>><</number>>, and represent real numbers, possibly with a fractional component.",
+      "prose": "Number values are denoted by <number>, and represent real numbers, possibly with a fractional component.",
       "href": "https://drafts.csswg.org/css-values-4/#number-value",
       "type": "type"
     },
     {
       "name": "<zero>",
-      "prose": "The value <zero>Info about the '<zero>' reference.#zero-valueReferenced in:5.3. Real Numbers: the <number> type Possible linking syntaxes:<<zero>><</zero>> represents a literal number with the value 0. Expressions that merely evaluate to a <number> with the value 0 (for example, calc(0)) do not match <zero>; only literal <number-token>s do.",
+      "prose": "The value <zero> represents a literal number with the value 0. Expressions that merely evaluate to a <number> with the value 0 (for example, calc(0)) do not match <zero>; only literal <number-token>s do.",
       "href": "https://drafts.csswg.org/css-values-4/#zero-value",
       "type": "type"
     },
     {
       "name": "<dimension>",
-      "prose": "The general term dimensionInfo about the 'dimension' reference.#dimensionReferenced in:5. Numeric Data Types (2) 5.4. Numbers with Units: dimension values (2) 5.4.1. Compatible Units 5.4.2. Combination of Dimensions (2) 5.6. Mixing Percentages and Dimensions 6. Distance Units: the <length> type 7.2. Duration Units: the <time> type and s, ms units 7.3. Frequency Units: the <frequency> type and Hz, kHz units 7.4. Resolution Units: the <resolution> type and dpi, dpcm, dppx units Additions Since Level 3 Possible linking syntaxes:[=dimension=][=/dimension=] refers to a number with a unit attached to it; and is denoted by <dimension>Info about the '<dimension>' reference.#typedef-dimensionReferenced in:5.4. Numbers with Units: dimension values 7.1. Angle Units: the <angle> type and deg, grad, rad, turn units 10.2. Comparison Functions: min(), max(), and clamp() 10.3. Stepped Value Functions: round(), mod(), and rem() (2) 10.4. Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2() 10.5. Exponential Functions: pow(), sqrt(), hypot(), log(), exp() 10.8. Syntax 10.9. Type Checking Possible linking syntaxes:<<dimension>><</dimension>>.",
+      "prose": "The general term dimension refers to a number with a unit attached to it; and is denoted by <dimension>.",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-dimension",
       "type": "type"
     },
     {
       "name": "<percentage>",
-      "prose": "Percentage values are denoted by <percentage>Info about the '<percentage>' reference.#percentage-valueReferenced in:2.1. Component Value Types 5. Numeric Data Types 5.5. Percentages: the <percentage> type 5.5.1. Computation and Combination of <percentage> (2) (3) (4) 5.6. Mixing Percentages and Dimensions (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) 5.6.1. Computation and Combination of Percentage and Dimension Mixes (2) (3) (4) 8.3.1. Parsing <position> 10. Mathematical Expressions 10.2. Comparison Functions: min(), max(), and clamp() 10.3. Stepped Value Functions: round(), mod(), and rem() (2) 10.4. Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2() 10.5. Exponential Functions: pow(), sqrt(), hypot(), log(), exp() 10.8. Syntax 10.9. Type Checking (2) (3) (4) (5) 10.9.1. Calculation Contexts (2) (3) (4) (5) Recent Changes Possible linking syntaxes:<<percentage>><</percentage>>, and indicates a value that is some fraction of another reference value.",
+      "prose": "Percentage values are denoted by <percentage>, and indicates a value that is some fraction of another reference value.",
       "href": "https://drafts.csswg.org/css-values-4/#percentage-value",
       "type": "type"
     },
@@ -112,14 +113,14 @@
     },
     {
       "name": "<ratio>",
-      "prose": "Ratio values are denoted by <ratio>Info about the '<ratio>' reference.#ratio-valueReferenced in:5.7. Ratios: the <ratio> type (2) (3) (4) (5) (6) 5.7.1. Combination of <ratio> (2) (3) (4) (5) (6) (7) Additions Since Level 3 Possible linking syntaxes:<<ratio>><</ratio>>, and represent the ratio of two numeric values. It most often represents an aspect ratio, relating a width (first) to a height (second).",
+      "prose": "Ratio values are denoted by <ratio>, and represent the ratio of two numeric values. It most often represents an aspect ratio, relating a width (first) to a height (second).",
       "href": "https://drafts.csswg.org/css-values-4/#ratio-value",
       "type": "type",
       "value": "<number [0,∞]> [ / <number [0,∞]> ]?"
     },
     {
       "name": "<length>",
-      "prose": "Lengths refer to distance measurements and are denoted by <length>Info about the '<length>' reference.#length-valueReferenced in:1. Introduction 2.1. Component Value Types 2.6. Functional Notation Definitions (2) 3. Combining Values: Interpolation, Addition, and Accumulation 5. Numeric Data Types 5.1. Range Restrictions and Range Definition Notation 5.4. Numbers with Units: dimension values 5.4.2. Combination of Dimensions 5.5.1. Computation and Combination of <percentage> 5.6. Mixing Percentages and Dimensions (2) (3) 5.6.1. Computation and Combination of Percentage and Dimension Mixes (2) (3) 6. Distance Units: the <length> type (2) (3) (4) 8.3.1. Parsing <position> (2) (3) 8.3.2. Serializing <position> 10. Mathematical Expressions 10.1. Basic Arithmetic: calc() 10.3. Stepped Value Functions: round(), mod(), and rem() 10.5. Exponential Functions: pow(), sqrt(), hypot(), log(), exp() (2) (3) (4) 10.7.3. Numeric Variables 10.9. Type Checking (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 10.9.1. Calculation Contexts 10.13. Serialization Appendix C: Quirky Lengths (2) Recent Changes Possible linking syntaxes:<<length>><</length>> in the property definitions. A length is a dimension.",
+      "prose": "Lengths refer to distance measurements and are denoted by <length> in the property definitions. A length is a dimension.",
       "href": "https://drafts.csswg.org/css-values-4/#length-value",
       "type": "type",
       "values": [
@@ -209,14 +210,14 @@
         },
         {
           "name": "ch",
-          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measureInfo about the 'advance measure' reference.#length-advance-measureReferenced in:6.1. Relative Lengths (2) 6.1.1. Font-relative Lengths: the em, rem, ex, rex, cap, rcap, ch, rch, ic, ric, lh, rlh units (2) (3) (4) (5) (6) Possible linking syntaxes:[=advance measure=][=<length>/advance measure=] of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr, and text-orientation is upright).",
+          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measure of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr, and text-orientation is upright).",
           "href": "https://drafts.csswg.org/css-values-4/#ch",
           "type": "value",
           "value": "ch"
         },
         {
           "name": "ch unit",
-          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measureInfo about the 'advance measure' reference.#length-advance-measureReferenced in:6.1. Relative Lengths (2) 6.1.1. Font-relative Lengths: the em, rem, ex, rex, cap, rcap, ch, rch, ic, ric, lh, rlh units (2) (3) (4) (5) (6) Possible linking syntaxes:[=advance measure=][=<length>/advance measure=] of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr, and text-orientation is upright).",
+          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measure of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr, and text-orientation is upright).",
           "href": "https://drafts.csswg.org/css-values-4/#ch",
           "type": "value",
           "value": "ch unit"
@@ -505,7 +506,7 @@
     },
     {
       "name": "<angle>",
-      "prose": "Angle values are <dimension>s denoted by <angle>Info about the '<angle>' reference.#angle-valueReferenced in:5. Numeric Data Types (2) 5.1. Range Restrictions and Range Definition Notation 5.6. Mixing Percentages and Dimensions (2) 5.6.1. Computation and Combination of Percentage and Dimension Mixes 7.1. Angle Units: the <angle> type and deg, grad, rad, turn units (2) (3) (4) (5) 10. Mathematical Expressions 10.4. Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (2) (3) 10.9. Type Checking (2) Recent Changes Possible linking syntaxes:<<angle>><</angle>>. The angle unit identifiers are:",
+      "prose": "Angle values are <dimension>s denoted by <angle>. The angle unit identifiers are:",
       "href": "https://drafts.csswg.org/css-values-4/#angle-value",
       "type": "type",
       "values": [
@@ -541,7 +542,7 @@
     },
     {
       "name": "<time>",
-      "prose": "Time values are dimensions denoted by <time>Info about the '<time>' reference.#time-valueReferenced in:5. Numeric Data Types 5.1. Range Restrictions and Range Definition Notation 5.4. Numbers with Units: dimension values 5.6. Mixing Percentages and Dimensions (2) 5.6.1. Computation and Combination of Percentage and Dimension Mixes 7.2. Duration Units: the <time> type and s, ms units (2) 10. Mathematical Expressions 10.9. Type Checking (2) Possible linking syntaxes:<<time>><</time>>. The time unit identifiers are:",
+      "prose": "Time values are dimensions denoted by <time>. The time unit identifiers are:",
       "href": "https://drafts.csswg.org/css-values-4/#time-value",
       "type": "type",
       "values": [
@@ -563,7 +564,7 @@
     },
     {
       "name": "<frequency>",
-      "prose": "Frequency values are dimensions denoted by <frequency>Info about the '<frequency>' reference.#frequency-valueReferenced in:5. Numeric Data Types 5.4. Numbers with Units: dimension values 5.6. Mixing Percentages and Dimensions (2) 5.6.1. Computation and Combination of Percentage and Dimension Mixes 7.3. Frequency Units: the <frequency> type and Hz, kHz units (2) 10. Mathematical Expressions 10.9. Type Checking (2) Possible linking syntaxes:<<frequency>><</frequency>>. The frequency unit identifiers are:",
+      "prose": "Frequency values are dimensions denoted by <frequency>. The frequency unit identifiers are:",
       "href": "https://drafts.csswg.org/css-values-4/#frequency-value",
       "type": "type",
       "values": [
@@ -585,7 +586,7 @@
     },
     {
       "name": "<resolution>",
-      "prose": "Resolution units are dimensions denoted by <resolution>Info about the '<resolution>' reference.#resolution-valueReferenced in:5. Numeric Data Types 5.4. Numbers with Units: dimension values 7.4. Resolution Units: the <resolution> type and dpi, dpcm, dppx units (2) (3) (4) 10. Mathematical Expressions 10.9. Type Checking (2) Recent Changes Possible linking syntaxes:<<resolution>><</resolution>>. The resolution unit identifiers are:",
+      "prose": "Resolution units are dimensions denoted by <resolution>. The resolution unit identifiers are:",
       "href": "https://drafts.csswg.org/css-values-4/#resolution-value",
       "type": "type",
       "values": [
@@ -621,14 +622,14 @@
     },
     {
       "name": "<position>",
-      "prose": "The <position>Info about the '<position>' reference.#typedef-positionReferenced in:2.8. Non-Terminal Definitions and Grammar Production Blocks 8.3. 2D Positioning: the <position> type (2) (3) 8.3.1. Parsing <position> (2) (3) (4) (5) 8.3.2. Serializing <position> (2) (3) (4) 8.3.3. Combination of <position> (2) (3) Recent Changes Possible linking syntaxes:<<position>><</position>> value specifies the position of a object area (e.g. background image) inside a positioning area (e.g. background positioning area). It is computed and interpreted as specified for background-position. [CSS3-BACKGROUND]",
+      "prose": "The <position> value specifies the position of a object area (e.g. background image) inside a positioning area (e.g. background positioning area). It is computed and interpreted as specified for background-position. [CSS3-BACKGROUND]",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-position",
       "type": "type",
       "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]"
     },
     {
       "name": "calc()",
-      "prose": "The calc()Info about the 'calc()' reference.#funcdef-calcReferenced in:2.1. Component Value Types 2.8. Non-Terminal Definitions and Grammar Production Blocks 5.6. Mixing Percentages and Dimensions (2) (3) 5.6.1. Computation and Combination of Percentage and Dimension Mixes 9.2. Serialization of Functional Notations 10. Mathematical Expressions 10.1. Basic Arithmetic: calc() (2) (3) (4) (5) (6) 10.2. Comparison Functions: min(), max(), and clamp() 10.8. Syntax 10.9. Type Checking (2) 10.10. Internal Representation 10.11. Computed Value 10.13. Serialization (2) Appendix C: Quirky Lengths Recent Changes (2) Additions Since Level 3 (2) Possible linking syntaxes:''calc()''''/calc()'' function is a math function that allows basic arithmetic to be performed on numerical values, using addition (+), subtraction (-), multiplication (*), division (/), and parentheses.",
+      "prose": "The calc() function is a math function that allows basic arithmetic to be performed on numerical values, using addition (+), subtraction (-), multiplication (*), division (/), and parentheses.",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-calc",
       "type": "function",
       "value": "calc( <calc-sum> )",
@@ -672,28 +673,28 @@
     },
     {
       "name": "min()",
-      "prose": "The min()Info about the 'min()' reference.#funcdef-minReferenced in:10.2. Comparison Functions: min(), max(), and clamp() (2) (3) (4) (5) (6) (7) 10.8. Syntax (2) 10.9. Type Checking Recent Changes (2) Additions Since Level 3 Possible linking syntaxes:''min()''''/min()'' or max()Info about the 'max()' reference.#funcdef-maxReferenced in:10.2. Comparison Functions: min(), max(), and clamp() (2) (3) (4) (5) (6) (7) 10.8. Syntax 10.9. Type Checking Recent Changes (2) Additions Since Level 3 Possible linking syntaxes:''max()''''/max()'' functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
+      "prose": "The min() or max() functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-min",
       "type": "function",
       "value": "min( <calc-sum># )"
     },
     {
       "name": "max()",
-      "prose": "The min()Info about the 'min()' reference.#funcdef-minReferenced in:10.2. Comparison Functions: min(), max(), and clamp() (2) (3) (4) (5) (6) (7) 10.8. Syntax (2) 10.9. Type Checking Recent Changes (2) Additions Since Level 3 Possible linking syntaxes:''min()''''/min()'' or max()Info about the 'max()' reference.#funcdef-maxReferenced in:10.2. Comparison Functions: min(), max(), and clamp() (2) (3) (4) (5) (6) (7) 10.8. Syntax 10.9. Type Checking Recent Changes (2) Additions Since Level 3 Possible linking syntaxes:''max()''''/max()'' functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
+      "prose": "The min() or max() functions contain one or more comma-separated calculations, and represent the smallest (most negative) or largest (most positive) of them, respectively.",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-max",
       "type": "function",
       "value": "max( <calc-sum># )"
     },
     {
       "name": "clamp()",
-      "prose": "The clamp()Info about the 'clamp()' reference.#funcdef-clampReferenced in:10. Mathematical Expressions 10.2. Comparison Functions: min(), max(), and clamp() (2) (3) (4) (5) (6) (7) 10.8. Syntax 10.9. Type Checking Recent Changes Additions Since Level 3 Possible linking syntaxes:''clamp()''''/clamp()'' function takes three calculations—​a minimum value, a central value, and a maximum value—​and represents its central calculation, clamped according to its min and max calculations, favoring the min calculation if it conflicts with the max. (That is, given clamp(MIN, VAL, MAX), it represents exactly the same value as max(MIN, min(VAL, MAX))).",
+      "prose": "The clamp() function takes three calculations—​a minimum value, a central value, and a maximum value—​and represents its central calculation, clamped according to its min and max calculations, favoring the min calculation if it conflicts with the max. (That is, given clamp(MIN, VAL, MAX), it represents exactly the same value as max(MIN, min(VAL, MAX))).",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-clamp",
       "type": "function",
       "value": "clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )",
       "values": [
         {
           "name": "none",
-          "prose": "Either the min or max calculations (or even both) can instead be the keyword noneInfo about the 'none' reference.#valdef-clamp-noneReferenced in:Recent Changes Possible linking syntaxes:''clamp()/none'', which indicates the value is not clamped from that side. (That is, clamp(MIN, VAL, none) is equivalent to max(MIN, VAL), clamp(none, VAL, MAX) is equivalent to min(VAL, MAX), and clamp(none, VAL, none) is equivalent to just calc(VAL).)",
+          "prose": "Either the min or max calculations (or even both) can instead be the keyword none, which indicates the value is not clamped from that side. (That is, clamp(MIN, VAL, none) is equivalent to max(MIN, VAL), clamp(none, VAL, MAX) is equivalent to min(VAL, MAX), and clamp(none, VAL, none) is equivalent to just calc(VAL).)",
           "href": "https://drafts.csswg.org/css-values-4/#valdef-clamp-none",
           "type": "value",
           "value": "none"
@@ -708,7 +709,7 @@
     },
     {
       "name": "<rounding-strategy>",
-      "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>Info about the '<rounding-strategy>' reference.#typedef-rounding-strategyReferenced in:10.3. Stepped Value Functions: round(), mod(), and rem() (2) (3) (4) (5) (6) 10.3.1. Argument Ranges 10.8. Syntax (2) Possible linking syntaxes:<<rounding-strategy>><</rounding-strategy>>s dictate how to choose between them:",
+      "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>s dictate how to choose between them:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy",
       "type": "type",
       "value": "nearest | up | down | to-zero | line-width",
@@ -842,62 +843,39 @@
     },
     {
       "name": "sign()",
-      "value": "sign( <calc-sum> ) <calc-sum>Info about the '<calc-sum>' reference.#typedef-calc-sumReferenced in:10.1. Basic Arithmetic: calc() 10.8. Syntax (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21) (22) (23) (24) (25) (26) (27) (28) (29) (30) (31) Possible linking",
+      "value": "sign( <calc-sum> )",
       "href": "https://drafts.csswg.org/css-values-4/#funcdef-sign",
       "type": "function"
     },
     {
       "name": "<calc-sum>",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-sum",
-      "type": "type"
+      "type": "type",
+      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
     },
     {
       "name": "<calc-product>",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-product",
-      "type": "type"
+      "type": "type",
+      "value": "<calc-value> [ [ '*' | / ] <calc-value> ]*"
     },
     {
       "name": "<calc-value>",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-value",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <dimension> | <percentage> | <calc-keyword> | ( <calc-sum> )"
     },
     {
       "name": "<calc-keyword>",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-keyword",
-      "type": "type"
+      "type": "type",
+      "value": "e | pi | infinity | -infinity | NaN"
     },
     {
       "name": "<quirky-length>",
-      "prose": "When CSS is being parsed in quirks mode, <quirky-length>Info about the '<quirky-length>' reference.#typedef-quirky-lengthReferenced in:Appendix C: Quirky Lengths (2) (3) Recent Changes Possible linking syntaxes:<<quirky-length>><</quirky-length>> is a type of <length> that is only valid in certain properties:",
+      "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-quirky-length",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<url>><</url>>",
-      "value": "<url()> | <src()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<calc-sum>><</calc-sum>>",
-      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]* <calc-product>Info about the '<calc-product>' reference.#typedef-calc-productReferenced in:10.8. Syntax (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<calc-product>><</calc-product>>",
-      "value": "<calc-value> [ [ '*' | / ] <calc-value> ]* <calc-value>Info about the '<calc-value>' reference.#typedef-calc-valueReferenced in:10.8. Syntax (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<calc-value>><</calc-value>>",
-      "value": "<number> | <dimension> | <percentage> | <calc-keyword> | ( <calc-sum> ) <calc-keyword>Info about the '<calc-keyword>' reference.#typedef-calc-keywordReferenced in:10.8. Syntax (2) 10.9. Type Checking 10.10.1. Simplification Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<calc-keyword>><</calc-keyword>>",
-      "value": "e | pi | infinity | -infinity | NaN"
     }
   ]
 }

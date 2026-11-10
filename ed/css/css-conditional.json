@@ -7,14 +7,14 @@
   "atrules": [
     {
       "name": "@media",
-      "prose": "The @mediaInfo about the '@media' reference.#at-ruledef-mediaReferenced in:1.1. Background (2) (3) 1.2. Module Interactions 5. Media-specific style sheets: the @media rule (2) (3) 7.3. The CSSMediaRule interface (2) Privacy Considerations Possible linking syntaxes:''@media''''/@media'' rule is a conditional group rule whose condition is a media query. Its syntax is:",
+      "prose": "The @media rule is a conditional group rule whose condition is a media query. Its syntax is:",
       "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-media",
       "descriptors": [],
       "value": "@media <media-query-list> { <rule-list> }"
     },
     {
       "name": "@supports",
-      "prose": "The @supportsInfo about the '@supports' reference.#at-ruledef-supportsReferenced in:1.1. Background (2) 6. Feature queries: the @supports rule (2) (3) (4) (5) (6) (7) (8) 6.1. Definition of support (2) 7.4. The CSSSupportsRule interface Privacy Considerations (2) 8. Changes (2) Possible linking syntaxes:''@supports''''/@supports'' rule is a conditional group rule whose condition tests whether the user agent supports CSS property:value pairs. Authors can use it to write style sheets that use new features when available but degrade gracefully when those features are not supported. These queries are called CSS feature queriesInfo about the 'CSS feature queries' reference.#css-feature-queriesReferenced in:7.4. The CSSSupportsRule interface 8. Changes (2) Possible linking syntaxes:[=CSS feature queries=][=/CSS feature queries=] or (colloquially) supports queriesInfo about the 'supports queries' reference.#supports-queriesReferenced in:8. Changes Possible linking syntaxes:[=supports queries=][=/supports queries=].",
+      "prose": "The @supports rule is a conditional group rule whose condition tests whether the user agent supports CSS property:value pairs. Authors can use it to write style sheets that use new features when available but degrade gracefully when those features are not supported. These queries are called CSS feature queries or (colloquially) supports queries.",
       "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports",
       "descriptors": [],
       "value": "@supports <supports-condition> { <rule-list> }"
@@ -25,43 +25,25 @@
     {
       "name": "<supports-condition>",
       "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-condition",
-      "type": "type"
+      "type": "type",
+      "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]*"
     },
     {
       "name": "<supports-in-parens>",
       "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-in-parens",
-      "type": "type"
+      "type": "type",
+      "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed>"
     },
     {
       "name": "<supports-feature>",
       "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-feature",
-      "type": "type"
+      "type": "type",
+      "value": "<supports-decl>"
     },
     {
       "name": "<supports-decl>",
       "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-decl",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<supports-condition>><</supports-condition>>",
-      "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]* <supports-in-parens>Info about the '<supports-in-parens>' reference.#typedef-supports-in-parensReferenced in:6. Feature queries: the @supports rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<supports-in-parens>><</supports-in-parens>>",
-      "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed> <supports-feature>Info about the '<supports-feature>' reference.#typedef-supports-featureReferenced in:6. Feature queries: the @supports rule Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<supports-feature>><</supports-feature>>",
-      "value": "<supports-decl> <supports-decl>Info about the '<supports-decl>' reference.#typedef-supports-declReferenced in:6. Feature queries: the @supports rule (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<supports-decl>><</supports-decl>>",
+      "type": "type",
       "value": "( <declaration> )"
     }
   ]

@@ -228,7 +228,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "A value of noneInfo about the 'none' reference.#valdef-timeline-trigger-nonePossible linking syntaxes:''timeline-trigger/none'' is equivalent to none none normal.",
+          "prose": "A value of none is equivalent to none none normal.",
           "href": "https://drafts.csswg.org/animation-triggers-1/#valdef-timeline-trigger-none",
           "type": "value",
           "value": "none"
@@ -301,7 +301,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "A value of noneInfo about the 'none' reference.#valdef-event-trigger-nonePossible linking syntaxes:''event-trigger/none'' is equivalent to none none.",
+          "prose": "A value of none is equivalent to none none.",
           "href": "https://drafts.csswg.org/animation-triggers-1/#valdef-event-trigger-none",
           "type": "value",
           "value": "none"
@@ -352,10 +352,11 @@
       "name": "<event-function>",
       "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-function",
       "type": "type",
+      "value": "<click()> | <dblclick()> | <pointerenter()> | <pointerleave()> | <pointerup()> | <pointerdown()> | <keypress()> | <focusin()> | <focusout()> | <input()> | <change()>",
       "values": [
         {
           "name": "keypress()",
-          "value": "keypress()",
+          "value": "keypress( <string>? )",
           "href": "https://drafts.csswg.org/animation-triggers-1/#funcdef-event-function-keypress",
           "type": "function"
         }
@@ -423,7 +424,7 @@
     },
     {
       "name": "<animation-action>",
-      "prose": "The possible <animation-action>Info about the '<animation-action>' reference.#typedef-animation-actionReferenced in:2. Triggers 3.3. Linking a Timeline: the timeline-trigger-source property 5.1. The animation-trigger property (2) (3) (4) (5) Possible linking syntaxes:<<animation-action>><</animation-action>> values, and what effect they have in each animation state:",
+      "prose": "The possible <animation-action> values, and what effect they have in each animation state:",
       "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-animation-action",
       "type": "type",
       "values": [
@@ -476,68 +477,6 @@
           "value": "replay"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<event-function>><</event-function>>",
-      "value": "<click()> | <dblclick()> | <pointerenter()> | <pointerleave()> | <pointerup()> | <pointerdown()> | <keypress()> | <focusin()> | <focusout()> | <input()> | <change()> click()Info about the 'click()' reference.#funcdef-clickReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''click()''''/click()''",
-      "value": "click() dblclick()Info about the 'dblclick()' reference.#funcdef-dblclickReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''dblclick()''''/dblclick()''",
-      "value": "dblclick() pointerenter()Info about the 'pointerenter()' reference.#funcdef-pointerenterReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''pointerenter()''''/pointerenter()''",
-      "value": "pointerenter() pointerleave()Info about the 'pointerleave()' reference.#funcdef-pointerleaveReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''pointerleave()''''/pointerleave()''",
-      "value": "pointerleave() pointerup()Info about the 'pointerup()' reference.#funcdef-pointerupReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''pointerup()''''/pointerup()''",
-      "value": "pointerup() pointerdown()Info about the 'pointerdown()' reference.#funcdef-pointerdownReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''pointerdown()''''/pointerdown()''",
-      "value": "pointerdown() focusin()Info about the 'focusin()' reference.#funcdef-focusinReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''focusin()''''/focusin()''",
-      "value": "focusin() focusout()Info about the 'focusout()' reference.#funcdef-focusoutReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''focusout()''''/focusout()''",
-      "value": "focusout() input()Info about the 'input()' reference.#funcdef-inputReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''input()''''/input()''",
-      "value": "input() change()Info about the 'change()' reference.#funcdef-changeReferenced in:4.2.1. Event Functions (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''change()''''/change()''",
-      "value": "change()"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''keypress()''''<event-function>/keypress()''",
-      "value": "keypress( <string>? )"
     }
   ]
 }

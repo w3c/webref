@@ -23,7 +23,7 @@
   "atrules": [
     {
       "name": "@page",
-      "prose": "Authors can specify various aspects of a page box, such as its dimensions, orientation, and margins, within an @pageInfo about the '@page' reference.#at-ruledef-pageReferenced in:3. The Page Model 4.1. The @page Rule (2) (3) (4) (5) (6) (7) 4.3. @page rule grammar (2) 6.1. Page-based counters 7.1. Page size: the size property (2) (3) 7.1.2. Rotating The Printed Page: the page-orientation property 7.2. Crop and Registration Marks: the marks property 7.3. Bleed Area: the bleed property 7.6. Staying within the printable area: the page-margin-safety property 8.1. Using named pages: page Possible linking syntaxes:''@page''''/@page'' rule. @page rules are allowed wherever rule-sets are allowed. An @page rule consists of the keyword @page, an optional comma-separated list of page selectors and a block of declarations (said to be in the page contextInfo about the 'page context' reference.#page-contextReferenced in:3. The Page Model (2) 5.1. At-rules for page-margin boxes 6. Page Properties 6.1. Page-based counters Possible linking syntaxes:[=page context=][=/page context=]). An @page rule can also contain other at-rules, interleaved between declarations. The current level of this specification only allows margin at-rules inside @page.",
+      "prose": "Authors can specify various aspects of a page box, such as its dimensions, orientation, and margins, within an @page rule. @page rules are allowed wherever rule-sets are allowed. An @page rule consists of the keyword @page, an optional comma-separated list of page selectors and a block of declarations (said to be in the page context). An @page rule can also contain other at-rules, interleaved between declarations. The current level of this specification only allows margin at-rules inside @page.",
       "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page",
       "descriptors": [
         {
@@ -263,125 +263,141 @@
           "name": "@top-left-corner",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-top-left-corner",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@top-left-corner { <declaration-list> };"
         },
         {
           "name": "@top-left",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-top-left",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@top-left { <declaration-list> };"
         },
         {
           "name": "@top-center",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-top-center",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@top-center { <declaration-list> };"
         },
         {
           "name": "@top-right",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-top-right",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@top-right { <declaration-list> };"
         },
         {
           "name": "@top-right-corner",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-top-right-corner",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@top-right-corner { <declaration-list> };"
         },
         {
           "name": "@bottom-left-corner",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-bottom-left-corner",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@bottom-left-corner { <declaration-list> };"
         },
         {
           "name": "@bottom-left",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-bottom-left",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@bottom-left { <declaration-list> };"
         },
         {
           "name": "@bottom-center",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-bottom-center",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@bottom-center { <declaration-list> };"
         },
         {
           "name": "@bottom-right",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-bottom-right",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@bottom-right { <declaration-list> };"
         },
         {
           "name": "@bottom-right-corner",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-bottom-right-corner",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@bottom-right-corner { <declaration-list> };"
         },
         {
           "name": "@left-top",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-left-top",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@left-top { <declaration-list> };"
         },
         {
           "name": "@left-middle",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-left-middle",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@left-middle { <declaration-list> };"
         },
         {
           "name": "@left-bottom",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-left-bottom",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@left-bottom { <declaration-list> };"
         },
         {
           "name": "@right-top",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-right-top",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@right-top { <declaration-list> };"
         },
         {
           "name": "@right-middle",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-right-middle",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@right-middle { <declaration-list> };"
         },
         {
           "name": "@right-bottom",
           "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page-right-bottom",
           "type": "at-rule",
-          "for": "@page"
+          "for": "@page",
+          "value": "@right-bottom { <declaration-list> };"
         }
       ],
-      "value": "@page <page-selector-list>? { <declaration-rule-list> } <page-selector-list>Info about the '<page-selector-list>' reference.#typedef-page-selector-listReferenced in:4.3. @page rule grammar (2) Possible linking",
+      "value": "@page <page-selector-list>? { <declaration-rule-list> }",
       "values": [
         {
           "name": ":left",
-          "prose": "All pages are automatically classified by user agents as either left pages or right pages, based on page progression. The :leftInfo about the ':left' reference.#valdef-page-leftReferenced in:2. Page Terminology 4.2.1. Spread pseudo-classes: :left, :right (2) (3) Possible linking syntaxes:''@page/:left'' and :rightInfo about the ':right' reference.#valdef-page-rightReferenced in:2. Page Terminology 4.2.1. Spread pseudo-classes: :left, :right (2) (3) Possible linking syntaxes:''@page/:right'' pseudo-classes only match left or right pages, respectively.",
+          "prose": "All pages are automatically classified by user agents as either left pages or right pages, based on page progression. The :left and :right pseudo-classes only match left or right pages, respectively.",
           "href": "https://drafts.csswg.org/css-page-3/#valdef-page-left",
           "type": "value",
           "value": ":left"
         },
         {
           "name": ":right",
-          "prose": "All pages are automatically classified by user agents as either left pages or right pages, based on page progression. The :leftInfo about the ':left' reference.#valdef-page-leftReferenced in:2. Page Terminology 4.2.1. Spread pseudo-classes: :left, :right (2) (3) Possible linking syntaxes:''@page/:left'' and :rightInfo about the ':right' reference.#valdef-page-rightReferenced in:2. Page Terminology 4.2.1. Spread pseudo-classes: :left, :right (2) (3) Possible linking syntaxes:''@page/:right'' pseudo-classes only match left or right pages, respectively.",
+          "prose": "All pages are automatically classified by user agents as either left pages or right pages, based on page progression. The :left and :right pseudo-classes only match left or right pages, respectively.",
           "href": "https://drafts.csswg.org/css-page-3/#valdef-page-right",
           "type": "value",
           "value": ":right"
         },
         {
           "name": ":first",
-          "prose": "The :firstInfo about the ':first' reference.#valdef-page-firstReferenced in:4.2.2. First-page pseudo-class: :first Possible linking syntaxes:''@page/:first'' pseudo-class matches the first printed page of a document.",
+          "prose": "The :first pseudo-class matches the first printed page of a document.",
           "href": "https://drafts.csswg.org/css-page-3/#valdef-page-first",
           "type": "value",
           "value": ":first"
         },
         {
           "name": ":blank",
-          "prose": "The :blankInfo about the ':blank' reference.#valdef-page-blankReferenced in:4.2.3. Blank-page pseudo-class: :blank (2) (3) Possible linking syntaxes:''@page/:blank'' pseudo-class matches content-empty pages that appear as a result of forced page breaks.",
+          "prose": "The :blank pseudo-class matches content-empty pages that appear as a result of forced page breaks.",
           "href": "https://drafts.csswg.org/css-page-3/#valdef-page-blank",
           "type": "value",
           "value": ":blank"
@@ -394,120 +410,26 @@
     {
       "name": "<page-selector-list>",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-page-selector-list",
-      "type": "type"
+      "type": "type",
+      "value": "<page-selector>#"
     },
     {
       "name": "<page-selector>",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-page-selector",
-      "type": "type"
+      "type": "type",
+      "value": "[ <ident-token>? <pseudo-page>* ]!"
     },
     {
       "name": "<pseudo-page>",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-pseudo-page",
-      "type": "type"
+      "type": "type",
+      "value": ": [ left | right | first | blank ]"
     },
     {
       "name": "<safe-printable-inset>",
-      "prose": "Let this value be <safe-printable-inset>Info about the '<safe-printable-inset>' reference.#typedef-safe-printable-insetReferenced in:5.3.3. Page-Margin Box Fixed Dimension Computation Rules (2) (3) (4) 7.6. Staying within the printable area: the page-margin-safety property (2) (3) Possible linking syntaxes:<<safe-printable-inset>><</safe-printable-inset>>, which is a <length>.",
+      "prose": "Let this value be <safe-printable-inset>, which is a <length>.",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-safe-printable-inset",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<page-selector-list>><</page-selector-list>>",
-      "value": "<page-selector># <page-selector>Info about the '<page-selector>' reference.#typedef-page-selectorReferenced in:4.2. Page selectors 4.3. @page rule grammar (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<page-selector>><</page-selector>>",
-      "value": "[ <ident-token>? <pseudo-page>* ]! <pseudo-page>Info about the '<pseudo-page>' reference.#typedef-pseudo-pageReferenced in:4.3. @page rule grammar (2) (3) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<pseudo-page>><</pseudo-page>>",
-      "value": ": [ left | right | first | blank ] @top-left-cornerInfo about the '@top-left-corner' reference.#at-ruledef-page-top-left-cornerReferenced in:3.1. Page Backgrounds and Painting Order (2) 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation Rules Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@top-left-corner''''@page/@top-left-corner''",
-      "value": "@top-left-corner { <declaration-list> }; @top-leftInfo about the '@top-left' reference.#at-ruledef-page-top-leftReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.1. At-rules for page-margin boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation Rules Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@top-left''''@page/@top-left''",
-      "value": "@top-left { <declaration-list> }; @top-centerInfo about the '@top-center' reference.#at-ruledef-page-top-centerReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation Rules Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@top-center''''@page/@top-center''",
-      "value": "@top-center { <declaration-list> }; @top-rightInfo about the '@top-right' reference.#at-ruledef-page-top-rightReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation Rules Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@top-right''''@page/@top-right''",
-      "value": "@top-right { <declaration-list> }; @top-right-cornerInfo about the '@top-right-corner' reference.#at-ruledef-page-top-right-cornerReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation Rules Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@top-right-corner''''@page/@top-right-corner''",
-      "value": "@top-right-corner { <declaration-list> }; @bottom-left-cornerInfo about the '@bottom-left-corner' reference.#at-ruledef-page-bottom-left-cornerReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@bottom-left-corner''''@page/@bottom-left-corner''",
-      "value": "@bottom-left-corner { <declaration-list> }; @bottom-leftInfo about the '@bottom-left' reference.#at-ruledef-page-bottom-leftReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@bottom-left''''@page/@bottom-left''",
-      "value": "@bottom-left { <declaration-list> }; @bottom-centerInfo about the '@bottom-center' reference.#at-ruledef-page-bottom-centerReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@bottom-center''''@page/@bottom-center''",
-      "value": "@bottom-center { <declaration-list> }; @bottom-rightInfo about the '@bottom-right' reference.#at-ruledef-page-bottom-rightReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@bottom-right''''@page/@bottom-right''",
-      "value": "@bottom-right { <declaration-list> }; @bottom-right-cornerInfo about the '@bottom-right-corner' reference.#at-ruledef-page-bottom-right-cornerReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@bottom-right-corner''''@page/@bottom-right-corner''",
-      "value": "@bottom-right-corner { <declaration-list> }; @left-topInfo about the '@left-top' reference.#at-ruledef-page-left-topReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@left-top''''@page/@left-top''",
-      "value": "@left-top { <declaration-list> }; @left-middleInfo about the '@left-middle' reference.#at-ruledef-page-left-middleReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@left-middle''''@page/@left-middle''",
-      "value": "@left-middle { <declaration-list> }; @left-bottomInfo about the '@left-bottom' reference.#at-ruledef-page-left-bottomReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@left-bottom''''@page/@left-bottom''",
-      "value": "@left-bottom { <declaration-list> }; @right-topInfo about the '@right-top' reference.#at-ruledef-page-right-topReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@right-top''''@page/@right-top''",
-      "value": "@right-top { <declaration-list> }; @right-middleInfo about the '@right-middle' reference.#at-ruledef-page-right-middleReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@right-middle''''@page/@right-middle''",
-      "value": "@right-middle { <declaration-list> }; @right-bottomInfo about the '@right-bottom' reference.#at-ruledef-page-right-bottomReferenced in:3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''@right-bottom''''@page/@right-bottom''",
-      "value": "@right-bottom { <declaration-list> };"
     }
   ]
 }

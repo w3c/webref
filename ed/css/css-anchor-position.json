@@ -195,7 +195,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-centerInfo about the 'anchor-center' reference.#valdef-justify-self-anchor-centerReferenced in:3.3. Taking Scroll Into Account 4.1. Area-specific Default Alignment 4.2. Centering on the Anchor: the anchor-center alignment value (2) 6.6. Conditional Hiding: the position-visibility property 12. Changes (2) (3) Possible linking syntaxes:''justify-self/anchor-center''''align-self/anchor-center'' value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -213,7 +213,7 @@
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-centerInfo about the 'anchor-center' reference.#valdef-justify-self-anchor-centerReferenced in:3.3. Taking Scroll Into Account 4.1. Area-specific Default Alignment 4.2. Centering on the Anchor: the anchor-center alignment value (2) 6.6. Conditional Hiding: the position-visibility property 12. Changes (2) (3) Possible linking syntaxes:''justify-self/anchor-center''''align-self/anchor-center'' value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
@@ -380,12 +380,13 @@
           "name": "<try-tactic>",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-try-tactic",
           "type": "value",
-          "value": "<try-tactic>"
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y"
         },
         {
           "name": "<try-tactic>",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
-          "type": "type"
+          "type": "type",
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y"
         },
         {
           "name": "flip-block",
@@ -561,7 +562,7 @@
   "atrules": [
     {
       "name": "@position-try",
-      "prose": "The @position-tryInfo about the '@position-try' reference.#at-ruledef-position-tryReferenced in:6. Overflow Management 6.1. Giving Fallback Options: the position-try-fallbacks property (2) (3) 6.4. The @position-try Rule (2) (3) (4) (5) (6) (7) (8) 6.5.1. Maintaining and Clearing Fallback Choices 8.1. The CSSPositionTryRule interface (2) Possible linking syntaxes:''@position-try''''/@position-try'' rule defines a position option with a given name, specifying one or more sets of positioning properties that can be applied to a box via position-try-fallbacks.",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that can be applied to a box via position-try-fallbacks.",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
       "descriptors": [],
       "value": "@position-try <dashed-ident> { <declaration-list> }"
@@ -572,12 +573,14 @@
     {
       "name": "<anchor-name>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name",
-      "type": "type"
+      "type": "type",
+      "value": "<dashed-ident>"
     },
     {
       "name": "<position-area>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area",
       "type": "type",
+      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]",
       "values": [
         {
           "name": "start",
@@ -933,10 +936,10 @@
     },
     {
       "name": "anchor()",
-      "prose": "An absolutely positioned box can use the anchor()Info about the 'anchor()' reference.#funcdef-anchorReferenced in:1. Introduction 2. Determining the Anchor 3. Anchor-Based Positioning 3.1.2. Syntax of <position-area> Values 3.2. Anchor-relative Insets: the anchor() function (2) (3) (4) (5) (6) (7) (8) (9) 3.2.1. Resolution of anchor() (2) (3) 3.3. Taking Scroll Into Account (2) 5.1. The anchor-size() Function (2) 6.4. The @position-try Rule 6.5.2. Applying Position Options Possible linking syntaxes:''anchor()''''/anchor()'' function as a value in its inset properties to refer to the position of one or more anchor boxes. The anchor() function resolves to a <length>. It is only allowed in the inset properties (and is otherwise invalid).",
+      "prose": "An absolutely positioned box can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor boxes. The anchor() function resolves to a <length>. It is only allowed in the inset properties (and is otherwise invalid).",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor",
       "type": "function",
-      "value": "anchor( <anchor-name>? && <anchor-side>, <length-percentage>? ) <anchor-side>Info about the '<anchor-side>' reference.#typedef-anchor-sideReferenced in:3.2. Anchor-relative Insets: the anchor() function (2) (3) 3.2.1. Resolution of anchor() 5.1. The anchor-size() Function Possible linking",
+      "value": "anchor( <anchor-name>? && <anchor-side>, <length-percentage>? )",
       "values": [
         {
           "name": "<dashed-ident>",
@@ -1034,53 +1037,54 @@
     {
       "name": "<anchor-side>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side",
-      "type": "type"
+      "type": "type",
+      "value": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",
-      "prose": "An absolutely positioned box can use the anchor-size()Info about the 'anchor-size()' reference.#funcdef-anchor-sizeReferenced in:1. Introduction 5. Anchor-Based Sizing 5.1. The anchor-size() Function (2) (3) (4) (5) 5.1.1. Resolution of anchor-size() (2) (3) 6.5.2. Applying Position Options Possible linking syntaxes:''anchor-size()''''/anchor-size()'' function in its sizing properties to refer to the size of one or more anchor boxes. The anchor-size() function resolves to a <length>. It is only allowed in the accepted @position-try properties (and is otherwise invalid).",
+      "prose": "An absolutely positioned box can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor boxes. The anchor-size() function resolves to a <length>. It is only allowed in the accepted @position-try properties (and is otherwise invalid).",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size",
       "type": "function",
-      "value": "anchor-size( [ <anchor-name> || <anchor-size> ]? , <length-percentage>? ) <anchor-size>Info about the '<anchor-size>' reference.#typedef-anchor-sizeReferenced in:5.1. The anchor-size() Function (2) (3) (4) (5) (6) Possible linking",
+      "value": "anchor-size( [ <anchor-name> || <anchor-size> ]? , <length-percentage>? )",
       "values": [
         {
           "name": "width",
-          "prose": "The physical <anchor-size> keywords (widthInfo about the 'width' reference.#valdef-anchor-size-widthPossible linking syntaxes:''anchor-size()/width'' and heightInfo about the 'height' reference.#valdef-anchor-size-heightPossible linking syntaxes:''anchor-size()/height'') refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-width",
           "type": "value",
           "value": "width"
         },
         {
           "name": "height",
-          "prose": "The physical <anchor-size> keywords (widthInfo about the 'width' reference.#valdef-anchor-size-widthPossible linking syntaxes:''anchor-size()/width'' and heightInfo about the 'height' reference.#valdef-anchor-size-heightPossible linking syntaxes:''anchor-size()/height'') refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-height",
           "type": "value",
           "value": "height"
         },
         {
           "name": "block",
-          "prose": "The logical <anchor-size> keywords (blockInfo about the 'block' reference.#valdef-anchor-size-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/block'', inlineInfo about the 'inline' reference.#valdef-anchor-size-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/inline'', self-blockInfo about the 'self-block' reference.#valdef-anchor-size-self-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-block'', and self-inlineInfo about the 'self-inline' reference.#valdef-anchor-size-self-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-inline'') map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "inline",
-          "prose": "The logical <anchor-size> keywords (blockInfo about the 'block' reference.#valdef-anchor-size-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/block'', inlineInfo about the 'inline' reference.#valdef-anchor-size-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/inline'', self-blockInfo about the 'self-block' reference.#valdef-anchor-size-self-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-block'', and self-inlineInfo about the 'self-inline' reference.#valdef-anchor-size-self-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-inline'') map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-inline",
           "type": "value",
           "value": "inline"
         },
         {
           "name": "self-block",
-          "prose": "The logical <anchor-size> keywords (blockInfo about the 'block' reference.#valdef-anchor-size-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/block'', inlineInfo about the 'inline' reference.#valdef-anchor-size-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/inline'', self-blockInfo about the 'self-block' reference.#valdef-anchor-size-self-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-block'', and self-inlineInfo about the 'self-inline' reference.#valdef-anchor-size-self-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-inline'') map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-block",
           "type": "value",
           "value": "self-block"
         },
         {
           "name": "self-inline",
-          "prose": "The logical <anchor-size> keywords (blockInfo about the 'block' reference.#valdef-anchor-size-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/block'', inlineInfo about the 'inline' reference.#valdef-anchor-size-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/inline'', self-blockInfo about the 'self-block' reference.#valdef-anchor-size-self-blockReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-block'', and self-inlineInfo about the 'self-inline' reference.#valdef-anchor-size-self-inlineReferenced in:5.1. The anchor-size() Function Possible linking syntaxes:''anchor-size()/self-inline'') map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
+          "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the box (for self-block and self-inline) or the writing mode of the box’s containing block (for block and inline).",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-inline",
           "type": "value",
           "value": "self-inline"
@@ -1090,43 +1094,13 @@
     {
       "name": "<anchor-size>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size",
-      "type": "type"
+      "type": "type",
+      "value": "width | height | block | inline | self-block | self-inline"
     },
     {
       "name": "<try-size>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<anchor-name>><</anchor-name>>",
-      "value": "<dashed-ident>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<position-area>><</position-area>>",
-      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<anchor-side>><</anchor-side>>",
-      "value": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<anchor-size>><</anchor-size>>",
-      "value": "width | height | block | inline | self-block | self-inline"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<try-tactic>><<position-try-fallbacks/try-tactic>>",
-      "value": "flip-block || flip-inline || flip-start || flip-x || flip-y"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<try-size>><</try-size>>",
+      "type": "type",
       "value": "most-width | most-height | most-block-size | most-inline-size"
     }
   ]

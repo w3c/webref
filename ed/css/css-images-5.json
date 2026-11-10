@@ -42,35 +42,20 @@
   "values": [
     {
       "name": "image()",
-      "value": "image()",
+      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )",
       "href": "https://drafts.csswg.org/css-images-5/#funcdef-image",
       "type": "function"
     },
     {
       "name": "<image-tags>",
       "href": "https://drafts.csswg.org/css-images-5/#typedef-image-tags",
-      "type": "type"
+      "type": "type",
+      "value": "[ ltr | rtl ]"
     },
     {
       "name": "<image-src>",
       "href": "https://drafts.csswg.org/css-images-5/#typedef-image-src",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''image()''''/image()''",
-      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! ) <image-tags>Info about the '<image-tags>' reference.#typedef-image-tagsReferenced in:2.1. Image Fallbacks and Annotations: the image() notation Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<image-tags>><</image-tags>>",
-      "value": "[ ltr | rtl ] <image-src>Info about the '<image-src>' reference.#typedef-image-srcReferenced in:2.1. Image Fallbacks and Annotations: the image() notation Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<image-src>><</image-src>>",
+      "type": "type",
       "value": "[ <url> | <string> ]"
     }
   ]

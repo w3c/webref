@@ -78,7 +78,7 @@
         },
         {
           "name": "from-image",
-          "prose": "The image’s preferred resolution is taken as that specified by the image format (the natural resolutionInfo about the 'natural resolution' reference.#--natural-resolutionReferenced in:2.4. Resolution/Type Negotiation: the image-set() notation (2) (3) (4) 6.1. Overriding Image Resolutions: the image-resolution property (2) (3) Possible linking syntaxes:[=natural resolution=][=//natural resolution=]). If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
+          "prose": "The image’s preferred resolution is taken as that specified by the image format (the natural resolution). If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
           "href": "https://drafts.csswg.org/css-images-4/#valdef-image-resolution-from-image",
           "type": "value",
           "value": "from-image"
@@ -103,14 +103,15 @@
     {
       "name": "<image>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-image",
-      "type": "type"
+      "type": "type",
+      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
     },
     {
       "name": "image-set()",
-      "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set()Info about the 'image-set()' reference.#funcdef-image-setReferenced in:2. 2D Image Values: the <image> type 2.4. Resolution/Type Negotiation: the image-set() notation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 6.1. Overriding Image Resolutions: the image-resolution property (2) Appendix A: Deprecated Features and Aliases (2) (3) Changes Since the 13 April 2017 Working Draft (2) Possible linking syntaxes:''image-set()''''/image-set()'' function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
+      "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set() function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set",
       "type": "function",
-      "value": "image-set( <image-set-option># ) <image-set-option>Info about the '<image-set-option>' reference.#typedef-image-set-optionReferenced in:2.4. Resolution/Type Negotiation: the image-set() notation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) Possible linking",
+      "value": "image-set( <image-set-option># )",
       "values": [
         {
           "name": "type()",
@@ -123,54 +124,60 @@
     {
       "name": "<image-set-option>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-image-set-option",
-      "type": "type"
+      "type": "type",
+      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]?"
     },
     {
       "name": "image()",
-      "value": "image()",
+      "value": "image( <color> )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-image",
       "type": "function"
     },
     {
       "name": "cross-fade()",
-      "value": "cross-fade()",
+      "value": "cross-fade( <cf-image># )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-cross-fade",
       "type": "function"
     },
     {
       "name": "<cf-image>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-cf-image",
-      "type": "type"
+      "type": "type",
+      "value": "[ <image> | <color> ] && <percentage [0,100]>?"
     },
     {
       "name": "element()",
-      "value": "element()",
+      "value": "element( <id-selector> )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-element",
       "type": "function"
     },
     {
       "name": "<gradient>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-gradient",
-      "type": "type"
+      "type": "type",
+      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
     {
       "name": "<linear-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-side-or-corner",
-      "type": "type"
+      "type": "type",
+      "value": "[left | right] || [top | bottom]"
     },
     {
       "name": "<radial-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-radial-gradient-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>"
     },
     {
       "name": "conic-gradient()",
-      "value": "conic-gradient()",
+      "value": "conic-gradient( [ <conic-gradient-syntax> ] )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-conic-gradient",
       "type": "function",
       "values": [
@@ -183,7 +190,7 @@
         },
         {
           "name": "<position>",
-          "prose": "Determines the gradient centerInfo about the 'gradient center' reference.#conic-gradient-gradient-centerReferenced in:3.3.2. Placing Color Stops Possible linking syntaxes:[=gradient center=][=conic-gradient()/gradient center=][=repeating-conic-gradient()/gradient center=] of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
           "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-position",
           "type": "value",
           "value": "<position>"
@@ -193,25 +200,26 @@
     {
       "name": "<conic-gradient-syntax>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-conic-gradient-syntax",
-      "type": "type"
+      "type": "type",
+      "value": "[ [ [ from [ <angle> | <zero> ] ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
     },
     {
       "name": "repeating-linear-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient()Info about the 'repeating-linear-gradient()' reference.#funcdef-repeating-linear-gradientReferenced in:3. Gradients 3.1. Linear Gradients: the linear-gradient() notation 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) 7.4. Interpolating <gradient> Possible linking syntaxes:''repeating-linear-gradient()''''/repeating-linear-gradient()'', repeating-radial-gradient()Info about the 'repeating-radial-gradient()' reference.#funcdef-repeating-radial-gradientReferenced in:3. Gradients 3.2.1. Adding <color-interpolation-method> 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-radial-gradient()''''/repeating-radial-gradient()'', and repeating-conic-gradient()Info about the 'repeating-conic-gradient()' reference.#funcdef-repeating-conic-gradientReferenced in:3. Gradients 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-conic-gradient()''''/repeating-conic-gradient()'' values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-linear-gradient",
       "type": "function",
       "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )"
     },
     {
       "name": "repeating-radial-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient()Info about the 'repeating-linear-gradient()' reference.#funcdef-repeating-linear-gradientReferenced in:3. Gradients 3.1. Linear Gradients: the linear-gradient() notation 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) 7.4. Interpolating <gradient> Possible linking syntaxes:''repeating-linear-gradient()''''/repeating-linear-gradient()'', repeating-radial-gradient()Info about the 'repeating-radial-gradient()' reference.#funcdef-repeating-radial-gradientReferenced in:3. Gradients 3.2.1. Adding <color-interpolation-method> 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-radial-gradient()''''/repeating-radial-gradient()'', and repeating-conic-gradient()Info about the 'repeating-conic-gradient()' reference.#funcdef-repeating-conic-gradientReferenced in:3. Gradients 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-conic-gradient()''''/repeating-conic-gradient()'' values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-radial-gradient",
       "type": "function",
       "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )"
     },
     {
       "name": "repeating-conic-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient()Info about the 'repeating-linear-gradient()' reference.#funcdef-repeating-linear-gradientReferenced in:3. Gradients 3.1. Linear Gradients: the linear-gradient() notation 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) 7.4. Interpolating <gradient> Possible linking syntaxes:''repeating-linear-gradient()''''/repeating-linear-gradient()'', repeating-radial-gradient()Info about the 'repeating-radial-gradient()' reference.#funcdef-repeating-radial-gradientReferenced in:3. Gradients 3.2.1. Adding <color-interpolation-method> 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-radial-gradient()''''/repeating-radial-gradient()'', and repeating-conic-gradient()Info about the 'repeating-conic-gradient()' reference.#funcdef-repeating-conic-gradientReferenced in:3. Gradients 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations (2) Possible linking syntaxes:''repeating-conic-gradient()''''/repeating-conic-gradient()'' values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-conic-gradient",
       "type": "function",
       "value": "repeating-conic-gradient( [ <conic-gradient-syntax> ] )",
@@ -225,7 +233,7 @@
         },
         {
           "name": "<position>",
-          "prose": "Determines the gradient centerInfo about the 'gradient center' reference.#conic-gradient-gradient-centerReferenced in:3.3.2. Placing Color Stops Possible linking syntaxes:[=gradient center=][=conic-gradient()/gradient center=][=repeating-conic-gradient()/gradient center=] of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
           "href": "https://drafts.csswg.org/css-images-4/#valdef-conic-gradient-position",
           "type": "value",
           "value": "<position>"
@@ -235,58 +243,67 @@
     {
       "name": "<color-stop-list>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-list",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#?"
     },
     {
       "name": "<linear-color-stop>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-stop",
-      "type": "type"
+      "type": "type",
+      "value": "<color> <color-stop-length>?"
     },
     {
       "name": "<linear-color-hint>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-hint",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage>"
     },
     {
       "name": "<color-stop-length>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-length",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage>{1,2}"
     },
     {
       "name": "<angular-color-stop-list>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-stop-list",
-      "type": "type"
+      "type": "type",
+      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#?"
     },
     {
       "name": "<angular-color-stop>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-stop",
-      "type": "type"
+      "type": "type",
+      "value": "<color> <color-stop-angle>?"
     },
     {
       "name": "<angular-color-hint>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-angular-color-hint",
-      "type": "type"
+      "type": "type",
+      "value": "<angle-percentage> | <zero>"
     },
     {
       "name": "<color-stop-angle>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-angle",
-      "type": "type"
+      "type": "type",
+      "value": "[ <angle-percentage> | <zero> ]{1,2}"
     },
     {
       "name": "<color-stop>",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop",
-      "type": "type"
+      "type": "type",
+      "value": "<color-stop-length> | <color-stop-angle>"
     },
     {
       "name": "<image-1D>",
-      "prose": "While <image> values represent a 2-dimensional (2D) image, and <color> can be thought of as a 0-dimensional (0D) image (unvarying in either axis), some contexts require a 1-dimensional (1D) imageInfo about the '1-dimensional (1D) image' reference.#1d-imageReferenced in:4. 1D Image Values: the <image-1D> type and stripes() notation (2) Possible linking syntaxes:[=1D image=][=one-dimensional image=][=1-dimensional image=][=/1D image=], which specifies colors along an abstract, directionless, single-axis paint lineInfo about the 'paint line' reference.#paint-lineReferenced in:4. 1D Image Values: the <image-1D> type and stripes() notation (2) (3) Possible linking syntaxes:[=paint line=][=/paint line=]. The <image-1D>Info about the '<image-1D>' reference.#typedef-image-1dReferenced in:4. 1D Image Values: the <image-1D> type and stripes() notation (2) Changes Since the 13 April 2017 Working Draft Possible linking syntaxes:<<image-1D>><</image-1D>> type represents such 1D images, including the stripes() functional notation:",
+      "prose": "While <image> values represent a 2-dimensional (2D) image, and <color> can be thought of as a 0-dimensional (0D) image (unvarying in either axis), some contexts require a 1-dimensional (1D) image, which specifies colors along an abstract, directionless, single-axis paint line. The <image-1D> type represents such 1D images, including the stripes() functional notation:",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-image-1d",
       "type": "type",
       "value": "<stripes()>"
     },
     {
       "name": "stripes()",
-      "prose": "The stripes()Info about the 'stripes()' reference.#funcdef-stripesReferenced in:4. 1D Image Values: the <image-1D> type and stripes() notation (2) (3) (4) (5) 7.5. Interpolating stripes() (2) (3) (4) Changes Since the 13 April 2017 Working Draft Possible linking syntaxes:''stripes()''''/stripes()'' function defines a 1D image as a comma-separated list of colored stripes, each placed end-to-end on the paint line in the order given.",
+      "prose": "The stripes() function defines a 1D image as a comma-separated list of colored stripes, each placed end-to-end on the paint line in the order given.",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-stripes",
       "type": "function",
       "value": "stripes( <color-stripe># )",
@@ -316,14 +333,14 @@
     },
     {
       "name": "<color-stripe>",
-      "prose": "Each <color-stripe>Info about the '<color-stripe>' reference.#typedef-color-stripeReferenced in:4. 1D Image Values: the <image-1D> type and stripes() notation (2) (3) 7.5. Interpolating stripes() Possible linking syntaxes:<<color-stripe>><</color-stripe>> entry defines a solid-color stripe with the specified <color> and thickness. If the thickness is omitted, it defaults to 1fr. Thickness values are interpreted as follows:",
+      "prose": "Each <color-stripe> entry defines a solid-color stripe with the specified <color> and thickness. If the thickness is omitted, it defaults to 1fr. Thickness values are interpreted as follows:",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stripe",
       "type": "type",
       "value": "<color> && [ <length-percentage> | <flex> ]?"
     },
     {
       "name": "-webkit-image-set()",
-      "prose": "Implementations must accept -webkit-image-set()Info about the '-webkit-image-set()' reference.#funcdef--webkit-image-setReferenced in:Changes Since the 13 April 2017 Working Draft Changes Since the 11 September 2012 Working Draft Possible linking syntaxes:''-webkit-image-set()''''/-webkit-image-set()'' as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
+      "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set",
       "type": "function"
     }
@@ -331,113 +348,8 @@
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "syntaxes:<<image>><</image>>",
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<image-set-option>><</image-set-option>>",
-      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]?"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''image()''''/image()''",
-      "value": "image( <color> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''cross-fade()''''/cross-fade()''",
-      "value": "cross-fade( <cf-image># ) <cf-image>Info about the '<cf-image>' reference.#typedef-cf-imageReferenced in:2.6. Combining images: the cross-fade() notation 2.6.1. cross-fade() Sizing Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<cf-image>><</cf-image>>",
-      "value": "[ <image> | <color> ] && <percentage [0,100]>?"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''element()''''/element()''",
-      "value": "element( <id-selector> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<gradient>><</gradient>>",
-      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-gradient-syntax>><</linear-gradient-syntax>>",
-      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> <side-or-corner>Info about the '<side-or-corner>' reference.#typedef-side-or-cornerReferenced in:3.1. Linear Gradients: the linear-gradient() notation Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<side-or-corner>><</side-or-corner>>",
-      "value": "[left | right] || [top | bottom]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<radial-gradient-syntax>><</radial-gradient-syntax>>",
-      "value": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>"
-    },
-    {
-      "msg": "Missing definition",
       "name": "<radial-size>",
       "value": "<radial-extent>{1,2} | <length-percentage [0,∞]>{1,2}"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''conic-gradient()''''/conic-gradient()''",
-      "value": "conic-gradient( [ <conic-gradient-syntax> ] ) <conic-gradient-syntax>Info about the '<conic-gradient-syntax>' reference.#typedef-conic-gradient-syntaxReferenced in:3.3.1. conic-gradient() Syntax 3.4. Repeating Gradients: the repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() notations Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<conic-gradient-syntax>><</conic-gradient-syntax>>",
-      "value": "[ [ [ from [ <angle> | <zero> ] ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-stop-list>><</color-stop-list>>",
-      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#? <linear-color-stop>Info about the '<linear-color-stop>' reference.#typedef-linear-color-stopReferenced in:3.5.1. Color Stop Lists (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-color-stop>><</linear-color-stop>>",
-      "value": "<color> <color-stop-length>? <linear-color-hint>Info about the '<linear-color-hint>' reference.#typedef-linear-color-hintReferenced in:3.5.1. Color Stop Lists Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<linear-color-hint>><</linear-color-hint>>",
-      "value": "<length-percentage> <color-stop-length>Info about the '<color-stop-length>' reference.#typedef-color-stop-lengthReferenced in:3.5.1. Color Stop Lists (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-stop-length>><</color-stop-length>>",
-      "value": "<length-percentage>{1,2} <angular-color-stop-list>Info about the '<angular-color-stop-list>' reference.#typedef-angular-color-stop-listReferenced in:3.3.1. conic-gradient() Syntax 3.5.1. Color Stop Lists Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<angular-color-stop-list>><</angular-color-stop-list>>",
-      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#? <angular-color-stop>Info about the '<angular-color-stop>' reference.#typedef-angular-color-stopReferenced in:3.5.1. Color Stop Lists (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<angular-color-stop>><</angular-color-stop>>",
-      "value": "<color> <color-stop-angle>? <angular-color-hint>Info about the '<angular-color-hint>' reference.#typedef-angular-color-hintReferenced in:3.5.1. Color Stop Lists Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<angular-color-hint>><</angular-color-hint>>",
-      "value": "<angle-percentage> | <zero> <color-stop-angle>Info about the '<color-stop-angle>' reference.#typedef-color-stop-angleReferenced in:3.5.1. Color Stop Lists (2) Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-stop-angle>><</color-stop-angle>>",
-      "value": "[ <angle-percentage> | <zero> ]{1,2} <color-stop>Info about the '<color-stop>' reference.#typedef-color-stopReferenced in:7.4. Interpolating <gradient> Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<color-stop>><</color-stop>>",
-      "value": "<color-stop-length> | <color-stop-angle>"
     }
   ]
 }

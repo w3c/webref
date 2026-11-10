@@ -141,33 +141,33 @@
   "selectors": [
     {
       "name": "::picker()",
-      "prose": "The ::picker()Info about the '::picker()' reference.#selectordef-pickerReferenced in:2. Opting Into Basic Appearance: the appearance: base value 3.1. The ::picker() pseudo-element (2) (3) (4) Possible linking syntaxes:''::picker()''''/::picker()'' pseudo-element represents the part of the form control that pops out of the page.",
+      "prose": "The ::picker() pseudo-element represents the part of the form control that pops out of the page.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker",
-      "value": "::picker( <form-control-identifier>+ ) <form-control-identifier>Info about the '<form-control-identifier>' reference.#typedef-picker-form-control-identifierReferenced in:3.1. The ::picker() pseudo-element (2) (3) Possible linking",
+      "value": "::picker( <form-control-identifier>+ )",
       "values": [
         {
           "name": "<form-control-identifier>",
           "href": "https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier",
           "type": "type",
-          "value": "'<' 'f' 'o' 'r' 'm' '-' 'c' 'o' 'n' 't' 'r' 'o' 'l' '-' 'i' 'd' 'e' 'n' 't' 'i' 'f' 'i' 'e' 'r' '>'"
+          "value": "select"
         }
       ]
     },
     {
       "name": "::picker-icon",
-      "prose": "The ::picker-iconInfo about the '::picker-icon' reference.#selectordef-picker-iconReferenced in:4. Pseudo-Elements 4.1. Picker Opener Icon: the ::picker-icon pseudo-element (2) Possible linking syntaxes:''::picker-icon''''/::picker-icon'' pseudo-element represents the part of the control that represents the icon denoting the presence of the picker. It is only generated when the originating element has basic appearance and if it opens a picker. It is a fully styleable pseudo-element and inherits from its originating element.",
+      "prose": "The ::picker-icon pseudo-element represents the part of the control that represents the icon denoting the presence of the picker. It is only generated when the originating element has basic appearance and if it opens a picker. It is a fully styleable pseudo-element and inherits from its originating element.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker-icon",
       "value": "::picker-icon"
     },
     {
       "name": "::file-selector-button",
-      "prose": "The ::file-selector-buttonInfo about the '::file-selector-button' reference.#selectordef-file-selector-buttonReferenced in:4. Pseudo-Elements 4.2. File Selector Button: the ::file-selector-button pseudo-element Possible linking syntaxes:''::file-selector-button''''/::file-selector-button'' pseudo-element represents the button used to open a file picker, if the UA renders such a button.",
+      "prose": "The ::file-selector-button pseudo-element represents the button used to open a file picker, if the UA renders such a button.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-file-selector-button",
       "value": "::file-selector-button"
     },
     {
       "name": "::checkmark",
-      "prose": "The ::checkmarkInfo about the '::checkmark' reference.#selectordef-checkmarkReferenced in:4. Pseudo-Elements (2) 4.3. Styling Checkmarks: the ::checkmark pseudo-element Possible linking syntaxes:''::checkmark''''/::checkmark'' pseudo-element represents an indicator of whether the item is checked, and is present on checkboxes, radios, and option elements.",
+      "prose": "The ::checkmark pseudo-element represents an indicator of whether the item is checked, and is present on checkboxes, radios, and option elements.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-checkmark",
       "value": "::checkmark"
     },
@@ -245,25 +245,25 @@
     },
     {
       "name": "::color-swatch",
-      "prose": "The ::color-swatchInfo about the '::color-swatch' reference.#selectordef-color-swatchReferenced in:4. Pseudo-Elements 4.9. Color Swatch: the ::color-swatch pseudo-element Possible linking syntaxes:''::color-swatch''''/::color-swatch'' pseudo-element represents the portion of the control that displays the chosen color value.",
+      "prose": "The ::color-swatch pseudo-element represents the portion of the control that displays the chosen color value.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-color-swatch",
       "value": "::color-swatch"
     },
     {
       "name": ":low-value",
-      "prose": "The :low-valueInfo about the ':low-value' reference.#selectordef-low-valueReferenced in:5.1. Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes Possible linking syntaxes:'':low-value''''/:low-value'' pseudo-class matches on a meter element when its value is under the value specified by the low HTML attribute.",
+      "prose": "The :low-value pseudo-class matches on a meter element when its value is under the value specified by the low HTML attribute.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-low-value",
       "value": ":low-value"
     },
     {
       "name": ":high-value",
-      "prose": "The :high-valueInfo about the ':high-value' reference.#selectordef-high-valueReferenced in:5.1. Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes Possible linking syntaxes:'':high-value''''/:high-value'' pseudo-class matches on a meter element when its value is over the value specified by the high HTML attribute.",
+      "prose": "The :high-value pseudo-class matches on a meter element when its value is over the value specified by the high HTML attribute.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-high-value",
       "value": ":high-value"
     },
     {
       "name": ":optimal-value",
-      "prose": "The :optimal-valueInfo about the ':optimal-value' reference.#selectordef-optimal-valueReferenced in:5.1. Targeting Different Meter States: the :low-value / :high-value / :optimal-value pseudo-classes Possible linking syntaxes:'':optimal-value''''/:optimal-value'' pseudo-class matches on a meter element when its value is in the range determined by the optimum / low / high HTML attributes.",
+      "prose": "The :optimal-value pseudo-class matches on a meter element when its value is in the range determined by the optimum / low / high HTML attributes.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-optimal-value",
       "value": ":optimal-value"
     }
@@ -271,26 +271,15 @@
   "values": [
     {
       "name": "control-value()",
-      "prose": "The control-value()Info about the 'control-value()' reference.#funcdef-control-valueReferenced in:6. The control-value() function Possible linking syntaxes:''control-value()''''/control-value()'' function computes to the current value of the form control it is on. If it is used on an element that is not a form control, it returns an empty string.",
+      "prose": "The control-value() function computes to the current value of the form control it is on. If it is used on an element that is not a form control, it returns an empty string.",
       "href": "https://drafts.csswg.org/css-forms-1/#funcdef-control-value",
       "type": "function",
-      "value": "control-value( <type>? ) <type>Info about the '<type>' reference.#typedef-typeReferenced in:6. The control-value() function (2) Possible linking"
+      "value": "control-value( <type>? )"
     },
     {
       "name": "<type>",
       "href": "https://drafts.csswg.org/css-forms-1/#typedef-type",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<form-control-identifier>><<::picker()/form-control-identifier>>",
-      "value": "select"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<type>><</type>>",
+      "type": "type",
       "value": "'<' [ number | string ] '>'"
     }
   ]

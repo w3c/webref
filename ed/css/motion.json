@@ -217,11 +217,12 @@
     {
       "name": "<offset-path>",
       "href": "https://drafts.csswg.org/motion-1/#typedef-offset-path",
-      "type": "type"
+      "type": "type",
+      "value": "<ray()> | <url> | <basic-shape>"
     },
     {
       "name": "ray()",
-      "value": "ray()",
+      "value": "ray( <angle> && <ray-size>? && contain? && [at <position>]? )",
       "href": "https://drafts.csswg.org/motion-1/#funcdef-ray",
       "type": "function",
       "values": [
@@ -248,7 +249,7 @@
         },
         {
           "name": "at <position>",
-          "prose": "Specifies the originInfo about the 'origin' reference.#ray-originReferenced in:2.1. Defining A Path: the offset-path property Possible linking syntaxes:[=origin=][=ray()/origin=] of the ray, where the ray’s line begins (the 0% position). It’s resolved by using the <position> to position a 0x0 object area within the box’s containing block. If omitted, it uses the offset starting position of the element, given by offset-position. If the element doesn’t have an offset starting position either, it behaves as at center.",
+          "prose": "Specifies the origin of the ray, where the ray’s line begins (the 0% position). It’s resolved by using the <position> to position a 0x0 object area within the box’s containing block. If omitted, it uses the offset starting position of the element, given by offset-position. If the element doesn’t have an offset starting position either, it behaves as at center.",
           "href": "https://drafts.csswg.org/motion-1/#valdef-ray-at-position",
           "type": "value",
           "value": "at <position>"
@@ -259,6 +260,7 @@
       "name": "<ray-size>",
       "href": "https://drafts.csswg.org/motion-1/#typedef-ray-size",
       "type": "type",
+      "value": "<radial-extent> | sides",
       "values": [
         {
           "name": "closest-side",
@@ -296,23 +298,6 @@
           "value": "sides"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<offset-path>><</offset-path>>",
-      "value": "<ray()> | <url> | <basic-shape>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''ray()''''/ray()''",
-      "value": "ray( <angle> && <ray-size>? && contain? && [at <position>]? ) <ray-size>Info about the '<ray-size>' reference.#typedef-ray-sizeReferenced in:2.1.1. The ray() Function (2) Changes since the 9 April 2015 First Public Working Draft Possible linking"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<ray-size>><</ray-size>>",
-      "value": "<radial-extent> | sides"
     }
   ]
 }

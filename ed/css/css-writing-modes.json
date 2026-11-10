@@ -56,21 +56,21 @@
         },
         {
           "name": "embed",
-          "prose": "If the box is inline, this value creates a directional embeddingInfo about the 'directional embedding' reference.#directional-embeddingReferenced in:2.2. Embeddings and Overrides: the unicode-bidi property Possible linking syntaxes:[=directional embedding=][=/directional embedding=] by opening an additional level of embedding with respect to the bidirectional algorithm. The direction of this embedding level is given by the direction property. Inside the box, reordering is done implicitly.",
+          "prose": "If the box is inline, this value creates a directional embedding by opening an additional level of embedding with respect to the bidirectional algorithm. The direction of this embedding level is given by the direction property. Inside the box, reordering is done implicitly.",
           "href": "https://drafts.csswg.org/css-writing-modes-4/#valdef-unicode-bidi-embed",
           "type": "value",
           "value": "embed"
         },
         {
           "name": "isolate",
-          "prose": "On an inline box, this bidi-isolatesInfo about the 'bidi-isolates' reference.#bidi-isolateReferenced in:2.2. Embeddings and Overrides: the unicode-bidi property 9.1.2. Layout Rules Changes since the May 2018 CSS Writing Modes Module Level 4 Candidate Recommendation Possible linking syntaxes:[=bidi-isolate=][=bidi-isolated=][=bidi isolation=][=isolation=][=/bidi-isolate=] its contents. This is similar to a directional embedding (and increases the embedding level accordingly) except that each sequence of inline-level boxes uninterrupted by any block boundary or forced paragraph break is treated as an isolated sequenceInfo about the 'isolated sequence' reference.#isolated-sequenceReferenced in:2.2. Embeddings and Overrides: the unicode-bidi property (2) 2.3. Example of Bidirectional Text Possible linking syntaxes:[=isolated sequence=][=/isolated sequence=]: the content within the sequence is ordered as if inside an independent paragraph with the base directionality specified by the box’s direction property. for the purpose of bidi resolution in its containing bidi paragraph, the sequence is treated as if it were a single Object Replacement Character (U+FFFC). In effect, neither is the content inside the box bidi-affected by the content surrounding the box, nor is the content surrounding the box bidi-affected by the content or specified directionality of the box. However, forced paragraph breaks within the box still create a corresponding break in the containing paragraph.",
+          "prose": "On an inline box, this bidi-isolates its contents. This is similar to a directional embedding (and increases the embedding level accordingly) except that each sequence of inline-level boxes uninterrupted by any block boundary or forced paragraph break is treated as an isolated sequence: the content within the sequence is ordered as if inside an independent paragraph with the base directionality specified by the box’s direction property. for the purpose of bidi resolution in its containing bidi paragraph, the sequence is treated as if it were a single Object Replacement Character (U+FFFC). In effect, neither is the content inside the box bidi-affected by the content surrounding the box, nor is the content surrounding the box bidi-affected by the content or specified directionality of the box. However, forced paragraph breaks within the box still create a corresponding break in the containing paragraph.",
           "href": "https://drafts.csswg.org/css-writing-modes-4/#valdef-unicode-bidi-isolate",
           "type": "value",
           "value": "isolate"
         },
         {
           "name": "bidi-override",
-          "prose": "This value puts the box’s immediate inline content in a directional overrideInfo about the 'directional override' reference.#directional-overrideReferenced in:2.2. Embeddings and Overrides: the unicode-bidi property (2) Possible linking syntaxes:[=directional override=][=/directional override=]. For an inline, this means that the box acts like a directional embedding in the bidirectional algorithm, except that reordering within it is strictly in sequence according to the direction property; the implicit part of the bidirectional algorithm is ignored. For a block container, the override is applied to an anonymous inline box that surrounds all of its content.",
+          "prose": "This value puts the box’s immediate inline content in a directional override. For an inline, this means that the box acts like a directional embedding in the bidirectional algorithm, except that reordering within it is strictly in sequence according to the direction property; the implicit part of the bidirectional algorithm is ignored. For a block container, the override is applied to an anonymous inline box that surrounds all of its content.",
           "href": "https://drafts.csswg.org/css-writing-modes-4/#valdef-unicode-bidi-bidi-override",
           "type": "value",
           "value": "bidi-override"
@@ -183,7 +183,7 @@
         },
         {
           "name": "sideways-right",
-          "prose": "UAs may accept sideways-rightInfo about the 'sideways-right' reference.#valdef-text-orientation-sideways-rightPossible linking syntaxes:''text-orientation/sideways-right'' as a value that computes to sideways if needed for backward compatibility reasons.",
+          "prose": "UAs may accept sideways-right as a value that computes to sideways if needed for backward compatibility reasons.",
           "href": "https://drafts.csswg.org/css-writing-modes-4/#valdef-text-orientation-sideways-right",
           "type": "value",
           "value": "sideways-right"

@@ -9,7 +9,7 @@
   "values": [
     {
       "name": "env()",
-      "value": "env()",
+      "value": "env( <custom-ident> <integer [0,∞]>*, <declaration-value>? )",
       "href": "https://drafts.csswg.org/css-env-1/#funcdef-env",
       "type": "function",
       "values": [
@@ -120,18 +120,7 @@
     {
       "name": "<env-args>",
       "href": "https://drafts.csswg.org/css-env-1/#typedef-env-args",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:''env()''''/env()''",
-      "value": "env( <custom-ident> <integer [0,∞]>*, <declaration-value>? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntaxes:<<env-args>><</env-args>>",
+      "type": "type",
       "value": "env( <declaration-value>, <declaration-value>? )"
     }
   ]
