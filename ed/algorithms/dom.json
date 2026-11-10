@@ -5046,10 +5046,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥①\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-pi-attribute-map\" id=\"ref-for-concept-pi-attribute-map⑦\">attribute map</a>[<var>name</var>].\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-pi-attribute-map\" id=\"ref-for-concept-pi-attribute-map⑦\">attribute map</a>[<var>name</var>] does not\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exist</a>, then return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes①\">Update data from attributes</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥②\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥②\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-pi-attribute-map\" id=\"ref-for-concept-pi-attribute-map⑧\">attribute map</a>[<var>name</var>].\n\n </p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes①\">Update data from attributes</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥③\">this</a>.\n</p>"
         }
       ]
     },
@@ -5063,14 +5066,14 @@
           "html": "<p>If <var>name</var> is not a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#valid-attribute-local-name\" id=\"ref-for-valid-attribute-local-name⑤\">valid attribute local name</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦④\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror①⑦\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧⑧\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>attributes</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-pi-attribute-map\" id=\"ref-for-concept-pi-attribute-map⑧\">attribute map</a>.\n\n </p>"
+          "html": "<p>Let <var>attributes</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-pi-attribute-map\" id=\"ref-for-concept-pi-attribute-map⑨\">attribute map</a>.\n\n </p>"
         },
         {
-          "html": "If <var>attributes</var>[<var>name</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exist</a>:",
+          "html": "If <var>attributes</var>[<var>name</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exist</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>force</var> is not given or is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">set</a>\n   <var>attributes</var>[<var>name</var>] to the empty string, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes②\">update data from attributes</a>\n   given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥④\">this</a>, and then return true.\n\n   </p>"
+              "html": "<p>If <var>force</var> is not given or is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">set</a>\n   <var>attributes</var>[<var>name</var>] to the empty string, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes②\">update data from attributes</a>\n   given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥⑤\">this</a>, and then return true.\n\n   </p>"
             },
             {
               "html": "<p>Return false.\n  </p>"
@@ -5078,7 +5081,7 @@
           ]
         },
         {
-          "html": "<p>If <var>force</var> is not given or is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove②\">remove</a>\n <var>attributes</var>[<var>name</var>], <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes③\">update data from attributes</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥⑤\">this</a>, and\n then return false.\n\n </p>"
+          "html": "<p>If <var>force</var> is not given or is false, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove②\">remove</a>\n <var>attributes</var>[<var>name</var>], <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#update-data-from-attributes\" id=\"ref-for-update-data-from-attributes③\">update data from attributes</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥⑥\">this</a>, and\n then return false.\n\n </p>"
         },
         {
           "html": "<p>Return true.\n</p>"
@@ -5147,7 +5150,7 @@
           "html": "<p>If <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer\" id=\"ref-for-dom-staticrangeinit-startcontainer\">startContainer</a></code>\"] or\n <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer\" id=\"ref-for-dom-staticrangeinit-endcontainer\">endContainer</a></code>\"] is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documenttype\" id=\"ref-for-documenttype②①\">DocumentType</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#attr\" id=\"ref-for-attr③⑨\">Attr</a></code>\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②⓪⓪\">node</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦⑤\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror\">InvalidNodeTypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧⑨\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start④\">start</a> to\n (<var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer\" id=\"ref-for-dom-staticrangeinit-startcontainer①\">startContainer</a></code>\"],\n <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-startoffset\" id=\"ref-for-dom-staticrangeinit-startoffset\">startOffset</a></code>\"]) and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end④\">end</a> to\n (<var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer\" id=\"ref-for-dom-staticrangeinit-endcontainer①\">endContainer</a></code>\"],\n <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-endoffset\" id=\"ref-for-dom-staticrangeinit-endoffset\">endOffset</a></code>\"]).\n</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start④\">start</a> to\n (<var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer\" id=\"ref-for-dom-staticrangeinit-startcontainer①\">startContainer</a></code>\"],\n <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-startoffset\" id=\"ref-for-dom-staticrangeinit-startoffset\">startOffset</a></code>\"]) and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end④\">end</a> to\n (<var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer\" id=\"ref-for-dom-staticrangeinit-endcontainer①\">endContainer</a></code>\"],\n <var>init</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-staticrangeinit-endoffset\" id=\"ref-for-dom-staticrangeinit-endoffset\">endOffset</a></code>\"]).\n</p>"
         }
       ]
     },
@@ -5264,7 +5267,7 @@
           "html": "<p>If <var>parent</var> is null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦⑧\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror②\">InvalidNodeTypeError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨②\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set②\">Set the start</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦⑨\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①②\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①③\">index</a>).\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set②\">Set the start</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⓪\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①②\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①③\">index</a>).\n</p>"
         }
       ]
     },
@@ -5281,7 +5284,7 @@
           "html": "<p>If <var>parent</var> is null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦⑨\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror③\">InvalidNodeTypeError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨③\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set③\">Set the start</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⓪\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①③\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①④\">index</a> plus 1).\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set③\">Set the start</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧①\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①③\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①④\">index</a> plus 1).\n</p>"
         }
       ]
     },
@@ -5298,7 +5301,7 @@
           "html": "<p>If <var>parent</var> is null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧⓪\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror④\">InvalidNodeTypeError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨④\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set④\">Set the end</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧①\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①④\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①⑤\">index</a>).\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set④\">Set the end</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧②\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①④\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①⑤\">index</a>).\n</p>"
         }
       ]
     },
@@ -5315,7 +5318,7 @@
           "html": "<p>If <var>parent</var> is null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧①\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror⑤\">InvalidNodeTypeError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨⑤\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set⑤\">Set the end</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧②\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①⑤\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①⑥\">index</a> plus 1).\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp-set\" id=\"ref-for-concept-range-bp-set⑤\">Set the end</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧③\">this</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-bp\" id=\"ref-for-concept-range-bp①⑤\">boundary point</a>\n (<var>parent</var>, <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-index\" id=\"ref-for-concept-tree-index①⑥\">index</a> plus 1).\n</p>"
         }
       ]
     },
@@ -5372,7 +5375,7 @@
           "html": "<p>If <var>how</var> is not one of\n\n  </p>\n      <ul class=\"brief\">\n       <li><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-start_to_start\" id=\"ref-for-dom-range-start_to_start\">START_TO_START</a></code>,\n   \n       </li><li><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-start_to_end\" id=\"ref-for-dom-range-start_to_end\">START_TO_END</a></code>,\n   \n       </li><li><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-end_to_end\" id=\"ref-for-dom-range-end_to_end\">END_TO_END</a></code>, and\n   \n       </li><li><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-range-end_to_start\" id=\"ref-for-dom-range-end_to_start\">END_TO_START</a></code>,\n  \n      </li></ul>\n      <p>then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧④\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②③\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨⑧\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root③\">root</a> is not <var>sourceRange</var>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root④\">root</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧⑤\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#wrongdocumenterror\" id=\"ref-for-wrongdocumenterror\">WrongDocumentError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨⑨\">DOMException</a></code>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root③\">root</a> is not <var>sourceRange</var>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root④\">root</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧⑤\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#wrongdocumenterror\" id=\"ref-for-wrongdocumenterror\">WrongDocumentError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨⑨\">DOMException</a></code>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>thisPoint</var> and <var>sourcePoint</var> be null.\n\n </p>"
@@ -5386,19 +5389,19 @@
               "steps": [
                 {
                   "case": "START_TO_START:",
-                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑦\">start</a> and\n   <var>sourcePoint</var> to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑧\">start</a>.\n\n   </p>"
+                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑦\">start</a> and\n   <var>sourcePoint</var> to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑧\">start</a>.\n\n   </p>"
                 },
                 {
                   "case": "START_TO_END:",
-                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑦\">end</a> and <var>sourcePoint</var>\n   to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑨\">start</a>.\n\n   </p>"
+                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑦\">end</a> and <var>sourcePoint</var>\n   to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start①⑨\">start</a>.\n\n   </p>"
                 },
                 {
                   "case": "END_TO_END:",
-                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑧\">end</a> and <var>sourcePoint</var>\n   to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑨\">end</a>.\n\n   </p>"
+                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑧\">end</a> and <var>sourcePoint</var>\n   to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end①⑨\">end</a>.\n\n   </p>"
                 },
                 {
                   "case": "END_TO_START:",
-                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start②⓪\">start</a> and\n   <var>sourcePoint</var> to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end②⓪\">end</a>.\n  </p>"
+                  "html": "<p>Set <var>thisPoint</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start②⓪\">start</a> and\n   <var>sourcePoint</var> to <var>sourceRange</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end②⓪\">end</a>.\n  </p>"
                 }
               ]
             }
@@ -5436,10 +5439,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧⑨\">this</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#range-collapsed\" id=\"ref-for-range-collapsed②\">collapsed</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⓪\">this</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#range-collapsed\" id=\"ref-for-range-collapsed②\">collapsed</a>, then return.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>originalStartNode</var>, <var>originalStartOffset</var>,\n <var>originalEndNode</var>, and <var>originalEndOffset</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⓪\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node②⑨\">start node</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②①\">start offset</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node②⑦\">end node</a>, and\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②①\">end offset</a>, respectively.\n\n </p>"
+          "html": "<p>Let <var>originalStartNode</var>, <var>originalStartOffset</var>,\n <var>originalEndNode</var>, and <var>originalEndOffset</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨①\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node②⑨\">start node</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②①\">start offset</a>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node②⑦\">end node</a>, and\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②①\">end offset</a>, respectively.\n\n </p>"
         },
         {
           "html": "If <var>originalStartNode</var> is <var>originalEndNode</var> and it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#characterdata\" id=\"ref-for-characterdata②③\">CharacterData</a></code>\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①④\">node</a>:",
@@ -5454,7 +5457,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>nodesToRemove</var> be a list of all the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①⑤\">nodes</a> that are\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①①\">contained</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨①\">this</a>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order②⑧\">tree order</a>, omitting any\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①⑥\">node</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑤⓪\">parent</a> is also <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①②\">contained</a> in\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨②\">this</a>.\n\n </p>"
+          "html": "<p>Let <var>nodesToRemove</var> be a list of all the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①⑤\">nodes</a> that are\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①①\">contained</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨②\">this</a>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order②⑧\">tree order</a>, omitting any\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①⑥\">node</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑤⓪\">parent</a> is also <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①②\">contained</a> in\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨③\">this</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>newNode</var> and <var>newOffset</var> be null.\n\n </p>"
@@ -5478,7 +5481,7 @@
           ]
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start②①\">start</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end②①\">end</a> to\n (<var>newNode</var>, <var>newOffset</var>).\n\n </p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start\" id=\"ref-for-concept-range-start②①\">start</a> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end\" id=\"ref-for-concept-range-end②①\">end</a> to\n (<var>newNode</var>, <var>newOffset</var>).\n\n </p>"
         },
         {
           "html": "<p>If <var>originalStartNode</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#characterdata\" id=\"ref-for-characterdata②④\">CharacterData</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②①⑦\">node</a>, then\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-replace\" id=\"ref-for-concept-cd-replace①④\">replace data</a> of <var>originalStartNode</var> with <var>originalStartOffset</var>,\n <var>originalStartNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-length\" id=\"ref-for-concept-node-length①⑧\">length</a> − <var>originalStartOffset</var>, and\n the empty string.\n\n </p>"
@@ -5855,25 +5858,25 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If a non-<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑥\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③②\">node</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#partially-contained\" id=\"ref-for-partially-contained①①\">partially contained</a> in\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⑧\">this</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧⑨\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪③\">DOMException</a></code>.\n\n </p>"
+          "html": "<p>If a non-<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑥\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③②\">node</a> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#partially-contained\" id=\"ref-for-partially-contained①①\">partially contained</a> in\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⑨\">this</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧⑨\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪③\">DOMException</a></code>.\n\n </p>"
         },
         {
           "html": "<p>If <var>newParent</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⑥\">Document</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documenttype\" id=\"ref-for-documenttype②②\">DocumentType</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documentfragment\" id=\"ref-for-documentfragment③⑤\">DocumentFragment</a></code>\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③③\">node</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨⓪\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror⑧\">InvalidNodeTypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪④\">DOMException</a></code>.\n\n  </p>"
         },
         {
-          "html": "<p>Let <var>fragment</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-extract\" id=\"ref-for-concept-range-extract③\">extracting</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨⑨\">this</a>.\n\n </p>"
+          "html": "<p>Let <var>fragment</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-extract\" id=\"ref-for-concept-range-extract③\">extracting</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⓪\">this</a>.\n\n </p>"
         },
         {
           "html": "<p>If <var>newParent</var> has <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child⑦⑥\">children</a>, then <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-replace-all\" id=\"ref-for-concept-node-replace-all②\">replace all</a> with\n null within <var>newParent</var>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-insert\" id=\"ref-for-concept-range-insert①\">Insert</a> <var>newParent</var> into <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⓪\">this</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-insert\" id=\"ref-for-concept-range-insert①\">Insert</a> <var>newParent</var> into <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪①\">this</a>.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-append\" id=\"ref-for-concept-node-append②⑧\">Append</a> <var>fragment</var> to <var>newParent</var>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-select\" id=\"ref-for-concept-range-select①\">Select</a> <var>newParent</var> within <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪①\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-select\" id=\"ref-for-concept-range-select①\">Select</a> <var>newParent</var> within <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪②\">this</a>.\n</p>"
         }
       ]
     },
@@ -5884,7 +5887,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root④⑧\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑦\">root</a>,\n then return false.\n\n </p>"
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root④⑧\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑦\">root</a>,\n then return false.\n\n </p>"
         },
         {
           "html": "<p>If <var>node</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype\" id=\"ref-for-concept-doctype②⓪\">doctype</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨①\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror⑨\">InvalidNodeTypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪⑤\">DOMException</a></code>.\n\n </p>"
@@ -5907,7 +5910,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root④⑨\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑧\">root</a>,\n then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨③\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#wrongdocumenterror\" id=\"ref-for-wrongdocumenterror①\">WrongDocumentError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪⑦\">DOMException</a></code>.\n\n </p>"
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root④⑨\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑧\">root</a>,\n then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨③\">throw</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#wrongdocumenterror\" id=\"ref-for-wrongdocumenterror①\">WrongDocumentError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪⑦\">DOMException</a></code>.\n\n </p>"
         },
         {
           "html": "<p>If <var>node</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-doctype\" id=\"ref-for-concept-doctype②①\">doctype</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨④\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidnodetypeerror\" id=\"ref-for-invalidnodetypeerror①⓪\">InvalidNodeTypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪⑧\">DOMException</a></code>.\n\n </p>"
@@ -5933,7 +5936,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root⑤⓪\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑨\">root</a>,\n then return false.\n\n </p>"
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root⑤⓪\">root</a> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-root\" id=\"ref-for-concept-range-root⑨\">root</a>,\n then return false.\n\n </p>"
         },
         {
           "html": "<p>Let <var>parent</var> be <var>node</var>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑥②\">parent</a>.\n\n </p>"
@@ -5962,16 +5965,16 @@
           "html": "<p>Let <var>string</var> be the empty string.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node③⑨\">start node</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node③⓪\">end node</a> and\n it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑦\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑤\">node</a>, then return the substring of that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑧\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑥\">node</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④③\">data</a> beginning at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②⑥\">start offset</a> and ending\n at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②④\">end offset</a>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node③⑨\">start node</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node③⓪\">end node</a> and\n it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑦\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑤\">node</a>, then return the substring of that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑧\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑥\">node</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④③\">data</a> beginning at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②⑥\">start offset</a> and ending\n at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②④\">end offset</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node④⓪\">start node</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑨\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑦\">node</a>, then append\n the substring of that <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑧\">node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④④\">data</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①①\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②⑦\">start offset</a> until the end to <var>string</var>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-node\" id=\"ref-for-concept-range-start-node④⓪\">start node</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④⑨\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑦\">node</a>, then append\n the substring of that <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑧\">node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④④\">data</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①②\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-start-offset\" id=\"ref-for-concept-range-start-offset②⑦\">start offset</a> until the end to <var>string</var>.\n\n </p>"
         },
         {
-          "html": "<p>Append the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate⑤\">concatenation</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④⑤\">data</a> of all\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤⓪\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑨\">nodes</a> that are <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①⑤\">contained</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①②\">this</a>, in\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order③②\">tree order</a>, to <var>string</var>.\n\n </p>"
+          "html": "<p>Append the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate⑤\">concatenation</a> of the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④⑤\">data</a> of all\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤⓪\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②③⑨\">nodes</a> that are <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#contained\" id=\"ref-for-contained①⑤\">contained</a> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>, in\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order③②\">tree order</a>, to <var>string</var>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node③①\">end node</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤①\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②④⓪\">node</a>, then\n append the substring of that <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②④①\">node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④⑥\">data</a> from its start until\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②⑤\">end offset</a> to <var>string</var>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-node\" id=\"ref-for-concept-range-end-node③①\">end node</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤①\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②④⓪\">node</a>, then\n append the substring of that <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node②④①\">node</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-cd-data\" id=\"ref-for-concept-cd-data④⑥\">data</a> from its start until\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-range-end-offset\" id=\"ref-for-concept-range-end-offset②⑤\">end offset</a> to <var>string</var>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>string</var>.\n</p>"
@@ -6149,17 +6152,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current③\">current</a>.\n\n </p>"
+          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current③\">current</a>.\n\n </p>"
         },
         {
-          "html": "While <var>node</var> is non-null and is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②⑧\">this</a>’s\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①①\">root</a>:",
+          "html": "While <var>node</var> is non-null and is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②⑨\">this</a>’s\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①①\">root</a>:",
           "rationale": "set",
           "steps": [
             {
               "html": "<p>Set <var>node</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑥④\">parent</a>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>node</var> is non-null and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter①\">filtering</a> <var>node</var> within\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②⑨\">this</a> returns <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept②\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⓪\">this</a>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current④\">current</a> to <var>node</var> and return <var>node</var>.\n  </p>"
+              "html": "<p>If <var>node</var> is non-null and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter①\">filtering</a> <var>node</var> within\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⓪\">this</a> returns <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept②\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③①\">this</a>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current④\">current</a> to <var>node</var> and return <var>node</var>.\n  </p>"
             }
           ]
         },
@@ -6290,10 +6293,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①⓪\">current</a>.\n\n </p>"
+          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①⓪\">current</a>.\n\n </p>"
         },
         {
-          "html": "While <var>node</var> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑤\">root</a>:",
+          "html": "While <var>node</var> is not <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑤\">root</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -6307,7 +6310,7 @@
                   "html": "<p>Set <var>node</var> to <var>sibling</var>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑤\">filtering</a> <var>node</var> within\n     <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑦\">this</a>.\n\n     </p>"
+                  "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑤\">filtering</a> <var>node</var> within\n     <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑧\">this</a>.\n\n     </p>"
                 },
                 {
                   "html": "While <var>result</var> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_reject\" id=\"ref-for-dom-nodefilter-filter_reject①\">FILTER_REJECT</a></code> and <var>node</var> has a\n      <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child⑦⑦\">child</a>:",
@@ -6317,12 +6320,12 @@
                       "html": "<p>Set <var>node</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-last-child\" id=\"ref-for-concept-tree-last-child⑨\">last child</a>.\n\n       </p>"
                     },
                     {
-                      "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑥\">filtering</a> <var>node</var> within\n       <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑧\">this</a>.\n      </p>"
+                      "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑥\">filtering</a> <var>node</var> within\n       <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑨\">this</a>.\n      </p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑥\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③⑨\">this</a>’s\n     <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①①\">current</a> to <var>node</var> and return <var>node</var>.\n\n     </p>"
+                  "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑥\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⓪\">this</a>’s\n     <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①①\">current</a> to <var>node</var> and return <var>node</var>.\n\n     </p>"
                 },
                 {
                   "html": "<p>Set <var>sibling</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-previous-sibling\" id=\"ref-for-concept-tree-previous-sibling①⑥\">previous sibling</a>.\n    </p>"
@@ -6330,13 +6333,13 @@
               ]
             },
             {
-              "html": "<p>If <var>node</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑥\">root</a> or <var>node</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑥⑦\">parent</a> is null, then return null.\n\n   </p>"
+              "html": "<p>If <var>node</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑥\">root</a> or <var>node</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑥⑦\">parent</a> is null, then return null.\n\n   </p>"
             },
             {
               "html": "<p>Set <var>node</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" id=\"ref-for-concept-tree-parent⑥⑧\">parent</a>.\n\n   </p>"
             },
             {
-              "html": "<p>If the return value of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑦\">filtering</a> <var>node</var> within <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④①\">this</a> is\n   <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑦\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①②\">current</a> to\n   <var>node</var> and return <var>node</var>.\n  </p>"
+              "html": "<p>If the return value of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑦\">filtering</a> <var>node</var> within <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④②\">this</a> is\n   <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑦\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①②\">current</a> to\n   <var>node</var> and return <var>node</var>.\n  </p>"
             }
           ]
         },
@@ -6352,7 +6355,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①③\">current</a>.\n\n </p>"
+          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①③\">current</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>result</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑧\">FILTER_ACCEPT</a></code>.\n\n </p>"
@@ -6369,10 +6372,10 @@
                   "html": "<p>Set <var>node</var> to its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-first-child\" id=\"ref-for-concept-tree-first-child⑨\">first child</a>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑧\">filtering</a> <var>node</var> within\n     <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④④\">this</a>.\n\n     </p>"
+                  "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑧\">filtering</a> <var>node</var> within\n     <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑤\">this</a>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑨\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑤\">this</a>’s\n     <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①④\">current</a> to <var>node</var> and return <var>node</var>.\n    </p>"
+                  "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept⑨\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑥\">this</a>’s\n     <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①④\">current</a> to <var>node</var> and return <var>node</var>.\n    </p>"
                 }
               ]
             },
@@ -6387,7 +6390,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>temporary</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑦\">root</a>, then return null.\n\n     </p>"
+                  "html": "<p>If <var>temporary</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-traversal-root\" id=\"ref-for-concept-traversal-root①⑦\">root</a>, then return null.\n\n     </p>"
                 },
                 {
                   "html": "<p>Set <var>sibling</var> to <var>temporary</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-next-sibling\" id=\"ref-for-concept-tree-next-sibling②⓪\">next sibling</a>.\n\n     </p>"
@@ -6407,10 +6410,10 @@
               "html": "<p>Set <var>node</var> to <var>sibling</var>.\n\n   </p>"
             },
             {
-              "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑨\">filtering</a> <var>node</var> within\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑦\">this</a>.\n\n   </p>"
+              "html": "<p>Set <var>result</var> to the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-filter\" id=\"ref-for-concept-node-filter⑨\">filtering</a> <var>node</var> within\n   <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑧\">this</a>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept①⓪\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑧\">this</a>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①⑤\">current</a> to <var>node</var> and return <var>node</var>.\n  </p>"
+              "html": "<p>If <var>result</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept\" id=\"ref-for-dom-nodefilter-filter_accept①⓪\">FILTER_ACCEPT</a></code>, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④⑨\">this</a>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#treewalker-current\" id=\"ref-for-treewalker-current①⑤\">current</a> to <var>node</var> and return <var>node</var>.\n  </p>"
             }
           ]
         }
@@ -6489,10 +6492,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>index</var> is equal to or greater than <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens⑧\">token set</a>’s\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a>, then return null.\n\n </p>"
+          "html": "<p>If <var>index</var> is equal to or greater than <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens⑧\">token set</a>’s\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a>, then return null.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens⑨\">token set</a>[<var>index</var>].\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens⑨\">token set</a>[<var>index</var>].\n</p>"
         }
       ]
     },
@@ -6515,7 +6518,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> of <var>tokens</var>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①④\">append</a>\n <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> of <var>tokens</var>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①④\">append</a>\n <var>token</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①①\">token set</a>.\n\n </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update\">update steps</a>.\n</p>"
@@ -6541,7 +6544,7 @@
           ]
         },
         {
-          "html": "<p>For each <var>token</var> of <var>tokens</var>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑧\">remove</a> <var>token</var> from\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①②\">token set</a>.\n\n </p>"
+          "html": "<p>For each <var>token</var> of <var>tokens</var>: <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑧\">remove</a> <var>token</var> from\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①②\">token set</a>.\n\n </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update①\">update steps</a>.\n</p>"
@@ -6561,11 +6564,11 @@
           "html": "<p>If <var>token</var> contains any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\" id=\"ref-for-ascii-whitespace①⓪\">ASCII whitespace</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪②\">throw</a> an\n \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror②④\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②④\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①③\">token set</a>[<var>token</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">exists</a>:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①③\">token set</a>[<var>token</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">exists</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>force</var> is either not given or is false, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑨\">remove</a>\n   <var>token</var> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①④\">token set</a>, run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update②\">update steps</a> and return\n   false.\n\n   </p>"
+              "html": "<p>If <var>force</var> is either not given or is false, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑨\">remove</a>\n   <var>token</var> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①④\">token set</a>, run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update②\">update steps</a> and return\n   false.\n\n   </p>"
             },
             {
               "html": "<p>Return true.\n  </p>"
@@ -6573,7 +6576,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, if <var>force</var> not given or is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①⑤\">append</a> <var>token</var>\n to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑤\">token set</a>, run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update③\">update steps</a>, and return true.\n\n </p>"
+          "html": "<p>Otherwise, if <var>force</var> not given or is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①⑤\">append</a> <var>token</var>\n to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑤\">token set</a>, run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update③\">update steps</a>, and return true.\n\n </p>"
         },
         {
           "html": "<p>Return false.\n</p>"
@@ -6593,10 +6596,10 @@
           "html": "<p>If either <var>token</var> or <var>newToken</var> contains any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\" id=\"ref-for-ascii-whitespace①①\">ASCII whitespace</a>, then\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①⓪④\">throw</a> an \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#invalidcharactererror\" id=\"ref-for-invalidcharactererror②⑤\">InvalidCharacterError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②⑥\">DOMException</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑥\">token set</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⑤\">contain</a> <var>token</var>, then\n return false.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑥\">token set</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⑤\">contain</a> <var>token</var>, then\n return false.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-replace\" id=\"ref-for-set-replace\">Replace</a> <var>token</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑦\">token set</a> with\n <var>newToken</var>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-replace\" id=\"ref-for-set-replace\">Replace</a> <var>token</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-tokens\" id=\"ref-for-concept-dtl-tokens①⑦\">token set</a> with\n <var>newToken</var>.\n\n </p>"
         },
         {
           "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-dtl-update\" id=\"ref-for-concept-dtl-update⑤\">update steps</a>.\n\n </p>"
