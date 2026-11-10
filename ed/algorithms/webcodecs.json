@@ -2852,7 +2852,7 @@
           "html": "<p>Let <var>parsedRect</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect\" id=\"ref-for-videoframe-parse-visible-rect\">Parse Visible Rect</a> algorithm with <var>defaultRect</var>, <var>overrideRect</var>,\n    <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedwidth\" id=\"ref-for-dom-videoframebufferinit-codedwidth②\">codedWidth</a></code>,\n    <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedheight\" id=\"ref-for-dom-videoframebufferinit-codedheight\">codedHeight</a></code>, and\n    <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format\" id=\"ref-for-dom-videoframebufferinit-format\">format</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>parsedRect</var> is an exception, return <var>parsedRect</var>.</p>"
+          "html": "<p>If <var>parsedRect</var> is an exception, throw <var>parsedRect</var>.</p>"
         },
         {
           "html": "<p>Let <var>optLayout</var> be <code>undefined</code>.</p>"
@@ -4891,13 +4891,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot⑤\">[[closed]]</a></code>, abort these steps.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot⑤\">[[closed]]</a></code> is <code>true</code> or <var>promise</var> is not an\nelement of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot③\">[[pending decode promises]]</a></code>, abort these\nsteps.</p>"
             },
             {
-              "html": "<p>Assert that <var>promise</var> is an element of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot③\">[[pending decode promises]]</a></code>.</p>"
+              "html": "<p>Assert that <var>promise</var> is an element of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot④\">[[pending decode promises]]</a></code>.</p>"
             },
             {
-              "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot④\">[[pending decode promises]]</a></code>.</p>"
+              "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑤\">[[pending decode promises]]</a></code>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①④\">Resolve</a> <var>promise</var> with <var>result</var>.</p>"
@@ -4923,13 +4923,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot⑦\">[[closed]]</a></code>, abort these steps.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot⑦\">[[closed]]</a></code> is <code>true</code> or <var>promise</var> is not an\nelement of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑥\">[[pending decode promises]]</a></code>, abort these\nsteps.</p>"
             },
             {
-              "html": "<p>Assert that <var>promise</var> is an element of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑤\">[[pending decode promises]]</a></code>.</p>"
+              "html": "<p>Assert that <var>promise</var> is an element of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑦\">[[pending decode promises]]</a></code>.</p>"
             },
             {
-              "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑥\">[[pending decode promises]]</a></code>.</p>"
+              "html": "<p>Remove <var>promise</var> from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑧\">[[pending decode promises]]</a></code>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>exception</var>.</p>"
@@ -4982,14 +4982,14 @@
           "html": "<p>Signal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-codec-implementation-slot\" id=\"ref-for-dom-imagedecoder-codec-implementation-slot⑧\">[[codec implementation]]</a></code> to abort any active\ndecoding operation.</p>"
         },
         {
-          "html": "For each <var>decodePromise</var> in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑦\">[[pending decode promises]]</a></code>:",
+          "html": "For each <var>decodePromise</var> in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑨\">[[pending decode promises]]</a></code>:",
           "rationale": "reject",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>decodePromise</var> with <var>exception</var>.</p>"
             },
             {
-              "html": "<p>Remove <var>decodePromise</var> from\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot⑧\">[[pending decode promises]]</a></code>.</p>"
+              "html": "<p>Remove <var>decodePromise</var> from\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot\" id=\"ref-for-dom-imagedecoder-pending-decode-promises-slot①⓪\">[[pending decode promises]]</a></code>.</p>"
             }
           ]
         }

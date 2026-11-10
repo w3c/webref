@@ -252,9 +252,12 @@
           "html": "<p>Let <var>layoutChildMap</var> be <var>box</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-box-layoutchildmap-slot\" id=\"ref-for-dom-box-layoutchildmap-slot④\">[[layoutChildMap]]</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>layoutChild</var> in <var>layoutChildMap</var>:</p>",
-          "ignored": [
-            "layoutChild’s [[styleMap]] to null."
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>layoutChild</var> in <var>layoutChildMap</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>layoutChild</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.css-houdini.org/css-layout-api-1/#dom-layoutchild-stylemap-slot\" id=\"ref-for-dom-layoutchild-stylemap-slot⑥\">[[styleMap]]</a></code> to null.</p>"
+            }
           ]
         }
       ]
