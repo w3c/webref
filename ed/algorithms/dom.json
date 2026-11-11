@@ -1565,16 +1565,10 @@
             },
             {
               "html": "For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant\" id=\"ref-for-concept-shadow-including-inclusive-descendant\">shadow-including inclusive descendant</a> <var>inclusiveDescendant</var> of\n    <var>node</var>, in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>:",
-              "rationale": "run",
+              "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"ref-for-concept-node-insert-ext③\">insertion steps</a> with <var>inclusiveDescendant</var>.\n\n     </p>"
-                },
-                {
-                  "html": "<p>If <var>inclusiveDescendant</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, then\n     <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.\n\n     </p>"
-                },
-                {
-                  "html": "If <var>inclusiveDescendant</var> is an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①③\">element</a> and\n      <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"ref-for-element-custom-element-registry\">custom element registry</a> is non-null:",
+                  "html": "If <var>inclusiveDescendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, <var>inclusiveDescendant</var> is an\n      <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element①③\">element</a>, and <var>inclusiveDescendant</var>’s\n      <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"ref-for-element-custom-element-registry\">custom element registry</a> is non-null:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1589,7 +1583,10 @@
                   ]
                 },
                 {
-                  "html": "<p>Otherwise, if <var>inclusiveDescendant</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root①④\">shadow root</a>,\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry\">custom element registry</a> is non-null, and\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry①\">custom element registry</a>’s\n     <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#is-scoped\" id=\"ref-for-is-scoped①\">is scoped</a> is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a>\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a> to\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry②\">custom element registry</a>’s\n     <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#scoped-document-set\" id=\"ref-for-scoped-document-set①\">scoped document set</a>.\n    </p>"
+                  "html": "<p>Otherwise, if <var>inclusiveDescendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected①\">connected</a>,\n     <var>inclusiveDescendant</var> is a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-root\" id=\"ref-for-concept-shadow-root①④\">shadow root</a>,\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry\">custom element registry</a> is non-null, and\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry①\">custom element registry</a>’s\n     <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#is-scoped\" id=\"ref-for-is-scoped①\">is scoped</a> is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a>\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a> to\n     <var>inclusiveDescendant</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"ref-for-shadowroot-custom-element-registry②\">custom element registry</a>’s\n     <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#scoped-document-set\" id=\"ref-for-scoped-document-set①\">scoped document set</a>.\n\n     </p>"
+                },
+                {
+                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"ref-for-concept-node-insert-ext③\">insertion steps</a> with <var>inclusiveDescendant</var>.\n    </p>"
                 }
               ]
             }
@@ -1614,7 +1611,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>node</var> of <var>staticNodeList</var>: if <var>node</var> is\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected①\">connected</a>, then run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"ref-for-concept-node-post-connection-ext⑥\">post-connection steps</a> with <var>node</var>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>node</var> of <var>staticNodeList</var>: if <var>node</var> is\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected②\">connected</a>, then run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"ref-for-concept-node-post-connection-ext⑥\">post-connection steps</a> with <var>node</var>.\n</p>"
         }
       ]
     },
@@ -1728,10 +1725,10 @@
               "html": "<p>Let <var>isSubtreeRoot</var> be true if <var>inclusiveDescendant</var> is\n   <var>node</var>; otherwise false.\n\n   </p>"
             },
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-move-ext\" id=\"ref-for-concept-node-move-ext\">moving steps</a> with <var>inclusiveDescendant</var>, <var>isSubtreeRoot</var>,\n    and <var>oldParent</var>.\n\n    </p>"
+              "html": "<p>If <var>inclusiveDescendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom\" id=\"ref-for-concept-element-custom①\">custom</a> and <var>newParent</var> is\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected⑤\">connected</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction\" id=\"ref-for-enqueue-a-custom-element-callback-reaction①\">enqueue a custom element callback reaction</a> with\n   <var>inclusiveDescendant</var>, callback name \"<code>connectedMoveCallback</code>\", and « ».\n\n   </p>"
             },
             {
-              "html": "<p>If <var>inclusiveDescendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom\" id=\"ref-for-concept-element-custom①\">custom</a> and <var>newParent</var> is\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected④\">connected</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction\" id=\"ref-for-enqueue-a-custom-element-callback-reaction①\">enqueue a custom element callback reaction</a> with\n   <var>inclusiveDescendant</var>, callback name \"<code>connectedMoveCallback</code>\", and « ».\n  </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-move-ext\" id=\"ref-for-concept-node-move-ext\">moving steps</a> with <var>inclusiveDescendant</var>, <var>isSubtreeRoot</var>,\n    and <var>oldParent</var>.\n\n    </p>"
             }
           ]
         },
@@ -1885,23 +1882,23 @@
           ]
         },
         {
-          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext①\">removing steps</a> with <var>node</var>, true, and <var>parent</var>.\n\n </p>"
-        },
-        {
-          "html": "<p>Let <var>isParentConnected</var> be <var>parent</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected⑤\">connected</a>.\n\n </p>"
+          "html": "<p>Let <var>isParentConnected</var> be <var>parent</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected⑥\">connected</a>.\n\n </p>"
         },
         {
           "html": "<p>If <var>node</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom\" id=\"ref-for-concept-element-custom②\">custom</a> and <var>isParentConnected</var> is true, then\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction\" id=\"ref-for-enqueue-a-custom-element-callback-reaction②\">enqueue a custom element callback reaction</a> with <var>node</var>, callback name\n  \"<code>disconnectedCallback</code>\", and « ».\n\n  </p>"
         },
         {
+          "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext①\">removing steps</a> with <var>node</var>, true, and <var>parent</var>.\n\n </p>"
+        },
+        {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-descendant\" id=\"ref-for-concept-shadow-including-descendant\">shadow-including descendant</a> <var>descendant</var> of <var>node</var>, in\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order③\">shadow-including tree order</a>:",
-          "rationale": "run",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext②\">removing steps</a> with <var>descendant</var>, false, and <var>parent</var>.\n\n   </p>"
+              "html": "<p>If <var>descendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom\" id=\"ref-for-concept-element-custom④\">custom</a> and <var>isParentConnected</var>\n   is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction\" id=\"ref-for-enqueue-a-custom-element-callback-reaction③\">enqueue a custom element callback reaction</a> with <var>descendant</var>,\n   callback name \"<code>disconnectedCallback</code>\", and « ».\n\n   </p>"
             },
             {
-              "html": "<p>If <var>descendant</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom\" id=\"ref-for-concept-element-custom④\">custom</a> and <var>isParentConnected</var>\n   is true, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction\" id=\"ref-for-enqueue-a-custom-element-callback-reaction③\">enqueue a custom element callback reaction</a> with <var>descendant</var>,\n   callback name \"<code>disconnectedCallback</code>\", and « ».\n  </p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext②\">removing steps</a> with <var>descendant</var>, false, and <var>parent</var>.\n  </p>"
             }
           ]
         },
@@ -2223,7 +2220,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>registered</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options\">options</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree\" id=\"ref-for-dom-mutationobserverinit-subtree①\">subtree</a></code>\"] is false, then\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.\n\n   </p>"
+              "html": "<p>If <var>registered</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options\">options</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree\" id=\"ref-for-dom-mutationobserverinit-subtree①\">subtree</a></code>\"] is false, then\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.\n\n   </p>"
             },
             {
               "html": "<p>Let <var>observer</var> be <var>registered</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer\">observer</a>.\n\n   </p>"
@@ -2232,7 +2229,7 @@
               "html": "<p>Let <var>source</var> be <var>registered</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source\">source</a> if <var>registered</var> is a\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer②\">transient registered observer</a>; otherwise <var>registered</var>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list①\">registered observer list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contains</a> a\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer③\">transient registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source①\">source</a> is\n   <var>source</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.\n\n   </p>"
+              "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list①\">registered observer list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">contains</a> a\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer③\">transient registered observer</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source①\">source</a> is\n   <var>source</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.\n\n   </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①①\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer\" id=\"ref-for-transient-registered-observer④\">transient registered observer</a> whose\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-observer\" id=\"ref-for-registered-observer-observer①\">observer</a> is <var>observer</var>,\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options①\">options</a> is <var>source</var>’s\n   <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-options\" id=\"ref-for-registered-observer-options②\">options</a>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#transient-registered-observer-source\" id=\"ref-for-transient-registered-observer-source②\">source</a>\n   is <var>source</var> to <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#registered-observer-list\" id=\"ref-for-registered-observer-list②\">registered observer list</a>.\n\n   </p>"
@@ -6201,7 +6198,7 @@
                   "html": "<p>Let <var>child</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-first-child\" id=\"ref-for-concept-tree-first-child⑦\">first child</a> if <var>type</var>\n     is \"<code>first</code>\"; otherwise <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-last-child\" id=\"ref-for-concept-tree-last-child⑦\">last child</a>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>If <var>child</var> is non-null, then set <var>node</var> to <var>child</var> and\n     <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.\n    </p>"
+                  "html": "<p>If <var>child</var> is non-null, then set <var>node</var> to <var>child</var> and\n     <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.\n    </p>"
                 }
               ]
             },

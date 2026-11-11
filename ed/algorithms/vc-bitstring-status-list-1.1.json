@@ -84,25 +84,70 @@
           "html": "Let <var>bitstring</var> be a list of bits with a minimum size of 16KB,\nwhere each bit is initialized to 0 (zero)."
         },
         {
-          "html": "For each value in <code>bitstring</code>, if there is a\ncorresponding <code>statusListIndex</code> value in\na credential in <code>issuedCredentials</code>, set the value to the\nappropriate status. The position of the value is computed as <code>statusListIndex</code>\ntimes the <code>statusSize</code>."
+          "html": "For each value in <code>bitstring</code>, if there is a\ncorresponding <code>statusListIndex</code> value in\na credential in <code>issuedCredentials</code>, set the value to the\nappropriate status, using Most Significant Bit (MSB) ordering. Given a\n<code>status</code> of <code>statusSize</code> length, for each <code>statusBitIndex</code> from <code>0</code> to\n<code>statusSize - 1</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <code>bitIndex = statusListIndex * statusSize + statusBitIndex</code>."
+            },
+            {
+              "html": "Let <code>byteIndex = floor(bitIndex / 8)</code>."
+            },
+            {
+              "html": "Let <code>bitPosition = 7 - (bitIndex mod 8)</code>."
+            },
+            {
+              "html": "Let <code>statusBit = (status &gt;&gt; (statusSize - statusBitIndex - 1)) &amp; 0b1</code>."
+            },
+            {
+              "html": "Set <code>bitstring[byteIndex][bitPosition] = statusBit</code>."
+            }
+          ]
         },
         {
-          "html": "Generate a <var>compressed bitstring</var> by using the GZIP\ncompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>] on the <var>bitstring</var>\nand then <a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase-encode</a> the result using base64url (with no padding)."
+          "html": "Generate a <var>compressed bitstring</var> by using the GZIP\ncompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>] on the <var>bitstring</var>.",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "The GZIP FLG header <em class=\"rfc2119\">MUST NOT</em> have the FTEXT (0) bit set."
+            },
+            {
+              "html": "The GZIP FLG header <em class=\"rfc2119\">MUST NOT</em> have the FEXTRA (2) bit set."
+            },
+            {
+              "html": "The GZIP FLG header <em class=\"rfc2119\">SHOULD NOT</em> have the FNAME (3) bit set."
+            },
+            {
+              "html": "The GZIP FLG header <em class=\"rfc2119\">SHOULD NOT</em> have the FCOMMENT (4) bit set."
+            },
+            {
+              "html": "The GZIP MTIME header <em class=\"rfc2119\">SHOULD</em> be 0 (no time stamp is available)."
+            },
+            {
+              "html": "The GZIP OS header <em class=\"rfc2119\">SHOULD</em> be 255 (unknown)."
+            }
+          ]
         },
         {
-          "html": "Return the <var>compressed bitstring</var>."
+          "html": "Generate an <var>encoded bitstring</var> by applying the\n<a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">multibase-encoding</a> algorithm\nto the <var>compressed bitstring</var> using base64url (with no padding)."
+        },
+        {
+          "html": "Return the <var>encoded bitstring</var>."
         }
       ]
     },
     {
-      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen expanding a compressed status list bitstring. The algorithm takes a\n<var>compressed bitstring</var> as input and either throws an error or returns a\n<var>uncompressed bitstring</var> as output.",
+      "html": "The following process, or one generating the exact output, <em class=\"rfc2119\">MUST</em> be followed\nwhen expanding an encoded status list bitstring. The algorithm takes an\n<var>encoded bitstring</var> as input and either throws an error or returns an\n<var>uncompressed bitstring</var> as output.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>compressed bitstring</var> be a compressed status list\nbitstring."
+          "html": "Let <var>encoded bitstring</var> be an encoded status list\nbitstring."
         },
         {
-          "html": "Generate an <var>uncompressed bitstring</var> by using the\n<a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase-decode</a> algorithm on the\n<var>compressed bitstring</var> and then expanding the output using\nthe GZIP decompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>]."
+          "html": "Generate a <var>compressed bitstring</var> by using the\n<a data-cite=\"?CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">multibase-decoding</a> algorithm on the\n<var>encoded bitstring</var>."
+        },
+        {
+          "html": "Generate an <var>uncompressed bitstring</var> by expanding the <var>compressed bitstring</var>\nusing the GZIP decompression algorithm [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-bitstring-status-list/#bib-rfc1952\" title=\"GZIP file format specification version 4.3\">RFC1952</a></cite>]."
         },
         {
           "html": "Return the <var>uncompressed bitstring</var>."

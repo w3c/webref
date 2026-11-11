@@ -142,10 +142,13 @@
                     },
                     {
                       "html": "If <var>client mode</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"client mode\" data-xref-for=\"client mode\" href=\"https://wicg.github.io/web-app-launch/#dfn-focus-existing\" class=\"internalDFN\" id=\"ref-for-dfn-focus-existing-3\">focus-existing</a> and\n                    <var>application context</var>'s\n                    <a data-cite=\"html#nav-current-history-entry\" href=\"https://html.spec.whatwg.org/multipage/#nav-current-history-entry\">current\n                    session history entry</a>'s\n                    <a data-cite=\"html#she-url\" href=\"https://html.spec.whatwg.org/multipage/#she-url\">URL</a> is <a data-link-type=\"dfn\" data-link-for=\"manifest\" data-xref-for=\"manifest\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-within-scope-0\" href=\"https://www.w3.org/TR/appmanifest/#dfn-within-scope-0\">within scope</a> of <var data-type=\"processed manifest\">manifest</var>:",
-                      "rationale": "return",
+                      "rationale": "run",
                       "steps": [
                         {
                           "html": "Bring <var>application context</var>'s viewport into focus."
+                        },
+                        {
+                          "html": "Run the <a data-cite=\"html#activation-notification\" href=\"https://html.spec.whatwg.org/multipage/#activation-notification\">\n                          activation notification steps</a> for <var>application\n                          context</var>'s <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\">active document</a>."
                         },
                         {
                           "html": "Return <var>application context</var>."
@@ -173,7 +176,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-app-launch/#dfn-assigned-launch-consumer\" class=\"internalDFN\" id=\"ref-for-dfn-assigned-launch-consumer-2\">assigned launch consumer</a> <var>consumer</var> is set on\n                <var>queue</var>:",
+          "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-app-launch/#dfn-assigned-launch-consumer\" class=\"internalDFN\" id=\"ref-for-dfn-assigned-launch-consumer-3\">assigned launch consumer</a> <var>consumer</var> is set on\n                <var>queue</var>:",
           "rationale": "for",
           "steps": [
             {
@@ -197,7 +200,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-app-launch/#dfn-assigned-launch-consumer\" class=\"internalDFN\" id=\"ref-for-dfn-assigned-launch-consumer-3\">assigned launch consumer</a> to <var>consumer</var>."
+          "html": "Set the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-app-launch/#dfn-assigned-launch-consumer\" class=\"internalDFN\" id=\"ref-for-dfn-assigned-launch-consumer-4\">assigned launch consumer</a> to <var>consumer</var>."
         },
         {
           "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-app-launch/#dfn-process-unconsumed-launch-params\" class=\"internalDFN\" id=\"ref-for-dfn-process-unconsumed-launch-params-2\">process unconsumed launch params</a>."
