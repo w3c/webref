@@ -15,7 +15,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": true
+      "cancelable": true,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerenter",
@@ -28,7 +29,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": false,
-      "cancelable": false
+      "cancelable": false,
+      "composed": false
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerdown",
@@ -41,7 +43,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": true
+      "cancelable": true,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointermove",
@@ -54,7 +57,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": true
+      "cancelable": true,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerrawupdate",
@@ -67,7 +71,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": false
+      "cancelable": false,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerup",
@@ -80,7 +85,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": true
+      "cancelable": true,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointercancel",
@@ -93,7 +99,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": false
+      "cancelable": false,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerout",
@@ -106,7 +113,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": true
+      "cancelable": true,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-pointerleave",
@@ -119,7 +127,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": false,
-      "cancelable": false
+      "cancelable": false,
+      "composed": false
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-gotpointercapture",
@@ -132,7 +141,8 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": false
+      "cancelable": false,
+      "composed": true
     },
     {
       "href": "https://www.w3.org/TR/pointerevents4/#dfn-lostpointercapture",
@@ -145,13 +155,15 @@
         "GlobalEventHandlers"
       ],
       "bubbles": true,
-      "cancelable": false
+      "cancelable": false,
+      "composed": true
     },
     {
       "type": "auxclick",
       "interface": "PointerEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#auxclick"
@@ -163,6 +175,7 @@
       "interface": "PointerEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#click"
@@ -174,6 +187,7 @@
       "interface": "PointerEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#contextmenu"
@@ -185,6 +199,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#dblclick"
@@ -196,6 +211,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mousedown"
@@ -207,6 +223,7 @@
       "interface": "MouseEvent",
       "bubbles": false,
       "cancelable": false,
+      "composed": false,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mouseenter"
@@ -218,6 +235,7 @@
       "interface": "MouseEvent",
       "bubbles": false,
       "cancelable": false,
+      "composed": false,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mouseleave"
@@ -229,6 +247,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mousemove"
@@ -240,6 +259,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mouseout"
@@ -251,6 +271,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mouseover"
@@ -262,6 +283,7 @@
       "interface": "MouseEvent",
       "bubbles": true,
       "cancelable": true,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#mouseup"
@@ -273,6 +295,7 @@
       "interface": "WheelEvent",
       "bubbles": true,
       "cancelable": false,
+      "composed": true,
       "src": {
         "format": "event table",
         "href": "https://www.w3.org/TR/pointerevents4/#wheel"
