@@ -15,13 +15,28 @@
         },
         {
           "html": "Within a Gap:\n\t\t\t\t\n      <p>A <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"gap-junction\">gap junction</dfn> is a region of <var>G</var>\n\t\t\t\twhere one or more <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap⑦\">gaps</a> abut or overlap <var>G</var>.\n\t\t\t\tTwo <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#segment-endpoint\" id=\"ref-for-segment-endpoint\">segment endpoints</a> are created for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-junction\" id=\"ref-for-gap-junction\">gap junction</a>:\n\t\t\t\t</p>\n      <ul>\n       <li>Entering a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-junction\" id=\"ref-for-gap-junction①\">gap junction</a>: At the point where a cross gap appears on at least one side of <var>G</var>, create an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#end-segment-endpoint\" id=\"ref-for-end-segment-endpoint①\">end segment endpoint</a>.\n\t\t\t\t\t\n       </li><li>Exiting a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-junction\" id=\"ref-for-gap-junction②\">gap junction</a>: At the point where no cross gap exists on either side of <var>G</var>, create a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#start-segment-endpoint\" id=\"ref-for-start-segment-endpoint①\">start segment endpoint</a>.\n\t\t\t\t\n      </li></ul>"
+        },
+        {
+          "html": "If <var>G</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-axis\" id=\"ref-for-grid-axis①\">grid axis</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap⑧\">gap</a> in a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#grid-lanes-container\" id=\"ref-for-grid-lanes-container⑥\">grid lanes container</a>\n\t\t\t\tand an item spans across <var>G</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>distance</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#used-value\" id=\"ref-for-used-value\">used value</a> of <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-gap\" id=\"ref-for-propdef-row-gap⑧\">row-gap</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-gap\" id=\"ref-for-propdef-column-gap⑧\">column-gap</a>,\n\t\t\t\t\t\twhichever applies in the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-grid-3/#stacking-axis\" id=\"ref-for-stacking-axis①\">stacking axis</a>."
+            },
+            {
+              "html": "After <a href=\"https://drafts.csswg.org/css-grid-3/#stacking-self-alignment\">self-alignment</a>, for each item spanning <var>G</var>,\n\t\t\t\t\t\ttake the interval along <var>G</var>’s centerline from <var>distance</var> before its leading edge\n\t\t\t\t\t\tto <var>distance</var> after its trailing edge."
+            },
+            {
+              "html": "For each such interval,\n\t\t\t\t\t    create an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#end-segment-endpoint\" id=\"ref-for-end-segment-endpoint②\">end segment endpoint</a> at its start if one does not already exist at that position,\n\t\t\t\t\t\tand create a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#start-segment-endpoint\" id=\"ref-for-start-segment-endpoint②\">start segment endpoint</a> at its end if one does not already exist at that position."
+            }
+          ]
         }
       ]
     },
     {
       "name": "determine gap segments",
       "href": "https://drafts.csswg.org/css-gaps-1/#determine-gap-segments",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-gap-segments\">determine gap segments</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap①①\">gap</a> <var>G</var>:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-gap-segments\">determine gap segments</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap①②\">gap</a> <var>G</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -50,7 +65,7 @@
     {
       "name": "determine gap decoration segments",
       "href": "https://drafts.csswg.org/css-gaps-1/#determine-gap-decoration-segments",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-gap-decoration-segments\">determine gap decoration segments</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap①⑥\">gap</a> <var>G</var>:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-gap-decoration-segments\">determine gap decoration segments</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap\" id=\"ref-for-gap①⑦\">gap</a> <var>G</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
