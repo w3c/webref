@@ -1337,6 +1337,7 @@ dictionary CanvasRenderingContext2DSettings {
   boolean alpha = true;
   boolean desynchronized = false;
   PredefinedColorSpace colorSpace = "srgb";
+  CanvasToneMapping toneMapping = {};
   CanvasColorType colorType = "unorm8";
   boolean willReadFrequently = false;
 };
@@ -1628,6 +1629,12 @@ OffscreenCanvasRenderingContext2D includes CanvasTextDrawingStyles;
 OffscreenCanvasRenderingContext2D includes CanvasPath;
 
 enum PredefinedColorSpace { "srgb", "srgb-linear", "display-p3", "display-p3-linear" };
+
+enum CanvasToneMappingMode { "standard", "extended" };
+
+dictionary CanvasToneMapping {
+  CanvasToneMappingMode mode = "standard";
+};
 
 [Exposed=Window]
 interface CustomElementRegistry {

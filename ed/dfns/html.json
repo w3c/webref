@@ -50597,7 +50597,7 @@
         {
           "type": "dev",
           "id": "2dcontext:dom-canvas-getcontext",
-          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, willReadFrequently: false ]} ])",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
           "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvas-getcontext",
           "heading": {
             "id": "2dcontext",
@@ -51935,6 +51935,123 @@
       "links": []
     },
     {
+      "id": "concept-canvas-tone-mapping",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-tone-mapping",
+      "linkingText": [
+        "tone mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canvas-tone-mapping",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvas-tone-mapping",
+      "linkingText": [
+        "canvas tone mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canvas-tone-mapping-mode",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvas-tone-mapping-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "canvas tone mapping"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "get-a-canvas-tone-mapping",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#get-a-canvas-tone-mapping",
+      "linkingText": [
+        "get a canvas tone mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-canvastonemapping-mode",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvastonemapping-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanvasToneMapping"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "2dcontext:dom-canvastonemapping-mode",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvastonemapping-mode",
+          "heading": {
+            "id": "2dcontext",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+            "title": "The 2D rendering context",
+            "number": "4.12.5.1"
+          }
+        }
+      ]
+    },
+    {
       "id": "concept-canvas-color-type",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-type",
       "linkingText": [
@@ -51998,7 +52115,7 @@
         {
           "type": "dev",
           "id": "2dcontext:dom-canvasrenderingcontext2dsettings-alpha-2",
-          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, willReadFrequently: false ]} ])",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
           "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvasrenderingcontext2dsettings-alpha-2",
           "heading": {
             "id": "2dcontext",
@@ -52033,7 +52150,7 @@
         {
           "type": "dev",
           "id": "2dcontext:dom-canvasrenderingcontext2dsettings-desynchronized-2",
-          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, willReadFrequently: false ]} ])",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
           "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvasrenderingcontext2dsettings-desynchronized-2",
           "heading": {
             "id": "2dcontext",
@@ -52068,8 +52185,43 @@
         {
           "type": "dev",
           "id": "2dcontext:dom-canvasrenderingcontext2dsettings-colorspace-2",
-          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, willReadFrequently: false ]} ])",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
           "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvasrenderingcontext2dsettings-colorspace-2",
+          "heading": {
+            "id": "2dcontext",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+            "title": "The 2D rendering context",
+            "number": "4.12.5.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-canvasrenderingcontext2dsettings-tonemapping",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-tonemapping",
+      "linkingText": [
+        "toneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanvasRenderingContext2DSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-settings",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-settings",
+        "title": "The canvas settings",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "2dcontext:dom-canvasrenderingcontext2dsettings-tonemapping-2",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
+          "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvasrenderingcontext2dsettings-tonemapping-2",
           "heading": {
             "id": "2dcontext",
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
@@ -52125,7 +52277,7 @@
         {
           "type": "dev",
           "id": "2dcontext:dom-canvasrenderingcontext2dsettings-willreadfrequently-2",
-          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, willReadFrequently: false ]} ])",
+          "name": "context = canvas.getContext('2d' [, { [ alpha: true ] [, desynchronized: false ] [, colorSpace: 'srgb'] [, toneMapping: { mode: 'standard' }] [, willReadFrequently: false ]} ])",
           "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext%3Adom-canvasrenderingcontext2dsettings-willreadfrequently-2",
           "heading": {
             "id": "2dcontext",
@@ -58666,6 +58818,46 @@
       "links": []
     },
     {
+      "id": "canvastonemappingmode",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastonemappingmode",
+      "linkingText": [
+        "CanvasToneMappingMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colour-spaces-and-colour-correction",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#colour-spaces-and-colour-correction",
+        "title": "Color spaces and color space conversion",
+        "number": "4.12.5.4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "canvastonemapping",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastonemapping",
+      "linkingText": [
+        "CanvasToneMapping"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colour-spaces-and-colour-correction",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#colour-spaces-and-colour-correction",
+        "title": "Color spaces and color space conversion",
+        "number": "4.12.5.4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dom-predefinedcolorspace-srgb",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb",
       "linkingText": [
@@ -58741,6 +58933,50 @@
       "type": "enum-value",
       "for": [
         "PredefinedColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colour-spaces-and-colour-correction",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#colour-spaces-and-colour-correction",
+        "title": "Color spaces and color space conversion",
+        "number": "4.12.5.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-canvastonemappingmode-standard",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvastonemappingmode-standard",
+      "linkingText": [
+        "standard"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CanvasToneMappingMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colour-spaces-and-colour-correction",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#colour-spaces-and-colour-correction",
+        "title": "Color spaces and color space conversion",
+        "number": "4.12.5.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-canvastonemappingmode-extended",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvastonemappingmode-extended",
+      "linkingText": [
+        "extended"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CanvasToneMappingMode"
       ],
       "access": "public",
       "informative": false,
