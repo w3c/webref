@@ -1,0 +1,36 @@
+From 114fcde72dadeaafccb3eafde179eedb825c517c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 12 Nov 2026 19:52:45 +0100
+Subject: [PATCH] Wrap comma in syntax of `@function` and `@mixin`
+
+The syntax is valid but `,?` is not supported by CSS Tree yet, see:
+https://github.com/csstree/csstree/issues/392
+---
+ ed/css/css-mixins.json | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/ed/css/css-mixins.json b/ed/css/css-mixins.json
+index af578697ab..462823d7b2 100644
+--- a/ed/css/css-mixins.json
++++ b/ed/css/css-mixins.json
+@@ -17,7 +17,7 @@
+           "initial": "n/a (see prose)"
+         }
+       ],
+-      "value": "@function <function-token> <function-parameter>#? ,? ) [ returns <css-type> ]? { <declaration-rule-list> }",
++      "value": "@function <function-token> <function-parameter>#? ','? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+       "values": [
+         {
+           "name": "type()",
+@@ -31,7 +31,7 @@
+       "name": "@mixin",
+       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
+       "descriptors": [],
+-      "value": "@mixin [<function-token> <function-parameter>#? ,? ) | <ident-token> ] { <block-contents> }"
++      "value": "@mixin [<function-token> <function-parameter>#? ','? ) | <ident-token> ] { <block-contents> }"
+     },
+     {
+       "name": "@contents",
+-- 
+2.56.0
+
