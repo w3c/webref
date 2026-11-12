@@ -280,8 +280,9 @@ const MANUAL_EXPANSIONS = {
   'rule-break': ['column-rule-break', 'row-rule-break'],
   'rule-color': ['column-rule-color', 'row-rule-color'],
   'rule-style': ['column-rule-style', 'row-rule-style'],
-  'rule-edge-inset': ['column-rule-edge-inset', 'row-rule-edge-inset'],
-  'rule-interior-inset': ['column-rule-interior-inset', 'row-rule-interior-inset'],
+  'rule-visibility-items': ['column-rule-visibility-items', 'row-rule-visibility-items'],
+  'rule-inset-cap': ['column-rule-inset-cap', 'row-rule-inset-cap'],
+  'rule-inset-junction': ['column-rule-inset-junction', 'row-rule-inset-junction'],
   'rule-inset': ['column-rule-inset', 'row-rule-inset'],
   'rule-inset-start': ['column-rule-inset-start', 'row-rule-inset-start'],
   'rule-inset-end': ['column-rule-inset-end', 'row-rule-inset-end'],
@@ -292,7 +293,7 @@ const MANUAL_EXPANSIONS = {
   'row-rule-inset-cap': ['row-rule-inset-cap-start', 'row-rule-inset-cap-end'],
   'row-rule-inset-junction': ['row-rule-inset-junction-start', 'row-rule-inset-junction-end'],
 
-  // CSS Gap Decorations - combined inset shorthands (set both edge and interior)
+  // CSS Gap Decorations - combined inset shorthands (set both cap and junction)
   'column-rule-inset': [
     'column-rule-inset-cap-start',
     'column-rule-inset-cap-end',
