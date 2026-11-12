@@ -139,8 +139,10 @@ describe("the events data", async () => {
       assert.deepEqual(
         eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
         [
-          'SnapEvent', // pending https://github.com/w3c/csswg-drafts/issues/7442
-          'CustomEvent' // not used by any spec
+          'SnapEvent',   // pending https://github.com/w3c/csswg-drafts/issues/7442
+          'CustomEvent', // not used by any spec
+          'OnAlarmEvent' // not an Event but an event target interface, see
+                         // https://w3c.github.io/webextensions/specification/#onalarmevent
         ],
         "Event interfaces are defined in the platform but not referenced from extracted events"
       );
