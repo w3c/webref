@@ -63,7 +63,7 @@
       ]
     },
     {
-      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"dom-trees:concept-node-insert-ext\" data-x-internal=\"concept-node-insert-ext\">insertion steps</a> for the HTML Standard, given\n  <var>insertedNode</var>, are defined as the following:",
+      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"dom-trees:concept-node-insert-ext\" data-x-internal=\"concept-node-insert-ext\">insertion steps</a>\n  for the HTML Standard, given <var>insertedNode</var>, are:",
       "rationale": "if",
       "steps": [
         {
@@ -73,12 +73,15 @@
           "html": "<p>If <var>insertedNode</var> is a <a id=\"dom-trees:form-associated-element\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> or the ancestor of a\n    <a id=\"dom-trees:form-associated-element-2\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>:</p>\n\n    <p>If the <a id=\"dom-trees:form-associated-element-3\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>'s <a id=\"dom-trees:parser-inserted-flag\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#parser-inserted-flag\">parser inserted flag</a> is not set,\n    then <a id=\"dom-trees:reset-the-form-owner\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of the <a id=\"dom-trees:form-associated-element-4\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>.</p>"
         },
         {
-          "html": "<p>If <var>insertedNode</var> is an <code id=\"dom-trees:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> that is not on the\n   <a id=\"dom-trees:stack-of-open-elements\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\">stack of open elements</a> of an <a id=\"dom-trees:html-parser\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-parser\">HTML parser</a>, then\n   <a id=\"dom-trees:process-internal-resource-links\" href=\"https://html.spec.whatwg.org/multipage/links.html#process-internal-resource-links\">process internal resource links</a> given <var>insertedNode</var>'s\n   <a id=\"dom-trees:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
+          "html": "<p>If <var>insertedNode</var> is an <code id=\"dom-trees:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> with an <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id\" data-x-internal=\"concept-id\">ID</a>, then <a id=\"dom-trees:reset-the-form-owners-with-a-form-attribute\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute\">reset the form owners with a form attribute</a>\n   given <var>insertedNode</var>'s <a id=\"dom-trees:root\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and « <var>insertedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-2\" data-x-internal=\"concept-id\">ID</a> ».</p>"
+        },
+        {
+          "html": "<p>If <var>insertedNode</var> is an <code id=\"dom-trees:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> that is not on the\n   <a id=\"dom-trees:stack-of-open-elements\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#stack-of-open-elements\">stack of open elements</a> of an <a id=\"dom-trees:html-parser\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-parser\">HTML parser</a>, then\n   <a id=\"dom-trees:process-internal-resource-links\" href=\"https://html.spec.whatwg.org/multipage/links.html#process-internal-resource-links\">process internal resource links</a> given <var>insertedNode</var>'s\n   <a id=\"dom-trees:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
         }
       ]
     },
     {
-      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"dom-trees:concept-node-post-connection-ext\" data-x-internal=\"concept-node-post-connection-ext\">post-connection steps</a> for the HTML\n  Standard, given <var>insertedNode</var>, are defined as the following:",
+      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-post-connection-ext\" id=\"dom-trees:concept-node-post-connection-ext\" data-x-internal=\"concept-node-post-connection-ext\">post-connection steps</a> for the HTML\n  Standard, given <var>insertedNode</var>, are:",
       "rationale": "if",
       "steps": [
         {
@@ -87,7 +90,7 @@
       ]
     },
     {
-      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"dom-trees:concept-node-remove-ext\" data-x-internal=\"concept-node-remove-ext\">removing steps</a> for the HTML Standard, given\n  <var>removedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are defined as the\n  following:",
+      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"dom-trees:concept-node-remove-ext\" data-x-internal=\"concept-node-remove-ext\">removing steps</a> for\n  the HTML Standard, given <var>removedNode</var>, <var>isSubtreeRoot</var>, and\n  <var>oldAncestor</var>, are:",
       "rationale": "let",
       "steps": [
         {
@@ -100,7 +103,10 @@
           "html": "<p>If <var>removedNode</var> is an element whose <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"dom-trees:concept-element-namespace-3\" data-x-internal=\"concept-element-namespace\">namespace</a> is the <a id=\"dom-trees:html-namespace-2-3\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a>, and this\n   standard defines <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\" id=\"dom-trees:html-element-removing-steps\">HTML element removing steps</a>\n   for <var>removedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"dom-trees:concept-element-local-name-4\" data-x-internal=\"concept-element-local-name\">local name</a>, then\n   run the corresponding <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\" id=\"dom-trees:html-element-removing-steps-2\">HTML element removing steps</a> given <var>removedNode</var>,\n   <var>isSubtreeRoot</var>, and <var>oldAncestor</var>.</p>"
         },
         {
-          "html": "<p>If <var>removedNode</var> is a <a id=\"dom-trees:form-associated-element-5\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a non-null\n   <a id=\"dom-trees:form-owner\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> and <var>removedNode</var> and its <a id=\"dom-trees:form-owner-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> are no longer\n   in the same <a id=\"dom-trees:tree\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>, then <a id=\"dom-trees:reset-the-form-owner-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of\n   <var>removedNode</var>.</p>"
+          "html": "<p>If either of the following is true:</p>\n\n    <ul><li><p><var>removedNode</var> is a <a id=\"dom-trees:form-associated-element-5\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a non-null\n     <a id=\"dom-trees:form-owner\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> and <var>removedNode</var> and its <a id=\"dom-trees:form-owner-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> are no\n     longer in the same <a id=\"dom-trees:tree\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>; or</p></li><li><p><var>removedNode</var> is a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"dom-trees:category-listed\">listed</a>\n     <a id=\"dom-trees:form-associated-element-6\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a <code id=\"dom-trees:attr-fae-form\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code>\n     attribute and <var>oldAncestor</var> is <a id=\"dom-trees:connected\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>,</p></li></ul>\n\n    <p>then <a id=\"dom-trees:reset-the-form-owner-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of <var>removedNode</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>removedNode</var> is an <code id=\"dom-trees:element-3\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> with an <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-3\" data-x-internal=\"concept-id\">ID</a>, then <a id=\"dom-trees:reset-the-form-owners-with-a-form-attribute-2\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute\">reset the form owners with a form attribute</a>\n   given <var>oldAncestor</var>'s <a id=\"dom-trees:root-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and « <var>removedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-4\" data-x-internal=\"concept-id\">ID</a> ».</p>"
         },
         {
           "html": "<p>If <var>removedNode</var>'s <code id=\"dom-trees:attr-popover\"><a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover\">popover</a></code> attribute is not in\n   the <a href=\"https://html.spec.whatwg.org/multipage/popover.html#attr-popover-none-state\" id=\"dom-trees:attr-popover-none-state\">No Popover</a> state, then run the <a id=\"dom-trees:hide-popover-algorithm\" href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popover-algorithm\">hide\n   popover algorithm</a> given <var>removedNode</var>, false, false, false, and null.</p>"
@@ -108,14 +114,41 @@
       ]
     },
     {
-      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-move-ext\" id=\"dom-trees:concept-node-move-ext\" data-x-internal=\"concept-node-move-ext\">moving steps</a> for the HTML Standard, given\n  <var>movedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are defined as the\n  following:",
+      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-node-move-ext\" id=\"dom-trees:concept-node-move-ext\" data-x-internal=\"concept-node-move-ext\">moving steps</a> for the\n  HTML Standard, given <var>movedNode</var>, <var>isSubtreeRoot</var>, and <var>oldAncestor</var>,\n  are:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>movedNode</var> is an element whose <a href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"dom-trees:concept-element-namespace-4\" data-x-internal=\"concept-element-namespace\">namespace</a> is the <a id=\"dom-trees:html-namespace-2-4\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML namespace</a>, and this\n   standard defines <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-moving-steps\" id=\"dom-trees:html-element-moving-steps\">HTML element moving steps</a> for <var>movedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"dom-trees:concept-element-local-name-5\" data-x-internal=\"concept-element-local-name\">local name</a>, then run the corresponding <a href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-moving-steps\" id=\"dom-trees:html-element-moving-steps-2\">HTML\n   element moving steps</a> given <var>movedNode</var>, <var>isSubtreeRoot</var>, and\n   <var>oldAncestor</var>.</p>"
         },
         {
-          "html": "<p>If <var>movedNode</var> is a <a id=\"dom-trees:form-associated-element-6\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a non-null\n   <a id=\"dom-trees:form-owner-3\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> and <var>movedNode</var> and its <a id=\"dom-trees:form-owner-4\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> are no longer in\n   the same <a id=\"dom-trees:tree-2\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>, then <a id=\"dom-trees:reset-the-form-owner-3\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of\n   <var>movedNode</var>.</p>"
+          "html": "<p>If either of the following is true:</p>\n\n    <ul><li><p><var>movedNode</var> is a <a id=\"dom-trees:form-associated-element-7\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a non-null\n     <a id=\"dom-trees:form-owner-3\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> and <var>movedNode</var> and its <a id=\"dom-trees:form-owner-4\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> are no longer\n     in the same <a id=\"dom-trees:tree-2\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>; or</p></li><li><p><var>movedNode</var> is a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"dom-trees:category-listed-2\">listed</a>\n     <a id=\"dom-trees:form-associated-element-8\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a> with a <code id=\"dom-trees:attr-fae-form-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code>\n     attribute and <var>oldAncestor</var>'s <a id=\"dom-trees:root-3\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> is not <var>movedNode</var>'s\n     <a id=\"dom-trees:root-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a>,</p></li></ul>\n\n    <p>then <a id=\"dom-trees:reset-the-form-owner-3\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of <var>movedNode</var>.</p>"
+        },
+        {
+          "html": "If <var>movedNode</var> is an <code id=\"dom-trees:element-4\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code> with an <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-5\" data-x-internal=\"concept-id\">ID</a>:",
+          "rationale": "reset",
+          "steps": [
+            {
+              "html": "<p><a id=\"dom-trees:reset-the-form-owners-with-a-form-attribute-3\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute\">Reset the form owners with a form attribute</a> given\n     <var>movedNode</var>'s <a id=\"dom-trees:root-5\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and « <var>movedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-6\" data-x-internal=\"concept-id\">ID</a> ».</p>"
+            },
+            {
+              "html": "<p>If <var>oldAncestor</var>'s <a id=\"dom-trees:root-6\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> is not <var>movedNode</var>'s\n     <a id=\"dom-trees:root-7\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a>, then <a id=\"dom-trees:reset-the-form-owners-with-a-form-attribute-4\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute\">reset the form owners with a form attribute</a> given\n     <var>oldAncestor</var>'s <a id=\"dom-trees:root-8\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and « <var>movedNode</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"dom-trees:concept-id-7\" data-x-internal=\"concept-id\">ID</a> ».</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-change-ext\" id=\"dom-trees:concept-element-attributes-change-ext\" data-x-internal=\"concept-element-attributes-change-ext\">attribute change steps</a> for the HTML\n  Standard, given <var>element</var>, <var>localName</var>, <var>oldValue</var>, <var>value</var>,\n  and <var>namespace</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>namespace</var> is not null, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>localName</var> is <code id=\"dom-trees:attr-fae-form-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> and\n   <var>element</var> is a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"dom-trees:category-listed-3\">listed</a> <a id=\"dom-trees:form-associated-element-9\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated\n   element</a>, then <a id=\"dom-trees:reset-the-form-owner-4\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">reset the form owner</a> of <var>element</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>localName</var> is <code id=\"dom-trees:the-id-attribute\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute\">id</a></code>, then <a id=\"dom-trees:reset-the-form-owners-with-a-form-attribute-5\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute\">reset the form\n   owners with a form attribute</a> given <var>element</var>'s <a id=\"dom-trees:root-9\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and\n   « <var>oldValue</var>, <var>value</var> ».</p>"
         }
       ]
     },
@@ -13952,31 +13985,54 @@
       ]
     },
     {
+      "name": "reset the form owners with a form attribute",
+      "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owners-with-a-form-attribute",
+      "html": "To <dfn id=\"reset-the-form-owners-with-a-form-attribute\">reset the form owners with a form attribute</dfn>, given a <a id=\"association-of-controls-and-forms:node\" href=\"https://dom.spec.whatwg.org/#interface-node\" data-x-internal=\"node\">node</a>\n  <var>root</var> and a <a id=\"association-of-controls-and-forms:list\" href=\"https://infra.spec.whatwg.org/#list\" data-x-internal=\"list\">list</a> <var>ids</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>root</var> is not <a id=\"association-of-controls-and-forms:connected\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>, then return.</p>"
+        },
+        {
+          "html": "For each <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"association-of-controls-and-forms:category-listed-3\">listed</a> <a id=\"association-of-controls-and-forms:form-associated-element-9\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>\n    <var>element</var> that is an <a id=\"association-of-controls-and-forms:inclusive-descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant\" data-x-internal=\"inclusive-descendant\">inclusive descendant</a> of <var>root</var> and has a\n    <code id=\"association-of-controls-and-forms:attr-fae-form-2\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> attribute whose value is <a href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"association-of-controls-and-forms:list-contains\" data-x-internal=\"list-contains\">contained</a> in <var>ids</var>, in <a id=\"association-of-controls-and-forms:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
+          "rationale": "reset",
+          "steps": [
+            {
+              "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\" id=\"association-of-controls-and-forms:reset-the-form-owner\">Reset the form owner</a> of <var>element</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "reset the form owner",
       "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner",
-      "html": "To <dfn id=\"reset-the-form-owner\">reset the form owner</dfn> of a <a id=\"association-of-controls-and-forms:form-associated-element-14\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>\n  <var>element</var>:",
+      "html": "To <dfn id=\"reset-the-form-owner\">reset the form owner</dfn> of a <a id=\"association-of-controls-and-forms:form-associated-element-10\" href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\">form-associated element</a>\n  <var>element</var>:",
       "rationale": "unset",
       "steps": [
         {
           "html": "<p>Unset <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#parser-inserted-flag\" id=\"association-of-controls-and-forms:parser-inserted-flag\">parser inserted flag</a>.</p>"
         },
         {
-          "html": "<p>If all of the following are true:</p>\n\n    <ul><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"association-of-controls-and-forms:form-owner-4\">form owner</a> is not null;</p></li><li><p><var>element</var> is not <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"association-of-controls-and-forms:category-listed-6\">listed</a> or its <code id=\"association-of-controls-and-forms:attr-fae-form-5\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> content attribute is not present; and</p></li><li><p><var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"association-of-controls-and-forms:form-owner-5\">form owner</a> is its nearest <code id=\"association-of-controls-and-forms:the-form-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element\n     ancestor after the change to the ancestor chain,</p></li></ul>\n\n    <p>then return.</p>"
+          "html": "<p>Let <var>newForm</var> be null.</p>"
         },
         {
-          "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"association-of-controls-and-forms:form-owner-6\">form owner</a> to null.</p>"
-        },
-        {
-          "html": "If <var>element</var> is <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"association-of-controls-and-forms:category-listed-7\">listed</a>, has a <code id=\"association-of-controls-and-forms:attr-fae-form-6\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> content attribute, and is <a id=\"association-of-controls-and-forms:connected\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>:",
+          "html": "If <var>element</var> is <a href=\"https://html.spec.whatwg.org/multipage/forms.html#category-listed\" id=\"association-of-controls-and-forms:category-listed-4\">listed</a>, has a <code id=\"association-of-controls-and-forms:attr-fae-form-3\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> content attribute, and is <a id=\"association-of-controls-and-forms:connected-2\" href=\"https://dom.spec.whatwg.org/#connected\" data-x-internal=\"connected\">connected</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the first element in <var>element</var>'s <a id=\"association-of-controls-and-forms:tree-5\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>, in <a id=\"association-of-controls-and-forms:tree-order\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree\n     order</a>, to have an <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"association-of-controls-and-forms:concept-id-4\" data-x-internal=\"concept-id\">ID</a> that is <a id=\"association-of-controls-and-forms:identical-to\" href=\"https://infra.spec.whatwg.org/#string-is\" data-x-internal=\"identical-to\">identical to</a>\n     <var>element</var>'s <code id=\"association-of-controls-and-forms:attr-fae-form-7\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> content attribute's value, is a\n     <code id=\"association-of-controls-and-forms:the-form-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, then <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-association\" id=\"association-of-controls-and-forms:concept-form-association\">associate</a> the\n     <var>element</var> with that <code id=\"association-of-controls-and-forms:the-form-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
+              "html": "<p>If the first element in <var>element</var>'s <a id=\"association-of-controls-and-forms:tree-4\" href=\"https://dom.spec.whatwg.org/#concept-tree\" data-x-internal=\"tree\">tree</a>, in <a id=\"association-of-controls-and-forms:tree-order-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree\n     order</a>, to have an <a href=\"https://dom.spec.whatwg.org/#concept-id\" id=\"association-of-controls-and-forms:concept-id-2\" data-x-internal=\"concept-id\">ID</a> that is <a id=\"association-of-controls-and-forms:identical-to\" href=\"https://infra.spec.whatwg.org/#string-is\" data-x-internal=\"identical-to\">identical to</a>\n     <var>element</var>'s <code id=\"association-of-controls-and-forms:attr-fae-form-4\"><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form\">form</a></code> content attribute's value, is a\n     <code id=\"association-of-controls-and-forms:the-form-element-8\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, then set <var>newForm</var> to that <code id=\"association-of-controls-and-forms:the-form-element-9\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code>\n     element.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, if <var>element</var> has an ancestor <code id=\"association-of-controls-and-forms:the-form-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, then <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-association\" id=\"association-of-controls-and-forms:concept-form-association-2\">associate</a> <var>element</var> with the nearest such\n   ancestor <code id=\"association-of-controls-and-forms:the-form-element-12\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
+          "html": "<p>Otherwise, if <var>element</var> has an ancestor <code id=\"association-of-controls-and-forms:the-form-element-10\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, then set\n   <var>newForm</var> to the nearest such ancestor <code id=\"association-of-controls-and-forms:the-form-element-11\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"association-of-controls-and-forms:form-owner-4\">form owner</a> is <var>newForm</var>, then\n   return.</p>"
+        },
+        {
+          "html": "<p>Set <var>element</var>'s <a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\" id=\"association-of-controls-and-forms:form-owner-5\">form owner</a> to <var>newForm</var>.</p>"
         }
       ]
     },

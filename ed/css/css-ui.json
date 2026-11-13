@@ -89,13 +89,20 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length or inset.",
+      "computedValue": "absolute length or inset keyword.",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "values": [
         {
+          "name": "<length>",
+          "prose": "Outsets the outline from the border edge by the specified amount. For example, to leave 2 pixels of space between a focus outline and the element that has the focus or is active, the following rule can be used: :focus,:active { outline-offset: 2px }",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-outline-offset-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "inset",
-          "prose": "Changes the used value of outline-offset to be the negative of the used outline thickness. To protect the user from fingerprinting of the user agent’s default outline style thickness, this value must compute to itself, rather than to an absolute length.",
+          "prose": "Insets the outline from the border edge using the used outline thickness as amount. When outline-style is set to auto, it can be used to display the user agent’s default outline inside the border-box, rather than outside where it would usually appear. Otherwise, it is equivalent to setting outline-offset to the negative of the outline-width value. To protect the user from fingerprinting of the user agent’s default outline style thickness, this value must always compute to itself rather than to an absolute length, regardless of the outline-style value.",
           "href": "https://drafts.csswg.org/css-ui-4/#valdef-outline-offset-inset",
           "type": "value",
           "value": "inset"
