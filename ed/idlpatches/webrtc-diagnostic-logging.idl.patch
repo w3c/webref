@@ -1,0 +1,40 @@
+From 4b75c174bc850d18d35cc8c802db9caa3f341840 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 13 Nov 2026 15:15:29 +0100
+Subject: [PATCH] Drop IDL extract from WebRTC Diagnostic Logging
+
+The spec's content seems to have been integrated in WebRTC Extensions. Let's
+avoid duplication.
+
+Pending clarification of spec status in:
+https://github.com/WICG/webrtc-diagnostic-logging/issues/6
+---
+ ed/idl/webrtc-diagnostic-logging.idl | 16 ----------------
+ 1 file changed, 16 deletions(-)
+ delete mode 100644 ed/idl/webrtc-diagnostic-logging.idl
+
+diff --git a/ed/idl/webrtc-diagnostic-logging.idl b/ed/idl/webrtc-diagnostic-logging.idl
+deleted file mode 100644
+index e022c7b588..0000000000
+--- a/ed/idl/webrtc-diagnostic-logging.idl
++++ /dev/null
+@@ -1,16 +0,0 @@
+-// GENERATED CONTENT - DO NOT EDIT
+-// Content was automatically extracted by Reffy into webref
+-// (https://github.com/w3c/webref)
+-// Source: WebRTC Diagnostic Logging API (https://wicg.github.io/webrtc-diagnostic-logging/)
+-
+-[
+-  Exposed=Window
+-] partial interface RTCPeerConnection {
+-  static DOMString startDiagnosticLogging(optional RTCDiagnosticLoggingOptions options = {});
+-  static undefined stopDiagnosticLogging();
+-  static undefined cancelDiagnosticLogging();
+-};
+-
+-dictionary RTCDiagnosticLoggingOptions {
+-  record<DOMString, DOMString> metadata;
+-};
+-- 
+2.56.0
+
