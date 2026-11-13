@@ -79,14 +79,23 @@
     {
       "name": "outline-offset",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline-offset",
-      "value": "<length>",
+      "value": "<length> | inset",
       "initial": "0",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length",
+      "computedValue": "absolute length or inset.",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "inset",
+          "prose": "Changes the used value of outline-offset to be the negative of the used outline thickness. To protect the user from fingerprinting of the user agent’s default outline style thickness, this value must compute to itself, rather than to an absolute length.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-outline-offset-inset",
+          "type": "value",
+          "value": "inset"
+        }
+      ],
       "styleDeclaration": [
         "outline-offset",
         "outlineOffset"

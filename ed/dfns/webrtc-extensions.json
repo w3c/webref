@@ -1,0 +1,1841 @@
+{
+  "spec": {
+    "title": "WebRTC Extensions",
+    "url": "https://w3c.github.io/webrtc-extensions/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/webrtc-extensions/#conformance",
+        "title": "Conformance",
+        "alternateIds": [
+          "x2-conformance"
+        ],
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-absolute-capture-timestamp-rtp-header-extension",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-absolute-capture-timestamp-rtp-header-extension",
+      "linkingText": [
+        "Absolute Capture Timestamp RTP header extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-form",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-form",
+      "linkingText": [
+        "form",
+        "formed",
+        "forming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-nominate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-nominate",
+      "linkingText": [
+        "nominate",
+        "nominated",
+        "nomination",
+        "nominating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-free",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-free",
+      "linkingText": [
+        "free",
+        "freed",
+        "freeing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-capture-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-capture-timestamp",
+      "linkingText": [
+        "capture timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-receive-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-receive-timestamp",
+      "linkingText": [
+        "receive timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-rtp-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-rtp-timestamp",
+      "linkingText": [
+        "RTP timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpheaderextensioncapability-direction",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpHeaderExtensionCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-interface",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-interface",
+        "title": "RTCRtpTransceiver interface extensions",
+        "alternateIds": [
+          "x5-1-rtcrtptransceiver-interface-extensions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-headerextensionstonegotiate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate",
+      "linkingText": [
+        "[[HeaderExtensionsToNegotiate]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-interface",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-interface",
+        "title": "RTCRtpTransceiver interface extensions",
+        "alternateIds": [
+          "x5-1-rtcrtptransceiver-interface-extensions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-negotiatedheaderextensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-negotiatedheaderextensions",
+      "linkingText": [
+        "[[NegotiatedHeaderExtensions]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-interface",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-interface",
+        "title": "RTCRtpTransceiver interface extensions",
+        "alternateIds": [
+          "x5-1-rtcrtptransceiver-interface-extensions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtptransceiver-getheaderextensionstonegotiate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getheaderextensionstonegotiate",
+      "linkingText": [
+        "getHeaderExtensionsToNegotiate()"
+      ],
+      "localLinkingText": [
+        "RTCRtpTransceiver.getHeaderExtensionsToNegotiate",
+        "RTCRtpTransceiver.getHeaderExtensionsToNegotiate()",
+        "getHeaderExtensionsToNegotiate"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x5-3-methods"
+        ],
+        "number": "5.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtptransceiver-setheaderextensionstonegotiate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-setheaderextensionstonegotiate",
+      "linkingText": [
+        "setHeaderExtensionsToNegotiate()",
+        "setHeaderExtensionsToNegotiate(extensions)"
+      ],
+      "localLinkingText": [
+        "RTCRtpTransceiver.setHeaderExtensionsToNegotiate",
+        "RTCRtpTransceiver.setHeaderExtensionsToNegotiate()",
+        "setHeaderExtensionsToNegotiate"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x5-3-methods"
+        ],
+        "number": "5.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtptransceiver-getnegotiatedheaderextensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getnegotiatedheaderextensions",
+      "linkingText": [
+        "getNegotiatedHeaderExtensions()"
+      ],
+      "localLinkingText": [
+        "RTCRtpTransceiver.getNegotiatedHeaderExtensions",
+        "RTCRtpTransceiver.getNegotiatedHeaderExtensions()",
+        "getNegotiatedHeaderExtensions"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpTransceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-control-transceiver-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x5-3-methods"
+        ],
+        "number": "5.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-scaleresolutiondownto",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpencodingparameters-scaleresolutiondownto",
+      "linkingText": [
+        "scaleResolutionDownTo"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpencodingparameters-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpencodingparameters-attributes",
+        "title": "Dictionary RTCRtpEncodingParameters Members",
+        "alternateIds": [
+          "x6-1-dictionary-rtcrtpencodingparameters-members"
+        ],
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-ptime",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpencodingparameters-ptime",
+      "linkingText": [
+        "ptime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpencodingparameters-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpencodingparameters-attributes",
+        "title": "Dictionary RTCRtpEncodingParameters Members",
+        "alternateIds": [
+          "x6-1-dictionary-rtcrtpencodingparameters-members"
+        ],
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-adaptiveptime",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpencodingparameters-adaptiveptime",
+      "linkingText": [
+        "adaptivePtime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpencodingparameters-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpencodingparameters-attributes",
+        "title": "Dictionary RTCRtpEncodingParameters Members",
+        "alternateIds": [
+          "x6-1-dictionary-rtcrtpencodingparameters-members"
+        ],
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcresolutionrestriction",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcresolutionrestriction",
+      "linkingText": [
+        "RTCResolutionRestriction"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcresolutionrestriction",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcresolutionrestriction",
+        "title": "The RTCResolutionRestriction dictionary.",
+        "alternateIds": [
+          "x7-the-rtcresolutionrestriction-dictionary"
+        ],
+        "number": "7"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcresolutionrestriction-maxwidth",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcresolutionrestriction-maxwidth",
+      "linkingText": [
+        "maxWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCResolutionRestriction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcresolutionrestriction-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcresolutionrestriction-attributes",
+        "title": "Dictionary RTCResolutionRestriction Members",
+        "alternateIds": [
+          "x7-1-dictionary-rtcresolutionrestriction-members"
+        ],
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcresolutionrestriction-maxheight",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcresolutionrestriction-maxheight",
+      "linkingText": [
+        "maxHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCResolutionRestriction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcresolutionrestriction-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcresolutionrestriction-attributes",
+        "title": "Dictionary RTCResolutionRestriction Members",
+        "alternateIds": [
+          "x7-1-dictionary-rtcresolutionrestriction-members"
+        ],
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcencodingoptions",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcencodingoptions",
+      "linkingText": [
+        "RTCEncodingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpsender-setparameters-keyframe",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe",
+        "title": "RTCRtpSender setParameters() extensions for requesting the generation of a key frame.",
+        "alternateIds": [
+          "x8-rtcrtpsender-setparameters-extensions-for-requesting-the-generation-of-a-key-frame"
+        ],
+        "number": "8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcsetparameteroptions-encodingoptions",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcsetparameteroptions-encodingoptions",
+      "linkingText": [
+        "encodingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSetParameterOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpsender-setparameters-keyframe-setparameteroptions-idl",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe-setparameteroptions-idl",
+        "title": "Dictionary RTCSetParameterOptions Members",
+        "alternateIds": [
+          "x8-1-dictionary-rtcsetparameteroptions-members"
+        ],
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcencodingoptions-keyframe",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcencodingoptions-keyframe",
+      "linkingText": [
+        "keyFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodingOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpsender-setparameters-keyframe-encodingoptions-idl",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe-encodingoptions-idl",
+        "title": "Dictionary RTCEncodingOptions Members",
+        "alternateIds": [
+          "x8-2-dictionary-rtcencodingoptions-members"
+        ],
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-ice-agent",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-ice-agent",
+      "linkingText": [
+        "ICE agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "rtcicetransport-add",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-add",
+      "linkingText": [
+        "add a candidate pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "rtcicetransport-nominate",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-nominate",
+      "linkingText": [
+        "nominate the candidate pair",
+        "nominate a candidate pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "rtcicetransport-remove",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-remove",
+      "linkingText": [
+        "remove a candidate pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-candidatepairs",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs",
+      "linkingText": [
+        "[[CandidatePairs]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-proposalpending",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-proposalpending",
+      "linkingText": [
+        "[[ProposalPending]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+        "title": "RTCIceTransport extensions",
+        "alternateIds": [
+          "x9-rtcicetransport-extensions"
+        ],
+        "number": "9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicetransport-onicecandidatepairadd",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-onicecandidatepairadd",
+      "linkingText": [
+        "onicecandidatepairadd"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.onicecandidatepairadd"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x9-1-attributes"
+        ],
+        "number": "9.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicetransport-onicecandidatepairremove",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-onicecandidatepairremove",
+      "linkingText": [
+        "onicecandidatepairremove"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.onicecandidatepairremove"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x9-1-attributes"
+        ],
+        "number": "9.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicetransport-onicecandidatepairnominate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-onicecandidatepairnominate",
+      "linkingText": [
+        "onicecandidatepairnominate"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.onicecandidatepairnominate"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x9-1-attributes"
+        ],
+        "number": "9.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicetransport-selectcandidatepair",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-selectcandidatepair",
+      "linkingText": [
+        "selectCandidatePair()",
+        "selectCandidatePair(candidatePair)"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.selectCandidatePair",
+        "RTCIceTransport.selectCandidatePair()",
+        "selectCandidatePair"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x9-2-methods"
+        ],
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicetransport-removecandidatepair",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-removecandidatepair",
+      "linkingText": [
+        "removeCandidatePair()",
+        "removeCandidatePair(candidatePair)"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.removeCandidatePair",
+        "RTCIceTransport.removeCandidatePair()",
+        "removeCandidatePair"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x9-2-methods"
+        ],
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicecandidatepairevent",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent",
+      "linkingText": [
+        "RTCIceCandidatePairEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicecandidatepairevent",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent",
+        "title": "RTCIceCandidatePairEvent",
+        "alternateIds": [
+          "x9-3-rtcicecandidatepairevent"
+        ],
+        "number": "9.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicecandidatepairevent-constructor",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "RTCIceCandidatePairEvent.constructor",
+        "RTCIceCandidatePairEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RTCIceCandidatePairEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicecandidatepairevent-constructors",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent-constructors",
+        "title": "Constructors",
+        "alternateIds": [
+          "constructors"
+        ]
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicecandidatepairevent-candidatepair",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-candidatepair",
+      "linkingText": [
+        "candidatePair"
+      ],
+      "localLinkingText": [
+        "RTCIceCandidatePairEvent.candidatePair"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceCandidatePairEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicecandidatepairevent-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent-attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "attributes-0"
+        ]
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicecandidatepaireventinit",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepaireventinit",
+      "linkingText": [
+        "RTCIceCandidatePairEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicecandidatepaireventinit",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepaireventinit",
+        "title": "Dictionary RTCIceCandidatePairEventInit Members",
+        "alternateIds": [
+          "dictionary-rtcicecandidatepaireventinit-members"
+        ]
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-rtcicecandidatepaireventinit-candidatepair",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepaireventinit-candidatepair",
+      "linkingText": [
+        "candidatePair"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicecandidatepaireventinit",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepaireventinit",
+        "title": "Dictionary RTCIceCandidatePairEventInit Members",
+        "alternateIds": [
+          "dictionary-rtcicecandidatepaireventinit-members"
+        ]
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-candidate-match",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-candidate-match",
+      "linkingText": [
+        "candidate match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcicetransport-change-pair-state-modifications",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-change-pair-state-modifications",
+        "title": "Modifications to existing procedures",
+        "alternateIds": [
+          "x9-4-modifications-to-existing-procedures"
+        ],
+        "number": "9.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-capture-system",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-capture-system",
+      "linkingText": [
+        "capture system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpcontributingsource-extensions",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-extensions",
+        "title": "10. RTCRtpContributingSource extensions",
+        "alternateIds": [
+          "x10-rtcrtpcontributingsource-extensions"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-sender-system",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-sender-system",
+      "linkingText": [
+        "sender system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpcontributingsource-extensions",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-extensions",
+        "title": "10. RTCRtpContributingSource extensions",
+        "alternateIds": [
+          "x10-rtcrtpcontributingsource-extensions"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-receiver-system",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-receiver-system",
+      "linkingText": [
+        "receiver system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpcontributingsource-extensions",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-extensions",
+        "title": "10. RTCRtpContributingSource extensions",
+        "alternateIds": [
+          "x10-rtcrtpcontributingsource-extensions"
+        ]
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpcontributingsource-capturetimestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpcontributingsource-capturetimestamp",
+      "linkingText": [
+        "captureTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpcontributingsource-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-attributes",
+        "title": "Dictionary RTCRtpContributingSource Members",
+        "alternateIds": [
+          "x10-1-dictionary-rtcrtpcontributingsource-members"
+        ],
+        "number": "10.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpcontributingsource-sendercapturetimeoffset",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpcontributingsource-sendercapturetimeoffset",
+      "linkingText": [
+        "senderCaptureTimeOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpcontributingsource-attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-attributes",
+        "title": "Dictionary RTCRtpContributingSource Members",
+        "alternateIds": [
+          "x10-1-dictionary-rtcrtpcontributingsource-members"
+        ],
+        "number": "10.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpheaderencryptionpolicy",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderencryptionpolicy",
+      "linkingText": [
+        "RTCRtpHeaderEncryptionPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-encryption-policy",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption-policy",
+        "title": "RTCRtpHeaderEncryptionPolicy Enum",
+        "alternateIds": [
+          "x12-1-rtcrtpheaderencryptionpolicy-enum"
+        ],
+        "number": "12.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpheaderencryptionpolicy-disable",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderencryptionpolicy-disable",
+      "linkingText": [
+        "disable"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCRtpHeaderEncryptionPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-encryption-policy",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption-policy",
+        "title": "RTCRtpHeaderEncryptionPolicy Enum",
+        "alternateIds": [
+          "x12-1-rtcrtpheaderencryptionpolicy-enum"
+        ],
+        "number": "12.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpheaderencryptionpolicy-negotiate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderencryptionpolicy-negotiate",
+      "linkingText": [
+        "negotiate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCRtpHeaderEncryptionPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-encryption-policy",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption-policy",
+        "title": "RTCRtpHeaderEncryptionPolicy Enum",
+        "alternateIds": [
+          "x12-1-rtcrtpheaderencryptionpolicy-enum"
+        ],
+        "number": "12.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpheaderencryptionpolicy-require",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderencryptionpolicy-require",
+      "linkingText": [
+        "require"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCRtpHeaderEncryptionPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtp-header-extension-encryption-policy",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption-policy",
+        "title": "RTCRtpHeaderEncryptionPolicy Enum",
+        "alternateIds": [
+          "x12-1-rtcrtpheaderencryptionpolicy-enum"
+        ],
+        "number": "12.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfiguration-rtpheaderencryptionpolicy",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfiguration-rtpheaderencryptionpolicy",
+      "linkingText": [
+        "rtpHeaderEncryptionPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcconfiguration-members",
+        "href": "https://w3c.github.io/webrtc-extensions/#dictionary-rtcconfiguration-members",
+        "title": "Dictionary RTCConfiguration Members",
+        "alternateIds": [
+          "x12-2-1-dictionary-rtcconfiguration-members"
+        ],
+        "number": "12.2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtptransceiver-onssrcchange",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtptransceiver-onssrcchange",
+      "linkingText": [
+        "onssrcchange"
+      ],
+      "localLinkingText": [
+        "RTCRtpReceiver.onssrcchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x13-1-attributes"
+        ],
+        "number": "13.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtptransceiver-oncsrcchange",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtptransceiver-oncsrcchange",
+      "linkingText": [
+        "oncsrcchange"
+      ],
+      "localLinkingText": [
+        "RTCRtpReceiver.oncsrcchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://w3c.github.io/webrtc-extensions/#attributes",
+        "title": "Attributes",
+        "alternateIds": [
+          "x13-1-attributes"
+        ],
+        "number": "13.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-hardwaredisabled",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-hardwaredisabled",
+      "linkingText": [
+        "[[HardwareDisabled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "disable-hardware-decoding",
+        "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-decoding",
+        "title": "RTCRtpReceiver extensions",
+        "alternateIds": [
+          "x14-1-rtcrtpreceiver-extensions"
+        ],
+        "number": "14.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpreceiver-disablehardwaredecoding",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpreceiver-disablehardwaredecoding",
+      "linkingText": [
+        "disableHardwareDecoding()"
+      ],
+      "localLinkingText": [
+        "RTCRtpReceiver.disableHardwareDecoding",
+        "RTCRtpReceiver.disableHardwareDecoding()",
+        "disableHardwareDecoding"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "disable-hardware-decoding",
+        "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-decoding",
+        "title": "RTCRtpReceiver extensions",
+        "alternateIds": [
+          "x14-1-rtcrtpreceiver-extensions"
+        ],
+        "number": "14.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-hardwaredisabled-0",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-hardwaredisabled-0",
+      "linkingText": [
+        "[[HardwareDisabled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "disable-hardware-encoding",
+        "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-encoding",
+        "title": "RTCRtpSender extensions",
+        "alternateIds": [
+          "x14-2-rtcrtpsender-extensions"
+        ],
+        "number": "14.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpsender-disablehardwareencoding",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpsender-disablehardwareencoding",
+      "linkingText": [
+        "disableHardwareEncoding()"
+      ],
+      "localLinkingText": [
+        "RTCRtpSender.disableHardwareEncoding",
+        "RTCRtpSender.disableHardwareEncoding()",
+        "disableHardwareEncoding"
+      ],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "disable-hardware-encoding",
+        "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-encoding",
+        "title": "RTCRtpSender extensions",
+        "alternateIds": [
+          "x14-2-rtcrtpsender-extensions"
+        ],
+        "number": "14.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfiguration-alwaysnegotiatedatachannels",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfiguration-alwaysnegotiatedatachannels",
+      "linkingText": [
+        "alwaysNegotiateDataChannels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcconfiguration-members-0",
+        "href": "https://w3c.github.io/webrtc-extensions/#dictionary-rtcconfiguration-members-0",
+        "title": "Dictionary RTCConfiguration Members",
+        "alternateIds": [
+          "x15-1-1-dictionary-rtcconfiguration-members"
+        ],
+        "number": "15.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-icecandidatepairadd",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd",
+      "linkingText": [
+        "icecandidatepairadd"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+        "title": "16. Event summary",
+        "alternateIds": [
+          "x16-event-summary"
+        ]
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-icecandidatepairremove",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove",
+      "linkingText": [
+        "icecandidatepairremove"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+        "title": "16. Event summary",
+        "alternateIds": [
+          "x16-event-summary"
+        ]
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-icecandidatepairnominate",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate",
+      "linkingText": [
+        "icecandidatepairnominate"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+        "title": "16. Event summary",
+        "alternateIds": [
+          "x16-event-summary"
+        ]
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-ssrcchange",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange",
+      "linkingText": [
+        "ssrcchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+        "title": "16. Event summary",
+        "alternateIds": [
+          "x16-event-summary"
+        ]
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-csrcchange",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-csrcchange",
+      "linkingText": [
+        "csrcchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+        "title": "16. Event summary",
+        "alternateIds": [
+          "x16-event-summary"
+        ]
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dfn-remote-capture-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-remote-capture-timestamp",
+      "linkingText": [
+        "remote capture timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remote-capture-timestamp",
+        "href": "https://w3c.github.io/webrtc-extensions/#remote-capture-timestamp",
+        "title": "Remote capture timestamp",
+        "alternateIds": [
+          "x17-1-1-remote-capture-timestamp"
+        ],
+        "number": "17.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfigurationtargetlatency",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfigurationtargetlatency",
+      "linkingText": [
+        "RTCConfigurationTargetLatency"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "target-latency",
+        "href": "https://w3c.github.io/webrtc-extensions/#target-latency",
+        "title": "18. RTCConfiguration target latency extension",
+        "alternateIds": [
+          "x18-rtcconfiguration-target-latency-extension"
+        ]
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfiguration-targetlatency",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfiguration-targetlatency",
+      "linkingText": [
+        "targetLatency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcconfiguration-target-latency-attribute",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcconfiguration-target-latency-attribute",
+        "title": "RTCConfiguration target latency extension",
+        "alternateIds": [
+          "x18-1-rtcconfiguration-target-latency-extension"
+        ],
+        "number": "18.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfigurationtargetlatency-lowest",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfigurationtargetlatency-lowest",
+      "linkingText": [
+        "lowest"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCConfigurationTargetLatency"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcconfiguration-target-latency-attribute",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcconfiguration-target-latency-attribute",
+        "title": "RTCConfiguration target latency extension",
+        "alternateIds": [
+          "x18-1-rtcconfiguration-target-latency-extension"
+        ],
+        "number": "18.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-rtcconfigurationtargetlatency-none",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcconfigurationtargetlatency-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCConfigurationTargetLatency"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcconfiguration-target-latency-attribute",
+        "href": "https://w3c.github.io/webrtc-extensions/#rtcconfiguration-target-latency-attribute",
+        "title": "RTCConfiguration target latency extension",
+        "alternateIds": [
+          "x18-1-rtcconfiguration-target-latency-extension"
+        ],
+        "number": "18.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "dom-rtcdiagnosticloggingoptions",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcdiagnosticloggingoptions",
+      "linkingText": [
+        "RTCDiagnosticLoggingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-extensions-peer-connection",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-extensions-peer-connection",
+        "title": "Extensions to the RTCPeerConnection Interface",
+        "alternateIds": [
+          "x19-2-extensions-to-the-rtcpeerconnection-interface"
+        ],
+        "number": "19.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-rtcdiagnosticloggingsessionid",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid",
+      "linkingText": [
+        "[[RTCDiagnosticLoggingSessionId]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-internal-slots",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-internal-slots",
+        "title": "Internal slots",
+        "alternateIds": [
+          "x19-3-internal-slots"
+        ],
+        "number": "19.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-rtcpeerconnection-startdiagnosticlogging",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-startdiagnosticlogging",
+      "linkingText": [
+        "startDiagnosticLogging()",
+        "startDiagnosticLogging(options)"
+      ],
+      "localLinkingText": [
+        "RTCPeerConnection.startDiagnosticLogging",
+        "RTCPeerConnection.startDiagnosticLogging()",
+        "startDiagnosticLogging"
+      ],
+      "type": "method",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x19-4-methods"
+        ],
+        "number": "19.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcpeerconnection-stopdiagnosticlogging",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-stopdiagnosticlogging",
+      "linkingText": [
+        "stopDiagnosticLogging()"
+      ],
+      "localLinkingText": [
+        "RTCPeerConnection.stopDiagnosticLogging",
+        "RTCPeerConnection.stopDiagnosticLogging()",
+        "stopDiagnosticLogging"
+      ],
+      "type": "method",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x19-4-methods"
+        ],
+        "number": "19.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcpeerconnection-canceldiagnosticlogging",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-canceldiagnosticlogging",
+      "linkingText": [
+        "cancelDiagnosticLogging()"
+      ],
+      "localLinkingText": [
+        "RTCPeerConnection.cancelDiagnosticLogging",
+        "RTCPeerConnection.cancelDiagnosticLogging()",
+        "cancelDiagnosticLogging"
+      ],
+      "type": "method",
+      "for": [
+        "RTCPeerConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-methods",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-methods",
+        "title": "Methods",
+        "alternateIds": [
+          "x19-4-methods"
+        ],
+        "number": "19.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-rtcdiagnosticloggingoptions-metadata",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcdiagnosticloggingoptions-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDiagnosticLoggingOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "diagnostic-logging-options-dictionary",
+        "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-options-dictionary",
+        "title": "Dictionary RTCDiagnosticLoggingOptions members",
+        "alternateIds": [
+          "x19-5-dictionary-rtcdiagnosticloggingoptions-members"
+        ],
+        "number": "19.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    }
+  ]
+}

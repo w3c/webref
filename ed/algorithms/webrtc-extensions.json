@@ -1,0 +1,521 @@
+{
+  "spec": {
+    "title": "WebRTC Extensions",
+    "url": "https://w3c.github.io/webrtc-extensions/"
+  },
+  "algorithms": [
+    {
+      "name": "RTCRtpTransceiver/[[HeaderExtensionsToNegotiate]]",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate",
+      "html": "Let\n        <dfn data-dfn-for=\"RTCRtpTransceiver\" data-idl=\"\" data-noexport=\"\" data-dfn-type=\"attribute\" id=\"dfn-headerextensionstonegotiate\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>[[HeaderExtensionsToNegotiate]]</code></dfn>\n        and\n        <dfn data-dfn-for=\"RTCRtpTransceiver\" data-idl=\"\" data-noexport=\"\" data-dfn-type=\"attribute\" id=\"dfn-negotiatedheaderextensions\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>[[NegotiatedHeaderExtensions]]</code></dfn>\n        be internal slots of the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpTransceiver\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiver\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\"><code>RTCRtpTransceiver</code></a>, initialized as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If transceivers of the same kind exist in the current PeerConnection,\n            copy <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-1\"><code>[[HeaderExtensionsToNegotiate]]</code></a> from\n            the first such transceiver, in the order defined by the <a data-link-type=\"dfn\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-collecttransceivers\" href=\"https://www.w3.org/TR/webrtc/#dfn-collecttransceivers\">CollectTransceivers</a> algorithm,\n            where the <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[Stopping]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-stopping\" href=\"https://www.w3.org/TR/webrtc/#dfn-stopping\"><code>[[Stopping]]</code></a> internal slot is false.\n            This ensures consistency across transceivers if they are added\n            after initial negotiation.\n          </p>\n          <p>If no such transceiver exists, set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-2\"><code>[[HeaderExtensionsToNegotiate]]</code></a> to the\n          platform-specific list of implemented RTP header extensions. The\n          <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-1\"><code>direction</code></a> attribute for all\n          extensions that are mandatory to use <em class=\"rfc2119\">MUST</em> be initialized to an\n          appropriate value other than \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-stopped\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-stopped\"><code>stopped</code></a>\".\n          The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-2\"><code>direction</code></a> attribute for\n          extensions that will not be offered by default in an initial offer <em class=\"rfc2119\">MUST</em>\n            be initialized to \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-stopped\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-stopped\"><code>stopped</code></a>\".</p>\n          <p>\n            If there are header extensions whose state needs to be consistent across all transceivers\n            in a bundle,\n            and any other transceiver exists that will be included in the same bundle,\n            copy the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-3\"><code>direction</code></a> attribute\n            for that extension from that other transceiver.\n          </p>"
+        },
+        {
+          "html": "<p>Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[NegotiatedHeaderExtensions]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-negotiatedheaderextensions\" class=\"internalDFN\" id=\"ref-for-dfn-negotiatedheaderextensions-1\"><code>[[NegotiatedHeaderExtensions]]</code></a> to an empty\n          list.</p>"
+        }
+      ]
+    },
+    {
+      "html": "In the step for processing a <var>description</var> of type\n          \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCSdpType\" data-xref-for=\"RTCSdpType\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcsdptype-answer\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcsdptype-answer\"><code>answer</code></a>\" that runs for both local and remote\n          descriptions, insert the following steps:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<p>For each <var>media description</var> and corresponding\n              <var>transceiver</var>, let <var>negotiatedExtensions</var> be the\n              value of\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-3\"><code>[[HeaderExtensionsToNegotiate]]</code></a>.</p>"
+        },
+        {
+          "html": "For each <var>extension</var> in\n              <var>negotiatedExtensions</var>, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>answeredDirection</var> be the direction attribute\n                  of the \"a=extmap\" line in the answer's\n                  <var>media description</var> that correspond to this\n                  <var>extension</var> if one exists, otherwise set\n                  <var>answeredDirection</var> to\n                  \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-stopped\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-stopped\"><code>stopped</code></a>\".</p>"
+            },
+            {
+              "html": "<p>If <var>description</var> is a remote description, reverse\n                  <var>answeredDirection</var> to represent the peer's point of\n                  view.</p>"
+            },
+            {
+              "html": "<p>If this extension cannot be used because of other options\n                    negotiated in the answer, set <var>answeredDirection</var>\n                    to \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-stopped\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-stopped\"><code>stopped</code></a>\".</p>"
+            },
+            {
+              "html": "<p>Set\n                  <var>extension</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-4\"><code>direction</code></a>\n                  to <var>answeredDirection</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[NegotiatedHeaderExtensions]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-negotiatedheaderextensions\" class=\"internalDFN\" id=\"ref-for-dfn-negotiatedheaderextensions-2\"><code>[[NegotiatedHeaderExtensions]]</code></a>\n              to <var>negotiatedExtensions</var>.</p>"
+        },
+        {
+          "html": "<p>\n                Set <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-4\"><code>[[HeaderExtensionsToNegotiate]]</code></a>\n                to <var>negotiatedExtensions</var>.\n                This ensures that unless further calls to <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-setheaderextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtptransceiver-setheaderextensionstonegotiate-2\"><code>setHeaderExtensionsToNegotiate</code></a> are done,\n                subsequent offer/answer will not alter the list of extensions.\n              </p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpTransceiver/getHeaderExtensionsToNegotiate()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getheaderextensionstonegotiate",
+      "html": "Execute the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transceiver</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpTransceiver\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiver\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\"><code>RTCRtpTransceiver</code></a> that\n              this method was invoked on.</p>"
+        },
+        {
+          "html": "<p>Return\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-9\"><code>[[HeaderExtensionsToNegotiate]]</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpTransceiver/setHeaderExtensionsToNegotiate()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-setheaderextensionstonegotiate",
+      "html": "Execute the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transceiver</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpTransceiver\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiver\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\"><code>RTCRtpTransceiver</code></a> that\n              this method was invoked on.</p>"
+        },
+        {
+          "html": "<p>Let <var>extensions</var> be the first argument of this\n              method.</p>"
+        },
+        {
+          "html": "<p>If the size of <var>extensions</var> does not match the size of\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-10\"><code>[[HeaderExtensionsToNegotiate]]</code></a>\n              <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidModificationError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>.\n              </p>"
+        },
+        {
+          "html": "For each index <var>i</var> of <var>extensions</var>, run the\n              following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>extension</var> be the <var>i</var>-th element of\n                  <var>extensions</var>.</p>"
+            },
+            {
+              "html": "<p>If\n                  <var>extension</var>.<a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpheaderextensioncapability-uri\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpheaderextensioncapability-uri\"><code>uri</code></a>\n                  is not equal to the <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpheaderextensioncapability-uri\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpheaderextensioncapability-uri\"><code>uri</code></a> of\n                  the <var>i</var>-th element of\n                  <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-11\"><code>[[HeaderExtensionsToNegotiate]]</code></a>,\n                  <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidModificationError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>.</p>"
+            },
+            {
+              "html": "<p>If\n                  <var>extension</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-11\"><code>direction</code></a>\n                  is not \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-sendrecv\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-sendrecv\"><code>sendrecv</code></a>\" and\n                  <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionParameters\" data-xref-for=\"RTCRtpHeaderExtensionParameters\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpheaderextensionparameters-uri\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpheaderextensionparameters-uri\"><code>uri</code></a> indicates a\n                  mandatory-to-use attribute that is required to be both sent\n                  and received, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidModificationError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>.</p>"
+            },
+            {
+              "html": "<p>If\n                  <var>extension</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-12\"><code>direction</code></a>\n                  is \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCRtpTransceiverDirection\" data-xref-for=\"RTCRtpTransceiverDirection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiverdirection-stopped\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverdirection-stopped\"><code>stopped</code></a>\" and\n                  <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpheaderextensioncapability-uri\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpheaderextensioncapability-uri\"><code>uri</code></a> indicates a\n                  mandatory-to-implement extension, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                  <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidModificationError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>.</p>"
+            },
+            {
+              "html": "<p>If necessary, restrict\n                  <var>extension</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpHeaderExtensionCapability\" data-xref-for=\"RTCRtpHeaderExtensionCapability\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpheaderextensioncapability-direction\" class=\"internalDFN\" id=\"ref-for-dom-rtcrtpheaderextensioncapability-direction-13\"><code>direction</code></a>\n                  as to not exceed the user agent's capabilities for this\n                  extension.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[HeaderExtensionsToNegotiate]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-headerextensionstonegotiate\" class=\"internalDFN\" id=\"ref-for-dfn-headerextensionstonegotiate-12\"><code>[[HeaderExtensionsToNegotiate]]</code></a>\n              to <var>extensions</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpTransceiver/getNegotiatedHeaderExtensions()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtptransceiver-getnegotiatedheaderextensions",
+      "html": "Execute the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>transceiver</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpTransceiver\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtptransceiver\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\"><code>RTCRtpTransceiver</code></a> that\n              this method was invoked on.</p>"
+        },
+        {
+          "html": "<p>Return\n              <var>transceiver</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpTransceiver\" data-xref-for=\"RTCRtpTransceiver\" data-lt=\"[[NegotiatedHeaderExtensions]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-negotiatedheaderextensions\" class=\"internalDFN\" id=\"ref-for-dfn-negotiatedheaderextensions-3\"><code>[[NegotiatedHeaderExtensions]]</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "add a candidate pair",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-add",
+      "html": "When the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-3\">ICE agent</a> has <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-form\" class=\"internalDFN\" id=\"ref-for-dfn-form-1\">formed</a> a candidate pair, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-4\">user agent</a> <em class=\"rfc2119\">MUST</em> <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to <dfn id=\"rtcicetransport-add\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">add a candidate pair</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCPeerConnection\">connection</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcpeerconnection\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object associated with this <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-4\">ICE agent</a>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          If <var data-type=\"RTCPeerConnection\">connection</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-isclosed\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> is\n          <code>true</code>, abort these steps.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceCandidatePair\">candidatePair</var> be the result of <a data-link-type=\"dfn\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-creating-an-rtcicecandidatepair\" href=\"https://www.w3.org/TR/webrtc/#dfn-creating-an-rtcicecandidatepair\">creating an RTCIceCandidatePair</a> with\n          <var data-type=\"RTCIceCandidate\">local</var> and <var data-type=\"RTCIceCandidate\">remote</var>, representing the local and remote candidates of the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-form\" class=\"internalDFN\" id=\"ref-for-dfn-form-2\">formed</a>\n          pair respectively.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceTransport\">transport</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCIceTransport\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransport\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransport\"><code>RTCIceTransport</code></a> object associated with <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"assert\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-1\"><code>[[CandidatePairs]]</code></a> does not <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-contain\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var> to <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-2\"><code>[[CandidatePairs]]</code></a>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          <a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named\n          <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd\" class=\"internalDFN\" id=\"ref-for-dfn-icecandidatepairadd-1\"><code>icecandidatepairadd</code></a> at <var data-type=\"RTCIceTransport\">transport</var>, using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-1\"><code>RTCIceCandidatePairEvent</code></a>,\n          with the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePairEvent\" data-xref-for=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-candidatepair\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-candidatepair-1\"><code>candidatePair</code></a> attribute\n          initialized to <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        }
+      ]
+    },
+    {
+      "name": "nominate the candidate pair",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-nominate",
+      "html": "When the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-5\">ICE agent</a> has picked a candidate pair to <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"nominate\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-nominate\" class=\"internalDFN\" id=\"ref-for-dfn-nominate-2\"><code>nominate</code></a> as the selected candidate pair, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-5\">user agent</a>\n      <em class=\"rfc2119\">MUST</em> <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to <dfn id=\"rtcicetransport-nominate\" data-lt=\"nominate the candidate pair|nominate a candidate pair\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">nominate a\n        candidate pair</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCPeerConnection\">connection</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcpeerconnection\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object associated with this <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-6\">ICE agent</a>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          If <var data-type=\"RTCPeerConnection\">connection</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-isclosed\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> is\n          <code>true</code>, abort these steps.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceTransport\">transport</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCIceTransport\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransport\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransport\"><code>RTCIceTransport</code></a> object associated with this candidate pair.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceCandidatePair\">candidatePair</var> be the candidate pair which is being <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"nominated\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-nominate\" class=\"internalDFN\" id=\"ref-for-dfn-nominate-3\"><code>nominated</code></a>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Set <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-1\"><code>[[ProposalPending]]</code></a> to <code>true</code>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"boolean\">accepted</var> be the result of <a data-link-type=\"dfn\" data-lt=\"fire an event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">firing an event</a> named\n          <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate\" class=\"internalDFN\" id=\"ref-for-dfn-icecandidatepairnominate-1\"><code>icecandidatepairnominate</code></a> at <var data-type=\"RTCIceTransport\">transport</var>, using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-2\"><code>RTCIceCandidatePairEvent</code></a>, with the\n          <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-cancelable\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\"><code>cancelable</code></a> attribute initialized to <code>true</code>, and the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePairEvent\" data-xref-for=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-candidatepair\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-candidatepair-2\"><code>candidatePair</code></a> attribute\n          initialized to <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Set <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-2\"><code>[[ProposalPending]]</code></a> to <code>false</code>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          If <var data-type=\"boolean\">accepted</var> is <code>false</code>, abort these steps and instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-7\">ICE agent</a> to continue to perform connectivity checks.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Otherwise, instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-8\">ICE agent</a> to <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"nominate\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-nominate\" class=\"internalDFN\" id=\"ref-for-dfn-nominate-4\"><code>nominate</code></a> the candidate pair indicated by <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        }
+      ]
+    },
+    {
+      "name": "remove a candidate pair",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-remove",
+      "html": "When the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-11\">ICE agent</a> has decided to remove a candidate pair, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-6\">user agent</a> <em class=\"rfc2119\">MUST</em> <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to <dfn id=\"rtcicetransport-remove\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">remove a candidate pair</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCPeerConnection\">connection</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcpeerconnection\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object associated with this <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-12\">ICE agent</a>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          If <var data-type=\"RTCPeerConnection\">connection</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-isclosed\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> is\n          <code>true</code>, abort these steps.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceCandidatePair\">candidatePair</var> be the candidate pair which is being removed.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"RTCIceTransport\">transport</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCIceTransport\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransport\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransport\"><code>RTCIceTransport</code></a> object associated with <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"boolean\">cancelable</var> be <code>true</code> if the candidate pair is being removed in order to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-free\" class=\"internalDFN\" id=\"ref-for-dfn-free-2\">free</a> an unused\n          candidate, and\n          <code>false</code> otherwise.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Set <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-3\"><code>[[ProposalPending]]</code></a> to <code>true</code>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Let <var data-type=\"boolean\">accepted</var> be the result of <a data-link-type=\"dfn\" data-lt=\"fire an event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">firing an event</a> named\n          <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove\" class=\"internalDFN\" id=\"ref-for-dfn-icecandidatepairremove-1\"><code>icecandidatepairremove</code></a> at <var data-type=\"RTCIceTransport\">transport</var>, using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-3\"><code>RTCIceCandidatePairEvent</code></a>, with the\n          <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-cancelable\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\"><code>cancelable</code></a> attribute initialized to <var data-type=\"boolean\">cancelable</var>, and the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePairEvent\" data-xref-for=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-candidatepair\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-candidatepair-3\"><code>candidatePair</code></a> attribute\n          initialized to <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          Set <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-4\"><code>[[ProposalPending]]</code></a> to <code>false</code>.\n        </p>"
+        },
+        {
+          "html": "<p>\n          If <var data-type=\"boolean\">accepted</var> is <code>false</code>, instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-13\">ICE agent</a> to not remove the candidate pair indicated by\n          <var data-type=\"RTCIceCandidatePair\">candidatePair</var>, and instead continue to send and respond to ICE connectivity checks on the candidate pair as\n          before.\n        </p>"
+        },
+        {
+          "html": "Otherwise (if <var data-type=\"boolean\">accepted</var> is <code>true</code>), run the following steps:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p>\n              <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-remove\" href=\"https://infra.spec.whatwg.org/#list-remove\">Remove</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var> from <var data-type=\"RTCIceTransport\">transport</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-3\"><code>[[CandidatePairs]]</code></a>.\n            </p>"
+            },
+            {
+              "html": "<p>\n              Instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-14\">ICE agent</a> to remove the candidate pair indicated by <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n            </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RTCIceTransport/selectCandidatePair()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-selectcandidatepair",
+      "html": "When this method is invoked, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-7\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n                Let <var data-type=\"RTCPeerConnection\">connection</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcpeerconnection\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object associated with <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var data-type=\"RTCPeerConnection\">connection</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-isclosed\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> is\n                <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-5\"><code>[[ProposalPending]]</code></a> is <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[IceTransportState]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-icetransportstate\" href=\"https://www.w3.org/TR/webrtc/#dfn-icetransportstate\"><code>[[IceTransportState]]</code></a> is either of\n                \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-new\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new\"><code>new</code></a>\", \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-failed\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-failed\"><code>failed</code></a>\" or \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-closed\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-closed\"><code>closed</code></a>\", <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a>\n                an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var data-type=\"RTCIceCandidatePair\">candidatePair</var> be the method's first argument.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-4\"><code>[[CandidatePairs]]</code></a> does not <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-contain\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"NotFoundError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"notfounderror\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var data-type=\"Promise\">p</var> be a new promise.\n              </p>"
+        },
+        {
+          "html": "In parallel, instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-15\">ICE agent</a> to use <var data-type=\"RTCIceCandidatePair\">candidatePair</var> to send data.",
+          "rationale": "resolve",
+          "steps": [
+            {
+              "html": "When the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-16\">ICE agent</a> has completed selecting <var data-type=\"RTCIceCandidatePair\">candidatePair</var>, <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to run the following steps:",
+              "rationale": "run",
+              "steps": [
+                {
+                  "html": "<p>\n                        Run the <a data-link-type=\"dfn\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-change-the-selected-candidate-pair-and-state\" href=\"https://www.w3.org/TR/webrtc/#dfn-change-the-selected-candidate-pair-and-state\">change the selected candidate pair and state</a> steps to update <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[SelectedCandidatePair]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-selectedcandidatepair\" href=\"https://www.w3.org/TR/webrtc/#dfn-selectedcandidatepair\"><code>[[SelectedCandidatePair]]</code></a> and <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[IceTransportState]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-icetransportstate\" href=\"https://www.w3.org/TR/webrtc/#dfn-icetransportstate\"><code>[[IceTransportState]]</code></a> as necessary and fire any associated events.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        Resolve <var data-type=\"Promise\">p</var>.\n                      </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                Return <var data-type=\"Promise\">p</var>.\n              </p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCIceTransport/removeCandidatePair()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcicetransport-removecandidatepair",
+      "html": "When this method is invoked, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-8\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n                Let <var data-type=\"RTCPeerConnection\">connection</var> be the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCPeerConnection\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcpeerconnection\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection\"><code>RTCPeerConnection</code></a> object associated with <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <var data-type=\"RTCPeerConnection\">connection</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[IsClosed]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-isclosed\" href=\"https://www.w3.org/TR/webrtc/#dfn-isclosed\"><code>[[IsClosed]]</code></a> is\n                <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[ProposalPending]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-proposalpending\" class=\"internalDFN\" id=\"ref-for-dfn-proposalpending-6\"><code>[[ProposalPending]]</code></a> is <code>true</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[IceTransportState]]\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-icetransportstate\" href=\"https://www.w3.org/TR/webrtc/#dfn-icetransportstate\"><code>[[IceTransportState]]</code></a> is either of \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-new\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new\"><code>new</code></a>\", \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-failed\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-failed\"><code>failed</code></a>\" or \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"RTCIceTransportState\" data-xref-for=\"RTCIceTransportState\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicetransportstate-closed\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-closed\"><code>closed</code></a>\", <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"InvalidStateError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var data-type=\"RTCIceCandidatePair\">candidatePair</var> be the method's first argument.\n              </p>"
+        },
+        {
+          "html": "<p>\n                If <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-5\"><code>[[CandidatePairs]]</code></a> does not <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-contain\" href=\"https://infra.spec.whatwg.org/#list-contain\">contain</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"NotFoundError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"notfounderror\" href=\"https://webidl.spec.whatwg.org/#notfounderror\"><code>NotFoundError</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-remove\" href=\"https://infra.spec.whatwg.org/#list-remove\">Remove</a> <var data-type=\"RTCIceCandidatePair\">candidatePair</var> from\n                <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-6\"><code>[[CandidatePairs]]</code></a>.\n              </p>"
+        },
+        {
+          "html": "<p>\n                Let <var data-type=\"Promise\">p</var> be a new promise.\n              </p>"
+        },
+        {
+          "html": "In parallel, instruct the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-20\">ICE agent</a> to remove the candidate pair indicated by <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.",
+          "rationale": "fire an event",
+          "steps": [
+            {
+              "html": "When the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ice-agent\" class=\"internalDFN\" id=\"ref-for-dfn-ice-agent-21\">ICE agent</a> has completed the removal, <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to run the following steps:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<p>\n                        <a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove\" class=\"internalDFN\" id=\"ref-for-dfn-icecandidatepairremove-3\"><code>icecandidatepairremove</code></a> at <var>transport</var>, using <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-4\"><code>RTCIceCandidatePairEvent</code></a>, with the <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Event\" data-xref-for=\"Event\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-event-cancelable\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\"><code>cancelable</code></a> attribute initialized to <code>false</code>, and the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePairEvent\" data-xref-for=\"RTCIceCandidatePairEvent\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcicecandidatepairevent-candidatepair\" class=\"internalDFN\" id=\"ref-for-dom-rtcicecandidatepairevent-candidatepair-4\"><code>candidatePair</code></a> attribute initialized to <var data-type=\"RTCIceCandidatePair\">candidatePair</var>.\n                      </p>"
+                },
+                {
+                  "html": "<p>\n                        Resolve <var data-type=\"Promise\">p</var>.\n                      </p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>\n                Return <var data-type=\"Promise\">p</var>.\n              </p>"
+        }
+      ]
+    },
+    {
+      "html": "In the steps to <a data-link-type=\"dfn\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dfn-change-the-selected-candidate-pair-and-state\" href=\"https://www.w3.org/TR/webrtc/#dfn-change-the-selected-candidate-pair-and-state\">change the selected candidate pair and state</a>, if the selected candidate pair was changed, modify the first step to the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>newCandidatePair</var> be the <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-item\" href=\"https://infra.spec.whatwg.org/#list-item\">item</a> <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-contain\" href=\"https://infra.spec.whatwg.org/#list-contain\">contained</a> in <var>this</var>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCIceTransport\" data-xref-for=\"RTCIceTransport\" data-lt=\"[[CandidatePairs]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidatepairs\" class=\"internalDFN\" id=\"ref-for-dfn-candidatepairs-7\"><code>[[CandidatePairs]]</code></a> whose <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePair\" data-xref-for=\"RTCIceCandidatePair\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidatepair-local\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidatepair-local\"><code>local</code></a> and <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidatePair\" data-xref-for=\"RTCIceCandidatePair\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidatepair-remote\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidatepair-remote\"><code>remote</code></a> attributes respectively <a data-link-type=\"dfn|abstract-op\" data-lt=\"candidate match\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-candidate-match\" class=\"internalDFN\" id=\"ref-for-dfn-candidate-match-1\">match</a> the local and remote candidates of the indicated pair if one is selected, and <code>null</code> otherwise."
+        }
+      ]
+    },
+    {
+      "name": "candidate match",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-candidate-match",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-candidate-match\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">candidate match</dfn> algorithm given two <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate\"><code>RTCIceCandidate</code></a> <var data-type=\"RTCIceCandidate\">first</var> and\n        <var data-type=\"RTCIceCandidate\">second</var> is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>\n            If <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-candidate\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-candidate\"><code>candidate</code></a> is not <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">identical to</a> <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-candidate\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-candidate\"><code>candidate</code></a>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If either (but not both) of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a> is\n            <code>null</code>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If neither of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a> is <code>null</code>, and <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a> is not <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">identical to</a>\n            <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmid\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmid\"><code>sdpMid</code></a>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If either (but not both) of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a> is\n            <code>null</code>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If neither of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a> is <code>null</code> and <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a> is not equal to\n            <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-sdpmlineindex\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-sdpmlineindex\"><code>sdpMLineIndex</code></a>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If either (but not both) of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a> is\n            <code>null</code>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            If neither of <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a> and <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a> is <code>null</code> and <var data-type=\"RTCIceCandidate\">first</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a> is not <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">identical to</a>\n            <var data-type=\"RTCIceCandidate\">second</var>.<a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCIceCandidate\" data-xref-for=\"RTCIceCandidate\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcicecandidate-usernamefragment\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcicecandidate-usernamefragment\"><code>usernameFragment</code></a>, return <code>false</code>.\n          </p>"
+        },
+        {
+          "html": "<p>\n            Return <code>true</code>.\n          </p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpContributingSource/captureTimestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpcontributingsource-capturetimestamp",
+      "html": "On populating this member, the <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-9\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following\n            steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the relevant RTP packet contains the\n              <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-absolute-capture-timestamp-rtp-header-extension\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-absolute-capture-timestamp-rtp-header-extension-2\">Absolute Capture Timestamp RTP header extension</a>, return the\n              value of the <a data-cite=\"RTP-EXT-CAPTURE-TIME#absolute-capture-timestamp\" data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html#absolute-capture-timestamp\">absolute capture timestamp</a> field and abort\n              these steps.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the relevant RTP packet does not contain the\n              <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-absolute-capture-timestamp-rtp-header-extension\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-absolute-capture-timestamp-rtp-header-extension-3\">Absolute Capture Timestamp RTP header extension</a> but a\n              previous RTP packet did, return the result of calculating the\n              absolute capture timestamp according to\n              <a data-cite=\"RTP-EXT-CAPTURE-TIME#timestamp-interpolation\" data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html#timestamp-interpolation\">timestamp interpolation</a> and abort these steps.</p>"
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "name": "RTCRtpContributingSource/senderCaptureTimeOffset",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcrtpcontributingsource-sendercapturetimeoffset",
+      "html": "On populating this member, the <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-10\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following\n            steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the relevant RTP packet contains the\n              <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-absolute-capture-timestamp-rtp-header-extension\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-absolute-capture-timestamp-rtp-header-extension-4\">Absolute Capture Timestamp RTP header extension</a> and the\n              <a data-cite=\"RTP-EXT-CAPTURE-TIME#estimated-capture-clock-offset\" data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html#estimated-capture-clock-offset\">estimated capture clock offset</a> field is present, return the\n              value of the <a data-cite=\"RTP-EXT-CAPTURE-TIME#estimated-capture-clock-offset\" data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html#estimated-capture-clock-offset\">estimated capture clock offset</a> field and abort\n              these steps.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if the relevant RTP packet does not contain the\n              <a href=\"https://w3c.github.io/webrtc-extensions/#dfn-absolute-capture-timestamp-rtp-header-extension\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-absolute-capture-timestamp-rtp-header-extension-5\">Absolute Capture Timestamp RTP header extension</a>'s\n              <a data-cite=\"RTP-EXT-CAPTURE-TIME#estimated-capture-clock-offset\" data-link-type=\"dfn\" href=\"https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html#estimated-capture-clock-offset\">estimated capture clock offset</a> field, but a\n              previous RTP packet did, return the most recent value that was\n              present and abort these steps.</p>"
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "Whenever the <a data-link-type=\"dict-member\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpContributingSource\" data-xref-for=\"RTCRtpContributingSource\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpcontributingsource-source\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpcontributingsource-source\"><code>source</code></a> identifier(s) are updated based on the last decoded\n      frame as defined <a data-cite=\"WEBRTC#dom-rtcrtpcontributingsource\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpcontributingsource\">here</a>, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-11\">user agent</a>\n      <em class=\"rfc2119\">MUST</em> append the following steps to the end of the same <a data-link-type=\"dfn\" data-lt=\"queue a task\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queued task</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the SSRC changed, <a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpReceiver\" data-xref-for=\"RTCRtpReceiver\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange\" class=\"internalDFN\" id=\"ref-for-dfn-ssrcchange-1\"><code>ssrcchange</code></a>.</p>"
+        },
+        {
+          "html": "<p>If the CSRC changed, <a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">fire an event</a> named <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCRtpReceiver\" data-xref-for=\"RTCRtpReceiver\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-csrcchange\" class=\"internalDFN\" id=\"ref-for-dfn-csrcchange-1\"><code>csrcchange</code></a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpReceiver\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpreceiver\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\"><code>RTCRtpReceiver</code></a>'s disableHardwareDecoding method is called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "abort these steps",
+      "steps": [
+        {
+          "html": "<p>When the <code>RTCPeerConnection.constructor()</code> has been invoked abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set the RTCRtpReceiver's <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpReceiver\" data-xref-for=\"RTCRtpReceiver\" data-lt=\"[[HardwareDisabled]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-hardwaredisabled\" class=\"internalDFN\" id=\"ref-for-dfn-hardwaredisabled-1\"><code>[[HardwareDisabled]]</code></a> slot to <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When the <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"RTCRtpSender\" data-cite=\"webrtc\" data-cite-path=\"\" data-cite-frag=\"dom-rtcrtpsender\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\"><code>RTCRtpSender</code></a>'s disableHardwareEncoding method is called, the user agent <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "rationale": "abort these steps",
+      "steps": [
+        {
+          "html": "<p>When the <code>RTCPeerConnection.constructor()</code> has been invoked abort these steps.</p>"
+        },
+        {
+          "html": "<p>Set the RTCRtpSender's <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCRtpSender\" data-xref-for=\"RTCRtpSender\" data-lt=\"[[HardwareDisabled]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-hardwaredisabled-0\" class=\"internalDFN\" id=\"ref-for-dfn-hardwaredisabled-0-1\"><code>[[HardwareDisabled]]</code></a> slot to <code>true</code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCPeerConnection/startDiagnosticLogging()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-startdiagnosticlogging",
+      "html": "When this method is invoked, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-12\">user agent</a> <em class=\"rfc2119\">MUST</em> run the\n               following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>options</var> be the first argument of this method.</p>"
+        },
+        {
+          "html": "<p>Let <var>metadata</var> be <var>options</var>'s\n                  <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"RTCDiagnosticLoggingOptions\" data-xref-for=\"RTCDiagnosticLoggingOptions\" href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcdiagnosticloggingoptions-metadata\" class=\"internalDFN\" id=\"ref-for-dom-rtcdiagnosticloggingoptions-metadata-2\"><code>metadata</code></a>.</p>"
+        },
+        {
+          "html": "<p>If <var>metadata</var>'s <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-size\" href=\"https://infra.spec.whatwg.org/#map-size\">size</a> is greater than 5, or\n                   <var>metadata</var> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">contains</a> any <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-entry\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> whose\n                   <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-key\" href=\"https://infra.spec.whatwg.org/#map-key\">key</a> or <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-value\" href=\"https://infra.spec.whatwg.org/#map-value\">value</a> have a <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-length\" href=\"https://infra.spec.whatwg.org/#string-length\">length</a>\n                   greater than 100, \t<a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>.\n                  </p>"
+        },
+        {
+          "html": "<p>If the <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-1\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                   internal slot is not <code>null</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a>\n                   an \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sessionId</var> be a randomly generated UUID [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-extensions/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">rfc4122</a></cite>]. To\n                   avoid fingerprinting, implementations <em class=\"rfc2119\">SHOULD</em> use the form in\n                   section 4.4 of RFC 4122 when generating UUIDs.</p>"
+        },
+        {
+          "html": "<p>Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-2\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                   to <var>sessionId</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, start a logging session of internal WebRTC\n                  activity, using <var>metadata</var> for context. Identify the logging\n                  session with <var>sessionId</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>sessionId</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCPeerConnection/stopDiagnosticLogging()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-stopdiagnosticlogging",
+      "html": "When this method is invoked, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-14\">user agent</a> <em class=\"rfc2119\">MUST</em> run the\n              following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-3\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                    internal slot is <code>null</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                    \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sessionId</var> be \n                  <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-4\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a></p>"
+        },
+        {
+          "html": "<p>Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-5\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                    to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, stop the logging session identified with\n                   <var>sessionId</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "RTCPeerConnection/cancelDiagnosticLogging()",
+      "href": "https://w3c.github.io/webrtc-extensions/#dom-rtcpeerconnection-canceldiagnosticlogging",
+      "html": "When this method is invoked, the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-user-agent\" class=\"internalDFN\" id=\"ref-for-dfn-user-agent-16\">user agent</a> <em class=\"rfc2119\">MUST</em> run the\n               following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-6\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                    internal slot is <code>null</code>, <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                    \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"invalidstateerror\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\"><code>InvalidStateError</code></a>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sessionId</var> be \n                  <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-7\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a></p>"
+        },
+        {
+          "html": "<p>Set <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"RTCPeerConnection\" data-xref-for=\"RTCPeerConnection\" data-lt=\"[[RTCDiagnosticLoggingSessionId]]\" href=\"https://w3c.github.io/webrtc-extensions/#dfn-rtcdiagnosticloggingsessionid\" class=\"internalDFN\" id=\"ref-for-dfn-rtcdiagnosticloggingsessionid-8\"><code>[[RTCDiagnosticLoggingSessionId]]</code></a>\n                    to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>, cancel the logging session identified with\n                   <var>sessionId</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

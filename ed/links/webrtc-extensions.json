@@ -1,0 +1,257 @@
+{
+  "spec": {
+    "title": "WebRTC Extensions",
+    "url": "https://w3c.github.io/webrtc-extensions/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://www.etsi.org/deliver/etsi_ts/128500_128599/128530/15.01.00_60/ts_128530v150100p.pdf": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {
+        "specShortname": "infra"
+      },
+      "https://w3c.github.io/mediacapture-extensions": {
+        "specShortname": "mediacapture-extensions"
+      },
+      "https://w3c.github.io/mediacapture-extensions/": {
+        "anchors": [
+          "video-timestamp-concepts/"
+        ],
+        "specShortname": "mediacapture-extensions"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html": {
+        "anchors": [
+          "absolute-capture-timestamp",
+          "timestamp-interpolation",
+          "estimated-capture-clock-offset"
+        ]
+      },
+      "https://www.rfc-editor.org/info/bcp14": {},
+      "https://www.rfc-editor.org/info/rfc2119/": {},
+      "https://www.rfc-editor.org/info/rfc3550/": {},
+      "https://www.rfc-editor.org/info/rfc3711/": {},
+      "https://www.rfc-editor.org/info/rfc4103/": {},
+      "https://www.rfc-editor.org/info/rfc4122/": {},
+      "https://www.rfc-editor.org/info/rfc4566/": {},
+      "https://www.rfc-editor.org/info/rfc4567/": {},
+      "https://www.rfc-editor.org/info/rfc5245/": {},
+      "https://www.rfc-editor.org/info/rfc5285/": {},
+      "https://www.rfc-editor.org/info/rfc8174/": {},
+      "https://www.rfc-editor.org/info/rfc8285/": {},
+      "https://www.rfc-editor.org/info/rfc8445/": {},
+      "https://www.rfc-editor.org/info/rfc8827/": {},
+      "https://www.rfc-editor.org/info/rfc8829/": {},
+      "https://www.rfc-editor.org/info/rfc8834/": {},
+      "https://www.rfc-editor.org/info/rfc8843/": {},
+      "https://www.rfc-editor.org/info/rfc8859/": {},
+      "https://www.rfc-editor.org/info/rfc9335/": {},
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/CSP3/": {
+        "anchors": [
+          "should-block-rtc-connection"
+        ],
+        "specShortname": "CSP3"
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "specShortname": "mediacapture-streams"
+      },
+      "https://www.w3.org/TR/webcodecs/": {
+        "specShortname": "webcodecs"
+      },
+      "https://www.w3.org/TR/webrtc-stats/": {
+        "specShortname": "webrtc-stats"
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dfn-administratively-prohibited",
+          "set-description",
+          "dom-rtcstats-timestamp",
+          "set-the-configuration",
+          "dom-rtcrtpcontributingsource"
+        ],
+        "specShortname": "webrtc"
+      },
+      "https://www.w3.org/community/ortc/": {},
+      "https://www.w3.org/groups/wg/webrtc": {},
+      "https://www.w3.org/groups/wg/webrtc/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ],
+        "specShortname": "w3c-patent-policy"
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-event-fire",
+          "dom-event-cancelable",
+          "event",
+          "dictdef-eventinit"
+        ],
+        "specShortname": "dom"
+      },
+      "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+        "anchors": [
+          "in-parallel"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/structured-data.html": {
+        "anchors": [
+          "transferable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-relevant-global",
+          "queue-a-task",
+          "eventhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "worker"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "assert",
+          "list-contain",
+          "list-append",
+          "list-remove",
+          "list-item",
+          "string-is",
+          "implementation-defined",
+          "map-size",
+          "map-exists",
+          "map-entry",
+          "map-key",
+          "map-value",
+          "string-length"
+        ],
+        "specShortname": "infra"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-sequence",
+          "idl-undefined",
+          "dfn-throw",
+          "invalidmodificationerror",
+          "idl-unsigned-long",
+          "idl-boolean",
+          "dfn-create-exception",
+          "operationerror",
+          "reject",
+          "idl-promise",
+          "this",
+          "invalidstateerror",
+          "notfounderror",
+          "Exposed",
+          "idl-DOMString",
+          "invalidaccesserror",
+          "idl-record",
+          "exceptiondef-typeerror",
+          "idl-DOMException"
+        ],
+        "specShortname": "webidl"
+      },
+      "https://www.ietf.org/archive/id/draft-ietf-avtcore-abs-capture-time-00.html": {
+        "anchors": [
+          "estimated-capture-clock-offset",
+          "absolute-capture-timestamp",
+          "timestamp-interpolation"
+        ]
+      },
+      "https://www.w3.org/TR/hr-time-3/": {
+        "anchors": [
+          "typedefdef-domhighrestimestamp"
+        ],
+        "specShortname": "hr-time-3"
+      },
+      "https://www.w3.org/TR/mediacapture-streams/": {
+        "anchors": [
+          "dom-mediastreamtrack"
+        ],
+        "specShortname": "mediacapture-streams"
+      },
+      "https://www.w3.org/TR/webcodecs/": {
+        "anchors": [
+          "dictdef-videoencoderencodeoptions"
+        ],
+        "specShortname": "webcodecs"
+      },
+      "https://www.w3.org/TR/webrtc-stats/": {
+        "anchors": [
+          "dom-rtcremoteinboundrtpstreamstats",
+          "dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+          "dom-rtcremoteoutboundrtpstreamstats",
+          "dom-rtcremoteoutboundrtpstreamstats-remotetimestamp"
+        ],
+        "specShortname": "webrtc-stats"
+      },
+      "https://www.w3.org/TR/webrtc/": {
+        "anchors": [
+          "dom-rtcpeerconnection",
+          "dom-rtcrtptransceiver",
+          "dom-rtcrtpheaderextensioncapability",
+          "dom-rtcrtptransceiverdirection",
+          "dfn-collecttransceivers",
+          "dfn-stopping",
+          "dom-rtcrtptransceiverdirection-stopped",
+          "dom-rtcsdptype-answer",
+          "dom-rtcrtpheaderextensioncapability-uri",
+          "dom-rtcrtptransceiverdirection-sendrecv",
+          "dom-rtcrtpheaderextensionparameters-uri",
+          "dom-rtcrtpencodingparameters",
+          "dom-rtcrtpencodingparameters-scaleresolutiondownby",
+          "dom-rtcpeerconnection-addtransceiver",
+          "dom-rtcrtpsender-setparameters",
+          "dom-rtcrtpencodingparameters-active",
+          "dom-rtcrtpsender",
+          "dom-rtcsetparameteroptions",
+          "dfn-transceiver-kind",
+          "dom-rtcicetransport",
+          "dfn-isclosed",
+          "dfn-creating-an-rtcicecandidatepair",
+          "dom-rtcicecandidatepair",
+          "dfn-icetransportstate",
+          "dom-rtcicetransportstate-new",
+          "dom-rtcicetransportstate-failed",
+          "dom-rtcicetransportstate-closed",
+          "dfn-change-the-selected-candidate-pair-and-state",
+          "dfn-selectedcandidatepair",
+          "dom-rtcicecandidatepair-local",
+          "dom-rtcicecandidatepair-remote",
+          "dom-rtcicecandidate",
+          "dom-rtcicecandidate-candidate",
+          "dom-rtcicecandidate-sdpmid",
+          "dom-rtcicecandidate-sdpmlineindex",
+          "dom-rtcicecandidate-usernamefragment",
+          "dom-rtcrtpcontributingsource",
+          "dom-rtcrtpreceiver",
+          "dom-rtcrtpcontributingsource-timestamp",
+          "dom-rtcdatachannel",
+          "dom-rtcconfiguration",
+          "dom-rtcrtpsynchronizationsource",
+          "dom-rtcrtpcontributingsource-source",
+          "dom-rtcrtpreceiver-getsynchronizationsources",
+          "dom-rtcrtpreceiver-getcontributingsources",
+          "dom-peerconnection-createdatachannel",
+          "dfn-sctptransport"
+        ],
+        "specShortname": "webrtc"
+      }
+    }
+  }
+}

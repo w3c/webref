@@ -7,7 +7,7 @@
     {
       "name": "fullscreen an element",
       "href": "https://fullscreen.spec.whatwg.org/#fullscreen-an-element",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fullscreen-an-element\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fullscreen an <var>element</var></dfn>:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fullscreen-an-element\">fullscreen an <var>element</var></dfn>:",
       "rationale": "let",
       "steps": [
         {
@@ -30,7 +30,7 @@
     {
       "name": "fully exit fullscreen",
       "href": "https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fully-exit-fullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fully exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> <var>document</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fully-exit-fullscreen\">fully exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> <var>document</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -75,11 +75,11 @@
     {
       "name": "run the fullscreen steps",
       "href": "https://fullscreen.spec.whatwg.org/#run-the-fullscreen-steps",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-fullscreen-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the fullscreen steps</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, run these\nsteps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"run-the-fullscreen-steps\">run the fullscreen steps</dfn> for a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">document</a> <var>document</var>, run these\nsteps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>pendingEvents</var> be <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#list-of-pending-fullscreen-events\" id=\"ref-for-list-of-pending-fullscreen-events\">list of pending fullscreen events</a>.\n\n </p>"
+          "html": "<p>Let <var>pendingEvents</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-clone\" id=\"ref-for-list-clone\">clone</a> of <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#list-of-pending-fullscreen-events\" id=\"ref-for-list-of-pending-fullscreen-events\">list of pending fullscreen events</a>.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#list-of-pending-fullscreen-events\" id=\"ref-for-list-of-pending-fullscreen-events①\">list of pending fullscreen events</a>.\n\n </p>"
@@ -101,7 +101,7 @@
     {
       "name": "requestFullscreen(options)",
       "href": "https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestFullscreen(options)|requestFullscreen()\" id=\"dom-element-requestfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestFullscreen(<var>options</var>)</code></dfn> method steps\nare:",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestFullscreen(options)|requestFullscreen()\" id=\"dom-element-requestfullscreen\"><code>requestFullscreen(<var>options</var>)</code></dfn> method steps\nare:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -126,7 +126,7 @@
           "html": "<p>Return <var>promise</var>, and run the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>error</var> is false, then resize <var>pendingDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s viewport’s\n  dimensions, optionally taking into account\n  <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fullscreen.spec.whatwg.org/#dom-fullscreenoptions-navigationui\" id=\"ref-for-dom-fullscreenoptions-navigationui①\">navigationUI</a></code>\"]:\n\n  </p>\n      <table>\n       <thead>\n        <tr>\n         <th>value\n         </th><th>viewport dimensions\n       </th></tr></thead><tbody>\n        <tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;hide&quot;|hide\" id=\"dom-fullscreennavigationui-hide\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>hide</code></dfn>\"\n         </td><td>full dimensions of the screen of the output device\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;show&quot;|show\" id=\"dom-fullscreennavigationui-show\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>show</code></dfn>\"\n         </td><td>dimensions of the screen of the output device clamped to allow the user agent to show page navigation controls\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;auto&quot;|auto\" id=\"dom-fullscreennavigationui-auto\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>auto</code></dfn>\"\n         </td><td>user-agent defined, but matching one of the above\n      </td></tr></tbody></table>\n      <p>Optionally display a message how the end user can revert this.\n\n </p>"
+          "html": "<p>If <var>error</var> is false, then resize <var>pendingDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s viewport’s\n  dimensions, optionally taking into account\n  <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fullscreen.spec.whatwg.org/#dom-fullscreenoptions-navigationui\" id=\"ref-for-dom-fullscreenoptions-navigationui①\">navigationUI</a></code>\"]:\n\n  </p>\n      <table>\n       <thead>\n        <tr>\n         <th>value\n         </th><th>viewport dimensions\n       </th></tr></thead><tbody>\n        <tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;hide&quot;|hide\" id=\"dom-fullscreennavigationui-hide\"><code>hide</code></dfn>\"\n         </td><td>full dimensions of the screen of the output device\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;show&quot;|show\" id=\"dom-fullscreennavigationui-show\"><code>show</code></dfn>\"\n         </td><td>dimensions of the screen of the output device clamped to allow the user agent to show page navigation controls\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;auto&quot;|auto\" id=\"dom-fullscreennavigationui-auto\"><code>auto</code></dfn>\"\n         </td><td>user-agent defined, but matching one of the above\n      </td></tr></tbody></table>\n      <p>Optionally display a message how the end user can revert this.\n\n </p>"
         },
         {
           "html": "<p>If any of the following conditions are false, then set <var>error</var> to true:\n\n  </p>\n      <ul>\n       <li>\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">This</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a> is <var>pendingDoc</var>.\n\n   </p>\n       </li><li>\n        <p>The <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element-ready-check\" id=\"ref-for-fullscreen-element-ready-check①\">fullscreen element ready check</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> returns true.\n  </p>\n      </li></ul>"
@@ -212,7 +212,7 @@
     {
       "name": "DocumentOrShadowRoot/fullscreenElement",
       "href": "https://fullscreen.spec.whatwg.org/#dom-document-fullscreenelement",
-      "html": "The\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"DocumentOrShadowRoot\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-document-fullscreenelement\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>fullscreenElement</code></dfn>\ngetter steps are:",
+      "html": "The\n<dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"DocumentOrShadowRoot\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-document-fullscreenelement\"><code>fullscreenElement</code></dfn>\ngetter steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -232,7 +232,7 @@
     {
       "name": "collect documents to unfullscreen",
       "href": "https://fullscreen.spec.whatwg.org/#collect-documents-to-unfullscreen",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-documents-to-unfullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">collect documents to unfullscreen</dfn> given <var>doc</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"collect-documents-to-unfullscreen\">collect documents to unfullscreen</dfn> given <var>doc</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -273,7 +273,7 @@
     {
       "name": "exit fullscreen",
       "href": "https://fullscreen.spec.whatwg.org/#exit-fullscreen",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-fullscreen\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">document</a> <var>doc</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"exit-fullscreen\">exit fullscreen</dfn> a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑨\">document</a> <var>doc</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {

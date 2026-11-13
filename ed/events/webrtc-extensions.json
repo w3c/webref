@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "title": "WebRTC Extensions",
+    "url": "https://w3c.github.io/webrtc-extensions/"
+  },
+  "events": [
+    {
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd",
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd"
+      },
+      "type": "icecandidatepairadd",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "RTCIceCandidatePairEvent"
+    },
+    {
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove",
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove"
+      },
+      "type": "icecandidatepairremove",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "RTCIceCandidatePairEvent",
+      "cancelable": false
+    },
+    {
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate",
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate"
+      },
+      "type": "icecandidatepairnominate",
+      "targets": [
+        "RTCIceTransport"
+      ],
+      "interface": "RTCIceCandidatePairEvent",
+      "cancelable": true
+    },
+    {
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange",
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange"
+      },
+      "type": "ssrcchange",
+      "targets": [
+        "RTCRtpReceiver"
+      ],
+      "interface": "Event"
+    },
+    {
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-csrcchange",
+      "src": {
+        "format": "summary table",
+        "href": "https://w3c.github.io/webrtc-extensions/#dfn-csrcchange"
+      },
+      "type": "csrcchange",
+      "targets": [
+        "RTCRtpReceiver"
+      ],
+      "interface": "Event"
+    }
+  ]
+}

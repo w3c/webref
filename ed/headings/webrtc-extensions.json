@@ -1,0 +1,697 @@
+{
+  "spec": {
+    "title": "WebRTC Extensions",
+    "url": "https://w3c.github.io/webrtc-extensions/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webrtc-extensions/#title",
+      "level": 1,
+      "title": "WebRTC Extensions"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webrtc-extensions/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webrtc-extensions/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/webrtc-extensions/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/webrtc-extensions/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "ice-csp",
+      "href": "https://w3c.github.io/webrtc-extensions/#ice-csp",
+      "level": 2,
+      "title": "Filtering ICE candidates with Content-Security-Policy",
+      "alternateIds": [
+        "x4-filtering-ice-candidates-with-content-security-policy"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "ice-csp-modifications",
+      "href": "https://w3c.github.io/webrtc-extensions/#ice-csp-modifications",
+      "level": 3,
+      "title": "Modifications to existing procedures",
+      "alternateIds": [
+        "x4-1-modifications-to-existing-procedures"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "rtp-header-extension-control",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control",
+      "level": 2,
+      "title": "RTP header extension control",
+      "alternateIds": [
+        "x5-rtp-header-extension-control"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "rtp-header-extension-control-transceiver-interface",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-interface",
+      "level": 3,
+      "title": "RTCRtpTransceiver interface extensions",
+      "alternateIds": [
+        "x5-1-rtcrtptransceiver-interface-extensions"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "rtp-header-extension-control-modifications",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-modifications",
+      "level": 3,
+      "title": "Modifications to existing procedures",
+      "alternateIds": [
+        "x5-2-modifications-to-existing-procedures"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "rtp-header-extension-control-transceiver-methods",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-control-transceiver-methods",
+      "level": 3,
+      "title": "Methods",
+      "alternateIds": [
+        "x5-3-methods"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "rtcrtpencodingparameters",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpencodingparameters",
+      "level": 2,
+      "title": "RTCRtpEncodingParameters extensions",
+      "alternateIds": [
+        "x6-rtcrtpencodingparameters-extensions"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "rtcrtpencodingparameters-attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpencodingparameters-attributes",
+      "level": 3,
+      "title": "Dictionary RTCRtpEncodingParameters Members",
+      "alternateIds": [
+        "x6-1-dictionary-rtcrtpencodingparameters-members"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "rtcresolutionrestriction",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcresolutionrestriction",
+      "level": 2,
+      "title": "The RTCResolutionRestriction dictionary.",
+      "alternateIds": [
+        "x7-the-rtcresolutionrestriction-dictionary"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "rtcresolutionrestriction-attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcresolutionrestriction-attributes",
+      "level": 3,
+      "title": "Dictionary RTCResolutionRestriction Members",
+      "alternateIds": [
+        "x7-1-dictionary-rtcresolutionrestriction-members"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "rtcrtpsender-setparameters-keyframe",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe",
+      "level": 2,
+      "title": "RTCRtpSender setParameters() extensions for requesting the generation of a key frame.",
+      "alternateIds": [
+        "x8-rtcrtpsender-setparameters-extensions-for-requesting-the-generation-of-a-key-frame"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "rtcrtpsender-setparameters-keyframe-setparameteroptions-idl",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe-setparameteroptions-idl",
+      "level": 3,
+      "title": "Dictionary RTCSetParameterOptions Members",
+      "alternateIds": [
+        "x8-1-dictionary-rtcsetparameteroptions-members"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "rtcrtpsender-setparameters-keyframe-encodingoptions-idl",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe-encodingoptions-idl",
+      "level": 3,
+      "title": "Dictionary RTCEncodingOptions Members",
+      "alternateIds": [
+        "x8-2-dictionary-rtcencodingoptions-members"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "rtcrtpsender-setparameters-keyframe-interface-extensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpsender-setparameters-keyframe-interface-extensions",
+      "level": 3,
+      "title": "RTCRtpSender setParameters() modifications to existing procedures",
+      "alternateIds": [
+        "x8-3-rtcrtpsender-setparameters-modifications-to-existing-procedures"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "rtcicetransport",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport",
+      "level": 2,
+      "title": "RTCIceTransport extensions",
+      "alternateIds": [
+        "x9-rtcicetransport-extensions"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "rtcicetransport-attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "alternateIds": [
+        "x9-1-attributes"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "rtcicetransport-methods",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-methods",
+      "level": 3,
+      "title": "Methods",
+      "alternateIds": [
+        "x9-2-methods"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "rtcicecandidatepairevent",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent",
+      "level": 3,
+      "title": "RTCIceCandidatePairEvent",
+      "alternateIds": [
+        "x9-3-rtcicecandidatepairevent"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "rtcicecandidatepairevent-constructors",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent-constructors",
+      "level": 4,
+      "title": "Constructors",
+      "alternateIds": [
+        "constructors"
+      ]
+    },
+    {
+      "id": "rtcicecandidatepairevent-attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepairevent-attributes",
+      "level": 4,
+      "title": "Attributes",
+      "alternateIds": [
+        "attributes-0"
+      ]
+    },
+    {
+      "id": "rtcicecandidatepaireventinit",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicecandidatepaireventinit",
+      "level": 4,
+      "title": "Dictionary RTCIceCandidatePairEventInit Members",
+      "alternateIds": [
+        "dictionary-rtcicecandidatepaireventinit-members"
+      ]
+    },
+    {
+      "id": "rtcicetransport-change-pair-state-modifications",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcicetransport-change-pair-state-modifications",
+      "level": 3,
+      "title": "Modifications to existing procedures",
+      "alternateIds": [
+        "x9-4-modifications-to-existing-procedures"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "rtcrtpcontributingsource-extensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-extensions",
+      "level": 2,
+      "title": "10. RTCRtpContributingSource extensions",
+      "alternateIds": [
+        "x10-rtcrtpcontributingsource-extensions"
+      ]
+    },
+    {
+      "id": "rtcrtpcontributingsource-attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpcontributingsource-attributes",
+      "level": 3,
+      "title": "Dictionary RTCRtpContributingSource Members",
+      "alternateIds": [
+        "x10-1-dictionary-rtcrtpcontributingsource-members"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "rtcdatachannel-extensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcdatachannel-extensions",
+      "level": 2,
+      "title": "11. Data Channel Extensions",
+      "alternateIds": [
+        "x11-data-channel-extensions"
+      ]
+    },
+    {
+      "id": "rtcdatachannel-transferable",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcdatachannel-transferable",
+      "level": 3,
+      "title": "Transferable Data Channels",
+      "alternateIds": [
+        "x11-1-transferable-data-channels"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "rtp-header-extension-encryption",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption",
+      "level": 2,
+      "title": "12. RTP Header Encryption",
+      "alternateIds": [
+        "x12-rtp-header-encryption"
+      ]
+    },
+    {
+      "id": "rtp-header-extension-encryption-policy",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtp-header-extension-encryption-policy",
+      "level": 3,
+      "title": "RTCRtpHeaderEncryptionPolicy Enum",
+      "alternateIds": [
+        "x12-1-rtcrtpheaderencryptionpolicy-enum"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "configuration",
+      "href": "https://w3c.github.io/webrtc-extensions/#configuration",
+      "level": 3,
+      "title": "RTCConfiguration extensions",
+      "alternateIds": [
+        "x12-2-rtcconfiguration-extensions"
+      ],
+      "number": "12.2"
+    },
+    {
+      "id": "dictionary-rtcconfiguration-members",
+      "href": "https://w3c.github.io/webrtc-extensions/#dictionary-rtcconfiguration-members",
+      "level": 4,
+      "title": "Dictionary RTCConfiguration Members",
+      "alternateIds": [
+        "x12-2-1-dictionary-rtcconfiguration-members"
+      ],
+      "number": "12.2.1"
+    },
+    {
+      "id": "source-change-event",
+      "href": "https://w3c.github.io/webrtc-extensions/#source-change-event",
+      "level": 2,
+      "title": "13. RTCRtpReceiver extensions",
+      "alternateIds": [
+        "x13-rtcrtpreceiver-extensions"
+      ]
+    },
+    {
+      "id": "attributes",
+      "href": "https://w3c.github.io/webrtc-extensions/#attributes",
+      "level": 3,
+      "title": "Attributes",
+      "alternateIds": [
+        "x13-1-attributes"
+      ],
+      "number": "13.1"
+    },
+    {
+      "id": "disable-hardware",
+      "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware",
+      "level": 2,
+      "title": "14. Disabling hardware acceleration",
+      "alternateIds": [
+        "x14-disabling-hardware-acceleration"
+      ]
+    },
+    {
+      "id": "disable-hardware-decoding",
+      "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-decoding",
+      "level": 3,
+      "title": "RTCRtpReceiver extensions",
+      "alternateIds": [
+        "x14-1-rtcrtpreceiver-extensions"
+      ],
+      "number": "14.1"
+    },
+    {
+      "id": "disable-hardware-encoding",
+      "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-encoding",
+      "level": 3,
+      "title": "RTCRtpSender extensions",
+      "alternateIds": [
+        "x14-2-rtcrtpsender-extensions"
+      ],
+      "number": "14.2"
+    },
+    {
+      "id": "disable-hardware-modifications",
+      "href": "https://w3c.github.io/webrtc-extensions/#disable-hardware-modifications",
+      "level": 3,
+      "title": "Modifications to existing procedures",
+      "alternateIds": [
+        "x14-3-modifications-to-existing-procedures"
+      ],
+      "number": "14.3"
+    },
+    {
+      "id": "always-negotiating-datachannels",
+      "href": "https://w3c.github.io/webrtc-extensions/#always-negotiating-datachannels",
+      "level": 2,
+      "title": "15. Always negotiating data channels",
+      "alternateIds": [
+        "x15-always-negotiating-data-channels"
+      ]
+    },
+    {
+      "id": "always-negotiating-datachannels-configuration",
+      "href": "https://w3c.github.io/webrtc-extensions/#always-negotiating-datachannels-configuration",
+      "level": 3,
+      "title": "RTCConfiguration extensions",
+      "alternateIds": [
+        "x15-1-rtcconfiguration-extensions"
+      ],
+      "number": "15.1"
+    },
+    {
+      "id": "dictionary-rtcconfiguration-members-0",
+      "href": "https://w3c.github.io/webrtc-extensions/#dictionary-rtcconfiguration-members-0",
+      "level": 4,
+      "title": "Dictionary RTCConfiguration Members",
+      "alternateIds": [
+        "x15-1-1-dictionary-rtcconfiguration-members"
+      ],
+      "number": "15.1.1"
+    },
+    {
+      "id": "always-negotiating-datachannels-negotiationneeded-extensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#always-negotiating-datachannels-negotiationneeded-extensions",
+      "level": 3,
+      "title": "Modifications to existing procedures",
+      "alternateIds": [
+        "x15-2-modifications-to-existing-procedures"
+      ],
+      "number": "15.2"
+    },
+    {
+      "id": "always-negotiating-datachannels-interface-extensions",
+      "href": "https://w3c.github.io/webrtc-extensions/#always-negotiating-datachannels-interface-extensions",
+      "level": 3,
+      "title": "JSEP modifications",
+      "alternateIds": [
+        "x15-3-jsep-modifications"
+      ],
+      "number": "15.3"
+    },
+    {
+      "id": "event-summary",
+      "href": "https://w3c.github.io/webrtc-extensions/#event-summary",
+      "level": 2,
+      "title": "16. Event summary",
+      "alternateIds": [
+        "x16-event-summary"
+      ]
+    },
+    {
+      "id": "timestamp-behavior",
+      "href": "https://w3c.github.io/webrtc-extensions/#timestamp-behavior",
+      "level": 2,
+      "title": "17. Timestamp behavior",
+      "alternateIds": [
+        "x17-timestamp-behavior"
+      ]
+    },
+    {
+      "id": "rtcrtpreceiver-timestamps",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcrtpreceiver-timestamps",
+      "level": 3,
+      "title": "RTCRtpReceiver timestamps",
+      "alternateIds": [
+        "x17-1-rtcrtpreceiver-timestamps"
+      ],
+      "number": "17.1"
+    },
+    {
+      "id": "remote-capture-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#remote-capture-timestamp",
+      "level": 4,
+      "title": "Remote capture timestamp",
+      "alternateIds": [
+        "x17-1-1-remote-capture-timestamp"
+      ],
+      "number": "17.1.1"
+    },
+    {
+      "id": "received-rtp-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#received-rtp-timestamp",
+      "level": 4,
+      "title": "Received RTP timestamp",
+      "alternateIds": [
+        "x17-1-2-received-rtp-timestamp"
+      ],
+      "number": "17.1.2"
+    },
+    {
+      "id": "receive-timestamp",
+      "href": "https://w3c.github.io/webrtc-extensions/#receive-timestamp",
+      "level": 4,
+      "title": "Receive timestamp",
+      "alternateIds": [
+        "x17-1-3-receive-timestamp"
+      ],
+      "number": "17.1.3"
+    },
+    {
+      "id": "target-latency",
+      "href": "https://w3c.github.io/webrtc-extensions/#target-latency",
+      "level": 2,
+      "title": "18. RTCConfiguration target latency extension",
+      "alternateIds": [
+        "x18-rtcconfiguration-target-latency-extension"
+      ]
+    },
+    {
+      "id": "rtcconfiguration-target-latency-attribute",
+      "href": "https://w3c.github.io/webrtc-extensions/#rtcconfiguration-target-latency-attribute",
+      "level": 3,
+      "title": "RTCConfiguration target latency extension",
+      "alternateIds": [
+        "x18-1-rtcconfiguration-target-latency-extension"
+      ],
+      "number": "18.1"
+    },
+    {
+      "id": "diagnostic-logging",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging",
+      "level": 2,
+      "title": "19. Diagnostic logging",
+      "alternateIds": [
+        "x19-diagnostic-logging"
+      ]
+    },
+    {
+      "id": "diagnostic-logging-security-privacy",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-security-privacy",
+      "level": 3,
+      "title": "Security and Privacy",
+      "alternateIds": [
+        "x19-1-security-and-privacy"
+      ],
+      "number": "19.1"
+    },
+    {
+      "id": "diagnostic-logging-extensions-peer-connection",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-extensions-peer-connection",
+      "level": 3,
+      "title": "Extensions to the RTCPeerConnection Interface",
+      "alternateIds": [
+        "x19-2-extensions-to-the-rtcpeerconnection-interface"
+      ],
+      "number": "19.2"
+    },
+    {
+      "id": "diagnostic-logging-internal-slots",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-internal-slots",
+      "level": 3,
+      "title": "Internal slots",
+      "alternateIds": [
+        "x19-3-internal-slots"
+      ],
+      "number": "19.3"
+    },
+    {
+      "id": "diagnostic-logging-methods",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-methods",
+      "level": 3,
+      "title": "Methods",
+      "alternateIds": [
+        "x19-4-methods"
+      ],
+      "number": "19.4"
+    },
+    {
+      "id": "diagnostic-logging-options-dictionary",
+      "href": "https://w3c.github.io/webrtc-extensions/#diagnostic-logging-options-dictionary",
+      "level": 3,
+      "title": "Dictionary RTCDiagnosticLoggingOptions members",
+      "alternateIds": [
+        "x19-5-dictionary-rtcdiagnosticloggingoptions-members"
+      ],
+      "number": "19.5"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webrtc-extensions/#security-considerations",
+      "level": 2,
+      "title": "20. Security Considerations",
+      "alternateIds": [
+        "x20-security-considerations"
+      ]
+    },
+    {
+      "id": "impact-on-local-network",
+      "href": "https://w3c.github.io/webrtc-extensions/#impact-on-local-network",
+      "level": 3,
+      "title": "Impact on local network",
+      "alternateIds": [
+        "x20-1-impact-on-local-network"
+      ],
+      "number": "20.1"
+    },
+    {
+      "id": "confidentiality-of-communications",
+      "href": "https://w3c.github.io/webrtc-extensions/#confidentiality-of-communications",
+      "level": 3,
+      "title": "Confidentiality of Communications",
+      "alternateIds": [
+        "x20-2-confidentiality-of-communications"
+      ],
+      "number": "20.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/webrtc-extensions/#privacy-considerations",
+      "level": 2,
+      "title": "21. Privacy Considerations",
+      "alternateIds": [
+        "x21-privacy-considerations"
+      ]
+    },
+    {
+      "id": "revealing-ip-addresses",
+      "href": "https://w3c.github.io/webrtc-extensions/#revealing-ip-addresses",
+      "level": 3,
+      "title": "Revealing IP addresses",
+      "alternateIds": [
+        "x21-1-revealing-ip-addresses"
+      ],
+      "number": "21.1"
+    },
+    {
+      "id": "persistent-information-exposed-by-webrtc",
+      "href": "https://w3c.github.io/webrtc-extensions/#persistent-information-exposed-by-webrtc",
+      "level": 3,
+      "title": "Persistent information exposed by WebRTC",
+      "alternateIds": [
+        "x21-2-persistent-information-exposed-by-webrtc"
+      ],
+      "number": "21.2"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://w3c.github.io/webrtc-extensions/#accessibility-considerations",
+      "level": 2,
+      "title": "22. Accessibility Considerations",
+      "alternateIds": [
+        "x22-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "Acknowledgements",
+      "href": "https://w3c.github.io/webrtc-extensions/#Acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "a-acknowledgements"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webrtc-extensions/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/webrtc-extensions/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b-1-normative-references"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/webrtc-extensions/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "b-2-informative-references"
+      ],
+      "number": "B.2"
+    }
+  ]
+}

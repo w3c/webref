@@ -1720,12 +1720,9 @@
     {
       "name": "resolve",
       "href": "https://webidl.spec.whatwg.org/#resolve",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve\">resolve</dfn> a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑦\">Promise</a>&lt;<var>T</var>&gt;</code> <var>p</var> with <var>x</var> (a\n    value of type <var>T</var>), perform the following steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"resolve\">resolve</dfn> a <code><a class=\"idl-code\" data-link-type=\"interface\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise⑦\">Promise</a>&lt;<var>T</var>&gt;</code> <var>p</var>, optionally\n    with a value of type <var>T</var> <var>x</var> (default <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①③\">undefined</a></code>):",
       "rationale": ".algorithm",
       "steps": [
-        {
-          "html": "<p>If <var>x</var> is not given, then let it be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined①③\">undefined</a></code> value.</p>"
-        },
         {
           "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-convert-idl-to-javascript-value\" id=\"ref-for-dfn-convert-idl-to-javascript-value③⑧\">converting</a> <var>x</var> to a\nJavaScript value.</p>"
         },
@@ -6739,14 +6736,11 @@
     {
       "name": "to call a user object's operation",
       "href": "https://webidl.spec.whatwg.org/#call-a-user-objects-operation",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"call-a-user-objects-operation\">call a user object’s operation</dfn>,\n    given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-interface\" id=\"ref-for-idl-callback-interface①①\">callback interface type</a> value <var>value</var>,\n    operation name <var>opName</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list①\">Web IDL arguments list</a> <var>args</var>, and optional\n    <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-callback-this-value\">callback this value</dfn> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"call-a-user-objects-operation\">call a user object’s operation</dfn>,\n    given a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-interface\" id=\"ref-for-idl-callback-interface①①\">callback interface type</a> value <var>value</var>,\n    operation name <var>opName</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list①\">Web IDL arguments list</a> <var>args</var>, and an optional\n    <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-callback-this-value\">callback this value</dfn> <var>thisArg</var> (default\n    <emu-val>undefined</emu-val>), perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>completion</var> be an uninitialized variable.</p>"
-        },
-        {
-          "html": "<p>If <var>thisArg</var> was not given, let <var>thisArg</var> be <emu-val>undefined</emu-val>.</p>"
         },
         {
           "html": "<p>Let <var>O</var> be the JavaScript object corresponding to <var>value</var>.</p>"
@@ -6857,14 +6851,11 @@
     {
       "name": "invoke",
       "href": "https://webidl.spec.whatwg.org/#invoke-a-callback-function",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invoke-a-callback-function\">invoke</dfn> a\n    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-function\" id=\"ref-for-idl-callback-function⑤\">callback function type</a> value <var>callable</var> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list②\">Web IDL arguments list</a> <var>args</var>,\n    exception behavior <var>exceptionBehavior</var> (either \"<code>report</code>\" or \"<code>rethrow</code>\"),\n    and an optional <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value①\">callback this value</a> <var>thisArg</var>,\n    perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"invoke-a-callback-function\">invoke</dfn> a\n    <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-callback-function\" id=\"ref-for-idl-callback-function⑤\">callback function type</a> value <var>callable</var> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#web-idl-arguments-list\" id=\"ref-for-web-idl-arguments-list②\">Web IDL arguments list</a> <var>args</var>,\n    exception behavior <var>exceptionBehavior</var> (either \"<code>report</code>\" or \"<code>rethrow</code>\"),\n    and an optional <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value①\">callback this value</a> <var>thisArg</var> (default\n    <emu-val>undefined</emu-val>), perform the following steps.\n    These steps will either return an IDL value or throw an exception.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>completion</var> be an uninitialized variable.</p>"
-        },
-        {
-          "html": "<p>If <var>thisArg</var> was not given, let <var>thisArg</var> be <emu-val>undefined</emu-val>.</p>"
         },
         {
           "html": "<p>Let <var>F</var> be the JavaScript object corresponding to <var>callable</var>.</p>"
