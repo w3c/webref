@@ -12,6 +12,20 @@
   "extended": [
     {
       "spec": {
+        "title": "WebRTC Extensions",
+        "url": "https://w3c.github.io/webrtc-extensions/"
+      },
+      "fragment": "partial interface RTCRtpReceiver {\n  attribute EventHandler onssrcchange;\n  attribute EventHandler oncsrcchange;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC Extensions",
+        "url": "https://w3c.github.io/webrtc-extensions/"
+      },
+      "fragment": "partial interface RTCRtpReceiver {\n  static undefined disableHardwareDecoding();\n};"
+    },
+    {
+      "spec": {
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },

@@ -28,6 +28,11 @@ partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onnotificationclose;
 };
 
+// Source: window.browser (https://w3c.github.io/webextensions/specification/window.browser.html)
+partial interface ServiceWorkerGlobalScope {
+  attribute Browser browser;
+};
+
 // Source: Background Fetch (https://wicg.github.io/background-fetch/)
 partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onbackgroundfetchsuccess;

@@ -5,8 +5,12 @@
   },
   "links": {
     "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema": {},
       "https://infra.spec.whatwg.org/": {
         "specShortname": "infra"
+      },
+      "https://tc39.es/ecma262/multipage/": {
+        "specShortname": "ecmascript"
       },
       "https://untp.unece.org/docs/specification/DigitalIdentityAnchor/": {},
       "https://url.spec.whatwg.org/": {
@@ -21,6 +25,7 @@
       },
       "https://www.rfc-editor.org/info/rfc5280/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
+      "https://www.rfc-editor.org/info/rfc8259/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/cid-1.0/": {
         "specShortname": "cid-1.0"
@@ -36,6 +41,8 @@
           "validity-period",
           "verification",
           "validation",
+          "problem-details",
+          "CRYPTOGRAPHIC_SECURITY_ERROR",
           "security-considerations",
           "privacy-considerations"
         ],
@@ -78,7 +85,9 @@
     "autolinks": {
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "string"
+          "string",
+          "ordered-map",
+          "boolean"
         ],
         "specShortname": "infra"
       },

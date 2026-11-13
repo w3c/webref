@@ -26,7 +26,50 @@
           "html": "Set the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilersample-stackid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilersample-stackid-1\">ProfilerSample.stackId</a> property of <var>sample</var> to the result of the <a href=\"https://wicg.github.io/js-self-profiling/#dfn-get-a-stack-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-get-a-stack-id-1\">get a stack ID</a> algorithm on <var>stack</var>."
         },
         {
+          "html": "Let <var>marker</var> be the result of running the <a href=\"https://wicg.github.io/js-self-profiling/#dfn-capture-a-marker\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-capture-a-marker-1\">capture a marker</a> algorithm given the profiling session's associated <a data-cite=\"HTML5#environment-settings-object\" href=\"https://www.w3.org/TR/html5/#environment-settings-object\">environment settings object</a>."
+        },
+        {
+          "html": "If <var>marker</var> is not null, set the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilersample-marker\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilersample-marker-1\">ProfilerSample.marker</a> property of <var>sample</var> to <var>marker</var>."
+        },
+        {
           "html": "Add <var>sample</var> to the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace-samples\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-samples-2\">ProfilerTrace.samples</a> associated with the session's <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilertrace\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilertrace-2\"><code>ProfilerTrace</code></a>."
+        }
+      ]
+    },
+    {
+      "name": "capture a marker",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-capture-a-marker",
+      "html": "To <dfn id=\"dfn-capture-a-marker\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">capture a marker</dfn> given an <a data-cite=\"HTML5#environment-settings-object\" href=\"https://www.w3.org/TR/html5/#environment-settings-object\">environment settings object</a> <var>settings</var>, perform the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>candidateMarker</var> be the <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilermarker\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilermarker-1\"><code>ProfilerMarker</code></a> value that best describes the top-level work the user agent was performing on the profiling session's <a data-cite=\"!ECMA-262#agent\" data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/#agent\">agent</a> when the sample was taken, or null if none applies."
+        },
+        {
+          "html": "If <var>candidateMarker</var> is null, return null."
+        },
+        {
+          "html": "If the work described by <var>candidateMarker</var> was performed for a specific document that is not <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/browsers.html\" data-cite-frag=\"same-origin\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\">same origin</a> with the <a data-cite=\"HTML5#concept-settings-object-origin\" href=\"https://www.w3.org/TR/html5/#concept-settings-object-origin\">origin</a> of <var>settings</var>, return null."
+        },
+        {
+          "html": "Return the result of running <a href=\"https://wicg.github.io/js-self-profiling/#dfn-filter-a-marker\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-filter-a-marker-1\">filter a marker</a> given <var>candidateMarker</var> and <var>settings</var>."
+        }
+      ]
+    },
+    {
+      "name": "filter a marker",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-filter-a-marker",
+      "html": "To <dfn id=\"dfn-filter-a-marker\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">filter a marker</dfn> given a <a href=\"https://wicg.github.io/js-self-profiling/#dom-profilermarker\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profilermarker-3\"><code>ProfilerMarker</code></a> <var>marker</var> and an <a data-cite=\"HTML5#environment-settings-object\" href=\"https://www.w3.org/TR/html5/#environment-settings-object\">environment settings object</a> <var>settings</var>, perform the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>settings</var>' <a data-cite=\"HTML5#concept-settings-object-cross-origin-isolated-capability\" href=\"https://www.w3.org/TR/html5/#concept-settings-object-cross-origin-isolated-capability\">cross-origin isolated capability</a> is true, return <var>marker</var>."
+        },
+        {
+          "html": "If <var>marker</var> is <code>\"style\"</code> or <code>\"layout\"</code>, return <var>marker</var>."
+        },
+        {
+          "html": "Return null."
         }
       ]
     },
@@ -227,7 +270,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\">state</a> of <var data-type=\"profiling session\">session</var> is <code>started</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-take-a-sample\" class=\"internalDFN\" id=\"ref-for-dfn-take-a-sample-7\">take a sample</a> with <var data-type=\"profiling session\">session</var>."
+              "html": "If the <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-1\">state</a> of <var data-type=\"profiling session\">session</var> is <code>started</code>, <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/js-self-profiling/#dfn-take-a-sample\" class=\"internalDFN\" id=\"ref-for-dfn-take-a-sample-8\">take a sample</a> with <var data-type=\"profiling session\">session</var>."
             }
           ]
         },

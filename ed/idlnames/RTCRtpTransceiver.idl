@@ -9,3 +9,11 @@ interface RTCRtpTransceiver {
   undefined stop();
   undefined setCodecPreferences(sequence<RTCRtpCodec> codecs);
 };
+
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial interface RTCRtpTransceiver {
+  sequence<RTCRtpHeaderExtensionCapability> getHeaderExtensionsToNegotiate();
+  undefined setHeaderExtensionsToNegotiate(
+      sequence<RTCRtpHeaderExtensionCapability> extensions);
+  sequence<RTCRtpHeaderExtensionCapability> getNegotiatedHeaderExtensions();
+};

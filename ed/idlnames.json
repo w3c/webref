@@ -134,6 +134,26 @@
     "parsed": "idlnamesparsed/AesKeyGenParams.json",
     "type": "dictionary"
   },
+  "Alarm": {
+    "fragment": "idlnames/Alarm.idl",
+    "parsed": "idlnamesparsed/Alarm.json",
+    "type": "dictionary"
+  },
+  "AlarmCreateInfo": {
+    "fragment": "idlnames/AlarmCreateInfo.idl",
+    "parsed": "idlnamesparsed/AlarmCreateInfo.json",
+    "type": "dictionary"
+  },
+  "AlarmListener": {
+    "fragment": "idlnames/AlarmListener.idl",
+    "parsed": "idlnamesparsed/AlarmListener.json",
+    "type": "callback"
+  },
+  "Alarms": {
+    "fragment": "idlnames/Alarms.idl",
+    "parsed": "idlnamesparsed/Alarms.json",
+    "type": "interface"
+  },
   "Algorithm": {
     "fragment": "idlnames/Algorithm.idl",
     "parsed": "idlnamesparsed/Algorithm.json",
@@ -762,7 +782,7 @@
   "AutofillValueEntry": {
     "fragment": "idlnames/AutofillValueEntry.idl",
     "parsed": "idlnamesparsed/AutofillValueEntry.json",
-    "type": "typedef"
+    "type": "dictionary"
   },
   "AutomationRate": {
     "fragment": "idlnames/AutomationRate.idl",
@@ -1172,6 +1192,11 @@
   "BroadcastChannel": {
     "fragment": "idlnames/BroadcastChannel.idl",
     "parsed": "idlnamesparsed/BroadcastChannel.json",
+    "type": "interface"
+  },
+  "Browser": {
+    "fragment": "idlnames/Browser.idl",
+    "parsed": "idlnamesparsed/Browser.json",
     "type": "interface"
   },
   "BrowserBoundSignature": {
@@ -1954,6 +1979,16 @@
     "parsed": "idlnamesparsed/CanvasTextRendering.json",
     "type": "enum"
   },
+  "CanvasToneMapping": {
+    "fragment": "idlnames/CanvasToneMapping.idl",
+    "parsed": "idlnamesparsed/CanvasToneMapping.json",
+    "type": "dictionary"
+  },
+  "CanvasToneMappingMode": {
+    "fragment": "idlnames/CanvasToneMappingMode.idl",
+    "parsed": "idlnamesparsed/CanvasToneMappingMode.json",
+    "type": "enum"
+  },
   "CanvasTransform": {
     "fragment": "idlnames/CanvasTransform.idl",
     "parsed": "idlnamesparsed/CanvasTransform.json",
@@ -2413,6 +2448,11 @@
     "fragment": "idlnames/ContactsSelectOptions.idl",
     "parsed": "idlnamesparsed/ContactsSelectOptions.json",
     "type": "dictionary"
+  },
+  "ContainerQueryList": {
+    "fragment": "idlnames/ContainerQueryList.idl",
+    "parsed": "idlnamesparsed/ContainerQueryList.json",
+    "type": "interface"
   },
   "ContentCategory": {
     "fragment": "idlnames/ContentCategory.idl",
@@ -4869,11 +4909,6 @@
     "parsed": "idlnamesparsed/GamepadEventInit.json",
     "type": "dictionary"
   },
-  "GamepadHand": {
-    "fragment": "idlnames/GamepadHand.idl",
-    "parsed": "idlnamesparsed/GamepadHand.json",
-    "type": "enum"
-  },
   "GamepadHapticActuator": {
     "fragment": "idlnames/GamepadHapticActuator.idl",
     "parsed": "idlnamesparsed/GamepadHapticActuator.json",
@@ -4893,11 +4928,6 @@
     "fragment": "idlnames/GamepadMappingType.idl",
     "parsed": "idlnamesparsed/GamepadMappingType.json",
     "type": "enum"
-  },
-  "GamepadPose": {
-    "fragment": "idlnames/GamepadPose.idl",
-    "parsed": "idlnamesparsed/GamepadPose.json",
-    "type": "interface"
   },
   "GamepadTouch": {
     "fragment": "idlnames/GamepadTouch.idl",
@@ -7164,6 +7194,11 @@
     "parsed": "idlnamesparsed/MagnetometerSensorOptions.json",
     "type": "dictionary"
   },
+  "MakeupGainOptions": {
+    "fragment": "idlnames/MakeupGainOptions.idl",
+    "parsed": "idlnamesparsed/MakeupGainOptions.json",
+    "type": "enum"
+  },
   "ManagedMediaSource": {
     "fragment": "idlnames/ManagedMediaSource.idl",
     "parsed": "idlnamesparsed/ManagedMediaSource.json",
@@ -8009,6 +8044,11 @@
     "parsed": "idlnamesparsed/NavigatorCrossOriginStorage.json",
     "type": "interface mixin"
   },
+  "NavigatorDeviceMemory": {
+    "fragment": "idlnames/NavigatorDeviceMemory.idl",
+    "parsed": "idlnamesparsed/NavigatorDeviceMemory.json",
+    "type": "interface mixin"
+  },
   "NavigatorGPU": {
     "fragment": "idlnames/NavigatorGPU.idl",
     "parsed": "idlnamesparsed/NavigatorGPU.json",
@@ -8112,6 +8152,11 @@
   "NodeList": {
     "fragment": "idlnames/NodeList.idl",
     "parsed": "idlnamesparsed/NodeList.json",
+    "type": "interface"
+  },
+  "NodeRange": {
+    "fragment": "idlnames/NodeRange.idl",
+    "parsed": "idlnamesparsed/NodeRange.json",
     "type": "interface"
   },
   "NonDocumentTypeChildNode": {
@@ -8323,6 +8368,11 @@
     "fragment": "idlnames/OffscreenRenderingContextId.idl",
     "parsed": "idlnamesparsed/OffscreenRenderingContextId.json",
     "type": "enum"
+  },
+  "OnAlarmEvent": {
+    "fragment": "idlnames/OnAlarmEvent.idl",
+    "parsed": "idlnamesparsed/OnAlarmEvent.json",
+    "type": "interface"
   },
   "OnBeforeUnloadEventHandler": {
     "fragment": "idlnames/OnBeforeUnloadEventHandler.idl",
@@ -8722,6 +8772,11 @@
   "PerformanceLongAnimationFrameTiming": {
     "fragment": "idlnames/PerformanceLongAnimationFrameTiming.idl",
     "parsed": "idlnamesparsed/PerformanceLongAnimationFrameTiming.json",
+    "type": "interface"
+  },
+  "PerformanceLongTaskTiming": {
+    "fragment": "idlnames/PerformanceLongTaskTiming.idl",
+    "parsed": "idlnamesparsed/PerformanceLongTaskTiming.json",
     "type": "interface"
   },
   "PerformanceMark": {
@@ -9174,6 +9229,11 @@
     "parsed": "idlnamesparsed/ProfilerInitOptions.json",
     "type": "dictionary"
   },
+  "ProfilerMarker": {
+    "fragment": "idlnames/ProfilerMarker.idl",
+    "parsed": "idlnamesparsed/ProfilerMarker.json",
+    "type": "enum"
+  },
   "ProfilerResource": {
     "fragment": "idlnames/ProfilerResource.idl",
     "parsed": "idlnamesparsed/ProfilerResource.json",
@@ -9494,6 +9554,11 @@
     "parsed": "idlnamesparsed/RTCConfiguration.json",
     "type": "dictionary"
   },
+  "RTCConfigurationTargetLatency": {
+    "fragment": "idlnames/RTCConfigurationTargetLatency.idl",
+    "parsed": "idlnamesparsed/RTCConfigurationTargetLatency.json",
+    "type": "enum"
+  },
   "RTCDTMFSender": {
     "fragment": "idlnames/RTCDTMFSender.idl",
     "parsed": "idlnamesparsed/RTCDTMFSender.json",
@@ -9604,6 +9669,11 @@
     "parsed": "idlnamesparsed/RTCEncodedVideoFrameOptions.json",
     "type": "dictionary"
   },
+  "RTCEncodingOptions": {
+    "fragment": "idlnames/RTCEncodingOptions.idl",
+    "parsed": "idlnamesparsed/RTCEncodingOptions.json",
+    "type": "dictionary"
+  },
   "RTCError": {
     "fragment": "idlnames/RTCError.idl",
     "parsed": "idlnamesparsed/RTCError.json",
@@ -9648,6 +9718,16 @@
     "fragment": "idlnames/RTCIceCandidatePair.idl",
     "parsed": "idlnamesparsed/RTCIceCandidatePair.json",
     "type": "interface"
+  },
+  "RTCIceCandidatePairEvent": {
+    "fragment": "idlnames/RTCIceCandidatePairEvent.idl",
+    "parsed": "idlnamesparsed/RTCIceCandidatePairEvent.json",
+    "type": "interface"
+  },
+  "RTCIceCandidatePairEventInit": {
+    "fragment": "idlnames/RTCIceCandidatePairEventInit.idl",
+    "parsed": "idlnamesparsed/RTCIceCandidatePairEventInit.json",
+    "type": "dictionary"
   },
   "RTCIceCandidatePairStats": {
     "fragment": "idlnames/RTCIceCandidatePairStats.idl",
@@ -9874,6 +9954,11 @@
     "parsed": "idlnamesparsed/RTCRemoteOutboundRtpStreamStats.json",
     "type": "dictionary"
   },
+  "RTCResolutionRestriction": {
+    "fragment": "idlnames/RTCResolutionRestriction.idl",
+    "parsed": "idlnamesparsed/RTCResolutionRestriction.json",
+    "type": "dictionary"
+  },
   "RTCRtcpMuxPolicy": {
     "fragment": "idlnames/RTCRtcpMuxPolicy.idl",
     "parsed": "idlnamesparsed/RTCRtcpMuxPolicy.json",
@@ -9913,6 +9998,11 @@
     "fragment": "idlnames/RTCRtpEncodingParameters.idl",
     "parsed": "idlnamesparsed/RTCRtpEncodingParameters.json",
     "type": "dictionary"
+  },
+  "RTCRtpHeaderEncryptionPolicy": {
+    "fragment": "idlnames/RTCRtpHeaderEncryptionPolicy.idl",
+    "parsed": "idlnamesparsed/RTCRtpHeaderEncryptionPolicy.json",
+    "type": "enum"
   },
   "RTCRtpHeaderExtensionCapability": {
     "fragment": "idlnames/RTCRtpHeaderExtensionCapability.idl",
@@ -11944,6 +12034,11 @@
     "parsed": "idlnamesparsed/TagType.json",
     "type": "dictionary"
   },
+  "TaskAttributionTiming": {
+    "fragment": "idlnames/TaskAttributionTiming.idl",
+    "parsed": "idlnamesparsed/TaskAttributionTiming.json",
+    "type": "interface"
+  },
   "TaskController": {
     "fragment": "idlnames/TaskController.idl",
     "parsed": "idlnamesparsed/TaskController.json",
@@ -13504,6 +13599,11 @@
     "parsed": "idlnamesparsed/WorkletOptions.json",
     "type": "dictionary"
   },
+  "WorkletPerformance": {
+    "fragment": "idlnames/WorkletPerformance.idl",
+    "parsed": "idlnamesparsed/WorkletPerformance.json",
+    "type": "interface"
+  },
   "WritableStream": {
     "fragment": "idlnames/WritableStream.idl",
     "parsed": "idlnamesparsed/WritableStream.json",
@@ -13813,6 +13913,16 @@
     "fragment": "idlnames/XRHandJoint.idl",
     "parsed": "idlnamesparsed/XRHandJoint.json",
     "type": "enum"
+  },
+  "XRHandTrackingFrequencyHint": {
+    "fragment": "idlnames/XRHandTrackingFrequencyHint.idl",
+    "parsed": "idlnamesparsed/XRHandTrackingFrequencyHint.json",
+    "type": "enum"
+  },
+  "XRHandTrackingStateInit": {
+    "fragment": "idlnames/XRHandTrackingStateInit.idl",
+    "parsed": "idlnamesparsed/XRHandTrackingStateInit.json",
+    "type": "dictionary"
   },
   "XRHandedness": {
     "fragment": "idlnames/XRHandedness.idl",

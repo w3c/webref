@@ -9,7 +9,15 @@
     "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long renderQuantumSize;\n    readonly attribute MessagePort port;\n};",
     "href": "https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "High Resolution Time",
+        "url": "https://www.w3.org/TR/hr-time-3/"
+      },
+      "fragment": "partial interface AudioWorkletGlobalScope {\n  [Replaceable] readonly attribute WorkletPerformance performance;\n};"
+    }
+  ],
   "inheritance": {
     "name": "WorkletGlobalScope",
     "type": "interface",

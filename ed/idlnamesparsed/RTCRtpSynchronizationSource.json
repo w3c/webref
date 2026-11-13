@@ -21,7 +21,15 @@
       "fragment": "dictionary RTCRtpContributingSource {\n  required DOMHighResTimeStamp timestamp;\n  required unsigned long source;\n  double audioLevel;\n  required unsigned long rtpTimestamp;\n};",
       "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpcontributingsource"
     },
-    "extended": [],
+    "extended": [
+      {
+        "spec": {
+          "title": "WebRTC Extensions",
+          "url": "https://w3c.github.io/webrtc-extensions/"
+        },
+        "fragment": "partial dictionary RTCRtpContributingSource {\n  DOMHighResTimeStamp captureTimestamp;\n  DOMHighResTimeStamp senderCaptureTimeOffset;\n};"
+      }
+    ],
     "inheritance": null,
     "includes": []
   },

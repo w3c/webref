@@ -9,3 +9,8 @@ interface AudioWorkletGlobalScope : WorkletGlobalScope {
     readonly attribute unsigned long renderQuantumSize;
     readonly attribute MessagePort port;
 };
+
+// Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
+partial interface AudioWorkletGlobalScope {
+  [Replaceable] readonly attribute WorkletPerformance performance;
+};

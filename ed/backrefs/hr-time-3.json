@@ -111,7 +111,8 @@
       "href": "https://w3c.github.io/hr-time/#dfn-moment",
       "linkingText": [
         "moment",
-        "coarsened moment"
+        "coarsened moment",
+        "coarsened moments"
       ],
       "type": "dfn",
       "for": [],
@@ -327,6 +328,11 @@
           "shortname": "html",
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "shortname": "longtasks",
+          "title": "Long Tasks API",
+          "url": "https://wicg.github.io/longtasks/"
         },
         {
           "shortname": "long-animation-frames",
@@ -601,11 +607,6 @@
           "url": "https://wicg.github.io/capability-delegation/spec.html"
         },
         {
-          "shortname": "handwriting-recognition",
-          "title": "Handwriting Recognition API",
-          "url": "https://wicg.github.io/handwriting-recognition/"
-        },
-        {
           "shortname": "storage-buckets",
           "title": "Storage Buckets API",
           "url": "https://wicg.github.io/storage-buckets/"
@@ -656,6 +657,16 @@
           "shortname": "client-hints-infrastructure",
           "title": "Client Hints Infrastructure",
           "url": "https://wicg.github.io/client-hints-infrastructure/"
+        },
+        {
+          "shortname": "handwriting-recognition",
+          "title": "Handwriting Recognition API",
+          "url": "https://wicg.github.io/handwriting-recognition/"
+        },
+        {
+          "shortname": "layout-instability",
+          "title": "Layout Instability API",
+          "url": "https://wicg.github.io/layout-instability/"
         },
         {
           "shortname": "prefetch",
@@ -775,7 +786,7 @@
       "id": "sec-performance",
       "href": "https://w3c.github.io/hr-time/#sec-performance",
       "linkingText": [
-        "The Performance interface"
+        "The PerformanceInfo about the 'Performance' reference.#dom-performancePossible linking syntaxes:[=Performance=][=Performance/Performance=] interface"
       ],
       "type": "dfn",
       "for": [
@@ -854,7 +865,8 @@
       ],
       "type": "method",
       "for": [
-        "Performance"
+        "Performance",
+        "WorkletPerformance"
       ],
       "access": "public",
       "referencedBy": [
@@ -891,25 +903,6 @@
           "shortname": "webrtc-encoded-transform",
           "title": "WebRTC Encoded Transform",
           "url": "https://w3c.github.io/webrtc-encoded-transform/"
-        }
-      ]
-    },
-    {
-      "id": "the-performance-attr",
-      "href": "https://w3c.github.io/hr-time/#the-performance-attr",
-      "linkingText": [
-        "performance"
-      ],
-      "type": "attribute",
-      "for": [
-        "WindowOrWorkerGlobalScope"
-      ],
-      "access": "public",
-      "referencedBy": [
-        {
-          "shortname": "user-timing",
-          "title": "User Timing",
-          "url": "https://w3c.github.io/user-timing/"
         }
       ]
     }

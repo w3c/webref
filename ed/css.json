@@ -203,7 +203,7 @@
           "syntax": "<length>"
         }
       ],
-      "syntax": "@container <container-condition># { <rule-list> }",
+      "syntax": "@container <container-query-list> { <rule-list> }",
       "extended": []
     },
     {
@@ -519,7 +519,7 @@
           "syntax": "<declaration-value>?"
         }
       ],
-      "syntax": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+      "syntax": "@function <function-token> <function-parameter>#? ','? ) [ returns <css-type> ]? { <declaration-rule-list> }",
       "extended": []
     },
     {
@@ -789,6 +789,13 @@
           "syntax": "none | coarse | fine"
         },
         {
+          "name": "prefers-bold-text",
+          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-bold-text",
+          "for": "@media",
+          "type": "discrete",
+          "syntax": "no-preference | bold"
+        },
+        {
           "name": "prefers-color-scheme",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme",
           "for": "@media",
@@ -908,7 +915,7 @@
       "name": "@mixin",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
       "descriptors": [],
-      "syntax": "@mixin [<function-token> <function-parameter>#? ) | <ident-token> ] { <block-contents> }",
+      "syntax": "@mixin [<function-token> <function-parameter>#? ','? ) | <ident-token> ] { <block-contents> }",
       "extended": []
     },
     {
@@ -1027,7 +1034,7 @@
           "syntax": "<string>"
         }
       ],
-      "syntax": "@property <custom-property-name># { <declaration-list> }",
+      "syntax": "@property <custom-property-name># { <declaration-list> } | @property <custom-property-name> <css-type>? [: <declaration-value>? ]? ;",
       "extended": []
     },
     {
@@ -1301,7 +1308,7 @@
     {
       "name": "calc-size()",
       "prose": "The calc-size() function allows math and transition/animation to be performed on these sizes in a safe, well-defined way. Its syntax is as follows:",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#funcdef-calc-size",
       "syntax": "calc-size( <calc-size-basis>, <calc-sum> )",
       "extended": []
     },
@@ -1828,7 +1835,7 @@
       "name": "param()",
       "prose": "All three methods of setting link parameters share the same syntax for defining a parameter, using the param() function:",
       "href": "https://drafts.csswg.org/css-link-params-1/#funcdef-param",
-      "syntax": "param( <param-spec> , <declaration-value>? )",
+      "syntax": "param( <param-spec> [ ':' <declaration-value>? ]? )",
       "extended": []
     },
     {
@@ -3163,7 +3170,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "an RGBA color",
+      "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "media": "visual",
@@ -3217,7 +3224,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "an RGBA color",
+      "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "media": "visual",
@@ -6501,7 +6508,7 @@
         "color-interpolation",
         "colorInterpolation"
       ],
-      "syntax": "auto | sRGB | linearRGB",
+      "syntax": "auto | sRGB | linearRGB | <color-interpolation-method>",
       "extended": []
     },
     {
@@ -10127,7 +10134,7 @@
     },
     {
       "name": "interpolate-size",
-      "href": "https://drafts.csswg.org/css-values-5/#propdef-interpolate-size",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-interpolate-size",
       "initial": "numeric-only",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -10302,7 +10309,7 @@
         "block-ellipsis",
         "continue"
       ],
-      "syntax": "none | [<'max-lines'> || <'block-ellipsis'>] -webkit-legacy?",
+      "syntax": "none | [<integer [1,∞]> || auto || <block-ellipsis>] -webkit-legacy?",
       "extended": []
     },
     {
@@ -11290,7 +11297,7 @@
         "max-lines",
         "maxLines"
       ],
-      "syntax": "auto || <integer [1,∞]>",
+      "syntax": "<integer [1,∞]> || auto",
       "extended": []
     },
     {
@@ -11795,14 +11802,14 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length",
+      "computedValue": "absolute length or inset.",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "styleDeclaration": [
         "outline-offset",
         "outlineOffset"
       ],
-      "syntax": "<length>",
+      "syntax": "<length> | inset",
       "extended": []
     },
     {
@@ -12992,7 +12999,7 @@
       "styleDeclaration": [
         "r"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<length-percentage [0,∞]>",
       "extended": []
     },
     {
@@ -13616,7 +13623,8 @@
         "ruleInsetCap"
       ],
       "longhands": [
-        "column-rule-inset-cap"
+        "column-rule-inset-cap",
+        "row-rule-inset-cap"
       ],
       "syntax": "<'column-rule-inset-cap'>",
       "extended": []
@@ -13657,7 +13665,8 @@
         "ruleInsetJunction"
       ],
       "longhands": [
-        "column-rule-inset-junction"
+        "column-rule-inset-junction",
+        "row-rule-inset-junction"
       ],
       "syntax": "<'column-rule-inset-junction'>",
       "extended": []
@@ -13736,7 +13745,8 @@
         "ruleVisibilityItems"
       ],
       "longhands": [
-        "column-rule-visibility-items"
+        "column-rule-visibility-items",
+        "row-rule-visibility-items"
       ],
       "syntax": "<'column-rule-visibility-items'>",
       "extended": []
@@ -13775,7 +13785,7 @@
       "styleDeclaration": [
         "rx"
       ],
-      "syntax": "<length-percentage> | auto",
+      "syntax": "<length-percentage [0,∞]> | auto",
       "extended": []
     },
     {
@@ -13791,7 +13801,7 @@
       "styleDeclaration": [
         "ry"
       ],
-      "syntax": "<length-percentage> | auto",
+      "syntax": "<length-percentage [0,∞]> | auto",
       "extended": []
     },
     {
@@ -15763,7 +15773,7 @@
       "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "specified keyword(s)",
+      "computedValue": "the keyword auto, the keyword trim-all, or three keywords, one per controlled position (start, adjacent, end)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
@@ -17052,6 +17062,12 @@
     }
   ],
   "selectors": [
+    {
+      "name": "::-webkit-input-placeholder",
+      "href": "https://compat.spec.whatwg.org/#selectordef--webkit-input-placeholder",
+      "syntax": "::-webkit-input-placeholder",
+      "extended": []
+    },
     {
       "name": "::after",
       "prose": "Represents a styleable child pseudo-element immediately after the originating element’s actual content.",
@@ -18580,7 +18596,7 @@
     },
     {
       "name": "calc-size-basis",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
+      "href": "https://drafts.csswg.org/css-sizing-4/#typedef-calc-size-basis",
       "syntax": "[ <size-keyword> | <calc-sum> | <calc-size()> | any ]",
       "extended": []
     },
@@ -18836,6 +18852,12 @@
       "extended": []
     },
     {
+      "name": "container-query-list",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-container-query-list",
+      "syntax": "<container-condition>#",
+      "extended": []
+    },
+    {
       "name": "content-distribution",
       "href": "https://drafts.csswg.org/css-align-3/#typedef-content-distribution",
       "syntax": "space-between | space-around | space-evenly | stretch",
@@ -19010,8 +19032,8 @@
     },
     {
       "name": "dasharray",
+      "prose": "<dasharray>",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#DataTypeDasharray",
-      "syntax": "[ [ <length-percentage> | <number> ]+ ]#",
       "extended": []
     },
     {
@@ -19068,7 +19090,7 @@
     {
       "name": "default-value",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-default-value",
-      "syntax": "<declaration-value>",
+      "syntax": "<declaration-value>?",
       "extended": []
     },
     {
@@ -19922,8 +19944,8 @@
     },
     {
       "name": "marker-ref",
+      "prose": "<marker-ref>",
       "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#DataTypeMarkerRef",
-      "syntax": "<url>",
       "extended": []
     },
     {
@@ -20933,7 +20955,7 @@
       ],
       "name": "size-keyword",
       "prose": "Indicates that the calc-size() is basing its size off of the specified keyword. Represents any sizing keywords allowed in the context where the function is used. For example, in width, it matches auto, min-content, stretch, etc. Also allows any related sizing functions, like the fit-content() function in width/etc., which is a variation of the fit-content keyword. For all purposes other than actually resolving the size, the calc-size() acts like this keyword. The calc-size calculation will use the corresponding size as the value of its size keyword.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-size-keyword",
+      "href": "https://drafts.csswg.org/css-sizing-4/#typedef-calc-size-size-keyword",
       "extended": []
     },
     {
@@ -20972,7 +20994,7 @@
     {
       "name": "spacing-trim",
       "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
-      "syntax": "space-all | normal | space-first | trim-start | trim-both | trim-all",
+      "syntax": "[ trim-start | space-start | space-first ] || [ trim-adjacent | space-adjacent ] || [ trim-end | space-end | allow-end ] | trim-both | space-all | trim-all",
       "extended": []
     },
     {

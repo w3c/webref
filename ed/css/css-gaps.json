@@ -96,7 +96,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single continuous decoration is painted from one end of the gap to the other.",
+          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single gap decoration segment spans from one end of the gap to the other.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
           "type": "value",
           "value": "none"
@@ -135,7 +135,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single continuous decoration is painted from one end of the gap to the other.",
+          "prose": "Gap decorations do not start or end at visible \"T\" or \"cross\" intersections. Instead, a single gap decoration segment spans from one end of the gap to the other.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none",
           "type": "value",
           "value": "none"
@@ -524,7 +524,8 @@
         "ruleInsetCap"
       ],
       "longhands": [
-        "column-rule-inset-cap"
+        "column-rule-inset-cap",
+        "row-rule-inset-cap"
       ]
     },
     {
@@ -543,7 +544,8 @@
         "ruleInsetJunction"
       ],
       "longhands": [
-        "column-rule-inset-junction"
+        "column-rule-inset-junction",
+        "row-rule-inset-junction"
       ]
     },
     {
@@ -718,7 +720,8 @@
         "ruleVisibilityItems"
       ],
       "longhands": [
-        "column-rule-visibility-items"
+        "column-rule-visibility-items",
+        "row-rule-visibility-items"
       ]
     },
     {

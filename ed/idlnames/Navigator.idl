@@ -73,6 +73,9 @@ partial interface Navigator {
 // Source: Cross-Origin Storage (https://wicg.github.io/cross-origin-storage/)
 Navigator includes NavigatorCrossOriginStorage;
 
+// Source: Device Memory API (https://wicg.github.io/device-memory/)
+Navigator includes NavigatorDeviceMemory;
+
 // Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
 partial interface Navigator {
   Promise<undefined> deprecatedReplaceInURN(

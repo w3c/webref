@@ -25,6 +25,11 @@ interface RTCDataChannel : EventTarget {
   undefined send(ArrayBufferView data);
 };
 
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+[Exposed=(Window,Worker), Transferable]
+  partial interface RTCDataChannel {
+};
+
 // Source: WebRTC Priority Control API (https://www.w3.org/TR/webrtc-priority/)
 partial interface RTCDataChannel {
   readonly attribute RTCPriorityType priority;

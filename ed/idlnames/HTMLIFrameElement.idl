@@ -31,14 +31,14 @@ partial interface HTMLIFrameElement {
   [CEReactions, Reflect] attribute [LegacyNullToEmptyString] DOMString marginWidth;
 };
 
+// Source: Connection Allowlists (https://w3c.github.io/connection-allowlists/)
+partial interface HTMLIFrameElement {
+  [CEReactions] attribute DOMString connectionAllowlist;
+};
+
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
 partial interface HTMLIFrameElement {
   attribute boolean credentialless;
-};
-
-// Source: Connection Allowlists (https://wicg.github.io/connection-allowlists/)
-partial interface HTMLIFrameElement {
-  [CEReactions] attribute DOMString connectionAllowlist;
 };
 
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)

@@ -1,0 +1,12 @@
+// Source: Long Tasks API (https://wicg.github.io/longtasks/)
+[Exposed=Window]
+interface PerformanceLongTaskTiming : PerformanceEntry {
+    /* Overloading PerformanceEntry */
+    readonly attribute DOMHighResTimeStamp startTime;
+    readonly attribute DOMHighResTimeStamp duration;
+    readonly attribute DOMString name;
+    readonly attribute DOMString entryType;
+
+    readonly attribute FrozenArray<TaskAttributionTiming> attribution;
+    [Default] object toJSON();
+};

@@ -153,7 +153,8 @@
       "href": "https://w3c.github.io/hr-time/#dfn-moment",
       "linkingText": [
         "moment",
-        "coarsened moment"
+        "coarsened moment",
+        "coarsened moments"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -579,7 +580,7 @@
       "id": "sec-performance",
       "href": "https://w3c.github.io/hr-time/#sec-performance",
       "linkingText": [
-        "The Performance interface"
+        "The PerformanceInfo about the 'Performance' reference.#dom-performancePossible linking syntaxes:[=Performance=][=Performance/Performance=] interface"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -640,28 +641,6 @@
       "links": []
     },
     {
-      "id": "dom-performance-now",
-      "href": "https://w3c.github.io/hr-time/#dom-performance-now",
-      "linkingText": [
-        "now()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Performance"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-performance",
-        "href": "https://w3c.github.io/hr-time/#sec-performance",
-        "title": "The Performance interface",
-        "number": "7"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "dom-performance-tojson",
       "href": "https://w3c.github.io/hr-time/#dom-performance-tojson",
       "linkingText": [
@@ -684,14 +663,17 @@
       "links": []
     },
     {
-      "id": "now",
-      "href": "https://w3c.github.io/hr-time/#now",
+      "id": "dom-performance-now",
+      "href": "https://w3c.github.io/hr-time/#dom-performance-now",
       "linkingText": [
         "now()"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "method",
+      "for": [
+        "Performance",
+        "WorkletPerformance"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -746,6 +728,26 @@
       "links": []
     },
     {
+      "id": "workletperformance",
+      "href": "https://w3c.github.io/hr-time/#workletperformance",
+      "linkingText": [
+        "WorkletPerformance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-workletperformance",
+        "href": "https://w3c.github.io/hr-time/#sec-workletperformance",
+        "title": "The WorkletPerformance interface",
+        "number": "8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "the-performance-attribute",
       "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
       "linkingText": [
@@ -762,9 +764,31 @@
         "id": "the-performance-attribute",
         "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
         "title": "The performance attribute",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "windoworworkerglobalscope-performance-object",
+      "href": "https://w3c.github.io/hr-time/#windoworworkerglobalscope-performance-object",
+      "linkingText": [
+        "performance object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performance-attribute",
+        "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
+        "title": "The performance attribute",
+        "number": "9.1"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -784,7 +808,73 @@
         "id": "the-performance-attribute",
         "href": "https://w3c.github.io/hr-time/#the-performance-attribute",
         "title": "The performance attribute",
-        "number": "8.1"
+        "number": "9.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "the-audioworklet-performance-attribute",
+      "href": "https://w3c.github.io/hr-time/#the-audioworklet-performance-attribute",
+      "linkingText": [
+        "The performance attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-audioworklet-performance-attribute",
+        "href": "https://w3c.github.io/hr-time/#the-audioworklet-performance-attribute",
+        "title": "The performance attribute",
+        "number": "10.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "audioworkletglobalscope-performance-object",
+      "href": "https://w3c.github.io/hr-time/#audioworkletglobalscope-performance-object",
+      "linkingText": [
+        "performance object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-audioworklet-performance-attribute",
+        "href": "https://w3c.github.io/hr-time/#the-audioworklet-performance-attribute",
+        "title": "The performance attribute",
+        "number": "10.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "the-audioworklet-performance-attr",
+      "href": "https://w3c.github.io/hr-time/#the-audioworklet-performance-attr",
+      "linkingText": [
+        "performance"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-audioworklet-performance-attribute",
+        "href": "https://w3c.github.io/hr-time/#the-audioworklet-performance-attribute",
+        "title": "The performance attribute",
+        "number": "10.1"
       },
       "definedIn": "prose",
       "links": []

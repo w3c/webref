@@ -1,14 +1,15 @@
 {
   "name": "AutofillValueEntry",
-  "type": "typedef",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Autofill Event",
       "url": "https://wicg.github.io/autofill-event/"
     },
-    "fragment": "typedef sequence<any> AutofillValueEntry;",
-    "href": "https://wicg.github.io/autofill-event/#typedefdef-autofillvalueentry"
+    "fragment": "dictionary AutofillValueEntry {\n  required HTMLElement field;\n  required DOMString value;\n};",
+    "href": "https://wicg.github.io/autofill-event/#dictdef-autofillvalueentry"
   },
   "extended": [],
+  "inheritance": null,
   "includes": []
 }

@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodec> codecs);\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Extensions",
+        "url": "https://w3c.github.io/webrtc-extensions/"
+      },
+      "fragment": "partial interface RTCRtpTransceiver {\n  sequence<RTCRtpHeaderExtensionCapability> getHeaderExtensionsToNegotiate();\n  undefined setHeaderExtensionsToNegotiate(\n      sequence<RTCRtpHeaderExtensionCapability> extensions);\n  sequence<RTCRtpHeaderExtensionCapability> getNegotiatedHeaderExtensions();\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

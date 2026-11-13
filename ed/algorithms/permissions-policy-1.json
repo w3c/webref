@@ -7,7 +7,7 @@
     {
       "name": "matches",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#matches",
-      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -18,7 +18,7 @@
     {
       "name": "matches",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#matches",
-      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
+      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#allowlist\" id=\"ref-for-allowlist⑤\">allowlist</a> <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"matches\">matches</dfn> an origin\n      <var>origin</var>, run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -191,7 +191,7 @@
     {
       "name": "declared origin",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#declared-origin",
-      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"declared-origin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">declared origin</dfn> for an Element <var>node</var>, run the\n    following steps:",
+      "html": "To get the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"declared-origin\">declared origin</dfn> for an Element <var>node</var>, run the\n    following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -621,7 +621,7 @@
                   "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint\">Get the\n  reporting endpoint for a feature</a> given <var>feature</var> and\n  <var>policy</var>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Enforce</code>\", and <var>endpoint</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>enforce</code>\", and <var>endpoint</var>.</p>"
                 }
               ]
             },
@@ -633,7 +633,7 @@
                   "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint①\">Get the reporting endpoint for a feature</a> given\n <var>feature</var> and <var>report-only policy</var>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation①\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>Report</code>\", and <var>report-only endpoint</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-permissions-policy-violation\" id=\"ref-for-report-permissions-policy-violation①\">Generate report for violation of permissions\n  policy on settings</a> given <var>feature</var>, <var>settings</var>,\n  \"<code>report</code>\", and <var>report-only endpoint</var>.</p>"
                 }
               ]
             }
@@ -683,7 +683,7 @@
                   "html": "<p>Let <var>endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint②\">Get\n the reporting endpoint for a feature</a> given <var>feature</var> and\n <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy\" id=\"ref-for-concept-document-permissions-policy③\">permissions policy</a>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>Enforce</code>\", <var>endpoint</var>, <var>allowAttribute</var>,\n and <var>srcAttribute</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>enforce</code>\", <var>endpoint</var>, <var>allowAttribute</var>,\n and <var>srcAttribute</var>.</p>"
                 }
               ]
             },
@@ -695,7 +695,7 @@
                   "html": "<p>Let <var>report-only endpoint</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#get-reporting-endpoint\" id=\"ref-for-get-reporting-endpoint③\">Get the reporting endpoint for a feature</a>\n given <var>feature</var> and <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#document-report-only-permissions-policy\" id=\"ref-for-document-report-only-permissions-policy③\">report-only permissions policy</a>.</p>"
                 },
                 {
-                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation①\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>Report</code>\", <var>report-only endpoint</var>,\n <var>allowAttribute</var>, and <var>srcAttribute</var>.</p>"
+                  "html": "<p>Call <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#report-potential-permissions-policy-violation\" id=\"ref-for-report-potential-permissions-policy-violation①\">Generate report for potential violation\n of permissions policy on settings</a> given <var>feature</var>,\n <var>settings</var>, \"<code>report</code>\", <var>report-only endpoint</var>,\n <var>allowAttribute</var>, and <var>srcAttribute</var>.</p>"
                 }
               ]
             }

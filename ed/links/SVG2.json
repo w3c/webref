@@ -56,6 +56,18 @@
       "https://drafts.csswg.org/css-cascade/": {
         "specShortname": "css-cascade-4"
       },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "color-interpolation-method",
+          "interpolation-color-space",
+          "predefined-sRGB",
+          "predefined-sRGB-linear",
+          "interpolation",
+          "premultiplied",
+          "missing"
+        ],
+        "specShortname": "css-color-4"
+      },
       "https://drafts.csswg.org/css-fonts/": {
         "specShortname": "css-fonts-4"
       },
@@ -82,7 +94,9 @@
           "the-clip-path",
           "propdef-mask",
           "the-clip-rule",
-          "propdef-mask-type"
+          "propdef-mask-type",
+          "MaskElement",
+          "MaskValues"
         ],
         "specShortname": "css-masking-1"
       },
@@ -98,6 +112,12 @@
       },
       "https://drafts.csswg.org/css-shapes/": {
         "specShortname": "css-shapes-1"
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "preferred-size-properties"
+        ],
+        "specShortname": "css-sizing-3"
       },
       "https://drafts.csswg.org/css-syntax-3/": {
         "specShortname": "css-syntax-3"
@@ -159,6 +179,10 @@
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
+          "numeric-ranges",
+          "lengths",
+          "numeric-function",
+          "absolute-lengths",
           "not-additive"
         ],
         "specShortname": "css-values-4"
@@ -269,19 +293,28 @@
       "https://github.com/w3c/svgwg/issues/1018": {},
       "https://github.com/w3c/svgwg/issues/1033": {},
       "https://github.com/w3c/svgwg/issues/104": {},
+      "https://github.com/w3c/svgwg/issues/1041": {},
       "https://github.com/w3c/svgwg/issues/1065": {},
       "https://github.com/w3c/svgwg/issues/1070": {},
       "https://github.com/w3c/svgwg/issues/1086": {},
       "https://github.com/w3c/svgwg/issues/1168": {},
       "https://github.com/w3c/svgwg/issues/1169": {},
+      "https://github.com/w3c/svgwg/issues/1170": {},
       "https://github.com/w3c/svgwg/issues/1171": {},
       "https://github.com/w3c/svgwg/issues/1174": {},
+      "https://github.com/w3c/svgwg/issues/1202": {},
+      "https://github.com/w3c/svgwg/issues/1208": {},
       "https://github.com/w3c/svgwg/issues/1210": {},
+      "https://github.com/w3c/svgwg/issues/1212": {},
       "https://github.com/w3c/svgwg/issues/1214": {},
+      "https://github.com/w3c/svgwg/issues/1216": {},
+      "https://github.com/w3c/svgwg/issues/1217": {},
+      "https://github.com/w3c/svgwg/issues/1234": {},
       "https://github.com/w3c/svgwg/issues/129": {},
       "https://github.com/w3c/svgwg/issues/196": {},
       "https://github.com/w3c/svgwg/issues/210": {},
       "https://github.com/w3c/svgwg/issues/221": {},
+      "https://github.com/w3c/svgwg/issues/249": {},
       "https://github.com/w3c/svgwg/issues/290": {},
       "https://github.com/w3c/svgwg/issues/291": {},
       "https://github.com/w3c/svgwg/issues/298": {},
@@ -291,6 +324,7 @@
       "https://github.com/w3c/svgwg/issues/353": {},
       "https://github.com/w3c/svgwg/issues/360": {},
       "https://github.com/w3c/svgwg/issues/363": {},
+      "https://github.com/w3c/svgwg/issues/366": {},
       "https://github.com/w3c/svgwg/issues/382": {},
       "https://github.com/w3c/svgwg/issues/383": {},
       "https://github.com/w3c/svgwg/issues/389": {},
@@ -313,6 +347,7 @@
       "https://github.com/w3c/svgwg/issues/647": {},
       "https://github.com/w3c/svgwg/issues/685": {},
       "https://github.com/w3c/svgwg/issues/706": {},
+      "https://github.com/w3c/svgwg/issues/736": {},
       "https://github.com/w3c/svgwg/issues/773": {},
       "https://github.com/w3c/svgwg/issues/828": {},
       "https://github.com/w3c/svgwg/issues/852": {},
@@ -609,7 +644,6 @@
         ],
         "specShortname": "webidl"
       },
-      "https://webstore.iec.ch/publication/6168": {},
       "https://webstore.iec.ch/publication/6169": {},
       "https://www.color.org/specification/ICC1v43_2010-12.pdf": {},
       "https://www.ecma-international.org/ecma-262/6.0/index.html": {},
@@ -1101,6 +1135,9 @@
         "specShortname": "css-color-3"
       },
       "https://www.w3.org/TR/css-color-4/": {
+        "anchors": [
+          "color-type"
+        ],
         "specShortname": "css-color-4"
       },
       "https://www.w3.org/TR/css-content-3/": {
@@ -1266,7 +1303,6 @@
           "numbers",
           "percentages",
           "strings",
-          "colors",
           "url-value",
           "integers"
         ]
@@ -1656,12 +1692,6 @@
           "AnimateTransformElementTypeAttribute",
           "ValuesAttribute"
         ]
-      },
-      "https://w3c.github.io/svgwg/svg2-draft/struct.html": {
-        "anchors": [
-          "InterfaceSVGUseElementShadowRoot"
-        ],
-        "specShortname": "SVG2"
       },
       "https://w3c.github.io/trusted-types/dist/spec/": {
         "anchors": [

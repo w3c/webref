@@ -8,15 +8,6 @@
       "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
       "http://www.w3.org/TR/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/fillJointRadii": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/fillPoses": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getJointPose": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRHand": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/hand": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRJointPose": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRJointPose/radius": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRJointSpace": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/XRJointSpace/jointName": {},
       "https://github.com/immersive-web/webxr-hand-input/issues": {},
       "https://github.com/immersive-web/webxr-hand-input/issues/11": {},
       "https://github.com/immersive-web/webxr-hand-input/pull/111": {},
@@ -34,25 +25,23 @@
       "https://infra.spec.whatwg.org/": {
         "specShortname": "infra"
       },
-      "https://w3c.github.io/ServiceWorker/": {
-        "specShortname": "service-workers"
-      },
       "https://webidl.spec.whatwg.org/": {
         "specShortname": "webidl"
-      },
-      "https://www.w3.org/2023/Process-20231103/": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
       },
       "https://www.w3.org/TR/2020/WD-webxr-hand-input-1-20201022/": {},
       "https://www.w3.org/TR/webxr/": {
         "specShortname": "webxr"
       },
       "https://www.w3.org/groups/wg/immersive-web": {},
-      "https://www.w3.org/groups/wg/immersive-web/ipr": {}
+      "https://www.w3.org/groups/wg/immersive-web/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ],
+        "specShortname": "w3c-patent-policy"
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -73,14 +62,28 @@
       },
       "https://immersive-web.github.io/webxr/": {
         "anchors": [
+          "xr-device",
+          "feature-descriptor",
           "xrsession",
+          "xrsession-xr-device",
           "xrinputsource",
+          "dictdef-xrsessioninit",
+          "xrinputsource-input-profile-name",
           "dom-xrinputsource-profiles",
+          "primary-action",
+          "primary-squeeze-action",
           "xrspace",
+          "xrspace-native-origin",
           "xrframe",
+          "xrframe-time",
           "dom-xrframe-session",
+          "xrframe-active",
+          "xrspace-session",
+          "populate-the-pose",
           "xrpose",
           "dom-xrrigidtransform-matrix",
+          "xrsession-animation-frame",
+          "explicit-consent",
           "dom-xrsessionmode-immersive-vr",
           "dom-xrsessionmode-inline"
         ],
@@ -92,17 +95,12 @@
         ],
         "specShortname": "infra"
       },
-      "https://w3c.github.io/ServiceWorker/": {
-        "anchors": [
-          "extendableevent-active"
-        ],
-        "specShortname": "service-workers"
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "SameObject",
           "this",
           "Exposed",
+          "dfn-iterable",
           "idl-unsigned-long",
           "dfn-value-pairs-to-iterate-over",
           "value-pair",

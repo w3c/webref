@@ -2,6 +2,7 @@
 dictionary DynamicsCompressorOptions : AudioNodeOptions {
     float attack = 0.003;
     float knee = 30;
+    (float or MakeupGainOptions) makeupGain = "automatic";
     float ratio = 12;
     float release = 0.25;
     float threshold = -24;

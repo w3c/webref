@@ -1,0 +1,15 @@
+{
+  "name": "Alarms",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Extensions",
+      "url": "https://w3c.github.io/webextensions/specification/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Alarms {\n  Promise<undefined> create(optional AlarmCreateInfo alarmInfo = {});\n  Promise<undefined> create(DOMString name, optional AlarmCreateInfo alarmInfo = {});\n\n  Promise<(Alarm or undefined)> get(optional DOMString name);\n  Promise<sequence<Alarm>> getAll();\n  Promise<boolean> clear(optional DOMString name);\n  Promise<undefined> clearAll();\n\n  attribute OnAlarmEvent onAlarm;\n};",
+    "href": "https://w3c.github.io/webextensions/specification/#alarms"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

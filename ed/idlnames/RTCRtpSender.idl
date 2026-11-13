@@ -12,6 +12,11 @@ interface RTCRtpSender {
   Promise<RTCStatsReport> getStats();
 };
 
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial interface RTCRtpSender {
+  static undefined disableHardwareEncoding();
+};
+
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 // New methods for RTCRtpSender and RTCRtpReceiver
 partial interface RTCRtpSender {

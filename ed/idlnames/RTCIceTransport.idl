@@ -15,6 +15,15 @@ interface RTCIceTransport : EventTarget {
   attribute EventHandler onselectedcandidatepairchange;
 };
 
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial interface RTCIceTransport {
+  attribute EventHandler onicecandidatepairadd;
+  attribute EventHandler onicecandidatepairremove;
+  attribute EventHandler onicecandidatepairnominate;
+  Promise<undefined> selectCandidatePair(RTCIceCandidatePair candidatePair);
+  Promise<undefined> removeCandidatePair(RTCIceCandidatePair candidatePair);
+};
+
 // Source: IceTransport Extensions for WebRTC (https://w3c.github.io/webrtc-ice/)
 [Exposed=Window]
 partial interface RTCIceTransport {

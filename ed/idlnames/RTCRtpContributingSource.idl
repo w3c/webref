@@ -5,3 +5,9 @@ dictionary RTCRtpContributingSource {
   double audioLevel;
   required unsigned long rtpTimestamp;
 };
+
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial dictionary RTCRtpContributingSource {
+  DOMHighResTimeStamp captureTimestamp;
+  DOMHighResTimeStamp senderCaptureTimeOffset;
+};

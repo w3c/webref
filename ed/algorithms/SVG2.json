@@ -24,14 +24,15 @@
           "html": "Replace all instances of <a href=\"https://www.w3.org/TR/css-values/#angles\">&lt;angle&gt;</a> in <var>grammar</var> with\n  [<a href=\"https://www.w3.org/TR/css-values/#angles\">&lt;angle&gt;</a> | <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>]."
         },
         {
+          "html": "In the three previous steps, a symbol written with a range in\n  <a href=\"https://drafts.csswg.org/css-values-4/#numeric-ranges\">CSS bracketed range notation</a>,\n  such as <a href=\"https://www.w3.org/TR/css-values/#typedef-length-percentage\">&lt;length-percentage [0,∞]&gt;</a>, is replaced in the same way, and the inserted\n  <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> gets the same range, with a length bound read as a number of\n  user units: <a href=\"https://www.w3.org/TR/css-values/#typedef-length-percentage\">&lt;length-percentage [0,∞]&gt;</a> becomes\n  [<a href=\"https://www.w3.org/TR/css-values/#typedef-length-percentage\">&lt;length-percentage [0,∞]&gt;</a> | <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number [0,∞]&gt;</a>]."
+        },
+        {
           "html": "Return the result of\n  <a href=\"https://drafts.csswg.org/css-syntax/#parse-grammar\">parsing\n  <var>value</var> with <var>grammar</var></a>."
         }
       ]
     },
     {
-      "name": "synchronized",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#TermSynchronize",
-      "html": "Whenever a reflected content attribute’s base value changes,\nthen the reflecting object must be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermSynchronize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"types-TermSynchronize\"></span>synchronized</dfn>,\nimmediately after the value changed, by running the following steps:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -43,9 +44,7 @@
       ]
     },
     {
-      "name": "reserialized",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect\">reflected</a> content attribute is to be\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermReserialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"types-TermReserialize\"></span>reserialized</dfn>, optionally using a\nspecific value, the following steps must be performed:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -482,9 +481,7 @@
       ]
     },
     {
-      "name": "SVGGraphicsElement/getCTM()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGGraphicsElement__getCTM",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGGraphicsElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getCTM()\" id=\"__svg__SVGGraphicsElement__getCTM\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGGraphicsElement__getCTM\"></span><code>getCTM</code></code></dfn> method is used to\nget the matrix that transforms the current element’s coordinate system to\nits SVG viewport’s coordinate system.  When getCTM() is called, the following\nsteps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -518,9 +515,7 @@
       ]
     },
     {
-      "name": "SVGGraphicsElement/getScreenCTM()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGGraphicsElement__getScreenCTM",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGGraphicsElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getScreenCTM()\" id=\"__svg__SVGGraphicsElement__getScreenCTM\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGGraphicsElement__getScreenCTM\"></span><code>getScreenCTM</code></code></dfn> method\nis used to get the matrix that transforms the current element’s coordinate\nsystem to the coordinate system of the SVG viewport for the SVG document fragment.\nWhen getScreenCTM() is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -538,9 +533,7 @@
       ]
     },
     {
-      "name": "SVGGeometryElement/getPointAtLength(distance)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGGeometryElement__getPointAtLength",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGGeometryElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getPointAtLength(distance)\" id=\"__svg__SVGGeometryElement__getPointAtLength\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGGeometryElement__getPointAtLength\"></span><code>getPointAtLength</code></code></dfn> method\nis used to return the point at a given distance along the path.  When\ngetPointAtLength(<var>distance</var>) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -576,9 +569,7 @@
       ]
     },
     {
-      "name": "SVGLength/unitType",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__unitType",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGLength__unitType\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__unitType\"></span><code>unitType</code></code></dfn> IDL attribute represents\nthe type of value that the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength①⑨\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue②\">value</a> is.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__unitType\" id=\"ref-for-__svg__SVGLength__unitType①\">unitType</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -590,9 +581,7 @@
       ]
     },
     {
-      "name": "SVGLength/value",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGLength__value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__value\"></span><code>value</code></code></dfn> IDL attribute represents\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②①\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue④\">value</a> in user units.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\" id=\"ref-for-__svg__SVGLength__value①\">value</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -663,21 +652,25 @@
           "html": "Let <var>value</var> be the value being assigned to\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\" id=\"ref-for-__svg__SVGLength__value③\">value</a></code>."
         },
         {
-          "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑥\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑥\">value</a> to a\n  <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> whose value is <var>value</var>."
+          "html": "Let <var>unit type</var> be the value that would be returned from the\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__unitType\" id=\"ref-for-__svg__SVGLength__unitType②\">unitType</a></code> member."
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑦\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①②\">reflected</a> attribute,\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects a presentation attribute</a>, or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①③\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize②\">reserialize</a> the reflected attribute."
+          "html": "If <var>unit type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN④\">SVG_LENGTHTYPE_UNKNOWN</a></code>, then set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑥\">SVGLength</a></code>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑥\">value</a> to a\n  <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> whose value is <var>value</var>."
+        },
+        {
+          "html": "Otherwise, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑦\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑦\">value</a> to what\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__convertToSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__convertToSpecifiedUnits①\">convertToSpecifiedUnits()</a></code> would set it to when called with <var>unit type</var>,\n  if the value returned from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\" id=\"ref-for-__svg__SVGLength__value④\">value</a></code> member were <var>value</var>.\n  The unit type does not change."
+        },
+        {
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑧\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①②\">reflected</a> attribute,\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects a presentation attribute</a>, or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①③\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize②\">reserialize</a> the reflected attribute."
         }
       ]
     },
     {
-      "name": "SVGLength/valueInSpecifiedUnits",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGLength__valueInSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__valueInSpecifiedUnits\"></span><code>valueInSpecifiedUnits</code></code></dfn> IDL attribute represents\nthe numeric factor of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑧\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑦\">value</a>.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__valueInSpecifiedUnits①\">valueInSpecifiedUnits</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>value</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength②⑨\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑧\">value</a>."
+          "html": "Let <var>value</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⓪\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑨\">value</a>."
         },
         {
           "html": "If <var>value</var> is a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>, return that number."
@@ -691,37 +684,35 @@
       ]
     },
     {
-      "html": "On setting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__valueInSpecifiedUnits③\">valueInSpecifiedUnits</a></code>, the following steps\nare run:",
+      "html": "On setting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__valueInSpecifiedUnits④\">valueInSpecifiedUnits</a></code>, the following steps\nare run:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⓪\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③①\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "Let <var>value</var> be the value being assigned to\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__valueInSpecifiedUnits④\">valueInSpecifiedUnits</a></code>."
+          "html": "Let <var>value</var> be the value being assigned to\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGLength__valueInSpecifiedUnits⑤\">valueInSpecifiedUnits</a></code>."
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③①\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue⑨\">value</a> is a\n  <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>, then update its value to <var>value</var>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③②\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⓪\">value</a> is a\n  <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>, then update its value to <var>value</var>."
         },
         {
-          "html": "Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③②\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⓪\">value</a>\n  is a <a href=\"https://www.w3.org/TR/css3-values/#percentages\">&lt;percentage&gt;</a> or a scalar-valued <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>,\n  then update its numeric factor to <var>value</var>."
+          "html": "Otherwise, if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③③\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①①\">value</a>\n  is a <a href=\"https://www.w3.org/TR/css3-values/#percentages\">&lt;percentage&gt;</a> or a scalar-valued <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a>,\n  then update its numeric factor to <var>value</var>."
         },
         {
-          "html": "Otherwise, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③③\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①①\">value</a>\n  is of some other type.  Set it to a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>\n  whose value is <var>value</var>."
+          "html": "Otherwise, the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③④\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①②\">value</a>\n  is of some other type.  Set it to a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>\n  whose value is <var>value</var>."
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③④\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①④\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑤\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize③\">reserialize</a> the reflected attribute."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑤\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①④\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑤\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize③\">reserialize</a> the reflected attribute."
         }
       ]
     },
     {
-      "name": "SVGLength/valueAsString",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGLength__valueAsString\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__valueAsString\"></span><code>valueAsString</code></code></dfn> IDL attribute represents\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑤\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①②\">value</a> as a string.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\" id=\"ref-for-__svg__SVGLength__valueAsString④\">valueAsString</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>value</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑥\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①③\">value</a>."
+          "html": "Let <var>value</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑦\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①④\">value</a>."
         },
         {
           "html": "Let <var>string</var> be an empty string."
@@ -757,7 +748,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑦\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑧\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\" id=\"ref-for-__svg__SVGLength__valueAsString⑥\">valueAsString</a></code>."
@@ -769,27 +760,25 @@
           "html": "If parsing failed, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#syntaxerror\">SyntaxError</a>."
         },
         {
-          "html": "Otherwise, parsing succeeded.  Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑧\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①④\">value</a>\n  to the parsed value."
+          "html": "Otherwise, parsing succeeded.  Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑨\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑤\">value</a>\n  to the parsed value."
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength③⑨\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑥\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑦\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize④\">reserialize</a> the reflected attribute."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⓪\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑥\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑦\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize④\">reserialize</a> the reflected attribute."
         }
       ]
     },
     {
-      "name": "SVGLength/newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__newValueSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)\" id=\"__svg__SVGLength__newValueSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__newValueSpecifiedUnits\"></span><code>newValueSpecifiedUnits</code></code></dfn>\nmethod is used to set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⓪\">SVGLength</a></code>’s value in a typed manner.  When\nnewValueSpecifiedUnits(unitType, valueInSpecifiedUnits) is called, the following\nsteps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④①\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④②\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN④\">SVG_LENGTHTYPE_UNKNOWN</a></code>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN⑤\">SVG_LENGTHTYPE_UNKNOWN</a></code>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
-          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength④②\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthValue\" id=\"ref-for-LengthValue①⑤\">value</a> depending\n  on the value of <var>unitType</var>:",
+          "html": "Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength④③\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthValue\" id=\"ref-for-LengthValue①⑥\">value</a> depending\n  on the value of <var>unitType</var>:",
           "rationale": ".switch",
           "steps": [
             {
@@ -812,31 +801,29 @@
           ]
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④③\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑧\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑨\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize⑤\">reserialize</a> the reflected attribute."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④④\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑧\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect①⑨\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize⑤\">reserialize</a> the reflected attribute."
         }
       ]
     },
     {
-      "name": "SVGLength/convertToSpecifiedUnits(unitType)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__convertToSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGLength\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"convertToSpecifiedUnits(unitType)\" id=\"__svg__SVGLength__convertToSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGLength__convertToSpecifiedUnits\"></span><code>convertToSpecifiedUnits</code></code></dfn>\nmethod is used to convert the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④④\">SVGLength</a></code>’s value to a specific type.\nWhen convertToSpecifiedUnits(unitType) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑤\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑥\">SVGLength</a></code> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN⑤\">SVG_LENGTHTYPE_UNKNOWN</a></code>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN⑥\">SVG_LENGTHTYPE_UNKNOWN</a></code>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
-          "html": "Let <var>absolute</var> be the value that would be returned from the\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\" id=\"ref-for-__svg__SVGLength__value④\">value</a></code> member."
+          "html": "Let <var>absolute</var> be the value that would be returned from the\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\" id=\"ref-for-__svg__SVGLength__value⑥\">value</a></code> member."
         },
         {
           "html": "If <var>unitType</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#__svg__SVGLength__SVG_LENGTHTYPE_NUMBER\" id=\"ref-for-__svg__SVGLength__SVG_LENGTHTYPE_NUMBER③\">SVG_LENGTHTYPE_NUMBER</a></code>, then:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑥\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑥\">value</a> to a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>\n      whose value is <var>absolute</var>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑦\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑦\">value</a> to a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>\n      whose value is <var>absolute</var>."
             }
           ]
         },
@@ -845,7 +832,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>viewport size</var> be a basis to resolve percentages against, based on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength④⑦\">SVGLength</a></code>’s\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">associated element</a> and\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">directionality</a>:",
+              "html": "Let <var>viewport size</var> be a basis to resolve percentages against, based on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength④⑧\">SVGLength</a></code>’s\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">associated element</a> and\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">directionality</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -872,7 +859,7 @@
               ]
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑧\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑦\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#percentages\">&lt;percentage&gt;</a>, using <var>viewport size</var>\n      as the percentage basis."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength④⑨\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑧\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#percentages\">&lt;percentage&gt;</a>, using <var>viewport size</var>\n      as the percentage basis."
             }
           ]
         },
@@ -881,7 +868,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>font size</var> be a basis to resolve font size values against,\n      based on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength④⑨\">SVGLength</a></code>’s <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">associated element</a>:",
+              "html": "Let <var>font size</var> be a basis to resolve font size values against,\n      based on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength⑤⓪\">SVGLength</a></code>’s <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">associated element</a>:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -900,7 +887,7 @@
               ]
             },
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⓪\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑧\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a> with an <span class=\"prop-value\">em</span>\n      or <span class=\"prop-value\">ex</span> unit (depending on <var>unitType</var>),\n      using <var>font size</var> as the <a class=\"property\" href=\"https://www.w3.org/TR/css-fonts-3/#font-size-prop\">font-size</a> basis."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤①\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑨\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a> with an <span class=\"prop-value\">em</span>\n      or <span class=\"prop-value\">ex</span> unit (depending on <var>unitType</var>),\n      using <var>font size</var> as the <a class=\"property\" href=\"https://www.w3.org/TR/css-fonts-3/#font-size-prop\">font-size</a> basis."
             }
           ]
         },
@@ -909,19 +896,17 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤①\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue①⑨\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a> with the unit\n      found by looking up <var>unitType</var> in the length unit type table above."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤②\">SVGLength</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\" id=\"ref-for-LengthValue②⓪\">value</a> to the result of\n      converting <var>absolute</var> to a <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a> with the unit\n      found by looking up <var>unitType</var> in the length unit type table above."
             }
           ]
         },
         {
-          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤②\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect②⓪\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect②①\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize⑥\">reserialize</a> the reflected attribute."
+          "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤③\">SVGLength</a></code>\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect②⓪\">reflected</a> attribute or\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflects an element of the base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect②①\">reflected</a> attribute,\n  then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize⑥\">reserialize</a> the reflected attribute."
         }
       ]
     },
     {
-      "name": "SVGAngle/unitType",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__unitType",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAngle__unitType\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__unitType\"></span><code>unitType</code></code></dfn> IDL attribute represents\nthe type of value that the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle①⑤\">SVGAngle</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#AngleValue\" id=\"ref-for-AngleValue①\">value</a> is.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__unitType\" id=\"ref-for-__svg__SVGAngle__unitType①\">unitType</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -933,9 +918,7 @@
       ]
     },
     {
-      "name": "SVGAngle/value",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__value",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAngle__value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__value\"></span><code>value</code></code></dfn> IDL attribute represents\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle①⑦\">SVGAngle</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#AngleValue\" id=\"ref-for-AngleValue③\">value</a> in degrees.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__value\" id=\"ref-for-__svg__SVGAngle__value①\">value</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -968,9 +951,7 @@
       ]
     },
     {
-      "name": "SVGAngle/valueInSpecifiedUnits",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAngle__valueInSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__valueInSpecifiedUnits\"></span><code>valueInSpecifiedUnits</code></code></dfn> IDL attribute represents\nthe numeric factor of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle②②\">SVGAngle</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#AngleValue\" id=\"ref-for-AngleValue⑥\">value</a>.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits\" id=\"ref-for-__svg__SVGAngle__valueInSpecifiedUnits①\">valueInSpecifiedUnits</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1006,9 +987,7 @@
       ]
     },
     {
-      "name": "SVGAngle/valueAsString",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueAsString",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAngle__valueAsString\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__valueAsString\"></span><code>valueAsString</code></code></dfn> IDL attribute represents\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle②⑧\">SVGAngle</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#AngleValue\" id=\"ref-for-AngleValue①⓪\">value</a> as a string.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueAsString\" id=\"ref-for-__svg__SVGAngle__valueAsString②\">valueAsString</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1056,9 +1035,7 @@
       ]
     },
     {
-      "name": "SVGAngle/newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__newValueSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)\" id=\"__svg__SVGAngle__newValueSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__newValueSpecifiedUnits\"></span><code>newValueSpecifiedUnits</code></code></dfn>\nmethod is used to set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle③③\">SVGAngle</a></code>’s value in a typed manner.  When\nnewValueSpecifiedUnits(unitType, valueInSpecifiedUnits) is called, the following\nsteps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1092,9 +1069,7 @@
       ]
     },
     {
-      "name": "SVGAngle/convertToSpecifiedUnits(unitType)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__convertToSpecifiedUnits",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAngle\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"convertToSpecifiedUnits(unitType)\" id=\"__svg__SVGAngle__convertToSpecifiedUnits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAngle__convertToSpecifiedUnits\"></span><code>convertToSpecifiedUnits</code></code></dfn>\nmethod is used to convert the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svgangle\" id=\"ref-for-svgangle③⑦\">SVGAngle</a></code>’s value to a specific type.\nWhen convertToSpecifiedUnits(unitType) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1130,9 +1105,7 @@
       ]
     },
     {
-      "name": "synchronized (TermSynchronizeList)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#TermSynchronizeList",
-      "html": "<span class=\"bs-old-id\" id=\"types-ListSynchronize\"></span>A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermListInterface\" id=\"ref-for-TermListInterface⑨\">list interface</a> object\nis <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"synchronized (TermSynchronizeList)\" id=\"TermSynchronizeList\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"types-TermSynchronizeList\"></span>synchronized</dfn> by running\nthe following steps:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1145,7 +1118,7 @@
           "html": "Let <var>new length</var> be the number of values in <var>value</var>.\n  If <var>value</var> is the keyword <span class=\"prop-value\">none</span>\n  (as supported by the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformProperty\">transform</a> property), <var>new length</var>\n  is 0."
         },
         {
-          "html": "If the list element type is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svgnumber\" id=\"ref-for-svgnumber①⑦\">SVGNumber</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength⑤⑤\">SVGLength</a></code>, <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"4c71aedd5\">SVGPoint</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform④\">SVGTransform</a></code>, then:",
+          "html": "If the list element type is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svgnumber\" id=\"ref-for-svgnumber①⑦\">SVGNumber</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength⑤⑥\">SVGLength</a></code>, <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"4c71aedd5\">SVGPoint</a> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform④\">SVGTransform</a></code>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -1219,9 +1192,7 @@
       ]
     },
     {
-      "name": "detached",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#TermDetach",
-      "html": "Whenever a list element object is to be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermDetach\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"types-TermDetach\"></span>detached</dfn>,\nthe following steps are run, depending on the list element type:",
+      "html": "",
       "rationale": ".switch",
       "steps": [
         {
@@ -1233,7 +1204,7 @@
             },
             {
               "case": "SVGLength",
-              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⑦\">SVGLength</a></code> to no longer be\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">associated</a> with any element.\n    If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⑧\">SVGLength</a></code> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>,\n    set it to be no longer read only.  Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⑨\">SVGLength</a></code> to have\n    unspecified <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">directionality</a>."
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⑧\">SVGLength</a></code> to no longer be\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">associated</a> with any element.\n    If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑤⑨\">SVGLength</a></code> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>,\n    set it to be no longer read only.  Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥⓪\">SVGLength</a></code> to have\n    unspecified <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">directionality</a>."
             },
             {
               "case": "SVGPoint",
@@ -1280,7 +1251,7 @@
             },
             {
               "case": "SVGLength",
-              "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">Associate</a> the\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength⑥①\">SVGLength</a></code> with the element that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermListInterface\" id=\"ref-for-TermListInterface①③\">list interface</a>\n    object is associated with and set its\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">directionality</a> to that\n    specified by the attribute being reflected.\n    Additionally, depending on which IDL attribute the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermListInterface\" id=\"ref-for-TermListInterface①④\">list interface</a>\n    object is reflected through:",
+              "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">Associate</a> the\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/#svglength\" id=\"ref-for-svglength⑥②\">SVGLength</a></code> with the element that the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermListInterface\" id=\"ref-for-TermListInterface①③\">list interface</a>\n    object is associated with and set its\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthAssociatedElement\">directionality</a> to that\n    specified by the attribute being reflected.\n    Additionally, depending on which IDL attribute the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermListInterface\" id=\"ref-for-TermListInterface①④\">list interface</a>\n    object is reflected through:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -1288,11 +1259,11 @@
                   "steps": [
                     {
                       "case": "baseVal",
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥②\">SVGLength</a></code> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflect an\n        element of the base value</a>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥③\">SVGLength</a></code> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflect an\n        element of the base value</a>."
                     },
                     {
                       "case": "animVal",
-                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥③\">SVGLength</a></code> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflect an\n        element of the base value</a>. Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥④\">SVGLength</a></code> to be\n        <em>read only</em>."
+                      "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥④\">SVGLength</a></code> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthMode\">reflect an\n        element of the base value</a>. Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svglength\" id=\"ref-for-svglength⑥⑤\">SVGLength</a></code> to be\n        <em>read only</em>."
                     }
                   ]
                 }
@@ -1331,9 +1302,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/clear()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__clear",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"clear()\" id=\"__svg__SVGNameList__clear\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__clear\"></span><code>clear</code></code></dfn> method is used to\nremove all items in the list.  When clear() is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1348,9 +1317,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/initialize(newItem)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__initialize",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"initialize(newItem)\" id=\"__svg__SVGNameList__initialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__initialize\"></span><code>initialize</code></code></dfn> method\nis used to clear the list and add a single, specified value to it.\nWhen initialize(<var>newItem</var>) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1377,9 +1344,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/getItem(index)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__getItem",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getItem(index)\" id=\"__svg__SVGNameList__getItem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__getItem\"></span><code>getItem</code></code></dfn> method is used\nto get an item from the list at the specified position.  When\ngetItem(<var>index</var>) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1391,9 +1356,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/insertItemBefore(newItem, index)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__insertItemBefore",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"insertItemBefore(newItem, index)\" id=\"__svg__SVGNameList__insertItemBefore\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__insertItemBefore\"></span><code>insertItemBefore</code></code></dfn>\nmethod is used to insert an element into the list at a specific position.\nWhen insertItemBefore(<var>newItem</var>, <var>index</var>) is called,\nthe following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1420,9 +1383,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/replaceItem(newItem, index)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__replaceItem",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"replaceItem(newItem, index)\" id=\"__svg__SVGNameList__replaceItem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__replaceItem\"></span><code>replaceItem</code></code></dfn> method\nis used to replace an existing item in the list with a new item.\nWhen replaceItem(<var>newItem</var>, <var>index</var>) is called, the\nfollowing steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1452,9 +1413,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/removeItem(index)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__removeItem",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"removeItem(index)\" id=\"__svg__SVGNameList__removeItem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__removeItem\"></span><code>removeItem</code></code></dfn> method\nis used to remove an item from the list.  When removeItem(<var>index</var>)\nis called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1478,9 +1437,7 @@
       ]
     },
     {
-      "name": "SVGNumberList/appendItem(newItem)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNameList__appendItem",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGNumberList, SVGLengthList, SVGStringList, SVGTransformList, SVGPointList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"appendItem(newItem)\" id=\"__svg__SVGNameList__appendItem\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGNameList__appendItem\"></span><code>appendItem</code></code></dfn> method\nis used to append an item to the end of the list.  When appendItem(<var>newItem</var>)\nis called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1507,9 +1464,7 @@
       ]
     },
     {
-      "name": "SVGAnimatedBoolean/baseVal",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedBoolean__baseVal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedBoolean\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedBoolean__baseVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedBoolean__baseVal\"></span><code>baseVal</code></code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedBoolean\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedBoolean__animVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedBoolean__animVal\"></span><code>animVal</code></code></dfn> IDL attributes\nboth represent the current non-animated value of the reflected attribute.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedBoolean__baseVal\" id=\"ref-for-__svg__SVGAnimatedBoolean__baseVal①\">baseVal</a></code>\nor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedBoolean__animVal\" id=\"ref-for-__svg__SVGAnimatedBoolean__animVal①\">animVal</a></code>,\nthe following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1526,14 +1481,14 @@
     {
       "name": "numeric type value",
       "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#TermNumericTypeValue",
-      "html": "For <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svganimatedenumeration\" id=\"ref-for-svganimatedenumeration③\">SVGAnimatedEnumeration</a></code> objects that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect④⑥\">reflect</a> an\nanimatable attribute that takes only a keyword value, the\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedEnumeration\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedEnumeration__baseVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedEnumeration__baseVal\"></span><code>baseVal</code></code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedEnumeration\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedEnumeration__animVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedEnumeration__animVal\"></span><code>animVal</code></code></dfn> IDL attributes\nrepresents the current non-animated value of the reflected attribute.\nFor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/painting.html#__svg__SVGMarkerElement__orientType\" id=\"ref-for-__svg__SVGMarkerElement__orientType①\">orientType</a></code>,\nthey represent the type of the current non-animated value of the\nreflected <span class=\"attr-name\">‘<code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/svgwg/svg2-draft/painting.html#OrientAttribute\" id=\"ref-for-OrientAttribute①\">orient</a></code>’</span> attribute.  On getting\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedEnumeration__baseVal\" id=\"ref-for-__svg__SVGAnimatedEnumeration__baseVal①\">baseVal</a></code> or\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedEnumeration__animVal\" id=\"ref-for-__svg__SVGAnimatedEnumeration__animVal①\">animVal</a></code>, the\nfollowing steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "Let <var>value</var> be the value of the reflected attribute\n  (using the attribute’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermInitialValue\" id=\"ref-for-TermInitialValue⑦\">initial value</a> if it is not present\n  or invalid)."
         },
         {
-          "html": "Return the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermNumericTypeValue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"types-TermNumericTypeValue\"></span>numeric type value</dfn>\n  for <var>value</var>, according to the reflecting IDL attribute’s\n  definition."
+          "html": "Return the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermNumericTypeValue\"><span class=\"bs-old-id\" id=\"types-TermNumericTypeValue\"></span>numeric type value</dfn>\n  for <var>value</var>, according to the reflecting IDL attribute’s\n  definition."
         }
       ]
     },
@@ -1556,9 +1511,7 @@
       ]
     },
     {
-      "name": "SVGAnimatedInteger/baseVal",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedInteger__baseVal",
-      "html": "For <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svganimatedinteger\" id=\"ref-for-svganimatedinteger②\">SVGAnimatedInteger</a></code> objects that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect④⑧\">reflect</a>\nan animatable attribute that takes a single integer value, the\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedInteger\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedInteger__baseVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedInteger__baseVal\"></span><code>baseVal</code></code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedInteger\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedInteger__animVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedInteger__animVal\"></span><code>animVal</code></code></dfn> IDL attributes\nrepresent the current non-animated value of the reflected attribute.\nFor those that reflect one integer of an attribute that takes an\ninteger followed by an optional second integer, they represent the\ncurrent non-animated value of one of the two integers.  On getting\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedInteger__baseVal\" id=\"ref-for-__svg__SVGAnimatedInteger__baseVal①\">baseVal</a></code> or\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedInteger__animVal\" id=\"ref-for-__svg__SVGAnimatedInteger__animVal①\">animVal</a></code>, the\nfollowing steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1624,9 +1577,7 @@
       ]
     },
     {
-      "name": "SVGAnimatedNumber/baseVal",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedNumber__baseVal",
-      "html": "For <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#svganimatednumber\" id=\"ref-for-svganimatednumber④\">SVGAnimatedNumber</a></code> objects that <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect⑤⓪\">reflect</a>\nan animatable attribute that takes a single number value, the\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedNumber\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedNumber__baseVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedNumber__baseVal\"></span><code>baseVal</code></code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedNumber\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedNumber__animVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedNumber__animVal\"></span><code>animVal</code></code></dfn> IDL attributes\nrepresent the current non-animated value of the reflected attribute.\nFor those that reflect one number of an attribute that takes a\nnumber followed by an optional second number, they represent the\ncurrent non-animated value of one of the two numbers.  On getting\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedNumber__baseVal\" id=\"ref-for-__svg__SVGAnimatedNumber__baseVal①\">baseVal</a></code> or\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedNumber__animVal\" id=\"ref-for-__svg__SVGAnimatedNumber__animVal①\">animVal</a></code>, the\nfollowing steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1692,9 +1643,7 @@
       ]
     },
     {
-      "name": "SVGAnimatedString/baseVal",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedString__baseVal",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedString\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedString__baseVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedString__baseVal\"></span><code>baseVal</code></code></dfn>\nand <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGAnimatedString\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGAnimatedString__animVal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"types-__svg__SVGAnimatedString__animVal\"></span><code>animVal</code></code></dfn> IDL attributes\nrepresent the current non-animated value of the reflected attribute.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedString__baseVal\" id=\"ref-for-__svg__SVGAnimatedString__baseVal①\">baseVal</a></code>\nor <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedString__animVal\" id=\"ref-for-__svg__SVGAnimatedString__animVal①\">animVal</a></code>,\nthe following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1834,7 +1783,11 @@
     {
       "name": "find the intersecting or enclosed descendants",
       "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#TermFindIntersectingOrEnclosedDescendants",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the intersecting or enclosed descendants\" id=\"TermFindIntersectingOrEnclosedDescendants\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"struct-TermFindIntersectingOrEnclosedDescendants\"></span>find the intersecting\nor enclosed descendants</dfn> of a given element <var>element</var>\nwith a given rectangle <var>rectangle</var> using <var>ancestor</var>\nas the element in whose coordinate space <var>rectangle</var> is\nto be interpreted, the following steps are run:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the intersecting or enclosed descendants\" id=\"TermFindIntersectingOrEnclosedDescendants\"><span class=\"bs-old-id\" id=\"struct-TermFindIntersectingOrEnclosedDescendants\"></span>find the intersecting\nor enclosed descendants</dfn>",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1902,7 +1855,11 @@
     {
       "name": "find the non-container graphics elements",
       "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#TermFindNonContainerGraphicsElements",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the non-container graphics elements\" id=\"TermFindNonContainerGraphicsElements\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"struct-TermFindNonContainerGraphicsElements\"></span>find the non-container\ngraphics elements</dfn> within a given element <var>element</var>, the following\nsteps are run:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the non-container graphics elements\" id=\"TermFindNonContainerGraphicsElements\"><span class=\"bs-old-id\" id=\"struct-TermFindNonContainerGraphicsElements\"></span>find the non-container\ngraphics elements</dfn>",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2321,9 +2278,7 @@
       ]
     },
     {
-      "name": "SVGTransform/type",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransform__type",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGTransform__type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__type\"></span><code>type</code></code></dfn> IDL attribute represents\nthe type of transform item that the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform③⓪\">SVGTransform</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\" id=\"ref-for-TransformValue②\">value</a> is.\nOn getting <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransform__type\" id=\"ref-for-__svg__SVGTransform__type①\">type</a></code>, the following steps\nare run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2335,9 +2290,7 @@
       ]
     },
     {
-      "name": "SVGTransform/angle",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransform__angle",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"attribute\" data-export=\"\" id=\"__svg__SVGTransform__angle\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__angle\"></span><code>angle</code></code></dfn> IDL attribute\nrepresents the angle parameter of a\n<span class=\"prop-value\">rotate(…)</span>,\n<span class=\"prop-value\">skewX(…)</span> or\n<span class=\"prop-value\">skewY(…)</span> transform function.\nOn getting, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2349,9 +2302,7 @@
       ]
     },
     {
-      "name": "SVGTransform/setMatrix(matrix)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransform__setMatrix",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setMatrix(matrix)|setMatrix()\" id=\"__svg__SVGTransform__setMatrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setMatrix\"></span><code>setMatrix</code></code></dfn> method is used\nto set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform③⑤\">SVGTransform</a></code> to a given matrix value.  When\nsetMatrix(<var>matrix</var>) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2375,9 +2326,7 @@
       ]
     },
     {
-      "name": "SVGTransform/setTranslate(tx, ty)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransform__setTranslate",
-      "html": "The\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setTranslate(tx, ty)\" id=\"__svg__SVGTransform__setTranslate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setTranslate\"></span><code>setTranslate</code></code></dfn>,\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setScale(sx, sy)\" id=\"__svg__SVGTransform__setScale\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setScale\"></span><code>setScale</code></code></dfn>,\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setRotate(angle, cx, cy)\" id=\"__svg__SVGTransform__setRotate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setRotate\"></span><code>setRotate</code></code></dfn>,\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setSkewX(angle)\" id=\"__svg__SVGTransform__setSkewX\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setSkewX\"></span><code>setSkewX</code></code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransform\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"setSkewY(angle)\" id=\"__svg__SVGTransform__setSkewY\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransform__setSkewY\"></span><code>setSkewY</code></code></dfn> methods are used\nto set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform④①\">SVGTransform</a></code> to a new transform function\nvalue.  When one of these methods is called,\nthe following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2444,9 +2393,7 @@
       ]
     },
     {
-      "name": "SVGTransformList/createSVGTransformFromMatrix(matrix)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransformList__createSVGTransformFromMatrix",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransformList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"createSVGTransformFromMatrix(matrix)|createSVGTransformFromMatrix()\" id=\"__svg__SVGTransformList__createSVGTransformFromMatrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransformList__createSVGTransformFromMatrix\"></span><code>createSVGTransformFromMatrix</code></code></dfn>\nmethod is used to create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#svgtransform\" id=\"ref-for-svgtransform⑥⑤\">SVGTransform</a></code> object from a matrix object.\nWhen the createSVGTransformFromMatrix(<var>matrix</var>) method is called,\nthe following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2461,9 +2408,7 @@
       ]
     },
     {
-      "name": "SVGTransformList/consolidate()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGTransformList__consolidate",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTransformList\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"consolidate()\" id=\"__svg__SVGTransformList__consolidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"coords-__svg__SVGTransformList__consolidate\"></span><code>consolidate</code></code></dfn>\nmethod is used to convert the transform list into an equivalent\ntransformation using a single transform function.  When the\nconsolidate() method is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2586,24 +2531,24 @@
       ]
     },
     {
-      "html": "The used values for the x- and y-axis rounded corner radii\nmay be determined implicitly from the other dimension (using the <code>auto</code> value),\nand are also subject to clamping so that the lengths of\nthe straight segments of the rectangle are never negative.\nThe used values for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①④\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑤\">ry</a> are determined\nfrom the computed values by following these steps in order:",
+      "html": "The used values for the x- and y-axis rounded corner radii\nmay be determined implicitly from the other dimension (using the <code>auto</code> value),\nand are also subject to clamping so that the lengths of\nthe straight segments of the rectangle are never negative.\nThe used values for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑤\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑥\">ry</a> are determined\nfrom the computed values by following these steps in order:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑤\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑥\">ry</a> have a computed value of <code>auto</code>\n  (since <code>auto</code> is the initial value for both properties, this will also occur if neither are specified by the author or if all author-supplied values are invalid),\n  then the used value of both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑥\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑦\">ry</a> is 0.  (This will result in square corners.)"
+          "html": "If both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑥\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑦\">ry</a> have a computed value of <code>auto</code>\n  (since <code>auto</code> is the initial value for both properties, this will also occur if neither are specified by the author or if all author-supplied values are invalid),\n  then the used value of both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑦\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑧\">ry</a> is 0.  (This will result in square corners.)"
         },
         {
           "html": "Otherwise, convert specified values to absolute values as follows:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑦\">rx</a> is set to a length value or a percentage,\n  but <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑧\">ry</a> is <code>auto</code>,\n  calculate an absolute length equivalent for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑧\">rx</a>, resolving percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a> of the rectangle;\n  the absolute value for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑨\">ry</a> is the same."
+              "html": "If <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑧\">rx</a> is set to a length value or a percentage,\n  but <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty①⑨\">ry</a> is <code>auto</code>,\n  calculate an absolute length equivalent for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑨\">rx</a>, resolving percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a> of the rectangle;\n  the absolute value for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⓪\">ry</a> is the same."
             },
             {
-              "html": "If <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⓪\">ry</a> is set to a length value or a percentage,\n  but <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty①⑨\">rx</a> is <code>auto</code>,\n  calculate the absolute length equivalent for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②①\">ry</a>, resolving percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a> of the rectangle;\n  the absolute value for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②⓪\">rx</a> is the same."
+              "html": "If <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②①\">ry</a> is set to a length value or a percentage,\n  but <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②⓪\">rx</a> is <code>auto</code>,\n  calculate the absolute length equivalent for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②②\">ry</a>, resolving percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a> of the rectangle;\n  the absolute value for <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②①\">rx</a> is the same."
             },
             {
-              "html": "If both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②①\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②②\">ry</a> were set to lengths or percentages,\n  absolute values are generated individually,\n  resolving <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②②\">rx</a> percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>,\n  and resolving <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②③\">ry</a> percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>."
+              "html": "If both <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②②\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②③\">ry</a> were set to lengths or percentages,\n  absolute values are generated individually,\n  resolving <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②③\">rx</a> percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>,\n  and resolving <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②④\">ry</a> percentages against the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>."
             }
           ]
         },
@@ -2612,13 +2557,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If the absolute <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②③\">rx</a> (after the above steps)\n  is greater than half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>,\n  then the used value of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②④\">rx</a> is half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>."
+              "html": "If the absolute <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②④\">rx</a> (after the above steps)\n  is greater than half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>,\n  then the used value of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②⑤\">rx</a> is half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">width</a>."
             },
             {
-              "html": "If the absolute <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②④\">ry</a> (after the above steps)\n  is greater than half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>,\n  then the used value of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⑤\">ry</a> is half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>."
+              "html": "If the absolute <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⑤\">ry</a> (after the above steps)\n  is greater than half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>,\n  then the used value of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⑥\">ry</a> is half of the used <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing\">height</a>."
             },
             {
-              "html": "Otherwise, the used values of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②⑤\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⑥\">ry</a> are the absolute values computed previously."
+              "html": "Otherwise, the used values of <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty\" id=\"ref-for-RxProperty②⑥\">rx</a> and <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty\" id=\"ref-for-RyProperty②⑦\">ry</a> are the absolute values computed previously."
             }
           ]
         }
@@ -2668,7 +2613,7 @@
           "html": "If the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"4c71aedd26\">SVGPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflects an element of the\n  base value</a> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\" id=\"ref-for-TermReflect⑦⑥\">reflected</a> attribute, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\" id=\"ref-for-TermReserialize②②\">reserialize</a>\n  the reflected attribute using the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#svgpointlist\" id=\"ref-for-svgpointlist①⓪\">SVGPointList</a></code> that reflects\n  the attribute’s base value."
         },
         {
-          "html": "Otherwise, if the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"4c71aedd27\">SVGPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#PointMode\">represents\n  the current translation</a> of an <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg\" id=\"ref-for-elementdef-svg①⓪②\">svg</a></code>’</span> element and that\n  element is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#TermOutermostSVGElement\" id=\"ref-for-TermOutermostSVGElement③⓪\">outermost svg element</a>, then:",
+          "html": "Otherwise, if the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"4c71aedd27\">SVGPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#PointMode\">represents\n  the current translation</a> of an <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg\" id=\"ref-for-elementdef-svg①⓪③\">svg</a></code>’</span> element and that\n  element is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#TermOutermostSVGElement\" id=\"ref-for-TermOutermostSVGElement③①\">outermost svg element</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -2927,7 +2872,7 @@
               "rationale": "define",
               "steps": [
                 {
-                  "html": "Define <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermResolvedDescendantNode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"text-TermResolvedDescendantNode\"></span>resolved descendant node</dfn> as a\n\t      descendant of node with a valid <span class=\"attr-name\">‘<code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute\" id=\"ref-for-TextElementTextLengthAttribute①⓪\">textLength</a></code>’</span>\n\t      attribute that is not itself a descendant node of a\n\t      descendant node that has a valid <span class=\"attr-name\">‘<code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute\" id=\"ref-for-TextElementTextLengthAttribute①①\">textLength</a></code>’</span>\n\t      attribute."
+                  "html": "Define <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermResolvedDescendantNode\"><span class=\"bs-old-id\" id=\"text-TermResolvedDescendantNode\"></span>resolved descendant node</dfn> as a\n\t      descendant of node with a valid <span class=\"attr-name\">‘<code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute\" id=\"ref-for-TextElementTextLengthAttribute①⓪\">textLength</a></code>’</span>\n\t      attribute that is not itself a descendant node of a\n\t      descendant node that has a valid <span class=\"attr-name\">‘<code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute\" id=\"ref-for-TextElementTextLengthAttribute①①\">textLength</a></code>’</span>\n\t      attribute."
                 },
                 {
                   "html": "Call the following procedure with the <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text\" id=\"ref-for-elementdef-text⑦②\">text</a></code>’</span> element\n\t      node."
@@ -3350,9 +3295,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getNumberOfChars()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getNumberOfChars",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getNumberOfChars()\" id=\"__svg__SVGTextContentElement__getNumberOfChars\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getNumberOfChars\"></span><code>getNumberOfChars</code></code></dfn>\nmethod returns the total number of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermAddressableCharacter\" id=\"ref-for-TermAddressableCharacter⑤\">addressable characters</a> available for\nrendering within the current element, regardless of whether they will be rendered.\nWhen getNumberOfChars() is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3370,9 +3313,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getComputedTextLength()",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getComputedTextLength",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getComputedTextLength()\" id=\"__svg__SVGTextContentElement__getComputedTextLength\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getComputedTextLength\"></span><code>getComputedTextLength</code></code></dfn>\nmethod is used to compute a \"length\" for the text within the element.\nWhen getComputedTextLength() is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3387,9 +3328,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getSubStringLength(charnum, nchars)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getSubStringLength",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getSubStringLength(charnum, nchars)\" id=\"__svg__SVGTextContentElement__getSubStringLength\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getSubStringLength\"></span><code>getSubStringLength</code></code></dfn>\nmethod is used to compute the formatted text advance distance for a substring of text within the\nelement.  When getSubStringLength(<var>charnum</var>, <var>nchars</var>)\nis called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3427,7 +3366,11 @@
     {
       "name": "find the typographic character for a character",
       "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#TermFindTypographicCharacterForCharacter",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the typographic character for a character\" id=\"TermFindTypographicCharacterForCharacter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"text-TermFindTypographicCharacterForCharacter\"></span>find the typographic\ncharacter for a character</dfn> at index <var>index</var> within an\nelement <var>element</var>, the following steps are run:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"find the typographic character for a character\" id=\"TermFindTypographicCharacterForCharacter\"><span class=\"bs-old-id\" id=\"text-TermFindTypographicCharacterForCharacter\"></span>find the typographic\ncharacter for a character</dfn>",
+      "rationale": "To <dfn>"
+    },
+    {
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3454,9 +3397,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getStartPositionOfChar(charnum)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getStartPositionOfChar",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getStartPositionOfChar(charnum)\" id=\"__svg__SVGTextContentElement__getStartPositionOfChar\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getStartPositionOfChar\"></span><code>getStartPositionOfChar</code></code></dfn>\nmethod is used to get the position of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\" id=\"ref-for-TermTypographicCharacterUnit⑥①\">typographic character</a> after text\nlayout has been performed.  When getStartPositionOfChar(<var>charnum</var>) is\ncalled, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3474,9 +3415,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getEndPositionOfChar(charnum)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getEndPositionOfChar",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getEndPositionOfChar(charnum)\" id=\"__svg__SVGTextContentElement__getEndPositionOfChar\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getEndPositionOfChar\"></span><code>getEndPositionOfChar</code></code></dfn>\nmethod is used to get the trailing position of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\" id=\"ref-for-TermTypographicCharacterUnit⑥③\">typographic character</a> after text\nlayout has been performed.  When getEndPositionOfChar(<var>charnum</var>) is\ncalled, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3503,9 +3442,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getExtentOfChar(charnum)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getExtentOfChar",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getExtentOfChar(charnum)\" id=\"__svg__SVGTextContentElement__getExtentOfChar\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getExtentOfChar\"></span><code>getExtentOfChar</code></code></dfn>\nmethod is used to compute a tight bounding box of the glyph cell\nthat corresponds to a given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\" id=\"ref-for-TermTypographicCharacterUnit⑥④\">typographic character</a>.  When getExtentOfChar(<var>charnum</var>)\nis called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3526,9 +3463,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getRotationOfChar(charnum)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getRotationOfChar",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getRotationOfChar(charnum)\" id=\"__svg__SVGTextContentElement__getRotationOfChar\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getRotationOfChar\"></span><code>getRotationOfChar</code></code></dfn>\nmethod is used to get the rotation of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\" id=\"ref-for-TermTypographicCharacterUnit⑥⑤\">typographic character</a>.  When\ngetRotationOfChar(<var>charnum</var>) is called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3546,9 +3481,7 @@
       ]
     },
     {
-      "name": "SVGTextContentElement/getCharNumAtPosition(point)",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#__svg__SVGTextContentElement__getCharNumAtPosition",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SVGTextContentElement\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getCharNumAtPosition(point)|getCharNumAtPosition()\" id=\"__svg__SVGTextContentElement__getCharNumAtPosition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code><span class=\"bs-old-id\" id=\"text-__svg__SVGTextContentElement__getCharNumAtPosition\"></span><code>getCharNumAtPosition</code></code></dfn>\nmethod is used to find which character caused a text glyph to\nbe rendered at a given position in the coordinate system.\nBecause the relationship between characters and glyphs is not one-to-one,\nonly the first character of the relevant <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\" id=\"ref-for-TermTypographicCharacterUnit⑥⑥\">typographic character</a> is returned\nWhen getCharNumAtPosition(<var>point</var>)\nis called, the following steps are run:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3626,7 +3559,7 @@
     {
       "name": "stroke shape",
       "href": "https://w3c.github.io/svgwg/svg2-draft/#TermStrokeShape",
-      "html": "<h3 class=\"heading settled\" data-level=\"13.5.7\" id=\"StrokeShape\"><span class=\"secno\">13.5.7. </span><span class=\"bs-old-id\" id=\"painting-StrokeShape\"></span><span class=\"content\">Computing the shape of the stroke</span><a class=\"self-link\" href=\"https://w3c.github.io/svgwg/svg2-draft/#StrokeShape\"></a></h3>\n    \n    <div class=\"ready-for-wider-review\">\n     <p>The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermStrokeShape\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"painting-TermStrokeShape\"></span>stroke shape</dfn> of an element is the\nshape that is filled by the <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/#StrokeProperty\" id=\"ref-for-StrokeProperty①④\">stroke</a> property.  Since <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text\" id=\"ref-for-elementdef-text①①⑨\">text</a></code>’</span>\nelements can be rendered in multiple chunks, each chunk has its own\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermStrokeShape\" id=\"ref-for-TermStrokeShape③\">stroke shape</a>.  The following algorithm describes the ideal stroke shape\nof a <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/paths.html#elementdef-path\" id=\"ref-for-elementdef-path⑤⑧\">path</a></code>’</span>, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#TermBasicShapeElement\">basic shape</a> or individual <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text\" id=\"ref-for-elementdef-text①②⓪\">text</a></code>’</span> chunk is,\ntaking into account the stroking properties above. The ideal stroke shape\ndescribed defines a best case implementation, but implementations are given some\nleeway to deviate from this description for performance reasons.</p>\n     \n    </div>\n     \n\nThe ideal stroke shape is determined as follows:",
+      "html": "<h3 class=\"heading settled\" data-level=\"13.5.7\" id=\"StrokeShape\"><span class=\"secno\">13.5.7. </span><span class=\"bs-old-id\" id=\"painting-StrokeShape\"></span><span class=\"content\">Computing the shape of the stroke</span><a class=\"self-link\" href=\"https://w3c.github.io/svgwg/svg2-draft/#StrokeShape\"></a></h3>\n    \n    <div class=\"ready-for-wider-review\">\n     <p>The <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermStrokeShape\"><span class=\"bs-old-id\" id=\"painting-TermStrokeShape\"></span>stroke shape</dfn></p> of an element is the\nshape that is filled by the <a class=\"css property\" data-link-type=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/#StrokeProperty\" id=\"ref-for-StrokeProperty①④\">stroke</a> property.  Since <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text\" id=\"ref-for-elementdef-text①①⑨\">text</a></code>’</span>\nelements can be rendered in multiple chunks, each chunk has its own\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/#TermStrokeShape\" id=\"ref-for-TermStrokeShape③\">stroke shape</a>.  The following algorithm describes the ideal stroke shape\nof a <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/paths.html#elementdef-path\" id=\"ref-for-elementdef-path⑤⑧\">path</a></code>’</span>, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#TermBasicShapeElement\">basic shape</a> or individual <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text\" id=\"ref-for-elementdef-text①②⓪\">text</a></code>’</span> chunk is,\ntaking into account the stroking properties above. The ideal stroke shape\ndescribed defines a best case implementation, but implementations are given some\nleeway to deviate from this description for performance reasons.<p></p>\n     \n    </div>\n     \n\nThe ideal stroke shape is determined as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3707,9 +3640,7 @@
       ]
     },
     {
-      "name": "dash positions",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TermDashPositions",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermDashPositions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"painting-TermDashPositions\"></span>dash positions</dfn> for a given subpath of\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/svgwg/svg2-draft/paths.html#TermEquivalentPath\" id=\"ref-for-TermEquivalentPath⑨\">equivalent path</a> of a <span class=\"element-name\">‘<code><a data-link-type=\"element\" href=\"https://w3c.github.io/svgwg/svg2-draft/paths.html#elementdef-path\" id=\"ref-for-elementdef-path⑥⓪\">path</a></code>’</span> or <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#TermBasicShapeElement\">basic shape</a> is a\nsequence of pairs of values, which represent the starting and ending distance\nalong the subpath for each of the dashes that form the subpath’s stroke.  It is\ndetermined as follows:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3775,9 +3706,7 @@
       ]
     },
     {
-      "name": "cap shapes",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TermCapShape",
-      "html": "The starting and ending <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermCapShape\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"painting-TermCapShape\"></span>cap shapes</dfn> at a given\n<var>position</var> along a subpath are determined as follows:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3810,9 +3739,7 @@
       ]
     },
     {
-      "name": "line join shape",
-      "href": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TermLineJoinShape",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"TermLineJoinShape\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"painting-TermLineJoinShape\"></span>line join shape</dfn> for a given segment of\na subpath is determined as follows:",
+      "html": "",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3927,7 +3854,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If this element’s <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
+          "html": "If this element’s <span class=\"attr-name\">‘href’</span> content attribute is not present and its <span class=\"attr-name\">‘xlink:href’</span> content attribute is present:",
           "rationale": "set",
           "steps": [
             {

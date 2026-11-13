@@ -8,9 +8,3 @@ interface GamepadHapticActuator {
   );
   Promise<GamepadHapticsResult> reset();
 };
-
-// Source: Gamepad Extensions (https://w3c.github.io/gamepad/extensions.html)
-[Exposed=Window]
-partial interface GamepadHapticActuator {
-  Promise<boolean> pulse(double value, double duration);
-};

@@ -1,0 +1,6 @@
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+[Exposed=Window]
+interface RTCIceCandidatePairEvent : Event {
+  constructor(DOMString type, RTCIceCandidatePairEventInit eventInitDict);
+  readonly attribute RTCIceCandidatePair candidatePair;
+};

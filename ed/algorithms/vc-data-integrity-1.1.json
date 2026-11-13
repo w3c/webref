@@ -402,10 +402,10 @@
           "html": "Let <var>hashData</var> be the result of running the algorithm in\n<a href=\"https://w3c.github.io/vc-data-integrity/#HashSD\" data-matched-text=\"[[[#HashSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.2 </bdi>HashSD</a> with <var>transformedData</var> and <var>proofConfig</var>\npassed as a parameters."
         },
         {
-          "html": "In a SHoC approach, add to <var>hashData</var> the <var>saltedHash</var> data that results\nfrom running the algorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#SaltedHashSD\" data-matched-text=\"[[[#SaltedHashSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.1 </bdi>SaltedHashSD</a>."
+          "html": "In a SHoC approach, add to <var>hashData</var> the <var>salted hash</var> data that results\nfrom running the algorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#MerkleizeSD\" data-matched-text=\"[[[#MerkleizeSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.4 </bdi>MerkleizeSD</a>."
         },
         {
-          "html": "Let <var>proofBytes</var> be the result of running the approach-specific\n<em>SerializeBase</em> algorithm. For example, use <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeBase-SIC\" data-matched-text=\"[[[#SerializeBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.1 </bdi>SerializeBase-SIC</a> for\nthe SIC approach, and use <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeBase-SHoC\" data-matched-text=\"[[[#SerializeBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.2 </bdi>SerializeBase-SHoC</a> for the SHoC approach. In\nall cases, pass <var>hashData</var> and <var>options</var> as parameters."
+          "html": "Let <var>proofBytes</var> be the result of running the approach-specific\n<em>SerializeBase</em> algorithm. For example, use <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeBase-SIC\" data-matched-text=\"[[[#SerializeBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.1 </bdi>SerializeBase-SIC</a> for\nthe SIC approach, and use <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeBase-SHoC\" data-matched-text=\"[[[#SerializeBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.7 </bdi>SerializeBase-SHoC</a> for the SHoC approach. In\nall cases, pass <var>hashData</var> and <var>options</var> as parameters."
         },
         {
           "html": "Let <var>proof</var>.<var>proofValue</var> be a <a data-cite=\"CID#multibase-0\" href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\"><code>base64-url-encoded</code> Multibase value</a> of the <var>proofBytes</var>."
@@ -420,7 +420,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let the <var>proofData</var> object be the result returned from the approach-specific\n<em>ParseBase</em> sub-algorithm. For example, for the SIC approach use\n<a href=\"https://w3c.github.io/vc-data-integrity/#ParseBase-SIC\" data-matched-text=\"[[[#ParseBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.2 </bdi>ParseBase-SIC</a>, and for the SHoC approach use <a href=\"https://w3c.github.io/vc-data-integrity/#ParseBase-SHoC\" data-matched-text=\"[[[#ParseBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.3 </bdi>ParseBase-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>hmacKey</var> and\n<var>mandatoryPointers</var>."
+          "html": "Let the <var>proofData</var> object be the result returned from the approach-specific\n<em>ParseBase</em> sub-algorithm. For example, for the SIC approach use\n<a href=\"https://w3c.github.io/vc-data-integrity/#ParseBase-SIC\" data-matched-text=\"[[[#ParseBase-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.2 </bdi>ParseBase-SIC</a>, and for the SHoC approach use <a href=\"https://w3c.github.io/vc-data-integrity/#ParseBase-SHoC\" data-matched-text=\"[[[#ParseBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.8 </bdi>ParseBase-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>hmacKey</var> and\n<var>mandatoryPointers</var>."
         },
         {
           "html": "Initialize <var>disclosureData</var> to the object returned when calling the algorithm in\n<a href=\"https://w3c.github.io/vc-data-integrity/#CreateDisclosureData\" data-matched-text=\"[[[#CreateDisclosureData]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.3 </bdi>CreateDisclosureData</a>, passing the <var>document</var>, <var>proofData</var>,\n<var>selectivePointers</var>, and any custom JSON-LD API options, such as a document\nloader. The <var>disclosureData</var> object will contain the following fields:\n<var>revealDocument</var>, <var>mandatoryIndexes</var>, <var>selectiveIndexes</var>, <var>verifierLabelMap</var>\n<var>mandatory</var>, and <var>nonMandatory</var>."
@@ -429,7 +429,7 @@
           "html": "Initialize <var>newProof</var> to a shallow copy of <var>proof</var>."
         },
         {
-          "html": "Replace <var>proofValue</var> in <var>newProof</var> with the result of calling the approach-specific\n<em>SerializeDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#SerializeDerived-SIC\" data-matched-text=\"[[[#SerializeDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.3 </bdi>SerializeDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#SerializeDerived-SHoC\" data-matched-text=\"[[[#SerializeDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.4 </bdi>SerializeDerived-SHoC</a>. In all cases, pass <var>proofData</var> and <var>disclosureData</var>\nas parameters."
+          "html": "Replace <var>proofValue</var> in <var>newProof</var> with the result of calling the approach-specific\n<em>SerializeDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#SerializeDerived-SIC\" data-matched-text=\"[[[#SerializeDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.3 </bdi>SerializeDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#SerializeDerived-SHoC\" data-matched-text=\"[[[#SerializeDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.9 </bdi>SerializeDerived-SHoC</a>. In all cases, pass <var>proofData</var> and <var>disclosureData</var>\nas parameters."
         },
         {
           "html": "Set the value of the \"proof\" property in <var>revealDocument</var> to <var>newProof</var>."
@@ -447,13 +447,13 @@
           "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
         },
         {
-          "html": "Initialize the <var>proofData</var> object to the result returned by the approach-specific\n<em>ParseDerived</em> sub-algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#ParseDerived-SIC\" data-matched-text=\"[[[#ParseDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.4 </bdi>ParseDerived-SIC</a>, and for the SHoC approach, use <a href=\"https://w3c.github.io/vc-data-integrity/#ParseDerived-SHoC\" data-matched-text=\"[[[#ParseDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.5 </bdi>ParseDerived-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>labelMap</var> and\n<var>mandatoryIndexes</var>."
+          "html": "Initialize the <var>proofData</var> object to the result returned by the approach-specific\n<em>ParseDerived</em> sub-algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#ParseDerived-SIC\" data-matched-text=\"[[[#ParseDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.4 </bdi>ParseDerived-SIC</a>, and for the SHoC approach, use <a href=\"https://w3c.github.io/vc-data-integrity/#ParseDerived-SHoC\" data-matched-text=\"[[[#ParseDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.10 </bdi>ParseDerived-SHoC</a>.\nAt a minimum, the <var>proofData</var> object will contain the fields <var>labelMap</var> and\n<var>mandatoryIndexes</var>."
         },
         {
           "html": "Initialize the <var>verifyData</var> object to the value returned by calling the\nalgorithm in Section <a href=\"https://w3c.github.io/vc-data-integrity/#CreateVerifyData\" data-matched-text=\"[[[#CreateVerifyData]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4.4 </bdi>CreateVerifyData</a>, passing the <var>document</var>,\n<var>proofData</var>, and any custom JSON-LD API options, such as a document loader.\nThe <var>verifyData</var> object will contain the following fields: <var>proofHash</var>,\n<var>mandatoryHash</var>, and <var>nonMandatory</var>."
         },
         {
-          "html": "Initialize <var>verified</var> to the result of calling the approach-specific\n<em>VerifyDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifyDerived-SIC\" data-matched-text=\"[[[#VerifyDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.5 </bdi>VerifyDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifyDerived-SHoC\" data-matched-text=\"[[[#VerifyDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.6 </bdi>VerifyDerived-SHoC</a>. In all cases, pass <var>proofData</var> and\n<var>verifyData</var> as parameters."
+          "html": "Initialize <var>verified</var> to the result of calling the approach-specific\n<em>VerifyDerived</em> algorithm. For example, for the SIC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifyDerived-SIC\" data-matched-text=\"[[[#VerifyDerived-SIC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5.5 </bdi>VerifyDerived-SIC</a>, and for the SHoC approach, use\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifyDerived-SHoC\" data-matched-text=\"[[[#VerifyDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.11 </bdi>VerifyDerived-SHoC</a>. In all cases, pass <var>proofData</var> and\n<var>verifyData</var> as parameters."
         },
         {
           "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-10\">verification result</a> with <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-8\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-4\">verifiedDocument</a></dt>\n                <dd>\nif <var>verified</var> is <code>true</code>, <var>unsecuredDocument</var>; otherwise <a data-cite=\"INFRA#nulls\" href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"
@@ -552,7 +552,7 @@
           "html": "Initialize <var>selectiveIndexes</var> to an empty array."
         },
         {
-          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>mandatory</var>.<var>nonMatching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\ncombined output that is to be revealed:",
+          "html": "For each <var>absoluteIndex</var> in the keys in <var>groups</var>.<var>mandatory</var>.<var>nonMatching</var>, convert\nthe absolute index of any <em>selective</em> N-Quad to an index relative to the\nnon-mandatory output that is to be revealed:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -782,20 +782,128 @@
       ]
     },
     {
+      "html": "The required inputs to this algorithm are a salt seed\n(<var>saltSeed</var>), a byte string of 16–32 bytes, and <var>count</var>, a non-negative\ninteger. An array of <var>count</var> byte strings is produced as output, each of length\nequal to half the hash output length (16 bytes for SHA-256).",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Initialize <var>salts</var> as an empty array."
+        },
+        {
+          "html": "For each index <var>i</var> from 0 to <var>count</var> − 1, inclusive:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Compute <var>input</var> to be <code>uint64be(i)</code>, the 8-byte big-endian unsigned integer\nencoding of <var>i</var>."
+            },
+            {
+              "html": "Compute <var>mac</var> to be the result of computing <code>HMAC-Hash(saltSeed, input)</code>, where\n<code>Hash</code> is the cryptosuite-specified hash function (e.g., SHA-256) and\n<var>saltSeed</var> is used as the HMAC key, per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc2104\" title=\"HMAC: Keyed-Hashing for Message Authentication\">RFC2104</a></cite>]. This construction follows\nthe shape of the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-nist-sp-800-108\" title=\"Recommendation for Key Derivation Using Pseudorandom Functions\">NIST-SP-800-108</a></cite>] counter-mode KDF, with the counter placed\nbefore the Label/Context, an empty Label/Context, and the optional L parameter\nomitted; the counter here is a fixed 8-byte value, while [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-nist-sp-800-108\" title=\"Recommendation for Key Derivation Using Pseudorandom Functions\">NIST-SP-800-108</a></cite>]\nleaves the counter length as a KDF-specified parameter. The reference is\ninformative: the exact construction is fully specified by this step and does\nnot normatively depend on it. For the initial SHoC suites, <var>salt</var> is set to the first 16 bytes\nof <code>HMAC-SHA-256(saltSeed, uint64be(i))</code>."
+            },
+            {
+              "html": "Set <var>salt</var> to the first L bytes of <var>mac</var>, where L is half the hash output\nlength (16 bytes for SHA-256), and append <var>salt</var> to <var>salts</var>."
+            }
+          ]
+        },
+        {
+          "html": "Return <var>salts</var>."
+        }
+      ]
+    },
+    {
+      "html": "Let <var>leafHashes</var> be an array of leaf hashes, where <code>|leafHashes|[0:n]</code> is the\nentire array and n is its length (that is, <var>treeSize</var>). <code>MTH(|leafHashes|[a:b])</code>\nis defined recursively as follows; the empty tree (b = a) and the single-leaf\ntree (b − a = 1) are the base cases.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "For an empty range (b = a), <code>MTH(|leafHashes|[a:a])</code> is defined to be <code>H()</code>,\nthe hash of the empty input. This occurs exactly when the tree is empty\n(<var>treeSize</var> = 0; see <a href=\"https://w3c.github.io/vc-data-integrity/#MerkleizeSD\" data-matched-text=\"[[[#MerkleizeSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.4 </bdi>MerkleizeSD</a>)."
+        },
+        {
+          "html": "For a single-leaf range (b − a = 1), <code>MTH(|leafHashes|[a:a+1])</code> is defined to\nbe <code>|leafHashes|[a]</code>: a single leaf hash is itself the root of the single-leaf\nsubtree. The leaf prefix <code>0x00</code> was already applied once when computing the leaf\nhash (<a href=\"https://w3c.github.io/vc-data-integrity/#MerkleizeSD\" data-matched-text=\"[[[#MerkleizeSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.4 </bdi>MerkleizeSD</a>, step 4) and <em class=\"rfc2119\">MUST NOT</em> be applied again here."
+        },
+        {
+          "html": "For a range with more than one leaf (b − a &gt; 1), let <var>k</var> be the largest power\nof two strictly less than b − a:\n<code>MTH(|leafHashes|[a:b]) = H(0x01 || MTH(|leafHashes|[a:a+k]) || MTH(|leafHashes|[a+k:b]))</code>."
+        }
+      ]
+    },
+    {
+      "html": "The required input to this algorithm is <var>treeSize</var>, a non-negative integer.\nA <em>tree shape</em> (<var>shape</var>) is produced as output. The concrete\nrepresentation of <var>shape</var> is implementation-specific (e.g., a node-interval\ntree or a bit-manipulation stack algorithm), but the result <em class=\"rfc2119\">MUST</em> be\nfunctionally equivalent to the following recursive definition:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>treeSize</var> equals 0, the shape is the empty tree (a shape containing no\nnodes). No subtree hashes are derived from it; proof creation and verification\nspecial-case the empty tree before any shape-dependent processing (see\n<a href=\"https://w3c.github.io/vc-data-integrity/#CreateSubtreeProof\" data-matched-text=\"[[[#CreateSubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.5 </bdi>CreateSubtreeProof</a> and <a href=\"https://w3c.github.io/vc-data-integrity/#VerifySubtreeProof\" data-matched-text=\"[[[#VerifySubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.6 </bdi>VerifySubtreeProof</a>)."
+        },
+        {
+          "html": "If <var>treeSize</var> equals 1, the shape is a single leaf."
+        },
+        {
+          "html": "Otherwise, let <var>k</var> be the largest power of two strictly less than <var>treeSize</var>.\nThe shape is a node whose left subtree covers the leaf range <code>[0, k)</code> and is\n<code>ComputeTreeShape(|k|)</code>, and whose right subtree covers the leaf range\n<code>[k, treeSize)</code> and is <code>ComputeTreeShape(|treeSize| - |k|)</code>."
+        }
+      ]
+    },
+    {
       "html": "The required inputs to this algorithm are a <em>transformed data document</em>\n(<var>transformedDocument</var>) and <var>cryptosuite</var>. A <em>salted hash data</em> value\nrepresented as an object is produced as output.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Initialize <var>salts</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> create a cryptographically secure random number of\nbyte length half the size of the hash length, e.g., for security category 1 or 2\nusing SHA-256 the length of each salt would be 16 bytes."
+          "html": "Generate a fresh <var>saltSeed</var> using a cryptographically secure random number\ngenerator. The seed <em class=\"rfc2119\">MUST</em> be 16–32 bytes (32 <em class=\"rfc2119\">RECOMMENDED</em>) and <em class=\"rfc2119\">MUST NOT</em> be\nderived from the signing key, a DID, or the document content. The seed is a\nper-proof, single-use secret."
         },
         {
-          "html": "Initialize <var>saltedHashes</var> as an empty array. For each <var>nonMandatory</var> item in the\n<var>transformedDocument</var> compute the appropriate hash (SHA-256 for security\ncategory 1 or 2 signature algorithms) over the concatenation of each <var>salt</var> and\nits corresponding <var>nonMandatory</var> item. Add this hash value to the <var>saltedHashes</var>\narray."
+          "html": "Set <var>treeSize</var> to the number of <var>nonMandatory</var> items in the\n<var>transformedDocument</var>. An empty tree (<var>treeSize</var> = 0) is permitted: this\npreserves the ability to issue credentials whose statements are all mandatory.\nIn that case <var>leafHashes</var> is empty and step 5 produces <var>merkleRoot</var> equal to\n<code>H()</code>."
         },
         {
-          "html": "Add <var>salts</var> as <code>salts</code> and <var>saltedHashes</var> as  <code>saltedHashes</code> to  the <var>saltedHashData</var>\nobject."
+          "html": "Set <var>salts</var> to the result of running the algorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#DeriveSaltsSD\" data-matched-text=\"[[[#DeriveSaltsSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.1 </bdi>DeriveSaltsSD</a>,\npassing <var>saltSeed</var> and <var>treeSize</var> as parameters — an array of <var>treeSize</var> salt\nvalues."
+        },
+        {
+          "html": "Initialize <var>leafHashes</var> as an empty array. For each position <var>j</var> (zero-based,\nin <var>nonMandatory</var> order), compute <var>leafHash</var> to be the hash of the\nconcatenation of <code>0x00</code>, <var>salts</var>[j], and the UTF-8 representation of\n<var>nonMandatory</var>[j], in that order,\nusing the cryptosuite-specified hash function, and append <var>leafHash</var> to\n<var>leafHashes</var>. The concatenation order <em class=\"rfc2119\">MUST</em> be as stated in this step."
+        },
+        {
+          "html": "Set <var>merkleRoot</var> to the result of evaluating <code>MTH(|leafHashes|[0:|treeSize|])</code>, as\ndefined in <a href=\"https://w3c.github.io/vc-data-integrity/#MTH\" data-matched-text=\"[[[#MTH]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.2 </bdi>Merkle Tree Hash (MTH)</a>. For an empty tree (<var>treeSize</var> = 0) this is <code>H()</code>."
+        },
+        {
+          "html": "Add <var>saltSeed</var> as <code>saltSeed</code>, <var>treeSize</var> as <code>treeSize</code>, and <var>merkleRoot</var> as\n<code>merkleRoot</code> to the <var>saltedHashData</var> object."
         },
         {
           "html": "Return <var>saltedHashData</var>."
+        }
+      ]
+    },
+    {
+      "html": "The algorithm recursively processes the leaf range <code>[0, treeSize)</code>; if\n<var>treeSize</var> is 0, the recursion is not entered and the output is the empty\n<var>subtreeProof</var> stated above. For a non-empty tree, let <code>Agg(a, b)</code> denote\nprocessing the subtree covering the non-empty leaf range <code>[a, b)</code> (where\na &lt; b):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If no element of <var>leafIndexes</var> falls within <code>[a, b)</code> (i.e., every leaf of this\nsubtree is undisclosed), append the root hash of this subtree,\n<code>MTH(|leafHashes|[a:b])</code> to the output and terminate the recursion. For a\nsingle-leaf range this value is the leaf hash itself (see <a href=\"https://w3c.github.io/vc-data-integrity/#MTH\" data-matched-text=\"[[[#MTH]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.2 </bdi>Merkle Tree Hash (MTH)</a>)."
+        },
+        {
+          "html": "If every leaf in <code>[a, b)</code> is disclosed (i.e., all indexes in <code>[a, b)</code> are\nmembers of <var>leafIndexes</var>), emit nothing and terminate the recursion."
+        },
+        {
+          "html": "Otherwise (the subtree is mixed — partially disclosed), let <var>k</var> be the largest\npower of two strictly less than <code>b - a</code>. Recursively execute <code>Agg(a, a + k)</code>\nfollowed by <code>Agg(a + k, b)</code>."
+        },
+        {
+          "html": "The output order is depth-first, left subtree before right subtree."
+        }
+      ]
+    },
+    {
+      "html": "Let <var>proofCursor</var> be an integer index into <var>subtreeProof</var>, initialized to 0.\nLet <code>Reconstruct(a, b)</code> denote processing the subtree covering the non-empty\nleaf range <code>[a, b)</code> (where a &lt; b), returning the hash of its root:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If no element of <var>leafIndexes</var> falls within <code>[a, b)</code> (every leaf of this\nsubtree is undisclosed), the root of this subtree is supplied by the proof: set\n<var>value</var> to <var>subtreeProof</var>[<var>proofCursor</var>] (if <var>proofCursor</var> is beyond the end of\n<var>subtreeProof</var>, return an error), increment <var>proofCursor</var>, and return <var>value</var>."
+        },
+        {
+          "html": "If every index in <code>[a, b)</code> is a member of <var>leafIndexes</var> (the subtree is fully\ndisclosed), collect the corresponding leaf hashes from <var>disclosedLeafHashes</var>\n(via their positions in <var>leafIndexes</var>), compute <code>MTH</code> over this array per\n<a href=\"https://w3c.github.io/vc-data-integrity/#MTH\" data-matched-text=\"[[[#MTH]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.2 </bdi>Merkle Tree Hash (MTH)</a>, and return the result — the verifier recomputes the subtree root\nfrom disclosed leaves instead of receiving it from the proof."
+        },
+        {
+          "html": "Otherwise (the subtree is mixed), let <var>k</var> be the largest power of two strictly\nless than <code>b - a</code>. Compute <var>left</var> = <code>Reconstruct(a, a + k)</code> and <var>right</var> =\n<code>Reconstruct(a + k, b)</code>, then return <code>H(0x01 || left || right)</code>."
+        },
+        {
+          "html": "The entry point is <code>Reconstruct(0, |treeSize|)</code>. If <var>treeSize</var> is 0,\n<code>Reconstruct</code> is not invoked: <var>reconstructedRoot</var> is <code>H()</code> (the empty-tree case\nabove), and <var>proofCursor</var> = 0 = the length of <var>subtreeProof</var> satisfies step 5."
+        },
+        {
+          "html": "After <code>Reconstruct</code> returns, if <var>proofCursor</var> does not equal the length of\n<var>subtreeProof</var>, return an error — the proof was not fully consumed, indicating\na malformed or tampered proof."
+        },
+        {
+          "html": "Return the value produced by step 4 as <var>reconstructedRoot</var>."
         }
       ]
     },
@@ -804,19 +912,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>salts</var>,\n<var>saltedHashes</var>,\nand <var>hmacKey</var> to the values associated with their property names\n<var>hashData</var>."
+          "html": "Initialize <var>proofHash</var>, <var>mandatoryPointers</var>, <var>mandatoryHash</var>, <var>saltSeed</var>,\n<var>treeSize</var>, <var>merkleRoot</var>,\nand <var>hmacKey</var> to the values associated with their property names in\n<var>hashData</var>."
         },
         {
-          "html": "Initialize <var>toSign</var> the hash of the concatenation of <var>proofHash</var>,\n<var>mandatoryHash</var>,and <var>saltedHashes</var> where the order of the concatenation <em class=\"rfc2119\">MUST</em> \nbe followed. The cryptographic hash algorithm is that specified for signature \nalgorithm in the <var>cryptosuite</var>."
+          "html": "Initialize <var>toSign</var> to the concatenation of <var>proofHash</var>, <var>mandatoryHash</var>,\n<var>treeSize</var> (encoded as an 8-byte big-endian unsigned integer), and\n<var>merkleRoot</var>, in that order. The concatenation order <em class=\"rfc2119\">MUST</em> be as stated. The\nfixed-length encoding of <var>treeSize</var> <em class=\"rfc2119\">MUST</em> be used to avoid concatenation\nambiguity. Note that <var>saltSeed</var> is not included in <var>toSign</var>: the verifier must\nbe able to recompute <var>toVerify</var> from the data carried in the derived proof\nalone, and the <var>saltSeed</var> <em class=\"rfc2119\">MUST NOT</em> appear in any structure reaching the\nverifier (see the note in <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeDerived-SHoC\" data-matched-text=\"[[[#SerializeDerived-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.9 </bdi>SerializeDerived-SHoC</a>). Integrity is\npreserved regardless: the salts derived from <var>saltSeed</var> are transitively bound\nto the signed <var>merkleRoot</var> through the leaf-hash computation, so any\nsubstitution of <var>saltSeed</var> causes root reconstruction to fail."
         },
         {
           "html": "Initialize <var>signature</var> to the result of digitally signing <var>toSign</var> using the\nprivate key associated with the base proof verification method."
         },
         {
-          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nbase proof header bytes 0xd9, 0x5d, and 0x10."
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nbase proof header bytes 0xd9, 0x5d, and 0x12."
         },
         {
-          "html": "Initialize <var>components</var> to an array with five elements containing the values of:\n<var>signature</var>, <var>hmacKey</var>, <var>salts</var>, <var>saltedHashes</var>, and <var>mandatoryPointers</var>."
+          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>hmacKey</var>, <var>saltSeed</var>, <var>treeSize</var>, <var>merkleRoot</var>, and\n<var>mandatoryPointers</var>. Note that the salts are not included — the holder\nrecomputes all salts and all leaf hashes locally from <var>saltSeed</var> via\n<a href=\"https://w3c.github.io/vc-data-integrity/#DeriveSaltsSD\" data-matched-text=\"[[[#DeriveSaltsSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.1 </bdi>DeriveSaltsSD</a>; <var>treeSize</var> and <var>merkleRoot</var> are carried instead."
         },
         {
           "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
@@ -827,7 +935,7 @@
       ]
     },
     {
-      "html": "The following algorithm parses the components of a SHoC approach selective\ndisclosure base proof value. The required inputs are a proof value\n(<var>proofValue</var>). A single object <em>proof data</em>, containing\nfive elements, using the names <code>signature</code>, <code>hmacKey</code>, <code>salts</code>\n<code>saltedHashes</code>, and <code>mandatoryPointers</code>, is produced  as output.",
+      "html": "The following algorithm parses the components of a SHoC approach selective\ndisclosure base proof value. The required inputs are a proof value\n(<var>proofValue</var>). A single object <em>proof data</em>, containing\nsix elements, using the names <code>signature</code>, <code>hmacKey</code>, <code>saltSeed</code>,\n<code>treeSize</code>, <code>merkleRoot</code>, and <code>mandatoryPointers</code>, is produced  as output.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -837,31 +945,46 @@
           "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
         },
         {
-          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x10</code>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach base proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x12</code>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
-          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte SHoC approach base proof header. Confirm that\nthe result is an array of five elements."
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the\nbytes that follow the three-byte SHoC approach base proof header. Confirm that\nthe result is an array of six elements."
         },
         {
-          "html": "Return an object with properties set to the five elements, using the names\n<code>signature</code>, <code>hmacKey</code>, <code>salts</code>, <code>saltedHashes</code>, and <code>mandatoryPointers</code>,\nrespectively."
+          "html": "Validate the parsed values: <var>saltSeed</var> <em class=\"rfc2119\">MUST</em> be a byte string of 16–32 bytes;\n<var>treeSize</var> <em class=\"rfc2119\">MUST</em> be an integer greater than or equal to 0; <var>merkleRoot</var> <em class=\"rfc2119\">MUST</em> be\na byte string whose length equals the hash output length; <var>hmacKey</var> <em class=\"rfc2119\">MUST</em> be a\nbyte string whose length equals the hash output length; <var>mandatoryPointers</var>\n<em class=\"rfc2119\">MUST</em> be an array of strings. If any check fails, an error <em class=\"rfc2119\">MUST</em> be raised and\n<em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "Return an object with properties set to the six elements, using the names\n<code>signature</code>, <code>hmacKey</code>, <code>saltSeed</code>, <code>treeSize</code>, <code>merkleRoot</code>, and\n<code>mandatoryPointers</code>, respectively."
         }
       ]
     },
     {
-      "html": "The following algorithm serializes a SHoC approach derived proof value.\nThe required inputs are a base signature (<var>signature</var>), an array of filtered \nsalts (<var>filteredSalts</var>), an array of salted hashes (<var>saltedHashes</var>), a label map\n(<var>labelMap</var>), an array of mandatory indexes (<var>mandatoryIndexes</var>), and an array\nof selective indexes (<var>selectiveIndexes</var>). A single <em>derived proof</em>\nvalue, serialized as a UTF-8 string, is produced as output.",
+      "html": "The following algorithm serializes a SHoC approach derived proof value. It is\ncalled by the approach-specific <em>SerializeDerived</em> step of the\n<a href=\"https://w3c.github.io/vc-data-integrity/#add-derived-proof\">Add Derived Proof</a> algorithm, passing\n<var>proofData</var> and <var>disclosureData</var> as parameters. <var>signature</var> and <var>treeSize</var> come\nfrom <var>proofData</var>; <var>labelMap</var> is <var>disclosureData</var>'s <var>verifierLabelMap</var>;\n<var>mandatoryIndexes</var> is <var>disclosureData</var>'s <var>mandatoryIndexes</var>; <var>nonMandatory</var> is\n<var>disclosureData</var>'s full <var>nonMandatory</var> array. A single <em>derived proof</em>\nvalue, serialized as a UTF-8 string, is produced as output.",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "Initialize <var>compressedLabelMap</var> to the result of calling the algorithm in\n<a href=\"https://w3c.github.io/vc-data-integrity/#compresslabelmap\" data-matched-text=\"[[[#compresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.6 </bdi>compressLabelMap</a>, passing <var>labelMap</var> as the parameter."
         },
         {
-          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nderived proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>."
+          "html": "Set <var>leafIndexes</var> to <var>disclosureData</var>'s <var>selectiveIndexes</var> — the positions of\nthe disclosed statements in <var>nonMandatory</var>."
         },
         {
-          "html": "Let <var>filteredSalts</var> be the array obtained by selecting the salt values from the\n<var>salts</var> array corresponding to the values in the <var>selectiveIndexes</var> array in\nincreasing index order."
+          "html": "Set <var>salts</var> to the result of running the algorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#DeriveSaltsSD\" data-matched-text=\"[[[#DeriveSaltsSD]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.1 </bdi>DeriveSaltsSD</a>,\npassing <var>proofData</var>.<var>saltSeed</var> and <var>treeSize</var> as parameters."
         },
         {
-          "html": "Initialize <var>components</var> to an array with six elements containing the values of:\n<var>signature</var>, <var>filteredSalts</var>, <var>saltedHashes</var>, <var>compressedLabelMap</var>, <var>mandatoryIndexes</var>,\n<var>selectiveIndexes</var>."
+          "html": "Recompute all leaf hashes: for each position <var>j</var> in <code>[0, treeSize)</code>, compute\nthe hash of the concatenation of <code>0x00</code>, <var>salts</var>[j], and the UTF-8\nrepresentation of <var>nonMandatory</var>[j], in\nthat order, using the cryptosuite-specified hash function. Collect the results\ninto <var>leafHashes</var>."
+        },
+        {
+          "html": "Set <var>subtreeProof</var> to the result of running the algorithm in\n<a href=\"https://w3c.github.io/vc-data-integrity/#CreateSubtreeProof\" data-matched-text=\"[[[#CreateSubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.5 </bdi>CreateSubtreeProof</a>, passing <var>treeSize</var>, <var>leafIndexes</var>, and <var>leafHashes</var>\nas parameters."
+        },
+        {
+          "html": "Set <var>filteredSalts</var> to the array obtained by selecting the salt values from the\n<var>salts</var> array corresponding to the values in the <var>leafIndexes</var> array in\nincreasing index order: for each <var>i</var>, <code>filteredSalts[i] = salts[leafIndexes[i]]</code>."
+        },
+        {
+          "html": "Initialize a byte array, <var>proofValue</var>, that starts with the SHoC approach\nderived proof header bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x13</code>."
+        },
+        {
+          "html": "Initialize <var>components</var> to an array with seven elements containing the values of:\n<var>signature</var>, <var>treeSize</var>, <var>leafIndexes</var>, <var>filteredSalts</var>, <var>subtreeProof</var>,\n<var>compressedLabelMap</var>, and <var>mandatoryIndexes</var>."
         },
         {
           "html": "CBOR-encode <var>components</var> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/vc-data-integrity/#bib-rfc8949\" title=\"Concise Binary Object Representation (CBOR)\">RFC8949</a></cite>] where CBOR tagging <em class=\"rfc2119\">MUST NOT</em> be used on\nany of the <var>components</var>. Append the produced encoded value to <var>proofValue</var>."
@@ -872,7 +995,7 @@
       ]
     },
     {
-      "html": "The following algorithm parses the components of a SHoC approach derived proof\nvalue. The required input is a derived proof value (<var>proofValue</var>).\nA single <em>proof data</em> object is produced as output, which\ncontains a set to six elements, using the names \"signature\", \"salts\",\n\"saltedHashes\", \"labelMap\", \"mandatoryIndexes\", and \"selectiveIndexes\".",
+      "html": "The following algorithm parses the components of a SHoC approach derived proof\nvalue. The required input is a derived proof value (<var>proofValue</var>).\nA single <em>proof data</em> object is produced as output, which\ncontains a set of seven elements, using the names \"signature\", \"treeSize\",\n\"leafIndexes\", \"salts\", \"subtreeProof\", \"labelMap\", and \"mandatoryIndexes\".",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -882,16 +1005,19 @@
           "html": "Initialize <var>decodedProofValue</var> to the result of base64url-no-pad-decoding the\nsubstring after the leading <code>u</code> in <var>proofValue</var>."
         },
         {
-          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach derived proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x11</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "If the <var>decodedProofValue</var> does not start with the SHoC approach derived proof\nheader bytes <code>0xd9</code>, <code>0x5d</code>, and <code>0x13</code>, an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
-          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte SHoC approach derived proof header. If the\nresult is not an array of the following six elements —\na byte array of length corresponding to the signature size;\nan array of byte arrays, each of length appropriate to the <em>salt size</em>;\nan array of byte arrays, each of length corresponding to the hash size;\na map of integers to byte arrays, each of length 32;\nan array of integers; and another array of integers — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+          "html": "Initialize <var>components</var> to an array that is the result of CBOR-decoding the bytes\nthat follow the three-byte SHoC approach derived proof header. If the\nresult is not an array of the following seven elements —\na byte array of length corresponding to the signature size;\na non-negative integer (<var>treeSize</var>);\nan array of integers (<var>leafIndexes</var>);\nan array of byte arrays, each of length appropriate to the <em>salt size</em>\n(<var>filteredSalts</var>);\nan array of byte strings, each of length corresponding to the hash size\n(<var>subtreeProof</var>);\na map of integers to byte arrays, each of length 32 (<var>compressedLabelMap</var>);\nand an array of integers (<var>mandatoryIndexes</var>) — an error <em class=\"rfc2119\">MUST</em> be raised\nand <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
         },
         {
-          "html": "Replace the fourth element in <var>components</var> using the result of calling the\nalgorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#decompresslabelmap\" data-matched-text=\"[[[#decompresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.7 </bdi>decompressLabelMap</a>, passing the existing\nfourth element of <var>components</var> as <var>compressedLabelMap</var>."
+          "html": "Replace the sixth element in <var>components</var> using the result of calling the\nalgorithm in <a href=\"https://w3c.github.io/vc-data-integrity/#decompresslabelmap\" data-matched-text=\"[[[#decompresslabelmap]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.7.7 </bdi>decompressLabelMap</a>, passing the existing\nsixth element of <var>components</var> as <var>compressedLabelMap</var>."
         },
         {
-          "html": "Return <em>proof data</em> as an object with properties set to the five\nelements, using the names \"signature\", \"salts\", \"saltedHashes\",\n\"labelMap\", \"mandatoryIndexes\",  and \"selectiveIndexes\" respectively."
+          "html": "Validate the parsed values: the elements of <var>leafIndexes</var> <em class=\"rfc2119\">MUST</em> be strictly\nascending, without duplicates, and each <em class=\"rfc2119\">MUST</em> be within the range\n<code>[0, treeSize)</code>; the length of <var>filteredSalts</var> <em class=\"rfc2119\">MUST</em> equal the length of\n<var>leafIndexes</var>; each element of <var>subtreeProof</var> <em class=\"rfc2119\">MUST</em> be a byte string whose\nlength equals the hash output length. If any check fails, an error <em class=\"rfc2119\">MUST</em> be\nraised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>.\nImplementations <em class=\"rfc2119\">MUST</em> enforce a configured policy upper bound on <var>treeSize</var>\nbefore any tree-dependent algorithm is invoked; the bound value is deployment\npolicy and <em class=\"rfc2119\">SHOULD</em> be at most 2<sup>24</sup>. Legitimate credentials are\nexpected to have far fewer non-mandatory statements; this bound is\ndefense-in-depth against resource-exhaustion attacks."
+        },
+        {
+          "html": "Return <em>proof data</em> as an object with properties set to the seven\nelements, using the names \"signature\", \"treeSize\", \"leafIndexes\", \"salts\",\n\"subtreeProof\", \"labelMap\", and \"mandatoryIndexes\", respectively."
         }
       ]
     },
@@ -903,37 +1029,31 @@
           "html": "Let <var>unsecuredDocument</var> be a copy of <var>document</var> with the <code>proof</code> value removed."
         },
         {
-          "html": "Initialize <var>signature</var>,  <var>salts</var>, <var>saltedHashes</var>, and <var>selectiveIndexes</var> to the\nvalues associated with their property names in the <var>proofData</var> parameter and\n<var>proofHash</var>, <var>nonMandatory</var>, and <var>mandatoryHash</var> to the values  associated  with\ntheir property names in the <var>verifyData</var> parameter."
+          "html": "Initialize <var>signature</var>, <var>treeSize</var>, <var>leafIndexes</var>, <var>salts</var>, <var>subtreeProof</var>, and\n<var>mandatoryIndexes</var> to the\nvalues associated with their property names in the <var>proofData</var> parameter and\n<var>proofHash</var>, <var>nonMandatory</var>, and <var>mandatoryHash</var> to the values  associated  with\ntheir property names in the <var>verifyData</var> parameter."
         },
         {
-          "html": "If the length of <var>salts</var> does not match the length of <var>selectiveIndexes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match the salted hashes count."
+          "html": "If the length of <var>salts</var> does not match the length of <var>leafIndexes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the salt count does not match the number of disclosed leaves."
         },
         {
-          "html": "The values of the elements of the <var>selectiveIndexes</var> array must be between 0 and\nthe length of the <var>saltedHash</var> array minus one. If not,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the selective indexes are out of bounds."
+          "html": "If the length of <var>subtreeProof</var> does not match the expected number of emitted\nhashes (determined from <var>treeSize</var> and <var>leafIndexes</var> via the traversal rules of\n<a href=\"https://w3c.github.io/vc-data-integrity/#CreateSubtreeProof\" data-matched-text=\"[[[#CreateSubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.5 </bdi>CreateSubtreeProof</a>; for an empty tree, <var>treeSize</var> = 0, the expected\nnumber is 0),\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating an invalid subtree proof length."
         },
         {
-          "html": "Initialize <var>toVerify</var> to the byte concatenation of the values of <var>proofHash</var>,\n<var>mandatoryHash</var>, and <var>saltedHashes</var>, in that order, with the array values\nthemselves concatenated together."
+          "html": "If the length of <var>nonMandatory</var> does not equal the length of <var>leafIndexes</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a data-cite=\"VC-DATA-INTEGRITY#PROOF_VERIFICATION_ERROR\" href=\"https://www.w3.org/TR/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>,\nindicating that the presented document contains non-mandatory statements that\nare not accounted for by the derived proof. Every non-mandatory statement\nobtained by canonicalizing the presented document <em class=\"rfc2119\">MUST</em> be accounted for by\nexactly one entry of <var>leafIndexes</var>; without this check, statements appended to\nthe presented document would silently bypass verification while remaining in\nthe returned <var>verifiedDocument</var>."
+        },
+        {
+          "html": "For each <var>i</var> from 0 to the length of <var>leafIndexes</var> minus one, inclusive,\ncompute <var>disclosedLeafHash</var> to be the hash of the concatenation of <code>0x00</code>,\n<var>salts</var>[i], and the UTF-8 representation of <var>nonMandatory</var>[i], in that order,\nand collect the results, in\norder, into <var>disclosedLeafHashes</var>. The pairing <em class=\"rfc2119\">MUST</em> be positional: the\nstatement at position <var>i</var> of the verifier's <var>nonMandatory</var> array is hashed with\n<var>salts</var>[i]. <var>leafIndexes</var>[i] is the statement's position in the full\nnon-mandatory array at issuance and is used only as the tree leaf position by\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifySubtreeProof\" data-matched-text=\"[[[#VerifySubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.6 </bdi>VerifySubtreeProof</a> — it <em class=\"rfc2119\">MUST NOT</em> be used to index this <var>nonMandatory</var>."
+        },
+        {
+          "html": "Set <var>reconstructedRoot</var> to the result of running the algorithm in\n<a href=\"https://w3c.github.io/vc-data-integrity/#VerifySubtreeProof\" data-matched-text=\"[[[#VerifySubtreeProof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.6 </bdi>VerifySubtreeProof</a>, passing <var>treeSize</var>, <var>leafIndexes</var>,\n<var>disclosedLeafHashes</var>, and <var>subtreeProof</var> as parameters. If the algorithm\nreturns an error, set <var>verified</var> to <code>false</code> and skip to the final step."
+        },
+        {
+          "html": "Initialize <var>toVerify</var> to the concatenation of <var>proofHash</var>, <var>mandatoryHash</var>,\n<var>treeSize</var> (encoded as an 8-byte big-endian unsigned integer), and\n<var>reconstructedRoot</var>, in that order. The concatenation order <em class=\"rfc2119\">MUST</em> be identical\nto that of <a href=\"https://w3c.github.io/vc-data-integrity/#SerializeBase-SHoC\" data-matched-text=\"[[[#SerializeBase-SHoC]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6.7 </bdi>SerializeBase-SHoC</a>."
         },
         {
           "html": "Initialize <var>verified</var> to true."
         },
         {
           "html": "Initialize <var>verificationCheck</var> be the result of applying the verification\nalgorithm of the appropriate signature algorithms as indicated by\nthe \"cryptosuite\" property,\nwith <var>toVerify</var> as the data to be verified against the <var>signature</var>.\nIf <var>verificationCheck</var> is\n<code>false</code>, set <var>verified</var> to false."
-        },
-        {
-          "html": "For every entry (<var>nq</var>, <var>index</var>) in <var>nonMandatory</var>, verify the salted hash\nfor every selectively disclosed (non-mandatory) statement:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "Let <var>computedHash</var> be the hash of the concatenation of\n<var>salts</var>[index] and <var>nq</var>."
-            },
-            {
-              "html": "Initialize <var>verificationCheck</var> to the result of comparing the <var>computedHash</var>\nwith the value of <var>saltedHashes</var>[<var>selectedIndexes</var>[index]]."
-            },
-            {
-              "html": "If <var>verificationCheck</var> is <code>false</code>, set <var>verified</var> to false."
-            }
-          ]
         },
         {
           "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-14\">verification result</a> with <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n              <dl data-link-for=\"verification result\">\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-10\">verified</a></dt>\n                <dd>The value of <var>verified</var></dd>\n                <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-6\">verifiedDocument</a></dt>\n                <dd>\n<var>unsecuredDocument</var> if <var>verified</var> is <code>true</code>, otherwise <a data-cite=\"INFRA#nulls\" href=\"https://infra.spec.whatwg.org/#nulls\">Null</a>\n                </dd>\n              </dl>"

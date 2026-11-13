@@ -194,7 +194,7 @@
               "title": "HTML Standard",
               "url": "https://html.spec.whatwg.org/multipage/"
             },
-            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined appendHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined prependHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined appendHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined prependHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
+            "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined appendHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined prependHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions, NewObject] WritableStream streamHTML(optional SetHTMLOptions options = {});\n  [NewObject] WritableStream streamAppendHTML(optional SetHTMLOptions options = {});\n  [NewObject] WritableStream streamPrependHTML(optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined appendHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined prependHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions, NewObject] WritableStream streamHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [NewObject] WritableStream streamAppendHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [NewObject] WritableStream streamPrependHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
           },
           {
             "spec": {
@@ -202,6 +202,13 @@
               "url": "https://w3c.github.io/element-timing/"
             },
             "fragment": "partial interface Element {\n    [CEReactions, Reflect] attribute DOMString elementTiming;\n};"
+          },
+          {
+            "spec": {
+              "title": "CSS Conditional Rules Module Level 5",
+              "url": "https://www.w3.org/TR/css-conditional-5/"
+            },
+            "fragment": "partial interface Element {\n  [NewObject] ContainerQueryList matchContainer(CSSOMString query);\n};"
           },
           {
             "spec": {
@@ -358,7 +365,7 @@
                   "title": "HTML Standard",
                   "url": "https://html.spec.whatwg.org/multipage/"
                 },
-                "fragment": "partial interface mixin NonDocumentTypeChildNode {\n  [CEReactions] undefined beforeHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined afterHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined replaceWithHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined beforeHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined afterHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined replaceWithHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n};"
+                "fragment": "partial interface mixin NonDocumentTypeChildNode {\n  [CEReactions] undefined beforeHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined afterHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined replaceWithHTML(DOMString html, optional SetHTMLOptions options = {});\n  [NewObject] WritableStream streamBeforeHTML(optional SetHTMLOptions options = {});\n  [NewObject] WritableStream streamAfterHTML(optional SetHTMLOptions options = {});\n  [CEReactions, NewObject] WritableStream streamReplaceWithHTML(optional SetHTMLOptions options = {});\n  [CEReactions] undefined beforeHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined afterHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions] undefined replaceWithHTMLUnsafe((TrustedHTML or DOMString) html, optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [NewObject] WritableStream streamBeforeHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [NewObject] WritableStream streamAfterHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n  [CEReactions, NewObject] WritableStream streamReplaceWithHTMLUnsafe(optional (SetHTMLUnsafeOptions or TrustedHTMLParserOptions) options = {});\n};"
               }
             ],
             "inheritance": null,

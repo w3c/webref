@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "WebRTC Extensions",
+        "url": "https://w3c.github.io/webrtc-extensions/"
+      },
+      "fragment": "partial interface RTCIceTransport {\n  attribute EventHandler onicecandidatepairadd;\n  attribute EventHandler onicecandidatepairremove;\n  attribute EventHandler onicecandidatepairnominate;\n  Promise<undefined> selectCandidatePair(RTCIceCandidatePair candidatePair);\n  Promise<undefined> removeCandidatePair(RTCIceCandidatePair candidatePair);\n};"
+    },
+    {
+      "spec": {
         "title": "IceTransport Extensions for WebRTC",
         "url": "https://w3c.github.io/webrtc-ice/"
       },

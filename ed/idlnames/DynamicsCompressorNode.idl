@@ -9,4 +9,5 @@ interface DynamicsCompressorNode : AudioNode {
     readonly attribute float reduction;
     readonly attribute AudioParam attack;
     readonly attribute AudioParam release;
+    readonly attribute AudioParam makeupGain;
 };

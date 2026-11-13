@@ -1,0 +1,7 @@
+// Source: Device Memory API (https://wicg.github.io/device-memory/)
+[
+    SecureContext,
+    Exposed=(Window,Worker)
+] interface mixin NavigatorDeviceMemory {
+    readonly attribute double deviceMemory;
+};

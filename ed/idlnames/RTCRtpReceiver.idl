@@ -11,6 +11,17 @@ interface RTCRtpReceiver {
   attribute DOMHighResTimeStamp? jitterBufferTarget;
 };
 
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial interface RTCRtpReceiver {
+  attribute EventHandler onssrcchange;
+  attribute EventHandler oncsrcchange;
+};
+
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial interface RTCRtpReceiver {
+  static undefined disableHardwareDecoding();
+};
+
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 partial interface RTCRtpReceiver {
     attribute RTCRtpReceiverTransform? transform;

@@ -1,0 +1,10 @@
+// Source: window.browser (https://w3c.github.io/webextensions/specification/window.browser.html)
+[Exposed=(Window,Worker)]
+interface Browser {
+  // Intentionally left blank.
+};
+
+// Source: Web Extensions (https://w3c.github.io/webextensions/specification/)
+partial interface Browser {
+  attribute Alarms alarms;
+};

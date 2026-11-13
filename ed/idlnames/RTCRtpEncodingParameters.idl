@@ -7,6 +7,13 @@ dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   double scaleResolutionDownBy;
 };
 
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial dictionary RTCRtpEncodingParameters {
+    RTCResolutionRestriction scaleResolutionDownTo;
+    unsigned long            ptime;
+    boolean                  adaptivePtime = false;
+};
+
 // Source: WebRTC Priority Control API (https://www.w3.org/TR/webrtc-priority/)
 partial dictionary RTCRtpEncodingParameters {
   RTCPriorityType priority = "low";

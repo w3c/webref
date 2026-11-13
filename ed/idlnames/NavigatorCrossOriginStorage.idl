@@ -1,5 +1,5 @@
 // Source: Cross-Origin Storage (https://wicg.github.io/cross-origin-storage/)
 interface mixin NavigatorCrossOriginStorage {
-  [Exposed=(Window,DedicatedWorker,SharedWorker), SameObject, SecureContext]
+  [Exposed=(Window,Worker), SameObject, SecureContext]
   readonly attribute CrossOriginStorageManager crossOriginStorage;
 };

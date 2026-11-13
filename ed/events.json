@@ -444,6 +444,7 @@
     "type": "auxclick",
     "interface": "PointerEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#auxclick"
@@ -565,7 +566,8 @@
       }
     ],
     "cancelable": true,
-    "interface": "InputEvent"
+    "interface": "InputEvent",
+    "composed": true
   },
   {
     "src": {
@@ -748,7 +750,8 @@
       }
     ],
     "cancelable": false,
-    "interface": "FocusEvent"
+    "interface": "FocusEvent",
+    "composed": true
   },
   {
     "type": "boundary",
@@ -1258,6 +1261,7 @@
     "type": "click",
     "interface": "PointerEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#click"
@@ -1491,6 +1495,7 @@
     ],
     "cancelable": false,
     "interface": "CompositionEvent",
+    "composed": true,
     "extendedIn": [
       {
         "spec": "edit-context",
@@ -1521,6 +1526,7 @@
     ],
     "cancelable": true,
     "interface": "CompositionEvent",
+    "composed": true,
     "extendedIn": [
       {
         "spec": "edit-context",
@@ -1547,7 +1553,8 @@
       }
     ],
     "cancelable": false,
-    "interface": "CompositionEvent"
+    "interface": "CompositionEvent",
+    "composed": true
   },
   {
     "src": {
@@ -1750,6 +1757,7 @@
     "type": "contextmenu",
     "interface": "PointerEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#contextmenu"
@@ -1883,6 +1891,20 @@
     "interface": "ClipboardEvent"
   },
   {
+    "href": "https://w3c.github.io/webrtc-extensions/#dfn-csrcchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-csrcchange"
+    },
+    "type": "csrcchange",
+    "targets": [
+      {
+        "target": "RTCRtpReceiver"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange",
     "src": {
       "format": "summary table",
@@ -1998,6 +2020,7 @@
     "type": "dblclick",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#dblclick"
@@ -2258,6 +2281,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "UIEvent"
   },
   {
@@ -2297,6 +2321,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "FocusEvent"
   },
   {
@@ -2318,6 +2343,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "FocusEvent"
   },
   {
@@ -3313,7 +3339,8 @@
       }
     ],
     "cancelable": false,
-    "interface": "FocusEvent"
+    "interface": "FocusEvent",
+    "composed": true
   },
   {
     "href": "https://w3c.github.io/uievents/#focusin",
@@ -3334,7 +3361,8 @@
       }
     ],
     "cancelable": false,
-    "interface": "FocusEvent"
+    "interface": "FocusEvent",
+    "composed": true
   },
   {
     "href": "https://w3c.github.io/uievents/#focusout",
@@ -3355,7 +3383,8 @@
       }
     ],
     "cancelable": false,
-    "interface": "FocusEvent"
+    "interface": "FocusEvent",
+    "composed": true
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-formdata",
@@ -3577,6 +3606,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -3650,6 +3680,50 @@
     "interface": "RTCPeerConnectionIceErrorEvent"
   },
   {
+    "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairadd"
+    },
+    "type": "icecandidatepairadd",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "RTCIceCandidatePairEvent"
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairnominate"
+    },
+    "type": "icecandidatepairnominate",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "RTCIceCandidatePairEvent",
+    "cancelable": true
+  },
+  {
+    "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-icecandidatepairremove"
+    },
+    "type": "icecandidatepairremove",
+    "targets": [
+      {
+        "target": "RTCIceTransport"
+      }
+    ],
+    "interface": "RTCIceCandidatePairEvent",
+    "cancelable": false
+  },
+  {
     "href": "https://w3c.github.io/webrtc-pc/#event-iceconnectionstatechange",
     "src": {
       "format": "summary table",
@@ -3697,6 +3771,7 @@
     ],
     "cancelable": false,
     "interface": "InputEvent",
+    "composed": true,
     "extendedIn": [
       {
         "spec": "html",
@@ -3843,7 +3918,8 @@
       }
     ],
     "cancelable": true,
-    "interface": "KeyboardEvent"
+    "interface": "KeyboardEvent",
+    "composed": true
   },
   {
     "src": {
@@ -3879,6 +3955,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "KeyboardEvent"
   },
   {
@@ -3914,7 +3991,8 @@
       }
     ],
     "cancelable": true,
-    "interface": "KeyboardEvent"
+    "interface": "KeyboardEvent",
+    "composed": true
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-languagechange",
@@ -4272,6 +4350,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -4544,6 +4623,7 @@
     "type": "mousedown",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mousedown"
@@ -4583,6 +4663,7 @@
     "type": "mouseenter",
     "interface": "MouseEvent",
     "cancelable": false,
+    "composed": false,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mouseenter"
@@ -4614,6 +4695,7 @@
     "type": "mouseleave",
     "interface": "MouseEvent",
     "cancelable": false,
+    "composed": false,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mouseleave"
@@ -4645,6 +4727,7 @@
     "type": "mousemove",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mousemove"
@@ -4684,6 +4767,7 @@
     "type": "mouseout",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mouseout"
@@ -4723,6 +4807,7 @@
     "type": "mouseover",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mouseover"
@@ -4762,6 +4847,7 @@
     "type": "mouseup",
     "interface": "MouseEvent",
     "cancelable": true,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#mouseup"
@@ -5033,14 +5119,14 @@
       "format": "fire an event phrasing",
       "href": "https://compat.spec.whatwg.org/#ref-for-concept-event-fire"
     },
-    "href": "https://compat.spec.whatwg.org/#event-orientationchange",
+    "href": "https://compat.spec.whatwg.org/#ref-for-concept-event-fire",
     "type": "orientationchange",
+    "interface": "Event",
     "targets": [
       {
         "target": "Window"
       }
-    ],
-    "interface": "Event"
+    ]
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pagehide",
@@ -5313,6 +5399,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "PointerEvent",
     "extendedIn": [
       {
@@ -5358,6 +5445,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -5389,6 +5477,7 @@
       }
     ],
     "cancelable": false,
+    "composed": false,
     "interface": "PointerEvent"
   },
   {
@@ -5420,6 +5509,7 @@
       }
     ],
     "cancelable": false,
+    "composed": false,
     "interface": "PointerEvent"
   },
   {
@@ -5489,6 +5579,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -5528,6 +5619,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -5567,6 +5659,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -5606,6 +5699,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -5645,6 +5739,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "PointerEvent"
   },
   {
@@ -6865,6 +6960,20 @@
     "interface": "XRInputSourceEvent"
   },
   {
+    "href": "https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/webrtc-extensions/#dfn-ssrcchange"
+    },
+    "type": "ssrcchange",
+    "targets": [
+      {
+        "target": "RTCRtpReceiver"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-stalled",
     "src": {
       "format": "summary table",
@@ -7205,6 +7314,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "TextEvent"
   },
   {
@@ -7343,6 +7453,7 @@
       }
     ],
     "cancelable": false,
+    "composed": true,
     "interface": "TouchEvent"
   },
   {
@@ -7364,6 +7475,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "TouchEvent"
   },
   {
@@ -7385,6 +7497,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "TouchEvent"
   },
   {
@@ -7406,6 +7519,7 @@
       }
     ],
     "cancelable": true,
+    "composed": true,
     "interface": "TouchEvent"
   },
   {
@@ -7970,6 +8084,7 @@
     "type": "wheel",
     "interface": "WheelEvent",
     "cancelable": false,
+    "composed": true,
     "src": {
       "format": "event table",
       "href": "https://w3c.github.io/pointerevents/#wheel"

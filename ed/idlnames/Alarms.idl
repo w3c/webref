@@ -1,0 +1,13 @@
+// Source: Web Extensions (https://w3c.github.io/webextensions/specification/)
+[Exposed=(Window,Worker)]
+interface Alarms {
+  Promise<undefined> create(optional AlarmCreateInfo alarmInfo = {});
+  Promise<undefined> create(DOMString name, optional AlarmCreateInfo alarmInfo = {});
+
+  Promise<(Alarm or undefined)> get(optional DOMString name);
+  Promise<sequence<Alarm>> getAll();
+  Promise<boolean> clear(optional DOMString name);
+  Promise<undefined> clearAll();
+
+  attribute OnAlarmEvent onAlarm;
+};

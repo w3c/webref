@@ -2,3 +2,8 @@
 dictionary RTCRtpHeaderExtensionCapability {
   required DOMString uri;
 };
+
+// Source: WebRTC Extensions (https://w3c.github.io/webrtc-extensions/)
+partial dictionary RTCRtpHeaderExtensionCapability {
+  required RTCRtpTransceiverDirection direction;
+};

@@ -9,15 +9,7 @@
     "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  [SameObject] readonly attribute FrozenArray<GamepadHapticEffectType> effects;\n  Promise<GamepadHapticsResult> playEffect(\n      GamepadHapticEffectType type,\n      optional GamepadEffectParameters params = {}\n  );\n  Promise<GamepadHapticsResult> reset();\n};",
     "href": "https://w3c.github.io/gamepad/#dom-gamepadhapticactuator"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Gamepad Extensions",
-        "url": "https://w3c.github.io/gamepad/extensions.html"
-      },
-      "fragment": "[Exposed=Window]\npartial interface GamepadHapticActuator {\n  Promise<boolean> pulse(double value, double duration);\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }

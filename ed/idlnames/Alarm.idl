@@ -1,0 +1,7 @@
+// Source: Web Extensions (https://w3c.github.io/webextensions/specification/)
+dictionary Alarm {
+  required DOMString name;
+  required double scheduledTime;
+  double periodInMinutes;
+  required boolean persistAcrossSessions;
+};

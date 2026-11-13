@@ -204,10 +204,10 @@
           "html": "<strong>Call</strong> the <a href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">resolve</a> function on the\nselected resolver, passing the prepared resolution options and\nthe DID, to obtain the authoritative <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID\ndocument</a> for the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var>."
         },
         {
-          "html": "<strong>Interpret</strong> the response to resolve to consider any errors or\nwarnings. If appropriate, return without further processing and raise a\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_resolution_error\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_resolution_error-1\">DEREFERENCING_ERROR_RESOLUTION_ERROR</a> that includes he error returned from\nthe Resolve Operation. Otherwise, continue processing if the response provided\nenough information to do so."
+          "html": "<strong>Interpret</strong> the response to resolve to consider any errors or\nwarnings. If appropriate, return without further processing and raise a\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_resolution_error\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_resolution_error-1\">DEREFERENCING_ERROR_RESOLUTION_ERROR</a> that includes the error returned from\nthe Resolve Operation. Otherwise, continue processing if the response provided\nenough information to do so."
         },
         {
-          "html": "<strong>Repeat</strong> as necessary until the final resolution result is\nreturned. In cases when the initial result from resolution is incomplete or\nfails, the client may be able to adjust the resolution parameters and try again,\nbased on the context in which dereferencing is occuring. For example, a resolver\nmight require more input, or the client might heuristically attempt alternate\nresolver options to find a more appropriate DID document, such as requesting a\nversion of the DID document from a particular point in time."
+          "html": "<strong>Repeat</strong> as necessary until the final resolution result is\nreturned. In cases when the initial result from resolution is incomplete or\nfails, the client may be able to adjust the resolution parameters and try again,\nbased on the context in which dereferencing is occurring. For example, a resolver\nmight require more input, or the client might heuristically attempt alternate\nresolver options to find a more appropriate DID document, such as requesting a\nversion of the DID document from a particular point in time."
         }
       ]
     },
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "html": "",
+      "html": "Consider the following DID URL and DID Document section:",
       "rationale": "resolve",
       "steps": [
         {
@@ -275,7 +275,7 @@
           "html": "<strong>Determine Resource Path</strong> Construct the resource path by\nextracting the non-matching part of the <code>DID URL</code> and appending it to the path\nof the <code>serviceEndpoint</code>. First extract the non-matching part of the DID URL\npath as the <code>pathExtension</code>. The pathExtension in the above example is\n\"image.png\", after stripping the service's <code>path</code> value of \"/\" from the path\npart of the DID URL\n<code>/image.png</code>.\n\n<pre><code aria-busy=\"false\" class=\"hljs abnf\"><span class=\"hljs-attribute\">pathExtension</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"image.png\"</span><span class=\"hljs-comment\">;</span></code></pre>\n\nAppend the pathExtension to the path part of the <code>serviceEndpoint</code> to\ndefine the <code>resourcePath</code>.\n<pre><code aria-busy=\"false\" class=\"hljs abnf\"><span class=\"hljs-attribute\">resourcePath</span> <span class=\"hljs-operator\">=</span> /didimages/image.png</code></pre>"
         },
         {
-          "html": "<strong>Normalize Path</strong> Normalize the resulting <code>ResourcePath</code> to create\na <code>NormalizedResourcePath</code> by removing dot segments, as defined in\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc3986\" title=\"Uniform Resource Identifier (URI): Generic Syntax\">RFC3986</a></cite>] Section 5.2.4 Remove Path Segments. Then test the resulting\n<code>NormalizedResourcePath</code> to see if the leftmost characters of the\n<code>NormalizedResourcePath</code> match the leftmost characters of the path part of the\n<code>serviceEndpoint</code>. If they do not match, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereference_error_path_normalization_error\" class=\"internalDFN\" id=\"ref-for-dfn-dereference_error_path_normalization_error-1\">DEREFERENCE_ERROR_PATH_NORMALIZATION_ERROR</a>."
+          "html": "<strong>Normalize Path</strong> Normalize the resulting <code>ResourcePath</code> to create\na <code>NormalizedResourcePath</code> by removing dot segments, as defined in\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/did-resolution/#bib-rfc3986\" title=\"Uniform Resource Identifier (URI): Generic Syntax\">RFC3986</a></cite>] Section 5.2.4 Remove Path Segments. Then test the resulting\n<code>NormalizedResourcePath</code> to see if the leftmost characters of the\n<code>NormalizedResourcePath</code> match the leftmost characters of the path part of the\n<code>serviceEndpoint</code>. If they do not match, raise an error\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_path_normalization_error\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_path_normalization_error-1\">DEREFERENCING_ERROR_PATH_NORMALIZATION_ERROR</a>."
         },
         {
           "html": "<strong>Construct Resource URLs</strong> Replace the path part in the selected\nserviceEndpoint with the Normalized Resource Path, leaving all other elements of\nthe service endpoint URLs the same.\n            <pre><code aria-busy=\"false\" class=\"hljs javascript\"><span class=\"hljs-title class_\">ResourceUrl</span> = <span class=\"hljs-attr\">https</span>:<span class=\"hljs-comment\">//example.com/didimages/image.png</span></code></pre>"
@@ -290,7 +290,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "Of those objects with a type <code>PathHandler</code>, select the\nobject whose <code>path</code> property has the longest complete\nmatch from the beginning of the path part of the DID URL. The entire\nvalue of the <code>path</code> property must be present in the path\npart of the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>.\n            <br>\nGiven the DID URL <code>did:example:1234/image.png</code>\nand the following three PathHandling objects\n                \n\n            <p>\nIn this scenario, the linkedResource with id <code>SecuredImage</code> would be\nselected and it's handling strategy would be defined by the\nLinkedResource specification.\n            </p>"
+          "html": "Of those objects with a type <code>PathHandler</code>, select the\nobject whose <code>path</code> property has the longest complete\nmatch from the beginning of the path part of the DID URL. The entire\nvalue of the <code>path</code> property must be present in the path\npart of the <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a>.\n            <br>\nGiven the DID URL <code>did:example:1234/image.png</code>\nand the following three PathHandling objects\n                \n\n            <p>\nIn this scenario, the linkedResource with id <code>SecuredImage</code> would be\nselected and its handling strategy would be defined by the\nLinkedResource specification.\n            </p>"
         },
         {
           "html": "If two or more objects have the same length match, stop processing\nand return an error <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/did-resolution/#dfn-dereferencing_error_multiple_matching_path_handlers\" class=\"internalDFN\" id=\"ref-for-dfn-dereferencing_error_multiple_matching_path_handlers-2\">DEREFERENCING_ERROR_MULTIPLE_MATCHING_PATH_HANDLERS</a>."
@@ -312,7 +312,7 @@
               "html": "Append the <var>input <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-decentralized-identifiers\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> to\nthe <var>request HTTP(S) URL</var>."
             },
             {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-resolution</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to\n<code>application/did-resolution</code> to request a complete\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">7. </bdi>DID Resolution Result</a>, OR"
             },
             {
               "html": "set the <code>Accept</code> <var>HTTP request header</var> to\nthe value of the <b>accept</b> <var>resolution option</var> to\nrequest only the <b>didDocument</b> value of the result."
@@ -382,7 +382,7 @@
                   "html": "If the function is successful, the HTTP response status code <em class=\"rfc2119\">MUST</em> be\n<code>200</code>."
                 },
                 {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function."
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a\n<a href=\"https://w3c.github.io/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-3\">DID resolution result</a> (see\n<a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">7. </bdi>DID Resolution Result</a>) that is the result of the\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-resolution\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolution\">DID resolution</a> function."
                 }
               ]
             },

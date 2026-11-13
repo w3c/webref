@@ -105,6 +105,11 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
+// Source: window.browser (https://w3c.github.io/webextensions/specification/window.browser.html)
+partial interface Window {
+ attribute Browser browser;
+};
+
 // Source: Web Speech API (https://webaudio.github.io/web-speech-api/)
 partial interface Window {
     [SameObject] readonly attribute SpeechSynthesis speechSynthesis;

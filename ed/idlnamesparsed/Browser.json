@@ -1,0 +1,23 @@
+{
+  "name": "Browser",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "window.browser",
+      "url": "https://w3c.github.io/webextensions/specification/window.browser.html"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Browser {\n  // Intentionally left blank.\n};",
+    "href": "https://w3c.github.io/webextensions/specification/window.browser.html#browser"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Extensions",
+        "url": "https://w3c.github.io/webextensions/specification/"
+      },
+      "fragment": "partial interface Browser {\n  attribute Alarms alarms;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

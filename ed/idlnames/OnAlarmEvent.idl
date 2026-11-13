@@ -1,0 +1,7 @@
+// Source: Web Extensions (https://w3c.github.io/webextensions/specification/)
+[Exposed=(Window,Worker)]
+interface OnAlarmEvent {
+  undefined addListener(AlarmListener listener);
+  undefined removeListener(AlarmListener listener);
+  boolean hasListener(AlarmListener listener);
+};

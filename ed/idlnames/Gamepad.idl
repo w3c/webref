@@ -11,10 +11,3 @@ interface Gamepad {
   readonly attribute FrozenArray<GamepadTouch> touches;
   [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;
 };
-
-// Source: Gamepad Extensions (https://w3c.github.io/gamepad/extensions.html)
-partial interface Gamepad {
-  readonly attribute GamepadHand hand;
-  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;
-  readonly attribute GamepadPose? pose;
-};
