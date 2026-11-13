@@ -7,7 +7,7 @@
     {
       "name": "IdleRequestCallback",
       "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestcallback",
-      "html": "When <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Window\" data-xref-for=\"Window\" href=\"https://w3c.github.io/requestidlecallback/#dom-window-requestidlecallback\" class=\"internalDFN\" id=\"ref-for-dom-window-requestidlecallback-8\"><code>requestIdleCallback</code></a><code>(<var>callback</var>, <var>options</var>)</code> is\n      invoked with a given <dfn data-export=\"\" data-dfn-type=\"callback\" id=\"dom-idlerequestcallback\" data-idl=\"callback\" data-title=\"IdleRequestCallback\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestCallback</code></dfn>\n      and optional <dfn data-export=\"\" data-dfn-type=\"dictionary\" id=\"dom-idlerequestoptions\" data-idl=\"dictionary\" data-title=\"IdleRequestOptions\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestOptions</code></dfn>, the user agent\n      <em class=\"rfc2119\">MUST</em> run the following steps:",
+      "html": "When <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Window\" data-xref-for=\"Window\" href=\"https://w3c.github.io/requestidlecallback/#dom-window-requestidlecallback\" class=\"internalDFN\" id=\"ref-for-dom-window-requestidlecallback-8\"><code>requestIdleCallback</code></a><code>(<var>callback</var>, <var>options</var>)</code> is\n      invoked with a given <dfn data-export=\"\" data-dfn-type=\"callback\" id=\"dom-idlerequestcallback\" data-idl=\"callback\" data-title=\"IdleRequestCallback\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestCallback</code></dfn> and\n      <dfn data-export=\"\" data-dfn-type=\"dictionary\" id=\"dom-idlerequestoptions\" data-idl=\"dictionary\" data-title=\"IdleRequestOptions\" data-dfn-for=\"\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>IdleRequestOptions</code></dfn>, the user agent <em class=\"rfc2119\">MUST</em> run the following\n      steps:",
       "rationale": "let",
       "steps": [
         {
@@ -26,7 +26,10 @@
           "html": "Return <var>handle</var> and then continue running this algorithm\n        asynchronously."
         },
         {
-          "html": "If the <code><dfn data-dfn-for=\"IdleRequestOptions\" data-export=\"\" data-dfn-type=\"dict-member\" id=\"dom-idlerequestoptions-timeout\" data-idl=\"field\" data-title=\"timeout\" data-type=\"unsigned long\" tabindex=\"0\" aria-haspopup=\"dialog\">timeout</dfn>\n        </code> property is present in <var>options</var> and has a positive\n        value:",
+          "html": "Let <var>timeout</var> be <var>options</var>[\"<code><dfn data-dfn-for=\"IdleRequestOptions\" data-export=\"\" data-dfn-type=\"dict-member\" id=\"dom-idlerequestoptions-timeout\" data-idl=\"field\" data-title=\"timeout\" data-type=\"unsigned long\" tabindex=\"0\" aria-haspopup=\"dialog\">timeout</dfn></code>\"]."
+        },
+        {
+          "html": "If <var>timeout</var> is greater than 0:",
           "rationale": "wait",
           "steps": [
             {
