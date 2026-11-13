@@ -9,8 +9,11 @@
         "format": "fire an event phrasing",
         "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire"
       },
-      "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire",
-      "type": "changeInfo",
+      "href": "https://www.w3.org/TR/window-management/#eventdef-screen-change",
+      "type": "change",
+      "targets": [
+        "Screen"
+      ],
       "interface": "Event"
     },
     {
@@ -18,8 +21,11 @@
         "format": "fire an event phrasing",
         "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire%E2%91%A0"
       },
-      "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire%E2%91%A0",
-      "type": "screenschangeInfo",
+      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetails-screenschange",
+      "type": "screenschange",
+      "targets": [
+        "ScreenDetails"
+      ],
       "interface": "Event"
     },
     {
@@ -27,50 +33,24 @@
         "format": "fire an event phrasing",
         "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire%E2%91%A1"
       },
-      "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire%E2%91%A1",
-      "type": "currentscreenchangeInfo",
-      "interface": "Event"
-    },
-    {
-      "type": "change",
-      "targets": [
-        "Screen"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://www.w3.org/TR/window-management/#eventdef-screen-change"
-    },
-    {
-      "type": "screenschange",
-      "targets": [
-        "ScreenDetails"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetails-screenschange"
-    },
-    {
+      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetails-currentscreenchange",
       "type": "currentscreenchange",
       "targets": [
         "ScreenDetails"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetails-currentscreenchange"
+      "interface": "Event"
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://www.w3.org/TR/window-management/#ref-for-concept-event-fire%E2%91%A2"
+      },
+      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetailed-change",
       "type": "change",
       "targets": [
         "ScreenDetailed"
       ],
-      "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/window-management/#eventdef-screendetailed-change"
-      },
-      "href": "https://www.w3.org/TR/window-management/#eventdef-screendetailed-change"
+      "interface": "Event"
     }
   ]
 }

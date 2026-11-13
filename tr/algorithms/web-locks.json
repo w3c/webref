@@ -143,7 +143,7 @@
           "html": "<p>If <var>options</var>[\"<code>signal</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, and either of <var>options</var>[\"<code>steal</code>\"] or <var>options</var>[\"<code>ifAvailable</code>\"] is true, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>options</var>[\"<code>signal</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> <var>options</var>[\"<code>signal</code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
+          "html": "<p>If <var>options</var>[\"<code>signal</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a> and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> <var>options</var>[\"<code>signal</code>\"]'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
         },
         {
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
@@ -223,7 +223,7 @@
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept\" id=\"ref-for-lock-concept①⑧\">lock</a> from <var>held</var>.</p>"
                         },
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>lock</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-released-promise\" id=\"ref-for-lock-concept-released-promise⑤\">released promise</a> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror②\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>lock</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-released-promise\" id=\"ref-for-lock-concept-released-promise⑤\">released promise</a> with an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror①\">AbortError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>.</p>"
                         }
                       ]
                     }
@@ -239,14 +239,23 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>ifAvailable</var> is true and <var>request</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#grantable\" id=\"ref-for-grantable\">grantable</a>,\n then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑤\">enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a>:",
-                  "rationale": "let",
+                  "html": "If <var>ifAvailable</var> is true and <var>request</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#grantable\" id=\"ref-for-grantable\">grantable</a>:",
+                  "rationale": "enqueue",
                   "steps": [
                     {
-                      "html": "<p>Let <var>r</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>callback</var> with <code>null</code> as the only argument.</p>"
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑤\">Enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a>:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>r</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">invoking</a> <var>callback</var> with <code>null</code>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>r</var>.</p>"
+                        }
+                      ]
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with <var>r</var> and abort these steps.</p>"
+                      "html": "<p>Return.</p>"
                     }
                   ]
                 },
@@ -333,7 +342,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑥\">Enqueue the steps</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#abort-the-request\" id=\"ref-for-abort-the-request①\">abort the request</a> <var>request</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-task-queue\" id=\"ref-for-lock-task-queue⑥\">lock task queue</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request-promise\" id=\"ref-for-lock-request-promise\">promise</a> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request-promise\" id=\"ref-for-lock-request-promise\">promise</a> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason②\">abort reason</a>.</p>"
         }
       ]
     },
@@ -357,7 +366,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> <var>request</var> from <var>queue</var>.</p>"
             },
             {
-              "html": "<p>Let <var>agent</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-agent\" id=\"ref-for-lock-concept-agent①\">agent</a>.</p>"
+              "html": "<p>Let <var>agent</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request-agent\" id=\"ref-for-lock-request-agent①\">agent</a>.</p>"
             },
             {
               "html": "<p>Let <var>manager</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request-manager\" id=\"ref-for-lock-request-manager②\">manager</a>.</p>"
@@ -384,7 +393,7 @@
               "html": "<p>Let <var>waiting</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
             },
             {
-              "html": "<p>Let <var>lock</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept\" id=\"ref-for-lock-concept②⓪\">lock</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-agent\" id=\"ref-for-lock-concept-agent②\">agent</a> <var>agent</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-clientid\" id=\"ref-for-lock-concept-clientid\">clientId</a> <var>clientId</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-manager\" id=\"ref-for-lock-concept-manager①\">manager</a> <var>manager</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-mode\" id=\"ref-for-lock-concept-mode②\">mode</a> <var>mode</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-name\" id=\"ref-for-lock-concept-name④\">name</a> <var>name</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-released-promise\" id=\"ref-for-lock-concept-released-promise⑥\">released promise</a> <var>p</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-waiting-promise\" id=\"ref-for-lock-concept-waiting-promise⑤\">waiting promise</a> <var>waiting</var>.</p>"
+              "html": "<p>Let <var>lock</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept\" id=\"ref-for-lock-concept②⓪\">lock</a> with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-agent\" id=\"ref-for-lock-concept-agent①\">agent</a> <var>agent</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-clientid\" id=\"ref-for-lock-concept-clientid\">clientId</a> <var>clientId</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-manager\" id=\"ref-for-lock-concept-manager①\">manager</a> <var>manager</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-mode\" id=\"ref-for-lock-concept-mode②\">mode</a> <var>mode</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-name\" id=\"ref-for-lock-concept-name④\">name</a> <var>name</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-released-promise\" id=\"ref-for-lock-concept-released-promise⑥\">released promise</a> <var>p</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-concept-waiting-promise\" id=\"ref-for-lock-concept-waiting-promise⑤\">waiting promise</a> <var>waiting</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>lock</var> to <var>manager</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-held-lock-set\" id=\"ref-for-lock-manager-held-lock-set③\">held lock set</a>.</p>"
