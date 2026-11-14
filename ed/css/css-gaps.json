@@ -545,7 +545,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-visibility-items",
       "value": "all | around | between | normal",
       "initial": "normal",
-      "appliesTo": "grid containers and multicol containers",
+      "appliesTo": "grid containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -568,7 +568,7 @@
         },
         {
           "name": "between",
-          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items. For grid axis gaps in a grid lanes container, paint only at positions along the gap that lie between the leading and trailing edges of an adjacent item on each side, using the items' positions after stacking-axis self-alignment. Space available for alignment is empty where no item is present. Space occupied by crossing gutters does not count as empty space for this purpose. See the alignment example and the crossing-gutter example below.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
           "type": "value",
           "value": "between"
@@ -591,7 +591,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-visibility-items",
       "value": "all | around | between | normal",
       "initial": "normal",
-      "appliesTo": "grid containers and multicol containers",
+      "appliesTo": "grid containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -614,7 +614,7 @@
         },
         {
           "name": "between",
-          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items. For grid axis gaps in a grid lanes container, paint only at positions along the gap that lie between the leading and trailing edges of an adjacent item on each side, using the items' positions after stacking-axis self-alignment. Space available for alignment is empty where no item is present. Space occupied by crossing gutters does not count as empty space for this purpose. See the alignment example and the crossing-gutter example below.",
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
           "type": "value",
           "value": "between"
