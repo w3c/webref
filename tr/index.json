@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-11-13T01:23:00.442Z",
+  "date": "2026-11-14T01:22:49.149Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -20,6 +20,7 @@
       "compression",
       "console",
       "cookiestore",
+      "idempotency-key-header",
       "layered-cookies",
       "no-vary-search",
       "rfc6265bis",
@@ -27,7 +28,6 @@
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
-      "animation-triggers-1",
       "compositing-2",
       "css-color-6",
       "css-conditional-values-1",
@@ -169,11 +169,11 @@
       "mathml-aam",
       "pdf-aam",
       "at-driver",
+      "connection-allowlists",
       "container-timing",
       "shacl12-cs",
       "execCommand",
       "element-timing",
-      "gamepad-extensions",
       "media-playback-quality",
       "mediacapture-automation",
       "mediacapture-extensions",
@@ -189,6 +189,8 @@
       "tracestate-ids-registry",
       "web-share-target",
       "webextensions",
+      "webextensions-browser-global",
+      "webrtc-extensions",
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
       "wasm-core-2-fork-compact-import-section",
@@ -224,7 +226,6 @@
       "background-sync",
       "capability-delegation",
       "client-hints-infrastructure",
-      "connection-allowlists",
       "content-index",
       "cpu-performance",
       "crash-reporting",
@@ -233,6 +234,7 @@
       "css-parser-api",
       "datacue",
       "deprecation-reporting",
+      "device-memory",
       "digital-goods",
       "direct-sockets",
       "document-isolation-policy",
@@ -261,6 +263,7 @@
       "layout-instability",
       "local-font-access",
       "local-network-access",
+      "longtasks",
       "manifest-incubations",
       "media-feeds",
       "prefetch",
@@ -353,6 +356,7 @@
       "accname-1.2",
       "act-rules-format-1.1",
       "ambient-light",
+      "animation-triggers-1",
       "appmanifest",
       "attribution",
       "audio-output",
@@ -793,10 +797,10 @@
     ]
   },
   "stats": {
-    "crawled": 419,
+    "crawled": 420,
     "errors": 0
   },
-  "crawler": "reffy-21.3.2",
+  "crawler": "reffy-21.3.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -842,7 +846,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "13 November 2026",
+      "date": "14 November 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1148,6 +1152,70 @@
       "dfns": "dfns/ambient-light.json",
       "headings": "headings/ambient-light.json",
       "ids": "ids/ambient-light.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/animation-triggers-1/",
+      "seriesComposition": "full",
+      "shortname": "animation-triggers-1",
+      "series": {
+        "shortname": "animation-triggers",
+        "currentSpecification": "animation-triggers-1",
+        "title": "Animation Triggers",
+        "shortTitle": "Animation Triggers",
+        "releaseUrl": "https://www.w3.org/TR/animation-triggers/",
+        "nightlyUrl": "https://drafts.csswg.org/animation-triggers/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/animation-triggers-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/animation-triggers-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/animation-triggers-1/",
+          "https://w3c.github.io/csswg-drafts/animation-triggers/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "animation-triggers-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "Animation Triggers",
+      "source": "w3c",
+      "shortTitle": "Animation Triggers",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/animation-triggers-1/",
+        "https://drafts.csswg.org/animation-triggers-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/animation-triggers-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 15 Oct 2026 21:55:18 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "20 October 2026",
+      "revision": "90e797a41356bab0dc637931238f52c2e31302ca",
+      "algorithms": "algorithms/animation-triggers-1.json",
+      "links": "links/animation-triggers-1.json",
+      "refs": "refs/animation-triggers-1.json",
+      "idl": "idl/animation-triggers.idl",
+      "css": "css/animation-triggers.json",
+      "dfns": "dfns/animation-triggers-1.json",
+      "headings": "headings/animation-triggers-1.json",
+      "ids": "ids/animation-triggers-1.json",
       "cddl": []
     },
     {
@@ -6102,7 +6170,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-image-animation-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -12092,11 +12160,11 @@
       ],
       "crawled": "https://www.w3.org/TR/epub-34/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Nov 2026 18:01:54 GMT"
+        "lastModified": "Fri, 13 Nov 2026 13:43:55 GMT"
       },
       "generator": "respec",
-      "date": "12 November 2026",
-      "revision": "c559a0b1701e62e54a8bb877a277aa97626dd397",
+      "date": "13 November 2026",
+      "revision": "fe97f8e70a118cfb89ecd5c48c7c859335d3b057",
       "algorithms": "algorithms/epub-34.json",
       "links": "links/epub-34.json",
       "refs": "refs/epub-34.json",
@@ -12380,11 +12448,11 @@
       ],
       "crawled": "https://www.w3.org/TR/event-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Oct 2026 16:05:14 GMT"
+        "lastModified": "Fri, 13 Nov 2026 20:36:16 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 October 2026",
-      "revision": "f8e11d6cd1818cdf4ae883da0a323520b9c6b403",
+      "date": "13 November 2026",
+      "revision": "a2f18d730f34e0866b4f964bf11b97f915e03cdd",
       "algorithms": "algorithms/event-timing.json",
       "links": "links/event-timing.json",
       "refs": "refs/event-timing.json",
@@ -12940,7 +13008,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/geolocation/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -17700,7 +17768,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf12-concepts/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -17722,11 +17790,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Nov 2026 15:07:42 GMT"
+        "lastModified": "Fri, 13 Nov 2026 08:40:28 GMT"
       },
       "generator": "respec",
-      "date": "12 November 2026",
-      "revision": "19a5e6a28f4892b56696286dad1eb3df762f7a6e",
+      "date": "13 November 2026",
+      "revision": "3b600b8a1dae3b3a71f55c5f374d061a0cac93ad",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -18004,11 +18072,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-trig/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Nov 2026 18:04:48 GMT"
+        "lastModified": "Fri, 13 Nov 2026 08:42:52 GMT"
       },
       "generator": "respec",
-      "date": "05 November 2026",
-      "revision": "046001bd3bc14c2267c37f5e786fd045eff16283",
+      "date": "13 November 2026",
+      "revision": "57e06def577d7f090c4f3202eaf52bab35a87135",
       "links": "links/rdf12-trig.json",
       "refs": "refs/rdf12-trig.json",
       "dfns": "dfns/rdf12-trig.json",
@@ -19401,7 +19469,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-inference-rules/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19627,7 +19695,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-ui/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -21757,7 +21825,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-bitstring-status-list-1.1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -21945,11 +22013,11 @@
       ],
       "crawled": "https://www.w3.org/TR/vc-data-integrity-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 06 Nov 2026 16:31:19 GMT"
+        "lastModified": "Fri, 13 Nov 2026 21:20:02 GMT"
       },
       "generator": "respec",
-      "date": "06 November 2026",
-      "revision": "2864e1c98a150524159041ccbc09c1dee6f91a57",
+      "date": "13 November 2026",
+      "revision": "cbd923ab8ed3bd9d256e694e90fce48d41e23ae1",
       "algorithms": "algorithms/vc-data-integrity-1.1.json",
       "links": "links/vc-data-integrity-1.1.json",
       "refs": "refs/vc-data-integrity-1.1.json",
@@ -25377,11 +25445,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Nov 2026 10:43:45 GMT"
+        "lastModified": "Fri, 13 Nov 2026 13:11:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 November 2026",
-      "revision": "085f76a831efd761d08d67680d502963a5ef0f6c",
+      "date": "13 November 2026",
+      "revision": "cce53ea8cfa8ef9f693d9237af5079f8e4d0a20c",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",

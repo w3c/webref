@@ -1,0 +1,308 @@
+{
+  "spec": {
+    "title": "Animation Triggers",
+    "url": "https://www.w3.org/TR/animation-triggers-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#title",
+      "level": 1,
+      "title": "Animation Triggers"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "other-specs",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#other-specs",
+      "level": 3,
+      "title": "Relationship to other specifications",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "triggers",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#triggers",
+      "level": 2,
+      "title": "Triggers",
+      "number": "2"
+    },
+    {
+      "id": "trigger-actions",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#trigger-actions",
+      "level": 3,
+      "title": "Trigger Actions",
+      "number": "2.1"
+    },
+    {
+      "id": "trigger-internal-state",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#trigger-internal-state",
+      "level": 3,
+      "title": "Trigger Internal State",
+      "number": "2.2"
+    },
+    {
+      "id": "trigger-scope",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#trigger-scope",
+      "level": 3,
+      "title": "Trigger Name Scoping: the trigger-scope property",
+      "number": "2.3"
+    },
+    {
+      "id": "timeline-triggers",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-triggers",
+      "level": 2,
+      "title": "Timeline Triggers",
+      "number": "3"
+    },
+    {
+      "id": "timeline-trigger-ranges",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-ranges",
+      "level": 3,
+      "title": "Timeline Trigger Ranges",
+      "number": "3.1"
+    },
+    {
+      "id": "timeline-trigger-name",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-name",
+      "level": 3,
+      "title": "Naming the Trigger: the timeline-trigger-name property",
+      "number": "3.2"
+    },
+    {
+      "id": "timeline-trigger-source",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-source",
+      "level": 3,
+      "title": "Linking a Timeline: the timeline-trigger-source property",
+      "number": "3.3"
+    },
+    {
+      "id": "timeline-trigger-activation-range-prop",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-activation-range-prop",
+      "level": 3,
+      "title": "The Activation Range: the timeline-trigger-activation-range property",
+      "number": "3.4"
+    },
+    {
+      "id": "timeline-trigger-active-range-prop",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-active-range-prop",
+      "level": 3,
+      "title": "The Active Range: the timeline-trigger-active-range property",
+      "number": "3.5"
+    },
+    {
+      "id": "timeline-trigger-range-shorthand",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-range-shorthand",
+      "level": 3,
+      "title": "The timeline-trigger-range Shorthand",
+      "number": "3.6"
+    },
+    {
+      "id": "timeline-trigger-shorthand",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#timeline-trigger-shorthand",
+      "level": 3,
+      "title": "The timeline-trigger Shorthand",
+      "number": "3.7"
+    },
+    {
+      "id": "event-triggers",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#event-triggers",
+      "level": 2,
+      "title": "Event Triggers",
+      "number": "4"
+    },
+    {
+      "id": "event-trigger-name",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#event-trigger-name",
+      "level": 3,
+      "title": "Naming the Trigger: the event-trigger-name property",
+      "number": "4.1"
+    },
+    {
+      "id": "event-trigger-source",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#event-trigger-source",
+      "level": 3,
+      "title": "Linking an Event: the event-trigger-source property",
+      "number": "4.2"
+    },
+    {
+      "id": "event-functions",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#event-functions",
+      "level": 4,
+      "title": "Event Functions",
+      "number": "4.2.1"
+    },
+    {
+      "id": "event-trigger-shorthand",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#event-trigger-shorthand",
+      "level": 3,
+      "title": "The event-trigger Shorthand",
+      "number": "4.3"
+    },
+    {
+      "id": "triggered-animations-concept",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#triggered-animations-concept",
+      "level": 2,
+      "title": "Triggered Animations",
+      "number": "5"
+    },
+    {
+      "id": "animation-trigger-shorthand",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#animation-trigger-shorthand",
+      "level": 3,
+      "title": "The animation-trigger property",
+      "number": "5.1"
+    },
+    {
+      "id": "programming-interface",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#programming-interface",
+      "level": 2,
+      "title": "Programming interface",
+      "number": "6"
+    },
+    {
+      "id": "the-animationtrigger-interface",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#the-animationtrigger-interface",
+      "level": 3,
+      "title": "The AnimationTrigger interface<",
+      "number": "6.1"
+    },
+    {
+      "id": "the-animationtriggeroptions-dictionary",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#the-animationtriggeroptions-dictionary",
+      "level": 3,
+      "title": "The AnimationTriggerOptions dictionary",
+      "number": "6.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/animation-triggers-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
