@@ -4632,14 +4632,14 @@
     {
       "name": "HTMLBaseElement/href",
       "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-base-href",
-      "html": "The <dfn data-dfn-for=\"HTMLBaseElement\" id=\"dom-base-href\" data-dfn-type=\"attribute\"><code>href</code></dfn> IDL\n  attribute, on getting, must return the result of running the following algorithm:",
+      "html": "The <dfn data-dfn-for=\"HTMLBaseElement\" id=\"dom-base-href\" data-dfn-type=\"attribute\"><code>href</code></dfn> getter\n  steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>document</var> be <var>element</var>'s <a id=\"the-base-element:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.\n\n   </p>"
+          "html": "<p>Let <var>document</var> be <a id=\"the-base-element:this\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a id=\"the-base-element:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
         },
         {
-          "html": "<p>Let <var>url</var> be the value of the <code id=\"the-base-element:attr-base-href-10\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\">href</a></code>\n   attribute of this element, if it has one, and the empty string otherwise.</p>"
+          "html": "<p>Let <var>url</var> be the value of <a id=\"the-base-element:this-2\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <code id=\"the-base-element:attr-base-href-10\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\">href</a></code> content attribute, if present, or the empty string\n   otherwise.</p>"
         },
         {
           "html": "<p>Let <var>urlRecord</var> be the result of <a href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"the-base-element:url-parser-2\" data-x-internal=\"url-parser\">parsing</a>\n   <var>url</var> with <var>document</var>'s <a id=\"the-base-element:fallback-base-url-3\" href=\"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fallback-base-url\">fallback base URL</a>, and\n   <var>document</var>'s <a href=\"https://dom.spec.whatwg.org/#concept-document-encoding\" id=\"the-base-element:document's-character-encoding-2\" data-x-internal=\"document's-character-encoding\">character encoding</a>.\n   (Thus, the <code id=\"the-base-element:the-base-element-18\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> element isn't affected by other <code id=\"the-base-element:the-base-element-19\"><a href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\">base</a></code> elements or\n   itself.)</p>"
