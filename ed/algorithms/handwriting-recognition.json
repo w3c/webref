@@ -177,7 +177,7 @@
           "html": "<p>If <var>point</var>.<code>y</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code> and abort.</p>"
         },
         {
-          "html": "<p>If <var>point</var> has a <code>t</code> member, and <code>t</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and abort.</p>"
+          "html": "<p>If <var>point</var> has a <code>t</code> member, and <var>point</var>.<code>t</code> isn’t a number, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑥\">TypeError</a></code> and abort.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be a new object,</p>"
@@ -205,7 +205,7 @@
           "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a></p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke-points\" id=\"ref-for-handwritingstroke-points③\">points</a> as <var>p</var>",
+          "html": "For each <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingstroke-points\" id=\"ref-for-handwritingstroke-points③\">points</a> as <var>p</var>",
           "rationale": "create",
           "steps": [
             {
@@ -275,7 +275,7 @@
           "html": "<p>Let <var>result</var> be a new empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a></p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes③\">strokes</a> as <var>s</var>",
+          "html": "For each <code>this</code>.<a data-link-type=\"dfn\" href=\"https://wicg.github.io/handwriting-recognition/#handwritingdrawing-strokes\" id=\"ref-for-handwritingdrawing-strokes③\">strokes</a> as <var>s</var>",
           "rationale": "append",
           "steps": [
             {
