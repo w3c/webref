@@ -291,7 +291,7 @@
     {
       "name": "line-clamp",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
-      "value": "none | [<integer [1,∞]> || auto || <block-ellipsis>] -webkit-legacy?",
+      "value": "none | [<integer [1,∞]> || auto || <'block-ellipsis'>] -webkit-legacy?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -315,11 +315,11 @@
           "value": "auto"
         },
         {
-          "name": "<block-ellipsis>",
+          "name": "<'block-ellipsis'>",
           "prose": "Sets continue to collapse if one or more of the three values are specified, unless the -webkit-legacy keyword is also specified (see below). Sets block-ellipsis to the corresponding value if specified, or to ellipsis otherwise. Sets max-lines to the the specified integer or to auto if either are specified, or to the combination (in cannonical order) if both are, or to auto if both are ommitted",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
           "type": "value",
-          "value": "<block-ellipsis>"
+          "value": "<'block-ellipsis'>"
         },
         {
           "name": "-webkit-legacy",
