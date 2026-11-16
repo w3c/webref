@@ -387,10 +387,16 @@
       "https://drafts.csswg.org/css-backgrounds/": {
         "specShortname": "css-backgrounds-3"
       },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "specShortname": "css-borders-4"
+      },
       "https://drafts.csswg.org/css-box-3/": {
         "specShortname": "css-box-3"
       },
       "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "box-model"
+        ],
         "specShortname": "css-box-4"
       },
       "https://drafts.csswg.org/css-cascade-5/": {
@@ -449,6 +455,8 @@
         "specShortname": "fetch"
       },
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/11662": {},
+      "https://github.com/w3c/csswg-drafts/issues/14794": {},
       "https://github.com/w3c/csswg-drafts/issues/2301": {},
       "https://github.com/w3c/csswg-drafts/issues/2375": {},
       "https://github.com/w3c/csswg-drafts/issues/2949": {},
@@ -1226,12 +1234,6 @@
         ],
         "specShortname": "SVG2"
       },
-      "https://www.w3.org/TR/css-box-3/": {
-        "anchors": [
-          "box-model"
-        ],
-        "specShortname": "css-box-3"
-      },
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
@@ -1253,11 +1255,6 @@
           "percentages"
         ],
         "specShortname": "css-values-4"
-      },
-      "https://www.w3.org/TR/css3-background/": {
-        "anchors": [
-          "corner-shaping"
-        ]
       },
       "https://www.w3.org/TR/cssom/": {
         "anchors": [
@@ -1282,24 +1279,35 @@
     "autolinks": {
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
-          "propdef-border-radius",
-          "outset-adjusted-border-radius",
-          "propdef-background-clip"
+          "propdef-border-radius"
         ],
         "specShortname": "css-backgrounds-3"
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-corner-shape",
+          "outset-adjusted-border-radius",
+          "border-width-dfn"
+        ],
+        "specShortname": "css-borders-4"
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
           "margin-box",
           "typedef-visual-box",
-          "border-box"
+          "border-box",
+          "margin",
+          "padding-box",
+          "content-box",
+          "padding"
         ],
         "specShortname": "css-box-4"
       },
       "https://drafts.csswg.org/css-cascade-5/": {
         "anchors": [
           "computed-value",
-          "specified-value"
+          "specified-value",
+          "used-value"
         ],
         "specShortname": "css-cascade-5"
       },
