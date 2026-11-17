@@ -593,7 +593,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>eventInitDict</var>'s <code>data</code> member is not present, set the <code>data</code> attribute of the\n          event to <code>null</code> and terminate these steps."
+          "html": "If <var>eventInitDict</var>'s <code>data</code> member is <code>null</code>, set the <code>data</code> attribute of the\n          event to <code>null</code> and terminate these steps."
         },
         {
           "html": "Set <var>b</var> to the result of <a data-lt=\"extract a byte sequence\" href=\"https://www.w3.org/TR/push-api/#dfn-extract-a-byte-sequence\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-extract-a-byte-sequence-1\">extracting a byte\n          sequence</a> from the \"<code>data</code>\" member of <var>eventInitDict</var>."

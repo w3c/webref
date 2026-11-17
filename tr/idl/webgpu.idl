@@ -12,7 +12,6 @@ dictionary GPUObjectDescriptorBase {
 };
 
 enum GPUFeatureName {
-    "atomic-vec2u-min-max",
     "core-features-and-limits",
     "depth-clip-control",
     "depth32float-stencil8",
@@ -37,6 +36,7 @@ enum GPUFeatureName {
     "texture-component-swizzle",
     "subgroup-size-control",
     "texture-compression-unaligned",
+    "atomic-vec2u-min-max",
 };
 
 [Exposed=(Window, Worker), SecureContext]
@@ -1247,22 +1247,13 @@ enum GPUCanvasAlphaMode {
     "premultiplied",
 };
 
-enum GPUCanvasToneMappingMode {
-    "standard",
-    "extended",
-};
-
-dictionary GPUCanvasToneMapping {
-  GPUCanvasToneMappingMode mode = "standard";
-};
-
 dictionary GPUCanvasConfiguration {
     required GPUDevice device;
     required GPUTextureFormat format;
     GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT
     sequence<GPUTextureFormat> viewFormats = [];
     PredefinedColorSpace colorSpace = "srgb";
-    GPUCanvasToneMapping toneMapping = {};
+    CanvasToneMapping toneMapping = {};
     GPUCanvasAlphaMode alphaMode = "opaque";
 };
 
