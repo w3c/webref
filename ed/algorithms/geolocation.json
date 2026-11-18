@@ -150,7 +150,7 @@
               ]
             },
             {
-              "html": "Wait to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-acquire-a-position\" class=\"internalDFN\" id=\"ref-for-dfn-acquire-a-position-3\">acquire a position</a> passing <var data-type=\"PositionCallback\">successCallback</var>,\n              <var data-type=\"PositionErrorCallback?\">errorCallback</var>, <var data-type=\"PositionOptions\">options</var>, and <var data-type=\"unsigned long\">watchId</var>."
+              "html": "Wait to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-acquire-a-position\" class=\"internalDFN\" id=\"ref-for-dfn-acquire-a-position-3\">acquire a position</a> passing <var data-type=\"Geolocation\">geolocation</var>,\n              <var data-type=\"PositionCallback\">successCallback</var>, <var data-type=\"PositionErrorCallback?\">errorCallback</var>, <var data-type=\"PositionOptions\">options</var>, and <var data-type=\"unsigned long\">watchId</var>."
             },
             {
               "html": "If <var data-type=\"unsigned long\">watchId</var> was not passed, terminate this algorithm."
@@ -160,13 +160,13 @@
               "rationale": "wait",
               "steps": [
                 {
-                  "html": "<span id=\"wait-for-change\">Wait for a significant change of\n                    geographic position</span>. What constitutes a significant\n                    change of geographic position is left to the\n                    implementation. User agents <em class=\"rfc2119\">MAY</em> impose a rate limit on how\n                    frequently position changes are reported. User agents <em class=\"rfc2119\">MUST</em>\n                    consider invoking <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-set-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-set-emulated-position-data-1\">set emulated position data</a> as a\n                    significant change."
+                  "html": "<span id=\"wait-for-change\">Wait for a significant change of\n                    geographic position</span>. What constitutes a significant\n                    change of geographic position is left to the\n                    implementation. User agents <em class=\"rfc2119\">MAY</em> impose a rate limit on how\n                    frequently position changes are reported. User agents <em class=\"rfc2119\">MUST</em>\n                    consider an invocation of <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-set-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-set-emulated-position-data-1\">set emulated position data</a> as\n                    a significant change if <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-index-term-node-navigable-1\">node navigable</a> is\n                    not null and the given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-index-term-navigable-1\">navigable</a>'s\n                    <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-1\">top-level traversable</a> is the same as\n                    <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-index-term-node-navigable-2\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-2\">top-level traversable</a>. While <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-get-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-get-emulated-position-data-1\">get emulated position data</a> passing\n                    <var data-type=\"Geolocation\">geolocation</var> returns a non-null value, nothing other than\n                    such an invocation constitutes a significant change."
                 },
                 {
                   "html": "If <var data-type=\"Document\">document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-index-term-fully-active-for-document-3\">fully active</a> or\n                  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#visibility-state\" id=\"ref-for-index-term-visibility-state-for-document-3\">visibility state</a> is not \"visible\", go back to\n                  the previous step and again <a href=\"https://w3c.github.io/geolocation/#wait-for-change\">wait\n                  for a significant change of geographic position</a>."
                 },
                 {
-                  "html": "Wait to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-acquire-a-position\" class=\"internalDFN\" id=\"ref-for-dfn-acquire-a-position-4\">acquire a position</a> passing <var data-type=\"PositionCallback\">successCallback</var>,\n                  <var data-type=\"PositionErrorCallback?\">errorCallback</var>, <var data-type=\"PositionOptions\">options</var>, and <var data-type=\"unsigned long\">watchId</var>."
+                  "html": "Wait to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-acquire-a-position\" class=\"internalDFN\" id=\"ref-for-dfn-acquire-a-position-4\">acquire a position</a> passing <var data-type=\"Geolocation\">geolocation</var>,\n                  <var data-type=\"PositionCallback\">successCallback</var>, <var data-type=\"PositionErrorCallback?\">errorCallback</var>, <var data-type=\"PositionOptions\">options</var>, and <var data-type=\"unsigned long\">watchId</var>."
                 }
               ]
             }
@@ -177,11 +177,11 @@
     {
       "name": "acquire a position",
       "href": "https://w3c.github.io/geolocation/#dfn-acquire-a-position",
-      "html": "To <dfn data-local-lt=\"acquiring a position|acquire a position\" id=\"dfn-acquire-a-position\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">acquire a position</dfn>,\n          passing <a data-link-type=\"idl\" data-lt=\"PositionCallback\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" class=\"internalDFN\" id=\"ref-for-dom-positioncallback-4\"><code>PositionCallback</code></a> <var data-type=\"PositionCallback\">successCallback</var>, a\n          <a data-link-type=\"idl\" data-lt=\"PositionErrorCallback\" href=\"https://w3c.github.io/geolocation/#dom-positionerrorcallback\" class=\"internalDFN\" id=\"ref-for-dom-positionerrorcallback-4\"><code>PositionErrorCallback?</code></a> <var data-type=\"PositionErrorCallback?\">errorCallback</var>,\n          <a data-link-type=\"idl\" data-lt=\"PositionOptions\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-6\"><code>PositionOptions</code></a> <var data-type=\"PositionOptions\">options</var>, and an optional\n          <var data-type=\"unsigned long\">watchId</var>.",
+      "html": "To <dfn data-local-lt=\"acquiring a position|acquire a position\" id=\"dfn-acquire-a-position\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">acquire a position</dfn>,\n          passing a <a data-link-type=\"idl\" data-lt=\"Geolocation\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" class=\"internalDFN\" id=\"ref-for-dom-geolocation-4\"><code>Geolocation</code></a> <var data-type=\"Geolocation\">geolocation</var>, a\n          <a data-link-type=\"idl\" data-lt=\"PositionCallback\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" class=\"internalDFN\" id=\"ref-for-dom-positioncallback-4\"><code>PositionCallback</code></a> <var data-type=\"PositionCallback\">successCallback</var>, a\n          <a data-link-type=\"idl\" data-lt=\"PositionErrorCallback\" href=\"https://w3c.github.io/geolocation/#dom-positionerrorcallback\" class=\"internalDFN\" id=\"ref-for-dom-positionerrorcallback-4\"><code>PositionErrorCallback?</code></a> <var data-type=\"PositionErrorCallback?\">errorCallback</var>,\n          <a data-link-type=\"idl\" data-lt=\"PositionOptions\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-6\"><code>PositionOptions</code></a> <var data-type=\"PositionOptions\">options</var>, and an optional\n          <var data-type=\"unsigned long\">watchId</var>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"unsigned long\">watchId</var> was passed and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-7\">this</a>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[watchIDs]]\" href=\"https://w3c.github.io/geolocation/#dfn-watchids\" class=\"internalDFN\" id=\"ref-for-dfn-watchids-4\"><code>[[watchIDs]]</code></a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contains-for-list-2\">contain</a> <var data-type=\"unsigned long\">watchId</var>,\n          terminate this algorithm."
+          "html": "If <var data-type=\"unsigned long\">watchId</var> was passed and <var data-type=\"Geolocation\">geolocation</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[watchIDs]]\" href=\"https://w3c.github.io/geolocation/#dfn-watchids\" class=\"internalDFN\" id=\"ref-for-dfn-watchids-4\"><code>[[watchIDs]]</code></a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-index-term-contains-for-list-2\">contain</a> <var data-type=\"unsigned long\">watchId</var>,\n          terminate this algorithm."
         },
         {
           "html": "Let <var data-type=\"EpochTimeStamp\">acquisitionTime</var> be a new <a data-link-type=\"typedef\" data-lt=\"EpochTimeStamp\" href=\"https://www.w3.org/TR/hr-time-3/#typedefdef-epochtimestamp\" id=\"ref-for-index-term-epochtimestamp-1\"><code>EpochTimeStamp</code></a>\n          that represents now."
@@ -190,7 +190,7 @@
           "html": "Let <var>timeoutTime</var> be the sum of <var data-type=\"EpochTimeStamp\">acquisitionTime</var> and\n          <var data-type=\"PositionOptions\">options</var>.<a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions-timeout\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-timeout-2\"><code>timeout</code></a>."
         },
         {
-          "html": "Let <var data-type=\"GeolocationPosition\">cachedPosition</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-8\">this</a>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[cachedPosition]]\" href=\"https://w3c.github.io/geolocation/#dfn-cachedposition\" class=\"internalDFN\" id=\"ref-for-dfn-cachedposition-2\"><code>[[cachedPosition]]</code></a>."
+          "html": "Let <var data-type=\"GeolocationPosition\">cachedPosition</var> be <var data-type=\"Geolocation\">geolocation</var>'s\n          <a data-link-type=\"attribute\" data-lt=\"[[cachedPosition]]\" href=\"https://w3c.github.io/geolocation/#dfn-cachedposition\" class=\"internalDFN\" id=\"ref-for-dfn-cachedposition-2\"><code>[[cachedPosition]]</code></a>."
         },
         {
           "html": "Create an implementation-specific <var>timeout</var> task that elapses at\n          <var>timeoutTime</var>, during which it tries to acquire the device's position\n          by running the following steps:",
@@ -220,7 +220,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "Let <var>emulatedPositionData</var> be <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-get-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-get-emulated-position-data-1\">get emulated position data</a> passing <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-9\">this</a>."
+                      "html": "Let <var>emulatedPositionData</var> be <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-get-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-get-emulated-position-data-2\">get emulated position data</a> passing <var data-type=\"Geolocation\">geolocation</var>."
                     },
                     {
                       "html": "If <var>emulatedPositionData</var> is not null:",
@@ -277,77 +277,77 @@
                 },
                 {
                   "html": "Try to acquire position data from the underlying system,\n                  optionally taking into consideration the value of\n                  <var data-type=\"PositionOptions\">options</var>.<a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions-enablehighaccuracy\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-enablehighaccuracy-4\"><code>enableHighAccuracy</code></a> during\n                  acquisition."
-                },
-                {
-                  "html": "If the <var>timeout</var> elapses during acquisition, or acquiring\n                  the device's position results in failure:",
-                  "rationale": "stop",
-                  "steps": [
-                    {
-                      "html": "Stop the <var>timeout</var>."
-                    },
-                    {
-                      "html": "Go to <a href=\"https://w3c.github.io/geolocation/#errors-reasons\">dealing with\n                      failures</a>."
-                    },
-                    {
-                      "html": "Terminate this algorithm."
-                    }
-                  ]
-                },
-                {
-                  "html": "If acquiring the position data from the\n                  system succeeds:",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "Let <var>positionData</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-1\">map</a> with the following\n                      name/value pairs based on the acquired position data:\n                        <dl data-sort=\"\"><dt>\n                            \"accuracy\"\n                          </dt>\n                          <dd>\n                            A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-1\"><code>double</code></a> that represents the\n                            accuracy value indicating the 68% confidence level\n                            in meters (1 standard deviation). Accuracy measures\n                            how close the measured coordinates are to the true\n                            position.\n                          </dd>\n                          <dt>\n                            \"altitude\"\n                          </dt>\n                          <dd>\n                            A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-2\"><code>double?</code></a> that represents the altitude in\n                            meters above the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>] ellipsoid, or <code>null</code> if\n                            not available.\n                          </dd>\n                          <dt>\n                            \"altitudeAccuracy\"\n                          </dt>\n                          <dd>\n                            A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-3\"><code>double?</code></a> that represents the\n                            altitude accuracy, or <code>null</code> if not available,\n                            indicating the 68% confidence level in meters (1\n                            standard deviation). Altitude accuracy measures how\n                            close the measured altitude is to the true\n                            altitude.\n                          </dd>\n                          <dt>\n                            \"heading\"\n                          </dt>\n                          <dd>\n                            A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-4\"><code>double?</code></a> that represents the heading in\n                            degrees, or <code>null</code> if not available or the device\n                            is stationary. Heading measures the direction in\n                            which the device is moving relative to true north.\n                          </dd><dt>\n                            \"latitude\"\n                          </dt>\n                          <dd>\n                            A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-5\"><code>double</code></a> that represents the latitude\n                            coordinates on the Earth's surface in degrees,\n                            using the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>] coordinate system. Latitude\n                            measures how far north or south a point is from the\n                            Equator.\n                          </dd>\n                          <dt>\n                            \"longitude\"\n                          </dt>\n                          <dd>\n                            A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-6\"><code>double</code></a> that represents the longitude\n                            coordinates on the Earth's surface in degrees,\n                            using the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>] coordinate system. Longitude\n                            measures how far east or west a point is from the\n                            Prime Meridian.\n                          </dd>\n                          <dt>\n                            \"speed\"\n                          </dt>\n                          <dd>\n                            A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-7\"><code>double?</code></a> that represents the\n                            speed in meters per second, or <code>null</code> if not\n                            available. Speed measures how fast the device is\n                            moving.\n                          </dd>\n                          </dl>"
-                    },
-                    {
-                      "html": "Set <var>position</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-a-new-geolocationposition\" class=\"internalDFN\" id=\"ref-for-dfn-a-new-geolocationposition-2\">a new <code>GeolocationPosition</code></a>\n                      passing <var>positionData</var>, <var data-type=\"EpochTimeStamp\">acquisitionTime</var> and\n                      <var data-type=\"PositionOptions\">options</var>.<a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions-enablehighaccuracy\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-enablehighaccuracy-5\"><code>enableHighAccuracy</code></a>."
-                    },
-                    {
-                      "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-index-term-this-10\">this</a>'s <a data-link-type=\"attribute\" data-lt=\"[[cachedPosition]]\" href=\"https://w3c.github.io/geolocation/#dfn-cachedposition\" class=\"internalDFN\" id=\"ref-for-dfn-cachedposition-3\"><code>[[cachedPosition]]</code></a> to\n                      <var>position</var>."
-                    }
-                  ]
-                },
+                }
+              ]
+            },
+            {
+              "html": "If the <var>timeout</var> elapses during acquisition, or acquiring the\n              device's position results in failure:",
+              "rationale": "stop",
+              "steps": [
                 {
                   "html": "Stop the <var>timeout</var>."
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-3\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-geolocation-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-geolocation-task-source-3\">geolocation task source</a> with\n                  a step that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-index-term-invokes-3\">invokes</a> <var data-type=\"PositionCallback\">successCallback</var> with « <var>position</var> »\n                  and \"<code>report</code>\"."
+                  "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-deal-with-failure\" class=\"internalDFN\" id=\"ref-for-dfn-deal-with-failure-1\">Deal with failure</a>."
+                },
+                {
+                  "html": "Terminate this algorithm."
                 }
               ]
-            }
-          ],
-          "additional": [
+            },
             {
-              "html": "Create an implementation-specific <var>timeout</var> task that elapses at\n          <var>timeoutTime</var>, during which it tries to acquire the device's position\n          by running the following steps:",
+              "html": "If acquiring the position data from the\n              system succeeds:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>positionData</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-map-1\">map</a> with the following\n                  name/value pairs based on the acquired position data:\n                    <dl data-sort=\"\"><dt>\n                        \"accuracy\"\n                      </dt>\n                      <dd>\n                        A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-1\"><code>double</code></a> that represents the accuracy\n                        value indicating the 68% confidence level in meters (1\n                        standard deviation). Accuracy measures how close the\n                        measured coordinates are to the true position.\n                      </dd>\n                      <dt>\n                        \"altitude\"\n                      </dt>\n                      <dd>\n                        A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-2\"><code>double?</code></a> that represents the altitude in meters\n                        above the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>] ellipsoid, or <code>null</code> if not\n                        available.\n                      </dd>\n                      <dt>\n                        \"altitudeAccuracy\"\n                      </dt>\n                      <dd>\n                        A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-3\"><code>double?</code></a> that represents the altitude\n                        accuracy, or <code>null</code> if not available, indicating the\n                        68% confidence level in meters (1 standard deviation).\n                        Altitude accuracy measures how close the measured\n                        altitude is to the true altitude.\n                      </dd>\n                      <dt>\n                        \"heading\"\n                      </dt>\n                      <dd>\n                        A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-4\"><code>double?</code></a> that represents the heading in degrees,\n                        or <code>null</code> if not available or the device is stationary.\n                        Heading measures the direction in which the device is\n                        moving relative to true north.\n                      </dd><dt>\n                        \"latitude\"\n                      </dt>\n                      <dd>\n                        A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-5\"><code>double</code></a> that represents the latitude coordinates\n                        on the Earth's surface in degrees, using the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>]\n                        coordinate system. Latitude measures how far north or\n                        south a point is from the Equator.\n                      </dd>\n                      <dt>\n                        \"longitude\"\n                      </dt>\n                      <dd>\n                        A <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-6\"><code>double</code></a> that represents the longitude coordinates\n                        on the Earth's surface in degrees, using the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/geolocation/#bib-wgs84\" title=\"World Geodetic System 1984 (WGS 84)\">WGS84</a></cite>]\n                        coordinate system. Longitude measures how far east or\n                        west a point is from the Prime Meridian.\n                      </dd>\n                      <dt>\n                        \"speed\"\n                      </dt>\n                      <dd>\n                        A non-negative <a data-link-type=\"interface\" data-lt=\"double\" href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"ref-for-index-term-double-type-7\"><code>double?</code></a> that represents the speed in\n                        meters per second, or <code>null</code> if not available. Speed\n                        measures how fast the device is moving.\n                      </dd>\n                      </dl>"
+                },
+                {
+                  "html": "Set <var>position</var> to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-a-new-geolocationposition\" class=\"internalDFN\" id=\"ref-for-dfn-a-new-geolocationposition-2\">a new <code>GeolocationPosition</code></a> passing\n                  <var>positionData</var>, <var data-type=\"EpochTimeStamp\">acquisitionTime</var>, and\n                  <var data-type=\"PositionOptions\">options</var>.<a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions-enablehighaccuracy\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-enablehighaccuracy-5\"><code>enableHighAccuracy</code></a>."
+                },
+                {
+                  "html": "Set <var data-type=\"Geolocation\">geolocation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[cachedPosition]]\" href=\"https://w3c.github.io/geolocation/#dfn-cachedposition\" class=\"internalDFN\" id=\"ref-for-dfn-cachedposition-3\"><code>[[cachedPosition]]</code></a> to\n                  <var>position</var>."
+                }
+              ]
+            },
+            {
+              "html": "Stop the <var>timeout</var>."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-3\">Queue a task</a> on the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-geolocation-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-geolocation-task-source-3\">geolocation task source</a> with a\n              step that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-index-term-invokes-3\">invokes</a> <var data-type=\"PositionCallback\">successCallback</var> with « <var>position</var> » and\n              \"<code>report</code>\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "acquire a position",
+      "href": "https://w3c.github.io/geolocation/#dfn-acquire-a-position",
+      "html": "To <dfn data-local-lt=\"acquiring a position|acquire a position\" id=\"dfn-acquire-a-position\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">acquire a position</dfn>,\n          passing a <a data-link-type=\"idl\" data-lt=\"Geolocation\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" class=\"internalDFN\" id=\"ref-for-dom-geolocation-4\"><code>Geolocation</code></a> <var data-type=\"Geolocation\">geolocation</var>, a\n          <a data-link-type=\"idl\" data-lt=\"PositionCallback\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" class=\"internalDFN\" id=\"ref-for-dom-positioncallback-4\"><code>PositionCallback</code></a> <var data-type=\"PositionCallback\">successCallback</var>, a\n          <a data-link-type=\"idl\" data-lt=\"PositionErrorCallback\" href=\"https://w3c.github.io/geolocation/#dom-positionerrorcallback\" class=\"internalDFN\" id=\"ref-for-dom-positionerrorcallback-4\"><code>PositionErrorCallback?</code></a> <var data-type=\"PositionErrorCallback?\">errorCallback</var>,\n          <a data-link-type=\"idl\" data-lt=\"PositionOptions\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions\" class=\"internalDFN\" id=\"ref-for-dom-positionoptions-6\"><code>PositionOptions</code></a> <var data-type=\"PositionOptions\">options</var>, and an optional\n          <var data-type=\"unsigned long\">watchId</var>.",
+      "rationale": ".switch",
+      "steps": [
+        {
+          "operation": "switch",
+          "steps": [
+            {
+              "case": "Deal with failure:",
+              "html": "If acquiring a position fails, do one of the following based\n              on the condition that matches the failure:",
               "rationale": ".switch",
               "steps": [
                 {
                   "operation": "switch",
                   "steps": [
                     {
-                      "case": "Dealing with failures:",
-                      "html": "If acquiring a position fails, do one of the following\n                  based on the condition that matches the failure:",
-                      "rationale": ".switch",
-                      "steps": [
-                        {
-                          "operation": "switch",
-                          "steps": [
-                            {
-                              "case": "User or system denied permission:",
-                              "html": "<p>\n                          <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-7\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                          <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-permission_denied\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-permission_denied-4\"><code>PERMISSION_DENIED</code></a>.\n                        </p>"
-                            },
-                            {
-                              "case": "Timeout elapsed:",
-                              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-8\">Call back with error</a> with <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                        <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-timeout\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-timeout-1\"><code>TIMEOUT</code></a>."
-                            },
-                            {
-                              "case": "Data acquisition error or any other reason:",
-                              "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-9\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                        <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-position_unavailable\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-position_unavailable-3\"><code>POSITION_UNAVAILABLE</code></a>."
-                            }
-                          ]
-                        }
-                      ]
+                      "case": "User or system denied permission:",
+                      "html": "<p>\n                      <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-7\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                      <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-permission_denied\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-permission_denied-4\"><code>PERMISSION_DENIED</code></a>.\n                    </p>"
+                    },
+                    {
+                      "case": "Timeout elapsed:",
+                      "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-8\">Call back with error</a> with <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                    <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-timeout\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-timeout-1\"><code>TIMEOUT</code></a>."
+                    },
+                    {
+                      "case": "Data acquisition error or any other reason:",
+                      "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-call-back-with-error\" class=\"internalDFN\" id=\"ref-for-dfn-call-back-with-error-9\">Call back with error</a> passing <var data-type=\"PositionErrorCallback?\">errorCallback</var> and\n                    <a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror-position_unavailable\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-position_unavailable-3\"><code>POSITION_UNAVAILABLE</code></a>."
                     }
                   ]
                 }
@@ -400,14 +400,14 @@
     {
       "name": "set emulated position data",
       "href": "https://w3c.github.io/geolocation/#dfn-set-emulated-position-data",
-      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-set-emulated-position-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set emulated position data</dfn>, given\n        <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-index-term-navigable-1\">navigable</a> <var>navigable</var> and an <var>emulatedPositionData</var>:",
+      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-set-emulated-position-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">set emulated position data</dfn>, given\n        <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-index-term-navigable-2\">navigable</a> <var>navigable</var> and an <var>emulatedPositionData</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "Assert <var>emulatedPositionData</var> is either null, a\n        <a data-link-type=\"idl\" data-lt=\"GeolocationCoordinates\" href=\"https://w3c.github.io/geolocation/#dom-geolocationcoordinates\" class=\"internalDFN\" id=\"ref-for-dom-geolocationcoordinates-6\"><code>GeolocationCoordinates</code></a>, or a <a data-link-type=\"idl\" data-lt=\"GeolocationPositionError\" href=\"https://w3c.github.io/geolocation/#dom-geolocationpositionerror\" class=\"internalDFN\" id=\"ref-for-dom-geolocationpositionerror-10\"><code>GeolocationPositionError</code></a>."
         },
         {
-          "html": "Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-1\">top-level traversable</a>."
+          "html": "Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-3\">top-level traversable</a>."
         },
         {
           "html": "If <var>traversable</var> is not null:",
@@ -415,9 +415,6 @@
           "steps": [
             {
               "html": "Set <var>traversable</var>'s associated <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/geolocation/#dfn-emulated-position-data\" class=\"internalDFN\" id=\"ref-for-dfn-emulated-position-data-1\">emulated position data</a> to\n            <var>emulatedPositionData</var>."
-            },
-            {
-              "html": "User agents <em class=\"rfc2119\">MUST</em> consider this as a \"significant change\" in the\n            <a href=\"https://w3c.github.io/geolocation/#wait-for-change\">wait for a significant change of\n            geographic position</a> step."
             }
           ]
         }
@@ -426,17 +423,17 @@
     {
       "name": "get emulated position data",
       "href": "https://w3c.github.io/geolocation/#dfn-get-emulated-position-data",
-      "html": "To <dfn id=\"dfn-get-emulated-position-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get emulated position data</dfn>, given <a data-link-type=\"idl\" data-lt=\"Geolocation\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" class=\"internalDFN\" id=\"ref-for-dom-geolocation-4\"><code>Geolocation</code></a>\n        <var>geolocation</var>:",
+      "html": "To <dfn id=\"dfn-get-emulated-position-data\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">get emulated position data</dfn>, given <a data-link-type=\"idl\" data-lt=\"Geolocation\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" class=\"internalDFN\" id=\"ref-for-dom-geolocation-5\"><code>Geolocation</code></a>\n        <var>geolocation</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>navigable</var> be <var>geolocation</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a>'s\n        <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-4\">associated <code>Document</code></a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-index-term-node-navigable-1\">node navigable</a>."
+          "html": "Let <var>navigable</var> be <var>geolocation</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a>'s\n        <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-index-term-associated-document-4\">associated <code>Document</code></a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-index-term-node-navigable-3\">node navigable</a>."
         },
         {
           "html": "If <var>navigable</var> is null, return null."
         },
         {
-          "html": "Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-2\">top-level traversable</a>."
+          "html": "Let <var>traversable</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-index-term-top-level-traversable-for-navigable-4\">top-level traversable</a>."
         },
         {
           "html": "If <var>traversable</var> is null, return null."
