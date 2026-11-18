@@ -161,39 +161,39 @@
                   "html": "Set the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-active-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-active-orientation-lock-3\">active orientation lock</a> to\n                <code>null</code>."
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-index-term-queue-a-task-1\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-2\">DOM manipulation task source</a>\n                with <var>document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a> to:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-2\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-2\">DOM manipulation task source</a> with <var>document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-4\">relevant global object</a> to:",
                   "rationale": "if",
                   "steps": [
                     {
                       "html": "If the <var>document</var>'s\n                    <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-11\"><code>[[orientationPendingPromise]]</code></a> is not <code>null</code>,\n                    <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise\" class=\"internalDFN\" id=\"ref-for-dfn-reject-and-nullify-the-current-lock-promise-6\">reject and nullify the current lock promise</a> of\n                    <var>document</var> with a \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-index-term-notsupportederror-exception-2\"><code>NotSupportedError</code></a>\"."
-                    },
-                    {
-                      "html": "Abort these steps."
                     }
                   ]
+                },
+                {
+                  "html": "Abort these parallel sub-steps."
                 }
               ]
             },
             {
               "html": "Set the screen's <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-active-orientation-lock\" class=\"internalDFN\" id=\"ref-for-dfn-active-orientation-lock-4\">active orientation lock</a> to\n            <var>orientation</var> and update the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-type-6\">current orientation type</a>\n            and <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-angle\" class=\"internalDFN\" id=\"ref-for-dfn-current-orientation-angle-3\">current orientation angle</a> to reflect any changes to\n            the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientations\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientations-5\">screen orientation</a>."
-            }
-          ]
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-2\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-3\">DOM manipulation task source</a>\n        with <var>document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-5\">relevant global object</a> to:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "Let <var data-type=\"Promise?\">promise</var> be <var>document</var>'s\n            <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-12\"><code>[[orientationPendingPromise]]</code></a>."
             },
             {
-              "html": "Set <var>document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-13\"><code>[[orientationPendingPromise]]</code></a> to\n            <code>null</code>."
-            },
-            {
-              "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientation-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientation-change-steps-1\">screen orientation change steps</a> with <var>topDocument</var>."
-            },
-            {
-              "html": "If <var data-type=\"Promise?\">promise</var> is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-index-term-resolve-1\">resolve</a> <var data-type=\"Promise?\">promise</var> with\n            <code>undefined</code>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-3\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-index-term-dom-manipulation-task-source-3\">DOM manipulation task source</a>\n            with <var>document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-5\">relevant global object</a> to:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var data-type=\"Promise?\">promise</var> be <var>document</var>'s\n                <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-12\"><code>[[orientationPendingPromise]]</code></a>."
+                },
+                {
+                  "html": "Set <var>document</var>'s <a data-link-type=\"attribute\" data-lt=\"[[orientationPendingPromise]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-orientationpendingpromise\" class=\"internalDFN\" id=\"ref-for-dfn-orientationpendingpromise-13\"><code>[[orientationPendingPromise]]</code></a>\n                to <code>null</code>."
+                },
+                {
+                  "html": "Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-screen-orientation-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientation-change-steps-1\">screen orientation change steps</a> with\n                <var>topDocument</var>."
+                },
+                {
+                  "html": "If <var data-type=\"Promise?\">promise</var> is not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-index-term-resolve-1\">resolve</a> <var data-type=\"Promise?\">promise</var> with\n                <code>undefined</code>."
+                }
+              ]
             }
           ]
         }
@@ -218,7 +218,7 @@
           "html": "If <var>type</var> is equal to <var>screenOrientation</var>'s\n        <a data-link-type=\"attribute\" data-lt=\"[[type]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-type\" class=\"internalDFN\" id=\"ref-for-dfn-type-3\"><code>[[type]]</code></a> and <var>angle</var> is equal to\n        <var>screenOrientation</var>'s <a data-link-type=\"attribute\" data-lt=\"[[angle]]\" href=\"https://www.w3.org/TR/screen-orientation/#dfn-angle\" class=\"internalDFN\" id=\"ref-for-dfn-angle-3\"><code>[[angle]]</code></a>, abort these\n        steps."
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-3\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-index-term-user-interaction-task-source-1\">user interaction task source</a>\n        with <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-7\">relevant global object</a> to perform the following\n        steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-index-term-queue-a-global-task-4\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\" id=\"ref-for-index-term-user-interaction-task-source-1\">user interaction task source</a>\n        with <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-index-term-relevant-global-object-7\">relevant global object</a> to perform the following\n        steps:",
           "rationale": "set",
           "steps": [
             {
