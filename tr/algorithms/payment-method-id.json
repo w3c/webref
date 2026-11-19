@@ -11,27 +11,27 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var data-type=\"URL\">url</var> be the result of running the <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-index-term-basic-url-parser-1\">basic URL parser</a>\n          with <var data-type=\"string\">pmi</var>."
+          "html": "Let <var data-type=\"URL\">url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-index-term-basic-url-parser-1\">basic URL parser</a>\n          with <var data-type=\"string\">pmi</var>."
         },
         {
-          "html": "If <var data-type=\"URL\">url</var> is failure, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-validate-a-standardized-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-standardized-payment-method-identifier-1\">validate a standardized payment method identifier</a> with <var data-type=\"string\">pmi</var> and return the result."
+          "html": "If <var data-type=\"URL\">url</var> is failure, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-validate-a-standardized-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-standardized-payment-method-identifier-1\">validate a standardized payment method identifier</a> with <var data-type=\"string\">pmi</var> and return the result."
         },
         {
-          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-validate-a-url-based-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-url-based-payment-method-identifier-1\">validate a URL-based payment method identifier</a>\n          passing <var data-type=\"URL\">url</var> and return the result."
+          "html": "Otherwise, <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-validate-a-url-based-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-validate-a-url-based-payment-method-identifier-1\">validate a URL-based payment method identifier</a>\n          passing <var data-type=\"URL\">url</var> and return the result."
         }
       ]
     },
     {
       "name": "validate a URL-based payment method identifier",
       "href": "https://www.w3.org/TR/payment-method-id/#dfn-validate-a-url-based-payment-method-identifier",
-      "html": "The steps to <dfn data-export=\"\" id=\"dfn-validate-a-url-based-payment-method-identifier\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate a URL-based payment method\n          identifier</dfn> are given by the following algorithm. The algorithm\n          takes a <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-2\">URL</a> <var data-type=\"URL\">url</var> as input and returns true if the URL is\n          valid:",
+      "html": "The steps to <dfn data-export=\"\" id=\"dfn-validate-a-url-based-payment-method-identifier\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">validate a URL-based payment method\n          identifier</dfn> are given by the following algorithm. The algorithm\n          takes a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-index-term-url-2\">URL</a> <var data-type=\"URL\">url</var> as input and returns true if the URL is\n          valid:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-index-term-scheme-for-url-1\">scheme</a> is not \"https\", return false."
+          "html": "If <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-index-term-scheme-for-url-1\">scheme</a> is not \"https\", return false."
         },
         {
-          "html": "If <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-index-term-username-for-url-1\">username</a> or <a data-link-type=\"dfn\" data-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-index-term-password-for-url-1\">password</a> is not the empty\n          string, return false."
+          "html": "If <var data-type=\"URL\">url</var>'s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-index-term-username-for-url-1\">username</a> or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-index-term-password-for-url-1\">password</a> is not the empty\n          string, return false."
         },
         {
           "html": "Otherwise, return true."
@@ -45,7 +45,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Return true if <var data-type=\"string\">string</var> conforms to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-syntax-of-a-standardized-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-syntax-of-a-standardized-payment-method-identifier-1\">syntax of a standardized payment method identifier</a>. Otherwise, return false."
+          "html": "Return true if <var data-type=\"string\">string</var> conforms to the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-method-id/#dfn-syntax-of-a-standardized-payment-method-identifier\" class=\"internalDFN\" id=\"ref-for-dfn-syntax-of-a-standardized-payment-method-identifier-1\">syntax of a standardized payment method identifier</a>. Otherwise, return false."
         }
       ]
     }
