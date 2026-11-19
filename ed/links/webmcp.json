@@ -20,8 +20,8 @@
       "https://github.com/webmachinelearning/webmcp/issues/106": {},
       "https://github.com/webmachinelearning/webmcp/issues/224": {},
       "https://github.com/webmachinelearning/webmcp/issues/227": {},
+      "https://github.com/webmachinelearning/webmcp/issues/349": {},
       "https://github.com/webmachinelearning/webmcp/issues/73": {},
-      "https://github.com/webmachinelearning/webmcp/issues/92": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {
         "specShortname": "infra"
@@ -64,10 +64,10 @@
           "concept-event-fire",
           "concept-document-origin",
           "abortcontroller-signal",
+          "abortsignal",
           "eventtarget",
           "abortsignal-aborted",
           "abortsignal-add",
-          "abortsignal",
           "event",
           "dictdef-eventinit",
           "concept-document"
@@ -76,15 +76,16 @@
       },
       "https://html.spec.whatwg.org/C": {
         "anchors": [
-          "browsing-context-group"
+          "browsing-context-group",
+          "active-window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin",
           "same-origin",
-          "ascii-serialisation-of-an-origin",
-          "concept-origin-opaque"
+          "concept-origin-opaque",
+          "ascii-serialisation-of-an-origin"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -127,7 +128,9 @@
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "concept-document-window",
-          "window"
+          "windowproxy",
+          "window",
+          "window-bc"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -156,9 +159,8 @@
           "struct-item",
           "ordered-map",
           "map-getting-the-keys",
-          "string",
           "map-getting-the-values",
-          "map-key",
+          "string",
           "string-length",
           "ascii-alphanumeric",
           "code-point",
@@ -249,6 +251,7 @@
           "a-new-promise",
           "reject",
           "resolve",
+          "dfn-convert-idl-to-javascript-value",
           "notsupportederror",
           "idl-USVString",
           "idl-boolean",
