@@ -113,19 +113,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@function\"</c-></code> followed by a single SPACE (U+0020).</p>"
+          "html": "<p>The string <code class=\"highlight\" data-language=\"css\">\"@function\"</code> followed by a single SPACE (U+0020).</p>"
         },
         {
           "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialize an identifier</a>\non the name of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⑤\">custom function</a>,\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>"
         },
         {
-          "html": "<p>The result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-parameter\" id=\"ref-for-serialize-a-function-parameter\">serialize a function parameter</a>\non each of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⑥\">custom function’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-function-parameter\" id=\"ref-for-custom-function-function-parameter②③\">parameters</a>,\nall joined by <code class=\"highlight\"><c- s=\"\">\", \"</c-></code>\n(COMMA U+002C, followed by a single SPACE U+0020).</p>"
+          "html": "<p>The result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-parameter\" id=\"ref-for-serialize-a-function-parameter\">serialize a function parameter</a>\non each of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⑥\">custom function’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-function-parameter\" id=\"ref-for-custom-function-function-parameter②③\">parameters</a>,\nall joined by <code class=\"highlight\" data-language=\"css\">\", \"</code>\n(COMMA U+002C, followed by a single SPACE U+0020).</p>"
         },
         {
           "html": "<p>A single RIGHT PARENTHESIS (U+0029).</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⑦\">custom function</a> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑦\">return type</a>,\nand that <span id=\"ref-for-custom-function-return-type⑧\">return type</span>\nis not the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition\" id=\"ref-for-universal-syntax-definition\">universal syntax definition</a> (\"*\"):</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single SPACE (U+0020),\nfollowed by the string <code class=\"highlight\"><c- s=\"\">\"returns\"</c-></code>,\nfollowed by a single SPACE (U+0020).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-css-type\" id=\"ref-for-serialize-a-css-type\">serialize a CSS type</a>\non that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑨\">type</a>.</p>\n      </li></ul>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function\" id=\"ref-for-custom-function③⑦\">custom function</a> has <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑦\">return type</a>,\nand that <span id=\"ref-for-custom-function-return-type⑧\">return type</span>\nis not the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition\" id=\"ref-for-universal-syntax-definition\">universal syntax definition</a> (\"*\"):</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single SPACE (U+0020),\nfollowed by the string <code class=\"highlight\" data-language=\"css\">\"returns\"</code>,\nfollowed by a single SPACE (U+0020).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-css-type\" id=\"ref-for-serialize-a-css-type\">serialize a CSS type</a>\non that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#custom-function-return-type\" id=\"ref-for-custom-function-return-type⑨\">type</a>.</p>\n      </li></ul>"
         },
         {
           "html": "<p>A single SPACE (U+0020),\nfollowed by a LEFT CURLY BRACKET (U+007B).</p>"
@@ -165,7 +165,7 @@
           "html": "<p>If the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-mixins-1/#typedef-css-type\" id=\"ref-for-typedef-css-type⑤\">&lt;css-type&gt;</a> consists of a single <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-5/#typedef-syntax-component\" id=\"ref-for-typedef-syntax-component②\">&lt;syntax-component&gt;</a>,\nreturn the corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>"
         },
         {
-          "html": "<p>Otherwise,\nreturn the concatenation of the following:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\"type(\"</c-></code>,\ni.e. <code class=\"highlight\"><c- s=\"\">\"type\"</c-></code>\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>\n       </li><li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\")\"</c-></code>,\ni.e. a single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
+          "html": "<p>Otherwise,\nreturn the concatenation of the following:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The string <code class=\"highlight\" data-language=\"css\">\"type(\"</code>,\ni.e. <code class=\"highlight\" data-language=\"css\">\"type\"</code>\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>\n       </li><li data-md=\"\">\n        <p>The string <code class=\"highlight\" data-language=\"css\">\")\"</code>,\ni.e. a single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
         }
       ]
     },
@@ -176,7 +176,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@mixin\"</c-></code> followed by a single SPACE (U+0020).</p>"
+          "html": "<p>The string <code class=\"highlight\" data-language=\"css\">\"@mixin\"</code> followed by a single SPACE (U+0020).</p>"
         },
         {
           "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier③\">serialize an identifier</a>\non the name of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#mixin\" id=\"ref-for-mixin③④\">mixin</a>.</p>"
@@ -205,7 +205,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@apply\"</c-></code> followed by a single SPACE (U+0020).</p>"
+          "html": "<p>The string <code class=\"highlight\" data-language=\"css\">\"@apply\"</code> followed by a single SPACE (U+0020).</p>"
         },
         {
           "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-an-apply-prelude\" id=\"ref-for-serialize-an-apply-prelude\">serialize an @apply prelude</a>\non the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②④\">@apply</a> rule.</p>"
@@ -231,10 +231,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-mixins-1/#dom-cssapplyblockrule-name\" id=\"ref-for-dom-cssapplyblockrule-name①\">name</a></code> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑥\">@apply</a> rule.</p>"
+          "html": "<p>The <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-mixins-1/#dom-cssapplyblockrule-name\" id=\"ref-for-dom-cssapplyblockrule-name①\">name</a></code> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑥\">@apply</a> rule.</p>"
         },
         {
-          "html": "<p>If the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑦\">@apply</a> rule has at least one argument,\nthe concatenation of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-argument\" id=\"ref-for-serialize-a-function-argument\">serialize a function argument</a>\non each argument,\nall joined by <code class=\"highlight\"><c- s=\"\">\", \"</c-></code>.</p>\n       </li><li data-md=\"\">\n        <p>A single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
+          "html": "<p>If the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑦\">@apply</a> rule has at least one argument,\nthe concatenation of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-argument\" id=\"ref-for-serialize-a-function-argument\">serialize a function argument</a>\non each argument,\nall joined by <code class=\"highlight\" data-language=\"css\">\", \"</code>.</p>\n       </li><li data-md=\"\">\n        <p>A single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
         }
       ]
     },
@@ -262,7 +262,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@apply\"</c-></code> followed by a single SPACE (U+0020).</p>"
+          "html": "<p>The string <code class=\"highlight\" data-language=\"css\">\"@apply\"</code> followed by a single SPACE (U+0020).</p>"
         },
         {
           "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-an-apply-prelude\" id=\"ref-for-serialize-an-apply-prelude①\">serialize an @apply prelude</a>\non the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑨\">@apply</a> rule.</p>"
@@ -279,7 +279,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@contents\"</c-></code> followed by a single SPACE (U+0020).</p>"
+          "html": "<p>The string <code class=\"highlight\" data-language=\"css\">\"@contents\"</code> followed by a single SPACE (U+0020).</p>"
         },
         {
           "html": "<p>A single LEFT CURLY BRACKET (U+007B),\nfollowed by a SPACE (U+0020).</p>"

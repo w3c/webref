@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Web Share Target API",
-    "url": "https://w3c.github.io/web-share-target/"
+    "url": "https://wicg.github.io/web-share-target/"
   },
   "algorithms": [
     {
@@ -12,13 +12,13 @@
           "html": "Let <var>json</var> and <var>manifest</var> be the corresponding variables from\n        <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-processing-a-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\" id=\"ref-for-index-term-processing-a-manifest-1\">processing a manifest</a>."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/web-share-target/#dfn-process-the-share_target-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-share_target-member-1\">Process the <code>share_target</code> member</a> with <var>json</var> and <var>manifest</var>."
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/web-share-target/#dfn-process-the-share_target-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-share_target-member-1\">Process the <code>share_target</code> member</a> with <var>json</var> and <var>manifest</var>."
         }
       ]
     },
     {
       "name": "process the share_target member",
-      "href": "https://w3c.github.io/web-share-target/#dfn-process-the-share_target-member",
+      "href": "https://wicg.github.io/web-share-target/#dfn-process-the-share_target-member",
       "html": "To <dfn id=\"dfn-process-the-share_target-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>share_target</code> member</dfn> given <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/info/rfc8259/#section-4\" id=\"ref-for-index-term-object-type-3\">object</a>\n          <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
@@ -32,7 +32,7 @@
           "html": "If <var data-type=\"object\">target</var>[\"action\"] or <var data-type=\"object\">target</var>[\"params\"] is missing, return."
         },
         {
-          "html": "Process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://w3c.github.io/web-share-target/#dfn-action\" class=\"internalDFN\" id=\"ref-for-dfn-action-1\"><code>action</code></a>:",
+          "html": "Process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://wicg.github.io/web-share-target/#dfn-action\" class=\"internalDFN\" id=\"ref-for-dfn-action-1\"><code>action</code></a>:",
           "rationale": "let",
           "steps": [
             {
@@ -50,7 +50,7 @@
           "html": "Let <var data-type=\"string\">method</var> be \"GET\"."
         },
         {
-          "html": "If <var data-type=\"object\">target</var>[\"method\"] is present, process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://w3c.github.io/web-share-target/#dfn-method\" class=\"internalDFN\" id=\"ref-for-dfn-method-1\"><code>method</code></a>:",
+          "html": "If <var data-type=\"object\">target</var>[\"method\"] is present, process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://wicg.github.io/web-share-target/#dfn-method\" class=\"internalDFN\" id=\"ref-for-dfn-method-1\"><code>method</code></a>:",
           "rationale": "if",
           "steps": [
             {
@@ -80,7 +80,7 @@
           "html": "Let <var data-type=\"ordered map\">params</var> be a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-2\">ordered map</a>."
         },
         {
-          "html": "Process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://w3c.github.io/web-share-target/#dfn-params\" class=\"internalDFN\" id=\"ref-for-dfn-params-2\"><code>params</code></a>:",
+          "html": "Process <a data-link-type=\"dfn|abstract-op\" data-link-for=\"ShareTarget\" data-xref-for=\"ShareTarget\" href=\"https://wicg.github.io/web-share-target/#dfn-params\" class=\"internalDFN\" id=\"ref-for-dfn-params-2\"><code>params</code></a>:",
           "rationale": "for",
           "steps": [
             {
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "html": "When <a href=\"https://w3c.github.io/web-share-target/#dfn-web-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-target-11\">web share target</a> having <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-4\">ordered map</a> <var>manifest</var> is\n          <a href=\"https://w3c.github.io/web-share-target/#dfn-invoke\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-3\">invoked</a> with <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"ShareData\" data-cite=\"web-share\" data-cite-path=\"\" data-cite-frag=\"dom-sharedata\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata\" id=\"ref-for-index-term-sharedata-8\"><code>ShareData</code></a> <var>data</var>, run the following steps:",
+      "html": "When <a href=\"https://wicg.github.io/web-share-target/#dfn-web-share-target\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-share-target-11\">web share target</a> having <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-4\">ordered map</a> <var>manifest</var> is\n          <a href=\"https://wicg.github.io/web-share-target/#dfn-invoke\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invoke-3\">invoked</a> with <a data-xref-type=\"_IDL_\" data-link-type=\"dictionary\" data-lt=\"ShareData\" data-cite=\"web-share\" data-cite-path=\"\" data-cite-frag=\"dom-sharedata\" href=\"https://www.w3.org/TR/web-share/#dom-sharedata\" id=\"ref-for-index-term-sharedata-8\"><code>ShareData</code></a> <var>data</var>, run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {

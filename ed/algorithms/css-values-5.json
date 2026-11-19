@@ -17,7 +17,7 @@
           "html": "<p>If <var>el</var> was given,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-5/#substitute-arbitrary-substitution-function\" id=\"ref-for-substitute-arbitrary-substitution-function\">substitute arbitrary substitution functions</a> in <var>raw parse</var>,\nand set <var>raw parse</var> to that result.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar③\">parse</a> <var>values</var> according to <var>syntax</var>,\nwith a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/selectors-3/#x\" id=\"ref-for-x\">*</a> value treated as <code class=\"highlight\"><a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value⑤\">&lt;declaration-value&gt;</a>?</code>,\nand let <var>parsed result</var> be the result.\nIf <var>syntax</var> used a <span class=\"css\">|</span> combinator,\nlet <var>parsed result</var> be the parse result from the first matching clause.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar③\">parse</a> <var>values</var> according to <var>syntax</var>,\nwith a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/selectors-3/#x\" id=\"ref-for-x\">*</a> value treated as <code class=\"highlight\" data-language=\"css\"><a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value⑤\">&lt;declaration-value&gt;</a>?</code>,\nand let <var>parsed result</var> be the result.\nIf <var>syntax</var> used a <span class=\"css\">|</span> combinator,\nlet <var>parsed result</var> be the parse result from the first matching clause.</p>"
         },
         {
           "html": "<p>If <var>parsed result</var> is failure,\nreturn the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#guaranteed-invalid-value\" id=\"ref-for-guaranteed-invalid-value①\">guaranteed-invalid value</a>.</p>"
@@ -80,16 +80,16 @@
           "html": "<p>Let <var>specified sum</var> be the sum of the percentages specified in <var>items</var>\n(clamped to 100%),\nor 0% if the percentages are omitted for all items.</p>"
         },
         {
-          "html": "<p>For each omitted percentage in <var>items</var>,\nset it to\n<code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> - <var>specified sum</var><c- p=\"\">)</c-> / <c- p=\"\">(</c->number of omitted percentages<c- p=\"\">)</c-></code>.</p>"
+          "html": "<p>For each omitted percentage in <var>items</var>,\nset it to\n<code class=\"highlight\" data-language=\"css\">(100% - <var>specified sum</var>) / (number of omitted percentages)</code>.</p>"
         },
         {
           "html": "<p>Let <var>total</var> be the sum of the percentages of all the items.</p>"
         },
         {
-          "html": "<p>If <var>total</var> is greater than 100%,\nor if <var>total</var> is greater than 0% and the <var>force normalization</var> flag is true,\nmultiply every percentage in <var>items</var> by <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> / <var>total</var><c- p=\"\">)</c-></code>.</p>"
+          "html": "<p>If <var>total</var> is greater than 100%,\nor if <var>total</var> is greater than 0% and the <var>force normalization</var> flag is true,\nmultiply every percentage in <var>items</var> by <code class=\"highlight\" data-language=\"css\">(100% / <var>total</var>)</code>.</p>"
         },
         {
-          "html": "<p>If <var>total</var> is less than 100%,\nlet <var>leftover</var> be <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">100</c-><c- k=\"\">%</c-> - <var>total</var><c- p=\"\">)</c-></code>.\nOtherwise, let <var>leftover</var> be 0%.</p>"
+          "html": "<p>If <var>total</var> is less than 100%,\nlet <var>leftover</var> be <code class=\"highlight\" data-language=\"css\">(100% - <var>total</var>)</code>.\nOtherwise, let <var>leftover</var> be 0%.</p>"
         },
         {
           "html": "<p>Return <var>items</var> and <var>leftover</var>.</p>"
