@@ -125,10 +125,10 @@
           "html": "For any given point between the two color stops,\n\t\t\t\tdetermine the point’s location as a percentage of the distance between the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②①\">color stops</a>,\n\t\t\t\tin the same way as the previous step.\n\t\t\t\tLet this percentage be <var>P</var>."
         },
         {
-          "html": "Let <var>C</var>, the color weighting at that point,\n\t\t\t\tbe equal to <code class=\"highlight\"><var><c- nf=\"\">P</c-></var><sup><c- nf=\"\">log</c-><sub><var><c- nf=\"\">H</c-></var></sub><c- p=\"\">(</c-><c- m=\"\">.5</c-><c- p=\"\">)</c-></sup></code>."
+          "html": "Let <var>C</var>, the color weighting at that point,\n\t\t\t\tbe equal to <code class=\"highlight\" data-language=\"css\"><var>P</var><sup>log<sub><var>H</var></sub>(.5)</sup></code>."
         },
         {
-          "html": "The color at that point is then a linear blend between the colors of the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②②\">color stops</a>,\n\t\t\t\tblending <code class=\"highlight\"><c- p=\"\">(</c-><c- m=\"\">1</c-> - <var>C</var><c- p=\"\">)</c-></code> of the first stop and <var>C</var> of the second stop."
+          "html": "The color at that point is then a linear blend between the colors of the two <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-4/#color-stop\" id=\"ref-for-color-stop②②\">color stops</a>,\n\t\t\t\tblending <code class=\"highlight\" data-language=\"css\">(1 - <var>C</var>)</code> of the first stop and <var>C</var> of the second stop."
         }
       ]
     },

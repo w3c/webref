@@ -33,10 +33,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions\">conditions</a></code> attribute.</p>"
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions\">conditions</a></code> attribute.</p>"
         },
         {
-          "html": "<p>Let <var>first</var> be <code class=\"highlight\">true</code>.</p>"
+          "html": "<p>Let <var>first</var> be <code class=\"highlight\" data-language=\"css\">true</code>.</p>"
         },
         {
           "html": "<p>Let <var>result</var> be the empty string.</p>"
@@ -46,25 +46,25 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>first</var> is <code class=\"highlight\">false</code>, append <code class=\"highlight\"><c- s=\"\">\", \"</c-></code> to <var>result</var>.</p>"
+              "html": "<p>If <var>first</var> is <code class=\"highlight\" data-language=\"css\">false</code>, append <code class=\"highlight\" data-language=\"css\">\", \"</code> to <var>result</var>.</p>"
             },
             {
-              "html": "<p>Set <var>first</var> to <code class=\"highlight\">false</code>.</p>"
+              "html": "<p>Set <var>first</var> to <code class=\"highlight\" data-language=\"css\">false</code>.</p>"
             },
             {
-              "html": "If <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name\">name</a></code> is not empty:",
+              "html": "If <var>condition</var>’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name\">name</a></code> is not empty:",
               "rationale": "append",
               "steps": [
                 {
-                  "html": "<p>Append <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name①\">name</a></code> to <var>result</var>.</p>"
+                  "html": "<p>Append <var>condition</var>’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name①\">name</a></code> to <var>result</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query\">query</a></code> is not empty,\n append a single space to <var>result</var>.</p>"
+                  "html": "<p>If <var>condition</var>’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query\">query</a></code> is not empty,\n append a single space to <var>result</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Append <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query①\">query</a></code> to <var>result</var>.</p>"
+              "html": "<p>Append <var>condition</var>’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query①\">query</a></code> to <var>result</var>.</p>"
             }
           ]
         },
@@ -79,19 +79,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions①\">conditions</a></code> attribute.</p>"
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions①\">conditions</a></code> attribute.</p>"
         },
         {
           "html": "If the length of <var>conditions</var> is 1:",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the only <var>conditions</var> item’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name②\">name</a></code>.</p>"
+              "html": "<p>Return the only <var>conditions</var> item’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name②\">name</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>return <code class=\"highlight\"><c- s=\"\">\"\"</c-></code>.</p>"
+          "html": "<p>return <code class=\"highlight\" data-language=\"css\">\"\"</code>.</p>"
         }
       ]
     },
@@ -101,19 +101,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions②\">conditions</a></code> attribute.</p>"
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions②\">conditions</a></code> attribute.</p>"
         },
         {
           "html": "If the length of <var>conditions</var> is 1:",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the only <var>conditions</var> item’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query②\">query</a></code>.</p>"
+              "html": "<p>Return the only <var>conditions</var> item’s <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query②\">query</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <code class=\"highlight\"><c- s=\"\">\"\"</c-></code>.</p>"
+          "html": "<p>Return <code class=\"highlight\" data-language=\"css\">\"\"</code>.</p>"
         }
       ]
     },
@@ -130,7 +130,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>dict</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dictdef-csscontainercondition\" id=\"ref-for-dictdef-csscontainercondition①\">CSSContainerCondition</a></code> with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name③\">name</a></code> set to the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialized</a> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name④\">&lt;container-name&gt;</a>\n of <var>condition</var> if specified, or <code class=\"highlight\"><c- s=\"\">\"\"</c-></code> otherwise,\n and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query③\">query</a></code> set to the\n <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-query\" id=\"ref-for-typedef-container-query⑦\">&lt;container-query&gt;</a> specified in <var>condition</var>\n without any logical simplifications,\n so that the returned query will evaluate to the same result\n as the specified query\n in any conformant implementation of this specification\n (including implementations that implement future extensions\n allowed by the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed\" id=\"ref-for-typedef-general-enclosed④\">&lt;general-enclosed&gt;</a> extensibility mechanism in this specification).\n In other words,\n token stream simplifications are allowed\n (such as reducing whitespace to a single space\n or omitting it in cases where it is known to be optional),\n but logical simplifications (such as removal of unneeded parentheses,\n or simplification based on evaluating results) are not allowed.</p>"
+              "html": "<p>Let <var>dict</var> be a new <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dictdef-csscontainercondition\" id=\"ref-for-dictdef-csscontainercondition①\">CSSContainerCondition</a></code> with\n <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name③\">name</a></code> set to the\n <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialized</a> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name④\">&lt;container-name&gt;</a>\n of <var>condition</var> if specified, or <code class=\"highlight\" data-language=\"css\">\"\"</code> otherwise,\n and <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query③\">query</a></code> set to the\n <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-query\" id=\"ref-for-typedef-container-query⑦\">&lt;container-query&gt;</a> specified in <var>condition</var>\n without any logical simplifications,\n so that the returned query will evaluate to the same result\n as the specified query\n in any conformant implementation of this specification\n (including implementations that implement future extensions\n allowed by the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed\" id=\"ref-for-typedef-general-enclosed④\">&lt;general-enclosed&gt;</a> extensibility mechanism in this specification).\n In other words,\n token stream simplifications are allowed\n (such as reducing whitespace to a single space\n or omitting it in cases where it is known to be optional),\n but logical simplifications (such as removal of unneeded parentheses,\n or simplification based on evaluating results) are not allowed.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>dict</var> to <var>result</var>.</p>"
@@ -145,17 +145,17 @@
     {
       "name": "Element/matchContainer(query)",
       "href": "https://drafts.csswg.org/css-conditional-5/#dom-element-matchcontainer",
-      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-element-matchcontainer\"><code class=\"highlight\"><c- nf=\"\">matchContainer</c-><c- p=\"\">(</c-><var>query</var><c- p=\"\">)</c-></code></dfn> method, when invoked, must run these steps:",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Element\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-element-matchcontainer\"><code data-language=\"none\">matchContainer(<var>query</var>)</code></dfn> method, when invoked, must run these steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "Let <var>parsed container query list</var> be the result of\n\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar\">parsing</a> <var>query</var> as a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-query-list\" id=\"ref-for-typedef-container-query-list②\">&lt;container-query-list&gt;</a>."
         },
         {
-          "html": "If <var>parsed container query list</var> is failure,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>."
+          "html": "If <var>parsed container query list</var> is failure,\n\t\t\t<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>."
         },
         {
-          "html": "Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist\" id=\"ref-for-containerquerylist②\">ContainerQueryList</a></code> object,\n\t\t\twith <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-element\" id=\"ref-for-containerquerylist-element\">element</a>\n\t\t\tand the <var>parsed container query list</var>\n\t\t\tas its associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-container-query-list\" id=\"ref-for-containerquerylist-container-query-list④\">container query list</a>."
+          "html": "Return a new <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist\" id=\"ref-for-containerquerylist②\">ContainerQueryList</a></code> object,\n\t\t\twith <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> as its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-element\" id=\"ref-for-containerquerylist-element\">element</a>\n\t\t\tand the <var>parsed container query list</var>\n\t\t\tas its associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-container-query-list\" id=\"ref-for-containerquerylist-container-query-list④\">container query list</a>."
         }
       ]
     },
@@ -169,7 +169,7 @@
           "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-conditional-5/#containerquerylist-container-query-list\" id=\"ref-for-containerquerylist-container-query-list⑦\">container query list</a> is empty, then return the empty string."
         },
         {
-          "html": "Serialize each <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-condition\" id=\"ref-for-typedef-container-condition⑧\">&lt;container-condition&gt;</a> in the list, in the order they appear,\n\t\t\tand return the results as a comma-separated list.\n\t\t\tEach <span class=\"production\" id=\"ref-for-typedef-container-condition⑨\">&lt;container-condition&gt;</span> is serialized as specified,\n\t\t\twith whitespace simplification but no logical simplification,\n\t\t\tin the same manner as the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containername\" id=\"ref-for-dom-csscontainerrule-containername①\">containerName</a></code> and\n\t\t\t<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containerquery\" id=\"ref-for-dom-csscontainerrule-containerquery①\">containerQuery</a></code> attributes."
+          "html": "Serialize each <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-condition\" id=\"ref-for-typedef-container-condition⑧\">&lt;container-condition&gt;</a> in the list, in the order they appear,\n\t\t\tand return the results as a comma-separated list.\n\t\t\tEach <span class=\"production\" id=\"ref-for-typedef-container-condition⑨\">&lt;container-condition&gt;</span> is serialized as specified,\n\t\t\twith whitespace simplification but no logical simplification,\n\t\t\tin the same manner as the <code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containername\" id=\"ref-for-dom-csscontainerrule-containername①\">containerName</a></code> and\n\t\t\t<code class=\"idl\" data-language=\"none\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containerquery\" id=\"ref-for-dom-csscontainerrule-containerquery①\">containerQuery</a></code> attributes."
         }
       ]
     }
