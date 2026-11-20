@@ -108,27 +108,6 @@
           ]
         },
         {
-          "html": "If the <var>input <a href=\"https://w3c.github.io/did-resolution/#did-resolution-options\">DID resolution options</a></var>\ncontain the <code>expandRelativeUrls</code> option with a value of\n<code>true</code>:",
-          "rationale": ".algorithm",
-          "steps": [
-            {
-              "html": "Iterate over all <a data-cite=\"did-core#services\" href=\"https://www.w3.org/TR/did-core/#services\">services</a>,\n<a data-cite=\"did-core#verification-methods\" href=\"https://www.w3.org/TR/did-core/#verification-methods\">verification methods</a>,\n<a data-cite=\"did-core#verification-relationships\" href=\"https://www.w3.org/TR/did-core/#verification-relationships\">verification relationships</a>\nand any extension-defined properties in the\n<var>output <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var>."
-            },
-            {
-              "html": "For each item, if the item is an object and the value of the\n<code>id</code> property is a <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a>,\nor if a <a data-cite=\"did-core#verification-relationships\" href=\"https://www.w3.org/TR/did-core/#verification-relationships\">verification relationship</a> is a\n<a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a>:",
-              "rationale": ".algorithm",
-              "steps": [
-                {
-                  "html": "Resolve the <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URL</a> to an absolute\n<a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a> conformant with\n<a data-cite=\"did-core#did-url-syntax\" href=\"https://www.w3.org/TR/did-core/#did-url-syntax\">DID URL Syntax</a>, according to the rules of\nsection <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-cite=\"DID-CORE\" data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
-                }
-              ]
-            },
-            {
-              "html": "Update the <var>output <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-documents\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-documents\">DID document</a></var> by\nreplacing the <a data-cite=\"did-core#relative-did-urls\" href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">relative DID URLs</a> with the resolved\nabsolute <a data-cite=\"did\" data-cite-path=\"\" data-cite-frag=\"dfn-did-urls\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URLs</a>."
-            }
-          ]
-        },
-        {
           "html": "Return the following result:",
           "rationale": ".algorithm",
           "steps": [
