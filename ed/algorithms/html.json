@@ -30622,10 +30622,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>urlString</var> be the result of running the <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"the-javascript:-url-special-case:concept-url-serializer\" data-x-internal=\"concept-url-serializer\">URL serializer</a> on <var>url</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>encodedScriptSource</var> be the result of removing the leading \"<code>javascript:</code>\" from <var>urlString</var>.</p>"
+          "html": "<p>Let <var>encodedScriptSource</var> be the result of running the <a href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"the-javascript:-url-special-case:concept-url-serializer\" data-x-internal=\"concept-url-serializer\">URL serializer</a> on <var>url</var> with <a href=\"https://url.spec.whatwg.org/#url-serializer-exclude-scheme\" id=\"the-javascript:-url-special-case:url-serializer-exclude-scheme\" data-x-internal=\"url-serializer-exclude-scheme\"><i>exclude scheme</i></a> set to true.</p>"
         },
         {
           "html": "<p>Let <var>scriptSource</var> be the <a href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"the-javascript:-url-special-case:utf-8-decode\" data-x-internal=\"utf-8-decode\">UTF-8 decoding</a> of\n   the <a href=\"https://url.spec.whatwg.org/#string-percent-decode\" id=\"the-javascript:-url-special-case:percent-decode\" data-x-internal=\"percent-decode\">percent-decoding</a> of\n   <var>encodedScriptSource</var>.</p>"

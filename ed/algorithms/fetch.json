@@ -5363,10 +5363,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③①\">Assert</a>: <var>dataURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①⑨\">scheme</a> is \"<code>data</code>\".\n\n </p>"
         },
         {
-          "html": "<p>Let <var>input</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑧\">URL serializer</a> on\n <var>dataURL</var> with <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-serializer-exclude-fragment\" id=\"ref-for-url-serializer-exclude-fragment③\"><i>exclude fragment</i></a> set to true.\n\n </p>"
-        },
-        {
-          "html": "<p>Remove the leading \"<code>data:</code>\" from <var>input</var>.\n\n </p>"
+          "html": "<p>Let <var>input</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑧\">URL serializer</a> on\n <var>dataURL</var> with <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-serializer-exclude-scheme\" id=\"ref-for-url-serializer-exclude-scheme\"><i>exclude scheme</i></a> and\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-serializer-exclude-fragment\" id=\"ref-for-url-serializer-exclude-fragment③\"><i>exclude fragment</i></a> set to true.\n\n </p>"
         },
         {
           "html": "<p>Let <var>position</var> point at the start of <var>input</var>.\n\n </p>"
