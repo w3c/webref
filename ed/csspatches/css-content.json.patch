@@ -1,0 +1,26 @@
+From 2aceb56f442c995ac4bf4228e82b2683647fd44b Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 20 Nov 2026 16:15:05 +0100
+Subject: [PATCH] Drop placeholder value from syntax of `quotes`
+
+No tracking issue but patch will fail when syntax gets updated in the spec.
+---
+ ed/css/css-content.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-content.json b/ed/css/css-content.json
+index e14a73e4ab..ee649c41f5 100644
+--- a/ed/css/css-content.json
++++ b/ed/css/css-content.json
+@@ -59,7 +59,7 @@
+     {
+       "name": "quotes",
+       "href": "https://drafts.csswg.org/css-content-3/#propdef-quotes",
+-      "value": "auto | none | bikeshed-this | [ <string> <string> ]+",
++      "value": "auto | none | [ <string> <string> ]+",
+       "initial": "auto",
+       "appliesTo": "all elements",
+       "inherited": "yes",
+-- 
+2.56.1
+
