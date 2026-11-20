@@ -1,0 +1,15 @@
+{
+  "name": "Tool",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebMCP",
+      "url": "https://webmachinelearning.github.io/webmcp/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface Tool {\n  readonly attribute DOMString name;\n  // `title` can be exposed as a `DOMString` since it was taken in by a\n  // `USVString`, meaning all unmatched surrogate processing has already been\n  // done, and there's no need to do it again on tool exposure.\n  readonly attribute DOMString title;\n  readonly attribute DOMString description;\n  readonly attribute object? inputSchema;\n  readonly attribute object? outputSchema;\n  readonly attribute WindowProxy? source;\n  readonly attribute USVString origin;\n  readonly attribute object? annotations;\n};",
+    "href": "https://webmachinelearning.github.io/webmcp/#tool"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

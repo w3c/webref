@@ -200,9 +200,9 @@
       ]
     },
     {
-      "name": "screen orientation change steps",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-screen-orientation-change-steps",
-      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-screen-orientation-change-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">screen orientation change steps</dfn> for\n        <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-5\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "name": "update the screen orientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-update-the-screen-orientation",
+      "html": "To <dfn id=\"dfn-update-the-screen-orientation\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">update the screen orientation</dfn> of <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-5\"><code>Document</code></a>\n        <var data-type=\"Document\">document</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -231,12 +231,20 @@
               "html": "<a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-index-term-fire-an-event-1\">Fire an event</a> named \"<a data-link-for=\"ScreenOrientation\" href=\"https://w3c.github.io/screen-orientation/#dfn-change\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-change-2\">change</a>\" at <var>screenOrientation</var>."
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "screen orientation change steps",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-screen-orientation-change-steps",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-screen-orientation-change-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">screen orientation change steps</dfn> for\n        <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-6\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>documents</var> be an <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-set\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-ordered-set-2\">ordered set</a> consisting of <var data-type=\"Document\">document</var>\n        followed by <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"descendant-navigables\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-index-term-descendant-navigables-for-document-2\">descendant navigables</a>'s\n        <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-4\">active documents</a>, if any, in tree order."
         },
         {
-          "html": "Let <var>descendantDocs</var> be an <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-set\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-index-term-ordered-set-2\">ordered set</a> consisting of\n        <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"descendant-navigables\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#descendant-navigables\" id=\"ref-for-index-term-descendant-navigables-for-document-2\">descendant navigables</a>'s <a data-link-type=\"dfn\" data-link-for=\"navigable\" data-xref-for=\"navigable\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"nav-document\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-index-term-active-document-for-navigable-4\">active documents</a>, if any, in tree order."
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"Set\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"Document\">doc</var> in <var>descendantDocs</var>, run the\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/screen-orientation/#dfn-screen-orientation-change-steps\" class=\"internalDFN\" id=\"ref-for-dfn-screen-orientation-change-steps-3\">screen orientation change steps</a> with <var data-type=\"Document\">doc</var>."
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"Set\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-index-term-for-each-for-list-2\">For each</a> <var data-type=\"Document\">doc</var> in <var>documents</var>, <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/screen-orientation/#dfn-update-the-screen-orientation\" class=\"internalDFN\" id=\"ref-for-dfn-update-the-screen-orientation-1\">update the screen orientation</a> of <var data-type=\"Document\">doc</var>."
         }
       ]
     },
@@ -255,7 +263,7 @@
     {
       "name": "fully unlock the screen orientation steps",
       "href": "https://w3c.github.io/screen-orientation/#dfn-fully-unlock-the-screen-orientation-steps",
-      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-fully-unlock-the-screen-orientation-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fully unlock the screen orientation steps</dfn>\n        for <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-6\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-fully-unlock-the-screen-orientation-steps\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">fully unlock the screen orientation steps</dfn>\n        for <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-index-term-document-interface-7\"><code>Document</code></a> <var data-type=\"Document\">document</var> are as follows:",
       "rationale": ".algorithm",
       "steps": [
         {

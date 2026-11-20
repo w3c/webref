@@ -90,7 +90,8 @@
           "order",
           "syntax-rule-path-defaultValue",
           "syntax-rule-path-values",
-          "value-nodes",
+          "value-nodes-property-shapes",
+          "shacl-rdfs",
           "node-expressions",
           "security"
         ],
@@ -100,6 +101,9 @@
         "specShortname": "shacl12-inference-rules"
       },
       "https://www.w3.org/TR/shacl12-node-expr/": {
+        "anchors": [
+          "security"
+        ],
         "specShortname": "shacl12-node-expr"
       },
       "https://www.w3.org/TR/shacl12-profiling/": {
@@ -170,9 +174,11 @@
           "dfn-value",
           "dfn-failure",
           "dfn-shacl-superclass",
-          "dfn-value-node",
           "dfn-property-shape",
+          "dfn-value-node",
+          "dfn-output-nodes",
           "dfn-evaluation-failure",
+          "dfn-shacl-subclass",
           "dfn-ill-formed"
         ],
         "specShortname": "shacl12-core"

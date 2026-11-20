@@ -26,17 +26,10 @@
         "title": "Media Capture and Streams",
         "url": "https://www.w3.org/TR/mediacapture-streams/"
       },
-      "fragment": "[Exposed=Window]\ninterface MediaStreamTrack : EventTarget {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString id;\n  readonly attribute DOMString label;\n  attribute boolean enabled;\n  readonly attribute boolean muted;\n  attribute EventHandler onmute;\n  attribute EventHandler onunmute;\n  readonly attribute MediaStreamTrackState readyState;\n  attribute EventHandler onended;\n  MediaStreamTrack clone();\n  undefined stop();\n  MediaTrackCapabilities getCapabilities();\n  MediaTrackConstraints getConstraints();\n  MediaTrackSettings getSettings();\n  Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});\n};",
+      "fragment": "[Exposed=(Window,DedicatedWorker), Transferable, SameAgentCluster]\ninterface MediaStreamTrack : EventTarget {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString id;\n  readonly attribute DOMString label;\n  attribute boolean enabled;\n  readonly attribute boolean muted;\n  attribute EventHandler onmute;\n  attribute EventHandler onunmute;\n  readonly attribute MediaStreamTrackState readyState;\n  attribute EventHandler onended;\n  MediaStreamTrack clone();\n  undefined stop();\n  MediaTrackCapabilities getCapabilities();\n  MediaTrackConstraints getConstraints();\n  MediaTrackSettings getSettings();\n  Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});\n};",
       "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack"
     },
     "extended": [
-      {
-        "spec": {
-          "title": "Media Capture and Streams Extensions",
-          "url": "https://w3c.github.io/mediacapture-extensions/"
-        },
-        "fragment": "[Exposed=(Window,DedicatedWorker), Transferable]\npartial interface MediaStreamTrack {\n};"
-      },
       {
         "spec": {
           "title": "Media Capture and Streams Extensions",

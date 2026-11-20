@@ -1,0 +1,15 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+[Exposed=Window, SecureContext]
+interface Tool {
+  readonly attribute DOMString name;
+  // `title` can be exposed as a `DOMString` since it was taken in by a
+  // `USVString`, meaning all unmatched surrogate processing has already been
+  // done, and there's no need to do it again on tool exposure.
+  readonly attribute DOMString title;
+  readonly attribute DOMString description;
+  readonly attribute object? inputSchema;
+  readonly attribute object? outputSchema;
+  readonly attribute WindowProxy? source;
+  readonly attribute USVString origin;
+  readonly attribute object? annotations;
+};

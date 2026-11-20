@@ -1,5 +1,5 @@
 // Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker), Transferable, SameAgentCluster]
 interface MediaStreamTrack : EventTarget {
   readonly attribute DOMString kind;
   readonly attribute DOMString id;
@@ -16,11 +16,6 @@ interface MediaStreamTrack : EventTarget {
   MediaTrackConstraints getConstraints();
   MediaTrackSettings getSettings();
   Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});
-};
-
-// Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
-[Exposed=(Window,DedicatedWorker), Transferable]
-partial interface MediaStreamTrack {
 };
 
 // Source: Media Capture and Streams Extensions (https://w3c.github.io/mediacapture-extensions/)
