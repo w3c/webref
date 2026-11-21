@@ -14,21 +14,16 @@
       "https://falcon-sign.info/": {},
       "https://github.com/multiformats/multicodec/blob/master/table.csv": {},
       "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "nulls"
-        ],
         "specShortname": "infra"
       },
       "https://openquantumsafe.org/liboqs/algorithms/sig/falcon.html": {},
       "https://sqisign.org/": {},
       "https://sqisign.org/spec/sqisign-20250707.pdf": {},
       "https://www.rfc-editor.org/info/bcp14": {},
-      "https://www.rfc-editor.org/info/rfc2104/": {},
       "https://www.rfc-editor.org/info/rfc2119/": {},
       "https://www.rfc-editor.org/info/rfc6234/": {},
       "https://www.rfc-editor.org/info/rfc8174/": {},
       "https://www.rfc-editor.org/info/rfc8785/": {},
-      "https://www.rfc-editor.org/info/rfc8949/": {},
       "https://www.rfc-editor.org/rfc/rfc9901.html": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/cid-1.0/": {
@@ -51,7 +46,17 @@
           "create-base-proof",
           "add-derived-proof",
           "verify-derived-proof",
-          "SDApproachTable"
+          "SDApproachTable",
+          "TransformSD",
+          "DeriveSaltsSD",
+          "MerkleizeSD",
+          "HashSD",
+          "MTH",
+          "SerializeBase-SHoC",
+          "CreateDisclosureData",
+          "SerializeDerived-SHoC",
+          "CreateSubtreeProof",
+          "ComputeTreeShape"
         ],
         "specShortname": "vc-data-integrity-1.1"
       },
@@ -61,10 +66,6 @@
           "proofs",
           "add-proof",
           "verify-proof",
-          "dfn-unsecured-data-document",
-          "dfn-cryptosuite",
-          "algorithms",
-          "PROOF_VERIFICATION_ERROR",
           "security-considerations",
           "privacy-considerations"
         ],
@@ -77,16 +78,6 @@
         "specShortname": "vc-di-bbs"
       },
       "https://www.w3.org/TR/vc-di-ecdsa/": {
-        "anchors": [
-          "createhmacidlabelmapfunction",
-          "canonicalizeandgroup",
-          "hashmandatorynquads",
-          "selectjsonld",
-          "compresslabelmap",
-          "createlabelmapfunction",
-          "labelreplacementcanonicalizejsonld",
-          "decompresslabelmap"
-        ],
         "specShortname": "vc-di-ecdsa"
       },
       "https://www.w3.org/groups/wg/vc": {},
@@ -104,8 +95,7 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ordered-map",
-          "struct",
-          "struct-item"
+          "struct"
         ],
         "specShortname": "infra"
       },
@@ -114,7 +104,6 @@
           "dfn-data-integrity-cryptographic-suite-instance",
           "dfn-sic",
           "dfn-shoc",
-          "dfn-data-integrity-proof",
           "dfn-unsecured-data-document"
         ],
         "specShortname": "vc-data-integrity-1.1"
@@ -122,9 +111,6 @@
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "dfn-selective-disclosure",
-          "dfn-verifiable-credential",
-          "dfn-verifier",
-          "dfn-verify",
           "dfn-unlinkable-disclosure"
         ],
         "specShortname": "vc-data-model-2.0"
