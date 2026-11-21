@@ -50,11 +50,11 @@
           "html": "Let <var data-type=\"Promise\">promise</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"a-new-promise\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-index-term-a-new-promise-1\">a new promise</a>."
         },
         {
-          "html": "Run the following steps <a data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-1\">in parallel</a>:",
+          "html": "Return <var data-type=\"Promise\">promise</var> and run the following steps <a data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-index-term-in-parallel-1\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"PermissionState\">state</var> be the result of <a data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dfn-request-permission-to-use\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-request-permission-to-use\" id=\"ref-for-index-term-requesting-permission-to-use-1\">requesting\n              permission to use</a> \"<code>screen-wake-lock</code>\"."
+              "html": "Let <var data-type=\"PermissionState\">state</var> be the result of <a data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dfn-getting-the-current-permission-state\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-index-term-getting-the-current-permission-state-1\">getting the\n              current permission state</a> of \"<code>screen-wake-lock</code>\" with\n              <var data-type=\"Document\">document</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"relevant-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-index-term-relevant-settings-object-1\">relevant settings object</a>."
             },
             {
               "html": "If <var data-type=\"PermissionState\">state</var> is\n              \"<a data-link-type=\"enum-value\" data-xref-type=\"enum-value\" data-link-for=\"PermissionState\" data-xref-for=\"PermissionState\" data-cite=\"permissions\" data-cite-path=\"\" data-cite-frag=\"dom-permissionstate-denied\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-index-term-denied-for-permissionstate-1\"><code>denied</code></a>\", then:",
@@ -117,9 +117,6 @@
               ]
             }
           ]
-        },
-        {
-          "html": "Return <var data-type=\"Promise\">promise</var>."
         }
       ]
     },
