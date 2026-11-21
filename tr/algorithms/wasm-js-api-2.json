@@ -1228,10 +1228,10 @@
               "html": "<p>Let <var>frame</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/conventions.html#exec-notation-textual\" id=\"ref-for-exec-notation-textual\">current frame</a>.</p>"
             },
             {
-              "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">memaddrs</a>[<var>x</var>] exists.</p>"
+              "html": "<p class=\"assertion\">Assert: due to validation, <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst\">mems</a>[<var>x</var>] exists.</p>"
             },
             {
-              "html": "<p>Let <var>memaddr</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr⑦\">memory address</a> <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">memaddrs</a>[<var>x</var>].</p>"
+              "html": "<p>Let <var>memaddr</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-memaddr\" id=\"ref-for-syntax-memaddr⑦\">memory address</a> <var>frame</var>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-frame\" id=\"ref-for-syntax-frame①\">module</a>.<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-moduleinst\" id=\"ref-for-syntax-moduleinst①\">mems</a>[<var>x</var>].</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#refresh-the-memory-buffer\" id=\"ref-for-refresh-the-memory-buffer①\">Refresh the memory buffer</a> of <var>memaddr</var>.</p>"
@@ -1920,12 +1920,9 @@
           "html": "<p>Let <var>funcinst</var> be <var>store</var>.funcs[<var>funcaddr</var>].</p>"
         },
         {
-          "html": "If <var>funcinst</var> is of the form {type <var>functype</var>, hostcode <var>hostfunc</var>},",
-          "rationale": "assert",
+          "html": "If <var>funcinst</var>.code is a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc\">host function</a>,",
+          "rationale": "let",
           "steps": [
-            {
-              "html": "<p class=\"assertion\">Assert: <var>hostfunc</var> is a JavaScript object and <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>hostfunc</var>) is true.</p>"
-            },
             {
               "html": "<p>Let <var>index</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#index-of-the-host-function\" id=\"ref-for-index-of-the-host-function\">index of the host function</a> <var>funcaddr</var>.</p>"
             }
@@ -2201,15 +2198,18 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable②\">IsCallable</a>(<var>func</var>).</p>"
+          "html": "<p class=\"assertion\">Assert: <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable\" id=\"ref-for-sec-iscallable①\">IsCallable</a>(<var>func</var>).</p>"
         },
         {
           "html": "<p>Let <var>stored settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object\" id=\"ref-for-incumbent-settings-object\">incumbent settings object</a>.</p>"
         },
         {
-          "html": "Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc\">host function</a> which performs the following steps when called with arguments <var>arguments</var>:",
-          "rationale": "let",
+          "html": "Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc①\">host function</a> which performs the following steps when called with store <var>store</var> and arguments <var>arguments</var>:",
+          "rationale": "set",
           "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②⑧\">associated store</a> to <var>store</var>.</p>"
+            },
             {
               "html": "<p>Let <var>realm</var> be <var>func</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-associated-realm\" id=\"ref-for-dfn-associated-realm\">associated Realm</a>.</p>"
             },
@@ -2235,7 +2235,7 @@
               "html": "<p class=\"assertion\">Assert: <var>result</var>.[[Type]] is <emu-const>throw</emu-const> or <emu-const>normal</emu-const>.</p>"
             },
             {
-              "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②⑧\">associated store</a>.</p>"
+              "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②⑨\">associated store</a>.</p>"
             },
             {
               "html": "If <var>result</var>.[[Type]] is <emu-const>throw</emu-const>, then:",
@@ -2267,28 +2267,28 @@
                       "html": "<p>Let (<var>store</var>, <var>address</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc\">exn_alloc</a>(<var>store</var>, <var>type</var>, « <var>payload</var> »).</p>"
                     },
                     {
-                      "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑧\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store②⑨\">associated store</a> to <var>store</var>.</p>"
+                      "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⓪\">associated store</a> to <var>store</var>.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>Execute the WebAssembly instructions (<a data-link-type=\"dfn\" data-refhint-key=\"b0f69a43\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③\">ref.exn</a> <var>address</var>) (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/instructions.html#exec-throw-ref\" id=\"ref-for-exec-throw-ref\">throw_ref</a>).</p>"
+                  "html": "<p>Return (<var>store</var>, (<a data-link-type=\"dfn\" data-refhint-key=\"b0f69a43\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③\">ref.exn</a> <var>address</var>) (<a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/instructions.html#exec-throw-ref\" id=\"ref-for-exec-throw-ref\">throw_ref</a>)).</p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, return <var>result</var>.[[Value]].</p>"
+              "html": "<p>Otherwise, return (<var>store</var>, <var>result</var>.[[Value]]).</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent③⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⓪\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③①\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc\">func_alloc</a>(<var>store</var>, <var>functype</var>, <var>hostfunc</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⓪\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③①\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p>Return <var>funcaddr</var>.</p>"
@@ -2400,7 +2400,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④①\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#host-value-cache\" id=\"ref-for-host-value-cache\">host value cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④②\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#host-value-cache\" id=\"ref-for-host-value-cache\">host value cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>.</p>"
@@ -2464,10 +2464,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>n</var> be an implementation-defined integer such that <a data-link-type=\"dfn\" data-refhint-key=\"00c2566d\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑥\">canon</a><sub>32</sub> ≤ <var>n</var> &lt; 2<sup><a data-link-type=\"dfn\" data-refhint-key=\"e4515620\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑦\">signif</a>(32)</sup>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>f32</var> be <a data-link-type=\"dfn\" data-refhint-key=\"8b33b0c0\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑧\">nan</a>(n).</p>"
+                  "html": "<p>Let <var>f32</var> be an implementation-defined <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#arithmetic-nan\" id=\"ref-for-arithmetic-nan\">arithmetic NaN</a> of size 32.</p>"
                 }
               ]
             },
@@ -2497,10 +2494,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>n</var> be an implementation-defined integer such that <a data-link-type=\"dfn\" data-refhint-key=\"00c2566d\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float⑨\">canon</a><sub>64</sub> ≤ <var>n</var> &lt; 2<sup><a data-link-type=\"dfn\" data-refhint-key=\"e4515620\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float①⓪\">signif</a>(64)</sup>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>f64</var> be <a data-link-type=\"dfn\" data-refhint-key=\"8b33b0c0\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#syntax-float\" id=\"ref-for-syntax-float①①\">nan</a>(n).</p>"
+                  "html": "<p>Let <var>f64</var> be an implementation-defined <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/values.html#arithmetic-nan\" id=\"ref-for-arithmetic-nan①\">arithmetic NaN</a> of size 64.</p>"
                 }
               ]
             },
@@ -2605,30 +2599,36 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④②\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#host-value-cache\" id=\"ref-for-host-value-cache①\">host value cache</a>.</p>"
+                  "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#host-value-cache\" id=\"ref-for-host-value-cache①\">host value cache</a>.</p>"
                 },
                 {
                   "html": "If a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr②\">host address</a> <var>hostaddr</var> exists such that <var>map</var>[<var>hostaddr</var>] is the same as <var>v</var>,",
-                  "rationale": "return",
+                  "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Return <a data-link-type=\"dfn\" data-refhint-key=\"eba518e9\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑨\">ref.host</a> <var>hostaddr</var>.</p>"
+                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"eba518e9\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values②⑨\">ref.host</a> <var>hostaddr</var>.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>Let <var>hostaddr</var> be the smallest <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>map</var>[<var>hostaddr</var>] to <var>v</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"eba518e9\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③⓪\">ref.host</a> <var>hostaddr</var>.</p>"
+                  "html": "Else,",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>hostaddr</var> be the smallest <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostaddr\" id=\"ref-for-syntax-hostaddr③\">host address</a> such that <var>map</var>[<var>hostaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a> is false.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <var>map</var>[<var>hostaddr</var>] to <var>v</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>r</var> be <a data-link-type=\"dfn\" data-refhint-key=\"eba518e9\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③⓪\">ref.host</a> <var>hostaddr</var>.</p>"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③②\">associated store</a>.</p>"
+              "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a>.</p>"
             },
             {
               "html": "<p>Let <var>actualtype</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-ref-type\" id=\"ref-for-embed-ref-type\">ref_type</a>(<var>store</var>, <var>r</var>).</p>"
@@ -2720,7 +2720,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④④\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tag-object-cache\" id=\"ref-for-tag-object-cache\">Tag object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑤\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tag-object-cache\" id=\"ref-for-tag-object-cache\">Tag object cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>tagAddress</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exist</a>.</p>"
@@ -2740,7 +2740,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑤\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tag-object-cache\" id=\"ref-for-tag-object-cache①\">Tag object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑥\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tag-object-cache\" id=\"ref-for-tag-object-cache①\">Tag object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>tagAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>,",
@@ -2787,13 +2787,13 @@
           "html": "<p>Let <var>tagtype</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#syntax-deftype\" id=\"ref-for-syntax-deftype\">defined type</a> such that <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-comptype\" id=\"ref-for-syntax-comptype③\">func</a> <var>wasmParameters</var> → « » is the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#aux-expand-deftype\" id=\"ref-for-aux-expand-deftype③\">expansion</a> of <var>tagtype</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③③\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③④\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>tagAddress</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-tag-alloc\" id=\"ref-for-embed-tag-alloc\">tag_alloc</a>(<var>store</var>, <var>tagtype</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③④\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑧\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑤\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#initialize-a-tag-object\" id=\"ref-for-initialize-a-tag-object①\">Initialize</a> <strong>this</strong> from <var>tagAddress</var>.</p>"
@@ -2924,14 +2924,14 @@
     {
       "name": "a new Exported GC Object",
       "href": "https://www.w3.org/TR/wasm-js-api-2/#a-new-exported-gc-object",
-      "html": "To create <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"a-new-exported-gc-object\">a new Exported GC Object</dfn> from a WebAssembly <u class=\"link-error\" data-lt=\"object address\" title=\"LINK ERROR: No 'dfn' refs found for 'object address'.\">object address</u> <var>objectaddr</var> and a string <var>objectkind</var>, perform the following steps:",
+      "html": "To create <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"a-new-exported-gc-object\">a new Exported GC Object</dfn> from a WebAssembly <u class=\"link-error\" title=\"LINK ERROR: No 'dfn' refs found for 'object address'.\">object address</u> <var>objectaddr</var> and a string <var>objectkind</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p class=\"assertion\">Assert: <var>objectkind</var> is either \"array\" or \"struct\".</p>"
         },
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑨\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exported-gc-object-cache\" id=\"ref-for-exported-gc-object-cache\">exported GC object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⓪\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exported-gc-object-cache\" id=\"ref-for-exported-gc-object-cache\">exported GC object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>objectaddr</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a>,",
@@ -2999,7 +2999,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⓪\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤①\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exception-object-cache\" id=\"ref-for-exception-object-cache\">Exception object cache</a>.</p>"
         },
         {
           "html": "<p class=\"assertion\">Assert: <var>map</var>[<var>exnAddress</var>] doesn’t <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exist</a>.</p>"
@@ -3011,7 +3011,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑨\">Set</a> <var>map</var>[<var>exnAddress</var>] to <var>exn</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑥\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤②\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let <var>tagaddr</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-tag\" id=\"ref-for-embed-exn-tag①\">exn_tag</a>(<var>store</var>, <var>exnAddress</var>).</p>"
@@ -3037,7 +3037,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤②\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
+          "html": "<p>Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤③\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#exception-object-cache\" id=\"ref-for-exception-object-cache①\">Exception object cache</a>.</p>"
         },
         {
           "html": "If <var>map</var>[<var>exnAddress</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>,",
@@ -3078,7 +3078,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑦\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑧\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-comptype\" id=\"ref-for-syntax-comptype④\">func</a> <var>types</var> → « » be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#aux-expand-deftype\" id=\"ref-for-aux-expand-deftype④\">expansion</a> of <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-tag-type\" id=\"ref-for-embed-tag-type\">tag_type</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]]).</p>"
@@ -3117,7 +3117,7 @@
           "html": "<p>Let (<var>store</var>, <var>exceptionAddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-alloc\" id=\"ref-for-embed-exn-alloc①\">exn_alloc</a>(<var>store</var>, <var>exceptionTag</var>.[[Address]], <var>wasmPayload</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑧\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑤\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑨\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#initialize-an-exception-object\" id=\"ref-for-initialize-an-exception-object①\">Initialize</a> <strong>this</strong> from <var>exceptionAddr</var>.</p>"
@@ -3140,7 +3140,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑤\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑨\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④⓪\">associated store</a>.</p>"
         },
         {
           "html": "If <strong>this</strong>.[[Type]] is not equal to <var>exceptionTag</var>.[[Address]],",
@@ -3224,11 +3224,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑥\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag\">JavaScript exception tag</a> has been initialized,",
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑦\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag\">JavaScript exception tag</a> has been initialized,",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑦\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a></p>"
+              "html": "<p>return the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑧\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag①\">JavaScript exception tag</a></p>"
             }
           ]
         },
@@ -3236,16 +3236,16 @@
           "html": "<p>Let <var>tagtype</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#syntax-deftype\" id=\"ref-for-syntax-deftype①\">defined type</a> such that <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-comptype\" id=\"ref-for-syntax-comptype⑥\">func</a> « <a data-link-type=\"dfn\" data-refhint-key=\"92193adb\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-reftype\" id=\"ref-for-syntax-reftype②⓪\">externref</a> » → « » is the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#aux-expand-deftype\" id=\"ref-for-aux-expand-deftype⑥\">expansion</a> of <var>tagtype</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑧\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④①\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④②\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>tagAddress</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-tag-alloc\" id=\"ref-for-embed-tag-alloc①\">tag_alloc</a>(<var>store</var>, <var>tagtype</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑤⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④②\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⓪\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④③\">associated store</a> to <var>store</var>.</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⓪\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag②\">JavaScript exception tag</a> to <var>tagAddress</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥①\">surrounding agent</a>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#javascript-exception-tag\" id=\"ref-for-javascript-exception-tag②\">JavaScript exception tag</a> to <var>tagAddress</var>.</p>"
         },
         {
           "html": "<p>return <var>tagAddress</var>.</p>"
@@ -3359,16 +3359,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc①\">host function</a> which executes <var>steps</var> when called.</p>"
+          "html": "<p>Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc②\">host function</a> which executes <var>steps</var> when called.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥①\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④③\">associated store</a>.</p>"
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥②\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④④\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc①\">func_alloc</a>(<var>store</var>, <var>funcType</var>, <var>hostfunc</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥②\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④④\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p>Return <var>funcaddr</var>.</p>"
@@ -3617,7 +3617,7 @@
               "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat\">CharCodeAt</a>(<var>string</var>, <var>i</var>).</p>"
             },
             {
-              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②⓪\">i32</a>).</p>"
+              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②⓪\">i32</a>).</p>"
             },
             {
               "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
@@ -3654,7 +3654,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>v</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>v</var>) »).</p>"
         }
       ]
     },
@@ -3664,7 +3664,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> of <var>string</var>.</p>"
@@ -3689,7 +3689,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> of <var>string</var>.</p>"
@@ -3704,7 +3704,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>index</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>index</var>) »).</p>"
         }
       ]
     },
@@ -3714,7 +3714,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length③\">length</a> of <var>string</var>.</p>"
@@ -3727,13 +3727,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
         }
       ]
     },
@@ -3743,7 +3743,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length④\">length</a> of <var>string</var>.</p>"
@@ -3758,7 +3758,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①②\">ToJSValue</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#tojsvalue\" id=\"ref-for-tojsvalue①③\">ToJSValue</a>(<var>end</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑤\">𝔽</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑥\">𝔽</a>(<var>end</var>) »).</p>"
         }
       ]
     },
@@ -3805,10 +3805,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/wasm-js-api-2/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
           "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal①\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
@@ -3820,7 +3820,7 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
           "rationale": "return",
           "steps": [
             {
