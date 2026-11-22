@@ -84,6 +84,9 @@
         },
         {
           "html": "<p>Set <var>serialized</var>.[[ByteSequence]] to <var>value</var>’s underlying byte sequence.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[LowercaseTypeInput]] to the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type③\">type</a></code> attribute.</p>"
         }
       ]
     },
@@ -96,6 +99,9 @@
         },
         {
           "html": "<p>Set <var>value</var>’s underlying byte sequence to <var>serialized</var>.[[ByteSequence]].</p>"
+        },
+        {
+          "html": "<p>Initialize the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type④\">type</a></code> attribute to <var>serialized</var>.[[LowercaseTypeInput]].</p>"
         }
       ]
     },
@@ -152,7 +158,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If invoked with zero parameters,\nreturn a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑧\">Blob</a></code> object consisting of 0 bytes,\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size④\">size</a></code> set to 0,\nand with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type③\">type</a></code> set to the empty string.</p>"
+          "html": "<p>If invoked with zero parameters,\nreturn a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑧\">Blob</a></code> object consisting of 0 bytes,\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size④\">size</a></code> set to 0,\nand with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑤\">type</a></code> set to the empty string.</p>"
         },
         {
           "html": "<p>Let <var>bytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#process-blob-parts\" id=\"ref-for-process-blob-parts\">processing blob parts</a> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-blobParts\" id=\"ref-for-dfn-blobParts①\">blobParts</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dom-blob-blob-blobparts-options-options\" id=\"ref-for-dom-blob-blob-blobparts-options-options\">options</a></code>.</p>"
@@ -170,7 +176,7 @@
           ]
         },
         {
-          "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑨\">Blob</a></code> object referring to <var>bytes</var> as its associated <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤\">byte</a> sequence,\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size⑤\">size</a></code> set to the length of <var>bytes</var>,\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type④\">type</a></code> set to the value of <var>t</var> from the substeps above.</p>"
+          "html": "<p>Return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑨\">Blob</a></code> object referring to <var>bytes</var> as its associated <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte\" id=\"ref-for-byte⑤\">byte</a> sequence,\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-size\" id=\"ref-for-dfn-size⑤\">size</a></code> set to the length of <var>bytes</var>,\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑥\">type</a></code> set to the value of <var>t</var> from the substeps above.</p>"
         }
       ]
     },
@@ -277,7 +283,7 @@
     {
       "name": "Blob/slice(start, end, contentType), slice(start, end), slice(start), slice()",
       "href": "https://w3c.github.io/FileAPI/#dfn-slice",
-      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"slice(start, end, contentType)|slice(start, end)|slice(start)|slice()|slice(start, end, contentType), slice(start, end), slice(start), slice()\" id=\"dfn-slice\"><code>slice()</code></dfn> method\nreturns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob③①\">Blob</a></code> object with bytes ranging from the optional <var>start</var> parameter\nup to but not including the optional <var>end</var> parameter, and with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⓪\">type</a></code> attribute\nthat is the value of the optional <var>contentType</var> parameter. It must act as follows:",
+      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"slice(start, end, contentType)|slice(start, end)|slice(start)|slice()|slice(start, end, contentType), slice(start, end), slice(start), slice()\" id=\"dfn-slice\"><code>slice()</code></dfn> method\nreturns a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob③①\">Blob</a></code> object with bytes ranging from the optional <var>start</var> parameter\nup to but not including the optional <var>end</var> parameter, and with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①②\">type</a></code> attribute\nthat is the value of the optional <var>contentType</var> parameter. It must act as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -392,6 +398,9 @@
         },
         {
           "html": "<p>Set <var>serialized</var>.[[LastModified]] to the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-lastModified\" id=\"ref-for-dfn-lastModified①\">lastModified</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>Set <var>serialized</var>.[[LowercaseTypeInput]] to the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑤\">type</a></code> attribute.</p>"
         }
       ]
     },
@@ -410,6 +419,9 @@
         },
         {
           "html": "<p>Initialize the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-lastModified\" id=\"ref-for-dfn-lastModified②\">lastModified</a></code> attribute to\n <var>serialized</var>.[[LastModified]].</p>"
+        },
+        {
+          "html": "<p>Initialize the value of <var>value</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑥\">type</a></code> attribute to <var>serialized</var>.[[LowercaseTypeInput]].</p>"
         }
       ]
     },
@@ -540,7 +552,7 @@
                   "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#filereader-state\" id=\"ref-for-filereader-state③\">state</a> to <code>\"done\"</code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>result</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data①\">package data</a> given <var>bytes</var>, <var>type</var>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①④\">type</a></code>, and <var>encodingLabel</var>.</p>"
+                  "html": "<p>Let <var>result</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data①\">package data</a> given <var>bytes</var>, <var>type</var>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑧\">type</a></code>, and <var>encodingLabel</var>.</p>"
                 },
                 {
                   "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data②\">package data</a> threw an exception <var>error</var>:",
@@ -674,7 +686,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data③\">package data</a> given <var>bytes</var>, <em>Text</em>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑥\">type</a></code>, and <var>encoding</var>.</p>"
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data③\">package data</a> given <var>bytes</var>, <em>Text</em>, <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②⓪\">type</a></code>, and <var>encoding</var>.</p>"
             }
           ]
         },
@@ -706,7 +718,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data④\">package data</a> given <var>bytes</var>, <em>DataURL</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑦\">type</a></code>.</p>"
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data④\">package data</a> given <var>bytes</var>, <em>DataURL</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②①\">type</a></code>.</p>"
             }
           ]
         },
@@ -738,7 +750,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑤\">package data</a> given <var>bytes</var>, <em>ArrayBuffer</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑧\">type</a></code>.</p>"
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑤\">package data</a> given <var>bytes</var>, <em>ArrayBuffer</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②②\">type</a></code>.</p>"
             }
           ]
         },
@@ -770,7 +782,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑥\">package data</a> given <var>bytes</var>, <em>BinaryString</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⑨\">type</a></code>.</p>"
+              "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/FileAPI/#blob-package-data\" id=\"ref-for-blob-package-data⑥\">package data</a> given <var>bytes</var>, <em>BinaryString</em>, and <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②③\">type</a></code>.</p>"
             }
           ]
         },
