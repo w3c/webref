@@ -7,7 +7,7 @@
     {
       "name": "paintable bounding rect",
       "href": "https://w3c.github.io/paint-timing/#paintable-bounding-rect",
-      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"paintable-bounding-rect\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">paintable bounding rect</dfn> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element②\">element</a> <var>target</var>, run the following steps:",
+      "html": "To compute the <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"paintable-bounding-rect\">paintable bounding rect</dfn> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element②\">element</a> <var>target</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -24,7 +24,7 @@
     {
       "name": "image element loaded",
       "href": "https://w3c.github.io/paint-timing/#process-an-image-that-finished-loading",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-image-that-finished-loading\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process an image that finished loading</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①②\">Element</a></code> <var>element</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/images.html#image-request\" id=\"ref-for-image-request⑨\">image request</a> <var>imageRequest</var>:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-an-image-that-finished-loading\">process an image that finished loading</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①②\">Element</a></code> <var>element</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/images.html#image-request\" id=\"ref-for-image-request⑨\">image request</a> <var>imageRequest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -47,7 +47,7 @@
     {
       "name": "Should report first contentful paint",
       "href": "https://w3c.github.io/paint-timing/#should-report-first-contentful-paint",
-      "html": "To know whether <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-report-first-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should report first contentful paint</dfn>, perform the following steps:",
+      "html": "To know whether <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var> <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-report-first-contentful-paint\">should report first contentful paint</dfn>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -218,20 +218,20 @@
     },
     {
       "name": "Exposed for paint timing",
-      "html": "To determine whether an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧\">Element</a> <var>element</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#exposed-for-paint-timing\" id=\"ref-for-exposed-for-paint-timing①\">exposed for paint timing</a>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> or null <var>document</var>, perform the following steps:",
+      "html": "To determine whether a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node\">Node</a> <var>node</var> is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#exposed-for-paint-timing\" id=\"ref-for-exposed-for-paint-timing①\">exposed for paint timing</a>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> or null <var>document</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>element</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, return false.</p>"
+          "html": "<p>If <var>node</var> is not <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>, return false.</p>"
         },
         {
-          "html": "<p>If <var>document</var> is null, let <var>document</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>.</p>"
+          "html": "<p>If <var>document</var> is null, let <var>document</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>.</p>"
         },
         {
           "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return false.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①\">root</a> is not equal to <var>document</var>, return false.</p>"
+          "html": "<p>If <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" id=\"ref-for-concept-tree-root①\">root</a> is not equal to <var>document</var>, return false.</p>"
         },
         {
           "html": "<p>Return true.</p>"
