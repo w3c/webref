@@ -130,6 +130,28 @@
       "links": []
     },
     {
+      "id": "model-context-pending-tool-readiness-promises",
+      "href": "https://webmachinelearning.github.io/webmcp/#model-context-pending-tool-readiness-promises",
+      "linkingText": [
+        "pending tool readiness promises"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "model context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-concepts",
+        "href": "https://webmachinelearning.github.io/webmcp/#supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "tool-definition",
       "href": "https://webmachinelearning.github.io/webmcp/#tool-definition",
       "linkingText": [
@@ -840,6 +862,26 @@
       "links": []
     },
     {
+      "id": "update-the-tools-ready-state",
+      "href": "https://webmachinelearning.github.io/webmcp/#update-the-tools-ready-state",
+      "linkingText": [
+        "update the tools ready state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pending-tool-executions",
+        "href": "https://webmachinelearning.github.io/webmcp/#pending-tool-executions",
+        "title": "Pending tool executions",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "tool-execute-steps",
       "href": "https://webmachinelearning.github.io/webmcp/#tool-execute-steps",
       "linkingText": [
@@ -944,6 +986,28 @@
       "links": []
     },
     {
+      "id": "document-tools-ready",
+      "href": "https://webmachinelearning.github.io/webmcp/#document-tools-ready",
+      "linkingText": [
+        "tools ready"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "document-extension",
+        "href": "https://webmachinelearning.github.io/webmcp/#document-extension",
+        "title": "Extensions to Document",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dom-document-modelcontext",
       "href": "https://webmachinelearning.github.io/webmcp/#dom-document-modelcontext",
       "linkingText": [
@@ -979,7 +1043,7 @@
         {
           "type": "dev",
           "id": "ref-for-dom-document-modelcontext②",
-          "name": "document.modelContext.getTools(options)",
+          "name": "document.modelContext.waitForToolsUntil(promise)",
           "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-document-modelcontext%E2%91%A1",
           "heading": {
             "id": "model-context-container",
@@ -991,8 +1055,20 @@
         {
           "type": "dev",
           "id": "ref-for-dom-document-modelcontext③",
-          "name": "document.modelContext.executeTool(tool, inputObject, options)",
+          "name": "document.modelContext.getTools(options)",
           "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-document-modelcontext%E2%91%A2",
+          "heading": {
+            "id": "model-context-container",
+            "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
+            "title": "ModelContext Interface",
+            "number": "4.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-document-modelcontext④",
+          "name": "document.modelContext.executeTool(tool, inputObject, options)",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-document-modelcontext%E2%91%A3",
           "heading": {
             "id": "model-context-container",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
@@ -1056,6 +1132,28 @@
       "for": [
         "ModelContext/registerTool(tool, options)",
         "ModelContext/registerTool(tool)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-container",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
+        "title": "ModelContext Interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-modelcontext-waitfortoolsuntil-promise-promise",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-waitfortoolsuntil-promise-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ModelContext/waitForToolsUntil(promise)"
       ],
       "access": "public",
       "informative": false,
@@ -1234,6 +1332,41 @@
           "id": "ref-for-dom-modelcontext-registertool④",
           "name": "document.modelContext.registerTool(tool, options)",
           "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-registertool%E2%91%A3",
+          "heading": {
+            "id": "model-context-container",
+            "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
+            "title": "ModelContext Interface",
+            "number": "4.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-modelcontext-waitfortoolsuntil",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-waitfortoolsuntil",
+      "linkingText": [
+        "waitForToolsUntil(promise)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ModelContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-container",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
+        "title": "ModelContext Interface",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-modelcontext-waitfortoolsuntil②",
+          "name": "document.modelContext.waitForToolsUntil(promise)",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-waitfortoolsuntil%E2%91%A1",
           "heading": {
             "id": "model-context-container",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
@@ -3157,6 +3290,28 @@
       "href": "https://webmachinelearning.github.io/webmcp/#observed-tool-collection-tools",
       "linkingText": [
         "tools"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observed tool collection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "observations",
+        "href": "https://webmachinelearning.github.io/webmcp/#observations",
+        "title": "Page observations",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "observed-tool-collection-tools-ready",
+      "href": "https://webmachinelearning.github.io/webmcp/#observed-tool-collection-tools-ready",
+      "linkingText": [
+        "tools ready"
       ],
       "localLinkingText": [],
       "type": "dfn",
