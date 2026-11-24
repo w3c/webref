@@ -16,11 +16,16 @@
       "https://fs.spec.whatwg.org/": {
         "specShortname": "fs"
       },
+      "https://github.com/WICG/cross-origin-storage/issues/94": {},
       "https://github.com/WICG/file-system-access/issues/214": {},
       "https://github.com/explainers-by-googlers/workers-permissions-policy": {},
       "https://github.com/explainers-by-googlers/workers-permissions-policy/issues/4": {},
+      "https://github.com/noamr": {},
       "https://github.com/tc39/proposal-import-attributes": {},
+      "https://github.com/tunetheweb": {},
       "https://github.com/w3c/csswg-drafts/issues/14056": {},
+      "https://github.com/w3c/resource-timing/issues/439": {},
+      "https://github.com/webmachinelearning/webnn/issues/971": {},
       "https://github.com/whatwg/fetch/issues/1954": {},
       "https://github.com/whatwg/html/issues/12770": {},
       "https://github.com/whatwg/html/issues/12771": {},
@@ -68,6 +73,9 @@
       "https://webidl.spec.whatwg.org/": {
         "specShortname": "webidl"
       },
+      "https://wicg.github.io/cross-origin-storage/": {
+        "specShortname": "cross-origin-storage"
+      },
       "https://wicg.github.io/ua-client-hints/": {
         "specShortname": "ua-client-hints"
       },
@@ -95,7 +103,12 @@
           "dom-requestinit-integrity",
           "response",
           "concept-request-method",
-          "request"
+          "request",
+          "concept-response-cache-state",
+          "concept-response-timing-allow-passed",
+          "concept-response-body-info",
+          "fetch-timing-info-encoded-body-size",
+          "fetch-timing-info-decoded-body-size"
         ],
         "specShortname": "fetch"
       },
@@ -130,8 +143,8 @@
           "obtain-a-site",
           "same-site",
           "concept-origin",
-          "concept-origin-opaque",
           "site",
+          "concept-origin-opaque",
           "same-origin"
         ]
       },
@@ -227,6 +240,7 @@
           "list-clone",
           "map-set",
           "iteration-continue",
+          "list-item",
           "list-is-empty",
           "set-intersection",
           "strip-leading-and-trailing-ascii-whitespace",
@@ -264,6 +278,15 @@
           "serviceworkerglobalscope"
         ],
         "specShortname": "service-workers"
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "anchors": [
+          "mark-resource-timing",
+          "dom-performanceresourcetiming-deliverytype",
+          "dom-performanceresourcetiming-transfersize",
+          "dom-performanceresourcetiming-encodedbodysize"
+        ],
+        "specShortname": "resource-timing"
       },
       "https://w3c.github.io/webappsec-permissions-policy/": {
         "anchors": [
