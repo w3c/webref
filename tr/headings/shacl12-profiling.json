@@ -51,9 +51,9 @@
       "id": "what-is",
       "href": "https://www.w3.org/TR/shacl12-profiling/#what-is",
       "level": 3,
-      "title": "What is profiling?",
+      "title": "What is SHACL profiling?",
       "alternateIds": [
-        "x1-1-what-is-profiling"
+        "x1-1-what-is-shacl-profiling"
       ],
       "number": "1.1"
     },
@@ -170,22 +170,21 @@
     {
       "id": "dependencies",
       "href": "https://www.w3.org/TR/shacl12-profiling/#dependencies",
-      "level": 3,
+      "level": 4,
       "title": "Calculating Dependencies",
       "alternateIds": [
-        "x2-7-calculating-dependencies"
-      ],
-      "number": "2.7"
+        "calculating-dependencies"
+      ]
     },
     {
-      "id": "indicating-validity",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#indicating-validity",
+      "id": "persisting-validation",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#persisting-validation",
       "level": 3,
-      "title": "Indicating Validity",
+      "title": "Persisting validation results with context",
       "alternateIds": [
-        "x2-8-indicating-validity"
+        "x2-7-persisting-validation-results-with-context"
       ],
-      "number": "2.8"
+      "number": "2.7"
     },
     {
       "id": "profiling-of-shacl",
@@ -208,34 +207,24 @@
       "number": "3.1"
     },
     {
-      "id": "known-profiles-of-shacl",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#known-profiles-of-shacl",
-      "level": 3,
-      "title": "Known Profiles of SHACL",
-      "alternateIds": [
-        "x3-2-known-profiles-of-shacl"
-      ],
-      "number": "3.2"
-    },
-    {
-      "id": "other-profiles",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#other-profiles",
-      "level": 3,
-      "title": "Other Profiles",
-      "alternateIds": [
-        "x3-3-other-profiles"
-      ],
-      "number": "3.3"
-    },
-    {
       "id": "creating-profiles",
       "href": "https://www.w3.org/TR/shacl12-profiling/#creating-profiles",
       "level": 3,
       "title": "Creating other Profiles",
       "alternateIds": [
-        "x3-4-creating-other-profiles"
+        "x3-2-creating-other-profiles"
       ],
-      "number": "3.4"
+      "number": "3.2"
+    },
+    {
+      "id": "known-profiles-of-shacl",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#known-profiles-of-shacl",
+      "level": 3,
+      "title": "Known Profiles of SHACL",
+      "alternateIds": [
+        "x3-3-known-profiles-of-shacl"
+      ],
+      "number": "3.3"
     },
     {
       "id": "profiling-with-shacl",
@@ -248,34 +237,64 @@
       "number": "4"
     },
     {
+      "id": "profiling-with-shacl-intro",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#profiling-with-shacl-intro",
+      "level": 3,
+      "title": "Introduction",
+      "alternateIds": [
+        "x4-1-introduction"
+      ],
+      "number": "4.1"
+    },
+    {
       "id": "profiling-specifications",
       "href": "https://www.w3.org/TR/shacl12-profiling/#profiling-specifications",
       "level": 3,
       "title": "Profiling Specifications",
       "alternateIds": [
-        "x4-1-profiling-specifications"
+        "x4-2-profiling-specifications"
       ],
-      "number": "4.1"
+      "number": "4.2"
     },
     {
-      "id": "characterizing-the-profiling-situation",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#characterizing-the-profiling-situation",
+      "id": "characterization",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#characterization",
       "level": 4,
-      "title": "Characterizing the profiling situation",
+      "title": "Characterization",
       "alternateIds": [
-        "x4-1-1-characterizing-the-profiling-situation"
+        "x4-2-1-characterization"
       ],
-      "number": "4.1.1"
+      "number": "4.2.1"
     },
     {
-      "id": "implications-for-data",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#implications-for-data",
+      "id": "reasoning",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#reasoning",
       "level": 4,
-      "title": "Implications for data",
+      "title": "Reasoning",
       "alternateIds": [
-        "x4-1-2-implications-for-data"
+        "x4-2-2-reasoning"
       ],
-      "number": "4.1.2"
+      "number": "4.2.2"
+    },
+    {
+      "id": "hierarchies",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#hierarchies",
+      "level": 4,
+      "title": "Profile Hierarchies",
+      "alternateIds": [
+        "x4-2-3-profile-hierarchies"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "null-profiles",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#null-profiles",
+      "level": 4,
+      "title": "Creating Null Profiles",
+      "alternateIds": [
+        "x4-2-4-creating-null-profiles"
+      ],
+      "number": "4.2.4"
     },
     {
       "id": "profiling-data",
@@ -283,39 +302,9 @@
       "level": 3,
       "title": "Profiling Data",
       "alternateIds": [
-        "x4-2-profiling-data"
-      ],
-      "number": "4.2"
-    },
-    {
-      "id": "profile-parts",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#profile-parts",
-      "level": 3,
-      "title": "Profile Part Roles",
-      "alternateIds": [
-        "x4-3-profile-part-roles"
+        "x4-3-profiling-data"
       ],
       "number": "4.3"
-    },
-    {
-      "id": "hierarchies",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#hierarchies",
-      "level": 3,
-      "title": "Profile Hierarchies",
-      "alternateIds": [
-        "x4-4-profile-hierarchies"
-      ],
-      "number": "4.4"
-    },
-    {
-      "id": "null-profiles",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#null-profiles",
-      "level": 3,
-      "title": "Creating Null Profiles",
-      "alternateIds": [
-        "x4-5-creating-null-profiles"
-      ],
-      "number": "4.5"
     },
     {
       "id": "vocabulary",
@@ -368,24 +357,14 @@
       "number": "5.2"
     },
     {
-      "id": "prop-conformsto",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-conformsto",
+      "id": "prop-conformstoshapesgraph",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-conformstoshapesgraph",
       "level": 4,
-      "title": "Property: conforms to",
+      "title": "Property: conforms to shapes graph",
       "alternateIds": [
-        "x5-2-1-property-conforms-to"
+        "x5-2-1-property-conforms-to-shapes-graph"
       ],
       "number": "5.2.1"
-    },
-    {
-      "id": "prop-hasvalidationreport",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-hasvalidationreport",
-      "level": 4,
-      "title": "Property: validation report",
-      "alternateIds": [
-        "x5-2-2-property-validation-report"
-      ],
-      "number": "5.2.2"
     },
     {
       "id": "cls-validationreport",
@@ -398,24 +377,74 @@
       "number": "5.3"
     },
     {
-      "id": "prop-usedshapesgraph",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-usedshapesgraph",
-      "level": 4,
-      "title": "Property: used shapes graph",
-      "alternateIds": [
-        "x5-3-1-property-used-shapes-graph"
-      ],
-      "number": "5.3.1"
-    },
-    {
       "id": "prop-conforms",
       "href": "https://www.w3.org/TR/shacl12-profiling/#prop-conforms",
       "level": 4,
       "title": "Property: conforms",
       "alternateIds": [
-        "x5-3-2-property-conforms"
+        "x5-3-1-property-conforms"
       ],
-      "number": "5.3.2"
+      "number": "5.3.1"
+    },
+    {
+      "id": "cls-validationagent",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#cls-validationagent",
+      "level": 3,
+      "title": "Class: Validation Agent",
+      "alternateIds": [
+        "x5-4-class-validation-agent"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "cls-validationactivity",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#cls-validationactivity",
+      "level": 3,
+      "title": "Class: Validation Activity",
+      "alternateIds": [
+        "x5-5-class-validation-activity"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "prop-useddatagraph",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-useddatagraph",
+      "level": 4,
+      "title": "Property: used data graph",
+      "alternateIds": [
+        "x5-5-1-property-used-data-graph"
+      ],
+      "number": "5.5.1"
+    },
+    {
+      "id": "prop-usedShapesGraph",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-usedShapesGraph",
+      "level": 4,
+      "title": "Property: used shapes graph",
+      "alternateIds": [
+        "x5-5-2-property-used-shapes-graph"
+      ],
+      "number": "5.5.2"
+    },
+    {
+      "id": "prop-generated",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-generated",
+      "level": 4,
+      "title": "Property: generated",
+      "alternateIds": [
+        "x5-5-3-property-generated"
+      ],
+      "number": "5.5.3"
+    },
+    {
+      "id": "prop-wasassociatedwith",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prop-wasassociatedwith",
+      "level": 4,
+      "title": "Property: was associated with",
+      "alternateIds": [
+        "x5-5-4-property-was-associated-with"
+      ],
+      "number": "5.5.4"
     },
     {
       "id": "cls-shape",
@@ -423,9 +452,9 @@
       "level": 3,
       "title": "Class: Shape",
       "alternateIds": [
-        "x5-4-class-shape"
+        "x5-6-class-shape"
       ],
-      "number": "5.4"
+      "number": "5.6"
     },
     {
       "id": "prop-isdefinedby",
@@ -433,19 +462,69 @@
       "level": 4,
       "title": "Property: is defined by",
       "alternateIds": [
-        "x5-4-1-property-is-defined-by"
+        "x5-6-1-property-is-defined-by"
       ],
-      "number": "5.4.1"
+      "number": "5.6.1"
     },
     {
-      "id": "rule-conformsto",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#rule-conformsto",
+      "id": "rule-conformstoshapesgraph",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#rule-conformstoshapesgraph",
       "level": 3,
-      "title": "Rule: conforms to",
+      "title": "Rule: conforms to shapes graph",
       "alternateIds": [
-        "x5-5-rule-conforms-to"
+        "x5-7-rule-conforms-to-shapes-graph"
       ],
-      "number": "5.5"
+      "number": "5.7"
+    },
+    {
+      "id": "rule-conformstostandard",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#rule-conformstostandard",
+      "level": 3,
+      "title": "Rule: conforms to standard",
+      "alternateIds": [
+        "x5-8-rule-conforms-to-standard"
+      ],
+      "number": "5.8"
+    },
+    {
+      "id": "alignments",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#alignments",
+      "level": 3,
+      "title": "Alignments",
+      "alternateIds": [
+        "x5-9-alignments"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "prof-alignment",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prof-alignment",
+      "level": 4,
+      "title": "PROF Alignment",
+      "alternateIds": [
+        "x5-9-1-prof-alignment"
+      ],
+      "number": "5.9.1"
+    },
+    {
+      "id": "prov-o-alignment",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#prov-o-alignment",
+      "level": 4,
+      "title": "PROV-O Alignment",
+      "alternateIds": [
+        "x5-9-2-prov-o-alignment"
+      ],
+      "number": "5.9.2"
+    },
+    {
+      "id": "unresolved-issues",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#unresolved-issues",
+      "level": 2,
+      "title": "Unresolved Issues",
+      "alternateIds": [
+        "x6-unresolved-issues"
+      ],
+      "number": "6"
     },
     {
       "id": "profiles",
@@ -468,64 +547,92 @@
       "number": "A.1"
     },
     {
+      "id": "shacl12-profiles",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#shacl12-profiles",
+      "level": 4,
+      "title": "SHACL 1.2 Specifications",
+      "alternateIds": [
+        "a-1-1-shacl-1-2-specifications"
+      ],
+      "number": "A.1.1"
+    },
+    {
       "id": "union-profile",
       "href": "https://www.w3.org/TR/shacl12-profiling/#union-profile",
-      "level": 3,
+      "level": 4,
       "title": "Union Profile",
       "alternateIds": [
-        "a-2-union-profile"
+        "a-1-2-union-profile"
+      ],
+      "number": "A.1.2"
+    },
+    {
+      "id": "original",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#original",
+      "level": 4,
+      "title": "SHACL Original",
+      "alternateIds": [
+        "a-1-3-shacl-original"
+      ],
+      "number": "A.1.3"
+    },
+    {
+      "id": "non-spec-profiles",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#non-spec-profiles",
+      "level": 3,
+      "title": "Non-Specification Profiles",
+      "alternateIds": [
+        "a-2-non-specification-profiles"
       ],
       "number": "A.2"
     },
     {
-      "id": "ui-profile",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#ui-profile",
-      "level": 3,
-      "title": "SHACL 1.2 UI Profile",
-      "alternateIds": [
-        "a-3-shacl-1-2-ui-profile"
-      ],
-      "number": "A.3"
-    },
-    {
-      "id": "cl1-profile",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#cl1-profile",
-      "level": 3,
-      "title": "CD1 Profile",
-      "alternateIds": [
-        "a-4-cd1-profile"
-      ],
-      "number": "A.4"
-    },
-    {
-      "id": "10-profile",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#10-profile",
-      "level": 3,
-      "title": "SHACL 1.0 Profile",
-      "alternateIds": [
-        "a-5-shacl-1-0-profile"
-      ],
-      "number": "A.5"
-    },
-    {
-      "id": "pp-profile",
-      "href": "https://www.w3.org/TR/shacl12-profiling/#pp-profile",
-      "level": 3,
-      "title": "Pretty Print Profile",
-      "alternateIds": [
-        "a-6-pretty-print-profile"
-      ],
-      "number": "A.6"
-    },
-    {
       "id": "owl-consistent-profile",
       "href": "https://www.w3.org/TR/shacl12-profiling/#owl-consistent-profile",
-      "level": 3,
+      "level": 4,
       "title": "OWL Consistent Profile",
       "alternateIds": [
-        "a-7-owl-consistent-profile"
+        "a-2-1-owl-consistent-profile"
       ],
-      "number": "A.7"
+      "number": "A.2.1"
+    },
+    {
+      "id": "pretty-print-profile",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#pretty-print-profile",
+      "level": 4,
+      "title": "Pretty Print Profile",
+      "alternateIds": [
+        "a-2-2-pretty-print-profile"
+      ],
+      "number": "A.2.2"
+    },
+    {
+      "id": "disallow-recursive-constraints",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#disallow-recursive-constraints",
+      "level": 4,
+      "title": "Disallowing Recursive Constraints Profile",
+      "alternateIds": [
+        "a-2-3-disallowing-recursive-constraints-profile"
+      ],
+      "number": "A.2.3"
+    },
+    {
+      "id": "definition-of-recursive-constraints",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#definition-of-recursive-constraints",
+      "level": 5,
+      "title": "Definition of Recursive Constraints"
+    },
+    {
+      "id": "validating-the-absence-of-recursive-constraints",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#validating-the-absence-of-recursive-constraints",
+      "level": 5,
+      "title": "Validating the Absence of Recursive Constraints"
+    },
+    {
+      "id": "examples-of-disallowed-recursive-constraints",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#examples-of-disallowed-recursive-constraints",
+      "level": 5,
+      "title": "Examples of Disallowed Recursive Constraints"
     },
     {
       "id": "null-profile-examples",
@@ -556,6 +663,16 @@
         "b-2-null-profile-of-prof"
       ],
       "number": "B.2"
+    },
+    {
+      "id": "null-profile-of-skos",
+      "href": "https://www.w3.org/TR/shacl12-profiling/#null-profile-of-skos",
+      "level": 3,
+      "title": "Null profile of SKOS",
+      "alternateIds": [
+        "b-3-null-profile-of-skos"
+      ],
+      "number": "B.3"
     },
     {
       "id": "security",
