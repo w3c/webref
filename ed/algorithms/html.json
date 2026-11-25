@@ -12235,6 +12235,21 @@
       ]
     },
     {
+      "html": "The <code id=\"the-form-element:the-form-element-19\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> <a id=\"the-form-element:html-element-removing-steps\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#html-element-removing-steps\">HTML element removing steps</a>, given <var>removedNode</var>,\n  <var>isSubtreeRoot</var>, and <var>oldAncestor</var>, are:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <a href=\"https://html.spec.whatwg.org/multipage/forms.html#form-associated-element\" id=\"the-form-element:form-associated-element-2\">form-associated element</a> <var>element</var> that is an <a id=\"the-form-element:inclusive-descendant\" href=\"https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant\" data-x-internal=\"inclusive-descendant\">inclusive\n    descendant</a> of <var>oldAncestor</var>'s <a id=\"the-form-element:root-2\" href=\"https://dom.spec.whatwg.org/#concept-tree-root\" data-x-internal=\"root\">root</a> and whose <a id=\"the-form-element:form-owner-7\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form\n    owner</a> is <var>removedNode</var>, in <a id=\"the-form-element:tree-order-4\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" data-x-internal=\"tree-order\">tree order</a>:",
+          "rationale": "reset",
+          "steps": [
+            {
+              "html": "<p><a id=\"the-form-element:reset-the-form-owner\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#reset-the-form-owner\">Reset the form owner</a> of <var>element</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "HTMLFormElement/requestSubmit(submitter)",
       "href": "https://html.spec.whatwg.org/multipage/forms.html#dom-form-requestsubmit",
       "html": "The <dfn data-dfn-for=\"HTMLFormElement\" id=\"dom-form-requestsubmit\" data-dfn-type=\"method\"><code>requestSubmit(<var>submitter</var>)</code></dfn> method, when\n  invoked, must run the following steps:",
@@ -12248,15 +12263,15 @@
               "html": "<p>If <var>submitter</var> is not a <a href=\"https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button\" id=\"the-form-element:concept-submit-button-2\">submit\n     button</a>, then throw a <code id=\"the-form-element:typeerror\"><a data-x-internal=\"typeerror\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>submitter</var>'s <a id=\"the-form-element:form-owner-7\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> is not this <code id=\"the-form-element:the-form-element-19\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element,\n     then throw a <a id=\"the-form-element:notfounderror\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" data-x-internal=\"notfounderror\">\"<code>NotFoundError</code>\"</a> <code id=\"the-form-element:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+              "html": "<p>If <var>submitter</var>'s <a id=\"the-form-element:form-owner-8\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner\">form owner</a> is not this <code id=\"the-form-element:the-form-element-20\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element,\n     then throw a <a id=\"the-form-element:notfounderror\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" data-x-internal=\"notfounderror\">\"<code>NotFoundError</code>\"</a> <code id=\"the-form-element:domexception\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, set <var>submitter</var> to this <code id=\"the-form-element:the-form-element-20\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
+          "html": "<p>Otherwise, set <var>submitter</var> to this <code id=\"the-form-element:the-form-element-21\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit\" id=\"the-form-element:concept-form-submit-2\">Submit</a> this <code id=\"the-form-element:the-form-element-21\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, from\n   <var>submitter</var>.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit\" id=\"the-form-element:concept-form-submit-2\">Submit</a> this <code id=\"the-form-element:the-form-element-22\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element, from\n   <var>submitter</var>.</p>"
         }
       ]
     },
@@ -12267,16 +12282,16 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <code id=\"the-form-element:the-form-element-22\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element is marked as <i id=\"the-form-element:locked-for-reset\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#locked-for-reset\">locked for reset</a></i>, then return.</p>"
+          "html": "<p>If the <code id=\"the-form-element:the-form-element-23\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element is marked as <i id=\"the-form-element:locked-for-reset\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#locked-for-reset\">locked for reset</a></i>, then return.</p>"
         },
         {
-          "html": "<p>Mark the <code id=\"the-form-element:the-form-element-23\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element as <dfn id=\"locked-for-reset\">locked for reset</dfn>.</p>"
+          "html": "<p>Mark the <code id=\"the-form-element:the-form-element-24\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element as <dfn id=\"locked-for-reset\">locked for reset</dfn>.</p>"
         },
         {
-          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-reset\" id=\"the-form-element:concept-form-reset\">Reset</a> the <code id=\"the-form-element:the-form-element-24\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
+          "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-reset\" id=\"the-form-element:concept-form-reset\">Reset</a> the <code id=\"the-form-element:the-form-element-25\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element.</p>"
         },
         {
-          "html": "<p>Unmark the <code id=\"the-form-element:the-form-element-25\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element as <i id=\"the-form-element:locked-for-reset-2\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#locked-for-reset\">locked for reset</a></i>.</p>"
+          "html": "<p>Unmark the <code id=\"the-form-element:the-form-element-26\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#the-form-element\">form</a></code> element as <i id=\"the-form-element:locked-for-reset-2\"><a href=\"https://html.spec.whatwg.org/multipage/forms.html#locked-for-reset\">locked for reset</a></i>.</p>"
         }
       ]
     },
@@ -19642,6 +19657,9 @@
               "steps": [
                 {
                   "html": "<p>Set <var>inclusiveDescendant</var>'s <a href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"custom-elements-api:element-custom-element-registry-5\" data-x-internal=\"element-custom-element-registry\">custom element registry</a> to\n       <a id=\"custom-elements-api:this-30\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>inclusiveDescendant</var>'s <a href=\"https://dom.spec.whatwg.org/#element-keep-custom-element-registry-null\" id=\"custom-elements-api:element-keep-custom-element-registry-null\" data-x-internal=\"element-keep-custom-element-registry-null\">keep custom element registry null</a>\n       to false.</p>"
                 },
                 {
                   "html": "<p>If <a id=\"custom-elements-api:this-31\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#is-scoped\" id=\"custom-elements-api:is-scoped-5\">is scoped</a> is true, then <a href=\"https://infra.spec.whatwg.org/#set-append\" id=\"custom-elements-api:set-append-2\" data-x-internal=\"set-append\">append</a> <var>inclusiveDescendant</var>'s <a id=\"custom-elements-api:node-document-3\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a> to\n       <a id=\"custom-elements-api:this-32\" href=\"https://webidl.spec.whatwg.org/#this\" data-x-internal=\"this\">this</a>'s <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#scoped-document-set\" id=\"custom-elements-api:scoped-document-set-2\">scoped document set</a>.</p>"
@@ -39588,7 +39606,16 @@
           "html": "<p>If <var>context document</var> is an <a href=\"https://dom.spec.whatwg.org/#html-document\" id=\"the-innerhtml-property:html-documents\" data-x-internal=\"html-documents\">HTML document</a>,\n   then return the result of <a id=\"the-innerhtml-property:html-fragment-serialisation-algorithm\" href=\"https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-serialisation-algorithm\">HTML fragment serialization algorithm</a> with\n   <var>node</var>, false, and « ».</p>"
         },
         {
-          "html": "<p>Return the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization\" id=\"the-innerhtml-property:xml-serialization\" data-x-internal=\"xml-serialization\">XML serialization</a> of <var>node</var>\n   given <var>require well-formed</var>.</p>"
+          "html": "<p>If <var>node</var> is a <code id=\"the-innerhtml-property:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then set <var>node</var> to\n   <var>node</var>'s <a id=\"the-innerhtml-property:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>markup</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p><a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"the-innerhtml-property:list-iterate\" data-x-internal=\"list-iterate\">For each</a> <var>child</var> of <var>node</var>'s\n   <a href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"the-innerhtml-property:concept-tree-child-2\" data-x-internal=\"concept-tree-child\">children</a>, append the <a href=\"https://w3c.github.io/DOM-Parsing/#dfn-xml-serialization\" id=\"the-innerhtml-property:xml-serialization\" data-x-internal=\"xml-serialization\">XML serialization</a> of <var>child</var> given\n   <var>require well-formed</var> to <var>markup</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>markup</var>.</p>"
         }
       ]
     },
@@ -39599,7 +39626,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>element</var> is a <code id=\"the-innerhtml-property:the-template-element-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then return <var>element</var>'s\n   <a id=\"the-innerhtml-property:template-contents-2\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>.</p>"
+          "html": "<p>If <var>element</var> is a <code id=\"the-innerhtml-property:the-template-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then return <var>element</var>'s\n   <a id=\"the-innerhtml-property:template-contents-3\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a>.</p>"
         },
         {
           "html": "<p>Return <var>element</var>.</p>"
@@ -39619,7 +39646,7 @@
           "html": "<p>If <var>parent</var> is null, then return null.</p>"
         },
         {
-          "html": "<p>If <var>parent</var> is a <code id=\"the-innerhtml-property:the-template-element-3\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then throw a\n   <a id=\"the-innerhtml-property:hierarchyrequesterror\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a> <code id=\"the-innerhtml-property:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>parent</var> is a <code id=\"the-innerhtml-property:the-template-element-4\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#the-template-element\">template</a></code> element, then throw a\n   <a id=\"the-innerhtml-property:hierarchyrequesterror\" href=\"https://webidl.spec.whatwg.org/#hierarchyrequesterror\" data-x-internal=\"hierarchyrequesterror\">\"<code>HierarchyRequestError</code>\"</a> <code id=\"the-innerhtml-property:domexception-3\"><a data-x-internal=\"domexception\" href=\"https://webidl.spec.whatwg.org/#dfn-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>If <var>parent</var> is an <code id=\"the-innerhtml-property:element-3\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>, or a <code id=\"the-innerhtml-property:documentfragment-2\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> with a\n   non-null <a href=\"https://dom.spec.whatwg.org/#concept-documentfragment-host\" id=\"the-innerhtml-property:concept-documentfragment-host\" data-x-internal=\"concept-documentfragment-host\">host</a>, then return\n   <var>parent</var>.</p>"
@@ -48082,6 +48109,12 @@
           "html": "<p>Let <var>is</var> be the value of the \"<code id=\"creating-and-inserting-nodes:attr-is\"><a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is\">is</a></code>\" attribute in\n   <var>attributes</var>, if such an attribute exists; otherwise null.</p>"
         },
         {
+          "html": "<p>Let <var>keepRegistryNull</var> be true if <var>namespace</var> is the <a id=\"creating-and-inserting-nodes:html-namespace-2\" href=\"https://infra.spec.whatwg.org/#html-namespace\" data-x-internal=\"html-namespace-2\">HTML\n   namespace</a> and a\n   <code id=\"creating-and-inserting-nodes:the-customelementregistry-attribute\"><a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#the-customelementregistry-attribute\">customelementregistry</a></code> attribute\n   exists in <var>attributes</var>; otherwise false.</p>"
+        },
+        {
+          "html": "<p>If <var>keepRegistryNull</var> is true, then set <var>registry</var> to null.</p>"
+        },
+        {
           "html": "<p>Let <var>creationRegistry</var> be <var>registry</var> if <var>sanitizerAction</var> is\n    \"<a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-action-keep\" id=\"creating-and-inserting-nodes:sanitizer-action-keep-3\">Keep</a>\"; otherwise null.</p>"
         },
         {
@@ -48110,6 +48143,9 @@
         },
         {
           "html": "<p>If <var>sanitizerAction</var> is \"<a href=\"https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-action-replace-with-children\" id=\"creating-and-inserting-nodes:sanitizer-action-replace-with-children-2\">Replace with children</a>\", then set\n   <var>element</var>'s <a href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"creating-and-inserting-nodes:element-custom-element-registry-2\" data-x-internal=\"element-custom-element-registry\">custom element\n   registry</a> to <var>registry</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>keepRegistryNull</var> is true, then set <var>element</var>'s <a href=\"https://dom.spec.whatwg.org/#element-keep-custom-element-registry-null\" id=\"creating-and-inserting-nodes:element-keep-custom-element-registry-null\" data-x-internal=\"element-keep-custom-element-registry-null\">keep custom element registry null</a> to\n   true.</p>"
         },
         {
           "html": "<p><a href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"creating-and-inserting-nodes:list-iterate-2\" data-x-internal=\"list-iterate\">For each</a> <var>attribute</var> of <var>attributes</var>,\n    <a href=\"https://dom.spec.whatwg.org/#concept-element-attributes-append\" id=\"creating-and-inserting-nodes:concept-element-attributes-append\" data-x-internal=\"concept-element-attributes-append\">append</a> <var>attribute</var> to\n    <var>element</var>.</p>"
@@ -48760,7 +48796,7 @@
                                       "html": "<p>Set <var>template</var>'s <a id=\"parsing-main-inhead:template-contents-3\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#template-contents\">template contents</a> to\n             <var>shadow</var>.</p>"
                                     },
                                     {
-                                      "html": "<p>If <var>template</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootcustomelementregistry-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry\">shadowrootcustomelementregistry</a></code>\n             attribute, then set <var>shadow</var>'s <a id=\"parsing-main-inhead:keep-custom-element-registry-null\" href=\"https://dom.spec.whatwg.org/#shadowroot-keep-custom-element-registry-null\" data-x-internal=\"keep-custom-element-registry-null\">keep custom element registry null</a>\n             to true.</p>"
+                                      "html": "<p>If <var>template</var> has a <code id=\"parsing-main-inhead:attr-template-shadowrootcustomelementregistry-2\"><a href=\"https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry\">shadowrootcustomelementregistry</a></code>\n             attribute, then set <var>shadow</var>'s <a href=\"https://dom.spec.whatwg.org/#shadowroot-keep-custom-element-registry-null\" id=\"parsing-main-inhead:shadow-root-keep-custom-element-registry-null\" data-x-internal=\"shadow-root-keep-custom-element-registry-null\">keep custom element registry\n             null</a> to true.</p>"
                                     }
                                   ]
                                 }
@@ -51333,9 +51369,26 @@
       ]
     },
     {
+      "name": "get the inherited custom element registry",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#get-the-inherited-custom-element-registry",
+      "html": "To <dfn id=\"get-the-inherited-custom-element-registry\" data-export=\"\">get the inherited custom element registry</dfn> given an <code id=\"serialising-html-fragments:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>\n  <var>element</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>node</var> be <var>element</var>'s <a id=\"serialising-html-fragments:parent\" href=\"https://dom.spec.whatwg.org/#concept-tree-parent\" data-x-internal=\"parent\">parent</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var> is null or an <a id=\"serialising-html-fragments:exclusive-documentfragment-node\" href=\"https://dom.spec.whatwg.org/#exclusive-documentfragment-node\" data-x-internal=\"exclusive-documentfragment-node\">exclusive <code>DocumentFragment</code>\n   node</a>, then set <var>node</var> to <var>element</var>'s <a id=\"serialising-html-fragments:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-registry\" id=\"serialising-html-fragments:look-up-a-custom-element-registry\">looking up a custom\n   element registry</a> given <var>node</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "HTML fragment serialization algorithm",
       "href": "https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-serialisation-algorithm",
-      "html": "The following steps form the <dfn id=\"html-fragment-serialisation-algorithm\" data-export=\"\">HTML fragment serialization algorithm</dfn>. The algorithm takes as input a DOM\n  <code id=\"serialising-html-fragments:element\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>, <code id=\"serialising-html-fragments:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, or <code id=\"serialising-html-fragments:documentfragment\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> referred to as\n  <var>the node</var>, a boolean <var>serializableShadowRoots</var>, and a\n  <code>sequence&lt;ShadowRoot&gt;</code> <var>shadowRoots</var>, and returns a string.",
+      "html": "The following steps form the <dfn id=\"html-fragment-serialisation-algorithm\" data-export=\"\">HTML fragment serialization algorithm</dfn>. The algorithm takes as input a DOM\n  <code id=\"serialising-html-fragments:element-2\"><a data-x-internal=\"element\" href=\"https://dom.spec.whatwg.org/#interface-element\">Element</a></code>, <code id=\"serialising-html-fragments:document\"><a href=\"https://html.spec.whatwg.org/multipage/dom.html#document\">Document</a></code>, or <code id=\"serialising-html-fragments:documentfragment\"><a data-x-internal=\"documentfragment\" href=\"https://dom.spec.whatwg.org/#interface-documentfragment\">DocumentFragment</a></code> referred to as\n  <var>the node</var>, a boolean <var>serializableShadowRoots</var>, and a\n  <code>sequence&lt;ShadowRoot&gt;</code> <var>shadowRoots</var>, and returns a string.",
       "rationale": "if",
       "steps": [
         {
@@ -51384,7 +51437,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>documentRegistry</var> be <var>shadow</var>'s <a id=\"serialising-html-fragments:node-document\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s\n         <a href=\"https://dom.spec.whatwg.org/#document-custom-element-registry\" id=\"serialising-html-fragments:document-custom-element-registry\" data-x-internal=\"document-custom-element-registry\">custom element registry</a>.</p>"
+                      "html": "<p>Let <var>documentRegistry</var> be <var>shadow</var>'s <a id=\"serialising-html-fragments:node-document-2\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" data-x-internal=\"node-document\">node document</a>'s\n         <a href=\"https://dom.spec.whatwg.org/#document-custom-element-registry\" id=\"serialising-html-fragments:document-custom-element-registry\" data-x-internal=\"document-custom-element-registry\">custom element registry</a>.</p>"
                     },
                     {
                       "html": "<p>Let <var>shadowRegistry</var> be <var>shadow</var>'s <a href=\"https://dom.spec.whatwg.org/#shadowroot-custom-element-registry\" id=\"serialising-html-fragments:shadow-root-custom-element-registry\" data-x-internal=\"shadow-root-custom-element-registry\">custom element registry</a>.</p>"

@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "PerformanceNavigationTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    readonly        attribute DOMHighResTimeStamp  criticalCHRestart;\n    readonly        attribute NotRestoredReasons?  notRestoredReasons;\n    readonly        attribute PerformanceTimingConfidence confidence;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    readonly        attribute DOMHighResTimeStamp  criticalCHRestart;\n    readonly        attribute NotRestoredReasons?  notRestoredReasons;\n    readonly        attribute PerformanceTimingConfidence? confidence;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceNavigationTiming",
         "inheritance": "PerformanceResourceTiming",
@@ -222,7 +222,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "PerformanceTimingConfidence"
             },
