@@ -3359,16 +3359,52 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc②\">host function</a> which executes <var>steps</var> when called.</p>"
+          "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-comptype\" id=\"ref-for-syntax-comptype⑦\">func</a> <var>parameters</var> → <var>results</var> be the <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/valid/conventions.html#aux-expand-deftype\" id=\"ref-for-aux-expand-deftype⑦\">expansion</a> of <var>funcType</var>.</p>"
         },
         {
-          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④④\">associated store</a>.</p>"
+          "html": "Let <var>hostfunc</var> be a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-hostfunc\" id=\"ref-for-syntax-hostfunc②\">host function</a> which performs the following steps when called with store <var>store</var> and arguments <var>arguments</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥③\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④④\">associated store</a> to <var>store</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>jsArguments</var> be « ».</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>arg</var> of <var>arguments</var>,",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①④\">Append</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>arg</var>) to <var>jsArguments</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>result</var> be the result of performing <var>steps</var> given <var>jsArguments</var>.</p>"
+            },
+            {
+              "html": "<p class=\"assertion\">Assert: <var>result</var>.[[Type]] is <emu-const>throw</emu-const> or <emu-const>normal</emu-const>.</p>"
+            },
+            {
+              "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>result</var>.[[Type]] is <emu-const>throw</emu-const>, return (<var>store</var>, <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap\">trap</a>).</p>"
+            },
+            {
+              "html": "<p>Return (<var>store</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④④\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>result</var>.[[Value]], <var>results</var>[0]) »).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑤\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑥\">associated store</a>.</p>"
         },
         {
           "html": "<p>Let (<var>store</var>, <var>funcaddr</var>) be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-func-alloc\" id=\"ref-for-embed-func-alloc①\">func_alloc</a>(<var>store</var>, <var>funcType</var>, <var>hostfunc</var>).</p>"
         },
         {
-          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥④\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑤\">associated store</a> to <var>store</var>.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑦\">associated store</a> to <var>store</var>.</p>"
         },
         {
           "html": "<p>Return <var>funcaddr</var>.</p>"
@@ -3388,7 +3424,7 @@
           "html": "<p>Let <var>exportsObject</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate②\">OrdinaryObjectCreate</a>(null).</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> (<var>name</var>, <var>funcType</var>, <var>steps</var>) of <var>builtins</var>,",
           "rationale": "let",
           "steps": [
             {
@@ -3401,7 +3437,7 @@
               "html": "<p>Let <var>value</var> be <var>func</var>.</p>"
             },
             {
-              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty②\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
+              "html": "<p>Let <var>status</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty\" id=\"ref-for-sec-createdataproperty②\">CreateDataProperty</a>(<var>exportsObject</var>, <var>name</var>, <var>value</var>).</p>"
             },
             {
               "html": "<p class=\"assertion\">Assert: <var>status</var> is true.</p>"
@@ -3453,7 +3489,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror③\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3469,10 +3505,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>v</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑧\">i32</a>.</p>"
-        },
-        {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑧\">ToJSValue</a>(<var>v</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call①\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcharcode\" id=\"ref-for-sec-string.fromcharcode\">String.fromCharCode</a>, undefined, « <var>v</var> »).</p>"
         }
       ]
     },
@@ -3483,10 +3516,67 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p class=\"assertion\">Assert: <var>index</var> is of type <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑨\">i32</a>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑤\">𝔽</a>(<var>index</var>) »).</p>"
+        }
+      ]
+    },
+    {
+      "name": "ArrayLength",
+      "href": "https://webassembly.github.io/spec/js-api/#abstract-opdef-arraylength",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ArrayLength\" id=\"abstract-opdef-arraylength\">ArrayLength(<var>array</var>)</dfn> abstract operation, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑦\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑧\">associated store</a>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call②\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.charcodeat\" id=\"ref-for-sec-string.prototype.charcodeat\">String.prototype.charCodeAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue⑨\">ToJSValue</a>(<var>index</var>) »).</p>"
+          "html": "<p>Let <var>arrayaddr</var> be <var>array</var>.[[ObjectAddress]].</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> of <var>store</var>.arrays[<var>arrayaddr</var>].fields.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ArrayCharCodeAt",
+      "href": "https://webassembly.github.io/spec/js-api/#abstract-opdef-arraycharcodeat",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"ArrayCharCodeAt\" id=\"abstract-opdef-arraycharcodeat\">ArrayCharCodeAt(<var>array</var>, <var>index</var>)</dfn> abstract operation, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑧\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store④⑨\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>arrayaddr</var> be <var>array</var>.[[ObjectAddress]].</p>"
+        },
+        {
+          "html": "<p>Let <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#values\" id=\"ref-for-values③①\">i32.const</a> <var>charCode</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#aux-unpackfield\" id=\"ref-for-aux-unpackfield\">unpack</a><sub>i16</sub><sup>u</sup>(<var>store</var>.arrays[<var>arrayaddr</var>].fields[<var>index</var>]).</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑥\">𝔽</a>(<var>charCode</var> interpreted as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#mathematical-value\" id=\"ref-for-mathematical-value⑦\">mathematical value</a>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "SetArrayCharCodeAt",
+      "href": "https://webassembly.github.io/spec/js-api/#abstract-opdef-setarraycharcodeat",
+      "html": "The <dfn class=\"dfn-paneled\" data-dfn-type=\"abstract-op\" data-export=\"\" data-lt=\"SetArrayCharCodeAt\" id=\"abstract-opdef-setarraycharcodeat\">SetArrayCharCodeAt(<var>array</var>, <var>index</var>, <var>charCode</var>)</dfn> abstract operation, when invoked, performs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑥⑨\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store⑤⓪\">associated store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>arrayaddr</var> be <var>array</var>.[[ObjectAddress]].</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑧\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①④\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype①⑧\">i32</a>).</p>"
+        },
+        {
+          "html": "<p>Set <var>store</var>.arrays[<var>arrayaddr</var>].fields[<var>index</var>] to <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#aux-packfield\" id=\"ref-for-aux-packfield\">pack</a><sub>i16</sub>(<var>value</var>).</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent⑦⓪\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#associated-store\" id=\"ref-for-associated-store⑤①\">associated store</a> to <var>store</var>.</p>"
         }
       ]
     },
@@ -3496,7 +3586,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑦\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring\">UnwrapString</a>(<var>v</var>)</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring\">UnwrapString</a>(<var>v</var>)</p>"
         }
       ]
     },
@@ -3510,12 +3600,12 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return 0.</p>"
+              "html": "<p>Return <strong>+0</strong><sub>𝔽</sub>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return 1.</p>"
+          "html": "<p>Return <strong>1</strong><sub>𝔽</sub>.</p>"
         }
       ]
     },
@@ -3525,23 +3615,29 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Let <var>startIndex</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ④\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32\">ToUint32</a>(<var>start</var>)).</p>"
+        },
+        {
+          "html": "<p>Let <var>endIndex</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ⑤\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32①\">ToUint32</a>(<var>end</var>)).</p>"
+        },
+        {
           "html": "If <var>array</var> is null,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror④\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap①\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror④\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>length</var> be the number of elements in <var>array</var>.</p>"
+          "html": "<p>Let <var>length</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-arraylength\" id=\"ref-for-abstract-opdef-arraylength\">ArrayLength</a>(<var>array</var>).</p>"
         },
         {
-          "html": "If <var>start</var> &gt; <var>end</var> or <var>end</var> &gt; <var>length</var>,",
+          "html": "If <var>startIndex</var> &gt; <var>endIndex</var> or <var>endIndex</var> &gt; <var>length</var>,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑤\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap②\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑤\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3549,14 +3645,14 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "<p>Let <var>i</var> be <var>start</var>.</p>"
+          "html": "<p>Let <var>i</var> be <var>startIndex</var>.</p>"
         },
         {
-          "html": "While <var>i</var> &lt; <var>end</var>:",
+          "html": "While <var>i</var> &lt; <var>endIndex</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>charCode</var> be the value of the element stored at index <var>i</var> in <var>array</var>.</p>"
+              "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-arraycharcodeat\" id=\"ref-for-abstract-opdef-arraycharcodeat\">ArrayCharCodeAt</a>(<var>array</var>, <var>i</var>).</p>"
             },
             {
               "html": "<p>Let <var>charCodeString</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-fromcharcode\" id=\"ref-for-abstract-opdef-fromcharcode\">FromCharCode</a>(<var>charCode</var>).</p>"
@@ -3580,29 +3676,32 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Let <var>startIndex</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ⑥\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32②\">ToUint32</a>(<var>start</var>)).</p>"
+        },
+        {
           "html": "If <var>array</var> is null,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑥\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap③\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑥\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring①\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring①\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>stringLength</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> of <var>string</var>.</p>"
         },
         {
-          "html": "<p>Let <var>arrayLength</var> be the number of elements in <var>array</var>.</p>"
+          "html": "<p>Let <var>arrayLength</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-arraylength\" id=\"ref-for-abstract-opdef-arraylength①\">ArrayLength</a>(<var>array</var>).</p>"
         },
         {
-          "html": "If <var>start</var> + <var>stringLength</var> &gt; <var>arrayLength</var>,",
+          "html": "If <var>startIndex</var> + <var>stringLength</var> &gt; <var>arrayLength</var>,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑦\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap④\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑦\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3617,7 +3716,7 @@
               "html": "<p>Let <var>charCode</var> be <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-charcodeat\" id=\"ref-for-abstract-opdef-charcodeat\">CharCodeAt</a>(<var>string</var>, <var>i</var>).</p>"
             },
             {
-              "html": "<p>Set the element at index <var>start</var> + <var>i</var> in <var>array</var> to <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands④⑨\">!</a> <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#towebassemblyvalue\" id=\"ref-for-towebassemblyvalue①③\">ToWebAssemblyValue</a>(<var>charCode</var>, <a data-link-type=\"dfn\" data-refhint-key=\"1eccdce5\" href=\"https://webassembly.github.io/spec/core/syntax/types.html#syntax-numtype\" id=\"ref-for-syntax-numtype②⓪\">i32</a>).</p>"
+              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-setarraycharcodeat\" id=\"ref-for-abstract-opdef-setarraycharcodeat\">SetArrayCharCodeAt</a>(<var>array</var>, <var>startIndex</var> + <var>i</var>, <var>charCode</var>).</p>"
             },
             {
               "html": "<p>Set <var>i</var> to <var>i</var> + 1.</p>"
@@ -3625,7 +3724,7 @@
           ]
         },
         {
-          "html": "<p>Return <var>stringLength</var>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑦\">𝔽</a>(<var>stringLength</var>).</p>"
         }
       ]
     },
@@ -3635,7 +3734,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-fromcharcode\" id=\"ref-for-abstract-opdef-fromcharcode①\">FromCharCode</a>(<var>v</var>).</p>"
+          "html": "<p>Let <var>charCode</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ⑦\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32③\">ToUint32</a>(<var>v</var>)).</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-fromcharcode\" id=\"ref-for-abstract-opdef-fromcharcode①\">FromCharCode</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑧\">𝔽</a>(<var>charCode</var>)).</p>"
         }
       ]
     },
@@ -3645,16 +3747,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>v</var> &gt; 0x10ffff,",
+          "html": "<p>Let <var>codePoint</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ⑧\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32④\">ToUint32</a>(<var>v</var>)).</p>"
+        },
+        {
+          "html": "If <var>codePoint</var> &gt; 0x10ffff,",
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑧\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑤\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑧\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①⓪\">ToJSValue</a>(<var>v</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call③\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.fromcodepoint\" id=\"ref-for-sec-string.fromcodepoint\">String.fromCodePoint</a>, undefined, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑨\">𝔽</a>(<var>codePoint</var>) »).</p>"
         }
       ]
     },
@@ -3664,7 +3769,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ⑨\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32⑤\">ToUint32</a>(<var>index</var>)).</p>"
+        },
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring②\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length①\">length</a> of <var>string</var>.</p>"
@@ -3674,7 +3782,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑨\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑥\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror⑨\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3689,7 +3797,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>index</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ①⓪\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32⑥\">ToUint32</a>(<var>index</var>)).</p>"
+        },
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring③\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length②\">length</a> of <var>string</var>.</p>"
@@ -3699,12 +3810,12 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①⓪\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑦\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①⓪\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#tojsvalue\" id=\"ref-for-tojsvalue①①\">ToJSValue</a>(<var>index</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call④\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.codepointat\" id=\"ref-for-sec-string.prototype.codepointat\">String.prototype.codePointAt</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽①⓪\">𝔽</a>(<var>index</var>) »).</p>"
         }
       ]
     },
@@ -3714,10 +3825,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥②\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring④\">UnwrapString</a>(<var>v</var>).</p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length③\">length</a> of <var>string</var>.</p>"
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length③\">length</a> of <var>string</var>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽①①\">𝔽</a>(<var>length</var>).</p>"
         }
       ]
     },
@@ -3727,13 +3841,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑤\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥③\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑤\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑥\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥④\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑥\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑤\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.concat\" id=\"ref-for-sec-string.prototype.concat\">String.prototype.concat</a>, <var>first</var>, « <var>second</var> »).</p>"
         }
       ]
     },
@@ -3743,13 +3857,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
+          "html": "<p>Let <var>startIndex</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ①①\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32⑦\">ToUint32</a>(<var>start</var>)).</p>"
+        },
+        {
+          "html": "<p>Let <var>endIndex</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#ℝ\" id=\"ref-for-ℝ①②\">ℝ</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32\" id=\"ref-for-sec-touint32⑧\">ToUint32</a>(<var>end</var>)).</p>"
+        },
+        {
+          "html": "<p>Let <var>string</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑧\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑦\">UnwrapString</a>(<var>string</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length④\">length</a> of <var>string</var>.</p>"
         },
         {
-          "html": "If <var>start</var> &gt; <var>end</var> or <var>start</var> &gt; <var>length</var>,",
+          "html": "If <var>startIndex</var> &gt; <var>endIndex</var> or <var>startIndex</var> &gt; <var>length</var>,",
           "rationale": "return",
           "steps": [
             {
@@ -3758,7 +3878,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑤⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑤\">𝔽</a>(<var>start</var>), <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽⑥\">𝔽</a>(<var>end</var>) »).</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call\" id=\"ref-for-sec-call⑥\">Call</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-string.prototype.substring\" id=\"ref-for-sec-string.prototype.substring\">String.prototype.substring</a>, <var>string</var>, « <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽①②\">𝔽</a>(<var>startIndex</var>), <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#𝔽\" id=\"ref-for-𝔽①③\">𝔽</a>(<var>endIndex</var>) »).</p>"
         }
       ]
     },
@@ -3772,7 +3892,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①①\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑧\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①①\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3781,7 +3901,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①②\">RuntimeError</a></code> exception as if a <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/exec/runtime.html#syntax-trap\" id=\"ref-for-syntax-trap⑨\">trap</a> was executed.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror\" id=\"ref-for-exceptiondef-runtimeerror①②\">RuntimeError</a></code> exception.</p>"
             }
           ]
         },
@@ -3790,12 +3910,12 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return 1.</p>"
+              "html": "<p>Return <strong>1</strong><sub>𝔽</sub>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return 0.</p>"
+          "html": "<p>Return <strong>+0</strong><sub>𝔽</sub>.</p>"
         }
       ]
     },
@@ -3805,31 +3925,31 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
+          "html": "<p>Let <var>first</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦⓪\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑧\">UnwrapString</a>(<var>first</var>).</p>"
         },
         {
-          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
+          "html": "<p>Let <var>second</var> be <a data-link-type=\"dfn\" data-refhint-key=\"009dc6f4\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦①\">?</a> <a data-link-type=\"abstract-op\" href=\"https://webassembly.github.io/spec/js-api/#abstract-opdef-unwrapstring\" id=\"ref-for-abstract-opdef-unwrapstring⑨\">UnwrapString</a>(<var>second</var>).</p>"
         },
         {
           "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-isstrictlyequal\" id=\"ref-for-sec-isstrictlyequal①\">IsStrictlyEqual</a>(<var>first</var>, <var>second</var>) is true,",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return 0.</p>"
+              "html": "<p>Return <strong>+0</strong><sub>𝔽</sub>.</p>"
             }
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑥②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑦②\">!</a> <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-islessthan\" id=\"ref-for-sec-islessthan\">IsLessThan</a>(<var>first</var>, <var>second</var>, true) is true,",
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return -1.</p>"
+              "html": "<p>Return <strong>-1</strong><sub>𝔽</sub>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return 1.</p>"
+          "html": "<p>Return <strong>1</strong><sub>𝔽</sub>.</p>"
         }
       ]
     }
