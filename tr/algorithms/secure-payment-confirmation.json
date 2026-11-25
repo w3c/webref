@@ -429,7 +429,7 @@
     {
       "name": "create a key pair",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#create-a-key-pair",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-key-pair\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a key pair</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#dictdef-publickeycredentialparameters\" id=\"ref-for-dictdef-publickeycredentialparameters②\">PublicKeyCredentialParameters</a></code>,\n<var>allowed_algorithms</var>, returning a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#key-pair\" id=\"ref-for-key-pair③\">key pair</a>\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier①\">COSEAlgorithmIdentifier</a></code> and the byte array of the key pair\nidentifier execute the following steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-key-pair\">create a key pair</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#dictdef-publickeycredentialparameters\" id=\"ref-for-dictdef-publickeycredentialparameters②\">PublicKeyCredentialParameters</a></code>,\n<var>allowed_algorithms</var>, returning a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①\">tuple</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#key-pair\" id=\"ref-for-key-pair③\">key pair</a>\nwith its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier①\">COSEAlgorithmIdentifier</a></code> and the byte array of the key pair\nidentifier execute the following steps:",
       "rationale": "if",
       "steps": [
         {
@@ -491,7 +491,7 @@
     {
       "name": "bind a key pair",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#bind-a-key-pair",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bind-a-key-pair\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">bind a key pair</dfn> given the byte array containing the key pair\nidentifier, <var>bbk_id</var>, and a byte array, <var>credential_id</var>, possibly returning\nfailure perform the following steps:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"bind-a-key-pair\">bind a key pair</dfn> given the byte array containing the key pair\nidentifier, <var>bbk_id</var>, and a byte array, <var>credential_id</var>, possibly returning\nfailure perform the following steps:",
       "rationale": "set",
       "steps": [
         {
@@ -502,7 +502,7 @@
     {
       "name": "get or create a browser bound key",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#get-or-create-a-browser-bound-key",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-or-create-a-browser-bound-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get or create a browser bound key</dfn> given a byte array,\n<var>credential_id</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#dictdef-publickeycredentialparameters\" id=\"ref-for-dictdef-publickeycredentialparameters③\">PublicKeyCredentialParameters</a></code>,\n<var>allowed_algorithms</var>, returning a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#key-pair\" id=\"ref-for-key-pair⑥\">key pair</a> with its\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier②\">COSEAlgorithmIdentifier</a></code>:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-or-create-a-browser-bound-key\">get or create a browser bound key</dfn> given a byte array,\n<var>credential_id</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#dictdef-publickeycredentialparameters\" id=\"ref-for-dictdef-publickeycredentialparameters③\">PublicKeyCredentialParameters</a></code>,\n<var>allowed_algorithms</var>, returning a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuple</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#key-pair\" id=\"ref-for-key-pair⑥\">key pair</a> with its\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier②\">COSEAlgorithmIdentifier</a></code>:",
       "rationale": "if",
       "steps": [
         {
@@ -540,7 +540,7 @@
     {
       "name": "get a browser bound public key",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#get-a-browser-bound-public-key",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-browser-bound-public-key\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a browser bound public key</dfn> given the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple④\">tuple</a> of key pair\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier③\">COSEAlgorithmIdentifier</a></code>, <var>bbk_and_algorithm</var>, returning a byte array:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-browser-bound-public-key\">get a browser bound public key</dfn> given the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple④\">tuple</a> of key pair\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier③\">COSEAlgorithmIdentifier</a></code>, <var>bbk_and_algorithm</var>, returning a byte array:",
       "rationale": "let",
       "steps": [
         {
@@ -563,7 +563,7 @@
     {
       "name": "generate a browser bound signature",
       "href": "https://www.w3.org/TR/secure-payment-confirmation/#generate-a-browser-bound-signature",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-browser-bound-signature\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate a browser bound signature</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑤\">tuple</a> of the key\npair and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier④\">COSEAlgorithmIdentifier</a></code>, <var>bbk_and_algorithm</var>, and a byte array,\n<var>client_data_json</var>, returning a byte array:",
+      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate-a-browser-bound-signature\">generate a browser bound signature</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑤\">tuple</a> of the key\npair and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webauthn-4/#typedefdef-cosealgorithmidentifier\" id=\"ref-for-typedefdef-cosealgorithmidentifier④\">COSEAlgorithmIdentifier</a></code>, <var>bbk_and_algorithm</var>, and a byte array,\n<var>client_data_json</var>, returning a byte array:",
       "rationale": "let",
       "steps": [
         {
