@@ -68,46 +68,40 @@
           "html": "If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-document-load-timing\" id=\"ref-for-performancenavigationtiming-document-load-timing⑥\">document load timing</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#dom-interactive-time\" id=\"ref-for-dom-interactive-time①\">DOM interactive time</a> is 0, return null."
         },
         {
-          "html": "If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-confidence-value\" id=\"ref-for-performancenavigationtiming-confidence-value\">confidence value</a> is not null,\n  return it."
+          "html": "Let <var>p</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-randomized-trigger-rate\" id=\"ref-for-performancenavigationtiming-randomized-trigger-rate\">randomized trigger rate</a>."
         },
         {
-          "html": "Let <var>confidence</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancetimingconfidence\" id=\"ref-for-performancetimingconfidence②\">PerformanceTimingConfidence</a></code> object created in\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>."
-        },
-        {
-          "html": "Set <var>confidence</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidence-randomizedtriggerrate\" id=\"ref-for-dom-performancetimingconfidence-randomizedtriggerrate\">randomizedTriggerRate</a></code> to\n  <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-randomized-trigger-rate\" id=\"ref-for-performancenavigationtiming-randomized-trigger-rate\">randomized trigger rate</a>."
-        },
-        {
-          "html": "Set <var>confidence</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidence-value\" id=\"ref-for-dom-performancetimingconfidence-value\">value</a></code> as determined by the following algorithm:",
+          "html": "If <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-confidence-value\" id=\"ref-for-performancenavigationtiming-confidence-value\">confidence value</a> is null, set it to the\n  result of running these steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>p</var> be <var>confidence</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidence-randomizedtriggerrate\" id=\"ref-for-dom-performancetimingconfidence-randomizedtriggerrate①\">randomizedTriggerRate</a></code>."
-            },
-            {
-              "html": "Let <var>underlying</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-underlying-confidence-value\" id=\"ref-for-performancenavigationtiming-underlying-confidence-value\">underlying confidence value</a>, a\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#enumdef-performancetimingconfidencevalue\" id=\"ref-for-enumdef-performancetimingconfidencevalue①\">PerformanceTimingConfidenceValue</a></code>."
+              "html": "Let <var>underlying</var> be <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-underlying-confidence-value\" id=\"ref-for-performancenavigationtiming-underlying-confidence-value\">underlying confidence value</a>."
             },
             {
               "html": "Let <var>r</var> be a real number drawn uniformly at random from the interval [0, 1)."
             },
             {
-              "html": "If <var>r</var> &gt; or equal <var>p</var>, return <var>underlying</var>."
+              "html": "If <var>r</var> is greater than or equal to <var>p</var>, return <var>underlying</var>."
             },
             {
-              "html": "Otherwise:",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "Let <var>s</var> be an integer drawn uniformly at random from the set {0, 1}."
-                },
-                {
-                  "html": "If <var>s</var> equals 0, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidencevalue-high\" id=\"ref-for-dom-performancetimingconfidencevalue-high\">high</a></code>."
-                },
-                {
-                  "html": "Otherwise, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidencevalue-low\" id=\"ref-for-dom-performancetimingconfidencevalue-low\">low</a></code>."
-                }
-              ]
+              "html": "Let <var>s</var> be an integer drawn uniformly at random from the set {0, 1}."
+            },
+            {
+              "html": "If <var>s</var> equals 0, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidencevalue-high\" id=\"ref-for-dom-performancetimingconfidencevalue-high\">high</a></code>."
+            },
+            {
+              "html": "Return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidencevalue-low\" id=\"ref-for-dom-performancetimingconfidencevalue-low\">low</a></code>."
             }
           ]
+        },
+        {
+          "html": "Let <var>confidence</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancetimingconfidence\" id=\"ref-for-performancetimingconfidence①\">PerformanceTimingConfidence</a></code> object created in\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>."
+        },
+        {
+          "html": "Set <var>confidence</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidence-randomizedtriggerrate\" id=\"ref-for-dom-performancetimingconfidence-randomizedtriggerrate\">randomizedTriggerRate</a></code> to <var>p</var>."
+        },
+        {
+          "html": "Set <var>confidence</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/navigation-timing-2/#dom-performancetimingconfidence-value\" id=\"ref-for-dom-performancetimingconfidence-value\">value</a></code> to <var>this</var>’s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/navigation-timing-2/#performancenavigationtiming-confidence-value\" id=\"ref-for-performancenavigationtiming-confidence-value①\">confidence value</a>."
         },
         {
           "html": "Return <var>confidence</var>."
