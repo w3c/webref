@@ -1,0 +1,1627 @@
+{
+  "spec": {
+    "title": "CSS Spatial Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-spatial-1/"
+  },
+  "dfns": [
+    {
+      "id": "z-axis",
+      "href": "https://drafts.csswg.org/css-spatial-1/#z-axis",
+      "linkingText": [
+        "z-axis",
+        "z axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://drafts.csswg.org/css-spatial-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-spatial",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-spatial",
+      "linkingText": [
+        "spatial"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "spatial-container",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-container",
+      "linkingText": [
+        "spatial container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-spatial-none",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "spatial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-spatial-page",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "spatial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-spatial-portal",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-portal",
+      "linkingText": [
+        "portal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "spatial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "portal-plane",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal-plane",
+      "linkingText": [
+        "portal plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "portals",
+        "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+        "title": "Establishing Spatial Contexts and Portals: the spatial property",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "spatial-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context",
+      "linkingText": [
+        "spatial context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-layout-model",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-layout-model",
+        "title": "Spatial Contexts and the Spatial Layout Model",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containing-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#containing-volume",
+      "linkingText": [
+        "containing volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-layout-model",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-layout-model",
+        "title": "Spatial Contexts and the Spatial Layout Model",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "allowed-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#allowed-volume",
+      "linkingText": [
+        "allowed volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-layout-model",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-layout-model",
+        "title": "Spatial Contexts and the Spatial Layout Model",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "page-allowed-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#page-allowed-volume",
+      "linkingText": [
+        "page allowed volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-layout-model",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-layout-model",
+        "title": "Spatial Contexts and the Spatial Layout Model",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "front-spatial-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-spatial-context",
+      "linkingText": [
+        "front spatial context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-context-front",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-front",
+        "title": "The Front Spatial Context",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "front-spatial-context-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-spatial-context-volume",
+      "linkingText": [
+        "front spatial context volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-context-front",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-front",
+        "title": "The Front Spatial Context",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "back-spatial-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#back-spatial-context",
+      "linkingText": [
+        "back spatial context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-context-back",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-back",
+        "title": "The Back Spatial Context",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "portal",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal",
+      "linkingText": [
+        "portal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spatial-context-back",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-back",
+        "title": "The Back Spatial Context",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-portal-stage",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-stage",
+      "linkingText": [
+        "portal-stage"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-volume",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-volume",
+        "title": "Defining Stage: the portal-stage property",
+        "number": "2.3.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "world-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#world-origin",
+      "linkingText": [
+        "world origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stage-volume",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-volume",
+        "title": "Defining Stage: the portal-stage property",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-stage-auto",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-stage-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-stage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-volume",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-volume",
+        "title": "Defining Stage: the portal-stage property",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-portal-transform",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-transform",
+      "linkingText": [
+        "portal-transform"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-transform",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-transform",
+        "title": "Transforming the Stage: the portal-transform property",
+        "number": "2.3.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "portal-transform",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal-transform",
+      "linkingText": [
+        "portal transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stage-transform",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-transform",
+        "title": "Transforming the Stage: the portal-transform property",
+        "number": "2.3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-transform-none",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-transform-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-transform",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-transform",
+        "title": "Transforming the Stage: the portal-transform property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-transform-auto",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-transform-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-transform",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-transform",
+        "title": "Transforming the Stage: the portal-transform property",
+        "number": "2.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-portal-action",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-action",
+      "linkingText": [
+        "portal-action"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-none",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-orbit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-orbit",
+      "linkingText": [
+        "orbit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-resize",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-resize",
+      "linkingText": [
+        "resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan-inline",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-inline",
+      "linkingText": [
+        "pan-inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan-block",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-block",
+      "linkingText": [
+        "pan-block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan-x",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-x",
+      "linkingText": [
+        "pan-x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan-y",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-y",
+      "linkingText": [
+        "pan-y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-portal-action-pan-z",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-z",
+      "linkingText": [
+        "pan-z"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "portal-action"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stage-interactivity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+        "title": "Interacting with the Stage: the portal-action property",
+        "number": "2.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "front-limit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-limit",
+      "linkingText": [
+        "front limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "front-limits",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-limits",
+        "title": "Front Limits: how far content can be raised on the page",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "front-limit-plane",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-limit-plane",
+      "linkingText": [
+        "front limit plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "front-limits",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-limits",
+        "title": "Front Limits: how far content can be raised on the page",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-front-limit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-front-limit",
+      "linkingText": [
+        "front-limit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "front-limit-property",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-limit-property",
+        "title": "Controlling the Front Limit: the front-limit property",
+        "number": "2.4.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "descdef-media-front-limit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#descdef-media-front-limit",
+      "linkingText": [
+        "front-limit"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "front-limit-query",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-limit-query",
+        "title": "Querying the Front Limit: the front-limit media query",
+        "number": "2.4.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "spatial-positioning",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-positioning",
+      "linkingText": [
+        "spatial positioning",
+        "spatially positioned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "position-spatial",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial",
+        "title": "Spatial Positioning",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "relative-spatial-positioning",
+      "href": "https://drafts.csswg.org/css-spatial-1/#relative-spatial-positioning",
+      "linkingText": [
+        "relative spatial positioning",
+        "relatively spatial positioned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "position-spatial-relative",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-relative",
+        "title": "Relative Spatial Positioning",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-position-spatial-absolute",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-spatial-absolute",
+      "linkingText": [
+        "spatial-absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-spatial-absolute",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-absolute",
+        "title": "Absolute Spatial Positioning: the spatial-absolute keyword for position",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "absolute-spatial-positioning",
+      "href": "https://drafts.csswg.org/css-spatial-1/#absolute-spatial-positioning",
+      "linkingText": [
+        "absolute spatial positioning",
+        "absolutely spatial positioned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "position-spatial-absolute",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-absolute",
+        "title": "Absolute Spatial Positioning: the spatial-absolute keyword for position",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inset-modified-containing-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#inset-modified-containing-volume",
+      "linkingText": [
+        "inset-modified containing volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "position-spatial-absolute",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-absolute",
+        "title": "Absolute Spatial Positioning: the spatial-absolute keyword for position",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-back",
+      "linkingText": [
+        "inset-back"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "front-back",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-back",
+        "title": "Z-axis Insets: the inset-front and inset-back properties",
+        "number": "3.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-front",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-front",
+      "linkingText": [
+        "inset-front"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "front-back",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-back",
+        "title": "Z-axis Insets: the inset-front and inset-back properties",
+        "number": "3.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-inset-front-auto",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-inset-front-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-front",
+        "inset-back"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "front-back",
+        "href": "https://drafts.csswg.org/css-spatial-1/#front-back",
+        "title": "Z-axis Insets: the inset-front and inset-back properties",
+        "number": "3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-top",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-top",
+      "linkingText": [
+        "inset-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-aliasing",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-aliasing",
+        "title": "Inset Aliases: the inset-top, inset-right, inset-bottom, and inset-left properties",
+        "number": "3.3.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-right",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-right",
+      "linkingText": [
+        "inset-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-aliasing",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-aliasing",
+        "title": "Inset Aliases: the inset-top, inset-right, inset-bottom, and inset-left properties",
+        "number": "3.3.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-bottom",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-bottom",
+      "linkingText": [
+        "inset-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-aliasing",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-aliasing",
+        "title": "Inset Aliases: the inset-top, inset-right, inset-bottom, and inset-left properties",
+        "number": "3.3.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-inset-left",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-left",
+      "linkingText": [
+        "inset-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-aliasing",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-aliasing",
+        "title": "Inset Aliases: the inset-top, inset-right, inset-bottom, and inset-left properties",
+        "number": "3.3.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#origin",
+      "linkingText": [
+        "object origin"
+      ],
+      "localLinkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-origin",
+        "href": "https://drafts.csswg.org/css-spatial-1/#object-origin",
+        "title": "Defining the Origin",
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-transform-origin-auto",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-transform-origin-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-origin",
+        "href": "https://drafts.csswg.org/css-spatial-1/#object-origin",
+        "title": "Defining the Origin",
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "typedef-3d-position",
+      "href": "https://drafts.csswg.org/css-spatial-1/#typedef-3d-position",
+      "linkingText": [
+        "<3d-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "origin-3d",
+        "href": "https://drafts.csswg.org/css-spatial-1/#origin-3d",
+        "title": "Extensions to offset-anchor and transform-origin: the <3d-position> type",
+        "number": "3.4.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "valdef-position-area-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-area-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-area"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-area-origin",
+        "href": "https://drafts.csswg.org/css-spatial-1/#position-area-origin",
+        "title": "Extensions to position-area: the origin area",
+        "number": "3.5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-anchor-side-front",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-front",
+      "linkingText": [
+        "front"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<<anchor-side>>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-anchor-3d",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-anchor-3d",
+        "title": "Extensions to anchor() and anchor-size()",
+        "number": "3.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-anchor-side-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-back",
+      "linkingText": [
+        "back"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor-side"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-anchor-3d",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-anchor-3d",
+        "title": "Extensions to anchor() and anchor-size()",
+        "number": "3.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-anchor-size-depth",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-size-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<<anchor-size>>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-anchor-3d",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-anchor-3d",
+        "title": "Extensions to anchor() and anchor-size()",
+        "number": "3.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-anchor-side-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<<anchor-side>>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-anchor-3d",
+        "href": "https://drafts.csswg.org/css-spatial-1/#inset-anchor-3d",
+        "title": "Extensions to anchor() and anchor-size()",
+        "number": "3.5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-z-align-self",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-self",
+      "linkingText": [
+        "z-align-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "z-alignment",
+        "href": "https://drafts.csswg.org/css-spatial-1/#z-alignment",
+        "title": "Extensions to Box Alignment: the z-align-self and z-align-items properties",
+        "number": "3.5.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-z-align-items",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-items",
+      "linkingText": [
+        "z-align-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "z-alignment",
+        "href": "https://drafts.csswg.org/css-spatial-1/#z-alignment",
+        "title": "Extensions to Box Alignment: the z-align-self and z-align-items properties",
+        "number": "3.5.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-self-position-anchor-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-self-position-anchor-origin",
+      "linkingText": [
+        "anchor-origin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "origin-anchoring",
+        "href": "https://drafts.csswg.org/css-spatial-1/#origin-anchoring",
+        "title": "Extensions to Anchor Alignment: the anchor-origin value",
+        "number": "3.5.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-position-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-position-context",
+      "linkingText": [
+        "position-context"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "spatial-anchor-coordinates",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-anchor-coordinates",
+        "title": "Anchor-based Coordinates: the position-context property",
+        "number": "3.5.6"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-position-context-container",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-context-container",
+      "linkingText": [
+        "container"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-context"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "spatial-anchor-coordinates",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-anchor-coordinates",
+        "title": "Anchor-based Coordinates: the position-context property",
+        "number": "3.5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-position-context-anchor",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-context-anchor",
+      "linkingText": [
+        "anchor"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-context"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "spatial-anchor-coordinates",
+        "href": "https://drafts.csswg.org/css-spatial-1/#spatial-anchor-coordinates",
+        "title": "Anchor-based Coordinates: the position-context property",
+        "number": "3.5.6"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "environment-map",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map",
+      "linkingText": [
+        "environment map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "environment-maps",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-maps",
+        "title": "Environment Maps",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "at-ruledef-environment-map",
+      "href": "https://drafts.csswg.org/css-spatial-1/#at-ruledef-environment-map",
+      "linkingText": [
+        "@environment-map"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-definition",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-definition",
+        "title": "Defining Environment Maps: the @environment-map rule",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "environment-map-name",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-definition",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-definition",
+        "title": "Defining Environment Maps: the @environment-map rule",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "descdef-environment-map-format",
+      "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@environment-map"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-formats",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-formats",
+        "title": "Environment Map Formats: the format descriptor",
+        "number": "6.1.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "environment-map-format",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-formats",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-formats",
+        "title": "Environment Map Formats: the format descriptor",
+        "number": "6.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-environment-map-format-equirectangular",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-format-equirectangular",
+      "linkingText": [
+        "equirectangular"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@environment-map/format"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-formats",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-formats",
+        "title": "Environment Map Formats: the format descriptor",
+        "number": "6.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-environment-map-format-cube",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-format-cube",
+      "linkingText": [
+        "cube"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@environment-map/format"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-formats",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-formats",
+        "title": "Environment Map Formats: the format descriptor",
+        "number": "6.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "descdef-environment-map-src",
+      "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@environment-map"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-src",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-src",
+        "title": "Environment Map Images: the src descriptor",
+        "number": "6.1.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "environment-map-sources",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-sources",
+      "linkingText": [
+        "sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-src",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-src",
+        "title": "Environment Map Images: the src descriptor",
+        "number": "6.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-environment-map",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-map",
+      "linkingText": [
+        "environment-map"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-property",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-property",
+        "title": "Referencing an Environment Map: the environment-map property",
+        "number": "6.2.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-environment-map-none",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "environment-map"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-property",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-property",
+        "title": "Referencing an Environment Map: the environment-map property",
+        "number": "6.2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-environment-map-auto",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "environment-map"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-property",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-property",
+        "title": "Referencing an Environment Map: the environment-map property",
+        "number": "6.2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-environment-intensity",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-intensity",
+      "linkingText": [
+        "environment-intensity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-intensity",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-intensity",
+        "title": "Brightening and Dimming the Environment: the environment-intensity property",
+        "number": "6.2.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-environment-rotate",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-rotate",
+      "linkingText": [
+        "environment-rotate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-map-rotate",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-rotate",
+        "title": "Rotating the Environment: the environment-rotate property",
+        "number": "6.2.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-environment",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment",
+      "linkingText": [
+        "environment"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-shorthand",
+        "href": "https://drafts.csswg.org/css-spatial-1/#environment-shorthand",
+        "title": "Declaring the Environment: the environment shorthand",
+        "number": "6.2.4"
+      },
+      "definedIn": "table",
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "spec": {
+    "title": "CSS Spatial Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-spatial-1/"
+  },
+  "algorithms": [
+    {
+      "html": "Omitted values are handled as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If only 5 images, the left is considered omitted and is mirrored from the right.</p>"
+        },
+        {
+          "html": "<p>If only 4 images, the behind is also considered omitted and is mirrored from the ahead.</p>"
+        },
+        {
+          "html": "<p>If only 3 images, the middle image is stretched to wrap around all four vertical sides, centered straight ahead.</p>"
+        },
+        {
+          "html": "<p>If only 2 images, the second is ignored; see 1 image.</p>"
+        },
+        {
+          "html": "<p>If only 1 image, it is divided into 4 equal columns and 3 equal rows,\nwith the region in [2,2] used ahead and the others folded onto the cube\n(ignoring the regions that don’t fit).</p>"
+        }
+      ]
+    }
+  ]
+}

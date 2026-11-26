@@ -1,0 +1,697 @@
+{
+  "spec": {
+    "title": "CSS Spatial Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-spatial-1/"
+  },
+  "properties": [
+    {
+      "name": "spatial",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-spatial",
+      "value": "none | page | portal",
+      "initial": "none",
+      "appliesTo": "all elements except internal table elements, internal ruby elements, and inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No effect.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "page",
+          "prose": "Establishes a limited front spatial context, which allows spatial positioning in front of the element’s plane. (However, see front-limit for limits on this area.)",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-page",
+          "type": "value",
+          "value": "page"
+        },
+        {
+          "name": "portal",
+          "prose": "Establishes two spatial contexts connected by a portal coinciding with the border box of the spatial container: a back spatial context behind the element consisting of a 3-dimensional “world” with its own independent coordinate system, which can be viewed through the spatial container’s portal (which acts as a window into this “world”). a front spatial context, which allows relative spatial positioning in front of the element’s plane just like page does, as well as behind it by extending through the portal into the the “world” of the back spatial context.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-spatial-portal",
+          "type": "value",
+          "value": "portal"
+        }
+      ],
+      "styleDeclaration": [
+        "spatial"
+      ]
+    },
+    {
+      "name": "portal-stage",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-stage",
+      "value": "[ auto | <length> ]{1,4} [ / [ auto | <length> ]{1,2} ]?",
+      "initial": "auto",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "The stage expands from the world origin by the specified length towards the indicated side. Values can be negative.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-stage-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto",
+          "prose": "The stage expands from the world origin to contain the contents of the back spatial context on the indicated side.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-stage-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "portal-stage",
+        "portalStage"
+      ]
+    },
+    {
+      "name": "portal-transform",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-transform",
+      "value": "none | auto | auto? <transform-list> | <transform-list> auto <transform-list>?",
+      "initial": "auto",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "Discrete if the presence of the none or auto keyword differs; otherwise interpolate each <transform-list> independently, see CSS Transforms 1 § 9 Interpolation of Transforms.",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The world origin of the back spatial context is the center of its border box on the portal plane, and the portal transform ensures that <length> values correspond between the page and the back spatial context (i.e. 1cm in the back spatial context is 1cm on the page.)",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-transform-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The matrix required to fit the containing volume (or bounding sphere of the containing volume, in the case of portal-action: orbit) of the back spatial context into an axis-aligned rectangle whose sides align with content edges of the spatial container, and front aligns with the portal plane. If a <transform-list> is specified before auto, then it is applied to the containing volume prior to this calculation.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-transform-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<transform-list>",
+          "prose": "The back spatial context is transformed as specified.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-transform-transform-list",
+          "type": "value",
+          "value": "<transform-list>"
+        }
+      ],
+      "styleDeclaration": [
+        "portal-transform",
+        "portalTransform"
+      ]
+    },
+    {
+      "name": "portal-action",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-action",
+      "value": "none | orbit || resize || [ pan | pan-inline || pan-block || pan-x || pan-y || pan-z ]",
+      "initial": "none",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The contents of the back spatial context cannot be repositioned or rotated by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "orbit",
+          "prose": "The contents of the back spatial context can be rotated around the center of the containing volume by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-orbit",
+          "type": "value",
+          "value": "orbit"
+        },
+        {
+          "name": "resize",
+          "prose": "The contents of the back spatial context can be resized (scaled) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-resize",
+          "type": "value",
+          "value": "resize"
+        },
+        {
+          "name": "pan",
+          "prose": "The contents of the back spatial context can be translated (in any direction) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan",
+          "type": "value",
+          "value": "pan"
+        },
+        {
+          "name": "pan-inline",
+          "prose": "The contents of the back spatial context can be translated (in the specified page-aligned axis) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-inline",
+          "type": "value",
+          "value": "pan-inline"
+        },
+        {
+          "name": "pan-block",
+          "prose": "The contents of the back spatial context can be translated (in the specified page-aligned axis) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-block",
+          "type": "value",
+          "value": "pan-block"
+        },
+        {
+          "name": "pan-x",
+          "prose": "The contents of the back spatial context can be translated (in the specified page-aligned axis) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-x",
+          "type": "value",
+          "value": "pan-x"
+        },
+        {
+          "name": "pan-y",
+          "prose": "The contents of the back spatial context can be translated (in the specified page-aligned axis) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-y",
+          "type": "value",
+          "value": "pan-y"
+        },
+        {
+          "name": "pan-z",
+          "prose": "The contents of the back spatial context can be translated (in the specified page-aligned axis) by the user.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-portal-action-pan-z",
+          "type": "value",
+          "value": "pan-z"
+        }
+      ],
+      "styleDeclaration": [
+        "portal-action",
+        "portalAction"
+      ]
+    },
+    {
+      "name": "front-limit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-front-limit",
+      "value": "<length [0,∞]> | max",
+      "initial": "TBD",
+      "appliesTo": "spatial containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "a computed <length>",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "front-limit",
+        "frontLimit"
+      ]
+    },
+    {
+      "name": "position",
+      "newValues": "spatial-absolute",
+      "values": [
+        {
+          "name": "spatial-absolute",
+          "prose": "This module introduces the spatial-absolute keyword to the position property. When contained by a spatial container, this value takes the now spatially positioned box out of flow and positions it into the containing volume of the back spatial context (in the case of spatial: portal), or the front spatial context (in the case of spatial: page) of its spatial container.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-spatial-absolute",
+          "type": "value",
+          "value": "spatial-absolute"
+        }
+      ],
+      "styleDeclaration": [
+        "position"
+      ]
+    },
+    {
+      "name": "inset-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-back",
+      "value": "<'top'>",
+      "initial": "auto",
+      "appliesTo": "positioned boxes contained by a spatial container",
+      "inherited": "no",
+      "percentages": "for relative spatial positioning, relative to the distance from the containing block to the front limit plane; for absolute spatial positioning, relative to the z-axis size of the containing volume.",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "If both insets in this axis are auto, then the box is positioned at its default z-axis position. Otherwise, this value defers positioning to the opposite inset, see below.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-inset-front-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<length-percentage>",
+          "prose": "The box’s position is inset by the specified amount from the front (for inset-front) or back (for inset-back).",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-inset-front-length-percentage",
+          "type": "value",
+          "value": "<length-percentage>"
+        }
+      ],
+      "styleDeclaration": [
+        "inset-back",
+        "insetBack"
+      ]
+    },
+    {
+      "name": "inset-front",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-front",
+      "value": "<'top'>",
+      "initial": "auto",
+      "appliesTo": "positioned boxes contained by a spatial container",
+      "inherited": "no",
+      "percentages": "for relative spatial positioning, relative to the distance from the containing block to the front limit plane; for absolute spatial positioning, relative to the z-axis size of the containing volume.",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "If both insets in this axis are auto, then the box is positioned at its default z-axis position. Otherwise, this value defers positioning to the opposite inset, see below.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-inset-front-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<length-percentage>",
+          "prose": "The box’s position is inset by the specified amount from the front (for inset-front) or back (for inset-back).",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-inset-front-length-percentage",
+          "type": "value",
+          "value": "<length-percentage>"
+        }
+      ],
+      "styleDeclaration": [
+        "inset-front",
+        "insetFront"
+      ]
+    },
+    {
+      "name": "inset-top",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-top",
+      "value": "<'top'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-top",
+        "insetTop"
+      ]
+    },
+    {
+      "name": "inset-right",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-right",
+      "value": "<'top'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-right",
+        "insetRight"
+      ]
+    },
+    {
+      "name": "inset-bottom",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-bottom",
+      "value": "<'top'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-bottom",
+        "insetBottom"
+      ]
+    },
+    {
+      "name": "inset-left",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-left",
+      "value": "<'top'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-left",
+        "insetLeft"
+      ]
+    },
+    {
+      "name": "inset",
+      "newValues": "<'top'>{1, 4} / <'inset-back'> <'inset-front'>?",
+      "styleDeclaration": [
+        "inset"
+      ]
+    },
+    {
+      "name": "position-area",
+      "newValues": "[ front | center | back | span-front | span-back | span-all ]? | origin",
+      "values": [
+        {
+          "name": "origin",
+          "prose": "This module also extends the <position-area> syntax to allow the origin keyword everywhere that center is currently allowed. This value represents a (zero-sized) track that coincides with the anchor’s origin, and its area-specific default alignment is anchor-origin.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-area-origin",
+          "type": "value",
+          "value": "origin"
+        }
+      ],
+      "styleDeclaration": [
+        "position-area",
+        "positionArea"
+      ]
+    },
+    {
+      "name": "z-align-self",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-self",
+      "value": "auto | <overflow-position>? [ normal | front | center | back ] | anchor-origin",
+      "initial": "auto",
+      "appliesTo": "spatially positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "z-align-self",
+        "zAlignSelf"
+      ]
+    },
+    {
+      "name": "z-align-items",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-items",
+      "value": "<overflow-position>? [ normal | front | center | back ] | anchor-origin",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "z-align-items",
+        "zAlignItems"
+      ]
+    },
+    {
+      "name": "place-self",
+      "newValues": "<'align-self'> <'justify-self'>? / <'z-align-self'>",
+      "styleDeclaration": [
+        "place-self",
+        "placeSelf"
+      ]
+    },
+    {
+      "name": "place-items",
+      "newValues": "<'align-items'> <'justify-items'>? / <'z-align-items'>",
+      "styleDeclaration": [
+        "place-items",
+        "placeItems"
+      ]
+    },
+    {
+      "name": "justify-self",
+      "newValues": "anchor-origin",
+      "styleDeclaration": [
+        "justify-self",
+        "justifySelf"
+      ]
+    },
+    {
+      "name": "align-self",
+      "newValues": "anchor-origin",
+      "styleDeclaration": [
+        "align-self",
+        "alignSelf"
+      ]
+    },
+    {
+      "name": "justify-items",
+      "newValues": "anchor-origin",
+      "styleDeclaration": [
+        "justify-items",
+        "justifyItems"
+      ]
+    },
+    {
+      "name": "align-items",
+      "newValues": "anchor-origin",
+      "styleDeclaration": [
+        "align-items",
+        "alignItems"
+      ]
+    },
+    {
+      "name": "position-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-position-context",
+      "value": "container | anchor",
+      "initial": "container",
+      "appliesTo": "absolutely positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "container",
+          "prose": "The used anchor box of the default anchor box is its axis-aligned bounding box in the coordinate system of the positioned box’s containing block/containing volume, and the position-area grid is likewise oriented in the coordinate system of its containing block/containing volume.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-context-container",
+          "type": "value",
+          "value": "container"
+        },
+        {
+          "name": "anchor",
+          "prose": "The positioned box is transformed together with its default anchor box. The anchor box is used directly in the default anchor box’s own coordinate system, however that has been transformed, and the position-area grid is likewise re-oriented. The positioned box moves, rotates, and scales together with the default anchor box. What should be the effective containing block used to calculate the position-area grid? Is it just transformed along with the anchor box (simple but maybe not very useful), or is it independently intersected somehow?",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-position-context-anchor",
+          "type": "value",
+          "value": "anchor"
+        }
+      ],
+      "styleDeclaration": [
+        "position-context",
+        "positionContext"
+      ]
+    },
+    {
+      "name": "environment-map",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-map",
+      "value": "[ auto | none | <dashed-ident> ]#",
+      "initial": "auto",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The environment map is opaque black in all directions.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The environment map used is the user agent’s default environment map.",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<dashed-ident>",
+          "prose": "The environment map is defined by the @environment-map rule matching the specified name (if any; otherwise it is opaque black).",
+          "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-dashed-ident",
+          "type": "value",
+          "value": "<dashed-ident>"
+        }
+      ],
+      "styleDeclaration": [
+        "environment-map",
+        "environmentMap"
+      ]
+    },
+    {
+      "name": "environment-intensity",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-intensity",
+      "value": "<number [0,∞]>#",
+      "initial": "1",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "environment-intensity",
+        "environmentIntensity"
+      ]
+    },
+    {
+      "name": "environment-rotate",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-rotate",
+      "value": "<angle>#",
+      "initial": "0deg",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "environment-rotate",
+        "environmentRotate"
+      ]
+    },
+    {
+      "name": "environment",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment",
+      "value": "[ [ auto | none | <dashed-ident> ] || <number [0,∞]> || <angle> ]#",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "environment"
+      ]
+    }
+  ],
+  "atrules": [
+    {
+      "name": "@environment-map",
+      "prose": "Environment maps are named and defined using the @environment-map at-rule, which contains a list of environment map descriptor declarations. Its syntax is as follows:",
+      "href": "https://drafts.csswg.org/css-spatial-1/#at-ruledef-environment-map",
+      "descriptors": [
+        {
+          "name": "format",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-format",
+          "for": "@environment-map",
+          "value": "equirectangular | cube",
+          "initial": "equirectangular",
+          "values": [
+            {
+              "name": "equirectangular",
+              "prose": "The rectangular image is mapped onto the interior of a sphere (similar to a Mercator projection), with the top of the image coinciding with the y-most point on the sphere, the bottom of the image coinciding with the y-least point on the sphere, and the center of the image at the z-least point on the sphere (directly in front of the user). If more than one source image is provided, the first one is used and all others are ignored.",
+              "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-format-equirectangular",
+              "type": "value",
+              "value": "equirectangular"
+            },
+            {
+              "name": "cube",
+              "prose": "The six images provided in the src descriptor are mapped onto the interior of an axis-aligned cube, see § 6.1.1.1 Mapping Images Onto a Cube.",
+              "href": "https://drafts.csswg.org/css-spatial-1/#valdef-environment-map-format-cube",
+              "type": "value",
+              "value": "cube"
+            }
+          ]
+        },
+        {
+          "name": "src",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-src",
+          "for": "@environment-map",
+          "value": "<image>{1,6}",
+          "initial": "N/A"
+        }
+      ],
+      "value": "@environment-map { <declaration-list> }"
+    },
+    {
+      "name": "@media",
+      "descriptors": [
+        {
+          "name": "front-limit",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-media-front-limit",
+          "for": "@media",
+          "value": "<length [0,∞]>",
+          "type": "range"
+        }
+      ]
+    }
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<3d-position>",
+      "href": "https://drafts.csswg.org/css-spatial-1/#typedef-3d-position",
+      "type": "type",
+      "value": "<position> [ / [ front | center | back | <length-percentage> | [ front | back ] <length-percentage> ]?"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The existing offset-anchor and transform-origin properties can change the object origin. Specifically, the effective object origin for CSS positioning and alignment (see below) is the origin defined by offset-anchor, which defaults to the origin defined by transform-origin—​which itself gains a new initial value of auto (matching the syntax of offset-anchor) to represent the default behavior specified above.",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-transform-origin-auto",
+      "type": "value",
+      "value": "auto",
+      "for": "transform-origin"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "front",
+      "prose": "This module extends the <anchor()> syntax to add front and back to <anchor-side>. Together with the existing start/end keywords, this allows the inset-front and inset-back inset properties to resolve against the corresponding sides of the anchor box.",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-front",
+      "type": "value",
+      "value": "front",
+      "for": "<<anchor-side>>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "back",
+      "prose": "This module extends the <anchor()> syntax to add front and back to <anchor-side>. Together with the existing start/end keywords, this allows the inset-front and inset-back inset properties to resolve against the corresponding sides of the anchor box.",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-back",
+      "type": "value",
+      "value": "back",
+      "for": "anchor-side"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "depth",
+      "prose": "Similarly, for sizing purposes, the <anchor-size()> syntax gains a depth keyword to represent the z-axis size of the anchor box. (Note the thickness of a CSS box, unless otherwise defined, is zero.)",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-size-depth",
+      "type": "value",
+      "value": "depth",
+      "for": "<<anchor-size>>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "origin",
+      "prose": "It also adds an origin keyword to <anchor-side>, which resolves against the object origin of the anchor box.",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-anchor-side-origin",
+      "type": "value",
+      "value": "origin",
+      "for": "<<anchor-side>>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "anchor-origin",
+      "prose": "This module also introduces the new anchor-origin value, which centers the origin of the alignment subject against the origin of its default anchor box. When anchor-origin is specified, the inset properties behave differently in the affected axis: instead of adjusting the inset-modified containing block, they shift the origin of the alignment subject—​exactly as if it were a zero-sized containing block and the effective origin were the resulting inset-modified containing block.",
+      "href": "https://drafts.csswg.org/css-spatial-1/#valdef-self-position-anchor-origin",
+      "type": "value",
+      "value": "anchor-origin",
+      "for": "<self-position>"
+    }
+  ]
+}

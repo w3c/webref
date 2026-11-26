@@ -1,0 +1,516 @@
+{
+  "spec": {
+    "title": "CSS Spatial Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-spatial-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-spatial-1/#title",
+      "level": 1,
+      "title": "CSS Spatial Layout Module Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-spatial-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-spatial-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-spatial-1/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-spatial-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-spatial-1/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-spatial-1/#placement",
+      "level": 3,
+      "title": "Module interactions",
+      "number": "1.2"
+    },
+    {
+      "id": "spatial-contexts",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-contexts",
+      "level": 2,
+      "title": "Establishing Spatial Contexts",
+      "number": "2"
+    },
+    {
+      "id": "portals",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portals",
+      "level": 3,
+      "title": "Establishing Spatial Contexts and Portals: the spatial property",
+      "number": "2.1"
+    },
+    {
+      "id": "portal-nesting",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal-nesting",
+      "level": 4,
+      "title": "Nesting Portals",
+      "number": "2.1.1"
+    },
+    {
+      "id": "spatial-layout-model",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-layout-model",
+      "level": 3,
+      "title": "Spatial Contexts and the Spatial Layout Model",
+      "number": "2.2"
+    },
+    {
+      "id": "spatial-context-front",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-front",
+      "level": 4,
+      "title": "The Front Spatial Context",
+      "number": "2.2.1"
+    },
+    {
+      "id": "spatial-context-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-back",
+      "level": 4,
+      "title": "The Back Spatial Context",
+      "number": "2.2.2"
+    },
+    {
+      "id": "spatial-context-full",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-context-full",
+      "level": 4,
+      "title": "Full Portals: Connecting the Front and Back Spatial Contexts",
+      "number": "2.2.3"
+    },
+    {
+      "id": "portal-config",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal-config",
+      "level": 3,
+      "title": "Configuring the Back Spatial Context",
+      "number": "2.3"
+    },
+    {
+      "id": "stage-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#stage-volume",
+      "level": 4,
+      "title": "Defining Stage: the portal-stage property",
+      "number": "2.3.1"
+    },
+    {
+      "id": "portal-stage-auto-volume",
+      "href": "https://drafts.csswg.org/css-spatial-1/#portal-stage-auto-volume",
+      "level": 5,
+      "title": "Calculating an Automatic Containing Volume",
+      "number": "2.3.1.1"
+    },
+    {
+      "id": "stage-transform",
+      "href": "https://drafts.csswg.org/css-spatial-1/#stage-transform",
+      "level": 4,
+      "title": "Transforming the Stage: the portal-transform property",
+      "number": "2.3.2"
+    },
+    {
+      "id": "stage-interactivity",
+      "href": "https://drafts.csswg.org/css-spatial-1/#stage-interactivity",
+      "level": 4,
+      "title": "Interacting with the Stage: the portal-action property",
+      "number": "2.3.3"
+    },
+    {
+      "id": "front-limits",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-limits",
+      "level": 3,
+      "title": "Front Limits: how far content can be raised on the page",
+      "number": "2.4"
+    },
+    {
+      "id": "front-limit-property",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-limit-property",
+      "level": 4,
+      "title": "Controlling the Front Limit: the front-limit property",
+      "number": "2.4.1"
+    },
+    {
+      "id": "front-limit-query",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-limit-query",
+      "level": 4,
+      "title": "Querying the Front Limit: the front-limit media query",
+      "number": "2.4.2"
+    },
+    {
+      "id": "spatial-colors",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-colors",
+      "level": 3,
+      "title": "Color Compositing in Spatial Contexts",
+      "number": "2.5"
+    },
+    {
+      "id": "position-spatial",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial",
+      "level": 2,
+      "title": "Spatial Positioning",
+      "number": "3"
+    },
+    {
+      "id": "position-spatial-relative",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-relative",
+      "level": 3,
+      "title": "Relative Spatial Positioning",
+      "number": "3.1"
+    },
+    {
+      "id": "position-spatial-relative-clamping",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-relative-clamping",
+      "level": 4,
+      "title": "Clamping Relative Spatial Positioning to the Front Limit",
+      "number": "3.1.1"
+    },
+    {
+      "id": "position-spatial-absolute",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-spatial-absolute",
+      "level": 3,
+      "title": "Absolute Spatial Positioning: the spatial-absolute keyword for position",
+      "number": "3.2"
+    },
+    {
+      "id": "front-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#front-back",
+      "level": 3,
+      "title": "Z-axis Insets: the inset-front and inset-back properties",
+      "number": "3.3"
+    },
+    {
+      "id": "inset-aliasing",
+      "href": "https://drafts.csswg.org/css-spatial-1/#inset-aliasing",
+      "level": 4,
+      "title": "Inset Aliases: the inset-top, inset-right, inset-bottom, and inset-left properties",
+      "number": "3.3.1"
+    },
+    {
+      "id": "inset-shorthand",
+      "href": "https://drafts.csswg.org/css-spatial-1/#inset-shorthand",
+      "level": 4,
+      "title": "Inset Shorthand: the / <inset-back> <inset-front>? extension to inset",
+      "number": "3.3.2"
+    },
+    {
+      "id": "object-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#object-origin",
+      "level": 3,
+      "title": "Defining the Origin",
+      "number": "3.4"
+    },
+    {
+      "id": "origin-3d",
+      "href": "https://drafts.csswg.org/css-spatial-1/#origin-3d",
+      "level": 4,
+      "title": "Extensions to offset-anchor and transform-origin: the <3d-position> type",
+      "number": "3.4.1"
+    },
+    {
+      "id": "spatial-anchor-positioning",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-anchor-positioning",
+      "level": 3,
+      "title": "Anchor-based Positioning",
+      "number": "3.5"
+    },
+    {
+      "id": "position-area-3d",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-area-3d",
+      "level": 4,
+      "title": "Extensions to position-area: 3-dimensional areas",
+      "number": "3.5.1"
+    },
+    {
+      "id": "position-area-origin",
+      "href": "https://drafts.csswg.org/css-spatial-1/#position-area-origin",
+      "level": 4,
+      "title": "Extensions to position-area: the origin area",
+      "number": "3.5.2"
+    },
+    {
+      "id": "inset-anchor-3d",
+      "href": "https://drafts.csswg.org/css-spatial-1/#inset-anchor-3d",
+      "level": 4,
+      "title": "Extensions to anchor() and anchor-size()",
+      "number": "3.5.3"
+    },
+    {
+      "id": "z-alignment",
+      "href": "https://drafts.csswg.org/css-spatial-1/#z-alignment",
+      "level": 4,
+      "title": "Extensions to Box Alignment: the z-align-self and z-align-items properties",
+      "number": "3.5.4"
+    },
+    {
+      "id": "origin-anchoring",
+      "href": "https://drafts.csswg.org/css-spatial-1/#origin-anchoring",
+      "level": 4,
+      "title": "Extensions to Anchor Alignment: the anchor-origin value",
+      "number": "3.5.5"
+    },
+    {
+      "id": "spatial-anchor-coordinates",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-anchor-coordinates",
+      "level": 4,
+      "title": "Anchor-based Coordinates: the position-context property",
+      "number": "3.5.6"
+    },
+    {
+      "id": "anchor-across-contexts",
+      "href": "https://drafts.csswg.org/css-spatial-1/#anchor-across-contexts",
+      "level": 3,
+      "title": "Anchoring Across Spatial Contexts",
+      "number": "3.6"
+    },
+    {
+      "id": "spatial-transforms",
+      "href": "https://drafts.csswg.org/css-spatial-1/#spatial-transforms",
+      "level": 2,
+      "title": "Spatial Transforms",
+      "number": "4"
+    },
+    {
+      "id": "interactions-with-spatial-content",
+      "href": "https://drafts.csswg.org/css-spatial-1/#interactions-with-spatial-content",
+      "level": 2,
+      "title": "Interactions with Spatial Content",
+      "number": "5"
+    },
+    {
+      "id": "environment-maps",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-maps",
+      "level": 2,
+      "title": "Environment Maps",
+      "number": "6"
+    },
+    {
+      "id": "environment-map-definition",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-definition",
+      "level": 3,
+      "title": "Defining Environment Maps: the @environment-map rule",
+      "number": "6.1"
+    },
+    {
+      "id": "environment-map-formats",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-formats",
+      "level": 4,
+      "title": "Environment Map Formats: the format descriptor",
+      "number": "6.1.1"
+    },
+    {
+      "id": "cube-mapping",
+      "href": "https://drafts.csswg.org/css-spatial-1/#cube-mapping",
+      "level": 5,
+      "title": "Mapping Images Onto a Cube",
+      "number": "6.1.1.1"
+    },
+    {
+      "id": "environment-map-src",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-src",
+      "level": 4,
+      "title": "Environment Map Images: the src descriptor",
+      "number": "6.1.2"
+    },
+    {
+      "id": "environment-map-references",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-references",
+      "level": 3,
+      "title": "Applying Environment Maps",
+      "number": "6.2"
+    },
+    {
+      "id": "environment-map-property",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-property",
+      "level": 4,
+      "title": "Referencing an Environment Map: the environment-map property",
+      "number": "6.2.1"
+    },
+    {
+      "id": "environment-map-intensity",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-intensity",
+      "level": 4,
+      "title": "Brightening and Dimming the Environment: the environment-intensity property",
+      "number": "6.2.2"
+    },
+    {
+      "id": "environment-map-rotate",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-rotate",
+      "level": 4,
+      "title": "Rotating the Environment: the environment-rotate property",
+      "number": "6.2.3"
+    },
+    {
+      "id": "environment-shorthand",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-shorthand",
+      "level": 4,
+      "title": "Declaring the Environment: the environment shorthand",
+      "number": "6.2.4"
+    },
+    {
+      "id": "ua-stylesheet",
+      "href": "https://drafts.csswg.org/css-spatial-1/#ua-stylesheet",
+      "level": 2,
+      "title": "Default UA Stylesheet",
+      "number": "A"
+    },
+    {
+      "id": "user-impact-considerations",
+      "href": "https://drafts.csswg.org/css-spatial-1/#user-impact-considerations",
+      "level": 2,
+      "title": "User-Impact Considerations",
+      "number": "7"
+    },
+    {
+      "id": "accessibility",
+      "href": "https://drafts.csswg.org/css-spatial-1/#accessibility",
+      "level": 3,
+      "title": "Accessibility Considerations",
+      "number": "7.1"
+    },
+    {
+      "id": "security",
+      "href": "https://drafts.csswg.org/css-spatial-1/#security",
+      "level": 3,
+      "title": "Security Considerations",
+      "number": "7.2"
+    },
+    {
+      "id": "privacy",
+      "href": "https://drafts.csswg.org/css-spatial-1/#privacy",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "number": "7.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://drafts.csswg.org/css-spatial-1/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "8"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-spatial-1/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "9"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-spatial-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-spatial-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-spatial-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-spatial-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-spatial-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-spatial-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-spatial-1/#informative",
+      "level": 3,
+      "title": "Non-Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-spatial-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "environment-map-descriptor-table",
+      "href": "https://drafts.csswg.org/css-spatial-1/#environment-map-descriptor-table",
+      "level": 3,
+      "title": "@environment-map Descriptors"
+    },
+    {
+      "id": "media-descriptor-table",
+      "href": "https://drafts.csswg.org/css-spatial-1/#media-descriptor-table",
+      "level": 3,
+      "title": "@media Descriptors"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-spatial-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
