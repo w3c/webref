@@ -372,7 +372,14 @@ const MANUAL_EXPANSIONS = {
     'border-left-clip'
   ],
   'border-block-clip': ['border-block-start-clip', 'border-block-end-clip'],
-  'border-inline-clip': ['border-inline-start-clip', 'border-inline-end-clip']
+  'border-inline-clip': ['border-inline-start-clip', 'border-inline-end-clip'],
+
+  // CSS Spatial 1
+  'environment': [
+     'environment-map',
+     'environment-intensity',
+     'environment-rotate'
+  ]
 };
 
 
