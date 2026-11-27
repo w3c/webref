@@ -1416,7 +1416,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n    [SameObject] readonly attribute Worklet layoutWorklet;\n};",
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n    [SameObject] readonly attribute Worklet layoutWorklet;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -1445,7 +1445,17 @@
               "href": "https://drafts.css-houdini.org/css-layout-api-1/#dom-css-layoutworklet"
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
@@ -1459,6 +1469,9 @@
       ]
     },
     "exposed": {
+      "Window": [
+        "CSS"
+      ],
       "LayoutWorklet": [
         "LayoutWorkletGlobalScope",
         "LayoutChild",

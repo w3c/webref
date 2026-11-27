@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  [SameObject] readonly attribute any elementSources;\n};",
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n  [SameObject] readonly attribute any elementSources;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -41,13 +41,27 @@
               "href": "https://drafts.csswg.org/css-images-4/#dom-css-elementsources"
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "CSS"
+      ]
+    },
     "dependencies": {
       "CSS": []
     },

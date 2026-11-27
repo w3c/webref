@@ -183,7 +183,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  undefined registerProperty(PropertyDefinition definition);\n};",
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n  undefined registerProperty(PropertyDefinition definition);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -222,7 +222,17 @@
               "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-css-registerproperty"
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
@@ -230,6 +240,7 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "CSS",
         "CSSPropertyRule"
       ]
     },

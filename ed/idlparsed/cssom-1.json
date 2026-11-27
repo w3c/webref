@@ -2330,7 +2330,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#elementcssinlinestyle"
       },
       "CSS": {
-        "fragment": "[Exposed=Window]\nnamespace CSS {\n  CSSOMString escape(CSSOMString ident);\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\nnamespace CSS {\n  [Exposed=Window] CSSOMString escape(CSSOMString ident);\n};",
         "type": "namespace",
         "name": "CSS",
         "inheritance": null,
@@ -2364,7 +2364,17 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
             "special": "",
             "href": "https://drafts.csswg.org/cssom-1/#dom-css-escape"
           }
@@ -2374,8 +2384,21 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
             },
             "arguments": []
           }
@@ -2710,6 +2733,15 @@
         "CSSNamespaceRule",
         "CSSStyleDeclaration",
         "CSSStyleProperties",
+        "CSS"
+      ],
+      "Worker": [
+        "CSS"
+      ],
+      "PaintWorklet": [
+        "CSS"
+      ],
+      "LayoutWorklet": [
         "CSS"
       ]
     },

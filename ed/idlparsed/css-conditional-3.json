@@ -192,7 +192,7 @@
       ],
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  boolean supports(CSSOMString property, CSSOMString value);\n  boolean supports(CSSOMString conditionText);\n};",
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n  boolean supports(CSSOMString property, CSSOMString value);\n  boolean supports(CSSOMString conditionText);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -280,7 +280,17 @@
               "href": "https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext"
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
@@ -290,7 +300,8 @@
       "Window": [
         "CSSConditionRule",
         "CSSMediaRule",
-        "CSSSupportsRule"
+        "CSSSupportsRule",
+        "CSS"
       ]
     },
     "dependencies": {

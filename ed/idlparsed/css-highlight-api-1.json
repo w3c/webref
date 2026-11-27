@@ -275,7 +275,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};",
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -297,7 +297,17 @@
               "href": "https://drafts.csswg.org/css-highlight-api-1/#dom-css-highlights"
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ],
@@ -394,6 +404,7 @@
     "exposed": {
       "Window": [
         "Highlight",
+        "CSS",
         "HighlightRegistry"
       ]
     },

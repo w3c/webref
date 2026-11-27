@@ -1,7 +1,7 @@
 // Source: CSS Object Model (CSSOM) Module Level 1 (https://www.w3.org/TR/cssom-1/)
-[Exposed=Window]
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 namespace CSS {
-  CSSOMString escape(CSSOMString ident);
+  [Exposed=Window] CSSOMString escape(CSSOMString ident);
 };
 
 // Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
@@ -23,37 +23,44 @@ partial namespace CSS {
 };
 
 // Source: CSS Conditional Rules Module Level 3 (https://www.w3.org/TR/css-conditional-3/)
+[Exposed=Window]
 partial namespace CSS {
   boolean supports(CSSOMString property, CSSOMString value);
   boolean supports(CSSOMString conditionText);
 };
 
 // Source: CSS Custom Highlight API Module Level 1 (https://www.w3.org/TR/css-highlight-api-1/)
+[Exposed=Window]
 partial namespace CSS {
   readonly attribute HighlightRegistry highlights;
 };
 
 // Source: CSS Images Module Level 4 (https://www.w3.org/TR/css-images-4/)
+[Exposed=Window]
 partial namespace CSS {
   [SameObject] readonly attribute any elementSources;
 };
 
 // Source: CSS Layout API Level 1 (https://www.w3.org/TR/css-layout-api-1/)
+[Exposed=Window]
 partial namespace CSS {
     [SameObject] readonly attribute Worklet layoutWorklet;
 };
 
 // Source: CSS Painting API Level 1 (https://www.w3.org/TR/css-paint-api-1/)
+[Exposed=Window]
 partial namespace CSS {
     [SameObject] readonly attribute Worklet paintWorklet;
 };
 
 // Source: CSS Properties and Values API Level 1 (https://www.w3.org/TR/css-properties-values-api-1/)
+[Exposed=Window]
 partial namespace CSS {
   undefined registerProperty(PropertyDefinition definition);
 };
 
 // Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 partial namespace CSS {
     CSSUnitValue number(double value);
     CSSUnitValue percent(double value);
