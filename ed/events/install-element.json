@@ -5,6 +5,18 @@
   },
   "events": [
     {
+      "type": "validationstatuschange",
+      "targets": [
+        "HTMLInstallElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "Event",
+      "bubbles": true,
+      "cancelable": true
+    },
+    {
       "type": "installresult",
       "targets": [
         "GlobalEventHandlers"
