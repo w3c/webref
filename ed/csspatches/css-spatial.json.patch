@@ -1,0 +1,32 @@
+From 8b343db8a4460d129b6badb3c6cb02fc2e2eae52 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 27 Nov 2026 09:05:19 +0100
+Subject: [PATCH] Drop syntax of `<3d-position>`
+
+Pending clarity on how to fix the syntax, see:
+https://github.com/w3c/csswg-drafts/pull/14877
+
+Also, note the type is not referenced from anywhere for now. It may be worth
+looking at ways to update the syntaxes of the `offset-anchor` and
+`transform-origin` properties once the type syntax is correct. Adding spec
+prose (and this note) to serve as reminder.
+---
+ ed/css/css-spatial.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-spatial.json b/ed/css/css-spatial.json
+index d4e8ee225e..fdfef58831 100644
+--- a/ed/css/css-spatial.json
++++ b/ed/css/css-spatial.json
+@@ -635,7 +635,7 @@
+       "name": "<3d-position>",
+       "href": "https://drafts.csswg.org/css-spatial-1/#typedef-3d-position",
+       "type": "type",
+-      "value": "<position> [ / [ front | center | back | <length-percentage> | [ front | back ] <length-percentage> ]?"
++      "prose": "The offset-anchor and transform-origin properties are extended to add a third dimension, replacing <position> with a new <3d-position> type"
+     }
+   ],
+   "warnings": [
+-- 
+2.56.1
+
