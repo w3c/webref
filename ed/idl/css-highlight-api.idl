@@ -17,6 +17,7 @@ interface Highlight {
   attribute HighlightType type;
 };
 
+[Exposed=Window]
 partial namespace CSS {
   readonly attribute HighlightRegistry highlights;
 };

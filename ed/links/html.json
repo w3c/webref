@@ -2342,8 +2342,8 @@
           "concept-response-body-info",
           "concept-internal-response",
           "concept-response-location-url",
-          "concept-response-timing-info",
           "response-service-worker-timing-info",
+          "concept-response-cache-state",
           "response-redirect-taint",
           "concept-response-timing-allow-passed",
           "concept-request",
@@ -2452,6 +2452,7 @@
       "https://github.com/whatwg/html/issues/11123": {},
       "https://github.com/whatwg/html/issues/1142": {},
       "https://github.com/whatwg/html/issues/12318": {},
+      "https://github.com/whatwg/html/issues/13285": {},
       "https://github.com/whatwg/html/issues/13306": {},
       "https://github.com/whatwg/html/issues/1430": {},
       "https://github.com/whatwg/html/issues/1431": {},
@@ -2903,6 +2904,8 @@
           "sec-hostenqueuepromisejob",
           "sec-hostenqueuetimeoutjob",
           "sec-hostensurecanaddprivateelement",
+          "sec-hostensurecancompilestrings",
+          "sec-hostgetcodeforeval",
           "sec-hostgetsupportedimportattributes",
           "sec-HostLoadImportedModule",
           "sec-hostmakejobcallback",
@@ -2967,13 +2970,6 @@
       },
       "https://tc39.es/ecma402/": {
         "specShortname": "ecma-402"
-      },
-      "https://tc39.es/proposal-dynamic-code-brand-checks/": {
-        "anchors": [
-          "sec-hostensurecancompilestrings",
-          "sec-hostgetcodeforeval"
-        ],
-        "specShortname": "tc39-dynamic-code-brand-checks"
       },
       "https://tc39.es/proposal-error-stack-accessor/": {
         "specShortname": "tc39-error-stack-accessor"

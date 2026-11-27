@@ -179,6 +179,7 @@ enum CSSMathOperator {
     "clamp",
 };
 
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 partial namespace CSS {
     CSSUnitValue number(double value);
     CSSUnitValue percent(double value);

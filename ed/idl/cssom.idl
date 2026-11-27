@@ -177,7 +177,7 @@ partial interface Window {
   [NewObject] CSSStyleProperties getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
 };
 
-[Exposed=Window]
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 namespace CSS {
-  CSSOMString escape(CSSOMString ident);
+  [Exposed=Window] CSSOMString escape(CSSOMString ident);
 };
