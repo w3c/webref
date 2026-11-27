@@ -53,6 +53,13 @@
     "extended": [
       {
         "spec": {
+          "title": "CSS Overscroll Behavior Module Level 2",
+          "url": "https://drafts.csswg.org/css-overscroll-2/"
+        },
+        "fragment": "partial interface HTMLElement {\n  [CEReactions, Reflect] attribute boolean overscrollContainer;\n  [CEReactions, Reflect] attribute boolean overscrollArea;\n};"
+      },
+      {
+        "spec": {
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
@@ -457,6 +464,13 @@
           "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
         },
         "extended": [
+          {
+            "spec": {
+              "title": "CSS Overscroll Behavior Module Level 2",
+              "url": "https://drafts.csswg.org/css-overscroll-2/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onoverscrollstart;\n  attribute EventHandler onoverscrollchanging;\n  attribute EventHandler onoverscrollend;\n  attribute EventHandler onoverscrollcancel;\n};"
+          },
           {
             "spec": {
               "title": "Fenced Frame",

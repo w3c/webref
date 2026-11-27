@@ -21450,9 +21450,6 @@
           "html": "<p>If <var>old focus target</var> is not one of the entries in <var>old\n   chain</var>, then return.</p>"
         },
         {
-          "html": "<p>If <var>old focus target</var> is not a <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusable-area\" id=\"focus-processing-model:focusable-area-14\">focusable area</a>, then return.</p>"
-        },
-        {
           "html": "<p>Let <var>topDocument</var> be <var>old chain</var>'s last entry.</p>"
         },
         {
@@ -21504,7 +21501,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>entry</var> is a <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusable-area\" id=\"focus-processing-model:focusable-area-16\">focusable area</a>, and the <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focused-area-of-the-document\" id=\"focus-processing-model:focused-area-of-the-document\">focused area of the\n      document</a> is not <var>entry</var>:",
+              "html": "If <var>entry</var> is a <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusable-area\" id=\"focus-processing-model:focusable-area-15\">focusable area</a>, and the <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focused-area-of-the-document\" id=\"focus-processing-model:focused-area-of-the-document\">focused area of the\n      document</a> is not <var>entry</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -21550,7 +21547,7 @@
           "html": "<p>Let <var>target area</var> be the <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#currently-focused-area-of-a-top-level-traversable\" id=\"focus-processing-model:currently-focused-area-of-a-top-level-traversable-10\">currently focused area of the top-level traversable</a>.</p>"
         },
         {
-          "html": "<p><a id=\"focus-processing-model:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>target area</var> is not null, since key events are only routed\n   to <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"focus-processing-model:top-level-traversable-2\">top-level traversables</a> that have <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#system-focus\" id=\"focus-processing-model:system-focus-3\">system\n   focus</a>. Therefore, <var>target area</var> is a <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusable-area\" id=\"focus-processing-model:focusable-area-17\">focusable area</a>.</p>"
+          "html": "<p><a id=\"focus-processing-model:assert\" href=\"https://infra.spec.whatwg.org/#assert\" data-x-internal=\"assert\">Assert</a>: <var>target area</var> is not null, since key events are only routed\n   to <a href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"focus-processing-model:top-level-traversable-2\">top-level traversables</a> that have <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#system-focus\" id=\"focus-processing-model:system-focus-3\">system\n   focus</a>. Therefore, <var>target area</var> is a <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#focusable-area\" id=\"focus-processing-model:focusable-area-16\">focusable area</a>.</p>"
         },
         {
           "html": "<p>Let <var>target node</var> be <var>target area</var>'s <a href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-anchor\" id=\"focus-processing-model:dom-anchor-5\">DOM anchor</a>.</p>"

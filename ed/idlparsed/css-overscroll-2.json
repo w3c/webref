@@ -1,0 +1,338 @@
+{
+  "spec": {
+    "title": "CSS Overscroll Behavior Module Level 2",
+    "url": "https://drafts.csswg.org/css-overscroll-2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "OverscrollEvent"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "OverscrollEventInit": {
+        "fragment": "dictionary OverscrollEventInit : EventInit {\n  Element? overscrollTarget = null;\n  boolean overscrolling = false;\n};",
+        "type": "dictionary",
+        "name": "OverscrollEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "overscrollTarget",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/css-overscroll-2/#dom-overscrolleventinit-overscrolltarget"
+          },
+          {
+            "type": "field",
+            "name": "overscrolling",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://drafts.csswg.org/css-overscroll-2/#dom-overscrolleventinit-overscrolling"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-overscroll-2/#dictdef-overscrolleventinit"
+      },
+      "OverscrollEvent": {
+        "fragment": "[Exposed=Window]\ninterface OverscrollEvent : Event {\n  constructor(DOMString type, optional OverscrollEventInit eventInitDict = {});\n  readonly attribute Element? overscrollTarget;\n  readonly attribute boolean overscrolling;\n};",
+        "type": "interface",
+        "name": "OverscrollEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OverscrollEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://drafts.csswg.org/css-overscroll-2/#dom-overscrollevent-overscrollevent"
+          },
+          {
+            "type": "attribute",
+            "name": "overscrollTarget",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-overscroll-2/#dom-overscrollevent-overscrolltarget"
+          },
+          {
+            "type": "attribute",
+            "name": "overscrolling",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-overscroll-2/#dom-overscrollevent-overscrolling"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-overscroll-2/#overscrollevent"
+      }
+    },
+    "idlExtendedNames": {
+      "HTMLElement": [
+        {
+          "fragment": "partial interface HTMLElement {\n  [CEReactions, Reflect] attribute boolean overscrollContainer;\n  [CEReactions, Reflect] attribute boolean overscrollArea;\n};",
+          "type": "interface",
+          "name": "HTMLElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "overscrollContainer",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Reflect",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-htmlelement-overscrollcontainer"
+            },
+            {
+              "type": "attribute",
+              "name": "overscrollArea",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Reflect",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-htmlelement-overscrollarea"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "GlobalEventHandlers": [
+        {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onoverscrollstart;\n  attribute EventHandler onoverscrollchanging;\n  attribute EventHandler onoverscrollend;\n  attribute EventHandler onoverscrollcancel;\n};",
+          "type": "interface mixin",
+          "name": "GlobalEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onoverscrollstart",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-globaleventhandlers-onoverscrollstart"
+            },
+            {
+              "type": "attribute",
+              "name": "onoverscrollchanging",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-globaleventhandlers-onoverscrollchanging"
+            },
+            {
+              "type": "attribute",
+              "name": "onoverscrollend",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-globaleventhandlers-onoverscrollend"
+            },
+            {
+              "type": "attribute",
+              "name": "onoverscrollcancel",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false,
+              "href": "https://drafts.csswg.org/css-overscroll-2/#dom-globaleventhandlers-onoverscrollcancel"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "OverscrollEvent"
+      ]
+    },
+    "dependencies": {
+      "OverscrollEventInit": [
+        "EventInit",
+        "Element"
+      ],
+      "OverscrollEvent": [
+        "Event",
+        "OverscrollEventInit",
+        "Element"
+      ],
+      "HTMLElement": [],
+      "GlobalEventHandlers": [
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "EventInit",
+      "Element",
+      "Event",
+      "HTMLElement",
+      "GlobalEventHandlers",
+      "EventHandler"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

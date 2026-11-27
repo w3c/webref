@@ -1,0 +1,29 @@
+{
+  "name": "OverscrollEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "CSS Overscroll Behavior Module Level 2",
+      "url": "https://drafts.csswg.org/css-overscroll-2/"
+    },
+    "fragment": "dictionary OverscrollEventInit : EventInit {\n  Element? overscrollTarget = null;\n  boolean overscrolling = false;\n};",
+    "href": "https://drafts.csswg.org/css-overscroll-2/#dictdef-overscrolleventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

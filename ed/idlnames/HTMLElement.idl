@@ -39,6 +39,12 @@ interface HTMLElement : Element {
   [CEReactions, Reflect] attribute boolean headingReset;
 };
 
+// Source: CSS Overscroll Behavior Module Level 2 (https://drafts.csswg.org/css-overscroll-2/)
+partial interface HTMLElement {
+  [CEReactions, Reflect] attribute boolean overscrollContainer;
+  [CEReactions, Reflect] attribute boolean overscrollArea;
+};
+
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 HTMLElement includes GlobalEventHandlers;
 

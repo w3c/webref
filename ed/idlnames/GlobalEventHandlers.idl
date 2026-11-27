@@ -78,6 +78,14 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onwheel;
 };
 
+// Source: CSS Overscroll Behavior Module Level 2 (https://drafts.csswg.org/css-overscroll-2/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onoverscrollstart;
+  attribute EventHandler onoverscrollchanging;
+  attribute EventHandler onoverscrollend;
+  attribute EventHandler onoverscrollcancel;
+};
+
 // Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onfencedtreeclick;

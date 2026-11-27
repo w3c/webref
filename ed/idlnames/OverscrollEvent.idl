@@ -1,0 +1,7 @@
+// Source: CSS Overscroll Behavior Module Level 2 (https://drafts.csswg.org/css-overscroll-2/)
+[Exposed=Window]
+interface OverscrollEvent : Event {
+  constructor(DOMString type, optional OverscrollEventInit eventInitDict = {});
+  readonly attribute Element? overscrollTarget;
+  readonly attribute boolean overscrolling;
+};

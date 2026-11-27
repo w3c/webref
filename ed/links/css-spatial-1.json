@@ -1,0 +1,505 @@
+{
+  "spec": {
+    "title": "CSS Spatial Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-spatial-1/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://compat.spec.whatwg.org/": {
+        "specShortname": "compat"
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://drafts.csswg.org/css-2023/": {
+        "specShortname": "css-2023"
+      },
+      "https://drafts.csswg.org/css-align/": {
+        "specShortname": "css-align-3"
+      },
+      "https://drafts.csswg.org/css-anchor-position-1/": {
+        "anchors": [
+          "position-area-alignment"
+        ],
+        "specShortname": "css-anchor-position-1"
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {
+        "specShortname": "css-backgrounds-3"
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "specShortname": "css-box-4"
+      },
+      "https://drafts.csswg.org/css-cascade-4/": {
+        "anchors": [
+          "aliasing"
+        ],
+        "specShortname": "css-cascade-4"
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "specShortname": "css-cascade-5"
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "specShortname": "css-color-4"
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "specShortname": "css-conditional-3"
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "specShortname": "css-display-4"
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "specShortname": "css-fonts-5"
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "specShortname": "css-images-3"
+      },
+      "https://drafts.csswg.org/css-images-5/": {
+        "specShortname": "css-images-5"
+      },
+      "https://drafts.csswg.org/css-logical-1/": {
+        "specShortname": "css-logical-1"
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "specShortname": "css-overflow-3"
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "specShortname": "css-overflow-4"
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "abspos-insets",
+          "coords"
+        ],
+        "specShortname": "css-position-3"
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "specShortname": "css-sizing-3"
+      },
+      "https://drafts.csswg.org/css-syntax/": {
+        "specShortname": "css-syntax-3"
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "interpolation-of-transforms"
+        ],
+        "specShortname": "css-transforms-1"
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "specShortname": "css-transforms-2"
+      },
+      "https://drafts.csswg.org/css-transforms/": {
+        "specShortname": "css-transforms-1"
+      },
+      "https://drafts.csswg.org/css-values-3/": {
+        "specShortname": "css-values-3"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "lengths"
+        ],
+        "specShortname": "css-values-4"
+      },
+      "https://drafts.csswg.org/css-values-5/": {
+        "specShortname": "css-values-5"
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "specShortname": "css-writing-modes-3"
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "specShortname": "css-writing-modes-4"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "specShortname": "CSS2"
+      },
+      "https://drafts.csswg.org/cssom/": {
+        "specShortname": "cssom-1"
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://drafts.csswg.org/motion-1/": {
+        "specShortname": "motion-1"
+      },
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://immersive-web.github.io/model-element/": {
+        "specShortname": "model-element"
+      },
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://w3c.github.io/svgwg/svg2-draft/": {
+        "specShortname": "SVG2"
+      },
+      "https://webkit.github.io/explainers/css-spatial/Overview.html": {},
+      "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "property-defs"
+        ],
+        "specShortname": "CSS2"
+      },
+      "https://www.w3.org/TR/css-align/": {
+        "specShortname": "css-align-3"
+      },
+      "https://www.w3.org/TR/css-anchor-position/": {
+        "specShortname": "css-anchor-position-1"
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ],
+        "specShortname": "css-cascade-4"
+      },
+      "https://www.w3.org/TR/css-position/": {
+        "specShortname": "css-position-3"
+      },
+      "https://www.w3.org/TR/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ],
+        "specShortname": "css-pseudo-4"
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "specShortname": "css-transforms-2"
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "value-defs"
+        ],
+        "specShortname": "css-values-3"
+      },
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ],
+        "specShortname": "css-values-4"
+      },
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ],
+        "specShortname": "cssom-1"
+      },
+      "https://www.w3.org/TR/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ],
+        "specShortname": "web-animations-1"
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
+    },
+    "autolinks": {
+      "https://compat.spec.whatwg.org/": {
+        "anchors": [
+          "propdef-touch-action"
+        ],
+        "specShortname": "compat"
+      },
+      "https://drafts.csswg.org/css-2023/": {
+        "anchors": [
+          "user-agent"
+        ],
+        "specShortname": "css-2023"
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "valdef-align-self-normal",
+          "self-align",
+          "valdef-self-position-center",
+          "self-alignment-properties",
+          "typedef-overflow-position",
+          "propdef-align-self",
+          "propdef-align-items",
+          "propdef-place-self",
+          "propdef-place-items",
+          "propdef-justify-self",
+          "propdef-justify-items",
+          "alignment-subject"
+        ],
+        "specShortname": "css-align-3"
+      },
+      "https://drafts.csswg.org/css-anchor-position-1/": {
+        "anchors": [
+          "propdef-position-area",
+          "funcdef-anchor",
+          "typedef-position-area",
+          "anchor-box",
+          "valdef-position-area-center",
+          "propdef-position-try",
+          "funcdef-anchor-size",
+          "typedef-anchor-side",
+          "valdef-anchor-start",
+          "valdef-anchor-end",
+          "default-anchor-box",
+          "valdef-justify-self-anchor-center",
+          "position-area-grid",
+          "acceptable-anchor-element",
+          "at-ruledef-position-try"
+        ],
+        "specShortname": "css-anchor-position-1"
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-color",
+          "background-image-layer",
+          "propdef-background-position"
+        ],
+        "specShortname": "css-backgrounds-3"
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "border-box",
+          "border-edge",
+          "propdef-margin",
+          "content-edge",
+          "padding",
+          "propdef-padding",
+          "margin"
+        ],
+        "specShortname": "css-box-4"
+      },
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "computed-value",
+          "used-value",
+          "initial-value",
+          "longhand",
+          "legacy-name-alias",
+          "shorthand-property"
+        ],
+        "specShortname": "css-cascade-5"
+      },
+      "https://drafts.csswg.org/css-color-4/": {
+        "anchors": [
+          "valdef-color-canvas",
+          "valdef-color-srgb-linear",
+          "valdef-color-display-p3-linear"
+        ],
+        "specShortname": "css-color-4"
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-media"
+        ],
+        "specShortname": "css-conditional-3"
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "internal-table-element",
+          "internal-ruby-element",
+          "inline-box",
+          "principal-box",
+          "containing-block",
+          "containing-block-chain",
+          "out-of-flow",
+          "document-order"
+        ],
+        "specShortname": "css-display-4"
+      },
+      "https://drafts.csswg.org/css-fonts-5/": {
+        "anchors": [
+          "at-font-face-rule"
+        ],
+        "specShortname": "css-fonts-5"
+      },
+      "https://drafts.csswg.org/css-images-3/": {
+        "anchors": [
+          "typedef-image"
+        ],
+        "specShortname": "css-images-3"
+      },
+      "https://drafts.csswg.org/css-images-5/": {
+        "anchors": [
+          "propdef-object-view-box"
+        ],
+        "specShortname": "css-images-5"
+      },
+      "https://drafts.csswg.org/css-logical-1/": {
+        "anchors": [
+          "inset-properties"
+        ],
+        "specShortname": "css-logical-1"
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "propdef-overflow"
+        ],
+        "specShortname": "css-overflow-3"
+      },
+      "https://drafts.csswg.org/css-overflow-4/": {
+        "anchors": [
+          "overflow-clip-edge"
+        ],
+        "specShortname": "css-overflow-4"
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "absolute-position",
+          "fixed-position",
+          "propdef-inset",
+          "valdef-top-auto",
+          "propdef-left",
+          "relative-position",
+          "positioned-box",
+          "sticky-position",
+          "propdef-position",
+          "inset-modified-containing-block",
+          "propdef-top",
+          "weaker-inset",
+          "propdef-right",
+          "propdef-bottom",
+          "propdef-inset-block-start",
+          "propdef-inset-inline-start",
+          "propdef-inset-block-end",
+          "propdef-inset-inline-end",
+          "original-containing-block"
+        ],
+        "specShortname": "css-position-3"
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "sizing-property",
+          "fit-content-size",
+          "automatic-size"
+        ],
+        "specShortname": "css-sizing-3"
+      },
+      "https://drafts.csswg.org/css-syntax-3/": {
+        "anchors": [
+          "at-rule",
+          "css-descriptor-declarations",
+          "typedef-declaration-list",
+          "css-descriptor",
+          "declaration"
+        ],
+        "specShortname": "css-syntax-3"
+      },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "typedef-transform-list",
+          "propdef-transform-origin",
+          "propdef-transform"
+        ],
+        "specShortname": "css-transforms-1"
+      },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "3d-rendering-context",
+          "propdef-transform-style",
+          "propdef-perspective",
+          "propdef-perspective-origin",
+          "funcdef-perspective"
+        ],
+        "specShortname": "css-transforms-2"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "css-wide-keywords",
+          "comb-one",
+          "length-value",
+          "mult-num-range",
+          "mult-opt",
+          "px",
+          "comb-any",
+          "typedef-length-percentage",
+          "typedef-dashed-ident",
+          "coordinating-list-property",
+          "coordinating-list-base-property",
+          "mult-comma",
+          "number-value",
+          "angle-value"
+        ],
+        "specShortname": "css-values-4"
+      },
+      "https://drafts.csswg.org/css-values-5/": {
+        "anchors": [
+          "typedef-position"
+        ],
+        "specShortname": "css-values-5"
+      },
+      "https://drafts.csswg.org/css-writing-modes-3/": {
+        "anchors": [
+          "propdef-direction"
+        ],
+        "specShortname": "css-writing-modes-3"
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "css-start",
+          "x-axis",
+          "y-axis"
+        ],
+        "specShortname": "css-writing-modes-4"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "propdef-z-index"
+        ],
+        "specShortname": "CSS2"
+      },
+      "https://drafts.csswg.org/cssom-1/": {
+        "anchors": [
+          "dom-window-getcomputedstyle"
+        ],
+        "specShortname": "cssom-1"
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "media-query",
+          "media-feature",
+          "false-in-the-negative-range"
+        ],
+        "specShortname": "mediaqueries-5"
+      },
+      "https://drafts.csswg.org/motion-1/": {
+        "anchors": [
+          "propdef-offset-anchor",
+          "propdef-offset-position",
+          "propdef-offset-path"
+        ],
+        "specShortname": "motion-1"
+      },
+      "https://html.spec.whatwg.org/multipage/sections.html": {
+        "anchors": [
+          "the-section-element"
+        ]
+      },
+      "https://immersive-web.github.io/model-element/": {
+        "anchors": [
+          "elementdef-model"
+        ],
+        "specShortname": "model-element"
+      },
+      "https://w3c.github.io/svgwg/svg2-draft/coords.html": {
+        "anchors": [
+          "TermCanvas"
+        ],
+        "specShortname": "SVG2"
+      },
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "x34"
+        ],
+        "specShortname": "CSS2"
+      }
+    }
+  }
+}

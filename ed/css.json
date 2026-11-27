@@ -315,6 +315,29 @@
       "extended": []
     },
     {
+      "name": "@environment-map",
+      "prose": "Environment maps are named and defined using the @environment-map at-rule, which contains a list of environment map descriptor declarations. Its syntax is as follows:",
+      "href": "https://drafts.csswg.org/css-spatial-1/#at-ruledef-environment-map",
+      "descriptors": [
+        {
+          "name": "format",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-format",
+          "for": "@environment-map",
+          "initial": "equirectangular",
+          "syntax": "equirectangular | cube"
+        },
+        {
+          "name": "src",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-environment-map-src",
+          "for": "@environment-map",
+          "initial": "N/A",
+          "syntax": "<image>{1,6}"
+        }
+      ],
+      "syntax": "@environment-map { <declaration-list> }",
+      "extended": []
+    },
+    {
       "name": "@font-face",
       "href": "https://drafts.csswg.org/css-fonts-4/#at-font-face-rule",
       "descriptors": [
@@ -710,6 +733,13 @@
           "for": "@media",
           "type": "discrete",
           "syntax": "none | active"
+        },
+        {
+          "name": "front-limit",
+          "href": "https://drafts.csswg.org/css-spatial-1/#descdef-media-front-limit",
+          "for": "@media",
+          "type": "range",
+          "syntax": "<length [0,∞]>"
         },
         {
           "name": "grid",
@@ -2453,8 +2483,8 @@
         "WebkitAlignItems",
         "webkitAlignItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
-      "extended": []
+      "extended": [],
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-origin"
     },
     {
       "name": "-webkit-align-self",
@@ -2465,8 +2495,8 @@
         "WebkitAlignSelf",
         "webkitAlignSelf"
       ],
-      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position>",
-      "extended": []
+      "extended": [],
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position> | anchor-origin | anchor-center"
     },
     {
       "name": "-webkit-animation",
@@ -3417,8 +3447,10 @@
         "align-items",
         "alignItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
-      "extended": []
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-origin",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
     },
     {
       "name": "align-self",
@@ -3434,8 +3466,9 @@
         "align-self",
         "alignSelf"
       ],
-      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position> | anchor-center",
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position> | anchor-origin | anchor-center",
       "extended": [
+        "https://drafts.csswg.org/css-spatial-1/",
         "https://drafts.csswg.org/css-anchor-position-1/#propdef-align-self"
       ]
     },
@@ -8145,6 +8178,78 @@
       "extended": []
     },
     {
+      "name": "environment",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "environment"
+      ],
+      "longhands": [
+        "environment-map",
+        "environment-intensity",
+        "environment-rotate"
+      ],
+      "syntax": "[ [ auto | none | <dashed-ident> ] || <number [0,∞]> || <angle> ]#",
+      "extended": []
+    },
+    {
+      "name": "environment-intensity",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-intensity",
+      "initial": "1",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "environment-intensity",
+        "environmentIntensity"
+      ],
+      "syntax": "<number [0,∞]>#",
+      "extended": []
+    },
+    {
+      "name": "environment-map",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-map",
+      "initial": "auto",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "environment-map",
+        "environmentMap"
+      ],
+      "syntax": "[ auto | none | <dashed-ident> ]#",
+      "extended": []
+    },
+    {
+      "name": "environment-rotate",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-environment-rotate",
+      "initial": "0deg",
+      "appliesTo": "elements participating in a back spatial context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "environment-rotate",
+        "environmentRotate"
+      ],
+      "syntax": "<angle>#",
+      "extended": []
+    },
+    {
       "name": "event-trigger",
       "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-event-trigger",
       "initial": "none",
@@ -9261,6 +9366,23 @@
       "extended": []
     },
     {
+      "name": "front-limit",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-front-limit",
+      "initial": "TBD",
+      "appliesTo": "spatial containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "a computed <length>",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "front-limit",
+        "frontLimit"
+      ],
+      "syntax": "<length [0,∞]> | max",
+      "extended": []
+    },
+    {
       "name": "gap",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap",
       "initial": "see individual properties",
@@ -9944,7 +10066,26 @@
         "bottom",
         "left"
       ],
-      "syntax": "<'top'>{1,4}",
+      "syntax": "<'top'>{1,4} | <'top'>{1, 4} / <'inset-back'> <'inset-front'>?",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
+    },
+    {
+      "name": "inset-back",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-back",
+      "initial": "auto",
+      "appliesTo": "positioned boxes contained by a spatial container",
+      "inherited": "no",
+      "percentages": "for relative spatial positioning, relative to the distance from the containing block to the front limit plane; for absolute spatial positioning, relative to the z-axis size of the containing volume.",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "inset-back",
+        "insetBack"
+      ],
+      "syntax": "<'top'>",
       "extended": []
     },
     {
@@ -10005,6 +10146,43 @@
       "extended": []
     },
     {
+      "name": "inset-bottom",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-bottom",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-bottom",
+        "insetBottom"
+      ],
+      "longhands": [
+        "top"
+      ],
+      "syntax": "<'top'>",
+      "extended": []
+    },
+    {
+      "name": "inset-front",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-front",
+      "initial": "auto",
+      "appliesTo": "positioned boxes contained by a spatial container",
+      "inherited": "no",
+      "percentages": "for relative spatial positioning, relative to the distance from the containing block to the front limit plane; for absolute spatial positioning, relative to the z-axis size of the containing volume.",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "inset-front",
+        "insetFront"
+      ],
+      "syntax": "<'top'>",
+      "extended": []
+    },
+    {
       "name": "inset-inline",
       "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline",
       "initial": "auto",
@@ -10059,6 +10237,66 @@
         "insetInlineStart"
       ],
       "syntax": "auto | <length-percentage>",
+      "extended": []
+    },
+    {
+      "name": "inset-left",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-left",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-left",
+        "insetLeft"
+      ],
+      "longhands": [
+        "top"
+      ],
+      "syntax": "<'top'>",
+      "extended": []
+    },
+    {
+      "name": "inset-right",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-right",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-right",
+        "insetRight"
+      ],
+      "longhands": [
+        "top"
+      ],
+      "syntax": "<'top'>",
+      "extended": []
+    },
+    {
+      "name": "inset-top",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-inset-top",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "inset-top",
+        "insetTop"
+      ],
+      "longhands": [
+        "top"
+      ],
+      "syntax": "<'top'>",
       "extended": []
     },
     {
@@ -10197,8 +10435,10 @@
         "justify-items",
         "justifyItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]",
-      "extended": []
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-origin",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
     },
     {
       "name": "justify-self",
@@ -10214,8 +10454,9 @@
         "justify-self",
         "justifySelf"
       ],
-      "syntax": "auto | <overflow-position>? [ normal | <self-position> | left | right ] | stretch | <baseline-position> | anchor-center",
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> | left | right ] | stretch | <baseline-position> | anchor-origin | anchor-center",
       "extended": [
+        "https://drafts.csswg.org/css-spatial-1/",
         "https://drafts.csswg.org/css-anchor-position-1/#propdef-justify-self"
       ]
     },
@@ -12199,9 +12440,9 @@
     },
     {
       "name": "overscroll-behavior",
-      "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-behavior",
       "initial": "auto auto",
-      "appliesTo": "scroll container elements",
+      "appliesTo": "scroll container and overscroll container elements",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "see individual properties",
@@ -12221,9 +12462,9 @@
     },
     {
       "name": "overscroll-behavior-block",
-      "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-block",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-behavior-block",
       "initial": "auto",
-      "appliesTo": "scroll container elements",
+      "appliesTo": "scroll container and overscroll container elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -12240,9 +12481,9 @@
     },
     {
       "name": "overscroll-behavior-inline",
-      "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-inline",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-behavior-inline",
       "initial": "auto",
-      "appliesTo": "scroll container elements",
+      "appliesTo": "scroll container and overscroll container elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -12259,9 +12500,9 @@
     },
     {
       "name": "overscroll-behavior-x",
-      "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-x",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-behavior-x",
       "initial": "auto",
-      "appliesTo": "scroll container elements",
+      "appliesTo": "scroll container and overscroll container elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -12278,9 +12519,9 @@
     },
     {
       "name": "overscroll-behavior-y",
-      "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-y",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-behavior-y",
       "initial": "auto",
-      "appliesTo": "scroll container elements",
+      "appliesTo": "scroll container and overscroll container elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -12293,6 +12534,24 @@
         "overscrollBehaviorY"
       ],
       "syntax": "contain | none | auto | chain",
+      "extended": []
+    },
+    {
+      "name": "overscroll-container-type",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#propdef-overscroll-container-type",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
+      "styleDeclaration": [
+        "overscroll-container-type",
+        "overscrollContainerType"
+      ],
+      "syntax": "auto | push | overlay | none",
       "extended": []
     },
     {
@@ -12733,8 +12992,10 @@
         "align-items",
         "justify-items"
       ],
-      "syntax": "<'align-items'> <'justify-items'>?",
-      "extended": []
+      "syntax": "<'align-items'> <'justify-items'>? | <'align-items'> <'justify-items'>? / <'z-align-items'>",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
     },
     {
       "name": "place-self",
@@ -12754,8 +13015,10 @@
         "align-self",
         "justify-self"
       ],
-      "syntax": "<'align-self'> <'justify-self'>?",
-      "extended": []
+      "syntax": "<'align-self'> <'justify-self'>? | <'align-self'> <'justify-self'>? / <'z-align-self'>",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
     },
     {
       "name": "pointer-events",
@@ -12830,6 +13093,57 @@
       "extended": []
     },
     {
+      "name": "portal-action",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-action",
+      "initial": "none",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "portal-action",
+        "portalAction"
+      ],
+      "syntax": "none | orbit || resize || [ pan | pan-inline || pan-block || pan-x || pan-y || pan-z ]",
+      "extended": []
+    },
+    {
+      "name": "portal-stage",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-stage",
+      "initial": "auto",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "portal-stage",
+        "portalStage"
+      ],
+      "syntax": "[ auto | <length> ]{1,4} [ / [ auto | <length> ]{1,2} ]?",
+      "extended": []
+    },
+    {
+      "name": "portal-transform",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-portal-transform",
+      "initial": "auto",
+      "appliesTo": "spatial containers establishing a back spatial context",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "Discrete if the presence of the none or auto keyword differs; otherwise interpolate each <transform-list> independently, see CSS Transforms 1 § 9 Interpolation of Transforms.",
+      "styleDeclaration": [
+        "portal-transform",
+        "portalTransform"
+      ],
+      "syntax": "none | auto | auto? <transform-list> | <transform-list> auto <transform-list>?",
+      "extended": []
+    },
+    {
       "name": "position",
       "href": "https://drafts.csswg.org/css-position-3/#propdef-position",
       "initial": "static",
@@ -12842,8 +13156,9 @@
       "styleDeclaration": [
         "position"
       ],
-      "syntax": "static | relative | absolute | sticky | fixed | <running()>",
+      "syntax": "static | relative | absolute | sticky | fixed | spatial-absolute | <running()>",
       "extended": [
+        "https://drafts.csswg.org/css-spatial-1/",
         "https://drafts.csswg.org/css-gcpm-3/"
       ]
     },
@@ -12878,7 +13193,26 @@
         "position-area",
         "positionArea"
       ],
-      "syntax": "none | <position-area>",
+      "syntax": "none | <position-area> | [ front | center | back | span-front | span-back | span-all ]? | origin",
+      "extended": [
+        "https://drafts.csswg.org/css-spatial-1/"
+      ]
+    },
+    {
+      "name": "position-context",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-position-context",
+      "initial": "container",
+      "appliesTo": "absolutely positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "position-context",
+        "positionContext"
+      ],
+      "syntax": "container | anchor",
       "extended": []
     },
     {
@@ -14617,6 +14951,22 @@
         "sliderOrientation"
       ],
       "syntax": "auto | left-to-right | right-to-left | top-to-bottom | bottom-to-top",
+      "extended": []
+    },
+    {
+      "name": "spatial",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-spatial",
+      "initial": "none",
+      "appliesTo": "all elements except internal table elements, internal ruby elements, and inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "spatial"
+      ],
+      "syntax": "none | page | portal",
       "extended": []
     },
     {
@@ -17043,6 +17393,40 @@
       "extended": []
     },
     {
+      "name": "z-align-items",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-items",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "z-align-items",
+        "zAlignItems"
+      ],
+      "syntax": "<overflow-position>? [ normal | front | center | back ] | anchor-origin",
+      "extended": []
+    },
+    {
+      "name": "z-align-self",
+      "href": "https://drafts.csswg.org/css-spatial-1/#propdef-z-align-self",
+      "initial": "auto",
+      "appliesTo": "spatially positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "z-align-self",
+        "zAlignSelf"
+      ],
+      "syntax": "auto | <overflow-position>? [ normal | front | center | back ] | anchor-origin",
+      "extended": []
+    },
+    {
       "name": "z-index",
       "href": "https://drafts.csswg.org/css2/#propdef-z-index",
       "initial": "auto",
@@ -17240,6 +17624,13 @@
       "name": "::nth-fragment()",
       "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element.",
       "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment",
+      "extended": []
+    },
+    {
+      "name": "::overscroll-backdrop",
+      "prose": "Each overscroll area originates a ::overscroll-backdrop fully styleable pseudo-element.",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#selectordef-overscroll-backdrop",
+      "syntax": "::overscroll-backdrop",
       "extended": []
     },
     {
@@ -17899,6 +18290,20 @@
       "extended": []
     },
     {
+      "name": ":overscroll-closed",
+      "prose": "The :overscroll-closed pseudo-class matches an overscroll area whose overscroll area parent is not in the overscrolling state.",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#selectordef-overscroll-closed",
+      "syntax": ":overscroll-closed",
+      "extended": []
+    },
+    {
+      "name": ":overscroll-open",
+      "prose": "The :overscroll-open pseudo-class matches an overscroll area whose overscroll area parent is in the overscrolling state (see § 6.1 Event Dispatch).",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#selectordef-overscroll-open",
+      "syntax": ":overscroll-open",
+      "extended": []
+    },
+    {
       "name": ":past",
       "prose": "The :past pseudo-class represents any element that is defined to occur entirely prior to a :current element. For example, the WebVTT spec defines the :past pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) previous sibling of a :current element.",
       "href": "https://drafts.csswg.org/selectors-5/#past-pseudo",
@@ -18198,6 +18603,12 @@
       "name": "}-token",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <unicode-range-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
       "href": "https://drafts.csswg.org/css-syntax-3/#tokendef-close-curly",
+      "extended": []
+    },
+    {
+      "name": "3d-position",
+      "href": "https://drafts.csswg.org/css-spatial-1/#typedef-3d-position",
+      "prose": "The offset-anchor and transform-origin properties are extended to add a third dimension, replacing <position> with a new <3d-position> type",
       "extended": []
     },
     {

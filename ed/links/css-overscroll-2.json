@@ -1,0 +1,393 @@
+{
+  "spec": {
+    "title": "CSS Overscroll Behavior Module Level 2",
+    "url": "https://drafts.csswg.org/css-overscroll-2/"
+  },
+  "links": {
+    "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "specShortname": "css-box-4"
+      },
+      "https://drafts.csswg.org/css-contain-2/": {
+        "specShortname": "css-contain-2"
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "specShortname": "css-display-4"
+      },
+      "https://drafts.csswg.org/css-display/": {
+        "specShortname": "css-display-3"
+      },
+      "https://drafts.csswg.org/css-logical-1/": {
+        "anchors": [
+          "logical-property-group"
+        ],
+        "specShortname": "css-logical-1"
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "specShortname": "css-overflow-3"
+      },
+      "https://drafts.csswg.org/css-overscroll-1/": {
+        "specShortname": "css-overscroll-1"
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "specShortname": "css-position-3"
+      },
+      "https://drafts.csswg.org/css-position-4/": {
+        "specShortname": "css-position-4"
+      },
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "specShortname": "css-pseudo-4"
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "specShortname": "css-scroll-snap-1"
+      },
+      "https://drafts.csswg.org/css-scroll-snap-2/": {
+        "specShortname": "css-scroll-snap-2"
+      },
+      "https://drafts.csswg.org/css-scrollbars/": {
+        "specShortname": "css-scrollbars-1"
+      },
+      "https://drafts.csswg.org/css-shadow-1/": {
+        "specShortname": "css-shadow-1"
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "specShortname": "css-ui-4"
+      },
+      "https://drafts.csswg.org/css-values-3/": {
+        "specShortname": "css-values-3"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "specShortname": "css-values-4"
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "specShortname": "css-writing-modes-4"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "specShortname": "CSS2"
+      },
+      "https://drafts.csswg.org/cssom-view/": {
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "specShortname": "mediaqueries-5"
+      },
+      "https://drafts.csswg.org/selectors/": {
+        "specShortname": "selectors-4"
+      },
+      "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://w3c.github.io/touch-events/": {
+        "specShortname": "touch-events"
+      },
+      "https://w3c.github.io/uievents/": {
+        "specShortname": "uievents"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "specShortname": "webidl"
+      },
+      "https://www.w3.org/TR/CSS/": {},
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "property-defs"
+        ],
+        "specShortname": "CSS2"
+      },
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ],
+        "specShortname": "css-cascade-4"
+      },
+      "https://www.w3.org/TR/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ],
+        "specShortname": "css-pseudo-4"
+      },
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "value-defs"
+        ],
+        "specShortname": "css-values-3"
+      },
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ],
+        "specShortname": "css-values-4"
+      },
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ],
+        "specShortname": "cssom-1"
+      },
+      "https://www.w3.org/TR/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ],
+        "specShortname": "web-animations-1"
+      },
+      "https://www.w3.org/WAI/WCAG20/Understanding/on-focus": {},
+      "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum": {},
+      "https://www.w3.org/policies/process/20250818/": {}
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-tree-scope",
+          "dictdef-eventinit",
+          "element",
+          "event",
+          "document"
+        ],
+        "specShortname": "dom"
+      },
+      "https://drafts.csswg.org/css-box-4/": {
+        "anchors": [
+          "padding-box"
+        ],
+        "specShortname": "css-box-4"
+      },
+      "https://drafts.csswg.org/css-contain-2/": {
+        "anchors": [
+          "layout-containment",
+          "propdef-contain"
+        ],
+        "specShortname": "css-contain-2"
+      },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "internal-table-box",
+          "internal-ruby-box",
+          "atomic-inline",
+          "inline-level"
+        ],
+        "specShortname": "css-display-3"
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "principal-box",
+          "inner-display-type",
+          "valdef-display-table",
+          "containing-block",
+          "propdef-display",
+          "valdef-display-contents",
+          "valdef-display-block",
+          "blockify",
+          "containing-block-chain",
+          "initial-containing-block"
+        ],
+        "specShortname": "css-display-4"
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "scroll-container",
+          "scrollport",
+          "propdef-overflow",
+          "valdef-overflow-visible",
+          "propdef-scroll-behavior",
+          "scrollable-overflow-region",
+          "scroll-origin",
+          "initial-scroll-position",
+          "scrollable-overflow",
+          "single-axis-scroll-container",
+          "scrollable-axis",
+          "root-scroller",
+          "valdef-scroll-behavior-auto"
+        ],
+        "specShortname": "css-overflow-3"
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "absolute-position",
+          "propdef-position",
+          "propdef-inset",
+          "valdef-position-absolute",
+          "valdef-position-fixed",
+          "fixed-position",
+          "sticky-position"
+        ],
+        "specShortname": "css-position-3"
+      },
+      "https://drafts.csswg.org/css-position-4/": {
+        "anchors": [
+          "selectordef-backdrop",
+          "in-the-top-layer",
+          "fixed-containing-block",
+          "local-containing-block"
+        ],
+        "specShortname": "css-position-4"
+      },
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "anchors": [
+          "fully-styleable"
+        ],
+        "specShortname": "css-pseudo-4"
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "scroll-snap-container",
+          "propdef-scroll-snap-type",
+          "propdef-scroll-snap-align",
+          "scroll-snap-area",
+          "propdef-scroll-snap-stop",
+          "scroll-snap-position"
+        ],
+        "specShortname": "css-scroll-snap-1"
+      },
+      "https://drafts.csswg.org/css-scroll-snap-2/": {
+        "anchors": [
+          "eventual-snap-target",
+          "snap-target"
+        ],
+        "specShortname": "css-scroll-snap-2"
+      },
+      "https://drafts.csswg.org/css-scrollbars-1/": {
+        "anchors": [
+          "propdef-scrollbar-width"
+        ],
+        "specShortname": "css-scrollbars-1"
+      },
+      "https://drafts.csswg.org/css-shadow-1/": {
+        "anchors": [
+          "flat-tree"
+        ],
+        "specShortname": "css-shadow-1"
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-pointer-events",
+          "propdef-interactivity"
+        ],
+        "specShortname": "css-ui-4"
+      },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "css-wide-keywords",
+          "comb-one",
+          "mult-num-range"
+        ],
+        "specShortname": "css-values-4"
+      },
+      "https://drafts.csswg.org/css-writing-modes-4/": {
+        "anchors": [
+          "propdef-writing-mode"
+        ],
+        "specShortname": "css-writing-modes-4"
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "viewport"
+        ],
+        "specShortname": "CSS2"
+      },
+      "https://drafts.csswg.org/cssom-view-1/": {
+        "anchors": [
+          "dom-document-scrollingelement",
+          "dom-element-getboundingclientrect",
+          "document-pending-scroll-events",
+          "scroll-completed",
+          "perform-a-scroll"
+        ],
+        "specShortname": "cssom-view-1"
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "media-query"
+        ],
+        "specShortname": "mediaqueries-5"
+      },
+      "https://drafts.csswg.org/selectors-4/": {
+        "anchors": [
+          "originating-element"
+        ],
+        "specShortname": "selectors-4"
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "xattr-reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "htmlelement"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-elements.html": {
+        "anchors": [
+          "attr-button-commandfor",
+          "attr-button-command"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "inert",
+          "sequential-focus-navigation-starting-point"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "globaleventhandlers",
+          "eventhandler"
+        ]
+      },
+      "https://w3c.github.io/uievents/": {
+        "anchors": [
+          "default-action"
+        ],
+        "specShortname": "uievents"
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "Exposed",
+          "idl-DOMString"
+        ],
+        "specShortname": "webidl"
+      },
+      "https://www.w3.org/TR/touch-events/": {
+        "anchors": [
+          "dfn-preventdefault"
+        ],
+        "specShortname": "touch-events"
+      }
+    }
+  }
+}

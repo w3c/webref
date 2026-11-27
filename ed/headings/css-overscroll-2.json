@@ -1,0 +1,352 @@
+{
+  "spec": {
+    "title": "CSS Overscroll Behavior Module Level 2",
+    "url": "https://drafts.csswg.org/css-overscroll-2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#title",
+      "level": 1,
+      "title": "CSS Overscroll Behavior Module Level 2"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.2"
+    },
+    {
+      "id": "overscroll-containers-and-areas",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-containers-and-areas",
+      "level": 2,
+      "title": "Overscroll Containers and Areas",
+      "number": "2"
+    },
+    {
+      "id": "overscroll-containers",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-containers",
+      "level": 3,
+      "title": "Overscroll Containers",
+      "number": "2.1"
+    },
+    {
+      "id": "overscroll-areas",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-areas",
+      "level": 3,
+      "title": "Overscroll Areas",
+      "number": "2.2"
+    },
+    {
+      "id": "overscroll-container-type-property",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-container-type-property",
+      "level": 3,
+      "title": "The overscroll-container-type Property",
+      "number": "2.3"
+    },
+    {
+      "id": "overscroll-open-pseudo",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-open-pseudo",
+      "level": 3,
+      "title": "The :overscroll-open and :overscroll-closed Pseudo-Classes",
+      "number": "2.4"
+    },
+    {
+      "id": "overscroll-backdrop-pseudo",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-backdrop-pseudo",
+      "level": 3,
+      "title": "The ::overscroll-backdrop Pseudo-Element",
+      "number": "2.5"
+    },
+    {
+      "id": "box-model",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#box-model",
+      "level": 2,
+      "title": "The Box Model",
+      "number": "3"
+    },
+    {
+      "id": "overscroll-container-box",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-container-box",
+      "level": 3,
+      "title": "Containment and Clipping on the Overscroll Container",
+      "number": "3.1"
+    },
+    {
+      "id": "overscroll-area-parent-box",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-area-parent-box",
+      "level": 3,
+      "title": "The Overscroll Area Parent Box",
+      "number": "3.2"
+    },
+    {
+      "id": "overscroll-area-positioning",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-area-positioning",
+      "level": 3,
+      "title": "Positioning and Snapping of Overscroll Areas",
+      "number": "3.3"
+    },
+    {
+      "id": "overscroll-stacking-and-push",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-stacking-and-push",
+      "level": 3,
+      "title": "Stacking and Push Translation",
+      "number": "3.4"
+    },
+    {
+      "id": "ua-stylesheet",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#ua-stylesheet",
+      "level": 3,
+      "title": "Default UA Stylesheet",
+      "number": "3.5"
+    },
+    {
+      "id": "scroll-chaining-and-boundary-default-actions",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#scroll-chaining-and-boundary-default-actions",
+      "level": 2,
+      "title": "Scroll Chaining and Boundary Default Actions",
+      "number": "4"
+    },
+    {
+      "id": "scroll-chaining-order",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#scroll-chaining-order",
+      "level": 3,
+      "title": "Scroll Chaining Order",
+      "number": "4.1"
+    },
+    {
+      "id": "overscroll-behavior-properties",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-behavior-properties",
+      "level": 2,
+      "title": "Overscroll Behavior Properties",
+      "number": "5"
+    },
+    {
+      "id": "overscroll-shorthand",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-shorthand",
+      "level": 3,
+      "title": "The overscroll-behavior Shorthand",
+      "number": "5.1"
+    },
+    {
+      "id": "overscroll-positioned",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-positioned",
+      "level": 3,
+      "title": "Overscroll and Positioned Elements",
+      "number": "5.2"
+    },
+    {
+      "id": "overscroll-behavior-longhands-physical",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-behavior-longhands-physical",
+      "level": 3,
+      "title": "Physical Longhands for overscroll-behavior",
+      "number": "5.3"
+    },
+    {
+      "id": "overscroll-behavior-longhands-logical",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-behavior-longhands-logical",
+      "level": 3,
+      "title": "Flow-relative Longhands for overscroll-behavior",
+      "number": "5.4"
+    },
+    {
+      "id": "overscroll-events",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-events",
+      "level": 2,
+      "title": "Overscroll Events",
+      "number": "6"
+    },
+    {
+      "id": "overscroll-event-dispatch",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-event-dispatch",
+      "level": 3,
+      "title": "Event Dispatch",
+      "number": "6.1"
+    },
+    {
+      "id": "overscroll-event-interface",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#overscroll-event-interface",
+      "level": 3,
+      "title": "The OverscrollEvent Interface",
+      "number": "6.2"
+    },
+    {
+      "id": "accessibility",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#accessibility",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "number": "7"
+    },
+    {
+      "id": "security",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "privacy",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "html-spec-changes",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-spec-changes",
+      "level": 2,
+      "title": "HTML Specification Changes",
+      "number": "A"
+    },
+    {
+      "id": "html-attributes",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-attributes",
+      "level": 3,
+      "title": "Content and IDL Attributes"
+    },
+    {
+      "id": "html-invoker-commands",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-invoker-commands",
+      "level": 3,
+      "title": "Command Invokers"
+    },
+    {
+      "id": "html-inertness",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-inertness",
+      "level": 3,
+      "title": "Inertness"
+    },
+    {
+      "id": "html-focus-and-dismiss",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-focus-and-dismiss",
+      "level": 3,
+      "title": "Focus and Light Dismiss"
+    },
+    {
+      "id": "html-event-handlers",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#html-event-handlers",
+      "level": 3,
+      "title": "Event Handlers"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#informative",
+      "level": 3,
+      "title": "Non-Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-overscroll-2/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}
