@@ -326,10 +326,11 @@ const patches = {
       change: { bubbles: false}
     }
   ],
-  // Crawler fails to parse dispatch syntax for "installresult"
-  // ActivationBlockersMixin is already defined in Geolocation Element for now,
-  // ignoring the re-definition in Install Element, and thus ignoring
-  // "validationstatuschange"
+  // Crawler fails to parse dispatch syntax for "installresult".
+  // Also, the spec reuses validationstatuschange from Geolocation Element but
+  // went from duplication to a complete separate definition (instead of reuse)
+  // for some reason. The interface, bubbling and cancelable properties need to
+  // be completed as a result.
   'install-element': [
     {
       pattern: { type: "installresult" },
@@ -342,7 +343,11 @@ const patches = {
     {
       pattern: { type: "validationstatuschange" },
       matched: 1,
-      delete: true
+      change: {
+        interface: "Event",
+        bubbles: true,
+        cancelable: true
+      }
     }
   ],
   // Pending https://github.com/w3c/mediacapture-extensions/issues/176
