@@ -1417,7 +1417,23 @@
               "rationale": "run",
               "steps": [
                 {
-                  "html": "<p>\n                          Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-5\">Update Key Statuses</a> algorithm on the <var>session</var>,\n                          providing all <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-decryption-key-id\" class=\"internalDFN\" id=\"ref-for-dfn-decryption-key-id-8\">key ID</a>(s) in the session along with the\n                          \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus-released\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-released-1\"><code>released</code></a>\" <a data-link-type=\"idl\" data-lt=\"MediaKeyStatus\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-9\"><code>MediaKeyStatus</code></a> value for each.\n                        </p>"
+                  "html": "Follow the steps for the value of this object's <var>session type</var>\n                          from the following list:",
+                  "rationale": ".switch",
+                  "steps": [
+                    {
+                      "operation": "switch",
+                      "steps": [
+                        {
+                          "case": "\"temporary\"",
+                          "html": "<p>\n                              Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-5\">Update Key Statuses</a> algorithm on the <var>session</var>,\n                              providing an empty sequence.\n                            </p>"
+                        },
+                        {
+                          "case": "\"persistent-license\"",
+                          "html": "<p>\n                              Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-6\">Update Key Statuses</a> algorithm on the <var>session</var>,\n                              providing all <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-decryption-key-id\" class=\"internalDFN\" id=\"ref-for-dfn-decryption-key-id-8\">key ID</a>(s) in the session along with the\n                              \"<a data-link-type=\"idl\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus-released\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-released-1\"><code>released</code></a>\" <a data-link-type=\"idl\" data-lt=\"MediaKeyStatus\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-9\"><code>MediaKeyStatus</code></a> value for each.\n                            </p>"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "html": "<p>\n                          Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-expiration\" class=\"internalDFN\" id=\"ref-for-dfn-update-expiration-3\">Update Expiration</a> algorithm on the <var>session</var>,\n                          providing <code>NaN</code>.\n                        </p>"
@@ -1532,7 +1548,7 @@
           "html": "<p>\n                Set the <var>session</var>'s <var>closing or closed</var> value to true.\n              </p>"
         },
         {
-          "html": "<p>\n                Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-6\">Update Key Statuses</a> algorithm on the <var>session</var>, providing an\n                empty sequence.\n              </p>"
+          "html": "<p>\n                Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-7\">Update Key Statuses</a> algorithm on the <var>session</var>, providing an\n                empty sequence.\n              </p>"
         },
         {
           "html": "<p>\n                Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-expiration\" class=\"internalDFN\" id=\"ref-for-dfn-update-expiration-4\">Update Expiration</a> algorithm on the <var>session</var>, providing\n                <code>NaN</code>.\n              </p>"
@@ -1572,7 +1588,7 @@
               "html": "<p>\n                    Let <var>statuses</var> be a list of key ID and <a data-link-type=\"idl\" data-lt=\"MediaKeyStatus\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-18\"><code>MediaKeyStatus</code></a> value pairs\n                    containing one pair for each key <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-known\" class=\"internalDFN\" id=\"ref-for-dfn-known-8\">known</a> to <var>session</var>.\n                  </p>"
             },
             {
-              "html": "<p>\n                    Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-7\">Update Key Statuses</a> algorithm, passing <var>session</var> and\n                    <var>statuses</var>.\n                  </p>"
+              "html": "<p>\n                    Run the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-8\">Update Key Statuses</a> algorithm, passing <var>session</var> and\n                    <var>statuses</var>.\n                  </p>"
             }
           ]
         },
@@ -1900,7 +1916,7 @@
                       "html": "<p>\n                            If any of the <var>available keys</var> corresponds to the <var>block\n                            key ID</var> and is <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-usable-for-decryption\" class=\"internalDFN\" id=\"ref-for-dfn-usable-for-decryption-8\">usable for decryption</a>, let <var>session</var>\n                            be a <a data-link-type=\"idl\" data-lt=\"MediaKeySession\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeysession\" class=\"internalDFN\" id=\"ref-for-dom-mediakeysession-42\"><code>MediaKeySession</code></a> object containing that key and let <var>block\n                            key</var> be that key.\n                          </p>"
                     },
                     {
-                      "html": "<p>\n                            If the status of any of the <var>available keys</var> changed as the\n                            result of running the preceding step, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to run the\n                            <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-8\">Update Key Statuses</a> algorithm on each affected <var>session</var>,\n                            providing all <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-decryption-key-id\" class=\"internalDFN\" id=\"ref-for-dfn-decryption-key-id-13\">key ID</a>(s) in the session along with the appropriate\n                            <a data-link-type=\"idl\" data-lt=\"MediaKeyStatus\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-19\"><code>MediaKeyStatus</code></a> value(s) for each.\n                          </p>"
+                      "html": "<p>\n                            If the status of any of the <var>available keys</var> changed as the\n                            result of running the preceding step, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">queue a task</a> to run the\n                            <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-update-key-statuses\" class=\"internalDFN\" id=\"ref-for-dfn-update-key-statuses-9\">Update Key Statuses</a> algorithm on each affected <var>session</var>,\n                            providing all <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-decryption-key-id\" class=\"internalDFN\" id=\"ref-for-dfn-decryption-key-id-13\">key ID</a>(s) in the session along with the appropriate\n                            <a data-link-type=\"idl\" data-lt=\"MediaKeyStatus\" href=\"https://www.w3.org/TR/encrypted-media-2/#dom-mediakeystatus\" class=\"internalDFN\" id=\"ref-for-dom-mediakeystatus-19\"><code>MediaKeyStatus</code></a> value(s) for each.\n                          </p>"
                     },
                     {
                       "html": "If <var>block key</var> is not null, run the following steps:",
