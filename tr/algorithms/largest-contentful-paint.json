@@ -75,7 +75,7 @@
               "html": "<p>Let <var>intersectionRect</var> be the value returned by the intersection rect algorithm using <var>imageElement</var> as the target and viewport as the root.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size\">effective visual size</a> of <var>imageElement</var> given <var>intersectionRect</var> and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a>.</p>"
+              "html": "<p>Let <var>result</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size\">effective visual size</a> of <var>imageElement</var> given <var>intersectionRect</var>, <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a>, and <var>document</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is null, continue.</p>"
@@ -114,7 +114,7 @@
               "html": "<p>Let <var>intersectionRect</var> be the union of the border boxes of all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node\">nodes</a> in <var>textNode</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#set-of-owned-text-nodes\" id=\"ref-for-set-of-owned-text-nodes\">set of owned text nodes</a>, intersected with the visual viewport.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size①\">effective visual size</a> of <var>textNode</var> given <var>intersectionRect</var> and null.</p>"
+              "html": "<p>Let <var>result</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size①\">effective visual size</a> of <var>textNode</var> given <var>intersectionRect</var>, null, and <var>document</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is null, continue.</p>"
